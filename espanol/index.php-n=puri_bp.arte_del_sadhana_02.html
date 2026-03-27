@@ -1,0 +1,523 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - La Perfección en la Adoración</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_02' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_02' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - La Perfección en la Adoración"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_02-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>La Perfección en la Adoración</h2>
+<p>La palabra vedãnta significa “el resultado final del conocimiento”. Es una referencia a los Upanisads, los libros finales de la revelación Védica o Sruti. Estos libros contienen los místicos vislumbres internos de los rsis y se consideran el fundamento de todo conocimiento espiritual en la India. La encarnación del Señor, Vedavyãsa, el compilador de la literatura Védia, compuso además los Vedanta sutras o Brahma sutras, de modo de resumir las enseñanzas de los Upanisads. La palabra sutra significa “aforismo” o “código”, una breve declaración enigmática tendiente a recordarnos uno de los aspectos cabales de la enseñanza Upanisádica.
+</p>
+<p class='vspace'>Así pues, los Vedanta Sutras son los textos que se yerguen como el fundamento de toda la filosofía religiosa de la India. Ciertamente, los fundadores de toda Escuela de filosofía India (Sankara, Rãmãnuja, Vallabha, Visnusvãmi, Mãdhava y Nimbãrka) escribieron comentarios o bhãsyas sobre los sutras, a los fines de explicar su comprensión de la verdad suprema. La Escuela Gaudiya Vaisnava fundada por Caitanya Mahãprabhu también posee un comentario autorizado sobre esta importante Escritura, el Govinda-bhãsya de Baladeva Vidyãbhusana. Para los Gaudiyas sin embargo, el comentario emblemático del Vedanta Sutra es el Srimad Bhãgavatam, también compuesto por Vyãsadeva, donde los tres aspectos del conocimiento espiritual, sambandha, abhideya y prayojana, se enuncian claramente.
+</p>
+<p class='vspace'>El Vedanta Sutra se divide en cuatro capítulos o adhyãyas y cada uno a su vez se subdivide en cuatro pãdas. Los capítulos primero y segundo tratan de sambandha-tattva, el tercero de abhidheya-tattva y el cuarto de prayojana.
+</p>
+<p class='vspace'>El primer capítulo del Vedanta Sutra se denomina samanvaya o ´síntesis’ pues organiza todos los conceptos de los Vedas y los Upanisads en un todo ordenado, centrado alrededor del concepto de Brahman, la Verdad Suprema. El segundo capítulo se denomina avirodha, que significa “consistencia” o “armonía”. Según Baladeva Vidyãbhusãna, en este capítulo todas las declaraciones de las Escrituras, aparentemente incongruentes, son armonizadas apuntando hacia el Brahman único o Señor Supremo, (tad eva, aviruddhãnam srutinãm samanvayah sarvesvare siddhah). El tercer capítulo se denomina sãdhana o “el medio”.  Analiza la devoción, que es el único medio para llegar al Brahman. El cuarto capítulo es phala o “el resultado”. El término prayojana o “propósito último” es asimismo utilizado para indicar el logro del Brahman.
+</p>
+<p class='vspace'>Sri Caitanya Mahãprabhu explicitó las enseñanzas del Vedanta y Sus explicaciones fueron misericordiosamente registradas por Krishnadãsa Kavirãja Gosvãmi en el Caitanya Caritãmrta:
+</p>
+<div class='vspace'></div><pre> veda-sãstra kahe sambandha abhidheya prayojana
+ krsna prãpya sambandha bhakti prãpteyera sãdhana
+ abhideya-nãma bhakti prema prayojana
+ purusãrtha-siromani prema mahã-dhana
+</pre><p class='vspace'>“El conocimiento Védico se subdivide en tres partes llamadas sambandha (“relaciones”), abhidheya (“procedimiento”) y prayojana (“la meta o fin”). El conocimiento de Krishna como el objetivo de la vida espiritual, se denomina sambandha. El conocimiento de que la devoción es el medio para llegar a El y obrar conforme a ello, se denomina abhidheya. La meta última de la vida o prayojana es el amor por Krishna o prema. Este prema es el mayor tesoro de la vida espiritual y es principal entre todos los objetivos de la vida humana”.
+(Caitanya Caritãmrta 2.20.124-125)
+</p>
+<p class='vspace'>En otra parte, Krishnadãsa repite lo mismo incluso más sucintamente: 
+</p>
+<div class='vspace'></div><pre> veda-sãstre  kahe sambandha abhidheya prayojana
+ krsna krsna-bhakti prema tina mahã-dhana 
+</pre><p class='vspace'>“El conocimiento Védico se subdivide en tres partes llamadas sambandha (“relaciones”), abhidheya (“procedimiento”) y prayojana (“la meta o fin”). Estos tres grandes tesoros son: Krishna, la devoción por Krishna y el amor por Krishna”.
+</p>
+<p class='vspace'>En el Bhakti-rasãmrta-sindhu (1.1.1) Krishna se declara como el akhila-rasãmrta-murti o la personificación de las doce experiencias totales estéticas y de relacionamientos o rasas. Atento al conocimiento de sambandha, Krishna es la Verdad Suprema. El único medio para llegar a El, es el bhakti o la devoción y el amor por El es la meta última de las prácticas espirituales.
+</p>
+<p class='vspace'><strong>SAMBANDHA</strong>
+</p>
+<p class='vspace'>En el Bhagavad-gitã el Señor Krishna dice:
+</p>
+<div class='vspace'></div><pre> vedais ca sarvair aham eva vedyo
+ vedãnta-krd veda-vid eva cãham
+</pre><p class='vspace'>“Yo soy el objeto a ser conocido por todas las literaturas Védicas. Yo soy el autor de los Upanisads o Vedanta y el conocedor del verdadero significado del Veda”. (Gitã 15.15)
+</p>
+<p class='vspace'>En el Svetãsvatara Upanisad, el Supremo es descrito como el Brahman sin atributos:
+</p>
+<div class='vspace'></div><pre> eko devah sarva-bhutesu gudhah
+ sarva-vyãpi sarva-bhutãntarãtmã
+ karmãdhyaksah sarva-bhutãdhivãsah
+ sãksi cetãh kevalo nirgunas ca
+</pre><p class='vspace'>“No existe sino una Entidad Divina, que está oculta dentro de todos los seres. Omnipenetrante, El mora dentro de toda cosa creada. El es el supervisor de todas las actividades, el refugio de todas las criaturas, el testigo, la conciencia, la cosa única existente. El no tiene atributos”. (Svetãsvatara Upanisad 6.11)
+</p>
+<p class='vspace'>El Srimad-Bhãgavatam sin embargo, demuestra que existe un aspecto de lo divino más allá incluso del Brahman. Es parãtpara o “allende eso que yace más allá”.
+</p>
+<div class='vspace'></div><pre> vadanti tat tattva-vidas
+ tattvam yaj jñãnam advayam
+ brahmeti paramãtmeti
+ bhagavãn iti sabdyate
+</pre><p class='vspace'>“Los conocedores de la verdad han determinado que la sustancia suprema no dual es designada de tres formas: como Brahman, como Paramãtma y como Bhagavãn”. (Srimad-Bhãgavatam 1.2.11)
+</p>
+<p class='vspace'>Bhagavãn o el aspecto personal del Supremo se conoce como Krishna, - krsnas tu bhagavãn svayam. (Srimad-Bhãgavatam 1.3.28)
+</p>
+<div class='vspace'></div><pre> harir hi nirgunah sãksãt
+ purusah prakrteh parah
+</pre><p class='vspace'>“El Señor Supremo Hari no es tocado por las cualidades materiales. El es la Persona Suprema, allende la naturaleza material”. (Srimad-Bhãgavatam 10.88.5)
+</p>
+<p class='vspace'><strong>ABHIDEYA</strong>
+</p>
+<p class='vspace'>Hari o Krishna es el pratyag-ãtmã, el alma más íntima de cada individuo y solo es comprendido a través del bhakti o la devoción.
+</p>
+<div class='vspace'></div><pre> tvam pratyag-ãtmani tadã bhagavaty ananta
+ ãnanda-mãtra upapanna-samasta-saktau
+ bhaktim vidhãya paramãm sanakair avidyã-
+ granthim vibhetsyasi mamãham iti prarudham
+</pre><p class='vspace'>“Por ocuparse en la devoción intensa a la Superalma, el Señor Supremo quien es infinito, definido solo por el gozo y en quien se encuentran presentes todas las potencias, cortará lentamente los apretados nudos de la ignorancia basados en los conceptos de “Yo y lo mío”. (Srimad-Bhãgavatam 4.11.30)
+</p>
+<p class='vspace'>Se refiere que el Brahman es incognoscible, inefable, inmanifiesto e imperceptible a los sentidos materiales. Aún así, no debe decirse que El es completamente inalcanzable. Si pensamos eso, luego perderemos la esperanza, lo cual es un serio impedimento para adoptar siquiera el servicio devocional. Por esa razón, Baladeva cita una línea del Kaivalya Upanisad: sraddhã-bhakti-dhyãna-yogãd avaiti - “Se puede tener conocimiento directo de El a través de la disciplina de la fe, la devoción y la meditación”.
+</p>
+<p class='vspace'>Baladeva explica además: “La fe es creencia firme; la devoción es una referencia a las numerosas prácticas devocionales que comienzan con oír y meditación significa pensar en el Brahman ininterrumpidamente, - siendo el pensamiento como una corriente de aceite. La palabra ‘yoga’ en el texto significa que la disciplina combina las tres prácticas en conjunto. La palabra avaiti - ‘él conoce’ significa tener sãksãtkãra - percepción directa o experiencia del Brahman”. (Govinda-bhãsya).
+</p>
+<p class='vspace'>En el Bhagavad-gitã, Krishna dice que El solo puede ser conocido mediante la devoción (bhaktyã mãm abhijãnãti). El le confirma lo mismo a Uddhava en el Bhãgavatam: bhaktyãham ekayã grãhyah (11.14-21). El Mãthara-sruti glorifica aún más al bhakti:
+</p>
+<div class='vspace'></div><pre> bhaktir evainam sayati
+ bhaktir evainam darsayati
+ bhakti-vasah purusah
+ bhaktir eva bhuyasi
+</pre><p class='vspace'>“La devoción Lo atrae, la devoción Lo revela, el Señor es influenciado por la devoción. Nada es más poderoso que el bhakti”.
+</p>
+<p class='vspace'>Todos estos textos confirman que aunque el Señor es inconcebible e inmanifiesto, la devoción tiene el poder de revelar Su forma.
+</p>
+<p class='vspace'>Un aforismo muy famoso de los Vedanta Sutras (3.2.24) -api samrãdhane pratyaksãnumãnãbhyãm - también connota el mismo tema. El sutra emerge en el contexto de la posible objeción de que la Superalma o el Param Brahman no puede ser percibido por la vista y demás sentidos. La primera palabra del aforismo, api, condena específicamente el concepto. Si uno se ocupa debidamente en las prácticas devocionales (samrãdhane), el Señor se torna accesible incluso a nuestros sentidos. Esto lo confirma el Sruti (pratyaksa) y el Smrti (anumãna). (1)
+</p>
+<p class='vspace'>En el comentario  Govinda-bhãsya a este sutra, Baladeva cita dos versos del Sruti y dos del Bhagavad-gitã (Smrti) en respaldo del concepto de que ciertos devotos, fijos en el conocimiento ciertamente ven al Señor:
+</p>
+<div class='vspace'></div><pre> parãnci khãni vyatrnat svayambhus
+ tasmãt parãn pasyati nãntarãtman
+ kascid dhirah pratyag-ãtmãnam aiksad
+ ãvrtta-caksur amrtatvam icchan
+</pre><p class='vspace'>“El Creador Auto-naciente hizo orificios que dan al exterior (haciendo los ojos en el cuerpo); por consiguiente los hombres miran hacia afuera y no ven el alma en el interior. Deseando la inmortalidad, ciertos hombres sabios orientan sus ojos hacia el interior y ven el atman que mora dentro”. (Katha Upanisad 2.1.1)
+</p>
+<div class='vspace'></div><pre> na caksusã gthyte nãpi vãcã
+ nãnyair devair tapasã karmana vã
+ jñãna-prasãdena visuddha-sattvas
+ tatas tu tam pasyati niskalam dhyãyamãnah
+</pre><p class='vspace'>“Aunque El no puede ser visto con los ojos, descrito con palabras, revelado por los dioses, o comprendido a través de las austeridades o rituales, aquel cuyo propio ser ha sido purificado por el conocimiento [Escritural] puede Verlo en Su totalidad, por la meditación” (Mundaka Upanisad 3.1.8)
+</p>
+<p class='vspace'>También en el Bhagavad-gitã, Krishna confirma aún más la posibilidad de una visión directa del Señor:
+</p>
+<div class='vspace'></div><pre> nãham vedair na tapasã
+ na dãnena na cejyayã
+ sakya evam-vidho drastum
+ drstavãn asi mãm yathã
+
+ bhaktyã tv ananyayã sakya
+ aham evam-vidho ‘rjuna
+ jñatum drastum ca tattvena
+ pravestum ca parantapa
+</pre><p class='vspace'>“Yo no puedo ser visto de la misma manera en que tú me has visto, simplemente mediante el estudio del Veda, ni a través de serias penitencias, la caridad o la adoración. Oh Arjuna, es solo mediante el servicio devocional cabal, que Yo puedo ser conocido de este modo, que puedo ser Visto y ciertamente penetrado”. (Gitã 11. 53-54)
+</p>
+<p class='vspace'>La frase “de la misma manera” (evam-vidho) en estos versos, se refiere a la forma humana de Krishna. Baladeva concluye: “Por consiguiente, por la ejecución perfecta del servicio devocional (samyag-bhaktyã) el Señor puede ser ciertamente percibido. En ese momento, los ojos y demás sentidos, se saturan de devoción, brindando así la habilidad para conocerLo”. 
+</p>
+<p class='vspace'>En cuanto la persona (el “individuo sabio” o dhira del verso del Katha Upanisad antes citado) cesa de buscar la satisfacción de sus propios sentidos, obtiene el amor por Krishna, en el cual solo busca el placer de los sentidos de Krishna. En el contexto de los comentarios de Baladeva sobre el Vedanta Sutra, tal persona obtiene la visión divina cuando sus ojos están untados con el ungüento del amor. Esto lo califica para contemplar la forma divina de Syãmasundara de belleza sin par.
+</p>
+<p class='vspace'><strong>LAS DIFERENTES FORMAS DE YOGA</strong>
+</p>
+<p class='vspace'>En algunas secciones, las Escrituras glorifican la actividad ritual o las obras desinteresadas como el mejor medio para el logro espiritual o abhidheya; en otras, glorifican el conocimiento. Estos son también conocidos como yogas o disciplinas espirituales. Yoga significa además “unirse con lo supremo”. Los yogas antes mencionados son así conocidos como karma-yoga y jñãna-yoga. Es un hecho, sin embargo, que el proceso supremo para lograr la perfección espiritual es la devoción o Bhakti-yoga. Bhakti es completamente independiente de cualquier otra clase de proceso, mientras que el karma, jñãna y yoga reposan todos en el bhakti para conceder sus plenos resultados. Esto se declara en el Caitanya Caritãmrta (2.22.17):
+</p>
+<div class='vspace'></div><pre> krsna-bhakti haya abhideya pradhãna
+ bhakti-mukha-niriksaka karma-yoga-jñãna
+</pre><p class='vspace'>“Las recompensas primarias del karma, jñãna y yoga místico, a saber, el disfrute de los sentidos, la liberación y los poderes místicos, son consideradas por los devotos como sumamente insignificantes. Estos procesos no poseen una fuerza independiente para dispensar recompensas en los practicantes. Hasta la propia liberación se alza con las manos juntas aguardando la oportunidad de servir al bhakti. Las otras metas de la vida, la religiosidad, la riqueza y el disfrute de los sentidos, dependen aún más del bhakti y aguardan quietas su mirada misericordiosa”.
+</p>
+<p class='vspace'>Pese a que todo el Bhagavad-gitã trata del tema del yoga, el sexto capítulo en particular, discute la forma meditativa de la disciplina yóguica, (el sistema óctuple de yoga) usualmente equiparado con el término yoga. Al final de ese capítulo, hay dos versos que expresan claramente que de todos los yogas, el Bhakti yoga o disciplina de la devoción, es el mejor. 
+</p>
+<p class='vspace'>En su explicación a estos versos, nuestro ãcãrya predecesor, Bhaktivinoda Thãkura ha explicado el significado del término yoga y analizado las diferencias entre los diferentes tipos de práctica yóguica: “Un trabajador fruitivo (sakãma-karmi) no puede ser llamado yogui, pues este término solo es aplicable al obrero desinteresado:  el filósofo, el seguidor del sendero místico óctuple y el practicante del servicio devocional. La propia palabra yoga se refiere al sendero gradual de desarrollo espiritual. Toda persona que adopte el yoga, está en vías de una experiencia directa con el Espíritu Supremo.
+</p>
+<p class='vspace'>“El yoga de la acción desinteresada, es el primer paso en este sendero, y cuando el conocimiento y la renunciación se suman a este sendero, el aspirante avanza al nivel de jñãna-yoga. Cuando se añade la meditación directa en el Señor Supremo a las demás cualidades, luego se avanza a la etapa de practicante del sistema óctuple de yoga o astãnga yoga. La cuarta y última etapa es cuando se suma el sentimiento de amor por la Persona Suprema, a estas disciplinas.
+</p>
+<p class='vspace'>“El buscador del bien último se ocupará verdaderamente en la disciplina espiritual del yoga. A medida que se adoptan las prácticas de cada etapa sucesiva de desarrollo, le sucederán la necesidad de cultivar una vigorosa determinación y fe en dichas prácticas. Sin embargo, a medida que se progresa, finalmente se tendrá que descartar la estricta adhesión a las detalladas prácticas de ese nivel particular. Si se permanece apegado a una u otra de estas etapas sin continuar adelante, la persona se identifica con la práctica de yoga parcial a la cual se limitó. Como resultado, algunos son llamados karma-yoguis, otros son jñãna-yoguis y otros más astãnga-yoguis o bhakti-yoguis.
+</p>
+<p class='vspace'>“Krishna dice: ‘Por consiguiente, Oh Arjuna, todo aquel cuyo objetivo exclusivo sea ocuparse en la devoción solo a Mí, es superior a las otras tres clases de yoguis. Por lo tanto, debes volverte un yogui, esto es, un bhakti-yogui. A través del yoga de la acción falta de deseos, se avanza en el conocimiento; a través del yoga del conocimiento, se avanza al yoga de la meditación en el Señor Supremo y a partir de allí, finalmente se progresa al yoga de la devoción, caracterizado por el amor a la Persona Suprema’”. 
+</p>
+<p class='vspace'>En su comentario a estos versos, Visvanãtha Cakravarti escribe: karmi jñãni ca yogi matah/astãnga-yogi yogitarah/sravana-kirtanãdi-bhaktimãms tu yogitama ity arthah: “El karmi y el jñani son considerados yoguis. El astãnga-yogui, el seguidor del sistema óctuple de yoga de Patañjali, es considerado como un espiritualista superior a los dos antes mencionados. Pero el mejor de todos los yoguis, es aquel que practica actos devocionales como oír y cantar”.
+</p>
+<p class='vspace'>Así pues, el devoto no se interesa en las otras prácticas de yoga, que son parciales. El devoto no solo las considera incompletas sino incluso defectuosas debido a la presencia del deseo egocéntrico implícito en su práctica. El Señor hizo la siguiente declaración a Uddhava:
+</p>
+<div class='vspace'></div><pre> tasmãd mad-bhakti-yuktasya
+ yogino vai mad-ãtmanah
+ na jñãnam na ca vairãgyam
+ prãyah sreyo bhaved iha
+
+ yat karmabhir yat tapasã
+ jñãna-vairãgyatas ca yat
+ yogena dãna-dharmena
+ sreyobhir itarair api
+
+ sarvam mad-bhakti-yogena 
+ mad-bhakto labhate’ñjasã
+ svargãpavarge mad-dhãma
+ kathamcid yadi vãñchati
+
+ na kincid sãdhavo dhirã
+ bhaktã hy ekãntino mama
+ vãñchanty api mayã dattam
+ kaivalyam apunarbhavam
+</pre><p class='vspace'>“Para el yogui consagrado que Me ha entregado sus pensamientos, ni el conocimiento ni la renuncia se consideran como fuentes del bien verdadero en este mundo. Todos los resultados obtenidos a través de las prácticas rituales, la penitencia, la filosofía, la renunciación, la disciplina yóguica, la caridad o ejecución de los deberes prescritos, son fácilmente obtenidos por Mis devotos a través de la práctica del servicio devocional a Mí. Mis devotos santos, pacientes y de mente sencilla no desean nada de todo esto; de todos modos, Yo dispensaré toda recompensas sobre ellos, incluyendo aún la liberación y la libertad del renacimiento”. (Srimad Bhãgavatam 11.20.31-34)
+</p>
+<p class='vspace'>Por consiguiente, excepto el servicio devocional, las prácticas místicas son como los colgajos en el cuello de un chivo, no cumplen ninguna función digna. Por esa razón, la persona inteligente deja de lado la inútil tendencia a buscar el disfrute sensual y la liberación y cultiva la devoción pura mediante la práctica del Bhakti yoga.
+</p>
+<p class='vspace'><strong>EL PROCESO PERFECTO DE ADORACION</strong>
+</p>
+<p class='vspace'>La palabra samrãdhana hallada en el aforismo del Vedanta Sutra, antes citada, es también significativa. Proviene de la raíz verbal rãdh, que significa “adorar”. El prefijo sam significa “completo o perfecto”. También derivado de la misma raíz, es el nombre de la potencia interna de Krishna, Sri Rãdhã. Rãdhãrãni es la perfecta adoratriz de Krishna, como se indica en el verso del Bhãgavatam hablado por las gopis en la descripción del rãsa-lilã: 
+</p>
+<div class='vspace'></div><pre> anayãrãdhito nunam
+ bhagavãn harir isvarah
+ yan no vihãya govindah
+ prito yãm anayad rahah
+</pre><p class='vspace'>“Ciertamente, el Señor Supremo, el controlador supremo ha sido perfectamente adorado por Ella (Radha). Es por esa razón que Govinda  se complació tanto con Ella que la llevó a un lugar apartado, dejándonos a todas detrás”.
+(Srimad Bhãgavatam 10.30.28)
+</p>
+<p class='vspace'>Las enseñanzas de Caitanya Mahãprabhu pueden resumirse como sigue:
+</p>
+<p class='vspace'>ãrãdhyo bhagavãn vrajesa-tanayas tad-dhãma vrndãvanam
+ramyã kãcid upãsana vraja-vadhu-vargenã va kalpitã
+srimad-bhãgavatam pramãnam amalam premãm pumartho mahãn
+sri-caitanya-mahãprabhor matam idam tatrãdarah nah parah
+</p>
+<p class='vspace'>“El objeto de adoración (ãrãdhya) es el Señor en Su forma como el hijo del Rey de Vraja. Su morada es Vrndavana y las pastoras que viven allí con El, la principal de las cuales es Rãdhikã, son Sus adoradoras perfectas o sãmrãdhikas. El muy encantador método de adorar al Señor Supremo es el ideado por esas gopis. La fuente más autorizada de revelación divina es el Srimad Bhãgavatam. El amor por Krishna o prema es la quinta y última meta de la vida humana. Estos son los principios básicos de la creencia de Sri Caitanya Mahãprabhu y nosotros consideramos esta doctrina como suprema”.
+</p>
+<p class='vspace'>La conclusión es que la adoración de Krishna siguiendo a Srimati Rãdhãrãni es el proceso espiritual justificable llamado samrãdhanã, “el proceso más perfecto de adoración”. Toda actividad de adoración en la cual falte el elemento del prema no resultará en una visión directa de la Persona Suprema.
+</p>
+<p class='vspace'>En el Caitanya Caritãmrta se hallan las siguientes rimas:
+</p>
+<div class='vspace'></div><pre> jñãna-karma-yoga-dharme nahe krsna vasa
+ krsna-vasa-hetu eka prema-bhakti-rasa
+</pre><p class='vspace'>“Siguiendo los senderos del conocimiento filosófico especulativo, la actividad fruitiva o el yoga místico para controlar los sentidos, no se puede conquistar a Krishna. La única forma de ganar Su amor es a través del gusto de la devoción en amor extático”.
+(Caitanya Caritãmrta 1.17.75)
+</p>
+<div class='vspace'></div><pre> aiche sãstra kahe karma jñãna yoga tyaji
+ bhaktye krsna vasa haya bhaktye tãnre bhaji
+</pre><p class='vspace'>“Tales Escrituras expresan que se debe abandonar la actividad fruitiva, el conocimiento especulativo y el sistema de yoga místico. Krishna es conquistado por la devoción. Por consiguiente, yo Lo adoro con devoción”. 
+(Caitanya Caritãmrta 2.20.136)
+</p>
+<p class='vspace'>Sin devoción pura, el despertar del amor extático es imposible. La devoción pura o uttama bhakti como la describe Rupa Gosvãmi es el cultivo de conciencia de Krishna caracterizado por la ausencia de todo otro deseo ajeno a Krishna. Rupa Gosvãmi observa además que dicho cultivo no debe debilitarse con el aditamento mezclado de prácticas que son apropiadas para los senderos de la especulación filosófica y la acción fruitiva. Tras repetir esta misma descripción en el Caitanya Caritãmrta, Krishnadãsa Kavirãja continúa diciendo:
+</p>
+<div class='vspace'></div><pre> ei suddha-bhakti ihã haite premã haya
+ pañcarãtre-bhãgavate ei laksana kaya
+</pre><p class='vspace'>“Esta es la definición de servicio devocional puro a partir del cual se desarrolla el amor extático. Las características de dicho amor se describen en literaturas como el Bhãgavata y el Pañcarãtra”. 
+(Caitanya Caritãmrta 2.19.169)
+</p>
+<p class='vspace'>El Pañcarãtra define específicamente al servicio devocional como la ocupación de los sentidos en el servicio del Propietario de los Sentidos. Añade que este servicio ha de estar libre de toda contaminación de identidad con el cuerpo e inmaculado, estando exclusivamente fijo en el Señor. (Bhakti-rasãmrta-sindhu 1.1.2; Caitanya Caritãmrta 2.19.170):
+</p>
+<div class='vspace'></div><pre> sarvopãdhi-vinirmuktam
+ tat-paratvena nirmalam
+ hrsikena hrsikesa-
+ sevanam bhaktir ucyate
+</pre><p class='vspace'>Y en el Bhãgavatam, se brinda la siguiente descripción ampliada de Kapiladeva a su madre Devahuti:
+</p>
+<div class='vspace'></div><pre> mad-guna-sruti-mãtrena 
+ mayi sarva-guhãsaye
+ mano-gatir avicchinnã
+ yathã gangãmbhaso ‘mbudhau
+
+ laksanam bhakti-yogasya
+ nirgunasya hy udãhrtam
+ ahaituky avyavahitã
+ yã bhaktih purusottame
+</pre><p class='vspace'>“La señal primaria de que la unión devocional pura, libre de toda cualidad material, ha aparecido en el corazón de alguien se presenta cuando, al oír sobre Mis cualidades, los pensamientos de esa persona son irresistible e inmediatamente atraídos hacia Mí, el morador interno de cada ser, de la misma manera en que las aguas del Ganges fluyen hacia el mar. Como la corriente del Ganges, esa devoción por la Persona Suprema es inmotivada y sin impedimentos”. (Srimad Bhãgavatam 3.29.10-11)
+</p>
+<div class='vspace'></div><pre> sãlokya-sãrsti-sãmipya
+ sãrupyaikatvam apy uta
+ diyamãnam na grhnanti
+ vinã mat-sevanam janãh
+
+ sa eva bhakti-yogãkhya
+ ãtyantika udãhrtah
+ yenãtivrajya tri-gunam 
+ mad-bhãvãyopapadyate
+</pre><p class='vspace'>“A menos que se le asegure el servicio al Señor, el devoto puro no acepta ninguna clase de liberación, ya se trate de la residencia en el mismo planeta, iguales opulencias que el Señor, la cercanía de El, tener la misma forma que el Señor o la unión monista, aunque las mismas puedan ser ofrecidas al devoto por el Señor. “Así pues he descrito el nivel superlativo de lo que se conoce como Bhakti yoga. Dominando esta disciplina, se pueden superar las tres cualidades de la naturaleza material y alcanzar el verdadero sentimiento (bhãva) por Mí”. (Bhãgavatam 3.29.12-13)
+</p>
+<p class='vspace'>Las citas anteriores demuestran que las escuelas de pensamiento Bhãgavata y Pãñcarãtrika, en definitiva arriban a la misma conclusión.
+</p>
+<p class='vspace'>Todo aquel que se ocupe en la práctica del servicio devocional es gradualmente liberado de los malos hábitos (anarthas) que le dificultan el avance espiritual. A medida que las anarthas remiten, se vuelve fijo en sus prácticas devocionales y esta firmeza le permite ejecutarlas con pureza y profundo apego. El devoto luego continúa desarrollando un gusto real (ruci) el cual, al ser reforzado, progresa hacia la emoción divina y los éxtasis preliminares de la etapa de bhãva. A partir de allí no tarda en alcanzar el nivel de amor extático llamado prema. El progreso del devoto no se detiene sin embargo en este nivel de perfección. Hay numerosos niveles que se desarrollan dentro del amor extático, a saber, sneha, mãna, pranaya, rãga, anurãga, bhãva y mahãbhãva.
+</p>
+<p class='vspace'><strong>PRAYOJANA</strong>
+</p>
+<p class='vspace'>El cuarto capítulo del Vedanta Sutra es llamado “los resultados”. La primera sección o adhikarana de este capítulo se denomina ãvrtty-adhikarana o “repetición”. El sutra atento al cual se designa a esta sección es ãvrttir asakrd upadesãt: “Uno debe ocuparse en la práctica reiterada de oír y cantar o la meditación continua en el Supremo, pues esta instrucción ha sido brindada una y otra vez”. (Vedanta Sutra 4.1.1)
+</p>
+<p class='vspace'>Baladeva Vidyabhusana comprende que esta instrucción está contenida en las palabras repetidas nueve veces en el Chãndogya Upanisad: sa ya eso’nimaitad-ãtmyam idam sarvam tat satyam sa ãtmã tat tvam asi svetaketo: “Eso que es lo más pequeño de lo  pequeño de lo cual se crea todo lo que existe, oh Svetaketu, Es la verdad y es el Ser. Oh Svetaketu, tú eres eso”. El Ser en este caso significa el Brahman Supremo. Las palabras tat tvam asi también pueden comprenderse como “tú eres Suyo”.
+</p>
+<p class='vspace'>De tal modo, es bastante lógico que el énfasis en el sonido se halle nuevamente al final del Vedanta Sutra en su aforismo último: anãvrttih sabdãt anãvrttih sabdãt - La revelación nos dice que nunca regresamos. La revelación nos dice que nunca regresamos”. (Vedanta Sutra 4.4.22)
+</p>
+<p class='vspace'>El significado es que cuando uno conoce la verdadera identidad del Señor, uno llega a Su morada Goloka por la influencia del servicio devocional. Una vez así liberado, nunca regresa a este mundo del nacimiento y la muerte repetidos. La prueba de ello se encuentra en “sonido” o revelación (sabdha).
+</p>
+<p class='vspace'>Los pasajes relevantes que Baladeva cita de las Escrituras reveladas son:
+</p>
+<div class='vspace'></div><pre> etena pratipadyamãnã imam 
+ mãnavam ãvartam nãvartante
+</pre><p class='vspace'>“Aquellos que se han refugiado en el Brahman y se hallan en tal sentido liberados, nunca regresan a este mundo mortal del nacimiento y la muerte repetidos”.
+</p>
+<div class='vspace'></div><pre> sa khalv evam vartayan 
+ yãvad ãyusam brahma-lokam 
+ abhisampadyate na ca punar 
+ ãvartate na ca punar ãvartate
+</pre><p class='vspace'>“La persona liberada permanece como tal durante toda su vida y luego después de la muerte va a Brahmaloka, de donde nunca retorna, de donde nunca retorna”.
+(Chãndogya Upanisad 8.15.1)
+</p>
+<p class='vspace'>Krishna confirma esta declaración en el Gitã con dos importantes versos:
+</p>
+<div class='vspace'></div><pre> mãm upetya punar janma
+ duhkhãlayam asãsvatam
+ nãpnuvanti mahãtmãnah
+ samsiddhim paramãm gatãh
+
+ ãbrahma-bhuvanãl lokãh
+ punar ãvartino ‘rjuna 
+ mãm upetya tu kaunteya
+ punar janma na vidyate
+</pre><p class='vspace'>“Los grandes devotos que llegan al nivel de participar en Mis pasatiempos divinos, una vez habiendo llegado a Mí, nunca más aceptan un nacimiento transitorio, que es la habitación de la agonía. Oh Arjuna, desde el planeta del Señor Brahmã hacia abajo, los residentes de todos los planetas están naturalmente sujetos al nacimiento y la muerte repetidos. Pero, habiendo llegado a Mí, Oh Kaunteya, no hay renacimiento”. 	(Gitã 8.15-16)
+</p>
+<p class='vspace'>La repetición de la frase anãvrttih sabdãt es una indicación de que el Vedanta Sutra finaliza con estas palabras. 
+</p>
+<p class='vspace'>Por supuesto, para los devotos, el prema, que es bhakti en su forma más pura, es su propia recompensa. Los devotos están por consiguiente dispuestos a nacer en cualquiera de las especies inferiores en la medida que se les asegure algún servicio al Señor, que es el mayor bien en lo que a ellos respecta. Esta actitud es ejemplificada por el Señor Brahmã en sus plegarias a Gopãla Krishna:
+</p>
+<div class='vspace'></div><pre> tad astu me nãtha sa bhuri-bhãgo
+ bhave’tra vãnyatra tu vã tirascãm
+ yenãham eko’pi bhavaj-janãmãm
+ bhutvã niseve tava pãda-pallavam
+</pre><p class='vspace'>“Oh mi Señor, permíteme tener esa gran fortuna, ya sea en esta vida o en otra, aunque sea en el cuerpo de una criatura inferior, donde pueda vivir entre Tus devotos íntimos y servir a Tus pies de loto”. 
+(Srimad Bhãgavatam 10.14.30)
+</p>
+<p class='vspace'>Srila Bhaktivinoda Thãkura repite el mismo sentimiento en una de las canciones de su Gitãvali:
+</p>
+<div class='vspace'></div><pre> janmãobi moe icchã jadi tora
+ bhakta-grhe jani janma ha-u-mora
+ kita janma hau jathã tuwã dãsa
+ bahirmukha brahmã nãhi ãsa
+</pre><p class='vspace'>“Oh Señor, si es Tu deseo que vuelva a nacer, concédeme el nacimiento en la casa de un devoto. Incluso me convertiré con agrado en un gusano o un insecto en tanto pueda ser Tu sirviente, mas no tengo interés en volverme un Brahmã que no tenga interés en Tu servicio”.
+</p>
+<p class='vspace'><strong>¿QUE ES SADHANA BHAKTI?</strong>
+</p>
+<p class='vspace'>De esta forma, el bhakti es tanto el abhideya como el prayojana, tanto el medio hacia la perfección como la propia perfección. Se explica que hay tres niveles de bhakti: la devoción en la práctica (sãdhana-bhakti), la devoción en el nivel de éxtasis (bhãva-bhakti) y la devoción en el nivel del amor puro (prema-bhakti). El bhãva-bhakti se obtiene cuando el servicio devocional ha madurado con la práctica y cuando se intensifica se convierte en prema-bhakti.
+</p>
+<p class='vspace'>El servicio devocional en la práctica es definido por Rupa Gosvãmi en el Bhakti-rasãmrta-sindhu, como sigue:
+</p>
+<div class='vspace'></div><pre> krti-sãdhyã bhavet sãdhya-
+ bhãva sã sãdhanãbhidhã
+ nitya-siddhasya bhãvasya
+ prãktatyam hrdi sãdhyatã
+</pre><p class='vspace'>“Esa devoción que es ejecutada por los sentidos y que se aboca al logro del bhãva, es llamada sãdhana-bhakti. El bhãva que anhela, es eternamente perfecto y se manifiesta simplemente en el corazón del practicante”.
+(Bhakti-rasãmrta-sindhu 1.2.2)
+</p>
+<p class='vspace'>Aquí, Rupa Gosvãmi nos previene contra una mala interpretación del término sãdhana. A través de la ejecución de los principios regulativos de la devoción, uno no crea ni produce el bhãva-bhakti o sentimiento devocional. El sentimiento devocional o bhãva es una manifestación de la potencia interna de Krishna y de tal modo, es eternamente perfecto o nitya-siddha. La devoción es el humor natural eterno del ser viviente y mediante la práctica del servicio devocional, es revelada en el corazón del devoto. Así es como debemos entender el objeto de la práctica. Krishnadãsa Kavirãja Gosvãmi explica este verso como sigue:
+</p>
+<div class='vspace'></div><pre> sravanãdi-kriyã tãra svarupa-laksana
+ tatastha-laksane upajãya prema-dhana
+ nitya-siddha krsna-prema sãdhya kabhu naya
+ sravanãdi-suddha-citte karaye udaya
+</pre><p class='vspace'>“Las actividades de oír, cantar, recordar y demás, conforman la característica esencial (svarupa-laksana) del servicio devocional. Su característica marginal (tatastha-laksana) es que despierta el amor puro por Krishna. Nunca es posible crear amor puro por Krishna; antes bien, aparece en el corazón que ha sido purificado por las prácticas devocionales como oír y cantar”.
+(Caitanya Caritãmrta 2.22.103-4)
+</p>
+<p class='vspace'>En su Amrta-pravãha-bhãsya, Bhaktivinoda Thãkura elabora sobre estos versos como sigue: “La característica esencial del servicio devocional consiste en actividades como oír y cantar sobre Krishna con la actitud apropiada. Esta característica resulta en el tesoro del prema que se manifiesta cuando el practicante abandona todos los demás deseos y corta toda relación con las actividades fruitivas y la búsqueda de la liberación. El amor por Krishna es nitya-siddha (eternamente auto manifestado). No puede lograrse por ningún medio excepto el servicio devocional puro. Brota en la mente que ha sido purificada por el proceso del servicio devocional en la práctica. Por consiguiente, actividades tales como el canto puro y oír, son los elementos esenciales del servicio devocional en la práctica”.
+</p>
+<p class='vspace'><strong>VAIDHI BHAKTI</strong>
+</p>
+<p class='vspace'>El servicio devocional en la práctica es de dos tipos: vaidhi bhakti (“devoción basada en los principios regulativos”) y rãgãnugã-bhakti (“devoción atento al despertar del amor espontáneo”). Estos han sido explicados asimismo en el Caitanya Caritãmrta:
+</p>
+<div class='vspace'></div><pre> rãga-hina jana bhaje sãstrera ãjñãya
+ vaidhi bhakti bali tãre sarva-sãstre gãya
+</pre><p class='vspace'>“Aquel que no tiene apego espontáneo por el Señor, Lo adora porque lo ordenan las Escrituras. Todas las Escrituras llaman a ese servicio devocional vaidhi-bhakti”. (Caitanya Caritãmrta 2.22.106)
+</p>
+<p class='vspace'>La palabra rãga significa un deseo natural por el Alma Suprema, un apego o afecto natural. Si dicho afecto natural no ha surgido en el corazón, mas ha desarrollado fe en los mandatos Escriturales tras oír a las personas santas, puede realizar servicio devocional comenzando con aceptar a un guru. Dicho servicio devocional es denominado vaidhi bhakti. Hay sesenta y cuatro actividades diferentes y prohibiciones que conforman este tipo de devoción regulada. Las tres principales regulaciones son tomar refugio en un maestro espiritual, ser iniciado por él y servirlo. Entre las restantes sesenta y una actividades, cinco se consideran de suma importancia: asociarse con devotos, cantar los Santos Nombres, oír el Bhãgavatam, residir en Mathurã (el santo dhãma) y adorar a la Deidad con fe. Basta un pequeño esfuerzo en estas actividades para que el practicante desarrolle amor por Krishna. Las grandes autoridades o mahãjanas dicen que ya sea que se practique solo una de estas cinco actividades o todas ellas, a menos que se practique con constancia o nisthã, no se es lavado por las olas del prema. Nisthã fue definido por Jiva Gosvãmi como aviksepena sãtatyam, o estabilidad sin distracción. La idea es que uno debe estar fijo en una práctica particular con fe inquebrantable:
+</p>
+<div class='vspace'></div><pre> eka anga sãdhe keha sãdhe bahu anga
+ nisthã haile upajaya premera taranga
+</pre><p class='vspace'>“Ya sea que la persona ejecute solo uno o muchos de los procesos del servicio devocional, las olas del amor por Dios emergerán, si practica con firme determinación o nisthã”. (Caitanya Caritãmrta 2.22.130)
+</p>
+<p class='vspace'>En otra parte, Mahãprabhu dice que los nueve tipos de devoción enunciados por Prahlãda son los mejores entre las sesenta y cuatro prácticas devocionales. De estos nueve, los primeros tres (oír, cantar y recordar) se consideran superiores. De estos tres, el kirtana es el mejor. El kirtana en sí, se clasifica a su vez en varias categorías: glorificación de los nombres de Krishna, Su forma, Sus atributos y Sus actividades. De éstos, se concede el sitio de honor al canto de Sus nombres. Todo aquel que adopte el canto de los Santos Nombres con constancia, es seguro que obtendrá la misericordia del Nombre y pronto degustará el sabor del amor por Dios”.
+</p>
+<p class='vspace'><strong>RÃGÃNUGA BHAKTI</strong>
+</p>
+<p class='vspace'>Las grandes autoridades o mahãjanas dicen que la práctica de la devoción con pureza sobre la fuerza de los mandatos Escriturales conduce al aspecto majestuoso del Señor en la morada de Vaikuntha, no a ese aspecto del Señor que reside en Vraja. Para llegar a Vraja, uno debe adoptar la práctica del rãgãnugã bhakti. Esto se declara en el Caitanya Caritãmrta (1.3.15):
+</p>
+<div class='vspace'></div><pre> sakala jagate more kare vidhi-bhakti
+ vidhi-bhaktye vraja pãite nãhi sakti
+</pre><p class='vspace'>“Todos Me adoran en todo el mundo conforme a los mandatos Escriturales; mas por este proceso de vaidhi bhakti no se pueden obtener los humores amorosos de Vraja”.
+</p>
+<p class='vspace'>Los versos precedentes ciertamente nos informan que solo la adoración en el sendero de rãga puede resultar en obtener el servicio de Krishna en Vraja. Sin embargo, lo que debemos tratar de entender aquí es lo siguiente: si uno piensa fundado en ello que puede prescindir de los diversos principios regulativos del vidhi-mãrga sin antes adquirir la disposición para la manifestación del rãgãnugã bhakti, tal persona se convertirá en un religioso hipócrita, un pretencioso y un prãkrta-sahajiyã. Por esta razón, Bhaktivinoda Thãkura ha escrito en su canción Krsna-nãma dhare kata bal?:
+</p>
+<div class='vspace'></div><pre> vidhi-mãrga-rata jane svãdhinatã ratna dãne
+ rãga-mãrge karãn pravesa
+ rãga-vasavarti haiyã pãrakhya bhãvãsraye
+ labhe jiva krsna-premãvesa
+</pre><p class='vspace'>“A la persona fija en los principios regulativos, el Santo Nombre le concede la joya de la independencia, ubicándola en la senda de la devoción espontánea. Esa persona, superada por el apego espontáneo al Señor, se ampara en el humor parakiyã y continúa absorbiéndose en el amor por Krishna”.
+</p>
+<p class='vspace'>Quien se aboque a la meta última del amor puro por Krishna debe comenzar por tomar refugio en un maestro espiritual, de acuerdo a los mandatos de las Escrituras y siguiendo el vidhi-mãrga cantando continuamente los Santos Nombres del Señor, muy rápidamente obtendrá las calificaciones necesarias para la manifestación del afecto espontáneo. A medida que se van destruyendo los elementos indeseables de nuestro carácter (anarthas), despierta automáticamente el afecto espontáneo. Por otro lado, si uno no domina estos elementos indeseables, la discusión de temas para los cuales no está calificado, tendrá consecuencias desastrosas.
+</p>
+<p class='vspace'>Es prematuro pensar que en cuanto uno se ha refugiado en su maestro espiritual tiene el derecho de saborear libros tales como el Rãsa-pañcãdhyãya Bhagavata, Gopigitã, Uddhava-samvãda o Govinda-lilãmrta y el Krsna-bhãvanamrta, las canciones de Candidãsa y Vidyãpati; el Jagannãtha-vallabha-nãtaka, Krsna-karnãmrta, Gitã-govinda y otros libros de este tipo. La consecuencia inevitable de este ingreso precoz a las cuestiones de los pasatiempos conyugales de Krishna, son que uno cae en la actividad sexual ilícita.
+</p>
+<p class='vspace'><strong>LA FE ES LA SEMILLA DE LA ENREDADERA DEVOCIONAL</strong>
+</p>
+<p class='vspace'>La fe es la semilla de la enredadera devocional. La semilla de la enredadera del vaidhi-bhakti es la fe en los principios regulativos dados en la Escritura; la semilla de la enredadera del rãgãnugã-bhakti es la fe basada en el deseo intenso del amor espontáneo de los residentes de Vraja. Quien tenga fe, es apto para la práctica de la devoción (sraddhãvãn jana haya bhakti-adhikãri - Caitanya Caritãmrta 2.22.64). Si no se posee esta fe basada en un deseo intenso (lobha-mulã sraddhã), luego son inevitables varias caídas en la práctica del rãgãnugã-bhakti. Por otro lado, si se ha adquirido dicha fe, uno podrá escuchar constantemente los pasatiempos nectáreos de Vrajendranandana, como ser el rãsa-lilã y la suprema devoción que emerge de dicho apego, limpiará el corazón del mal del deseo material. Con la disolución del deseo mundano, surge una intensa urgencia por servir los sentidos de Madana-mohana, el Cupido trascendental que encanta al Cupido mundano con Su belleza. Es solo a esa altura del avance espiritual, que uno podrá ocuparse debidamente en las prácticas del rãgãnugã-bhakti, como ser oír, cantar y meditar en los asta-kãliya-lilãs. En tanto los deseos materiales estén presentes en el corazón, es muy posible que un esfuerzo concertado por ingresar a la cuestión esencial erótica como las descritas en el Gita-govinda de Jayadeva, tengan resultados inauspiciosos.
+</p>
+<p class='vspace'>Se debe ser cuidadoso en acatar la directiva del guru estrechamente; hay muchos peligros cuando se trata de seguir el vraja-bhãva por cuenta propia. Se debe seguir el proceso brindado por un guru fidedigno, ocuparse cuidadosamente en las actividades devocionales prescritas por él. A medida que el discípulo así lo hace, gradualmente limpiará su corazón de todos los elementos indeseables y luego, con buena fortuna, progresará a través de las etapas descritas por Rupa Gosvãmi, nisthã, ruci, ãsakti, luego bhãva y prema. Se debe prestar una especial atención a no caer en la peligrosa trampa de considerarse un devoto avanzado. Puesto que Mahãprabhu nos ha asegurado que el nama-bhajana es la mejor de todas las prácticas devocionales y el origen de toda perfección, debemos tener la certeza que el nãma-bhajana es lo apropiado para cualquier nivel de la vida devocional, el de principiante, practicante o alma perfecta”.
+</p>
+<div class='vspace'></div><pre> sadã nãma laibe yathã-lãbhete santosa
+ ei tã ãcãra kare bhakti-dharma-posa
+</pre><p class='vspace'>“Siempre se debe cantar el Santo Nombre y estar satisfecho con lo que sea que le toque a uno en suerte. Esa conducta es propicia para el desarrollo de la devoción”.
+(Caitanya Caritãmrta 1.17.30)
+</p>
+<p class='vspace'>Puesto que el canto del Santo Nombre es la única práctica y puesto que solo el Santo Nombre es el único objeto de práctica, uno debe esforzarse con gran determinación por tomar refugio en el Santo Nombre, en todo momento y circunstancia. Si podemos hacerlo, el Santo Nombre dispensará Su misericordia sobre nosotros y destruirá todas las anarthas en nuestros corazones, causando que se manifieste todo lo auspicioso. Cuando brota un sentimiento purificado por el nombre de Krishna, luego brota asimismo la misma clase de amor purificado por lo Nombrado. A esta altura se hacen posibles los sentimientos purificados de rãga.
+</p>
+<div class='vspace'></div><pre> isat vikasi punah dekhãya nija-rupa-guna
+ citta hari laya krsna pãsa
+ purna vikasita haña vraje more jãya lañã
+ dekhãya nija svarupa vilãsa
+</pre><p class='vspace'>“Cuando el Nombre se revela aún levemente, me muestra mi propia forma espiritual y características. Roba mi mente y la lleva al lado de Krishna. Cuando el Nombre se revela completamente, me lleva directamente a Vraja, donde me muestra mi rol personal en los pasatiempos eternos”.
+</p>
+<p class='vspace'>La conclusión luego es que la adoración del Santo Nombre es el mejor medio para desarrollar nuestra actitud devocional y en tal sentido el medio a través del cual se revela nuestro temperamento individual en Vraja. Adoptar el canto del Santo Nombre es de tal modo, embarcarse en el camino a la perfección de la adoración.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_01.html'>Introducción</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_03.html'>La Fuerza Purificadora del Servicio</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:20 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

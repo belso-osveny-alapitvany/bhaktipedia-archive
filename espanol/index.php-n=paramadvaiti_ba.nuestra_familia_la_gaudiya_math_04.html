@@ -1,0 +1,351 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - I Parte</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - I Parte"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramadvaiti Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a>
+</p>
+<div class='vspace'></div><h2>I Parte</h2>
+<div class='content-box' > 
+<p><a name='content' id='content'></a>
+</p><ul><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#a'>El Movimiento de Sri Caitanya Mahaprabhu</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#b'>Nuestro Sampradaya</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#c'>Visva Vaisnava Raj Sabha (WVA)</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#d'>Los comienzos de la Gaudiya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#e'>Historia del cuerpo gobernante de la Gaudiya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#f'>Sri Caitanya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#g'>La misión Gaudiya</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#h'>Plan de Krishna</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html#i'>Nuevas ramas</a>
+</li></ul><p><a name='content-end' id='content-end'></a>
+</p></div>
+<p class='vspace'><a name='a' id='a'></a>
+</p><h3>El Movimiento de Sri Caitanya Mahaprabhu</h3>
+<p>La filosofía e historia del movimiento del Señor Caitanya Mahaprabhu ha sido comprimida en muchos volúmenes. Hay biografías de Él escritas por Krishna das Kaviraj Goswami, Vrindavan das Thakur y Lochan das Thakur. En todas partes, la historia del sampradaya llevada a libros sobre su vida y enseñanzas, han sido escritas y publicadas en numerosos lenguajes.
+</p>
+<p class='vspace'>Aquí nos gustaría exponer un asunto interesante: Cómo el Señor Caitanya Mahaprabhu estableció la Unión en la Diversidad en nuestro sampradaya. Cómo, por ejemplo envió a varios Vaisnavas a establecer sucursales de Su familia dentro de distintas localidades. Estos Vaisnavas, en varios de sus modos trajeron una gama de seguidores al Señor Caitanya Mahaprabhu. Entre ellos están:Sri Nityananda Prabhu, Jahnavi devi, Sri Advaita Prabhu, Svarup Damodar, Ray Rmamanda, así también Gadadhara Pandit en Navadvip; Vakreshvar Pandit y Prabhudananda Sarasvati en el sur de India y en Vrindavan; los seis Goswamis en Vrindavan; Syamamanda Pandit en Orissa; Narottam das Thakur en Manipur y otros lugares; Srinivas Acharya en Bihar y otras áreas. Todos éstos asociados del Señor han tenido relación con la Visva Vaisnava Raj Sabha de Srila Sanatana Goswami, Srila Rupa Goswami y Srila Jiva Goswami, y hoy nosotros los adoramos a todos ellos, incluso si no mantenemos mucha conexión con sus  respectivas líneas.
+</p>
+<p class='vspace'>Tolerancia y respeto por todos los Vaisnavas y sus diferentes modalidades, fue la naturaleza de las enseñanzas de Sri Caitanya. Mientras que algunos de los asociados del Señor Caitanya son seguidores de Srimati Radhika, otros de Sakhya-bhava y otros tienen el bhava de amor por Sri Rama. 
+</p>
+<p class='vspace'>Debido al desarrollo de prakrita-sahajiyism en diferentes maneras, se ha vuelto difícil distinguir la calidad de cada grupo. Las escrituras, sin embargo, nos dan las pautas para entender al adhikara y la integridad de un Vaisnava. De hecho, Srila Bhaktivinode Thakur fue un gran salvador de la dignidad que un Vaisnava contribuye al mundo. Hoy en día, el Vaisnavismo es una fuerza mayor del entusiasmo religioso, propagada en todo el mundo gracias a las diferentes misiones y a todos los predicadores Vaisnavas quienes se adhieren a los principios del sanatan-dharma. Como devotos de la Suprema Personalidad de Dios, amamos la contribución del teísmo al mundo y no tenemos relación con lo sectario. Srila Prabhupad Bhakti Siddhanta Sarasvati Thakur dijo: “ Nosotros aceptamos en nuestra línea a todas las almas perfectas quienes saben cual es el correcto siddhanta, y quien es rasika quienquiera que ellos sean”. De esta forma todas las líneas estuvieron representadas por nuestro parampara en un lugar u otro.
+</p>
+<p class='vspace'>Existen varias líneas de la sucesión discipular, pero Srila Prabhupad Bhakti Siddhanta Sarasvati Thakur dijo que nosotros reconoceremos al guru-parampara, no a la sucesión discipular. El guru-parampara está conformado por aquellos quienes fueron bhagavat-gurus, incluso si no tuvieron discípulos y por ello no hay una línea discipular proveniente de ellos. Algunos de ellos no iniciaron discípulos, pero aun así son jagat-gurus. De esta forma, con su visión él reunió a los mahajanas e hizo lo que es conocido como bhagavat-parampara o guru-parampara.
+</p>
+<p class='vspace'>Después de la partida de Visvanath Cakravarti Thakur surgieron muchas familias discipulares, pero Srila Prabhupad Siddhanta Sarasvati Thakur las ignoró y reconoció a Baladev Vidyabhusana, y luego a Jagannath das Babaji. Él aceptó tan sólo a aquellos en quienes vió el espíritu real del siddhanta. Recibir  el mantra en el oído y vestir un dhoti u otra ropa dada por el guru no califica a nadie como un sucesor del guru.  Srila Bhaktivinode Thakur no recibió el mantra de Jagannath das babaji Maharaj, entonces ¿ como él es un discípulo?. Él fue un discípulo desde su concepción: sus sentimientos hacia Krsna, su idea del rasa y su concepción del tattva. Este es un discípulo. La mayoría de la gente no entiende esto, pero estando capaz de ver con aquella visión Srila Prabhupad Bhakti Siddhanta Sarasvati Thakur declaró que pertenece a nuestra línea. Srila Gaur Kishor das Babaji Maharaj tampoco fue un discípulo iniciado de Srila Bhaktivinde Thakur, pero él abarcó todos los sentimientos y revelaciones de Srila Bhaktivinode Thakur, y por esto su nombre aparece en la siguiente sucesión. A este punto algunos de los babajis dijeron: “¿ Que discípulo es Srila Bhaktisiddhanta Sarasvati?, ¿ Quien le dió sanyass?, ¿Porque no viste la misma ropa que Sanatan Goswami? En nuestro sampradaya con excepción de Sriman Mahaprabhu quien tomó sanyass de Keshava Bharati, todos deben vestir ropa blanca, pero vemos que el viste color azafrán  y aceptó una danda.¿Como puede hacer esto?”. ¿Pero qué relación tiene vestir ropa de color blanca o azafrán si hay Bhakti? ¿Hay alguna relación?
+</p>
+<div class='vspace'></div><div class='verse-center' > 
+<p>Kiba vipra, kiba nyasi, sudra kene naya<br />Yei Krsna-tattva-vetta, seguí ´guru´haya
+</p></div>
+<p class='vspace'>“Puede que sea un brahmana, un sanyassi, o un sudra, pero si conoce Krishna-tattva, entonces es un guru” (CC, Madhya lila 8.128), entonces que hablar de ser un vaisnava?. Srila Prabhupad Bhakti Siddhanta Sarasvati Thakur estuvo pensando “ No estamos calificados para aceptar la ropa que fue vestida por grandes personalidades como Rupa, Sanatana, Jiva y Krishnadas Kaviraj. Permaneceremos con la ropa común de un sannyasi, y no aceptaremos la ropa de un paramahamsa- babaji. Permaneciendo con el sistema de varnasram como brahmacaris y sanyassis. Manteniendo el ideal de que un paramahamsa viste sobre nuestras cabezas. Por otro lado, si aceptamos la ropa y cometemos actividades pecaminosas, estas serán ofensas a los pies de Rupa y Sanatana”
+</p>
+<p class='vspace'>Algunos babajis visten indumentarias de un paramahamsa y dan el elevado gopi mantra a cualquiera que venga, aun Srila Prabhupada Bhakti Siddhanta Sarasvati Thakur instruyó solamente a brahmacaris y les dió instrucciones de cómo controlar los sentidos. ¿Entonces que es correcto? 
+</p>
+<p class='vspace'>Primero Srila Prabhupad Bhakti Sarasvati Thakur quiso que entendiéramos qué es el Siddhanta: Jiva-tattva, maya tattva, bhagavat-tattva, como evadir a maya en sus forma de kanaka, kamini y pratishta éstas son las primeras instrucciones.
+</p>
+<p class='vspace'>Gopi- bhava es muy elevado; primero debemos entender que “ soy Krishna das” y comenzar aceptando el Harinama. Pero algunos babajis, inmediatamente dan sus ideas sobre lo que es gopi-bhava; y van cantando “Soy una gopi, soy una gopi”, y de esta forma crean confusiones en la sociedad.
+</p>
+<p class='vspace'><a name='b' id='b'></a>
+</p><h3>Nuestro Sampradaya</h3>
+<p>El sampradaya, fue entregado por nuestro maestro espiritual, retrocediendo hasta Sri Krsna. Ha existido una gran cantidad de maestros espirituales a través de la historia que han representado al Señor Supremo en el mundo. De esta forma, ellos han dado forma a la evolución de la escuela Vaisnava. Srila Madhvacharya le dió una gloria especial a la escuela conocida como Brahma Sampradaya, y la aparición de Srila Madhavendra Puri aumentó sus enseñanzas. Luego, el Brahma Madhva sampradaya fue bendecido sin límite alguno por la aparición de Sri Caitanya Mahaprabhu. Él aceptó  el sampradaya y fue iniciado por el discípulo de Srila Madhavendra Puri, Srila Isvara Puri. A través de él la escuela trascendental es conocida como Brahma Madhva Gaudiya Sampradaya. 
+</p>
+<p class='vspace'>Sri Caitanya Mahaprabhu es el mismo Señor Supremo. Él apareció para salvar a las almas caídas en esta era de Kali con Su movimiento de Sankirtan, el canto congregacional de los Nombres Sagrados del Señor. Otro gran regalo de Sri Caitanya Mahaprabhu fue el re-descubrimiento de Sri Vrindavan Dham. Él predijo que la Gaudiya sampradaya alcanzaría cada esquina del mundo. Sus principales discípulos, los seis Goswamis de Vrindavan, nos bendijeron con una inundación de escritos los cuales instruyen a los Vaisnavas en esta presente era. Cada maestro espiritual de esta línea, así también cómo sus actividades, merecen ser estudiadas. Aun, la historia detallada de nuestro sampradaya resta de limitada  información disponible. En orden, para entender la formación de las diferentes ramas de nuestro sampradaya, hemos dado detalles aquí. Debido a la amplia prédica para el mundo entregada por Srila A. C. Bhaktivedanta Swami Maharaj, hay ahora una gran demanda por la asociación de los Vaisnavas. Todo esto ayuda a formar las diferentes ramas de sampradaya, las cuales rodean al mundo en una marea de misiones Vaisnavas.
+</p>
+<p class='vspace'>Es significativo que la importancia de los maestros espirituales sean la línea de la vida en la propagación del sampradaya, sin opacar la importancia suprema del Señor o de la Gaudiya Vedanta Siddhanta. Así, a través de los años varios maestros han venido y se han ido, pero Sri Krsna, su amada Srimati Radharani y su encarnación combinada Sri Caitanya Mahaprabhu, son deidades universalmente adoradas por muchos Vaisnavas. 
+</p>
+<p class='vspace'>Tomando en consideración la historia del sampradaya, vemos ahora cómo a los maestros espirituales  no les he dada la misma importancia, cómo sus diferentes discípulos deberían darles a sus gurus. Sin embargo, la importancia le es dada a sus enseñanzas y contribuciones al mundo. Sus explicaciones del Vedanta, sus contribuciones literarias, las deidades que instalaron, los lugares de peregrinaje que establecieron, la contribución a la expansión del árbol Caitanya y sus relaciones con otros Vaisnavas, son todas consideradas al reflexionar la importancia de los aportes de alguien a la escuela Vaisnava 
+</p>
+<p class='vspace'>Por lo tanto, se dice que los Acaryas brillan por sí solos. Ellos brillan en la luz del servicio para todos. Incluso aquellos Acaryas que no se destacan en la historia, tienen la misma importancia para sus discípulos como los Acaryas que si lo han hecho. Con excepción si la persona es un impostor, o alguien que no se preocupa por la verdadera vida Vaisnava, Sri  Caitanya Mahaprabhu confirmó esto en el Caitanya Caritamrita (CC Madhya-lila 7.128-129) que El personalmente protegería a cualquiera que enseñe la ciencia de Krsna, tal como está enseñada en el Bhagavad gita y en el Srimad Bhagavatam:
+</p>
+<p class='vspace'>“...Instruye a todos para que sigan las ordenes de Sri Krsna como están escritas  en el Bhagavad- Gita y en el Srimad Bhagavatam. De esta forma vuélvete un maestro espiritual y trata de liberar a todos en esta tierra”  Sri Caitanya llegó mas allá para aconsejarnos del Brahmana Kurma: “ Si tu sigues esta instrucción, tu vida material no obstruirá tu avance espiritual. Es verdad, si tu sigues estos principios regulativos, nos encontraremos de nuevo aquí, o mas bien, nunca perderás Mi compañía” (CC Madhya-lila 7.128-129).
+</p>
+<p class='vspace'><a name='c' id='c'></a>
+</p><h3>Visva Vaisnava Raj Sabha (WVA)</h3>
+<p>Sri Caitanya es la personalidad más amorosa, humilde, misericordiosa y futurista del caminodivino , manifestándose en este mundo para todos los Vaisnavas. Sería maravilloso si Su plan  de inundación para todo el mundo, con los Nombres Sagrados fuese llevado a cabo por la Visva Vaisnava Raj Sabha o la Asociación Mundial Vaisnava, que fue creada por ningún otro más que por nuestro querido Srila Rupa Goswami Prabhupad y promovida por su querido Srila Jiva Goswami Prabhupad.
+</p>
+<p class='vspace'>Desde su creación, la Visva Vaisnava Raj Sabha  se ha remanifestado varias veces, la última vez fue bajo la guía de Srila Bhaktisiddhanta Sarasvati Thakur Prabhupad. Es natural que el discípulo viviente más elevado, Srila Bhakti Promode Puri Maharaj continúe con esta importante misión.
+</p>
+<p class='vspace'>El hecho de que Srila A. C. Bhaktivedanta Swami Maharaj haya hecho realidad la predicción del Señor Caitanya- los nombres de Krishna serían cantados alrededor del mundo- revela el verdadero significado de la Asociación Mundial Vaisnava, y la necesidad de esta asociación en la presente era. Más bien, la Visva Vaisnava Raj Sabha o la Asociación mundial Vaisnava (WVA-VVRS) es el plan de nuestros Acaryas y de todos los discípulos de Srila Bhaktisiddhanta Sarasvati Thakur que han aceptado el renacimiento del original Sabha establecido durante el advenimiento de Mahaprabhu. Todo aspirante Vaisnava de la línea de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur, que trate de servir a sus respectivos gurus, es automáticamente miembro de WVA-VVRS;  aún si lo sabe y lo acepta o no. Los que están activamente envueltos en el re-establecimiento de WVA-VVRS son mencionados aquí en varias formas. Algunos miembros, pertenecen al grupo fundador de WVA-VVRS (la WVA-VVRS ha establecido que cualquier sanyass o Acharya que se una a la WVA-VVRS, será considerado de igual forma como un miembro fundador.) Mientras, que algunas misiones aún no son del todo aprobadas por WVA-VVRS. Sin embargo, muchos de sus miembros están envueltos con WVA-VVRS de manera individual.
+</p>
+<p class='vspace'>Ya que este libro fue dirigido para toda la familia Gaudiya Math, y ya que su fundador Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur también es conocido como Srila Prabhupad, hemos decidido por amor a la claridad y a la etiqueta, nombrar a todos los Vaisnavas por sus nombres de iniciación o sanyass. Vaisnavas de otros Vaisnavas sampradayas u otras ramas de la tradición Caitanya pueden ser miembros de WVA-VVRS, tanto como ellos perciban que el Señor Supremo, Sri Caitanya Mahaprabhu escogió a Srila Prabhupada Bhaktisiddhanta Sarasvati Thakur  como un agente especial para llevar a cabo Sus predicciones.
+</p>
+<p class='vspace'>Es nuestra humilde opinión que la misión teísta Vaisnava –  significativa para todo el mundo- ha sido extraordinariamente mantenida y distribuida a través de la Gaudiya Math rama de nuestro sampradaya. Es notable, como ha sido mostrado en este libro que Sri Krishna ha utilizado a la Gaudiya Math, en su plan para distribuir las enseñanzas Vaisnavas al mundo. Nosotros decimos esto, con todo respeto a las contribuciones de los cuatro sampradayas y sus antiguas tradiciones, o a cualquier otro seguidor de Caitanya Mahaprabhu que haya mantenido puro el espíritu de Mahaprabhu. De hecho, uno de los proyectos de la Visva Vaisnava Raj Sabha es la búsqueda del árbol Caitanya y nuestra asociación con los otros Vaisnavas de los antiguos sampradayas del Sur de India, quiénes fueron bendecidos por la visita personal de Sri  Caitanya Mahaprabhu.  
+</p>
+<p class='vspace'>La WVA-VVRS está trabajando en la unión de la Gaudiya Math y de todas las ramas que se han extendido y desarrollado; para inspirar a los devotos a tomar responsabilidades de la prédica; y para acercar a todo el mundo Vaisnava abarcando la contribución de Sri Caitanya Mahaprabhu. Los esfuerzos particulares se manifestarán a medida que se avance en los  Melas WVA-VVRS sostenidos en Srivas Angan, Mayapur y en Radha Govindaji, Vrindavan cómo también es en nuestra presentación en Internet. Acaryas y misiones que deseen relacionarse mas, con los planes de WVA-VVRS están invitados dos veces al año a la reunión organizadora de la WVA-VVRS, para crear propuestas a todos los miembros. Éstas reuniones son realizadas antes que el día  de la reunión internacional ocurra. Gradualmente, éstas reuniones producirán una evolución efectiva en la WVA-VVRS como un foro en común, para coordinar cualquier plan futuro  que beneficiará al mundo con el aporte Vaisnava.
+</p>
+<p class='vspace'>La causa en común de todos los Vaisnavas, especialmente de aquellos interesados en predicar, es utilizada por tales esfuerzos que la WVA-VVRS considera un “comercio trascendental”, que informa a cada uno del  trabajo hecho por cada misión Vaisnava. Facilitando el compartir de la prédica con otra misiones. También crea un ambiente que es atractivo para otros sampradayas, que de una manera u otra hayan permanecido aislados en sus propios grupos. Cuando ellos vean cómo el Señor Caitanya ha inspirado al mundo con las amplias ramas de su sampradaya, para crear una atmósfera en la cual se propague el yuga drama en este mundo, ellos contribuirán a la causa con su sanga. Y con esto, el mundo aprenderá  a ver al Vaisnavismo como una religión verdadera, lejos de cualquier corriente religiosa y personas seculares que lo hayan categorizado de ser una secta extraña.
+</p>
+<p class='vspace'>La historia Vaisnava, en ningún punto reclama que una escuela Vaisnava en particular tenga los derechos exclusivos para representar la tradición Vaisnava. La Unión en la Diversidad se manifiesta a través de diferentes discípulos del guru, quienes comienzan nuevas ramas del mismo árbol, siendo esto lo que ha permitido que la tradición Vaisnava permanezca hasta hoy .  Existen ramas que se han dado a conocer en todo el mundo, algunas veces con un pequeño o cero contacto con las otras ramas de la misma tradición. No es menor mencionar, que a lo largo de los años esto ha causado ciertas variedades de estilos y prácticas a desarrollar. A través de los estándares establecidos en las escrituras Védicas y los escritos de seguidores de Sri Caitanya, puede ser fácil reconocer quiénes son verdaderos seguidores de estas grandes enseñanzas. La transmisión transparente del estándar trascendental, podrá ser encontrada en una misión Vaisnava ( representada por sus respectivos lideres espirituales) dependiendo solamente de la divina gracia del Señor. 
+</p>
+<p class='vspace'>Samasthi guru es el principio divino de la sucesión discipular; vyasti guru son los representantes individuales de aquel principio. Tal como las diferentes salidas eléctricas son diferentes en lugar y forma, aun así mantienen su validez debido a que provienen de la misma casa eléctrica. Entonces el principio divino del guru-tattva, se manifiesta a través de la divina revelación con vyasti-guru. 
+</p>
+<p class='vspace'>La WVA-VVRS reconoce solamente a aquellas escuelas que enseñan los valores Vaisnavas tradicionales y que no están promocionando ninguna línea o rama a expensa de otra. Todavía no es la aspiración de la WVA-VVRS juzgar a otras naturalezas genuinas y auténticas en este marco. Sólo en casos extremos podría una comisión estudiar la elegibilidad de un grupo en particular para participar en la WVA-VVRS, de acuerdo con los principios de la tradición Vaisnava. 
+</p>
+<p class='vspace'>En suma a esto, la WVA-VVRS no es responsable si alguien reclamando ser un Vaisnava afiliado a la WVA-VVRS o no, comete cualquier maldad al mundo. Tales cosas son inevitables, y la WVA-VVRS no tiene un rol activo o una posibilidad para “arreglar”  a alguien. En caso, de un daño muy severo a la imagen de los Vaisnavas , la misma comisión que estudia los casos extremos de elegibilidad decidirá si algunos miembros o la misión es removida de la lista de miembros de la WVA-VRS.
+</p>
+<p class='vspace'>Es nuestro honor y sagrado deseo estar capaces para abarcar todas las verdades teístas en amor del pliegue de la WVA-VVRS y en Unión y Diversidad Vaisnava.
+</p>
+<p class='vspace'>La WVA-VVRS abre sus puertas a todos los Vaisnavas para dejar de lado todas las dudas superficiales con otros grupos Vaisnavas, perdonando cualquier error hecho por otros en el pasado, y unirse al Kirtan de Sri Caitanya Mahaprabhu tal como fue planeado por nuestros Acaryas. Maya divide- Krishna une. La WVA-VVRS es la fuerza unidora de Krsna; unir en espíritu  la causa en común de todos los Vaisnavas, no es una amenaza para las responsabilidades individuales de cada misión. Sería muy efectivo, sí  podemos poner a un lado todas pequeñas discusiones en cuanto a tradiciones y rituales distintos, y enfocarnos a nuestro real servicio: salvar al mundo de la indiferencia impersonal y la apatía hacia el servicio a un Dios personal.  
+</p>
+<p class='vspace'>Este libro sirve para demostrar cómo Krsna bendice a los verdaderos devotos con la protección que Él ha prometido, y cómo la pureza de Su sampradaya es mantenida. En cuanto a la explotación de la naturaleza y el desenfrenado materialismo, todos los Vaisnavas comparten los mismos objetivos y deberían mantener fuertemente la unidad con el plan de enfrentar el horror de la influencia de esta era. De esta forma,  la Visva Vaisnava Raj Sabha se convertirá en el foro para servir los planes de nuestro único Señor Supremo. Sería lógico y natural si los seguidores, después de entender el propósito de la WVA-VVRS se incluyen a ellos mismos en este esfuerzo en conjunto.
+</p>
+<p class='vspace'><a name='d' id='d'></a>
+</p><h3>Los comienzos de la Gaudiya Math</h3>
+<p>Srila Bhaktivinode Thakur tomó iniciación en la Gaudiya sampradaya de Vipin Bihari Goswami. Srila Bhaktivinode Thakur fue el primer Vaisnava Acharya en promover la prédica en el mundo occidental, y él también creó el nama-hatta, programa  que como significado tiene el distribuir libremente los Nombres Sagrados. Durante su vida muchos Vaisnavas se destacaron. Entre ellos estaba la fuerza inspiradora de Srila Jagannath das Babaji, que con su ayuda se pudo re-descubrir el lugar de nacimiento de Sri Caitanya Mahaprabhu. Luego surgió su conexión con Srila Gaur Kishor das Babaji Maharaj, quien aun considerándose un discípulo de Srila Bhaktivinode Thakur, fue abordado por Thakur por la vestimenta y mantra de un renunciante. Thakur envió a su hijo Srila Bhaktisiddhanta Sarasvati Thakur, a tomar refugio en Srila Gaur Kishor das Babaji Maharaj. Después de la inicial negativa de parte de Babaji Maharaj, él fue finalmente aceptado como su discípulo y fue entrenado por ambos padre y guru, para acrecentar al mundo con el gran movimiento de Sankirtan. De esta forma, la base ya estaba situada para comenzar una misión, la cual podría cambiar el punto de vista del mundo hacia los Vaisnavas y el Vaisnavismo. Esta misión se volvería mundialmente famosa, conocida como la Gaudiya Math.
+</p>
+<p class='vspace'>Srila Prabhupada Bhaktisiddhanta Sarasvati Thakur comenzó la Gaudiya Math junto a Kuñja Babu y otros íntimos asociados. Justo después de que la Gaudiya Math fuese legalmente establecida, Srila Prabhupada y sus devotos, escaparon de la muerte por unos segundos. Así como ellos salieran de un edificio, un balcón que estaba situado en la parte superior perdió el soporte y cayó solo pulgadas de distancia de los devotos y Srila Prabhupada. Finalizado esto, Srila Prabhupada predijo sin miedo la magnánima actividad de la nueva misión, anunciando: “La Gaudiya Math será conocida por salvar a la gente los peligros inminentes”.
+</p>
+<p class='vspace'>El espíritu de su padre y guru hicieron de Srila Prabhupada Bhaktisiddhanta Sarasvati Thakur un predicador muy determinado que se haría conocido como el “guru león”. Sus discípulos trabajaron duro para ayudar a su guru, la adoración de la deidad comenzó a prosperar en varios centros. A través del esfuerzo de muchos discípulos excepcionales del fundador, el programa original del Nama Hatta, comenzó a cambiar establecimientos en verdaderos ashramas. Desde el más simple hombre o mujer, reyes y gente famosa, todos recibieron la gracia de la ecuanimidad de la Gaudiya Math. En el comienzo, la misión fue una revelación al mundo Vaisnava y estaba llena de contribuciones innovadoras al espíritu de la prédica.
+</p>
+<p class='vspace'>La introducción del tridandi sanyass en la Gaudiya Sampradaya fue una gran sorpresa para muchos. La combinación del Dios personal y su infinita inconcebible potencia, fue también una gran novedad al mundo donde el impersonalismo y el politeísmo se habían vuelto sinónimos de Hinduismo. Al mismo tiempo, una de las grandes fuerzas de la Gaudiya Math fue el enviar miembros fuera de India, dentro de todo el mundo y el occidente fue una de las destinaciones que mas entusiasmaban a los misioneros de la Gaudiya Math.
+</p>
+<p class='vspace'>El 20 de Julio de 1933 la Gaudiya Math fue presentada oficialmente al Rey y la Reina de Inglaterra. No mucho tiempo después, el primer centro de prédica europeo fue establecido en Londres (London Glouster House, Cornwall Garden, W7 South Kensington) bajo el nombre de “Sociedad Gaudiya Math de Londres”. Señor Zetland, el secretario inglés del estado, fue el presidente de esta sociedad. El segundo centro de prédica en Europa, fue inaugurado por Srila P.H. Bon Maharaj en Berlín (W30 Eisenacherstr 29). Después, el 8 de Octubre de 1935, algunos de los primeros aspirantes recibieron una recepción oficial en Howrah Station en Calcuta bajo la presidencia del Maharaj de Burdwan, Sri Bijoy Chand Mahatab.
+</p>
+<p class='vspace'>La Gaudiya Math reveló el verdadero tesoro del Siddhanta, el Srimad Bhagavatam, para hacer madurar el fruto del conocimiento Védico. Esto le presenta al mundo una visión completa de devoción hacia el Señor Supremo. El Señor puede hacer su aparición de muchas maneras como avataras, sin perder Su posición original. Como el Cristianismo, aunque mucho más antiguo, la tradición Védica (representado por la Gaudiya Math) enseña cómo volverse un querido sirviente de Dios en el mundo eterno. Ellos llaman a esta región como Goloka Vrindavan que reposa más allá de nuestros sentidos mundanos.
+</p>
+<p class='vspace'>El simple estilo de vida que es promovido por la Gaudiya Math también trae luz al mundo, el cual se acerca a su autodestrucción debido a la avaricia por las sofisticaciones materiales y la falta de una autorrealización y compromiso espiritual.
+</p>
+<p class='vspace'>El viaje de Sri Caitanya Mahaprabhu a diferentes partes de la India fue la primera introducción para el mundo de la unidad Vaisnava. Srila Bhaktivinode Thakur predijo que todos los Vaisnavas Sampradayas se unirían en esta presente era bajo la inspiración de la contribución de Sri Caitanya Mahaprabhu. Cumpliendo esta predicción, la Gaudiya Math comenzó estableciendo tirthas alrededor de toda la India en memoria de los viajes sagrados de Sri Caitanya Mahaprabhu; las impresiones de los pies de Sri Caitanya Mahaprabhu fueron instaladas en diecisietes lugares. El trabajo del acarya fundador de la Gaudiya Math está también reflejado en el deseo de glorificar a todos los Acaryas de las Vaisnavas sampradayas. Instaló deidades en las oficinas principales de Sri Mayapur, publicó sus escrituras, y estableció algunos templos de la Gaudiya Math en el Sur de India.
+</p>
+<p class='vspace'>Bajo la bandera de la Gaudiya Math, los Vaisnavas sin ningún miedo trabajaron lo necesario. Templos fueron ubicados en el corazón de grandes y modernas ciudades; los libros antiguos Vaisnavas fueron  publicados y distribuidos a través del Brihat Mrdanga; Vaisnavas comenzaron a utilizar los automóviles, botes y máquinas para distribuir sus mensajes; el materialismo fue atacado con el uso de su propia descendencia tecnológica; exhibiciones teístas conectaron el arte y la educación para promover los valores Vaisnavas. 
+</p>
+<p class='vspace'>Todavía, algunas personas critican a la Gaudiya Math por sus actividades de prédica. En los primeros años, la Gaudiya Math fuertemente  denunció a los imitadores del Vaisnavismo que hayan tenido alguna corriente peligrosa, en aquellos días conocidos como Auls, Bauls, Kartabhaja, Gauranga Nagari, Shaki bheki, etc. Estos grupos no encontraron la aprobación de Srila Bhaktivinode Thakur. Sumado a esto, la Gaudiya Math denunció en contra de quienes clamaban que era necesario nacer en una familia brahmana para ser un brahmana. Previo a esto, Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur renunció a que los Vaisnavas utilizaran ropa de algodón blanca gancha. Esta vestimenta es conocida como una vestimenta de los babajis e indica que una persona abandonó todas las preocupaciones de este mundo. Sin embargo,  en aquella época también había gente que se hacía llamar babajis y vestían esta vestimenta sin tener ninguna cualidad. La Gaudiya Math está fuertemente en contra de estos babajis. De esta forma, no hay falta de oposición hacia la Gaudiya Math entre estos grupos. Fuera de estas corrientes que declaran ser seguidores de Sri Caitanya Mahaprabhu, la Gaudiya Math ha demostrado cómo el verdadero espíritu de Sri Caitanya Mahaprabhu puede levantar a este mundo:  un mundo desprovisto de espirituales, morales, sociales y ecológicas soluciones.
+</p>
+<p class='vspace'>Entre tanto, algunas ramas del árbol Caitanya se han desecado, apenas han sobrevivido o han distorsionado las reales enseñanzas es debido a las concepciones erróneas que han surgido en el pasado. Todas han sido bendecidas, sin embargo es la vigorosa campaña de la Gaudiya Math establecer a Sri Caitanya Mahaprabhu en Su gloria y mostrar el carácter trascendental de la sucesión discipular. Esta real sucesión discipular debe estar totalmente libre de cualquier tipo de monopolio, elitismo o privilegio de “cazar” mentalidades, lo cual va en contra de la familia trascendental.
+</p>
+<p class='vspace'>Srila Rupa Goswami Prabhupad enseñó que la verdadera renunciación es utilizar todo en el servicio a Krishna.  A través de la Gaudiya Math esto se ha vuelto una manifestación en el mundo Vaisnava. Aquellos que aún critican a la Gaudiya Math, son gente infeliz. Ellos no realizan nada substancial para ayudar al mundo a desarrollar amor por Dios, servir al Sankirtan yajña o traer gente a las aguas sagradas del Radha Kunda. Ellos simplemente exhiben su ignorancia y falta de compasión hacia las almas condicionadas. Sobre todo, la Gaudiya Math entrega nombres para la calidad y mensaje de Sri Caitanya Mahaprabhu. Este libro muestra que todos los desarrollos de la Gaudiya Math y lo lejos que han llegado sus ramas tales como Bagh Bazaar Gaudiya Math, Sri Caitanya Gaudiya Math, ISKCON, Gaudiya Vedanta Samiti, etc, son todos planes del Señor Supremo para propagar Su mensaje de amor. Esto ha sido confirmado en las escrituras, Krishna ama a todos sus devotos, y  no quiere perder a ninguno de Sus predicadores y sus logros. De hecho, siempre hay oportunidades para almas menos calificadas que vienen y crean disturbios dentro de las organizaciones misioneras. Por esta razón, Krsna crea situaciones las cuales obligan a los devotos, a tomar mayor responsabilidad espiritual una y otra vez, para continuar con la misión de su Guru Maharaj. Hoy en día podemos encontrar varias misiones Vaisnavas. Algunas cargan el nombre de Gaudiya Math y otras no. Algunas tienen muchas ramas y otras tan solo una. Algunas hacen grandes actividades de misioneros, y otras se quedan tranquilas y son introvertidas.
+</p>
+<p class='vspace'>Todas sin embargo están supuestas para llevar a cabo lo siguiente:
+</p>
+<p class='vspace'>Llevar la bandera de Sri Caitanya Mahaprabhu a los corazones de todas las almas condicionadas y sufrientes, y cargar la gloria de nuestros demás fundadores y de sus rendidos sirvientes. Todo esto debido a la inspiración provenida de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur.
+</p>
+<p class='vspace'><a name='e' id='e'></a>
+</p><h3>Historia del cuerpo gobernante de la Gaudiya Math</h3>
+<p>Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur  le pidió a sus discípulos que en el momento de su ausencia formaran un cuerpo gobernante. Ese cuerpo administraría a la misión después de su partida. Este cuerpo gobernante estaba formado por doce miembros: Kuñja Babu, Paramananda, Ananta Vasudev, Srila Bhakti Keval Audulaumi Maharaj, Prof. Nisikantha Sanyal, Hayagriva das B., Giri Maharaj y otros.  Más tarde, todos los sanyassis se sumaron a esta lista. Mientras que eligió a Kuñja Babu como el presidente, no quiso indicar a ningún acarya sucesor. A la vez que él también remarcó que un acarya es auto refulgente. 
+</p>
+<p class='vspace'>Al comienzo, luego de la desaparición de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur, todo siguió con ciertas incertidumbres, ya que existían diferentes opiniones sobre cómo la misión debería continuar.
+</p>
+<p class='vspace'>La humildad de los devotos lideres de la Gaudiya Math fue notable. Nadie quería ser un guru y aceptar discípulos. En general, la conciencia de todos era : “No estamos calificados para ser maestros espirituales.” Esta fue al razón porque ningún sanyassi de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur se aventuró a tomar el puesto de acarya. Es más, todos eran tímidos y estaban ansioso de servir a Vaisnavas mayores en la ausencia de su Guru. Mirando hacia atrás, fueron necesarias las diferencias creadas en la misión de Sri Krsna, ya que así se involucraron todos los predicadores calificados en el trabajo de misioneros. (Yo entiendo esto como la razón de porque Sri Krsna permitió que en su misión existiera un periodo de desacuerdos).
+</p>
+<p class='vspace'>Como la decisión de quien sería el siguiente acarya se convirtió en una disputa, muchos devotos sufrieron la desaparición de su amado Gurudeva. Aunque Kuñja Babu fue indudablemente el organizador más destacado de la Gaudiya Math mientras estaba Srila Prabhupad Sarasvati Thakur, varios sanyassis no lo aceptaban como el siguiente acarya.
+</p>
+<p class='vspace'>Después de algún tiempo, un aprendiz brahmacari llamado Ananta Vasudev fue propuesto como el posible acarya para la Gaudiya Math y mas miembros de la GBC y sanyassis aceptaron la propuesta. Kuñja Babu y sus pocos asociados, no estuvieron de acuerdo con la decisión. Surgiendo una disputa y la misión Gaudiya Math original quedó dividida en dos cuerpos administrativos los cuales continúan con la prédica hoy en día, pero por ellos solos. En un acuerdo ellos dividieron los 64 centros Gaudiya Math en dos grupos.
+</p>
+<p class='vspace'>Debido a las dificultades en la Institución de la Gaudiya Math, Vaisnavas con más experiencias comprendieron que el llamado de su Guru, se había vuelto para ellos el dejar la institución y comenzar nuevas ramas de la rama Gaudiya Math del árbol Caitanya.  Algunos de aquellos que se alejaron para comenzar nuevas ramas de la Gaudiya Math se volvieron muy exitosos. Aunque a través de los años otras y muy importantes ramas han aparecido, nos vamos a concentrar en dos de las principales.
+</p>
+<p class='vspace'><a name='f' id='f'></a>
+</p><h3>Sri Caitanya Math</h3>
+<p>Kuñja Babu fue un discípulo muy querido y también muy cercano de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur desde el comienzo de la Gaudiya Math. Con su ayuda la Gaudiya Math se propagó alrededor de toda India. Muchas personas se unieron al Math y varios logros tomaron lugar.  Prácticamente hablando, él fue el genio administrativo quien ayudó a la Gaudiya Math a crecer como una gran misión. Aunque, él no fue muy popular dentro de sus hermanos espirituales, fue altamente calificado. Después de la separación de la Gaudiya Math, en el templo Bagh Bazaar él inauguró el Instituto de búsqueda Sri Caitanya en Calcuta. Más tarde, tomó sanyass de  Srila Bhakti Vijñan Ashram Maharaj y recibió el nombre de Srila Bhakti Vilas Tirtha Maharaj. Él permaneció  líder del Caitanya Math, escribiendo libros y publicando varios títulos de la Gaudiya Siddhanta desde el departamento del publicación Madras.
+</p>
+<p class='vspace'>Él logró el apoyo y la simpatía de varios políticos Indios, y predicó sin parar mientras viajaba por toda India. Inició a lideres Indios de altos rangos  en la tradición del Bhakti.
+</p>
+<p class='vspace'>Varios de sus hermanos espirituales trabajaron con él y lo ayudaron a mantener y expandir el Caitanya Math. En el Caitanya Math el más hermoso Samadhi Mandir de Srila Bhakti Siddhanta  Sarasvati Thakur Prabhupada fue construido por él. Según Srila A. C Bhaktivedanta Swami Maharaj, quién mas tarde iniciaría la misión de ISKCON, Srila Bhakti Vilas Tirthas Maharaj volvió al hogar de la Deidad como un devoto puro. Estoy mencionando esto para mostrar que desacuerdos temporales entre Vaisnavas no indica que ellos no tienen la misericordia de su Guru y Krsna.
+</p>
+<p class='vspace'>La rama Caitanya Math en Mayapur, India patrocinó a La Conferencia  de Vaisnavas de toda India en dos ocasiones. Bajo la organización de Srila Bhakti Vilas Tirtha Maharaj más la presencia de representativos de otras instituciones Vaisnavas y sampradayas, (como el Pejwar Swami de Udupi), una conferencia fue sostenida para aumentar la cooperación en la masificación del sanatan-dharma.
+</p>
+<p class='vspace'>En la Vyasa puja de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur en 1948, una resolución fue creada para nombrar a Srila Bhakti Hriday Bon Maharaj secretario de Sri Caitanya Math, a la cual sirvió por tres años. En aquel tiempo, un discípulo de Srila B. D. Madhava Maharaj era el secretario de B. V. Tirtha Maharaj. Él mas tarde se convirtió acarya de Sri Caitanya Gaudiya Math bajo el nombre sanyass de  Srila B. Ballabah Tirtha Maharaj. Después en 1954, Srila Bhakti Dayita  Madhava Maharaj, quien había trabajado con Srila B. V. Tirtha Maharaj ( aun cuando él comenzó a iniciar discípulos antes que el ) decidió dejar el Caitanya Math con la mayoría de sus discípulos.
+</p>
+<p class='vspace'>Después de la desaparición de este mundo de Srila B. V. Tirtha Maharaj, su hermano espiritual Srila Bhakti Kusum Sraman Maharaj se convirtió en el siguiente acarya. Sumándose a esto, mas discípulos de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur comenzaron a aceptar discípulos en asociación con el Caitanya Math. Algunos están incluidos en la siguiente lista:
+</p>
+<div class='vspace'></div><ul><li>Srila Bhakti Srirup Siddhanti Maharaj. Fue muy querido de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur  como un gran erudito que publicó muchos libros; i.e. Uddhava Sandesh, y Gita abubhasya. El publicó un Ph. D trabajo sobre el Govinda Bhasya- el Vedanta-darshan. También escribió el Guru- prestha, El Guru mas Querido, un libro en apoyo de Srila Bhakti Vilas Tirtha Maharaj. Tuvo su propia misión y discípulos.
+<div class='vspace'></div></li><li>Srila Padmanabha Maharaj de Guntur Gaudiya Math.
+</li><li>Srila Bhakti K. Tapasvi Maharaj, discipulo de Srila P. B. Sarasvati Thakur.
+</li><li>Srila Bhakti Prasant Puri Maharaj, otro discípulo de Srila B. V. Tirtha Maharaj.
+</li><li>Srila Vishnu Maharaj y Srila Bhakti Prajñan Yati Maharaj.
+</li></ul><p class='vspace'>Bajo la misión del Caitanya Math el famoso Yoga Pita, Srivas Angan, y otros lugares sagrados en el Dham son mantenidos. Después de la desaparición de Srila B. K. Sraman Maharaj, la misión Caitanya Math se dividió en más ramas bajo el liderazgo de diferentes sanyass. La persona oficial para aceptar discípulos después de la partida de Srila B. K. Sraman Maharaj fue Srila Bhakti Bhushan Bhagavat Maharaj, discípulo de Srila B. V. Tirtha Maharaj. Más tarde, varios lideres del Caitanya Math, tales como Srila B. S. Sajan Maharaj, Srila Bhakti Prasun Puri Maharaj, Srila Avadhut Maharaj y Srila Bhakti Vaibhv Sagar Maharaj, ayudaron a organizar la Visva Vaisnava Raj Sabha reuniéndose en Srivas Angas durante el Gaur Purnima de 1996. El primer Mela de la Asociación Mundial Vaisnava fue celebrado al mismo tiempo. Al igual en generaciones anteriores en que grandes almas que son gradualmente retiradas de este mundo, se vuelve indiscutible que el deber de los antiguos y nuevos miembros de esta árbol familiar es trabajar duro, para continuar así con el gran trabajo ya iniciado por la Gaudiya Math.  
+</p>
+<p class='vspace'>Otras grandes iluminaciones durante el tiempo de S.B.V Tirtha Maharaj:
+</p>
+<div class='vspace'></div><ul><li>1958 28 de Nov, Dr Radhakrisnan ubica la piedra fundadora del  Caitanya Research Insitute.
+</li><li>1960 Rajendra Prasad, el primer presidente de India- visita los Madras Gaudiya en Janmastami y felicita el trabajo de  Gaudiya Math.
+</li><li>1963 Raja Gopal Acarya – Británico designado General de India, aprecia el trabajo hecho por la Gaudiya Math.
+</li><li>1964 Dr. Radhakrisnan, el presidente de la India declara que no es un filósofo monista, pero si lo fuera su padre no le habría dado ese nombre. En 1964 inaugura el Caitanya Research Institute con Sama Prasad Mukherji- Primer ministro de India- en la Universidad de Calcuta. Al dar la inauguración hubo catorce lakhs (1.4.00.000) de personas. Allí el primer ministro expuso un discurso en el cual, declara que el realizar ofrendas simplemente delante de la Deidad no es real devoción. El explicó que la verdadera devoción es demostrada por alguien que propaga el culto de Sri Caitanya, sin considerar la casta, el credo ni el color; inundando así, a toda la civilización con el canto de los Nombres Sagrados y con la comprensión de que somos todos sirvientes de Krsna.
+</li><li>1965 Ambos, el presidente y el vicepresidente en ese tiempo- Dr. Raddy y V. D. Yati reconocen el trabajo hecho por Srila B. V. Tirtha Maharaj.
+</li></ul><p class='vspace'><a name='g' id='g'></a>
+</p><h3>La misión Gaudiya</h3>
+<p>Otra rama principal de la Gaudiya Math es conocida como la Misión Gaudiya. Esta misión se mantiene conocida por el templo de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur en Bagh Bazaar, Calcuta. Varias actividades principales de la Gaudiya Math fueron realizadas en este templo en el tiempo de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur . Sin embargo, este templo fue también la causa de algunas insatisfacciones. Los devotos luchaban por el uso de algunos cuartos después de que los pisos de mármol fueron terminados. Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur  remarcó el vender el mármol e imprimir libros. Este templo fue construido gracias a la donación de Sri Jaganadhu Dutta. Cuando las propiedades fueron divididas, el Bagh Bazaar Math y Sri Dham Mayapur Yogapith fueron los asentamientos mas importantes. Cada grupo recibió alguna propiedad para conducir sus misiones de prédica.
+</p>
+<p class='vspace'>Ambos Ananta Vasudev Prabhu y Srila Bhakti Rakshak Sridhar Maharaj fueron requeridos para explicar las clases de Gurus. Ananta Vasudev sabía los versos que su Guru citaba aun antes de que él mismo los citara. Mientras, que varios sanyassis rechazaban la idea de ser Acaryas, este brahmacari demostró la capacidad para entender las enseñanzas de su Guru. Hasta aquí, el cuerpo gobernante propuso que Ananta Vasudev Prabhu fuese el siguiente acarya, y la propuesta fue aceptada por varios miembros mayores de la Gaudiya Math, y así el aceptó ser el próximo acarya. Cuando Kuñja Babu y sus acompañantes comenzaron a desafiar su decisión y formaban una nueva rama, el Bagh Bazzar Gaudiya Math se mantuvo bajo la guía de Ananta Vasudev Prabhu. Después de que aceptara sanyass se volvió conocido como Srila Bhakti Prasad Puri Maharaj. Algunos años después, él abandonó la misión y el puesto fue transferido a las manos expertas de Srila Bhakti Keval Audulaumi Maharaj.
+</p>
+<p class='vspace'>Srila B. K. Audulaumi Maharaj ha estado en la misión desde los días del programa del Nama Hatta de Srila Bhaktivinode Thakur. Él trabajó duro por la misión Gaudiya y compró varios de los edificios de la Gaudiya Math antes de que fueran arrendados. Él fue hijo de un gran propietario en Nadia. Durante este tiempo, la misión abrió una maravillosa nueva sucursal en Godrum, Navadvip. Ellos publicaron muchos libros, y sus kirtans fueron mantenidos con baile animado de una manera organizada. Él viajó alrededor de toda India, y predicó a lideres muy importantes. También publicó un libro de sus discursos en inglés. Su misión se mantuvo distanciada luego de la división de las otras Gaudiya Maths. Después de su desaparición, la misión fue guiada por Srila Bhakti Srirup Bhagavat Maharaj, otro discípulo de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur. El predicó en la India, Inglaterra, y abrió un centro en Holanda. Luego de la desaparición de Srila B. S. Bhagavat Maharaj la misión fue manejada por Srila B. Suhrit Parivrajak Maharaj. Otros iluminadores de la Gaudiya Math:
+</p>
+<div class='vspace'></div><ul><li>La misión Gaudiya organizó anualmente parikrams en Navadvip Dham.
+</li><li>B. K. Audulaumi Maharaj escribió libros de Kirtans y guías de parikrams incluyendo  el Sri Kshetra Dham Parikram y el Navadvip Dham parikram.
+</li><li>La misión Gaudiya mantuvo el original Gaudiya Math templo en Kishor Pura en Vrindavan, y en Bombay construyó un nuevo templo.
+</li><li>La Gaudiya Math de Srila Bhaktisiddhanta Sarasvati Thakur fue construida en Godrum Dham. Un hermoso Pushpa Samadhi de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur fue construido también allo. Desde este Math la misión Gaudiya condujo sus actividades a Navadvip Dham.
+</li><li>Otra misión fue establecida en Asma bajo el nombre de Radha- Govinda Gaudiya Math en el distrito de Haila Gandhi, Po.Lalal Bazaar, Asma.
+</li><li>En Bihar otra misión fue establecida llamada Bhakti Keval Audulaumi Misión Gaudiya, Distrito de Mughalserai, Bihar.
+</li><li>Otra misión fue establecida en Asma llamada Bhagavat Gaudiya Math at Po. Karim Ganj, Asma.                                                                                               
+</li></ul><p class='vspace'>Acaryas que se volvieron activos en la misión Gaudiya o que comenzaron algunas ramas:
+</p>
+<div class='vspace'></div><ul><li>Srila B. Suhrit Parivrajak Maharaj – El actual acarya de la misión Gaudiya.
+</li><li>Srila B. Srirup Bhagavat Maharaj – el acarya anterior de la misión Gaudiya.
+</li><li>Srila B. Bhushan Bharati Maharaj, comenzó una misión separada llamada Bhakti Keval Ashram. El abrió seis nuevas ramas.
+</li><li>Srila B. Gambhir Giri Maharaj se establecio en Si Vrnadavan Dham. Le fue dado servicio en el Radha Gokulananda Mandir, Vrndavan. Revitalizó este templo con el estándar de la Gaudiya Math.
+</li><li>Srila B. Svuarup Tirtha Maharaj comenzó un templo en el Distrito de Burdavan y también comenzó la prédica fuera de la India.
+</li></ul><p class='vspace'><a name='h' id='h'></a>
+</p><h3>Plan de Krishna</h3>
+<p>En general, se puede decir que no fue por ambiciones personales el que se hayan creado dificultades en la Gaudiya Math. Es más, fue la impredecible influencia de Krsna la que hizo ciertos aspectos prosperar, y en otros casos fue el suspenso de cómo la misión continuó desarrollándose. Krsna quiere que todos sus devotos reciban el crédito; no solo uno o dos. El mundo se beneficia al ser testigo del funcionamiento individual de cada Vaisnava, en vez de tan solo mirar a los miembros mudos de misiones burocráticas. 
+</p>
+<p class='vspace'>El hecho de que el plan de Krsna sea distinto a los planes de los devotos, se vuelve mucho mas claro con ejemplos como el inesperado retiro de Bhakti Prasad Puri Maharaj (Antes Ananta Vasudev) del puesto de acarya y la vida sanyass.
+</p>
+<p class='vspace'>Otro ejemplo es el que nadie haya pensado que Srila A. C. Bhaktivedanta Swami Maharaj, quien fue grihasta conocido sólo por unos pocos miembros de la Gaudiya Math, se convertiría en un acarya destacado y expandiría la misión alrededor del mundo. Cuando él fue hacia Norte América a la edad de 68 años y comenzó la red mundial de revolución Hare Krsna, varios de sus hermanos creyeron firmemente en él. Por algo llevó años entender que la potencia del Señor Nityananda había elegido a este Vaisnava especial para llevar a cabo las predicciones de ambos, es decir de Sri Gouranga Mahaprabhu y de Sri Bhaktivinode Thakur. Esta historia se repetirá cuando sea que los planes de Krsna difieran de los arreglos de otros en este mundo. Los Acaryas serán conocidos por su propio brillo y por sus contribuciones a la felicidad de este mundo; y no por las decisiones o votos de castidad, reuniones o experimentos. Si tan sólo intentamos hacer lo mejor de nosotros y seguimos nuestro sincero corazón, Krishna nos guiara desde adentro, y el verdadero espíritu de la Gaudiya Math no se perderá. 
+</p>
+<p class='vspace'><a name='i' id='i'></a>
+</p><h3>Nuevas ramas</h3>
+<p>El verdadero espíritu de la Gaudiya Math revela varios Acaryas auto-refulgentes. Esto comenzó a diversificarse tanto como los acaryas fundadores establecían el nitya-lila. Esto creó un escenario, en el que actualmente los devotos de Krsna a menudo se conocen entre sí con sorpresa alrededor del mundo, y no necesariamente conocen cual rama ha alcanzado aquella área y ha establecido las comunidades Vaisnavas. Varias de las mas populares y crecientes ramas de la Gaudiya Math no fueron totalmente aceptadas como ramas en el comienzo. Algunas veces las nuevas ramas son consideradas como ramas “rebeldes” desde el punto de vista de las instituciones contemporáneas de las cuales emergen. Varios devotos que no pueden ver detrás de la concepción normal de sus instituciones son tomados por sorpresa con el desarrollo de otras nuevas ramas exitosas  que están fuera de su jurisdicción.  Hasta aquí  aquellos que no están de acuerdo con el espíritu de establecer ramas, o que fueron simplemente inspirados para expandir la misión de su Guru  con su propio entusiasmo, tienen que empezar sin ayuda. 
+</p>
+<p class='vspace'>Renunciantes, cargados de las bendiciones de sus Guru y de Vaisnavas, comienzan con sus propias misiones – algunas que se convierten exitosas mas allá de lo que podamos imaginar
+</p>
+<p class='vspace'>Este es el comienzo de una nueva era. En el capitulo siguiente de las actividades de la Gaudiya Math presentaremos las ramas de la Gaudiya Math y los predicadores con simples reportes de sus actividades corrientes.
+</p>
+<p class='vspace'>Pocas personas conocen hasta que punto el Señor Caitanya , a través de su amado Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur, expande su sampradaya  a todas las esquinas del mundo de distintas formas. Srila A. C. Bhaktivedanta Swami Maharaj indudablemente  se mantuvo como un pionero para llevar a cabo el deseo de su Guru y de Sri Caitanya Mahaprabhu haciendo entrega de los Santos Nombres Sagrados al mundo entero. 
+</p>
+<p class='vspace'>En esta lista encontraremos varias contribuciones a la expansión de la Conciencia de Krsna. Es evidente que el futuro mantendrá varias sorpresas y variadas actividades por las cuales el árbol de la familia Gaudiya Math beneficiará a todas las almas condicionadas.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_03.html'>Introducción</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html'>II Parte</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 18, 2008, at 11:40 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

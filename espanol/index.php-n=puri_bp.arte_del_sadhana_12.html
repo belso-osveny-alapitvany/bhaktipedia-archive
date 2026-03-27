@@ -1,0 +1,492 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Escuchando el Bhagavata</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_12' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_12' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Escuchando el Bhagavata"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_12-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>Escuchando el Bhagavata</h2>
+<p>La palabra matha abarca el concepto de una hostería estudiantil, establecimiento educativo y templo o lugar de adoración. La raíz verbal sánscrita math significa “morar, residir en”. En tal sentido, la palabra se define de la siguiente manera: mathanti vasanti yatra paramãrtha-siksãrthinah. “Un matha es un lugar donde viven quienes desean aprender sobre la verdad espiritual definitiva”. Aunque la presencia de una deidad o templo está asimismo implicada en el término, el propósito fundamental del matha es la diseminación del conocimiento de las categorías de sambandha, abhideya y prayojana a los que sirven a dicha deidad. Hay además una obligación implícita de distribuir este conocimiento a los que viven afuera de los confines del matha, para su bienestar.
+</p>
+<p class='vspace'>A través del contacto con la diminuta chispa espiritual, la mente e inteligencia mantienen una semblanza de conciencia. La función eterna de esta chispa espiritual o alma es ser atraída por la conciencia infinita y absolutamente atractiva del Alma Suprema. Por otro lado, la función eterna del Alma Suprema todo atractiva es atraer a todas las almas individuales infinitesimales hacia El y darles un lugar a Sus pies, donde pueden obtener un gusto del gozo supremo, infinito y eterno. Aunque la jiva, la chispa espiritual, es eterna, hasta que llegue a entrar en contacto con la sustancia supremamente gozosa, infinita y eterna, nunca hallará la satisfacción en los placeres momentáneos derivados de las sustancias temporales y limitadas. 
+</p>
+<p class='vspace'>La palabra krsi se refiere al estado todo atractivo de ser, mientras que na significa bienaventuranza suprema. Cuando ambos se combinan, se obtiene el nombre del Brahman Supremo, Krishna. En mérito a Su afecto por Sus sirvientes eternos perdidos, Krishna los llama ansiosamente, como una vaca que ha perdido a su ternero. El clama, mãm ekãm saranam vraja. - “Toma refugio solo en Mí”. Desafortunadamente, sin embargo, los seres vivientes están tan fascinados por la energía externa del Señor, que no Le prestan atención. Ellos ignoran que no hay otra manera de superar los poderosos encantos de maya, que la de rendirse a El. Como Krishna Mismo expresa en el Gitã (7.14):
+</p>
+<div class='vspace'></div><pre> daivi hy esã gunamayi  
+ mama mãyã duratyayã 
+ mãm eva ye prapadyante 
+ mãyãm etãm taranti te
+</pre><p class='vspace'>“La energía externa, consistente en las tres cualidades, se halla divinamente apoderada y es de tal modo imposible de conquistar. Todo aquel que se rinda a Mí, sin embargo, puede cruzar por sobre esta maya”.
+</p>
+<p class='vspace'>La posición constitucional eterna del alma espiritual es el servicio al Señor. Puesto que ha olvidado este servicio, ahora ha sido abofeteada por toda clase de sufrimientos y males, en este mundo de materia. Una vida desprovista de servicio no ofrece esperanza para la verdadera satisfacción. Pese al gran tesoro del amor por Krishna, la jiva cuya visión está oscurecida por la ignorancia, se aboca a cantidad de asuntos indignos, insignificantes e inferiores, todos los cuales son temporales e inertes. Antes que descubrir la amistad con los demás seres vivientes, se enreda en relaciones competitivas y envidiosas con ellos.
+</p>
+<p class='vspace'>Habiendo caído al pozo ciego de la ignorancia, las jivas fallan en reconocer que su único bienestar real reside en el Señor Supremo. Compitiendo por los objetos que consideran falsamente como beneficiosos, crean terribles tragedias como ser las guerras, que amenazan engullir al mundo entero, como grandes fuegos ardientes. El fuego que conduce a la destrucción universal, Durjayalinga, resulta de la ira de Rudra al contemplar la indiferencia general de la humanidad por servir al Señor.
+</p>
+<p class='vspace'>El significado de ignorancia es la falta de conocimiento sobre esa Entidad de la cual hemos venido, por Cuya misericordia se mantiene nuestra existencia y en Quien hallaremos nuestro sitio de descanso supremo y último después de la destrucción de este cuerpo. Esta ignorancia (ajñãna o avidyã) es el origen de todos nuestros problemas. Es por el conocimiento superior de la devoción por Krishna que esa ignorancia será superada. El Srimad-Bhãgavatam dice: sã vidyã tan-matir yayã. “El único conocimiento es aquel por el cual la mente se fija en El”. Por lo tanto, debemos reconocer la gran e inevitable necesidad de las mathas, donde aquellos que han adoptado un modo de vida ejemplar consagrado al Señor Supremo, viven, se asocian y estudian el conocimiento divino del servicio devocional.
+</p>
+<p class='vspace'><strong>LA AUTORIDAD DEL SRIMAD BHÃGAVATAM</strong>
+</p>
+<p class='vspace'>Puesto que la mente y el cuerpo están compuestos de materia temporal e inerte, su naturaleza, o actividades esenciales, son asimismo temporarias. En contraste, el alma es eterna y espiritual y su naturaleza o actividades esenciales, son asimismo eternas. La actividad esencial o dharma del alma, ha sido establecida por el Señor Supremo Mismo. Ninguno de los dioses, videntes, siddhas, demonios, humanos, Yaksas, Rãksasas, Gandharvas, Kinnaras, Vidyãdharas o Cãranas, conoce el secreto íntimo de esta función natural del alma. Es un misterio que ha sido misericordiosamente revelado por el Señor solo a Brahmã, Nãrada, Sambhu, los cuatro Kumãras, el Señor Kapiladeva, Svãyambhuva Manu, Prahlãda, Janaka, Bhisma, Bali, Sukadeva y Yamarãja.  Estos doce mãhãjanas o autoridades mayores, conocen de tal modo el sumamente secreto, puro e inescrutable Bhãgavata-dharma. Pese a la inaccesibilidad de este conocimiento divino, podemos obtener el gusto del mismo por la misericordia de estos devotos y el Señor Mismo. Poder degustar este néctar divino es ciertamente una cuestión de gran fortuna.
+</p>
+<p class='vspace'>La actividad natural del alma o Bhãgavata-dharma, es idéntica al yoga de la devoción, que consiste básicamente en el harinãma-sankirtana. Esta actividad ha sido identificada en todas las Escrituras como la religión suprema para todos los seres. Hemos de contemplar particularmente la historia de Ajãmila en el Sexto Canto del Srimad-Bhãgavatam, donde esto se ha descrito cabalmente.
+</p>
+<p class='vspace'>El Señor Supremo yace más allá del alcance de los sentidos materiales. El es con tal motivo llamadoAdhoksaja. La religión suprema es la devoción sin causa por El. Esa devoción debe estar libre de toda motivación ulterior, como ser el disfrute sensual personal, la liberación o las perfecciones místicas, e ininterrumpida por otras clases de actividades, como el karma y el jñãna. Esto se declara asimismo en el primer Canto, segundo capítulo del Srimad-Bhãgavatam.
+</p>
+<p class='vspace'>Cuando Dharmarãja tomó la apariencia de una garza e hizo preguntas a Yudhisthira, una de ellas era acerca de la verdad de la religión. El Pãndava mayor respondió:
+</p>
+<div class='vspace'></div><pre> dharmasya tattvam nihitam guhãyãm 
+ mahã-jano yena gatah sa panthãh
+</pre><p class='vspace'>“Es muy difícil entender el secreto de la religión, mas aquel que sigue los pasos de las autoridades mayores o mahãjanas, es seguro que triunfará”.
+(Mahãbhãrata, Vana-parva 313.117)
+</p>
+<p class='vspace'>Los mahãjanas son grandes devotos en quienes se encarnan las enseñanzas del Srimad-Bhãgavatam. Así pues, todo aquel que desee comprender las doctrinas de la religión Bhãgavata, debe seguir absolutamente los pasos de esas grandes autoridades como Suka y Vyãsa. El padre de la creación, Brahmã, recibió las doctrinas esenciales del Bhãgavata, en una forma condensada en cuatro versos esenciales, directamente del Señor Mismo. El vidente de los dioses, Nãrada, lo oyó seguidamente de él. Vyãsadeva luego oyó el Bhãgavata de Nãrada Muni, Sukãdeva recibió las enseñanzas de Vyãsa, y Pariksit, de Suka. Ugrasrava Suta escuchó el Srimad-Bhãgavatam como fuera hablado por Suka a Pariksit y seguidamente fue a narrar todo el Purana a los sabios en Naimisãranya, guiados por Saunaka. A partir de esta historia, podemos observar la diseminación de las enseñanzas del Srimad-Bhãgavatam.
+</p>
+<p class='vspace'>En nuestra Era, el avatar dorado y purificador de Kali Yuga, Gaurahari y Sus asociados, aceptaron al Srimad-Bhãgavatam como el rey de toda literatura, la mejor de todas las Escrituras y el comentario genuino sobre el Vedanta. Mahãprabhu llamó en tal sentido al Srimad-Bhãgavatam la fuente más autorizada de conocimiento sobre el Brahman Supremo. En vista de ello, es evidentemente el deber de los que viven en el matha estudiar y enseñar esta gran Escritura.
+</p>
+<p class='vspace'><strong>OIR EL SRIMAD BHÃGAVATAM ES UNA ACTIVIDAD DEVOCIONAL</strong>
+</p>
+<p class='vspace'>El Srimad-Bhãgavatam descarta todas las comprensiones falsas o incompletas de la religión. En consecuencia, el propio Bhãgavata expresa:
+</p>
+<div class='vspace'></div><pre> srimad-bhãgavatam purãnam amalam yad vaisnavãnãm priyam
+ yasmin pãramahamsyam ekam amalam jñãnam param giyate
+ tatra jñãna-viraga-bhakti-sahitam naiskarmyam ãviskrtam
+ tac chrnvan vicãrana-paro bhaktyã vimucyen narah 
+</pre><p class='vspace'>El hermoso Srimad-Bhãgavatam es el Purana inmaculado, la Escritura más querida de los Vaisnavas. El conocimiento supremo que es la única riqueza de los paramahamsas es allí glorificado. Quien lo lea descubrirá la liberación que proviene del conocimiento, la renuncia y la devoción. El ser humano que lea y estudie el Srimad-Bhãgavatam y seguidamente lo analice y medite en lo que ha oído y estudiado, solo por este acto devocional  será liberado”.
+(Srimad-Bhãgavatam 12.13.18)
+</p>
+<p class='vspace'>Por supuesto, debe entenderse que el Srimad-Bhãgavatam revela más que meramente el medio para lograr la liberación; también muestra cómo alcanzar el nivel último liberado del prema-bhakti.
+</p>
+<p class='vspace'><strong>EL BHÃGAVATAM - COMENTARIO SOBRE EL GAYATRI Y EL VEDANTA</strong>
+</p>
+<p class='vspace'>Al discutir el acto devocional de oír, Jiva Gosvãmi indica que su manifestación suprema proviene de escuchar el Srimad-Bhãgavatam como fuera hablado por Suka y realizado por Vyãsa en los alcances más elevados de su trance y transmitido por Saunaka a los 60.000 videntes en Naimisãranya. En su Tattva-sandarbha, Jiva cita el Garuda Purana que califica al Bhãgavata como “el significado del Vedanta Sutra, la explicación del propósito del Mahãbhãrata, un comentario sobre el Gayatri Mantra y una elaboración de los propios Vedas”.
+</p>
+<div class='vspace'></div><pre> artho’yam brahma-sutrãnãm
+ bhãratãrtha-vinirnayah
+ gãyatri-bhãsya-rupo’sau
+ vedãrtha-paribrmhitah
+</pre><p class='vspace'>En el capítulo veinticinco del Madhya-lilã, en el Caitanya Caritãmrta, Prakãsãnanda Sarasvati solicitó oír el significado fundamental del Vedanta, del Señor. Mahãprabhu elaboró sobre las glorias del Srimad-Bhãgavatam, reiterando que el Srimad-Bhãgavatam es el comentario natural sobre el Vedanta Sutra.
+</p>
+<p class='vspace'>La semilla del árbol del deseo de la literatura Védica, es la sílaba om, también llamada pranava. Esta semilla germina y se convierte en una planta, el Mantra Gayatri, que es llamado la Madre del Veda y se refiere explica el pranava. El fruto del árbol Védico del deseo es el Bhãgavatam en su forma compacta de cuatro versos, el Catuhsloki Bhãgavatam. Este Bhãgavatam  esencial le fue enseñado a Brahmã por el Señor Supremo Mismo. Brahmã seguidamente elaboró estos pocos versos y los enseñó a su hijo Nãrada. Nãrada reiteró nuevamente la misma enseñanza a Vyãsa, quien al oírlo comprendió que:
+</p>
+<div class='vspace'></div><pre> ei artha ãmãra sutrera vyãkhyãnurupã
+ bhãgavata kariba sutrera bhãsya-svarupa
+</pre><p class='vspace'>“Esta enseñanza es una explicación de los sutras que he escrito. Ahora escribiré el Bhãgavatam basado en esta enseñanza y ese será mi comentario completo sobre el Brahma Sutra”.
+(Caitanya Caritãmrta  2.25.95)
+</p>
+<p class='vspace'>Atento a esta declaración, es claro que el Bhãgavatam es la gloria cumbre de la literatura Védica. Krishna Dvaipãyana Vyãsa batió todos los Upanisads para extraer la crema de su conocimiento y luego compuso el Srimad Bhãgavatam, como el único comentario verdadero a la palabra de los Vedanta Sutras. Esto significa que el conocimiento de sambandha, abhideya y prayojana hallado a través de toda la literatura Védica, está resumido esencialmente en los cuatro versos del Catuhsloki Bhãgavatam y aumentado en gran detalle a través de los 18.000 versos del Srimad Bhãgavatam. 
+</p>
+<p class='vspace'>Hay 11 Upanisads principales: Isa, Kena, Katha, Prasna, Mundaka, Mãndukya, Aittareya, Taittiriya, Chãndogya, Brhadãranyaka  y Svetãsvatara. Vyãsa basó los Vedanta Sutras en las enseñanzas esenciales encontradas en estos textos. Muchos de los versos de los Upanisads se explican directamente en el Bhãgavatam, como ser el verso del Isopanisad (isãvãsyam idam sarvam) que se elabora en Srimad Bhãgavatam 8.1.10. El propio primer verso del Srimad Bhãgavatam explica el primer sutra del Vedanta, janmãdy asya yatah. Ese mismo verso incluye además una explicación del Mantra Gayatri. En tal sentido, Mahãprabhu expresa:
+</p>
+<div class='vspace'></div><pre> gãyatrira arthe ei grantha-ãrambhana
+ satyam param sambandha dhimahi sãdhana-prayojana
+</pre><p class='vspace'>“El primer verso de este libro brinda una explicación del Mantra Gayatri. El sambandha-tattva está indicado en las palabras satyam param (“la verdad suprema”) y la palabra dhimahi (“meditamos en”) indica el abhideya de la práctica devocional y el prayojana, el amor por Krishna”.
+(Caitanya Caritãmrta 2.25.140)
+</p>
+<p class='vspace'>En su Anubhasya a este verso, nuestro muy adorable maestro espiritual Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura, elucida lo siguiente: “El propio primer verso del Bhãgavatam es una explicación del Mantra Gayatri. La verdad suprema se refiere al sambandha. El esfuerzo de meditar es una indicación de la práctica del servicio devocional, que es el abhideya. Eso que es logrado por la práctica del servicio devocional, el prayojana, es perfeccionado mediante la meditación o prema-bhakti”.
+</p>
+<p class='vspace'>Krishnadãsa Kavirãja Gosvãmi también confirma que el Mahãbhãrata y su explicación, el Srimad Bhãgavatam son dos Escrituras fundamentales en esta era. Estas dos Escrituras declaran que el Señor aparece como un avatar en la Era de Kali. Esta es su conclusión: 
+</p>
+<div class='vspace'></div><pre> bhãgavata-bhãrata dui sãstrera pradhãna
+ sei dui kahe kalite sãksãt-avatãra
+</pre><p class='vspace'>“El Srimad Bhãgavatam y el Mahãbhãrata son las dos Escrituras Védicas más importantes y ambas revelan que el Señor Mismo aparece como una encarnación en la Era de Kali”.
+(Caitanya Caritãmrta 2.6.97-8)
+</p>
+<p class='vspace'><strong>LAS ENSEÑANZAS DE MAHÃPRABHU SOBRE EL BHÃGAVATAM</strong>
+</p>
+<p class='vspace'>Krishnadãsa Kavirãja Gosvãmi resume las enseñanzas personales de Sri Caitanya Mahãprabhu, como sigue:
+</p>
+<div class='vspace'></div><pre> krsna-tattva bhakti-tattva prema-tattva sãra
+ bhãva-tattva rasa-tattva lilã-tattva ãra
+ sri-bhãgavata-tattva-rasa karilã pracãre
+ krsna-tulya bhãgavata jãnãilã samsare
+</pre><p class='vspace'>“Sri Caitanya Mahãprabhu predicó personalmente las doctrinas de Krishna, el servicio devocional, el amor de Dios, los éxtasis emotivos, el arrebato divino y los pasatiempos del Señor. Todas estas doctrinas nectáreas se encuentran en el Srimad Bhãgavatam. De tal modo, Mahãprabhu enseñó al mundo entero que el Srimad Bhãgavatam y el Señor Supremo Sri Krishna, son idénticos”.
+(Caitanya Caritãmrta 2.25.258-9)
+</p>
+<p class='vspace'>El Señor menciona asimismo al Bhãgavatam cuando enumera las 64 clases de servicio devocional en la práctica. Allí, el concepto de servir a las cosas que están relacionadas con el Señor (tãdiya) se explica como sigue:
+</p>
+<div class='vspace'></div><pre> tadiya tulasi vaisnava mathurã bhãgavata
+ ei cãrira sevã haya krsnera abhimato
+</pre><p class='vspace'>“Las cosas relacionadas con el Señor incluyen: la planta tulasi, los devotos de Krishna, Su morada en Mathurã y el Srimad Bhãgavatam. Krishna anhela mucho ver que todos presten el debido servicio a estos cuatro”.
+(Caitanya Caritãmrta 2.22.121)
+</p>
+<p class='vspace'>Oír el Srimad Bhãgavatam se incluye también entre los cinco actos principales del servicio devocional:
+</p>
+<div class='vspace'></div><pre> sãdhu-sanga nãma-kirtana bhãgavata-sravana 
+ mathurã-vãsa sri murtira sraddhãya sevana
+ sakala-sãdhana-srestha ei pañca anga
+ krsna-prema janmãya ei pañcera alpa sanga
+ eka anga sãdhe keha sãdhe bahu anga
+ nisthã haile upajaya premera taranga
+</pre><p class='vspace'>“Uno debe asociarse con devotos, cantar el Santo Nombre del Señor, oír el Srimad Bhãgavatam, residir en Mathurã y adorar la deidad con fe y veneración. Estos cinco miembros del servicio devocional se consideran los mejores de todos.   Hasta una leve ejecución de los mismos despierta el amor por Krishna. Ya sea que la persona ejecute solo uno o muchos de los procesos del servicio devocional, las olas del amor por Dios emergerán como resultado de su determinación fija o nisthã”.
+(Caitanya Caritãmrta 2.22.214-5.219)
+</p>
+<p class='vspace'>Tras oír, Sri Caitanya explicó el verso atmãrãma del Srimad Bhãgavatam en 61 formas distintas. Sanãtana se sorprendió tanto  que cayó a los pies del Señor y Lo alabó como sigue:
+</p>
+<div class='vspace'></div><pre> sãksãt isvara tumi vrajendra-nandana
+ tomãra nisvãse sarva-veda-pravartana
+ tumi vaktã bhãgavatera tumi jãna artha
+ tomã vinã anya jãnite nãhika-samartha
+</pre><p class='vspace'>“Mi querido Señor, Tú eres el Señor Supremo Krishna Mismo, el hijo de Nanda Mahãrãja. Todas las literaturas Védicas son manifestadas por Tu exhalación. Tú eres el orador original del Srimad Bhãgavatam y solo Tú conoces su verdadero significado. Excepto Tú, nadie puede asirlo completamente”.
+(Caitanya Caritãmrta 2.24.309-310)
+</p>
+<p class='vspace'>A lo que Mahãprabhu respondió:
+</p>
+<div class='vspace'></div><pre> prabhu kahe kara ãmãra stavana
+ bhãgavatera svarupa kene nã kara vicãrana
+ krsna-tulya bhãgavata vibhu sarvãsraya
+ prati-sloke prati-aksare nãmã artha kaya
+ prasnottare bhãgavate kariyãche nirdhãra
+ jãnhãra sravane loke lãge camatkãra 
+</pre><p class='vspace'>“ ¿Porqué Me glorificas? ¿Porqué no tratas de entender la posición trascendental del Srimad Bhãgavatam? Al igual que Krishna, el Srimad Bhãgavatam es el amparo infinito de todo. Existen múltiples significados en todos y cada uno de los versos, en todas y cada una de las sílabas de la Escritura. El Srimad Bhãgavatam establece sus conclusiones en la forma de preguntas y respuestas y los que lo oyen se asombran”.
+(Caitanya Caritãmrta 2.24.311-313)
+</p>
+<p class='vspace'><strong>EL AMOR DE LOS DEVOTOS DE MAHÃPRABHU POR EL BHÃGAVATAM</strong>
+</p>
+<p class='vspace'>Los asociados de Mahãprabhu también evidenciaron un gran afecto por el Srimad Bhãgavatam. Incluso antes de renunciar a su puesto en la corte del Sha Hussain para unirse a Mahãprabhu, Sanãtana Gosvãmi se quedó en su hogar y asumió el estudio del Bhãgavatam en compañía de 20 ó 30 eruditos.
+</p>
+<div class='vspace'></div><pre> lobhi kãyastha-gana rãja-kãrya kare
+ ãpane sva-grhe kare sãstrera vicãre
+ bhattãcãrya pandita bisa trisa lañã
+ bhãgavata vicãra karena sabhãte vasiyã
+</pre><p class='vspace'>“Mientras él permanecía en su hogar discutiendo las Escrituras reveladas, el personal secretarial y clerical ambicioso de Sanãtana, realizaba todos sus deberes gubernamentales. En el interin, él convocó una asamblea de 20 ó 30 brahmanas eruditos y analizó el Bhãgavatam con ellos”.
+(Caitanya Caritãmrta 2.19.16-17)
+</p>
+<p class='vspace'>El querido asociado de Mahãprabhu, Raghunãtha Bhatta, gozaba de gran fama como orador del Bhãgavatam. Estando en Puri, el Señor le dijo:
+</p>
+<div class='vspace'></div><pre> ãmãra ãjñaya raghunãtha jãha-vrndãvane
+ tãhãn jãñã raha rupa-sanãtana-sthãne
+ bhãgavata para sadã laha krsna-nãma
+ acire karibena krpã krsna-bhagavãn”
+</pre><p class='vspace'>“Mi querido Raghunãtha, acata Mi instrucción y ve a Vrindavan. Una vez allí, por favor ponte bajo la tutela de los Gosvãmis Rupa y Sanãtana. Debes estudiar el Srimad Bhãgavatam y cantar constantemente los nombres de Krishna. Si así lo haces, el Señor Krishna muy pronto dispensará Su misericordia sobre ti”.
+(Caitanya Caritãmrta 2.14.120-1)
+</p>
+<div class='vspace'></div><pre> prabhura thãñi ajñã lañã gelã vrndãvane
+ ãsraya karilã rupa-sanãtane
+ rupa-gosãñira sabhãya karena bhãgavata-pathana
+ bhãgavata parite preme ãulãya tãnra mana
+</pre><p class='vspace'>“Raghunãtha Bhatta seguidamente, con el permiso de Sri Caitanya Mahãprabhu, partió hacia Vrndãvan. Al llegar allí, se amparó en Rupa y Sanãtana Gosvãmi. Toda vez que Raghunãtha Bhatta recitaba el Srimad Bhãgavatam y disertaba sobre el mismo en la reunión de Rupa y Sanãtana, rebosaba de amor extático por Krishna”.
+(Caitanya Caritãmrta 2.14.125-6)
+</p>
+<p class='vspace'><strong>OIR EL BHÃGAVATAM EN ASOCIACION DE LOS DEVOTOS</strong>
+</p>
+<p class='vspace'>Rupa Gosvãmi escribe asimismo en su Bhakti-rasãmrta-sindhu que hay que saborear los tópicos del Srimad Bhãgavatam en asociación con los rasikas - srimad-bhãgavatãrthãnãm ãsvãdo rasikaih saha (Bhakti-rasãmrta-sindhu 1.2.91). Por esto, Rupa implica que uno debe buscar la compañía de los devotos que conocen el significado trascendental del Bhãgavatam, que comprenden las melosidades devocionales puras y que son expertos en el arte de prestar servicio devocional. Ellos deben tener la misma clase de aspiraciones que uno mismo y ser con preferencia más avanzados. Es en asociación de tales personas que uno puede saborear el Srimad Bhãgavatam.
+</p>
+<p class='vspace'>Por otro lado, el más hondo significado del Bhãgavatam, no será entendido si uno estudia en compañía de personas cultas que no se interesan en el sendero devocional, aunque sean expertas en gramática o etimología o conocedoras de la poesía y literatura mundana. Si ellos se apegan a la compañía de las mujeres o se absorben en sus asuntos familiares mundanos, tanto peor. Otras clases de personas de las cuales no debemos oír el Bhãgavatam son los impersonalistas, que rechazan el carácter eterno de servicio al Señor y Sus devotos, que son ofensores del Santo Nombre, gentes que usan los atavíos de la vida de renuncia para ganarse la vida, o los que son distribuidores profesionales de la iniciación mantra. No se puede aprender el significado interno de la Escritura creada para los paramahamasas en la más elevada plataforma de la realización espiritual, aproximándose a los que se ganan la vida recitando el Bhãgavatam a la vez que anhelan la gratificación de sus sentidos materiales y permanecen adheridos a los objetos de los sentidos mundanos.
+</p>
+<p class='vspace'>Ninguna de las personas antes mencionadas está calificada para aprehender el significado de esa gran Escritura. Los Srutis y Smrtis han dado su veredicto sobre cómo lograr esta comprensión:
+</p>
+<div class='vspace'></div><pre> yasya deve parã bhaktir
+ yathã deve tathã gurau
+ tasyaite kathitã hy arthãh
+ prakãsante mahãtmanah
+</pre><p class='vspace'>“Solo a esas grandes almas que tienen fe implícita tanto en el Señor como en el maestro espiritual, que es la manifestación del Señor y no es diferente de El, les son revelados automáticamente todos los significados del conocimiento Védico”.
+(Svetãsvatara Upanisad 6.23)
+</p>
+<p class='vspace'>En otras palabras, solo a una persona así se le revela el profundo entendimiento de las Escrituras como el Srimad Bhãgavatam.
+</p>
+<div class='vspace'></div><pre> bhaktyã bhãgavatam grãhyam
+ na buddhyã na ca tikayã
+</pre><p class='vspace'>“La persona entiende el Srimad Bhãgavatam a través de la devoción; no simplemente por ejercer su inteligencia o simplemente por el estudio de los comentarios”.
+(Caitanya Caritãmrta 2.24.314)
+</p>
+<p class='vspace'>Vrindavan dãsa Thãkura ha escrito también:
+</p>
+<div class='vspace'></div><pre> bhãgavata bujhi hena jãra ãche jñãna
+ se nã jãne kabhu bhãgavatera pramãna
+</pre><p class='vspace'>“Todo aquel que considere que ha comprendido el significado del Srimad Bhãgavatam, nunca podrá conocer ciertamente su significado”.
+(Caitanya Bhãgavata 2.21.24)
+</p>
+<p class='vspace'>Sin abocarse directamente al placer del Señor Supremo Krishna y Sus devotos, es ciertamente imposible entender el significado del Bhãgavatam a través de la erudición mundana o simplemente por una gimnasia mental. E incluso si se entendiera algo, llevar esa comprensión a la acción sería imposible sin el canto fiel y determinado de los Santos Nombres, de manera pura y sin ofensas, siguiendo los pasos del maestro espiritual y demás devotos ejemplares. Cuando uno desarrolla un gusto por el Santo Nombre, su estudio del Bhãgavatam rinde fruto. Todo aquel que estudie el Bhãgavatam con miras a evidenciar su brillo y sabiduría, o para tener una vida confortable o ganar riqueza, fama o status, está simplemente perdiendo su valioso tiempo.
+</p>
+<p class='vspace'>En tal sentido, Svarupa Dãmodara Gosvãmi aconsejó al brahmana de Bengala Oriental:
+</p>
+<div class='vspace'></div><pre> jãha bhãgavata para vãisnavera sthãne
+ ekãnta ãsraya kara caitanya-carane
+ caitanyera bhakta-ganera nitya kara sanga
+ tabe ta jãnibã siddhãnta-samudra-taranga
+</pre><p class='vspace'>“Ve y estudia el Bhãgavatam con un Vaisnava. Toma exclusivo refugio en los pies de loto de Mahãprabhu. Asóciate siempre con los devotos de Caitanya Mahãprabhu. Si haces todas estas cosas, podrás bucear en el océano de Sus enseñanzas divinas”.
+(Caitanya Caritãmrta 3.5.131-32)
+</p>
+<p class='vspace'><strong>LA IMPORTANCIA DEL SIDDHÃNTA</strong>
+</p>
+<p class='vspace'>Alguien podría objetar que no hay necesidad de estudiar las Escrituras de modo de establecer la correcta disciplina espiritual, puesto que simplemente ocupándose en el servicio devocional es suficiente para lograr la perfección. Krishnadãsa Kavirãja Gosvãmi responde a esta posible objeción diciendo que a través del correcto entendimiento de la doctrina se incrementa nuestro gusto por prestar servicio:
+</p>
+<div class='vspace'></div><pre> siddhãnta baliyã citte nã kara alasa
+ ihã ha-ite krsne kãge sudrdha mãnasa
+ caitanya mahimã jãni e sava siddhãnte
+ citta drdha hañã lãge mahimã-jñãna haite
+</pre><p class='vspace'>“No seas indolente  evitando discutir estas doctrinas, pues tales discusiones refuerzan el apego de la mente por Sri Krishna. Conozco las glorias de Sri Caitanya por mi estudio de todas estas enseñanzas y me he vuelto fuerte y fijo en el apego por El, mediante el conocimiento de Su grandeza”.
+(Caitanya Caritãmrta 1.2.117-8)
+</p>
+<p class='vspace'>Svarupa Dãmodara dijo además:
+</p>
+<div class='vspace'></div><pre> rasãbhãsa haya jadi siddhãnta-virodha
+ sahite nã pãre prabhu mane haya krodha 
+</pre><p class='vspace'>“Si alguna declaración contiene reflejos pervertidos de la estética trascendental o va en contra de las doctrinas del Bhãgavatam, Mahãprabhu lo encuentra intolerable y Se enoja”.
+(Caitanya Caritãmrta 3.5.97)
+</p>
+<div class='vspace'></div><pre> jadbã-tadbã kavira vãkye haya rasãbhãsa
+ siddhãnta-viruddha sunite nã haya ullãsa
+ rasa rasãbhãsa jãrã nãhika vicãra
+ bhakti-siddhãnta-sindhu nãhi pãya pãra
+</pre><p class='vspace'>“Ciertos poetas piensan que pueden escribir cualquier cosa que se les antoje. En sus escritos usualmente hay una presentación incorrecta de la relación divina amorosa. No es agradable oír palabras que son contrarias a las conclusiones Escriturales. Todo aquel que no pueda distinguir entre la estética genuina y sagrada y su reflejo, nunca será capaz de cruzar el océano de conclusiones Escriturales que conllevan al servicio devocional”.
+(Caitanya Caritãmrta 3.5.102-3)
+</p>
+<p class='vspace'><strong>SOLO ESCUCHAR EL BHÃGAVATAM CON TOTAL ATENCION PRODUCIRA RESULTADOS</strong>
+</p>
+<p class='vspace'>Incluso después que el aspirante a la vida espiritual ha obtenido la compañía de los devotos y oye el Bhãgavatam junto con ellos, de todos modos debe ser cauteloso de oírlo del modo debido. Caso contrario, no obtendrá el pleno resultado de esta poderosa actividad devocional. 
+En la sección del Padma Purana llamada “Las glorias del Srimad Bhãgavatam” - (Bhãgavata-mãhãtmya) se encuentra la instructiva narración de Gokarna. Gokarna era el hijo adoptivo del brãhmana Ãtmadeva y su esposa Dhunduli, quienes también criaban al niño de su hija, Dhundhukãri, quien desafortunadamente era muy malvado. Debido a su vida pecaminosa, cuando Dhundhukãri murió se convirtió en un fantasma y asoló la aldea de su familia. Compadecido de su hermanastro, Gokarna recitó los 12 Cantos completos del Bhãgavatam durante siete días y cuando finalizó, Dhundhukari se liberó de su cuerpo fantasmal. Habiendo sido antes invisible, súbitamente apareció ante toda la asamblea de devotos en una forma maravillosa, descrita en el Bhãgavata-mãhãtmya como sigue:
+</p>
+<div class='vspace'></div><pre> divya-rupa-dharo jãtas tulasi-dãma-manditah
+ pitavãsã ghana-syãmo mukuti kundalãnvitah
+</pre><p class='vspace'>“Dhundhukari se manifestó ante ellos en una forma colorida y maravillosa de un matiz azul profundo, enguirnaldado con hojas de tulasi y usando una ropa amarilla, una corona enjoyada y aretes”.
+(Bhãgavata-mãhãtmya 5.51)
+</p>
+<p class='vspace'>Dhundhukãri se postró ante su medio hermano y le agradeció sinceramente por haber recitado todo el Bhãgavatam en beneficio suyo. Puesto que él mismo estaba glorificando enérgicamente el recitado de una semana del Bhãgavatam, un maravilloso carro celestial, dirigido por residentes del mundo Vaikuntha, descendió en medio de la reunión, iluminando los alrededores con su refulgencia. Ante la mirada sorprendida de los espectadores, Dhundhukãri abordó el brillante carruaje. Antes de partir, sin embargo, Gokarna hizo a los ciudadanos de Vaikuntha la siguiente pregunta importante:
+</p>
+<div class='vspace'></div><pre> atraiva bahavah santi
+ srotãro mama nirmalãh
+ ãnitãni vimãnãni
+ na tesãm yugapat kutah
+
+ sravanam samabhãgena
+ sarvesãm iha drsyate
+ phala-bhedah kuto jãtah
+ prabruvantu hari-priyãh
+</pre><p class='vspace'>“Hubo muchos de los presentes que se purificaron escuchando el recitado del Bhãgavatam. ¿Porqué entonces los carruajes celestiales no descendieron para todos ellos? Yo los observé participando de igual manera en el acto de oír. Por favor explicadnos, oh amados de Hari, ¿porqué hay diferencia en los resultados obtenidos?”
+(Bhãgavata-mãhãtmya 5.69-70)
+</p>
+<p class='vspace'>Los asociados del Señor respondieron profiriendo los siguientes versos:
+</p>
+<div class='vspace'></div><pre> sravanasya vibhedena
+ phala-bhedo’tra samsthitah
+ sravanam tu krtam sarvair
+ na tathã mananam krtam
+ phala-bhedas tato jãto
+ bhajanãd api mãnada
+</pre><p class='vspace'>“Oh respetable, la diferencia en los resultados proviene de las diferencias en la calidad de su escucha. Todos los presentes, es verdad, escucharon el Bhãgavatam, pero no todos reflexionaron en lo que habían oído. La diferencia en los resultados provino de esto, así como de la calidad de su adoración”.
+(Bhãgavata-mãhãtmya 5.71)
+</p>
+<div class='vspace'></div><pre> sapta-rãtram upasyaivãtram
+ pretena sravanam krtam 
+ mananãdi tathã tena
+ sthira-citte krtam bhrsam
+
+ adrdham ca hatam jñãnam
+ pramãdena hatam srutam
+ sandigdho hi hato mantro
+ vyagra-citto hato japah
+
+ avaisnavo hato deseo
+ hatam srãddham apãtrakam
+ hatam asrotriye dãnam
+ amãcãram hatam kulam
+
+ visvãso guru-vãkyesu
+ svasmin dinatve-bhãvanã 
+ mano-dosa-jayas caiva
+ kathãyãm niscalã matih
+
+ evam ãdi krtam cet syãt
+ tadã vai sravane phalam
+ punah sravãnte sarvesãm
+ vaikunthe vasatir dhruvam 
+
+ gokarna tava govindo
+ golokam dãsyati svayam
+</pre><p class='vspace'>“El fantasma escuchó por siete días, pero cada noche, adoró al Señor, durante el tiempo en que reflexionó concentrado en lo que había oído. El conocimiento que es inestable se pierde, como sucede con el conocimiento de quien ha estado desatento. Hacer la japa sin concentración u oír un consejo que proviene de una fuente dudosa, es algo que en ambos casos se pierde. Una tierra sin Vaisnavas es indigna, como lo es la ofrenda de oblaciones por parte de una persona descalificada, la caridad dada a una persona inculta, y una familia que no tiene principios éticos. De modo de obtener los frutos de oír el Bhãgavatam, uno debe depositar fe en las palabras del maestro espiritual y tener una actitud de humildad sobre su propio valor, debe triunfar por sobre los vaivenes de la mente y concentrarse completamente en los tópicos que está oyendo.
+</p>
+<p class='vspace'>Cuando todas estas personas oigan el Bhãgavatam por segunda vez, ellos también ganarán la residencia eterna en Vaikuntha. De ello no cabe duda. En cuanto a ti, Gokarna, Govinda en persona te llevará a Goloka, la morada de las vacas”.
+(Bhãgavata-mãhãtmya 5.72-77)
+</p>
+<p class='vspace'>Tras haber hablado de ese modo a Gokarna, los asociados del Señor Hari comenzaron a cantar sonoramente los nombres del Señor, ascendiendo a Vaikuntha con el transformado Dhundhukãri.
+</p>
+<p class='vspace'>En el siguiente mes de Srãvana, Gokarna emprendió un segundo Bhãgavata-saptãha. El mismo público estaba nuevamente presente, pero esta vez ellos escucharon más cuidadosamente que antes. Al final de la semana, se produjo la más maravillosa epifanía. Sri Hari Mismo descendió a la asamblea, rodeado por innumerables asociados, en innumerables carruajes celestiales. Los sonidos de las plegarias y glorificaciones resonaban en todas direcciones. Hasta el propio Señor Hari se sumó a la auspiciosa cacofonía, soplando la caracola Pãñcajanya, que siempre sostiene en Su mano. El Señor seguidamente abrazó a Gokarna fuertemente, transformando al devoto que adoptó la forma oscura del residente de Vaikuntha, con cuatro brazos, ropa de seda amarilla, corona enjoyada y aretes. Instantáneamente, todos los presentes fueron similarmente transformados. Incluso otras criaturas y residentes de castas menores de la aldea, fueron asimismo transformados en seres divinos y como resultado de la misericordia de Gokarna, ocuparon sus lugares en los carruajes celestiales para ser llevados a la morada trascendental, anhelada por los grandes yoguis. El Señor de las vacas, Gopãla, llevó Consigo a Su querido devoto Gokarna, a Su propia morada de Goloka.
+</p>
+<p class='vspace'>Se pueden realizar penitencias por muchas vidas y no obtener la residencia en Goloka-Vaikuntha, - el fruto de escuchar el Bhãgavatam por solo una semana. Tal como todos los ciudadanos de Ayodhyã fueron llevados por Rãmacandra a Sãketa en Vaikuntha, por la misericordia del Señor, cualquiera que escuche el Bhãgavatam será llevado a Su morada trascendental, pues la misericordia de Sri Krishna está presente en la narración de Sus pasatiempos contenidos allí. Aquel que recite el Bhãgavatam así como aquellos que lo escuchen, tendrán la gran fortuna de obtener esta recompensa divina.
+</p>
+<p class='vspace'>El segundo verso del mãngalãcarana (invocación auspiciosa) del  Srimad Bhãgavatam, sirve de vastu-nirdesa o indicación del tema esencial del texto. Allí se expresa: isvarah sadyo hrdy avarudhyate’tra krtibhih susrusubhis tat-ksanãt: “El Señor descrito en el Bhãgavatam aparece en el corazón puro del escucha piadoso y se queda allí desde el momento en que comienza a escuchar su recitado”. Por otro lado, como explica el comentarista, akrtibhis tu bahu-vilambane - el impío puede escuchar el Bhãgavatam por largo tiempo sin jamás obtener el mismo resultado.
+</p>
+<p class='vspace'>Krishna dice en el Bhagavad-gitã:
+</p>
+<div class='vspace'></div><pre> mayy eva mana ãdhatsva 
+ mayi buddhim nivesaya
+ nivasisyasi mayy eva
+ ata urdhvam na samsayah
+</pre><p class='vspace'>“Tan solo fija tu mente en Mí, ocupa toda tu inteligencia en Mí. De tal modo, sin duda alguna, vivirás Conmigo para siempre, incluso después de la muerte”.
+(Gitã 12.8)
+</p>
+<p class='vspace'>En su interpretación a este verso, Visvanãtha Cakravarti escribe: “Tan solo fija tu mente recordándoMe siempre y meditando en Mí, el pastorcito negro y hermoso vestido con sedas amarillas y enguirnaldado con flores silvestres. Ocupa tu inteligencia, tu facultad de discriminación, en Mí; en otras palabras, reflexiona sobre Mí. Por reflexión (manana) me refiero a estudiar las diversas palabras de la Escritura que te alientan e inducen a meditar en Mí. Entonces vivirás Conmigo, con lo que quiero significar que morarás Conmigo en Mi morada”. (1)
+</p>
+<p class='vspace'>La palabra manana significa reflexionar en los temas que uno ha oído o sobre los que ha leído, junto con su significado. Sin esta clase de reflexión, oír solamente es completo e inefectivo.
+</p>
+<div class='vspace'></div><pre> yad-anudhyãsinã yuktah
+ karma-granthi-nibandhanam
+ chindanti kovidãs tasya
+ ko na kuryãt kathã-ratim
+</pre><p class='vspace'>“Los que son expertos cortan las ataduras nudosas de la labor reaccionaria con la espada de la constante meditación en el Señor. ¿Quién luego no adorará la discusión de Sus tópicos?”
+(Srimad Bhãgavatam 1.2.15)
+</p>
+<p class='vspace'>El verso anterior del Bhãgavatam compara la constante meditación en el Señor con una espada con la cual uno puede atravesar cortando el enredo de las actividades emergentes del ego y sus resultados. Esto significa que esa evocación constante destruye nuestra tendencia al disfrute sensual egocéntrico. Recuerdo constante (anudhyãna) significa reflexionar en los tópicos después (anu) que uno los ha oído de labios del guru y los Vaisnavas. Esto confirma una vez más que simplemente oír o estudiar las Escrituras, sin reflexionar en lo que uno ha leído, no puede acarrear los resultados deseados.
+</p>
+<p class='vspace'><strong>LA DEVOCION ES NECESARIA PARA ENTENDER EL BHÃGAVATAM</strong>
+</p>
+<p class='vspace'>El Srimad Bhãgavatam es la esencia de todas las Escrituras y el emperador de toda la literatura. El Bhakti-rasãmrta-sindhu, Caitanya Caritãmrta, Sat-sandarbha, Brhad-bhãgavatãmrta, Brhad-vaisnava-tosani, Laghu-vaisnava-tosani, Bhãvãrtha-dipikã, Sãrãrtha-darsini y demás obras, son explicaciones del Bhãgavatam. Se debe estudiar estas literaturas a través de la sucesión discipular, sometiéndose humildemente al maestro espiritual, formulando las debidas preguntas y manteniendo una actitud servicial. La penetración en la práctica del servicio devocional por la cual se progresa en la adoración del Señor, no puede resultar sin dicho enfoque.
+</p>
+<p class='vspace'>Como ya se expresara, el Bhãgavatam solo puede ser entendido por la devoción y no por el ejercicio de la inteligencia o por el estudio de muchos comentarios (bhaktyã bhãgavatam grãhyam na buddhyã na ca tikayã). Ningún caudal de especulación mundana o erudición puede ayudarnos a entender el humor divino del Bhãgavatam. Hay que tomar refugio en el proceso del servicio devocional como lo enseñaran los devotos puros del Señor; esa es la única forma por la cual podremos ingresar a sus misterios. Hay que estudiar el Bhãgavatam constantemente, acudiendo a él con una devoción concentrada. A medida que se hace, el Señor Mismo es aprisionado en nuestro corazón.
+El corazón del devoto está lleno del deseo puro de complacer solo los sentidos de Krishna; es el sitio favorito de descanso del Señor. Así pues, Narottama dãsa Thãkura ha cantado:
+</p>
+<div class='vspace'></div><pre> bhaktera hrdaye govindera satata visrãma
+ govinda kahena nama bhakta se parãna
+</pre><p class='vspace'>“Govinda permanece constantemente en el corazón de Su devoto. El dice, “Mi devoto es Mi vida”.
+(Prãrthana)
+</p>
+<p class='vspace'>La conclusión es que el aspirante formal a la devoción pura necesita ampararse en un matha donde pueda cultivar el conocimiento de las Escrituras devocionales, en asociación con los devotos puros.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_11.html'>Habilidad en el Bhajana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_13.html'>Controlando la Mente</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:25 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

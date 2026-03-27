@@ -1,0 +1,572 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Basic PmWiki editing rules</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : PmWiki - RSS Feed'
+      href='index.php-n=PmWiki.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=PmWiki.BasicEditing' method='get'><input type='hidden' name='n' value='PmWiki.BasicEditing' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Basic PmWiki editing rules"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.BasicEditing-discussion?action=edit'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p>
+</p>
+<p class='vspace'><span class='frame rfloat' style='font-size: smaller; background-color: #ffffcc;'> authors (basic)</span>
+</p>
+<p class='vspace'>The pages on this site are <a class='wikilink' href='index.php-n=PmWiki.WikiWikiWeb.html'>WikiWikiWeb</a> pages, which means that pages can be created and edited by multiple authors. To edit a page, click the <strong>Edit</strong> link that exists <strong>somewhere</strong> on the page, usually in the header or footer. Some pages may be <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.passwords?action=edit'>password-protected</a>, depending on the system's security policies, but many systems allow open editing of pages.
+</p>
+<p class='vspace'>When editing a page, you see the <em>markup text</em> that describes the content of the page.  The basic rules for page markup are simple:
+</p><ol><li>Put a blank line between paragraphs.
+</li><li>To make a list, start each line with # for numbered (ordered) lists or * for bulleted (unordered) lists.
+</li><li>To make a heading, start a line with two or more ! marks; !! is a subheading, and !!! is a sub-subheading.
+</li><li>To emphasize text, enclose it in 2 or 3 <em>single quotes</em>; <code class='escaped'>''text''</code> for italics or <code class='escaped'>'''text'''</code> for bold.
+</li><li>To make a link to another page, enclose the page's name in double brackets; for example <code class='escaped'>[[basic editing]]</code> links to this page. Links to nonexistent pages are displayed specially, to invite others to create the page.
+</li><li>To make a link to another site, type its address, such as <a class='urllink' href='http://www.example.com/' rel='nofollow'>http://www.example.com/</a> .
+</li></ol><p class='vspace'><strong>If you want to experiment with editing a page, try it on the <a class='wikilink' href='index.php-n=Main.WikiSandbox.html'>WikiSandbox</a>.</strong> You can <a class='wikilink' href='index.php-n=Main.WikiSandbox-action=edit.html'>edit the WikiSandbox</a> without affecting anything important on this site. If you do edit other pages, it's courteous to <strong>sign</strong> your contribution; using ~~~ effectively 'signs' the name that you provide in the Author field on the Page Edit form.
+</p>
+<div class='vspace'></div><h2>Example</h2>
+<p>The table below demonstrates many of the common markups used to format pages.  The right column shows the effect of the markup, the left column shows what to write to achieve the effect.  More details are available from the <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.text_formatting_rules?action=edit'>text formatting rules</a> and other documentation pages. An <strong>exhaustive list</strong> of default markup is available as the <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.markup_master_index?action=edit'>markup master index</a>
+</p>
+<div class='vspace'></div><h3>General Usage</h3>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>An empty line
+
+starts a new paragraph.
+</pre></td><td 
+        class='markup2' valign='top'><p>An empty line
+</p>
+<p class='vspace'>starts a new paragraph.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>A single newline
+usually doesn't affect the layout.  
+Use two backslashes\\
+to break a line.
+[[&lt;&lt;]]
+Use three backslashes\\\
+for two line breaks.
+</pre></td><td 
+        class='markup2' valign='top'><p>A single newline
+usually doesn't affect the layout.  
+Use two backslashes<br />to break a line.
+<br clear='all' />
+Use three backslashes<br /><br />for two line breaks.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>A single backslash \
+joins the next line \
+to the previous one.
+</pre></td><td 
+        class='markup2' valign='top'><p>A single backslash joins the next line to the previous one.
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3><a name='lists' id='lists'></a> Lists </h3>
+<table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>* lists are created by using asterisks
+** more asterisks produce deeper lists
+*** the list is terminated
+by the first line that is not a list
+</pre></td><td 
+        class='markup2' valign='top'><ul><li>lists are created by using asterisks
+<ul><li>more asterisks produce deeper lists
+<ul><li>the list is terminated
+</li></ul></li></ul></li></ul><p>by the first line that is not a list
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre># Numbered lists
+# are also possible
+## more hashes produced deeper lists
+*** and lists can nest
+-&gt; use [[list styles]] to maintain
+numbering
+## Text between list items can cause
+numbering to restart
+## %item value=3% this can be dealt with
+</pre></td><td 
+        class='markup2' valign='top'><ol><li>Numbered lists
+</li><li>are also possible
+<ol><li>more hashes produced deeper lists
+<ul><li>and lists can nest
+</li></ul></li></ol></li></ol><div class='indent'>use <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.list_styles?action=edit'>list styles</a> to maintain numbering
+<ol><li>Text between list items can cause numbering to restart
+</li><li value='3' > this can be dealt with
+</li></ol></div>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>-&gt; An arrow (-&gt;) indents content.
+
+   Line up text to continue the indent.
+
+--&gt;Longer arrows (--&gt;) indent
+further.
+
+-&lt;A reverse arrow (-&lt;) creates a
+hanging indent, the first line is
+outdented and remaining lines are
+indented.
+--&lt;Longer reverse arrows (--&lt;)
+indent further.
+</pre></td><td 
+        class='markup2' valign='top'><div class='indent'>An arrow (-&gt;) indents content.
+<div class='vspace'></div>Line up text to continue the indent.
+<div class='vspace'></div><div class='indent'>Longer arrows (--&gt;) indent further.
+</div></div><div class='vspace'></div><div class='outdent'>A reverse arrow (-&lt;) creates a hanging indent, the first line is outdented and remaining lines are indented.
+<div class='outdent'>Longer reverse arrows (--&lt;) indent further.
+</div></div>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>: Definition list : list of definitions
+: item : the item's definition
+: another item : that item's definition
+:: indentation : more leading colons
+produce deeper lists
+</pre></td><td 
+        class='markup2' valign='top'><dl><dt> Definition list </dt><dd> list of definitions
+</dd><dt> item </dt><dd> the item's definition
+</dd><dt> another item </dt><dd> that item's definition
+<dl><dt> indentation </dt><dd> more leading colons produce deeper lists
+</dd></dl></dd></dl>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre> Lines that begin with
+ a space are formatted exactly
+ as typed, in a fixed-width font.
+
+Note that very long lines of
+preformatted text
+can cause the whole page to be wide.
+</pre></td><td 
+        class='markup2' valign='top'><pre> Lines that begin with
+ a space are formatted exactly
+ as typed, in a fixed-width font.
+</pre><p class='vspace'>Note that very long lines of preformatted text
+can cause the whole page to be wide.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>%rfloat% This text floats to the right
+
+%rframe% This text floats to the right
+with a frame
+
+%center% This text is centered.
+
+%right% This text is right justified.
+</pre></td><td 
+        class='markup2' valign='top'><p><span class='rfloat'> This text floats to the right</span>
+</p>
+<p class='vspace'><span class='frame rfloat'> This text floats to the right with a frame</span>
+</p>
+<p class='vspace'  style='text-align: center;'> This text is centered.
+</p>
+<p class='vspace'  style='text-align: right;'> This text is right justified.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Four or more dashes
+at the beginning of a line
+----
+produce a horizontal line.
+</pre></td><td 
+        class='markup2' valign='top'><p>Four or more dashes
+at the beginning of a line
+</p><hr />
+<p>produce a horizontal line.
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3><a name='links' id='links'></a> <a class='wikilink' href='index.php-n=PmWiki.Links.html'>Links</a></h3>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>* Text in double brackets become links
+to other pages.
+* Words are automatically capitalized in
+page titles.
+Practice editing
+in the [[wiki sandbox]].
+</pre></td><td 
+        class='markup2' valign='top'><ul><li>Text in double brackets become links to other pages.
+</li><li>Words are automatically capitalized in page titles.
+</li></ul><p>Practice editing
+in the <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.wiki_sandbox?action=edit'>wiki sandbox</a>.
+</p>
+</td></tr></table>
+<div class='vspace'></div><ul><li>When linking to a page in a different wikigroup, provide the group name, followed by a separator, and then the page name.
+</li><li>If the separator you use is a slash, only the page name will appear.
+</li><li>If the separator you use is a dot, the full string (group name and page name) will appear.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Practice editing
+in the [[Main/WikiSandbox]].
+
+Which one?
+Oh, in the [[Main.WikiSandbox]].
+</pre></td><td 
+        class='markup2' valign='top'><p>Practice editing
+in the <a class='wikilink' href='index.php-n=Main.WikiSandbox.html'>WikiSandbox</a>.
+</p>
+<p class='vspace'>Which one?
+Oh, in the <a class='wikilink' href='index.php-n=Main.WikiSandbox.html'>Main.WikiSandbox</a>.
+</p>
+</td></tr></table>
+<div class='vspace'></div><ul><li>Text after a pipe (|) is used as the link text, or use the alternate (and perhaps more understandable) arrow (text -&gt; link) notation.
+</li><li>PmWiki adds capitalisation to links
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Practice editing in the
+[[WikiSandbox | practice area]].
+
+Practice editing in the
+[[Main.WikiSandbox | practice area]].
+
+Practice editing in the
+[[practice area -&gt; Wiki sandbox]].
+
+Advanced tables are described in [[table
+directives]].
+</pre></td><td 
+        class='markup2' valign='top'><p>Practice editing in the
+<a class='wikilink' href='index.php-n=Main.WikiSandbox-from=PmWiki.WikiSandbox.html'>practice area</a>.
+</p>
+<p class='vspace'>Practice editing in the
+<a class='wikilink' href='index.php-n=Main.WikiSandbox.html'>practice area</a>.
+</p>
+<p class='vspace'>Practice editing in the
+<a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Wiki_sandbox?action=edit'>practice area</a>.
+</p>
+<p class='vspace'>Advanced tables are described in <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.table_directives?action=edit'>table directives</a>.
+</p>
+</td></tr></table>
+<div class='vspace'></div><ul><li>Endings become part of the link text.
+</li><li>Parentheses hide parts of the link name.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Practice editing in the
+[[wiki sandbox]]es.
+
+Practice editing in the
+[[(wiki) sandbox]].
+# as reference: [[Tables |#]]
+# to a page title [[Basic editing|+]]
+</pre></td><td 
+        class='markup2' valign='top'><p>Practice editing in the
+<a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.wiki_sandbox?action=edit'>wiki sandboxes</a>.
+</p>
+<p class='vspace'>Practice editing in the
+<a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.wiki_sandbox?action=edit'> sandbox</a>.
+</p><ol><li>as reference: <a class='wikilink' href='index.php-n=PmWiki.Tables.html'>[1]</a>
+</li><li>to a page title <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Basic_editing?action=edit'>Basic editing</a>
+</li></ol>
+</td></tr></table>
+<div class='vspace'></div><ul><li>PmWiki can use <a class='wikilink' href='index.php-n=PmWiki.InterMap.html'>InterMap prefixes</a> that have specific meanings.
+</li><li>Parentheses can hide those too.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>What's an [[(Wikipedia:)aardvark]],
+anyway?
+</pre></td><td 
+        class='markup2' valign='top'><p>What's an <a class='urllink' href='http://www.wikipedia.com/wiki/aardvark' rel='nofollow'>aardvark</a>, anyway?
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Links to external sources can be entered
+# bare url:  http://google.com
+# link text: [[http://google.com |
+Google]]
+# as reference: [[http://google.com |#]]
+</pre></td><td 
+        class='markup2' valign='top'><p>Links to external sources can be entered
+</p><ol><li>bare url:  <a class='urllink' href='http://google.com' rel='nofollow'>http://google.com</a>
+</li><li>link text: <a class='urllink' href='http://google.com' rel='nofollow'>Google</a>
+</li><li>as reference: <a class='urllink' href='http://google.com' rel='nofollow'>[1]</a>
+</li></ol>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>Links can open in another window,
+as in %newwin% http://www.pmwiki.org.
+</pre></td><td 
+        class='markup2' valign='top'><p>Links can open in another window,
+as in  <a target='_blank'  class='urllink' href='http://www.pmwiki.org' rel='nofollow'>http://www.pmwiki.org</a>.
+</p>
+</td></tr></table>
+<div class='vspace'></div><h3>Character formatting</h3>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><ul><li>These are all apostrophes (single-quote marks), not double-quotes.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>''Emphasize'', '''strongly''', 
+'''''very strongly'''''.
+</pre></td><td 
+        class='markup2' valign='top'><p><em>Emphasize</em>, <strong>strongly</strong>, 
+<strong><em>very strongly</em></strong>.
+</p>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>@@Monospaced text@@
+
+[@This is a
+  preformatted
+    text block@]
+</pre></td><td 
+        class='markup2' valign='top'><p><code>Monospaced text</code>
+</p>
+<div class='vspace'></div><pre class='escaped'>This is a
+  preformatted
+    text block</pre>
+</td></tr></table>
+<div class='vspace'></div><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>* Text with '^superscripts^'
+* Text with '_subscripts_'
+* deleted {-strikethrough-} text
+* inserted {+underline+} text
+* [+big+], [++bigger++] text
+* [-small-], [--smaller--] text
+</pre></td><td 
+        class='markup2' valign='top'><ul><li>Text with <sup>superscripts</sup>
+</li><li>Text with <sub>subscripts</sub>
+</li><li>deleted <del>strikethrough</del> text
+</li><li>inserted <ins>underline</ins> text
+</li><li><span style='font-size:120%'>big</span>, <span style='font-size:144%'>bigger</span> text
+</li><li><span style='font-size:83%'>small</span>, <span style='font-size:69%'>smaller</span> text
+</li></ul>
+</td></tr></table>
+<div class='vspace'></div><h3><a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Wiki_styles?action=edit'>Wiki styles</a></h3>
+<table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>[[WikiStyles]] allow %red% text
+%blue% to %green% be in 
+%color=#ff7f00% different %%colors.
+</pre></td><td 
+        class='markup2' valign='top'><p><a class='wikilink' href='index.php-n=PmWiki.WikiStyles.html'>WikiStyles</a> allow <span  style='color: red;'> text</span>
+<span  style='color: blue;'> to </span><span  style='color: green;'> be in </span>
+<span  style='color: #ff7f00;'> different </span>colors.
+</p>
+</td></tr></table>
+<p class='vspace'><a name='headings' id='headings'></a>
+</p><h3>Headings and blocks</h3>
+<table class='markup horiz' align='center' ><tr><td class='markup1'  valign='top'>
+<p><span style='font-size:83%'><strong>What to type</strong></span>
+</p></td><td class='markup2'  valign='top'>
+<p><span style='font-size:83%'><strong>What it looks like</strong></span>
+</p></td></tr></table>
+<div class='vspace'></div><ul><li>Headings are useful for creating a "well-structured" page.
+They're not just for making big text.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>!! Major Subheading
+!! [-Major Subheading With Smaller
+Text-]
+!!! Minor Subheading
+!!!! And More
+!!!!! Subheadings
+</pre></td><td 
+        class='markup2' valign='top'><h2>Major Subheading</h2>
+<h2><span style='font-size:83%'>Major Subheading With Smaller Text</span></h2>
+<h3>Minor Subheading</h3>
+<h4>And More</h4>
+<h5>Subheadings</h5>
+</td></tr></table>
+<p class='vspace'><a name='pagetitles' id='pagetitles'></a>
+</p><h3>Page titles</h3>
+<ul><li>The <code class='escaped'>(:title:)</code> directive sets the page's title to something other than its page name.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>(:title Basic Editing:)
+The title of this page is {$Title},
+spaced as {$Titlespaced}.
+</pre></td><td 
+        class='markup2' valign='top'><p>The title of this page is Basic PmWiki editing rules, spaced as Basic PmWiki editing rules.
+</p>
+</td></tr></table>
+<p class='vspace'><a name='blockstyles' id='blockstyles'></a>
+</p><h3>Block styles</h3>
+<ul><li>blocks allow styles to be applied across a number of lines and paragraphs of text and <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.images?action=edit'>images</a>.
+</li></ul><table class='markup horiz' align='center'>
+      <tr><td class='markup1' valign='top'><pre>&gt;&gt;purple&lt;&lt;
+All of the text in this block
+is purple.
+* Purple cows and purple flowers
+* Purple people eater
+&gt;&gt;red&lt;&lt;
+* Now this list is red
+&gt;&gt;center&lt;&lt;
+* and this text is centered
+&gt;&gt;right green&lt;&lt;
+* and this text is green and right
+justified
+&gt;&gt;&lt;&lt;
+* And this is normal
+</pre></td><td 
+        class='markup2' valign='top'><div  style='color: purple;' > 
+<p>All of the text in this block
+is purple.
+</p><ul><li>Purple cows and purple flowers
+</li><li>Purple people eater
+</li></ul></div><div  style='color: red;' > 
+<ul><li>Now this list is red
+</li></ul></div><div  style='text-align: center;' > 
+<ul><li>and this text is centered
+</li></ul></div><div  style='text-align: right; color: green;' > 
+<ul><li>and this text is green and right justified
+</li></ul></div>
+<ul><li>And this is normal
+</li></ul>
+</td></tr></table>
+<p class='vspace'  style='background-color: #eee;'> <span class='wikitrail'>&lt;&lt;  | <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Documentation_Index?action=edit'>Documentation Index</a> |  &gt;&gt;</span>
+</p>
+<div class='vspace'></div><div class='faq' > <a name='faq' id='faq'></a> 
+<p><a name='beginning' id='beginning'></a>
+</p><p class='question'> I'm new to PmWiki, where can I find some basic help for getting started?</p>
+<p> The <a class='wikilink' href='index.php-n=PmWiki.Basic_Editing.html'>Basic Editing</a> page is a good start.  From there, you can just follow the navigational links at the bottom of the page (they are called <a class='wikilink' href='index.php-n=PmWiki.WikiTrails.html'>WikiTrails</a>) to the next pages, or to the <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Documentation_Index?action=edit'>Documentation Index</a> page, which provides an outline style index of essential documentation pages, organized from basic to advanced.
+</p>
+<p class='vspace question'> How do I include special characters on my wiki pages?</p>
+<p> Use character codes to insert <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.special_characters?action=edit'>special characters</a>, such as Copyright (&#169;) and Trademark (&#174; or &#8482;) symbols, that don't appear on your keyboard.
+</p>
+<p class='vspace question'> Why are separate lines of text in the markup combined into a single line on output?</p>
+<p> PmWiki normally treats consecutive lines of text as being a paragraph, and merges and wraps lines together on output.  This is consistent with most other wiki packages.  However, an author can use the <code class='escaped'>(:linebreaks:)</code> directive to cause separate lines of markup text to be kept as separate lines in the output.
+</p>
+<p class='vspace question'> Can I just enter HTML directly?</p>
+<p> By default (and by design), PmWiki does not support the use of HTML elements in the editable markup for wiki pages. There are a number of reasons for this described in the <a class='wikilink' href='index.php-n=PmWiki.PmWikiPhilosophy.html'>PmWikiPhilosophy</a> and <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Audiences' rel='nofollow'>PmWiki:Audiences</a>. Basically, Pm feels that enabling HTML markup within wiki pages in a collaborative environment has the effect of excluding some potential authors from being able to edit pages, as well as posing a number of display and security issues.  However, a site administrator can use the <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/EnableHTML' rel='nofollow'>Cookbook:EnableHTML</a> recipe to enable the use of HTML markup directly in pages.
+</p>
+<div class='vspace'></div></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 26, 2007, at 01:45 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,797 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Árbol Genealógico de las Hijas de Manu </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam_4 - RSS Feed'
+      href='index.php-n=bhagavatam_4.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam_4.0-1' method='get'><input type='hidden' name='n' value='bhagavatam_4.0-1' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Árbol Genealógico de las Hijas de Manu "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam_4.0-1-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='createlinktext' href='index.php-n=bhagavatam_4.srimad_bhagavatam-action=edit.html'>srimad bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo l</small><br /><br />Árbol Genealógico de las Hijas de Manu</h1>
+<p class='vspace'>VERSO 1
+maitreya uvaca
+manos tu satarupayam
+tisrah kanyas ca jajñire
+akutir devahutis ca
+prasutir iti visrutah
+</p>
+<p class='vspace'>maitreyah uvaca—el gran sabio Maitreya dijo; manoh tu—de Svayambhuva Manu; satarupayam—en su esposa Satarupa; tisrah—tres; kanyah ca—hijas también; jajñire—engendró; akutih—llamada akuti; devahutih—llamada Devahuti; ca—también; prasutih—llamada Prasuti; iti—de este modo; visrutah—bien conocidas.
+TRADUCCIÓN
+Sri Maitreya dijo: Svayambhuva Manu engendró en Su esposa Satarupa tres hijas, cuyos nombres fueron akuti, Devahuti y Prasuti.
+SIGNIFICADO
+Ofreceremos en primer lugar nuestras respetuosas reverencias a nuestro maestro espiritual, Om Visnupada Sri Srimad Bhaktisiddhanta Sarasvati Gosvami Prabhupada, bajo cuya orden estoy ocupado en esta hercúlea tarea de escribir, en forma de significados de Bhaktivedanta, un comentario al Srimad- Bhagavatam. Por su gracia hemos terminado ya tres cantos, y nuestro propósito es comenzar el Cuarto Canto. Por su divina gracia, ofreceremos nuestras respetuosas reverencias al Señor Caitanya, que hace quinientos años dio comienzo a este movimiento para la conciencia de Krishna para difundir el bhagavata-dharma, y mediante Su gracia, ofreceremos nuestras reverencias a los Seis Gosvamis; a continuación, ofreceremos nuestras reverencias a Radha y Krishna, la pareja espiritual que disfruta eternamente en Vrndavana con Sus pastorcillos de vacas y Sus doncellitas de Vrajabhumi. Ofreceremos también nuestras respetuosas reverencias a todos los devotos y servidores eternos del Señor Supremo.
+Este Cuarto Canto del Srimad-Bhagavatam consta de treinta y un capítulos, en los que se detalla la creación secundaria llevada a cabo por Brahma y los manus. Es el propio Señor Supremo quien lleva a cabo la verdadera creación al agitar Su energía material; después, Brahma, la primera criatura viviente del universo, siguiendo Su orden, intenta crear los diversos sistemas planetarios y a sus habitantes, aumentando la población con sus descendientes, entre los que se cuentan Manu y otros progenitores de entidades vivientes, que siempre actúan siguiendo la orden del Señor Supremo. El Capítulo Primero de este Cuarto Canto trata de las tres hijas de Svayambhuva Manu y de su descendencia. Los seis capítulos siguientes tratan del sacrificio ejecutado por el rey Daksa y del fracaso en que acabó. A continuación, se detallan las actividades de Maharaja Dhruva en cinco capítulos. Los once capítulos siguientes relatan las actividades del rey Prthu, y los ocho capítulos finales están dedicados a las actividades de los reyes Pracetas.
+Como se explica en este primer verso del Capítulo, Svayambhuva Manu tuvo tres hijas: akuti, Devahuti y Prasuti. De una de ellas, Devahuti, de su esposo Kardama Muni y de su hijo Kapila Muni se ha hablado ya. Este Capítulo estará especialmente dedicado a los descendientes de akuti, la mayor de las hijas. Svayambhuva Manu era hijo de Brahma. Brahma tuvo muchos más hijos, pero se menciona especialmente el nombre de Manu en primer lugar porque él era un gran devoto del Señor. En este verso encontramos también la palabra ca, que indica que Svayambhuva Manu, además de las tres hijas mencionadas, tuvo también dos hijos.
+VERSO 2
+akutim rucaye pradad
+api bhratrmatim nrpah
+putrika-dharmam asritya
+satarupanumoditah
+</p>
+<p class='vspace'>akutim—akuti; rucaye—al gran sabio Ruci; pradat—entregada; api—aunque; bhratr-matim—hija que tenía un hermano; nrpah—el rey; putrika—obtener el hijo resultante; dharmam—rituales religiosos; asritya—refugiarse; satarupa—por la esposa de Svayambhuva Manu; anumoditah—siendo aprobado.
+TRADUCCIÓN
+A pesar de que akuti tenía dos hermanos, el rey Svayambhuva Manu se la entregó a Prajapati Ruci con la condición de que, a cambio, le diera el hijo varón que naciese de ella. Esto lo hizo tras consultar con su esposa, Satarupa.
+SIGNIFICADO
+A veces una persona sin hijos varones ofrece a su hija en matrimonio con la condición de que, a cambio, se le entregue el nieto en calidad de hijo adoptivo y que éste herede sus propiedades. Esto se denomina putrika-dharma, y consiste en que una persona, a pesar de no tener hijos con su esposa, recibe un hijo merced a la ejecución de rituales religiosos. Pero aquí vemos un comportamiento extraordinario de parte de Manu, pues a pesar de tener dos varones, cuando concedió a Prajapati Ruci la mano de akuti, su hija mayor, le puso la condición de que, a cambio, le entregase en calidad de hijo adoptivo a su primogénito. Con respecto a esto, Srila Visvanatha Cakravarti Thakura comenta que el rey Manu sabía que en el vientre de akuti iba a nacer la Suprema Personalidad de Dios; por eso quería ese hijo de akuti en particular, a pesar de tener dos varones, pues su ambición era que la Suprema Personalidad de Dios adviniese como hijo y como nieto suyo. Siendo Manu quien establece las leyes de la humanidad, y habiendo ejecutado él personalmente este putrika-dharma, podemos aceptar ese sistema como válido también para la sociedad humana. De modo que, cuando un padre, a pesar de tener hijos varones, desee adoptar a un determinado nieto nacido de su hija, puede poner esa condición al ofrecer a su hija en caridad. Ésa es la opinión de Srila Jiva Gosvami.
+VERSO 3
+prajapatih sa bhagavan
+rucis tasyam ajijanat
+mithunam brahma-varcasvi
+paramena samadhina
+</p>
+<p class='vspace'>prajapatih—aquel que tiene la misión de concebir hijos; sah—él; bhagavan— el muy opulento; rucih—el gran sabio Ruci; tasyam—en ella; ajijanat—engendró; mithunam—pareja; brahma-varcasvi—muy poderoso espiritualmente; paramena—con gran fuerza; samadhina—en trance.
+TRADUCCIÓN
+Ruci, que era un brahmana cualificado muy poderoso y había sido designado como uno de los progenitores de las entidades vivientes, engendró en su esposa, akuti, un hijo y una hija.
+SIGNIFICADO
+La palabra brahma-varcasvi es muy significativa. Ruci era un brahmana, y ejecutó los deberes brahmínicos muy estrictamente. Como se afirma en la Bhagavad-gita, las cualidades brahmínicas son el control de los sentidos, el control de la mente, la limpieza externa e interna, el cultivo de conocimiento espiritual y material, la sencillez, la veracidad, la fe en la Suprema Personalidad de Dios, etc. Son muchas las cualidades que denotan una personalidad brahmínica, y podemos entender que Ruci siguió estrictamente todos los principios brahmínicos. Por eso se habla de él especialmente como brahma-varcasvi. En lenguaje védico, al que nace de padre brahmana pero no actúa como tal, se le califica de brahma-bandhu, y se le equipara con los sudras y las mujeres. El Bhagavatam nos informa de que Vyasadeva compiló el Mahabharata especialmente para stri-sudra-brahma-bandhu. Stri significa «mujeres», sudra se refiere a la clase más baja de la sociedad humana civilizada, y brahma-bandhu es el que ha nacido en familia de brahmanas pero no es cuidadoso en seguir las reglas y regulaciones. De estas tres clases en conjunto se dice que son poco inteligentes; no tienen acceso al estudio de los Vedas, destinados especialmente para personas que hayan adquirido las cualidades brahmínicas. Esta restricción no se basa en ningún prejuicio sectáreo, sino en las cualidades. Sin haber adquirido las cualidades brahmínicas, nadie puede entender las Escrituras védicas. Por eso es lamentable que personas sin cualidades brahmínicas, que nunca han sido educadas bajo la guía de un maestro espiritual genuino, a pesar de todo comenten Escrituras védicas como el Srimad-Bhagavatam y otros Puranas, pues tales personas no pueden ofrecer el verdadero mensaje que estas obras encierran. Se considera a Ruci un perfecto brahmana; por eso aquí se le califica de brahma-varcasvi, «aquel que goza de toda la potencia de su fuerza brahmínica».
+VERSO 4
+yas tayoh purusah saksad
+visnur yajña-svarupa-dhrk
+ya stri sa daksina bhuter
+amsa-bhutanapayini
+</p>
+<p class='vspace'>yah—el que; tayoh—de ellos; purusah—varón; saksat—directamente; visnuh—el Señor Supremo; yajña—Yajña; svarupa-dhrk—aceptando la forma; ya—el otro; stri—mujer; sa—ella; daksina—Daksina; bhuteh—de la diosa de la fortuna; amsa- bhuta—siendo una expansión plenaria; anapayini—que nunca se puede separar.
+TRADUCCIÓN
+De esos dos hijos de akuti, el varón era una encarnación directa de la Suprema Personalidad de Dios, y recibió el nombre de Yajña, que es otro nombre del Señor Visnu. La hija era una encarnación parcial de Laksmi, la diosa de la fortuna, la consorte eterna del Señor Visnu.
+SIGNIFICADO
+Laksmi, la diosa de la fortuna, es la consorte eterna del Señor Visnu. Aquí se afirma que el Señor y Laksmi, que son consortes eternos, nacieron juntos de akuti. Tanto el Señor como Su consorte están más allá de la creación material, como muchas autoridades confirman (narayanah paro 'vyaktat); así pues, su relación eterna no puede cambiar, y Yajña, el niño nacido de akuti, más tarde Se casó con la diosa de la fortuna.
+VERSO 5
+aninye sva-grham putryah
+putram vitata-rocisam
+svayambhuvo muda yukto
+rucir jagraha daksinam
+</p>
+<p class='vspace'>aninye—se llevó; sva-grham—al hogar; putryah—nacido de la hija; putram—al hijo; vitata-rocisam—muy poderoso; svayambhuvah—el manu llamado Svayambhuva; muda—sintiéndose muy complacido; yuktah—con; rucih—el gran sabio Ruci; jagraha—conservó; daksinam—a la hija llamada Daksina.
+TRADUCCIÓN
+Muy contento, Svayambhuva Manu se llevó con él a Yajña, el hermoso niño, mientras Ruci, su yerno, se quedó con la niña, Daksina.
+SIGNIFICADO
+Svayambhuva Manu se puso muy contento al ver que su hija akuti había dado a luz dos hijos: un niño y una niña. Le preocupaba que, si se llevaba al hijo de Ruci, su yerno, éste se sentiría triste. Así pues, cuando oyó que además del niño tuvieron una niña, se puso muy contento. Ruci, cumpliendo su promesa, le entregó el varón y decidió quedarse con la niña, cuyo nombre era Daksina. Yajña es uno de los nombres del Señor Visnu, puesto que Él es el amo de los Vedas. El nombre Yajña viene de yajusam patih, que significa «el Señor de todos los sacrificios». En el Yajur Veda se dan diversas prescripciones rituales para la ejecución de yajñas, cuyo beneficiario es siempre Visnu, el Señor Supremo. Por consiguiente, en la Bhagavad-gita (3.9) se afirma: yajñarthat karmanah: Hay que actuar, pero los deberes prescritos deben realizarse solamente para complacer a Yajña, Visnu. Si con nuestras acciones no buscamos satisfacer a la Suprema Personalidad de Dios, es decir, si no ejecutamos servicio devocional, todas nuestras actividades tendrán su correspondiente reacción. Que la reacción sea buena o mala, no importa: Si nuestras actividades no se ajustan al deseo del Señor Supremo, si no somos conscientes de Krishna en nuestros actos, tendremos que responder de los resultados que se produzcan. Todo tipo de acción tiene siempre una reacción, pero las acciones que se llevan a cabo para Yajña, no tienen reacción. De este modo, quien actúa para Yajña, la Suprema Personalidad de Dios, no se enreda en el condicionamiento material, pues, como se menciona en los Vedas y en la Bhagavad-gita, la finalidad de los Vedas y de los rituales védicos es comprender a la Suprema Personalidad de Dios, Krishna. Debemos tratar de actuar con conciencia de Krishna desde el mismo principio; de este modo nos liberaremos de las reacciones de las actividades materiales.
+VERSO 6
+tam kamayanam bhagavan
+uvaha yajusam patih
+tustayam tosam apanno
+'janayad dvadasatmajan
+</p>
+<p class='vspace'>tam—a ella; kamayanam—deseando; bhagavan—el Señor; uvaha—Se casó; yajusam—de los sacrificios; patih—amo; tustayam—en Su esposa, que estaba muy complacida; tosam—gran placer; apannah—habiendo obtenido; ajanayat— engendró; dvadasa—a doce; atmajan—hijos.
+TRADUCCIÓN
+Más adelante, el Señor de las ejecuciones rituales de yajñas Se casó con Daksina, quien sentía un gran deseo de tener por esposo a la Personalidad de Dios. El Señor también Se sintió muy complacido de tener doce hijos con esa esposa.
+SIGNIFICADO
+Cuando hay un matrimonio ideal, generalmente se les llama Laksmi-Narayana, para compararlos con el Señor y la diosa de la fortuna, pues es significativo el hecho de que Laksmi-Narayana siempre son felices en su matrimonio. La esposa siempre debe sentirse satisfecha con su esposo, y éste siempre debe estar satisfecho con ella. En las enseñanzas morales del Canakya-sloka, Canakya Pandita dice que la diosa de la fortuna se manifiesta si los dos cónyuges están siempre satisfechos el uno con el otro. En otras palabras, en un matrimonio sin desavenencias está presente toda la opulencia material, y nacen buenos hijos. Por lo general, la civilización védica educa a la esposa para que esté satisfecha en cualquier condición, y exige del esposo que complazca a su esposa con una provisión suficiente de alimentos, adornos y ropa. Entonces, si los dos están satisfechos en su relación, los hijos que nacen son buenos. De esta manera, el mundo entero puede alcanzar la paz, pero, por desgracia, en la era de Kali no hay esposos y esposas ideales; ésa es la razón de que se produzcan hijos no deseados, y de que en el mundo de hoy no haya paz ni prosperidad.
+VERSO 7
+tosah pratosah santoso
+bhadrah santir idaspatih
+idhmah kavir vibhuh svahnah
+sudevo rocano dvi-sat
+</p>
+<p class='vspace'>tosah—Tosa; pratosah—Pratosa; santosah—Santosa; bhadrah—Bhadra; santih—Santi; idaspatih—Idaspati; idhmah—Idhma; kavih—Kavi; vibhuh—Vibhu; svahnah—Svahna; sudevah—Sudeva; rocanah—Rocana; dvi-sat—doce.
+TRADUCCIÓN
+Los doce hijos de Yajña y Daksina recibieron los siguientes nombres: Tosa, Pratosa, Santosa, Bhadra, Santi, Idaspati, Idhma, Kavi, Vibhu, Svahna, Sudeva y Rocana.
+VERSO 8
+tusita nama te deva
+asan svayambhuvantare
+marici-misra rsayo
+yajñah sura-ganesvarah
+</p>
+<p class='vspace'>tusitah—la categoría de los Tusitas; nama—de nombre; te—todos ellos; devah— semidioses; asan—fueron; svayambhuva—el nombre del manu; antare—en ese período; marici-misrah—encabezados por Marici; rsayah—grandes sabios; yajñah —la encarnación del Señor Visnu; sura-gana-isvarah—el rey de los semidioses.
+TRADUCCIÓN
+En la era de Svayambhuva Manu, estos hijos fueron los semidioses conocidos con el nombre colectivo de Tusitas. Marici fue el principal de los siete rsis, y Yajña fue indra, el rey de los semidioses.
+SIGNIFICADO
+Durante la vida de Svayambhuva Manu, los semidioses conocidos con el nombre de Tusitas, los sabios encabezados por Marici y los descendientes de Yajña, el rey de los semidioses, generaron seis tipos de entidades vivientes, que aumentaron su descendencia para cumplir la orden del Señor de llenar el universo con entidades vivientes. Esos seis tipos de entidades vivientes fueron los manus, devas, manu-putras, amsavataras, suresvaras y rsis. Yajña, siendo la encarnación de la Suprema Personalidad de Dios, fue indra, el líder de los semidioses.
+VERSO 9
+priyavratottanapadau
+manu-putrau mahaujasau
+tat-putra-pautra-napt&amp;rnam
+anuvrttam tad-antaram
+</p>
+<p class='vspace'>priyavrata—Priyavrata; uttanapadau—Uttanapada; manu-putrau—hijos de Manu; maha-ojasau—muy grandes, poderosos; tat—sus; putra—hijos; pautra— nietos; naptrnam—nietos de la hija; anuvrttam—siguiendo; tat-antaram—en el período de ese manu.
+TRADUCCIÓN
+Los dos hijos de Svayambhuva Manu, Priyavrata y Uttanapada, fueron reyes muy poderosos; en ese período, sus hijos y nietos se extendieron por los tres mundos.
+VERSO 10
+devahutim adat tata
+kardamayatmajam manuh
+tat-sambandhi sruta-prayam
+bhavata gadato mama
+</p>
+<p class='vspace'>devahutim—a Devahuti; adat—entregó; tata—querido hijo mío; kardamaya—al gran sabio Kardama; atmajam—hija; manuh—el Señor Svayambhuva Manu; tat- sambandhi—en relación con ello; sruta-prayam—escuchado prácticamente todo; bhavata—por ti; gadatah—hablado; mama—por mí.
+TRADUCCIÓN
+Querido hijo mío, Svayambhuva Manu entregó a Devahuti, su muy querida hija, a Kardama Muni. Te he hablado ya de ellos, y prácticamente lo has escuchado ya todo acerca de ellos.
+VERSO 11
+daksaya brahma-putraya
+prasutim bhagavan manuh
+prayacchad yat-krtah sargas
+tri-lokyam vitato mahan
+</p>
+<p class='vspace'>daksaya—a Prajapati Daksa; brahma-putraya—el hijo del Señor Brahma; prasutim—a Prasuti; bhagavan—la gran personalidad; manuh—Svayambhuva Manu; prayacchat—entregó; yat-krtah—el cual hizo; sargah—creación; tri-lokyam —en los tres mundos; vitatah—aumentada; mahan—mucho.
+TRADUCCIÓN
+Svayambhuva Manu casó a su hija Prasuti con otro de los progenitores de las entidades vivientes: Daksa, el hijo de Brahma. Los descendientes de Daksa se extienden por los tres mundos.
+VERSO 12
+yah kardama-sutah prokta
+nava brahmarsi-patnayah
+tasam prasuti-prasavam
+procyamanam nibodha me
+</p>
+<p class='vspace'>yah—aquellas que; kardama-sutah—las hijas de Kardama; proktah—se mencionaron; nava—nueve; brahma-rsi—grandes sabios de conocimiento espiritual; patnayah—esposas; tasam—sus; prasuti-prasavam—generaciones de hijos y nietos; procyamanam—explicar; nibodha—trata de entender; me—de mí.
+TRADUCCIÓN
+Ya te he hablado de las nueve hijas de Kardama Muni, que fueron entregadas a nueve sabios. Ahora te hablaré de los descendientes de esas nueve hijas. Escúchame, por favor.
+SIGNIFICADO
+El Tercer Canto ha explicado ya que Kardama Muni y Devahuti tuvieron nueve hijas, y que todas ellas fueron entregadas después a grandes sabios como Marici, Atri y Vasistha.
+VERSO 13
+patni marices tu kala
+susuve kardamatmaja
+kasyapam purnimanam ca
+yayor apuritam jagat
+</p>
+<p class='vspace'>patni—esposa; mariceh—del sabio llamado Marici; tu—también; kala—llamada Kala; susuve—dio a luz; kardama-atmaja—hija de Kardama Muni; kasyapam—de nombre Kasyapa; purnimanam ca—y de nombre Purnima; yayoh—por quien; apuritam—se extendieron por todas partes; jagat—el mundo.
+TRADUCCIÓN
+Kala, la hija de Kardama Muni que se casó con Marici, tuvo dos hijos, cuyos nombres fueron Kasyapa y Purnima. Sus descendientes se extendieron por todo el mundo.
+VERSO 14
+purnimasuta virajam
+visvagam ca parantapa
+devakulyam hareh pada-
+saucad yabhut sarid divah
+</p>
+<p class='vspace'>purnima—Purnima; asuta—engendró; virajam—un hijo llamado Viraja; visvagam ca—y llamado Visvaga; param-tapa—¡oh, aniquilador de enemigos!; devakulyam—una hija llamada Devakulya; hareh—de la Suprema Personalidad de Dios; pada-saucat—por el agua que lavó Sus pies de loto; ya—ella; abhut—se volvió; sarit divah—el agua trascendental que discurre entre las orillas del Ganges.
+TRADUCCIÓN
+Mi querido Vidura, de estos dos hijos, Kasyapa y Purnima, Purnima engendró tres hijos, que fueron Viraja, Visvaga y Devakulya. De estos tres, Devakulya fue el agua que lavó los pies de loto de la Personalidad de Dios y que se transformó, más adelante, en el Ganges de los planetas celestiales.
+SIGNIFICADO
+De los dos hijos, Kasyapa y Purnima, aquí se trata de los descendientes de Purnima. En el Sexto Canto se hablará de ellos con más detalle. De aquí se deduce también que Devakulya es la deidad regente del río Ganges, río que baja a este planeta desde los planetas celestiales y que se considera sagrado por haber tocado los pies de loto de la Suprema Personalidad de Dios, Hari.
+VERSO 15
+atreh patny anasuya triñ
+jajñe suyasasah sutan
+dattam durvasasam somam
+atmesa-brahma-sambhavan
+</p>
+<p class='vspace'>atreh—de Atri Muni; patni—esposa; anasuya—llamada Anasuya; trin—tres; jajñe—dio a luz; su-yasasah—muy famosos; sutan—hijos; dattam—Dattatreya; durvasasam—Durvasa; somam—Soma (el dios de la Luna); atma—la Superalma; isa—el Señor Siva; brahma—el Señor Brahma; sambhavan—encarnaciones de.
+TRADUCCIÓN
+Anasuya, la esposa de Atri Muni, tuvo tres hijos muy famosos —Soma, Dattatreya y Durvasa—, que fueron representaciones parciales del Señor Visnu, el Señor Siva y el Señor Brahma. Soma era una representación parcial del Señor Brahma, Dattatreya una representación parcial del Señor Visnu, y Durvasa una representación parcial del Señor Siva.
+SIGNIFICADO
+En este verso encontramos las palabras atma-isa-brahma- sambhavan. atma significa «la Superalma, Visnu», isa significa «el Señor Siva», y brahma significa «el Señor Brahma, el de cuatro cabezas». Los tres hijos de Anasuya, es decir, Dattatreya, Durvasa y Soma, nacieron como representaciones parciales de esos tres semidioses. atma no pertenece a la misma categoría que los semidioses y las entidades vivientes, porque es Visnu; por consiguiente, se Le describe como vibhinnamsa-bhutanam. La Superalma, Visnu, es el padre que aporta la simiente de la cual nacen todas las entidades vivientes, incluyendo a Brahma y al Señor Siva. La palabra atma puede entenderse también de la siguiente manera: El principio que es la Superalma en cada atma, o, por así decirlo, el alma de todos, Se manifestó como Dattatreya, pues aquí se emplea también la palabra amsa, «parte integral».
+En la Bhagavad-gita se explica que también las almas individuales son partes de la Suprema Personalidad de Dios, la Superalma. Entonces, ¿por qué no considerar a Dattatreya como una de esas partes? En este verso se explica que el Señor Siva y el Señor Brahma también son partes; entonces, ¿por qué no considerarles a todos como almas individuales corrientes? La respuesta es que tanto las manifestaciones de Visnu como las manifestaciones de las entidades vivientes corrientes son, ciertamente, partes integrales del Señor Supremo, y nadie es igual a Él, pero entre las partes integrales hay distintas categorías. En el Varaha Purana se explica de forma muy clara que unas partes son svamsa, y otras vibhinnamsa. Las partes vibhinnamsa reciben el nombre de jivas, y las partes svamsa pertenecen a la categoría Visnu. Dentro de la categoría jiva de partes integrales vibhinnamsa, también hay gradaciones. Esto se explica en el Visnu Purana, donde se afirma claramente que las partes integrales individuales del Señor Supremo pueden quedar cubiertas por la energía externa, que recibe el nombre de ilusión o maya. Esas partes integrales individuales, que pueden viajar a cualquier parte de la creación del Señor, se denominan sarva-gata, y están sufriendo los tormentos de la existencia material. Su grado de libertad de las cubiertas de ignorancia de la existencia material es proporcional a su nivel de trabajo y a la influencia de las modalidades de la naturaleza material. Las jivas situadas bajo la modalidad de la bondad, por ejemplo, sufren menos que las que están bajo la modalidad de la ignorancia. Con todo, todas las entidades vivientes tienen el derecho innato a una conciencia de Krishna pura, pues todas ellas son partes integrales del Señor Supremo. En la parte integral está también la conciencia del Señor, y la situación de las entidades vivientes varía según la proporción en que esa conciencia se haya limpiado del polvo material. En el Vedanta-sutra, las distintas gradaciones de las entidades vivientes se comparan con velas o lámparas de distintas intensidades. Por ejemplo, algunas bombillas eléctricas tienen la luminosidad de mil velas; otras, de quinientas velas; las hay con la luminosidad de cien velas, de cincuenta, etc. Todas emiten luz, pero en distintas gradaciones. Análogamente, en el Brahman también hay gradaciones. Las expansiones Visnu svamsa del Señor Supremo en diferentes formas de Visnu son como lámparas, el Señor Siva es como otra lámpara, y la intensidad luminosa suprema, el cien por cien de luz, es Krishna. El visnu-tattva posee un noventa y cuatro por ciento de esa potencia; el siva-tattva tiene un ochenta y cuatro por ciento, el Señor Brahma, un setenta y ocho por ciento, y las entidades vivientes son también como Brahma, pero en el estado condicionado su intensidad está aún más velada. En el Brahman hay gradaciones, y nadie puede negarlo. Por lo tanto, las palabras atmesa-brahma-sambhav)an indican que Dattatreya era directamente una parte integral de Visnu, mientras que Durvasa y Soma eran partes integrales del Señor Siva y del Señor Brahma.
+VERSO 16
+vidura uvaca
+atrer grhe sura-sresthah
+sthity-utpatty-anta-hetavah
+kiñcic cikirsavo jata
+etad akhyahi me guro
+</p>
+<p class='vspace'>vidurah uvaca—Sri Vidura dijo; atreh grhe—en la casa de Atri; sura-sresthah— principales semidioses; sthiti—mantenimiento; utpatti—creación; anta— destrucción; hetavah—causas; kiñcit—algo; cikirsavah—deseando hacer; jatah— aparecieron; etat—esto; akhyahi—di; me—a mí; guro—mi querido maestro espiritual.
+TRADUCCIÓN
+Después de escuchar esto, Vidura preguntó a Maitreya: Mi querido maestro, ¿cómo es que las tres deidades, Brahma, Visnu y Siva, que son el creador, el sustentador y el destructor de la creación entera nacieron de la esposa de Atri Muni?
+SIGNIFICADO
+La curiosidad de Vidura estaba muy justificada, pues él entendió que si la Superalma, el Señor Brahma y el Señor Siva aparecieron por mediación de Anasuya, la esposa de Atri Muni, ello debía obedecer a algún propósito importante. ¿Por qué, si no, iban a manifestarse de esa manera?
+VERSO 17
+maitreya uvaca
+brahmana coditah srstav
+atrir brahma-vidam varah
+saha patnya yayav rksam
+kuladrim tapasi sthitah
+</p>
+<p class='vspace'>maitreyah uvaca—Sri Maitreya Rsi dijo; brahmana—por el Señor Brahma; coditah—inspirado; srstau—para crear; atrih—Atri; brahma-vidam—de las personas versadas en conocimiento espiritual; varah—el principal; saha—con; patnya—la esposa; yayau—fueron; rksam—a la montaña Rksa; kula-adrim—gran montaña; tapasi—para austeridades; sthitah—permanecieron.
+TRADUCCIÓN
+Maitreya dijo: Cuando el Señor Brahma le ordenó que generase descendientes después de casarse con Anasuya, Atri Muni y su esposa fueron a ejecutar rigurosas austeridades al valle de la montaña Rksa.
+VERSO 18
+tasmin prasuna-stabaka-
+palasasoka-kanane
+varbhih sravadbhir udghuste
+nirvindhyayah samantatah
+</p>
+<p class='vspace'>tasmin—en ese; prasuna-stabaka—matas de flores; palasa—árboles palasa; asoka—árboles asoka; kanane—en el jardín silvestre; varbhih—por las aguas; sravadbhih—fluyendo; udghuste—con sonido; nirvindhyayah—del río Nirvindhya; samantatah—por todas partes.
+TRADUCCIÓN
+Por ese valle de montaña discurre el río Nirvindhya. En su ribera hay muchos árboles asoka y plantas llenas de flores palasa, y siempre se escucha el dulce sonido de una cascada. Al hermoso paraje llegaron Atri y su esposa.
+VERSO 19
+pranayamena samyamya
+mano varsa-satam munih
+atisthad eka-padena
+nirdvandvo 'nila-bhojanah
+</p>
+<p class='vspace'>pranayamena—con la práctica del ejercicio respiratorio; samyamya— controlando; manah—la mente; varsa-satam—cien años; munih—el gran sabio; atisthat—permaneció allí; eka-padena—de pie sobre una pierna; nirdvandvah—sin dualidad; anila—aire; bhojanah—comiendo.
+TRADUCCIÓN
+Allí, el gran sabio concentró su mente por medio de los ejercicios respiratorios yóguicos, y controlando con ello todo apego, permaneció de pie sobre una sola pierna, sin comer nada más que aire, y se mantuvo allí, sobre una pierna, durante cien años.
+VERSO 20
+saranam tam prapadye 'ham
+ya eva jagad-isvarah
+prajam atma-samam mahyam
+prayacchatv iti cintayan
+</p>
+<p class='vspace'>saranam—refugiándome; tam—en Él; prapadye—me entrego; aham—yo; yah—el que; eva—ciertamente; jagat-isvarah—amo del universo; prajam—hijo; atma-samam—como Él mismo; mahyam—a mí; prayacchatu—que Él me dé; iti— así; cintayan—pensando.
+TRADUCCIÓN
+Él pensaba: Que el Señor del universo, en quien me he refugiado, tenga la bondad de darme un hijo idéntico a Él.
+SIGNIFICADO
+Parece ser que el gran sabio Atri Muni no tenía una idea concreta acerca de la Suprema Personalidad de Dios. No cabe duda de que debía estar familiarizado con la información védica acerca de la existencia de una Suprema Personalidad de Dios que es el creador del universo, de quien emanó todo, quien mantiene la manifestación creada, y en quien se conserva la manifestación completa tras la disolución. Yato va imani bhutani (Taittiriya Upanisad 3.1.1). Los mantras védicos nos informan acerca de esa Suprema Personalidad de Dios, de modo que Atri Muni concentró la mente en Él sin siquiera conocer Su nombre, queriendo pedirle un hijo que estuviese exactamente en Su mismo nivel. Ese tipo de servicio devocional realizado sin conocimiento del nombre de Dios viene explicado también en la Bhagavad-gita; allí el Señor dice que hay cuatro clases de hombres con pasados piadosos que acuden a Él pidiéndole lo que necesitan. Atri Muni deseó tener un hijo idéntico al Señor, y por ello no se le considera un devoto puro, pues tenía un deseo que cumplir, y ese deseo era material. Aunque quería tener un hijo idéntico a la Suprema Personalidad de Dios, ese deseo era material, porque no deseaba directamente a la Personalidad de Dios, sino que deseaba un hijo idéntico a Él. Si hubiese deseado como hijo suyo a la Suprema Personalidad de Dios, estaría completamente libre de deseos materiales, por haber deseado a la Verdad Absoluta Suprema, pero como lo que quería era un hijo de esas características, su deseo era material. De modo que Atri Muni no debe contarse entre los devotos puros.
+VERSO 21
+tapyamanam tri-bhuvanam
+pranayamaidhasagnina
+nirgatena muner murdhnah
+samiksya prabhavas trayah
+</p>
+<p class='vspace'>tapyamanam—mientras practicaba austeridades; tri-bhuvanam—los tres mundos; pranayama—práctica con ejercicios respiratorios; edhasa—combustible; agnina—por el fuego; nirgatena—surgiendo; muneh—del gran sabio; murdhnah— la parte superior de la cabeza; samiksya—viendo; prabhavah trayah—los tres grandes dioses (Brahma, Visnu y Mahesvara).
+TRADUCCIÓN
+Mientras Atri Muni ejecutaba esas rigurosas austeridades, y como resultado de su ejercicio respiratorio, de su cabeza surgió un fuego abrasador, que fue visto por las tres deidades principales de los tres mundos.
+SIGNIFICADO
+Según Srila Jiva Gosvami, el fuego del pranayama es la satisfacción mental. Visnu, la Superalma, percibió ese fuego, y como consecuencia, también el Señor Brahma como Siva lo percibieron. Mediante el ejercicio respiratorio, Atri Muni se concentró en la Superalma, el Señor del universo. Como se confirma en la Bhagavad-gita, el Señor del universo es Vasudeva (vasudevah sarvam iti), bajo cuya dirección trabajan el Señor Brahma y el Señor Siva. Así pues, bajo la dirección de Vasudeva, tanto el Señor Brahma como el Señor Siva percibieron la rigurosas penitencias de Atri Muni, y se complacieron en descender, como se declara en el siguiente verso.
+VERSO 22
+apsaro-muni-gandharva-
+siddha-vidyadharoragaih
+vitayamana-yasasas
+tad-asrama-padam yayuh
+</p>
+<p class='vspace'>apsarah—mujeres de sociedad celestiales; muni—grandes sabios; gandharva— habitantes del planeta Gandharva; siddha—de Siddhaloka; vidyadhara—otros semidioses; uragaih—los habitantes de Nagaloka; vitayamana—difundida; yasasah—fama, reputación; tat—su; asrama-padam—ermita; yayuh—fueron.
+TRADUCCIÓN
+En esa ocasión, las tres deidades descendieron a la ermita de Atri Muni, acompañado por los habitantes de los planetas celestiales: gandharvas, siddhas, vidyadharas, nagas y bellezas celestiales. Todos ellos entraron en el asrama del gran sabio, que se había hecho famoso por sus austeridades.
+SIGNIFICADO
+En las Escrituras védicas se recomienda refugiarse en la Suprema Personalidad de Dios, que es el Señor del universo y el amo de la creación, el mantenimiento y la disolución. Se Le conoce con el nombre de Superalma, y cuando se adora a la Superalma, con el Señor Visnu aparecen todas las demás deidades, como Brahma y Siva, pues la Superalma es quien les dirige.
+VERSO 23
+tat-pradurbhava-samyoga-
+vidyotita-mana munih
+uttisthann eka-padena
+dadarsa vibudharsabhan
+</p>
+<p class='vspace'>tat—su; pradurbhava—aparición; samyoga—simultáneamente; vidyotita— iluminado; manah—en la mente; munih—el gran sabio; uttisthan—siendo despertado; eka-padena—incluso sobre una sola pierna; dadarsa—vio; vibudha— semidioses; rsabhan—a las grandes personalidades.
+TRADUCCIÓN
+El sabio se sostenía sobre una sola pierna, pero tan pronto como vio que las tres deidades habían aparecido ante él, se sintió tan complacido de verles a todos juntos que, a pesar de lo mucho que le costaba, se acercó a ellos caminando con una sola pierna.
+VERSO 24
+pranamya dandavad bhumav
+upatasthe 'rhanañjalih
+vrsa-hamsa-suparna-sthan
+svaih svais cihnais ca cihnitan
+</p>
+<p class='vspace'>pranamya—ofreciendo reverencias; danda-vat—como una vara; bhumau—en el suelo; upatasthe—se postró; arhana—todo lo necesario para adorar; añjalih— manos unidas; vrsa—toro; hamsa—cisne; suparna—el ave Garuda; sthan— situados; svaih—propio; svaih—propio; cihnaih—por símbolos; ca—y; cihnitan— siendo reconocidos.
+TRADUCCIÓN
+A continuación ofreció oraciones a las tres deidades, que estaban sentados sobre sus monturas —un toro, un cisne y Garuda— y llevaban en la mano un tambor, hierba kusa y un disco. El sabio les presentó sus respetos postrándose en el suelo recto como una vara.
+SIGNIFICADO
+Danda significa «vara larga», y vat significa «como». Ante un superior hay que postrarse en el suelo como una vara, y esa forma de ofrecer de respeto se denomina dandavat. Atri Rsi ofreció sus respetos a las tres deidades de esta manera. Se les identificaba por sus monturas y por sus representaciones simbólicas. A este respecto, el verso dice que el Señor Visnu montaba a Garuda, una gran ave con aspecto de águila, y llevaba un disco en la mano; Brahma montaba sobre un cisne y llevaba hierba kusa, y el Señor Siva montaba sobre un toro y llevaba en la mano un tamborcillo damaru. Atri Rsi les reconoció por sus representaciones simbólicas y por sus monturas, y les ofreció oraciones y reverencias.
+VERSO 25
+krpavalokena hasad-
+vadanenopalambhitan
+tad-rocisa pratihate
+nimilya munir aksini
+</p>
+<p class='vspace'>krpa-avalokena—mirando con misericordia; hasat—sonriendo; vadanena— con rostros; upalambhitan—que parecían muy satisfechos; tat—sus; rocisa—por la refulgencia resplandeciente; pratihate—deslumbrado; nimilya—cerrando; munih—el sabio; aksini—los ojos.
+TRADUCCIÓN
+Atri Muni se sintió muy complacido al ver que los tres devas eran misericordiosos con él. La refulgencia de sus cuerpos le deslumbraba, y durante unos momentos tuvo que cerrar los ojos.
+SIGNIFICADO
+Puesto que le sonreían, Atri Muni pudo entender que las deidades estaban complacidas con él. Los ojos del sabio no podían resistir la deslumbrante refulgencia de sus cuerpos, y tuvo que cerrarlos durante unos momentos.
+VERSOS 26-27
+cetas tat-pravanam yuñjann
+astavit samhatañjalih
+slaksnaya suktaya vaca
+sarva-loka-gariyasah
+</p>
+<p class='vspace'>atrir uvaca
+visvodbhava-sthiti-layesu vibhajyamanair
+maya-gunair anuyugam vigrhita-dehah
+te brahma-visnu-girisah pranato 'smy aham vas
+tebhyah ka eva bhavatam ma ihopahutah
+</p>
+<p class='vspace'>cetah—corazón; tat-pravanam—fijando en ellos; yuñjan—haciendo; astavit— ofreció oraciones; samhata-añjalih—con las manos juntas; slaksnaya—extáticas; suktaya—oraciones; vaca—palabras; sarva-loka—por todo el mundo; gariyasah— honorable; atrih uvaca—Atri dijo; visva—el universo; udbhava—creación; sthiti— mantenimiento; layesu—en destrucción; vibhajyamanaih—dividido; maya-gunaih —por las modalidades externas de la naturaleza; anuyugam—conforme a los milenios; vigrhita—adoptados; dehah—cuerpos; te—ellos; brahma—el Señor Brahma; visnu—el Señor Visnu; girisah—el Señor Siva; pranatah—postrado; asmi—estoy; aham—yo; vah—ante vosotros; tebhyah—de ellos; kah—quién; eva—ciertamente; bhavatam—de vosotros; me—por mí; iha—aquí; upahutah—llamado.
+TRADUCCIÓN
+Pero como su corazón ya estaba atraído a las deidades de una u otra forma controló sus sentidos, y con las manos juntas y palabras dulces, ofreció oraciones a las deidades regentes del universo. El gran sabio Atri dijo: ¡Oh, Señor Brahma, Señor Visnu y Siva! Aceptando las tres modalidades de la naturaleza material, como hacéis cada milenio para la creación, mantenimiento y disolución de la manifestación cósmica, os habéis dividido en tres cuerpos. Os ofrezco a todos mis respetuosas reverencias, y humildemente me atrevo a preguntaros a cuál de los tres he invocado con mi oración.
+SIGNIFICADO
+Atri Rsi invocó a la Suprema Personalidad de Dios, jagad- isvara, el Señor del universo. Si el Señor no existiese antes de la creación, ¿cómo podría ser su Señor? El hecho de que alguien construya un gran edificio implica la existencia de ese alguien con anterioridad a la construcción del edificio. Por lo tanto, el creador del universo, el Señor Supremo, tiene que ser trascendental a las modalidades materiales de la naturaleza. Pero de todos es sabido que Visnu Se encarga de la modalidad de la bondad, Brahma de la modalidad de la pasión, y el Señor Siva de la modalidad de la ignorancia. Ésa es la razón de que Atri Muni dijese: «El jagad-isvara, el Señor del universo, tiene que ser uno de vosotros, pero como habéis aparecido los tres, no puedo reconocer a quién he invocado. Los tres sois extremadamente bondadosos. Por favor, decidme cuál de vosotros es el jagad-isvara, el Señor del universo». En efecto, Atri Rsi dudaba acerca de la posición constitucional del Señor Supremo, Visnu, pero estaba completamente seguro de que el Señor del universo no podía ser una de las criaturas creadas por maya. El simple hecho de que preguntase a quién había invocado, revela que tenía dudas sobre la posición constitucional del Señor. Ésa es la razón de que orase dirigiéndose a los tres: «Por favor, decidme quién es el trascendental Señor del universo». Por supuesto, estaba seguro de que los tres no podían ser el Señor, sino que el Señor del universo era uno de ellos.
+VERSO 28
+eko mayeha bhagavan vividha-pradhanais
+citti-krtah prajananaya katham nu yuyam
+atragatas tanu-bhrtam manaso 'pi durad
+bruta prasidata mahan iha vismayo me
+</p>
+<p class='vspace'>ekah—uno; maya—por mí; iha—aquí; bhagavan—gran personalidad; vividha—varias; pradhanaih—con utensilios; citti-krtah—fija en la mente; prajananaya—para engendrar un hijo; katham—por qué; nu—sin embargo; yuyam—todos vosotros; atra—aquí; agatah—aparecidos; tanu-bhrtam—de los personificados; manasah—las mentes; api—aunque; durat—de muy lejos; bruta— por favor, explicadme; prasidata—siendo misericordiosos conmigo; mahan—muy grande; iha—esta; vismayah—duda; me—mía.
+TRADUCCIÓN
+He invocado a la Suprema Personalidad de Dios, deseando tener un hijo como Él y pensando solamente en Él. Pero, aunque Él está muy fuera del alcance de la especulación mental del hombre, habéis venido aquí vosotros tres. Por favor, hacedme saber cómo habéis venido, pues es algo que me causa gran confusión.
+SIGNIFICADO
+Atri Muni estaba profundamente convencido de que la Suprema Personalidad de Dios es el Señor del universo, de modo que oró por la aparición de ese único Señor Supremo. De ahí su sorpresa cuando aparecieron tres de ellos.
+VERSO 29
+maitreya uvaca
+iti tasya vacah srutva
+trayas te vibudharsabhah
+pratyahuh slaksnaya vaca
+prahasya tam rsim prabho
+</p>
+<p class='vspace'>maitreyah uvaca—el sabio Maitreya dijo; iti—así; tasya—sus; vacah—palabras; srutva—después de escuchar; trayah te—los tres; vibudha—semidioses; rsabhah— principales; pratyahuh—contestaron; slaksnaya—amables; vaca—palabras; prahasya—sonriendo; tam—a él; rsim—al gran sabio; prabho—¡oh, poderoso!
+TRADUCCIÓN
+El gran sabio Maitreya continuó: Después de escuchar a Atri Muni hablar de esa manera, las tres deidades sonrieron, y contestaron dulcemente con las siguientes palabras.
+VERSO 30
+deva ucuh
+yatha krtas te sankalpo
+bhavyam tenaiva nanyatha
+sat-sankalpasya te brahman
+yad vai dhyayati te vayam
+</p>
+<p class='vspace'>devah ucuh—los semidioses contestaron; yatha—como; krtah—hecho; te— por ti; sankalpah—determinación; bhavyam—para que se haga; tena eva—por eso; na anyatha—de ninguna otra forma; sat-sankalpasya—aquel que nunca pierde su determinación; te—de ti; brahman—¡oh, querido brahmana!; yat—lo que; vai—ciertamente; dhyayati—meditando; te—todos ellos; vayam—somos.
+TRADUCCIÓN
+Las tres deidades dijeron a Atri Muni: Querido brahmana, tu determinación es perfecta, y por lo tanto, ocurrirá lo que tú has decidido; no será de otra manera. Los tres somos la misma persona en quién tú estabas meditando, y por ello, los tres hemos venido a ti.
+SIGNIFICADO
+Atri Muni pensó, sin precisar, en la Personalidad de Dios, el Señor del universo, aunque no tenía una idea clara del Señor del universo ni de Su forma concreta. Puede considerarse como Señor del universo a Maha-Visnu, de cuya respiración emanan millones de universos que de nuevo se retraen en Él. También puede considerarse como Señor del universo a Garbhodakasayi Visnu, de cuyo abdomen brotó la flor de loto en donde nació Brahma. De la misma manera, también se puede considerar como Señor del universo a Ksirodakasayi Visnu, que es la Superalma de todas las entidades vivientes. Y subordinados a Ksirodakasayi Visnu, la forma de Visnu que está dentro del universo, el Señor Brahma y el Señor Siva pueden también aceptarse como Señores del universo.
+Visnu es el Señor del universo porque es quien lo mantiene. Paralelamente, Brahma crea los sistemas planetarios y su población, de modo que también a él puede considerársele Señor del universo. O puede serlo también el Señor Siva, que es quien finalmente lo destruye. Como Atri Muni no definió concretamente a quien quería ver, los tres, Brahma, Visnu y el Señor Siva, se presentaron ante él. Le dijeron: «Puesto que pensaste en tener un hijo idéntico a la Suprema Personalidad de Dios, el Señor del universo, tu deseo se verá cumplido». En otras palabras, los deseos se satisfacen en proporción a la intensidad de la devoción. Como se afirma en la Bhagavad-gita (9.25): yanti deva-vrata devan pit&amp;rn yanti pitr-vratah. El que esté apegado a un determinado semidiós, se elevará a la morada de ese semidiós; el que esté apegado a los pitas, los antepasados, se elevará a su planeta; y de manera similar, el que esté apegado a la Suprema Personalidad de Dios, Krishna, se elevará a la morada del Señor Krishna. Atri Muni no tenía un concepto claro del Señor del universo; ésa es la razón de que se presentasen ante él las tres deidades regentes que son los verdaderos Señores del universo en las tres divisiones de las modalidades de la naturaleza. Ahora, conforme a la intensidad de su determinación de tener un hijo, su deseo, por la gracia del Señor, iba a cumplirse.
+VERSO 31
+athasmad-amsa-bhutas te
+atmaja loka-visrutah
+bhavitaro 'nga bhadram te
+visrapsyanti ca te yasah
+</p>
+<p class='vspace'>atha—por lo tanto; asmat—nuestras; amsa-bhutah—expansiones plenarias; te— tus; atmajah—hijos; loka-visrutah—muy famosos en el mundo; bhavitarah—en el futuro nacerán; anga—querido gran sabio; bhadram—toda buena fortuna; te—a ti; visrapsyanti—difundirán; ca—también; te—tu; yasah—reputación.
+TRADUCCIÓN
+Tendrás hijos que representarán manifestaciones parciales de nuestra potencia, y como te deseamos toda buena fortuna, llenarán de gloria tu nombre en todo el mundo.
+VERSO 32
+evam kama-varam dattva
+pratijagmuh suresvarah
+sabhajitas tayoh samyag
+dampatyor misatos tatah
+</p>
+<p class='vspace'>evam—de este modo; kama-varam—bendición deseada; dattva—ofreciendo; pratijagmuh—regresaron; sura-isvarah—los semidioses principales; sabhajitah— siendo adorados; tayoh—mientras ellos; samyak—perfectamente; dampatyoh—los esposos; misatoh—estaban mirando; tatah—de allí.
+TRADUCCIÓN
+De este modo, mientras la pareja les miraba, las tres deidades —Brahma, Visnu y Mahesvara— desaparecieron de aquel lugar, después de conceder a Atri Muni la bendición.
+VERSO 33
+somo 'bhud brahmano 'msena
+datto visnos tu yogavit
+durvasah sankarasyamso
+nibodhangirasah prajah
+</p>
+<p class='vspace'>somah—el rey del planeta Luna; abhut—apareció; brahmanah—del Señor Brahma; amsena—expansión parcial; dattah—Dattatreya; visnoh—de Visnu; tu— pero; yoga-vit—yogi muy poderoso; durvasah—Durvasa; sankarasya amsah— expansión parcial del Señor Siva; nibodha—trata tan solo de entender; angirasah— del gran sabio Angira; prajah—generaciones.
+TRADUCCIÓN
+A continuación, de la representación parcial de Brahma les nació el dios de la Luna; de la representación parcial de Visnu nació el gran místico Dattatreya; y de la representación parcial de Sankara [el Señor Siva] nació Durvasa. Ahora escucha mi explicación sobre los numerosos hijos de Angira.
+VERSO 34
+sraddha tv angirasah patni
+catasro 'suta kanyakah
+sinivali kuhu raka
+caturthy anumatis tatha
+</p>
+<p class='vspace'>sraddha—Sraddha; tu—pero; angirasah—de Angira Rsi; patni—esposa; catasrah—cuatro; asuta—dio a luz; kanyakah—hijas; sinivali—Sinivali; kuhuh— Kuhu; raka—Raka; caturthi—la cuarta; anumatih—Anumati; tatha—también.
+TRADUCCIÓN
+Sraddha, la esposa de Angira, tuvo cuatro hijas: Sinivali, Kuhu, Raka y Anumati.
+VERSO 35
+tat-putrav aparav astam
+khyatau svarocise 'ntare
+utathyo bhagavan saksad
+brahmisthas ca brhaspatih
+</p>
+<p class='vspace'>tat—sus; putrau—hijos; aparau—otros; astam—nacieron; khyatau—muy famosos; svarocise—en el milenio de Svarocisa; antare—del manu; utathyah— Utathya; bhagavan—muy poderoso; saksat—directamente; brahmisthah ca—de avance espiritual completo; brhaspatih—Brhaspati.
+TRADUCCIÓN
+Además de estas cuatro hijas, tuvo otros dos hijos. Uno de ellos se llamó Utathya, y el otro fue Brhaspati, el sabio erudito.
+VERSO 36
+pulastyo 'janayat patnyam
+agastyam ca havirbhuvi
+so 'nya-janmani dahragnir
+visravas ca maha-tapah
+</p>
+<p class='vspace'>pulastyah—el sabio Pulastya; ajanayat—engendró; patnyam—en su esposa; agastyam—al gran sabio Agastya; ca—también; havirbhuvi—en Havirbhu; sah—él (Agastya); anya-janmani—en el siguiente nacimiento; dahra-agnih—el fuego de la digestión; visravah—Visrava; ca—y; maha-tapah—muy poderoso por su austeridad.
+TRADUCCIÓN
+Pulastya y su esposa, Havirbhu, tuvieron un hijo que se llamó Agastya y que en su siguiente nacimiento fue Dahragni. Pulastya tuvo además otro gran hijo, Visrava, que fue un gran santo.
+VERSO 37
+tasya yaksa-patir devah
+kuberas tv idavida-sutah
+ravanah kumbhakarnas ca
+tathanyasyam vibhisanah
+</p>
+<p class='vspace'>tasya—su; yaksa-patih—el rey de los yaksas; devah—semidiós; kuberah— Kuvera; tu—y; idavida—de Idavida; sutah—hijo; ravanah—Ravana; kumbhakarnah—Kumbhakarna; ca—también; tatha—pues; anyasyam—en la otra; vibhisanah—Vibhisana.
+TRADUCCIÓN
+Visrava tuvo dos esposas. La primera fue Idavida, de la cual nació Kuvera, el señor de los yaksas; su siguiente esposa fue Kesini, de la que nacieron tres hijos: Ravana, Kumbhakarna y Vibhisana.
+VERSO 38
+pulahasya gatir bharya
+trin asuta sati sutan
+karmasrestham variyamsam
+sahisnum ca maha-mate
+</p>
+<p class='vspace'>pulahasya—de Pulaha; gatih—Gati; bharya—esposa; trin—tres; asuta—dio a luz; sati—casta; sutan—hijos; karma-srestham—muy experto en actividades fruitivas; variyamsam—muy respetable; sahisnum—muy tolerante; ca—también; maha-mate—¡oh, gran Vidura!
+TRADUCCIÓN
+Gati, la esposa del sabio Pulaha, fue madre de tres hijos: Karmasrestha, Variyan y Sahisnu, todos los cuales fueron grandes sabios.
+SIGNIFICADO
+Gati, la esposa de Pulaha, era la quinta hija de Kardama Muni. Fue muy fiel a su esposo, y todos sus hijos fueron tan grandes como él.
+VERSO 39
+krator api kriya bharya
+valakhilyan asuyata
+rsin sasti-sahasrani
+jvalato brahma-tejasa
+</p>
+<p class='vspace'>kratoh—del gran sabio Kratu; api—también; kriya—Kriya; bharya—esposa; valakhilyan—tal como Valakhilya; asuyata—engendró; rsin—sabios; sasti— sesenta; sahasrani—mil; jvalatah—muy brillantes; brahma-tejasa—merced a la refulgencia del Brahman.
+TRADUCCIÓN
+La esposa de Kratu, Kriya, fue madre de sesenta mil grandes sabios, los Valakhilyas. Todos ellos eran muy avanzados en conocimiento espiritual, y ese conocimiento iluminaba sus cuerpos.
+SIGNIFICADO
+Kriya era la sexta hija de Kardama Muni, y fue madre de sesenta mil sabios, conocidos con el nombre de Valakhilyas por haberse retirado de la vida familiar como vanaprasthas.
+VERSO 40
+urjayam jajñire putra
+vasisthasya parantapa
+citraketu-pradhanas te
+sapta brahmarsayo 'malah
+</p>
+<p class='vspace'>urjayam—en ¶rja; jajñire—nacieron; putrah—hijos; vasisthasya—del gran sabio Vasistha; parantapa—¡oh, gran Vidura!; citraketu—Citraketu; pradhanah— encabezados por; te—todos los hijos; sapta—siete; brahma-rsayah—grandes sabios con conocimiento espiritual; amalah—sin contaminación.
+TRADUCCIÓN
+El gran sabio Vasistha engendró en su esposa ¶rja, conocida a veces como Arundhati, siete sabios inmaculadamente grandes, el primero de los cuales era el sabio Citraketu.
+VERSO 41
+citraketuh surocis ca
+viraja mitra eva ca
+ulbano vasubhrdyano
+dyuman sakty-adayo 'pare
+</p>
+<p class='vspace'>citraketuh—Citraketu; surocih ca—y Suroci; virajah—Viraja; mitrah—Mitra; eva—también; ca—y; ulbanah—Ulbana; vasubhrdyanah—Vasubhrdyana; dyuman —Dyuman; sakti-adayah—hijos encabezados por Sakti; apare—de su otra esposa.
+TRADUCCIÓN
+Los nombres de estos siete sabios son los siguientes: Citraketu, Suroci, Viraja, Mitra, Ulbana, Vasubhrdyana y Dyuman. De la otra esposa de Vasistha nacieron otros hijos muy competentes.
+SIGNIFICADO
+¶rja, conocida a veces con el nombre de Arundhati, era la esposa de Vasistha y la novena hija de Kardama Muni.
+VERSO 42
+cittis tv atharvanah patni
+lebhe putram dhrta-vratam
+dadhyañcam asvasirasam
+bhrgor vamsam nibodha me
+</p>
+<p class='vspace'>cittih—Citti; tu—también; atharvanah—de Atharva; patni—esposa; lebhe— tuvo; putram—hijo; dhrta-vratam—completamente dedicado a un voto; dadhyañcam—dadhyañca; asvasirasam—Asvasira; bhrgoh vamsam—generaciones de Bhrgu; nibodha—trata de entender; me—de mí.
+TRADUCCIÓN
+Citti, la esposa del sabio Atharva, fue madre de un hijo que recibió el nombre de Asvasira por haber aceptado el gran voto denominado dadhyañca. Escucha ahora, mientras te hablo de los descendientes del sabio Bhrgu.
+SIGNIFICADO
+A Citti, la esposa de Atharva, se la conoce también como Santi. Era la octava hija de Kardama Muni.
+VERSO 43
+bhrguh khyatyam maha-bhagah
+patnyam putran ajijanat
+dhataram ca vidhataram
+sriyam ca bhagavat-param
+</p>
+<p class='vspace'>bhrguh—el gran sabio Bhrgu; khyatyam—en su esposa, Khyati; maha-bhagah— muy afortunado; patnyam—a la esposa; putran—hijos; ajijanat—engendró; dhataram—Dhata; ca—también; vidhataram—Vidhata; sriyam—una hija llamada Sri; ca bhagavat-param—y una gran devota del Señor.
+TRADUCCIÓN
+El sabio Bhrgu fue muy afortunado. Estaba casado con Khyati, en la cual engendró dos hijos, Dhata y Vidhata, y una hija, Sri, que era una gran devota de la Suprema Personalidad de Dios.
+VERSO 44
+ayatim niyatim caiva
+sute merus tayor adat
+tabhyam tayor abhavatam
+mrkandah prana eva ca
+</p>
+<p class='vspace'>ayatim—ayati; niyatim—Niyati; ca eva—también; sute—hijas; meruh—el sabio Meru; tayoh—a esas dos; adat—dio en matrimonio; tabhyam—de ellas; tayoh— ambas; abhavatam—apareció; mrkandah—Mrkanda; pranah—Prana; eva— ciertamente; ca—y.
+TRADUCCIÓN
+El sabio Meru tuvo dos hijas, ayati y Niyati, que entregó en caridad a Dhata y Vidhata. ayati y Niyati fueron madres de dos hijos, Mrkanda y Prana.
+VERSO 45
+markandeyo mrkandasya
+pranad vedasira munih
+kavis ca bhargavo yasya
+bhagavan usana sutah
+</p>
+<p class='vspace'>markandeyah—Markandeya; mrkandasya—de Mrkanda; pranat—de Prana; vedasirah—Vedasira; munih—gran sabio; kavih ca—llamado Kavi; bhargavah— llamado Bhargava; yasya—cuyo; bhagavan—muy poderoso; usana—Sukracarya; sutah—hijo.
+TRADUCCIÓN
+Mrkanda engendró a Markandeya Muni, y Prana al sabio Vedasira, quien engendró a Usana [Sukracarya], también llamado Kavi. Así pues, Kavi también era un descendiente de la dinastía de Bhrgu.
+VERSOS 46-47
+ta ete munayah ksattar
+lokan sargair abhavayan
+esa kardama-dauhitra-
+santanah kathitas tava
+</p>
+<p class='vspace'>srnvatah sraddadhanasya
+sadyah papa-harah parah
+prasutim manavim daksa
+upayeme hy ajatmajah
+</p>
+<p class='vspace'>te—ellos; ete—todos; munayah—grandes sabios; ksattah—¡oh, Vidura!; lokan— los tres mundos; sargaih—con sus descendientes; abhavayan—llenaron; esah— esta; kardama—del sabio Kardama; dauhitra—nietos; santanah—descendencia; kathitah—ya narrada; tava—a ti; srnvatah—escuchar; sraddadhanasya—de los fieles; sadyah—inmediatamente; papa-harah—reducir todas las actividades pecaminosas; parah—grandes; prasutim—Prasuti; manavim—hija de Manu; daksah—el rey Daksa; upayeme—se casó con; hi—ciertamente; aja-atmajah— hijo de Brahma.
+TRADUCCIÓN
+Mi querido Vidura, así fue como la descendencia de los sabios y las hijas de Kardama aumentó la población del universo. Cualquiera que escuche con fe la historia de esa dinastía, se liberará de toda reacción pecaminosa. Prasuti, la otra hija de Manu, se casó con Daksa, el hijo de Brahma.
+VERSO 48
+tasyam sasarja duhit&amp;rh
+sodasamala-locanah
+trayodasadad dharmaya
+tathaikam agnaye vibhuh
+</p>
+<p class='vspace'>tasyam—en ella; sasarja—creadas; duhit&amp;rh—hijas; sodasa—dieciséis; amala- locanah—con ojos de loto; trayodasa—trece; adat—dio; dharmaya—a Dharma; tatha—así; ekam—una hija; agnaye—a Agni; vibhuh—Daksa.
+TRADUCCIÓN
+Daksa engendró en Prasuti dieciséis hijas muy hermosas, de ojos como lotos. De esas dieciséis hijas, a trece las casó con Dharma, y a una con Agni.
+VERSOS 49-52
+pitrbhya ekam yuktebhyo
+bhavayaikam bhava-cchide
+sraddha maitri daya santis
+tustih pustih kriyonnatih
+</p>
+<p class='vspace'>buddhir medha titiksa hrir
+murtir dharmasya patnayah
+sraddhasuta subham maitri
+prasadam abhayam daya
+</p>
+<p class='vspace'>santih sukham mudam tustih
+smayam pustir asuyata
+yogam kriyonnatir darpam
+artham buddhir asuyata
+</p>
+<p class='vspace'>medha smrtim titiksa tu
+ksemam hrih prasrayam sutam
+murtih sarva-gunotpattir
+nara-narayanav rsi
+</p>
+<p class='vspace'>pitrbhyah—a los pitas; ekam—una hija; yuktebhyah—en conjunto; bhavaya—al Señor Siva; ekam—una hija; bhava-chide—que libera del enredo material; sraddha, maitri, daya, santih, tustih, pustih, kriya, unnatih, buddhih, medha, titiksa, hrih, murtih—nombres de trece hijas de Daksa; dharmasya—de Dharma; patnayah—las esposas; sraddha—Sraddha; asuta—dio a luz a; subham—Subha; maitri—Maitri; prasadam—Prasada; abhayam—Abhaya; daya—Daya; santih—Santi; sukham—Sukha; mudam—Muda; tustih—Tusti; smayam—Smaya; pustih—Pusti; asuyata—dio a luz a; yogam—Yoga; kriya—Kriya; unnatih—Unnati; darpam—Darpa; artham—Artha; buddhih—Buddhi; asuyata—engendró; medha—Medha; smrtim—Smrti; titiksa—Titiksa; tu—también; ksemam—Ksema; hrih—Hri; prasrayam—Prasraya; sutam—hijo; murtih—Murti; sarva-guna—de todas las cualidades respetables; utpattih—el receptáculo; nara-narayanau—Nara y Narayana; rsi—los dos sabios.
+TRADUCCIÓN
+De las dos hijas que quedaban, a una la dio en caridad al Pitrloka, donde reside muy amigablemente, y a la otra la dio al Señor Siva, quien libera del enredo material a las personas pecaminosas. Los nombres de las trece hijas de Daksa entregadas a Dharma son: Sraddha, Maitri, Daya, Santi, Tusti, Pusti, Kriya, Unnati, Buddhi, Medha, Titiksa, Hriy Murti. Estas trece hijas fueron madres de los siguientes hijos: Sraddha tuvo a Subha, Maitria Prasada, Daya a Abhaya, Santi a Sukha, Tusti a Muda, Pusti a Smaya, Kriya a Yoga, Unnati a Darpa, Buddhi a Artha, Medha a Smrti, Titiksa a Ksema, y Hria Prasraya. Murti, que era el receptáculo de toda cualidad digna de respeto, fue madre de Sri Nara-Narayana, la Suprema Personalidad de Dios.
+VERSO 53
+yayor janmany ado visvam
+abhyanandat sunirvrtam
+manamsi kakubho vatah
+praseduh sarito 'drayah
+</p>
+<p class='vspace'>yayoh—ambos (Nara y Narayana); janmani—con ocasión del advenimiento; adah—ese; visvam—universo; abhyanandat—se alegró; su-nirvrtam—lleno de júbilo; manamsi—las mentes de todos; kakubhah—las direcciones; vatah—el aire; praseduh—se volvieron agradables; saritah—los ríos; adrayah—las montañas.
+TRADUCCIÓN
+Con ocasión del advenimiento de Nara-Narayana, el mundo entero se llenó de júbilo. Todas las mentes se tranquilizaron, y de este modo, en todas direcciones, el aire, los ríos y las montañas se volvieron agradables.
+VERSOS 54-55
+divy avadyanta turyani
+petuh kusuma-vrstayah
+munayas tustuvus tusta
+jagur gandharva-kinnarah
+</p>
+<p class='vspace'>nrtyanti sma striyo devya
+asit parama-mangalam
+deva brahmadayah sarve
+upatasthur abhistavaih
+</p>
+<p class='vspace'>divi—en los planetas celestiales; avadyanta—vibrados; turyani—una orquesta de instrumentos; petuh—derramaba; kusuma—de flores; vrstayah—lluvias; munayah—los sabios; tustuvuh—recitaban oraciones védicas; tustah—pacíficos; jaguh—comenzaron a cantar; gandharva—los gandharvas; kinnarah—los kinnaras; nrtyanti sma—danzaban; striyah—las hermosas doncellas; devyah— de los planetas celestiales; asit—fueron visibles; parama-mangalam—la buena fortuna suprema; devah—los semidioses; brahma-adayah—Brahma y otros; sarve—todos; upata-sthuh—adoraron; abhistavaih—con oraciones respetuosas.
+TRADUCCIÓN
+En los planetas celestiales las orquestas comenzaron a tocar, y desde el cielo derramaban flores. Los sabios pacíficos recitaban oraciones védicas, y los gandharvas y kinnaras, que habitan en el cielo, cantaban, mientras las hermosas doncellas de los planetas celestiales danzaban. De esta manera, en el momento del advenimiento de Nara-Narayana eran visibles todas las señales de buena fortuna. En aquel preciso instante, grandes semidioses, como Brahma, ofrecieron también sus oraciones respetuosas.
+VERSO 56
+deva ucuh
+yo mayaya viracitam nijayatmanidam
+khe rupa-bhedam iva tat-praticaksanaya
+etena dharma-sadane rsi-murtinadya
+praduscakara purusaya namah parasmai
+</p>
+<p class='vspace'>devah—los semidioses; ucuh—dijeron; yah—quien; mayaya—por la energía externa; viracitam—fue creada; nijaya—por Su propia; atmani—estando situada en Él; idam—ésta; khe—en el cielo; rupa-bhedam—grupos de nubes; iva—como si; tat—de Sí mismo; praticaksanaya—para manifestar; etena—con este; dharma- sadane—en la casa de Dharma; rsi-murtina—en forma de sabio; adya—hoy; praduscakara—apareció; purusaya—a la Personalidad de Dios; namah— reverencias respetuosas; parasmai—al Supremo.
+TRADUCCIÓN
+Los semidioses dijeron: Ofrezcamos nuestras respetuosas reverencias a la trascendental Personalidad de Dios, que creó como energía externa Suya la manifestación cósmica, la cual está situada en Él de la misma manera que el aire y las nubes lo están en el espacio, y que ha aparecido ahora en la forma de Nara- Narayana Rsi en la casa de Dharma.
+SIGNIFICADO
+La forma universal del Señor es la manifestación cósmica, la cual es una exhibición de la energía externa de la Suprema Personalidad de Dios. En el espacio hay infinidad de planetas, y también hay aire, y en el aire hay nubes de distintos colores, y a veces vemos también aviones yendo de un sitio a otro. Tenemos entonces que toda la manifestación cósmica está llena de diversidad, que esa diversidad en realidad es una manifestación de la energía externa del Señor Supremo, y que esa energía está situada en Él. En esa ocasión, el Señor, después de manifestar Su energía, aparecía personalmente dentro de la creación de Su energía, que es una con Él y diferente de Él al mismo tiempo; por esa razón, los semidioses ofrecieron sus respetos a la Suprema Personalidad de Dios, que Se manifiesta en esa diversidad. Hay ciertos filósofos, conocidos como no-dualistas en razón de su concepto impersonal, que piensan que las diversidades son falsas. En este verso se afirma concretamente: yo mayaya viracitam, frase que indica que las diversidades son una manifestación de la energía de la Suprema Personalidad de Dios. Por lo tanto, como la energía no es diferente de Dios, las diversidades también son reales. Las diversidades materiales puede que sean temporales, pero no son falsas. Son un reflejo de las diversidades espirituales. En este verso, la palabra praticaksanaya, «existen diversidades», expone las glorias de la Suprema Personalidad de Dios, que apareció como Nara-Narayana Rsi y que es el origen de toda la diversidad de la naturaleza material.
+VERSO 57
+so 'yam sthiti-vyatikaropasamaya srstan
+sattvena nah sura-ganan anumeya-tattvah
+drsyad adabhra-karunena vilokanena
+yac chri-niketam amalam ksipataravindam
+</p>
+<p class='vspace'>sah—que; ayam—Él; sthiti—del mundo creado; vyatikara—calamidades; upasamaya—para destruir; srstan—creó; sattvena—por medio de la modalidad de la bondad; nah—a nosotros; sura-ganan—los semidioses; anumeya-tattvah— que se entiende mediante los Vedas; drsyat—mire a; adabhra-karunena— misericordiosa; vilokanena—mirada; yat—la cual; sri-niketam—el hogar de la diosa de la fortuna; amalam—inmaculada; ksipata—supera; aravindam—loto.
+TRADUCCIÓN
+Que la Suprema Personalidad de Dios, que es el objeto de la comprensión de las Escrituras védicas verdaderamente autorizadas y el creador de la paz y la prosperidad que destruyen todas las miserias del mundo creado, tenga la bondad de posar Su mirada en los semidioses. Su misericordiosa mirada supera la belleza de la inmaculada flor de loto que es el hogar de la diosa de la fortuna.
+SIGNIFICADO
+La Suprema Personalidad de Dios, que es el origen de la manifestación cósmica, permanece cubierto por las maravillosas actividades de la naturaleza material, del mismo modo que el espacio exterior o la iluminación del Sol y de la Luna se ven a veces cubiertos por las nubes o el polvo. Es muy difícil dar con el origen de la manifestación cósmica; ésa es la razón de que los científicos materialistas lleguen a la conclusión de que la naturaleza es la causa suprema de todas las manifestaciones. Pero el sastra, es decir, las Escrituras auténticas, como la Bhagavad-gita y otras Escrituras védicas, nos permiten entender que detrás de esta maravillosa creación cósmica está la Suprema Personalidad de Dios, que aparece para mantener el funcionamiento regular de la manifestación cósmica, y para hacerse visible ante los ojos de las personas que están en la modalidad de la bondad. Él es la causa de la creación y la disolución de la manifestación cósmica. Los semidioses oraron, por consiguiente, para que el Señor posase sobre ellos Su misericordiosa mirada y de este modo les bendijera.
+VERSO 58
+evam sura-ganais tata
+bhagavantav abhistutau
+labdhavalokair yayatur
+arcitau gandhamadanam
+</p>
+<p class='vspace'>evam—de esta manera; sura-ganaih—por los semidioses; tata—¡oh, Vidura!; bhagavantau—la Suprema Personalidad de Dios; abhistutau—habiendo sido alabado; labdha—habiendo obtenido; avalokaih—la mirada (de misericordia); yayatuh—partió; arcitau—habiendo sido adorado; gandha-madanam—a la colina Gandhamadana.
+TRADUCCIÓN
+[Maitreya dijo:] ¡Oh, Vidura!, de esta manera los semidioses adoraron con oraciones a la Suprema Personalidad de Dios, que había aparecido en la forma del sabio Nara-Narayana. El Señor les miró con misericordia y seguidamente partió hacia la colina Gandhamadana.
+VERSO 59
+tav imau vai bhagavato
+harer amsav ihagatau
+bhara-vyayaya ca bhuvah
+krsnau yadu-kurudvahau
+</p>
+<p class='vspace'>tau—ambos; imau—estos; vai—ciertamente; bhagavatah—de la Suprema Personalidad de Dios; hareh—de Hari; amsau—expansión como parte integral; iha—aquí (en este universo); agatau—ha aparecido; bhara-vyayaya—para aliviar de la carga; ca—y; bhuvah—del mundo; krsnau—los dos Krsnas (Krishna y Arjuna); yadu-kuru-udvahau—que son los mejores de las dinastías de Yadu y de Kuru, respectivamente.
+TRADUCCIÓN
+Ese mismo Nara Narayana Rsi que es una expansión parcial de Krishna, ha aparecido ahora en las dinastías de Yadu y de Kuru, tomando las formas de Krishna y Arjuna respectivamente, para aliviar al mundo de su carga.
+SIGNIFICADO
+Narayana es la Suprema Personalidad de Dios, y Nara es una parte de la Suprema Personalidad de Dios, Narayana. De esta manera, la energía y la fuente de energía juntos son la Suprema Personalidad de Dios. Maitreya informó a Vidura de que Nara, la parte de Narayana, había aparecido en la familia de los Kurus, y de que Narayana, la expansión plenaria de Krishna, había venido como Krishna, la Suprema Personalidad de Dios, con el propósito de liberar a la sufriente humanidad del peso de las penalidades materiales. En otras palabras, Narayana Rsi estaba entonces presente en el mundo en las formas de Krishna y Arjuna.
+VERSO 60
+svahabhimaninas cagner
+atmajams trin ajijanat
+pavakam pavamanam ca
+sucim ca huta-bhojanam
+</p>
+<p class='vspace'>svaha—Svaha, la esposa de Agni; abhimaninah—la deidad regente del fuego; ca—y; agneh—de Agni; atmajan—hijos; trin—tres; ajijanat—dio a luz; pavakam —Pavaka; pavamanam ca—Pavamana; sucim ca—y Suci; huta-bhojanam—comer las oblaciones del sacrificio.
+TRADUCCIÓN
+La deidad regente del fuego engendró tres hijos en su esposa, Svaha. Sus nombres son Pavaka, Pavamana y Suci, y se alimentan de las oblaciones que se ofrecen al fuego de sacrificio.
+SIGNIFICADO
+Después de hablar de la descendencia de las trece esposas de Dharma, todas las cuales eran hijas de Daksa, Maitreya habla ahora de Svaha, la decimocuarta hija de Daksa, y de sus tres hijos. Los destinatarios de las oblaciones que se ofrecen al fuego de sacrificio son los semidioses, cuyos representantes, los tres hijos de Agni y Svaha —Pavaka, Pavamana y Suci— son quienes las aceptan.
+VERSO 61
+tebhyo 'gnayah samabhavan
+catvarimsac ca pañca ca
+ta evaikonapañcasat
+sakam pitr-pitamahaih
+</p>
+<p class='vspace'>tebhyah—de ellos; agnayah—dioses del fuego; samabhavan—fueron generados; catvarimsat—cuarenta; ca—y; pañca—cinco; ca—y; te—ellos; eva—ciertamente; ekona-pañcasat—cuarenta y nueve; sakam—junto con; pitr-pitamahaih—con los padres y el abuelo.
+TRADUCCIÓN
+Esos tres hijos tuvieron cuarenta y cinco descendientes, también dioses del fuego. Hay, por lo tanto, un total de cuarenta y nueve dioses del fuego, incluyendo a los padres y al abuelo.
+SIGNIFICADO
+El abuelo es Agni, y los hijos son Pavaka, Pavamana y Suci. Estos cuatro más cuarenta y cinco nietos forman un total de cuarenta y nueve dioses del fuego.
+VERSO 62
+vaitanike karmani yan-
+namabhir brahma-vadibhih
+agneyya istayo yajñe
+nirupyante 'gnayas tu te
+</p>
+<p class='vspace'>vaitanike—ofrenda de oblaciones; karmani—la actividad; yat—de los dioses del fuego; namabhih—con los nombres; brahma-vadibhih—por brahmanas impersonalistas; agneyyah—para Agni; istayah—sacrificios; yajñe—en el sacrificio; nirupyante—son el objetivo; agnayah—los cuarenta y nueve dioses del fuego; tu— pero; te—aquellos.
+TRADUCCIÓN
+Esos cuarenta y nueve dioses del fuego son los beneficiarios de las oblaciones que ofrecen en el fuego védico de sacrificio los brahmanas impersonalistas.
+SIGNIFICADO
+Los impersonalistas que ejecutan sacrificios fruitivos védicos se sienten atraídos por los diversos dioses del fuego, y ofrecen oblaciones en su honor. Con esto se completa la descripción de los cuarenta y nueve dioses del fuego.
+VERSO 63
+agnisvatta barhisadah
+saumyah pitara ajyapah
+sagnayo 'nagnayas tesam
+patni daksayani svadha
+</p>
+<p class='vspace'>agnisvattah—los agnisvattas; barhisadah—los barhisadas; saumyah—los saumyas; pitarah—los antepasados; ajyapah—los ajyapas; sa-agnayah—los que se valen del fuego; anagnayah—los que viven sin el fuego; tesam—de ellos; patni— la esposa; daksayani—la hija de Daksa; svadha—Svadha.
+TRADUCCIÓN
+Los agnisvattas, los barhisadas, los saumyas y los ajyapas son los pitas. Unos son sagnika, y otros niragnika. La esposa de todos esos pitas es Svadha, la hija del rey Daksa.
+VERSO 64
+tebhyo dadhara kanye dve
+vayunam dharinim svadha
+ubhe te brahma-vadinyau
+jñana-vijñana-parage
+</p>
+<p class='vspace'>tebhyah—a partir de ellos; dadhara—generadas; kanye—hijas; dve—dos; vayunam—Vayuna; dharinim—Dharini; svadha—Svadha; ubhe—ambas; te—ellas; brahma-vadinyau—impersonalistas; jñana-vijñana-para-ge—expertas tanto en el conocimiento trascendental como en el conocimiento védico.
+TRADUCCIÓN
+Svadha, que fue ofrecida a los pitas, tuvo dos hijas que se llamaron Vayuna y Dharini. Eran impersonalistas y expertas en conocimiento trascendental y en conocimiento védico.
+VERSO 65
+bhavasya patni tu sati
+bhavam devam anuvrata
+atmanah sadrsam putram
+na lebhe guna-silatah
+</p>
+<p class='vspace'>bhavasya—de Bhava (el Señor Siva); patni—la esposa; tu—pero; sati—llamada Sati; bhavam—a Bhava; devam—un semidiós; anuvrata—fielmente ocupada en servicio; atmanah—de sí misma; sadrsam—similar; putram—un hijo; na lebhe—no obtuvo; guna-silatah—con buenas cualidades y buen carácter.
+TRADUCCIÓN
+La decimosexta hija, Sati, estaba casada con el Señor Siva. No pudo tener ningún hijo, aunque siempre se ocupó fielmente en el servicio de su esposo.
+VERSO 66
+pitary apratirupe sve
+bhavayanagase rusa
+apraudhaivatmanatmanam
+ajahad yoga-samyuta
+</p>
+<p class='vspace'>pitari—como padre; apratirupe—desfavorable; sve—su propio; bhavaya—al Señor Siva; anagase—intachable; rusa—con ira; apraudha—antes de llegar a la madurez; eva—incluso; atmana—por sí misma; atmanam—el cuerpo; ajahat— abandonó; yoga-samyuta—por medio del yoga místico.
+TRADUCCIÓN
+Se debió esto a que su padre, Daksa, solía censurar al Señor Siva a pesar del carácter intachable de éste. De modo que, antes de llegar a la madurez, Satiabandonó el cuerpo valiéndose del poder místico del yoga.
+SIGNIFICADO
+El Señor Siva, que es el mejor de los yogis místicos, nunca se construyó siquiera una casa en la que vivir. Sati era la hija de un gran rey, Daksa. Éste, al ver que su hija menor había escogido por esposo al Señor Siva, no se sentía muy satisfecho con ella. En consecuencia, y a pesar del carácter intachable del Señor Siva, Daksa, cada vez que se encontraba con su hija, criticaba a su yerno sin motivo alguno. Ésa fue la razón de que, antes de alcanzar la madurez, Sati abandonase el cuerpo que su padre le había dado. Ésa es la razón de que no tuviera hijos.
+Así terminan los significados de Bhaktivedanta del Capítulo Primero del Canto Cuarto del Srimad-Bhagavatam, titulado «Árbol genealógico de las hijas de Manu».
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on October 25, 2012, at 12:40 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

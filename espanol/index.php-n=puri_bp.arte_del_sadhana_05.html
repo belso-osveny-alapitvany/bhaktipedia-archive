@@ -1,0 +1,559 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Servir a los Devotos</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_05' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_05' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Servir a los Devotos"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_05-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>Servir a los Devotos</h2>
+<p>Cuando estuvo en Prayaga, el Señor Caitanya Mahãprabhu se reunió con Rupa Gosvami y lo instruyó en el proceso del servicio devocional. En el transcurso de sus conversaciones, que están registradas en el Caitanya Caritãmrta , Mahãprãbhu habló a Rupa Gosvãmi sobre lo raro que es un devoto puro. El Señor dijo que las infinitas entidades vivientes pueden ser divididas en dos categorías, las eternamente liberadas y las eternamente condicionadas. Las entidades condicionadas se clasifican a su vez en las que pueden moverse y las que no. Aquellas cuya conciencia está más cubierta, como los árboles, son las criaturas inmóviles, mientras que los seres móviles incluyen a las aves, los acuáticos y los animales terrestres, todos los cuales poseen una conciencia más desarrollada.
+De todas las criaturas terrestres, solo una pequeña proporción son humanos. Entre ellos, los Mlecchas, Pulindas y Sabaras están fuera de la esfera de la sociedad civilizada, que incluye solo a los que siguen los principios Védicos. La mitad de los que siguen los Vedas simplemente sirven de la boca para afuera a las Escrituras, pues de hecho llevan vidas irreligiosas y pecadoras. Además, de quienes siguen los principios Védicos, la mayoría se ocupa en la actividad ritual fruitiva. Entre muchos de tales trabajadores fruitivos, puede que alguno sea un filósofo. Entre los muchos millones de tales filósofos, puede que alguno logre en verdad la liberación, pero es muy difícil encontrar un devoto puro del Señor Krishna incluso entre muchos millones de personas liberadas.
+Ascendiendo hasta la persona liberada e incluyéndola, todos están ligados por el deseo, ya sea burdo o sutil. Los empleados en la actividad fruitiva están atados por el deseo del disfrute material (bhukti), ya sea en esta vida o después de la muerte en el Cielo. Los apegados a la búsqueda del conocimiento, están atados por el deseo de la liberación y los yoguis están atados por el deseo de facultades espirituales. En tanto existan deseos de disfrute sensual, salvación o perfecciones espirituales en el corazón, la persona estará perturbada. Aquel que se ocupa en el servicio devocional a Krishna, deja de desear la satisfacción de sus propios sentidos y solo anhela el placer de su Señor. Por tal motivo, solo el devoto conoce la verdadera paz.
+</p>
+<div class='vspace'></div><pre> krsna-bhakta niskãma atarva sãnta
+ bhukti-mukti-siddhi-kãmi sakali asãnta
+</pre><p class='vspace'>“Puesto que el devoto del Señor Krsna es falto de deseos, es pacífico. Los obreros fruitivos desean el disfrute material, los  jñãnis desean la liberación y los yoguis desean la opulencia material, por consiguiente, todos son lujuriosos y no pueden ser pacíficos”.
+(Caitanya Caritãmrta 2.19.149) 
+</p>
+<div class='vspace'></div><pre> mukrãnãm api siddhãnãm
+ nãrãyana-parãyanah
+ sudurlabhah prasãntãtmã
+ kotisv api mahã-mune
+</pre><p class='vspace'>“De todos los seres perfectos y liberados, Oh gran sabio, aquel que está consagrado a Nãrãyana es sumamente raro. Solo él, entre millones incontables ha hallado la paz divina”.
+(Srimad Bhãgavatam 6.14.5)
+</p>
+<p class='vspace'><strong>TADIYA - LOS CONECTADOS CON EL SEÑOR</strong>
+</p>
+<p class='vspace'>Esos seres especiales que han entrado en íntimo contacto con el Señor son llamados tadiya, “Suyos”. Vrindavan Dãsa Thãkura ha escrito en su Caitanya Bhãgavata:
+</p>
+<div class='vspace'></div><pre> bhãgavata tulasi gãngaya bhakta-jane
+ caturdhã vigraha krsna ei cãri sane
+ jiva-nyãsa karile sri-murti pujã haya
+ janma-mãtra e cãri isvara vede kaya
+</pre><p class='vspace'>“El Señor Supremo siempre está asociado con los cuatro siguientes elementos: el libro Bhãgavata, Tulasi, el Ganges y los devotos. La forma Deidad del Señor se torna adorable después de ser consagrada ritualmente y se ha invocado la presencia del Señor. Las Escrituras expresan que estas cuatro cosas, sin embargo, son intrínsecamente divinas”.
+(Caitanya Bhãgavata 2.21.81-82)
+</p>
+<p class='vspace'>El libro Bhãgavata, la persona Bhãgavata, Tulasi y el Ganges se consideran como manifestaciones del Señor Mismo debido a su íntima conexión con El. Son llamados Su prakãsa-vigraha. La forma deidad no se considera adorable hasta celebrarse el ritual prãna-pratisthã. Estos cuatro prakãsa-vigrahas sin embargo, se consideran naturalmente adorables; no hace falta ningún ritual de modo de elevarlos a ese nivel. Todos ellos son espirituales y en mérito a su relación espiritual con el Señor, se considera están en una relación de amo y sirvientes. Siempre se los considera distintos de la naturaleza material y nunca se los contempla como objetos potenciales de disfrute sensual.
+Krishnadãda Kavirãja Gosvãmi expresa la misma idea en el Caitanya Caritãmrta:
+</p>
+<div class='vspace'></div><pre> tadiya tulasi vaisnava mathurã bhãgavata
+ ei cãrira sevã haya krsnera abhimata
+</pre><p class='vspace'>“La palabra tadiya alude a esas personas o cosas que están relacionadas con el Señor: Tulasi, los devotos de Krishna, la tierra de Mathurã y el Srimad Bhãgavatam; Krishna se complace cuando se presta servicio a cualquiera de estos cuatro”.
+(Caitanya Caritãmrta 2.22.121)
+</p>
+<p class='vspace'>Esto último se encuentra en el Caitanya Caritãmrta en el contexto de una enumeración de 64 elementos de servicio devocional en la práctica. De estas sesenta y cuatro prácticas, cinco se consideran como más importantes.
+</p>
+<div class='vspace'></div><pre> sãdhu-sanga nãma-kirtana bhãgavata-sravana
+ mathurã-vãsa sri murtira sraddhãya sevana
+</pre><p class='vspace'>“Uno debe asociarse con devotos, cantar el Santo Nombre del Señor, oír el Srimad Bhãgavatam, residir en Mathurã y adorar la deidad con fe y veneración”.
+(Caitanya Caritãmrta 2.22.214)
+</p>
+<p class='vspace'>Estos cinco miembros del servicio devocional se consideran los mejores de todos porque incluso una leve ejecución de los mismos despierta el amor por Krishna. Ya sea que la persona ejecute uno o muchos de los procesos del servicio devocional, el amor por Krishna puede manifestarse rápidamente. (Caitanya Caritãmrta 2.22.214). Es claro que existe una relación muy próxima entre estos cinco actividades devocionales sumamente potentes y el concepto de tadiya o cosas relativas al Señor. 
+Es necesario remarcar particularmente que el servicio a los Vaisnavas no puede ser separado de ningún aspecto del servicio devocional. En tal sentido, Srila Narottama dãsa Thãkura canta: chãriya vaisnava-sevã nistãra pãyecche kebã - “ ¿Quién ha logrado jamás la beatitud suprema sin servir a los Vaisnavas?” (Prema-bhakti-candrikã). Sin la asociación y servicio al devoto perfecto del Señor, la persona Bhãgavata, ningún aspecto del servicio devocional puede ser ejecutado con propiedad.
+</p>
+<p class='vspace'>Además, como Sri Caitanya Mahãprabhu enseñara a Sanãtana Gosvãmi, la asociación con devotos es importante en todas las etapas de la vida devocional.
+</p>
+<div class='vspace'></div><pre> krsna-bhakti-janma-mula haya sãdhu-sanga
+ krsna-prema janme tenho punah mukhya anga
+</pre><p class='vspace'>“La causa original del servicio devocional a Krishna es la asociación con devotos avanzados. Y cuando despierta nuestro amor por Krishna, la asociación con los devotos se convierte en el elemento principal de nuestro servicio devocional”.
+(Caitanya Caritãmrta 2.22.83)
+</p>
+<p class='vspace'>La devoción por Krishna es el fruto de asociarse con devotos. Cuando esa devoción alcanza su estado más maduro y es transformada en amor puro por el Señor, luego la asociación con los devotos continúa siendo la expresión esencial de dicho amor.
+</p>
+<p class='vspace'><strong>EL NIVEL ESPECIAL DE LOS VAISNAVAS</strong>
+</p>
+<p class='vspace'>En dos versos del Pãdmottara-khanda, Mahãdeva enfatizó la gloria de adorar a los tadiyas, a Pãrvati:
+</p>
+<div class='vspace'></div><pre> ãrãdhanãnãm sarvesãm
+ visnor ãrãdhanam param
+ tasmãt parataram devi
+ tadiyãnãm samarcanam
+</pre><p class='vspace'>“De todos los tipos de adoración, la adoración del Señor Visnu es la mejor. Aún mejor que la adoración del Señor Visnu es la adoración de esas cosas que están conectadas con El”.
+(Bhakti-rasãmrta-sindhu 1.2.214, Hari-bhakti-vilãsa 10.361)
+</p>
+<div class='vspace'></div><pre> arcayitvã tu govindam
+ tadiyãn nãrcayet tu yah
+ na sa bhãgavato jñeyah
+ kevalam dãmbhikaj smrtah
+</pre><p class='vspace'>“Aquel que adora a Govinda sin adorar a quienes están relacionados con El, no puede ser considerado un verdadero devoto. En realidad, ciertamente no es más que un hipócrita”.
+(Hari-bhakti-vilasa 10.362)
+</p>
+<p class='vspace'>El Señor no acepta el servicio de quien no tenga afecto por Tulasi y las demás cosas descritas como tadiya, y que simplemente trata de mostrar afecto solo por El. Los devotos son tan queridos al Señor Govinda, que Se subordina personalmente a ellos. Por consiguiente, es fácilmente conquistado por todo aquel que demuestre amor y respeto por ellos. Ciertamente, El dice que quien declara ser un  devoto no es verdaderamente Su devoto. Solo la persona que actúa como devoto de Sus devotos puede hacer tal declaración:
+</p>
+<p class='vspace'>“Oh Arjuna, quienes declaran ser Mis devotos en realidad no lo son. Yo solo considero a los que son sirvientes de Mis devotos, como Mis verdaderos devotos”. (Ãdi Purana, citado en Bhakti-rasãmrta-sindhu 1.2.218, Hari-bhakti-vilasa 10.133 y Caitanya Caritãmrta 2.11.28)
+</p>
+<p class='vspace'>Uddhava es uno de los principales devotos del Señor. Cuando Uddhava acudió a Krishna para aprender sobre la disciplina del yoga, el Señor brindó las instrucciones conocidas como el Uddhava-gita, que han sido preservadas en el undécimo Canto del Bhãgavatam. Entre las características del devoto puro allí brindadas, el Señor dijo:
+</p>
+<div class='vspace'></div><pre> ãdaraj paricaryãyãm
+ sarvanhair abhivandanam 
+ mad-bhakta-pujãbhyadhikã
+ sarva-bhutesu man-matih
+
+ mad-arthesv anga-cestã ca
+ vacasã mad-guneranam 
+ mayy arpanam ca manasah
+ sarva-kãma-vivarjanam
+</pre><p class='vspace'>“Mis devotos se preocupan mucho por prestarMe servicio, ofreciéndoMe reverencias por medio del empleo de los miembros de su cuerpo y facultades. Ellos consideran la adoración de otros devotos incluso más importante que Mi adoración; ellos ven Mi presencia en todos los seres vivientes. Ellos ocupan sus cuerpos en trabajar para Mí; usan la facultad del habla para glorificar Mis cualidades. Ellos Me ofrecen todas las actividades de su mente y dejan de lado todos los deseos materiales”.
+(Srimad Bhãgavatam 11.19.21-22)
+</p>
+<p class='vspace'>Vrindavan Dãsa Thãkura confirma que la tercera línea del primer verso, mad-bhakta-pujãbhyadhikã es como sigue:
+</p>
+<div class='vspace'></div><pre> ãmãra bhaktera pujã ãmã haite bara
+ sei prabhu vede bhãgavate kaila darha
+</pre><p class='vspace'>“El Señor ha declarado vigorosamente en los Vedas y el Bhãgavatam: ‘Adorar o servir a Mi devoto es incluso más grande que adorarme a Mí”.
+(Caitanya Bhãgavata 1.1.8)
+</p>
+<p class='vspace'><strong>LOS TRES NIVELES DE DEVOTOS</strong>
+</p>
+<p class='vspace'>Rãmãnanda Basu y su padre Satyarãja Khãn, fueron jefes de familia ejemplares del pueblo de Kulinagrãma, entre los seguidores más queridos de Mahãprabhu. Una vez, vinieron a ver al Señor en Puri y Le preguntaron sobre los deberes de un devoto jefe de familia. Mahãprabhu les respondió en detalle, aconsejando a todos los jefes de familia de todas partes, que ellos tienen tres deberes principales: servir a la forma deidad de Krishna, cantar los Santos Nombres y servir a los Vaisnavas. 
+</p>
+<p class='vspace'>Al oírlo, Satyarãja Khãn pensó lo siguiente: “El servicio a la deidad y el canto de los Santos Nombres son ambos ligeramente directos y pueden ejecutarse sencillamente, conforme a las instrucciones del maestro espiritual. Si uno es incapaz de reconocer a un Vaisnava, sin embargo, la instrucción de servirlos no será fácilmente ejecutada”. Así pues, preguntó al Señor cómo reconocer a un Vaisnava, ¿quién es un verdadero Vaisnava y cuales son sus características?
+</p>
+<p class='vspace'>En los siguientes tres años, Mahãprabhu respondió esta pregunta describiendo en primer lugar la categoría más inferior de Vaisnava, el kanistha, luego al madhyama y finalmente a la clase más alta de devoto, el uttama-adhikãri. El primer año, dijo: 
+</p>
+<div class='vspace'></div><pre> prabhu kahe jãnra mukhe suni eka-bãra
+ krsna-nãma sei pujya srestha sabãkãra
+ eka krsna-nãma kare sarva-pãpa ksaya
+ nava-vidhã bhakti purna nãma haite haya
+ diksã-purascaryã-vidhi apeksã nã kare
+ jihvã-sparse ã-candãla sabãre uddhãre
+ anusanga-phale kare samsãrera ksaya
+ citta ajarsiyã harãya krsne premodaya
+</pre><p class='vspace'>“Si Yo oigo a alguien cantando el Santo Nombre de Krishna tan solo una vez, lo considero adorable y el mejor de todos los humanos. Una sola repetición del santo nombre de Krishna destruye todas las consecuencias de la vida pecaminosa. Los nueve procesos del servicio devocional se completan simplemente por cantar el Santo Nombre. Con el Santo Nombre, no hay que pasar por la iniciación o las observancias parascaryã como con los demás mantras. El Nombre libera incluso a una persona que esté en las categorías más bajas de la sociedad humana, en cuanto lo canta. En segundo lugar, el Santo Nombre disuelve el enredo personal en las actividades materiales, atrae la mente y despierta el amor por Krishna”.
+(Caitanya Caritãmrta 2.15.106-109)
+</p>
+<p class='vspace'>Sri Caitanya Mahãprabhu seguidamente concluyó: “Por consiguiente, aquel que cante el nombre de Krishna debe ser reconocido como un Vaisnava y se le deben ofrecer todos los respetos”.
+(Caitanya Caritãmrta 2.15.111)
+</p>
+<p class='vspace'>Bhaktivinoda Thãkura ha brindado cierta aclaración respecto a esta amplia instrucción dada por Mahãprabhu: “Hay muchas personas que toman iniciación en el Vaisnava mantra pero continúan bajo el influjo de la filosofía Mãyãvãda debido a su ignorancia de la doctrina Vaisnava. El devoto que canta el Santo Nombre sin ofensas, no será contaminado por dichas faltas. La persona que ha sido sencillamente iniciada es llamada un Vaisnava-prãya o ‘casi un Vaisnava’. Aquel que ha cantado el Santo Nombre siquiera una vez sin ofensas, es un devoto puro, aunque se encuentre en el nivel más bajo de todos. El jefe de familia debe servir a los devotos que sean al menos de este calibre”.
+(Amrta-pravãha-bhãsya, 2.15.111)
+</p>
+<p class='vspace'><strong>LAS CARACTERISTICAS DE LOS DEVOTOS MAS AVANZADOS</strong>
+</p>
+<p class='vspace'>Un año después, los residentes de Kulinagrãma regresaron a Puri e hicieron las mismas preguntas al Señor. Esta vez El dijo:
+</p>
+<div class='vspace'></div><pre> prabhu kahe vaisnava-sevã nãma-sankirtana
+ dui kara sighra pãbe sri-krsna-carana
+</pre><p class='vspace'>“Deben servir a los Vaisnavas y cantar el santo nombre de Krishna. Si hacen estas dos cosas, rápidamente alcanzarán el amparo de los pies de loto de Krishna”.
+(Caitanya Caritãmrta 2.16.70)
+</p>
+<p class='vspace'>Satyarãja Khãn preguntó en una ocasión cómo reconocer a un Vaisnava. Esta vez, Mahãprabhu le habló sobre el devoto en el nivel medio de progreso, el madhyama adhikãri.
+</p>
+<div class='vspace'></div><pre> krsna-nãma nirantara jãnhãra vadane
+ sei vaisnava-srestha bhaja tãnhãra carane
+</pre><p class='vspace'>“La persona que siempre está cantando el santo nombre del Señor ha de ser considerada un Vaisnava de primera clase. Adora sus pies de loto”.
+(Caitanya Caritãmrta 2.16.72)
+</p>
+<p class='vspace'>El tercer año, nuevamente Satyãraja volvió a hacer la misma pregunta y esta vez Mahãprabhu respondió describiendo las características del Vaisnava más avanzado, el uttama-adhikãri o mahã-bhãgavata:
+</p>
+<div class='vspace'></div><pre> jãnhãra darsane mukhe ãise krsna-nãma
+ tãnhãre jãniha tumi vaisnava-pradhãna
+</pre><p class='vspace'>“Aquel cuya propia vista traiga el nombre de Krishna a tus labios, debe ser reconocido como el mejor de todos los Vaisnavas”.
+(Caitanya Caritãmrta 2.16.74)
+</p>
+<p class='vspace'>Estos tres grados de Vaisnavas son a veces llamados progresivamente vaisnava, vaisna-vatara y vaisnavatama:  tipos de devotos, básico, superior y superlativo. Mahãprabhu remarcó así el deber del devoto jefe de familia y servir a estos tres tipos de Vaisnava. Bhaktivinoda Thãkura lo elabora expresando: “No hace falta servir al Vaisnava que quizás  haya pasado por la iniciación formal pero que nunca cantó el Santo Nombre sin ofensas. De todos modos, hay que actuar como su bienqueriente y ofrecerle amabilidad como invitado”. (Ãmrta-pravãha-bhãsya 2.16.71)
+</p>
+<p class='vspace'><strong>LAS CUALIDADES DE UN DEVOTO</strong>
+</p>
+<p class='vspace'>Hay muchas descripciones de las cualidades de un devoto en el Bhãgavata y demás Escrituras Vaisnavas. En efecto, el devoto es el depósito de toda virtud. Sri Sukadeva dijo a Mahãrãja Pariksit: 
+</p>
+<div class='vspace'></div><pre> yasyãsti bhaktir bhagavaty akiñcana
+ sarvair gunais tatra samãsate surãh
+ harãv abhaktasya kuto mahad-gunã
+ mano-rathenãsati dhãvato bahih
+</pre><p class='vspace'>“Para aquellos que tienen devoción por el Señor Supremo sin ningún deseo de provecho personal, todos los semidioses vienen y los dotan de sus cualidades. En cuanto a los no devotos, ¿cuáles son sus virtudes? Llevados por los deseos personales, ellos siempre están corriendo superficialmente por la existencia no permanente. Por consiguiente, es imposible que ellos sean ciertamente virtuosos”.
+(Srimad Bhãgavatam 5.18.12)
+</p>
+<p class='vspace'>El discípulo de Gadãdhara Pundit Gosvãmi, Ananta Ãcãrya, era un devoto de esa clase, infinitamente virtuoso. Su querido discípulo fue Haridãsa Pundit, quien dirigió el servicio de Govindaji en el Yogapitha en Vrindavan. Krishnadãsa Kavirãja Gosvãmi describió las cualidades de este Haridãsa en el Caitanya Caritãmrta:
+</p>
+<div class='vspace'></div><pre> sevãra adhyaksa sri-pandita haridãsa
+ tãnra yãsah-guna sarva-jagate prakãsa
+ susila sahisnu sãnta vadãnya gambhira 
+ madhura-vacana madhura-cestã mahã-dhira
+ sabãra sammãna-kartã karena sabãra hita
+ kautilya-mãtsarya-himsã nã jãne tãnra cita
+ krsnera ye sãdhãrana sad-guna pañcãsa
+ se saba gunera tãntra sarire nivãsa
+</pre><p class='vspace'>“El principal pujãri en el templo de Govindaji era Haridãsa Pundit. Su reputación como hombre virtuoso se diseminó por todo el mundo. Era educado, tolerante, pacífico, generoso, grave, dulce en sus palabras y esfuerzos así como sobrio. Era respetuoso con todos y actuaba para el bienestar de todos. Su corazón estaba libre de duplicidad, envidia y malicia. Las cincuenta cualidades ordinarias del Señor Krishna había tomado alojamiento en su corazón”.
+(Caitanya Caritãmrta 1.8.24-27)
+</p>
+<p class='vspace'>En otra parte, Mahãprabhu Mismo brindó el siguiente discurso sobre el tema de las cualidades del devoto, a Sanãtana Gosvãmi: 
+</p>
+<div class='vspace'></div><pre> sarva mahã-guna-gana vaisnava-sarire
+ krsna-bhakte krsnera guna sakali sañcãre
+ sei sabe guna haya vaisnava-laksana
+ saba kahã nã jãya hari dig-darasana
+ krpãlu akrta-droha satya-sãra sama
+ nidosa vadãnya mrdu suci akiñcana
+ sarvopakãraka sãnta krsnaika-sarana
+ akãma aniha sthira vijita-sad-guna 
+ mita-bhuk apramatta mãnada amãni
+ gambhira karuna maitra kavi daksu mauni
+</pre><p class='vspace'>“Todas las grandes virtudes se manifiestan en un cuerpo Vaisnava; pues se dice que todas las virtudes de Krishna son transferidas a Su devoto. Estas cualidades trascendentales son las características de los Vaisnavas puros, y aunque las mismas no pueden ser descritas completamente, trataré de brindar cierta indicación. Los devotos son compasivos; ellos nunca crean enemistad deliberadamente, son veraces en sus palabras y actos y sin prejuicios; son inocentes, magnánimos, moderados, limpios y desinteresados en las posesiones materiales o la ambición. Ocupados en labor de bienestar social para todos, son pacíficos; ellos han tomado completo refugio en Krishna y no son influenciados por la lujuria. Son inofensivos, estables y han superado los seis pecados cardinales, la lujuria, la ira, la codicia, la envidia, la ilusión y los celos. Solo comen lo necesario y no se embriagan. Los devotos son respetuosos y sin falso prestigio, son graves, compasivos, amistosos, poéticos, expertos y silenciosos”.
+(Caitanya Caritãmrta 2.22.75.77-80)
+</p>
+<p class='vspace'>Las cualidades descritas en los versos anteriores son los síntomas o características distintivas de los devotos santos y puros. De todas ellas, la característica esencial es krsnaika-sarana, que han tomado completo refugio en Krishna. Las otras veinticinco cualidades son contingentes de la primera.
+</p>
+<p class='vspace'><strong>VIRTUDES ESENCIALES Y SECUNDARIAS</strong>
+</p>
+<p class='vspace'>En el Bhãgavatam, Kapiladeva refirió a su madre Devahuti las virtudes sintomáticas de un devoto:
+</p>
+<div class='vspace'></div><pre> titiksavah kãrunikãh
+ suhrdah sarva-dehinãm
+ ajãta-satravah sãntah
+ sãdhavah sãdhu-bhusanah
+</pre><p class='vspace'>“Las personas santas que son tolerantes, misericordiosas y amigables con todas las criaturas, que no hacen enemigos y son pacíficas, son joyas entre los piadosos”.
+(Caitanya Caritãmrta 3.25.21)
+</p>
+<p class='vspace'>Las cualidades enumeradas en este verso, son características del devoto; tales cualidades son contingentes a la virtud esencial de estar completamente rendido a Krishna. Se denominan tatastha-laksana. En los siguientes dos versos, Kapiladeva prosigue describiendo las características esenciales o svarupa-laksana, del devoto.
+</p>
+<div class='vspace'></div><pre> mayy ananyena bhãvena
+ bhaktim kurvanti ye drdhãm 
+ mat-krte tyakta-karmãnas
+ tyakta-svajana-bãndhavah
+</pre><p class='vspace'>“Con sus emociones fijas en Mí, estos sadhus se ocupan en servicio devocional firme a Mí. En Mi nombre, han renunciado a todas las actividades, así como a sus relaciones familiares y amistades”.
+(Srimad Bhãgavatam 3.25.22)
+</p>
+<div class='vspace'></div><pre> mad-ãsrayãh kathã mrstãh
+ srnvanti kathayanti ca
+ tapanti vividhãs tãpã
+ naitãn mad-gata-cetasah
+</pre><p class='vspace'>“Tomando refugio en Mí, ellos se ocupan constantemente en oír y cantar sobre Mí. Las diversas clases de miserias materiales no los afectan porque siempre están llenos de pensamientos de Mis pasatiempos y actividades”.
+(Srimad Bhãgavatam 3.25.23)
+</p>
+<div class='vspace'></div><pre> ta ete sãdhavah sãdhvi
+ sarva-sanga vivarjitãh
+ sangas tesv atha te prãrthyah
+ sanga-dosa-harã hi te
+</pre><p class='vspace'>“ ¡Oh dama virtuosa! Los sadhus de esta clase están libres de todo apego. Debes orar por la asociación de tales personas santas, pues eso contrarrestará los perniciosos efectos del contacto con las personas no santas”.
+(Srimad Bhãgavatam 3.25.24)
+</p>
+<p class='vspace'>En una relación de afecto creciente, a medida que uno escucha Krishna kathã de labios de los devotos santos y el maestro espiritual, se va enriqueciendo por su gracia y continúa liberándose de las garras de la ilusión y alcanza la devoción pura por Krishna.
+</p>
+<p class='vspace'><strong>MAS CARACTERISTICAS DEL DEVOTO</strong>
+</p>
+<p class='vspace'>Los siguientes versos, que brindan las calificaciones de la persona santa, son del Bhãgavata, donde el Señor le explica a Uddhava la historia del Rey Aila y su apego por la Apsarã Urvasi:
+</p>
+<div class='vspace'></div><pre> santo’napeksã mac-cittãh
+ prasãntãh sama-darsinah
+ nirmamã nirahankãrã
+ nirdvandvã nisparigrahah
+</pre><p class='vspace'>“Los santos no desean nada y son pacíficos; ellos tratan a todos igualmente. Ellos no declaran nada como propio; no poseen ego. No los afectan las dualidades como el calor y el frío, y no se interesan en las posesiones de otros. Por encima de todo, sus mentes están siempre fijas en Mí”.
+(Srimad Bhãgavatam 11.26.27)
+</p>
+<div class='vspace'></div><pre> tesu nityam mahãbhãga 
+ mahãbhãgesu mat-kathãh
+ sambhavanti hi tã nrnãm
+ jusatãm prapunanty agham
+</pre><p class='vspace'>“ ¡Oh sumamente afortunado! Como tú, estas personas santas afortunadas, se ocupan constantemente en hablar de Mí. Toda persona que escuche lo que ellos dicen, se purifica de sus pecados”.
+</p>
+<div class='vspace'></div><pre> tã te srnvanti gãyanti
+ hy anumodanti cãdrtãh 
+ mat-parãh sraddadhãnãs ca
+ bhaktim vindanti te mayi
+</pre><p class='vspace'>“Aquellos que escuchan, cantan o simplemente aprecian u honran esos tópicos, se consagran a Mí y desarrollan fe y devoción por Mí”.
+(Srimad Bhãgavatam 11.26.29)
+</p>
+<p class='vspace'>Concretamente hablando, así como un bote es la salvación para la persona que se está ahogando en el mar, así los devotos santos son la salvación de las pobres almas que se están hundiendo en el océano de la existencia material. Krishna dice, 
+</p>
+<div class='vspace'></div><pre> annam hi prãninãm prãna
+ ãrtãnãm saranam tv aham
+ dharmo vittam nrnãm pretya
+ santo’rvãg bibhyato’ranam
+</pre><p class='vspace'>“El alimento es la vida para todos los seres, Yo soy el refugio de los afligidos; los actos religiosos de una persona son la única riqueza que puede llevarse consigo después de morir, y las personas santas son la salvación de todo aquel que tema la existencia material”.
+(Srimad Bhãgavatam 11.26.33)
+</p>
+<div class='vspace'></div><pre> santo disanti caksumsi
+ bahir arkah samutthitah
+ devatã bãndhavãh santah
+ santa ãtmãham eva ca
+</pre><p class='vspace'>“Los santos dispensan la visión interna sobre la humanidad del modo que el Sol ilumina el universo externo al asomar. Ellos son ciertamente dioses, son los verdaderos amigos; son el ser propio individual, ellos son Mi propio ser”.
+(Srimad Bhãgavatam 11.26.34)
+</p>
+<p class='vspace'>Nuestro adorable maestro espiritual, Srila Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura, elaboró el último verso en su Bhãgavata-vivrti: “Los santos son comparables al Sol. Sus palabras son como la luz que concede la facultad de la vista al ojo interior del conocimiento de las almas condicionadas; destruyendo de tal modo la oscuridad de la ignorancia en la cual han caído. Los verdaderamente santos son los que han adoptado la senda de la devoción. Los no devotos no pueden ser considerados santos ni nuestros mejores amigos. Aquellos que ven al mundo ya sea como una fuente de disfrute a ser explotada o como algo temible que debe ser rechazado, así como los que tienen otros deseos ajenos al placer del Señor, están todos situados muy lejos de El. Solo aquellos completamente abocados al sendero de la devoción poseen la habilidad para superar las dualidades y distinciones”.
+</p>
+<p class='vspace'><strong>LOS BENEFICIOS DE ASOCIARSE CON LOS SANTOS</strong>
+</p>
+<p class='vspace'>¿Cuáles son los beneficios de asociarse con los santos? La compasión de los santos -el guru y los devotos puros - resulta principalmente en la disipación de nuestros malos hábitos y el desarrollo del bhakti puro.
+</p>
+<div class='vspace'></div><pre> krsna-bhakti-janma-mula haya sãdhu-sanga
+ krsna-prema janme tenho punah mukhya anga
+</pre><p class='vspace'>“La causa original del servicio devocional al Señor Krishna es la asociación con los devotos avanzados. Incluso después que el amor latente individual por Krishna ha despertado, la asociación con tales devotos continúa siendo la actividad devocional fundamental”.
+(Caitanya Caritãmrta 2.22.80)
+</p>
+<div class='vspace'></div><pre> mahat-krpã vinã kona karme bhakti naya
+ krsna-bhakti dure rahu, samsãra nahe ksaya
+</pre><p class='vspace'>“Sin el favor de un gran devoto, ninguna actividad se califica como devoción. No solo es uno incapaz de obtener la devoción pura por Krishna, sino que tampoco puede ser liberado del cautiverio de la existencia material”.
+(Caitanya Caritãmrta 2.22.51)
+</p>
+<p class='vspace'>Hay numerosos versos en el Bhãgavatam que glorifican asimismo la asociación de los devotos:
+</p>
+<div class='vspace'></div><pre> rahuganaitat tapasã na yãti
+ na cejyayã nirvapanãd grhãd vã
+ na cchandasã naiva jalãgni-suryair
+ vinã mahat-pãda-rajo-bhisekam
+</pre><p class='vspace'>“Oh Rahugana, no se puede realizar a la Verdad Absoluta a menos que uno rocíe todo su cuerpo con el polvo de los pies de loto de los grandes devotos. Esa realización no proviene de penitencias y austeridades, ejecución del sacrificio, la renuncia a la vida familiar o sobrellevar penitencias severas como ser mantenerse sumergido en el agua en Invierno o rodearse del fuego en el calor ardiente del Sol en Verano”.
+(Srimad Bhãgavatam 5.12.12)
+</p>
+<div class='vspace'></div><pre> naisãm matis tãvad urukramãnghrim
+ sprsaty anarthãpagamo yad-arthah 
+ mahiyasãm pãda-rajo-bhisekam
+ niskiñcanãnãm na vrnita yãvat
+</pre><p class='vspace'>“A menos que rocíen sobre sus cuerpos el polvo de los pies de loto de un Vaisnava que esté completamente libre de contaminación material, las personas que son muy inclinadas a la vida materialista nunca pueden purificarse y acercarse a los pies del glorioso Señor”.
+(Srimad Bhãgavatam 7.5.32)
+</p>
+<p class='vspace'>Las personas piadosas o sadhus en los senderos del karma y jñãna, no se definen como tadiya, “personas o cosas relacionadas con el Señor”. En tal sentido, los que estén intentando avanzar en la disciplina del bhakti, deben ser especialmente cautelosos en relación al tipo de persona a la cual le prestan el servicio. Caso contrario, no se dominará la disciplina ni se llegará a la meta, la perfección en la devoción pura y el amor por Krishna.
+</p>
+<p class='vspace'><strong>EVITANDO LAS OFENSAS A LOS VAISNAVAS</strong>
+</p>
+<p class='vspace'>El Hari -bhakti vilasa cita al Agni Purana sobre los resultados de mostrar desdén por un devoto adornado con los símbolos de Visnu. El verso es hablado por un brahmana que se lamenta de la muerte de su hijo por la flecha del padre del Señor Rãmacandra, el Rey Dasaratha: 
+</p>
+<div class='vspace'></div><pre> silã-buddhih krtã kim vã
+ pratimãyãm harer mayã
+ kim mayã pathi drstasya
+ visnu-bhaktasya karhicit
+ tan-mudrãnkita-dehasya
+ cetasã nãdarah krtah
+ yena karma-vipãkena
+ putra-soko mamedrsah
+</pre><p class='vspace'>“ ¿Pensé alguna vez en la forma deidad del Señor como nada sino un trozo de piedra? ¿Vi alguna vez a un devoto de Visnu en el camino y no lo respeté porque su cuerpo estaba cubierto con los símbolos del Señor? ¿Es una reacción a estos pecados por lo que ahora me lamento por mi hijo?”
+(Hari -bhakti vilasa 15.41)
+</p>
+<p class='vspace'>Este incidente se describe en el Rãmãyana. El padre del Señor Rãmacandra, el Rey Dasaratha, era un arquero muy hábil, capaz de dar en el blanco de un animal meramente por el sonido que hacía, sin tener que verlo. En una ocasión, fue al bosque a cazar. En ese mismo bosque, un niño llamado Sravana, había ido al río a buscar agua para sus padres, que estaban ambos ciegos. Mientras Sravana recogía el agua, Dasaratha oyó el sonido y pensando que era un elefante bebiendo, disparó una flecha en esa dirección. Dio en el blanco y el infortunado niño fue mortalmente herido.  Agonizando, se las ingenió para informar penosamente a Dasaratha sobre sus padres sedientos y le solicitó que fuera a llevarles el agua que el había sido incapaz de proveer.
+</p>
+<p class='vspace'>El Rey tomó el cántaro de agua y quedó de pie en silencio, enfrente del padre y la madre de Sravana. El padre ciego dijo, “Hijo mío, ¿porqué has tardado tanto en traer agua hoy? ¿Porqué no dices nada?”. Dasaratha oyó el temor y la ansiedad en la voz del brahmana ciego y le refirió muy apesadumbrado lo que había sucedido. “Oh sabio, mi nombre es Dasaratha. Confundí a su hijo con un animal y lo maté”.
+</p>
+<p class='vspace'>En cuanto el sabio ciego oyó las trágicas noticias, se desmayó. Al cabo de unos momentos, al recuperar la conciencia, comenzó a lamentarse de su pérdida. Fue en ese momento que comenzó a especular sobre las posibles razones de la muerte de su hijo.
+</p>
+<p class='vspace'>El Padma Purana también advierte en cuanto a ver al Vaisnava como un ser humano ordinario:
+</p>
+<p class='vspace'>“Quien considere al guru como un hombre ordinario, quien falte el respeto a un Vaisnava del propio entorno del Señor infalible, pensando que pertenece a una determinada casta o credo o quien considere el caranãmrta del Señor o del devoto, que purifica todas las faltas de la Era de Kali, como agua ordinaria, se asume es un residente del infierno”.
+</p>
+<p class='vspace'>En el Skanda Purana se expresa:
+</p>
+<div class='vspace'></div><pre> nindãm kurvanti ye mudhã
+ vaisnavãnãm mahãtmanãm
+ patanti pitrbhih sãrdham
+ mahã-raurava-samjñite
+
+ hanti nindati vai dvesti
+ vaisnavãn nãbhinandati
+ krudhyate yãti no harsam
+ darsane patanãni sat
+</pre><p class='vspace'>“Esos necios que critican a las grandes almas que son devotos de Visnu, descienden al infierno llamado Mahãraurava junto con sus ancestros. Seis tipos de comportamiento resultan en caída: matar a un Vaisnava, blasfemarlo, sentir animosidad contra él, no seguir la etiqueta poniéndose de pie para saludar a uno, o enojarse con uno. Es incluso causa de caída el no complacerse al ver a un Vaisnava”.
+(Hari -bhakti vilasa 10.311-2)
+</p>
+<p class='vspace'>Además, se explica que incluso oír la crítica a los Vaisnavas resulta en caída.
+</p>
+<div class='vspace'></div><pre> nindãm bhagavatah srnvan
+ tat-parasya janasya vã
+ tato nãpaiti yah so ‘pi
+ yãty adhah sukrtã cyutah
+</pre><p class='vspace'>“Todo aquel que al oír que se blasfema al Señor o a los que han dedicado sus vidas a El, no deje el lugar de inmediato, cae y pierde todo el mérito previamente conquistado”.
+(Srimad Bhãgavatam 10.74.40; Hari -bhakti vilasa 10.316)
+</p>
+<p class='vspace'><strong>EL DEVOTO ES EL CANAL DE LA MISERICORDIA DEL SEÑOR</strong>
+</p>
+<p class='vspace'>Cuando Sri Caitanya Mahãprabhu observó el afecto y estima que tenía el Rey Pratãparudra por su asociado Rãmãnanda Rãya, dio una indicación de Su intención de ser misericordioso con el rey, diciendo: 
+</p>
+<div class='vspace'></div><pre> prabhu kahe tumi krsna-bhakata-pradhãna
+ tomãke je priti kare sei bhãgyavãn
+ tomãte je eta priti ha-ila rãjãra
+ ei gune krsna tãnre karibe angikãra
+</pre><p class='vspace'>“Mi querido Rãmãnanda Rãya, tú eres el principal de todos los devotos de Krishna; por consiguiente, todo aquel que te ame es ciertamente una persona muy afortunada. Puesto que el Rey ha evidenciado tanto amor por tí, el Señor Krishna ciertamente lo aceptará”.
+(Caitanya Caritãmrta 2.11.26)
+</p>
+<p class='vspace'>Srila Saccidãnanda Bhaktivinoda Thãkura enseñó cómo debía orar un devoto por la asociación de los Vaisnavas avanzados, cómo debíamos caer a sus pies, y llorando, referirles nuestras miserias de estar ardiendo en el fuego de la vida material como resultado de nuestro desinterés en el servicio del Señor. Los devotos son océanos de misericordia y su único pesar es ver el sufrimiento de las almas condicionadas. Cuando conocen nuestro sufrimiento e interceden por nosotros ante el Señor Supremo, El actuará misericordiosamente hacia nosotros, sabiendo que estamos al cuidado de los que están en Su entorno. La misericordia del Señor Supremo se recibe a través del medio de Sus devotos.
+</p>
+<p class='vspace'>La potencia de compasión del Señor Supremo se manifiesta en el gran Vaisnava o en el cuerpo del maestro espiritual devoto de Krishna. Puesto que los devotos llevan a Krishna en sus corazones, pueden entregarLo a cualquiera que tome refugio en ellos, sin duplicidad. No existe otro método alternativo para encontrar a Krishna, que el de aceptar completamente el amparo de un devoto que se ha entregado por completo al Señor Supremo. Es por eso que Krishnadãsa Kavirãja Gosvãmi describió la ferviente dedicación del tío de Raghunãtha dãsa, Kãlidasa, a los remanentes de los alimentos de los Vaisnavas, con tal aprobación. 
+</p>
+<div class='vspace'></div><pre> vaisnavera sesa-bhaksanera eteka mahimã
+ kalidãse pãoyãila prabhura krpã-simã
+ tãte vaisnavera jhutã khão chãri ghrnã-lãja
+ jãhã haite pãibã nija vãñchita saba kãja
+ krsnera ucchista haya mahã-prasada nãma
+ bhakta-sesa haile mahã-mahã-prasãdãkhyãna
+ bhakta-pada-dhuli ãra bhakta-pada-jala
+ bhakta-bhukta-avasesa tina mahã-bala
+ ei tina-sevã haite krsna-premã haya
+ punah punah sarva-sãstre phukãriya kaya
+ tãte bãra bãra kahi suna bhakta-gana
+ visvãsa kariyã kara e-tina sevana
+ tina haite krsna-nãma-premera ullãsa
+ krsnera prasãda tãte saksi kãlidãsa
+</pre><p class='vspace'>“Este es el alcance de las glorias de los remanentes de los alimentos de los devotos: a través de la dedicación a ellos, Kãlidãsa pudo llegar a los pies de loto de Caitanya Mahãprabhu. Por lo tanto, deja de lado tu vergüenza y disgusto y come los remanentes de los Vaisnavas, pues por así hacerlo podrás cumplir todos tus deseos. Los remanentes de la comida de Krishna se denominan mahã-prasãda, mas a los remanentes de los devotos se les da el nombre de mahã-mahã-prasãda. El polvo de los pies de los devotos, el agua que ha lavado sus pies y los remanentes de sus comidas, son tres recursos muy poderosos para la práctica espiritual. Todas las Escrituras reveladas proclaman una y otra vez que se puede llegar a la meta suprema del amor extático por Krishna a través del uso de estas tres sustancias. Así pues, mis queridos devotos, por favor atiendan mi insistencia sobre este punto: conserven la fe en estas tres sustancias y préstenles servicio con total fe. A través de estas tres sustancias, saborearán el gozo del amor sagrado que se encuentra en el santo nombre de Krishna y conquistarán el placer de Krishna. Esto ha sido probado por la experiencia de Kãlidãsa”.
+(Caitanya Caritãmrta 3.16.58-63)
+</p>
+<p class='vspace'>Bhaktivinoda Thãkura también cantó: 
+</p>
+<div class='vspace'></div><pre> kabe sri-caitanya more karibena dayã
+ kabe ãmi pãiba vaisnavera pada-chãyã
+ gala-vastra krtãñjali vaisnava-nikate
+ dante trna dhari dãnrãiba niskapate
+ kãndiyã kãndiyã jãnãiba duhkha grãma
+ samsãra anala hate mãgiba visrãma
+ suniyã ãmãra kathã vaisnava thãkura
+ ãmã lãgi krsne ãvedibena pracura
+ vaisnavera ãvedane krsna dayãmaya
+ mo-hena pãmara prati habena sadaya
+</pre><p class='vspace'>“ ¿Cuándo será misericordioso conmigo Sri Caitanya Mahãprabhu? ¿Cuándo hallaré amparo a la sombra de los pies de loto de un Vaisnava? Me aproximaré al santo con una tela alrededor del cuello en actitud humilde, mis manos juntas y con una hierba entre mis dientes. De esta forma, me presentaré ante él y desnudaré mi alma ante él. Llorando, le narraré mi sufrimiento y le suplicaré que me libere del fuego de la vida materialista. Cuando él oiga mi relato, el muy misericordioso Vaisnava intercederá por mí ante el Señor Supremo Krishna. Pese a que soy sumamente indigno e insignificante, Krishna será compasivo conmigo cuando oiga las plegarias del Vaisnava en mi nombre”.
+(Kalyãna-kalpataru)
+</p>
+<div class='vspace'></div><pre> vaisnava thãkura dayãra sãgara e-dãse karunã kari
+ diyã pada-chãyã sodhaha ãmãre tomãra carana dhari
+ krsna se tomãra krsna dite pãra tomãra sakati ãche
+ ãmi ta kãngala krsna krsna bali dhãi tava pãche pãche
+</pre><p class='vspace'>“Oh venerable Vaisnava, océano de compasión, sé misericordioso conmigo, tu sirviente.Te ruego que me des amparo a tus pies y me purifiques. Puesto que Krishna es tuyo, tienes la capacidad de darLo a los demás. Estoy desamparado y así, clamando los nombres de Krishna, te seguiré dondequiera vayas”. 
+(Saranãgati)
+</p>
+<p class='vspace'>Sin la misericordia del maestro espiritual, no se puede recibir la misericordia de los Vaisnavas. Y sin la misericordia tanto del maestro espiritual como de los Vaisnavas, no hay esperanza de recibir la misericordia del Señor Supremo. El maestro espiritual nos da el poder de reconocer a los devotos verdaderos y separarlos de aquellos que simplemente pretenden ser devotos. Sin esta discriminación, es fácil caer en la esclavitud de la mala asociación y ser desviados del sendero de la devoción pura. Nadie excepto el maestro espiritual genuino, que posee todas las calificaciones descritas en la Escritura, puede señalarnos la dirección de la asociación devocional genuina: él debe estar completamente versado en las verdades Escriturales y enriquecido por la realización directa de la Verdad Suprema, en los más altos niveles del sendero del Bhakti yoga y libre del empuje y tironeo de las modalidades materiales. La guía necesaria para lograr la perfección no está ciertamente dentro de la capacidad de los supuestos gurus, que no tienen un conocimiento real de la doctrina Vaisnava, que son indiferentes al sendero de cantar el Santo Nombre instituido por Mahãprabhu Mismo, que cometen ofensas al Santo Nombre o que están contaminados por la asociación no santa de los no devotos o los que se ocupan en relaciones sexuales ilícitas.
+</p>
+<p class='vspace'>La negrura del carbón no puede ser alterada ni con toda el agua contenida en los lagos y océanos del mundo; solo puede ser transformada por el fuego. Del mismo modo, es solo por el fuego ardiente de las instrucciones divinas del sad-guru que podemos purificarnos de la contaminación material. Solo entonces podremos librarnos de las garras de la bruja de la ilusión material.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_04.html'>El Comienzo del Servicio</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_06.html'>Evitar la Mala Asociación</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:22 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

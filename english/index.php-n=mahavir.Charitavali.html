@@ -1,0 +1,873 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Charitavali</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : mahavir - RSS Feed'
+      href='index.php-n=mahavir.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia in English<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Other languages</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Welcome to Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.about_bhaktipedia.html'>What is Bhaktipedia?</a>
+</li><li><a target='_blank'  class='urllink' href='http://bhaktipedia-news.blogspot.com' rel='nofollow'>News blog</a> 
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/english/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Catalogues</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Complete catalogue</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Catalogue by subject</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Study guide</a>
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>First steps...</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Philosophy and practice</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Confidential writings</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Supplementary literature</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=thesaurus.thesaurus.html'>Thesaurus</a>
+</p><ul><li><a class='wikilink' href='index.php-n=thesaurus.names.html'>Names</a>
+</li><li><a class='wikilink' href='index.php-n=thesaurus.places.html'>Places &amp; events</a>
+</li><li><a class='wikilink' href='index.php-n=thesaurus.definitions.html'>Definitions</a>
+</li></ul><p class='vspace'>Search Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/english/index.php?n=mahavir.Charitavali' method='get'><input type='hidden' name='n' value='mahavir.Charitavali' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/english/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/english/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Charitavali"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=mahavir.Charitavali-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=mahavir.mahavir.html'>Bhakti Prabhav Mahavir Goswami Maharaj</a></h5>
+<hr />
+<div class='vspace'></div><h5>Charitavali</h5>
+<hr />
+<dl><dd><ul><li>All Glory to Sree Guru and Gauranga**
+</li></ul></dd></dl><p class='vspace'>All Glory  to Sree Guru and Gauranga My Spiritual Master Param Hansa Bhakti Dayit Madhava Goswami
+</p>
+<p class='vspace'>C H A R I T A V A L I
+All Glory  to Sree Guru and Gauranga
+</p>
+<p class='vspace'>The Founder President Acharya,  Sree Chaitanya Gaudiya Math Organisation
+</p>
+<p class='vspace'>All Glory  to Sree Guru and Gauranga
+</p>
+<p class='vspace'>Introduction
+</p>
+<p class='vspace'>There is no birth and death of Vaishnavas. They come on this earth on the direction of Almighty to preach and spiritualise the fallen Souls from time to time in all Yugas (Ages). Kali Yuga is the repository of all evils and disputes. In the age of Kali Yuga Param Hansa Om Vishnupada Srimad Bhakti Siddhant Saraswati Thakur Prabhupada, the pioneer of Gaudiya Bhakti Cult, was an eternal associate of Lord Krishna, appeared and established world -wide Sree Chaitanya Math, Gaudiya Mission and Gaudiya Math on the theistic concept of Lord Krishna Chaitanya Mahaprabhu, the combined manifestation of Sree Radha and Krishna, during the first phase of Kali Yuga.
+</p>
+<p class='vspace'>His beloved and foremost disciple is Param Hans Om Vishnupada Bhakti Dayit Madhava Goswami Maharaj, the Founder-President-Acharya of Sree Chaitanya Gaudiya Math. I am fortunate to become his disciple. While I was on my preaching tour in European countries, Germany, Austria, France, Russia, Ukraine and also in Malaysia, devotees requested me to speak about life history of my  Gurudeva.   I delivered a number of lectures on the life history of my Guru Deva everywhere where I went for preaching. On the repeated requests I made up my mind to write this small treatise for the happiness of my Guru Deva while preaching in Ukraine.   This is a humble offering to my Spiritual  Master OM Vishnupada Param Hans Sri Srimad Bhakti Dayit Madhav Goswami Maharaj, the  Founder  Acharya, Sree Chaitanya Gaudiya Math.
+I hope that Sri Gurudeva will accept this work done by his very fallen disciple. This could be possible because of his causeless mercy only.
+Note:  Name  `Srila Prabhupada` used in this treatise is used only for Srila Bhakti Siddhanta Saraswati Thakur Prabhupada, for   Gaudiya Vaishnavas Srila Bhakti Siddhanta Saraswati Thakur is only titled as Srila  Prabhupada.
+The word `Srila Gurudeva ` is used for Param Hansa Bhakti Dayit Madhav Goswami Maharaj.
+</p>
+<p class='vspace'>In the service of Gurudeva Bhakti prabhav Mahavir                               Govinda-15,  21 February 2004, 25th disappearance day of  Param Hansa Bhakti Dayit Madhava Goswami Maharaj<br />Kharkov, Ukraine
+</p>
+<div class='vspace'></div><dl><dd><ul><li>Sri Sri Gurudevastam **
+</li></ul></dd></dl><p class='vspace'>Sansara –davanala-lidha-loka-tranaya karunya-ghanaghanatvam<br />Praptasya kalyana-gunarnavasya vande guroh sri charanaravindam  ( 1)
+</p>
+<p class='vspace'>Just as a raincloud extinguishes a blazing forest fire by showering its rain upon it.  Sri Gurudeva, by rain of his divine mercy,  delivers the people burning in the fire of material existence, suffering  from the three-fold miseries -  adhyatmika ,  adhibhautika and adhidaivika.  I offer prayers unto the lotus feet of Sri Gurudeva who manifests when Krishna`s mercy becomes very thick and who is an ocean of auspicious qualities.
+</p>
+<p class='vspace'>Mahaprahho kirtana –nritya- gita-vaditra-madyan-manso rasena<br />Romancha -  kampasru-taranga – bhajo vande guro sri charanaravindam ( 2)
+</p>
+<p class='vspace'>Sri Gurudeva is inspired by Mahaprabhu`s sankirtana and is always dancing, singing, and  playing  musical instruments.  Because he is tasting  Mahaprabhu`s  prema-rasa in his heart, like a madman.  He sometimes exhibits ecstatic symptoms---his hairs stand on end, he shivers, and waves to tears flow from his eyes. I offer my prayers unto Sri Gurudeva`s lotus feet.
+</p>
+<p class='vspace'>Sri-vigraharadhana-nitya-nana- sringara-tan-mandira-marjanadau I<br />Yuktasya bhaktans cha niyunjato ‘api’ vande guroh sri-chanranar vindam II (3)
+</p>
+<p class='vspace'>Always worshiping Sri Vigraha and absorbed  in Sringara-rasa ,  Sri Gurudeva daily dresses  Sri Radha –Krishna with beautiful clothes and ornaments designed to enhance Their meetings.  He cleans the temple and performs other services for them.  He also engages his disciples in these services.  I offer my prayers unto the lotus feet of Sri Gurudeva.
+</p>
+<p class='vspace'>Chatur-vidha-sri-bhagvat prasad - svadv-anna-triptam hari- bhakta-sanghan I<br />Krtivaiva triptim bhajatah sadaiva vande guroh sri charnarvindam II ( 4)
+</p>
+<p class='vspace'>Sri Gurudeva is always satisfied to see Sri Krishna`s devotees relishing four kinds of foodstuffs that have been offered to deities, which are chewed, sucked licked, and drunk. Thus the devotees  become  satisfied by tasting mahaprasad.  By accepting prasada in the mood of service for God, material life is destroyed and the bliss of divine love is awakened in the hearts.  I offer my prayers unto the lotus feet of Sri Gurudeva.
+</p>
+<p class='vspace'>Sri-radhika-madhavayor apara-madhurya-lila guna-rupa namanam<br />Prati –kshanasvadana-lolupasya vande guroh sri charanaravindam    (5)
+</p>
+<p class='vspace'>At every moment Sri Gurudeva is experiencing intense greed in his heart to taste the unlimited sweetness of the holy names, forms, qualities, and pastimes of Sri Radha-Madhava in Vrindavan.  I offer my prayers unto the Lotus Feet of Sri Gurudeva.
+</p>
+<p class='vspace'>Nikunja-yuno rati –keli siddyai ya yalibhir yukrit apekshaniya<br />Tatrati-dakshayad ati vallabhasya vande guroh sri-charanaravindam (6)
+</p>
+<p class='vspace'>Sri Gurudeva is always present with the sakhis planning the arrangements for the perfection of yugala-kishora`s amorous pastimes  (rati-keli) within the kunjas (pangola) of Vrindavana.  Because he is so expert in making   these tasteful arrangements for Their pleasure, he is very dear to Sri Radha and Krishna.  I offer my prayers unto the lotus feet of Sri Gururdeva.
+</p>
+<p class='vspace'>Sakshad-dharitvena samasta-sastrair uktas tatha bhavyate eva sadbhih  I<br />Kintu prabhor yah priyaeva tasya vande guro sri-charanarvindam    II  (7)
+</p>
+<p class='vspace'>All the scriptures proclaim Sri Gurudeva is sakshat hari, the direct potency of Sri Hari, and is thus considered by saintly authorities to be His non-different represenative.  Because Sri Gurudeva is so dear to the Lord, being His confidential   servitor  (achintya–bhed-abheda-prakash, the inconceivable different and non-different worshipable manifestation of the Lord).  I offer my prayers unto his lotus feet.   
+</p>
+<p class='vspace'>Yasya prasadad bhagavat prasado yasyaprasadan na gatih kuto api<br />Dhyayan stuvans tasya yasad tri-sandhyam vande guro sri –charanarvindam ( 8)
+</p>
+<p class='vspace'>Only by the mercy of Sri Gurudeva can one receive the mercy of  Krishna;  without his grace the living entities cannot make any advancement nor be delivered .  Meditating three times a day on the glories of Sri Gurudeva and reciting stavastuti. I offer my prayers unto his lotus feet.
+</p>
+<p class='vspace'>Sreemad gurorastakam-etat uchai brahme muhurte pathati prayatnata<br />Yastena vrindavananath sakshata sevaiva labhya janusoanta eba      (9)<br />Vande guru sri charanarvindam  …
+</p>
+<p class='vspace'>A person who very attentively recites this astakam to Sri Gurudeva during brahma muhurta is sure to achieve direct service to the lotus feet of Sri Krishna, the very life and soul of Vrandavan (Vrandavana –natha), upon attaining his vastu-siddhi or pure spiritual form.
+</p>
+<p class='vspace'>Every person who got initiation should recite this Guru astakam everey morning before sun rise to get benedicton of Sri Guru Deva and Lord Krishna. He gets spiritual world after his desmise. Reciting this astakam is a part of devotion.
+</p>
+<div class='vspace'></div><dl><dd><dl><dd><ul><li>Hymns of  Param Hansa Bhakti Dayit Madhav Goswami Maharaj ***
+</li></ul></dd></dl></dd></dl><p class='vspace'>Shat-sajjan vandit padyugam, yugdharm pracharak dhuryya-janam I<br />Jantasu subhasan shakti-dharam, pranamami cha madhav dev padama II  (1)
+</p>
+<p class='vspace'>I offer my prostrated obeisances to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj whose feet are worshipped by thousands of thousands people, who is foremost amongst the preachers of the Vaishnava dharma of Kali Yuga, and who has wonderful convincing power to deliver divine discourses in the huge gathering.
+</p>
+<p class='vspace'>Atidirgha manohar gaur-tanu, mridumand suhasya yutasya dharam I<br />Uru-lambit hast-surup-yutam pranmami cha madhav dev padam  II ( 2 )
+</p>
+<p class='vspace'>I offer my prostrated obeisances to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami  Maharaj  whose  personality (body) is tall, attractive one  with golden reflection , who has smiling  face, whose arms are handsome and  extended upto his kneels
+</p>
+<p class='vspace'>Shishu-kal-supathya-suyatna-param, janani-sannidhe-srut-shastra-matam   I<br />Parmarth-krite parihin griham, pranamami cha madhav dev padam II   (3 )
+</p>
+<p class='vspace'>I offer my salutations to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who from very childhood remained interested in study, who strudied Srimad Gita, Ramayana, Mahabharta and Srimad Bhagavatam from his chaste mother named Srimati Shaivalini Devi Dasi, and who renounced his house for the spiritual welfare of the fallen souls.
+</p>
+<p class='vspace'>Prabhupada-pade-arpit dehmatim, guru-karyya-krite yativesh-dharam    I<br />Prantesu sadahit-kari-varam, pranamami cha maddhav dev padam  II ( 4)
+</p>
+<p class='vspace'>I offer my prostrated obeisances to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami  Guru Maharaj, who surrendered his body and intelligence to the Lotus Feet of his Guru Dev Srila Bhakti Siddhant Saraswati Thakur Prubhupada, who accepted tridand sannyasa in order to fulfil desire of his Gurudeva ( Prabhupada) and who always remained engaged in the spiritual welfare of those who came and took shelter at his feet.
+</p>
+<p class='vspace'>Prabhupada-manomata karyya ratam, susamadrit bhakti-vinoda-padam I<br />Raghu-rupa-sanatan-labdh patham, panamami cha madhav dev padam II  (5)
+</p>
+<p class='vspace'>I offer my prostrated obeisances to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who remained always busy in preaching the devotional principles as desired by his Guru Dev Srila B.S.S Thakur Prabhupada, and who honoured the Lotus Feet of worshipful Bhakti Vinod Thakur and who followed very  carefully  the  path shown by Srila Raghunath Das Goswami, Srila Rupa Goswami, and Srila  Sanatan Goswami.
+</p>
+<p class='vspace'>Taru-dhikkrit marjan shakti dharma, laghu-sevan-matrak-hrist hridam I<br />Harikirtan santat dattmatim, pranamami cha maddhav dev padam II ( 6)
+</p>
+<p class='vspace'>I   offer my humble prayer to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who is more tolerant than a tree ( if any a  branch of tree is cut off, tree does not speak yet tree gives fruits from its other branches and tree can die but does not  request anybody for water ), whose heart is always satisfied and glad by the little service rendered by the fallen souls and who is perpetually absorbed in Kirtan.
+</p>
+<p class='vspace'>Math-mandir nirmit kirti-dharam, guru-gaur-kathasu cha nitya ratam I<br />Svayam-acharne par dhairya param, pranamami cha madhav dev padam II  (7)
+</p>
+<p class='vspace'>I offer my humble prayer to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who got very high reputation in constructing Maths  (Temples) ; who constantly absorbed in glorifying the glories of his Gurudeva and Lord Gauranga Mahaprabhu, who has  wonderful patience and leads his  life practically.  
+</p>
+<p class='vspace'>Karunardra-hridahrita vishnujanam, jana-nandit vandit kritykulam I<br />Nij-desh-videsh-suvandya padam, pranamami cha madhav dev padam II  ( 8)
+</p>
+<p class='vspace'>I offer my humble prayer to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who invites vaishnavas from very core of his heart, whose family dynasty is famous and respected for good deeds, whose lotus feet are worshipped in his own country and abroad also. 
+</p>
+<p class='vspace'>Guru pankti surakshan yatn param, guru sodar gaurav dan-ratan I<br />Anu-raktsu sevak vakya dharma, pranamami cha madhav dev padam II  (9)
+</p>
+<p class='vspace'>I offer my humble prayer to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami  Guru Maharaj who remaining in the  preceptorial line protects greatness of past Gurus, who is always engaged to honour his god-brothers and  who accepts and follows the teachings of senior and liberated vaishnavas.
+</p>
+<p class='vspace'>Bhagavad-bhajane-hyanurag param, vrita palan karm sudartya yutam I<br />Prabhupada padod-dhrit kari janam, pranamami cha madhav dev padam II  ( 10)
+</p>
+<p class='vspace'>I offer my humble prayer to the Lotus Feet of Srila Bhakti Dayit Madhav Goswami Guru Maharaj who follows religious rules and regulations very strictly and who emancipated thousands of thousands people by the way shown by Srila Prabhupada.
+</p>
+<p class='vspace'>Kripaya kshamtam-apradhi janam, kalusayut sakt-sudin naram I<br />Supathe parichalaya sarv dinam, pranamami cha madhav dev padam II  (11)
+</p>
+<p class='vspace'>I offer my humble prayer to the Lotus Feet of  Srila  BHAKTI  DAYIT  MADHAV GOSWAMI GURU MAHARAJ.  O, my beloved Gurudeva, I am greatest sinner and apradhi and have fallen in  this world of sorrows.  Kindly be kind and shower your unfathomable mercy upon me showing right way for my spiritual benefits. I cry for your mercy only because I have realized personally after acceptance of sannyas that everybody is playing selfish games in material world and spiritual world on this earth as well.  Everybody wants and tries to claim and establish his own supremacy crushing others.  If one becomes advanced spiritually others become envious of him. Every body wants to have his  own name and fame. True devotees are those who are above their name and fame and never expect for respect from others.  Kindly give me strength to propagate nama-sankirtan till my last breath. 
+</p>
+<p class='vspace'>I understand well that I am fallen and unfortunate man but I can obtest your excellency for benediction as you are beneficent and I have taken shelter in your shrine.  I very humbly implore for your mercy. 
+</p>
+<p class='vspace'>In the service of Sri Gurudeva and his Lord Krishna Bhakti Prabhav Mahavir
+</p>
+<p class='vspace'>Vandana 
+Of
+</p>
+<p class='vspace'>Om Vishnupada Bhakti Dayit Madhava Goswami Maharaj
+Namo om vishnupaday rupanuga priyay cha  I 
+Srimate bhakti dayita madhav swami namine    II Krishna -abhinna prakash sri murtaye dintarine I Kshama guna avataraya gurve prabhave namah IISatirth pritisad dharma-guru priti pradarshine I Ishodyan prabhabhavasya prakashkaya te namah II Sree kshetre prabhupadasya sthanoddhar sukirtaye I Sarvasvata ganananda samvardhanay te namah II
+</p>
+<p class='vspace'>I offer my prostrated obeisances to the Lotus Feet of my most revered Spiritual Master His Divine Grace Om Vishnupada Param Hansa Bhakti Dayit Madhav Goswami Maharaj who is dearest to the devotees entourage of Sri Rupa Goswami. 
+He is Embodoment of Non-Distinct Manifestation of Sri Krishna. He is gracious to the wretched and incarnation of forgiveness. 
+He showed an example of love of his Gurudeva by serving his God-brothers and revealing the glories of Ishodyan, Sridhama Mayapur. 
+He immensely increased the joy of the hearts of His God-brothers by his conspicuous glorious deed of recovering the Holy Birth Place site of Srila Bhakti Siddhant Saraswati Goswami Thakur Prabhupada, at Puri Dhama (Orissa). Saraswati Thakur was son of Sri Bhakti Vinod Thakur who was Magistrate during the period of British reign in India.
+Srila Bhakti Siddhant Saraswati Thakur and Srila Sachchidanand Bhakti Vinod Thakur were Nayan manjari and Kamal manjari respectively in Vrindavan lila of Sri Radha-Krishna. They propagated Nama Sankirtana Dharma in the age of Kali Yuga as divine panacea for all ills not only in this world, but even in the Celestial Globe, the Divine Name is adopted by demigods and goddesses as an elixir.
+</p>
+<p class='vspace'>All Glory  to Sree Guru and Gauranga Life History
+Of Srimad Bhakti Dayit Madhav Goswami Maharaj
+</p>
+<p class='vspace'>My Divine Master Param Hans Om Vishnupada Bhakti Dayit Madhava Goswami Maharaj appeared in this world on 18 November, 1904 (3 Agrahayana 1311 Bangabd) on the auspicious day of Utthan Ekadasi in the early morning at -800 hrs in a village of Kanchan -para under district of Faridpur, East Bengal (Now Bangladesh) in the house of Sree Nishikant Dev Sharma Banddhyopadhyay and Srimati Shaivalini Devi. Father and Mother, both of them, were religious minded. Therefore they got divine child as a result of their penance. Child was with unique qualities and symptoms. To take birth in the family of Brahmin is a result of the past good deeds in previous births. Parents became out of joy to have this extra-ordinary child in their house.   They celebrated holy apearance day of their child.  All relatives blessed the child for bright future and long life.  Child  had divine symptoms in his childhood.  He got affection of all because of his charming beauty.   
+</p>
+<p class='vspace'>Maternal and Paternal dynasty<br />Sri Chandi Prasad Dev Sharma Banddhyopadhyay was a religious man.  He served God and devotees honestly. His son was Sri Nishikant Dev Sharma who is father of our Gurudeva. In the early life residence of Sri Nishikant dev Sharma was in the village of Bharakar in Dhaka under Thana (Police station) Tangibari of Vikrampur Pargana. Father and grandfather of Gurudeva were reputed religious Brahamins. 
+</p>
+<p class='vspace'>Srimati Shaivalini Devi was mother of Sri Gurudeva. She was servitor of saints. Her father was a rich man. Maternal uncle of Gurudeva was a Talukdar but was also like a land Lord (zamindar). Mother and Maternal uncle of Guru deva lived in a village of Premtali on the bank of Padmavati River. This is the same river and place where Lord Nityanand took bath and kept the divine love for Sri Narottam das Thakur.
+</p>
+<p class='vspace'>Kanchan para is a village under police station of Bhedar Ganj near Padmavati River where our Gurudeva was born. Parents of Sri Gurudeva named their child as Sri Heramb Kumar Banddhyopadhyay. Child was very handsome and beloved to all. Relatives were used to call the child as Ganesh by nick- name. In his childhood Gurudeva was known as Ganesh, the beloved to all. He attracted the minds of all relatives.  The word Ganesh represents wisdom.  Child had wisdom like Ganesh.
+</p>
+<p class='vspace'>Childhood of Gurudeva<br />Child Heramb Kumar Banddhyopadhyay was a handsome boy and beloved to all. When he was four years old his father Sri Nishikant Dev Sharma Banddhyopdhyay was expired. After demise of her husband Srimati Shaivalini Devi went to the home of her brothers and child was nourished by his maternal uncles in the village of Kanchan para. Maternal uncles of Gurudeva were also residents of Kanchan-para where Gurudeva was born.
+</p>
+<p class='vspace'>In childhood extra-ordinarly merits were noticed in Sri Heramb Kumar Banddhyopadhyay. He always spoke true words. He also advised his friends to follow the way of truth. People were astonished to see his unique deeds. If mother gave him something to eat, child used to distribute amongst the children first and then eat.
+</p>
+<p class='vspace'>Once child participated in the race arranged by the School Teachers. While leading the race he collided with a tree and got injured. All teachers rushed to the place. Child said, "Don't worry about my injury. I shall be all right very soon. Whatever is done by God it is all for the best." Everybody was surprised to hear such words from a child. Teachers announced that his child is with extra-ordinary qualities. Child became beloved to all Teachers because of his truthness,  good conduct,  faith in God and good moral character. He took interest in studying religious books.
+</p>
+<p class='vspace'>Rendering help to poor children<br />Sri Gurudeva used to help the poor children/students. He arranged library and distributed free books for study to poor students. It was his free service for poor children who cannot afford cost of school- books. Because of his  kindness all children loved him very much. During his childhood and youth his friends used to select him as their leader because of his tolerance, impartiality and justice. He sometimes participated in the movement for Indian freedom as India was being ruled over by British. India was then British Colony. Heart of Gurudeva was very kind and always ready to help all. He was well-behaved and very studious boy. He was obedient to his elders and good friend to children of his age.
+</p>
+<p class='vspace'>Gita by heart at the age of 11 years old<br />Sri Gurudeva was faithful son to his mother, Srimati Shaivalini Devi Dasi. Once I,  Ramkumar das (author),   was  sitting in front of Sri Gurudeva seated on chair in the corridor of his room in Gaudiya Math Tezpur (Assam), India. I wanted to have adivice from Sri Gurudeva regarding my joining the Math. At that I was in serving in General Reserve Engineer Force (Gref), an integral part of Army and also living in Tezpur Gaurdiya Math, Assam.. 
+Gurujee asked me knowingly, where do you live now? I replied, I am living in this Tezpur Math. Sri Guru deva again asked me after joining Math where will you live? I said in the Math. What is difference? You are serving in Indian Army and living in the Math. It is your good luck. After joining Math also you have to live in Math, said Sri Gurudeva.
+</p>
+<p class='vspace'>Why do you want to leave your service? You should continue your service for the time being and serve Math and Vaishnavas living in the Math. OK. Let the time come and you will  become   brahmachary of the Math. Now you have money in your pocket every month. After joining Math permanantly you will be without money, then you will repent and think,” I was better in service”.  I advise you to continue for the time being.  Let the time come for your dispassion. Every thing depends upon God.  Man proposes God disposes is a true principle.
+Study Vaishnava scriptures under guidance of Srimat Bhakti Bhusan Bhagabat Maharaj. Don't study commentary of Sri Shankaracharya. He is mayavadi. My conversation with Gurudeva was very interested for me. I had a good opportunity to talk to Sri Gurudeva as I was alone with him and he was chanting Harinama early in the morning.
+</p>
+<p class='vspace'>After long conversaton, Sri Guru deva said, “Ramkumar jee! When I was 11 years old I had got complete Gita by heart with the help of my mother. My  mother taught me Gita, Ramayana, Mahabharta and Srimad Bhagavatam. I left such holy mother for Hari bhajan. To abandon everything for the service of God is a great task. Now I am great Acharya but I do not have complete Gita by heart”. This conversation was held in Feb 1974 on occasion of annual function, of Tezpur Gaudiya Math. Assam, India.  Sree Gaudiya Math, Tezpur is my life maker. 
+</p>
+<p class='vspace'>I got every thing material and Spiritual Education while staying in this Math under command of my Siksha Gurudeva Pujyapad Tridandi Swami Bhakti Bhusan Bhagabat Maharaj and working   in Headquarters Chief Engineer Project Vartak, Tezpur, General Reserve Engineer Force (GREF).  He is still commander of Sree Gaudiya Math, Tezpur. Assam, India. In addition, presently he is also doing great construction of main gate and other buildings of Sree Chaitana Gaudia Math, Ishodyan, Sreedham Mayapur, West Bengal, India and fulfilling desire of our Gurudeva to beautify this temple.
+</p>
+<p class='vspace'>Sree Gurudeva had desire to beautify this Math very nicely because this is sportive place of Lord Gauranga Mahaprabhu. Therefore this place is known as Ishodyan. Sripad Bhakti Bhusan Bhagabat Maharaj has fulfilled this desire of Sri Gurudeva. He has constructed very beautiful buildings around Radha kund sarovar in the premises of the Math. He has unique capability in this reagard. He has renovated main Gate of  the  Chaitanya Gaudiya Math and made it very high and beautiful one.
+</p>
+<p class='vspace'>Sri Gurudeva in Calcutta<br />Sri Gurudeva got education in the village of Kanchan-para and Bhattgram. After getting higher educaton he came to Calcutta. While living in Calcutta Sri Gurudeva took keen interest for Hari Bhajan. He had already got religious education/teachings from his holy mother, Srimati Shaivalini Devi dasi.
+Now he increased pang in separation from God and long to meet Almighty. He always thought, how to get God, how to see and meet Him. Life is only for penance to achieve blessings of God. What to do to get blessings of God? His relative Sri Narayana Mukhopadhya witnessed weeping of Gurudeva in the night for Lord Krishna in the room. During those both of them lived together in a room. Sri Gurudeva was so absorbed in love for Sri Krishna that he was used to take meal once a day and always thought of God.
+</p>
+<p class='vspace'>Later on his relative Sriman Nayarana Mukhopadhyay took sannyasa from Sri Gurudeva and was known as Bhakti Suhrad Bodhayana Maharaj.  He lived in our Sree Chaitanya Gaudiya Math, Calcutta, West  Bengal, India. 
+</p>
+<p class='vspace'>Mantra in dream from Devrisi Narada Muni<br />Sri Gurudeva was living in Calcutta, West Bengal, India, after completing his higher education. Once in a night while sleeping Sri Gurudeva saw a dream. In dream Devrisi Narada appeared, he loved and blessed Sri Gurudeva. Sri Devrisi Narada was very happy with Sri Gurudeva, he gave mantra to our Gurudeva and said, "Chant this mantra given by me, you will get all your desired things”. Desire of Gurudeva was only to see God. 
+</p>
+<p class='vspace'>Sri Gurudeva wanted to talk to Devrisi Narada. But he disappeared soon after giving mantra. Sleep was broken, and he tried to refresh his memory and remember the mantra. Sri Gurudeva was astonished to see Devrisi Narada in dream, but Sri Gurudeva forgot the mantra given by Narada Muni and could not remember. Sri Gurudeva repented for forgetfulness of mantra. What to do now?
+</p>
+<p class='vspace'>Sree Gurudeva became mad for Hari Bhajan. What to do for Hari bhajan. Sri Narada said to me “Chant this mantra and disappeared”. Inspite of efforts, Sri Gurudeva could not remember the Mantra. As such Gurudeva of our Sri Gurudeva, is Devrisi Narada. As such Devrisi Narada is my Param Gurudeva. Sri Narada muni is param Gurudeva of all disciples of Param Hansa Bhakti Dayit Madhav Goswami Maharaj. Devrisi Narada is also a foremost Acharya in our preceptorial line.
+</p>
+<p class='vspace'>Permisson of Mother for Hari Bhajan<br />After getting mantra from Devrisi Narada, Sri Gurudeva got dispassion and decided to leave of home for Hari bhajan. He was very faithful to his mother. He wanted to have permission from his mother Shaivalini Devi dasi. He went to Durgapur, West Bengal to meet his mother Srimati Shaivaline Devi for blessings. 
+</p>
+<p class='vspace'>In those days mother of Sri Gurudeva was living in Durgapur West Bengal. Oh my dearest holy mother I want to go for hari Bajan. You taught me Gita, Bhagavat Ramayana and Mahabharta etc, in my childhood for Hari Bhajan. Please be kind and now allow me to start Hari Bhajan. I want to leave of the house and go for penance to see God, said Sri Gurudeva. 
+Holy mother of Gurudeva did not object and she gave her consent for hari bhajan. She taught her child for Hari bhajan since childhood. She said, "It is good to do Hari Bhajan. Oh, my lovely child,  may God bless you for spiritual progress. My blessings are always with you". You may go for penance  as  you like.
+</p>
+<p class='vspace'>Penance of Guru deva in Haridwar and Risikesha, Uttar Pradesh, India<br />Sri Gurudeva now got permission of his Holy mother.  Having impetus for Hari Bhajan and darshana of God, he left his mother and house.  Haridwar is famous holy place for penance.  Sri Gurudeva came to Haridwar, Uttar Pradesh, India.  He came alone without help of anybody.  Now he was alone in Haridwar.  He saw holy tiratha Haridwar and went to Risikesh from where Ganges starts.  He took bath in the holy water of Ganges and did darshana there.  Thereafter he went to Himalaya beyond Risikesh in 1925.
+</p>
+<p class='vspace'>In the dense forest of Himalaya Sri Gurudeva started meditaton for which he had come here. Haridwar and Risikesh are the places for penance. Almost Mayavadi sadhus live there. These are the places for gyanis who want to have Mukti.
+</p>
+<p class='vspace'>Penance of Gurudeva started like Dhruva Maharaj. In the ancient period Dhruva Maharaj also started penance in the forest of Vrinadaban without taking food. Sri Gurudeva followed the footsteps of Dhruva and started chanting the holy names of God day and night without taking food. Hari Bhajan is only diet or food for devotees.
+</p>
+<p class='vspace'>Sri Gurudeva continued for a period of three days. He was so absorbed in meditation that he forgot about all material objects. He increased his inner feelings for Hari darshana. He was without food and water. He fell as if uncounscious but he was experiencing esoteric love for Sri Krishna. Suddenly he listened divine sound, oracle. Heavely sound was from sky and said to Gurudeva, 
+“Oh innocent child, your divine master has already manifested at the same place where you were residing earlier. Hence you go back to the same place. You will get your Gurudeva there". 
+Having heard this an oracle, Sri Gurudeva came to Haridwar from Risikesh Himalaya. He decided to take rest in Haridwar, as he was tired. He decided to live for some days in Haridwar as Haridwar is a holy mahatirtha and sadhus live there and do penance.
+</p>
+<p class='vspace'>This place is also called door leading to abode of Hari. Dwar means door and Hari means God. Door of  abode of Sri Hari. Holy Ganges starts from Haridwar-Risikesh. People go and take holy dip in Holy  water. Water of Ganges is Charnamrita of Lord Vishnu mixed with holy leaves of Tulsi..
+</p>
+<p class='vspace'>Meet with a saint<br />Sri Gurudeva was staying in Haridwar for some days. He was used to take bath in the holy water of Ganges daily and had Sadhu darshana. Nobody was there to guide him properly. Only God was his helper there to help him directly or indirectly. He solely depended on the mercy of God. One day Gurudeva met one saint (may be Lord Krishna in the form of saint to give darshana). Gurudeva told saint that he heard divine sound asking him go back from this place to his native place where his divine master has already been manifested. Sri Gurudeva wanted to have advice from saint regarding his future. What to do? Saint advised Gurudeva to return back to his house where he will get his divine master. Sri Gurudeva decided to go back to Calcutta after staying some days in holy place of Haridwar.
+</p>
+<p class='vspace'>Meet with a rich man<br />Once Sri Gurudeva was returning after taking bath in Brahm Kunda. On the way  one  hindi speaking rich man and his wife met him. Rich man and his wife were attracted to see young handsome boy and also, gave some sweatmeat and fruits. Both of them also requested Guru Maharaj to go their house. But Gurudeva refused and did not go to their house.
+</p>
+<p class='vspace'>Every day they met and served Gurudeva with fruits and sweats. They were without son. They wanted to adopt Gurudeva as their son. But Gurudeva thought I left my house for Hari Bhajan, now this maya is coming again to me, he did not agree to their proposal. Their requested  Gurudeva to visit their house again and again. They had developed more and more affection for this religious minded handsome. Boy and wanted to him tol their house. 
+</p>
+<p class='vspace'>On repeated requests Sri Gurudeva agreed and went to their house. They showed their big palace and business but nobody was there to look after. They proposed and tried to convince Gurudeva to become their adopted son. They said, "You will be successor of our moveable and immoveable properties". On hearing their proposal Gurudeva thought this is illusion coming  to enchant me.
+</p>
+<p class='vspace'>Sri Gurudeva said, "No I do not want to become your adopted son and successor. I have left my holy mother and house for Hari Bhajan only. I shall do penance as darshana of God is impossible without penance. These properties would be hindrance for my Hari bhajan” Saying so Gurudeva rejected their proposal. But Setha and Sethani were so attracted that they used to come daily and convince Gurudeva to become there adopted son.
+</p>
+<p class='vspace'>One who has dispassion from the material enjoyments and inner feelings for obtaining Lord Krishna any hoard of wealth cannot attract him. After staying in Haridwar for some days Gurudeva came back to Calcutta in 1925.
+</p>
+<p class='vspace'>Blessings of Srila Bhakti Siddhant Saraswati Thakur Prabhupada<br />My Param Gurudeva Om Vishnunada Bhakti Siddhant Saraswati Thakur spread the teachings of Lord Chaitnaya Mahaprabhu with the blessings of his father Srila Bhakti Vinod Thakur and his Divine Master Srila Gaur Kishor das Babaji Maharaj, all over the world. 
+</p>
+<p class='vspace'>Srila Prabhupada took tridand sannyasa in the year of 1918 infront of photo of his Gurudeva, Srila Gaur Kishor Das Baba Jee Maharaj. Srila Prabhupada took sannyasa himself and not from anybody.   Every thing is possible for extra-ordinary person.
+</p>
+<p class='vspace'>Nothing is impossible for great realized sages.  Prabhupada was eternal associate of Lord Krishna in Vrandavan.  He was Nayana Manjari in the pastimes of Lord Krsihna in Vrandavan. He can do so.  Every body can not do so.
+</p>
+<p class='vspace'>In the same year (1918) he established first Sree Chaitanya Math in Sreedham Mayapur near to the birth place of Lord Chaitanya Mahaprabhu and also started Bhakti Vinod Ashana in Calcutta at Ulta Danga Junction Road, but after installation of deities of Sri Radha Gobinda in 1920 Bhakti Vinod Ashana was known as Sri Gaudiva Math. 
+</p>
+<p class='vspace'>Sree Chaitanya Math is the first origin centre of Gaudiya organization established by Srila Prabhupada in the year of 1918 in Sreedhama Mayapur, West Bengal. India. This Math is father of all Gaudiya Maths, Sree Chaitanya Mission, Gaudiya Mission, Sree Chaitanya Gaudiya Math, Gaudiya Vedant Samiti, Saraswat Gaudiya Math and other centres belonging to Gaudiya Sampradaya.
+</p>
+<p class='vspace'>It was in the year of 1925, my divine master Om Vishnupada Param Hans Bhakti Dayit Madhav Goswami went from Calcutta to Sridhama Mayapur. He was accompanied by Sri Narayana Chandra Mukhopadhyay  and  other friends. When they reached Nabdvipa dhama it was evening. People told no boat is available, now all of you should stay in Nabdwipa. Tomarrow morning go to Sreedhama Mayapur. But suddenly they saw one boat is approaching them. They crossed the river by boat and reached Sreedhama Mayapur. 
+</p>
+<p class='vspace'>In between Nabdvipa and Sree Mayapur there is confluence of three rivers viz. Ganges, Yamuna and Jallokani. Therefore there is very deep water as if ocean. They crossed this confluence by boat and reached Sree Mayapur and took rest at night. 
+</p>
+<p class='vspace'>Srila Gurudeva alongwith his friends reached Sree Chaitanya Math, at noon and found temple was closed. Devotees of the Math requested them to wait till the temple is opened for Darsana. Devotees also served Gurudeva and his friends with prasadam. Prasadam was arranged  by Dr. S.N. Ghosh.   In the mean time devotees advised them to have darsana of Srila Prabhupada and hear Hari Katha from him. They went to the room of Srila Prabhupada and sat there after offering dandbat pranam.
+</p>
+<p class='vspace'>First conversation with Sri Prabhupada<br />Prabupada: Who are you? Wherefrom you have come? How did you come here?
+</p>
+<p class='vspace'>Gurudeva: I heard the name of Sri Mayapur dhama and also about beautiful Sri Vigrahas. Hence we have come here from Calcutta to see this place. We came by train and boat. We crossed confluence of rivers by boat. It was interested for us.
+</p>
+<p class='vspace'>Prabhupada: Did you not have darsana of Sri Vigrahas earlier?
+</p>
+<p class='vspace'>Gurudeva: Yes. I went on pilgrimage to many holy places/temples and had darshana of deities. I have keen interest to have darsana. I visited Haridwar, Risikesh and other some holy places also.
+</p>
+<p class='vspace'>Prabhupada: What benefit you got after having darshana of Sri Vigrahas?
+</p>
+<p class='vspace'>Gurudeva: After thinking deeply for a moment said. "I do not know whether I got benefit or not. One should have darsan of Sri Vigrah. So I have interest to have dashana.
+</p>
+<p class='vspace'>Prabhupada: It is good to have darshana of Sri Vigrahas but we should know how to have darsana. Darsana of Sri Vigraha is done by divine eyes and not by material eyes.
+</p>
+<p class='vspace'>Sri Gurudeva and his friends were convinced to hear Hari Katha from Sri Prabhupada. They listened many things regarding religion and Gaudiva Parampara. They were so convinced that they decided to start Hari bhaian. Srila Prabhupada advised Sri Gurudeva to meet him in Calcutta. Prabhupada said, “I shall come to Calcutta. There I have Ashrama. You may see me there and you will have more chance to listen more and more hari katha.”Listening Hari katha more and more create firm faith in the heart and mind of the listener
+Hari Nama and Diksha: 04 Sept 1927
+</p>
+<p class='vspace'>After first meeting with Srila Bhakti Siddhant Saraswati Thakur Prabhupada, Sri Guru deva was so convinced that he decided to take Hari Nama and Diksha from him. Srila Prabhuda came to Calcutta Sree Gaudiya Math, at Ulta Danga Junction Road for celebrating Sri Radha Asthami. Gurudeva again met Srila Prabhupada there and listened Hari Katha, which touched his heart. He served vaishnavas during this function of the Math.
+</p>
+<p class='vspace'>He took Hari Nama and Diksha from Srila Prabhupada on the ausicious day of Sri Radhasthami, i.e., 04 Sept. 1927 in Sri Gaudiya Math, Ulta Danga Junction Road. Calcutta. Since the day of initiation Sri Heramb Kumar Bandhyopadhyay was known as Sri Haygriva Das Brahmachari. At the time of initiation sacrifice (Yajna) was done by Sri Acharya das Dev Sharma.
+</p>
+<p class='vspace'>Relatives became sad and unhappy<br />Being born in high Brahmin family Sri Gurudeva took diksha from an Acharya of Sree Gaudiya Math, instead of taking from material Brahmin Guru of the family dynasty. All relatives became against this deed and also criticized Sri Gurudeva. 
+</p>
+<p class='vspace'>On reaction Sri Guru Dev explained to them that any man belonging to any caste may become Guru if he is absorbed in Krishna Prema and got dispassion from the worldly enjoyments. Any man who knows Sri Krishna Tattva well can function as Guru. Prahlad did not accept Shand and Amark as his Guru. They were Kulgurus. He accepted Sri Narada Muni as his Gurudeva, for he had listened Bhagabat katha from him when he was in the womb of his mother Kayadhu in the Ashrama of Narada Muni.  Sri Narada Muni explained Srimad Bhagbatam to Srimati Kayadhu, wife of Hiranyakasipu, and Prahlad listend.  A man  who knows Sri Krishna ontologically and serves Him physically, mentally and by speech, can become Guru of all. Sri Gurudeva referred evidence from Sri Chaitanya Charitamrita.
+</p>
+<p class='vspace'>KIVA VIPRA KIVA NYASI SUDRA KENE NAY \\ I                                                                                                                         JEYI   KRISHNA TATTVA VETTA  SEYI GURU HAY  II<br />Those who criticized Sri Gurudeva for taking initiation from non-Brahmin Guru, all of them later on took diksha from Sri Guru Dev. Sri Guru Dev took initiation and started to serve Math. He was used to send vegetables and other things to the Math through someone without disclosing his name. Sri Gurudeva served the Math in such a way that nobody could know about his services.  After some time he joined the Math and surrendered to the Lotus Feet of Srila Prabhupada unconditionally and started various services of the Math.
+</p>
+<p class='vspace'>Various services of Sri Gaudiya Math<br />After initiation Sri Gurudeva joined Sri Gaudiya Math in order to serve Lord Krishna and his devotees. Within a short period serving Sri Vishnu and Vaishnavas honestly, he became beloved of Srila Prabhupada.   Srila Prabhpada used to regard Sri Haygriva Brahmachary as volcanic energy. Sri Gurudeva served Sri Gaudiya Math from 1928 to 1936 during the life time of Srila Prabhupada. A huge amount of money was needed for preaching in India and abroad Sri Guru Dev was great collector of money as donation. Srila Gurudeva always served Maths and Vaishnavas as desired by his Gurudeva Srila Prabhupada.
+</p>
+<p class='vspace'>As desired by Srila Prabhupada Sri Gurudeva collected huge amount of money for Sadhu Niwas, lecture hall and temple construction in Madras. When I  (writer) went to Madras Gaudiya Math for some days, devotees of the Math told me that my Gurudea lived and served Madras Gaudiya Math for a period of 12 years. Math was built because of the efforts of Sri Gurudeva. Sri Gurudeva got inspiration for Sree Gaudiya Math, Madras from Srimad Bhakti Rakshak Sri Dhar Maharaj and Srimad Bhakti Hradya Bon Maharaj.
+Srila Prabhupada established “Sree Ramanand Gaudiya Math on the bank of Godavari in the district of Raj Mahendri of Andhra Pradesh. Srila Gurudeva was main person to arrange land and money for this Math, Srila Prabhupada established 64 Maths.    
+</p>
+<p class='vspace'>Sri Gurudeva in Sarbhog Gaudiya Math<br />One Math is in Sarbhog under district of Kamrup, Assam, India, Once Srila Prabupada sent Sripad Tridandi Swami Bhakti Rakshak Sri Dhar Maharaj alongwith other devotees to Sarbhog as an advance party for making pre-arrangements for annual festival of the Math. Tridandi Swami Srimad bhakti Vijnan Ashram Maharaj was In-charge of the Math there. 
+</p>
+<p class='vspace'>Later on when Sri Gurudeva went and found no arrangement is made. Before reaching Srila Prabhuada Sri Guru Dev made all temporaty arrangements for the devotees with a great efforts. Srila Prabhuada became satisfied and blessed Sri Gurudeva for this service.
+</p>
+<p class='vspace'>No sin by surrenddred soul<br />On the day of installation of deities in Sarbhog Gaudiya Math, Srimad Bhakti Rakshak Sridhar Maharaj did all formalities (dressing the deities etc), which were to be done by Srila Prabhupada. Srila Bhakti Siddhant Saraswati Thakur Prabhupada entered the temple and found deities already well dressed. He said, "Oh Thakurjee has already manifested". He came out of the temple and festival was celebrated very nicely.
+</p>
+<p class='vspace'>But Srimad B.R. Sridhar Maharaj was very sad for his deed and was not getting peace in his heart. He asked Sri Gurudeva to request Srila Prabhupada to pardon him. But nobody had courage to talk to Srila Prabhupada in this regard. 
+</p>
+<p class='vspace'>One day Srila Prabhuada was walking in the Math premises and chanting Mahamantra through beeds. Sri Gurudeva was serving Srila Prabhupada by handy fan, as it was hot day. Sri Gurudeva expressed the feelings of Srimad B.R. Sridhar Maharaj. Prabhupada smiled and said, "God does not mind any apradha or sin if committed by the surrendered souls. Sridhar Maharaj is surrendered soul he should not become sad. Why is he so sad? Tell him that he should not be worry at all. God accepts all works done by surrendered souls as His services. If any mistake or sin committed by surrendered soul God does accept and pardon.
+</p>
+<p class='vspace'>Proposal for sending Sri Gurudeva to foreign countries<br />In order to preach the message of Lord Gauranga Mahaprabhu in foreign countries, Sri Prabhupada selected the name of Sri Gurudeva, Hayagriva Brahmachary alongwith other sanyasins. Preaching in foreign countries is an uphill task. Therefore Srila Prabhupada wanted to discuss this matter with someone who has experience about foreign countries.
+</p>
+<p class='vspace'>Srila Prabhupada discussed this matter with Raj Yogi Shared Indu Narayan Roy Jee as he had toured all over the world and had good experience about western culture. He advised not to send Sri Gurudeva, as he is young and handsome boy. He said, young boys should not be sent to western countries, as there are Nymphs. Young boys may fall down from their character because of influence of Nymphs who are with nymphomania. All women of western countries are nymphomaniac. 
+</p>
+<p class='vspace'>Name of Tridandi Swami Srimad Bhakti Pradeep Tirath Maharaj was selected in place of Sri Gurudeva. He was first sannyasi of Srila Prabhupada.  Man who agreed to provide financial help for Sri Gurudeva, did not give money as the name of Sri Gurudeva was cancelled as advised by Rajrishi Sharad Indu babu. He said, "I shall give money if Hayagriva Brahmachary goes". 
+Srila Prabhupada asked Sri Bhakti Hradaya Bon Maharaj where do you want to go. He replied that he would go to the country where there are nymphs for preaching. Srila Prabhupada became very happy and smiled. Sri Bhakti Hradaya Bon Maharaj went to England and established one Gaudiya Math there, He also went to Germany. 
+</p>
+<p class='vspace'>When I was in Berlin, Germany I saw that building where Pujyapad B.H. Bon maharaj delivered his lecture. However, Hayagriva Brahmachary collected money for others who went abroad. While Pujyapad B.H Bon Maharaj alongwith party was in foreign countries, Srila Bhakti Siddhanta Saraswati Thakur Prabhupada disappeared from  this  mortal world on 31 January 1937 early in the morning. Sri Gurudeva thought, “ I am lucky to have last darshana of Srila Prabhuada. Had I gone to foreign countries I would have been deprived of last darsana of my Gurudeva”.
+</p>
+<p class='vspace'>Sri Gurudeva defeated Pandit Panchanan, Tarka Ratna (a great scholar of Bengal)
+Pandit Panchanan Tark Ratna, resident of Nehati Bhatt palli, was a well famous scholar. He used to give honour to Brahmins only. He had a great pride of his birth in Brahmin family and vanity for his high learning.  He had also criticized Srila Prabhupada on some religious matters. 
+My Param Gurudeva Srila Bhakti Siddhant Saraswati Thakur Prabhupada sent my Gurudeva to have discussion with Pandit Panchanan Tark Ratna on 04 October 1936. Srila Prabhupada also advised Sri Gurudeva to hide Vaishnava signs like Tilak and kanthi mala. Srila Prabhupada also advised Sri Gurudeva to disclose his birth in Brahmin family, as Pandit does not like to talk to non-brahmins. He prefers to talk to Brahmins only.
+Obeying hest of Srila Prabhupada Sri Gurudeva alongwih Sri Prafull Kumar chattopadhyay reached the house of Pandit iee at 0830 hrs on 04 October 1936. First they met with Sri Jiva, Nyatirtha, M.A. the son of Pandit Panchanan, Tark Ratna.
+</p>
+<p class='vspace'>Sri Gurudeva introduced himself as a Brahmin boy and a preacher of Sree Gaudiya Math as was advised by Srila Prabhupada. Sri Jiva who had his title “Nyaytirtha”, started conversation as his father Pandit Panchanan was taking class of students in upper storey.
+Nyaytirtha: What is philosophy of Sri Gaudiya Math? This is philosophy of Sri Gaudiya Math:
+Yatha kanchantam yati kansyam rasvidhanatah I                                                                                                       Tatha diksha vidhanen dviitvam jayatenrinam II
+</p>
+<p class='vspace'>As bell metal becomes gold through chemical process so man belonging to any caste becomes Brahmin by taking diksha.
+Sri Gurudeva: Yes. This is doctrine of Panchratra Tattvasar. As per hest of Sri Chaitanya Dev Sri Sanatam Goswami has also mentioned this sloka in Hari Bhakti Vilas.
+Nyaytirtha: All of you use Daikshy Brahmin (initiated Brahmins). It means Brahmins by initiation but not by birth.
+Sri Gurudeva: Not we. This is from Bhargviya Manu Sanhita and statement of Sridhar Swami. I give you evidence:
+Trivrita shaukram savitram daikshyamiti Trigunitani janam  (Bhavart deepika 10-23-39). Another evidence is;
+Maturgre adhi jananam dvitiyam maunji-bandhne I                                                                      Tritiyam yajna dikshayam dvijasy Sriti Chodnat II  (Manu 2/169).
+First birth by mother, second birth by ceremony of sacred thread and third birth by taking initiation of Vishnu Mantra from Vaishnava Acharya. By third ceremony of Yajna -diksha, man belonging to any caste, creed, race, faith and colour, is known as branhmin. This is true philosophy of the revealed scriptures and is being propagated by Sree Gaudiya Math.
+</p>
+<p class='vspace'>Likewise Sri Gurudeva held conversation for 15 minutes with Sri Jiva, Nyaytiritha, the son of pandit Jee. Sri Gurudeva expressed his desire to meet his father, Pandit Panchanan, Tarka Ratna. Sri Jiva, Nyaytirtha took Gurudeva to second storey where his father Pandit Panchanan was taking class of his students. He welcomed Gurudeva and asked:
+Panchanan: What is your name? Where do you live?
+</p>
+<p class='vspace'>Sri Gurudeva: My name is Sri Heramb Kumar Banddhyopadhyay. Earlier I lived in Vikrampur Bharakar but now I live in Sri Gaudiva Math as an ordinary servitor. I have come to Nehati for preaching alongwith Tridandi Swamis.
+</p>
+<p class='vspace'>Panchanan: How does Gaudiya Math follow Sri Chaitanya? I understand they do not acknowledge Sree Chaitanva Dev.
+</p>
+<p class='vspace'>Sri Gurudeva: Do you know Sri Chaitanya Dev? If you know, with what idea?
+</p>
+<p class='vspace'>Panchanan: Sri Chaitanya deva was a devotee and scholar.
+</p>
+<p class='vspace'>Sri Gurudeva: I think that you might have studied Sri Chaitanya Charitamrata etc. Scriptures.
+</p>
+<p class='vspace'>Panchana: Yes. I have studied Chaitanya Charitamrita. It is a book composed of Bengla poem. This book can be understood by all very easily. No erudition is required to understand this book.
+</p>
+<p class='vspace'>Sri Gurudeva: Do you accept different ideologies of different readers on one and the same topic according to their different capabilities?
+</p>
+<p class='vspace'>Panchanan: What special capability is required to understand such a simple book like Sri Chaitanya Charitamrata? All understand with the same idea.
+</p>
+<p class='vspace'>Sri Gurudeva: Indicating towards the seated students, does each student understand your teachings with one and the same mood or they understand differently. In Chhandogya sruti, it is recorded that Indra and Virochan both went to Brahma and learnt Vedas. They listened from Brahma at a time together but they understood differently. Why? Indra after listening from Brahma went to heaven and taught divine knowledge to all demigods and Virochan listened the same but he taught irreligion to demons. 
+</p>
+<p class='vspace'>On the bank of Ganges bitter tree and mango tree drink the same water of Ganges but their fruits are bitter and sweat respectively. Why? Why is it so panditjee? Similarly, after studying Sri Chaitanya Charitamrata somebody drinks nector and someone finds out pungency. Do you agree with my point? 
+</p>
+<p class='vspace'>Panchanan: Sri Chaintava did not eat meal cooked by non-brahamins. It is clear from Sri Chaitanya Charitamrata. Do you accept this?
+</p>
+<p class='vspace'>Sri Gurudeva: Sri Chaitanya dev was used to accept invitation for meal or prasadam from Vaishnava Brahmins and not from all brahamins. Pandit iee. Sri Chaitanya Mahaprabhu never accepted any invitation from brahamins who were not vishnavas. He accepted meal from a sunar (Goldsmith), disciple of Sri Madhvendra Puripada.
+</p>
+<p class='vspace'>Panchanan: While staying in the house of Chandra Sekhar in Kanshi, Sri Chaitanya did not take meal in his house, thinking of him a Sudra. He used to take meal in the house of Tapan Mishra, a Brahmin.
+Tapan mishrer ghare bhiksha nirvahan
+</p>
+<p class='vspace'>Sri Gurudeva: Yes. It is correct. But Sri Chaitanya Deva also did not accept invitation even from Mayavadi Brahmin ascetics though they were sanyasins, brahamins, penancers and with good moral character.
+</p>
+<p class='vspace'>Panchanan: Except Kanshi anywhere Sri Chaitanva could have accepted meal cooked by his low caste born devotees. But he did not do so. Why?
+</p>
+<p class='vspace'>Sri Gurudeva: In Shantipur, as per hest of Sri Chaitanya Mahaprabhu, Sri Advaita Acharya took meal with Sri Hari Das Thakur sitting in one line though he was born in musalman family. Prabhu balen vachan;-<br />Mukund Hari Das laiya koroh bhojan		I<br />Tabe to acharya sunge laiya Dvijane<br />kailo  bhojan ichcha  je achhilo mane 		II<br />
+Sri Chaitanva Mahaprabhu said, "Oh Advaita Acharva go and take meal alonwith Mukund and Hari Das. Then he took meal with them. Respected Pandit Jee, think of a verse from Garur Puran:-
+</p>
+<p class='vspace'>Brhamananam sahastrebhyam satrayaji vishisyate I                                                                                                               Satrayaji sahastrebhyah sarv Vedanta  paragh  II<br />Sarv Vedanta vitkautya Vishnu bhakto vishiyate 	I<br />Vaishnavanam sahastrebhya ekantay eko vishisyate	II
+</p>
+<p class='vspace'>Among thousands of Brahmins, one who performs Vedic rites is superior, amongst thousands of such Vedic Brahmins, one who is well-versed in the meanings of the Vedic Lore is superior, amongst a crore of Brahmins well versed in the shastras, a devotee of Lord Krishna is considered to be still more superior and even amongst thousands of vaishnavas     ( devotees  of  Lord Krishna), a single minded devotee of Lord Krishna is spoken of as the Supreme Most. Any man belonging to any caste, creed, colour and faith can become Vaishnava taking initiation of Vishnu Mantra from a Vaishnava acharya.
+Sri Gurudeva continued to say that a beloved devotee of Mahaprabhu, Kali Das born in high family ate fruits already eaten by Jharu Thakur born in a low family. He ate and threw skin and seeds into dustbin. Kali Das took and ate. Kali das was to take remnants of all vaishnavas. 
+</p>
+<p class='vspace'>Once Kali Das Brahmin brought mangoes and came to the house of Jharu Thakur, sudra  and requested him to offer to deity. After eating by you I shall take your remnants. But Jharu Thakur was afraid, as he was of low caste born person. He refused to do so as Kali Das was a brahamin. Then he hid himself. Jharu Thakur offered mangoes to deity and seeds and skin he threw in the dustbin. Soon on throwing Kali das appeared and ate the same. He did not consider that he is a Brahmin and Jharu thakur is a sudra. One who is devoted to the service of Lord Krishna is considered to be superior most. 
+</p>
+<p class='vspace'>Panchanan: Devotee is a superior. This is all right. But idia of untouchability is not against the doctrine of shastras.
+</p>
+<p class='vspace'>Sri Gurudeva: This is useless talk. Had Sri Chaitanya dev been thought of Sri Haridas as an untouchable, he would not have taken dead body of him in his lap and danced. Mahaprabhu said: - " On touching the dead body of Sri Hari Das even ocean becomes mahatirtha (holy great tirtha)" Devotees drank the washing water of feet of Sri Hari Das..........
+</p>
+<p class='vspace'>Lord Ramchandra took Jatau in His lap and did his last cremination ceremony. Rama also ate plums aleady tasted or eaten by Bhilani Sabari. Yudhisthar Maharaj born of Kshatriya family always worshiped Sri Vidur, son of maid -servant of low caste.
+</p>
+<p class='vspace'>Once Tiruppani born in chandal family in South India was chanting the holy names of God on the bank of Kaveri River and fell down unconscious in esoteric love for Lord Krishna. In the mean time, Muni, pujari of Ranganath Dev, came to take water of Kaveri for deity. Pujari was proud of his Brahmin family. He thought that he and water pot would become impure if he touched this chandal. Give me way.  Don`t lie here on the way.   Go aside I have to pass away through this way. He threw lump of earth at him to awake.
+</p>
+<p class='vspace'>When pujari went to the temple of Ranganath, he found door is closed from inside. He listened sound from inside the temple. "Oh proudy Brahmin pujari you hated my devotee and threw lump of earth at him. Not he, I have got injury. You bring him here and do circumambulation (Parikrima) of mv temple keeping him on your shoulder. Brahmin pujari brought chandal devotee of God on his shoulders and did curcumambulation of temple. Then door of the temple was opened for him.
+</p>
+<p class='vspace'>Panchanan: How can Sudra become a guru of Brahmin? In which shastra it is mentioned? Sri Chaitanya dev also did not accept this principle?
+</p>
+<p class='vspace'>Sri Gurudeva: I am astonished to hear such words from a scholar like you. Yes. Saraswati is helping you to speak the truth. Sudra can never become Guru of Brahmin. But Vaishnava is not a  shudra.  In Chaitanya Charitamarita already studied by you, it is mentioned that Hari Das Thakur born in musalman family was a guru of Sri Balram Acharya born in a Brahmin family. You see in Chaitanya Charitamrita, Mahaprabhu said to Sripad Sanatan Goswami in Puri Dhama that:-
+Kiva vipra kiva nyasi sudra kene nay	I
+Jei Krishna tatva vetta sei guru hay	II
+Brahmin, sanyasi or sudra  whoever he may be, knows Sri Krishna ontologically, is capable to become Guru to all.
+</p>
+<p class='vspace'>Panchanan: It may be true and possible in regard to instructing master (siksha guru) only but not in case of Diksha Guru
+Sri Gurudeva: We come to know  from  Hari Bhakti Vilas written by Srila Sanatan Goswami that: -
+No shudrah bhagvad bhaktaste api bhagvatottomah	I 
+Sarve varnesu te shudra yen bhakta janardan   II
+</p>
+<p class='vspace'>Vaishnava devotees of Lord Krishna are never shudras as they are Param Bhagavatam. Those who are not devotees belonging to any varna  (caste) are shudras.
+</p>
+<p class='vspace'>Sat karmnipuno vipro mantra tantra vishardah		I
+Avaishnavo guru na syad-vaishnavah swapacho guru	II
+A Brahmin with six attributes and perfect in Tantra -mantra cannot become Guru if he is non-vaishnava. To function as a Guru vaishnavism is necessary. 
+Non-vaishnava cannot become Guru. 
+</p>
+<p class='vspace'>Mahakul-prasutoapi savyagyesu dikshitah			I
+Sahastra shakhadhyayi cha na Guru syad vaishnavah	II
+</p>
+<p class='vspace'>Non-vaishnava born in high family, well studious and initiated in all sacrifices cannot become Guru. A Vaishnava born in chandal family can become Guru of all if he has detached from his family affairs and completely surrendered uncontionally unto the Lotus Feet of Lord Krishna.
+</p>
+<p class='vspace'>Vipra kshatriva vaishyasch guruvah shudra   janmnam.I 
+A vaishnava  beloved devotee of Sri Vishnu born in shudra family, is Guru of three castes i.e., Brahmin, kshatriya and vaisya.
+</p>
+<p class='vspace'>Pandit jee, Sri Chaitanya Mahaprabhu also said and taught us:<br />Naham vipro na cha narpatirnapi vaishyo na shudra,
+No va varni na cha grapatirno vanstho vatirva		I
+Kintuproddyv-nniadhil-parmanand-purna-amratabdher
+Gopir-bhartuh padkamalayordas-dasanudasah		II
+(paddhyavali-74)
+</p>
+<p class='vspace'>“I am neither a Brahmin, nor a kshatriva, nor a vaisya, nor even a shudra. I am neither a brahmachari, nor a householder, nor a vanaprasthi nor even a sanyasi. I am a humble servant of the servants who serve the Lotus feet of Sri Krishna, the beloved of Gopis, the most sublime and the Embodiment of an Ocean of Etenal Bliss". 
+</p>
+<p class='vspace'>Sriman Mahaprabhu has marvelouslv impressed us with our true real nature. This should be our worthy feeling diametrically opposed to the false one. This is the true nature of our self. All our identifications other than this are thrust upon us by the divine illusion as penalty for our foolish misuse of our will power.
+By the Mercy of the Lord when any soul is blessed with the knowledge of his true relationship with Him, that fortunate man becomes very meek. He is humbler than a blade of grass and hence a worthy aspirant for constantly chanting Sri Hari Nama. Then, attains the virtue of humility, free from any tinge of material ego arising from high or noble birth, age, prosperity, etc.
+Sir, it is now clear that a man belonging to any caste but got initiation of Vishnu mantra, can become Guru of all. In devotional life caste system is not considered necessary. Following this doctrine Sri Mahaprabhu from Ishvar Puri, Sri Nityanand and Sri Advaitacharya from Madhvendrapuri, Ganganarayan chakraborty and Ramkrishna Bhattacharya from Sri Narottam Das Thakur took initiation. I think you know this very well.
+</p>
+<p class='vspace'>Panchanan:  Where is it mentioned in Sruties regarding Brahmins?                                                                                                 Sri 
+</p>
+<p class='vspace'>Gurudeva:  Many evidences are available in Sruties. For example: In chhandogya Upnisad (fourth khand of fourth chapter) it is recorded that Gautam Muni decided the caste of Satyakam, son of Jabala on the basis to truthness only.                                                     Panchanan:   This is your presumption. Satyakam was a son of Brahmin.                                                                                                      Sri 
+</p>
+<p class='vspace'>Gurudeva:  What is evidence for this? Where is evidence for your statement? Please tell me. I can accept if you are able to p rove your statement with authentication of scriptures.
+</p>
+<p class='vspace'>Panchanan:   A boy born of generative fluid of a Brahmin develops his interest by nature to go to Gurukul and observe celibacy. Brahmin  caste of Satyakam was decided by Sri Gautam Muni on this basis. He saw the interest of Satyakam and decided caste of a boy who came to him to learn religion.
+</p>
+<p class='vspace'>Sri Gurudeva:  It is seen that having born of Brahmin semen, boys are found who have no interest to go to Gurukul and observe celibacy. Should I bring hundreds of hundreds examples in the present time to convince you? How many brahimins boys are going to Gurukul and observing celibacy? You know this very well. Can you say and prove that all Brahmin boys are going to Gurukul and observing celibacy. Some Brahmins are leading their lives like shudras. Even Shudras who are worshipping God and living in our Gurukul are far better than brahramins. After long conversation Pandit Panchanan Tark Ratna was convinced and he appreciated the wisdom of Sri Gurudeva. He said:
+</p>
+<p class='vspace'>Panchanan: I am very satisfied to have discussion with you. You are scholar. I am charmed with your good behaviour                  Sri Gurudeva: I have come to know from your discussion that you have studied Sri Chaitanya Charitamrata like ordinary readers. My humble advice is kindly study the same scripture from pure devotees (Gaudiya vaishnavas). Then you can understand the teachings of Sri Gaudiya Math.
+</p>
+<p class='vspace'>Panchanan: I have read Sri Chaitanya Charitamrata very carefully. I have studied your topics also.                                               Sri Gurudeva: Sarvbhaum Bhattacharya was a vedantic scholar. He considered of Sri Chaitanva Dev. as a devotee. He asked Sri Chaitanya Dev to hear Vedanta from him.   He explained Vedanta continueously for seven days. You will find this in Sri Chaitanya Charitamrata. Having seen divine form of Sri Chaitanya Dev with six arms he declared that Sri Chaitanya Dev is Para Tattva  (Surpreme Lord Krishna). Do you not find this in Sri Chaitanya Charitamrata?
+</p>
+<p class='vspace'>Panchanan: I also do not appreciate those Brahmins who are without virtue, good conduct and moral. I heard in Kanshi that you do not worship demigods and Goddesses and Gaudiya vaishnavas do not go to have darshana of Vishvanath.                                Sri Gurudeva: Gaudiya vaishnavas have respect for demigods and goddesses. Those who worship demigods and goddesses for Dharma, Artha, Passion  and Mukti are not true devotees. They worship for their material gains only but not for the satisfaction of God. Gaudiya Math has objection for such worship. Gaudiya vaishnavas worship Lord Krishna for His satisfaction and for their own satisfaction.
+</p>
+<p class='vspace'>Panchanan: With what mood you have darshana of Vishvanath?                                                                                                           
+</p>
+<p class='vspace'>Sri Gurudeva: According to Srimad Bhagavatam:
+" Vaishnanam yatha shambhju "
+</p>
+<p class='vspace'>Among all vaishnavas, Sri Shiva is superior. He is first Vaishnava and obedient and faithful servant to Lord Krishna.
+Panchanan: Did you accept varnashram dharma?                                                                                                                   
+</p>
+<p class='vspace'>Sri Gurudeva: In the present age Sri Gaudiya Math is preaching Daiv Varna Ashrama Dharma. Varna has to be decided according to attributes and not by birth.
+</p>
+<p class='vspace'>Yasya yatlakshnam proktam punso varnabhi vyanjakam	I
+Yadanytrapi drisyet tattenaiv vinirdishet	II	(Bhag.7-11-35)	 
+</p>
+<p class='vspace'>The characteristics by which the status of a person in theistic society is indicated have already been stated in Srimad Bhagavatam. If those charateristics are found in a person belonging by birth to a different class, he is to be spoken of the class that corresponds to his natural disposition. Mere birth alone is not sufficient for one to come under a particular caste: conduct also is necessary. Sri Sridhar Swami while commenting on this sloka mentoned " In this classification, Brahmin Kshatirya, Vaisya and Shudra, possession of corresponding qualities, like equanimity, self-control etc, is important and not birth alone. 
+</p>
+<p class='vspace'>A person should speak of, as belonging to a particular caste of his individual disposition. This is the basic principle of regulation of theistic society (Daiva varnasram) Sree Gaudiya Math is propagating this doctrine. Even if a person born in any caste other than Brahmin, is found to possess qualities worthy of a genuine Brahmin, it is incumbent on the Brahmins to admit and accept that perons without any reservation, as a Brahmin, by the test of dispositon. If it is not done such abstention is sinful.
+</p>
+<p class='vspace'>Panchanan: You are son of a Brahmin. Hence I have affection for you.                                                                             
+</p>
+<p class='vspace'>Sri      Gurudeva: Yes. In  shastras it is said that only by birth one is not a Brahmin. Caste is decided according to attributes one is having.
+</p>
+<p class='vspace'>As such conversation continued for two hours. Consequently Pandit Panchanan Tark Ratna could not reply and appreciated the spiritual knowledge of Sri Gurudeva. Detailed discussion held between them was then published in weekly Patrika "Parmarthik" serial No. 13 and 15 of 15th years. All vaishnavas blessed: “Sri Gurudeva as he could convince and compel such a great scholar to accept the Gaudiya philosophy”.
+</p>
+<p class='vspace'>Dialogue between Sri Gurudeva and Dr. CV Raman<br />During the period of Srila Bhakti Siddhant Saraswati Thakur prabhupada, one-month conference used to be held on account of Sri Krishna Janmastami in Bag Bazar Gaudiya Math. Calcutta, India. In the year of 1930 on this occasion some science students of Dr. CV Raman attended this conference. They used to come to listen divine discourses of Srila Prabhupada and other Swamis also. They were convinced to listen the Gaudiya philosophy. 
+One day they requested Srila Prabhupada to invite their professor Dr. Raman. It was practice that every day a well-reputed man was to be invited to preside over the conference.] Students said, "you invite reputed man every day. Why do you not invite our well-reputed professor? Kindly also invite our Professor Dr. CV Raman to preside over the conference for one day as you are inviting other dignitories. Every day you are inviting a reputed person but you have not invited our Professor Dr. C.V. Raman who is world famous personality. Srila Prabhupada said, “We have no objection to invite your Professor Dr. C.V. Raman”.
+</p>
+<p class='vspace'>Srila Prabhupada deputed our Gurudeva to invite Dr. C.V. Raman to preside over the Dharma Sammelan as President for one day. As ordered by Srila Prabhupada, Sri Gurudeva first went to the house of Dr. C.V. Raman but he was not available in the house. His wife told that Dr. Sahab is in Laboratory. Sri Gurudev went to Laboratory as was requested by the wife of Dr. Sahab. Srimati Raman also sent peon to guide Sri Gurudeva to laboratory. Sri Gurudeva met Dr. C.V. Raman who was in the second storey of Laboratory where he was doing experiment alone. He did not know Bangla language well that is why deologue started in English.
+</p>
+<p class='vspace'>Dr.C. V. Raman: Why have you come to me?
+</p>
+<p class='vspace'>Sri Gurudeva: In our Sree Gaudiya Math. Bag Bazar, Calcutta One month long religious conference (dharma sammelan) is going on. It is on account of Sri Krishna Janmastami. Every day we invite a great personality to preside over the meeting as a President. We invite you also to preside over meeting for one day. Some of your students also come to hear religions discourses. They expressed their desire that we should also invite you for one day. My Guru Deva Srila Bhakti Siddhant Saraswati Thakur who is president-Acharya of the Math has sent me to invite you. Please accept our humble invitation and come for one-day religious conference to preside over.
+</p>
+<p class='vspace'>Dr. C.V. Raman: I do not believe and accept your Krishna-Vishnu. Thing which does not come in experience practically by my senses, I do not spare time for such imaginary thing. My time is very valuable. Yes. In the meeting of science or education I may go.
+</p>
+<p class='vspace'>Sri Gunideva: Your students come to Sri Gaudiya Math daily to hear divine discourses daily from our Gurudeva and other Swamis. Your students have desire that one day you should be invited as President of the Meeting. My Gurudeva has sent me here invite you. Please accept invitation.
+</p>
+<p class='vspace'>Dr. C.V.Raman: Can you show me your God? If you can show me, I shall go to your Math. (In the hall where conversation was going on there were no windows in the walls) 
+</p>
+<p class='vspace'>Sri Gurudeva: Sir. Beyond this wall I am not seeing anything. If I say that there is nothing beyond this wall. Is my talk true? Is it true to say that there is nothing beyond walls, as I do not see?
+</p>
+<p class='vspace'>Dr. C.V. Raman: You cannot see beyond this wall. I can see with the help of any instrument 
+</p>
+<p class='vspace'>Sri Gurudeva: Sir, there is limit of your instruments. Beyond that limit of your instruments there nothing is seen. Is it not true? You cannot see beyond the limit of your instrument. You cannot say that there is nothing. Many things are there but we do not see. We cannot go beyond our capacity. What is your idea?
+</p>
+<p class='vspace'>Dr. C.V. Raman:   Whether something is there or not. I shall not spare my time for that. Why should I waste my valuable time for thing not coming to knowledge of my senses? I shall not devote my time for the things, which are not realized by my senses. Can you show me your God? If you can show, I shall devote my time for God.
+</p>
+<p class='vspace'>Sri Gurudeva: Whatever experiments you have done, if your students ask you to make them realized scientific truth first thereafter they will pay attention to your teachings what will you say?                                                                                                                          Dr. C.V.Raman: Loudly speaking, I shall make them realized.                                                                                                                    
+</p>
+<p class='vspace'>Sri Gurudeva: No no no first you make them realized. Then they will get education from you. 
+</p>
+<p class='vspace'>Dr. C.V. Raman: No, no,  no,  no. Process which I followed and realized scientific truth. Students are to come to my process through which I have realized the scientific truth. First they have to do B.Sc. and then M.Sc in particular subject. After M.Sc. if they study from me for 5 or 6 years then   I can make them ralised
+</p>
+<p class='vspace'>Sri Gurudeva: Sir.Whatever you said, can Indian rishi-Muni not say the same thing?  Process through which they have realized Soul and Super Soul. You also follow the same process of rishi-Muni and see whether you realize or not the existence of God. If you do not realize the Ultimate Reality, you can leave of that process. You are to come to the process of Rishi-Muni then you develop faith in God and can spare your time for His services and meditation.
+</p>
+<p class='vspace'>Dr. C.V. Raman: Kept quiet and could not reply. After deeply thinking for a moment he said. “I know nothing about your Krishna”. What shall I say there if I go there? It is better to invite those who know about this topic.                                                                                       
+</p>
+<p class='vspace'>Sri Gurudeva: Sir, you accept our invitation and come to listen Gaudiya philosophy;                                                                                         
+</p>
+<p class='vspace'>Dr. C.V. Raman: Okay,  I shall  consider  for coming and attending your function;
+At last Dr. C.V. Raman agreed to the philosophy of Gaudiya Math. By Grace of Srila Prabhupada Sri Gurudeva had extra-ordinary capacity to explain scriptural teachings and convince the people to his own religious subjects/points.
+The World Teacher Param Hansa Srila Bhakti Siddhant Saraswati Thakur delivered his last lecture on 23 December 1936 and advised his devotees to follow the footprints of Sri Rupa Goswami and Raghunath Goswami.
+</p>
+<p class='vspace'>Sree Shyamanand Gaudiya Math<br />In the year of 1942 Sri Gurudeva alongwith alongwith Tirdandi Swami Srimad Bhakti Vichar Yajavar Maharaj and Tridandi Swami Srimad bhakti Kumud Sant Maharaj went to Medinipur for preaching. As a result of preachings Sree Gaudiva Math was established within a short period. Srila Gurudeva advised his God-brothers to meet Sri Govardhan babu for donation..  He was a rich person but miser number one.
+</p>
+<p class='vspace'>Local people said no, he is a miser and never gives a naya paisa to beggers. It is useless to go to him. He may insult you. It is better not to go to him. Sri Gurudeva said, Sri Govardhan babu is miser but we should go. 
+One day Sree Gurudeva went to Sri Govardhan babu. Having seen Sri Gurudeva he stood and welcomed very nicely. “What is your reason to come to me?” said Govardhan babu. Sri Gurudeva got chance to say and said, "in Medinipur city 'Sri Gaudiya Math preaching centre has been opened. After hearing Hari Katha from Sri Gurudeva he was convinced and said that our family deity is also Sri Radha-Krishna. Every day service of Thakur jee is done in my house. If you want to have darsana, please come with me and have darshana of our family deity Sree Radha-Krishna.
+</p>
+<p class='vspace'>Sri Gurudeva said: “Yes.Why not. Our life is only for Hari Darsana”. He took Sri Gurudeva into his house temple. Sri Gurudeva saw deity and said in happy mood that our deity is also Sri Radha-Krishna..  I am very happy to see my deity in your house.  You are real devotee of my deity.  You have blessings of God and God gave you His service.  We want such deity in our centre.  But could not yet install. I have have come to you for the service of God.  God brought me to true devotee.
+</p>
+<p class='vspace'>Sri Gurudeva: In our Math Sri Vigrah has not yet been installed. If you give these Sri Radha-Krishna to us, we shall be grateful to you.
+</p>
+<p class='vspace'>Sri Govardhan: Sree Radha -Krishna is our family deity and huge wealth is there in their name. How can we give them to you for Math? Yes, you bring Sri Vigrah from any where I can provide money.
+</p>
+<p class='vspace'>Sri Gurudeva: Sree Vigraha for Gaudiya Math we bring from Jaipur (Raiasthan).
+</p>
+<p class='vspace'>Sri Govardhan: No problem. Whatever expenditure will be incurred, I shall finance the whole expenditure.
+When Sri Gurudeva told his God-brothers, all of them were surprised and blessed, you have done wonderful job. It is not possible to take single paisa from him. How could you do? This is a blessing of Srila Prabhupada.
+Miser Sree Govardhan babu gave complete expenditure for Sri Vigrahas, dress and ornaments. Once wife of Sree Govardhana babu came to Math and offered obeisances to Sri Guru Dev and said: “you have blessed me bringing change in my husband. My all problems are solved”. Sree Govardhan babu started to come to Math daily to hear Hari Katha and became very humble and meek.
+ACCEPTANCE OF TRIDAND SANNYASA : Gaur Purnima 1944
+Sri Gurudeva was known as Sree Hayagriva Brahmachary till now.   Srila Prabhupad had a desire to give him sannyasa. But Hayagriva Brahmachary (my Gurudeva) could not take sannyasa because of his engagements in collection of money for Math. Sri Gurudeva was deputed for collection of money for Math's services.
+</p>
+<p class='vspace'>Even after desire of Sri Prabhupada to give sannyasa Srila Gurudeva could not take sannyasa. He satisfied his Gurudeva Srila Prabhupada by various services. Srila Prabhupada used to say, a boy of unique capacity. He can do surprising wonderful impossible work. He got causeless mercy and blessings of Srila Prabhupada. Srila Prabhupada disappeared on 31 January 1937 and even then Sri Gurudeva continued to serve Maths and vaishnavas with a great faith and respect by all means.
+</p>
+<p class='vspace'>Having become satisfied, God-brothers expressed their desire that Sree Hayagriva Brahmachary is capable to take sannyasa and he should take tridand sannyasa for preaching.
+</p>
+<p class='vspace'>As desired by God-brothers, Sri Gurudeva took sannyasa from his God-brother Paribrajacharya Tridandi Swami Srimad Bhakti Gaurav Vaikhanas Maharaj on the day of Falguni Purnima (appearance day of Lord Chaitanya Dev 1944 in Tota Gopinath Temple Puri Dham, Orissa. India,. at the age of 40 years old). After sannyasa Srila Gurudeva was known as Srimad Bhakti Davit Madhav Goswami Maharaj.
+</p>
+<p class='vspace'>After taking Tridand Sannyasa, Srila Gurudeva came to Shyamanand Gaudiya Math and Vishva Vaishna Rajyasabha welcomed him giving a letter appreciating his attribuites.
+</p>
+<p class='vspace'>Sri Gurudeva in East Pakistan<br />(Now Bangladesh)<br />After acceptance of Sannyasa, Srimad Bhakti Dayit Madhava Goswami Guru Maharaj preached all over India and also in Bangla Desh, All Educated persons were convinced to listen his divine discourses. Once when Sri Guru Maharaj went to Bangla Desh for preaching. All devotees invited Sri Gurudeva to their houses and rendered various services.
+</p>
+<p class='vspace'>One lady devotee named Kusum Kumari had no money but she wanted to invite Sri Gurudeva to her house but without money it was not possible as many devotees used to accompany Sri Gurudeva wherever he went to any house and it involved expenditure. She wept in her heart. How to invite Sri Gurudeva? She sold  her house and arranged a programme of Sri Gurudeva in her house. After programme she will give possession to a man who purchased.                                       
+</p>
+<p class='vspace'>A poor devotee Srimati Kusum Kumari devi dasi requested Sri Guru Maharaj to stay in her house in Baghrai, Srila Guru Deva accepted request and stayed in her house. Being a poor lady, she served the vaishnavas very nicely beyond expectation. Such a service of Vaishnava is not seen even in rich family. Later on it was known that Srimati Kusum Kumari devi  dasi sold her house for the service of Guru- vaishnavas. 
+</p>
+<p class='vspace'>The amount she got, spent in the service of Sri Guru Dev and vaishnavas. She told to a man who purchased house that Sri Guru Dev and vaishnavas will stay in this house for some days. They will behave properly. After their departure he can take possession of the house. She said, I am satisfied that I have served Sri Guru dev and vaishnavas. I may live under shadow of Tree without any hasitation. My life has become successful by serving Sri Gurudeva.Where do we find such example of firm faith in the service of Sri Gurudeva and vaishnavas? 
+</p>
+<p class='vspace'>When Gurudeva came to know he became very sad and heart felt affection/blessings cherished upon her. Gurudeva asked her: “Where will you live? I am told that you have sold this house and have no place to stay. What have you done? Why have you sold your house for our service?”
+Srimati Kusum Kumari replied: “One can have auspiciousness in the life through the services of Guru and Vaishnavas. Such a golden chance does not come again and again in one's life. I do not know whether such a golden chance will come again in my life or not. I am satisfied that I have served Sri Gurudeva and vaishnavas once in my life period. Now, if I die I shall  not reprent. Gurujee, I can live under shadow of Tree. After your departure I shall give possession of this building to a man who purchased it. I am not worried about my living, as I have served devotees of God. I listened in lecture a man who serves Guru and vaishnavas never suffers in his life. Why should I be worry about all this” How much firm faith he had in the service of vaishnavas.
+</p>
+<p class='vspace'>A man came and told Sri Guru Maharaj complete story.  Maharaj this house has been sold by Srimati Kusum Kumari. She has spent complete money in your service. Now she does not have any place to stay. Where will she live now? She will be out of this house after your departure. What to do?                                                                                                                                                             
+Sri Gurudeva was surprised to hear this. Heart of Sri Gurudeva was melted. Gurujee permitted her to stay in the Math for the rest of life. She took Sri Harinama mantra from Guru Jee and passed her last days in Yogapitha (birth place of Sri Chaitanya Dev) in Sri Dhama Mayapur spoke . She performed Hari Bhajan with great dispassion. She left her body chanting Hari Nama in Sreedhama Mayapur. Such examples of devotees are rare. Whenever Sri Gurudeva regarding faith in Gauranga and Vaishnava seva,  he used to refer this story of Srimati Kusum Kumari  devi dasi.
+</p>
+<p class='vspace'>Discussion with Maulvi Sahab<br />I heard many times from Sri Gurudeva in his lecture that there was meeting in English medium school, Jamuki Pakula under district of Maimam Singh in East Pakistan. In the meeting many professors, students and Hindu-Musulman were present. Some friends from police department came and said: “See, Swami Jee, now East Pakistan has become independent country. Govt is watching your all activities… If one sentense spoken by you goes against the interest of Pakistan, you will be arrested immediately. Having seen many Police officers Sri Guru Deva became worried. They can show any reason and put me in jail.   Hence Srila Gurudeva spoke very consciously.
+</p>
+<p class='vspace'>In the beginning of lecture Sri Guru Dev said: “Here very intelligent persons from all races are present. On hearing my lecture if somebody gets douts or questions,   he may ask me in the end of my lecture and not during my lecture. I shall give 20 minutes to reply if question were related to my lecture. Duriing my lecture nobody should ask me any question. If lecture is disturbed by question other devotees will not feel happy. For any question not related to my lecture, you are welcomed to the place where I am staying and ask questions to get clarification”.
+</p>
+<p class='vspace'>Sree Gurudeva continued to speak for thirty minutes. In the mean time a Maulavi Sahab taking a book written in Urdu in his hand stood and asked question. Hindus perform idolatory worship. Is there any logic for idolatory worship in Hinduism? Many audiences became unsatisfied with the question of Maulavi Sahab and asked Sri Gurudeva not to reply during lecture. You have already told in the beginning, no question should be allowed now during your lecture. Why is this question during lecture? Please continue your lecture. Sree Gurudeva thought that question is related to his lecture. If I reply now my topic will become more  clear.   If I do not reply people will think  that there is no reply to the question of Maulvi Saghab. It is better to reply                                                
+Sree Gurudeva: Maulvi Sahab! Do you believe in Khuda or not ?                                                   Maulvi Sahab: Yes. Certainly I believe in Khuda and Alla.                                                                      Sree Gurudeva:  Is there any power of Khuda or not?                                                                             Maulvi Sahab:  Khuda is all  powerful.                                                                                                       Smiling Sree Gurudeva: You have replied your question.                                                                 Maulvi Sahab: How have I given reply to my question? I am unable to understand. Please let me know. I do not understand your talk                                                                                                           
+</p>
+<p class='vspace'>Sree Gurudeva: Maulvi Sahab it becomes very difficult to get 90 number threads through small hole of niddle. Can your Khuda or Alla bring Elephant through the way of hole of niddle or not without causing any injury to elephant of Maimam Singh district?                                                      
+</p>
+<p class='vspace'>Maulvi Sahab: Kept calm and quiet. He could not speak anything.                                          .                                                                           
+Sri  Gurudeva: I do not know. How much strength, Khuda of Maulvi Sahab has. My God is All Poweful and can bring an elephabant through the narrow hole of niddle not only once but thousands times. But one who is accepted as Bhagavan is All Powerful. Every work is possible for Him as He is All Powerful. Nothing is impossible for Him.
+</p>
+<p class='vspace'>Kartum akartum anyathakartum	I<br />Yah samartha sa eva isvarah		II
+</p>
+<p class='vspace'>Isvara being All Powerful can do everything possible. Not only an elephant, thousands of elephants can be brought by Him through the way of hole of niddle. Nothing is impossible for all-powerful Aspect.
+All-powerful God can manifest in any form at any place to fulfil desire of devotees through His divine sports and games   Sri Gurudeva continued to speak. Followers of Sanatan Dharama worship Sri Vigraha and not Murti (idol). There is no system of idolatory worship in Sanatana Dharma. When pran (life) pratistha ceremony is done by Vedic mantras, it is called Sri Vigraha and not idol. God becomes attracted towards the devotion of devotees and manifests himself in the form of Sri Vigraha to take their services.
+Maulvi Sahab: Yes. Now I agreed to. Your teachings are true. If Khuda or Alla is all-powerful He can come on this earth in any form.
+</p>
+<p class='vspace'>Sri Gurudeva in Assam<br />Since the people of Assam have faith in Sadhus, Sree Prabhupada had desire to preach in Assam. He directed Sri Gurudeva to preach in Assam. After taking sannyasa and preaching in Bangladesh   Sri Gurudeva remembering the behest of Sree Prabhupada came to Sarbhog under district of Barpeta (Assam). Sripad
+Uddharan prabhu, Sripad Krishna Keshava brahmachary and others accompanied Sri Guru Maharaj. 
+</p>
+<p class='vspace'>This was first preaching tour of Sri Guru Maharaj as a Sannyasi after disappearance of Srila Prabhupada. Arrangement for stay in the Sarbhog Math could not be made due to change of atmosphere in the Math. Some conflict took place after disappearance of Srila Prabhupada. Sri Guru Maharaj alongwith party stayed in the house of elder brother of Srimad Krishna Keshava Brahmachary Prabhu.
+</p>
+<p class='vspace'>Everywhere water was seen due to heavy rain. Even in houses/rooms water was running there. Party suffered very much but all were very happy. Beds and laggages were brought by cart. Machang were made by bomboo for stay and sleep.  Teporay toilets were also made ready by bamboo temporary at some distance with a great difficulty.  Any how arrangement was made under, such circumstances. The mother of Srimad Krishna Keshava Brahmachary prepared prasadam and served vaishnavas happily. Because of water everywhere it was very painful (difficult) to go anywhere. 
+</p>
+<p class='vspace'>In those days there was war with Japan. Indian and Japani armies were fighting with each other. Japani Army crossing Brahmdesh had reached the border of Assam. Here under British command Indian army was getting the villages adjoining to border acquitted. Under such bad circumstances, Sri Guru Maharaj was compelled to leave the house of elder brother of Srimad Krishna Keshava Brahmachary and stayed in a nearest village. 
+</p>
+<p class='vspace'>Despite of inconveniences Sri Guru Maharaj did not become hopeless. After preaching for seven days there near Sarbhog, Srila Guru Dev along with party came to Sarbhog and stayed in the house of Sriman Gopal Prabhu and started daily lecture on Srimad Bhagavatam from house to house.
+</p>
+<p class='vspace'>During this preaching, a householder devotee Sri Shivanand prabhu surrendered his son Sri Lokesh to Sri Guru Dev in the service of Sree Gauranga Mahaprabhu. After initiation he was known as Lalit Charan Brahmachary. Lohit (Nephew of Sri Shivanand prabhu) and Kamal Kant Goswami son of Sri Ghananand Goswami also took Hari Nama - diksha. When they joined Math they were known as Sri Loknath Brahmachary and Sri Krishna Prasad Brahmachary respectively. 
+</p>
+<p class='vspace'>Sri Lalit Charan Brahmachary, Sri Loknath Brahmachary and Krishna prasad Brahmachari took Tridand Sannyasa and named as Tridandi Swami Bhakti Lalit Giri Maharaj, Tridandi Swami Bhakti Suhrad Damodar Maharaj and Tridandi Swami Bhakti Prasad Ashrama Maharaj respectively.
+Sri Gurudeva in the house of Gopinath Bardlai
+( First Chief Minister of Assam, India)
+</p>
+<p class='vspace'>With the help of Sripad Krishna Keshava Brahmachary Prabhu and Sri Chintaharan Patgiri Jee, Sri Guru Maharaj lived in Gauhati, Assam, India for some days before coming to Calcutta, West Bengal. He met many reputed persons there. One day Chief Minister of Assam Sri Gopinath Bardaloi, who used to come to listen Hari Katha, invited Sri Gurudeva to conduct Bhagabat Path in his house. Lecture on Srimad Bhagavatam was arranged in the house of Sri Gopinath Bardalai. All audiences were attracted to hear Hari Katha from Sri Guru Maharaj.
+</p>
+<p class='vspace'>One day when lecture on Srimad Bhagavatam was over, Sri Gopinath bardaloi, then Chief Minister of Assam said: “ Gurujee after hearing Srimad Bhagabatam from you it apprared to me that aim of Srimad Bhagabatam and aim of lectures of Mahatma Gandhi is one and the same. You explain the importance of Nama of Sri Krishna from various scriptures and our political Guru Mahatma Gandhi also prefers chanting of name of Ram (Ram dhun) in his lectures. Aim of both of you is to convince the people for chanting Harinama. I do not see any distinction in between both of you. I want to know your idea in this reagard.
+Sri Gurudeva  smiling:  Sri Gopinath Baradaloi Jee, if you do not feel bad, I can explain my idea. 
+</p>
+<p class='vspace'>Gopinath Bardaloi: We are grateful to hear your valuable lectures. We have never heard such explanation of Srimad bhagvatam. Please say something for our goodness. We shall be happy if you express your idea freely.
+Gurudeva: While I was in my house, I took part in freedom fighting movement. In those days congress was used to publish 'Young India' magazine from Sabarmati in English. Once I read lecture of Gandhi Jee. Gandhi Jee said in his lecture to show his love of country (India), If needed I can sacrifice my favourite Ramdhuna for my country. I still remember what was written in Patrika, I could sacrifice Ramdhun for my country, Bharatvarsa (Hindustan).
+Sri Guru Maharaj continued to say, we have opposite idea in this regard. Bardlai Jee, we can sacrifice country for Ramdhun. Our Rama is not for anybody. But all things are for Rama, Western philosophers also explain the terms of "Absolute" — Absolute is for itself and by itself. 
+We do not say it God. We say He God. Hence we say Absolute is for Himself and by Himself. Innumerable Brahamands are emanated from the personality of God. In order to worship God ontological knowledge is needed. Chief Minister of Assam was so convinced that he decided to live in the Math. He became ready to become Math basi. But due to political pressure he could not do so . His political friends did not allow him to leave the party.
+Sri Gurudeva in Gwalpara city (Assam)
+</p>
+<p class='vspace'>In 1947 Sri Radhamohan Das Adhikari who had earlier invited Sri Guru Maharaj, again invited for Assam preaching. Sri Gurudeva alongwith Srimad Krishna keshava Brahmachary, Sri Madhvanand Brahmachary, Ratharugh das brahmachary and others went and stayed in the house of Sri Radharaman Prabhu. Lectures were arranged at many places in Gwalpara. Sri Kamakhya Charan son of Sree Dhirendraa Kumar Guhroy met Sri Gurudeva in the house of Radhamohan Das Prabhu. Later on he took initiation . After Sanyasa he is kown as Srimad Bhakti Ballabh Tirtha Maharaj.
+</p>
+<p class='vspace'>Sree Sharat Kumar Nath donated land for Math in Gwalpara. Srila Gurudeva established Sree Chaitanya Gaudiya Math in Gwalpara. Srimad Niyamanand prabhu also established Sri Prapanna Ashram on Hulukanda hill but it has now been disappeared. Devotees go to see that place. There is only one room for recognition. When we go to celebrate annual function of Sree Chaitanya Gaudiya Math in Gwalpara, we generally go to see that place. Gwalpara is also birth place of Tridandi Swami B.B Tirtha Maharaj. Now very beautiful and big temple has been constructed in Gwalpara
+Howli Dharma Sabha
+A religious meeting was held in howli in which more than thousand Hindu -Musalim audiences attended.  In the beginning of lecture, Sri Guru dev said: “If anybody has got question please don't ask during my lecture. I shall give 15-20 minutes for replying your question in the end of my lecture”. 
+Sri Gurudeva started his divine discourses. In the meantime a Maulvi asked: “Did anybody see Atma-Paramatma? You are deceiving all people. What is evidence for this”? Audiences became unhappy as Sri Gurujee forbade putting questions during speech. Somebody may think that there is no reply to this question. Hence Sri Guru deva replied in the meeting. Sri Gurudeva thought if I reply in the meeting my subject matter would be more clear. Maulvi Sahab was keeping one book in his hands.
+</p>
+<p class='vspace'>Sri Gurudeva: What is name of this book you are having in your hands?
+</p>
+<p class='vspace'>Maulvi Sahab: This book is known as Kitab.
+</p>
+<p class='vspace'>Sri Gurudeva: Having knowledge of Bengla, Assamese,  Hindi, English languages. I am unable to read this book. Why? I know many languages. Can I read this book?
+</p>
+<p class='vspace'>Maulvi Sahab: You cannot read this book.
+</p>
+<p class='vspace'>Sri Gurudeva: Maulvi Sahab, you are cheating me. Name of this book is not Kitab. Please tell me correct name of this book.
+</p>
+<p class='vspace'>People: Maulvi sahab told correct name of the book. We have seen the book.. 
+</p>
+<p class='vspace'>Sri Gurudeva: “Name of book told by Maulvi Sahab is not correct because I can not read”, Gurudeva said. All of you together are deceiving me.
+Maullvi sahab: What is your contention to say so?
+</p>
+<p class='vspace'>Sri Gurudeva: I see that a crow might have seated on ink, then  crow sat on this book. I see signs of feet (paw) of crow.
+</p>
+<p class='vspace'>Maulvi Sahab: You do not read this book because you do not know Urdu language. Do you know Urdu language? Certainly you do not know Urdu language.
+</p>
+<p class='vspace'>Sri Gurudeva: Yes. I do not know Urdu language.
+</p>
+<p class='vspace'>Maulvi Sahab: How can you read this book if you do not know Urdu.
+</p>
+<p class='vspace'>Sri Gurudeva: I know many other languages.
+</p>
+<p class='vspace'>Maulvi Sahab: But book is written inUrdu language. If you know Urdu you can read this book. Other languages will not help you to read this Kitab. You must know Urdu language to read this Kitab.
+</p>
+<p class='vspace'>Sri Gurudeva: Even after having knowledge of many languages, it is necessary to learn Urdu language to read this Kitab as it is written in Urdu. Similarly, inspite of worldly capability (knowledge) one cannot be able to understand Atma and Parmatma. Unless one gets transcendental quality, he cannot have realisaton of Atma-Parmatma. Realisation of Atma-Parmatma is not possible by our material senses...
+</p>
+<p class='vspace'>Many people of Howli took initiation from Sri Gurudeva and started Hari Bhajan. Sri Gurudeva also travelled by Car in Assam for preaching. As a result of preaching Sri Gurudeva  established  three  Maths in Assam. First in Tezpur.  Second in Guwahati,  and third in Gwalpara.
+</p>
+<p class='vspace'>Sree Gaudiya Math Tezpur, Assam, India<br />In November - December 1947 Sri Gurudeva came to Tezpur and remained for more than two months. He alongwith party stayed in Marwari Dharmashala and delivered discourses in Bengali Theater Hall. He also stayed in Durgabari for some days. Programme was done from house to house and Nagar Sankirtan was also conducted. Consequently, Sri Chunnni Lal and some others devotees took Harinam.
+</p>
+<p class='vspace'>In Tezpur there was voice in air regarding preaching of Sri Gurudeva. Sri Chunni Lal Datta took Diskha and was then known as Sri Chaitanya charan Das adhikari. In order to fulfil desire of Sri Gurudeva, Sri Chaitanya Charan Das adhikari sold his residence of Tezpur and got a big temple constructed in Ishodyan Sree dhama Mayapur. He also constructed one room for himself for Hari Bhajan. 
+</p>
+<p class='vspace'>Day by day preaching was increased in Tezpur, Assam as a result of which a rich man Rajani Kant Paul came with a proposal to donate a plot of land to establish Math in Tezpur. Sri Gurudeva gave his consent. Sri Rajani Kant Paul and his wife donated land in Kachcharipara, Tezpur, through registry. In the year of 1948 Math was established.
+</p>
+<p class='vspace'>On 23 January 1950, the day of Basant Panchami Sri Guru, Gauranga and Radhanayan Mohan Sri Vigrahas were installed by Sri Gurudeva, On 22 Magh 1374 Bangabd, 5 Feb 1968, Monday (Advaita Saptami) construction of beautiful temple with five climaxes was completed and deities were brought to new constructed temple. On this auspicious day Tridandi Swami Bhakti Bhudev Srauti Maharaj, Tridandi Swami Bhakti Promod Puri Maharaj, Tridandi Swami Bhakti Kumud Sant Maharaj, Tridandi Swami Bhakti Vikas Hrisikesh Maharaj and other God-brothers (disciples of Srila Prabhupada, Bhakti Siddhant Saraswati Thakur) of Gurudeva were present in the festival.
+"I, Bhakti prabhav Mahavir, also took initiation in this Gaudiya Math, Tezpur, Assam on 06 Feb 1973 and lived in this Math for a long period under care of my Siksha Gurudeva, Tridandi Swami Bhakti Bhusan Bhagabat Maharaj. While living in this Math and serving in the office of Chief Engineer Project Vartak, GREF (General Reserve Engineer Force, an integral part of Army).  I got my academic education of B. A., M.A., L.L. B., B. Ed, Praveen attending evening classes in many colleges  at Tezpur city under Gauhati University, Assam.
+</p>
+<p class='vspace'>During this period   I  was known as Ramkumar Das Brahmachary. I was taught  Gaudiya philosophy by my Instructing Master Pujyapad Tridandi Swami Bhakti Bhusan Bhagabat Maharaj who is my life maker. He taught me as professor and nourished me as my guardian. Because of him I am now sannyasi and known as Tridandi Swami Bhakti Prabhav Mahavir”.
+</p>
+<p class='vspace'>Sree Chaitanya Gaudiya Math Gauhati <br />(Assam)<br />A reputed rich man Sri Ramkumar himmat Sinka invited Sri Guru Dev for Gauhati in 1953.   Sri Guru Dev stayed in his house for one month and preached divine love of Sri Chaitanya for Sri Radha -Krishna in Gauhati (Assam). 
+Sri Girija Kumar das expressed his desire to donate land for Math in Paltan bazar, Gauhati, Assam. His wife and sons were also agreed for this pious work but some local Advocates created problems. Depite this he made registry of land and house in the name of Math on 27 Jan 1953, the auspicious day of Nityanand Triyodasi. 
+</p>
+<p class='vspace'>On 01 July 1953. Sri Guru Gauranga and Radha-Nayananand vigrahas were installed. In this regard a Dharma sammelan from 30 June to 04 July 1953 was held. On 30 June aftetrnoon a Nagar Sankirtan procession was carried out in Gauhati city. Earlier deities were in a room. Later on a big temple was erected and Pran Pratistha festival of Vijai Vigraha was celebrated on 15 Feb 1973, 3 Falguna 1379, day of Nityanand Triyodasi, Deities were brought to new constructed temple on this Golden occasion Dharma sammelan from 14 Feb to 18 Feb 1973 was arranged. Sree Girija Kumar das and Himmat Sinka, Sri Bhagavati Prasad Himmat Sinka, Sri Kashinath, Sri Jwala Prasad and others helped financially in this programme. 
+</p>
+<p class='vspace'>It is mentionable that Sri Mangal Nilaya Brahmachary remained Math-in-charge of Gauhati Gaudiya Math for long period.   After disappearance of Sri Gurudeva he took Tridand Sannyasa from Pujyapada Bakti Promod Puri Goswami Maharaj.  He is now known as Tridandi Swami B.N. Mangal Maharaj.
+</p>
+<p class='vspace'>Sree Chaitanya Gaudiya Math, Goalpara <br />Assam<br />On 15 December 1969 Sri Sharat Kumar Nath donated land including 8 room, two toilets and two Kitchens through rigistry. Sri Guru Dev alongwith his associates celebrated Math Pratisthan Festival. On 17 and 18 December 1969 two days Dharma Sammelans were held as desired by devotees. All people were very happy to know that they have one Hindu preaching centre.
+</p>
+<p class='vspace'>On 5 Feb 1971, the disappearance day of Sri Ramanujacharya Sri Guru Dev installed Sri Guru -Gauranga, Sri Radha -Damodar Vigrahas Pran Pratistha festival was celebrated holding Dharma Sammelan from 04 to 10 Feb 1971. On 07 Feb 1971 Nagar Sankirtan procession in Goalpara was carried out and people from all races participated in the function.. 
+</p>
+<p class='vspace'>In this festival Pujyapad Tridandi Swami Srimad Bhakti Promod Puri Goswami Maharaj, Pujyapad Krishna Keshava Brahmachary, Srimad Bhakti Lalit Giri Maharaj, Srimad Bhakti Ballabh Tirath Maharaj, Srimad Bhakti Promod Bon Maharaj, Srimad Bhakti Prakash Gobind Maharaj, Sri Loknath Brahmachary, Sri Mangal Nilaya Brahmachary, Sri Yogeswar brahmachary, Sri Upanand brahmachary and others were present in the function. 
+</p>
+<p class='vspace'>Sripad Bhakti Lalit Giri Maharaj remained Math-in-charge of Goalpara Gaudiya Math for long period. Later on he was made in-charge of Calcutta Sree Chaitanya Gaudya Math. After disappearance of Sri Guru Dev a beautiful temple has been erected and Sri Vigrahas were brought into new constructed temple on 20 Feb l985.  Sripad B.R. Yachak maharaj constructed very big  lecture hall in Goalpara Math..
+</p>
+<p class='vspace'>Sree Chaitanya Gaudiya Math, Hyderabad<br />Andhra Pradesh<br />An energetic preacher of Sree Chaitanya Gaudiya Math, Sri Mangal Nilaya Brahmachary made pre-arrangements for preaching in Hyderabad, Andhra Pradesh.   Accordingly, Sri Gurudeva reached Hyderabad on 09 Sept 1959. Governer of Andhra Pradesh Sri Bhimsen Sachar, Justic, Uttam chand, Sri Gopal Rai, Setha, Sri Jai Charan Das and others were grateful to have Sri Gurudeva in Hyderabad first time.   All welcomed and came to have Divine Darshana of Sree Guru deva. 
+</p>
+<p class='vspace'>Sri Gurudeva delivered his lectures at different places in Hyderabad and Secundrabad. On 20 Sept 1959 a big Nagar Sankirtan Procession was carried out in Hyderabad on. On 27 Sept 1959 lecture of Sri Gurudeva and Sankirtan was broad casted in All India Radio Station.
+Governer Bhimsena Sachar accorded an entertainment to Sri Gurudeva at Rajbhavan, Hyderabad. On 15 Sept 1959, Sri Gurudeva addressed a largely attended respectable gathering at Rajbhavan and explained the teachings of Lord Chaitanya Mahaprabhu and Sankirtan party performed melodious Sankirtan. As a result of preaching a centre was opened. Now a big Sree Chaitanya Gaudiya Math is there in Dewan Dewadi. Tridandi Swami Bhakti Vaibhav Aranya Maharaj was Math-in-Charge for a long period.
+</p>
+<p class='vspace'>A great scholar of Vrandavan appreciated Sri Gurudeva
+</p>
+<p class='vspace'>Sri Atul Krishna Goswami Acharya of Radha Raman temple, Vrindavan Dhama was attracted towards personality of Sri Guru Dev.  He was used to come to have darshana of Sri Gurudeva.  Srila Gurudeva also erected on big and beautiful Sree Chaitanya Gaudiya Math in Radha Nivas, Vrandavana. Srila Gurudeva had affection for Sri Atul Krishna Goswami and given him chance to deliver discourse in our programmes. He was used to say, Gurujee “I am your child”. He always said, “Pujyapad Bhakti Dayit Madhav Goswami Maharaj is a Gigantic Spiritual Personality. I have never seen such a personality”. He was beloved of Sri Gurudeva.  Now He has been retired from house-hold life and taken sannyasa.
+</p>
+<p class='vspace'>Renovation of birth place of Sri Pabhupada<br />Param Hansa Bhakti Siddhant Saraswati Thakur Prabhupada, the pioneer of Sree Gaudiya Bhakti Cult, was born in Jagannath Puri in Government accormmodation while his father Srila Bhakti Vinod Thakur was Magistrate there. After disappearance of Srila Prabhupada, many Gaudiya Acharyas tried to get birth- place of Srila Prabhupada but could not get success.  Sri Guru Maharaj also suffered too but subsequently got the place and a beautiful Math has been erected.  It is at the walking distance from Sri Jagannath Temple. This reveals extra-ordinary personality of Sri Guru Dev. All disciples of Srila Prabhupada became very happy when Sri Gurudeva got birth  place of Srila Bhakti Siddhanta Saraswati Thakur Prabhupada at Puri Dhama, Orissa.
+Because of extra-ordinary personality President and Chief Justice of India Barrister, Advocates, Vice chancellors, Teachers, Mayors, IGP, Doctors. Rich and poor all were used to attract towards the lectures of Sri Guru Dev. After hearing divine discourses of Srila Gurudeva all were convinced to accept the philosophy of Lord Chaitanya Mahaprabhu. Whoever saw Sri Gurudeva? He was enchanted. Sri Gurudeva established very big Maths in different parts of India within a short period. Details of Maths are given below:
+</p>
+<p class='vspace'>List of  Maths established by Srila Gurudeva
+</p>
+<p class='vspace'>1.	Sree Shyamanand Gaudiya Math (W.B.)			        1942	
+</p>
+<p class='vspace'>(Sri Gurudeva and his two God-brothers Pujyapada Tridandi Swami B.P. Yayavar Maharaj, and Tridandi Swami Bhakti Kumud Sant Maharaj combindly established this Math).
+</p>
+<p class='vspace'>2.	Sree Gaudiya Math, Tezpur, Assam.	                                      1948
+</p>
+<p class='vspace'>(Since long Pujyapad Bhakti Bhusan bhagabat Maharaj is in-charge of Math. Author lived in this Math for long period and learnt Gaudiya philosophy from Pujyapad Bhakti Bhusan Bhagabat Maharaj)
+</p>
+<p class='vspace'>3.      Sree Chaitanya Gaudiya Math, Paltan Bazar, Gauhati Assam                       1953
+</p>
+<p class='vspace'>4.	Sree 'Chaitanya Gaudiya Math			                       1955	
+86-A, Rasvehari Avenu, Calcutta-26 (W.B.)
+</p>
+<p class='vspace'>5.	Sree Chaitanya Gaudiya Math		            1956
+Ishodyan, Sridham Mayapur (W .B.)
+</p>
+<p class='vspace'>6.	Sree Chaitanya Gaudiya Math		            1956
+Sarveswar Haveli Vrindavan (U.P.)
+</p>
+<p class='vspace'>7.	Sree Chaitanya Gaudiya Math	                          1960	
+Goyari Bazar, Krishna Nagar, (W.B.)                                                                                                            (Since beginning B.S. Damodar maharaj is in-charge) 
+</p>
+<p class='vspace'>8.	Sree Chaitanya Gaudiya Math		            1960
+</p><pre>	Mathura Road Vrindavan, (U.P.)1
+</pre><p class='vspace'>9.	Sree Chaitanya Gaudiya Math
+</p><pre> 35-Satish Mukherjee Road,
+</pre><p>Calcutta-26 (W.B.)		                           1961		
+</p>
+<p class='vspace'>10.	Sree Gadiya Sevasrama, Madhuvan		             1961
+Maholi, P.O. -Mathura (U.P.)
+</p>
+<p class='vspace'>11.	Sree Chaitanya Gaudiya Math		              1962	
+Urdu Gali Patharghati, Hyderbad (A.P.)
+</p>
+<p class='vspace'>12.	Sril Jagdish Pandit Sripat				1962	
+Yashra, Chakadah (Nadia) (W.B.)
+</p>
+<p class='vspace'>13.	Sri Vinod Vani Gaudiya Math		              1962	
+32-kaliyadaha, Vrindavan, (This Math
+was given by Pujyapad B.P. Giri Maharaj)
+</p>
+<p class='vspace'>14.	Sree Chaitanya Gaudiya Math GoalIpara (Assam)-     1969
+</p>
+<p class='vspace'>15.	Sree Chaitanya Gaudiya Math Sector -20 B, Chandigarh  1970
+</p>
+<p class='vspace'>16.	Sree Chaitanya Gaudiya Math			 1972	
+Dewan Devari Hyderabad (A.P.)
+</p>
+<p class='vspace'>17.	Sree Chaitanya Gaudiya Math			1974
+Grand Road, Puri (Orissa)
+</p>
+<p class='vspace'>18.	Sree Chaitanya Gaudiya Math			1975
+</p><pre>	Gokul Mahavan, Mathura (U.P.)
+</pre><p class='vspace'>19.	Sree Chaitanya Gaudiya Math			1979
+</p><pre>	Sri Jagannath Mandir, Agartala (Tripura)
+</pre><p class='vspace'>20.	Sree Chaitanya Gaudiya Math 
+187-DL Road, Deharadun			               1977
+Two more  Math under control of Sri Gurudeva
+</p>
+<p class='vspace'>21.	Sarbhog Sri Gaudiya Math 		              1955		
+Chakachaka Bazar (Assam)
+</p>
+<p class='vspace'>22.	Sri Gadai Gauranga Math                                             1955	
+Baliyati - Daka (Bengladesh)
+</p>
+<p class='vspace'>“Monthly magazine ~ Sree Chaitanya Vani`
+These all Maths were run by Srila Gurudeva. In order to preach message of Lord Chaitanya Mahaprabhu, Srila Gurudeva started monthly magazine “Sri Chaitanya Bani” in 1961 and also printing press in 1964 at Taliganj, Calcutta-33 (West Bengal).
+</p>
+<p class='vspace'>Sri Gurudeva started monthly magazine `Sree Chaitanya Bani` in 1961 and also printing press in 1964 at Taligang, Calcutta –33.
+</p>
+<p class='vspace'>Once I had written an article on  `The doctrines of Great four Vaishnava Acharyas`  while staying in  Sree Gaudiya Math, Tezpur , Assam.and sent to Madras Gaudiya Math for publishing in monthly  magazine “The Gaudiya” but it was  not published.  I discussed this matter with Sri Gurudeva.  He said,  “ they  will not publish your article as you are my disciple.  Write articles in Hindi and keep.  In future Hindi Patrika will start from our Sree Chaitanya Gaudiya Math, Chandigarh (Punjab).  It also proved true.  After disappearance of Srila Gurudeva hindi magazine “Sree Chaitanya Sandesh “ started and my articles on Guru Tattva were published in hindi.  After disappearance of pujyapad Tridandi Swami Bhakti Vilasa Tirtha Maharaj my articles on `The doctrines of four great Vaishnava Acharyas` were also published in monthly magazine of `The Gaudiya ` under editorship of Tridandi Swami B.P. Jyoti Maharaj.
+</p>
+<p class='vspace'>Names of those who surrendered to Srila Gurudeva and took Tridand Sannyasa.
+</p>
+<p class='vspace'>Initiated names            Year of initiaton            Name after sannyasa                Year
+1.   Krishna prasad Br.        1944-45             Bhakti Prasad Ashram M.            1961
+2.   Lalit charan br.              1944-45            Bhakti lalit Giri Maharaj               1961
+3.   Krishna Ballabh br.       1947-48             Bhakti Ballabh Tiratha M.            1961
+4.   Pradhyumn das              1951                  Bhakti promod  Aranya  M.          1962
+5.   Dinbandhu br.                1946                  Bhakti Sambandh Parvat M.         1965
+6.   Narottam Br.                  1955                  Bhakti Vijnan Bharti   M.             1969
+7    Narayan das Br.              1951                  Bhakti Prasad Puri Maharaj         1969                 
+8.   Narayana Br.                   1950                  Bhakti Bhusan Bhagabat M.         1970
+9.   Dinanath Vanchari          1950                  Bhakti Prakash   Gobind   M.        1970
+10. Bhuwan Mohan das                                  Bhakti Promod  Bon  M.               1970
+</p><pre> ( disciple of Srila Prabhupada)    )  .
+</pre><p class='vspace'>11.  Loknath Br.                  1944-45              Bhakti Suhrid Damodar M              1972
+</p>
+<p class='vspace'>12.   Achintya Gobind Br.   1951-52              Bhakti Sundar Narsingh M              1973
+</p>
+<p class='vspace'>13.   Balram Br.                   1946-47               Bhakti Vijaya Vaman   M.              1973
+</p>
+<p class='vspace'>14.   Anant das Br.              1963-64               Bhakti Bandhav Janardan M.           1973
+</p>
+<p class='vspace'>15.   Radha Krishna das Br  1951                   Bhakti Sarvasva Niskinchin M.        1974
+</p>
+<p class='vspace'>16.   Sri Narayan Chandra                              Bhakti Suhrid Bodhayan  M.            1976
+(disciple of Srila Prabhupada )  
+</p>
+<p class='vspace'>17.   Gopal Das Br.                                         Bhakti Prapan Dandi Maharaj          1976
+(disciple of Sila Prabhupada  )    
+</p>
+<p class='vspace'>18.   Vishnu das Br.                ---     1955       Bhakti Vaibhava Aranya M              1977.    
+</p>
+<p class='vspace'>19.    Thakur Das br.                                       Bhakti Prabodh Muni Mahraj           1977
+(disciple of Srila Prabhupada)   
+</p>
+<p class='vspace'>20.    Sri Pyari Mohan Br.                               Bhakti Sharan Trivikram  Maharaj   1977                      
+(Disciple of Prabhupada)
+</p>
+<div class='vspace'></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on November 23, 2011, at 08:59 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

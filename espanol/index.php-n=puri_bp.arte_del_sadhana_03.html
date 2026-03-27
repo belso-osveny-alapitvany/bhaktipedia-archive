@@ -1,0 +1,528 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - La Fuerza Purificadora del Servicio</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_03' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_03' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - La Fuerza Purificadora del Servicio"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_03-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>La Fuerza Purificadora del Servicio</h2>
+<p>En el Bhagavad-gitã, el Señor declara:
+</p>
+<div class='vspace'></div><pre> daivi hy esã gunamayi 
+ mama mãya duratyayã 
+ mãm eva ye prapadyante
+ mãyãm etãm taranti te
+</pre><p class='vspace'>“La energía externa consistente en las tres cualidades, se halla divinamente apoderada y así pues es imposible de superar. Todo aquel que se rinda a Mí, sin embargo, puede pasar por encima de esta maya”. (Bhagavad-Gitã 7.14)
+</p>
+<p class='vspace'>Visvanãtha Cakravarti observa que este verso suscita la pregunta: “En vista de los grandes beneficios que suceden por rendirse al Señor, ¿porqué entonces no hay más personas inteligentes que así lo hagan?” La breve respuesta brindada por Visvanãtha es que esas personas se consideran a sí mismas inteligentes, pero en realidad no lo son. Los verdaderamente inteligentes, los verdaderamente sabios, ciertamente que se entregarán al Señor. Aquellos que carecen de esa piedad continúan siendo kupanditas antes que supanditas, las personas cuya erudición ha sido empleada para el provecho personal y el engrandecimiento personal antes que para la satisfacción del Señor. A los fines de aclararlo, Krishna prosigue diciendo:
+</p>
+<div class='vspace'></div><pre> na mãm duskrtino mudhãh
+ prapadyante narãdhamãh 
+ mãyayãpahrta-jñanã
+ ãsuram bhãvam ãsritãh
+</pre><p class='vspace'>“Los malvados no se rinden a Mí. Ellos son necios y lo más bajo de la humanidad; su inteligencia les ha sido robada por la ilusión y han tomado refugio en una mentalidad demoníaca”. (Gitã 7.15)
+</p>
+<p class='vspace'>Srila Visvanãtha Cakravarti Thãkura comenta sobre este verso que hay cuatro clases de personas inicuas (duskrtina) que no se rinden al Señor: (1) los necios (mudhãh), (2) lo más bajo de la humanidad (narãdhamãh), (3) aquellos cuyo conocimiento ha sido robado por la ilusión (mãyayãpahrta-jñãnãh) y (4) quienes poseen mentalidad demoníaca (ãsuram bhãvam ãsritah). Continúa analizando las características de cada uno de estos tipos:
+</p>
+<p class='vspace'>Los necios. Eke mudhãh pasu-tulyãh karminah. Estos son los trabajadores fruitivos, al mismo nivel que los animales. Ellos no tienen consideración por las delicias eternas de la filosofía consciente de Krishna, sino antes bien anhelan el fluctuante placer de la gratificación de los sentidos en este mundo y posteriormente en el cielo.
+</p>
+<p class='vspace'>Lo más bajo de la humanidad (narãdhamãh). Estas gentes han aceptado los principios de la devoción por un breve tiempo en algún momento de sus vidas y en tal sentido puede considerarse que han llegado al nivel de seres humanos. Sin embargo, antes de alcanzar el objetivo de la práctica devocional, la abandonaron, pensando que no valía el esfuerzo. Ese rechazo voluntario del bhakti es el síntoma de su calidad como lo más bajo de la humanidad.
+</p>
+<p class='vspace'>La siguiente clase son aquellos que, a pesar de haber estudiado e incluso enseñado las Escrituras, han perdido su facultad de discriminación en mérito a la influencia de la energía externa del Señor. Estas personas piensan que solo la forma divina de Nãrãyana en Vaikuntha es digna de nuestra alabanza eterna y devoción, mas no consideran que Rãma y Krishna sean similarmente dignos, considerándolos seres humanos ordinarios. Es para tales personas que el Señor habló el verso, avajãnanti mãm mudhãh mãnusin tanum ãsritam (9.11): “Los necios no Me respetan cuando adopto una forma humana”. Aunque estas personas puedan tener el aspecto de ser devotos rendidos, no es tal el caso.
+</p>
+<p class='vspace'>Los demonios son aquellos que se han convertido en enemigos del Señor. Ellos son como Jarãsandha, que vio la forma del Señor, pero le lanzó flechas. Tales personas argumentan falsamente que puesto que la forma de Krishna puede ser vista, por consiguiente es lo mismo que las otras formas visibles en el mundo material. Ellos proyectan esta creencia incluso en Nãrãyana en Vaikuntha y tratan de rebajar Su cuerpo hecho de eternidad, conciencia y bienaventuranza. Como resultado, nunca se entregan a El.
+</p>
+<p class='vspace'><strong>LOS QUE VIENEN AL SERVICIO DEVOCIONAL</strong>
+</p>
+<p class='vspace'>En el siguiente verso del Gitã, el Señor Krishna prosigue describiendo cuatro clases de personas que sí se entregan a El:
+</p>
+<div class='vspace'></div><pre> catur-vidhã bhajante mãm
+ janãh sukrtino ‘rjuna
+ ãrto jijñãsur arthãrthi
+ jñãni ca bharatarsabha
+</pre><p class='vspace'>“Cuatro clases de personas Me adoran, Oh Arjuna. Estos son los afligidos, los que buscan la sabiduría, los que anhelan el provecho y los sabios”. (Gitã 7.16)
+</p>
+<p class='vspace'>Los afligidos (ãrta) son los que padecen alguna enfermedad o alguna otra pesadumbre, que buscan librarse de estos sufrimientos. El que busca la sabiduría (jijñãsu) se refiere ya sea al que busca el conocimiento del ser o al estudiante que se interesa en algún otro campo del saber, como ser la gramática. Los que anhelan provecho (arthãrthi) desean disfrutar los objetos de los sentidos como la tierra, las mujeres hermosas y el dinero. Los sabios (jñãni) son los que están internamente purificados y son renunciados. Visvanãtha declara que los piadosos (sukrtinah) son los comprometidos religiosamente en seguir los deberes prescritos del varnãsrama-dharma.
+</p>
+<p class='vspace'>Los primeros tres de estos tipos piadosos son jefes de familia, que aún albergan deseos mundanos, mientras que el último es el renunciado falto de deseos, el sannyasi. Los cuatro, sin embargo, ejecutan una devoción mixta: los primeros tres se ocupan en la devoción mezclada con karma (karma-misrã bhakti), mientras que el último se ocupa en la devoción mezclada con el conocimiento (jñãna-misrã-bhakti) o el yoga-misrã bhakti que se describe en el octavo capítulo del Gitã (ver también 8.12). Cuando la devoción no está mezclada con ninguno de estos otros elementos, se denomina kevalã o devoción exclusiva; esto se conoce como bhakti puro y se describe en cantidad de versos del Gitã:
+</p>
+<div class='vspace'></div><pre> mayy ãsakta-manãh pãrtha
+ yogam yuñjan mad-ãsrayah
+ asamsayam samagram mãm
+ yathã jñãsyasi tac chrnu
+</pre><p class='vspace'>“Ahora oye, Oh hijo de Prthã, cómo por ocuparse en el yoga tomando refugio en Mí y con tu mente apegada a Mí, puedes conocerMe completamente, libre de dudas”. (Gitã 7.1)
+</p>
+<div class='vspace'></div><pre> ananya-cetãh satatam
+ yo mãm smarati nityasah
+ lasyãham sulabhah pãrtha
+ nitya-yuktasya yoginah
+</pre><p class='vspace'>“Oh hijo de Prthã, para el yogui que es siempre disciplinado y Me recuerda incesantemente sin desviación, Yo soy fácil de obtener”. (Gitã 8.14)
+</p>
+<div class='vspace'></div><pre> mahãtmãnas tu mãm partha
+ daivim prakrtim ãsritãh
+ bhajanty ananya-manaso
+ jñãtvã bhutãdim avyayam
+
+ satatam kirtayanto mãm
+ yatantas ca drdha-vratãh
+ namasyantas ca mãm bhaktyã
+ nitya-yuktã upãsate
+</pre><p class='vspace'>“Oh hijo de Prthã, las grandes almas que se refugian en la naturaleza divina Me adoran con atención indivisa porque conocen Mis opulencias infinitas. Ellas están entonando constantemente Mis glorias, esforzándose plenamente a la vez que conservan fe firme en sus votos, postrándose ante Mí con devoción y adorándoMe, permanentemente unidas a Mí”. (Gitã 9.13-14)
+</p>
+<div class='vspace'></div><pre> ananyãs cintayanto mãm
+ ye janãh paryupãsate
+ tesãm nityãbhiyuktãnãm
+ yoga-ksemam vahãmy aham
+</pre><p class='vspace'>“Yo asumo personalmente la responsabilidad de proteger y adquirir todo lo necesario para la vida para los devotos que dependen completamente de Mí, que siempre están absortos en pensamientos solo acerca de Mí y que Me adoran exclusivamente, en todos los sentidos”.
+</p>
+<p class='vspace'>En Su última instrucción del Bhagavad-gitã (sarva-dhãrmam parityãjya mãm ekam saranam vraja), el Señor Krishna declara que se deben abandonar todos los deberes previamente prescritos en las Escrituras Védicas, incluyendo el varnãsrama-dharma u otras regulaciones que rigen las actividades del cuerpo o el pensamiento. Además, uno debe concentrarse en la enseñanza más confidencial de la Escritura, - la naturaleza personal del Señor Supremo - y rendirse exclusivamente a El. En tal sentido, la clase de piedad (sukrti) necesaria para alcanzar esta devoción pura o exclusiva, es la que está orientada a la adoración del Señor Supremo (bhakty-unmukhi). 
+</p>
+<p class='vspace'><strong>LA TRANSICION DE LA IMPIEDAD A LA RENDICION</strong>
+</p>
+<p class='vspace'>Srila Saccidãnanda Bhaktivinoda Thãkura brinda una discusión aumentada de estos versos en su traducción del Bhagavad-gitã, explicando la transición del rechazo a la ocupación en el servicio del Señor, al entusiasmo.  El parafrasea los versos del Bhagavad-gitã, como sigue: “El Señor dice, ‘Es prácticamente imposible para quienes son impíos, ocuparse en el servicio devocional puesto que ellos no se hallan en el sendero del desarrollo progresivo. Aún así, hay ocasionalmente algunos individuos impíos o no regulados que son excepciones a esta regla y adoptan súbitamente el sendero de la devoción. 
+</p>
+<p class='vspace'>“Entre los piadosos que siguen un estilo de vida regulado, hay cuatro clases que se ocupan en Mi servicio. Todo el que busca el cumplimiento de los deseos materiales, sufre cuando sus esperanzas se frustran. En medio de ese sufrimiento, esas personas se acuerdan de Mí. Yo los denomino ãrta, ‘los afligidos’. Los impíos que no siguen un estilo de vida regulado, sin embargo, nunca piensan en Mí cuando sufren. 
+</p>
+<p class='vspace'>“Las personas necias previamente mencionadas (mudhas), los empíricos ateos y los lógicos, llegan a recordarMe cuando comienzan a sentir la necesidad del concepto de un Ser Supremo en sus investigaciones. Estos son los jijñãsus.
+</p>
+<p class='vspace'>“Aquellos a quienes he descrito como ‘lo más bajo de la humanidad’ (narãdhama) aceptan el principio de la deidad como una necesidad para la ética, mas no que la ética se funda en el principio de la deidad. Cuando esas personas no se satisfacen con su inadecuado concepto de Dios y comprenden que la deidad se yergue por sobre la ética, se vuelven devotos en el sendero de vaidhi-bhakti, anhelando alguna retribución por su práctica devocional como arthãrthis.
+</p>
+<p class='vspace'>“Aquellos a quienes he denominado mãyayãpahrta-jñãnãh, adoran a Siva o a Brahmã, pero no poseen un conocimiento exacto de sambandha, - ellos no reconocen que el Señor Supremo posee eternamente potencias, que la jiva es una chispa de conciencia individual y eterna y que la relación de la jiva con la energía material inconsciente es temporal. La mayoría de ellos no reconoce que su relación de servicio hacia el Señor Supremo es su posición constitucional eterna. Como resultado, aunque estudien el Vedanta y demás obras filosóficas, su conocimiento está cubierto. Cuando una jiva cuya inteligencia ha sido robada por la energía ilusoria reconoce que las concepciones Brahman y Paramãtma de la Verdad Suprema son incompletas y se ampara en la concepción personal de la deidad, Bhagavãn, el Señor Mismo remueve la cobertura sobre su inteligencia. La jiva seguidamente reconoce que es un sirviente eterno del Señor y adopta el sendero séxtuple de rendición (prapatti). 
+</p>
+<p class='vspace'>“Así pues, al removerse la cobertura del deseo de la persona afligida, cuando el buscador de conocimiento (jijñãsu) abandona la cobertura que lo limita al conocimiento basado en la ética, cuando quien anhela provecho (arthãrthi) deja de lado el deseo trivial de felicidad sensual de ahí en adelante y los filósofos (jñãni) abandonan su apego por sumergirse en el aspecto impersonal de la verdad y su creencia de que el aspecto personal es una manifestación temporal, estas cuatro clases de personas también se tornan aptas para el servicio devocional. En la medida en que subsistan estas impurezas, ellos en el mejor de los casos se ocuparán en el servicio devocional combinado. Solo cuando las impurezas son removidas puede alguien ocuparse en kevalã, akiñcanã o uttamã bhakti”.
+</p>
+<p class='vspace'>La palabra utilizada por Bhaktivinoda Thãkura para impureza es kasãya. Todas las impurezas se fundamentan en el deseo de complacer los sentidos personales. Cuando los afligidos, los curiosos, los materialmente motivados y los sabios dejan de lado sus deseos basados en lo sensual y comienzan a pensar en la forma de agradar al Señor, su devoción se ve libre de impurezas. Esto es servicio devocional puro. 
+</p>
+<p class='vspace'><strong>EL SEÑOR SOSTIENE AL DEVOTO PURO MAS QUERIDO</strong>
+</p>
+<p class='vspace'>El Señor Krishna continúa Su análisis en el séptimo capítulo del Gitã, especificando que, de los cuatro tipos de personas que adoptan el servicio devocional, el jñãni es supremo:
+</p>
+<div class='vspace'></div><pre> tesãm jñãni nitya-yukta
+ eka-bhaktir visisyate
+ priyo hi jñãnino ‘tyartham
+ aham sa ca mama priyah
+</pre><p class='vspace'>“De estas cuatro clases de adoradores, se destaca el filósofo situado en el conocimiento de Mí, permanentemente ocupado en la devoción sincera. Yo, en Mi forma de Syãmasundara, soy muy querido a ese filósofo y él es muy querido para Mí”. (Gitã 7.17)
+</p>
+<div class='vspace'></div><pre> udãrãh sarva evaite
+ jñãni tv ãtmaiva me matam
+ ãsthitah sa hi yuktãtmã
+ mãm evãnuttamãm gatim
+</pre><p class='vspace'>“Todos estos devotos son indudablemente almas magnánimas, pero el filósofo es Mi propia alma. Estando siempre unido a Mí, él está convencido que Yo soy la meta inmejorable de la vida”. (Gitã 7.18).
+</p>
+<p class='vspace'>No podemos decir que el Señor no tenga afecto  por la persona afligida, el buscador de riqueza y la persona curiosa que han adoptado Su servicio devocional. El Señor es como un árbol del deseo y hasta cierto punto El concede a todos Sus adoradores los objetos de sus deseos. Y por supuesto, estos devotos los aceptan con agrado. Sin embargo, el filósofo verdaderamente sabio, no pide nada al Señor, ya se trate de la vida en el cielo o la salvación de todo compromiso material. Es por eso que es tan querido al Señor. El ha comprendido que más que el aspecto informe del Brahman, la forma del Señor como el hermoso joven negruzco es la meta inmejorable de la vida. El Señor sostiene que este filósofo falto de deseos es tan querido que es igual a Sí Mismo.
+</p>
+<p class='vspace'>El Señor considera al devoto puro y exclusivo incluso como más querido que El Mismo. Por lo tanto, dice a Uddhava:
+</p>
+<div class='vspace'></div><pre> na tathã me priyatama
+ ãtma-yonir na sankarah
+ na ca sankarsano na srir
+ naivãtmã ca yathã bhavãn
+</pre><p class='vspace'>“Nadie Me es más querido que tú, Oh Uddhava, ni Mi hijo Brahmã, ni Siva, que nació de Mi propio cuerpo, ni Mi hermano Sankarsana, ni Laksmi, Mi consorte, que mora en Mi pecho, ni siquiera Mi propio cuerpo”.
+(Srimad Bhãgavatam 11.14.15)
+</p>
+<p class='vspace'>En otra parte del Bhãgavatam, el Señor dice:
+</p>
+<div class='vspace'></div><pre> nãham ãtmãnam ãsãse  
+ mad-bhaktaih sãdhubhir vinã
+ sriyam cãtyantikim brahman
+ yesam gatir aham parã
+</pre><p class='vspace'>“Oh brahmana, no deseo disfrutar de Mi bienaventuranza trascendental y Mis opulencias supremas sin los devotos santos para los cuales Soy la única meta en la vida”.
+(Srimad Bhãgavatam 9.4.64)
+</p>
+<p class='vspace'><strong>LA ASOCIACION DE LOS DEVOTOS ES LA FUERZA PURIFICANTE</strong>
+</p>
+<p class='vspace'>En opinión de Srila Visvanãtha Cakravarti, los tres tipos de devotos: ãrta, jijñãsu y arthãrthi, todos tienen deseos, mientras que el jñãni no. Krishnadãsa Kavirãja Gosvãmi, sin embargo, difiere de alguna manera. El escribe que el ãrta y arthãrthi tienen deseos materiales, mientras que el jijñãsu y el jñãni desean obtener la liberación. Si ellos cultivan la clase de piedad que conlleva a la devoción (bhakty-unmukhi sukrti), luego pueden abandonar sus deseos y comenzar a adorar al Señor. 
+</p>
+<div class='vspace'></div><pre> ãrta arthãrti dui sakãma-bhitare gani
+ jijñãsu jñãni dui moksa-kãma mãni
+ ei cãri sukrti haya mahã-bhãgavãn
+ tat-tat kãmadi chãri haya suddha-bhaktimãn
+</pre><p class='vspace'>“Yo considero a la persona afligida y al buscador de riqueza como devotos materialistas, y tomo a la persona curiosa y al filósofo como deseosos de liberación. Las cuatro clases de individuos piadosos han de considerarse grandemente afortunados porque ellos dejan de lado gradualmente los deseos que los gobiernan y se convierten en devotos puros”.
+(Caitanya Caritãmrta 2.24.95-96)
+</p>
+<p class='vspace'><strong>AUTO-ENGAÑO E IMPOSTURA - LOS DESEOS DE BHUKTI Y MUKTI</strong>
+</p>
+<p class='vspace'>El Srimad Bhãgavatam es la autoridad inmaculada en cuanto a conocimiento espiritual. Su propósito es describir un sistema religioso que está libre de todo auto-engaño. Esto se declara en los versos introductorios del Bhãgavatam: dharmah projjhita-kaitavo ‘tra paramo nirmat-sarãnãm satãm (Srimad Bhãgavatam 1.1.2). Aunque los cuatro objetivos de la vida humana se consideran kaitava, o auto-engaño emergente de la ignorancia, el deseo de liberación es la oscuridad más profunda de todas, porque puede erradicar completamente todos los créditos que uno gane en el sendero de la devoción.
+</p>
+<p class='vspace'>Sridhara Svãmi, considerado por los Vaisnavas como el preservador primordial de la devoción por su comentario del Srimad Bhãgavatam, explica la palabra projjhita-kaitava de la siguiente manera: “El prefijo pra indica que el deseo de liberación se rechaza por completo”. (pra-sabdena moksãbhisandhir api nirasta iti - Caitanya Caritãmrta 1.1.93)
+</p>
+<p class='vspace'>Sobre este fundamento, la pureza de la devoción se mide por la dimensión de la libertad del deseo de gratificación de los sentidos y liberación, o los cuatro objetivos de la vida, la religiosidad, los logros materiales, el disfrute de los sentidos y la salvación. En otra parte, Krishnadãsa Kavirãja Gosvãmi habla de todas las acciones auspiciosas e inauspiciosas (subhãsubha-karma) considerando a la oscuridad de la ignorancia lo que interfiere con el logro del bhakti (Caitanya Caritãmrta 1.1.94). Así pues, las palabras de este verso introductorio del Bhãgavata nos llevan a la definición de devoción pura dada por Rupa Gosvãmi, esto es, libre de todo otro deseo (anyãbhilãsita-sunyam) excepto el placer del Señor.
+</p>
+<p class='vspace'>La misericordia sin causa de Gaura-Nitãi resulta en la destrucción de este ignorante auto-engaño y permite que el conocimiento de la devoción pura asome como el Sol en la oscuridad.
+</p>
+<p class='vspace'>Rupa Gosvãmi compara asimismo los deseos de gratificación de los sentidos y la liberación con una bruja:
+</p>
+<div class='vspace'></div><pre> bhukti-mukti-sprhã yãvat
+ pisãci hrdi vartate
+ tãvad bhakti-sukhãmbodheh
+ katham abhyudayo bhavet
+</pre><p class='vspace'>“ ¿Cómo es posible que el océano de felicidad devocional aparezca en el corazón en tanto las brujas del disfrute sensual y la liberación estén allí presentes?”
+(Bhakti-rasãmrta-sindhu 1.2.22, Caitanya Caritãmrta 2.19.176)
+</p>
+<p class='vspace'>Pero así como esos deseos interfieren con el desarrollo de la devoción pura, el servicio devocional es el único medio por el cual pueden ser destruidos. El fundamento de todo deseo pecaminoso es la ignorancia o el rechazo de Krishna. La semilla de todo pecado, o sea, la tendencia a pecar, está presente en esta ignorancia. De ahí que la tendencia a pecar sea inevitable. La palabra klesa se utiliza para aludir a la ignorancia, el pecado y la semilla del pecado (klesas tu pãpam tad-bijam avidyã ceti te tridhã). Solo el proceso del servicio devocional que consiste en oír y cantar como lo brinda el maestro espiritual, puede destruir esos klesas.
+</p>
+<div class='vspace'></div><pre> klesaghni subhadã moksa-
+ laghutã-krt sudurlabhã
+ sãndrãnanda-visesãtmã
+ sri-krsnãkarsini ca sã
+</pre><p class='vspace'>“Las seis características del bhakti son (1) destruye todos los klesas; (2) dispensa todo lo auspicioso; (3) torna insignificante la liberación; (4) es muy raro; (5) contiene en su esencia una bendición especialmente intensa; (6) es capaz de atraer a Krishna”. (Bhakti-rasãmrta-sindhu 1.1.18)
+</p>
+<p class='vspace'><strong>EL SERVICIO DEVOCIONAL PURIFICA LOS DESEOS</strong>
+</p>
+<p class='vspace'>El rey de los elefantes, Gajendra, que abandonó toda esperanza de salvar su vida y simplemente oró por la misericordia del Señor en medio de su aflicción, se considera un ejemplo de quien llega a la devoción en mérito al sufrimiento (ãrta). Saunaka y los risis se toman como ejemplo de quienes abandonan el deseo mundano de conocimiento, para volverse devotos (jijñãsu). En un determinado momento Dhruva Mahãrãja comprendió que su deseo de volverse un gran rey era una pérdida de tiempo y que el valor real (artha) de la vida es el paramãrtha de la vida espiritual. Entonces se convirtió en devoto. Y finalmente los cuatro Kumãras, Sukadeva y el Nava Yogindra, todos ellos se apartaron del sendero filosófico para buscar la devoción exclusiva al Señor. En cada uno de estos casos la piedad que conduce a la devoción (bhakty-unmukhi sukrti) les aportó su buena fortuna.
+</p>
+<p class='vspace'>La mala asociación tiene el efecto de despertar gradualmente los deseos de liberación, la gratificación de los sentidos o los poderes místicos en una persona. La asociación de los devotos, sin embargo, tiene el efecto contrario. Merced a su compañía, el individuo cultiva la inteligencia espiritual y la fe en el servicio devocional puro. Como resultado, se comprende la insignificancia de la liberación, la gratificación de los sentidos y el poder místico y se adopta la práctica del Bhakti yoga con gran intensidad.
+</p>
+<p class='vspace'>Esto fue declarado por Sukadeva cuando dijo que en todas las circunstancias de la vida, al margen de la motivación, el único deber de todo ser viviente es ocuparse en el servicio devocional puro e incausado. 
+</p>
+<div class='vspace'></div><pre> akãmah sarva-kãmo vã  
+ moksa-kãma udãra-dhih
+ tivrena bhakti-yogena
+ yajeta purusam param
+</pre><p class='vspace'>“La persona de inteligencia expansiva debe adorar a la Persona Suprema por el proceso de Bhakti-yoga intenso, ya se trate de un devoto puro sin ningún deseo personal, o alguien colmado de toda clase de deseos o uno que busque la liberación”. 
+(Srimad-Bhãgavatam 2.3.10)
+</p>
+<p class='vspace'>En su análisis de este verso, Krishnadãsa Kavirãja Gosvãmi analiza la palabra udãra-dhih (“de inteligencia expansiva”) como sigue: 
+</p>
+<div class='vspace'></div><pre> buddhimãn-arthe yadi vicãra-jña haya
+ nija-kãma lãgiha tabe krsnere bhajaya
+ bhakti binu kona sãdhana dite nãre phala
+ saba phala deya bhakti svatantra prabala
+ ajã-gala-stana-nyãya anya sãdhana
+ ataeva hari bhaje buddhimãm jana
+ udãra mahati jãñra sarvottamã buddhi
+ nãnã kãme bhaje tabu pãya bhakti-siddhi
+ bhakti-prabhãva sei kãma chãrãñã
+ krsna-pade bhakti karãya gune ãkarsiyã
+</pre><p class='vspace'>“El significado de la palabra “inteligente” es poseer un buen juicio. Es señal de buen criterio ocuparse en servicio devocional, aunque se tengan deseos de gratificación o liberación. Esto se debe a que ningún otro proceso puede conceder sus resultados prometidos a menos que esté complementado con el bhakti. El bhakti sin embargo es tan fuerte e independiente que puede conceder todos los resultados por sí mismo. Estas otras prácticas son incapaces de brindar resultados. Sabiéndolo, la persona inteligente adora exclusivamente a Krishna. Quien posea esa clase de inteligencia amplia, honda y superior, sirve al Señor aún teniendo algún motivo, con el resultado de que eventualmente alcanza la perfección de la devoción. El poder de la devoción es tal que hace que uno abandone todos los deseos materiales y, atrayéndonos a las cualidades trascendentales del Señor, dispensa toda la devoción a los pies de Krishna”.
+(Caitanya Caritãmrta 2.24.91-95)
+</p>
+<p class='vspace'>Visvanãtha Cakravarti interpreta la palabra tivrena (“intensamente”) como significando que el devoto debe ocuparse en el servicio amoroso trascendental sin mezcla alguna de prácticas de karma o jñãna. (Ver también comentario sobre Srimad Bhãgavatam 5.19.26)
+</p>
+<p class='vspace'>El poder de incluso los actos devocionales elementales es tal que uno puede ser liberado por ellos.
+</p>
+<div class='vspace'></div><pre> krsna tomãra hana jadi bale eka-bãra
+ mãyã-bandha haite krsna tãre kare pãra
+</pre><p class='vspace'>“Si alguien dice tan solo una vez, ‘Krishna, yo soy Tuyo’, luego Krishna lo libera del cautiverio de la energía ilusoria”. 
+(Caitanya Caritãmrta 2.22.33)
+</p>
+<p class='vspace'>El Señor Rãmacandra Mismo lo aseguró al referir a Sugriva Su encuentro con Vibhusana:
+</p>
+<div class='vspace'></div><pre> sakrd eva prapanno yas
+ tavãsmiti ca yãcate
+ abhayam sarvadã tasmai
+ dadãmy etad vratam mama
+</pre><p class='vspace'>“Es Mi promesa que si alguien se rinde ciertamente a Mí y dice tan solo una vez: ‘Yo soy Tuyo’, solicitando la liberación del temor, luego lo libro del temor para toda la eternidad”.
+</p>
+<p class='vspace'>El bhakti transforma al devoto, aunque la motivación del servicio personal esté basada en otra clase de deseos, pues los actos externos de la devoción atraen la misericordia de Krishna. El Señor es tan misericordioso que limpia rápidamente el corazón de tal adorador, librándolo de los deseos de gratificación de los sentidos y liberación. Incluso llega a concederle amor por Dios, aunque éste no haya sido el motivo original de su ejecución de práctica devocional.  Srila Krsnadãsa Kavirãja Gosvãmi ha escrito asimismo:
+</p>
+<div class='vspace'></div><pre> bhukti-mukti-siddhi-kãmi subuddhi jadi haya
+ gãdha-bhakti-yoge tabe krsnere bhajaya
+ anya-kãmi jadi kare krsnera bhajana
+ nã mãgiteha krsna tãre dena sva-carana
+ krsna kahe ãmã bhaje mãge visaya-sukha
+ amrta chãri visa mãge ei bara murkha
+ ãmi vijña ei murkhe visaya kene diba
+ sva-caranãmrta diyã visaya kene diba
+ sva-caranãmrta diyã visaya bhulãiba
+ kãma lãgi krsne bhaje pãya krsna-rase
+ kãma chãri dãsa haite haya abhilãse
+</pre><p class='vspace'>“Debido a la mala asociación, la entidad viviente desea la felicidad material, la liberación (fundirse en el aspecto impersonal del Señor) o se ocupa en el yoga místico para tener poder material. Si tal persona se vuelve en verdad inteligente, adopta la conciencia de Krishna ocupándose en intenso servicio devocional al Señor Sri Krishna. Si alguien se ocupa en el servicio devocional a la vez que cobija deseos egoístas, el Señor de todos modos le brinda amparo a Sus pies de loto, aunque no se Le pida. El Señor se dice a Sí Mismo: ‘Esta persona necia Me está adorando y a la vez busca la gratificación material de los sentidos. Está descartando el néctar divino para beber veneno. Yo soy lo bastante sabio como para no dar el veneno de la gratificación de los sentidos a este necio. En vez de ello, le daré la ambrosía de Mis pies de loto y le haré olvidar esos placeres sensuales inferiores’. Los que adoran a Krishna con algún otro objetivo, de todos modos obtienen un gusto de las alegrías del servicio devocional. Así pues, ellos dejan de lado sus deseos y comienzan a anhelar solo volverse Sus sirvientes”.
+(Caitanya Caritãmrta 2.22.37-41)
+</p>
+<p class='vspace'>La serie de versos antes mencionada del Caitanya Caritãmrta ha sido comentada por Srila Bhaktivinoda Thãkura en su Amrta-pravãha bhãsya, como sigue: “Como resultado del mal carácter y la mala asociación, la entidad viviente cultiva deseos de disfrute sensual, liberación o poderes místicos. Si eventualmente entra en contacto con un devoto puro, aún es posible cultivar la inteligencia esclarecida para abandonar todo deseo por dichas cosas. Quienes desean placeres sensuales, la salvación o los poderes místicos, están desprovistos de todo deseo por la devoción pura. No obstante, si por alguna buena fortuna llegan a ocuparse en las prácticas de la devoción pura, luego Krishna es tan misericordioso con ellos que dispensará prema sobre ellos, aunque no haya sido ese su objetivo.
+</p>
+<p class='vspace'>“Krishna se dice a Sí Mismo: ‘Esta persona estaba buscando algo más, pero de todos modos se ha ocupado en Mi servicio; sin embargo, una naturaleza inferior continúa infectando su corazón. Ella ha abandonado la copa nectárea del prema para beber un cáliz de veneno, lo que demuestra su insensatez. Esta incapacidad para orar por el néctar de la inmortalidad es un signo de ignorancia. Aún así, Yo soy tanto sabio como experimentado, Yo sé lo que se necesita para la perfección de la vida, de modo que le daré un gusto del néctar de Mis pies de loto. Este éxtasis causa que se olvide para siempre el gusto amargo de los placeres materiales”.
+</p>
+<p class='vspace'>En tal sentido, los semidioses cantan el siguiente verso en el Bhãgavatam sobre la naturaleza de la misericordia del Señor:
+</p>
+<div class='vspace'></div><pre> satyam disaty arthitam arthito nrnãm
+ naivãrthado yat punar artithã yatah
+ svayam vidhatte bhajatãm anicchatãm
+ icchã-pidhãnam nija-pãda-pallavam
+</pre><p class='vspace'>“Es verdad que el Señor Krishna cumple el deseo personal toda vez que alguien Le pide que lo haga. Sin embargo, El no concede nada que, una vez recibido, será solicitado una y otra vez. Aunque estos adoradores no evidencien deseo por Sus pies de loto, el Señor dispensa personalmente esta bendición sobre ellos, por lo que olvidan todos sus deseos materiales transitorios”.
+(Srimad-Bhãgavatam 5.19.27) 
+</p>
+<div class='vspace'></div><pre> kãma lãgi krsne bhaje pãya krsna-rase
+ kãma chãri dãsa haite haya abhilãse
+</pre><p class='vspace'>“Quien se ocupa en el servicio devocional del Señor Krishna por una motivación egoísta, adquiere en vez de ello un gusto por servir a Krishna. Como resultado, uno abandona sus deseos materiales y añora ser el sirviente eterno del Señor”.
+(Caitanya Caritãmrta 2.22.51)
+</p>
+<p class='vspace'>De acuerdo a Bhaktivinoda Thãkura, “Si alguien tiene la buena fortuna de entrar en asociación de los devotos y adoptar el servicio devocional a Krishna como medio de alcanzar algún propósito mundano egoísta, estos objetivos pronto son revelados como de escaso valor, como resultado del gusto superior obtenido del bhakti. La adoración de Krishna es tan pura y santa que cualquiera que entre en contacto con ella, pronto rechaza sus otros deseos y anhela volverse un sirviente del Señor”.    (Amrta-pravãha-bhãsya)
+</p>
+<p class='vspace'>Este poder del bhakti de hacernos olvidar los deseos materiales, fue demostrado por el gran niño devoto Dhruva, quien rehusó el don que el Señor Supremo le ofrecía, diciendo:
+</p>
+<div class='vspace'></div><pre> sthãnãbhilãsi tapasi sthito ‘ham
+ tvãm prãptavan deva-munindra-guhyam
+ kãcam vicinvann api divya-ratnam
+ svãmin krtãrtho smi varãm na yãce
+</pre><p class='vspace'>“Oh mi Señor, adopté la práctica de la penitencia y las austeridades por el deseo de ser un gran regente. Ahora que Te he alcanzado a Tí, que permaneces oculto incluso a los grandes semidioses, las personas santas y los reyes, me siento como quien ha estado buscando fragmentos de vidrio y en su lugar ha hallado una joya muy valiosa. Ahora me siento tan satisfecho que no me queda ninguna bendición por pedirte”.
+(Hari-bhakti-sudhodaya, 7.18; citado en el Caitanya Caritãmrta 2.22.42 y 2.24.219)
+</p>
+<p class='vspace'>Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura comenta en el Anubhãsya: “La asociación de los devotos puros, la misericordia de Krishna y la devoción por Krishna comparten la siguiente característica en común: libran a la persona de todo gusto por la asociación con los no devotos o por cualquier buena fortuna emergente de la energía ilusoria, así como de toda tendencia a adoptar los senderos del karma, jñãna y yoga”.
+(Caitanya Caritãmrta 2.24.104)
+</p>
+<p class='vspace'><strong>LA TRANSFORMACION DE LOS DESEOS DE CONOCIMIENTO Y LA LIBERACION</strong>
+</p>
+<p class='vspace'>Srila Visvanãtha Cakravarti Thãkura escribe en su comentario al Srimad-Bhãgavatam 1.1.4 que los videntes guiados por Saunaka estaban originalmente contaminados por el apego a las obras basadas en el deseo (sakãma-karma). Como resultado de oír la literatura Puránica de Romaharsana y reflexionar en sus contenidos, llegaron al nivel de desear el conocimiento (jijñãsu). Posteriormente, como resultado de la asociación con el santo Ugrasravã, aspiraron al gusto por la devoción. La idea de que originalmente se ocuparon en la actividad fruitiva la evidencian sus palabras a Suta Gosvãmi:
+</p>
+<div class='vspace'></div><pre> karmany asmina anãsvãse
+ dhuma-dhumrãtmanãm bhavãn
+ ãpãyayati govinda-
+ pãda-padmãsavam madhu
+</pre><p class='vspace'>“Nos ocupábamos en la ejecución del sacrificio, los frutos del cual son inciertos debido a las muchas imperfecciones en el ritual, hasta que nuestros cuerpos se ennegrecían con el humo.  Mas llegaste tú y nos reviviste al darnos a beber el néctar de la miel de los pies de loto de Govinda”.
+(Srimad-Bhãgavatam 1.18.12)
+</p>
+<p class='vspace'>Tras ingresar al sendero devocional, la curiosidad de los sabios fue una motivación menos dominante y su ejecución sacrificial era ejecutada con el propósito de ir a la morada de Hari, Vaikuntha.
+</p>
+<p class='vspace'>El orador del Bhãgavatam, Sukadeva Gosvãmi también dijo a Mahãrãja Pariksit que había estado firmemente fijo en la unión con el Brahman indiferenciado cuando el néctar del Krishna kathã atrajo su mente.
+</p>
+<div class='vspace'></div><pre> parinisthtito ‘pi nairgunya
+ uttama-sloka-lilayã
+ grhita-cetã rãjarse
+ ãkhyãnam yad adhitavãn
+</pre><p class='vspace'>“Oh Rey santo, aunque yo me hallaba ciertamente situado en la trascendencia, mi mente fue atraída a la fuerza por la narración de los pasatiempos del Señor, descrita con versos iluminados. Y así, asumí su estudio”.
+(Srimad-Bhãgavatam 2.1.9)
+</p>
+<p class='vspace'>En otra parte, Suta Gosvãmi declara lo mismo:
+</p>
+<div class='vspace'></div><pre> harer gunãksipta-matir
+ bhagavãn bãdarãyanih
+ adhyagãn mahad ãkhyãnam
+ nityam visnu-jana-priyah
+</pre><p class='vspace'>“El grandemente poderoso Sukadeva Gosvãmi, el hijo de Vyãsadeva, fue avasallado por la atracción a las cualidades de Hari. Así pues, asumió el estudio de esta gran narración del Srimad-Bhãgavatam y se hizo eternamente querido a los devotos de Visnu”.
+(Srimad-Bhãgavatam 1.7.11)
+</p>
+<p class='vspace'>En el Brahma-vaivarta Purana encontramos el siguiente relato. Mientras su hijo Sukadeva estaba absorto en samãdhi en medio de la selva, Vyasadeva halló una manera de hacerle oír algunos versos que había escrito glorificando al Señor. Estos versos eran tan poderosos que el samãdhi de Sukadeva fue interrumpido. Su dulzura atrajo de tal modo a Suka que se lamentó del tiempo que había perdido meditando en el Brahman y evidenció su desagrado diciendo, “’dhik’. Siendo omnisciente, él sabía que estos versos eran del Bhãgavatam y que su autor era su propio padre. Como resultado, de inmediato acudió a Vyãsa y le solicitó ser instruido en el Bhãgavatam. De esta forma, la diosa de la devoción conquistó al padre y al hijo, quienes habían tenido una experiencia directa del Brahman y en tal sentido tuvo al universo entero bajo su control.
+</p>
+<p class='vspace'>Los cuatro Kumãras eran sabios que tras haber tenido una realización directa del Brahman, se atrajeron por el servicio devocional.
+</p>
+<div class='vspace'></div><pre> tasyãravinda-nayanasya padãravinda
+ kiñjalka-misra-tulasi-makaranda-vãyuh
+ antar-gatah sva-vivarena cakãra tesãm
+ sanksobham aksara-jusãm api citta-tanvoh
+</pre><p class='vspace'>“Cuando la brisa que lleva el aroma de las hojas de tulasi de los dedos de los pies de loto del Señor de ojos de loto ingresó a las fosas nasales de esos sabios, sus cuerpos y mentes se perturbaron, pese a que estaban fijos en la conciencia del Brahman imperecedero”.
+(Srimad-Bhãgavatam 3.15.43)
+</p>
+<p class='vspace'>Los nueve grandes yoguis, los Nava Yogindras, eran también conocedores del Brahman que fueron atraidos por las cualidades del Señor Krishna y  seguidamente adoptaron su servicio.En el Bhakti-rasãmrta-sindhu se encuentra la referencia Escritural: 
+</p>
+<div class='vspace'></div><pre> aklesãm kamala-bhuvah pravisya gosthim
+ kurvantah sruti-sirasãm srutim srutajñãh
+ uttungam yadu-pura-sangamãya rangam
+ yogindrãh pulaka-bhrto navãpy avãpuh
+</pre><p class='vspace'>“Aunque esos nueve grandes maestros de yoga ya estaban libres de la aflicción y eran versados en el conocimiento Védico, llegaron a la asamblea del Señor Brahmã y oyeron el Gopãla-tãpani Upanisad, la porción más elevada del Veda. Cuando aprendieron sobre la supremacía de Krishna, se cubrieron de síntomas extáticos y desarrollaron gran entusiasmo por visitar la ciudad de Dvãraka del Señor Krishna”.
+(Bhakti-rasãmrta-sindhu 3.1.20, Caitanya Caritãmrta 2.22.140)
+</p>
+<p class='vspace'>Krishnadãsa Kavirãja Gosvãmi resume las anteriores descripciones de estos Brahma-jñãnis que posteriormente se atrajeron por la devoción a Krishna:
+</p>
+<div class='vspace'></div><pre> janma haite suka-sanakãdi brahma-maya
+ krsna-gunãkrsta haña krsnere bhajaya
+ samakãdyera krsna-krpãya saurabhe hare mana
+ gunãkrsta haña kare nirmala bhajana
+ vyãsa-krpãya sukadevera lilãdi-smarana
+ krsna-gunãkrsta haña karena bhajana
+ nava-yogisvara janma haite sãdhaka jñãni
+ vidhi-siva-nãrada-mukhe krsna-guna suni
+</pre><p class='vspace'>“Aunque Sukadeva Gosvãmi y los cuatro Kumãras estaban siempre absortos en el pensamiento del Brahman impersonal y eran en tal sentido considerados Brahmavãdis, de todos modos fueron atraidos por los pasatiempos y cualidades trascendentales de Krishna y comenzaron a adorarLo. Por misericordia de Krishna, las mentes de los cuatro Kumãras fueron atraidas por Su aroma. Atraidos por Sus cualidades, ellos adoptaron Su servicio devocional puro. Por misericordia de Vyãsa, Sukadeva comenzó a recordar los pasatiempos del Señor Krishna. Así atraido por las cualidades trascendentales de Krishna, él también se convirtió en devoto y se ocupó en Su servicio. Los nueve grandes místicos eran practicantes en el sendero del conocimiento desde su nacimiento. Sin embargo, se transformaron al oír las cualidades del Señor Krishna del Señor Brahmã, el Señor Siva y el gran sabio Nãrada”.
+(Caitanya Caritãmrta 2.24.115-118)
+</p>
+<div class='vspace'></div><pre> bhaktira svabhãva brahma haite hare akarsana
+ divya deha divyã karãya krsnera bhajana
+ bhakta-deha pãile haya gunera smarana
+ gunãkrsta haña kare nirmala bhajana
+</pre><p class='vspace'>“La naturaleza de la devoción es tal que aparta la mente de los gozos de la realización Brahman. Concede al devoto un cuerpo trascendental para poder ocuparsae en el servicio del Señor Krishna. Una vez que obtiene dicho cuerpo, el devoto medita en las cualidades trascendentales de Krishna. Después de ser atraído por esas cualidades, se ocupa en el servicio devocional puro”
+(Caitanya Caritãmrta 2.24.110-111)
+</p>
+<p class='vspace'>Todos estos ejemplos de almas liberadas atraidas por las cualidades del Señor, sustentan la declaración de Suta Gosvãmi, quien dijo a los sabios de Naimisãranya:
+</p>
+<div class='vspace'></div><pre> ãtmãrãmas ca munayo
+ nirgranthã apu urukrame
+ kurvanty ahaitukim bhaktim
+ ittham-bhuta-guno harih
+</pre><p class='vspace'>“Aunque libres de todos los lazos materiales, los diferentes tipos de ãtmãrãmas que se complacen en el ser, se ocupan en el servicio devocional sin causa del Señor de gloriosas hazañas. El Señor ciertamente posee cualidades trascendentales y por consiguiente puede atraer a todos, incluyendo a las almas liberadas”.
+(Srimad-Bhãgavatam 1.7.11)
+</p>
+<p class='vspace'>Hasta Sankarãcãrya escribe en su comentario al Nrsimha-tãpani Upanisad que las almas liberadas toman voluntariamente un cuerpo para poder adorar al Señor (muktã api lilayã vigraham krtvã bhagavantam bhajante). Esta característica del servicio devocional se denomina moksa-laghutã-krt, que significa que disminuye la atracción por la liberación.
+</p>
+<p class='vspace'><strong>LA DEVOCION EN DEFINITIVA HA DE SER EXCLUSIVA</strong>
+</p>
+<p class='vspace'>Atento al análisis precedente, la conclusión es clara:
+</p>
+<div class='vspace'></div><pre> ata eva mãyã-moha chãri buddhimãm
+ nitya-tattva krsna-bhakti karena sandhãna
+</pre><p class='vspace'>“Por consiguiente, la persona inteligente abandona su fascinación por este mundo material ilusorio y busca la verdad eterna de la devoción a Krishna”.
+</p>
+<p class='vspace'>El poder de la devoción para destruir el deseo, es aplicable a cualquiera de las cinco actividades devocionales principales:
+</p>
+<div class='vspace'></div><pre> sat-sanga krsna-sevã bhãgavata nãma
+ vraje vãsa ei pañca sãdhana pradhãna
+ ei-pañca-madhye eka svalpa yadi haya
+ subudhi janera haya krsna-premadaya
+ udãra mahati jãnra sarvottamã buddhi
+ nãnã kãme bhaje tabu pãya bhakti-siddhi
+ bhakti-prabhãva sei kãma chãrãnã
+ krsna-pade bhakti karãya gune ãkarsiyã
+</pre><p class='vspace'>“Los cinco aspectos más poderosos del servicio devocional son la asociación con los devotos, servir la forma deidad del Señor Krishna, oír el Srimad-Bhãgavatam, cantar los Santos Nombres y residir en el Vraja dhãma. Si las personas inteligentes entran incluso en un mínimo contacto con cualquiera de estos cinco tipos de práctica devocional, su amor latente por Krishna despierta. Quienes tienen esta clase de inteligencia amplia, profunda y superior, sirven al Señor aunque posean alguna motivación, con el resultado de que eventualmente logran la perfección de la devoción. El poder de la devoción es tal que hace que abandonemos todos los deseos materiales y dispensa devoción por los pies de Krishna, atrayéndonos hacia las cualidades trascendentales del Señor”.
+(Caitanya Caritãmrta 2.24.187-188, 190-192)
+</p>
+<p class='vspace'>Srila Krishnadãsa Kavirãja Gosvãmi también nombró estas cinco actividades devocionales principales en el capítulo veintidós del Caitanya Caritãmrta Madhya-lilã. Mas ahí menciona que sin la adhesión determinada y fiel a dichas prácticas, no cabe esperar que se manifieste el fruto del amor por Dios. Aquí también se brindan los síntomas de la inteligencia superior: “Habiendo abandonado la gratificación sensual burda y sutil, aquel que se dedica a la satisfacción de los sentidos de Krishna es verdaderamente inteligente”.  El verdadero amor por Krishna no connota absolutamente ningún deseo sensual egoísta. Si se ha arribado a esta comprensión, luego esa persona merece el título de udãra-dhi, como se menciona en el verso antes citado del Bhãgavatam, (Srimad-Bhãgavatam 2.3.10): “Ya sea que las personas deseen todo o nada, o deseen fundirse en la existencia del Señor, tales individuos son inteligentes si adoran solo al Señor Krishna, la Suprema Personalidad de Dios, prestando intensamente el servicio amoroso trascendental”.
+</p>
+<p class='vspace'>Sin esta clase de perspicacia, se confundirá la devoción pura con otras clases de devoción que están mezcladas o dominadas por la especulación filosófica o demás propósitos. La persona considerará a esas clases de ignorancia como sabiduría; al sectarismo como liberalidad y al final se desviará. En el mundo material la gente piensa que cualquier sendero espiritual es meramente tan bueno como cualquier otro, jata mata tata patha. De hecho, solo hay una vía para alcanzar la morada de Krishna, Goloka Vrindavana. Ese sendero es la disciplina del Bhakti yoga. Esto se evidencia tanto en el Bhagavad-gitã como en el Srimad-Bhãgavatam.
+</p>
+<p class='vspace'>Esta clase de exclusividad se describe asimismo en la glorificación del Bhagavad-gitã, Gitã-mãhãtmya:
+</p>
+<div class='vspace'></div><pre> ekam sãstram devaki-putra-gitam
+ eko deva devaki-putra eva
+ eko mantras tasya nãmãni yãni
+ karmãpy ekam tasya devasya-sevã
+</pre><p class='vspace'>“Solo hay una Escritura, la que ha sido cantada por el Hijo de Devaki<br />Solo hay un Dios - Aquel que es conocido como el Hijo de Devaki<br />Solo hay un himno a ser entonado - los nombres del Hijo de Devaki<br />Solo hay un deber - el servicio de este Dios supremo único”.
+</p>
+<p class='vspace'>El siguiente capítulo explora la forma de obtener la gran fortuna de acceder al servicio devocional y la manera en que se cultiva.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_02.html'>La Perfección en la Adoración</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_04.html'>El Comienzo del Servicio</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:21 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

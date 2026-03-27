@@ -1,0 +1,835 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Guía verde para cuidar nuestro planeta Tierra</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : Miscelaneos - RSS Feed'
+      href='index.php-n=Miscelaneos.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=Miscelaneos.Gu%c3%ada_verde_para_cuidar_nuestro_planeta_Tierra' method='get'><input type='hidden' name='n' value='Miscelaneos.Guía_verde_para_cuidar_nuestro_planeta_Tierra' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Guía verde para cuidar nuestro planeta Tierra"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=Miscelaneos.Gu%C3%ADa_verde_para_cuidar_nuestro_planeta_Tierra-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=Miscelaneos.Miscelaneos.html'>Miscelaneos</a></h5>
+<hr />
+<div class='vspace'></div><h1>Guía verde para cuidar nuestro planeta Tierra</h1>
+<p class='vspace'> <strong>¿ QUE ESTA SUCEDIENDO ?</strong>
+</p>
+<p class='vspace'>La Tierra está pasando por una situación crítica:  La Capa de Ozono, que nos protege de los rayos ultravioleta, tiene un enorme agujero sobre el Polo Sur que crece día a día.
+</p>
+<p class='vspace'>El Planeta se está recalentando…. es el llamado  Efecto Invernadero.
+</p>
+<p class='vspace'>Los Océanos se están contaminando.   Muchos Ríos y Lagos ya han muerto.
+</p>
+<p class='vspace'>La Fauna y Flora Silvestre están amenazadas y numerosas  especies ya se han extinguido.  
+</p>
+<p class='vspace'>Muchas tierras - otrora, fértiles valles - se están transformando en desiertos.
+</p>
+<p class='vspace'>Las ciudades crecen y crecen; mientras que la gente corre detrás del dinero: unos para sobrevivir y otros para consumir más y más…
+</p>
+<p class='vspace'>Nuestra presencia sobre la Tierra genera un severo impacto en el equilibrio ecológico, contribuyendo a su destrucción.  
+</p>
+<p class='vspace'>Siempre pensamos que sólo las autoridades o las grandes organizaciones ambientalistas deben solucionar estos problemas.  Pero pocas veces pensamos que todos y cada uno de nosotros podemos actuar para salvar nuestra Madre Tierra… 
+</p>
+<p class='vspace'>Las industrias que contaminan, lo seguirán haciendo; si continuamos comprando sus productos.  
+</p>
+<p class='vspace'>Los Océanos continuarán su agonía,  mientras sigamos echando desperdicios  y productos químicos por  los desagües.
+</p>
+<p class='vspace'>La Selva seguirá desapareciendo, si continuamos comprando maderas finas silvestres para amoblar y decorar nuestros hogares.
+</p>
+<p class='vspace'>El consumo excesivo, la búsqueda de comodidad y el despilfarro están agotando los recursos naturales.
+</p>
+<p class='vspace'>Si amamos la Vida y la Naturaleza: si amamos a los Delfines, las Ballenas, los Felinos, los Arboles y el aire puro… entonces tomemos conciencia de nuestros hábitos cotidianos tratando de cambiarlos.
+</p>
+<p class='vspace'>Hagamos la parte que nos corresponde… El resto hará la suya… 
+</p>
+<p class='vspace'>Esto requiere un poco de sacrificio y buena voluntad.
+</p>
+<p class='vspace'>Nuestros hijos y nietos nos agradecerán por dejarles un Mundo limpio y habitable.
+</p>
+<p class='vspace'><strong>¿ QUE PODEMOS HACER ?</strong>
+</p>
+<p class='vspace'><strong>1.- CUATRO  PRINCIPIOS DE UN CONSUMIDOR CONSCIENTE:</strong>
+</p>
+<p class='vspace'>A)<strong>EVITAR</strong>. Antes de comprar un producto, pensar si de verdad lo necesitamos.
+</p>
+<p class='vspace'>Los Supermercados están repletos de productos que NO son indispensables para la vida. 
+</p>
+<p class='vspace'>Por ejemplo: perfumadores de ambiente, adornos de plástico, "peluches", espumas de afeitar, tintes para cabello, "limpia-hornos", plantas artificiales, "accesorios"….
+</p>
+<p class='vspace'> Evitar aquellos productos que contienen muchas sustancias químicas.
+</p>
+<p class='vspace'> Evitar productos con demasiados envases o envolturas. 
+</p>
+<p class='vspace'>B)<strong>REDUCIR</strong>. A menor consumo, generamos menos basura y menos sustancias contaminantes. Además disminuirá el desgaste de los Recursos Naturales.
+</p>
+<p class='vspace'>  1 kilo de basura doméstica generó previamente: 5 kilos de basura industrial (durante la fabricación) y  20 kilos más, durante la extracción de la materia prima.
+</p>
+<p class='vspace'> Podemos reducir el consumo de  Agua, Electricidad, Gas, papel, envolturas plásticas, ropa, k-sets, CD's, juguetes, fotos, etc.
+</p>
+<p class='vspace'>C)<strong>RE-USAR</strong>.  Así evitamos consumir materiales nuevos.
+</p>
+<p class='vspace'> Papel: Hacer libretas de notas con la cara en blanco, hacer sobres, forrar libros.
+</p>
+<p class='vspace'> Vidrio: Frascos para guardar agua, condimentos o granos. Cortar las botellas y hacer vasos.
+</p>
+<p class='vspace'> Restos de alimentos y cáscaras: Fabricar Abono vegetal ("Compost"); alimento para animales.
+</p>
+<p class='vspace'> Plásticos: Re-usar las bolsas. Las botellas sirven para llevar agua. Los frascos para guardar clavos.
+</p>
+<p class='vspace'> Ropa vieja: Cortar para hacer, trapeadores, estropajos o franelas.
+</p>
+<p class='vspace'>D) <strong>CLASIFICAR</strong> los desperdicios para su posterior RECICLAJE.
+</p>
+<p class='vspace'> Exigir a las Autoridades el recojo selectivo de la basura y su Reciclaje.                                                                                                                                                          
+</p>
+<p class='vspace'><strong>2.- ECOLOGIA EN EL BAÑO.</strong>   Reducir el consumo de artículos de aseo.
+</p>
+<p class='vspace'> Para bañarte: usa poco jabón y frótate el cuerpo con un paño de algodón o esponja vegetal. Así la piel queda más suave y evitarás usar cremas hidratantes. El exceso de jabón podría generar dermatitis. Enjabona diariamente sólo las partes "estratégicas".
+</p>
+<p class='vspace'> El shampú diluído en agua hace más espuma y no reseca el cabello. Así  ahorrarás shampú y evitarás usar "acondicionadores".  Lava la cabeza en pocos segundos y enjuaga velozmente.
+</p>
+<p class='vspace'> El jugo de Limón limpia, elimina el mal olor y suaviza el cabello. Prueba con Romero, Sábila o Boliche.
+</p>
+<p class='vspace'> Para los dientes: sólo necesitas  3 a 4 milímetros de crema dental. También puedes lavarte con carbón en polvo; Clavo o Canela en polvo.  La Sangre de Grado o Drago  previene las caries y fortalece las encías, además hace espuma.  Experimenta uno o dos días por semana  con estas alternativas.
+</p>
+<p class='vspace'> Papel higiénico: Úsalo cortando de 2 en 2 cuadrados (25 cm. c / vez ). No eches el  papel usado en el inodoro ("water") ya que contamina el Océano y podría atorar los desagües. Mantén siempre una papelera para echar los residuos sólidos. Coloca un letrero que señale dónde echar los papeles.
+</p>
+<p class='vspace'> Así ahorraremos toneladas de recursos y contaminaremos menos la Tierra.   
+</p>
+<p class='vspace'><strong>3.- LOS PLASTICOS DE CADA DIA.</strong>  Son económicos, livianos, transparentes  y "hacen más práctica la vida". Sin embargo están creando serios problemas al ambiente. Cada año se consumen en el mundo 100 millones de toneladas, de las cuales el 75 % se convierten en basura luego de su uso.   
+</p>
+<p class='vspace'>NO son biodegradables.  El  92  %  NO es reciclable.  La Industria del Plástico utiliza 5 de los 6 productos químicos más peligrosos y contaminantes (de una lista de 20 según EPA). 
+</p>
+<p class='vspace'>Contienen elementos tóxicos tales como Cloro, Cadmio y Plomo. La fabricación de plástico y su incineración liberan a la atmósfera sustancias cancerígenas llamadas Dioxinas.
+</p>
+<p class='vspace'>Aquí los plásticos más comunes y sus usos:
+</p>
+<p class='vspace'> Polietileno Tereftalato (PET): Botellas de gaseosa o aceite. Reciclaje Viable.
+</p>
+<p class='vspace'> Polietileno de Alta Densidad (PEAD): Frascos, baldes y bateas, botellas de leche, bolsas. Reciclaje Viable.
+</p>
+<p class='vspace'> Poli Cloruro de Vinilo  (PVC) :   Juguetes,  chupones,  cinta adhesiva,  "stickers", forros para libros, botellas de desinfectantes, micas, tuberías. Es el más contaminante. NO Reciclable.
+</p>
+<p class='vspace'> Polietileno de Baja Densidad (PEBD): Láminas delgadas. NO Reciclable.
+</p>
+<p class='vspace'> Polipropileno (PP): Recipientes para comida ("tapers"), vasitos descartables, biberones, tapas, etiquetas, alfombras. Cajas "Six pack" NO Reciclable.
+</p>
+<p class='vspace'> Poliestireno (PS): Corcho blanco o "tecnopor": vasos y bandejas de espuma, cajas térmicas, cajas para "pollo a la brasa", hueveras. Este plástico  <strong>destruye el Ozono</strong>. NO Reciclable.
+</p>
+<p class='vspace'> OTROS:     	
+</p>
+<p class='vspace'>Acrílicos: Cepillos Dentales, llaveros, adornos. NO Reciclables.
+</p>
+<p class='vspace'>Poliuretano: Termos, aislantes térmicos.  NO Reciclable.
+</p>
+<p class='vspace'>Laminados: Empaques combinados de polietileno, aluminio y cartón. Cajas de  vino, jugos y leche esterilizados ("larga vida"). NO Reciclables.
+</p>
+<p class='vspace'> ¿Sábes cuántos kilos de plástico consumes cada año? 
+</p>
+<p class='vspace'>4.- <strong>LOS DESCARTABLES</strong>:  <strong>BASURA RAPIDA</strong>.  Los productos o envases descartables tienen poca vida útil y rápidamente se transforman en basura. Evita usarlos.
+</p>
+<p class='vspace'>Los Descartables más usados y sus Alternativas son:
+</p>
+<p class='vspace'> Evitar las botellas de plástico "No Retornable"	y prefererir las botellas de Vidrio (retornables).
+</p>
+<p class='vspace'> Evitar las latas de gaseosas o cerveza y preferir las botellas de Vidrio.
+</p>
+<p class='vspace'> Evitar las servilletas de papel y preferir las servilletas de Tela.
+</p>
+<p class='vspace'> Evitar las bolsas de plástico y preferir las bolsas de Tela (para comprar pan, frutas…). Canastas.
+</p>
+<p class='vspace'> Evitar los vasos, platos, cubiertos…de plástico y preferir los platos de losa, vasos de vidrio. Hojas de plátano o choclo.  
+</p>
+<p class='vspace'> Evitar las "Toallas húmedas" o papel higiénico y preferir los pañuelos de Tela.
+</p>
+<p class='vspace'> Evitar los pañales desechables y preferir los pañales de Algodón lavables.
+</p>
+<p class='vspace'> Evitar los rollos de "papel -toalla"	y preferir las toallas y secadores de tela.
+</p>
+<p class='vspace'> Evitar los lapiceros y plumones desechables y preferir los lapiceros recargables. Usar lápiz.
+</p>
+<p class='vspace'> Evitar los encendedores descartables y preferir los encendores recargables. 
+</p>
+<p class='vspace'> Evitar los paños absorbentes	y preferir lo estropajos o trapeadores de ropa vieja.
+</p>
+<p class='vspace'> Evitar las "Bolsas para basura" y preferir las bolsas usadas o periódicos engrapados.
+</p>
+<p class='vspace'>Sabías que una simple bolsa de plástico: puede matar un Delfín? …
+</p>
+<p class='vspace'>5.- <strong>PRODUCTOS QUIMICOS EN CASA:</strong>  Existen alrededor de 70,000 productos químicos y cada año se consumen en el mundo 400 millones de Toneladas. Contaminan el agua, el aire y la tierra.
+</p>
+<p class='vspace'>Sólo por nombrar algunos tenemos:
+</p>
+<p class='vspace'>Insecticidas, Tíner, Desinfectantes, Bencina, Productos de Limpieza, Aguarrás, Aerosoles ("sprays"), Acido muriático, Pinturas, Soda cáustica, Esmaltes, Perfumadores de ambiente, Barnices, Aceites lubricantes, Naftalina, Ron de quemar, Preservantes de Madera, Kerosene, Tintes, Masillas epoxicas, Pegamentos, "Perfumadores" de urinario…
+</p>
+<p class='vspace'>El uso de estos productos podría generar: alergias, gastritis, afecciones nerviosas, daños al hígado y riñones, intoxicaciones, falta de memoria, depresión, etc.
+</p>
+<p class='vspace'> <strong>Evitar</strong> el uso de productos químicos o reducir al mínimo su consumo.
+</p>
+<p class='vspace'> Perfumar el ambiente con Incienso; hojas de Romero, Eucalipto, Salvia o resina de Copal.
+</p>
+<p class='vspace'> Pintar las paredes con arcillas de colores + cal.  Lavarlas con agua y jabón.   
+</p>
+<p class='vspace'> Si se requiere usar algún solvente: preferir el Alcohol Etílico.
+</p>
+<p class='vspace'> Combatir las polillas colocando Clavos de Olor o Pimienta entre los libros o ropa.
+</p>
+<p class='vspace'> Compartir con vecinos y familiares, productos a medio usar. 
+</p>
+<p class='vspace'><strong>6.- PELIGRO: INSECTICIDAS !!!</strong>
+</p>
+<p class='vspace'>Estas son las sustancias <strong>más peligrosas</strong> con las cuales convive el Ser Humano. Muchas de ellas ya han sido prohibidas a nivel mundial, pero aún se siguen vendiendo. 
+Cada año se consumen en el mundo: <strong>500 Millones de Toneladas !</strong>
+</p>
+<p class='vspace'>Sus efectos sobre la salud humana son los siguientes:
+</p><pre>	 <strong>Esterilidad</strong> masculina
+	 Daños al Sistema Nervioso
+	 Alteraciones de la Ovulación y Fecundación
+	 Muerte del Feto.   Abortos
+	 <strong>Malformaciones</strong> y Taras en recien nacidos
+	 Debilitamiento del Sistema Inmunológico
+	 Diversos tipos de <strong>Cáncer</strong> (mamas, útero, ganglios)
+	 Intoxicaciones.  Muerte.
+</pre><p class='vspace'>Los insecticidas se absorben a través de la piel y la respiración, acumulándose en las grasas y el hígado. Pasan a través de la cadena trófica. Contaminan suelos, aguas y aire; dañando los ecosistemas y su flora y fauna. Su "Efecto Residual" persiste en la atmósfera durante décadas…
+<strong>Se los ha encontrado en la Leche Materna !!</strong>
+Se los encuentra en diversas presentaciones: spray, líquido, polvo, espiral, emanador eléctrico, veneno para ratas (cebo), tiza china, pulguicidas, jabones anti-sarna, etc.
+</p>
+<p class='vspace'>Recomendaciones contra las plagas más comunes:
+</p>
+<p class='vspace'> Cucarachas: Limpiar los rincones con agua jabonosa + vinagre. Sahumar con yerbas aromáticas. Colocar dientes de Ajo o Laurel. Mantener cerrados los desagües. 
+</p>
+<p class='vspace'> Hormigas: No dejar restos de alimentos. Tapar sus escondites con cemento.
+</p>
+<p class='vspace'> Moscas: Mantener limpia toda la casa. Cubrir los alimentos.
+</p>
+<p class='vspace'> Mosquitos (zancudos): Sahumar con yerbas aromáticas.          Colocar mallas en las ventanas.  Usar mosquitero.
+</p>
+<p class='vspace'> Ratones: Tarrajear los huecos por donde entran.
+</p>
+<p class='vspace'> Sarna: Bañarse con Jabón de Azufre.
+</p>
+<p class='vspace'> Piojos: Triturar hojas de Ruda con alcohol. Aplicar en la cabeza. Cubrir durante 1 hora. 	
+</p>
+<p class='vspace'> Pulgas (en los perros): Luego de bañarlo, frotarle cáscaras de cítricos.  Darle ajo en las comidas. Los pulguicidas causan  tumores  y dañan el hígado de los perros.
+</p>
+<p class='vspace'><strong>7.- DETERGENTES  (En Polvo, Líquido y Cremas lava-vajilla)</strong>
+</p>
+<p class='vspace'>Estos productos son un factor importante en la contaminación de las aguas, al generar eutroficación y consumir el oxígeno disuelto en el agua.  Contienen más de 10 ingredientes químicos NO Biodegradables. En el Ser Humano: causan alergias y problemas respiratorios. Su uso frecuente endurece las articulaciones, pudiendo generar algún tipo de <strong>Artritis</strong>.  Contribuyen a la formación de los "Estrógenos artificiales" causantes del Cáncer de mama  y  la disminución de los Espermatozoides en varones.
+</p>
+<p class='vspace'>  Evita usar Detergentes o disminuye su consumo.  No es necesaria tanta espuma.
+</p>
+<p class='vspace'> Aquí, algunas alternativas:
+</p>
+<p class='vspace'> Para lavar la ropa a mano: utiliza jabón en barra.
+</p>
+<p class='vspace'> En máquina lavadora: introducir la ropa previamente enjabonada. Luego del lavado, agregar jugo de limón en el último enjuague  El Limón elimina olores, blanquea y suaviza la ropa.
+</p>
+<p class='vspace'> Para lavar los platos: usa jabón + limón + "pulitón" (ceniza de la cáscara del arroz). Si la vajilla no tiene grasa (té, jugos, ensaladas) , solo lavar con agua.
+</p>
+<p class='vspace'> Para lavar el baño: usa  jabón + "pulitón" 
+</p>
+<p class='vspace'>8.- <strong>PILAS</strong>: Contienen elementos alt<strong>amente tóxicos y contaminantes</strong> llamados metales pesados: Mercurio, Zinc y Litio (pilas "botón" de relojes y calculadoras) ; Cadmio y Níquel (pilas recargables y baterías de teléfonos celulares) ; Manganeso y Zinc (pilas alcalinas).   Estos elementos contaminan las aguas y el suelo; pasan a través de la cadena trófica y se acumulan en el organismo humano.
+</p>
+<p class='vspace'> Reduce el consumo de pilas. Evita usar equipos o juguetes a pilas.
+</p>
+<p class='vspace'> Usa relojes a cuerda, automáticos o solares.
+</p>
+<p class='vspace'> Busca pilas recargables (más el equipo recargador). A pesar de contener Cadmio, pueden ser usadas hasta 2,000 veces.
+</p>
+<p class='vspace'> Existen calculadoras solares, radios a cuerda y linternas mecánicas. 
+</p>
+<p class='vspace'> Nunca arrojes las pilas a la basura ya que podrían contaminar las aguas subterráneas. Tampoco las eches al desagüe, Río, lago o Mar.
+</p>
+<p class='vspace'> Guarda las pilas usadas en un lugar seco. Estas deben ser recicladas o enterradas en bloques de   cemento. 
+</p>
+<p class='vspace'> Puedes fabricar una linterna con una lata + una vela ("Lato-Vela").   Perfora un costado de la lata para introducir la vela. Haz perforaciones en la base. Échala y sujétala con un alambre.
+</p>
+<p class='vspace'>9.- <strong>MARKETING</strong>: No confíes en toda la publicidad de los productos comerciales. Algunos fabricantes,  con tal de vender, ocultan la verdad o crean frases atractivas al cliente. 
+</p>
+<p class='vspace'>Por ejemplo: "insecticida ecológico", "detergente ecológico", "protege la capa de ozono" ,  "100% natural" ,  "dietético" ,  "no tóxico" ,  "preservantes naturales" ,  "aprobado por la sociedad…" ,  "No - CFC"  …
+</p>
+<p class='vspace'> Utiliza tu buen criterio y elije los artículos más naturales y sanos.
+</p>
+<p class='vspace'> Algunos alimentos pierden su pureza al estar en contacto con el envase durante muchos meses.    
+</p>
+<p class='vspace'>Ejemplos:  Agua mineral en botella plástica ;  Frutas o Verduras en lata.
+</p>
+<p class='vspace'><strong>10.- LA BELLEZA NATURAL ES MEJOR.</strong>
+</p>
+<p class='vspace'>Existen alrededor de 3400 tipos de productos de belleza. Muchos de ellos afectan la salud humana ya que se absorben a través de la piel.    Se acumulan en el tejido adiposo e intoxican el hígado. Pueden generar alergias o afectar la memoria.
+</p>
+<p class='vspace'>Muchos cosméticos son prohibidos durante el embarazo ya que afectan la formación del Sistema Nervioso del Feto. Luego de la ducha o el aseo se van por el desagüe contaminando nuestros ríos y océanos.
+</p>
+<p class='vspace'>  Sólo por nombrar algunos tenemos:
+</p>
+<p class='vspace'>Desodorantes, Esmalte de uñas, Anti transpirantes, Quita esmalte (acetona), Acondicionadores, Lápiz labial, Gel / fijador para cabello, Cremas de belleza, Colonias / perfumes, Rímel, Talcos, Maquillajes, Enjuague bucal,Polvos faciales, Loción capilar,Loción astringente, Espuma de afeitar, Líquidos para ondulación, Jabón antibacteriano, o laceado del cabello, Crema antimicótica, Mascarillas faciales, Bronceador, Gránulos exfoliantes, Bloqueador solar, Cremas reductoras, Tintes para el cabello, Cremas depiladoras, Lacas, Aceite mineral…	
+</p>
+<p class='vspace'>  Los Anti-transpirantes impiden la sudoración natural. Podrían generar cáncer de mama.
+</p>
+<p class='vspace'>  Los jabones anti-bacterianos eliminan la flora natural de la piel y la debilitan.
+</p>
+<p class='vspace'> Los Tintes para el Cabello contienen entre 25 y 50 compuestos químicos que contaminan nuestros Océanos. Su uso puede alterar el Sistema Nervioso y causar cáncer de vejiga.  Acepta el color natural de tu cabello. No te avergüences de tener canas.  Las Canas son símbolo de sabiduría y experiencia.
+</p>
+<p class='vspace'> Sugerencias: Reducir al mínimo el uso de productos de belleza
+</p>
+<p class='vspace'> Para la Piel seca: usar Aceites vegetales de Oliva, Almendra, etc.
+</p>
+<p class='vspace'> Para el mal olor de las Axilas: frotarse Limón y dejar secar. Estos humores pueden evitarse al reducir el consumo de: grasas, carnes rojas, embutidos, frituras,  condimentos, alimentos procesados.
+</p>
+<p class='vspace'> Contra el sudor:  el mejor talco es el almidón de Maíz (maicena) o de Papa (chuño).
+</p>
+<p class='vspace'> Para refrescar el aliento: masticar hojas de Menta, cáscaras de Naranja o Mandarina, Canela o Clavo.
+</p>
+<p class='vspace'> Para protegerse del Sol y Broncearse: usar Aceite de Coco. Evitar el Sol de Verano de 11 am a 3 pm.
+</p>
+<p class='vspace'> Contra los hongos: Mezclar Azufre en polvo con aceite o crema.
+</p>
+<p class='vspace'><strong>11.- SALVEMOS LA CAPA DE OZONO:</strong>
+</p>
+<p class='vspace'>El Ozono es un gas formado por tres átomos de Oxígeno (O3). Se distribuye en la atmósfera a una altura entre los 20 y 40 kilómetros de la Tierra.  Esta Capa nos protege de los Rayos Ultra Violeta, los cuales destruyen el Sistema Inmunológico humano y generan Cáncer a la piel y Cataratas. Además los Rayos UV destruyen el Fitoplankton: base de la Vida en los Océanos.
+</p>
+<p class='vspace'>En pocas décadas, la industria moderna y sus emisiones contaminantes, han ido destruyendo la Capa de Ozono. Las causantes son sustancias derivadas del Cloro, Fluor y Bromo : Cloro-Fluor-Carbonos (CFC), Hidro-Cloro-Fluor-Carbonos (HCFC), Hidro-Fluor-Carbonos (HFC). Utilizadas en Sistemas de Refrigeración y Aire acondicionado,  Aerosoles, Espumas plásticas, Disolventes, Bromuros, Halones (Extinguidores).
+</p>
+<p class='vspace'> Los CFC son moléculas muy estables y pueden durar hasta 150 años en la atmósfera.
+</p>
+<p class='vspace'> Una sola molécula de Cloro puede destruír hasta 100,000 moléculas de Ozono.
+</p>
+<p class='vspace'> Los HCFC y HFC, sustitutos de los CFC (en aire acondicionados y espumas), también destruyen rápidamente el Ozono. En laboratorio: estos gases producen tumores en ratas.
+</p>
+<p class='vspace'>  <strong>La Capa de Ozono tiene un enorme agujero sobre el Polo Sur</strong>. Hasta 1995 su tamaño era de 10 millones de kilómetros cuadrados. Actualmente supera los 27 millones de km 2  (casi 3 veces Europa).
+</p>
+<p class='vspace'><strong>Recomendaciones</strong>:
+</p>
+<p class='vspace'> No uses Aerosoles o Sprays: espumas de afeitar, desodorantes, pinturas, lacas, insecticidas, etc.
+</p>
+<p class='vspace'> No usar Poliestireno expandido ("tecnopor"). Contienen CFC o sustitutos. (Ver punto 3)
+</p>
+<p class='vspace'> CUIDADO. Cuando dice: "no daña la capa de ozono", significa que no contiene CFC, pero puede contener algún sustituto  igualmente destructivo:  HCFC  o  HFC.
+</p>
+<p class='vspace'> Cuida tu refrigeradora: no perfores las tuberías del refrigerante (Freón 12). Buscar en el mercado refrigeradoras "verdes" (utilizan como refrigerante: Agua,  Aire, Amoníaco, CO2  o  Hidro-Carbonos).
+</p>
+<p class='vspace'> No usar ollas o sartenes revestidas con Teflon (Poli-tetra-fluor-etileno)
+</p>
+<p class='vspace'> Evitar usar  Inhaladores contra el Asma. Buscar medicina natural.
+</p>
+<p class='vspace'> Evitar usar Cloro y sus derivados; así como productos de limpieza industrial.
+</p>
+<p class='vspace'> Si se requiere un Extintor contra Incendios: verificar que no contenga Halones.
+</p>
+<p class='vspace'> No lavar la ropa "al seco" (utilizan Solventes Organo-Clorados).
+</p>
+<p class='vspace'> Reducir el consumo de plásticos clorados :  PVC  (Ver punto 3).
+</p>
+<p class='vspace'><strong>12.- CASA "LIMPIA" :  OCEANOS CONTAMINADOS</strong>
+</p>
+<p class='vspace'>La obsesión por la limpieza y desinfección del hogar, obliga al uso de cientos de productos químicos altamente contaminantes de los ríos y océanos. Los más usados son: detergentes, desinfectantes, lejía (cloro), "esencia de pino", desatorador de inodoro, ácido muriático, "perfumadores" de urinario, ceras para el piso, insecticidas, suavizantes de ropa, limpiadores (de vidrios, hornos, alfombras)…. 
+</p>
+<p class='vspace'>Estos químicos "domésticos" son NO - Biodegradables. Llegan por toneladas diariamente al Mar (a través de los desagües).  Envenenan las aguas y matan la Fauna y Flora marina. 
+</p>
+<p class='vspace'> Epidemias de Virus - nunca antes vistas - están matando por cientos a los Delfines. 
+</p>
+<p class='vspace'>Los productos de limpieza están considerados como "peligrosos". Su uso diario puede afectar el hígado, riñones y sistema nervioso (alteraciones del carácter o depresión). Afecta el Sistema Inmunológico.
+</p>
+<p class='vspace'>Además, son echadas al desagüe: comida malograda, medicinas vencidas, aceite frito, licores, restos de pintura, disolventes o aceites lubricantes…
+</p>
+<p class='vspace'>Y por el inodoro ("water") : papel higiénico, pañales, plásticos, trapos, pelos, toallas sanitarias… 
+</p>
+<p class='vspace'> Sugerencias: * Reduce el consumo de productos de limpieza. 
+</p>
+<p class='vspace'> El agua jabonosa + Limón o Vinagre desinfecta pisos y baños y elimina olores.
+</p>
+<p class='vspace'> Echa todo residuo sólido al tacho de basura.                                                                                                               
+</p>
+<p class='vspace'> Todo residuo líquido concentrado arrójalo al jardín a las macetas o a algún terreno desocupado.
+</p>
+<p class='vspace'><strong>13.- ECOLOGIA EN LA COCINA:</strong>  Puedes ayudar al Planeta economizando Gas: Cocina a fuego lento. Consume mayor cantidad de alimentos crudos.
+</p>
+<p class='vspace'>  El kerosene es el combustible más contaminante y tóxico (y a la larga resulta más costoso)
+</p>
+<p class='vspace'>  La Cocina eléctrica es la menos contaminante, pero consume mucha Energía.
+</p>
+<p class='vspace'> Evita usar todo tipo de Descartables (Ver punto 4)
+</p>
+<p class='vspace'>  Evita cocinar en ollas o sartenes revestidas de Teflón. Esta resina anti-adherente tiene probados efectos cancerígenos. Durante su fabricación se daña el Ozono.
+</p>
+<p class='vspace'>  Los Hornos de Micro-Ondas emiten radiaciones ionizantes que dañan las células.
+</p>
+<p class='vspace'> Para lavar platos grasosos: frota cáscaras de Limón exprimido.  (Ver punto 7).
+</p>
+<p class='vspace'><strong>14.- ECOLOGIA  EN EL TRANSPORTE:</strong>  El  50 - 60 % de la contaminación en las ciudades es causada por los vehículos. Emiten el 34 % de los Oxidos de Nitrógeno (NOx)  y Dióxido de Azufre (SO2) causantes de la Lluvia Acida.  Producen el 20 % del CO2  que genera el Recalentamiento Planetario. Además emiten el perjudicial Monóxido de Carbono (CO) que intoxica la sangre.
+</p>
+<p class='vspace'>En el Perú por ejemplo el 75 % de la gasolina contiene Plomo: un metal que afecta el Cerebro y causa Anemia.
+Sólo en Lima circulan 1' 200000 vehículos.  
+</p>
+<p class='vspace'>En Ciudades como México, Santiago y Sao Paulo el aire se ha vuelto  irrespirable. En ciertas épocas del año es necesario reducir el tráfico de vehículos y parar las industrias: para que la gente pueda respirar !!
+</p>
+<p class='vspace'> Sabías que un auto consume en una hora, el mismo Oxígeno que 800 personas consumen en un día ?
+</p>
+<p class='vspace'> Prefiere siempre el Transporte Público 
+</p>
+<p class='vspace'> Olvídate del "carro propio" (Ya hay demasiados autos circulando en el mundo).
+</p>
+<p class='vspace'> Viaja en Bicicleta. Es un vehículo que no contamina. Además ahorras dinero y practicas deporte. En las horas de gran congestión vehicular: llegas a tu destino en menor tiempo.  Compruébalo !! Si viajas por avenidas muy contaminadas: puedes protegerte con una mascarilla de tela.
+</p>
+<p class='vspace'> Sabías que en Dinamarca el 30 % de los viajes se realiza en Bicicleta?. Y que en Holanda el 80 % de los pasajeros que viajan en tren, acuden a la estación en bicicleta?
+</p>
+<p class='vspace'> Solicita la creación de Ciclo-Vías en las principales avenidas de tu ciudad.
+</p>
+<p class='vspace'> Pide la instalación de Estacionamientos para Bicicletas en Centros Comerciales, Gimnasios, Bibliotecas, Museos, Centros Culturales, Parques, Colegios, etc.
+</p>
+<p class='vspace'> Si tienes auto: evita usarlo días de semana dentro de la ciudad. Así ahorras dinero en gasolina y estacionamiento.  Cuanto más autos circulen:  menor será la calidad del aire que respiramos.
+</p>
+<p class='vspace'><strong>15.- CUANDO SALGAS A COMPRAR…</strong>
+</p>
+<p class='vspace'> Si vas a la panadería no olvides llevar tu bolsa de tela.  Así evitarás consumir plásticos.
+</p>
+<p class='vspace'> Para el mercado lleva una canasta, mochila o carretilla. Dile al vendedor que NO necesitas bolsas  
+plásticas. Lleva bolsas usadas para los granos o harinas.
+</p>
+<p class='vspace'> Busca las Ferias de Productos Orgánicos (Bio-Ferias) : allí venden verduras, frutas o granos cultivados con abonos naturales (sin pesticidas ni fertilizantes químicos).
+</p>
+<p class='vspace'> Compra en Supermercados sólo lo indispensable (y no olvides llevar tus bolsas usadas).  Estos centros consumen grandes cantidades de Electricidad y Sistemas de Refrigeración (que destruyen el Ozono).  Utilizan toneladas de plásticos y envases descartables. Venden alimentos que proceden de paises con elevada radiación nuclear (el caso de Alemania y USA) o Modificados Genéticamente.
+</p>
+<p class='vspace'> Compra por cajones la Fruta de Estación (Naranjas, Mangos, Piña, Papaya) . Así economizas. 
+</p>
+<p class='vspace'><strong>16.- NO PIERDAS LOS PAPELES !</strong>
+</p>
+<p class='vspace'>El papel se obtiene de los Arboles. En países como Chile existen plantaciones de Pino y Eucalipto con los que se obtiene la pulpa que es blanqueada con Cloro básico y Dióxido de Cloro. En Brasil hay inmensas plantaciones de Eucalipto, las cuales han arrasado a la Mata Atlántica en proceso de regeneración.
+</p>
+<p class='vspace'> Podemos ahorrar papel: usar las hojas por ambas caras en Fotocopias, trabajos universitarios, documentos de oficina.   Así reduciremos el consumo a un 50 % .
+</p>
+<p class='vspace'> Utiliza papel No-blanqueado: Periódico, Reciclado, Bulky. Para monografías o folletos impresos.
+</p>
+<p class='vspace'> Junta todo el papel usado y dónalo o véndelo a los  Recicladores.
+</p>
+<p class='vspace'> Cada Tonelada de Papel RECICLADO evita talar 12 a 17  árboles y ahorra 140 litros de petróleo. 
+Además consume 30 a 55 % menos Energía y la contaminación atmosférica es 73 % menor.
+</p>
+<p class='vspace'> Junta las hojas usadas y confecciona Libretas de notas con la cara en blanco.
+</p>
+<p class='vspace'>Re-usa los sobres y bolsas de papel. Las revistas a colores sirven para forrar libros y cuadernos.
+</p>
+<p class='vspace'> Evita adquirir revistas de papel satinado (Couché). No son reciclables. 
+</p>
+<p class='vspace'> Fotocopias: Nunca fotocopies documentos "a ojo cerrado". Léelo primero anota lo necesario.
+</p>
+<p class='vspace'> Cuando se acabe la tinta del Lapicero: cambia la carga en vez de comprar uno nuevo 
+</p>
+<p class='vspace'> Evita usar "Transparencias" para retro-proyector. Contienen reactivos químicos.
+</p>
+<p class='vspace'><strong>17.- LA MODA QUE INCOMODA:</strong>  La moda y la propaganda incentivan el consumo. La vestimenta es una necesidad.  No debería ser un lujo ni motivo de ostentación.
+</p>
+<p class='vspace'> Evita la ropa sintética: nylon, lycra, poliester, poliamida, fibras acrílicas, acetatos.
+</p>
+<p class='vspace'> Usa prendas de materiales naturales:  Algodón, lana de Alpaca y Oveja, Lino.
+</p>
+<p class='vspace'> Busca ropa de colores naturales. Evita colores intensos, negros o fosforescentes.
+</p>
+<p class='vspace'> Evita comprar ropa de "lavado al seco". Para lavarla usan solventes Organo-clorados.
+</p>
+<p class='vspace'> Evitar comprar prendas de Cuero  "Curtidas al Cromo"
+</p>
+<p class='vspace'> Las "Ojotas" andinas son ejemplo de sandalias ecológicas : sólo usan llantas recicladas y clavos…                                                                                       
+</p>
+<p class='vspace'> Si deseas adornarte; compra artesanías naturales: collares, pulceras y aretes de plata con piedras o cristales, pulceras de cobre o bronce. Collares de semillas, cerámica, madera…
+</p>
+<p class='vspace'> Evita comprar bisuterías de "fantasía fina" ;  "oro (goldfilled) de 14": pulceras y collares de plástico o acrílico; anillos "que cambian de color"; Artículos de chatarra fundida bañados con Cromo, Rodio o Níquel.  
+</p>
+<p class='vspace'><strong>18.- VERDE  NAVIDAD:</strong> En Navidad,  y otras fiestas, puedes celebrar y cuidar el Planeta a la vez. 
+</p>
+<p class='vspace'> Evita usar Fuegos Artificiales: bengalas, cuetones, avellanas, rasca-pié, "rata blanca"…Ellos liberan a la atmósfera elementos contaminantes como pólvora, ácido nítrico y sulfúrico, sales de cloro y nitrógeno, etc. 
+</p>
+<p class='vspace'> REGALOS : Busca juguetes educativos, rompecabezas, cuentos, ajedrez,  juegos de mesa  o de campo, masajeadores de madera, artesanías, etc.  Regala Cultura: un LIBRO es un excelente regalo.
+</p>
+<p class='vspace'> Evita regalar artículos Plásticos o que requieran el uso de Pilas. 
+</p>
+<p class='vspace'> No regales juguetes que incentiven la Violencia: juegos de Guerra, metralletas, tanques, granadas; armas de Caza (carabinas o rifles de municiones) y Video-Juegos.   El Mundo necesita PAZ !
+</p>
+<p class='vspace'> Los muñecos de "peluche" (ositos, perritos…) no son tan inofensivos como parecen: están hechos de Polyester: una fibra plástica que genera alergias en los niños. Además almacenan mohos y ácaros.
+</p>
+<p class='vspace'> Las muñecas de trapo (artesanales) son mejores que las de plástico.
+</p>
+<p class='vspace'> Cuidado: No comprar artículos hechos con Resinas Epoxi (durepox, parcet, poxipol ) : pipas, duendes, encendedores, lapiceros, cuchillos. Este material contiene Asbesto (Amianto), elemento cancerígeno. 
+</p>
+<p class='vspace'> Fotos: para recordar los buenos momentos…unas cuantas Fotos bien tomadas es mejor que muchos  
+rollos desperdiciados.  Así ahorraremos: papel, tintas, pilas, plástico y reactivos químicos.
+</p>
+<p class='vspace'> En Navidad adquiere o confecciona adornos ecológicos con madera, cortezas y flores secas, soguilla, papel reciclado, cerámica, etc.   Planta un  Arbol Vivo  y decóralo.
+</p>
+<p class='vspace'> Ciertas Fiestas Tradicionales como el "Corta-Monte" (Yunsa) y las "Corridas de Toros", deberíamos sustituírlas por otras más humanas.  Por ejemplo: el "Planta Monte"  y  "La Fiesta de la Vaca Sagrada" .
+</p>
+<p class='vspace'>19.- CUANDO VAYAS AL CAMPO: Respeta la Naturaleza porque es Fuente de Vida.
+</p>
+<p class='vspace'> Estudia la Fauna y Flora del lugar. Recolecta semillas, hojas, flores. 
+</p>
+<p class='vspace'>  No intentes cazar o capturar ningún tipo de animal ; tampoco cortes los árboles.
+</p>
+<p class='vspace'> Evita llevar Equipos de Sonido. Concéntrate en escuchar los Sonidos de la Naturaleza…
+</p>
+<p class='vspace'> No dependas de la Linterna.  Acostumbra tu vista a ver en la oscuridad. 
+</p>
+<p class='vspace'> Junta la basura que encuentres y llévala a la Ciudad. Nunca la quemes.
+</p>
+<p class='vspace'> Lleva Alimentos Naturales: Frutas, Cereales, Castañas, Pecanas, Frutas Secas, tubérculos. Evita llevar alimentos procesados, sopas instantáneas, gaseosas, enlatados.
+</p>
+<p class='vspace'> Para cocinar recoge la leña seca. No olvides apagar bien el fuego antes de irte.
+</p>
+<p class='vspace'> Contra los Mosquitos: frótate  Limón, Molle o Achiote (u otras plantas de la región).  Come Ajo. Los repelentes son tóxicos y sus componentes contaminan la Naturaleza.
+</p>
+<p class='vspace'><strong>20.- LOS ENEMIGOS INVISIBLES</strong>: La Atmósfera de las Ciudades contiene alrededor de 500 sustancias químicas que son inhaladas diariamente por la población. Estas son emitidas por plaguicidas, industrias químicas, incineración de residuos hospitalarios, emisiones vehículares, quema de basura o drogas.
+</p>
+<p class='vspace'> Los <strong>Contaminantes Orgánicos Persistentes</strong> (COPs)  son una grave amenaza para la Salud y el Ambiente: DDT, aldrín, dioxinas, furanos, etc. Los COPs son tóxicos aún en bajas concentraciones; son Bio-acumulables, causan malformaciones y cáncer. Están dispersos por todo el Planeta.
+</p>
+<p class='vspace'> Los <strong>metales pesados</strong>: Plomo, Mercurio, Cadmio, Cromo, Arsénico, Bario, Selenio, Zinc, etc. causantes de malformaciones, tumores, anemia, daño cerebral.
+</p>
+<p class='vspace'> El <strong>ozono artificial</strong>, producto de la quema de combustibles fósiles es causante de cáncer a la piel.   
+</p>
+<p class='vspace'> Los "estrógenos artificiales" generados por las industrias del plástico, insecticidas y detergentes causan esterilidad masculina y cáncer femenino.
+</p>
+<p class='vspace'> El <strong>Asbesto</strong> o Amianto presente en la calamina, eternit, losetas, tubos, mechas para lámparas, masillas epoxicas, es causante de Fibrosis Pulmonar y cáncer al pulmón, faringe y estómago. 
+</p>
+<p class='vspace'> La quema de Basura, Drogas y Medicinas  libera compuestos  altamente <strong>cancerígenos</strong> !!!
+</p>
+<p class='vspace'> <strong>NO QUEMAR LA BASURA</strong>.  Exigir a las autoridades su recojo oportuno.
+</p>
+<p class='vspace'> No hacer uso de Incineradores de basura.
+</p>
+<p class='vspace'> Residuos Hospitalarios: Esterilizar a alta temperatura y luego entregar al recolector.
+</p>
+<p class='vspace'> Evitar el consumo de plásticos clorados (PVC) .
+</p>
+<p class='vspace'><strong>21.- SALVEMOS NUESTROS BOSQUES</strong> 
+</p>
+<p class='vspace'>La Selva Amazónica produce el 40 % del oxígeno del mundo y consume el CO2.
+Cada minuto se talan en el mundo 30 hectáreas de Bosques Tropicales.
+</p>
+<p class='vspace'>El lujo de tener muebles, puertas, pisos, techos o balcones tallados de maderas silvestres tales como el Cedro, Caoba o Diablo Fuerte está acabando con extensas áreas de Selva Tropical.  
+</p><pre>                                                                                                                                                                                   Prefiere las maderas cultivadas: Pino, Eucalipto, Bambú y otras especies Cultivadas.
+</pre><p class='vspace'> Evita comprar carbón de Algarrobo. Los bosques secos están desapareciendo.
+</p>
+<p class='vspace'> Elaborar Proyectos para crear Reservas Ecológicas Regionales. Solicitar a las autoridades provinciales la concesión de áreas naturales de importancia biológica.  Así tendremos Reservas manejadas por Universidades, ONGs, Colegios, Grupos Ecológicos u otros; con fines de Conservación e Investigación. 
+</p>
+<p class='vspace'> Proponer la creación de un sistema de Guardabosques  Voluntarios. 
+</p>
+<p class='vspace'><strong>22.- SALVEMOS LA FAUNA SILVESTRE:</strong> 
+</p>
+<p class='vspace'>La Fauna Mundial se encuentra en Peligro. Sólo en el Perú tenemos 222 Especies de Fauna Amenazadas; de las cuales,  31 están En Vías de Extinción.
+</p>
+<p class='vspace'>El Tráfico de Fauna Silvestre es el tercero en el mundo  (luego de las drogas y armas). Mueve anualmente, alrededor de 10,000 millones de dólares… 
+</p>
+<p class='vspace'> NO compres animales silvestres para criarlos como mascotas (tortugas, iguanas verdes, loros, monos, serpientes, coatíes, felinos, arañas, insectos...).  Con tu compra : contribuyes a que este tráfico continúe.
+</p>
+<p class='vspace'> Denuncia a los traficantes a la Policía Ecológica.
+</p>
+<p class='vspace'> Rechaza comer carne de animales silvestres: Venado, Tortuga, Mono, Majaz, Picuro, Añuje, Lagarto, Ballena,  Delfín ("mushame"), etc.
+</p>
+<p class='vspace'> Rechaza artículos que utilicen partes de animales silvestres: piel de Felinos, Lagarto o Serpiente; colmillos o garras de Felinos; dientes de Delfín, caparazón de Tortuga, Carey, Coral, animales disecados…
+</p>
+<p class='vspace'> No caces animales de ningún tipo. Recuerda que quedan pocos.
+</p>
+<p class='vspace'> Sabías que al comer atún en lata podrías estar ingiriendo restos de Delfín?
+</p>
+<p class='vspace'><strong>23.- LA TECNOLOGIA SÍ CONTAMINA:</strong>
+</p>
+<p class='vspace'>Los aparatos electrónicos y electrodomésticos son producidos por gigantescas corporaciones transnacionales que consumen toneladas de recursos y materiales. Detrás de una refrigeradora, un televisor o una computadora, hay complejos procesos tecnológicos que demandan cientos de elementos tales como: hierro, aluminio, plásticos, madera, insumos químicos, metales pesados, combustibles, energía eléctrica, generando  residuos contaminantes. 
+</p>
+<p class='vspace'>La tecnología de Refrigerantes contribuye a la destrucción de la Capa de Ozono. 
+</p>
+<p class='vspace'>La industria Automotriz contribuye al recalentamiento planetario y la lluvia ácida.
+</p>
+<p class='vspace'> Compra sólo aquellos equipos realmente necesarios.
+</p>
+<p class='vspace'> El individualismo incentiva el consumo. Comparte con tus vecinos y amigos los aparatos que tienes: 
+TV, VHS, lavadora, computadora, equipo de sonido…
+</p>
+<p class='vspace'> Una alternativa económica y ecológica es comprar artefactos usados en Remates.
+</p>
+<p class='vspace'> Es preferible usar las Cabinas de Internet en lugar de comprar una computadora personal. 
+</p>
+<p class='vspace'> Algunos aparatos emiten campos de energía magnética que alteran el normal funcionamiento de las células: teléfonos celulares, hornos de  micro-ondas, computadoras, etc.
+</p>
+<p class='vspace'><strong>24.- NO CONSUMIR CARNE:</strong> El consumo de carne afecta el ambiente.
+</p>
+<p class='vspace'>Para producir 1 kilo de carne de res se necesitan 16 kilos de cereales y soya + 20 mil litros de agua más  la energía equivalente a 8.3 litros de gasolina !!
+</p>
+<p class='vspace'>La crianza de ganado utiliza grandes extensiones de pastizales. En Brasil, por ejemplo, 89 millones de hectáreas de Selvas Tropicales se han transformado en pasto para ganado. Asimismo la mitad de las selvas de Centroamérica han sido destruídas.
+</p>
+<p class='vspace'>Más bien, el cultivo de cereales, hortalizas y frutas consume menos de 5 % de materias primas que la producción de carne.
+</p>
+<p class='vspace'>Un toro recibe durante su vida miles de dosis de medicamentos, vacunas, antibióticos, antimicóticos, hormonas de crecimiento, alimento balanceado, vitaminas sintéticas, etc. Al final de su vida se convierte en un auténtico almacén de sustancias tóxicas.
+</p>
+<p class='vspace'>El ganado  libera gas Metano durante su digestión. Gas que contribuye con el recalentamiento planetario.
+</p>
+<p class='vspace'> La reciente epidemia de Encefalopatía Espongiforme Bobina (EEB) o "mal de las vacas locas" es una señal  de que la Humanidad debe cambiar de rumbo.
+</p>
+<p class='vspace'> Antes de comer un filete o una hamburguesa… piénsalo dos veces.
+</p>
+<p class='vspace'> En el reino vegetal se encuentran todos los nutrientes que el ser humano necesita. Contribuyen con la "ecología humana" al dar mayor salud, fuerza, belleza e inteligencia.
+</p>
+<p class='vspace'>La Historia muestra grandes genios que fueron vegetarianos : Pitágoras,  Jesucristo,  Leonardo da Vinci,   Leon Tolstoy,  Gandhi,  Bernard Shaw…
+</p>
+<p class='vspace'><strong>25.- LA  ALIMENTACION  ECOLOGICA:</strong>
+</p>
+<p class='vspace'>Podemos cuidar la Tierra  consumiendo alimentos naturales.  Los alimentos procesados o "comida chatarra" contienen aditivos químicos que afectan la salud humana: benzoato, propionato, bromato, BHT, BHA, bisulfito, glutamato mono sódico, nitritos, nitratos, fosfatos, tartratos, EDTA, dióxido de titanio, colorantes, esencias artificiales...
+Existen laboratorios que producen estos Insumos por toneladas y contaminan la Tierra.
+</p>
+<p class='vspace'> Evita consumir gaseosas, jugos sintéticos o refrescos instantáneos.
+</p>
+<p class='vspace'> Rechaza productos dietéticos ("diet", "light", "sin azúcar") Contienen azúcares artificiales de probados efectos cancerígenos ( Sacarina, Ciclamato, Acesulfame ). La última "maravilla dietética" , el Aspartame o "nutra swet" puede generar los siguientes síntomas: dolores articulares, depresión, ataques de ansiedad, visión borrosa, dolores de cabeza,  pérdida de memoria, etc.  Esto se debe al alcohol metílico que contiene…
+</p>
+<p class='vspace'> Consume más Alimentos Vivos: Frutas, Verduras Crudas, Granos Germinados.
+</p>
+<p class='vspace'> Busca los Cultivos Andinos: Maca, Quinua, Kiwicha, Cañiwa, Tarwi, Choclo, Cancha, Papas Nativas, Ollucos, etc. Son alimentos más nutritivos y  cultivados orgánicamente (sin agro tóxicos). Consume los Frutos Amazónicos: Pijuayo, Cocona, Aguaje, Caimito, Casho, Humarí, Castañas. Se los obtiene del Bosque Vivo.  Así ayudarás al Planeta y al poblador Nativo.
+</p>
+<p class='vspace'> Vuélvete Vegetariano
+</p>
+<p class='vspace'> Enriquece tu dieta con: Cereales integrales, Miel de Abeja, Aceite de Oliva, Pecanas, Castañas, Frutas secas, Polen, Algas marinas, Levadura de cerveza, etc.
+</p>
+<p class='vspace'> Hidrata tu cuerpo y elimina toxinas bebiendo  Jugo de Naranja,  Limón,  Piña, Tuna , Papaya, ensaladas de Verduras e infusiones de yerbas depurativas.  NO es necesario beber agua todo el día.
+</p>
+<p class='vspace'> Elabora Germinados en tu casa: remoja en agua un puñado de granos (lentejas, trigo, frejol mung u otros). Luego de 12 horas, escurre y deja germinar en un recipiente de boca ancha tapado con una tela. Lava y escurre 2 veces al día.  A partir del tercer día ya puedes consumirlos: solos o en ensaladas.
+</p>
+<p class='vspace'><strong>26.- UN  BIOHUERTO  EN TU CASA:</strong> 
+</p>
+<p class='vspace'> Puedes cultivar Hortalizas, plantas Medicinales o Aromáticas en casa. Si no cuentas con un jardín; lo puedes hacer en macetas, cajones, latas o baldes usados.
+</p>
+<p class='vspace'> Prepara la tierra mezclando 2 volúmenes de Compost (abono vegetal) + 1 vol. de Humus de Lombriz +  1 vol de Tierra de jardín. Puedes propagar mediante estacas, esquejes, bulbos o semillas.
+</p>
+<p class='vspace'> Consulta manuales sobre Biohuertos y los métodos naturales de control de plagas. 
+</p>
+<p class='vspace'>  Puedes preparar  Compost  utilizando los restos de  vegetales: cáscaras de verduras, frutas; restos de  comida. Si no tienes jardín, utiliza cajones de madera. 
+</p>
+<p class='vspace'><strong>27.- MEDICINA ALTERNATIVA:</strong> 
+</p>
+<p class='vspace'>Es mejor prevenir que curar :  "Que tu alimento sea tu medicina". Diversos medicamentos poseen efectos secundarios negativos para la salud. Tal es el caso de los analgésicos, antigripales, antibióticos, laxantes, antiácidos, vitaminas sintéticas, anti-artríticos, antiácidos, diuréticos, hormonas, anoréxicos, adelgazantes, anti-hipertensivos, corticoides, quimioterapia, etc.
+</p>
+<p class='vspace'> Algunas técnicas tradicionales de Sanación han demostrado ser más eficaces que la medicina moderna (halopática).  Estas son :  la Medicina Tradicional Andino - Amazónica,  la Fitoterapia, Acupuntura, Siatsu (Digitopuntura), Medicina Ayurvédica (Indú), Homeopatía, Hidroterapia, Imposición de las Manos (Reiki), Terapia de la Orina, Quiropraxis (Huesero),  Esencias Florales, Yoga,  Tai-Chi,  etc.
+</p>
+<p class='vspace'> Rechazar ser sometido a técnicas de diagnóstico que utilicen Energía Nuclear : Radiografías (Rayos X) o Tomografía Axial.  La Energía Nuclear es una grave amenaza para la Humanidad y el Planeta Tierra. 
+</p>
+<p class='vspace'><strong>28.- PROCREACION Y MATERNIDAD:</strong>
+</p>
+<p class='vspace'>En 50 años la cantidad de Espermatozoides contenidos en el Semen humano se ha reducido de 113 millones / mililitro a 66 millones / ml.  Esto es debido a la contaminación ambiental 
+La exposición de Madres Embarazadas a sustancias tóxicas y químicos industriales puede causar: muerte del feto, defectos en el desarrollo de los órganos sexuales de los bebes. Predisposición a contraer cáncer.
+</p>
+<p class='vspace'>En naciones desarrolladas  el 20 % de embarazos termina en Abortos espontáneos antes del 5° mes. El 15 % de los Niños nacen prematuramente.
+</p>
+<p class='vspace'> Recomendaciones para tener una buena salud reproductiva:
+</p>
+<p class='vspace'> Tener una sola pareja. 
+</p>
+<p class='vspace'> Rechazar el uso de anticonceptivos tales como: Píldoras, Implantes ("Norplant"), Dispositivo Intra Uterino (DIU), T de Cobre, Ovulos, etc. Estos métodos causan alteraciones hormonales y nerviosas en la Mujer.  En algunos casos pueden causar esterilidad.
+</p>
+<p class='vspace'> Prepararse para la Procreación con varios meses de anticipación: alimentación natural, ayunos, abstención sexual.  No consumir drogas ni fármacos.  Mantener un equilibrio psicológico y emocional.
+</p>
+<p class='vspace'> Lactancia Materna: dar de lactar durante 6 meses como mínimo.
+</p>
+<p class='vspace'> Evitar el uso de chupones, biberones y mordedores plásticos. Estos contienen ablandadores llamados         "ftalatos" que afectan los testículos, hígado y riñones del bebé.
+</p>
+<p class='vspace'> Oponerse a "programas masivos" de Esterilización  ( Ligaduras de Trompas)
+</p>
+<p class='vspace'><strong>29.- ECOLOGIA HUMANA Y EVOLUCION:</strong>
+</p>
+<p class='vspace'>  Es necesario Orar por la Salvación de nuestra Madre Tierra y de la Humanidad.
+</p>
+<p class='vspace'> Meditar y Visualizar que la Tierra se está sanando y descontaminando.
+</p>
+<p class='vspace'> Irradiar LUZ a países en conflicto o que poseen armas nucleares.
+</p>
+<p class='vspace'> Practicar la auto-observación de la mente y las emociones. 
+</p>
+<p class='vspace'> Irradiar Conocimiento y despertar la Conciencia de los demás.
+</p>
+<p class='vspace'> Reducir el consumo de artículos "esotéricos" tales como: inciensos, velas, k-sets de relajación,amuletos, imágenes, duendes, etc.  La verdadera espiritualidad es el Amor a Dios y el servicio a los demás.
+</p>
+<p class='vspace'><strong>30.- ACCION:</strong>  Practica y difunde estas ideas.  Comienza en casa. 
+</p>
+<p class='vspace'> Luego forma Grupos Verdes: en Colegios, Universidades, Club de Madres, Grupos Femeninos, Scouts, Bomberos, club's deportivos y de turismo de aventura, grupos espirituales y otros. 
+</p>
+<p class='vspace'> Busca organizaciones Ecológicas que acepten Voluntarios, e inscríbete.
+</p>
+<p class='vspace'> Organiza actividades ambientales:
+</p>
+<p class='vspace'> Campañas de Reforestación con Especies Nativas.
+</p>
+<p class='vspace'> Campañas de limpieza de Areas Naturales, playas, lagos, bosques, etc.
+</p>
+<p class='vspace'> Ferias de Productores Agro-ecológicos y Frutos Nativos. Ferias de Tecnologías Alternativas.
+</p>
+<p class='vspace'> Recolección de papel y cartón para ser reciclados.
+</p>
+<p class='vspace'> Charlas y Talleres sobre los Problemas Planetarios y cómo podemos solucionarlos.
+</p>
+<p class='vspace'> Protestas y Boicots contra industrias contaminantes: mineras, quimicas, pesqueras, petroleras. Marchar contra  el uso masivo de la Energía Nuclear. Marchar contra la Tala indiscriminada de los Bosques.
+</p>
+<p class='vspace'><strong>31.- DIRECTORIO VERDE:</strong>  
+</p>
+<p class='vspace'>  Elabora una lista de grupos ambientales y comunícate con ellos. 
+</p>
+<p class='vspace'><strong>BIBLIOGRAFIA</strong>:  
+</p>
+<p class='vspace'>Para la presente GUIA VERDE se consultaron los siguientes Textos:
+</p>
+<p class='vspace'> Enciclopedia Visual de la Ecología
+Cases i Associats S.A. / Clarín AGEA
+Diario "El Comercio" -  Lima, 1997      
+</p>
+<p class='vspace'> "50 Cosas Sencillas que TU puedes hacer para Salvar la Tierra"
+The Earth Works Group - USA, 1992
+</p>
+<p class='vspace'> "El Libro de Greenpeace sobre el Maquillaje Verde: El Disfraz Ecológico de las Empresas Transnacionales                              Kenny Bruno, Greenpeace International , 1992
+</p>
+<p class='vspace'> "Úselo y tírelo"
+Eduardo Galeano. Edit. Planeta - Argentina, 1994
+</p>
+<p class='vspace'> Fauna Amenazada del Perú.
+Decreto Supremo N° 013-99-AG, Mayo de 1999
+</p>
+<p class='vspace'> "Contaminantes Orgánicos Persistentes"    	   Http:www.ipen.org
+</p>
+<p class='vspace'>  Artículos periodísticos                                      Diarios "El Comercio" y "Liberación"  Lima, 1999-2001                 
+</p>
+<p class='vspace'  style='text-align: center;'><strong>TU PUEDES AYUDAR A MEJORAR ESTA GUIA: SI TIENES MAS INFORMACIÓN, SUGERENCIAS  O  PREGUNTAS… ESCRÍBENOS.      GRACIAS</strong>  
+</p>
+<p class='vspace'  style='text-align: center;'>'''CENTRO OTORONGO - GREENPEACE - CORAZON VERDE
+CONCIENCIA AUNQUE DUELA – ACADEMIA VAISNAVA
+ECO TRULY ASHRAM'''
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on February 20, 2014, at 11:56 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

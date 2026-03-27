@@ -1,0 +1,593 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - El sendero del amor apasionado</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_15' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_15' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - El sendero del amor apasionado"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_15-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>El sendero del amor apasionado</h2>
+<p>Se desprende del capítulo anterior que el propósito de la aparición de Mahãprabhu en esta Tierra fue distribuir el amor de los residentes de Vrndavan, especialmente el humor de las gopis, al mundo entero. Y El predicó este amor a través de asociados íntimos como Rãmãnanda Rãya.
+</p>
+<div class='vspace'></div><pre> gaurãngera madhura-lilã jãñra karne pravesila
+ hrdaya nirmala bhela tãra
+</pre><p class='vspace'>“Purificado está el corazón del que oye los deliciosos pasatiempos del Señor Gaurãnga”.
+</p>
+<p class='vspace'>El nombre, la forma, cualidades y actividades del Señor Gaurãnga, son encantadores y dulces.
+</p>
+<div class='vspace'></div><pre> madhuram madhuram vapur asya vibhor 
+ madhuram madhuram vadanam madhuram 
+ madhu-gandhi mrdu-smitam etad aho
+ madhuram madhuram madhuram madhuram
+</pre><p class='vspace'>“ ¡Qué encantador es el cuerpo trascendental del Señor majestuoso, qué encantador! ¡Qué encantador es Su hermoso rostro! ¡Qué encanto! ¡Qué encanto! ¡Su amable sonrisa es tan dulce como la miel, cuán dulce, cuán dulce, cuán dulce!”
+(Caitanya Caritãmrta 2.21.136)
+</p>
+<p class='vspace'>Todos los pasatiempos de Mahãprabhu son trascendentalmente deliciosos. Su pasatiempo de reunirse con el famoso erudito y lógico mundial, Sãrvabhauma Bhattãcãrya, es un ejemplo de esa delicia trascendental. Por toda una semana, el Señor oyó las explicaciones del Vedanta brindadas por Sarvabhauma Bhattãcãrya y al final iluminó a Sarvabhauma brindando la correcta interpretación del Vedanta así como 18 explicaciones diferentes del verso ãtmãrãma del Bhãgavata. Al principio, Sarvabhauma se sintió desanimado y desconcertado al comprobar la erudición sin par del Señor, mas tomando refugio en Sus pies de loto, glorificó al Señor que le concedió misericordiosamente una visión de Su forma de seis brazos.
+</p>
+<p class='vspace'>Encantadora también fue la reciprocidad exhibida por Mahãprabhu con el Rey Pratãparudra, que culminó en Su escucha de los versos del Gopi-gitã de parte del Rey, abrazándolo y glorificándolo como bhurida ‘sumamente caritativo’ y concediéndole asimismo una visión de Su forma de seis brazos.
+</p>
+<div class='vspace'></div><pre> tava kathãmrtam tapta-jivanam
+ kavibhir iditam kalmasãpaham
+ sravana-mangalam srimad-ãtatam
+ bhuvi grnanti ye bhurida janãh
+</pre><p class='vspace'>“Mi Señor, el néctar de Tus palabras y las descripciones de Tus actividades son como néctar para aquellos que están muriendo de sed en este árido mundo material. Transmitidas por las personalidades exaltadas, estas narraciones erradican todas las reacciones pecaminosas. Todo aquel que las oiga, alcanza toda buena fortuna. Los que en este mundo difunden estos tópicos encantadores son ciertamente los más generosos altruistas”.
+(Srimad Bhãgavatam 10.31.8, Caitanya Caritãmrta 2.14.14)
+</p>
+<p class='vspace'>El pasatiempo de Mahãprabhu de enseñar la teología de sambandha, abhideya y prayojana a Rupa Gosvãmi en Prayãga y a Sanãtana Gosvãmi en el Dasãsvamedha Ghat, en Benares, es otra fuente de néctar. Empero, quizás el más encantador de todos Sus pasatiempos sea cuando escuchó hablar a Rãmãnanda Rãya sobre la meta última de la vida espiritual y el proceso de lograrla.
+</p>
+<p class='vspace'><strong>CONVERSACION DE MAHÃPRABHU CON RÃMÃNANDA</strong>
+</p>
+<p class='vspace'>En Su primer encuentro con Rãmãnanda Rãya, Mahãprabhu fingió ignorancia y preguntó a Rãmãnanda sobre diversas prácticas espirituales y sus objetivos. En respuesta, Rãmãnanda Rãya explicó gradualmente los diferentes niveles de comprensión filosófica, hasta que finalmente arribó al entendimiento más elevado de la vida espiritual, los intercambios de amor extático entre Radha y Krishna.
+</p>
+<p class='vspace'>Los métodos espirituales que Mahãprabhu oyó progresivamente de Rãmãnanda Rãya fueron: (1) la práctica del deber individual prescrito de acuerdo al varnãsrama-dharma; (2) renunciar a los resultados de las actividades personales, ofreciéndolos al Señor o el servicio devocional mezclado con otra actividad desinteresada; (3) renunciar a los deberes individuales en el varnãsrama o karma-sannyãsa y (4) el servicio devocional combinado con la búsqueda del conocimiento (jñãna-misrã bhakti).  A medida que Rãmãnanda proponía cada una de estas prácticas y sus resultados, Mahãprabhu las rechazaba, diciendo, “Eso es superficial. Profundiza más y revela algo más sustancial”.  Rãmãnanda procedió a describir el jñãna-sunyã bhakti, o sea, el servicio devocional sin deseo alguno por la liberación. Ante esto, Mahãprabhu expresó aprobación pero solicitó a Rãmãnanda que profundizara aún más.
+</p>
+<p class='vspace'>A medida que Mahãprabhu jugaba el rol de un buscador curioso, Rãmãnanda, urgido por el deseo de servir y responder al Señor, jugó el rol de un maestro. El seguidamente describió el servicio devocional en el temperamento de pasividad como la meta de la vida espiritual. Mahãprabhu aprobó, pero de todos modos pidió a Rãmãnanda que ahondara más. Rãmãnanda luego describió la devoción en el espíritu de servicio, seguidamente en los temperamentos de amistad y protección, a lo que Mahãprabhu se tornaba cada vez más entusiasta, diciendo, “Eso es excelente, pero por favor, profundiza más”. Por último, Rãmãnanda habló del amor de las doncellas de Krishna como la meta suprema de la vida espiritual, ante lo cual el Señor aprobó extáticamente. El dijo, “ ¡Sí! Ese es el límite del avance espiritual, no hay duda alguna, pero si hubiera algo más que esto, por favor dímelo”.
+</p>
+<p class='vspace'>Rãmãnanda Rãya entonces comenzó a describir el amor de Radha por Krishna, como la experiencia cumbre del amor divino. El gozo del Señor entonces aumentó allende todo límite y siguió pidiendo a Rãmãnanda que continuara hablando. Rãmãnanda ahora comenzó a describir las modalidades de los intercambios amorosos de Radha y Krishna, el carácter sin par del sumamente competente amor de Radha por el Señor. Ante esto, Mahãprabhu dijo a Rãmãnanda con gran satisfacción:
+</p>
+<div class='vspace'></div><pre> ebe se jãnilun sãdhya-sãdhana-nirnaya
+ ãge ãra ãche kichu sunite mana hayã 
+</pre><p class='vspace'>“Ahora tengo lo que He venido a aprender de tí, la meta de la vida y el proceso para alcanzarla. De todos modos, pienso que todavía queda algo más y deseo mucho oírlo”.
+(Caitanya Caritãmrta 2.8.118)
+</p>
+<p class='vspace'><strong>PREMA-VILÃSA-VIVARTÃ</strong>
+</p>
+<p class='vspace'>A medida que Mahãprabhu pidió oír más acerca de Radha y Krishna y Sus relaciones y pasatiempos, Rãmãnanda continuó narrando todo lo que sabía sobre el tema. De todos modos, Mahãprabhu continuaba apremiándolo a que continuara, más y más. Finalmente, Rãmãnanda brindó una descripción de un estado sumamente encantador de amor extático, llamado prema-vilãsa-vivarta. En esta particular transformación del humor amoroso, - explicó -, Radha es superada por Sus muy elevados sentimientos extáticos y, aunque separada de Krishna, piensa que El está realmente presente.
+</p>
+<p class='vspace'>Las cuestiones amorosas divinas de Radha y Krishna son conducidas de dos maneras: separación y unión. La separación o vipralambha, es una transformación particular de los pasatiempos de Radha y Krishna, que sirve para incrementar el placer de la unión. En el prema-vilãsa-vivarta, sin embargo, debido a la intensidad de Su adhirudha-mahã-bhãva, Radha experimenta alucinaciones de unión, incluso en el estado de separación. La belleza extática de Radha en esta condición, es indescriptible.
+</p>
+<p class='vspace'>Para el placer de Mahãprabhu, Rãmãnanda Rãya entonó una canción de su propia composición, describiendo la situación. Mahãprabhu fue tan avasallado por la emoción al oír la canción de Rãmãnanda, que tapó su boca con Su mano. La canción retrataba las palabras de Rãdhãrãni en medio de este humor exaltado de amor:
+</p>
+<div class='vspace'></div><pre> pahilehi rãga nayana-bhange bhela
+ anudina bãdhala, avadhi nã gela
+ nã so ramana, nã hãma ramani
+ dunhu-mana manobhava pesala jãni
+ e sakhi, se-saba prema-kãhini
+ kãnu-thãme kahabi vichurala jãni
+ nã khonjalun duti, nã khonhalun ãn
+ dunhukeri milane madhya ta pãnca-bãna
+ ab sohi virãga, tunhu bheli duti
+ su-purukha-premaki aichana riti 
+</pre><p class='vspace'>“ ¡Oh sakhi! Al principio, cuando Nuestros ojos se encontraron, nació Nuestro amor. Fue creciendo día a día, sin hallar nunca el límite. El no es Mi esposo y Yo no soy Su esposa, es como si el propio Cupido hubiera molido nuestras mentes convirtiéndolas en polvo y las hubiera mezclado. Oh sakhi, ahora que Estamos separados, si Krishna hubiera olvidado todas estas cosas, entonces recuérdale esto: Cuando Nos conocimos, no tuvimos que buscar un entremedio o a nadie más. Lo único que Nos reunió fue Cupido con sus cinco flechas, nadie más. Ahora que Estamos apartados, ese amor se ha ido y El debió emplearte a ti como mensajera. Esa es la forma de amar de los hombres bien parecidos como Krishna”.
+(Caitanya Caritãmrta 2.8.194. Ver también Caitanya Caritãmrta 2.13.46)
+</p>
+<p class='vspace'>Nuestro muy adorable ãcãrya predecesor, Srila Bhaktivinoda Thãkura parafrasea la canción como sigue: “Antes de nuestro primer encuentro, durante el período de purva-rãga o afecto incipiente, a través del mutuo intercambio de miradas, nació súbitamente algo llamado rãga o amor. Este rãga nació de nuestras dos naturalezas y siguió creciendo y creciendo sin límite. Krishna es el amante o ramana, pero en este caso El no fue la causa del rãga; tampoco Yo, la amada o ramani, fui su causa. El amor que surgió cuando Nos miramos por primera vez, fue creado por Cupido, quien es conocido como Manobhava o ‘nacido de la mente’. El apareció e hizo polvo nuestras mentes. Si piensas, sakhi, que Krishna ha olvidado todo este amor ahora que Estamos separados el uno del otro, entonces ve y dile lo siguiente: Anteriormente, no buscamos ningún mensajero en el momento de la unión, no le pedimos a nadie que intercediera. El único mediador que tuvimos fue Cupido mismo, con sus cinco flechas. Ahora que Estamos separados, el rãga se ha convertido en virãga. Virãga significa visista-rãga o ‘una clase especial de amor’ o viccheda-gata raga, ‘amor en separación’. En este caso se ha vuelto adhirudha mahã-bhãva o el nivel más elevado de amor divino. Ahora que estás oficiando de duti o mensajera, comprobarás que los hombres apuestos siempre se comportan de este modo”.
+</p>
+<p class='vspace'>Srila Bhaktivinoda Thãkura continúa: “El significado de esta canción es como sigue: durante el momento de la unión, el amor (rãga) adopta la forma del deseo y asume en sí mismo el rol de mensajero. En el momento de la separación, el amor se convierte en duti en la forma del adhirudha-mahã-bhãva. Esta suprema plataforma de amor divino, es el mensajero del prema-vilãsa-vivarta, en el cual existe una experiencia de unión incluso durante la separación. En tal sentido, Rãdhãrãni alude a este amor como mensajero. Esto indica que los asuntos amorosos son tan agradables durante la separación como lo son durante el disfrute. El prema-vilãsa-vivarta es como una alucinación, similar a la de quien confunde un trozo de soga con una víbora, como cuando Radha toma un árbol tãmala como Krishna. En este estado de confusión, nacido del adhirudha mahã-bhãva, Ella experimenta una suerte de unión”.
+(Amrta-pravãha-bhãsya al Caitanya Caritãmrta 2.8.193)
+</p>
+<p class='vspace'>En su Anubhãsya, nuestro muy adorable Gurudeva, Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura, brinda mayores comentarios sobre la canción de Rãmãnanda: “Con las palabras na so ramana nã ham ramani (“El no es Mi amante y Yo no soy Su amada”) Mahãprabhu ha revelado el acintya-bhedãbheda-tattva. Es sobre esta base que Jiva Gosvãmi otorgó el nombre a su doctrina filosófica en el Sarva-samvãdini. En esta canción, hay una confusión subjetiva entre las identidades de los amantes. Las almas condicionadas comunes deben ser prevenidas contra la adopción del proceso de adoración llamado ahamgrahopãsanã, auto-identificarse con uno de los asociados eternos del Señor o el Señor Mismo. La filosofía de ahamgrahopãsanã es un producto de la necedad de los que creen que todo es solo una energía espiritual. Es lo contrario de los pasatiempos espirituales de la Divina Pareja. Mahãprabhu descendió de esa parte de Goloka donde Sus pasatiempos eternos transcurren de modo de demostrar el error de quienes piensan que la verdad suprema no dual no experimenta el aspecto subjetivo (ãsraya) del amor divino”.
+(Anubhãsya al Caitanya Caritãmrta 2.8.19)
+</p>
+<p class='vspace'><strong>EL SADHANA PARA ALCANZAR LA META SUPREMA</strong>
+</p>
+<p class='vspace'>Mahãprabhu aceptó que no había un logro mayor que el prema-vilasa-vivarta en la vida espiritual y seguidamente preguntó a Rãmãnanda cual era el sadhana o proceso para alcanzarlo. Rãmãnanda inició su respuesta negando en primer lugar que era el verdadero orador.
+</p>
+<div class='vspace'></div><pre> mora mukhe vaktã tumi tumi hao srotã
+ atyanta rahasya suna sãdhanera kathã
+</pre><p class='vspace'>“Tú estás hablando a través mío y a la vez, estás escuchando. Ahora oye la explicación sumamente confidencial de cómo lograr este objetivo”.
+(Caitanya Caritãmrta 2.8.200)
+</p>
+<p class='vspace'>Rãmãnanda seguidamente explicó la forma en que los pasatiempos trascendentales de Radha y Krishna dependen de las amigas de Radha para su desarrollo. Solo esas sakhis tienen el derecho de ingresar a los pasatiempos confidenciales de Radha-Krishna y son las únicas que expanden estos lilãs. Sin ellas, el lilã sería limitado. Las sakhis no solo participan en estos pasatiempos, sino que también son las primeras en saborearlos. Sin su liderazgo, nadie puede entrar a estos pasatiempos confidenciales. Así pues, ellas deben ser aceptadas antes de la aceptación de Radha y Krishna.
+</p>
+<div class='vspace'></div><pre> sakhi vinã ei lilãya anyera nãhi gati
+ sakhi-bhãve je tãnre kare anugati
+ rãdhã-krsna-kuñja-sevã sãdhya sei pãya
+ sei sãdhya pãite ãra nãhika upãya 
+</pre><p class='vspace'>“Ciertamente, excepto las gopis, nadie puede ingresar a los pasatiempos confidenciales de Radha y Krishna. Solo quienes siguen los pasos de las gopis, adorando al Señor en su temperamento, pueden realizar la meta última del servicio a Sri Sri Radha-Krishna en los bosquecillos forestales de Vrindavan. No hay otro procedimiento para lograr este objetivo”.
+(Caitanya Caritãmrta 2.8.204-5)
+</p>
+<p class='vspace'>Un rasgo notable de las amigas de Rãdhãrãni es que ellas no tienen un deseo personal de disfrutar íntimamente con Krishna. Su placer se deriva enteramente de ver a la Divina Pareja unida y ayudarles a experimentar el gozo de la unión.
+</p>
+<div class='vspace'></div><pre> sahaja gopira prema nahe prãkrta kãma
+ kãma-kridã-sãmye tãra kahi kãma-nãma
+</pre><p class='vspace'>“El amor natural de las gopis por Krishna no es sensualidad material. De todos modos, puesto que su amor trascendental por Krishna se asemeja a la atracción entre los hombres y mujeres de este mundo, a veces se le concede el nombre de kãma o lujuria”.
+(Caitanya Caritãmrta 2.8.214)
+</p>
+<p class='vspace'>El Tantra y Rupa Gosvãmi en su Bhakti-rasãmrta-sindhu declaran asimismo:
+</p>
+<div class='vspace'></div><pre> premaiva gopa-rãmãnãm
+ kãma ity agamat prathãm
+ ity uddhavàdayo ‘py etam
+ vãñchanti bhagavat-priyãh
+</pre><p class='vspace'>“El amor divino de las pastoras llegó a ser conocido como lujuria. Aún así, Uddhava y otros grandes devotos amados del Señor, desean alcanzarlo”.
+(Caitanya Caritãmrta 1.4.163; Bhakti-rasãmrta-sindhu 1.2.275-6)
+</p>
+<p class='vspace'>Los siguientes dos versos del Bhãgavatam ejemplifican el aprecio de Uddhava por el amor de las gopis por Krishna.
+</p>
+<div class='vspace'></div><pre> vande nanda-vraja-strinãm
+ pãda-renum abhiksnasah
+ yãsãm hari-kathodgirnam
+ punãti bhuvana-trayam
+</pre><p class='vspace'>“Yo glorifico constantemente el polvo de los pies de las mujeres de los pastizales de Nanda. Su canto de las actividades del Señor Krishna purifica al universo todo”.
+(Srimad Bhãgavatam 10.47.63)
+</p>
+<div class='vspace'></div><pre> ãsãm aho carana-renu-jusãm aham syãm
+ vrndãvane kim api gulma-latausadhinãm
+ yã dustyajam sva-janam ãrya patham ca hitvã
+ bhejur mukunda-padavim srutibhir vimrgyãm
+</pre><p class='vspace'>“ ¡Ah! Vuélvame yo una de las hierbas y plantas de Vrindavan para ser regularmente salpicado con el polvo de los pies de las gopis, pues las gopis abandonaron a sus familias y principios religiosos, ambos en extremo difíciles de abandonar, de modo de adorar a Mukunda, el objetivo último de todas las literaturas Védicas”. 
+(Srimad Bhãgavatam 10.47.61)
+</p>
+<p class='vspace'>Kubjã y otros devotos que no tuvieron el mismo grado de deseo intenso por el placer de Krishna que las gopis, pero que manifestaron asimismo sentimientos eróticos por El, se explica  poseen kãma-prãyã rati - un amor que solo se asemeja al de las gopis. Esta conclusión se debe al alto nivel de deseo de Kubjã (y demás devotos de temperamento similar) por su propio placer. La presencia de dicho deseo de disfrute personal al estar cerca de Krishna, indica que el amor es menos puro. Por esta razón ha sido calificado de kãma-prãyã (Ver también Bhakti-rasãmrta-sindhu 1.2.287). En otra parte se refiere que el amor de Kubjã por Krishna es mundano (sãdhãrani rati) un clamor lejano del amor desinteresado demostrado por Radha y las gopis.
+</p>
+<p class='vspace'>Radha es aludida metafóricamente como la enredadera del amor divino para Krishna; las sakhis son sus retoños, ramas, hojas y frutos. Así como la flor florece al recibir agua a través de las raíces del arbusto, asimismo las sakhis y mañjaris sienten gozo a través del placer de Srimati Rãdhãrãni y no independientemente de Ella. Hay un aforismo bengalí que reza, mulete siñcile jala, sãkhã pallavera bala, sire vãri nahi kãryakãri. “Si se vierte agua en la raíz, las ramas y hojas cobran fuerza. Verter agua en lo alto de la planta es inefectivo”. Las sakhis en tal sentido obtienen un placer mayor de la reunión de Radha y Krishna que el que obtendrían disfrutando personalmente de una cita con Krishna. Radha, por otra parte, pese a conocer esta indiferencia de sus amigas, igualmente las envía a Krishna para que puedan experimentar la bienaventuranza de la unión con El. Esto Le brinda millones de veces más placer que Su propia felicidad personal. Tal es la naturaleza de los pasatiempos divinos de las gopis y Krishna y la razón de que se diga que su amor no puede ser contemplado como lujuria material. 
+</p>
+<div class='vspace'></div><pre> nijendriya-sukha-hetu kãmera tãtparya
+ krsna-sukha-tãtparya gopi-bhãva-varya
+ nijendriya-sukha-vãñchã nãhi gopikãra
+ krsne sukha dite kare sangama-vihãra
+</pre><p class='vspace'>“La lujuria se comprende como el deseo por el placer sensual personal. En contraste, el humor superior de las gopis es el deseo de satisfacer los sentidos de Krishna. Las gopis no tienen una pizca de deseo por su propio placer sensual y solo se ocupan en relaciones íntimas con Krishna para brindarLe felicidad”.
+(Caitanya Caritãmrta 2.8.216-7)
+</p>
+<p class='vspace'><strong>SIGUIENDO LOS PASOS DE LAS GOPIS</strong>
+</p>
+<p class='vspace'>Habiendo establecido la pureza suprema del amor de las gopis, Rãmãnanda procede a remarcar la necesidad de seguir sus pasos:
+</p>
+<div class='vspace'></div><pre> sei gopi-bhavãmrte jañra lobha haya
+ veda-dharma-loka tyaji se krsne bhajaya
+ rãgãnuga-mãrge tãnre bhaje jei jana
+ sei-jana pãya vraje vrajendra-nandana
+ vraja-lokera kona bhãva-laña yei bhaje
+ bhãva-yogya deha pãñã krsna paya vraje
+ tãhãte drstanta upanisad sruti-gana
+ rãga-mãrge bhaji pãda vrajendra-nandana
+</pre><p class='vspace'>“Quien tenga un fuerte deseo de saborear el néctar del temperamento amoroso de las gopis, abandona toda consideración de adherirse exclusivamente a los principios religiosos de los Vedas, no preocupándose por la opinión pública, sino que simplemente adora a Krishna. Todo aquel que adore al Señor en el sendero rãgãnuga pronto obtiene al hijo de Nanda Mahãrãja en la tierra de Vraja. Todo aquel que adore a Krishna en cualquiera de los humores de los residentes de Vraja, obtiene un cuerpo espiritual adecuado para servirLo allí. Ejemplos de esto son las personificaciones de los sagrados Upanisads, que por adorar al Señor en el sendero del amor espontáneo, llegaron a los pies de loto de Vrajendranandana”.
+</p>
+<div class='vspace'></div><pre> vidhi-mãrge nã pãile vraje krsnacandra
+ ataeva gopi-bhãva kari angikãra
+ rãtri-dina cinte rãdhã-krsnera vihãra
+ siddha-dehe cinti kare tãhãññi sevana
+ sakhi-bhãve pãya rãdhã-krsnera carana
+</pre><p class='vspace'>“Nadie puede obtener a Krishna en Goloka Vrindavana, simplemente por Servirlo conforme a los principios regulativos. Por consiguiente, hay que aceptar el temperamento de las gopis y meditar día y noche en los pasatiempos de Sri Radha y Krishna. Debemos meditar en el cuerpo espiritual eterno y usarlo para servir a Radha y Krishna; por así hacerlo uno obtiene la asociación directa de Sus pies de loto”.
+(Caitanya Caritãmrta 2.8.227-8)
+</p>
+<p class='vspace'>No cabe esperanza de lograr el prema sin aceptar el liderazgo de las gopis, pues es inaccesible para quien contempla a Krishna como un objeto de respeto y veneración. Laksmi es un ejemplo de tal persona. Ella adora al Señor pero no puede Obtenerlo en Vraja debido a que Lo percibe como el Señor de Vaikuntha.
+</p>
+<div class='vspace'></div><pre> gopi-ãnugatya vinã aisvarya-jñãne
+ bhajileha nãhi pãya vrajendra-nandane
+ tãhãte drstãnta laksmi karila bhajana
+ tathãpi nã pãila vraje vrajendra-nandana
+</pre><p class='vspace'>“Si no se siguen los pasos de las gopis y se continúa absorto en la conciencia de la majestad del Señor, no se puede lograr el servicio de los pies de loto del hijo de Nanda Mahãrãja, aunque uno se ocupe en el servicio devocional. Un ejemplo de ello es la diosa de la fortuna, quien adoró al Señor Krishna de modo de llegar a Sus pasatiempos en Vrndavana, pero fracasó”.
+(Caitanya Caritãmrta 2.8.229-30)
+</p>
+<p class='vspace'>En confirmación, el Bhãgavatam declara:
+</p>
+<div class='vspace'></div><pre> nãyam sriyo’nga u nitãnta-rateh prasãdah
+ svar-yositãm nalina-gandha-rucãm kuto ‘nyah
+ rãsotsave ‘sya bhuja-danda-grhita-kantha
+ labdhãsisãm ya udagãd vraja-sundarinãm
+</pre><p class='vspace'>“En la danza rãsa, el Señor evidenció Su favor por las beldades de Vraja, posando Sus poderosos brazos en sus hombros y danzando con cada una de ellas individualmente. Esta bendición de amor extremo nunca fue siquiera experimentada por Kaksmidevi, qué decir de las diosas en los planetas celestiales, - pese a que de sus cuerpos emana la deliciosa fragancia de las flores de loto”.
+(Srimad Bhãgavatam 10.47.60)
+</p>
+<p class='vspace'><strong>RÃGÃNUGÃ BHAKTI</strong>
+</p>
+<p class='vspace'>La devoción que sigue los pasos de los residentes de Vraja, es denominada rãgãnugã-bhakti. Solo esta clase de devoción complace realmente a Krishna, mientras que el vaidhi bhakti no conduce a Vraja sino a Vaikuntha. ¿Cuáles son entonces los medios para obtener el rãga-bhakti? Aquel que haya experimentado el despertar de la fe pura es apto para adoptar las 64 diferentes prácticas del vidhi-mãrga. Sin embargo, la codicia es el único medio que puede adquirir la conciencia empapada en los diversos sabores del Krishna bhakti. Por oír continuamente sobre el afecto natural e impetuoso de los residentes de Vraja por el Señor, aquel que cultiva ese deseo, libre de engaño, se torna apto para conseguir el humor nectáreo de las gopis. Esa persona está calificada para adorar en el sendero rãgãnugã.
+</p>
+<p class='vspace'>En Vrindavan, Krishna posee incontables sirvientes como Raktaka, Patraka, Citraka, Bakula, Bhrngãra, Bhangura, Jambula, Rasãla.  Sus amigos incluyen a Sridãma, Sudãmã, Vasudãma, Stokakrsna y Subala. Sus padres son Nanda y Yasodã, asistidos por otros gopas y gopis mayores. Cada una de estas personas adora a Krishna de acuerdo a su deseo particular. El humor devocional plenamente demostrado por estos residentes de Vraja, se denomina rãgãtmikã bhakti. La devoción correspondiente a este humor se denomina rãgãnugã.
+</p>
+<p class='vspace'>Los devotos de la senda rãgãnugã se ocupan en la devoción pura a Krishna, en los humores de servidumbre, amistad, paternal o de amor conyugal. Rupa Gosvãmi cita el siguiente verso del Nãrãyana-vyuha-stava:
+</p>
+<div class='vspace'></div><pre> pati-putra-suhrã-bhrãtr-
+ pitrv an mitravad dharim
+ ye dhyãyanti sadodyuktãs
+ tebhyo’piha namo namah
+</pre><p class='vspace'>“Ofrezco mis repetidas reverencias a todos esos devotos que meditan con gran anhelo en el Señor como su esposo, hijo, compañero, hermano, padre o amigo”.
+(Bhakti-rasãmrta-sindhu 1.2.308, Caitanya Caritãmrta 2.2.163)
+</p>
+<p class='vspace'>En el curso de adorar a Krishna a Vraja, el rãgãnugã-bhakti  desea con intensidad obtener el temperamento de uno de estos devotos. En consecuencia, logra un cuerpo espiritual apropiado para su servicio elegido y finalmente, habiendo logrado la perfección, gana la asociación personal de Krishna. Se brinda el ejemplo de los Srutis que aceptaron a las gopis como sus guías y de tal modo obtuvieron a Krishna siguiendo el rãga-mãrga:
+</p>
+<div class='vspace'></div><pre> iste svãrasiki rãgah
+ paramãvistatã bhavet
+ tanmayi yã bhaved bhaktih
+ sãtra rãgãtmikoditã
+</pre><p class='vspace'>“La absorción intensa y espontánea en el objeto de nuestra adoración (ista) es llamado rãga. La devoción caracterizada por dicho rãga es llamada rãgãnugã-bhakti”.
+(Bhakti-rasãmrta-sindhu 1.2.272)
+</p>
+<p class='vspace'>En su Comentario Durgama-sangamini, Jiva Gosvãmi explica que la causa de la absorción intensa y espontánea es prema-mayi trsnã o el deseo divino amoroso. Cuando nuestra devoción se ve dominada por dicho deseo vigoroso, se denomina rãgãtmikã bhakti. Este rãgãtmikã bhakti se clasifica a su vez en dos categorías: kãma-rupã (“erótico”) y sambandha-rupa (“de relación”). Cuando el rãga o absorción espontánea e intensa está conformado por el deseo erótico, se denomina kãma-rupa; cuando es el resultado de otro tipo de relación, se denomina sambandha-rupã.
+</p>
+<p class='vspace'>Aunque el kãma-rupã bhakti implica una relación, es la única relación dominada por el deseo erótico; un deseo exclusivo de complacer todos los sentidos del Señor. Por tal motivo, aunque en apariencia parece lujuria común, es completamente puro, caso contrario, ¿porqué grandes devotos como Uddhava oran por experimentarlo, como se evidencia en los versos antes mencionados?
+</p>
+<p class='vspace'>El amor de relación (sambandha-rupã) es el que se experimenta por quienes se enorgullecen de ser los padres de Krishna o de tener otras relaciones con El, como ser de amigo o sirviente. Todos estos asociados eternos están indicados por el verso Bhãgavata (Srimad Bhãgavatam 7.1.30) donde se refiere que los Vrsnis obtuvieron la perfección simplemente por estar relacionados con Krishna. Debido a su falta de conocimiento del poder divino de Krishna, el amor de los pastores de Vraja es incluso superior al de los Vrsnis u otros parientes de Krishna de Mathurã y Dvãrakã; ellos son incluso más exaltados.
+</p>
+<p class='vspace'><strong>LOBHA O EL DESEO INTENSO NOS CAPACITA PARA EL RÃGÃNUGÃ BHAKTI</strong>
+</p>
+<p class='vspace'>Al igual que el rãgãtmikã bhakti, el rãgãnugã bhakti tiene dos divisiones. Los que desean intensamente (lobha) llegar a obtener el amor de las gopis por Krishna, están calificados para practicar el rãgãnugã bhakti.
+</p>
+<div class='vspace'></div><pre> krsna-bhakti-rasa-bhãvitã matih
+ kriyatãm yadi kuto’pi labhyate
+ tatra laulyam api mulyam ekalam
+ janma-koti-sukrtair na labhyate
+</pre><p class='vspace'>“Puesto que la conciencia de Krishna empapada de devoción no puede ser alcanzada ni siquiera después de practicar centenares de miles de actos piadosos, uno debe pagar el único precio por el cual puede ser comprada: una intensa codicia por poseerla. Una vez lograda esta ambición, hay que asirla con afán”.
+(Padyãvali 14, Caitanya Caritãmrta 2.8.70)
+</p>
+<p class='vspace'>La palabra laulya (codicia) mencionada en el verso anterior, es un sinónimo para lobha, palabra utilizada por Rupa Gosvãmi para explicar la necesaria calificación para ingresar al sendero del rãgãnugã-bhakti. Otro sinónimo para laulya es lãlãsa, también empleada para expresar esta aptitud.  Debemos tratar de entender el significado de este término. Cuando nuestra fe está firmemente basada en una actitud sumisa hacia los mandamientos Escriturales, se adoptan las diversas actividades del servicio devocional en el vidhi-mãrga. Gradualmente luego se progresa a través de los niveles descritos por Rupa Gosvãmi, a saber: fe, asociación con los devotos, actividades devocionales, liberación de las deficiencias del carácter; fuerte determinación; gusto, apego y finalmente síntomas  extáticos y amor. El comienzo del estado extático aparece después de la etapa del apego (ãsakti). Esto luego es seguido por el logro del amor puro o prema. 
+</p>
+<p class='vspace'>El servicio devocional en el sendero de rãgãnugã-bhakti se basa en la fe que posee un intenso deseo (lobha). Dicha codicia o deseo intenso es en extremo rara; Rupa Gosvãmi explica que cuando un devoto oye las Escrituras divinamente inspiradas como el Srimad Bhãgavatam y el Padma Purana de labios de un guru realizado, o demás descripciones de los dulces pasatiempos del Señor con Sus devotos de Vrindavan en las cinco relaciones, es afectado por los encantadores humores expresados por estos asociados eternamente perfectos del Señor. No solo eso, también se encanta por la belleza de la forma y atributos del Señor y  cuando contempla la forma deidad del Señor se encanta asimismo por Su belleza. Hasta el más leve indicio de tal experiencia hace que se vuelva cada vez más indiferente a los mandatos Escriturales y demás argumentaciones teológicas que animan el servicio a Dios. Su deseo de continuar experimentando la dulzura del Señor y Sus devotos se vuelve algo espontáneo y natural. Se explica que tales son los síntomas de lo que Rupa llama “la emergencia de la codicia” (lobhotpatti).
+</p>
+<p class='vspace'>Rupa dice que los que se hallan en la senda de los principios regulativos continúan dependiendo de los mandatos Escriturales y argumentos lógicos, hasta el punto de establecer un sentido sólido de relación, a saber, rati. A partir de esta etapa, que equivale al amanecer de los éxtasis, llamado bhãva, ya no necesitan más de ningún estimulante externo. La práctica del devoto rãgãnugã, sin embargo, se basa en una motivación interna, llamada deseo intenso o codicia, desde el preciso comienzo. El no tiene necesidad de argumentaciones y ordenanzas para sentirse motivado. De todos modos, cabe señalar que precisamente porque siente ese deseo intenso, continúa buscando información de los diversos sentidos de modo de facilitar su obtención del objeto de su deseo. Ciertamente, él lo considerará como un deber.
+</p>
+<p class='vspace'>Krishnadãsa Kavirãja Gosvãmi lo resume como sigue:
+</p>
+<div class='vspace'></div><pre> iste gãdha-trsnã rãgera svarupa-laksana
+ iste ãvistatã ei tatastha-laksama
+ rãgamayi-bhaktira haya rãgãtmikã nãma
+ tãhã suni lubdha haya kona bhãgyavãn
+ lobhe vraja-vãsira bhãve kare anugati
+ sãstra-yukti nãhi mãne rãgãnugãra prakrti
+</pre><p class='vspace'>“La característica esencial del rãga o apego profundo, es una ardiente sed por el Señor Supremo. La completa absorción en El  es su aspecto marginal. El servicio devocional impregnado de dicho rãga, es llamado rãgãnugã-bhakti, servicio amoroso espontáneo. Seremos muy afortunados si tras oír sobre ello, se ambiciona dicha aspiración. Si atento al deseo trascendental se siguen los pasos de los habitantes de Vrndavan, no hay interés por los mandatos o razonamientos del sãstra. Tal es la naturaleza del sendero que busca el amor espontáneo”.
+(Caitanya Caritãmrta 2.22.151-3)
+</p>
+<p class='vspace'>“Seguir los pasos” no ha de ser tomado como una imitación. Los siguientes versos del Bhakti-rasãmrta-sindhu de Rupa Gosvãmi que definen al rãgãnugã-bhakti refrendan claramente esta noción:
+</p>
+<div class='vspace'></div><pre> virãjantim abhivyaktãm
+ vraja-vãsi-janãdisu
+ rãgãtmikãm anusrtã
+ yã sã rãgãnugocyate
+</pre><p class='vspace'>“El rãgãtmikã bhakti o servicio devocional en amor espontáneo, es vívidamente expuesto y manifestado por los habitantes de Vrndavan. Las prácticas devocionales que siguen al despertar de esta actitud amorosa espontánea se denominan rãgãnugã-bhakti”.
+(Bhakti-rasãmrta-sindhu 1.2.270; Caitanya Caritãmrta 2.22154)
+</p>
+<div class='vspace'></div><pre> tad tad-bhãvadi-mãdhurye
+ srute dhir yad apeksate
+ nãtra sãstram na yuktim ca
+ tal lobhotpatti-laksanam
+</pre><p class='vspace'>“Si al oír sobre los dulces humores y actividades de Krishna y Sus devotos en Vraja, aquel cuya mente se vea atraída en tal sentido, ya no dependerá más de la instrucción de las Escrituras reveladas, la lógica o la argumentación, pues posee el síntoma indicativo de la irrupción de la codicia”.
+(Bhakti-rasãmrta-sindhu 1.2.292; Caitanya Caritãmrta 2.22.155)
+</p>
+<div class='vspace'></div><pre> seva sãdhaka-rupena
+ siddha-rupena cãtra hi
+ tad-bhãva-lipsunã kãryã
+ vraja-lojãnusãratah
+</pre><p class='vspace'>“El devoto que desea intensamente obtener el humor rãgãtmikã de los asociados Vrajavãsi de Krishna, debe ocuparse en las prácticas del servicio devocional con su cuerpo externo como practicante e internamente, en su cuerpo espiritual, siempre siguiendo los pasos de los residentes de Vraja”.
+(Bhakti-rasãmrta-sindhu 1.2.295; Caitanya Caritãmrta 2.22.158)
+</p>
+<div class='vspace'></div><pre> krsnam smaran janam cãsya
+ prestham nija-samihitam
+ tat-tat-kathã-ratãs cãsau
+ kuryãd vãsam vraje sadã
+</pre><p class='vspace'>“Recordando a Krishna y a uno de Sus devotos más queridos y próximos, hay que permanecer constantemente absorto en oír sobre sus relaciones amorosas. De esta forma, uno obtiene la residencia permanente en Vraja”.
+(Bhakti-rasãmrta-sindhu 1.2.294; Caitanya Caritãmrta 2.22.160)
+</p>
+<p class='vspace'>La presentación de Krishnadãsa Kavirãja Gosvãmi de estos versos, es como sigue:
+</p>
+<div class='vspace'></div><pre> bãhya antara ihãra dui ta sãdhana
+ bãhye sãdhaka-dehe kare sravana-kirtana 
+ mane nija-siddha-deha kariyã bhãvana
+ rãtri-dine kare vraje krsnera sevana
+ nijãbhista krsna-prestha pãcheta lãgiyã
+ nirantara sevã kare antarmanã hañã
+</pre><p class='vspace'>“El rãgãnugã bhakti es practicado tanto externa como internamente. En el cuerpo externo, el practicante se ocupa en oír y cantar; en su mente, sin embargo, medita en su cuerpo espiritual y sirve a Krishna en Vrindavan, día y noche. En su mente, sirve a Krishna ateniéndose estrechamente al temperamento de su devoto favorito en Vraja, alguien muy querido al Señor”.
+(Caitanya Caritãmrta 2.22.156-7. 159)
+</p>
+<p class='vspace'>El sãdhaka-rupa es el cuerpo del practicante o el cuerpo que uno ocupa mientras practica el servicio devocional externamente. El siddha-rupa es el cuerpo espiritual; la forma deseada adecuada para ejecutar el servicio a Krishna, que es muy querido al corazón. En estos dos cuerpos hay que seguir al devoto particular amado del Señor, cuyo temperamento se tiene un gran anhelo de obtener, como ser Srimati Rãdhãrãni, Lalitã, Visãkhã o Sri Rupa Mañjari en un nivel y en otro, Sri Rupa y Sanãtana Gosvãmis y su entorno. Hay que seguir a estas personalidades y servir al Señor en ambos niveles. En el cuerpo externo hay que ocuparse en los tipos de servicio ejecutados por Rupa y Sanãtana. En el cuerpo de meditación o siddha-deha, uno debe servir de la forma mostrada por Radha, Lalitã, Visakhã y Rupa Mañjari. El practicante nunca debe imitar a estos devotos en ninguno de los dos niveles.
+</p>
+<p class='vspace'>La hija de Srinivãsa Ãcãrya, Srimati Hemalatã Thãkurani, tenía un discípulo a quien posteriormente excomulgó por sus opiniones no ortodoxas, las que enseñaba en la zona del Valle Surma de Assam. Este discípulo desviado, Rupa Kavirãja, enseñaba que puesto que las gopis no tomaban refugio en un guru, observaban el ayuno Ekãdasi o adoraban la Sãlagrãma y Tulasi Devi, no era tampoco necesario que sus seguidores lo acataran tampoco. Visvanãtha Cakravarti refutó vigorosamente esta doctrina (a la que llamó Sauramya-mata en honor a la región donde era popular). Esta doctrina interpreta las palabras vraja-loka del verso de Rupa Gosvãmi como alusiva a las doncellas de Krishna en Vraja, como ser Rãdha y Candrãvali. Esta Escuela de pensamiento aún cuenta con representantes hoy en Vrindavan, en el Ghontãr Kuñja. Al igual que la Escuela Atibãri, sus adeptos solo usan una hilera de cuentas de tulasi en el cuello y son asimismo conocidos como Vãmakaupinis. Puesto que son meros imitadores de los asociados eternos de Krishna, están excluidos de la sociedad Vaisnava pura. (1)
+</p>
+<p class='vspace'>Los rãgãnugã-bhaktas genuinos permanecen devotamente consagrados en el tipo de servicio que desean de acuerdo a la directiva del guru. Así pues, su amor por Krishna se desarrolla rápidamente y llegan al nivel de los éxtasis y el amor puro. El primer peldaño de la manifestación del amor se denomina bhãva-bhakti; posteriormente intensificado, se convierte en la plena manifestación de amor llamada prema-bhakti.
+</p>
+<div class='vspace'></div><pre> ei mata kare jebã rãgãnugã-bhakti
+ krsnera carane tãnra upajaya priti
+</pre><p class='vspace'>“Aquel que se ocupa en el rãgãnugã-bhakti de este modo desarrolla amor por los pies de loto de Krishna”.
+(Caitanya Caritãmrta 2.22.164)
+</p>
+<p class='vspace'>Srila Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura, mi muy reverenciado maestro espiritual, escribió en su Comentario Anubhãsya a estos versos: “Hay que servir en la forma propia del devoto, repitiendo el hari-kathã oído de los maestros espirituales, y servir mentalmente a Radha y Krishna directamente en Vraja, en un cuerpo espiritual apropiado a ese servicio y el temperamento individual. Aquel que sirve de esta manera ya no se halla más en el sendero de vaidhi bhakti ni está ya más motivado exclusivamente por las palabras del guru y la Escritura. Antes bien, sobre la fuerza de su gusto naturalmente despertado (ruci) por el servicio devocional, está recorriendo la senda del rãgãnugã bhakti y pronto llega al destino del intenso amor por Krishna. Cuando se llega a este nivel de humores extáticos (bhãva) en el sendero rãgãnugã,  rápidamente se pone a Krishna bajo la influencia personal y en ese momento obtiene el servicio amoroso a Krishna”.
+</p>
+<p class='vspace'><strong>HARINÃMA: LOS MEDIOS PARA DESPERTAR LOBHA</strong>
+</p>
+<p class='vspace'>Generalmente se cree que el rãga-mãrga perdona lo licencioso, lo cual es una antinomia. Naturalmente, tal creencia es incorrecta.  No se puede seguir el sendero rãgãnugã sin primero obtener la necesaria calificación de intenso anhelo. Cuando surge dicho anhelo intenso, luego solo el amor guía al practicante. A esa altura, el propósito subyacente de todas las actividades del vidhi-mãrga se hace claro para el practicante, de modo que aún si se torna menos consistente en algunas de sus prácticas, su alma y corazón están constante e infatigablemente ocupados en el cultivo de la conciencia de Krishna. Aunque de alguna manera tenga algunas carencias en otras áreas de la vida devocional, nunca disminuye su interés por oír y cantar los Santos Nombres.
+</p>
+<p class='vspace'>El despertar del lobha que nos califica para el rãgãnugã-bhakti no ha de tomarse como algo barato o sencillo de obtener. ¿Significa esto que la jiva no tiene chance de experimentarlo? En respuesta, Bhaktivinoda Thãkura escribe lo siguiente:
+</p>
+<div class='vspace'></div><pre> vidhi-mãrga-rata jane svãdhinatã ratna dãne
+ rãga-mãrge karãn pravesa
+ rãga-vasa-varti haye pãrakiya rasãsraye
+ labhe jiva krsna premãvesa
+</pre><p class='vspace'>“A la persona fija en los principios regulativos, el Santo Nombre le concede la joya de la independencia y la ubica en el sendero de la devoción espontánea. Esa persona, superada por el apego espontáneo al Señor, toma refugio en el temperamento parakiya y de tal modo se absorbe en el amor por Krishna”.
+</p>
+<p class='vspace'>Mahãprabhu invistió todas Sus energías en Su Santo Nombre. Los cinco rasas, neutralidad, servidumbre, amistad, paternal y conyugal, están presentes en total esplendor en el Nombre de Aquel que encarna todos los humores infinitos del intercambio amoroso. Así pues, Bhaktivinoda también canta, akhila-rasera khani krsna nãma cintãmani - “El nombre de Krishna es una piedra filosofal. Es una mina de oro llena de infinitos humores de intercambio amoroso”.
+</p>
+<p class='vspace'>Si uno desea ganar el tesoro del amor por Dios, debe aceptar el liderazgo de Caitanya Mahãprabhu en todo sentido. Debe tomar iniciación e inspiración en Su línea de enseñanzas, adoptando principalmente el canto de los Santos Nombres, los 16 nombres y 32 sílabas del Mahã-mantra Hare Krishna.
+</p>
+<p class='vspace'>En el Bhãgavatam, el noveno Yogindra, Karabhãjana, declara que Mahãprabhu es la plena encarnación del Señor.
+</p>
+<div class='vspace'></div><pre> krsna-varnam tvisãkrsnam
+ sãngopãngãstra-pãrsadam
+ yajñai sankirtana-prãyair
+ yajanti hi su-medhasah
+</pre><p class='vspace'>“En la Era de Kali, el Señor dorado en cuyos labios siempre permanece el nombre de Krishna, aparece en compañía de Sus expansiones, porciones, armas y asociados. Los que sean muy inteligentes Lo adorarán mediante el sacrifico de la glorificación en congregación (sankirtana-yajña)”. (11.5.32)
+</p>
+<p class='vspace'>Esta predicción contiene mucha información sobre el avatar Mahãprabhu: las palabras krsna-varnam indican que las dos sílabas (varna), krs-na, están siendo constantemente glorificadas por el Señor. Esto es, a través del kirtana. El está siempre instruyendo al mundo en conciencia de Krishna. También significa que en Su humor devocional, El está constantemente buscando a Krishna, pronunciando Su Nombre. Las palabras sãngopãngãstra-pãrsadam se refieren a los asociados del Señor. Sus angas o “cuerpos” son Nityãnanda Prabhu y Advaita Prabhu, que son diferentes formas del Señor. Sus upãngas o miembros menores son los devotos del Señor como Srivãsa Pandit, que han tomado refugio en El. Su astra o “arma” es el Santo Nombre y Sus pãrsadas, “asociados”, son Sus energías, como ser Gadãdhara, Svarupa Dãmodara, Rãmãnanda, Sanãtana y Rupa. El color del cuerpo del Señor es akrsna o “no negro”, que en relación a otras declaraciones del Bhãgavatam indica que Su matiz es el dorado. En tal sentido, aunque internamente  negro (Krishna), externamente El es dorado (Gaura). El significado de oro en este verso es que el Señor Gaurãnga ha tomado el color de Srimati Rãdhãrãni así como Su humor interno. En la Era de Kali, las personas más inteligentes adorarán al Señor Krishna en esta forma, a través del canto de los Santos Nombres.
+</p>
+<p class='vspace'>Cuando Mahãprabhu puso Sus brazos alrededor de Sus asociados íntimos Rãmãnanda y Svarupa Dãmodara y les dijo extáticamente que los Santos Nombres son el único medio para ingresar a la comprensión del bhakti-rasa, El indicó claramente que Su enseñanza está centrada en el canto de los Santos Nombres. El dijo: “Mis queridos Svarupa Dãmodara y Rãmãnanda Rãya, les informo que el canto de los Santos Nombres es el medio más apropiado de salvación en esta era de Kali. En esta era, el proceso de adorar a Krishna consiste en realizar el sacrificio cantando el Santo Nombre. Aquel que así lo hace es ciertamente muy inteligente y alcanza amparo a los pies de loto de Krishna. Simplemente por cantar el santo nombre del Señor Krishna, uno es liberado de todos los hábitos indeseables. Este es el medio para despertar toda buena fortuna y acarrear el flujo de las olas del amor por Krishna”.
+(Caitanya Caritãmrta 3.20.8-9,11)
+</p>
+<p class='vspace'>Mahãprabhu explicó a Svarupa Damodara y Ramananda Raya la actitud que uno debe tener al cantar:
+</p>
+<div class='vspace'></div><pre> trnãd api sunicena
+ taror iva sahisnunã
+ amãninã mãnadena
+ kirtaniyah sadã harih
+</pre><p class='vspace'>“Uno debe cantar el santo nombre del Señor considerándose más bajo que la hierba silvestre. Debe ser más tolerante que un árbol, no esperar respeto para su persona y respetar absolutamente a los demás”.
+(Caitanya Caritãmrta 3.20.21)
+</p>
+<p class='vspace'>Si se canta el Santo Nombre con este espíritu, el despertar auspicioso del deseo intenso del amor por Krishna en el humor de los Vrajãvãsis pronto se desarrollará en el corazón. La persona que está privada de esta riqueza es ciertamente pobre y miserable. El devoto por consiguiente ora: 
+</p>
+<div class='vspace'></div><pre> prema-dhana vinã vyartha daridra jivana
+ dãsa kari betana more deha prema-dhana
+</pre><p class='vspace'>“Sin amor por Krishna, mi vida carece de significado y es pobrísima. Por consiguiente, oro que me conviertas en Tu sirviente y como salario, págame con amor extático por Dios”.
+(Caitanya Caritãmrta 3.20.37)
+</p>
+<p class='vspace'>El canto de los Santos Nombres es la mejor y más poderosa de todas las prácticas espirituales. Por sí sola, no solo destruye todas las contamoinaciones que asolan la conciencia del practicante, sino que pueden dispensar sobre él la posesión más valiosa de todas, el amor por Dios. Quien posee este amor por la Divina Pareja, Radha y Krishna, es el más rico de todos. Si se ambiciona lograr estas riquezas, entonces se debe glorificar de todo corazón el canto del Santo Nombre por encima de todo. Todos los asociados de Mahãprabhu sentaron este ejemplo con su propio comportamiento.
+</p>
+<p class='vspace'>Nuestro muy adorable maestro espiritual Srila Prabhupãda a menudo citaba a Jiva Gosvãmi del Bhakti-sandarbha: “Primero se espera que se oigan los nombres del Señor de modo de purificar el ser interior”(prathamam nãmnah sravanam antahkarana-suddhy-artham apeksyam).
+</p>
+<p class='vspace'>Prabhupãda explica que solo después que nuestra mente e inteligencia se purifican por el canto de los Santos Nombres se puede oír sobre la forma, cualidades, asociados y finalmente los pasatiempos de Krishna. Aquel que aún no ha llegado a la plataforma del ruci o gusto por el servicio devocional, quizás acuda prematuramente a un guru pretencioso para tomar iniciación e instrucción en el rãgãnuga bhakti, sin primero hacer un esfuerzo por cantar el Santo Nombre sin cometer ofensas. Puede que esa persona luego pretenda estar disfrutando del lilã de Krishna estando aún afectada por la contaminación material, pero dicho intento no tendrá éxito en suscitar en ella el amor por la Divina Pareja y Su servicio en la morada espiritual”.
+</p>
+<p class='vspace'>El sãdhya-sãdhana-tattva se explica completamente en las enseñanzas de Rãmãnanda Rãya, aunque es claro de las palabras de Srila Prabhupãda antes mencionadas que las prácticas que conducen a la meta suprema del servicio a la Divina Pareja, son únicamente posibles merced al proceso purificatorio de cantar el Santo Nombre. El Señor Mismo lo confirmó al decir ihã haite sarva-siddhi haibe sabãra: “Del canto del Santo Nombre todas las perfecciones llegarán a todos”. “Todas las perfecciones” se refiere a las perfecciones de la vida espiritual. Pese a que el amor de los habitantes de Vraja descrito por Rãmãnanda Rãya es el tesoro más secreto del depósito Védico de conocimiento, la imposible proeza de ganar este gran premio puede ser concretada por la misericordia del Santo Nombre pues el mismo puede hacer milagros. Mahãprabhu declaró a Tapana Misra, el abuelo de Raghunãtha Bhatta Gosvãmi: “El objeto de la vida y el medio para lograrlo se encuentran por el canto de los Santos Nombres” y “A medida que practiquen repetidamente el canto del Santo Nombre la simiente del amor germinará y entonces conocerán tanto la meta de la vida como el medio para alcanzarla”.
+</p>
+<p class='vspace'>A Sanãtana Gosvãmi Mahãprabhu dijo que aunque los nueve procesos del servicio devocional pueden dispensar el Krishna prema, el canto de los Santos Nombres es de todos modos el proceso supremo (Caitanya Caritãmrta 3.4.70-1). Esta declaración confirma claramente que la meta última de la vida y la perfección absoluta se obtienen a través del Santo Nombre. En tal sentido, se debe priorizar  la adoración del Santo Nombre  sobre todas las demás actividades devocionales y debe ser reconocido como el medio supremo para lograr la perfección. 
+</p>
+<p class='vspace'>Los Nombres de la Divina Pareja poseen características sin par. Ambos son el medio y la meta de la vida espiritual. El Señor Mismo descendió para revelar esta verdad a la Tierra, en la forma del Santo Nombre y como Mahãprabhu, demostró que el canto del Santo Nombre es la forma suprema de adoración.
+</p>
+<div class='vspace'></div><pre> nãma cintãmanih krisnas
+ caitanya-rasa-vigrahah
+ purnah suddho nitya-mukto
+ ‘bhinnatvãn nãma-nãminoh
+</pre><p class='vspace'>“El Santo Nombre es una piedra filosofal trascendental pues es la encarnación de toda delicia consciente. Es completo, puro y eternamente liberado, siendo no diferente de Krishna Mismo. No es un nombre material por lo que no hay diferencia entre el Nombre y el Uno que es nombrado”.
+(Padma Purana, Bhakti-rasãmrta-sindhu 1.2.233; Caitanya Caritãmrta 17.133)
+</p>
+<p class='vspace'>La Brahma-samhitã expresa: “Eso en lo que meditáis en vuestra vida de sadhana será logrado en la etapa perfecta”. (yãdrsi bhãvana yasya siddhir bhavati tãdrsi). En su Prema-bhakti-candrikã, Narottama dãsa dice: “sãdhane bhãbibe jãhã, siddha dehe pãbe tãhã”. Por consiguiente, uno debe revelar continuamente al Santo Nombre su deseo de vraja-prema mientras canta dirijido por Sri Guru, Rupa y Svarupa Dãmodara, sin ofensas. A medida que se canta de este modo, el Santo Nombre será misericordioso y nos concederá la perfección del vraja-prema, pues el Señor Mismo ha dicho que todas las perfecciones nos llegan por la gracia del Santo Nombre (uhã haite sarva siddhi haibe sabãra).
+</p>
+<p class='vspace'>Las grandes autoridades enseñan que uno debe recordar los pasatiempos del Señor conforme a los ocho momentos del día, en relación a los ocho versos del Siksãstaka. En su Bhakti-sandarbha, Jiva Gosvãmi expresa que en Kali Yuga debe ser hecho cualquier tipo de servicio devocional unido al canto del Santo Nombre (yadyapi anyã baktih kalau kartavyã tadã kirtanãkhya-bhakti-samyojanenaiva). No se debe dejar de lado el kirtana para ocuparse en smarana. La esencia de las enseñanzas de Mahãprabhu en relación a sambandha, abhideya y prayojana está contenida dentro de Su Siksãstaka, la esencia de todas las Escrituras.
+</p>
+<p class='vspace'><strong>LA NECESIDAD DE LA MISERICORDIA DE GAURA-NITAI</strong>
+</p>
+<p class='vspace'>En su Nãmãstakam (verso 7), Rupa Gosvãmi indica que el Nombre es incluso más misericordioso que Lo Nombrado.
+</p>
+<div class='vspace'></div><pre> vãcyo vãcaham ity udeti bhavato nãma svarupa-dvayam
+ purvasmãt param eva honta karunã tatrãpi jãnimahe
+ yas tasmin vihitãparãdha-nivahah prãni samantãd bhaved
+ ãsyenedam upãsya so’pi hi sadãnandãmbudhau majjati
+</pre><p class='vspace'>“ ¡Oh Señor! Tú te manifiestas en dos formas, como Aquel que es Nombrado y como el Nombre. De las dos, yo considero a la segunda más misericordiosa que la primera. Aunque uno haya cometido incontables ofensas a lo Nombrado, de todos modos puede sumergirse en un océano de ambrosía adorando al Nombre”.
+</p>
+<p class='vspace'>Sin embargo, en el Padma Purana, se traza una clara distinción entre las tres categorías de cantar el Nombre puro (suddha-nãma), el reflejo del Nombre (nãmãbhãsa) y el canto ofensivo (nãmãparãdha). Los siguientes versos hablados por Caitanya Mahãprabhu indican claramente que solo quien canta sin ofensas está calificado para recibir las riquezas del amor por Krishna.
+</p>
+<div class='vspace'></div><pre> bhajanera madhye srestha nava-vidhã bhakti
+ krsna-prema, krsna dite dhare mahã-sakti
+ tãra madhye sarva-srestha nãma-sankirtana
+ niraparãdhe laile nãma pãya prema-dhana
+</pre><p class='vspace'>“De las muchas formas de ejecutar servicio devocional, hay nueve variedades que se consideran las mejores, pues poseen una gran capacidad para entregar amor por Krishna y en tal sentido a Krishna Mismo. De estos nueve procesos de servicio devocional, el más importante es el canto del santo nombre del Señor, pues si se canta sin cometer ofensas se obtiene el tesoro del amor por el Señor”.
+(Caitanya Caritãmrta 3.4.70-1)
+</p>
+<p class='vspace'>Se debe ejercer toda precaución en no incurrir en ninguna ofensa al Santo Nombre. Tomando refugio en los muy misericordiosos y munificentes Gaura-Nitai, en un breve período de tiempo uno tendrá el corazón purificado y será apto para obtener el Radha-Krishna prema.
+</p>
+<div class='vspace'></div><pre> gaurãnga-bhajana sahaja ati
+ sahaja tãra phala vitati
+ gaurãnga baliyã krandana kare
+ suvimala prema anvesaya tãre
+</pre><p class='vspace'>“La adoración de Gaurãnga no es difícil; es sencillo recoger sus frutos. El prema viene buscando al que llora mientras proclama el nombre de Gaurãnga”.
+</p>
+<p class='vspace'>Mahãprabhu y Nitãi Prabhu son los más benevolentes. El que salvaran a los hermanos Jagãi y Mãdhãi no se considera nada extraordinario; solo se hubiera necesitado una de Sus misericordiosas miradas para salvar a los hermanos pese a que eran ofensores. El muy misericordioso Gaurahari, apelando a diversas artimañas, liberó incluso a Devãnanda Pandit, quien cometió una grave ofensa al Vaisnava Srivãsa Pandit.
+</p>
+<p class='vspace'>Recordando Su misericordia, aquel que desee avanzar en el sendero del rãgãnugã bhakti debe orar constantemente y con humildad al Señor Caitanya y al Señor Nityãnanda, como ora Narottama dãs Thãkura en su Prãrthanã:
+</p>
+<div class='vspace'></div><pre> ãra kabe nitãi cãndera karuna haibe
+ samsãra-vãsana mora kabe tuccha habe
+ visaya chãriyã kabe suddha habe mama
+ kabe hãma heraba se sri-vrndãvana
+ rupa-raghunãtha pade haibe ãkuti
+ kabe hãma bujhaba se yugala piriti
+</pre><p class='vspace'>“ ¿Cuándo será Nitãi Cãnda misericordioso conmigo? ¿Cuándo se volverán insignificantes mis deseos de disfrutes materiales y vida familiar? ¿Cuándo abandonaré los objetos de los sentidos para tener una mente pura? ¿Cuándo veré la tierra de Vrndavan? ¿Cuándo anhelaré suplicar la misericordia de Rupa y Raghunãtha? ¿Y cuándo podré entender el amor de la Divina Pareja?
+</p>
+<p class='vspace'>Afligidos y pese a la misericordia del Señor, seguimos engañándonos a nosotros mismos y permanecemos desprovistos de los grandes dones que El vino a dar. Narottama ora a Gaurãnga como sigue:
+</p>
+<div class='vspace'></div><pre> gorã pahun nã bhajiyã maninu
+ prema-ratana-dhana helãya hãrãinu
+ adhane jatana kari dhana teyãginu
+ ãpana karama dose ãpani dubini
+ sat-sanga chãri kainu asate vilãsa
+ te kãrane lãgala karma-bandha phãnsa
+ visama visaya bisa satata khãinu
+ gaurãnga kirtana rasa magana nã hainu
+ kena vã ãchaye prãna ki sukha lãgiyã
+ narottama dãsa kena nã gela mariyã
+</pre><p class='vspace'>“He sucumbido por no adorar al Señor Gaurãnga. He desechado despreocupado el tesoro del amor de Krishna. Así pues, he perdido el más valioso tesoro y solo me esforcé por conquistar lo que no tiene valor. Por mi culpa me hundí hasta el más bajo nivel. Rechazando la asociación de los santos, me entretuve en compañía de los malvados. ¿Acaso ha de maravillar que la soga de la reacción kármica cuelgue alrededor de mi cuello? He ingerido el horrible veneno de la gratificación de los sentidos y no me he absorbido en el sabor del sankirtana enseñado por Gaurãnga Mahãprabhu. ¿Qué placer me conserva aún vivo? Narottama dãsa se pregunta, “ ¿Porqué no he muerto por esta miseria?”
+</p>
+<p class='vspace'><strong>PLEGARIA DE BHAKTIVINODA A NRSIMHADEVA</strong>
+</p>
+<p class='vspace'>Quien se vuelve codicioso por el humor experimentado por los residentes de Vraja, adopta espontáneamente la práctica del rãgãnugã bhakti. Es un fenómeno muy raro que solo se produce por la misericordia de un devoto avanzado. Esa buena fortuna es alcanzada cuando uno se refugia en un devoto que esté exclusivamente abocado a cantar los santos nombres del Señor. Aquel que pretende estar calificado se auto engaña, privado para siempre de la misericordia de Nityãnanda-Balarãma y pierde la valiosa oportunidad de obtener alguna vez la joya del amor por Radha y Krishna.
+</p>
+<div class='vspace'></div><pre> nitãiera karunã habe vraje rãdhã-krsna pãbe
+ dhara nitàira carana du’khãni 
+</pre><p class='vspace'>“Cuando Nitãi muestra Su misericordia, entonces uno llega a Radha y Krishna en Vraja. Así pues, asid con fuerza los pies de loto de Nitãi”.
+(Prãrthana)
+</p>
+<p class='vspace'>Si está deseoso de ingresar al sendero de la adoración avanzada, el devoto primero debe esforzarse por eliminar sus vaivenes en la forma de la lujuria, la ira y la codicia. Narottama dãsa Thãkura nos instruye que si tenemos la asociación de los devotos avanzados, estaremos protegidos de la influencia de la lujuria, la ira y la codicia. Mas la asociación de los devotos que son expertos en el proceso del servicio devocional, versados en el arte de la Escritura sagrada, apegados a Krishna y libres de la contaminación material, es rara. Por consiguiente, la sumamente misericordiosa autoridad espiritual Srila Bhaktivinoda Thãkura ora a Nrsimhadeva en el Navadvipa-bhãva-taranga para que ponga fin a todos los obstáculos en el sendero espiritual. Plegarias de este tipo son la única esperanza para las almas caídas condicionadas como nosotros. La plegaria es parte de una descripción del templo de Nrsimha, situado en Devapalli, una ciudad en la isla de Godruma, en Navadvip dhãma.
+</p>
+<p class='vspace'>“ ¿Cuándo contemplaré la belleza de la ciudad llamada Devapalli y rodaré en el polvo del templo de Nrsimhadeva en amor extático? Rogaré sinceramente a Nrsimha que me conceda amor por Krishna y Le oraré para limpiar mi corazón de los seis enemigos, comenzando con la lujuria, la deshonestidad, el afán de prestigio y la corrupción. Caeré a los pies de Nrsimha llorando y orando por el deseo de servir a Krishna. Le pediré ocuparme en la adoración de la Divina Pareja de Navadvipa sin ningún obstáculo. El temor personificado teme al Señor Nrsimha. ¿Cuándo estará El complacido y será misericordioso conmigo? Pese a que la forma de Nrsimha es temida por los malvados, El es sumamente gentil con Prahlãda y demás devotos de Krishna.
+</p>
+<p class='vspace'>“ ¿Cuándo será El amable conmigo y hablará compasivamente, prometiendo protegerme de todos los peligros pese a que soy un tonto y no valgo nada? El me dirá, ‘Ve a vivir libremente en la tierra de Sri Gaurãnga. Tendrás afecto por el Santo Nombre y te ocuparás en el yugala-bhajana, el servicio de la Divina Pareja. Por la gracia de Mis devotos, todos los obstáculos serán removidos. Ahora ve a experimentar el éxtasis de adorar a Radha y Krishna con una mente pura’.
+</p>
+<p class='vspace'>“ ¿Cuándo será que después de decir esas palabras el Señor Nrsimha pose Sus pies de loto sobre mi cabeza?  Allí, a las puertas del templo de Nrsimha, rodaré en el polvo en el éxtasis del amor por la Divina Pareja que descenderá súbitamente sobre mí por Su misericordia”.
+</p>
+<p class='vspace'>Cuando merced a Su amabilidad Nrsimhadeva elimina misericordiosamente los obstáculos de la vida devocional, uno avanza audazmente y sin ser obstruído en el sendero espiritual designado por el guru. Cuando el maestro espiritual es misericordioso, uno obtiene la fortuna de lograr el amor por Radha y Krishna.
+</p>
+<p class='vspace'>El Señor Supremo Krishna, se sintió tan intensamente endeudado por el amor de Radha que adoptó Su temperamento y matiz corporal y descendió a Jagannãtha Puri, donde clamó:
+</p>
+<div class='vspace'></div><pre> kãhãn krsna prãnanãtha muralivadana
+ kãhãn jããn kãhãn pãn vrajendranandana
+</pre><p class='vspace'>“ ¿Dónde está mi amado Krishna?  ¿Dónde está el que toca la flauta? ¿Dónde puedo hallar al hijo de Nanda?”
+(Caitanya Caritãmrta 2.12.5)
+</p>
+<p class='vspace'>Clamando a Krishna de este modo, y llorando tan intensamente que Sus lágrimas empaparon Su pecho, Mahãprabhu abrazó a Sus asociados íntimos, Rãmãnanda Rãya y Svarupa Dãmodara y les reveló los aspectos más íntimos del humor de Rãdhãrãni en separación del Señor. Tal es la esencia secreta del bhajana. Si el Señor Mismo no hubiera adoptado el humor de Su potencia personal, Srimati Rãdhãrãni y demostrado a la gente del mundo cómo Le adora Ella, esa verdad no hubiera sido conocida. Por lo tanto, ningún otro don es comparable a la dádiva de Sri Caitanya Mahãprabhu. Aún con una ligera contemplación de la naturaleza de Su don, se obtiene el mayor beneficio para las entidades vivientes condicionadas de este mundo.
+</p>
+<p class='vspace'>Gaurahari es la deidad del amor. Aquel que tiene la buena fortuna de discutir Sus pasatiempos de distribuir los frutos del amor de Dios, alcanza la meta de la vida. Los historiadores  investigarán en el tiempo y verán que incluso durante las épocas en que hindúes y musulmanes luchaban entre sí, la prédica de las enseñanzas de Mahãprãbhu del amor de Dios, prosiguieron con gran vigor. Nada la detuvo o siquiera la demoró. Toda la tierra de Bharatavarsa fue inundada con la corriente del prema; los sonidos del Santo Nombre estaban en todas partes y hasta muchos no hindúes como los musulmanes, fueron iniciados en esta religión del amor. En tal sentido, se ha evidenciado que en la medida en que las personas se ocupen en hablar sobre los munificentes pasatiempos de Mahãprabhu de distribución del amor incluso con los miembros más bajos de la sociedad humana, las cosas como el odio, los celos y la violencia serán disipadas. La gente se volverá más generosa y cultivará un sentido de fraternidad universal, abrazando a todos en la comprensión de que todo el mundo es una sola familia, vasudhaiva kutumbakam. Así pues, se despertará la comprensión de la identidad eterna de las almas condicionadas y todos luego se ocuparán en la adoración del Señor Supremo Sri Krishna.  En un mundo conformado por esta conciencia, el verdadero ideal de comunismo será fácilmente alcanzado y reinará la paz suprema.
+</p>
+<p class='vspace'>Si se es rico con el amor de la Divina Pareja, uno se hallará eternamente libre de la aflicción de cualquier clase de pobreza.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_14.html'>Practica y Predica</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_16.html'>La Mentalidad del Discípulo</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:27 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

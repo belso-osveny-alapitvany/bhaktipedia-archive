@@ -1,0 +1,677 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Las Preguntas de Vidura </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam3 - RSS Feed'
+      href='index.php-n=bhagavatam3.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam3.0-1' method='get'><input type='hidden' name='n' value='bhagavatam3.0-1' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Las Preguntas de Vidura "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam3.0-1-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhagavatam3.srimad_bhagavatam.html'>Srimad Bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo Vl</small><br /><br />Las Preguntas de vidura</h1>
+<p>VERSO 1
+sri-suka uvaca
+evam etat pura prsto
+maitreyo bhagavan kila
+ksattra vanam pravistena
+tyaktva sva-grham rddhimat
+</p>
+<p class='vspace'>sri-sukah uvaca—Sri Sukadeva Gosvami dijo; evam—así pues; etat—esto; pura—anteriormente; prstah—preguntado; maitreyah—el gran sabio Maitreya; bhagavan—Su Gracia; kila—ciertamente; ksattra—por Vidura; vanam— bosque; pravistena—internándose; tyaktva—renunciando; sva-grham—su propia casa; rddhimat—próspera.
+TRADUCCIÓN
+Sukadeva Gosvami dijo: Tras renunciar a su próspero hogar e internarse en el bosque, el rey Vidura, el gran devoto, hizo la siguiente pregunta a Su Gracia Maitreya Rsi.
+VERSO 2
+yad va ayam mantra-krd vo
+bhagavan akhilesvarah
+pauravendra-grham hitva
+pravivesatmasat krtam
+</p>
+<p class='vspace'>yat—la casa; vai—qué más se puede decir; ayam—Sri Krishna; mantra-krt— ministro; vah—vosotros; bhagavan—la Personalidad de Dios; akhila-isvarah—el Señor de todas las cosas; pauravendra—Duryodhana; grham—casa; hitva— abandonando; pravivesa—entraba; atmasat—identificar con uno mismo; krtam— aceptaba así.
+TRADUCCIÓN
+¿Qué más se puede decir de la residencia de los Pandavas? Sri Krishna, el Señor de todas las cosas, actuaba como vuestro ministro. Solía entrar en esa casa como si de la Suya propia se tratara, y no prestaba atención alguna a la casa de Duryodhana.
+SIGNIFICADO
+Según la filosofía gaudiya del acintya-bhedabeda-tattva, todo aquello que satisface los sentidos del Señor Supremo, Sri Krishna, es también Sri Krishna. Por ejemplo, Sri Vrndavana-dhama no es diferente de Sri Krishna (tad- dhama vrndavanam), ya que en Vrndavana el Señor disfruta de la dicha trascendental de Su potencia interna. En forma similar, la casa de los Pandavas también era fuente de dicha trascendental para el Señor. Se menciona aquí que el Señor identificaba la casa con Su propio Ser. Así pues, la casa de los Pandavas estaba al mismo nivel que Vrndavana, y Vidura no debió abandonar ese lugar de dicha trascendental. Por tanto, la razón por la cual abandonó la casa no fue precisamente una desavenencia familiar; más bien, Vidura aprovechó la oportunidad para reunirse con Maitreya Rsi y hablar sobre conocimiento trascendental. Para una persona santa como Vidura, cualquier molestia causada por asuntos mundanos es insignificante. Sin embargo, dichas molestias son algunas veces favorables para el logro de una comprensión superior, y, por lo tanto, Vidura aprovechó una desavenencia familiar con objeto de encontrarse con Maitreya Rsi.
+VERSO 3
+rajovaca
+kutra ksattur bhagavata
+maitreyenasa sangamah
+kada va saha-samvada
+etad varnaya nah prabho
+</p>
+<p class='vspace'>raja uvaca—el rey dijo; kutra—dónde; ksattuh—con Vidura; bhagavata—y con Su Gracia; maitreyena—con Maitreya; asa—hubo; sangamah—encuentro; kada— cuándo; va—también; saha—con; samvadah—conversación; etat—eso; varnaya —describe; nah—a mí; prabho—¡oh, mi señor!
+TRADUCCIÓN
+El rey preguntó a Sukadeva Gosvami: ¿Dónde y cuándo tuvo lugar el encuentro y la conversación entre el santo Vidura y Su Gracia Maitreya Muni? Mi señor, por favor, ten la bondad de describirnos eso.
+SIGNIFICADO
+De la misma manera en que Saunaka Rsi hizo preguntas a Suta Gosvami y éste respondió, también Srila Sukadeva Gosvami respondió a las preguntas del rey Pariksit. El rey estaba muy ansioso de entender la significativa conversación que mantuvieron las dos grandes almas.
+VERSO 4
+na hy alparthodayas tasya
+vidurasyamalatmanah
+tasmin variyasi prasnah
+sadhu-vadopabrmhitah
+</p>
+<p class='vspace'>na—nunca; hi—ciertamente; alpa-artha—propósito pequeño (sin importancia); udayah—formuló; tasya—su; vidurasya—de Vidura; amala-atmanah—del hombre santo; tasmin—en esa; variyasi—muy significativa; prasnah—pregunta; sadhu- vada—cosas aprobadas por santos y sabios; upabrmhitah—llena de.
+TRADUCCIÓN
+El santo Vidura era un gran devoto puro del Señor, y, por lo tanto, las preguntas que hizo a Su Gracia Maitreya Rsi deben haber sido muy significativas, del más alto nivel, y aprobadas por los círculos eruditos.
+SIGNIFICADO
+Las preguntas y respuestas que se presentan entre diferentes clases de hombres tienen diferentes valores. No puede esperarse que las preguntas hechas por comerciantes durante una transacción comercial sean altamente significativas en cuanto a valores espirituales se refiere. Las preguntas y respuestas formuladas por diferentes clases de hombres pueden adivinarse por el calibre de las personas involucradas. En la Bhagavad-gita, la conversación se efectuó entre Sri Krishna y Arjuna, la Persona Suprema y el devoto supremo, respectivamente. El Señor aceptó a Arjuna como Su devoto y amigo (Bg. 4.3), y, por lo tanto, cualquier hombre en su sano juicio puede adivinar que la conversación trataba del tema del sistema de bhakti-yoga. De hecho, la Bhagavad-gita entera se basa en el principio del bhakti-yoga. Existe una diferencia entre karma y karma-yoga. Karma consiste en la acción regulada para que el ejecutor goce del fruto de la misma, pero karma-yoga es la acción que el devoto ejecuta para satisfacer al Señor. Karma-yoga se basa en bhakti, en complacer al Señor, mientras que karma se basa en complacer los sentidos del propio ejecutor. Según el Srimad-Bhagavatam, se aconseja dirigirse a un maestro espiritual genuino, cuando se esté verdaderamente inclinado a hacer preguntas de un nivel elevado de entendimiento espiritual. El hombre común que no tiene ningún interés en los valores espirituales no tiene por qué dirigirse a un maestro espiritual tan sólo por seguir la moda.
+Maharaja Pariksit, como estudiante, era serio en cuanto a aprender la ciencia de Dios, y Sukadeva Gosvami era un maestro espiritual genuino de la ciencia trascendental. Ambos sabían que los temas hablados por Vidura y Maitreya Rsi eran elevados, y, por ello, Maharaja Pariksit sentía gran interés en aprender de labios del maestro espiritual genuino.
+VERSO 5
+suta uvaca
+sa evam rsi-varyo 'yam
+prsto rajna pariksita
+praty aha tam subahu-vit
+pritatma sruyatam iti
+</p>
+<p class='vspace'>sutah uvaca—Sri Suta Gosvami dijo; sah—él; evam—así pues; rsi-varyah—el gran rsi; ayam—Sukadeva Gosvami; prstah—siendo preguntado; rajña—por el rey; pariksita—Maharaja Pariksit; prati—a; aha—respondió; tam—al rey; subahu-vit—sumamente experimentado; prita-atma—plenamente satisfecho; sruyatam—por favor, óyeme; iti—así pues.
+TRADUCCIÓN
+Sri Suta Gosvami dijo: El gran sabio Sukadeva Gosvami era sumamente experimentado y estaba complacido con el rey. Así pues, siento preguntado por el rey, le dijo: «Por favor, oye atentamente la exposición de los temas».
+</p><pre> VERSO 6
+</pre><p>sri-suka uvaca
+yada tu raja sva-sutan asadhun
+pusnan na dharmena vinasta-drstih
+bhratur yavisthasya sutan vibandhun
+pravesya laksa-bhavane dadaha
+</p>
+<p class='vspace'>sri-sukah uvaca—Sri Sukadeva Gosvami dijo; yada—cuando; tu—pero; raja— el rey Dhrtarastra; sva-sutan—sus propios hijos; asadhun—deshonestos; pusnan —nutriendo; na—nunca; dharmena—en el sendero correcto; vinasta-drsthih— aquel que ha perdido su discernimiento; bhratuh—de su hermano; yavisthasya— menor; sutan—hijos; vibandhun—carentes de guardián (padre); pravesya—hizo entrar; laksa—laca; bhavane—en la casa; dadaha—incendió.
+TRADUCCIÓN
+Sri Sukadeva Gosvami dijo: El rey Dhrtarastra, cegado por la influencia de los deseos impíos de nutrir a sus deshonestos hijos, prendió fuego a la casa de laca para quemar a sus sobrinos huérfanos de padre, los Pandavas.
+SIGNIFICADO
+Dhrtarastra era ciego de nacimiento, pero la ceguera por la cual cometía actividades impías para respaldar a sus deshonestos hijos era una ceguera mayor que su carencia física de vista. La carencia física de vista no excluye del progreso espiritual. Pero cuando alguien es ciego espiritualmente, aunque sea apto físicamente, esa ceguera va en peligroso detrimento del sendero progresivo de la vida humana.
+VERSO 7
+yada sabhayam kuru-deva-devyah
+kesabhimarsam suta-karma garhyam
+na varayam asa nrpah snusayah
+svasrair harantyah kuca-kunkumani
+</p>
+<p class='vspace'>yada—cuando; sabhayam—la asamblea; kuru-deva-devyah—de Draupadi, la esposa del santo Yudhisthira; kesa-abhimarsam—insulto por coger su cabello; suta-karma—acción ejecutada por su hijo; garhyam—que fue abominable; na—no; varayam asa—prohibió; nrpah—el rey; snusayah—de su nuera; svasraih—por sus lágrimas; harantyah—de ella, que estaba empapando; kuca-kunkumani—polvo rojo que adornaba su pecho.
+TRADUCCIÓN
+El rey no prohibió la abominable acción de su hijo Duhsasana de coger el cabello de Draupadi, la esposa del santo rey Yudhisthira, a pesar de que sus lágrimas empapaban el polvo rojo que adornaba su pecho.
+VERSO 8
+dyute tv adharmena jitasya sadhoh
+satyavalambasya vanam gatasya
+na yacato 'dat samayena dayam
+tamo-jusano yad ajata-satroh
+</p>
+<p class='vspace'>dyute—mediante juegos de azar; tu—pero; adharmena—mediante trucos sucios; jitasya—del vencido; sadhoh—una persona santa; satya-avalambasya—aquel que abrazó la verdad como refugio; vanam—bosque; gatasya—del que se va; na— nunca; yacatah—cuando se le pidió; adat—entregó; samayena—a su debido tiempo; dayam—porción justa; tamah-jusanah—dominado por la ilusión; yat— tanto como; ajata-satroh—de aquel que no tenía ningún enemigo.
+TRADUCCIÓN
+Yudhisthira, que había nacido sin enemigo alguno, fue vencido en el juego de un modo sucio. Pero debido a que había hecho el voto de la veracidad, marchó al bosque. Cuando regresó a su debido tiempo y suplicó que se le devolviera su legítima porción del reino, fue rechazado por Dhrtarastra, que estaba dominado por la ilusión.
+SIGNIFICADO
+Maharaja Yudhisthira era el heredero legítimo del reino de su padre. Pero Dhrtarastra, el tío de Maharaja Yudhisthira, tan sólo para favorecer a sus propios hijos, encabezados por Duryodhana, adoptó diversos medios sucios para engañar a sus sobrinos y quitarles su legítima porción del reino. Finalmente los Pandavas exigieron sólo cinco pueblos, uno para cada uno de los cinco hermanos, pero también eso fue rechazado por los usurpadores. Este incidente condujo a la guerra de Kuruksetra. Fueron, pues, los Kurus, y no los Pandavas, los que provocaron la Batalla de Kuruksetra. 
+Como ksatriyas que eran, el medio de sustento apropiado para los Pandavas era sólo el regir, y no podían aceptar ninguna otra ocupación. El brahmana, el ksatriya y el vaisya no aceptan empleos como medio de sustento, bajo ninguna circunstancia.
+VERSO 9
+yada ca partha-prahitah sabhayam
+jagad-gurur yani jagada krsnah
+na tani pumsam amrtayanani
+rajoru mene ksata-punya-lesah
+</p>
+<p class='vspace'>yada—cuando; ca—también; partha-prahitah—siendo aconsejado por Arjuna; sabhayam—en la asamblea; jagat-guruh—del maestro del mundo; yani—aquellos; jagada—fue; krsnah—Sri Krishna; na—nunca; tani—dichas palabras; pumsam— de todos los hombres de juicio; amrta-ayanani—igual que néctar; raja—el rey (Dhrtarastra o Duryodhana); uru—muy importante; mene—consideró; ksata— menguándose; punya-lesah—fragmento de actos piadosos.
+TRADUCCIÓN
+Sri Krishna fue enviado por Arjuna a la asamblea como maestro espiritual del mundo entero, y aunque algunos [como Bhisma] escucharon Sus palabras como si de puro néctar se tratara, no ocurrió así con los demás, que estaban completamente desprovistos del más mínimo vestigio de obras piadosas pasadas. El rey [Dhrtarastra o Duryodhana] no tomó muy en serio las palabras de Sri Krishna.
+SIGNIFICADO
+Sri Krishna, que es el maestro espiritual del universo entero, aceptó el oficio de mensajero, y, delegado por Arjuna, fue a la asamblea del rey Dhrtarastra en una misión de paz. Krishna es el Señor de todos; sin embargo, debido a que Él era el amigo trascendental de Arjuna, aceptó con todo gusto el papel de mensajero, exactamente igual que un amigo corriente. Ésa es la belleza del comportamiento del Señor con Sus devotos puros. Llegó a la asamblea y habló acerca de la paz, y Bhisma y otros grandes líderes saborearon el mensaje con deleite, porque lo hablaba el propio Señor. Pero Duryodhana, o su padre, Dhrtarastra, habiéndoseles agotado los resultados piadosos de sus acciones pasadas, no tomaron el mensaje muy en serio. Así son las personas que no tienen en su haber acciones piadosas. Por las acciones piadosas pasadas, se puede llegar a ser el rey de un país, pero, debido a que los resultados de los actos piadosos de Duryodhana y compañía estaban menguando, se hizo evidente por sus acciones que con toda seguridad habrían de perder el reino a manos de los Pandavas. El mensaje de Dios es siempre como néctar para los devotos, pero para los no devotos es justamente lo opuesto. El azúcar cande es siempre dulce para el hombre sano, pero a las personas que padecen de ictericia les sabe muy amargo.
+VERSO 10
+yadopahuto bhavanam pravisto
+mantraya prstah kila purvajena
+athaha tan mantra-drsam variyan
+yan mantrino vaidurikam vadanti
+</p>
+<p class='vspace'>yada—cuando; upahutah—fue llamado por; bhavanam—el palacio; pravistah—entró; mantraya—para una consulta; prstah—pedido por; kila—por supuesto; purvajena—por el hermano mayor; atha—así pues; aha—dijo; tat— ese; mantra—consejo; drsam—justamente lo apropiado; variyan—excelente; yat— aquello que; mantrinah—los ministros de Estado, o políticos expertos; vaidurikam—instrucciones dadas por Vidura; vadanti—dicen ellos.
+TRADUCCIÓN
+Cuando Vidura fue invitado por su hermano mayor [Dhrtarastra] para una consulta, entró en la casa y dio instrucciones que eran justamente las pertinentes. El consejo de Vidura es bien conocido, y sus instrucciones son aprobadas por expertos ministros de Estado.
+SIGNIFICADO
+Las sugerencias políticas de Vidura se reconocen como de experto, tal como, en tiempos modernos, se considera a Canakya Pandita la autoridad del buen consejo, tanto en lo referente a instrucciones políticas comomorales.
+VERSO 11
+ajata-satroh pratiyaccha dayam
+titiksato durvisaham tavagah
+sahanujo yatra vrkodarahih
+svasan rusa yat tvam alam bibhesi
+</p>
+<p class='vspace'>ajata-satroh—de Yudhisthira, quien no tiene enemigo alguno; pratiyaccha— devolver; dayam—porción legítima; titiksatah—de aquel que es tan tolerante; durvisaham—insoportable; tava—tu; agah—ofensa; saha—junto con; anujah— hermanos menores; yatra—en donde; vrkodara—Bhima; ahih—serpiente vengativa; svasan—respirando pesadamente; rusa—con ira; yat—a quien; tvam—tú; alam—ciertamente; bibhesi—temes.
+TRADUCCIÓN
+[Vidura dijo:] Ahora debes devolver la porción legítima a Yudhisthira, quien no tiene enemigos y ha estado tolerando sufrimientos indescriptibles por tus ofensas. Él está aguardando con sus hermanos menores, entre los cuales se encuentra el vengativo Bhima, respirando pesadamente como una serpiente. Sin duda, tú le temes.
+VERSO 12
+parthams tu devo bhagavan mukundo
+grhitavan saksiti-deva-devah
+aste sva-puryam yadu-deva-devo
+vinirjitasesa-nrdeva-devah
+parthan—los hijos de Prtha (Kunti); tu—pero; devah—el Señor; bhagavan— la Personalidad de Dios; mukundah—Sri Krishna, quien otorga la liberación; grhitavan—ha adoptado; sa—con; ksiti-deva-devah—los brahmanas y los semidioses; aste—está presente; sva-puryam—juntamente con Su familia; yadu-deva-devah—adorado por los miembros de la orden real de la dinastía Yadu; vinirjita—que han sido conquistados; asesa—ilimitados; nrdeva—reyes; devah—el Señor.
+TRADUCCIÓN
+Sri Krishna, la Personalidad de Dios, ha aceptado a los hijos de Prtha como parientes Suyos, y todos los reyes del mundo están con Sri Krishna. Él está presente en Su hogar con todos Sus familiares, los reyes y príncipes de la dinastía Yadu, que han conquistado un ilimitado número de gobernantes, y Él es su Señor.
+SIGNIFICADO
+Vidura dio a Dhrtarastra muy buen consejo en lo referente a la alianza política con los hijos de Prtha, los Pandavas. Lo primero que dijo fue que Sri Krishna Se encontraba íntimamente relacionado con ellos como primo. Debido a que Sri Krishna es la Suprema Personalidad de Dios, es digno de ser adorado por todos los brahmanas y semidioses, que son los controladores de los asuntos universales. Además de eso, Sri Krishna y Sus familiares, la orden real de la dinastía Yadu, eran los conquistadores de todos los reyes del mundo.
+Los ksatriyas solían luchar contra los reyes de diversos dominios, y secuestrar a sus bellas hijas-princesas después de conquistar a sus parientes. Este sistema era loable, debido a que los ksatriyas y las princesas se casaban sólo en base a la caballerosidad del ksatriya conquistador. Todos los jóvenes príncipes de la dinastía Yadu se casaron con las hijas de otros reyes de esa manera, por la fuerza caballeresca, y así se volvieron conquistadores de todos los reyes del mundo. Vidura quiso inculcar a su hermano mayor que luchar contra los Pandavas era una empresa llena de peligros, debido a que estaban respaldados por Sri Krishna, el cual había conquistado, incluso en Su infancia, a demonios como Kamsa y Jarasandha, y a semidioses como Brahma e Indra. Por lo tanto, todo el poder universal respaldaba a los Pandavas.
+VERSO 13
+sa esa dosah purusa-dvid aste
+grhan pravisto yam apatya-matya 
+pusnasi krsnad vimukho gata-sris
+tyajasv asaivam kula-kausalaya
+</p>
+<p class='vspace'>sah—él; esah—esto; dosah—ofensa personificada; purusa-dvit—envidioso de Sri Krishna; aste—existe; grhan—casa; pravistah—entró; yam—a quien; apatya- matya—creyendo ser tu hijo; pusnasi—manteniendo; krsnat—de Krishna; vimukhah—en oposición a; gata-srih—desprovisto de todo lo auspicioso; tyaja— abandona; asu—tan pronto como sea posible; asaivam—no auspicioso; kula— familia; kausalaya—por el bien de.
+TRADUCCIÓN
+Tú estás manteniendo como hijo infalible tuyo a la ofensa personificada, Duryodhana, pero él envidia a Sri Krishna. Y como mantienes de esa manera a un no devoto de Krishna, estás desprovisto de todas las cualidades auspiciosas. ¡Líbrate de esta mala fortuna tan pronto como sea posible, y hazle bien a toda la familia!
+SIGNIFICADO
+A un buen hijo se le llama apatya, aquel que no permite que su padre caiga. El hijo puede proteger el alma del padre cuando éste está muerto, ofreciendo sacrificios para complacer al Señor Supremo, Visnu. Este sistema aún está vigente en la India. El hijo, después de la muerte de su padre, va a ofrecer sacrificios a los pies de loto de Visnu a Gaya, y así libera el alma del padre si éste está caído. Pero si el hijo ya es un enemigo de Visnu, ¿cómo puede, con semejante actitud hostil, ofrecer sacrificios a los pies de loto de Sri Visnu? Sri Krishna es directamente la Personalidad de Dios, Visnu, y Duryodhana estaba en contra de Él. Por lo tanto, Duryodhana no podría proteger a su padre, Dhrtarastra, después de su muerte. Él mismo habría de caer por su falta de fe en Visnu. ¿Cómo, entonces, podría proteger a su padre? Vidura aconsejó a Dhrtarastra que se librara de un hijo así de indigno como Duryodhana tan pronto como fuera posible, si de alguna manera le importaba velar por el bien de su familia.
+Según las instrucciones morales de Canakya Pandita: «¿De qué sirve un hijo que ni es un erudito ni un devoto del Señor?». Si un hijo no es devoto del Señor Supremo, es igual que unos ojos ciegos: una fuente de problemas. Un médico puede que a veces aconseje extraer esos ojos inútiles de sus cuencas, de manera que el enfermo pueda librarse de los constantes problemas que ocasionan. Duryodhana era exactamente igual que unos ojos ciegos y problemáticos; habría de ser una fuente de grandes problemas para la familia de Dhrtarastra, como preveía Vidura. Por lo tanto, Vidura aconsejó apropiadamente a su hermano mayor que se librara de esa fuente de problemas. Dhrtarastra estaba equivocadamente manteniendo a semejante ofensa personificada, bajo la errónea impresión de que Duryodhana era un buen hijo, capaz de liberar a su padre.
+VERSO 14
+ity ucivams tatra suyodhanena
+pravrddha-kopa-sphuritadharena
+asat-krtah sat-sprhaniya-silah
+ksatta sakarnanuja-saubalena
+</p>
+<p class='vspace'>iti—así; ucivan—mientras hablaba; tatra—allí; suyodhanena—por Duryodhana; pravrddha—hinchado por; kopa—ira; sphurita—aleteando; adharena—labios; asat-krtah—insultó; sat—respetable; sprhaniya-silah—cualidades deseables; ksatta—Vidura; sa—con; karna—Karna; anuja—hermanos menores; saubalena— con Sakuni.
+TRADUCCIÓN
+Mientras hablaba así, Vidura, cuyo carácter personal era estimado por personas respetables, fue insultado por Duryodhana, el cual estaba hinchado por la ira y cuyos labios estaban temblando. A Duryodhana lo acompañaban Karna, sus hermanos menores y su tío materno Sakuni.
+SIGNIFICADO
+Se dice que dar buen consejo a una persona necia hace que el necio se enfurezca, de la misma manera en que dar leche a una serpiente sólo aumenta su ponzoña venenosa. El santo Vidura era tan honorable, que su carácter era admirado por todas las personas respetables. Pero Duryodhana era tan necio, que se atrevió a insultar a Vidura. Ello se debió a sus malas compañías: Sakuni, su tío materno, y su amigo Karna, que siempre alentó a Duryodhana en sus nefastos actos.
+VERSO 15
+ka enam atropajuhava jihmam
+dasyah sutam yad-balinaiva pustah
+tasmin pratipah parakrtya aste
+nirvasyatam asu purac chvasanah
+</p>
+<p class='vspace'>kah—quién; enam—este; atra—aquí; upajuhava—mandó llamar; jihmam— deshonesto; dasyah—de una concubina mantenida; sutam—hijo; yat—cuya; balina—por cuya subsistencia; eva—ciertamente; pustah—criado; tasmin—a él; pratipah—enemistad; parakrtya—interés del enemigo; aste—situado; nirvasyatam—sácalo; asu—inmediatamente; purat—del palacio; svasanah—que respire únicamente.
+TRADUCCIÓN
+¿Quién pidió que viniera aquí a este hijo de una concubina mantenida? Es tan deshonesto, que espía en favor del enemigo, yendo en contra de aquellos bajo cuyo sustento se ha criado. Échalo fuera del palacio de inmediato, y déjalo únicamente con su respiración.
+SIGNIFICADO
+Cuando los reyes ksatriyas se casaban, llevaban consigo a varias otras jóvenes juntamente con la princesa desposada. Estas muchachas asistentas del rey recibían el nombre de dasis, concubinas asistentas. Las dasis tenían hijos mediante su relación íntima con el rey. A esos hijos se les llamaba dasi-putras. No tenían derecho a una posición real, pero recibían su manutención y otras facilidades tal como príncipes. Vidura era el hijo de una de esas dasis, y por ello no se le contaba entre los ksatriyas. El rey Dhrtarastra era muy afectuoso para con su hermano menor dasi-putra, Vidura, y Vidura era un gran amigo y consejero filosófico de Dhrtarastra. Duryodhana sabía muy bien que Vidura era una gran alma y bienqueriente, pero desafortunadamente utilizó palabras fuertes para herir a su inocente tío. Duryodhana no sólo atacó el nacimiento de Vidura, sino que también lo llamó infiel, debido a que parecía respaldar la causa de Yudhisthira, a quien Duryodhana consideraba su enemigo. Deseaba que Vidura fuera de inmediato expulsado del palacio y despojado de todas sus posesiones. De ser posible, le hubiera gustado que lo apalearan hasta que no le quedara más que su aliento. Acusó a Vidura de ser espía de los Pandavas, debido a que dio consejos al rey Dhrtarastra en su favor. La vida de palacio y las complejidades de la diplomacia son tales, que incluso una persona intachable como Vidura podía ser acusada de algo abominable y castigada por ello. Vidura estaba sobrecogido de asombro ante ese inesperado comportamiento de su sobrino Duryodhana, y antes de que algo ocurriera de hecho, decidió irse del palacio para siempre.
+VERSO 16
+svayam dhanur dvari nidhaya mayam
+bhratuh puro marmasu tadito 'pi
+sa ittham atyulbana-karna- banair
+gata-vyatho 'yad uru manayanah
+</p>
+<p class='vspace'>svayam—él mismo; dhanuh dvari—arco en la puerta; nidhaya—manteniendo; mayam—la naturaleza externa; bhratuh—del hermano; purah—del palacio; marmasu—en lo más íntimo del corazón; taditah— siendo afligido; api—a pesar de; sah—él (Vidura); ittham—así; ati-ulbana—severamente; karna—oído; banaih—por las flechas; gata-vyathah—sin sentirse triste; ayat—excitado; uru—grandioso; manayanah— pensando así.
+TRADUCCIÓN
+Siendo así atravesado por flechas a través de sus oídos, y afligido hasta lo más íntimo de su corazón, Vidura colocó su arco en la puerta y abandonó el palacio de su hermano. No se sentía triste, ya que consideraba supremos los actos de la energía externa.
+SIGNIFICADO
+El devoto puro del Señor nunca se perturba por una posición difícil creada por la energía externa del Señor. En la Bhagavad-gita (3.27) se indica:
+prakrteh kriyamanani
+gunaih karmani sarvasah
+ahankara vimudha tma
+kartaham iti manyate
+El alma condicionada se encuentra absorta en la existencia material, bajo la influencia de diferentes modalidades de la energía externa. Absorta en el ego falso, cree que está haciendo todo por sí misma. La energía externa del Señor, la naturaleza material, se encuentra por completo bajo el control del Señor Supremo, y el alma condicionada está por completo bajo las garras de la energía externa. Por lo tanto, el alma condicionada se encuentra por completo bajo el control de la ley del Señor. Pero, tan sólo debido a la ilusión, se cree independiente en sus actividades. Duryodhana estaba actuando bajo esa influencia de la energía externa, por la cual habría de ser vencido al final de todo. No pudo aceptar el buen consejo de Vidura, sino que, por el contrario, insultó a esa gran alma, que era el bienqueriente de toda su familia. Vidura podía entender esto debido a que era un devoto puro del Señor. A pesar de ser muy violentamente insultado por las palabras de Duryodhana, Vidura podía ver que Duryodhana, bajo la influencia de maya, la energía externa, estaba progresando en el sendero que conducía hacia su propia aniquilación. Por lo tanto, consideró supremos los actos de la energía externa, aunque también vio cómo lo ayudaba la energía interna del Señor en esa situación en particular. El devoto tiene siempre un temperamento renunciado, ya que las atracciones mundanas nunca pueden satisfacerle. Vidura nunca estuvo atraído por el palacio real de su hermano. Estuvo siempre dispuesto a abandonar el lugar y consagrarse por completo al amoroso servicio trascendental del Señor. Ahora obtuvo la oportunidad por la gracia de Duryodhana, y, en vez de sentirse triste por las fuertes palabras de insulto, se lo agradeció internamente, pues eso le daba la oportunidad de vivir solo en un lugar santo y ocuparse plenamente en el servicio devocional del Señor. La palabra gata-vyathah (sin sentirse triste) es significativa aquí, debido a que Vidura estaba liberado de las tribulaciones que molestan a todo hombre enredado en actividades materiales. Pensó, por consiguente, que no había ninguna necesidad de defender a su hermano con su arco, pues aquél estaba destinado a la aniquilación. Así, abandonó el palacio antes de que Duryodhana pudiera actuar. Maya, la energía suprema del Señor, actuó aquí tanto interna como externamente.
+VERSO 17
+sa nirgatah kaurava-punya-labdho
+gajahvayat tirtha-padah padani
+anvakramat punya-cikirsayorvyam
+adhisthito yani sahasra-murtih
+</p>
+<p class='vspace'>sah—él (Vidura); nirgatah—tras haber abandonado; kaurava—la dinastía Kuru; punya—piedad; labdhah—así lograda; gaja-ahvayat—de Hastinapura; tirtha- padah—del Señor Supremo; padani—peregrinajes; anvakramat—se refugió; punya—piedad; cikirsaya—deseando así; urvyam—de alto grado; adhisthitah— situadas; yani—todas esas; sahasra—miles; murtih—formas.
+TRADUCCIÓN
+Por su piedad, Vidura logró obtener las ventajas de los piadosos Kauravas. Tras abandonar Hastinapura, se refugió en muchos lugares de peregrinaje, que constituyen los pies de loto del Señor. Con un deseo de alcanzar un alto grado de vida piadosa, viajó a lugares santos en los que Se encuentran situadas miles de formas trascendentales del Señor.
+SIGNIFICADO
+Vidura era indudablemente un alma muy piadosa y elevada, pues de lo contrario no habría nacido en la familia Kaurava. Tener un parentesco elevado, poseer riqueza, ser altamente erudito y tener una gran belleza personal, se debe todo a actos piadosos pasados. Pero esas posesiones piadosas no son suficientes para obtener la gracia del Señor y ocuparse en Su amoroso servicio trascendental. Vidura se consideraba a sí mismo poco piadoso, y decidió por lo tanto viajar a todos los grandes lugares de peregrinaje del mundo, con objeto de adquirir una mayor piedad, y así avanzar y acercarse más al Señor. En ese entonces, Sri Krishna Se encontraba personalmente presente en el mundo, y Vidura de inmediato podía haberse acercado a Él directamente, pero no lo hizo, debido a que no se encontraba lo suficientemente libre de pecado. No se puede estar ciento por ciento consagrado al Señor, a menos que, y sólo hasta que, se esté completamente libre de todos los efectos del pecado. Vidura estaba consciente de que, por relacionarse con los diplomáticos Dhrtarastra y Duryodhana, había perdido su piedad, y, por consiguiente, no era digno de presentarse de inmediato ante el Señor. En la Bhagavad-gita (7.28), esto se confirma en el siguiente verso:
+yesam tv anta-gatam papam
+jananam punya-karmanam
+te dvandva-moga-nirmukta
+bhajante mam drdha-vratah
+Las personas que son asuras pecaminosos como Kamsa y Jarasandha no pueden pensar en Sri Krishna como Suprema Personalidad de Dios, la Verdad Absoluta. Sólo aquellos que son devotos puros, aquellos que siguen los principios regulativos de la vida religiosa tal y como se prescriben en las Escrituras, pueden dedicarse al karma-yoga y luego al jñana-yoga, y después, mediante la meditación pura, pueden entender la conciencia pura. Cuando se desarrolla conciencia de Dios, se puede aprovechar la compañía de los devotos puros. Syan mahat-sevaya viprah punya-tirtha-nisevanat: Uno puede relacionarse con el Señor incluso durante la existencia de esta vida.
+Los lugares de peregrinaje están destinados a erradicar los pecados de los peregrinos, y están distribuidos por todas partes del universo sólo para dar facilidades a todos los interesados en lograr una existencia pura y la comprensión de Dios. Sin embargo, no hay que sentirse satisfecho por meramente visitar los lugares de peregrinaje y ejecutar los deberes prescritos; se debe estar ansioso por conocer a las grandes almas que ya están allí, ocupadas en el servicio del Señor. En todos y cada uno de los lugares de peregrinaje, el Señor Se encuentra presente en Sus diversas formas trascendentales.
+Esas formas se denominan arca-murtis, formas del Señor que pueden ser fácilmente apreciadas por el hombre común. El Señor es trascendental a nuestros sentidos mundanos. No se Lo puede ver con nuestros ojos actuales, ni tampoco se Lo puede oír con nuestros oídos actuales. Podemos percibir al Señor hasta el punto en que hayamos participado del servicio del Señor, o en la proporción en que nuestras vidas estén libres de pecado. Pero, aun a pesar de que no estemos libres de pecado, el Señor es lo suficientemente bondadoso como para darnos la facilidad de verlo en Sus arca-murtis del templo. El Señor es todopoderoso, y, por consiguiente, puede aceptar nuestro servicio mediante la presentación de Su forma arca. Por tanto, nadie debe pensar neciamente que el arca del templo es un ídolo. Dicho arca-murti no es un ídolo, sino el propio Señor, y en la proporción en que estemos libres de pecados, podremos conocer la importancia del arca-murti. Se requiere siempre, por ello, la guía de un devoto puro.
+En la tierra de Bharatavarsa hay muchos cientos y miles de lugares de peregrinaje distribuidos por todo el país, y, como práctica tradicional, el hombre común visita dichos lugares santos durante todas las estaciones del año. Aquí se mencionan algunas de las representaciones arca del Señor que Se encuentran situadas en diferentes lugares de peregrinaje. El Señor está presente en Mathura (el lugar donde nació Sri Krishna) en forma de adi-kesava; el Señor está presente en Puri (Orissa) en forma de Sri Jagannatha (tam bién conocido como Purusottama); está presente en Allahabad (Prayaga) en forma de Bindu-madhava; en Colina Mandara, está presente en forma de Madhusudana. En el anandaranya, se Le conoce como Vasudeva, Padmanabha y Janardana; en Visnukañci, se Le conoce como Visnu; y en Mayapura se Le conoce como Hari. Hay millones y billones de esas formas arca del Señor distribuidas por todas partes del universo. Todas estas arca-murtis se resumen en el Caitanya-caritamrta con las siguientes palabras:
+sarvatra prakasa tanra—bhakte sukha dite
+jagatera adharma nasi' dharma sthapite
+</p><pre> «El Señor Se ha distribuido así por todo el universo, únicamente para dar placer a los devotos, dar al hombre común la facilidad de erradicar sus pecados, y establecer principios religiosos en el mundo».
+</pre><p>VERSO 18
+puresu punyopavanadri-kuñjesv
+apanka-toyesu sarit-sarahsu 
+ananta-lingaih samalankrtesu
+cacara tirthayatanesv ananyah
+</p>
+<p class='vspace'>puresu—lugares sagrados como Ayodhya, Dvaraka y Mathura; punya—piedad; upavana—el aire; adri—colina; kuñjesu—en los huertos; apanka—sin pecado; toyesu—en el agua; sarit—río; sarahsu—lagos; ananta-lingaih—las formas del Ilimitado; samalankrtesu—estando así adornado; cacara—ejecutó; tirtha—lugares de peregrinaje; ayatanesu—tierras sagradas; ananyah—solo o viendo sólo a Krishna.
+TRADUCCIÓN
+Comenzó a viajar solo por diversos lugares sagrados, como Ayodhya, Dvaraka y Mathura, pensando únicamente en Krishna. Viajó por donde el aire, la colina, el huerto, el río y el lago son puros e inmaculados, y donde las formas del Ilimitado adornan los templos. De esa manera, realizó la marcha del peregrino.
+SIGNIFICADO
+Puede que los ateos consideren que estas formas arca del Señor son ídolos, pero eso no importa a personas como Vidura o los muchos otros sirvientes del Señor. Las formas del Señor se mencionan aquí como ananta-linga. Esas formas del Señor tienen la misma potencia ilimitada que tiene el propio Señor. No hay direrencia entre las potencias del arca y las de las formas personales del Señor. Aquí se puede aplicar el ejemplo del buzón de correo y la oficina de correos. Los pequeños buzones de correo que se encuentran distribuidos por todas partes de la ciudad tienen la misma potencia que el sistema postal en general. El deber de la oficina de correos consiste en llevar cartas de un lugar a otro. Si ponemos cartas en buzones de correo autorizados por la oficina general de correos, la función de llevar cartas se lleva a cabo sin duda alguna. De igual manera, el arca- murti también puede manifestar la misma potencia ilimitada que manifiesta el Señor cuando Se encuentra presente personalmente. Por consiguiente, Vidura no pudo ver más que a Krishna en las diferentes formas arca, y finalmente pudo percibir sólo a Krishna y nada más.
+VERSO 19
+gam paryatan medhya-vivikta-vrttih
+sadapluto 'dhah sayano 'vadhutah
+alaksitah svair avadhuta-veso
+vratani cere hari-tosanani
+</p>
+<p class='vspace'>gam—Tierra; paryatan—recorriendo; medhya—pura; vivikta-vrttih—ocupación independiente para vivir; sada—siempre; aplutah—santificado; adhah—en el suelo; sayanah—yaciendo; avadhutah—sin arreglarse (el pelo, etc.); alaksitah—sin ser visto; svaih—solo; avadhuta-vesah—vestido como un mendicante; vratani—votos; cere—ejecutó; hari-tosanani—que complacían al Señor.
+TRADUCCIÓN
+Mientras recorría así la Tierra, simplemente realizaba deberes para complacer al Señor Supremo, Hari. Su ocupación era pura e independiente. Se encontraba constantemente santificado por bañarse en los lugares sagrados, si bien llevaba la ropa de un mendicante y no peinaba su cabello ni poseía una cama en la que acostarse. De esa manera, siempre pasaba desapercibido ante sus diversos familiares.
+SIGNIFICADO
+El primer y principal deber de un peregrino consiste en satisfacer al Señor Supremo, Hari. Mientras viaja como peregrino, no debe preocuparse por complacer a la sociedad. No hay necesidad alguna de depender de formalidades sociales, ni de una ocupación, ni de ropa. Hay que permanecer siempre absorto en la función de complacer al Señor. Santificado así por el pensamiento y la acción, se puede entender al Señor Supremo mediante el proceso de peregrinaje.
+VERSO 20
+ittham vrajan bharatam eva varsam
+kalena yavad gatavan prabhasam
+tavac chasasa ksitim eka-cakram
+ekatapatram ajitena parthah
+</p>
+<p class='vspace'>ittham—así; vrajan—mientras viajaba; bharatam—la India; eva—únicamente; varsam—el terreno; kalena—a su debido tiempo; yavat—cuando; gatavan—visitó; prabhasam—Prabhasa, el lugar de peregrinaje; tavat—en ese entonces; sasasa— regía; ksitim—el mundo; eka-cakram—mediante una sola fuerza militar; eka— una; atapatram—bandera; ajitena—por la misericordia del inconquistable Krishna; parthah—Maharaja Yudhisthira.
+TRADUCCIÓN
+Así, cuando se encontraba en la tierra de Bharatavarsa viajando por todos los lugares de peregrinaje, visitó Prabhasaksetra. En ese entonces, Maharaja Yudhisthira era el emperador, y mantenía al mundo bajo el control de una sola fuerza militar y bajo una sola bandera.
+SIGNIFICADO
+Hace más de cinco mil años, mientras el santo Vidura estaba recorriendo la Tierra como peregrino, la India se conocía como Bharatavarsa, tal como se conoce incluso hoy en día. La historia del mundo no puede dar ningún recuento sistemático que se remonte a más de tres mil años, pero antes de eso el mundo entero se encontraba bajo la bandera y el poderío militar de Maharaja Yudhisthira, que era el emperador del mundo. Actualmente hay cientos y miles de banderas que ondean en las Naciones Unidas, pero en tiempos de Vidura existía sólo una bandera, por la gracia de Ajita, Sri Krishna. Las naciones del mundo están muy ansiosas de tener de nuevo un solo Estado bajo una sola bandera, pero para eso deben procurar el favor de Sri Krishna, que es el único que puede ayudarnos a convertirnos en una sola nación mundial.
+VERSO 21
+tatratha susrava suhrd-vinastim
+vanam yatha venuja-vahni-samsrayam
+samspardhaya dagdham athanusocan
+</p><pre>  sarasvatim pratyag iyaya tusnim
+</pre><p class='vspace'>tatra—allí; atha—luego; susrava—oyó; suhrt—parientes; vinastim—todos muertos; vanam—bosque; yatha—al igual que; venuja-vahni—fuego provocado por los bambúes; samsrayam—fricción entre uno y otro; samspardhaya—por una violenta pasión; dagdham—incendiado; atha—así pues; anusocan—pensando; sarasvatim—el río Sarasvati; pratyak—hacia el Oeste; iyaya—fue; tusnim— silenciosamente.
+TRADUCCIÓN
+En el lugar de peregrinaje de Prabhasa, se enteró de que todos sus familiares habían muerto debido a una violenta pasión, tal como todo un bosque se incendia por el fuego que provoca la fricción de unos bambúes. Después, se dirigió hacia el Oeste, en donde fluye el río Sarasvati.
+SIGNIFICADO
+Tanto los Kauravas como los Yadavas eran familiares de Vidura, y éste oyó cómo ocurrió su extinción debido a una guerra fratricida. El símil que se hace entre la fricción de los bambúes del bosque y las apasionadas sociedades humanas es apropiado. El mundo entero se asemeja a un bosque. En cualquier momento puede aparecer una llamarada de fuego en el bosque, debido a la fricción. Nadie va al bosque a incendiarlo, pero sólo por el roce de los bambúes entre sí surge el fuego, y quema todo un bosque. De igual manera, en el gran bosque de las transacciones mundanas, el fuego de la guerra surge como consecuencia de la violenta pasión de las almas condicionadas que se encuentran ilusionadas por la energía externa. Semejante fuego mundano sólo puede extinguirse mediante el agua de la misericordiosa nube que son los santos, tal como un incendio forestal sólo puede extinguirse mediante las lluvias que caen de una nube.
+VERSO 22
+tasyam tritasyosanaso manos ca
+prthor athagner asitasya vayoh
+tirtham sudasasya gavam guhasya
+yac chraddhadevasya sa asiseve
+</p>
+<p class='vspace'>tasyam—en la ribera del río Sarasvati; tritasya—el lugar de peregrinaje llamado Trita; usanasah—el lugar de peregrinaje llamado Usana; manoh ca—así como también del lugar de peregrinaje llamado Manu; prthoh—el de Prthu; atha— luego; agneh—el de Agni; asitasya—el de Asita; vayoh—el de Vayu; tirtham— lugares de peregrinajes; sudasasya—de nombre Sudasa; gavam—el de Go; guhasya—el de Guha; yat—después de eso; sraddhadevasya—de nombre Sraddhadeva; sah—Vidura; asiseve—visitó y ejecutó los rituales debidamente.
+TRADUCCIÓN
+En la ribera del río Sarasvati había once lugares de peregrinaje a saber: (1)Trita, (2)Usana, (3)Manu, (4)Prthu, (5)Agni, (6)Asita, (7)Vayu, (8)Sudasa, (9)Go, (10)Guha y (11)Sraddhadeva. Vidura los visitó todos, y ejecutó rituales debidamente.
+VERSO 23
+anyani ceha dvija-deva-devaih
+krtani nanayatanani visnoh pratyanga-
+mukhyankita-mandirani 
+</p><pre>  yad-darsanat krsnam anusmaranti
+</pre><p class='vspace'>anyani—otros; ca—también; iha—aquí; dvija-deva—por los grandes sabios; devaih—y los semidioses; krtani—establecidos por; nana—varias; ayatanani— varias formas; visnoh—de la Suprema Personalidad de Dios; prati—todas y cada una de las; anga—parte; mukhya—los principales; ankita—marcados; man- dirani—templos; yat—los cuales; darsanat—por verlos desde lejos; krsnam—la Personalidad de Dios original; anusmaranti—recuerda constantemente.
+TRADUCCIÓN
+Había también muchos otros templos en honor a varias formas de Visnu, la Suprema Personalidad de Dios, establecidos por grandes sabios y semidioses. Esos templos estaban marcados con los emblemas principales del Señor, y siempre hacían recordar a la Personalidad de Dios original, Sri Krishna.
+SIGNIFICADO
+La sociedad humana está dividida en cuatro órdenes sociales de vida y cuatro divisiones espirituales, que se aplican a todas las personas, sin excepción. Ese sistema se denomina varnasrama-dharma, y ya se ha hablado de él en muchas partes de esta gran obra. A los sabios, las personas que se consagraban por completo al mejoramiento espiritual de toda la sociedad humana, se les conocía como dvija-deva, los mejores de aquellos que han nacido dos veces. A los ciudadanos de los planetas superiores, desde el planeta Luna hacia arriba, se les conocía como devas. Tanto los dvija-devas como los devas, siempre construyen templos de Sri Visnu en honor a Sus diversas formas, tales como Govinda, Madhusudana, Nrsimha, Madhava, Kesava, Narayana, Padmanabha, Partha- sarathi y muchas otras. El Señor Se expande en innumerables formas, pero todas ellas son iguales entre sí. Sri Visnu tiene cuatro brazos, y cada uno de ellos lleva un artículo en particular, bien sea una caracola, un disco, una maza o una flor de loto. De esos cuatro emblemas, el cakra (el disco) es el principal. Sri Krishna, siendo la forma original de Visnu, tiene sólo un emblema, el disco, y, por lo tanto, recibe a veces el nombre de Cakri. El cakra del Señor es el símbolo del poder mediante el cual controla toda la manifestación. La parte superior de los templos de Visnu está marcada con el símbolo del disco, de manera que la gente pueda tener la oportunidad de ver el símbolo desde muy lejos e inmediatamente recordar a Sri Krishna. El objetivo de construir templos muy altos es dar a la gente la oportunidad de verlos desde lejos. Ese sistema aún se sigue en la India cuando se construye un templo nuevo, y parece ser que proviene de una época anterior a la historia escrita. Aquí se refuta la necia propaganda de los ateos de que los templos fueron construidos en una época posterior, ya que Vidura visitó esos templos hace al menos cinco mil años, y los templos de Visnu existían muchísimo antes de que Vidura los visitara. Los grandes sabios y semidioses nunca erigían estatuas de hombres o semidioses, sino que construían templos de Visnu para beneficio del hombre común, a fin de elevarlo al plano de conciencia de Dios.
+VERSO 24
+tatas tv ativrajya surastram rddham
+sauvira-matsyan kurujangalams ca
+kalena tavad yamunam upetya
+tatroddhavam bhagavatam dadarsa
+</p>
+<p class='vspace'>tatah—desde ahí; tu—pero; ativrajya—pasando por; surastram—el reino de Surat; rddham—muy rico; sauvira—el reino de Sauvira; matsyan—el reino de Matsya; kurujangalan—el reino que abarca desde la India occidental hasta la provincia de Delhi; ca—también; kalena—con el transcurso del tiempo; tavat—tan pronto como; yamunam—ribera del río Yamuna; upetya—llegando a; tatra— allí; uddhavam—Uddhava, uno de los Yadus sobresalientes; bhagavatam—el gran devoto de Sri Krishna; dadarsa—vio por casualidad.
+TRADUCCIÓN
+Después de esto, pasó por provincias muy ricas, como Surat, Sauvira y Matsya, y pasó por la India occidental, conocida como Kurujangala. Por último, llegó a la ribera del Yamuna, donde se encontró por casualidad con Uddhava, el gran devoto de Sri Krishna.
+SIGNIFICADO
+La extensión de tierra que abarca unos doscientos sesenta kilómetros cuadrados, medidos desde la moderna ciudad de Delhi hasta el distrito de Mathura, que se encuentra en Uttar Pradesh, incluyendo una porción del distrito Gurgaon de Punjab (India occidental), se considera el lugar más importante de peregrinaje de toda la India. Esa tierra es sagrada debido a que Sri Krishna la recorrió muchas veces. Desde el mismo comienzo de Su advenimiento, Él Se encontraba en Mathura, en la casa de Kamsa, Su tío materno, y fue criado por Su padre adoptivo, Maharaja Nanda, en Vrndavana. Aún hay muchos devotos del Señor que permanecen allí en éxtasis, en busca de Krishna y Sus compañeras de infancia, las gopis. No hay que pensar que esos devotos se encuentran con Krishna cara a cara en esa extensión de tierra, pero el hecho de que un devoto busque ansiosamente a Krishna es igual que si Lo estuviera viendo personalmente. No se puede explicar cómo ocurre eso, pero los devotos puros del Señor lo experimentan de hecho. Filosóficamente, se puede entender que Sri Krishna y el hecho de recordarlo se encuentran en el plano absoluto, y que la idea en sí de buscarlo en Vrndavana, con conciencia de Dios pura, da más placer al devoto que verlo cara a cara. Esa clase de devoto del Señor Lo ve cara a cara a cada momento, como se confirma en la Brahma-samhita (5.38):
+premañjana-cchurita-bhakti-vilocanena
+santah sadaiva hrdayesu vilokayanti
+yam syamasundaram acintya-guna-svarupam
+govindam adi-purusam tam aham bhajami
+«Aquellos que sienten éxtasis de amor por la Suprema Personalidad de Dios, Sri Syamasundara (Krishna), Lo ven siempre en sus corazones, debido al amor y al servicio devocional que Le ofrecen». Tanto Vidura como Uddhava eran devotos así de elevados, y, por lo tanto, ambos llegaron a la ribera del Yamuna y se encontraron.
+VERSO 25
+sa vasudevanucaram prasantam
+brhaspateh prak tanayam pratitam
+alingya gadham pranayena bhadram
+svanam aprcchad bhagavat-prajanam
+</p>
+<p class='vspace'>sah—él, Vidura; vasudeva—Sri Krishna; anucaram—compañero constante; prasantam—muy ecuánime y bondadoso; brhaspateh—de Brhaspati, el erudito maestro espiritual de los semidioses; prak—anteriormente; tanayam—hijo o discípulo; pratitam—reconoció; alingya—abrazando; gadham—con mucha emoción; pranayena—con amor; bhadram—auspicioso; svanam—su propia; aprcchat— preguntó; bhagavat—de la Personalidad de Dios; prajanam—familia.
+TRADUCCIÓN
+Luego, por su gran amor y emoción, Vidura abrazó a Uddhava, que era un compañero constante de Sri Krishna y, anteriormente, un gran alumno de Brhaspati. Vidura le pidió después que le diera noticias de la familia de Sri Krishna, la Personalidad de Dios.
+SIGNIFICADO
+Vidura era mayor que Uddhava, de la edad de su padre, y, por consiguiente, cuando los dos se encontraron, Uddhava se postró ante Vidura, y éste lo abrazó por ser Uddhava menor que él, como un hijo. Pandu, el hermano menor de Vidura, era tío de Sri Krishna, y Uddhava era primo de Sri Krishna. Así que, de acuerdo con la costumbre social, Uddhava debía el mismo respeto a Vidura que a su propio padre. Uddhava era un gran erudito en lógica, y se le conocía como hijo o discípulo de Brhaspati, el muy erudito sacerdote y maestro espiritual de los semidioses. Vidura preguntó a Uddhava por el bienestar de sus familiares, si bien ya sabía que no se encontraban ya en este mundo. Parece muy raro que hiciera esa pregunta, pero Srila Jiva Gosvami explica que la noticia causó conmoción a Vidura, el cual, en consecuencia, la volvió a preguntar, movido por una gran curiosidad. Así pues, su pregunta fue sicológica, y no práctica.
+VERSO 26
+kaccit puranau purusau svanabhya-
+padmanuvrttyeha kilavatirnau
+asata urvyah kusalam vidhaya 
+</p><pre>  krta-ksanau kusalam sura-gehe
+</pre><p class='vspace'>kaccit—si; puranau—las originales; purusau—Personalidades de Dios (Krishna y Balarama); svanabhya—Brahma; padma-anuvrttya—por el pedido de aquel que nace del loto; iha—aquí; kila—ciertamente; avatirnau—encarnadas; asate—están; urvyah—en el mundo; kusalam—bienestar; vidhaya—para hacer eso; krta- ksanau—los que elevan la prosperidad de todos; kusalam—todos bien; sura- gehe—en la casa de Surasena.
+TRADUCCIÓN
+[Por favor, dime] si Les va bien en la casa de Surasena a las Personalidades originales de Dios, que Se encarnaron a pedido de Brahma [que nace de la flor de loto que surge del Señor] y que han aumentado la prosperidad del mundo al elevar a todos.
+SIGNIFICADO
+Sri Krishna y Balarama no son dos Personalidades de Dios diferentes. Dios es uno y sin igual, pero Se expande en muchas formas sin que éstas estén serparadas unas de otras. Todas ellas son expansiones plenarias. La expansión inmediata de Sri Krishna es Baladeva, y Brahma, nacido de la flor de loto que surge de Garbhodakasayi Visnu, es una expansión de Baladeva. Esto indica que Krishna y Baladeva no están sometidos a las regulaciones del universo; por el contrario, todo el universo se encuentra bajo Su dominio. Ellos advinieron a pedido de Brahma para aliviar la carga del mundo, y aliviaron al mundo mediante muchas actividades sobrehumanas, de manera que todos pudieron volverse felices y prósperos. Sin la gracia del Señor, nadie puede ser feliz y próspero. Como la felicidad de la familia de los devotos del Señor depende de la felicidad del Señor, Vidura preguntó ante todo por el bienestar del Señor.
+VERSO 27
+kaccit kurunam paramah suhrn no
+bhamah sa aste sukham anga saurih
+yo vai svasrnam pitrvad dadati
+varan vadanyo vara- tarpanena
+</p>
+<p class='vspace'>kaccit—si; kurunam—de los Kurus; paramah—el más grande; suhrt—bienqueriente; nah—nuestro; bhamah—cuñado; sah—él; aste—es; sukham—feliz; anga—¡oh, Uddhava!; saurih—Vasudeva; yah—aquel que; vai—ciertamente; svasrnam—de las hermanas; pitr-vat—como un padre; dadati—da; varan—todo lo que puede desearse; vadanyah—munífico; vara—esposa; tarpanena—al complacer.
+TRADUCCIÓN
+[Por favor, dime] si le va bien al mejor amigo de los Kurus, nuestro cuñado Vasudeva. Él es muy munífico. Es como un padre para con sus hermanas, y sus esposas siempre están complacidas con él.
+SIGNIFICADO
+Vasudeva, el padre de Sri Krishna, tenía dieciséis esposas, y una de ellas, de nombre Pauravi o Rohini, la madre de Baladeva, era la hermana de Vidura. Vasudeva, por lo tanto, era el esposo de la hermana de Vidura; de modo que eran cuñados. Kunti, la hermana de Vasudeva, era la esposa de Pandu, el hermano mayor de Vidura, y también en ese sentido Vasudeva era cuñado de Vidura. Kunti era menor que Vasudeva, y era deber del hermano mayor tratar a las hermanas menores como hijas. Siempre que Kunti necesitaba algo, Vasu- deva lo proveía de una manera munífica, debido al gran amor que sentía por su hermana menor. Vasudeva nunca dejaba de satisfacer a sus esposas, y al mismo tiempo suministraba a su hermana todos los objetos que deseaba. Daba una atención especial a Kunti, debido a que había enviudado a una temprana edad. Mientras Vidura preguntaba por el bienestar de Vasudeva, recordó todo lo referente a él y a la relación familiar.
+VERSO 28
+kaccid varuthadhipatir yadunam
+pradyumna aste sukham anga virah
+yam rukmini bhagavato 'bhilebhe
+</p><pre>  aradhya vipran smaram adi-sarge
+</pre><p class='vspace'>kaccit—si; varutha—del militar; adhipatih—comandante en jefe; yadunam— de los Yadus; pradyumnah—el hijo de Krishna llamado Pradyumna; aste—es; sukham—feliz; anga—¡oh, Uddhava!; virah—el gran guerrero; yam—a quien; rukmini—la esposa de Krishna llamada Rukmini; bhagavatah—de la Personalidad de Dios; abhilebhe—obtuvo como premio; aradhya—complaciendo; vipran— brahmanas; smaram—Cupido (Kamadeva); adi-sarge—en su vida anterior.
+TRADUCCIÓN
+¡Oh, Uddhava! Por favor, dime, ¿cómo está Pradyumna, el comandante en jefe de los Yadus, que era Cupido en una vida anterior? Nació como hijo de Sri Krishna y Rukmini, por la gracia de los brahmanas a los que ella complació.
+SIGNIFICADO
+De acuerdo con Srila Jiva Gosvami, Smara (Cupido o Kama- deva) es uno de los compañeros eternos de Sri Krishna. Jiva Gosvami ha explicado esto muy elaboradamente en su tratado Krishna-sandarbha.
+VERSO 29
+kaccit sukham satvata-vrsni-bhoja-
+dasarhakanam adhipah sa aste
+</p><pre> yam abhyasiñcac chata-patra-netro
+</pre><p>nrpasanasam parihrtya durat
+</p>
+<p class='vspace'>kaccit—si; sukham—todo va bien; satvata—la raza Satvata; vrsni—la dinastía Vrsni; bhoja—la dinastía Bhoja; dasarhakanam—la raza Dasarha; adhipah—el rey Ugrasena; sah—él; aste—existe; yam—a quien; abhyasiñcat—entronó; sata- patra-netrah—Sri Krishna; nrpa-asana-asam—esperanza del trono real; parihrtya— abandonando; durat—en un lugar lejano.
+TRADUCCIÓN
+¡Oh, amigo mío! [Dime] si ahora le va bien a Ugrasena, el rey de los Satvatas, Vrsnis, Bhojas y Dasarhas. Él se fue muy lejos de su reino, dejando a un lado todas las esperanzas de recuperar su trono real, pero Sri Krishna lo entronó de nuevo.
+VERSO 30
+kaccid dhareh saumya sutah sadrksa
+aste 'grani rathinam sadhu sambah
+asuta yam jambavati vratadhya 
+</p><pre>  devam guham yo 'mbikaya dhrto 'gre
+</pre><p class='vspace'>kaccit—si; hareh—de la Personalidad de Dios; saumya—¡oh, tú, el ecuánime!; sutah—hijo; sadrksah—similar; aste—le va bien; agranih—principal; rathinam—de los guerreros; sadhu—de buen comportamiento; sambah—Samba; asuta—dio a luz; yam—a quien; jambavati—Jambavati, una de las reinas de Sri Krishna; vratadhya—enriquecida por votos; devam—el semidiós; guham—de nombre Karttikeya; yah—a quien; ambikaya—a la esposa de Siva; dhrtah—nació; agre—en el nacimiento anterior.
+TRADUCCIÓN
+¡Oh, tú, el bondadoso! ¿Le va bien a Samba? Tiene todos los rasgos característicos de un hijo de la Personalidad de Dios. En un nacimiento anterior, nació como Karttikeya del vientre de la esposa de Siva, y ahora ha nacido del vientre de Jambavati, la más virtuosa de las esposas de Krishna.
+SIGNIFICADO
+Siva, una de las tres encarnaciones cualitativas de la Personalidad de Dios, es la expansión plenaria del Señor. Karttikeya, nacido de él, se encuentra en el nivel de Pradyumna, otro hijo de Sri Krishna. Cuando Sri Krishna desciende al mundo material, todas Sus porciones plenarias aparecen también con Él para exhibir diferentes funciones del Señor. Con la excepción de los pasatiempos de Vrndavana, las diferentes expansiones plenarias del Señor ejecutan todas las funciones. Vasudeva es una expansión plenaria de Narayana. Cuando el Señor apareció como Vasudeva ante Devaki y Vasudeva, lo hizo en Su calidad de Nara- yana. En forma similar, todos los semidioses del reino celestial aparecieron como acompañantes del Señor en las formas de Pradyumna, Samba, Uddhava, etc. Este pasaje informa de que Kamadeva apareció como Pradyumna; Karttikeya, como Samba; y uno de los Vasus, como Uddhava. Todos ellos desempeñaron sus diferentes funciones con objeto de enriquecer los pasatiempos de Krishna.
+VERSO 31
+ksemam sa kaccid yuyudhana aste
+yah phalgunal labdha-dhanu-rahasyah
+lebhe 'ñjasadhoksaja-sevayaiva
+gatim tadiyam yatibhir durapam
+</p>
+<p class='vspace'>ksemam—todo bien; sah—él; kaccit—si; yuyudhanah—Satyaki; aste—está allí; yah—aquel que; phalgunat—de Arjuna; labdha—ha logrado; dhanuh-rahasyah— aquel que entiende las complejidades del arte militar; lebhe—también logró; añjasa—rápidamente; adhoksaja—de la Realidad Trascendental; sevaya—mediante el servicio; eva—ciertamente; gatim—destino; tadiyam—trascendental; yatibhih— por grandes renunciantes; durapam—muy difícil de lograr.
+TRADUCCIÓN
+¡Oh, Uddhava! ¿Le va bien a Yuyudhana? Él aprendió de Arjuna las complejidades del arte militar, y alcanzó el destino trascendental que incluso a los grandes renunciantes resulta muy difícil de alcanzar.
+SIGNIFICADO
+El propósito del sendero trascendental consiste en volverse un compañero personal de la Personalidad de Dios, conocido como adhoksaja, aquel que Se encuentra más allá del alcance de los sentidos. Los renunciantes del mundo, los sannyasis, abandonan todas las relaciones mundanas, es decir, la familia, la esposa, los hijos, los amigos, el hogar, la riqueza —todo—, para alcanzar la dicha trascendental de la felicidad Brahman. Pero la felicidad adhoksaja se encuentra más allá de la felicidad Brahman. Los filósofos empíricos disfrutan de una especie trascendental de bienaventuranza gracias a la especulación filosófica sobre la Verdad Suprema, pero más allá de ese placer se encuentra el placer que disfruta Brahman en Su eterna forma de Personalidad de Dios. Las entidades vivientes disfrutan de la bienaventuranza Brahman después de la liberación del cautiverio material. Pero Parabrahman, la Personalidad de Dios, disfruta eternamente de una bienaventuranza que obtiene de Su propia potencia, denominada la potencia hladini. El filósofo empírico que estudia el Brahman mediante la negación de las características externas no ha conocido aún la calidad de la potencia hladini del Brahman. De las muchas potencias del Omnipotente, hay tres aspectos de Su potencia interna, a saber: samvit, sandhini y hladini. Y a pesar de la estricta adhesión de los grandes yogis y jñanis a los principios de yama, niyama, asana, dhyana, dharana y pranayama, no pueden adentrarse en la potencia interna del Señor. Sin embargo, los devotos del Señor, en virtud del poder del servicio devocional, experimentan fácilmente esa potencia. Yuyudhana alcanzó esa etapa de la vida, del mismo modo que adquirió de Arjuna conocimiento perfecto en lo referente a la ciencia militar. Por consiguiente, su vida alcanzó el éxito al máximo, tanto desde el punto de vista material como espiritual. Así es el servicio devocional que se ofrece al Señor.
+VERSO 32
+kaccid budhah svasty anamiva aste
+svaphalka-putro bhagavat-prapannah
+yah krsna-padankita-marga-pamsusv
+acestata prema-vibhinna-dhairyah
+</p>
+<p class='vspace'>kaccit—si; budhah—muy erudito; svasti—bien; anamivah—intachable; aste— existe; svaphalka-putrah—Akrura, el hijo de Svaphalka; bhagavat—referente a la Personalidad de Dios; prapannah—entregado; yah—aquel que; krsna—el Señor; pada-ankita—marcado con huellas; marga—sendero; pamsusu—en el polvo; acestata—exhibió; prema-vibhinna—perdido en el amor trascendental; dhairyah— equilibrio mental.
+TRADUCCIÓN
+Por favor, dime si le va bien a Akrura, el hijo de Svaphalka. Es una intachable alma entregada a la Personalidad de Dios. Una vez, perdió su equilibrio mental debido a su éxtasis de amor trascendental, y cayó sobre el polvo de un camino que estaba marcado con las huellas de Sri Krishna.
+SIGNIFICADO
+Cuando Akrura fue a Vrndavana en busca de Krishna, vio las huellas del Señor en el polvo de Nanda-grama, y de inmediato cayó sobre ellas con éxtasis de amor trascendental. Ese éxtasis puede tenerlo un devoto que está plenamente absorto en pensamientos incesantes acerca de Krishna. Semejante devoto puro del Señor es naturalmente intachable, debido a que está siempre en contacto con la supremamente pura Personalidad de Dios. Pensar constantemente en el Señor es el método antiséptico para mantenerse libre de la contaminación infecciosa de las cualidades materiales. El devoto puro del Señor siempre está acompañado por el Señor, en virtud de que siempre piensa en Él. Aun así, en el contexto particular de un tiempo y lugar, las emociones trascendentales adoptan un cariz diferente, y eso rompe el equilibrio mental del devoto. Sri Caitanya exhibió el ejemplo típico de éxtasis trascendental, como podemos entender a partir de la vida de esta encarnación de Dios.
+VERSO 33
+kaccic chivam devaka-bhoja-putrya
+visnu-prajaya iva deva-matuh
+ya vai sva-garbhena dadhara devam
+trayi yatha yajña-vitanam artham
+</p>
+<p class='vspace'>kaccit—si; sivam—todo bien; devaka-bhoja-putryah—de la hija del rey Devaka- bhoja; visnu-prajayah—de aquella que dio a luz a la Personalidad de Dios; iva— como aquella de; deva-matuh—de la madre de los semidioses (Aditi); ya—aquella que; vai—en verdad; sva-garbhena—por su propio vientre; dadhara—concibió; devam—el Señor Supremo; trayi—los Vedas; yatha—tanto como; yajña- vitanam—de extender el sacrificio; artham—propósito.
+TRADUCCIÓN
+Así como los Vedas son el receptáculo de los propósitos de sacrificio, así mismo la hija del rey Devaka-bhoja concibió a la Suprema Personalidad de Dios en sus entrañas, tal como lo hizo la madre de los semidioses. ¿Le va bien a ella [Devaki]?
+SIGNIFICADO
+Los Vedas están llenos de conocimiento trascendental y valores espirituales, y, así pues, Devaki, la madre de Sri Krishna, concibió al Señor en sus entrañas como el significado personificado de los Vedas. No hay diferencia entre los Vedas y el Señor. Los Vedas tienen por objeto que se logre entender al Señor, y el Señor constituye los Vedas personificados. Devaki se asemeja a los significativos Vedas, y el Señor Se asemeja al propósito de los mismos, personificado.
+VERSO 34
+apisvid aste bhagavan sukham vo
+yah satvatam kama-dugho 'niruddhah
+yam amananti sma hi sabda-yonim
+mano-mayam sattva-turiya-tattvam
+</p>
+<div class='vspace'></div><pre>  api—como también; svit—si; aste—¿acaso Él?; bhagavan—la Personalidad de Dios; sukham—toda felicidad; vah—de ti; yah—aquel que; satvatam—de los devotos; kama-dughah—fuente de todos los deseos; aniruddhah—la expansión plenaria Aniruddha; yam—a quien; amananti—aceptan; sma—desde antaño; hi—ciertamente; sabda-yonim—la causa del Rg Veda; manah-mayam—creador de la mente; sattva—trascendental; turiya—la cuarta expansión; tattvam— fundamento.
+</pre><p>TRADUCCIÓN
+¿Puedo preguntarte si Le va bien a Aniruddha? Él es quien complace todos los deseos de los devotos puros, y a quien desde antaño Se ha considerado la causa del Rg Veda, el creador de la mente, y la cuarta expansión plenaria de Visnu.
+SIGNIFICADO
+adi-caturbhuja, las expansiones originales de Baladeva, son Vasudeva, Sankarsana, Pradyumna y Aniruddha. Todos Ellos son visnu-tattvas, Personalidades de Dios no diferentes entre Sí. En la encarnación de Sri Rama, todas esas diferentes expansiones vinieron para la ejecución de unos pasatiempos en particular. Sri Rama es el Vasudeva original, y Sus hermanos eran Sankarsana, Pradyumna y Aniruddha. Aniruddha es también la causa de Maha-Visnu, de cuya respiración apareció el Rg Veda. Todo esto se encuentra bien explicado en el Markandeya Purana. Durante la encarnación de Sri Krishna, Aniruddha advino como hijo del Señor. El Sri Krishna de Dvaraka es la expansión Vasudeva del grupo original. El Sri Krishna original nunca abandona Goloka Vrndavana. Todas las expansiones plenarias son un único y mismo visnu-tattva, y no hay diferencia en la potencia de cada uno de Ellos.
+VERSO 35
+apisvid anye ca nijatma-daivam
+ananya-vrttya samanuvrata
+ye hrdika-satyatmaja-carudesna-
+gadadayah svasti caranti saumya
+</p>
+<p class='vspace'>api—como también; svit—si; anye—otros; ca—y; nija-atma—de su propio ser; daivam—Sri Krishna; ananya—absolutamente; vrttya—fe; samanuvratah— seguidores; ye—todos aquellos que; hrdika—Hrdika; satya-atmaja—el hijo de Satyabhama; carudesna—Carudesna; gada—Gada; adayah—y otros; svasti—todos bien; caranti—pasa el tiempo; saumya—¡oh, tú, el ecuánime!
+TRADUCCIÓN
+¡Oh, tú, el ecuánime! ¿Están bien los demás, tales como Hrdika, Carudesna, Gada y el hijo de Satyabhama, que aceptan a Sri Krishna como el alma del ser y, de esa manera, siguen Su sendero sin desviación?
+VERSO 36
+api sva-dorbhyam vijayacyutabhyam
+dharmena dharmah paripati setum
+duryodhano 'tapyata yat-sabhayam
+samrajya-laksmya vijayanuvrttya
+</p>
+<p class='vspace'>api—así como también; sva-dorbhyam—propios brazos; vijaya—Arjuna; acyutabhyam—juntamente con Sri Krishna; dharmena—en base a principios religiosos; dharmah—el rey Yudhisthira; paripati—mantiene; setum—el respeto a la religión; duryodhanah—Duryodhana; atapyata—envidiaba; yat—cuya; sabha- yam—asamblea real; samrajya—imperial; laksmya—opulencia; vijaya-anuvrttya— por el servicio de Arjuna.
+TRADUCCIÓN
+También permíteme preguntar si Maharaja Yudhisthira mantiene ahora el reino de acuerdo con los principios religiosos y con respeto por el sendero de la religión. Anteriormente, Duryodhana estaba ardiendo de envidia, debido a que Yudhisthira era protegido por los brazos de Krishna y Arjuna como si fueran los suyos propios.
+SIGNIFICADO
+Maharaja Yudhisthira era el emblema de la religión. La opulencia de su reino cuando él lo gobernaba, con la ayuda de Sri Krishna y Arjuna, superaba todas las imaginaciones que pudieran tenerse de la opulencia del reino del cielo. Sus verdaderos brazos eran Sri Krishna y Arjuna, y así superó la opulencia de todo el mundo. Duryodhana, envidioso de esa opulencia, planeó muchísimos ardides para crear dificultades a Yudhisthira, y finalmente estalló la batalla de Kuruksetra. Después de la batalla de Kuruksetra, Maharaja Yudhisthira pudo gobernar de nuevo su reino legítimo, y reinstituyó los principios de honor y respeto a la religión. Ésa es la belleza de un reino gobernado por un rey piadoso como Maharaja Yudhisthira.
+VERSO 37
+kim va krtaghesv agham atyamarsi
+bhimo 'hivad dirghatamam vyamuñcat
+yasyanghri-patam rana-bhur na sehe
+margam gadayas carato vicitram
+</p>
+<p class='vspace'>kim—si; va—o; krta—realizó; aghesu—a los pecadores; agham—furioso; ati- amarsi—inconquistable; bhimah—Bhima; ahi-vat—como una cobra; dirgha- tamam—abrigada por mucho tiempo; vyamuñcat—ha dado rienda suelta; yasya— cuyos; anghri-patam—dando los pasos; rana-bhuh—el campo de batalla; na— no podía; sehe—tolerar; margam—el sendero; gadayah—por las mazas; caratah— jugando; vicitram—maravilloso.
+TRADUCCIÓN
+[Por favor, dime] si el inconquistable Bhima, que es como una cobra, ha dado rienda suelta a la ira que por mucho tiempo abrigaba en contra de los pecadores. El campo de batalla no podía tolerar siquiera el maravilloso juego de su maza, cuando él daba pasos por el sendero.
+SIGNIFICADO
+Vidura conocía la fuerza de Bhima. Cuando Bhima se encontraba en el campo de batalla, sus pasos por el sendero y el juego maravilloso de su maza resultaban insoportables para el enemigo. Durante mucho tiempo, el poderoso Bhima no tomó medidas en contra de los hijos de Dhrtarastra. Vidura preguntó si ya había dado rienda suelta a su ira, que era como la de una cobra que sufre. Cuando una cobra libera su veneno después de una ira abrigada por mucho tiempo, su víctima no puede sobrevivir.
+VERSO 38
+kaccid yasodha ratha-yuthapanam
+gandiva-dhanvoparatarir aste
+alaksito yac-chara-kuta-gudho
+maya-kirato girisas tutosa
+</p>
+<p class='vspace'>kaccit—si; yasah-dha—famoso; ratha-yuthapanam—entre los grandes guerreros de cuadriga; gandiva—Gandiva; dhanva—arco; uparata-arih—aquel que ha vencido a los enemigos; aste—yendo bien; alaksitah—sin ser identificado; yat— cuya; sara-kuta-gudhah—estando cubierto de flechas; maya-kiratah—falso caza- dor; girisah—Siva; tutosa—estuvo satisfecho.
+TRADUCCIÓN
+[Por favor, dime] si le va bien a Arjuna, cuyo arco lleva el nombre de Gandiva, y quien es siempre famoso entre los guerreros de cuadriga por vencer a sus enemigos. Una vez satisfizo a Siva al cubrirlo de flechas cuando Siva se presentó como un falso cazador no identificado.
+SIGNIFICADO
+Siva puso a prueba la fuerza de Arjuna, al buscar pelea por un jabalí cazado. Se enfrentó a Arjuna con el falso atuendo de un cazador, y Arjuna lo cubrió de flechas hasta que Siva se sintió satisfecho con su pelea. Siva ofreció a Arjuna el arma Pasupati, y lo bendijo. Aquí, Vidura preguntó por el bienestar del gran guerrero.
+VERSO 39
+yamav utasvit tanayau prthayah
+parthair vrtau paksmabhir aksiniva
+remata uddaya mrdhe sva-riktham
+parat suparnav iva vajri-vaktrat
+</p>
+<p class='vspace'>yamau—gemelos [Nakula y Sahadeva]; utasvit—si; tanayau—hijos; prthayah— de Prtha; parthaih—por los hijos de Prtha; vrtau—protegidos; paksmabhih— mediante escudos; aksini—de los ojos; iva—como; remate—jugando descuidadamente; uddaya—arrebatando; mrdhe—en la lucha; sva-riktham—propiedad suya; parat—del enemigo Duryodhana; suparnau—Garuda, el transportador de Sri Visnu; iva—como; vajri-vaktrat—de la boca de Indra.
+TRADUCCIÓN
+¿Les va bien a los hermanos gemelos que están protegidos por sus hermanos? Así como el ojo está siempre protegido por el párpado, ellos están protegidos por los hijos de Prtha, los cuales consiguieron de nuevo su legítimo reino al arrebatarlo de las manos de su enemigo Duryodhana, tal como Garuda arrebató néctar de la boca de Indra, el portador del relámpago.
+SIGNIFICADO
+Indra, el rey del cielo, lleva un relámpago en su mano, y es muy fuerte; mas, aun así, Garuda, el transportador de Sri Visnu, pudo arrebatarle néctar de la boca. En forma similar, Duryodhana era tan fuerte como el rey del cielo, y, aun así, los hijos de Prtha, los Pandavas, pudieron arrebatar a Duryodhana el reino que les pertenecía. Tanto Garuda como los Parthas son devotos predilectos del Señor, y por eso les fue posible enfrentarse a enemigos así de fuertes.
+La pregunta de Vidura se refería a los hermanos menores de los Pandavas, es decir, Nakula y Sahadeva. Estos hermanos gemelos eran hijos de Madri, la madrastra de los otros Pandavas. Pero Nakula y Sahadeva eran iguales que los otros tres Pandavas —Yudhisthira, Bhima y Arjuna—, a pesar de ser hermanastros de estos últimos, debido a que Kunti se encargó de ellos después de la partida de Madri con su esposo Maharaja Pandu. A los cinco se les conoce en el mundo como hermanos propiamente dichos. Los tres Pandavas mayores cuidaban de los hermanos menores, tal como el párpado cuida del ojo. Vidura estaba ansioso de saber si los hermanos menores aún se encontraban viviendo dichosamente bajo el cuidado de los hermanos mayores, después de que recobraron su reino de manos de Duryodhana.
+VERSO 40
+aho prthapi dhriyate 'rbhakarthe
+rajarsi-varyena vinapi tena
+yas tv eka-viro 'dhiratho vijigye
+dhanur dvitiyah kakubhas catasrah
+</p>
+<p class='vspace'>aho—¡oh, mi señor!; prtha—Kunti; api—también; dhriyate—lleva su vida; arbhaka-arthe—por el bien de los hijos huérfanos de padre; rajarsi—el rey Pandu; varyena—el mejor; vina api—sin él; tena—a él; yah—aquel que; tu— pero; eka—solo; virah—el guerrero; adhirathah—comandante; vijigye—pudo conquistar; dhanuh—el arco; dvitiyah—el segundo; kakubhah—puntos cardinales; catasrah—cuatro.
+TRADUCCIÓN
+¡Oh, mi señor! ¿Vive aún Prtha? Vivía sólo por el bien de sus hijos huérfanos de padre; de no ser por esto, le hubiera sido imposible vivir sin el rey Pandu, que era el comandante más grande de todos y conquistó solo los cuatro puntos cardinales, únicamente con la ayuda de un segundo arco.
+SIGNIFICADO
+Una esposa fiel no puede vivir sin su señor, el esposo, y, por lo tanto, todas las viudas solían abrazar voluntariamente el fuego ardiente que consumía al esposo muerto. Ese sistema era muy común en la India, debido a que todas las esposas eran castas y fieles a sus esposos. Más tarde, con el advenimiento de la era de Kali, las esposas gradualmente comenzaron a estar menos entregadas a sus esposos, y el abrazo voluntario del fuego por parte de las viudas se convirtió en una cuestión del pasado. Muy recientemente el proceso fue abolido, pues el sistema voluntario se había vuelto una costumbre social que se realizaba a la fuerza.
+Cuando Maharaja Pandu murió, sus dos esposas, Kunti y Madri, estaban dispuestas a abrazar el fuego, pero Madri pidió a Kunti que viviera por el bien de los jóvenes hijos, los cinco Pandavas. Kunti accedió a ello ante el pedido adicional de Vyasadeva. A pesar de su gran congoja, Kunti decidió vivir, no para disfrutar de la vida en ausencia de su esposo, sino únicamente para dar protección a sus hijos. Aquí Vidura hace referencia a ese incidente, debido a que conocía todo lo relacionado con su cuñada Kuntidevi. Queda entendido que Maharaja Pandu era un gran guerrero, y que él solo, con la ayuda de arco y flecha, pudo conquistar los cuatro puntos cardinales del mundo. En ausencia de semejante esposo, era prácticamente imposible para Kunti continuar viviendo, incluso como viuda, pero tuvo que hacerlo por el bien de los cinco niños.
+VERSO 41
+saumyanusoce tam adhah-patantam
+bhratre paretaya vidudruhe yah
+niryapito yena suhrt sva-purya
+aham sva-putran samanuvratena
+</p>
+<p class='vspace'>saumya—¡oh, tú, el bondadoso!; anusoce—sólo lamentando; tam—a él; adhah- patantam—deslizándose hacia abajo; bhratre—de su hermano; paretaya—muerte; vidudruhe—se rebeló en contra de; yah—aquel que; niryapitah—echado; yena— por el cual; suhrt—bienqueriente; sva-puryah—de su propia casa; aham—yo mismo; sva-putran—con sus propios hijos; samanuvratena—aceptando la misma línea de acción.
+TRADUCCIÓN
+¡Oh, tú, el bondadoso! Yo simplemente me lamento por [Dhrtarastra] el que se rebeló en contra de su hermano después de su muerte. Él mismo me echó de mi propia casa, a pesar de que soy su sincero bienqueriente, porque aceptó la línea de acción que adoptaron sus propios hijos.
+SIGNIFICADO
+Vidura no preguntó por el bienestar de su hermano mayor, ya que no había ninguna posibilidad de que éste se encontrara bien; sólo podía haber noticias de su deslizamiento hacia el infierno. Vidura era un sincero bienqueriente de Dhrtarastra, y pensaba en él en lo recóndito de su corazón. Lamentó que Dhrtarastra hubiera sido capaz de rebelarse en contra de los hijos de su difunto hermano Pandu, y de echarlo a él (a Vidura) de su propia casa, por orden de sus perversos hijos. A pesar de estas acciones, Vidura nunca se volvió enemigo de Dhrtarastra, sino que continuó siendo su bienqueriente; y en la última etapa de la vida de Dhrtarastra, fue únicamente Vidura quien demostró ser su verdadero amigo. Así es el comportamiento de un vaisnava como Vidura: desea todo lo auspicioso, incluso para los enemigos.
+VERSO 42
+so 'ham harer martya-vidambanena
+drso nrnam calayato vidhatuh
+nanyopalaksyah padavim prasadac
+carami pasyan gata-vismayo 'tra
+</p>
+<p class='vspace'>sah aham—por lo tanto, yo; hareh—de la Personalidad de Dios; martya—en este mundo mortal; vidambanena—sin ser reconocido; drsah—a la vista; nrnam— de la gente en general; calayatah—que confunde; vidhatuh—para poder hacerlo; na—no; anya—otro; upalaksyah—visto por otros; padavim—glorias; prasadat— por la gracia de ; carami—viajo; pasyan—por ver; gata-vismayah—sin lugar a dudas; atra—en cuanto a eso.
+TRADUCCIÓN
+Esto no me sorprende, habiendo viajado por el mundo sin ser visto por otros. Las actividades de la Personalidad de Dios, que son como las de un hombre de este mundo mortal, confunden a los demás; pero, por Su gracia, yo sé de Su grandeza, y, así pues, estoy feliz en todos los aspectos.
+SIGNIFICADO
+A pesar de que Vidura era hermano de Dhrtarastra, era completamente diferente a él. Por la gracia de Sri Krishna, no era necio como su hermano, y, así pues, el relacionarse con éste no podía influenciarlo. Dhrtarastra y sus materialistas hijos querían enseñorearse falsamente del mundo mediante su propia fuerza. El Señor los animaba a eso, y, así pues, quedaban cada vez más confundidos. Pero Vidura quería alcanzar el servicio devocional sincero al Señor, y, por lo tanto, se convirtió en un alma absolutamente entregada a la Absoluta Personalidad de Dios. Pudo darse cuenta de esto en el transcurso de su viaje de peregrino, y, así pues, quedó libre de toda duda. No lamentaba en absoluto el estar desprovisto de su casa y hogar, pues ahora tenía la experiencia de que depender de la misericordia del Señor es una libertad mayor que la supuesta libertad del hogar. Una persona no debe estar en la orden de vida de renuncia a menos que esté firmemente convencida de que está protegida por el Señor. Esa etapa de la vida se explica en la Bhagavad-gita como abhayam sattva-samsuddhih: De hecho, toda entidad viviente depende por completo de la misericordia del Señor, pero a menos que uno se halle en el estado puro de existencia, no puede establecerse en esa posición. Esa etapa de dependencia se denomina sattva-samsuddhih, la purificación de la propia existencia. El resultado de esa clase de purificación se exhibe en el hecho de no sentir temor. El devoto del Señor, que recibe el nombre de narayana-para, nunca siente temor de nada, pues está siempre consciente de que el Señor lo protege en toda circunstancia. Con esa convicción, Vidura viajaba solo, y no era visto ni reconocido por ningún amigo ni enemigo. En esa forma disfrutó de la libertad de la vida, sin obligaciones para con los muchos deberes del mundo.
+Cuando Sri Krishna Se encontraba presente personalmente en el mundo mortal en Su eterna y bienaventurada forma de Syamasundara, aquellos que no eran devotos puros del Señor no pudieron reconocerlo ni conocer Sus glorias. Avajananti mam mudha manusim tanum asritam (Bg. 9.11): Él siempre es desconcertante para los no devotos, mas es siempre visto por los devotos, en virtud del poder del servicio devocional puro que Le ofrecen.
+VERSO 43
+nunam nrpanam tri-madotpathanam
+mahim muhus calayatam camubhih
+vadhat prapannarti-jihirsayeso
+'py upaiksatagham bhagavan kurunam
+</p>
+<p class='vspace'>numam—por supuesto; nrpanam—de los reyes; tri—tres; mada-utpathanam— extraviándose por el orgullo falso; mahim—la Tierra; muhuh—constantemente; calayatam—agitando; camubhih—por el movimiento de soldados; vadhat—a partir del acto de matar; prapanna—entregado; arti-jihirsaya—dispuesto a aliviar la aflicción de los que sufren; isah—el Señor; api—a pesar de; upaiksata—esperó; agham—ofensas; bhagavan—el Señor Supremo; kurunam—de los Kurus.
+TRADUCCIÓN
+Aunque [Krishna] es el Señor y siempre está dispuesto a aliviar la aflicción de los que sufren, se abstuvo de matar a los Kurus, a pesar de que cometieron toda clase de pecados, y a pesar de que veía a otros reyes agitando constantemente la Tierra con sus fuertes movimientos militares, llevados a cabo bajo los dictados de tres clases de orgullo falso.
+SIGNIFICADO
+Como se declara en la Bhagavad-gita, el Señor aparece en el mundo mortal para ejecutar Su muy necesitada misión de matar a los malvados y brindar protección a los fieles que sufren. A pesar de esa misión, Sri Krishna toleró el insulto de los Kurus a Draupadi, y las injusticias perpetradas contra los Pandavas, así como también los insultos dirigidos contra Él. Pudiera surgir la pregunta siguiente: «¿Por qué toleró dichas injusticias e insultos en Su presencia? ¿Por qué no castigó a los Kurus de inmediato?». Cuando los Kurus insultaron a Draupadi en la asamblea al intentar verla desnuda en presencia de todos, el Señor protegió a Draupadi, suministrándole una ilimitada longitud de tela. Pero no castigó inmediatamente al bando insultante. Este silencio del Señor no significaba, sin embargo, que excusaba las ofensas de los Kurus. Había muchos otros reyes en la Tierra que se habían vuelto muy orgullosos de las tres clases de posesiones —riqueza, educación y seguidores—, y estaban constantemente agitando la Tierra con movimientos de poderío militar. El Señor estaba sólo esperando reunirlos en el campo de batalla de Kuruksetra y matarlos a todos al mismo tiempo, únicamente para tomar un atajo en Su misión de matar. Los reyes o los cabezas de estado ateos, cuando se envanecen por el avance de la riqueza material, la educación y el aumento de la población, siempre hacen un espectáculo de poderío militar y crean problemas a la gente inocente. Cuando Sri Krishna Se encontraba presente personalmente, había muchos reyes de esos por todas partes del mundo, y, en consecuencia, organizó la batalla de Kuruksetra. En Su manifestación de visva-rupa, el Señor expresó de la siguiente manera Su misión de matar: «Yo he descendido voluntariamente a la Tierra en Mi carácter de Tiempo inexorable, para disminuir la población no deseada. Acabaré con todos los que se han reunido aquí, con excepción de vosotros, los Pandavas. Esta matanza no depende de que tú participes en ella. Ya está decidido: todos serán muertos por Mí. Si quieres volverte famoso como el héroe del campo de batalla y así disfrutar del botín de la guerra, entonces, ¡oh, Savyasaci!, sólo conviértete en la causa inmediata de esta matanza, y recibe así el mérito. Ya Yo he matado a todos los grandes guerreros —Bhisma, Drona, Jayadratha, Karna y muchos otros grandes generales—. No te preocupes. Lucha en la batalla y vuélvete famoso como gran héroe» (Bg. 11.32-34).
+El Señor siempre quiere ver a Su devoto como héroe de algún episodio que Él mismo ejecuta. Quería ver a Su devoto y amigo Arjuna como héroe de la batalla de Kuruksetra, y, así pues, esperó a que todos los malvados del mundo se reunieran. Ésa, y ninguna otra, es la explicación de Su espera.
+VERSO 44
+ajasya janmotpatha-nasanaya
+karmany akartur grahanaya pumsam
+nanv anyatha ko 'rhati deha-yogam
+paro gunanam uta karma-tantram
+</p>
+<p class='vspace'>ajasya—del innaciente; janma—advenimiento; utpatha-nasanaya—con el propósito de aniquilar a los arribistas; karmani—obras; akartuh—de aquel que no está obligado a hacer nada; grahanaya—ejecutar; pumsam—de todas las personas; nanu anyatha—de no ser así; kah—quién; arhati—puede que merezca; deha- yogam—contacto del cuerpo; parah—trascendental; gunanam—de las tres modalidades de la naturaleza; uta—ni hablar de; karma-tantram—la ley de acción y reacción.
+TRADUCCIÓN
+El advenimiento del Señor se manifiesta para la aniquilación de los arribistas. Sus actividades son trascendentales, y se ejecutan para promover el entendimiento de todas las personas. Si no, puesto que el Señor es trascendental a todas las modalidades materiales, ¿qué propósito podría cumplir al venir a la Tierra?
+SIGNIFICADO
+Isvarah paramah krsnah sac-cid-ananda-vigrahah (Brahma-samhita 5.1): La forma del Señor es eterna, bienaventurada y omni- sapiente. Su supuesto nacimiento es, por lo tanto, únicamente una apariencia, como el nacimiento del Sol en el horizonte. Su nacimiento no ocurre bajo la influencia de la naturaleza material y del cautiverio de las reacciones a pasadas acciones, como en el caso de las entidades vivientes. Sus obras y actividades son pasatiempos independientes, y no están sujetas a las reacciones de la naturaleza material. En la Bhagavad-gita (4.14) se dice:
+na mam karmani limpanti
+na me karma-phale sprha
+</p><pre> iti mam yo 'bhijanati
+</pre><p>karmabhir na sa badhyate
+</p><pre> La ley del karma, promulgada por el Señor Supremo para las entidades vivientes, no se puede aplicar a Él, ni tampoco tiene el Señor ningún deseo de mejorarse a Sí mismo mediante actividades como las de los seres vivientes ordinarios. Los seres vivientes ordinarios actúan buscando mejorar sus vidas condicionadas. Pero el Señor ya está pleno de toda opulencia, toda fuerza, toda fama, toda belleza, todo conocimiento y toda renunciación. ¿Por qué habría de desear mejora alguna? Nadie puede superarlo en ninguna opulencia, y, en consecuencia, el deseo de mejora es completamente inútil para Él. Siempre se debe discriminar entre las actividades del Señor y las de los seres vivientes ordinarios. En esa forma, se puede llegar a la conclusión correcta en relación con la posición trascendental del Señor. Aquel que puede llegar a la conclusión de que el Señor es trascendental, puede volverse devoto del Señor y quedar libre de inmediato de todas las reacciones a sus acciones pasadas. Se dice: karmani nirdahati kintu ca bhakti-bhajam: El Señor minimiza o anula la influencia reaccionante de las acciones pasadas del devoto (Brahma-samhita 5.54).
+</pre><p>Las actividades del Señor han de ser aceptadas y disfrutadas por todas las entidades vivientes. Sus actividades tienen por objeto atraer al hombre ordinario hacia el Señor. El Señor siempre actúa en favor de los devotos, y, por lo tanto, los hombres ordinarios que actúan por interés o que buscan la salvación puede que se sientan atraídos por el Señor cuando actúa como protector de los devotos. Las personas que actúan por interés pueden alcanzar sus metas mediante el servicio devocional, y los salvacionistas también pueden alcanzar su meta en la vida mediante el servicio devocional que se ofrece al Señor. Los devotos no quieren los resultados fruitivos de sus acciones, ni tampoco quieren ninguna clase de salvación. Ellos disfrutan con las gloriosas actividades sobrehumanas del Señor, tales como el levantamiento de la colina Govardhana y la matanza de la bruja Putana que llevó a cabo durante Su infancia. Sus actividades se llevan a cabo para atraer a toda clase de hombres —karmis, jñanis y bhaktas—. Como Él es trascendental a todas las leyes del karma, no hay ninguna posibilidad de que acepte una forma perteneciente a maya, tal como la que se da a la fuerza a las entidades vivientes ordinarias que están atadas por las acciones y reacciones de sus propios actos. 
+El propósito secundario de Su advenimiento es el de aniquilar a los arribistas asuras, y detener las necedades de la propaganda atea realizada por personas poco inteligentes. En virtud de la misericordia sin causa del Señor, los asuras que son muertos personalmente por la Personalidad de Dios reciben la salvación. El significativo advenimiento del Señor es siempre distinto del nacimiento ordinario. Tampoco los devotos puros tienen ninguna conexión con el cuerpo material, y desde luego que el Señor, que aparece tal y como es, en Su forma sad-cid-ananda, no está limitado por una forma material.
+VERSO 45
+tasya prapannakhila-lokapanam
+avasthitanam anusasane sve
+arthaya jatasya yadusv ajasya
+vartam sakhe kirtaya tirtha-kirteh
+</p>
+<p class='vspace'>tasya—Sus; prapanna—entregados; akhila-loka-panam—todos los gobernadores de todo el universo; avasthitanam—situados en; anusasane—bajo el control de; sve—propio ser; arthaya—en provecho de; jatasya—de los nacidos; yadusu—en la familia de los Yadus; ajasya—del innaciente; vartam—temas; sakhe—¡oh, amigo mío!; kirtaya—por favor, narra; tirtha-kirteh—del Señor, cuyas glorias se cantan en los lugares de peregrinaje.
+TRADUCCIÓN
+¡Oh, amigo mío! Por favor, canta las glorias del Señor, que ha de ser glorificado en los lugares de peregrinaje. Él es innaciente, y aun así adviene por Su misericordia sin causa para con los entregados gobernadores de todas partes del universo. ánicamente para beneficio de ellos, apareció en la familia de Sus devotos puros, los Yadus.
+SIGNIFICADO
+Hay innumerables gobernadores por todas partes del universo, en diferentes variedades de planetas: el dios del Sol en el planeta Sol, el dios de la Luna en el planeta Luna, Indra en el planeta celestial, Vayu, Varuna, y aquellos que viven en el planeta Brahmaloka, donde vive Brahma. Todos son obedientes sirvientes del Señor. Siempre que hay algún problema en la administración de los innumerables planetas de los diferentes universos, los gobernadores oran para que tenga lugar un advenimiento, y el Señor adviene. El Bhagavatam (1.3.28) ya ha confirmado eso en el siguiente verso:
+ete camsa-kalah pumsah
+krsnas tu bhagavan svayam
+indrari-vyakulam lokam
+</p><pre> mrdayanti yuge yuge
+ En cada milenio, siempre que se les presenta algún problema a los obedientes gobernadores, el Señor adviene. También adviene en provecho de Sus devotos puros e inmaculados. Los entregados gobernadores y devotos puros se encuentran siempre estrictamente bajo el control del Señor, y nunca desobedecen los deseos del Señor. Por lo tanto, el Señor siempre vela por ellos.
+</pre><p>El propósito de los peregrinajes consiste en recordar constantemente al Señor, y, por lo tanto, el Señor recibe el nombre de tirtha-kirti. El propósito de ir a un lugar de peregrinaje es tener la oportunidad de glorificar al Señor. Incluso hoy en día, si bien los tiempos han cambiado, aún existen lugares de peregrinaje en la India. Por ejemplo, en Mathura y Vrndavana, donde tuvimos la oportunidad de vivir, la gente está despierta desde temprano por la mañana, desde las 4 de la madrugada, hasta la noche, y está constantemente ocupada, de una u otra forma, en cantar las santas glorias del Señor. La belleza de esos lugares de peregrinaje consiste en que se recuerdan de un modo espontáneo las santas glorias del Señor. El nombre, la fama, las cualidades, la forma, los pasatiempos y los acompañantes del Señor son todos idénticos a Él, y, por lo tanto, cantar las glorias del Señor invoca la presencia personal del Señor. En cualquier momento y en cualquier lugar en que los devotos puros se reúnen y cantan las glorias del Señor, Éste Se encuentra presente sin lugar a dudas. El propio Señor dice que Él siempre permanece donde Sus devotos puros cantan Sus glorias.
+Así terminan los significados de Bhaktivedanta del Capítulo Primero del Canto Tercero del Srimad-Bhagavatam, titulado: «Las preguntas de Vidura».
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on August 27, 2012, at 02:48 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

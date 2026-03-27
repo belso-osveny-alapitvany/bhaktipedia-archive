@@ -1,0 +1,542 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Adminisztratív szempontok</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=paramadvaiti_ba.asramvezeto_kezikonyve_03' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.asramvezeto_kezikonyve_03' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Adminisztratív szempontok"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramádvaiti Szvámí</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve.html'>Az ásramvezető kézikönyve</a>
+</p>
+<div class='vspace'></div><h2>Adminisztratív szempontok</h2>
+<ul><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f1'>Az asramvezető könyvelése</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f2'>A pénzügyi tervezés</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f3'>A bhakták névsora</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f4'>Tartalék alap</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f5'>Alapok gyarapítása</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f6'>Szükséges összejövetelek szervezése</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f7'>Szeretet és bizalom az ügyintézésben</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f8'>Az asramvezető és kapcsolatai</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f9'>Az üzleti kapcsolatok könyve</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f10'>A prédikációs kapcsolatok könyve</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f11'>Az adományok jegyzéke</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f12'>A vendégkönyv</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f13'>Az asramvezető és a napi könyvelés</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f14'>Adósságok</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f15'>Az asrami és templomi leltár</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f16'>Az asram haszna</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f17'>Bankszámlák kezelése</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f18'>A könyvosztás</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f19'>Prédikálási lehetőségek a médiákban</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f20'>A házasok prédikálással egybekötött üzleti lehetőségei a városban</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f21'>Az asramvezető és a rendelkezésére álló munkaerő</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f22'>Vásárlások</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f23'>A családos asramvezető személyes pénzügyei</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f24'>Bhakták látogatása a szent helyekre</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f25'>A bhakták dolgozhatnak jutalékrendszerben is</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f26'>A „Sríla Prabhupád formula”</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_03.html#f27'>A nyomda transzcendentális funkciója</a>
+</li></ul><p class='vspace'><a name='f1' id='f1'></a>
+</p><h3>Az asramvezető könyvelése</h3>
+<p>A nonprofit szervezet vagy alapítvány a törvény nagyon finom eszköze arra, hogy segítsen olyanokat, akik másokon próbálnak segíteni. Sok rejtett motívum van persze a világi nonprofit szervezetek működése mögött. De a vaisnavák közössége igazán és szívből nonprofit szervezet, mert minden hasznuk Krsnának megy és Krsna nem tart meg semmit magának. Minden fillérnek, amit Krsna befektet ebbe a világba, a célja, hogy másokat áldáshoz juttasson. Mégis, mivel manapság a világ nem ismeri el az igazi brahminikus kultúrát, a vaisnaváknak be kell bizonyítaniuk, milyen becsülettel követik az adott ország kormánya által körvonalazott nonprofit kulturális, képzési és jótékonysági elképzeléseket. Mindenesetre a kiadásokat is, a bevételeket is kiválóan kell könyvelni. Általános, hogy sok adomány úgy érkezik az asram számlájára, hogy az egyéni adományozók nem mindig fedik fel magukat, a saját adózási szituációjuk miatt. Ezért szükséges, hogy legyen egy nagyon szigorú, belső pénzügyi napi elszámolás, amin pontosan nyomon követhető a közösség jelenlegi anyagi helyzete.
+</p>
+<p class='vspace'>Ezeket a napi elszámolásokat a Vaisnava Tanács ülésein is be kell mutatni. A hivatalos könyvelést pedig egy kvalifikált könyvelő végezze az állam fele. A bhaktáknak együtt kell működniük vele, hogy megkapjon minden kért dokumentumot, és korrektül könyvelhessen. A lehető legkisebb problémánk se legyen az adóhivatallal. És nem is lesz, ha a könyvelést mindig rendben tartjuk. Máskülönben állandó aggodalomban fogunk élni.
+</p>
+<p class='vspace'>Mivel a tulajdonaink nonprofit szervezethez vannak bejegyezve, veszélyes, ha a nyilvántartásunk nem naprakész. A közösség könyvelésének mindig olyannak kell lennie, mintha az adó-ellenőröket várnánk. Tulajdonképpen kisebbségi prédikáló szer-vezetként mindig számítanunk kell az ellenőrzésre.
+</p>
+<p class='vspace'>Kolumbiában a könyvelőnk készített egy 30 oldalas útmutatót arról, hogyan védjük meg és vezessük a templomaink és azok üzleti vállalkozásainak könyvelését.
+</p>
+<p class='vspace'>Mivel ez az „Asramvezető kézikönyve” főleg általános jellegű útmutatásokat tartalmaz, ennek részleteire itt nem térünk ki. Minden országban vannak kisebb-nagyobb eltérések e tekintetben.
+</p>
+<p class='vspace'>Viszont egyetlen könyvelés sem jelentheti azt, hogy nem tudjuk, éppen mi a helyzet. Ha nem vezetsz rendes könyvelést, nem veszed észre a különbséget a költségeid és a hasznod között sem. Nagyon valószínű, hogy tönkreteszed az asramodat egy szép nagy adóssággal. Ez nagy sértés, mert egy transzcendentális szolgálat materiális ügyintézése transzcendentális ügyintézésnek számít. Ne habozz elsőosztályú ügyvezetője lenni az asramodnak! Ez a jukta vairágja, a valódi lemondás. Aligha találsz olyan valakit, aki szeret egész nap számokat írogatni, de ez egy szolgálat, amit nem szabad elhanyagolni. 
+</p>
+<p class='vspace'>És kérlek, ne feledjétek el: aki a pénztárt kezeli, az ne könyveljen. Másképpen: aki könyvel, az nem kezelheti a pénzt.
+</p>
+<p class='vspace'>Ugyanis nincs lehetőség ellenőrizni azt a személyt, aki a két szolgálatot egyszerre végzi. Nincs nagyobb fájdalom egy közösség számára, mint ha a beosztottjuk becsületessége megkérdőjelezhető. Krsna tulajdonát pedig minden harc árán meg kell védeni, ez nem kérdéses. A pénztáros és a papírmunkát végző közti csekkeket és egyenleg-kimutatásokat meg kell őrizni. Egyikük se legyen az asramvezető, kivéve ha nincs más bhakta, aki ezt vállalhatná. A vezetőknek nincs idejük az ilyen egyszerű elfoglaltságra. Ők prédikálnak és döntéseket hoznak. Az anyagi világban sem fog egy kultúrigazgató vagy egy cég üzleti menedzsere a pénztárban vagy a könyvelési osztályon ülni. Néha van olyan asramvezető, aki ezt mind maga akarja csinálni, de aztán nincs rá ideje és hamarosan abba a kellemetlen helyzetbe kerül, hogy elveszíti a bizalmat, mert nem világos és áttekinthető, amit csinál. Ami lehetetlen is, ha nem követjük a fenti elveket.
+</p>
+<p class='vspace'><a name='f2' id='f2'></a>
+</p><h3>A pénzügyi tervezés</h3>
+<p>A következő leírás nagyon alapvető. Mielőtt egy asramot nyitnánk, meg kell értenünk pontosan, hogy ezzel milyen anyagi felelősség hárul ránk. Valahányszor egy asramnak anyagi problémái támadnak, a megoldás megtalálható, ha követjük ezt az egyszerű rendszert.
+</p>
+<div class='vspace'></div><ol><li>Készítsetek egy listát az elkerülhetetlen havi kiadásokról, mint az albérleti díjak vagy jelzálog részlet fizetése, villanyszámla, vízdíj, telefonszámla, bhóga kiadások, szállítási költségek, jármű fenntartás, egyéb állandó kiadások, tartalék alap, stb.
+</li><li>Osszátok el a teljes összeget a hónap 26 munkanapjára, úgy hogy a vasárnapok szabadok maradjanak a vasárnapi programra és egy kis idő a bhaktáknak is maradjon.
+</li><li>Ezután hívjátok össze a résztvevő asrami bhaktákat, és tudato-sítsátok velük, hogy milyen hasznos bevételt kell termel-niük ahhoz, hogy éppen fenn tudják tartani az asramot, illetve hogy növelni is tudják a szolgálat szintjét.
+</li><li>Érjétek el, hogy minden egyes résztvevő személyesen vállalja, megtermeli a reá háruló részt az alapvető költségek fedezésére. Tudnotok kell, hogy az emberek könnyen megígérnek valamit, de elfelejtik, vagy egyszerűen csak figyelmen kívül hagyják a szükséges kemény munkát. Ezért arra kell inspirálnotok őket, hogy többet ígérjenek meg, mint a tényleges igény. Így, ha egyes bhakták nem tudnak annyit gyűjteni, akkor legalább a minimális költségekre lesz fedezet abból a pluszból, amit a többiek megtermeltek.
+</li><li>A résztvevők maguk is legyenek tisztában azzal, hogyan halad a program. Minden projektünknek fejlődnie kell, méghozzá progresszíven. Ha valamit sikerült elérni a múlt hónapban, akkor most próbáljuk meg 100%-kal túlszárnyalni. Így az utunk mindig felfelé ível, soha nem lefelé. Ha nem találkoztok mindig, s nem tudatosítotok minden bhaktát a szükséges fejenkénti vállalásról, ami együttesen fedezi majd az alapvető kiadásokat, akkor könnyen előfordulhat, hogy lemaradtok magatokhoz képest. Ez SOHA ne forduljon elő!
+</li><li>Hasonlóan kell megtervezni az olyan célok előmozdítását is, mint a kiosztott irodalom vagy az összegyűjtött adományok mennyisége, mégpedig úgy, hogy minden bhaktát bevonunk és tájékoztatunk is a transzcendentális eredményekről.
+</li></ol><p class='vspace'><a name='f3' id='f3'></a>
+</p><h3>A bhakták névsora</h3>
+<p>Szükséges, hogy a bentlakó és külsős bhaktákról teljeskörű információ legyen az asramban. Természetesen a legfontosabb a bentlakókról. A nyomtatványon sok információt ad az illető személyről, őt pedig ugyanaz a nyomtatvány tájékoztatja az asram alapvető szabályairól, amit alá is ír. A régebbi bentlakókról is vezessünk jegyzéket. Így később megpróbálhatjuk őket visszahívni az asramba, ha pl. megvan a családja címe. Fontos azt is tudni róluk, hogy mihez értenek, mi a végzettségük, milyen ismeretségeik vannak, mert ezzel segíthetnek a prédikálásban. Érdemes megtudni, ha volt valamilyen egészségügyi problémájuk.
+</p>
+<p class='vspace'>A szülők címét is szerezzétek meg, ha valamilyen vészhelyzet adódna, illetve hogy ellenőrizni lehessen, ha egy nem szavahihető személlyel van dolgunk. Nem vehetjük készpénznek, amit az emberek magukról mondanak. Ellenőrizd, ha valamit gyanúsnak érzel. Például az olyan embereket, akik már rendőrségi bejegyzéssel rendelkeznek, jobban meg kell vizsgálni, hogy megóvjuk az asramot a befogadásukból származó problémáktól.
+</p>
+<p class='vspace'>Kiskorúakat csak akkor fogadhatunk be, ha ezt mindkét szülő közjegyzőileg hitelesített és általuk aláírt írásos engedélyben rögzítette, teljes felelősséget vállaltak és egyetértenek azzal, hogy a gyermekük az asramban tartózkodjon. Azoknak a fiatalkorúaknak is kell valamilyen hivatalos engedély, akiknek nincs kapcsolatuk a szüleikkel; pl. árvák, utcagyerekek, stb. Máskülönben gondjaink lesznek a jövőben, és nincs értelme hogy a bentlakó bhakták szenvedjenek emiatt. Persze ezt nem kell túlhangsúlyozni. A bhakták néha szentimentalizmusból elfogadnak bárkit, aki felbukkan, nem gondolva a veszélyekre amivel ez járhat. A nyomtatványhoz pedig legyen csatolva egy fotó is, hiszen könnyen elfeledkezünk arról, aki esetleg csak rövid ideig marad.
+</p>
+<p class='vspace'>Kérlek ne feledjétek, hogy az asram a lelki felemelkedés helye, s csak néhány ember az, aki egész életében ott marad. De mindenki nagyon fontos, és soha nem felejthetjük el azt, aki valaha kapcsolatba került a közösségünkkel vagy a tanítómesterünkkel. Így terjesztette Sríla Prabhupád a bhakti-jógát.
+</p>
+<p class='vspace'>Minden ember egy drágakő, mégha egy kicsit csiszolatlan is az elején. Tartsátok hát meg a címüket. Ha egy bhakta egy másik asramból jön és csak egy darabig marad veletek, akkor is állítsatok ki egy ívet róla. Amit nem látunk, azt könnyen elfelejtjük. Ezért minden külsős, de az asrami tevékenységeitekben aktívan részt vállaló bhakta adatlapja is legyen kifüggesztve a vezénylési táblán, az egyéni megbízatásaikkal együtt. Ez növelni fogja mindenféle szolgálataitok eredményességét.
+</p>
+<p class='vspace'><a name='f4' id='f4'></a>
+</p><h3>Tartalék alap</h3>
+<p>Minden templomnak szüksége van némi tartalék alapra, legalább kétszer annyira, mint amit havi lakbérként kifizetnek. Nos, az asrami pénzügyeknek sok kis titka van, mint pl. a szankírtanos gyűlések, de szükség van jó pénztárosra, könyvelőre és lehet kérni adományt a gyülekezettől is. Például, én gyakran tanácsolom a bhaktáknak, hogy ne adjanak ki több pénzt lakbérre vagy jelzálog banki részleteként, mint amennyit egy heti normál munkával elő tudnak teremteni. Máskülönben teherré válik az asram fenntartása. Jobb egy kisebb hely rendezett anyagiakkal, mint egy nagy asram, miközben mindenki csak panaszkodik az anyagi megterhelés miatt. De ha van plusz pénz, ez azt jelenti, hogy az asram jól működik. Az adósságok vagy a szankírtanos könyvek és egyéb cikkek hiánya rosszul vezetett asramra utalnak. Mindig a kiadások előtt kell megkeresnünk a rávalót, nem utána. „Előbb a munka, a szamádhi később!” – ez volt Sríla Prabhupád ajánlása.
+</p>
+<p class='vspace'><a name='f5' id='f5'></a>
+</p><h3>Alapok gyarapítása</h3>
+<p>A pénz, vagy Laksmi Nárájant illeti. De manapság Laksmi a Rávanához hasonló kis démonok kezében van, és csak érzékkielégítésre költik. A világ gazdagsága ma csak arra jó, hogy még jobban eltávolítson bennünket Istentől, és az egyszerű élet és magasrendű gondolkodás eszméjétől. De nekünk megvan az esélyünk, hogy segítsünk másokon, azzal hogy a lelki tanítómesterünk és az Úr Csaitanja transzcendentális terveit szolgáljuk. Krsnának tőkét gyűjteni nem anyagi elfoglaltság. Minden fillér, amit egy személy ad, növeli az ő szukrti-jét. A lelki odaadó szolgálat megmenti az embert a legnagyobb veszélytől, attól, hogy távol kerüljön az önmegvalósítás útjától. Ahogy egy családot fenn kell tartani, minden asramnak ugyanúgy anyagilag is stabilnak kell lennie. A múrtik és a közösség részére végzett sokféle szolgálatot meg is kell finanszírozni. Ez a vaisnava közösség feladata. Valójában a brahmanákat és a vaisnavákat a vaisják és ksatriják adományai tartják fenn, hogy ők az energiájukat a prédikálásra tudják fordítani.
+</p>
+<p class='vspace'>A praszád fesztiválok szervezése, a bhakták fenntartása, a könyvosztás, a harinám partik, a templomépítés, a náma hatta prog-ramok, a prédikáló körút, az asram gépjárművei, a múrti imádat, stb. elég nagy felelősség és sok pénzt igényel. Ezért az asramvezetőnek inspirálnia kell a közösségben élő bhaktákat, hogy vegyenek részt ebben az áldozatban, hogy összegyűljön a kellő mennyiségű pénz. Sok különböző ötlet született, amióta Sríla Prabhupád elkezdte a mozgalmát:
+</p>
+<div class='vspace'></div><ol><li>Transzcendentális könyvosztás buszokon, vonatokon, utcán, parkolókban vagy ajtóról-ajtóra járva, stb.
+</li><li>Transzcendentális zenei felvételek, leckék kazettán vagy CD-n, ugyanezeken a helyeken.
+</li><li>Különféle cikkek árusítása a bhakták részéről, amik a programokat segítik.
+</li><li>Támogató tagsági programok.
+</li><li>Levelező jóga kurzusok.
+</li><li>Prédikáló asztalok a SEVA különböző transzcendentális cikkeivel.
+</li><li>Vegetárius praszádot áruló éttermek.
+</li><li>Bioboltok.
+</li><li>Pékségek.
+</li><li>Butikok.
+</li><li>Egyszerű adománykérés az emberektől.
+</li><li>Biofarm gazdálkodás és a termények eladása.
+</li><li>Csomagolt élelmiszerek gyártása és eladása köztereken és állomásokon.
+</li><li>Füstölőgyártás és eladás.
+</li><li>Gyülekezeti adományok.
+</li></ol><p class='vspace'>Mindez a sok program jó szervezést és képzést igényel.
+</p>
+<p class='vspace'>Sríla Prabhupád annak örült, ha az asramjai anyagilag a transzcendentális könyvosztásra és egyéb termékek terjesztésére alapultak. Az eltelt évek azt bizonyították, hogy a többi tevékenység is segít és szükséges is a missziók fenntartásában és fejlesztésében. Tény, hogy a könyvterjesztés lehetősége egy kisvárosban hamar kimerül. És mivel a bhakták itt is fognak maradni, érdemes olyan vállalkozásokat és pl. éttermeket létrehozni, amivel kivívhatjuk az emberek elismerését. Sokszor nekünk szegzik a kérdést: „No és hogyan tartják fenn a missziójukat?”
+</p>
+<p class='vspace'>Sríla Prabhupád maga indított el számos Govinda Éttermet és egy gyárat, ami füstölőt és illóolajokat gyárt és forgalmaz. Egy terebélyesedő misszió számára fontos, hogy munkahelyet, bevételi forrásokat teremtsen a külső tagoknak is, különben sokan kénytelenek feladni a bhakták filozófiájával összeegyeztethetetlen foglalkozásukat. Egy bhakta, különösen egy bráhmana ne dolgozzon abhakta főnök beosztottjaként. Néha ez nem megvalósítható praktikus megfontolások miatt, de ugyanakkor kívánatos megteremtenünk a saját vállalkozásainkat, mint pl. bizonyos termékek franchise rendszerű kereskedelme. Közben mindig emlékezzünk arra, hogy csak akkor nevezhetjük ezt odaadó szolgálatnak, ha egyedül Krsnát tesszük munkánk élvezőjévé. Máskülönben az csak gyümölcsöző munka. Sok esetben ez a probléma. A bhakták kitalálnak egy rendszert Krsna örömére, aztán jönnek mások az önző mentalitásukkal, lemásolják a rendszert, és csak saját céljaikra használják. Mit lehet tenni? Ez az úgynevezett szabad piacgazdaság, és az effajta szenvedéseknek mi is ki vagyunk téve.
+</p>
+<p class='vspace'>De hogy minden a legjobban legyen megszervezve, ahhoz igazi lelkesedésre és kitartó, napi prédikálásra van szükség. Ne feledjétek, hogy pl. a nem bhakta világban a különböző értékesítési részlegek gyakran tartanak napi, rövid eladási képzéseket a lelkesítés és tapasztalatcsere végett. Ha elhanyagoljátok az intenzív részvételt a különböző tevékenységi körökben, azonnal lelassultok, végül már nem is próbálkoztok. Az embereket állandóan figyelmeztetni kell a céljaikra és indítékjaikra. Ennek érdekében egy kis versengés a szolgálatban csak segít, amíg nem lendül át egy nagy egó harcba.
+</p>
+<p class='vspace'>És azt se feledjétek, hogy az igazi lelkesedés abban mutatkozik meg, hogy mennyi időt fektetünk a szolgálatunkba. Mi, mint törekvő vaisnavák sok időt töltünk a mantrázással, leckékkel és bhadzsanokkal, és csak akkor nyerhetünk több időt, ha kevesebbet alszunk. Minden független üzletember napi 12-16 órát dolgozik, főleg ha kezdő és éppen a semmiből építi fel a vállalkozását. Különben nem lesz sikeres. Azt hiszem, hogy a bhaktáknak legalább olyan keményen kellene dolgozniuk Krsnáért, mint amilyen keményen dolgoznak mások a Majáért. Akkor sohasem szenvednek vereséget. A szankírtanos éveinkben, amikor egyedül a saját lelkesedésünk motivált minket, naponta 10-12 órát dolgoztunk. A maratonos hétvégéken gyakran reggel 7-kor indultunk és este 11-kor értünk haza. Gyakran látni, hogy azok az asramok küzdenek anyagi problémákkal, ahol látni, hogy a bhakták sok időt elvesztegetnek. Vagy csak kevesen dolgoznak és hoznak bevételt, vagy mind lassúak és keveset dolgoznak. A jó szervezés azt jelenti, hogy minden bhaktát sikerült azonosítani a szolgálat terveivel és nem hagyni, hogy a kiadások túlnőjenek az elérhető bevételeken.
+</p>
+<p class='vspace'>Ha a bhakták örökké az anyagiakon veszekednek, az igen szomorú. A pénz nagyon sok szenvedést okozhat. Azért jöttünk ebbe a mozgalomba, hogy ettől a szenvedéstől megszabaduljunk. Ezért a bhakták legyenek rendkívül óvatosak és példamutatóak a pénzügyek kezelésében, hogy soha ne lehessenek nehézségek e téren.
+</p>
+<p class='vspace'><a name='f6' id='f6'></a>
+</p><h3>Szükséges összejövetelek szervezése</h3>
+<p>Egy asram legizgalmasabb feladata a többiekkel találkozni és megbeszélni a különböző projektek fejlődését. Lehet, hogy ez néha vesződséges. Talán praktikusabb egyedül dönteni, de általában igaz, hogy a legegészségesebb és legcsodálatosabb dolog találkozni a mi szeretett vaisnaváinkkal, hogy megvitassuk életünk egyetlen témáját:
+</p>
+<p class='vspace'>HOGYAN SZOLGÁLJUK EGYÜTT KRSNÁT ÉS A VAISNAVÁKAT JOBBAN ÉLETÜNKNEK EBBEN A SZAKASZÁBAN?
+</p>
+<p class='vspace'>Életem legédesebb pillanatai voltak, mikor a testvéreimmel és nővéreimmel együtt azt tanulmányoztuk, hogyan fejleszthetjük az asramjainkat. És biztos lehetsz benne, hogy nem mindig a tiéd lesz a legjobb ötlet! Több szem többet lát.
+</p>
+<p class='vspace'>Az ilyen gyűlések biztos, hogy csökkentik a hamis egódat (Bánod?).
+</p>
+<p class='vspace'>Másokra odafigyelni művészet, és sokkal nehezebb meggyőzni másokat, mint csupán ráerőltetni valakire az elképzeléseidet. De ha új vezetőket akarsz képezni és megnyerni a beosztottjaik vaisnava szívét, akkor nem zavarhat, hogy bevond mindezeket a segítőkész és odaadó szolgákat is a különböző gyűlésekbe. Magam gyakran bevontam olyan tagokat a megbeszélésekbe, akiknek még nem voltak kimagasló eredményeik a szolgálatban, de volt bennük valami lehetőség egy adott területen. Az emberek nagyon szeretik, ha megbízzák őket valamivel. Nincs fájóbb annál, mint ha valakivel azt érezteted, hogy a véleménye téged egyáltalán nem érdekel.
+</p>
+<p class='vspace'>Így senki nem fogja kirekesztve érezni magát a társalgásból. Természetesen néhány témába nem avatjuk be a kezdőket, ami a filozófiai megértésüket meghaladja, de általában az a tapasztalatom, hogy az emberek nagyon szépen reagálnak a bizalomra, és következésképpen növekszik az aktív részvételük is. Akik az asramon kívül élnek, gyakran érzik magukat kirekesztve, és bár tehetnék, de a családi elfoglaltságaikra hivatkozva nem szánnak túl sok időt és energiát az asramra. De ha félreteszed a hamis egódat, felhívod őket és szerényen megkéred, hogy jöjjenek el az összejövetelekre, akkor ezzel új életet és boldogságot cseppentesz a mindennapos unalmukra.
+</p>
+<p class='vspace'>Egy ilyen összejövetel a legjobb gyógyír a potenciális megalo-mániánk ellen. Az összejövetelen kívül, – amelyek levezetése inkább demokratikus jellegű – a megbízott vezetőnek teljes jogköre van, de a gyűléseken mindenki véleményét meg kell hallgatnia és további vállalásokat kérni mindenkitől. Egy vezető a bhakták támogatása nélkül – akiket szolgálni akar – olyan, mint egy pudzsári múrti nélkül.
+</p>
+<p class='vspace'>A következő összejöveteleket minden átlagos asram rendszeresen megszervezheti.
+</p>
+<div class='vspace'></div><ol><li>Vaisnava Tanács a mindennapos asrami ügyek megbeszélésére (hetente).
+</li><li>Városi vaisnava összejövetelek, ha több projekt van ugyanabban a városban (havonta).
+</li><li>A Vaisnava Tanács országos tematikájú összejövetelei (2x, 3x évente).
+</li><li>Vaisnava szülők találkozója (havonta).
+</li><li>Vaisnava gyermeknevelés (hetente).
+</li><li>Vaisnava matadzsi találkozó (hetente, kéthetente).
+</li><li>Vaisnava pudzsári találkozó a ruhák, koronák, ünnepek stb. megbeszélésére (4x évente).
+</li><li>Vaisnava üzleti ügyek egyeztetése (igény szerint).
+</li><li>Vaisnava Maha Szankírtan és harinám összejövetel (hetente).
+</li><li>Isztagosztik (hetente).
+</li></ol><p class='vspace'>Egyéb összejövetelekre bármikor támadhat igény, de bármiért is gyűljünk össze, a következő néhány aranyszabályt ne feledjük el:
+</p>
+<div class='vspace'></div><ol><li>Soha ne harcoljunk és ne legyünk tiszteletlenek másokkal, mégha haragszunk is másokra. Tartsuk be az udvarias és alázatos vaisnava etikettet.
+</li><li>Soha ne várj senkitől olyat, amit nem akar vagy nem tud meg-tenni.
+</li><li>Lapozd fel a „Vaisnava etikett”-et, ha bármilyen kérdésed van az összejövetel levezetésével kapcsolatban.
+</li><li>Lapozd fel Szvámí B. A. Paramadvaiti Maharádzs „Transz-cendentális hagyaték” c. írását, ha a gyűlés olyan kérdés-sel foglalkozik, mint az élő lelki tanítómesteri lánc átörökítése.
+</li><li>Lapozd fel Szvámí B. A. Paramadvaiti Maharádzs „ Search for Purity” c könyvét, ha „egység a különbözőségben” problémák, vagy missziók közti konfliktusok adódnak.
+</li><li>Légy nagyon boldog, hogy léteznek vaisnavák a világban, akik VELED akarnak találkozni és beszélgetni az odaadó szolgá-latról.
+</li><li>Transzcendentális terveinkben mindig követjük a meghódolás hat elemét.
+</li><li>Nem feledhetjük, hogy minden nehézség álruhában érkező áldás, melyek azért jönnek, hogy kieszközöljék számunkra a lelki előrehaladást. Ha túljutunk a nehézségeken, akkor fejlődünk majd lelkileg, és ezzel együtt az Úr Csaitanja missziója is.
+</li><li>Krsnát mindig sokféleképpen lehet szolgálni. Nem gondolhatod, hogy a te utad a legjobb. Mindig tisztelj másokat és az elképzeléseiket. A vezető-természetűek gyakran nagyon maga-biztosak a maguk útjában. De lehet, hogy Krsna az összes utat szereti, ahogyan bhaktái szolgálni szeretnék Őt.
+</li></ol><p class='vspace'>Ha a találkozókra nemigen jönnek el, ami eléggé természetes a Kali korszakban, akkor is csak folytasd azok szervezését. Meglátod, fokozatosan majd elismerik a szolgálataidat. Ha pedig mégsem jönnek el, akkor kérdezd meg tőlük, a te hibád-e hogy nem szeretnek találkozni veled és megbeszélni a transzcendentális szolgálat előmozdítását, vagy csak nem értik a találkozók fontosságát.
+</p>
+<p class='vspace'>Ezeket látogatva a bhakták egyre érettebbé válnak. Ezzel is segíted őket vezetővé válni, s így a missziónknak sok új kvalifikált prédikátora lesz.
+</p>
+<p class='vspace'>Ne feledkezzetek meg a „Határozatok gyűjteményé”-ről sem, amibe minden döntéseteket feljegyzitek, és amit bárki bármikor elolvashat.
+</p>
+<p class='vspace'><a name='f7' id='f7'></a>
+</p><h3>Szeretet és bizalom az ügyintézésben</h3>
+<p>Mindig olyan személyeket keresünk, akik nem csapnak be minket. Minden lehetséges új bhaktára így kell tekinteni, s akkor ő is így tekint a potenciális feljebbvalójára, akinek odaadhatja majd az életét Krsna szolgálatában. Meg kell hogy bízzunk másokban, hogy megnyerhessük a szívüket. Kockázat nélkül nincs győzelem. Tudatosan tegyük lehetővé, hogy az új bhakták bizonyítsanak. Pl. ha valaki kap egy kis bizalmat és sikeres a munkában, s bevételt hoz az asramnak, akkor növelhetjük a beléje vetett bizalmat. De soha, senkinek ne adjunk akkora bizalmat, hogy ez több ártalmára legyen az asramnak, mint amennyit használ. Más szóval, új bhaktáknál kis kockázat, akik pedig már bizonyítottak, azoknál lehet több kockázatot vállalni. De legyetek óvatosak, mert vannak szélhámosok, akik sikeresen megnyerik a bizalmadat, hogy aztán nagyban használhassanak ki. Felelősek vagyunk azért, hogy megvédjük Krsna tulajdonát, de közben arra törekszünk, hogy mindenki érezze, egy családhoz tartozik.
+</p>
+<p class='vspace'>Az asram értéktárgyait elzárt helyen kell tartani. Nem szép látvány a sok-sok lakat egy asramban, de szükséges, mert sok bhakta nem érti meg az asramfenntartás valóságát. Pl. több programot nem lehetett tovább folytatni, mert a bhakták felették az étterem vagy az asram speciális praszád készítményeit. Nem értik meg, hogy a hiányzó eladásokból nem lehet fedezni a drága készítmények költségeit. S még haragosak is lettek, hogyha az asramvezető letiltotta a túlkapásaikat. Az asram raktárat és minden árut zárolni kell, és egy szigorú raktárkönyvet kell vezetni, különben nem tudhatjuk, hogy a megbízott személy őszinte-e vagy tolvaj. Egy bengáli mondás szerint a túl nagy odaadás a tolvajok ismertetőjele. Annak, hogy a dolgainkat így intézzük, a bhakták iránti szeretetünk az oka, hogy ne alakulhasson ki bizalmatlanság a közösségben. Sose feledjük, hogy az alkalom szüli a tolvajt, s mi szeretnénk megóvni az új bhaktákat ettől. A figyelmüket eltereli, ha azt látják, hogy az asram ügyei nincsenek jól kézben tartva, arról nem is beszélve, ha valamit könnyen el lehet lopni az asramból. Sok bhakta jön szegény környezetből, s gyakran már csak a gazdasági alternatívát látják, s elfelejtik a lelki eszményeket, amiért követni kezdték a folyamatot. Az asramvezetőben és a többi felelős bhaktában meg kell hogy bízzon a közösség. Az új bhaktáknak úgy kell megtanulniuk az előírásaikat, mint egy nagy áldást, mégha ez némi szigorral vagy lemondással is jár. Meg kell hogy bízzanak az idősebbekben, és cserébe úgy kell őket mihamarabb kiképezni, hogy megoszthassák másokkal Srí Csaitanja Maháprabhu missziója tiszta hirdetésének felelősségét.
+</p>
+<p class='vspace'><a name='f8' id='f8'></a>
+</p><h3>Az asramvezető és kapcsolatai</h3>
+<p>Minden asramvezető sok személlyel tart kapcsolatot, míg ő prédikál és intézi az asram ügyeit. Ezek a kapcsolatok általában elvesznek, ha valamilyen változás áll be a vezetésben, a következő asramvezető pedig nulláról indul. Ezt el kell kerülni.
+</p>
+<p class='vspace'>A prédikáló bhakták értékes ideje megy kárba, hogyha bármikor szükségetek van valamire az asramban, új kapcsolatokat kell kiépíteni.
+</p>
+<p class='vspace'><a name='f9' id='f9'></a>
+</p><h3>Az üzleti kapcsolatok könyve</h3>
+<p>Ennek a könyvnek minden címet és adatot tartalmaznia kell a vásárlásokkal és más gyakorlati ügyekkel kapcsolatban. Ne kapkodjatok! Szükség van minden részletre, ami a leárazásokat illeti, azokra a barátokra, akik összehoznak hasznos kapcsolatokat, stb.
+</p>
+<p class='vspace'>A feljegyzésnek tartalmaznia kell:
+</p><ul><li>a személy neve,
+</li><li>ki hozta létre a kapcsolatot és mikor,
+</li><li>a számunkra felajánlott szolgáltatások és árak,
+</li><li>egyéb különleges tudnivalók,
+</li><li>milyen anyagi és lelki érdekek fűzik az asramhoz,
+</li><li>milyen előnyös árakat alkalmazunk.
+</li></ul><p class='vspace'><a name='f10' id='f10'></a>
+</p><h3>A prédikációs kapcsolatok könyve</h3>
+<p>Az illető személyről a következőket tartalmazza:
+</p><ul><li>milyen szolgálatot szeret végezni,
+</li><li>ki hozta őt az asramba,
+</li><li>mit vásárolt – könyvet, kazettát, esetleg jóga kurzuson vett részt, stb.,
+</li><li>érdeklik-e lelki programok a gyermeke számára, lelki hétvégék, stb.,
+</li><li>szeretnek-e bhaktákat fogadni az otthonukba,
+</li><li>szeretik-e, ha ott náma hatta programokat szervezünk, (lásd: Asrami funkciók és szolgálatok c. fejezet)
+</li><li>milyen mértékben vannak beavatva a lelki életbe.
+</li></ul><p class='vspace'><a name='f11' id='f11'></a>
+</p><h3>Az adományok jegyzéke</h3>
+<p>Minden adományt, ami segít a közösség építésében, fel kell jegyezni az “Adományok jegyzéké”-ben. Ez bátorítani fogja a további adományozókedvet. Ebbe be lehet írni az asramotok, templomotok igényeit is, hogy a lehetséges adományozók láthassák a közösség szükségleteit.
+</p>
+<p class='vspace'>Ez a könyv abban is a segítségünkre lesz, hogy ne feledkezzünk meg a jelen és a múlt önzetlen segítőiről. Ha egy korábbi barátunk elveszítette az érdeklődését, vagy valaha rossz érzéssel távozott, akkor most eszünkbe juthat, és megpróbálhatunk neki segíteni. Ide írhatjuk be azt is, hogy hetente mennyit gyűjtöttek az asram tagjai összesen. Mivel ők bentlakók és kötelességből vesznek részt a gyűjtésben, nem volna helyes mint adományt feltüntetni a személyes hozzájárulásukat. De azt mégis jó látni, hogy a bhakták áldozatos munkájának köszönhetően hogyan fejlődik hétről-hétre az asram, a templom. Ezt a könyvet megmutathatjuk minden barátunknak, ha érdekli. Ebből látszani fog a nagyszerű áldozatok története és a bhakták speciális erőfeszítései a misszió érdekében.
+</p>
+<p class='vspace'><a name='f12' id='f12'></a>
+</p><h3>A vendégkönyv</h3>
+<p>Egy vendégkönyvnek is kell lennie az asramban, mint amit sok múzeumban és egyéb tekintélyes helyeken találunk. Így megmaradnak a barátaink adatai és címei, és ez lehetőséget ad a személyes benyomások rögzítésére is. A recepciós próbálja meg felhívni a vendégek figyelmét, hogy adják meg a kért személyes információkat, mint telefonszám, stb. Ha beteltek, ezeket végül be lehet köttetni és megőrizni valahol.
+</p>
+<p class='vspace'><a name='f13' id='f13'></a>
+</p><h3>Az asramvezető és a napi könyvelés</h3>
+<p>Az asram minden pénzmozgását egy belső jegyzéken vezetni kell. Sríla Prabhupádnak nagyon világos elképzelése volt ezzel kapcso-latban. Minden adományt letétbe kell helyezni a bankban, és csak csekken kivenni megfelelő indokolással és átvételi bizonylattal.
+</p>
+<p class='vspace'>Az asramvezetőnek továbbá figyelemmel kell kísérnie az asram más részlegeit is, mint pl. éttermet, ajándékboltot, hogy ők is megfelelően, az adott ország érvényben lévő törvényei szerint végzik-e a könyvelést. Kolumbiában pl. egy könyvelő bhakta kedvesen összeállított egy átfogó ajánlást a bhakta tulajdonú vállalkozások és a bhakták által vállalt kötelezettségek, tevékenységek jogi megalapozására. Itt most nem részletezzük ezt jobban, hiszen a szabályok országról-országra változnak. De az asramvezetőnek szilárdnak kell lennie a tekintetben, hogy ne teremtsen olyan helyzetet, mely a nyilvánosság számára kifo-gásolható. Ez ugyanis veszélyeztetné a prédikálásunk célját. Öröm vezetni egy kis asram könyvelését, ahol vaisnava programokat tartanak. Hiszen tiszták a céljaink, nincs mit takargatnunk. Meg fogjuk tanulni, hogyan kell ezt csinálni, mégha okoz is addig némi fejfájást, míg profivá nem válunk a könyvelésben. Mert nem igazán bonyolult. Csak ne legyünk kishitűek és lusták e téren. Még a Guruinknak is kellett vezetniük könyvelést, akkor mi miért ne akarnánk megtenni ezt a kis szolgálatot Srímati Radharáni kedvéért?
+</p>
+<p class='vspace'><a name='f14' id='f14'></a>
+</p><h3>Adósságok</h3>
+<p>A legjobb, ha egy asramnak nincsenek adósságai. Ahogy Sríla Prabhupád gyakran mondta: – Előbb a munka, utána a szamádhi.
+</p>
+<p class='vspace'>Az adósságok különböző fajtái néha elkerülhetetlenek. Az semmilyen körülmények közt ne forduljon elő, hogy az asram nem tudja az adósságok részleteit törleszteni, mert ezt a depresszió szokta követni. Senki sem szeret mások múltbéli hanyagsága miatt dolgozni. A könyvkiadó részlegnek tartozni pedig különösen zavaró dolog. Minden asramnak úgy kell intéznie az anyagiakat, hogy a napi eladott áruk fedezete külön legyen kezelve az általános haszontól, s a különböző kifizetéseket mindig lehessen rendezni.
+</p>
+<p class='vspace'>Ellenkező esetben nagy veszélybe sodorjuk magunkat. Ha a pénzből kifutottatok, akkor nem segít, hiába élitek fel más pénzét. Ha az asram nem tud elegendő pénzt termelni, s már a vésztartalékokhoz kell folyamodni a számlák fedezésére, akkor a vészharang hangjának a közösség minden tagját “asrammegmentő maraton”-ra kell ébresztenie. Ha csendben elköltjük, ami nem a miénk, s hagyjuk hogy egyre mélyebb és mélyebb adósságba süllyedjünk, akkor olyan krízishelyzetbe hozhatjuk magunkat, ami még az asram létét is fenyegetheti. Ezért pl. jobb, ha nem kölcsöntőkéből gazdálkodunk, mert ez nagyon kockázatos. Azok a résztvevő bhakták, akik nem mutatják, hogy személy szerint viselni akarják a felelősség terhét, valószínűleg tényleg hanyagok és felelőtlenek. Kezeld a pénzt külön a kezdettől fogva, s így megmented magad a jövőbeli pénzügyi problémáktól.
+</p>
+<p class='vspace'>Ha az asramépületen vagy járművein jelzálog van, akkor ezekre feltétlenül biztosítást kell kötni, arra az esetre, ha bármi nemkívánt dolog adódna. (A mi templomunkat Miamiban már kétszer kerülte el mindössze néhány mérföldre egy nagy hurrikán. Az ISKCON viszont számos tulajdont veszített már el tűz és hurrikánok miatt, közlekedési balesetekben, stb.).
+</p>
+<p class='vspace'>Ne mondjátok ostobán, hogy nem biztosítjátok Krsna tulajdonát, mert Ő meg tudja védeni azt. A bhakták azonban nem élhetnek súlyos anyagi nyomás alatt. Ha néhány bhakta önként felvállalja a díjfizetést, akkor az nagyon jó. De ha a rossz menedzselés terheli a bhaktákra a díjak kifizetését, az nagyon nemkívánatos.
+Lassan de biztosan, – inkább így haladjunk előre. Ne akarjunk soha más tollával és pénzével ékeskedni.
+</p>
+<p class='vspace'>S ha már egyszer kifizettük a részleteket, Krsna tulajdonára eztán soha ne vegyünk fel jelzálogkölcsönt. Elzálogosítani Krsna tulajdonát nem szép dolog. A múrtikat meg kell védeni az asrammenedzserek spekulációjától. Szervezzetek újabb gyűjtést, ha terjeszkedni akartok.
+</p>
+<p class='vspace'>Az asram minden pénzét egy jegyzéken függesszétek ki az asram hirdetőtáblájára, hogy azt mindig mindenki figyelemmel kísérhesse. Szépen menedzseljétek az asramotokat, hogy az örömet hozzon nektek és az ott lakóknak.
+</p>
+<p class='vspace'><a name='f15' id='f15'></a>
+</p><h3>Az asrami és templomi leltár</h3>
+<p>Minden templomban és asramban kell lennie egy Leltárkönyvnek, ami összesíti a múrtik minden tulajdonát. Ezeket a tárgyakat szentnek kell tekinteni, s praktikusan meg lehet jelölni őket mint a múrtik tulajdonát. Ha egy tárgy ideiglenesen kerül a templomba, akkor fel kell jegyezni oda ezt is, hogy egy bizonyos személy kölcsönadott valamit a múrtik szolgálatába, és ezt később visszakérheti. Ez később megvédi a templomot attól a szörnyű szituációtól, hogy ha egy asramvezető vásárolt valamit a templomnak adományként a saját vagy a közösség pénzéből, és később, mikor elhagyja a posztját, akkor esetleg jelzi, hogy ez vagy az igazából az ő tulajdona, stb. Ez komoly zavart okoz a prédikálásban és a közösség önzetlen hozzáállásában. Ezért nincs abban semmi rossz, ha feljegyzitek, hogy egy grihaszta bhakta asramvezető a tulajdonosa valaminek, amit idővel úgyis Krsna szolgálatában használtok. Viszont ha ezt nem jegyzitek fel a Leltárkönyvben vagy nem tárjátok a Vaisnava Tanács elé, akkor problémákat fog okozni, ha az illető személy később jogot formál rá. Így bármi, amit nem jegyeztetek fel a Leltárkönyvbe, azt úgy kell automatikusan elfogadni, mint a múrtik tulajdonát. Így vita nem lehet. Hogy elkerüljük a felesleges konfliktusokat, az bizony jó szervezést igényel.
+</p>
+<p class='vspace'><a name='f16' id='f16'></a>
+</p><h3>Az asram haszna</h3>
+<p>Ha a városban és másutt is szeretnétek kiterjeszteni a prédikálást, szükséges hogy az asram profitot is termeljen. Az ilyen nehezen megkeresett pénzt az Úr és bhaktái személyes kegyének kell tekinteni. Minden fillérről tájékoztatni kell a Vaisnava Tanácsot, s ők eldöntik melyik prédikáló program élvez elsőbbséget az előrehaladás érdekében. Az olyan adományokat, amit speciális célra adtak, csak arra a célra lehet igénybevenni, és az „Adományok könyvé”-ből ki kell derülnie, hogy ki és milyen célra adta a pénzt.
+</p>
+<p class='vspace'>Az asrami extraprofit a vaisnavák felajánlása az ő Uruknak, éppúgy mint azoknak a felajánlásai, akiket a vaisnavák inspirálnak. Soha nem fogunk abba az illúzióba esni, hogy azt hisszük hogy mi, az ügyintézők vagyunk a birtokosai ezeknek a pénzeknek, vagy hogy a mi érdemünk lenne, hogy léteznek ezek a pénzek. Mi csak abban a kiváltságos helyzetben vagyunk, hogy a lelki tanítómesterünk és a vaisnavák megbíztak, hogy hűségesen vigyázzunk a mi Urunk tulajdonára. S itt lennie kell egy ellenőrző rendszernek is, amit maga az asramvezető tart szigorúan kézben, s ami biztosítja hogy mindent a terveknek megfelelően használnak fel a megbízott felelősök. Ha ez nem így van, akkor nagyon hamar megjelenik a kritika, és megkérdőjeleződhet az ő őszinteségük. Ez a legrosszabb, ami megeshet egy asramban. Mert ez fáj az ember szívének, és zavarja a Gurunk misszióját, mert az emberek elvesztik a hitüket a vaisnavákban. Ezért tekintsd ezt asramvezetői szolgálatod egyik legfontosabb részének, hogy ébressz szeretetet és bizalmat, s intézd az ügyeiteket első osztályúan.
+</p>
+<p class='vspace'><a name='f17' id='f17'></a>
+</p><h3>Bankszámlák kezelése</h3>
+<p>Ha az asram vagy templom bejegyzett nonprofit szervezet tulajdonában van és annak nevében van bankszámlája, akkor ügyelni kell arra, hogy a számla betéti és kivéti pénzforgalma egyensúlyban legyen, mert a közösség éves számlaegyenlege az adóhivatal előtt ezeken a számlákon alapszik. Más bankszámlákat a Vaisnava Tanács felügyelheti, amik olyan tevékenységeket tesznek lehetővé, mint asrami éttermek, pékségek, stb.
+</p>
+<p class='vspace'>Krsna pénzéért mindig legalább két megbízható aláíró legyen felelős. A Vaisnava Tanács üléseken a bankszámlák egyenlegét jelenteni kell. Teljesen értelmetlenek az olyan gyűlések, ahol fogalmunk sincs arról, hányadán is állunk a pénzzel.
+</p>
+<p class='vspace'>Minden bankszámla kezelését a Vaisnava Tanáccsal együtt kell megvizsgálni, hogy a tevékenységetek ne ütközzön törvénybe. Tulajdonjogot pedig úgy kell ráruházni valakire, hogy semmilyen személyes érdek ne veszélyeztethesse Krsna pénzét.
+</p>
+<p class='vspace'>Kérjétek ki egy megbízható és könyvelésben jártas bhakta tanácsát, hogy mindig a törvényes kereteken belül maradjatok, s a helyes vaisnava úton.
+</p>
+<p class='vspace'><a name='f18' id='f18'></a>
+</p><h3>A könyvosztás</h3>
+<p>A könyvosztás egy prédikáló asram élete. A prédikálás maga az élet. E nélkül egy templom, egy asram teljesen haszontalan. Komoly könyvosztás nélkül az asram nem oszt semmiféle kegyet. S ha ezt nem osztjuk meg másokkal, akkor mi mire fel várjuk?
+</p>
+<p class='vspace'>Sríla Prabhupád megígérte nekünk, hogy eljön és ottmarad abban a templomban, ahol a legtöbb könyvet osztják ki. Ez forradalmat teremtett a könyvosztásban. Mert minden templomban azt szerették volna, hogy Sríla Prabhupád ott lakjon. És Sríla Prabhupád oly sok könyvet kiadott. Intenzív terjesztés nélkül nem lett volna lehetséges kifizetni a sok kiadvány nyomdai költségét.
+</p>
+<p class='vspace'>Sokféle módja van a könyvterjesztésnek. Következzen egy rövid lista a lehetséges fő árusító helyekről és módszerekről, ahogyan ezt a bhakták csinálják:
+</p>
+<div class='vspace'></div><ul><li>Utcai árusítás: egyik embertől sétálsz a másikig, s megpróbálod rábeszélni őket, hogy vegyenek egy vagy két könyvet.
+</li><li>Terjesztés valamilyen tömegközlekedési eszközön. Egy kis előadást tartasz az utasok egy csoportjának.
+</li><li>Ajtóról-ajtóra járva árulod a könyveket.
+</li><li>Harinám programokon, s prédikálás közben, éppúgy mint a könyv standon.
+</li><li>Parkolókban, az érkező vagy elhajtó autósoknak.
+</li><li>Üzletekben és hivatalokban személyes beszélgetéssel.
+</li><li>Reptereken és tömegközlekedési megállókban.
+</li><li>Támogató tagsági programokon új tagokat toborozni és ez alkalomból könyvet adni nekik.
+</li><li>Fizető jóga kurzusokon a beiratkozott tagoknak könyvet adni a kezükbe, rendszeres olvasásra.
+</li><li>A védikus irodalommal összekapcsolt személyes horoszkópot adni az embereknek.
+</li><li>Teli könyvárusító asztal köztereken vagy vásárokon, ahol bemutatjátok minden kiadványotokat.
+</li><li>Praszádam osztás könyvárusító helyeken, amivel a figyelmet az irodalomra lehet irányítani.
+</li><li>Nagykereskedelmi terjesztés könyvesboltoknak vagy más előnyös üzleteknek.
+</li><li>Forgalmazás könyvtáraknak és egyetemeknek: a védikus irodalmat tananyagként mutatni be.
+</li><li>Valójában ezek a rendszerek akkor működnek, ha valaki személyes lelkesedésével képviseli a lelki tanítómesterét. Az asramvezető óvatosan lelkesítheti a bhaktákat a könyvosztási versenyben, azonban figyelmeztetnie kell őket, nehogy büszkévé és mennyiségtudatúvá váljanak igazi, szerető, könyörületes prédikátorok helyett.
+</li></ul><p class='vspace'>A asram elhelyezheti a könyvosztási eredményeket az asrami Hirdetőtáblán és az eksztatikus könyvosztókat, akárcsak más kiváló szolgákat, kitüntetetten megemlíthetik az isztagosztikon. Sríla Prabhupád idejében volt egy szankírtan hírlevelünk, ami a versenyt egy világméretű szinten is jegyezte. Ez a rendszer néha túl messzire elment, habár lehetőséget adott a vezető könyvosztóknak, hogy tudjanak egymás létezéséről, és mézédes prédikálási tapasztalatok is megjelentek benne. Azért egy országos szintű tájékoztatásban nincsen semmi rossz, ahol beszámoltok a könyvosztás eredményeiről, – de újra és újra csak óvlak benneteket a büszkévé válás veszélyétől, ami a legrosszabb ami történhet velünk. Nekünk már csak ilyen szörnyű büszke természetünk van. Hacsak nem válunk szerénnyé és kedvessé, biztosan meg fogunk bukni a tiszta odaadás ösvényén.
+</p>
+<p class='vspace'>A szankírtan vezető tartson rendszeres értekezletet és legalább hetente egyszer minden bhakta az asramban menjen el szankírtanra. Szankírtan összejövetel legyen legalább egyszer hetente és adjon a legjobb osztóknak lehetőséget, hogy megosszák a lelkesedésüket és tapasztalataikat a többiekkel. Utazó szankírtanon minden nap indulás előtt tarthatunk ilyen értekezletet. Az asramokban a szankírtan „hivatal” minden nap zengjen a lelkesedéstől és a szankírtan bhakták előadásaitól. A asramvezető nézzen mindig utána, hogy minden anyag készen álljon az osztóknak. Ha változás van az árakban vagy cikkekben, az a szankírtan bhakta számára egy akadály, és alkalmazkodnia kell az új helyzethez. Ez egy speciális beavatkozást kíván az asramvezetőtől. Legjobb dolog ilyenkor látni az asramvezetőt személyesen kimenni és sikeres légkört teremteni az új helyzetben.
+</p>
+<p class='vspace'>Hogy meghatározzuk, melyik szankírtan rendszer a legjobb minden bhakta számára személyesen, alkalmaznunk kell a mondást: „hasznosság az elv”. Jó különféle rendszereket használni, de szintén igaz hogy ha a bhakták egy csoportban egy rendszerre koncentrálnak, a lelkesedés nőni fog. Azonban a prédikálásnak fejlődnie kell minden szinten, és nem minden bhakta részére jó ugyanaz a körülmény.
+</p>
+<p class='vspace'>Mindenki számára a prédikálás a mentőkötél. Nincs nagyobb boldogság, mint látni az új bhaktákat, akik a mi jelentéktelen prédikáló szolgálatainknak köszönhetően jöttek.
+</p>
+<p class='vspace'>Minden bhakta vágyjon segíteni a szankírtanban. A szakácsok éppúgy segítik a prédikátorokat, mint a pudzsárik. Azonban ezt nekik is így kell érezniük. Mindenki a sajátos kötelességén keresztül segíti a prédikálást. És ha ők is lehetőséget kapnak eladni egy könyvet, akkor nem engedhetik megszökni az ilyen kedvező alkalmat.
+</p>
+<p class='vspace'>A bhakták jól öltözötten menjenek prédikálni. Akár úgy, mint egy vaisnava úriember vagy öltönyben, nyakkendővel. A hippi stílusú bemutatkozás nem az, amire Sríla Prabhupád vágyott. Aki jól öltözött, azt az emberek már eleve tisztelettel elfogadják. Ha irtózást teremtünk már a bemutatkozásunkkal, ezzel nem szolgáljuk a prédikálás célját.
+</p>
+<p class='vspace'>Biztosítsátok, hogy már az asram bejáratánál a missziótok összes publikációja szépen ki legyen állítva és legyen egy személy, aki mindig rendelkezésre áll, ha egy látogató a HELYSZÍNEN venni kíván bármilyen könyvet vagy hangfelvételt. Egy templom vagy prédikáló centrum bejáratánál minden felvilágosítást és irodalmat meg kell adni az adott vaisnava központ céljáról és terveiről. „Nem látom: nem bánom”! Ha ti nem állítjátok ki, még a bhakták is elfelejtik, milyen prédikálási nektár áll rendelkezésre.
+</p>
+<p class='vspace'>Minden bhaktánál mindig legyen meg lelki tanítómesterének legalább néhány könyve és előadásának felvétele. Ennek semmi akadálya nem lehet. Kiválóan dicsőítheted Krsnát és a Gurudat oly módon, hogy valamely írását vagy felvételét a kezébe adod azoknak, akiket szeretnél áldásban részesíteni. Van egy másik probléma is. A bhakták gyakran figyelmetlenek. A könyvet a táskájukba, cipők vagy ennivaló mellé teszik és ezzel elrontják a jó megjelenést. Felelősség és tudatosság teszi a kiváló értékesítőt, aki jól felkészülten indul el, s eleget tesz a kívánalmaknak. Hogyan tud egy messze nem ostoba üzletkötő egy elsőosztályú előadást tartani, míg a vaisnavák nem tudják megszervezni magukat, hogy a nektárjukat bemutassák a világnak? Ehhez nagyon nagyon sok megbeszélésre van szükség az összejöveteleken és isztagosztikon, hogy javuljon a helyzet. De soha nem adjuk fel. Ez a szankírtan jagja, és nekünk semmi más dolgunk nincs, mint szépen prédikálni. Ennyi az egész. 
+</p>
+<p class='vspace'>Bárki, ha tudja egy újabb vagy jobb módját, hogyan ismertessük a transzcendentális irodalmat és különösen a jóga tanfolyamokat, az remek szolgálatot tesz a prédikálásnak és szeretnénk tanulni tőle. Szankírtan jagja ki dzsáj! Gurudéváink mind könyvosztók és könyvkiadók voltak. Ez egy prédikálói hagyomány, s könyörgök nektek, hogy tartsátok ezt a szellemet elevenen az asramjainkban.
+</p>
+<p class='vspace'><a name='f19' id='f19'></a>
+</p><h3>Prédikálási lehetőségek a médiákban</h3>
+<p>Nagyon hasznos ismerni a sajtót és barátságos kapcsolatokat alakítani ki velük. Minden újságnak van egy kulturális oldala és biztos, hogy megjelentetnek egy kis rovatot, csak mert láttak benneteket az utcán, és adtatok a szerkesztőnek egy csomag füstölőt, beszéltetek neki a színdarabotokról amit bemutattok, vagy a lelki tanítómesteretek látogatásáról, stb. A prédikálásnak e téren nincsen semmilyen korlátja. Minden rádiónak, magazinnak és TV stúdiónak, különösen a kábeltévéknek vannak speciális fórumaik, ahol kulturális témákkal foglalkoznak. Ügyesnek kell lennünk hogy megnyerjük őket, s a jó barátságot ápolva velük minden ajtó magától megnyílik. Kétségtelenül ez egy kemény munkával járó terület, azonban te is sikeres lehetsz. A riporterek ugyanis éppen olyan boldogtalanok mint bárki más, és fogják értékelni a barátságotokat, hiszen az életük és a munkájuk anyagi dolgok reklámjának eladása, amely nem tesz senkit sem elégedetté. 
+</p>
+<p class='vspace'>A prédikálásunkat elősegítendő érdemes megtudni az év összes jelentős dátumát amikor közösségi ünnepek vannak, amin a bhakták is részt tudnak venni és harinám programot tartani, stb. Például szoktak békemenetet szervezni, gyakoriak a színházi- és dalfesztiválok. A bhaktáknak ott a helye, bemutatni valami nagyon szépet. A bhakti-jóga ennek a vaskornak a kultúrája, a sajtónak pedig megvannak a kapcsolatai. Mi mindig megpróbálunk jelen lenni a különböző eszmecseréken a mi csodálatos filozófiánkkal. Néha egyes hírügynökségek megtámadják a bhaktákat, – ez igen gyakran előfordult az új vallásokról szóló negatív írások által, ahová a vaisnavák fényképét mellékelték. Akkor mi meg fogjuk ragadni az alkalmat és cáfoló nyilatkozatot írunk és prédikálunk a tanításainkról. Sríla Prabhupád azt szokta mondani: „Minden propaganda jó propaganda hosszútávon”. Meg szeretnénk védeni lelki iskolánk tisztességét, de még ha valamelyik bhakta is a felelős valamiért, mindig meg fogjuk védeni a tiszta vaisnava tanítványi láncot. 
+</p>
+<p class='vspace'>Azonban legyetek óvatosak a sajtóval. Ne teremtsetek ellenséget. Ők gyakran megjátsszák a barátságost. Rávesznek valakit, hogy mondjon ezt vagy azt, aztán eltorzítják és csinálnak egy becsületsértő, de jól eladható szalagcímet. De mi lehet tenni. Mi megpróbáljuk őszintén dicsőíteni Krsnát. Amennyiben bármilyen kedvezőtlen propaganda megjelenik, ez nem valami jó dolog. Hadd foglalkozzanak a tapasztalt bhakták a sajtó és egyéb közösségi kapcsolatok (PR) ügyeivel. Az asrami recepciósnak is tudnia kell, hogy az újságírókat a vezetőhöz kell kalauzolnia. És ha neked van valamiféle sajtóbeszámolód a tevékenységeitekről ez hasznos lesz, mert ők néha kevés idővel rendelkeznek és tömör információt akarnak kapni.
+</p>
+<p class='vspace'>Ha pedig vannak barátaitok a sajtóban, az szintén segíthet ha netán valamilyen kényszerhelyzet adódna.
+</p>
+<p class='vspace'><a name='f20' id='f20'></a>
+</p><h3>A házasok prédikálással egybekötött üzleti lehetőségei a városban</h3>
+<p>A asramvezető próbáljon meg értekezleteket lefolytatni a közösség bhaktáival hogy megvizsgálják, hogyan tudják támogatni egymást és hogyan működjenek együtt a különféle területeken.
+</p>
+<p class='vspace'>A bhaktáinknak biztonságos jövőre van szüksége. Noha tény, hogy a karma misra bhakták megzavarodnak, mikor látják, hogyan keresnek pénzt a bhakták és néha utánozzák a tevékenységeiket egy gyümölcsöző célért. De fontos létrehozni egy olyan rendszert, amely megenged a bhakták családjainak egy biztos jövedelmet. Egy pénzügyileg stabil grihaszta közösség stabilitást fog adni a prédikáláshoz is. Még ha a kétségkívül jelenlevő irigység és kapzsiság ebben a korban nagyon nehézzé is teszi a közös munkát. A bhakták szakértők az élelmiszer készítésben. Ez egy jó lehetőség franchise rendszereket létrehozni. Gyárthatnak élelmiszert, s például megengedhetik más bhaktáknak hogy egy kis tőkével létrehozzanak árusító helyeket. Ezt pedig lehet kombinálni egy kisebb előadóteremmel vagy legalább egy könyvesbolttal és transz-cendentális irodalommal. A bhakták importálhatnak vagy készíthetnek olyan termékeket, ami lehetőséget ad mások számára egy kis butikot nyitni.
+</p>
+<p class='vspace'>A bhakták gyakran megpróbálnak együtt végezni kézi munkát vagy olyan viszonyok közt dolgozni, ahol egyik bhakta a cég tulajdonosa és a többiek az ő fizetett alkalmazottai. Az én személyes tapasztalatom ezzel kapcsolatban nagyon rossz, habár néhány nagyon ügyes bhakta vezető képes lehet sokáig dolgozni ilyen kapcsolatokban. Általában a mondás, „a bizalmasság megvetést szül” bizonyul igaznak és az ilyen viszonyok könnyen fajulnak ellenszenvvé. Nagyon sajnálatos helyzetek tudnak adódni. Ezért jobb, ha a kereskedelmi kapcsolatokban legalább egy bizonyos fokig, mindenki a saját főnöke, s viseli a felelősséget és végzi a könyvelést az állam előtt, és megtanulja felelősen kezelni a saját tőkéjét. Azok akik képtelenek erre, legjobb ha egy nem bhaktának dolgoznak és tartják a barátságot a bhaktákkal. Az adódó nemzetközi üzleti lehetőségeket a bhakták között az Interneten keresztül fogjuk megosztani a WVA munkája keretében. Valójában a vaisnava közösség nagyon fiatal és kicsi, és még nem fedezte fel a közös munkában rejlő hihetetlen lehetőségeket és praktikusságot. Új elképzelések fognak megjelenni, és a vaisnavák szolgálatának nagyon fontos területei fognak kifejlődni.
+</p>
+<p class='vspace'>Oktatás, egészséggondozás, regeneráló kurzusok és számos más társadalmi szolgáltatás fog természetes részévé válni a brahminikus szolgálatok végrehajtásának vaisnava módszerévé, hogy létrehoz-hassák saját közegüket.
+</p>
+<p class='vspace'>A vaisnava közösségek kiadványai szintén nagyon fontosak a célból, hogy kicserélhessük a gondolatainkat és kapcsolatokat építsünk.
+</p>
+<p class='vspace'><a name='f21' id='f21'></a>
+</p><h3>Az asramvezető és a rendelkezésére álló munkaerő</h3>
+<p>Mások támogatása alapvetően szükséges ahhoz, hogy egy vaisnava család valójában létrejöhessen. Minden önkéntes a mestere egy prédikátornak, mert ők segítenek a lelki tanítómesterünket jobban szolgálni. Ezért lelkesítenünk kell és néha ki is javítanunk azokat, akiket a gondjainkra bíztak. De mindezeken túl próbáljuk meg mindig elérni az emberek szívét és ne okozzunk nekik rossz érzést, még ha néhány tévedést korrigálni is kell. Mi haszna van egy jó instrukciónak, ha a személy elkedvetlenedik tőle? 
+</p>
+<p class='vspace'>Néha várnunk kell egy megfelelő pillanatra, hogy valakivel megértessünk egy bizonyos helyzetet. Ez a szeretetteljes vezető valódi feladata. Egyetlen személyt sem kötelezhetünk, hogy segítsen nekünk. Viszont mi tanulhatunk másoktól, minthogy nagyon könnyen előfordulhat, hogy ők sokkal fejlettebbek a saját szolgálatukban. Egy az asramon kívül élő matadzsi kedvét elvenni a szolgálattól olyan sértés, amely zavarni fogja a mi fejlődésünket. Maja mindig megpróbálja elválasztani a bhaktákat egymástól, azonban a valóban fejlett bhakták mindig megpróbálják ellensúlyozni ezt a befolyást, úgy hogy a bhaktákat közelebb hozzák egymáshoz, a hamis egók tiltakozása ellenére is.
+</p>
+<p class='vspace'>Hallgassátok meg, amit az embereknek el kell mondaniuk. Legyetek szakértők mások inspirálásában, hogy fel tudják tárni a szívüket nektek. Csak akkor lesz az természetes nekik, hogy elfogadjanak valamilyen szolgálatot a ti irányításotok alatt és el is végezzék azt szakszerűen.
+</p>
+<p class='vspace'>Mindig legyetek ott a bhakta testvéreitekkel, nővéreitekkel és barátaitokkal. Egy szerető vaisnava nélkül hogyan lehetne elviselni ezt az életet? Az idősebb bhaktákkal, különösen azokkal akik kívül élnek, kell éreztetni azt hogy szüksége van rájuk a családotoknak, mint mindenki atyai jóbarátjára. Ha úgy érzitek, hogy több gondot jelentenek, mint ami segítséget adnak, akkor vidd el őket egy sétára és tárd fel nekik az érzéseidet és terveiteket, és amit érzel, hogy nem érzékenyek az asrami valóságra. Amennyiben nincs őszinte, szívbéli kapcsolat köztetek, akkor eltanácsolhatod őket a gyülekezetből. Ez egy nagy kihívás, de ez az ami az igazán jó asramvezetőt teszi. Valójában a asramvezető a legfontosabb bhakta, amíg ő tartja fenn a programokat, miközben minden felelősséget a vállain visel. Milyen nagyszerű dolog is az, ha majdnem az egész gyülekezet áldását elnyeri? Noha el kell ismerni, ez nem egy könnyű feladat. Az új tagjainknak van hajlandósága különösebb kritika nélkül elfogadni a véleményünket, azonban az idősebb tagok természetes módon rendelkeznek eltérő és néha még jobb elképzeléssel és ezeknek is teret kell adni, ha szeretnénk együtt maradni.
+</p>
+<p class='vspace'><a name='f22' id='f22'></a>
+</p><h3>Vásárlások</h3>
+<p>Akik kezében hatalom van, vagy a bhakták által Krsna részére összegyűjtött vagy adományozott alapokat használják fel, nagy felelősséget hordoznak. Krsna pénzéből vásárolni szent kötelesség, és számos jól megvizsgált irányvonalat kell követni.
+</p>
+<p class='vspace'>Sríla Prabhupád arra tanított minket, hogy a pénz ne feküdjön sokáig bankszámlákon. Ez csak a Kali-júga befolyását fogja vonzani. De gondosan elkölteni a pénzt, az igazából nem könnyű feladat. Ha valaki izzadságos, kemény munkával pénzt keres, akkor meg fogja becsülni annak minden fillérjét. Sajnos, néha a kevésbé felelős természetű bhakták nem értékelik eléggé a lehetőséget, ami adatott nekik, hogy Krsna vágyainak teljesítése által szolgálhassák Laksmidévit. A következő pontokat minden bhakta tartsa be.
+</p>
+<div class='vspace'></div><ol><li>Ne vegyél semmit anélkül, hogy ismernéd a tényleges piaci árat.
+</li><li>Ne vásárolj, mielőtt összehasonlítanád az árakat más elárusító-helyek áraival.
+</li><li>Ne higgy a minőségi vagy mennyiségi garanciának. Mindig ellenőrizd azt.
+</li><li>Mindig próbáld megkapni a nagykereskedelmi árat, készpénzes kedvezményeket, stb.
+</li><li>Ne foszd meg az eladót a szerencséjétől, hogy különleges kedvezményt adhasson Krsna számára. Csak könyörögj szeré-nyen és lelkesen a Gurud számára. Meg fogsz lepődni, mennyi csodálatos prédikáló alkalom fog születni ebből, és hány ember fog örömest adni mindenféle elfekvő holmit a bhaktáknak és a szolgálataikhoz.
+</li><li>Ne vegyél sokat valamiből, ami megromolhat.
+</li><li>Ne vásárolj túl kis mennyiséget se, mert ha ezt máskor is meg kell venni, az időpazarlás.
+</li><li>Ne feledd el feljegyezni minden jó vásárlási kapcsolataitokat, tanácsadókat, különleges kedvezményeket az asrami vásárlási útmutatóba. Holnap lehet hogy már valaki más fogja intézni a bevásárlást. Ha te ezt nem írtad le szépen minden fontos részletével együtt, te leszel a felelős azért, hogy más bhakták az idejüket pazarolják emiatt.
+</li><li>Mindig próbáljátok meg terjeszteni az irodalmunkat vásárlás közben és nézni, hátha adódik lehetőség cserére, hogy ezzel is pénz takarítsunk meg. A Srí Srí Góranga Rádhá Vradzsésvara templom építésekor az összes szerkezeti anyag és szerszám legalább 30 %-a festményeladásból származott.
+</li><li>Bevásárlás közben légy nagyon alázatos. Hiszen alkalmat adsz ezzel nekik, hogy némi energiájukkal ők is hozzájáruljanak a Krsnának szánt munkához. Még ha egy épületet is vásárolsz, sokat megspórolhatsz, ha alázatosan, de határozottan az eladó tudtára hozod ezt a dolgot.
+</li><li>Légy biztos benne, hogy más bhakták, de legfőképp az asram Vaisnava Tanácsa jóváhagyja vásárlási elhatározásaidat. Jobb egyeztetni velük, mielőtt visszavonhatatlan hibát követnél el.
+</li><li>A pénztár és a könyvelési rendszer ügyeit jól kell értenie annak, aki Krsna pénzét elkölti. Súlyos sértés, ha a beszerző akár csak gyanúba keveredik, hogy visszaél a szolgálatával bármilyen módon. Bárki, aki kapcsolatban van Krsna pénzével, a leg-kevésbé sem vonakodhat ellenőrzésnek alávetni magát, illetve világos jelentéseket adni, stb.
+</li><li>Nagy kiadásokat kívánatosabb csekken intézni.
+</li><li>Még úgynevezett nagy bhakták is áldozatául estek a pénz csábításának, sőt mi több, gyakorlatilag kifosztották a Gurujukat és a Múrtikat. Nagyon jó bhakták intézzék a bevásárlást, és még ők is érezzék 108%-osan elszámoltathatónak magukat Srí Krsna háztartásáért, amit nem más mint Srímati Radharáni és az Ő szolgálói felügyelnek.
+</li><li>Bhakták ne vásároljanak szükségtelen luxuscikkeket, így sokkal kevésbé esnek áldozatul a márkanevek és hamis értékek meséjének. Csakis a prédikálás végett részesíthetjük előnyben a legjobb minőséget valamilyen cikkből, de gondosan tartsuk meg a távolságot, nehogy olyan személyekké váljunk, akik a szerzetesi élet leple alatt élvezik a dolgokat. Pamut vagy juta a legjobb ruhaanyag, amit javasolhatunk. A selyem nagyon drága és szükségtelen.
+</li></ol><p class='vspace'><a name='f23' id='f23'></a>
+</p><h3>A családos asramvezető személyes pénzügyei</h3>
+<p>Mindenek előtt hadd ajánljuk hódolatunkat mindazoknak a grihasz-táknak és jó feleségüknek, akik úgy döntöttek, hogy aktívan támogatják a lelki tanítómesterük prédikáló munkáját, még azután is, hogy beléptek a családos asramba. Kétségtelenül ez egyre nehezebb, annak arányában ahogy a családi kötelezettségek nőnek. Még a családos asramvezető gyerekeinek is számos lemondást kell elfogadniuk.
+</p>
+<p class='vspace'>Mivel a grihaszták gyakran idősebb és tapasztalt bhakták, igazi jutalom mindenki számára, ha ők valahogyan a prédikálás frontvonalában tudnak maradni. Azért hogy szépen növekedhessen a családjuk, gondosan tudják folytatni a szolgálatukat, s ápolják a kapcsolatukat más bhaktákkal, szeretnénk itt átadni néhány irányelvet, amely tartós sikert fog biztosítani ebben a dicsőséges szolgálatban.
+</p>
+<p class='vspace'>Grihaszta és családi kötelezettségek és örömök: mindez része az odaadó szolgálat pravritti marg-jának. Egy házas embernek gyakorlatilag minden nap aggódnia kell, – míg be nem lép a szannjász életrendbe – hogyan keressen elegendő pénzt hogy fenntartsa a feleségét és a gyerekeket. Ezt a feladatot gyakran nagyon nehéz teljesíteni. Asramvezetőként a grihasztának tájékoztatnia kell az asram Vaisnava Tanácsát, pontosan hogyan is kíván együtt-működni ebben az új kapcsolatban.
+</p>
+<p class='vspace'>Számos változat létezik. Rendszeresen bizonyos órákat vagy napokat az asramvezetői kötelességeknek szentelni, ez az egyik. Amennyiben van némi tőkéje, akkor különállóan végezhet valami üzleti tevékenységet, amivel fenntartja magát. De intézheti az asram egyik üzleti vállalkozását, olyat mint egy bolt vagy egy étterem, és kaphat fix és jóváhagyott százalékot a haszonból az egyéni szükségleteire. Láttunk eseteket, ahol egy kis fenntartási kedvezményt engedélyeztek az asramvezetőnek, akit annyira elfoglalt a növekvő közösségnek végzett munkája, hogy nem volt semmi szabadideje bármi más elfoglaltságra. Ez a fenntartási kedvezmény akkor indokolt, ha ő valójában termel, noha inkább személyesen segít mások buzdításában, s az asrami jövedelemnek az ő saját fenntartási költsége jelentéktelen hányada, így a Vaisnava Tanács boldogan jóváhagyja azt.
+</p>
+<p class='vspace'>Ez a kulcs a sikerhez. A bhakták pedig legyenek nagyon elégedettek ezzel az elrendezéssel, máskülönben hogyan tudják átadni magukat egy ilyen asramvezetőnek, ha közben rejtett nemtetszéssel fogadják az ő pénzügyeit. Senki nem veheti biztosra, hogy mások majd engedelmeskednek neki. A Vaisnava Tanács az a fórum, ahol a közösség aktív tagjainak minden véleményét meghallgatják. A grihaszta asramvezető vágyjon arra, hogy teljesen tiszta legyen az ügyleteiben és a pénz kezelésében, hogy megkaphassa a Vaisnava Tanács áldásait a fejlesztéseihez. A jó kapcsolatok oszlopai a szeretet és bizalom, de a vezetőknek tökéletes példát kell adniuk a pénzügyek intézésében azzal a céllal, hogy inspiráljanak másokat és biztosítsák a vaisnava közösség szolgálatának tisztaságát és jövőjét.
+</p>
+<p class='vspace'>Asramjainknak gyakran vannak olyan üzleti tevékenységeik, amelyek segítenek fedezni olyan kiadásokat, mint a támogató tagoknak való prédikálás, vagy olyan közösségi elfoglaltságok, mint ajándékboltok és éttermek. Ezért nem árt, ha az asramvezető vagy a felesége egy ilyen programot irányít, és elfogad egy bizonyos jutalékot a költségeik fedezésére. Máskülönben más bhaktákat kell visszatartani a szankírtantól, hogy ezt a szolgálatot végezzék. Márpedig olyan vezetőt nagyon nehéz találni, aki anyagi motiváció nélkül ragaszkodik az ilyen szolgálathoz. Ezért a asramvezető lehet az ideális megoldás. Ez egyben meg is tartaná őt az asram közelében egész nap, így ő mindig figyelemmel kísérheti a programokat.
+</p>
+<p class='vspace'>A grihaszta asramvezető lakóhelye szintén nagyon fontos dolog. Ha az asram infrastruktúrája jó adottságokat biztosít, hogy sem a bhakták, sem a esetleges gyerekek nem zavarják nagyon egymást, mint ahogyan az megesett a múltban, akkor az asramon belüli lakóhely egész jól beválik. Különben egy asram melletti lakás lehet a tökéletes megoldás. De megint csak, az ilyen ötleteket beszéljék meg és hagyassák jóvá a Vaisnava Tanáccsal.
+</p>
+<p class='vspace'>Világosan meg kell érteni, de inkább írásba is adni, hogy minden vagyontárgy, ami egy asramvezető idejében gyűlt össze az asramban vagy asrami üzletben, az a Múrti kizárólagos tulajdona. Az asramvezető bármilyen személyesen gyűjtött tulajdonát a Vaisnava Tanácsnak jegyzőkönyvben kell elismernie és feljegyeznie. Ílymódon jóváhagyva, és a közösségnek nem zavart okozva egyszer az asramvezető visszavonulhat ettől a szolgálattól és vissza-igényelheti mindazt, amit a családja számára vásárolt. Szégyen, ha a vaisnavák pénzen kezdenek veszekedni, de hogy ez biztosan ne történhessen meg, követnünk kell ezeket az irányelveket amint azt az idő, a hely és a körülmények engedik.
+</p>
+<p class='vspace'><a name='f24' id='f24'></a>
+</p><h3>Bhakták látogatása a Szent Helyekre</h3>
+<p>Minden bhakta dédelget olyan vágyakat, hogy egyszer ellátogat a szent helyekre az idősebb vaisnavák áldásával. Így már hagyo-mánnyá vált a vaisnava közösségben zarándokutat szervezni Vrndá-vanba és Majapurba.
+</p>
+<p class='vspace'>Vrnda Kundzsa, Jamuna Kundzsa, Vanszi Kundzsa és más szent helyek megjelenése óta, melyek közvetlenül kapcsolódnak a missziónkhoz még csodálatosabbá vált ellátogatni oda. 
+</p>
+<p class='vspace'>A legfontosabb dolgok e tekintetben, amelyeket figyelembe kell venni a következők.
+</p>
+<div class='vspace'></div><ol><li>A szent helyekre látogatni Srí Guru és a vaisnavák áldása nélkül nem hozza meg a kívánt sikert.
+</li><li>A szent helyek rendkívül hatalmasak és nagyon óvatosnak kell lennünk nehogy dháma aparádát kövessünk el ott.
+</li><li>Ha egy bhakta valamilyen kivételes szolgálatot nyújtott, akkor hosszabb ideig a szent helyen maradhat, segítheti az ottani prédikáló programokat, hogy egy életre szóló érzést kapjon a szent helyről és az odaadó szolgálat hangulatáról.
+</li><li>Bhakták soha ne várják el más bhaktáktól az utazási költségeik fedezését. Ezért, ha egyszer egy bhakta már megkapta az áldást egy ilyen utazáshoz, akkor tegye meg a megfelelő lépéseket, hogy valamiből fedezhesse az utazását, s tegyen félre pénzt az ott tartózkodáshoz is. Azért megyünk a szent helyre, hogy szolgáljunk, nem pedig hogy könnyű életünk legyen mások költségén. És bármilyen asramot is látogassunk meg, mindig járuljunk hozzá több energiával, mint amit saját fenntartásunkra elhasználunk.
+</li><li>Rendszeres látogatásokat lehet szervezni a szent helyekre az érdeklődő barátainknak azzal a céllal, hogy így is prédikálhassunk nekik. Ez esetben őket fel kell készíteni előre, hogy megértsék a zarándokút jelentőségét és ne úgy menjenek, mint az élvezeteket kereső turisták. Sértő lenne a szent helyekre embereket vinni, akik aztán ott bűnös tetteket végeznének.
+</li><li>Bármilyen látogatásnak a titka abban rejlik, hogy olyan módon viselkedjen az ember, hogy a szent hely lakóit és a vendég-látóinkat elbűvölje a zarándoklat eredményezte csodálatos lelki hangulatunk. Akkor leszünk igazán képesek magunkkal vinni a szent hely áldását.
+</li><li>Ellenőrizzétek, hogy a vízumotok végig érvényes maradjon. Ez úgy lehetséges, hogy JÓ ELŐRE megteszitek az intézkedéseket a meghívó misszió papírjaival. Turista vízumot nem lehet meghosszabbítani Indiában. Hosszútávú tartózkodáshoz meg kell próbálni 5 éves jóga vízumot, vagy 1 éves belépő vízumot szerezni.
+</li></ol><p class='vspace'><a name='f25' id='f25'></a>
+</p><h3>A bhakták dolgozhatnak jutalékrendszerben is</h3>
+<p>A bhakták szeretnének minden pillanatban örömet szerezni Krsnának. Manapság az asrami élet célja az kifejezetten transzcendentális jótékonysági rendezvényeket szervezni. Minden bentlakó ennek tudatában van, és segít amennyit csak tud. Az egyszerű életmód jegyében egy nagyon alapvető szinten levő élelmet, szállást és ruhát biztosíthat az asram a teljes idős szolgáknak. 
+</p>
+<p class='vspace'>Azonban adódik számos helyzet, amikor a bhaktáknak olyan személyes szükségleteik lesznek, ami messze túl mutat a járadék szintjén. Természetesen egy bhaktaközösség mindig megpróbál a tagjainak külön egészségügyi ellátást és más lehetőségeket biztosítani.
+</p>
+<p class='vspace'>Mégis, ezeket a feltételeket nem lehet garantálni, és most mi arra a szituációra fókuszálunk, ha egy bhaktának személyes szükségletekre kell pénz.
+</p>
+<p class='vspace'>Ebben az esetben keressen valamilyen munkát, és tartsa meg magának, amilyen százalékot szükségesnek tart, az asrambéli felettesei jóváhagyásával. Nyilvánvalóan ez minden személy sajátságos helyzetétől és a kényszerhelyzet fokától függ. Alapvetően, egy bhakta annyit ad egy templomnak, egy asramnak, amennyit szeretne. Az asramvezetőnek is egyet kell értenie ezzel, mivel ő biztosít bentlakási lehetőséget a bhaktának. Brahmacsáriknak általában nincsenek ilyen problémáik, de ha egy személy szeretne belépni a házas asramba, szükséges gondolnia arra, hogyan fogja a pénzt előteremteni a jövőben. És mivel nem tanácsos bhaktáknak egy nem-bhakta vezetése alatt elfogadni munkát, – hacsak nem valami elsőosztályú alkalom adódik – igen fontos, hogy tőkét gyűjtsön a célból, hogy képes legyen elindítani a saját üzleti vállalkozását.
+</p>
+<p class='vspace'>Csak fohászkodhatunk azért, hogy akkorra már a bhakta kellően éretté válik, hogy tudja, hogyan kell vezetni az üzleti ügyeket, és nem felejti el Krsnát és a vaisnava szévát. Természetesen amíg az asramban él, az asramvezető megfelelő útmutatásokkal látja el, de miután megházasodik és elkezdi a saját griha asramját építeni, akkor sem felejtheti el a felelősséget, amit a transzcendentális tanításokból kapott.
+</p>
+<p class='vspace'>Ezért az asram vezetői amennyire csak lehet, próbálják meg megkönnyíteni ezt az átmeneti időszakot a függő brahmacsáritól a grihaszta életig. Különben a bhaktáknak egyszerre távozniuk kell, hogy saját családot alapíthassanak. A grihaszta közösségnek meg kell próbálni elindítani az üzleti tevékenységek olyan együttműködési formáit, amelyek új franchise lehetőségeket biztosítanak a közösség új grihaszta tagjainak. Ha az asramvezető együtt tud működni ebben a munkában, az nagyon jótékony hatású lesz a gyülekezetére nézve.
+Országos vagy nemzetközi szinten is az ilyen hálózatok nagyon hasznosak lennének, hogy még jobban megerősítsék a vaisnava közösséget.
+</p>
+<p class='vspace'><a name='f26' id='f26'></a>
+</p><h3>A „Sríla Prabhupád formula”<br />(50% a könyvalapnak, 50% az asramnak)</h3>
+<p>Kedves lelki tanítómesterünk, Sríla Prabhupád Srí Nitjánanda Prabhu kegyének megtestesülése. Az ő transzcendentális könyvosztása messzebb ment el, mint amit bárki el tudott volna képzelni. A vallásos irodalom világában meghökkentő, ahogyan világszerte különböző nyelvű olvasók milliói megkapták a kegyet, hogy birtokolhassák és olvashassák a legszentebb könyveket, amit az emberiség ezidáig kapott. Azért ez a dolog nem magától ment végbe. Sríla Prabhupád szeretetteljesen erőltetett bennünket arra, hogy értsük meg a Krsnáért végzett kemény munka fontosságát, s hogy a transzcendentális irodalmat odaadhassuk mindenkinek. Egy alkalommal Los Angelesben maradt két hónapig, s így ösztönözte a bhaktákat arra, hogy elkészítsenek 20 darab kemény kötésű könyvet az ő tanításaiból, míg ők normálisan csak egy könyvet tudtak elkészíteni három hónap alatt. Ő mindig sokkal több könyvet lefordított, amivel mindig az előállítás előtt járt. „A lehetetlen szó csak az ostobák szótárában létezik!” – ezt az idézetet gyakran hallottuk Sríla Prabhupádtól.
+</p>
+<p class='vspace'>Hasonló elven tanított minket arra, hogy mint prédikátorok a munkánkat úgy szervezzük, hogy az asrami jövedelem fele menjen újabb könyvek nyomtatására, a másik fele pedig az asram fenntar-tására és fejlesztésére. S hogy tovább lelkesítse a prédikátorokat, a könyvnyomtatás hasznának 50%-át újabb kötetek kiadására használta, a másik 50%-ból pedig kölcsönt adott az eladásban résztvevő asramoknak, hogy segítsen épületeket szerezni a Múrtiknak.
+</p>
+<p class='vspace'>Később, mikor néhány asram kezdett biztos jövedelemhez jutni más forrásokból, ők próbáltak meg elöljárni ugyanezzel a példával, s a bevételük felét odaadták könyvnyomtatásra. Ilyenkor cserébe az asramok egy csomó könyvet kaptak, s néha még azt sem tudták, hogyan juttassák el a könyveket az emberek kezébe.
+</p>
+<p class='vspace'><a name='f27' id='f27'></a>
+</p><h3>A nyomda transzcendentális funkciója</h3>
+<p>„A könyvek az alap.” Nem lehetünk meg a sásztrák nélkül mikor megkísérlünk az Úr bhaktáivá válni. Guru, Sásztra és Szadhu – a lelki jóváhagyás kölcsönösen függő rendszere egyik alapelvünk. Ezért olyan fontos megjelentetni, olvasni és terjeszteni a transzcendentális irodalmat. Egy rendszeresen megjelenő folyóirat vagy újság szintén csodálatos prédikáló eszköz. Hírlevelek és audió- vagy videó anyagok szintén mind a prédikálásnak ugyanabba a vonalába tartoznak, hiteles, nagyon határozott nyilatkozatokkal. Az internet, rádió és televízió még csak újabb utak, melyek szintén a Védák abszolút tanítását mutatják be a világnak. Alapvetően a BBT illetve a SEVA kiadók fogják azt a célt szolgálni, hogy a sásztrákat eljuttassák az egész világnak, és hogy gyakorlati segítséget nyújtsanak mindazoknak, akik megpróbálják a bhakti-jógát terjesz-teni különböző helyeken.
+</p>
+<p class='vspace'>Nagyon kedvező segíteni ezeket az intézményeket, és minden asram, templom, prédikáló központ vagy aktív bhakta próbálja meg elérhetővé tenni a megjelent kiadványokat mások számára a prédikáló munka közben. Keményen kell dolgoznunk és nagyon nagylelkűnek lenni. Transzcendentális cikkeket eladni több munka és áldozat, mint általában a közönséges pénzkereset. De büszkeséggel fog eltölteni minket, amikor bemutatjuk ácsárjáink és vaisnava barátaink érett munkáját. A mi mozgalmunknak igazi kultúrát kell adnia mindenkinek. Szükség van mindenféle szintű könyvekre. A gyerekek szintjétől kezdve egészen az egyetemi szintű kutatásokig. Oly sok könyvet kinyomtattunk, hogy most már a kiosztásuk a feladat, bármilyen hatékony eszközt is találjunk erre. Az embereknek örömmel és lelkesedéssel kell olvasniuk és hallaniuk az új könyveket. Ha elhanyagoljuk ezeket a részleteket, az a prédikálásunk rovására fog menni. Minden asramban vagy bhakta programon legyen egy asztal, amin minden cikk rajta van. A harinám szankírtan olyan szép, de sok ember nem érti a bhaktákat. De ha van egy csodálatos könyvasztal, ahhoz odamehetnek és megkaphatják a kívánt információt. Fokozatosan ezek az erőfeszítések új bhaktákat hoznak, akiknek egyre komolyabb megértésük lesz az odaadó szolgálatot terén.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_02.html'>Az ásramvezető és az emberi kapcsolatok</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve.html'>Az ásramvezető kézikönyve</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.asramvezeto_kezikonyve_04.html'>Az ásramvezető lelki gyakorlatai és erényei</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on March 04, 2008, at 10:54 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

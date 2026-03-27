@@ -1,0 +1,516 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Evitar la Mala Asociación</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_06' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_06' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Evitar la Mala Asociación"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_06-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>Evitar la Mala Asociación</h2>
+<p>Como hemos apreciado por las extensas descripciones anteriores, a quien tiene la buena fortuna de encontrar y saborear la compañía de los santos, se le presenta todo lo auspicioso. Atento a ese dictamen, puede ocurrir el efecto completamente opuesto para quien se pone en contacto con los impíos o no santos. Por consiguiente, la conducta de un Vaisnava está basada fundamentalmente en estos dos principios: la aceptación de la compañía santa y el rechazo de la compañía de los no santos.
+</p>
+<p class='vspace'>La asociación de los devotos es expresión directa y positiva de la conducta Vaisnava. Asimismo, una expresión indirecta o negativa de la conducta Vaisnava es la evitación de la asociación no devocional. En las Escrituras se ha concedido mucho énfasis a esta prohibición y el devoto aspirante debe concederle una atención especial.
+</p>
+<div class='vspace'></div><pre> asat-sanga-tyãga ei vaisnava ãcãra
+ stri-sangi eka asãdhu krsnãbhakta ãra
+</pre><p class='vspace'>“El rechazo de la compañía no santa es la esencia del comportamiento Vaisnava. Los impíos se dividen en aquellos que están apegados a la vida sexual y los que están en contra de los principios de la devoción a Krishna”.
+(Caitanya Caritãmrta 2.22.87)
+</p>
+<p class='vspace'>El mismo principio se expresa en el Bhãgavatam:
+</p>
+<div class='vspace'></div><pre> tato duhsangam utsrjya
+ sãtsu sajjeta buddhimãn
+ santa evãsya chindanti
+ mano-vyãsangam uktibhih
+</pre><p class='vspace'>“La persona inteligente por lo tanto debe abandonar la mala asociación y permanecer en la compañía de los devotos. Solo esas personas santas pueden cercenar los apegos mentales insalubres mediante el empleo de sus poderosas palabras”.
+(Srimad Bhãgavatam 11.26.26)
+</p>
+<p class='vspace'>Así pues, se debe ser sumamente cauteloso en la selección de la compañía que se mantiene. En el Bhakti-rasãmrta-sindhu, a la vez que se discute la necesidad de buscar una asociación congenial, Rupa Gosvãmi cita el siguiente verso del Hari-bhakti-sudhodaya (8.51). En este verso, Hiranyakãsipu dice a Prahlãda:
+</p>
+<div class='vspace'></div><pre> yasya yat-sangatih pumso 
+ manivat syãt sa tad-gunah
+ sva-kula-radhyai tato dhimãn
+ sva-yuthãn eva samsrayet
+</pre><p class='vspace'>“Como un espejo, una persona adopta las cualidades de aquellos con quienes entra en contacto. Quien sea inteligente, ha de buscar por consiguiente la compañía de quienes tienen los mismos ideales, de modo de cultivar sus buenas cualidades en sí mismo”.
+(Bhakti-rasãmrta-sindhu 1.2.229)
+</p>
+<p class='vspace'>Las grandes autoridades nos han prevenido de tal modo, que evitemos la mala compañía.
+</p>
+<p class='vspace'><strong>FILOSOFOS, YOGUIS Y TRABAJADORES FRUITIVOS</strong>
+</p>
+<p class='vspace'>El Kãtyãyana-samhitã muestra el alcance con el que un devoto aborrece la asociación de los no devotos:
+</p>
+<div class='vspace'></div><pre> varam huta-vaha-jvãlã-
+ pañjarãntar-vyavasthitih
+ na sauri-cintã-vimukha-
+ jana-samvãsa-vaisasam
+</pre><p class='vspace'>“Es preferible estar en una jaula rodeado de llamas ardientes, que padecer en la asociación de aquellos a quienes disgusta pensar en Krishna”.
+(Hari-bhakti-vilãsa 10.295, Caitanya Caritãmrta 2.22.91)
+</p>
+<p class='vspace'>El punto es que si se debe sufrir un gran contratiempo producto de un dolor físico o encarcelamiento, hay que aceptarlo antes que poner en peligro la vida espiritual, asociándose con los no devotos.
+</p>
+<p class='vspace'>Los muy adorables Gosvãmis han declarado asimismo:
+</p>
+<div class='vspace'></div><pre> mãdrãksih ksina-punyãn kvacid api
+ bhagavad-bhakti-hinãn manusyãn
+</pre><p class='vspace'>“Nunca contempléis a esas personas que carecen de devoción por el Señor y cuyo mérito en tal sentido se ha consumido hasta la nada”.
+(Caitanya Caritãmrta 2.22.92)
+</p>
+<p class='vspace'>Hay varias clases de no devotos, mas fundamentalmente, la palabra abhakta se refiere a (1) el trabajador fruitivo que busca la gratificación de los sentidos, (2) el filósofo que anhela la liberación y (3) el yogui que busca los poderes místicos. Narottama dãsa Thãkura ha sintetizado el punto de vista del devoto en su Prema-bhakti-candrikã:
+</p>
+<div class='vspace'></div><pre> karmi jñãni misra-bhakta    
+ nã habe tãya anurakta
+ suddha-bhajanete kara mana
+ vraja-janera jei mata   
+ tãhe habe anugata
+ ei se parama tattva-dhana
+</pre><p class='vspace'>“No te apegues al trabajador fruitivo, al filósofo y al devoto hipócrita, sino fija tu mente en el bhajana puro. Sigue la comprensión de los residentes de Vraja, pues esta es la verdad suprema invaluable”.
+</p>
+<div class='vspace'></div><pre> durlabha janama hena    
+ nãhi bhaja hari kena
+ ki lãgiyã mara bhava bandhe
+ chãda anya kriyã karma    
+ nãhi dekha veda-dharma
+ bhakti kara krsna-pada-dvandva
+</pre><p class='vspace'>“Esta vida humana es un raro logro, entonces, ¿porqué no la empleas para adorar al Señor Hari? ¿Porqué estás meramente aguardando morir en cautiverio? Haz a un lado todas las demás misiones y olvida la religión Védica. Tan solo ocúpate en la devoción a los pies de loto de Krishna”.
+</p>
+<div class='vspace'></div><pre> karma-kãnda jñãna-kanda    
+ kevala bisera bhãnda
+ amrta baliyã jebã khãya
+ nãnã joni sadã phire   
+ kadar jya bhaksana kare
+ tãra janma adhah-pãte jãya
+</pre><p class='vspace'>“Las secciones del Veda que abordan las actividades fruitivas y el conocimiento espiritual, son depósitos de veneno. Todo aquel que beba de ellas, pensando que contienen el néctar de los dioses, está condenado a nacimientos reiterados en diversas especies, donde ingerirán lo inexpresable. La vida de tal persona es degradada”.
+</p>
+<div class='vspace'></div><pre> jñãna karma kare loka    nãhi jãne bhakti-yoga
+ nãnã-mate haiyã ajñãna
+ tãra kathã nãhi suni    paramãrtha-tattva jãni
+ prema-bhakti bhakta-gana-prãna
+</pre><p class='vspace'>“La gente practica la especulación filosófica y las actividades fruitivas de las Escrituras, mas no conoce el proceso del bhakti para ligarse al Señor Supremo. Ellos adhieren  a muchas diferentes escuelas filosóficas, pero son fundamentalmente ignorantes de la Verdad. Yo no los escucho cuando hablan porque conozco la verdad última: la vida del devoto es devoción amorosa por el Señor”.
+</p>
+<p class='vspace'><strong>DOS CLASES DE PERSONAS IMPIAS: EL MUJERIEGO Y EL IMPERSONALISTA</strong>
+</p>
+<p class='vspace'>Los impíos se clasifican en dos categorías fundamentales: el sensual o mujeriego y el no devoto, ateo o impersonalista. En tal sentido, Mahãprabhu expresó:
+</p>
+<div class='vspace'></div><pre> niskiñcanasya bhagavad-bhajanonmukhasya
+ pãram param jigamisor bhava-sãgarasya
+ sandarsanam visayinãm atha yositam ca
+ hã hanta hanta visa-bhaksanato ‘pu asãdhu
+</pre><p class='vspace'>“Ay, la vista de las personas materialistas o de las mujeres es incluso más dañina que beber veneno para quien es renunciado, inclinado a la adoración del Señor Supremo y deseoso de cruzar por sobre el océano del sufrimiento material”.
+(Caitanya-candrodaya Nãtaka 8.23, Caitanya Caritãmrta 2.11.8)
+</p>
+<p class='vspace'>Nuestro muy adorable Srila Prabhupãda analizó este principio en términos generales, en su Ambhãsya: “El principio único de conducta para el Vaisnava es el rechazo de la asociación no Vaisnava. No Vaisnava alude a dos clases de personas: la persona licenciosa y el no devoto. Los licenciosos son de dos tipos: los individuos legalmente casados que están excesivamente apegados a la compañía de sus esposas o los apegados a la actividad sexual ilícita. Los primeros son legítimos de acuerdo a las disposiciones del sistema varnãsrama-dharma, mientras que los otros se ocupan en la actividad sexual ilícita, que perturba el sistema varnãsrama y resulta en reacciones pecaminosas y nacimientos infernales. Cualquiera que se ocupe en actividades pecaminosas dentro del mundo material, es absolutamente indigno de ser llamado Vaisnava. Las tres metas de la vida humana, dharma, artha y kãma, están todas relacionadas estrechamente con el comportamiento no Vaisnava, centrado en el disfrute sexual. 
+</p>
+<p class='vspace'>“La cuarta meta de la vida, moksa, no se basa en el disfrute sexual, mas dado  que quienes buscan la liberación son Mãyãvãdis, - los que niegan la concepción del Dios personal - son incluso peores que los adictos a los placeres sexuales y en tal sentido, se consideran no Vaisnavas. Deben ser evitados. La compañía tanto del Mãyãvãdi que rechaza todo como una ilusión (incluyendo el nombre, la forma y actividades de la Persona Suprema) y el mãyã-vilãsi que se complace en el mundo ilusorio, tiene un efecto negativo en nuestro cultivo de las cualidades Vaisnavas y el logro del servicio devocional puro. El buscador de liberación Mãyãvãdi, rechaza los goces materiales para poder disfrutar de la salvación y hacer una exhibición de su superioridad personal. El mujeriego es el representante de todos los hedonistas. Tienen en común su esfuerzo egoísta por buscar la satisfacción de sus sentidos personales. Las metas ajenas a Krishna dominan sus actos. Sus vidas están llenas de auto-engaño y así pues no son aceptables como sirvientes de Krishna”.
+(Anubhãsya al Caitanya Caritãmrta 2.22.87)
+</p>
+<p class='vspace'>En el Tercer Canto del Bhãgavatam, Kapiladeva describe en mayor detalle a su madre Devahuti, los efectos negativos de asociarse con los licenciosos:
+</p>
+<div class='vspace'></div><pre> satyam saucam dayã maunam
+ buddhir hrih srir yasah ksamã
+ samo damo bhagas ceti
+ yad-sangãd yãti sanksayam 
+
+ tesv asãntesu mudhesu
+ khanditãtmasv asãdhusu
+ sangam na kuryãc chocyesu
+ yosit-kridã mrgesu ca
+
+ na tathãsya bhaven moho
+ bandhas cãnya-prasangatah
+ yosit-sangãd yathã pumso
+ yathã tat-sangi-sangataj
+</pre><p class='vspace'>“Se debe evitar a toda costa la asociación con esas lamentables criaturas que se han convertido en juguetes del sexo opuesto. Ellos carecen de paz, están constantemente confundidos y su concepto del ser está fragmentado. Ciertamente, no hay encanto más poderoso, ningún cautiverio más seguro que el que proviene de la asociación con el sexo opuesto y la asociación con los sensuales. Conservando esa compañía, se pierden las cualidades de la veracidad, la limpieza, la misericordia, la seriedad, la inteligencia, la modestia, la belleza, la reputación, el perdón, el control de la mente y los sentidos y la buena fortuna”.
+(Srimad Bhãgavatam 3.31.33-35)
+</p>
+<p class='vspace'>Kapiladeva prosigue con su crítica a los sensuales y concluye diciendo:
+</p>
+<div class='vspace'></div><pre> yopayãti sanair mãyã
+ yosid deva-vinirmitã
+ tãm iksetãtmano mrtyum
+ trnaih kupam ivãvrtam
+</pre><p class='vspace'>“Maya, en la forma de la mujer creada por el Señor, se aproxima lentamente al hombre simulando ofrecerle servicio, mas el debe verla como la muerte del alma, tan peligrosa como un pozo ciego cubierto de hierba”. 
+(Srimad Bhãgavatam 3.31.40)
+</p>
+<p class='vspace'><strong>EL MÃYÃVÃDI</strong>
+</p>
+<p class='vspace'>El Señor Supremo Sri Krishna Mismo adoptó el temperamento de un devoto y apareció en este mundo como Sri Gaurãnga Mahãprabhu. Durante Su vida en la tierra, Mahãprabhu sentó la norma de conducta para el maestro espiritual santo. Algo particularmente notable en las enseñanzas de Mahãprabhu es Su desaprobación de la filosofía monista o Mãyãvãda.
+</p>
+<p class='vspace'>Cuando Mahãprabhu estaba recorriendo India del Norte, se detuvo por unos días en Benares. Allí supo del gran sannyasi Mãyãvãdi Prakãsãnanda Sarasvati, por un brahmana Maharastriano. El Señor hizo los siguientes comentarios:
+</p>
+<div class='vspace'></div><pre> prabhu kahe mãyãvãdi krsne aparãdhi
+ brahma ãtmã caitanya kahe niravadhi
+ ataeva tãra mukhe nã ãise krsna-nãma
+ krsna-nãma krsna-svarupa duita samãna
+ nãma vigraha svarupa tina eka-rupa
+ tine bheda nãhi tina cid-ãnanda-rupa
+ deha-dehira, nãma-nãmira krsne nãhi bheda
+ jivera dharma nãma-deha-svarupe vibheda
+</pre><p class='vspace'>“Los impersonalistas Mãyãvãdis son ofensores de Krishna. Ellos repiten constantemente palabras como Brahman, atman y caitanya. Como resultado, son incapaces de pronunciar el santo nombre de Krishna. El nombre de Krishna y Su esencia son lo mismo. El nombre de Krishna, Su forma y Su ser esencial, son todos uno. Son espirituales y no debe hacerse diferencia entre ellos. En Krishna no hay diferencia entre el cuerpo y el alma, ni entre lo significado y el significador como es el caso con la jiva, en quien se hallan presentes todas esas distinciones”.
+(Caitanya Caritãmrta 2.17.129-132)
+</p>
+<p class='vspace'>Otros versos del Caitanya Caritãmrta confirman que puesto que los Mãyãvãdis son adversos al concepto del servicio eterno a Krishna, son incapaces de cantar el nombre puro del Señor.
+</p>
+<div class='vspace'></div><pre> ataeva krsna-nãma nã ãise tãra mukhe
+ mãyãvãdi-gana jãte mahã bahir-mukhe
+</pre><p class='vspace'>“El santo nombre de Krishna no sale de boca de los Mãyãvãdis, pues son completamente contrarios al Señor”.
+(Caitanya Caritãmrta 2.17.143)
+</p>
+<p class='vspace'>Mahãprabhu apareció en cinco formas como el Pañca-tattva, de modo de inundar al mundo con el amor de Dios. Solo los filósofos Mãyãvãdis pudieron de alguna manera escapar y evitar ser afectados.
+</p>
+<div class='vspace'></div><pre> mãyãvãdi karma-nistha kutãrkika-gana
+ nindaka pãsandi jata paruwã adhama
+ sei saba mahãdaksa dhãñã palãila
+ sei vanyã tã-sabãre chunite nãrila
+</pre><p class='vspace'>“Los Mãyãvãdis, trabajadores fruitivos, argumentadores, blasfemos, ateos y estudiantes inferiores eran muy expertos en evitar la corriente de prema. Ellos huían a la carrera y de ese modo no los pudo rozar”.
+(Caitanya Caritãmrta 1.7.29-30)
+</p>
+<p class='vspace'><strong>EL PELIGRO DE OIR LOS COMENTARIOS MÃYÃVÃDA</strong>
+</p>
+<p class='vspace'>Los Vedanta Sutras fueron escritos por Vyãsadeva de modo de explicar la filosofía del servicio devocional puro, pero en la interpretación Mãyãvãdi de los sutras, se niega la forma trascendental eterna del Señor. Además, esta interpretación elimina la eterna distinción entre el individuo y las almas supremas, negando efectivamente la existencia de una relación eterna de servicio entre el alma individual infinitesimal y el Señor Supremo. El servicio al Señor es de hecho la actividad constitucional eterna del alma, de manera que todo aquel que oye la filosofía Mãyãvãda compromete el verdadero entendimiento. Perdiendo la esencia de la devoción por el Señor, se pierde a sí mismo y se arruina. Por consiguiente se expresa:
+</p>
+<div class='vspace'></div><pre> jivera nistãra lãgi sutra kaila vyãsa
+ mãyãvãdi-bhãsya sunile haya sarva-nãsa
+</pre><p class='vspace'>“Vyãsadeva escribió los Vedanta Sutras para la salvación de las entidades vivientes, mas si ellas oyen la interpretación de los Mãyãvãdis, se arruinarán”.
+(Caitanya Caritãmrta 2.6.169)
+</p>
+<p class='vspace'>El buen amigo de Svarupa Dãmodara Gosvãmi, Bhagavãn Ãcãrya, tenía un hermano menor, Gopãla Bhattãcãrya, quien había estudiado el Vedanta en Benares. Cuando Gopãla fue a visitarlo a Puri, Bhagavãn Ãcãrya solicitó reiteradamente a Svarupa Dãmodara que oyera a su hermano explicar los Vedanta Sutras. Svarupa Dãmodara no estaba deseoso de hacerlo y explicó sus objeciones diciendo:
+</p>
+<div class='vspace'></div><pre> buddhi-bhrasta haila tomãra gopãlera sange  
+ mãyãvãda sunibãre upajila range
+ vaisnava hañã jebã sãriraka-bhãsya sune
+ sevya-sevaka-bhãva chãri ãpanãre isvara nãme 
+ mahã-bhãgavata jei krsna prãna-dhana jãra
+ mãyãvãda-sravane citta avasya phire tãnra
+</pre><p class='vspace'>“Has perdido tu inteligencia conservando la compañía de Gopãla, de modo que ahora has desarrollado el antojo de oír la filosofía Mãyãvãda. Cuando un Vaisnava escucha el Sãriraka-bhasya (el comentario Mãyãvãda sobre el Vedanta Sutra) de Sankara, deja de distinguir entre amo y sirviente y se considera el Señor Supremo. Oír la filosofía Mãyãvãda alterará sin remedio la conciencia de incluso un devoto mahã-bhãgavata, cuya vida y alma es Krishna”.
+</p>
+<p class='vspace'>Pese a la protesta de Svarupa Dãmodara, Bhagavãn Ãcãrya continuó defendiendo su deseo. El dijo: “Hemos entregado nuestra vida y alma a los pies de loto de Krishna. El comentario de Sankara no podrá cambiar nuestra mente”.
+</p>
+<div class='vspace'></div><pre> svarupa kahe tathãpi mãyãvãda sravane
+ cit brahma mãyã mithyã ei mãtra sune
+ jivã jñãna-kalpita isvare sakala-i-ãjñãna
+ yãhãra sravane bhaktera phãte mana-prãna
+</pre><p class='vspace'>Svarupa Dãmodara replicó: “Aún así, en la filosofía Mãyãvãda solo oímos que el Brahman es conciencia pura y que el universo de Maya es falso. También oímos que la conciencia independiente de la jiva individual es una mera imaginación y que todo es ignorancia, incluso el Señor Supremo. Cuando el devoto oye esas cosas, su corazón se rompe de dolor”.
+</p>
+<p class='vspace'>Bhagavãn Ãcãrya se sintió muy avergonzado y temeroso. No dijo nada, pero al día siguiente, pidió a Gopãla Bhattãcãrya que retornara al hogar en Bengala. (Caitanya Caritãmrta 3.2.94-100)
+</p>
+<p class='vspace'><strong>LA FORMA Y POTENCIAS DEL SEÑOR SON ETERNAS</strong>
+</p>
+<p class='vspace'>Vrindavan dãsa Thãkura escribe asimismo en el Caitanya Bhãgavata que Mahãprabhu formuló la siguiente crítica de la filosofía Mãyãvãda a Murãri Gupta:
+</p>
+<div class='vspace'></div><pre> hasta-pada-mukha mora nãhika locana
+ ei mata vede more kare vidambana
+ kãsite parãya betã prakãsãnanda
+ sei betã mora anga kare khanda khanda
+ bãkhanaye veda mora vigraha nã mãne
+ sarva anga haila kustha tabu nahi jãne
+ sarva-yajña-maya mora je anga pavitra
+ aja-bhava-ãdi gãya jãhãra caritra
+ punya pavitratã pãya je anga parase
+ tãhã mithyã bale betã kemana sãhase
+ sunaha murãri guota kahi mata sãra
+ veda guhya kahi ei tomãra gocara
+ ãmi yajña-varãha sakala veda-sãra
+ ãmi se karinu purve prthivi uddhãra
+ sankirtana ãrambhe mohãra avatãra
+ bhakta jana lãgi dusta karimu-samhãra
+ sevakera droha muñi sahite nã pãron
+ putra jadi haya mora tathãpi samhãron
+</pre><p class='vspace'>“Las Escrituras Védicas Me describen sin manos o pies, sin rostro ni ojos. De esta forma, se burlan de Mí. En Kãsi hay un necio llamado Prakãsãnanda que está enseñando esta doctrina. El también corta Mi cuerpo en pequeños trozos. Enseña las Escrituras Védicas pero no acepta la verdad de Mi forma eterna. Como resultado de sus ofensas, su cuerpo ha sido cubierto de lepra y aún así se rehusa a entender. Mi cuerpo es eternamente puro y la personificación de todos los sacrificios Védicos; Brahmã y Siva glorifican Mis actividades. Quienquiera toque Mi cuerpo gana mérito espiritual y se purifica del pecado, mas este necio insolente piensa que es ilusorio. Escucha Murãri y te diré la esencia confidencial de la enseñanza Védica. Yo soy la encarnación Yajña-varãha, la crema de la literatura Védica que levantó previamente el mundo. Ahora He venido en esta forma para predicar el movimiento de sankirtana. Por el bien de los devotos, destruiré a los malvados. No puedo tolerar a los que actúan como enemigos de Mis devotos; aunque sea Mi propio hijo, Yo lo destruiré”.
+(Caitanya Bhãgavata 2.3.36-44)
+</p>
+<p class='vspace'>Las Escrituras Védicas han utilizado palabras como nirãkãra (“informe”) y nirvisesa (“indiferenciado, sin atributos”) para negar la presencia de la forma material, actividades y atributos en el Señor Supremo. Pero posteriormente, prosiguen revelando la verdad de la forma eterna y atributos del Señor, Su aparición y pasatiempos en este mundo. En verdad, puesto que el Señor es omnipotente, nadie puede negar Su forma eterna. Las mismas Escrituras que niegan la forma y cualidades del Supremo por un lado, continúan posteriormente aprobando la forma y atributos del Señor. Por consiguiente, si examinamos las Escrituras en detalle, nos convenceremos que la forma trascendental y atributos del Señor se vuelven predominantes.
+</p>
+<div class='vspace'></div><pre> isvarera sri-vigraha sac-cid-ãnandãkãra
+ se-vigrahe kaha sattva-gunera vikãra
+ sri-vigraha je nã mãne sei ta pãsandi
+ adrsya asprsya sei haya yama-dandi
+</pre><p class='vspace'>“La forma trascendental del Señor Supremo es completa en eternidad, conocimiento y bienaventuranza. Tú sin embargo dices que esta forma es un producto de la cualidad material de la bondad. Quienquiera niegue la forma trascendental del Señor es ciertamente un ateo. No se debe ver ni tocar a esa persona que será castigada por el señor de la muerte”.
+(Caitanya Caritãmrta 2.6.166-167)
+</p>
+<div class='vspace'></div><pre> sarvaisvarya-paripurna svayam bhagavãn
+ tãnre nirakãra kari karaha vyãkhyãna
+ nirvisesa tãnre kahe yei sruti-gana
+ prãkrta nisedhi kare aprãkrta sthãpana
+</pre><p class='vspace'>“El Señor Supremo Mismo es completo en Su plena y divina majestad, mas tú Lo describes como amorfo. Esas Escrituras que expresan que El es impersonal, están sencillamente condenando la comprensión material de Su forma y atributos y prosiguen diciendo que Su forma y atributos son trascendentales y libres de características mundanas”.
+(Caitanya Caritãmrta 2.6.140-141)
+</p>
+<p class='vspace'>Krishnnadãsa Kavirãja cita un verso del Hãyasirsa-pañcarãtra que expresa en esencia lo mismo:
+</p>
+<div class='vspace'></div><pre> yã yã srutir jalpati nirvisesam
+ sã sãbhidhatte sa-visesam eva
+ vicãra-yoge sati hanta tãsãm
+ prãyo baliyah sa-visesam eva
+</pre><p class='vspace'>“Esos Upanisads que describen a la Verdad Absoluta como informe e impersonal, prosiguen evidenciando al final que El es una persona. Con un análisis próximo puede observarse que aunque tanto las descripciones impersonal como personal del Supremo son válidas, la concepción personal es la que en definitiva predomina en estas Escrituras”.
+(Caitanya-candrodaya-nãtaka 6.67)
+</p>
+<p class='vspace'>El Taittirya Upanisad (3.1) emplea los casos ablativo, instrumental y locativo para indicar las tres clases de atributos presentes en la Persona Suprema.
+</p>
+<div class='vspace'></div><pre> yato vã imãni bhutãni jãyante
+ yena jãtãni jivanti yat prayanty
+ abhisamvisanti tad brahma tad vijijñãsasva
+</pre><p class='vspace'>“El Brahman es eso de lo que todas estas entidades vivientes nacen, por el Brahman viven y después de la muerte, entran al Brahman. Eso es lo que debéis saber”.
+(Taittiriya Upanisad 3.1)
+</p>
+<p class='vspace'>Las palabras bahu syãm (“Yo me convertiré en muchos”) encontradas tanto en el Chãndogya Upanisad (6.2.3) como en el Taittiriya Upanisad, indican que el Señor Supremo tuvo el deseo de expandir Sus energías en la creación. Las palabras sa aiksata (“El miró la creación”) halladas en el Aitareya Upanisad, indican que el Señor Supremo tuvo el deseo de crear y que extendió Sus poderes sobre la naturaleza material. En tal sentido, se enfatiza claramente Su existencia antes de la creación.
+</p>
+<p class='vspace'>La palabra brahman se menciona repetidas veces en todos los Upanisads. Se explica que el Srimad Bhãgavatam es la esencia del Vedanta (sarva-vedãnta-sãram hi - Srimad Bhãgavatam 12.13.12). Allí, Krishna se nombra como la manifestación completa del Brahman:
+</p>
+<div class='vspace'></div><pre> aho bhãgyam aho bhãgyam
+ nanda-gopa-vrajaukasãm
+ yan-mitram paramãnandam
+ purnam brahma sanãtanam
+</pre><p class='vspace'>“ ¡Qué afortunados! ¡Qué afortunados son los residentes de la comunidad pastoril de Nanda! Ellos tienen al Brahman completo, la forma eterna, suprema y completa de bienaventuranza, como su amigo y pariente”.
+(Srimad Bhãgavatam 10.14.32)
+</p>
+<p class='vspace'>Cantidad de versos de los Upanisads declaran que la Verdad Suprema no posee manos o pies materiales, en el siguiente aliento, sin embargo, afirman que El se mueve por todas partes. Aquí se brinda un ejemplo de un verso semejante, del Svetãsvatara Upanisad:
+</p>
+<div class='vspace'></div><pre> apãni-pãdo javano grahitã
+ pasyaty acaksuh sa srnoty akarnah
+ sa vetti vedyam na ca tasyãsti vettã
+ tam ãhur agryam purusam mahãntam
+</pre><p class='vspace'>“El no tiene manos ni pies, empero, El corre y aferra todas las cosas. Aunque El no tiene ojos, El ve; no tiene oídos mas El oye. El sabe todo lo que hay que saber, mas nadie Lo conoce a El. El es llamado la gran Persona Original”.
+(Svetãsvatara Upanisad 3.19)
+</p>
+<p class='vspace'>Los Mãyãvãdis rechazan el significado directo de tales textos del Sruti y establecen que la Verdad Suprema es impersonal sobre el fundamento de una interpretación indirecta. Esto no altera el real significado personal de estos textos. La comprensión concreta del Brahman es el Señor Supremo Bhagavãn, pleno en seis opulencias y poseyendo una forma de bienaventuranza espiritual. Las Escrituras que declaran que El es informe, están simplemente expresando que El no posee una forma material. Los Mãyãvãdis agregan que El está inactivo, aunque siempre está ocupado en pasatiempos trascendentales deliciosos. 
+</p>
+<div class='vspace'></div><pre> na tasya kãryam karanam ca vidyate
+ na tat-samas cãbhyadhikam ca drsyate
+ parãsya saktir vividhaiva sruyate
+ svãbhãviki jñãna-bala-kriyã ca
+</pre><p class='vspace'>“El no posee ni sentidos ni actividades. Nadie es igual o superior a El. El posee una energía superior natural que se manifiesta diversamente como conocimiento, fuerza y acción”.
+(Svetãsvatara Upanisad 6.8)
+</p>
+<p class='vspace'>El significado de este verso es que el Señor Supremo no ejecuta actividades materiales. Esto se debe a que El no posee una forma material consistente en manos, pies o demás sentidos actuantes. Pese a carecer de sentidos materiales, El se ocupa en la obra de Sus diversiones divinas. Aunque situado en Su morada divina allende toda la ansiedad material, El es omnipenetrante. Nadie puede equipararse al Señor, qué decir de ser superior a El. El es asamordhva. Las potencias trascendentales del Señor Supremo Le son naturales. Estas potencias naturales son de tres clases: jñãna-sakti o el poder del conocimiento; bala-sakti o el poder de la fuerza y kriyã-sakti, el poder de la acción. Estas potencias son parã o primarias. Estas energías son también conocidas por los siguientes nombres: (1) cit-sakti o samvit-sakti; (2) sat-sakti o sandhini-sakti y (3) ãnanda-sakti o hlãdini-sakti.
+</p>
+<p class='vspace'>Los Mãyãvãdis no obstante, se esfuerzan mucho por probar que Krishna no tiene potencias, pese a que este verso declara claramente que El las posee naturalmente, intrínsecamente. Las energías del Señor Supremo se sub-clasifican además en tres: Su potencia interna o espiritual, Su potencia externa de Maya y la energía marginal que consiste en las entidades vivientes. 
+La esencia de los elementos conscientes y extáticos combinados de la potencia espiritual es el bhakti. Cuando se otorga a la entidad viviente y ésta la adopta de todo corazón, puede traspasar las cubiertas de la energía material o externa y entrar a la conciencia extática divina del amor puro por Krishna. Este gran logro es la consecuencia de la asociación con los devotos puros: seguidamente se establece en la conducta normativa de tales personas santas.
+</p>
+<p class='vspace'><strong>PLEGARIA DE BHAKTIVINODA THÃKURA</strong>
+</p>
+<p class='vspace'>El asociado eternamente liberado de Sri Caitanya Mahãprabhu, Sri Srila Bhaktivinoda Thãkura, ha escrito la siguiente canción en su Saranãgati: 
+</p>
+<div class='vspace'></div><pre> visaya-vimudha ãra nãyãvãdi jana
+ bhakti-sunya dunhe prãna dhare akãrana
+ ei dui sanga nãtha nã haya ãmãra
+ prãrthanã kariye ãmi carane tomãra
+ se duwera madhye visayi tabe bhãla 
+ mãyãvãdi-sanga nãhi kona kãla
+ visayi-hrdaya jabe sãdhu-sanga pãya
+ anãyãse labhe bhakti bhaktera krpãya
+ mãyãvãda dosa jãra hrdaya pasila
+ kutarke hrdaya tãra vajra-sama bhela
+ bhaktira svarupa ãra visaya ãsraya 
+ mãyãvãdi anitya boliyã saba haya
+ dhik tãra krsna-sevã sravana-kirtana
+ krsna ange vajra hãne tãhãra stavana 
+ mãyãvãda sama bhakti pratikula nãi
+ ataeva mãyãvãda sanga nãhi cãi
+ bhakativinoda mãyãvãda dura kari
+ vaisnava-sangete baise nãmãsraya dhari
+</pre><p class='vspace'>“Mas aquellos que están confundidos por la promesa del disfrute sensual y los impersonalistas Mãyãvãdis, carecen de devoción. Sus vidas no tienen propósito. Oh Señor, oro por no estar jamás sujeto a su asociación. De los dos, sin embargo, es preferible estar con un sensual que con un Mãyãvãdi, a cuya compañía espero no estar nunca sujeto. El sensual puede ser transformado por la asociación de un devoto cuya misericordia puede fácilmente tornarlo a una vida de devoción. Por otro lado, una vez que la contaminación impersonalista ha tocado el corazón de alguien, se vuelve tan duro como la piedra, con todo el amaneramiento del argumento falso. El Mãyãvãdi considera a la devoción en sí, al devoto y al objeto de la devoción como manifestaciones temporales del mundo material. Maldigo su supuesto servicio a Krishna, su atención al Bhãgavatam y el canto de los Santos Nombres. Sus plegarias a Krishna son como rayos en el cuerpo del Señor. No hay nada más pernicioso para la devoción que el Mãyãvãda, por consiguiente, deseo nunca jamás estar con gente adherida a dicha filosofía. Bhaktivinoda rechaza aquí a la filosofía Mãyãvãda y toma refugio en los Santos Nombres, en asociación de los devotos”.
+(Saranãgati, 27)
+</p>
+<p class='vspace'>La consecuencia de la mala asociación es que uno no se libera del deseo material. Cuando nuestra mente es superada por el alborozo y desconcierto resultantes del apego a los objetos de los sentidos, ¿cómo puede algo tan puro como el Krishna prema encontrar allí cabida? O, como escribe Krishnadãsa Kavirãja Gosvãmi:
+</p>
+<div class='vspace'></div><pre> bhukti-mukti-ãsi vãñchã jadi mane haya
+ sãdhana karile pema utpanna nã haya
+</pre><p class='vspace'>“Si los deseos por el disfrute sensual y la liberación encuentran sitio en el corazón del devoto, toda su práctica de actividades devocionales no resultará en el amor por Krishna”.
+(Caitanya Caritãmrta 2.19.175)
+</p>
+<p class='vspace'>Entre las diversas prácticas del servicio devocional, el canto de los Santos Nombres ocupa el sitio de honor. Los que tienen otros deseos y están atrapados en la compañía de los no devotos, sin embargo, pueden cantar por miles de vidas sin  obtener jamás  la meta del amor por Krishna. Por consiguiente, Jagadãnanda Pundit escribió: 
+</p>
+<div class='vspace'></div><pre> asãdhu-sangete bhãi nãma nãhi haya
+ nãmãksara bãhirãya bate nãma kabhu naya
+ kabhu nãmãbhãsa sadã haya nãma aparãdha
+ e saba jãnibe bhãi krsna-bhaktir bãdha
+ jadi karibe krsna-nãma sãdhu-sanga kara
+ bhukti-mukti-siddhi-vãñchã dire parihara
+</pre><p class='vspace'>“ ¡Oh hermano! No puedes cantar el Santo Nombre en asociación de los no devotos. Puede que los sonidos del Santo Nombre emanen de tu boca, pero no será realmente el Nombre. A veces será el reflejo del Nombre (nãmãbhãsa) y otras veces canto ofensivo (nãmãparãdha), pero hermano, debes saber que en ambos casos, esta clase de canto interfiere con el logro de la devoción pura por Krishna. Si deseas cantar los Santos Nombres, luego asóciate con devotos y mantén alejados los deseos del disfrute sensual, la liberación y los poderes yóguicos”.
+(Prema-vivarta 7) 
+</p>
+<div class='vspace'></div><pre> dãsa aparãdha tyaja mãna-apamãna
+ anãsaktye visaya bhuñja ãra laha krsna-nãma
+ krsna-bhaktira anukula saba karaha svikãra
+ krsna-bhaktira pratikula saba kara parihãra
+ jñãna-yoga-cestã chãra ãra karma-sanga 
+ markata-vairãgya tyaja jãte deha-ranga
+ krsna ãmãra pãle rãkhe jãna sarva-kãla
+ ãtma-nivedana dainye ghucão jañjãla
+ sãdhu pãowã kasta bara jivera jãniyã
+ sãdhu-bhakta rupe krsna ãila nadiyã
+ gorãpada ãsraya karaha buddhimãn
+ gorã bai sãdhu-guru ãche kebã ãna
+</pre><p class='vspace'>“Elimina las diez ofensas al Santo Nombre y no te preocupes por el respeto o la crítica. Consume lo que necesitas sin apego y canta siempre el Santo Nombre. Acepta todo lo que favorece la devoción a Krishna y rechaza todo lo que interfiera con esa práctica. Abandona todos los esfuerzos por la liberación o el poder místico, así como la devoción mezclada con karma. Por encima de todo, deja de lado la renuncia falsa de los monos, en quienes moran la conciencia corporal y el apego por la gratificación de los sentidos. Permanece fuerte en el conocimiento de que Krishna siempre está velando por ti. Ofrécete completamente a Krishna y libérate con humildad de todos los enredos. Es muy difícil que una persona común encuentre la asociación de las verdaderas personas santas. Krishna Mismo lo sabe y así El vino gentilmente a Nadiyã en la forma de un devoto santo. La persona inteligente toma refugio en los pies de loto de Mahãprabhu, pues esa persona sabe que excepto Mahãprabhu, no hay ningún santo o maestro espiritual verdadero”.
+</p>
+<p class='vspace'>La única forma de librarse de la mala asociación es reemplazándola por la buena:
+</p>
+<div class='vspace'></div><pre> sãdhu sanga krpã kim vã krsnera krpãya
+ kãmãdi-duhsanga chãri suddha-bhakti pãya
+</pre><p class='vspace'>“Ya sea merced a la bendición de la asociación devocional o a través de la misericordia de Krishna Mismo, uno se libera de la mala asociación resultante de la lujuria, la ira y la codicia y obtiene el servicio devocional puro”.
+(Caitanya Caritãmrta 2.24.97)
+</p>
+<div class='vspace'></div><pre> sat-sangãn mukta-duhsango
+ hãtum notsahate budhah
+ kirtyamãnam yaso yasya
+ sakrd ãkarnya rocanam
+</pre><p class='vspace'>“Una vez liberada de la mala asociación, guardando la compañía de los santos, la persona inteligente se rehusa a dejar de escuchar las glorias del Señor, que son tan placenteras, aunque se oigan una sola vez”.
+(Srimad Bhãgavatam 1.10.11)
+</p>
+<p class='vspace'>Así pues, el Bhãgavatam aconseja:
+</p>
+<div class='vspace'></div><pre> tato duhsangam utsrjya
+ satsu sajjeta buddhimãn
+ santa evãsya chindanti
+ mano-vyãsangam uktibhih
+</pre><p class='vspace'>“La persona inteligente por lo tanto debe abandonar toda mala asociación y aferrarse a la compañía de los devotos. Esos santos son los únicos que a través de sus instrucciones pueden cercenar nuestros apegos mentales insalubres”.
+(Srimad Bhãgavatam 11.26.26)
+</p>
+<p class='vspace'>Hay que estar atento y evitar la asociación del sexo opuesto y los no devotos, mas si uno se conserva en buena compañía, los peligros del mundo desaparecen. De tal modo, Narottama dãsa canta en su Prema-bhakti-candrikã: “ ¿Qué pueden hacer la lujuria, la ira y la codicia al practicante que posee la asociación de las personas santas?”
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_05.html'>Servir a los Devotos</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_07.html'>Tomando Refugio en Krishna</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:22 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

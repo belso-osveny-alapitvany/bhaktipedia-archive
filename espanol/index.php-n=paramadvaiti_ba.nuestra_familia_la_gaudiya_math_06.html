@@ -1,0 +1,536 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - III Parte</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - III Parte"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramadvaiti Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a>
+</p>
+<div class='vspace'></div><h2>III Parte</h2>
+<div class='content-box' > 
+<p><a name='content' id='content'></a>
+</p><ul><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#a'>Sri Caitanya y Su relación con las Vaisnavas Sampradayas</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#b'>Mismos pensamientos en otras religiones</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#c'>Castas y culturas / Complejos de Superioridad e Inferioridad</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#d'>¿Es la Gaudiya Math  sectaria?</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#e'>Vaisnavismo real o apariencia</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#f'>Relación con Babajis</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#g'>Relación con los Goswami de Casta y Smarta Brahamanas</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#h'>Mayavadis</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#i'>Imitadores</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#j'>Templos en el Reino de Maya</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#k'>Espíritu  Partidista,  el gran enemigo de la Verdad</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#l'>Ramas del Árbol Caitanya</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#m'>Pureza entre Acaryas</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#n'>No ser negligente con ningún Vaisnava</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#o'>Nada malo pasa sin una buena razón</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#p'>Lecciones para ser aprendidas</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#q'>Transición Acarya / Teoría y Práctica</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#r'>El póstumo escape Rittvik</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#s'>El acarya designado por un comité</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#t'>La elección de un Acarya como sucesor exclusivo</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#u'>La fila es solo la estampilla de Guinea; el hombre es el oro de eso</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#v'>Reiniciación / Demoníaca y Divina</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#w'>Cortesía trascendental</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#x'>Costumbres en la Gaudiya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#y'>Origen del alma</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html#z'>Cómo el Vaisnava Siddhanta considera los derechos de copia de la literatura trascendental</a>
+</li></ul><p><a name='content-end' id='content-end'></a>
+</p></div>
+<p class='vspace'><a name='a' id='a'></a>
+</p><h3>Sri Caitanya y Su relación con las Vaisnavas Sampradayas</h3>
+<p>El Guru paramapara de la Gaudiya Math estableció el contacto con la Brahma-Madhva sampradaya. Esta más otras tres sampradayas ( Sri Sampradaya, Rudra sampradaya y Kumara sampradaya). El Brahma sampradaya enseña la cultura Védica al mundo. Hay algunos puntos de los cuatro sampradayas que fueron incorporados por Sri Caitanya Mahaprabhu dentro del Brahma - Madhva Gaudiya Sampradaya.
+</p>
+<p class='vspace'>En la narración de Sri Navadvip Dham - Mahatmya Srila Bhaktivinode Thakur relata la época cuando Sri Nityananda Prabhu lleva a Srila Jiva Goswami en un viaje. Aquí es mencionado como Sri Caitanya Mahaprabhu aceptó dos principios de los cuatro sampradayas y éstos los incorporó dentro de Su propio sampradaya.  Es también mencionado que los cuatro Acaryas principales de estas cuatro líneas nacieron como devotos en el lila del Señor Caitanya:
+</p>
+<p class='vspace'>Ramanuja del Sri Sampradaya predicó la filosofía del dasya rasa y visishta advaita. El renació como Gaura -bhakta llamado Ananta, y vivió cerca de la casa de Vallabhacarya. Sri Caitanya Mahaprabhu aceptó los siguientes dos principios de Lakshmi Sampradaya :
+</p><ol><li>El concepto de devoción desinteresado libre de karma y jñana - ananya bhakti.
+</li><li>Servicio a los devotos - bhakta- jana- seva.
+</li></ol><p class='vspace'>Madhva del Brahma sampradaya predicó la filosofía dvaita.
+</p>
+<p class='vspace'>Los siguientes puntos fueron aceptados de esta sampradaya:
+</p><ol><li>El combate a la filosofía mayavadi - Keval - advaita - nirasana.
+</li><li>Adoración a la deidad de Krishna y entendimiento de ser eternos  Krsna- murti - sevana.
+</li></ol><p class='vspace'>Vishnusvami  de Rudra sampradaya predicó la filosofía suddha advaita. Renació como gaura- bhakta llamado Vallabha Bhatta quien perfeccionó su sampradaya por la misericordia de Sri Gauranga. Sri Caitanya Mahaprabhu aceptó los siguientes puntos de este sampradaya:
+</p><ol><li>El sentimiento de total dependencia hacia Krishna -tadiya- sarvasva - bhava.
+</li><li>Servicio devocional espontáneo - raga - marga.
+</li></ol><p class='vspace'>Nimbarka del Kumara sampradaya predicó la filosofía dvaita advaita. Renació como gaura bhakta llamado Keshava Kshmiri. Estos dos puntos fueron aceptados:
+</p><ol><li>La necesidad de refugio exclusivo en Radhika -ekanta radhikasraya.
+</li><li>El exaltado humor de las gopis por amor a Sri Krishna-  gopi bhava.
+</li></ol><p class='vspace'>El concepto  teísta concentrado sobre todo en la adoración al Señor le da a los Vaisnavas una causa común. Su enfoque principal es avisesa-vada, la explicación monoteísta del Vedanta. La adoración de la Deidad del Señor Supremo, y el respeto mantenido a los grandes Acaryas en todas las sampradayas  son característicos  de las tradiciones Vaisnava.
+</p>
+<p class='vspace'>En el libro  prema pradipa, Srila Bhaktivinode Thakur señala lo siguiente: 
+</p><ol><li>El Señor Supremo es uno sin un segundo. El posee todas las potencias 
+</li></ol><p>trascendentales y controla todas las leyes.
+</p><ol><li>El Señor Supremo tiene una belleza exquisita, toma una forma espiritual auspiciosa. Esta forma es trascendental a todas las leyes del mundo material. En El todas las contradicciones se reconcilian maravillosamente. Aunque tiene forma, El es permanente. Aunque es hermoso, los sentidos mundanos no pueden percibirlo. Aunque esta situado en un solo lugar, el esta simultáneamente presente en todos lados.
+</li><li>Lo animado y lo inanimado nacen de sus energías. El es creador, mantenedor y destructor de todo tiempo, lugar y leyes.
+</li><li>La entidad viviente tiene una constitución espiritual, pero por el deseo del Señor, ella es condicionada por la naturaleza devocional y por ello disfruta o sufre, bajo estas leyes. Sin embargo, por el proceso del servicio devocional, ella es libre de lo material.
+</li><li>Jñana y Karma son llenas de hardship. Cuando jñana y karma sirven el propósito del bhakti, no hay falta. Sin embargo, del jñana y karma, el bhakti es totalmente independiente.
+</li><li>La entidad viviente debe asociarse con sadhus y realizar servicio devocional.
+</li></ol><p class='vspace'>La tradición de la Gaudiya Math nos enseña que la divina pareja de Vrindavan es la forma original de Dios, y Sri Caitanya Mahaprabhu es Krishna mismo combinado con su querida Srimati Radharani. Sri Caitanya Mahaprabhu vino a entregarnos la verdad. El es el yuga avatar, que distribuyó el canto en congregación de los Nombres Sagrados al mundo entero. Su aparición hizo a Sri Navadvip idéntica Vrindavan. Sri Caitanya Mahaprabhu es también llamado bhakta avatar, y algunas veces el avatar escondido, ya que escondía su naturaleza divina y predicaba Krishna bhakti absorto en el modo de separación. No todos los sampradayas abrazan esta ontología, sino se concentran mas en la adoración de Sri Laskmi Narayan, Sri Sita Ram, Sri Nataji, Sri Balaji, y Sri Venkateshvara. Sin embargo, ellos mantienen su adoración a la Suprema Personalidad de Dios. Sumado a esto, es que Sri Caitanya Mahaprabhu se ha vuelto cada vez mas aceptado como el yuga avatar. En Vrindavan, así como en el Sur de India, Sus lilas han sido incluidos en obras de teatro, y todo el mundo ha aprendido sobre la gloria del sanatana- dharma a través de Su influencia.
+</p>
+<p class='vspace'><a name='b' id='b'></a>
+</p><h3>Mismos pensamientos en otras religiones</h3>
+<p>La Gaudiya Math reconoce el hecho de que el Señor Supremo ha manifestado su mensaje a la humanidad en otras religiones también. Srila Bhaktivinode Thakur, por ejemplo, entregó un gran respeto a las enseñanzas de Jesús llamándolo El Salvador de Jerusalén, y también escribió comentarios sobre los Mandamientos. Otros grandes Acaryas han predicado sobre Jesús con el mismo espíritu. El presidente de la Visva Vaisnava Raj Sabha Srila B.P. Puri Maharaj dijo. " La contribución de Jesús al mundo del teísmo no puede ser ignorado". Sri Caitanya Mahaprabhu es también conocido por hablar de los Musulmanes en variadas ocasiones. El incluso se refirió al Coran y aceptó a Alá como otro nombre de Visnu.
+</p>
+<p class='vspace'>Mientras la Gaudiya Math acepta la validez del teísmo puro, se ha vuelto necesario aclarar ciertas áreas en las cuales los seguidores han desviado las enseñanzas originales. Ejemplo de esto, es que en sus múltiples encuentros con Cristianos, Srila A. C. Bhaktivedanta Swami Maharaj explicaba en que " No matarás" incluye a los animales también. De hecho, el Padre Cancianni de Roma, publicó un libro llamado Jesús fue vegetariano.  En esta búsqueda, el descubrió que los primeros Cristianos fueron perseguidos por las autoridades romanas ya que ellos estaban predicando y propagando el vegetarianismo. Debe ser notado, que en Gospel del doce, una de las escrituras cristianas antiguas, Jesús era encontrado predicando sobre el vegetarianismo, reencarnación, y ley del karma, casi con el mismo vocabulario de la fe Vaisnava. Considerando que los esenios ( comunidad de Jesús), eran conocidos por ser estrictos vegetarianos, se puede concluir que los actuales Cristianos comedores de carne han desviado las reales enseñanzas. Tales cosas suceden en Kali Yuga, en todas las religiones. Tenemos que encontrar la esencia. De esta forma se volverá claro que las verdaderas religiones teístas, enseñan el mismo estándar de moral que guía a la humanidad hacia el servicio devocional. Aquellos que desean tener acceso a los profundos y bien conocidos mensajes del Señor deben estudiar la profunda ontología  de cada religión. Tales estudios, manejados por verdaderos devotos, nunca se convertirán en la causa de disputas violentas.
+</p>
+<p class='vspace'>La Gaudiya Math ha convertido miembros de todas las religiones y escuelas al pensamiento del Vaisnavismo.  Manteniendo, el espíritu positivo de cooperación con otras religiones por el mejoramiento de la moral humana, siendo esto aceptado por los Vaisnavas de la Gaudiya. Al mismo tiempo la Gaudiya Math no dejará ningún esfuerzo para hacer a todos felices en este mundo con el compartimiento respetuoso de los regalos de Sri Caitanya Mahaprabhu.
+</p>
+<p class='vspace'><a name='c' id='c'></a>
+</p><h3>Castas y culturas - Complejos de Superioridad e Inferioridad</h3>
+<p>Las escrituras apoyan completamente la conversión de las personas al Vaisnavismo, además indican el derecho y el deber de todos a practicar el alto servicio de la fe Vaisnava. De una forma u otra, muy profundamente en las almas condicionadas hay prejuicios en contra de otros, quienes pertenezcan a diferentes culturas, castas o razas. Cualquier influencia del pasado que haya impregnado esta filosofía  de imperfección, se mantiene como una penosa realidad. Estas dificultades existen incluso a través de los Vaisnavas en India. Allí, por ejemplo, los Vaisnavas neófitos de origen Bengali, no tranzan con los de habla de origen y habla Hindi. Similarmente, cuando los occidentales se mostraron predicando sobre el Vaisnavismo con vestimentas de sanyassis y de maestros espirituales, no fue fácil para los Vaisnavas de India acomodarse a ellos. Hubo una rápida aceptación y bienvenida de parte de los mayores Vaisnavas, pero no fue fácil para aquellos que aun están confundidos sobre la etiqueta Vaisnava y el siddhanta.
+</p>
+<p class='vspace'>Europeos, y especialmente americanos con complejos de superioridad con respecto a países pobres y de diferencias raciales dejan también una mala idea del comportamiento de los jóvenes Vaisnavas occidentales. Sin embargo, las comunidades Vaisnavas han logrado tener éxito en conjunto de otras personas, el poder vivir y trabajar juntos con un objeto en común.
+</p>
+<p class='vspace'>Srila Rupa Goswami personalmente, criticó el que un Vaisnava sea considerado de acuerdo a su nacimiento. Por lo que debemos ser muy cuidadosos en este tema. La Gaudiya Math se está ramificando alrededor de todo el mundo, y severas pruebas se tendrán que pasar para probar que vemos mas allá del cuerpo y nos comportamos como verdaderos hermanos y hermanas.
+</p>
+<p class='vspace'>No es solo miedo a lo desconocido lo que se mantiene en nuestro camino, sino también es nuestro egoísmo lo que se opone a nuestra verdadera visión. Algunas veces sentimos antipatía hacia un devoto o grupo de devotos, y al momento siguiente sentimos simpatía por otros. Ambos sentimientos son errados. Debemos mirar a todos los Vaisnavas como adorables prabhus. Cualquier tipo de inclinación hacia alguna clase de prejuicio está en contra del mas alto principio.
+</p>
+<p class='vspace'>Podemos sentir algunas veces que es necesario predicar a alguna clase social aparte del publico en general debido a su inaccesibilidad a la plataforma común. Esto se puede hacer, pero es peligroso; incluso si los reclutados de esa orden social disminuyen sus plataforma de prejuicios y honran a todos los Vaisnavas por igual, sería difícil que ellos se conviertan en verdaderos Vaisnavas. Un ejemplo de esto, fue Sri Caitanya Mahaprabhu al negarse a ir y visitar al rey devoto Prataparudra Maharaj, ya que un renunciante no debe asociarse con gente con posiciones terrenales. Por otro lado, El le ofreció sus mas altos respetos al devoto nacido Musulmán, Srila Haridas Thakur.
+</p>
+<p class='vspace'>Cualquier complejo de superioridad relacionado en un Vaisnava neófito debe ser claramente entendido como un enemigo del verdadero sentimiento Vaisnava. Por otro lado, cualquier tipo de sentimiento de inferioridad es tradicionalmente aceptado como una buena excusa para asegurar la posición de uno como el más bajo de todos los sirvientes. 
+</p>
+<p class='vspace'>El comportamiento de Srila Sanatan Goswami y Srila Haridas Thakur en Jagannath Puri da una gran muestra de esto. Por esto, es apropiado para los Vaisnavas occidentales sentirse bajos por su nacimiento, pero por otra parte es una ofensa que un brahmin nacido Vaisnava se considere superior.
+</p>
+<p class='vspace'>Tener una mente amplia es el concepto del verdadero mundo Vaisnava y de sus actividades de prédica. Personas con una mente estrecha, tratando de aferrarse a los privilegios del nacimiento están lejos de actualización, y deberían hacerse buscadores de la gloriosa generosidad de los sabios Védicos. Por la gracia de Sri Caitanya Mahaprabhu, la  real Familia Mundial Vaisnava emergerá para abrazar al mundo con Unión en Diversidad. incluyendo todas las culturas y personas.
+</p>
+<p class='vspace'>Hemos sido testigos de ver Alemanes, Judíos y Árabes bailando en Sri Vrindavan Dham, celebridades musicales guiando a millones para escuchar el Mahamantra, obras Vaisnavas surrealistas predicando en contra de los efectos de la era de Kali, y templos de Krishna en rascacielos e Iglesias Cristianas. No hay nada que Krishna no pueda hacer.
+</p>
+<p class='vspace'><a name='d' id='d'></a>
+</p><h3>¿Es la Gaudiya Math sectaria?</h3>
+<p>Todas las formas de Dios son eternas y tienen posición trascendental. Krishna y Visnu por ejemplo, tienen pasatiempos separados pero ambos pertenecen a la misma verdad divina. No estamos para hacer controversia discutiendo sobre los diferentes lilas del Señor, sino para apreciar las muchas maneras en las cuales el Señor se manifiesta y la variedad de relaciones que desarrolla con todos Sus devotos. La verdad de las almas condicionadas acercándose al entendimiento espiritual, por la intervención de la gracia divina crea la vasta diversidad que encontramos. Si no apreciamos eso, deberíamos dudar de nuestras convicciones y de cómo las obtuvimos.
+</p>
+<p class='vspace'>Buscadores sinceros de la verdad han recibido ayuda desde adentro y desde afuera a través de los años. Al mismo tiempo, siempre hay tendencias corruptivas del alma condicionada en toda corriente espiritual. Aun así, Srila A. C. Bhaktivedanta Swami Maharaj a menudo decía: “ El amor por Dios es la meta mas alta de la vida. No importa como una persona obtuvo este amor por Dios. Si lo tiene es una persona perfecta.”
+</p>
+<p class='vspace'>En relación con otras Vaisnava sampradayas, este mismo principio se aplica. Como nuestro acarya importante Srila Bhaktivinode Thakur enseñó: “Los Vaisnavas están felices con cualquier manifestación de teísmo en este mundo.”
+</p>
+<p class='vspace'>Gaudiyas Vaisnavas tomarán cualquier pensamiento válido sin considerar de donde venga. Por ejemplo, la declaración de Hegel: “ Morir para Vivir”, fue usualmente utilizada por Srila B. R. Sridhar Maharaj para describir la rendición del alma hacia Krishna. Vaisnavas desean también, exponer sus enseñanzas a las críticas constructivas, de una forma no dogmática  Naturalmente la Gaudiya Math enseña varios principios religiosos y rechaza aquellos que intentan dañar otras entidades vivientes. Como tal, en el mundo de la irreligión y de la corrupción, los maestros de las Gaudiya Math sobresalen como revolucionarios expandiendo un mundo consiente de su propio comportamiento y satisfacción espiritual: ellos no son yogis que promueven la salvación individual y la indiferencia hacia un mundo sufriente. La Gaudiya Math quiere contribuir con lo que ha recibido de la sucesión discipular a todos los pensadores del mundo de todas las escuelas de pensamientos y servir a la humanidad en general. Quiere distribuir el feliz néctar dado por Dios mismo. En la forma de Sri Caitanya Mahaprabhu, introdujo el canto congregacional se los Nombres Sagrados. El divino principio lila de Sri Krishna de amor puede curar a la humanidad de la adicción  a la lujuria mundana y no hay espacio para el sectarismo en este esfuerzo.
+</p>
+<p class='vspace'><a name='e' id='e'></a>
+</p><h3>Vaisnavismo real o apariencia</h3>
+<p>La naturaleza material y los agentes de la ilusión (Maya) a menudo vienen a perturbar la fe Vaisnava. Debido a esto, surgen dificultades entre quienes siguen los altos ideales Vaisnavas y aquellos que simplemente dicen hacerlo. La mentalidad tramposa llamada vipralipsa se manifiesta donde sea en este mundo material. Los movimientos Vaisnavas no están inmunes a esto. Por esto, es el deber de los acaryas de siempre mantener la pureza en sus campos de influencia. Ellos deben denunciar cualquier mal uso que pueda perturbar las actividades Vaisnavas, y causar impresiones erróneas en la opinión pública hacia los Vaisnavas. 
+</p>
+<p class='vspace'>Vaisnavismo – real o apariencia- es un tema que debe ser regularmente discutido entre los Vaisnavas para así protegernos de nuestra inmadurez, de nuestras mentes frágiles y de las montañas del ego falso. Cada alma sincera, practicante de los preceptos ideales Vaisnavas, puede convertirse en un alma pura. Si las historias de los Goswamis, Smarta Brahmana, Prakrita Sahajiyas, e Institucionalistas han creado una influencia perturbadora, esto lo confirma el famosa sloka:
+</p>
+<div class='vspace'></div><div class='verse-center' > 
+<p>sruti-smriti-purandadi-pancaratra-vidhim vina<br />aikantiki harer bhaktir	utpatayaiva kalpate
+</p></div>
+<p class='vspace'>“Servicio devocional que no es ejecutado de acuerdo a lo veredicto en las escrituras reveladas, es tan solo una perturbación innecesaria  la sociedad humana” (Bhakti rasamrita-sindhu 1.2.101).
+</p>
+<p class='vspace'>Tenemos que hacer  todo lo que podamos para alcanzar la más alta pureza en nuestra vida espiritual y en nuestras misiones espirituales. Aquellos que siguen el sanatan-dharma están siempre dedicados a pelear contra la tiranía, en el mundo físico y en el campo del pensamiento. Si cualquier persona manifiesta síntomas de un verdadero Vaisnava y promueve los valores puros Vaisnavas, entonces todos los corazones serán felices.
+</p>
+<p class='vspace'><a name='f' id='f'></a>
+</p><h3>Relación con Babajis</h3>
+<p>Renunciantes en nuestro sampradaya anteriormente vestían de la forma en que los babajis lo hacen. Los seis Goswamis de Vrindavan vestían de aquella forma. Al mismo tiempo, ellos predicaban vigorosamente a través de libros, de clases regulares, inspirando la construcción de grandes templos, y estableciendo la adoración a las Deidades con gran amor. Ellos establecieron los lugares sagrados y enviaron a sus seguidores a distribuir la literatura en todas las direcciones. Durante la época de Srila Prabhupad Bhaktisiddhanta Sarasvati Thakura, babajis como Srila Jagannath das Babaji Maharaj y Srila Gaur Kishor das Babaji Maharaj transportaban la tradición. Incluso hoy en día vemos varios babajis en el Sagrado Dham quiénes predican la Gaudiya Math , sirviendo de esta forma al Dham y a los devotos que visitan allí.
+</p>
+<p class='vspace'>Sin embargo, debido a la influencia de la era de Kali, y de las muchas actividades infortunadas de gente que vestía como babaji, esta vestimenta no estaba considerada entre las personas cuando la Gaudiya Math comenzó. Muchos de estos llamados babajis estuvieron viviendo con donaciones de devotos, y de gente ignorante sin crear una real contribución a la misión de Sri Caitanya Mahaprabhu. Debido a sus cuestionables comportamientos, muchos estuvieron bajo la sospecha de la opinión pública. A través de los grupos babajis que no eran favorables a la Gaudiya Math fueron los seguidores de un Babaji quienes se volvieron bien conocidos por cantar su “propio” mantra en todos lados. Estos babajis no fueron aceptados por los verdaderos babajis de Radha Kunda.
+</p>
+<p class='vspace'>Considerando a Sri Radha Kunda como el más sagrado de los lugares, la Gaudiya Math llevó la gloria de Sri Radha Kunda alrededor del mundo. Aun, algunos de los residentes de los bordes del Radha Kunda, no aprecian lo que la Gaudiya Math ha hecho. Srila Prabhupad Bhaktisiddhanta Sarasvati Thakura denunció claramente estas tendencias  materialistas entre los residentes del Dham. Al mismo tiempo, entregó un claro entendimiento de lo que un verdadero babaji es; i.e. quienes merecen y quienes no merecen el respeto dado a un verdadero renunciante. Por ello no hay oportunidad para el conflicto. 
+</p>
+<p class='vspace'>La Gaudiya Math acepta verdaderos babajis y Dham gurus, pero se mantiene alejada de aquellos que tienen falta de esencia.
+</p>
+<p class='vspace'><a name='g' id='g'></a>
+</p><h3>Relación con los Goswami de Casta y Smarta Brahamanas</h3>
+<p>Una persona sólo puede ser aceptada como un Vaisnava genuino si acepta los preceptos básicos del sampradaya y puede explicar su curso de acción de acuerdo a los shastras. Los Goswamis de Casta tales como los descendientes de Nityananda Vamsa, Advaita Vamsa y Smarta Brahmanas quieren limitar la misericordia a los derechos y deberes adquiridos a través del nacimiento de uno. Sri Caitanya Mahaprabhu, junto a Srila Bhaktivinode Thakur y los acaryas siguientes de su línea han refutado y debatido activamente esta idea en varios debates.
+</p>
+<p class='vspace'>El alto sacerdote de los demonios, a menudo mencionado en los Puranas, es llamado Sukracharya. La traducción literal es “ Acarya Seminal” o alguien que declara que la conexión del nacimiento es la única forma de transmitir posiciones poderosas a las futuras generaciones. Esta propuesta ha sido siempre refutada por las Vaisnavas sampradayas. Hay también bastantes historias que hablan de esto. Una historia que sobresale es la de Valmiki, que era conocido como un asesino, y que fue transformado por la iniciación recibida de Srila Narada Muni, y convirtiéndose así en el gran autor del Ramayana, la escritura sagrada.
+</p>
+<p class='vspace'>En nuestro mundo moderno es común que la gente que nazca en familias no Védicas y anteriormente adictas a actividades pecaminosas, comiencen misiones Vaisnavas e inicien a otros (incluyendo brahmanas nacidos Hindúes),  dentro de la tradición brahmin Vaisnava. Esta es una revolución por si misma que ha ayudado a crear un fortalecimiento y una renovación espiritual entre los Hindúes nacidos en India y en todo el mundo.
+</p>
+<p class='vspace'><a name='h' id='h'></a>
+</p><h3>Mayavadis</h3>
+<p>Vaisnavas e impersonalistas tienen una ruptura que retrocede a los tiempos Puranicos y a los grandes acaryas védicos. La Gaudiya Math continúa para tomar la posición correcta en contra de aquellos que se hacen llamar Dios o que de otra forma, señalan que Dios no tiene personalidad. Este no es un foro para entrar y mencionar profundamente una discusión ontológica de esta ruptura.  Aun así, debe ser mencionado que el mundo material está lleno de teorías y especulaciones inclinándose en lo advaita, monístico, mundo visto impersonalmente, lo que ha creado un desastre en las mentes de las almas condicionadas. 
+</p>
+<p class='vspace'>Incluso aunque varios impersonalistas compartan una buena cantidad del Siddhanta Védico Vaisnava, aun así se mantiene la apatía para servir en la eternidad a un Dios personal haciendo su compañía peligrosa a la fe tierna de amor. Por lo tanto la Gaudiya Math ha tomado el fuerte logo de monoteísmo puro con el propósito de salvar al mundo del nihilismo y del impersonalismo. Nuestros acaryas también son conocidos por la fortaleza de sus  enseñanzas que han convertido a mayavadis a la fe Vaisnava. 
+</p>
+<p class='vspace'>Seguidores de las escuelas Vedanta que excluyen el trascendental lila del Señor desde su concepción de Nityananda, no son considerados favorables a los sentimientos devocionales del Vaisnava sanga. Como tal, ellos deben ser evitados y no pueden ser considerados teístas en el verdadero sentido de la palabra. Srila Bhaktivinode Thakur incluso escribió que uno no debe asociarse con aquellos que dudan en criticar la interpretación impersonal del Vedanta.
+</p>
+<p class='vspace'>Ya que, la interpretación impersonal  de la palabra teísmo se contradice con el entendimiento del diccionario, uno puede entender fácilmente cómo tal interpretación se vuelve fuerza de varios argumentos. Theo es Dios, y Dios es la Persona Suprema: aquel que no tiene igual- con nadie superior a Él. Si el Supremo no tuviera personalidad, de alguna manera el se volvería menos que todos los pensadores, sentimentales y querientes de Su creación. Esta idea es inaceptable para el Vaisnava, así el tampoco acepta el Budismo u otras interpretaciones impersonales de la verdad final.
+</p>
+<p class='vspace'>La ultima trampa de la ilusión, incluso si está acompañada de austeridad y de un comportamiento piadoso, es la presunción impersonalista. Sin una verdadera humildad, el mayavadi  concluye: “ No hay en ente superior o una autoridad sobre mi. Me puedo salvar yo solo. Mi individualidad fue algo “ bueno para nada””. Los Vaisnavas sienten una profunda compasión por las almas con tal frustrado concepto, pero ellos también entienden que el mundo del amor esta escondido para personas con tal actitud. Por ellos los Vaisnavas tratan de propagar los Nombres Sagrados del Señor para purificar el mundo de tales actitudes. 
+</p>
+<p class='vspace'><a name='i' id='i'></a>
+</p><h3>Imitadores</h3>
+<p>Aquellos que se hacen llamar Vaisnavas, pero que han introducido cambios inautorizados de conducta o de conceptos dentro de sus prácticas y filosofía, son llamados imitadores o prakrita sahajiyas. Ellos se han desviado del sampradaya. En India hay varios grupos conocidos como imitadores, y sus mal interpretadas enseñazas tales como Auls, Bauls, Gauranga Nagari y Sakhi Bheki, y varios mas, antiguos y nuevos. Sumado a esto, algunos neófitos dicen estar en la plataforma de Conciencia de Krishna, mientras que no lo están.
+</p>
+<p class='vspace'>Para estar capaz de identificar a imitadores, Srila Bhaktisiddhanta Sarasvati Thakur Prabhupad compiló un libro llamado Prakrita Rasa Sata Dusani. Al mismo tiempo, estableció todas las glorias al Brahma Madhva Gaudiya Sampradaya a través de su Gaudiya Math. La imitación es generalmente encontrada cuando las mentes perezosas de las almas condicionadas quieren obtener una barata o más fácil versión de la vida espiritual. El mal uso de la filosofía Vaisnava para obtener dinero, mujeres o fama, también arrastrará a alguien del verdadero proceso. La constante búsqueda de pureza, o la permanente observación y siempre manteniéndose bajo la guía de verdaderos Vaisnavas avanzados, serán las únicas protecciones de no caer dentro de las influencias del mundo externo, y de las mentes con tendencias imitadoras. 
+</p>
+<p class='vspace'><a name='j' id='j'></a>
+</p><h3>Templos en el Reino de Maya</h3>
+<p>Los seres humanos están sujetos a un mundo de mal entendidos. Estos mal entendidos también se manifiestan entre Vaisnavas. Una vez, preguntado sobre el porque existe tanto Maya en el Reino de Krishna, un sadhu respondió: “ No debemos sorprendernos de encontrar Maya en los templos, sino deberíamos sorprendernos de que hay templos en el Reino de Maya”.
+</p>
+<p class='vspace'>Mientras más ramas tenga el árbol y más opulento luzca, más bendiciones tendrá. 
+</p>
+<p class='vspace'>Por ello, la unidad de Krsna tiene diversidad. Pero Maya quiere dividir y no quiere dejar a las víctimas con alguna oportunidad de reunirse con otros Vaisnavas. Por esa razón, Maya crea una gran cantidad de trucos sicológicos. Aquí hay tan solo algunas de estas excusas mentales que nos alejan del muy necesitado sadhu sanga:
+</p>
+<div class='vspace'></div><ol><li>Mi guru es el único que puede dar el néctar mas elevado. Por ello, no me asociaré con cualquiera que no comprenda esto.
+</li><li>Soy tan caído que no contaminaré a otros devotos.
+</li><li>Si me asocio con otros Vaisnavas y sus misiones, mis discípulos verán que no soy el único devoto verdadero, y después de todo dejaran de amarme.
+</li><li>Talvez mis discípulos se sentirán atraídos por otro devoto – mayor que yo- y querrán dejar mi compañía.
+</li><li>Otros Vaisnavas podrán tener normas distintas que nosotros en nuestro templo, y el absoluto entendimiento de mis discípulos podría ser perturbado.
+</li><li>No me gusta escuchar por horas las lecturas de otro Vaisnava.
+</li></ol><p class='vspace'>Mi maestro espiritual una vez me escribió un carta: “ Uds. Occidentales tienen siempre el espíritu de pelear, e incluso si tu no quieres pelear, alguien te inducirá a pelear de todas formas”. Consideremos el hecho de que en la mayoría de las comunidades surge tarde o temprano alguna pelea o un mal entendido. ¿ Que se puede hacer?. De alguna forma los devotos relacionados tienen que solucionar el problema; lo que ellos usualmente hacen es rápido. Sin embargo, algunas veces disputas sobre la parafernalia de prédica, como templos, autos, etc., pueden hacerse mas extensas debido a la instrucción poco clara del maestro espiritual que partió. Aunque, hemos sido testigos de disputas, como la arriba mencionada nuestro espíritu de prédica no termina. Ni mal entendidos individuales, o incluso peleas con otros individuos o misiones, afectan las relaciones que otros mantienen con las partes en disputa. Ellos son usualmente considerados secundarios. Ya que pequeñas o largas disputas pueden aparecer en cualquier momento, debemos observar cuidadosamente como devotos avanzados lidian con estas situaciones. De esta forma aprenderemos a continuar con la prédica sin ser afectados cuando Kali Yuga se manifieste de alguna manera.
+</p>
+<p class='vspace'>Las instituciones Vaisnavas no están destinadas para hacernos desidiosos, complacientes de nosotros mismos, envidiosos, indiferentes o no intelectuales. No están creadas para dejar que otros piensen por nosotros. Por esto, los lideres deben entrenar bien a sus discípulos de manera que su sraddha, y la asociación con otros Vaisnavas del mismo sampradaya, pueda sobrevivir en su ausencia. De otra forma se estaría creando un culto, no una rama del Vaisnava sampradaya – como Srila Jiva Goswami concibió.
+</p>
+<p class='vspace'>Por el arreglo de Krishna todas las pequeñas dificultades pueden ser armonizadas. Debemos tan solo estar atraídos por los verdaderos sadhus y la prédica. Así, mas facilidades de las que podamos manejar aparecerán por la gracia de Krishna; como Él les da a Sus devotos cualquier cosa en cualquier período. Esta es una de las importantes lecciones que deben ser aprendidas de la historia de la Gaudiya Math. Aquellos que en el pasado se vieron envueltos por disputas territoriales, fueron más bien desatentos con la prédica y pueden haber perdido alguno de los bienes de Krishna debido a sus negligencias. 
+</p>
+<p class='vspace'>Por otro lado, aquellos que continuaron con el verdadero espíritu de la Gaudiya Math, trabajando en la prédica y en la renunciación de las comodidades fáciles ( comenzando de la misma manera humilde que sus gurus comenzaron la misión) recibieron apoyo y nuevos entusiasmos de todos lados expandiendo así el real servicio, más allá de los limites de la expectación. Hay varios de estos ejemplos que aún toman lugar. Como hemos sido testigos de Srila A. C. Bhaktivedanta Swami Maharaj, Sridhar Dev Maharaj y Srila B. P. Puri Maharaj  (mencionando sólo algunas personalidades importantes de la reciente Gaudiya Math) todos actuaron de la misma forma. Ellos mantienen tratos amistosos con sus amigos Vaisnavas cercanos y hermanos espirituales, incluso si ellos tuvieron disputas con otros. Ellos mantienen alejadas las diferencias para continuar sirviendo a sus gurus. Ellos incluso han perdonado a aquellos que los han ofendido en el pasado por el bien de la armonía Vaisnava. Ellos trabajaron con sus hermanos espirituales en un modo de rendición y trataron de unir a los Vaisnavas por el bien del plan de sus gurus. Comenzaron misiones Vaisnavas por sí solos, para ayudar a propagar las verdaderas enseñanzas de Gurudev a otros que les oraban por ayuda. 
+</p>
+<p class='vspace'>Aunque ellos censuraban el hablar sobre alguna situación en particular o de disturbios, no excluyeron ninguna actividad, predicando a sus hermanos espirituales o a sus discípulos de la familia de la Gaudiya Math y dando sus bendiciones personales. Sumándose a esto, ellos pidieron disculpas por haber ofendido a otros, y declararon que nadie puede ofenderlos porque ya son demasiado caídos de todas formas. Si esto no es una evidencia suficiente para probar mi punto, estoy seguro que podemos dirigirnos a ejemplos de otros acaryas ya sean del pasado o presente para encontrar que el mismo principio aun vive. Kali Yuga es un océano de faltas. Víctimas del compromiso de Kali en riñas e hipocresía. 
+</p>
+<p class='vspace'>Si queremos progresar en la vida espiritual no debemos fijarnos en las fallas de los demás. Demasiado de esta actividad nos podrá traer la manifestación de esas fallas en nosotros mismos. Si alguien está causando un problema a otros, el tendrá que tratarlo con la autoridad máxima. 
+</p>
+<p class='vspace'>Cualquiera que nuestra opinión pueda ser, debemos tratar de ser generosos con los demás, estrictos con nosotros mismos y hacer todo lo posible para acomodar felizmente a cualquiera en el árbol de conciencia de Krishna. Aquellos que no tienen tal deseo, sino mas bien crean antagonismo entre los Vaisnavas, pueden ser entendidos por estar en una gran falta de ayuda. 
+</p>
+<p class='vspace'><a name='k' id='k'></a>
+</p><h3>Espíritu Partidista el gran enemigo de la Verdad</h3>
+<p>Cualquier tipo de prédica que excluya a otras ramas Vaisnavas de recibir la gracia de Krishna y de nuestro parampara, no es muy generoso por decirlo menos; que decir de aquellas que enseñan que su misión es la única que carga con la verdad secreta del sampradaya. Esta mentalidad partidista puede impresionar a nuevos seguidores, pero va en contra del espíritu de Sri Caitanya Mahaprabhu, Nityananda Prabhu, Abhirama y otros, sin discriminar a los distribuidores de misericordia. El espíritu partidista puede manifestarse  burda o sutilmente en una misión de prédica sobretodo en aquellas con seguidores sobre celosos. Cada alma condicionada ama escuchar que pertenece a la misión mas única entonces él puede pensar que es especial. Desde un punto de vista imparcial, ciertos conceptos son nada mas que formas de egoísmo, y seguidores de dichos conceptos, son Vaisnavas neófitos.
+</p>
+<p class='vspace'>Aquellos que se comprometen en el espíritu partidista predican la plena confianza en alguien o en una misión. Algunos predican que sus conexiones proveen  de una elevada semilla del bhakti, la cual no es igual a ninguna otra. Mientras no descalifiquen a otros acaryas ellos a menudo trataran a sus contemporáneos con descontento, especialmente si han tomado el servicio de Acarya.
+</p>
+<p class='vspace'>En caso extremo, seguidores tratan de transferir la exclusiva credibilidad de acarya a un maestro espiritual al costo de los demás acaryas activos. Uno de los serios problemas con el espíritu partidista es que crea disturbio en la sociedad ( bhakti rasamrita- sindhu1.2.101) Algunos de los predicadores partidistas crean dudas en devotos  nuevos o antiguos en relación a sus maestros espirituales. Estas dudas circulan y dañan la fe de los discípulos de otros maestros espirituales. Predicadores partidistas advertirán a otros con preguntas como : “¿ Tu guru da el siddha pranali?” o “¿ cual es el adhikara de este o ese guru?, conoce su propia forma en Goloka?” Aquellos que predican con este espíritu partidista no les gusta asociarse con otros Vaisnavas que no están bajo su control. Ellos a menudo son hipócritas, y no tienen miedo de cometer Vaisnava aparadha o sastra ninda. El espíritu partidista explota la filosofía mas elevada del bhakti, al utilizarla como una técnica de reclutamiento. Esta mentalidad perturbadora es típica de los kanistha-adhikaris.
+Miembros de otras misiones con actitudes exclusivas y con filosofías creadas, tienden a ser hostiles con otros Vaisnavas y son fácilmente ofensivos. Ellos tratan de encontrar fallas en otros Vaisnavas para dar apoyo a sus distorsionadas conclusiones. Si sus seguidores comprenden la real situación, ellos naturalmente perderán la fe en aquellos lideres. Tales personas, sin conexión con la WVA-VVRS, son desafortunadas porque no han aprendido a asociarse con otros Vaisnavas.
+</p>
+<p class='vspace'>Es el deber de un acarya proteger a sus discípulos en las primeras etapas de su fe, de las influencias externas que puedan perturbar la delicada enredadera de la devoción. Con las emergentes comunidades Vaisnavas debemos tratar de armonizar con un interés universal común de salvar  a las almas de este mundo bajo el logo del Movimiento de Sankirtan del Señor Caitanya, en lugar de tener problemas con diferentes centros de interés local. Amor, verdad y respeto para todos los Vaisnavas sinceros es el principio fundamental del sadhu sanga en el activo y viviente árbol del parampara de Sri Caitanya Mahaprabhu.
+</p>
+<p class='vspace'><a name='l' id='l'></a>
+</p><h3>Ramas del Árbol Caitanya</h3>
+<p>El canto congregacional de los Santos Nombres, inaugurados por Sri Caitanya Mahaprabhu, es el proceso recomendado de respiro espiritual el cual llama a la humanidad a cambiar su curso de acción material y de degradación.  Debido a esto, la única razón para establecer una misión Vaisnava es para ayudar a las almas a aliviar los sufrimientos humanos, y de esta manera, complacer al Señor Supremo. Aquellas almas que aspiran la asociación de otras almas devotas, estando atraídas por el llamado de los Vaisnavas, necesitan centros de alivio donde los ideales de la Fe Vaisnava son enseñados y practicados. Estos lugares no pueden estar contaminados por el egoísmo, por motivos ulteriores o por el sentido de propiedad privada. Por ello, es necesario para el acarya establecer alguna clase de confianza religiosa, la cual asegure la naturaleza trascendental de las actividades que se desarrollen en, y alrededor del templo o comunidad Ashram. Tales lugares son los mejores oasis, en este mundo oscuro, donde las personas pueden participar en el amoroso servicio devocional del Señor Supremo.
+</p>
+<p class='vspace'>Una nueva rama del árbol Caitanya se manifiesta como un proceso natural separándose de la inspiración de un acarya el cual desea continuar la misión de su guru. Algunas veces, esta creación de nuevas ramas está acompañada por el nacimiento de nuevos dolores, debido a la falta de aceptación y apoyo de otros Vaisnavas. Para establecer la dignidad y credibilidad de tales misiones es necesario pronunciar sus creencias y procedimientos de servicio como parte de las actividades de prédica.
+</p>
+<p class='vspace'>La naturaleza de una comunidad trascendental, puede variar de acuerdo al acarya o sevaites (o junta de directores que protegen la naturaleza espiritual del templo). Para mantener la comunidad, el acarya establecerá ciertas reglas y regulaciones. Sin embargo, en tales casos, un principio de absoluta importancia debe mantenerse: el propósito y los bienes de la comunidad no deben estar a favor de intereses materiales individuales- de otra forma el propósito del oasis espiritual será estropeado.
+</p>
+<p class='vspace'><a name='m' id='m'></a>
+</p><h3>Pureza entre Acaryas</h3>
+<p>Cultos  a la Personalidad impregnan la tierra. Seguidores así llamados, de las encarnaciones de Dios, celebridades musicales, estrellas de películas y políticos, están mal guiados y pierden su valiosa oportunidad humana para la auto realización. ¿ Es el guru Vaisnava otra persona que guía a sus seguidores de acuerdo a sus propios caprichos? En la selva de este mundo material, donde todo, incluyendo términos religiosos, son usados con fines personales, es mas bien difícil conseguir una visión clara. Observadores superficiales están inmediatamente perdidos; pero aquellos que son sinceros, aun sin tener conexión o una pista de la naturaleza de Dios, pueden seguir su guía interna para dirigirlos a la verdad. Desde que cada guru genuino siempre le dé crédito a su guru, considerándose nada mas que un instrumento de los deseos de su guru, estará claro que por el criterio del guru, sastra y sadhu, podrá ser aceptado como un acarya fidedigno o guru entre los Vaisnavas. Esto significa que sus enseñanzas serán objetos para comprobar dentro del sistema de la familia Vaisnava.
+</p>
+<p class='vspace'>En algunos casos donde personas toman de mal manera la posición de gurus, han ocurrido desviaciones del verdadero sendero Vaisnava y estas personalidades han temporalmente mal guiado a sus seguidores. 
+</p>
+<p class='vspace'>La pureza en el propósito, es reconocida solo cuando alguien se apega a las metas de su guru y, por consiguiente de toda la sampradaya. De esta forma, no hay dificultades cuando diferentes ramas de la sampradaya se sobreponen geográficamente o en cierta función, ya que es asumido que ellos siguen una causa en común y respetan el principio de Unión en la Diversidad.
+</p>
+<p class='vspace'><a name='n' id='n'></a>
+</p><h3>No ser negligente con ningún Vaisnava</h3>
+<p>Krishna ama al nirupadhi Vaisnava, quien ejecuta Su servicio sin ser notado por nadie. Pero, si otros Vaisnavas son negligentes con él, Krishna no acepta el servicio de tales devotos. 
+</p>
+<p class='vspace'>La siguiente narración nos recuerda este hecho:
+</p>
+<p class='vspace'>Cuando el sacrificio Raja Suya dirigido por Yudishthira Maharaj, finalizó exitosamente, la campana colgada en el centro de la arena fue conocida por sonar de modo propio. Sin embargo, una vez, después de que Brahmanas finalizaron sus ofrendas al Supremo, los rishis y los semidioses, miraron la campana pero nada pasó. Desesperado, Yudishthira pidió ayuda  a Krishna. Krishna le dijo que ellos han adorado a las grandes personalidades pero han sido negligentes con un humilde Vaisnava. Arjuna supo de un devoto que vivía en una choza de paja en las afuera de Hastinapura. Él fue a buscarlo para llevarlo a la arena. El Vaisnava se negó, y solo al oír que se encontraría con Krishna aceptó ir con Arjuna en su carroza. Allí fue adorado por todos y Draupadi cocinó  un banquete para él. Él mezcló las distintas preparaciones y las comió con gusto. Luego fue llevado de regreso a su hogar, y todos miraron la campana. Nada pasó. Yudishthira Maharaj estaba preocupado. Parecía no haber solución. Nuevamente, el ultimo recurso era Krishna. “¿ Que error hemos cometido ahora?”. Krishna les dijo “ alguien debió haber ofendido a ese Vaisnava”. Ellos consultaron a todos, pero todos lo negaron. Finalmente cuando le preguntaron a Draupadi ella bajó su cabeza y dijo “ Sí, yo lo ofendí. Cociné un gran banquete para él, pero cuando mezcló las preparaciones, pensé que este devoto no tenia cultura”. Krishna confirmó esta ofensa. Al día siguiente, Arjuna fue donde el mismo devoto. Nuevamente fue difícil convencerlo para volver, pero finalmente no pudo negarse a las plegarias de Arjuna. Él fue adorado y Draupadi cocinó nuevamente, pero un banquete más grande para él. Mezcló las preparaciones y como comiera el ultimo bocado, la campana comenzó a sonar con gran fuerza y toda la asamblea se regocijó.
+</p>
+<p class='vspace'><a name='o' id='o'></a>
+</p><h3>Nada malo pasa sin una buena razón</h3>
+<p>Inicialmente pensé que uniéndome al ashram Vaisnava todos mis problemas terminarían. Bueno, estaba mal. Tenemos que estar alerta a cada momento, para así no caer en Maya. Kanaka (desear riqueza), kamini (desear satisfacer la lujuria) y pratistha (desear fama), siempre están dentro de nosotros esperando atraparnos en un momento en que estemos desatentos. El avance espiritual no es conseguido por el hecho de estar en una misión por muchos años. Incluso devotos mayores de las misiones, tienen que ser cuidadosos. De verdad, solo estamos seguros en la modalidad de oración pura de un alma desesperada aspirante a la verdadera devoción.
+</p>
+<p class='vspace'>Hay un dicho en Sur América: “ Nada malo ocurre sin una buena razón”. Hemos experimentado varios momentos de dificultades en nuestra vida de ashram, así como también se han vivido en la historia de las misiones Vaisnavas. ¿ Porqué ocurren tales dificultades? 
+</p>
+<p class='vspace'>Krishna es el controlador supremo: Cuando Él ve a Sus devotos  enredados o con mentalidades ofensivas, El hace drásticos arreglos para proteger el camino de la pureza. Incluso en mis momentos más difíciles y después de situaciones aparentemente insalvables, descubro pronto la bendición disfrazada. Por ejemplo, me dijeron que no debía asociarme con devotos avanzados por el bien de temas institucionales. Sin embargo, no acepté estas objeciones formales y por ello obtuve la misericordiosa asociación de devotos puros de Krishna. Objetivamente digo, que tengo que agradecer a todos aquellos que incluso sin querer han complicado mi vida, ya que así me han forzado a moverme en el sendero de la búsqueda de Sri Krishna. Los altos y bajos de nuestro sampradaya pueden ser vistos también como formas de mantener la pureza del sampradaya. Ellos ayudan a propagar la esencia de sus enseñanzas libres de cualquier control institucionalizado. 
+</p>
+<p class='vspace'>Escritos de Srila Bhaktivinode confirman esto, en varios estatutos históricos tales como:
+</p><ul><li>Sectarismo, el gran enemigo de la verdad.
+</li><li>Tanto como ellos sean ignorantes, debemos esperar que sus actos sean ignorantes.
+</li><li>Si no puedes encontrar paz interior, tu debes como hizo Vyasa, golpear la inagotable fuente de verdad.
+</li><li>El Vaisnavismo es la religión de la libertad, de la verdad pura y del amor absoluto.
+</li></ul><p class='vspace'><a name='p' id='p'></a>
+</p><h3>Lecciones para ser aprendidas</h3>
+<p>Srila Raghunath Das Goswami describe: “En la ausencia de mi querido Gurudeva, incluso Govardhan me pareció como una gran pitón y Sri Radha Kunda, el lugar más sagrado, me pareció la boca de un tigre listo para devorarme”. 
+</p>
+<p class='vspace'>En verdad, la ausencia del guru de uno, es uno de los momentos más difíciles en la vida del discípulo. En separación de Sri Guru, la vida parece ser intolerable. Sumándose a esto, varias dificultades de cómo continuará la misión de los acaryas  surgen naturalmente.
+</p>
+<p class='vspace'>Para continuar la misión del guru después de su desaparición, es necesario para algunos Vaisnavas dar refugio a las personas que recién llegan, tal como el acarya les dió a todos sus discípulos personales. Pero, ¿quien es calificado para continuar con la misión? Esta pregunta hace surgir variadas opiniones. Algunas pueden parecer ser perfectas, y algunas pueden parecer incorrectas. Cómo la línea espiritual continuará después de que el acarya se va, frecuentemente toma algún tiempo en manifestarse. Nosotros podemos desear una solución formal o institucionalizada durante este tiempo, pero este período de transición es necesario para despertar a todos los discípulos del maestro espiritual, en la necesidad de su completa rendición. Nuestro guru nos ha enseñado cómo reconocer a un verdadero Vaisnava y a la verdadera filosofía. Nos ha enseñado predicar el Vaisnava siddhanta a impersonalistas y ateos. Nos ha advertido sobre muchas desviaciones burdas y sutiles. Ahora, en su ausencia, esperamos estar suficientemente maduros para mantener la fe de sus enseñanzas. Debemos aprender a actuar de manera correcta. Si no lo hemos hechos, es tiempo de rendirnos completamente. De otra forma, la confusión será inevitable.
+</p>
+<p class='vspace'>¿Cómo debemos continuar predicando con entusiasmo sin la presencia de nuestro Gurudeva? ¿ A quien debemos enviar a los nuevos devotos a tomar refugio, así como nosotros hicimos con Sri Gurudeva? Muchas pruebas aparecerán ahora, todas de manera repentina. ¿Están mis hermanos espirituales calificados para continuar la sucesión discipular como gurus? ¿O es debido a mi envidia que estoy viendo faltas en ellos? De esta forma, nuestra mente buscara un entendimiento claro de cómo continuar, o mejor aun, como rendirnos mas en nuestra vida. El proceso de Conciencia de Krishna es voluntario, y al final nosotros decidimos con nuestros corazones como continuar la orden de nuestro guru. Nuestro propio entendimiento de la orden de nuestro guru será nuestra única luz guiadora. 
+</p>
+<p class='vspace'>Después de la desaparición de mi diksa guru Srila . C. Bhaktivedanta Swami Maharaj, y después de la desaparición de mi sanyass guru Srila B. R. Sridhar Maharaj, viví muchas dificultades inesperadas. Durante este tiempo, también estudié la historia de la Gaudiya Math. Lo que al comienzo parecía ser caótico y extremo, más tarde se reveló como una urgencia de Krishna para enseñarnos los principios básicos de la sucesión discipular pura. Cualquier situación dolorosa que tuvo que ser presenciada, fue una lección que necesitaba ser aprendida por los que muchos que recientemente han tenido contacto con la sucesión discipular.
+</p>
+<p class='vspace'>En conclusión, estas lecciones, las cuales tenemos que aprender rápidamente, probaran  ser la lucha de la sucesión discipular contra la contaminación y los malos usos. También será comprendido que cuando una persona estando motivada por intereses individuales, tome alguna posición dentro de alguna organización espiritual estará destinada al fracaso. Aquí hay algunos ejemplos de las lecciones que hemos recibido.
+</p>
+<p class='vspace'><a name='q' id='q'></a>
+</p><h3>Transición Acarya – Teoría y Práctica</h3>
+<p>En el pasado, Acaryas han preparado a sus discípulos para el momento de la separación física de muchas maneras, pero a mi entendimiento, ninguna de ellas cambió el dinamismo del guru parampara. Algunos Acaryas nombraron algunos rittvik Acaryas para iniciar en sus nombres; indicando que tales rittvik Acaryas podrían convertirse en verdaderos Acaryas  después su partida. Otros nombraron un secretario por misión para después de su desaparición. Otros Acaryas dejaron un papel declarando un discípulo querido y de confianza para ser el próximo acarya a cargo de templos y de la adoración de la Deidad que fueron establecidos por ellos. No hay difíciles ni rápidas reglas concerniente a lo que un acarya debería hacer en tales casos. Pero, una cosa se mantiene sin lugar a dudas: Ningún acarya ha sido negligente con la necesidad de pluralidad y dinámica de revelación espiritual, la cual impregna las escrituras y la tradición viva una y otra vez.
+</p>
+<p class='vspace'>Por razones técnicas, o para evitar que devotos peleen sobre le uso de los bienes, el guru puede fácilmente poner sus bienes a cargo de un discípulo en particular. Aun, su orden y la de Mahaprabhu es clara: Todos Uds. deben tratar de salvar las almas convirtiéndose en gurus y enseñando las conclusiones del Srimad Bhagavad Gita y del Srimad Bhagavatam. Interpretaciones, que en el pasado trataron de limitar la revelación espiritual de un acarya a una salida institucionalizada, probaron estar todas incorrectas; trayendo vergüenza para esa misión. En otras palabras, cada discípulo de acuerdo a su corazón, debe  ser capaz de entregar a otros lo que el ha recibido de su Gurudev. Esto puede significar que el debe empezar una nueva misión, que será rama del árbol Vaisnava. Nuestro maestro espiritual nos envió hacia fuera muchas veces “ Vayan y abran nuevos centros para la misión” decía él. “ No se apeguen a nada excepto a la gracia de Krishna y Sri Guru. Después de todo, si Krishna  desea utilizarlos en algún servicio en especial, el puede revelar esto fácilmente” . Por esta razón decimos que un acarya es auto refulgente. Como nuestra sucesión discipular confirma: los Acaryas se manifiestan como antorchas para mostrarnos el camino dentro de esta oscura era de Kali. Krishna mostrará los Acaryas a este mundo, y nosotros los ayudaremos tanto como nos sintamos inspirados para hacerlo.
+</p>
+<p class='vspace'>En el pasado, vemos que algunos Acaryas podían ser gurus de muchos otros gurus, mientras que otros tan solo llevan a cabo sus servicios, incluso sin ser notados. Sri Krishna se reserva todos los derechos. Solo por su función de caitya guru la relación guru-discípulo tiene validez. Elecciones, opiniones publicas, consideraciones políticas, o falsos reclamos de exclusividad están destinados a fracasar en este proceso. Ellos no tiene nada que ver con el guru parampara. Talvez un guru escriba muchos libros, talvez no; talvez inicie a muchos discípulos, talvez tenga tan solo uno; talvez es un estudiante de sánscrito, tal vez no lo sea, talvez nació en una familia India de brahmanas o talvez él provenga de una familia mleccha occidental. Todas estas diferencias no deberían traernos en contra de los principios divinos discriminando entre un acarya u otro.
+</p>
+<p class='vspace'>Srila A.  C. Bhaktivedanta Swami Maharaj escribió en La búsqueda del Ultimo Objetivo de la Vida: “ Pensar que el guru de uno es más puro que otro es una ofensa”. Solo Krishna sabe todo. Por nuestra parte, hacemos bien respetando a quien activamente predica la verdadera gloria de nuestro querido guru y Krishna.
+</p>
+<p class='vspace'><a name='r' id='r'></a>
+</p><h3>El póstumo escape Rittvik</h3>
+<p>Rittvik acarya es un término estrictamente usado en nuestro sampradaya que representa al acarya en servicio activo bajo su orden. No hay otra referencia en  nuestra larga línea de otro tipo de rittvik acarya que se esté llevando a cabo. Si estuviera, todos querrían estar iniciados por Srila Rupa Goswami o Narada Muni a través del rittvik. Aun así, debido a malas experiencias en nuestro sampradaya y especulaciones mentales de algunos devotos, fue propuesto que nuevos procedimientos fueran introducidos dentro de la sucesión discipular, donde nuevos devotos pudieran ser iniciados como discípulos del ya desaparecido acarya. Este sistema, conocido como el “sistema rittvik del acarya póstumo”, creó una gran cantidad de argumentos, pero no creó soluciones espirituales  para nadie.
+</p>
+<p class='vspace'>Srila A. C. Bhaktivedanta Swami Maharaj nos advirtió del peligro de las desviaciones, y nos dió el ejemplo de cómo los Cristianos perdieron la conexión guru-discípulo a través de los años. Los Sikhs también abolieron el sistema de guru después de Guru Govinda Singh. Ambos sistemas están rechazados en nuestro sampradaya. De hecho, el único caso donde hemos oído de esta clase de rittvik del acarya póstumo es en una tradición sahajiya en Bangladesh. El otro daño inherente en el rittvik del acarya póstumo propone que la persona que esta ofreciendo conexión rittvik con el acarya desaparecido está actuando bajo su propio capricho; y cuando él no viva bajo su estándar de devoción, él abandonará al recién llegado a una vida desprotegida.
+</p>
+<p class='vspace'>La aceptación de un maestro espiritual vivo como el principio de convertirse en el sirviente del sirviente de Dios no puede ser abolido simplemente, porque existe la oportunidad para personas no calificadas de ocupar tal posición. Guru, sastra y sadhu son las guías en el sendero espiritual. De acuerdo a los principios védicos, si alguien está inspirado en encontrar a Dios y acepta a otra persona como su maestro espiritual, Krishna Mismo toma la responsabilidad de protegerlo. Esta conexión personal con un maestro espiritual es el gran alivio para la alma condicionada. La búsqueda del guru y el servicio para él en cualquier forma es un principio eterno y voluntario, el cual da verdadera vida a nuestro parampara. Srila A. C. Bhaktivedanta Swami Maharaj resalta este punto en uno de sus discursos.
+</p>
+<p class='vspace'>“ Caballeros, en nombre de los miembros de la rama de Bombay de la Gaudiya Math, les doy la bienvenida a todos Uds., porque son muy amables al unirse a nosotros esta noche en nuestra ofrenda congregacional en homenaje a los pies de loto del mundo de las enseñanzas, acaryadev, quien es el fundador de la Misión Gaudiya y es el acarya presidente de la Visva Vaisnava Raj Sabha – me refiero a mi eterno divino maestro, Om Vishnupad Paramahamsa Parivrajakacarya, Sri Srimad Bhaktisiddhanta Sarasvati Goswami Maharaj. Sesenta y dos años atrás, en este auspicioso día, acaryadeva hizo su aparición por el llamado de Thakur Bhaktivinode a Sri Kshetra, Jagannath Dham en Puri. Caballeros, la ofrenda de tal homenaje como ha sido arreglado esta tarde para acaryadev no es un tema sectario, cuando hablamos del principio fundamental de Gurudev o acaryadev, hablamos de algo que es de aplicación universal. No produce ninguna pregunta de discriminación hacia mi guru desde Uds., o del guru de alguien mas. Hay tan solo un guru que aparece en infinitas formas para enseñarte a ti, a mi y a todos.”  
+</p>
+<p class='vspace'>El buscador sincero es aceptado por su maestro espiritual debido a la ayuda de la guía interna, paramatma, que es Dios Mismo. Por lo que la elección del maestro espiritual es mística. Varias personas visitan distintas ramas de la Gaudiya Math y también otros movimientos. Cómo la fe surge en el corazón, para aceptar a alguien en particular como el guardián esta más allá de toda comprensión. Este proceso de fe y la aceptación de un maestro espiritual no puede ser responsabilizado por otros. Cada alma es responsable por la aceptación de su siksa guru. Cuando cualquier intento esté creado para restringir geográfica o institucionalmente el libre vuelo de la fe hacia el maestro espiritual, resulta algún tipo de desastre. Concluimos, que la idea del rittvik del póstumo acarya propuesta por algunos discípulos del acarya fundador de ISKCON no es parte de nuestra tradición. Tales ideas no deben aumentar el concepto de indicar que el guru de uno es tan extraordinario, que desde ahora en el sampradaya eso cambiará. Esto es una ofensa hacia el guru. Ninguna autoridad en nuestra familia ha autorizado tales distorsiones. Incluso, si es doloroso debemos seguir trabajando duro, y así tratar de continuar sirviendo a nuestro guru en separación. No es suficiente el colgar grandes imágenes de los acaryas, escuchar sus cintas y citar sus palabras.
+</p>
+<p class='vspace'>Si alguien está calificado, y es lo suficientemente confiable para recibir el servicio de los demás, entonces esa persona es el candidato para la transmisión de la misericordia de Krishna. Si nuevos buscadores, que desean estar activos en el servicio, no están encontrando tales Vaisnavas calificados, ellos deberán buscar profundamente en otra parte. No hay necesidad de compartir la penosa compañía de alguien que no tiene confianza o no es confiable. Krishna nos ayudará  a recobrar nuestro entusiasmo en asociación de los verdaderos sadhus, y la familia continuará, como es el deseo de nuestros gurus. 
+</p>
+<p class='vspace'><a name='s' id='s'></a>
+</p><h3>El acarya designado por un comité</h3>
+<p>Otra particular lección que aprendimos, es que el acarya no puede ser indicado o controlado por comités. En los ojos de sus discípulos, el acarya es aceptado como la autoridad completamente independiente y representativa del Señor Supremo. Por esto, su posición puede chocar con las relaciones que tiene con sus hermanos espirituales o con otros miembros de la misión. Problemas pueden surgir con respecto a la decisión tomada con los bienes de la misión, especialmente si aquellos bienes fueron acumulados con la ayuda de los hermanos espirituales del acarya, antes de que él comenzara a iniciar. 
+</p>
+<p class='vspace'>Por otro lado, las instituciones necesitan una tabla de directores. En la ausencia del acarya fundador, la tabla de directores deberá proteger la misión, propiedades, adoración de la deidad, etc. Combinar la tradición del acarya con la tabla de directores, es algo complicado. Mientras, diferentes objetivos han sido creados y experimentados para resolver este problema, muchos de ellos han fallado en la creación de armonía en las misiones.
+</p>
+<p class='vspace'>Incluso grandes templos de los grandes acaryas de la Gaudiya, tales como Srila Sanatana Goswami, Srila Rupa Goswami, y Srila Jiva Goswami fueron afectados por este tipo de confusión, dando origen a los Goswamis de Casta.
+</p>
+<p class='vspace'>El espíritu original libre fue presentado por los sacerdotes por ser una confinada sucesión discipular de familia seminal (sukra). Peor aun, varios niños jóvenes de estas familias de Goswamis de Casta no tenían interés en la misión, y comenzaron a aprovecharse de los templos: usándolos como medios para vivir o simplemente los utilizaron para sus propios entretenimientos. En respuesta a este problema, Srila B. R. Sridhar Maharaj sugirió que los templos originales comenzados por los acaryas fundadores fueran mantenidos como tirthas para las futuras ramas de la familia. Nuevos acaryas, dijo él, deberán comenzar nuevos centros o desarrollarán pequeñas comunidades. Los tirthas sirven para reunir a todos los hermanos espirituales de la rama a celebrar los festivales. En el tirtha, ningún acarya nuevo se vuelve prominente.
+</p>
+<p class='vspace'>Aun hay varias circunstancias para ser tomadas en consideración. Por ejemplo, ¿ quien mantendrá los tirthas?. Los tirthas solamente funcionan si hay varias ramas dispuestas a dar apoyo de financiamiento al tirtha central, y si envían devotos para allá a mantener la adoración. Los sevaites (o junta directiva) sin ninguna duda, tienen una gran responsabilidad, pero ellos no tienen jurisdicción sobre la relación o sentimientos que un discípulo tiene con su maestro espiritual.  No olvidemos que cada miembro de la familia Vaisnava es un miembro voluntario, y esto se mantendrá así tanto como él sienta que su corazón está bien situado. Los sevaites y los respectivos acaryas, que decidan continuar el proceso de iniciación deben amorosamente encontrar una forma de respecto mutuo y un espíritu feliz de prédica. Esta es la verdadera prueba a pasar para crear la Unión en Diversidad, y esto hará a la familia Vaisnava crecer sin obstáculos.
+</p>
+<p class='vspace'><a name='t' id='t'></a>
+</p><h3>La elección de un Acarya como sucesor exclusivo</h3>
+<p>No solo el comité de nombramiento enfrentó severos problemas, sino que otro fenómeno se manifestó: Algunos devotos interpretaron la nominación de acarya sucesor de una misión, para decir que ellos tenían los derechos exclusivos de representar a sus guru en este mundo. Ellos creían que alguien mas que diera iniciación no estaría calificado y violaría la ética Vaisnava. Este concepto sofoca el espíritu de prédica. Srila  B. R. Sridhar Dev Maharaj, quien explicó que todos tenían el deber y el derecho de entregar, según el corazón de cada uno, aquello que recibió de su maestro espiritual. Es un intento laudable si alguien quiere dar refugio espiritual a los demás, Esto no puede ser controlado por alguna ley, o ser restringido de alguna forma. Srila Sridhar Maharaj, incluso dio la bienvenida a otros acaryas durante su tiempo de vida, para iniciar y ser parte de su misión.
+</p>
+<p class='vspace'>El acarya puede nominar a uno de sus discípulos para continuar como acarya, y así él podrá manejar los templos con la orden de evitar conflictos entre los hermanos espirituales, pero el acarya no limita la línea de maestros espirituales a una persona en particular. Eso contradiría a todo el Srimad Bhagavatam y al Caitanya Caritamrita. 
+</p>
+<p class='vspace'>En este mundo hay una gran falta de maestros espirituales. El servicio realizado por cualquiera, que es fiel a su guru, y que siente inspiración de proteger a los demás, debe ser considerado al menos, como un acto noble. Todos estos conflictos nos ayudan para ver la real dinámica de expansión de Conciencia de Krishna que puede provenir solamente de personas que son felizmente rendidas en este proceso, como nuestros queridos maestros espirituales lo fueron.
+</p>
+<p class='vspace'><a name='u' id='u'></a>
+</p><h3>La fila es solo la estampilla de Guinea; el hombre es el oro de eso</h3>
+<p>Hoy en día, el mundo de Maya, es tan fuerte que inclusive lideres de países son a menudo considerados, como pequeños ladrones tramposos así llenando sus bolsillos, en vez de estar sirviendo a las personas. En el nombre de la religión, las más inesperadas actividades materiales pueden ser encontradas. No es sorpresa que la gente esté dudando sobre las intenciones de alguien que sigue un camino de sumisión hacia su maestro espiritual como representante de la verdad y de la pureza de Dios.  Esto suena casi increíble. Pero aun así, es nuestro sendero, y nuestra única  esperanza. 
+</p>
+<p class='vspace'>El dicho “La fila es solo la estampilla de Guinea, el hombre es el oro de eso”, proviene de los tiempos británicos cuando la estampilla de Guinea fue impresa sobre oro para testificar su calidad. Aquí, utilizamos este dicho popular para describir las diferencias entre un cargo de una prestigiosa posición, y un funcional, como comparación de la posición, que mantiene y la sustancia esencial, la cual debe mantenerse detrás de la concepción formal. Verdaderos devotos, es la única promesa de oro de la estampilla guinea Vaisnava, de un brahmana, sanyass, guru o mahanta. Afortunadamente, tenemos ejemplos de tales devotos en la historia de nuestra Gaudiya Math, y bajo cualquier investigación sobre su santidad, y nivel de dedicación extrema, todas las dudas de acuerdo a sus pureza desaparece.
+</p>
+<p class='vspace'>A no ser que una persona esté sobrecargada de la vida de servicio, su aceptación del servicio de otro o colaboración es un engaño, y Krishna tarde o temprano expondrá el doloroso hecho para beneficiar a todos. A menudo, algunas personas descalificadas en instituciones Vaisnavas burocráticas tratan de usar facilidades materiales por un bajo propósito que obligue a los verdaderos devotos a retirarse de tales ambientes para así salvar la dignidad de la línea de sus gurus. Por ello, no  debemos aceptar ciegamente a alguien que tenga una posición entre los Vaisnavas, en lugar de ello, debemos mirar cuidadosamente a los sadhus para ver si ellos son felices con el servicio de su líder. 
+</p>
+<p class='vspace'>Si otras personas comienzan a cantar el nombre de Krishna y se convierten en buenos devotos por la conexión de tal líder, entonces Krishna lo estará utilizando para Su propósito y todos nosotros deberemos mostrar nuestros respetos.
+</p>
+<p class='vspace'><a name='v' id='v'></a>
+</p><h3>Reiniciación – Demoníaca y Divina</h3>
+<p>Nuestro siddhanta a lo largo de nuestro sampradaya es realmente un siksa guru sampradaya. Sin embargo, el sambandha – jñana (conocimiento de la relación eterna con el Señor Supremo) es dado generalmente con la conexión diksa. Recibida a través del proceso de iniciación, esta conexión es de muchas formas, la línea de la vida del discípulo en la vida espiritual, así como es la fuente de su convicción y servicio. Por esto, el perder al diksa guru de uno, es una gran calamidad en la vida espiritual de la persona.
+</p>
+<p class='vspace'>Hablando generalmente, si un Vaisnava ha dejado el servicio de su guru, el debe ser salvado; sin importar lo que tome. Aun así, la etiqueta Vaisnava debe ser considerada. Si dos maestros espirituales tienen una relación, ellos fácilmente pueden cooperarse entre sí, para ayudar a otro discípulo. Esto es normal, en instancias en que devotos, especialmente brahmacaris, necesitan cambiar de ubicación. Si un Vaisnava requiere de otro Vaisnava para cuidar a sus discípulos, allí no hay necesidad de re-iniciación. 
+</p>
+<p class='vspace'>En situaciones, devotos han perdido su fe en sus diksa guru debido al mal comportamiento e insensibilidad de aquellos gurus. Estos devotos se vuelven desamparados y buscan refugio en los pies de otros Vaisnavas. Bajo las circunstancias, algunos reciben una conexión a través de la iniciación de otro guru que está en la modalidad de ofrecer alivio a todos los devotos que sufren. El sentimiento de las iniciaciones previas no era realmente válido, desde que la promesa de protección no estaba dada. En tales casos, Vaisnavas deben estar contentos si sus amigos y hermanos, encuentran un lugar donde estén felices para continuar con su servicio devocional.
+</p>
+<p class='vspace'>Depende del criterio del maestro espiritual, el ver como quiere lidiar con los seguidores disgustados de otro guru. Es su responsabilidad, y él recibirá la reacción si no quiere considerar la otra situación Vaisnava con sensibilidad. Sin embargo, si la re-iniciación toma lugar entre dos acaryas o misiones Vaisnavas sin comunicación o causa debida, esto solo demostrará la falta de reconocimiento hacia lo genuino del otro. Cualquier caso de prédica motivada en contra de otro guru con la idea de robar sus discípulos es claramente ofensivo y traerá desastrosos resultados. Es deseado, que tales diferencias sean eliminadas, y que la causa en común sea descubierta. La guía con respecto a tales situaciones puede ser encontradas en las acciones de grandes devotos como Srila A. C. Bhaktivedanta Swami Maharaj, Srila B. R. Sridhar Maharaj, Srila B. P. Puri Maharaj y muchos otros. Por supuesto, sobre todas las cosas Krishna es el real disfrutador de todos Sus devotos.  
+</p>
+<p class='vspace'><a name='w' id='w'></a>
+</p><h3>Cortesía trascendental</h3>
+<p>Es casi natural que en las relaciones de las almas condicionadas existan dificultades. Incluso aquellos que han elegido el sendero del bhakti, algunas veces entran al campo de los males entendidos y mal interpretaciones. De esta forma nuestras fragilidades humanas son exhibidas. Devotos de diferentes misiones que se conocen en las funciones Vaisnavas, pueden no estar necesariamente de acuerdo en cada punto de sus prácticas y siddhanta. La tensión también puede existir entre los miembros de una misma misión. Aun así, debemos seguir todos el siguiente consejo: <strong>Odia el pecado, no al pecador</strong>. Diferencias como estilos de prédica, celos de devotos neófitos por su guru, o simples choques de ego, no deben perturbar nuestras apreciaciones de cada uno.
+</p>
+<p class='vspace'>Occidentales, particularmente, a menudo tienen la tendencia de ser crueles con los demás. Ciertos tratos en conjuntos son indeseables. Orgullo, arrogancia, engreimiento, enojo y aspereza, son claramente descritos como cualidades demoníacas en el Bhagavad Gita, y uno no debería sentir justificación de esta clase de comportamiento. Debe existir un foro para la discusión de puntos filosóficos sin crear blasfemias en los demás. Ataques personales deben ser evitados y la verdad debe hablar de un modo humilde. Una vez un sanyassi le preguntó a Srila B. R. Sridhar Maharaj, si había alguna instrucción en especial para él, antes de que viajara a predicar a occidente, y el replicó:” Si, hay una cosa. No debes tener tratos crueles con los demás”.
+</p>
+<p class='vspace'>Además, asumir los errores de Vaisnavas individuales por ser una tendencia general de un grupo entero es un  vergonzoso residuo de la era de Kali. Todos nosotros debemos evitar dar espacio a  Kali en nuestra vida de prédica, y en nuestras relaciones con los Vaisnavas. Reuniones entre Vaisnavas con un espíritu de cortesía, siempre ayudará a resolver males entendidos. 
+</p>
+<p class='vspace'>Los devotos son de naturalezas distintas. En Enseñanzas del Señor Caitanya, Srila A. C. Bhaktivedanta Swami Maharaj relata que Srila Rupa Goswami animaba a devotos de naturalezas similares a unirse y a discutir la filosofía de Conciencia de Krishna. De esta forma, su fe, se fortalecería. Por otro lado, si devotos de naturalezas distintas chocan sobre filosofía, ellos perturbarán su fe, como la de otros.
+</p>
+<p class='vspace'>El sendero de servicio devocional está lleno de gustos, como también de desacuerdos de rendición y condición. No todas las personas pueden entender cada instrucción de la misma manera. Algunas instrucciones de la literatura Vaisnava pueden ser realmente entendidas por Vaisnavas avanzados. Por ello, algunas literaturas están prohibidas para algunos sanyassis, que decir de los principiantes. Aun así, esto no debe ser una razón para irrespetar a los demás, o de evitar crear una atmósfera de bienvenida a otros los devotos de otras familias Vaisnavas del mundo.  
+</p>
+<p class='vspace'>Cada devoto está en una etapa distinta de desarrollo. Por eso, la tolerancia necesita estar presente para permitir y animar a todos a crecer en Conciencia de Krishna. Esto no significa que no pueden haber diálogos o discusiones filosóficas. Mas bien, tales discusiones deben ser realizadas en un espíritu de ayuda para individuales o grupos, y de esta forma ayudarlos a avanzar en Conciencia de Krishna.
+</p>
+<p class='vspace'>Esta actitud es llamada cortesía trascendental. Reuniones tales como los encuentros de la WVA-VVRS o celebraciones de los acaryas Vaisnavas Vyasa – puja o tirobhava,  están  atendidas por varios miembros de distintas misiones. Durante este tipo de reuniones la cortesía trascendental es normal. Después de todo, todos nosotros tenemos muchas cosas en común, y tan poco para estar en desacuerdo, por lo que debemos empezar a apreciar a todos.
+</p>
+<p class='vspace'><a name='x' id='x'></a>
+</p><h3>Costumbres en la Gaudiya Math</h3>
+<p>Sistachara significa las reglas de conducta y de adoración, como un paso de las instrucciones verbales entregadas por el maestro espiritual a sus discípulos. Estas reglas no escritas, de relaciones entre diferentes Gaudiya Maths encuentran sus comienzos en la tradición Vaisnava. Mientras, misiones difieren sobre ciertos temas, un patrón general puede ser observado casi en todos lados. Es notorio, por la naturaleza no sectaria de los Vaisnavas, ser amigables y apreciativos con los devotos y con los servicios hechos por los miembros de otras misiones. Sin embargo, disputas o malas concepciones, se han incorporado a varias ramas, o entre las ramas, resultando relaciones poco amistosas entre la familia de la Gaudiya Math. Con el propósito de guiarnos, junté ciertas características propias de la conducta Vaisnava que he observado en la Gaudiya Math:
+</p>
+<div class='vspace'></div><ol><li>Sin importar la rama que celebre un festival especial en honor a su fundador, suele invitar a las diferentes ramas a su vecindario para participar en la función. Para mostrar respeto, la misión envía algunos cuantos miembros en honor a la invitación.
+</li><li>El respeto mostrado entre los miembros de la Gaudiya Math de acuerdo con su maestro. Sin embargo, a menudo devotos mayores, rechazan tales respetos, escogiendo a un Vaisnava más joven, que ha hecho servicio sin ser notado. Ellos, rechazarán tal idea e insistirán en el honor de los devotos mayores primero. Esta es un tipo de pelea de amor, observada entre los Vaisnavas. De esta forma, voceros son escogidos, por acuerdos en las reuniones Vaisnavas.
+</li><li>Si un Vaisnava viene a bendecir una reunión o un festival, el deberá recibir generalmente, de acuerdo a la habilidad del encargado, lo siguiente: 
+<ul><li>Una cálida bienvenida.
+</li><li>Un lugar para sentarse en forma de asana hecha de grasa kusa o algodón.
+</li><li>Una petición para Hari katha.
+</li><li>Una invitación para tomar prassadam.
+</li><li>Una donación para cubrir los gastos del viaje.
+</li><li>Ropa.
+</li><li>Invitación a descansar.
+</li></ul></li></ol><p class='vspace'>Estas son las costumbres básicas observadas entre los Vaisnavas, los cuales hacen su asociación muy dulce. De hecho, estos elementos de fraternidad y amistad dan la bienvenida a invitados por cualquier persona educada. Incluso un enemigo no podría tratar sentirse enfermo, cuando llega a tu hogar, que decir de otro Vaisnava. Para servirlos apropiadamente solo traer felicidad y bendiciones.
+</p>
+<p class='vspace'>Aquí hay mas puntos son mencionados:
+</p><ol><li>Uno inquiere del Vaisnava que viene llegando, acerca de su iniciación y servicio, para descubrir como honrarlo y animar a este Vaisnava en su sendero 
+</li><li>Uno no debería glorificar a su guru extensamente enfrente de los maestros del guru y hermanos espirituales. Referirse al maestro espiritual enfrente de sus hermanos espirituales con el mismo nombre que ellos usan para sus gurus tampoco es correcto.
+</li><li>En la Gaudiya Math, siempre tenemos el espíritu de ofrecer respetos a los demás sin esperar nada a cambio.
+</li><li>Si cualquier tipo de orgullo aparece para contaminar las relaciones Vaisnavas, es tan solo cuestión de tiempo antes de que Krishna envíe la lección. Somos felices con esto. El ambiente es amoroso con nosotros todo el tiempo.
+</li><li>Nunca te desesperes en momentos difíciles. Aprende bien tu lección, y continua tu sendero de rendición.
+</li></ol><p class='vspace'>Lo más importante que no debemos olvidar es el sloka de Srila Rupa Goswami Prabhupad: “yena tena prakarena, manah Krishna nivesayet...”. Sobre todas las cosas las personas deben pensar en Krishna. Después, las reglas y regulaciones serán gradualmente introducidas.
+</p>
+<p class='vspace'>Todos deben estar felizmente acomodados en esta familia de Conciencia de Krishna. Esta es la regla dorada, y nuestras actitudes no deben interferir con este ideal. Temas, como diferentes canciones cantadas en distintas funciones, sus rituales y procedimientos de iniciación, etc., son secundarios. Aunque el libro Sat kriya sar dipika, escrito por Srila Gopal Bhatta Goswami, entrega la guía sobre muchos samskaras , hemos visto que distintos acaryas han adoptado diferentes simplificaciones de rituales en sus practicas de prédica. Esto no es una razón para disputas.
+</p>
+<p class='vspace'>Si alguien es muy neófito para entender esto, el tendrá tiempo difíciles asociando con otras ramas de la Gaudiya Math. No es posible aplicar las mismas reglas a todos los tiempos, lugares y circunstancias. Debemos ser flexibles, armonizadores, y pensar siempre en Krishna.
+</p>
+<p class='vspace'><a name='y' id='y'></a>
+</p><h3>Origen del alma</h3>
+<p>Desde 1981 hasta 1996 una controversia surgió en ISKCON, miembro de la Gaudiya Math rama del árbol Caitanya, con relación al origen del alma. 
+Será brevemente mencionado aquí que el Gaudiya Vaisnava siddhanta, enseñado por nuestros acaryas, aclara perfectamente el hecho de que las jivas provienen de tatastha sakti ( energía marginal) de Sri Krishna y no han caído de la asociación personal con Sri Krishna en Goloka, o de la asociación del Señor Narayan en Vaikuntha. En el segundo capitulo titulado Hari-jana kanda, del “Brahmana y Vaisnava” (Pág. 86) Srila Bhaktisiddhanta Sarasvati Thakur declara: “ Antes de adquirir una designación material, la entidad viviente es supremamente pura. Aunque no esta comprometida en el servicio al Señor Supremo, ella se mantiene situada en una posición  neutral de santa rasa debido a su naturaleza marginal.
+</p>
+<p class='vspace'>Aunque la entidad viviente nace de la potencia marginal, no exhibe un gusto por servir al Señor Supremo debido a su falta de conocimiento de auto realización, y su propensión para servir al Señor Supremo, se mantiene en un estado latente. Aunque la intención indirecta del disfrute material, la cual es contraria al servicio del Señor, no es encontrada a la vez, que la indiferencia hacia el servicio de Hari, y la semilla del disfrute material, que sigue el estado de la indiferencia, están presentes en ella.
+</p>
+<p class='vspace'>La entidad viviente que pertenece a la energía marginal, o puede mantenerse indiferente por siempre  al servicio devocional y a las no devocionales propensas.  Ella antes contempla las actividad inconstitucionales de su posición marginal. Como una persona dormida sueña que es activo en una mundo físico, sin en realidad estar involucrados  en actividades, donde las indiferentes entidad vivientes de la potencia marginal, exhiben incluso una pequeña apatía  hacia el servicio del Señor Supremo y lo sitúa en una neutral, condición incluso por un pequeño tiempo, es infectado por el impersonalismo. Es por eso que el alma condicionada desea emerger del Brahman impersonal, por eso exhibiendo así su mentalidad. Pero debido a la negligencia por el servicio del Señor y por el desarrollo de la cualidad en aversión, no puede mantenerse fija en esa posición. De esta forma, la aversión hacia el Señor quiebra la concentración de la mente y la establece como la maestra de este mundo del disfrute. Maya, la energía externa del Señor Supremo, induce a la entidad viviente marginal a disfrutar de este mundo a través de sus potencias cubiertas y muestra a la entidad viviente la realidad de ser enemigo del servicio para el Señor”
+</p>
+<p class='vspace'>De hecho, las cuatro sampradayas Vaisnavas están en acuerdo con respecto a este tema. Informes al contrario, o aquellos que tienden a dar sus interpretaciones, pueden ser entendidos como simplificaciones en un estructura la cual no requiere la aclaración del Siddhanta. Los secretos del origen del alma son mantenidos por el Señor Supremo, que se reserva todos los derechos de las facilidades de Su amado lila, y que no obliga a nadie a tener una relación con Él.
+</p>
+<p class='vspace'><a name='z' id='z'></a>
+</p><h3>Cómo el Vaisnava Siddhanta considera los derechos de copia de la literatura trascendental</h3>
+<p>Utilizando los derechos de autor una persona reclama para sí, los derechos de una contribución creativa. Aun, esto es incompatible con la naturaleza del conocimiento divino que desciende dentro de este mundo. Limitando la publicación de las Sagradas Escrituras y su distribución para alguna persona o institución, se contradice la naturaleza de nuestro siksa guru parampara y de los Acaryas Vaisnavas. Cualquier derecho de autor, que produzca la disminución de la distribución y publicación de libros trascendentales, no corresponde al interés de cualquier acarya Vaisnava.
+</p>
+<p class='vspace'>El verdadero propietario de los derechos es el Señor Supremo Sri Krishna Mismo, y es solamente Él quien decide cual discípulo está calificado para repartir el mensaje puro de su guru. Una vez, Srila . C. Bhaktivedanta Swami Maharaj, estaba leyendo Krishna Book, y su secretario le pregunto porque leía sus propios libros. Srila A. C. Bhaktivedanta contestó. “ Estos no son mis libros, estos me fueron dictados”. Mientras Krishna permitía que su Bhagavad Gita, fuese impreso por muchas personas, solamente los verdaderos devotos obtenían las bendiciones de Bhakti al imprimir este texto sagrado. Por lo que todos los demás intentos de cualquier institución Vaisnava de reclamar los derechos exclusivos de las contribuciones de sus Acaryas contradicen la ley trascendental. 
+</p>
+<p class='vspace'>El maestro espiritual es un medio transparente de Dios, que entrega Sus enseñanzas a este mundo. Srila A. C. Bhaktivedanta Swami Maharaj quiso que sus libros fueran distribuidos por todos para todos. Cuando, él estaba presente, incluso aquellos que mantuvieron distancia de la administración de su misión, fueron autorizados para la distribución de los libros. El deseo de los Acaryas es que sus enseñanzas sean manejadas por sus discípulos y otros Vaisnavas sinceros.
+</p>
+<p class='vspace'>Un discípulo recibe el mantra y las enseñanzas de parte de su guru;  y el promete mantenerse fiel a las enseñanzas de su guru. Esta es la única condición formal que se requiere del discípulo para ser aceptado. Por esto, cada discípulo tiene el derecho y el deber de distribuir las enseñanzas de su guru, de la forma que el considere mas apropiada. Es verdad también, que cada misión Vaisnava quiere, naturalmente utilizar la literatura que ellos imprimen y así distribuirlas cada vez mas lejos, a través de las invitaciones impresas en los libros. La historia ha mostrado que las propiedades de las misiones de grandes Acaryas, terminan algunas veces en manos mundanas, de personas ignorantes  del significado sagrado de tales lugares. Sin embargo, tales personas no tienen la oportunidad de reclamar monopolio sobre las enseñanzas y escrituras del guru y acarya fundador. Esta es una observación muy importante. Es también conocido el hecho de que los sucesores algunas veces fallan en la continuación de la línea de los Acaryas de devoción pura, mientras que otros discípulos triunfan con la distribución de la esencia del sampradaya. Debido a la mala dirección de algunos miembros lideres de las misiones Vaisnavas, las propiedades que sus gurus establecieron se han vuelto objetos de disputas o de malos usos. Sin embargo, las enseñanzas de cualquier guru verdadero son la propiedad de todos aquellos que cargan con el verdadero espíritu de su mensaje. Ya que no se puede predeterminar que discípulo está realmente calificado, todos tienen el derecho de predicar el mensaje de su guru así también como de publicar y distribuir sus enseñanzas. Solo por sus propias calificaciones, y no por algún otro tipo de nominación, puede ser alguien aceptado en representar a su maestro espiritual apropiadamente. Encontramos que estas conclusiones están respaldadas por la tradición Vaisnava. Ejemplos de esto incluyen lo siguiente:
+</p>
+<div class='vspace'></div><ul><li>Todas las ramas de la Gaudiya Math pueden publicar libremente los libros de sus Acaryas anteriores. I.e ISKCON publicó el Brahma Asmita, que fue previamente publicado por Srila Bhaktisiddhanta Sarasvati Thakur.
+</li><li>Todas las Gaudiyas Vaisnavas cantan las canciones de Bhaktivinode Thakur y Narottam das Thakur.
+</li><li>Usualmente, los Vaisnavas están felices si otros Vaisnavas imprimen y distribuyen la sagrada literatura Vaisnava, de cualquier autor; sabiendo bien que Krishna y el autor están felices cuan mas almas están en contacto con la verdad divina.
+</li><li>Ya que solo Krishna puede guiar a alguien a su maestro espiritual ( brahmananda bhramithe kona...), es un error pensar que alguien pudo ilegalmente abusar de las enseñanzas de cualquier guru distribuyendo y publicando sus trabajos.
+</li><li>Por razones prácticas, no existe objeción en la coordinación y publicación de libros de previos Acaryas en un esfuerzo unido de varias misiones. Aun así, esto solo puede ser llevado a cabo, si el propósito de la publicadora es transparente y conocido por todos quienes participan. Srila A. C. Bhaktivedanta Swami Maharaj animó a sus discípulos a escribir incluso cuando el estaba personalmente presente.  ¿Como un discípulo puede escribir si no tiene permiso de su guru y publicar sus escritos? 
+</li></ul><p class='vspace'>Srila A. C. Bhaktivedanta Swami Maharaj comenzó varias divisiones distintas de sus publicadoras llamadas Bhaktivedanta Book Trust. Yo ( B. A. Paramadvaiti) fui personalmente responsable de varios departamentos Bhaktivedanta Book Trust ( en Sueco, Danés y portugués) desde 1973 hasta 1979.
+</p>
+<p class='vspace'>Srila A. C. Bhaktivedanta Swami Maharaj nos entregó completa libertad para publicar y recibir felizmente los libros nuevos. Su preocupación era que toda la energía debería ser gastada para Krishna, sin importar quien lo manejaría más tarde. Potencialmente, cada discípulo y seguidor genuino de Srila A. C. Bhaktivedanta Swami Maharaj, está calificado para comenzar una división trascendental de publicación, y publicar a Srila A. C. Bhaktivedanta Swami Maharaj, Srila Sridhar Maharaj, como así también a todos los Acaryas anteriores. Él tan solo tiene que asegurarse que la energía de estos libros serán realmente utilizadas en el servicio del Señor; de otra forma  será mantenido responsable de sus reacciones. Es también necesario para el departamento publicista trascendental o la empresa Vaisnava ser transparente en su transacciones financieras enfrente de todos sus contribuyentes. Como dice el dicho: Cuentas claras mantienen la amistad, o amor y confianza con una buena administración.
+</p>
+<p class='vspace'>Bhaktivedanta Book Trust y las demás divisiones publicitarias en la Gaudiya Math, no son nada mas y nada menos que ramas de servicio de la Gaudiya Math. Es muy decepcionante cuando miembros de la familia no pueden reconocer a sus relativos. ¿ ¿Hay algunos de nuestros grandes Acaryas como Srila Bhaktivinode Thakur menos importante en la historia Vaisnava que Srila Jiva Goswami?. Imagine a alguien del templo de Radha Damodar tratando de reclamar los derechos de cualquier libro de Srila Jiva Goswami, que ha sido publicado por Vaisnavas. Es suficientemente triste que tantos tirthas maravillosos, tales como los templos de los Goswamis  hayan sido ocupados por la televisión y “bidhi” residentes fumadores.
+</p>
+<p class='vspace'>Es tiempo de traer el verdadero Siddhanta dentro de una vista clara. Sucesores de un acarya, incluso si ellos recibieron nombramiento propio, deben mantener en mente que sus hermanos espirituales tienen el mismo derecho y deber de continuar la línea discipular. Esta es la ley de la sucesión discipular.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html'>II Parte</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_07.html'>IV Parte</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 18, 2008, at 11:46 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Taller N°5</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_goswami - RSS Feed'
+      href='index.php-n=bhaktivedanta_goswami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_goswami.manual_del_bhakta_6' method='get'><input type='hidden' name='n' value='bhaktivedanta_goswami.manual_del_bhakta_6' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Taller N°5"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.bhaktivedanta_goswami.html'>BV Goswami Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a>
+</p>
+<div class='vspace'></div><h2>Taller N°5</h2>
+<p><em><a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub1'>La misión de Sri Caitanya</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub2'>Sri Siksastaka</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub3'>Tapasya</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub4'>Ajñata sukritti</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub5'>Sadhu Sanga</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub6'>Las tres modalidades de las naturaleza material</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub7'>Tulasi Kunti mala</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub8'>La cocina</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub9'>Sankirtan - Distribución del Néctar</a></em>
+</p>
+<p class='vspace'><a name='sub1' id='sub1'></a>
+</p><h3>La misión de Sri Caitanya</h3>
+<p>El Señor Caitanya Mahaprabhu instruyó a sus discípulos para que escriban libros sobre  Conciencia de Krishna. Esta tarea ha sido continuada por sus seguidores hasta el día presente. Las elaboraciones y exposiciones sobre la filosofía hablada por el Señor Caitanya son, de hecho, las más voluminosas, exigentes y consistentes, debido al sistema de sucesión discipular. Aunque el Señor Caitanya fue ampliamente conocido como un erúdito en su juventud, Él nos dejó únicamente estas ocho estrofas el SRI SIKSASTAKA. Estos ocho poemas revelan claramente su misión y preceptos, y sintetizan maravillosamente toda la ciencia de la devoción a Dios. Está explicado que simplemente por recitar diariamente estos versos, uno puede limpiarse de todos sus deseos materiales y revivir su amor puro a Dios y al final de la vida regresar a su verdadero hogar, de vuelta al Supremo.
+</p>
+<p class='vspace'><a name='sub2' id='sub2'></a>
+</p><h3>Sri Siksastaka</h3>
+<p>"Todas las glorias al canto de los Santos Nombres del Señor Sri Krishna, que limpia el corazon de todo el polvo acumulado por años y extingue el fuego de la vida condicionada de repetidos nacimientos y muertes. Este cantar de los Santos Nombres es la mayor misericordia para toda la humanidad pues difunde los rayos de la luna de la bendición, es la vida de todo conocimiento trascendental, aumenta el océano de la bienaventuranza espiritual y nos capacita para saborear plenamente el néctar por el cual estamos siempre ansiosos."
+</p>
+<p class='vspace'>"Oh mi Señor, tu santo nombre solamente puede otorgar toda bendición a los seres vivientes y es así que tú tienes cientos y millones de nombres como Krishna y Govinda. Tú has investido estos nombres trascendentales con todas tus energías trascendentales y ni siquiera hay reglas estríctas o difíciles para cantarlos. Oh, mi Señor por tu bondad permites que nos acerquemos fácilmente a tí, mediante el canto de tus Santos Nombres, pero yo soy tan desafortunado que no tengo atracción por ellos."
+</p>
+<p class='vspace'>"Uno debe cantar el Santo Nombre del Señor en un estado mental humilde, sintiéndose más bajo que la hojarazca de la calle, uno debe ser más tolerante que un árbol,libre de todo sentido de prestigio falso y estar dispuesto a ofrecer todo respeto a los demás; en tal estado mental uno puede cantar el Santo Nombre del Señor constantemente."
+</p>
+<p class='vspace'>"!Oh, Señor todopoderoso!, no deseo acumular riquezas, ni deseo mujeres bellas, ni quiero ninguna cantidad de seguidores. Lo único que quiero es tu servicio devocional sin causa, nacimiento tras nacimiento."
+</p>
+<p class='vspace'>"Oh, hijo de Maharaj Nanda (Krishna), yo soy tu siervo eterno y aún así, de una manera u otra, he caído en el océano de nacimiento y muerte. Por favor levánteme de este océano de muerte y colócame como uno de los átomos a tus pies de loto."
+</p>
+<p class='vspace'>"!Oh, mi Señor!. ¿Cuándo se adoraran mis ojos con lágrimas de amor fluyendo constantemente al cantar tu Santo Nombre?. ¿Cuándo se ahogará mi voz y cuándo se erizaran los vellos de mi cuerpo al recitar tu Santo Nombre?"
+</p>
+<p class='vspace'>"!Oh, Govinda! al sentir tu separación considero que un momento es como doce años o más; lágrimas fluyen de mis ojos como torrentes de lluvia y en tu ausencia me siento completamente sólo en este mundo."
+</p>
+<p class='vspace'>"No conozco a nadie más que a Krishna como mi Señor, y Él siempre permanecerá así, aunque me trate duramente con su abrazo o me parta el corazón al no estar presente ante mí. Él es completamente libre de hacer cualquier cosa, pero Él es siempre mi Señor adorable sin ninguna condición."
+</p>
+<p class='vspace'><a name='sub3' id='sub3'></a>
+</p><h3>Tapasya</h3>
+<p>Austeridades. Cuando actuamos contra nuestra comodidad para complacer a Krishna. Levantarse a las 4 a.m. bañarse con agua fría y ejecutar servicio como la prédica de casa en casa. Ayuda a nuestro progreso espiritual.
+</p>
+<p class='vspace'><a name='sub4' id='sub4'></a>
+</p><h3>Ajñata Sukritti</h3>
+<p>Actividades piadosas realizadas previamente que han despertado nuestro interés espiritual. Ahora queremos saber más y queremos ayudar a los devotos en sus labores devocionales, con donaciones, estudios o cualquier aporte, de esta forma comienza nuestra conexión consciente de Dios.
+</p>
+<p class='vspace'><a name='sub5' id='sub5'></a>
+</p><h3>Sadhu Sanga</h3>
+<p>Asociación con devotos para ejecutar el servicio a Krishna, debemos buscar la asociación de devotos, ellos hablan acerca de Krishna y nuestros deseos cambian. Así vamos a desear llevar una vida como ellos.
+</p>
+<p class='vspace'><a name='sub6' id='sub6'></a>
+</p><h3>Las tres modalidades de la naturaleza material.</h3>
+<p>Todos los seres dentro del universo estan sujetos a ser influenciados por las modalidades de la naturaleza material, su mezcla produce todos los colores y formas de la existencia.
+</p>
+<p class='vspace'>Sattva Guna - Bondad: Es supervisada por el Señor Visnu. La manutención, el poder de la desición para buscar la autorrealización. Un filósofo, médico, un poeta. Él hace su vida agradable, pero atado por la soga de la bondad humana a este sentimiento placentero, él no hace ningún esfuerzo por elevarse espiritualmente.
+</p>
+<p class='vspace'>Raja Guna - Pasión: Bajo el mandato del Señor Brahma. El creador. Es el producto nacido de deseos y anhelos ilimitados. Lo típico de este guna es la atracción y el disfrute sexual. El jiva tiene que trabajar muy duro constantemente para adquirir y mantener cosas como el hogar y la complacencia familiar.
+</p>
+<p class='vspace'>Tama Guna - Ignorancia: Bajo el mandato del Señor Siva. Predominan la destrucción y la violencia. Condiciona a la jiva a la pereza, dormir excesivamente y a la dependencia de intoxicantes. El resultado de esta modalidad es la locura.
+</p>
+<p class='vspace'>En cualquier momento las acciones de la jiva son influenciadas no sólo por una modalidad sino también por una combinaciónv de las tres modalidades.
+</p>
+<p class='vspace'><a name='sub7' id='sub7'></a>
+</p><h3>Tulasi Kunti Mala </h3>
+<p>El uso del collar de tulasi debe ser permanente, porque lo protege de malos sueños, accidentes, ataques por armas y de los sirvientes de Yamaraja.
+</p>
+<p class='vspace'><a name='sub8' id='sub8'></a>
+</p><h3>La Cocina</h3>
+<p>Nunca se come dentro de la cocina porque es considerada igual que el altar, así, no se debe usar zapatos, ni oler los alimentos, ni probarlos. En cuanto a la conversación, se habla sólo lo estríctamente necesario para preparar el prasadam o sólo acerca del Señor. La conciencia del cocinero entra en el alimento que prepara por lo tanto debe esforzarse por ser consciente de Krishna en la cocina. Si algo cae al piso, lávelo, si no es posible, bótelo. Si algo cae en sus pies, sea lavable o no, bótelo.
+</p>
+<p class='vspace'><a name='sub9' id='sub9'></a>
+</p><h3>Sankirtana - Distribución del Néctar.</h3>
+<ol><li>Recuerda siempre a Sri Caitanya Mahaprabhu y a Sri Nityananda.
+</li><li>Krishna es el dueño de todo y tu eres su representante.
+</li><li>Krishna esta en los corazones de todos. Ora al Señor para que de manera humilde puedas entregar los libros a todos ellos.
+</li><li>Srila Prabhupada quiere salvar a todo el mundo. No dejes nunca una mala impresión a nadie. 
+</li><li>Jamás pelees con Karmis, mucho menos con autoridades.
+</li><li>Aprende la filosofía para que puedas convencer a hombres inteligentes sobre la conciencia de Krishna.
+</li><li>No sólo hay que distribuir los libros, también hay que leerlos.
+</li></ol><div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub8'>La cocina</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_6.html#sub9'>Sankirtan - Distribución del Néctar</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on June 11, 2008, at 06:18 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

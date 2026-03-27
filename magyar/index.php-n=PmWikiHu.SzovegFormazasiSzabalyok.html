@@ -1,0 +1,286 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Szövegformázási szabályok</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : PmWikiHu - RSS Feed'
+      href='index.php-n=PmWikiHu.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=PmWikiHu.SzovegFormazasiSzabalyok' method='get'><input type='hidden' name='n' value='PmWikiHu.SzovegFormazasiSzabalyok' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Szövegformázási szabályok"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=PmWikiHu.SzovegFormazasiSzabalyok-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p  style='text-align: right;'><span style='font-size:83%'>(<a class='wikilink' href='index.php-n=PmWiki.DocumentationIndex.html'>eredeti angol változat</a>)</span>
+</p>
+<p class='vspace'>Ez a lap egy teljesebb listát szolgáltat a PmWiki-ben használható jelölő karakterekről. Megjegyzendő, hogy könnyű lapokat létrehozni és szerkeszteni a lenti jelölések bármelyikének használata nélkül, de ha valaha is szükségesek lesznek, itt vannak.
+</p>
+<p class='vspace'>A szabályokkal való kisérletezésre kérjük a Main/WikiSandbox-ot használni.
+</p>
+<div class='vspace'></div><hr />
+<h3>Bekezdések</h3>
+<ul><li>A bekezdések nincsenek bennebb kezdve
+</li><li>A szavak megtörnek és a szükség szerint töltik ki a helyet
+</li><li>Az üres sor használható elválasztóként
+</li><li>Az egy vagy több szóközzel (vagy tabulátorral) kezdödő sorok azonos betüszélességű típusúak
+</li><li>A <code class='escaped'>\</code> (szimpla fordított törtvonal) a sor végén a következő sort összevonja az aktuálissal
+</li><li>A <code class='escaped'>\\</code> (dupla fordított törtvonal) a sor végén beszúr egy sortörést de megtartja a <em>környezetet</em> (úgy mint az aktuális lista elemet)
+</li></ul><div class='vspace'></div><hr />
+<h3>Bennebb kezdett bekezdések <em>(Idézetek)</em></h3>
+<p>A bekezdés elején elhelyezett nyilak (<code class='escaped'>-&gt;</code>) használhatóak bennebb kezdett bekezdés létrehozására. Több kötőjel az elején (<code class='escaped'>---&gt;</code>) mélyebb bennebb kezdést eredményez.
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+-&gt;Négy indítékkal és hét évvel ezelött az apáink megalapoztak
+ezen a földrészen egy új nemzetet, a szabadság elvére alapozva és
+annak az indítványnak szentelve mely szerint minden ember egyenlőre lett
+alkotva.
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><div class='indent'>Négy indítékkal és hét évvel ezelött az apáink megalapoztak ezen a földrészen egy új nemzetet, a szabadság elvére alapozva és annak az indítványnak szentelve mely szerint minden ember egyenlőre lett alkotva.
+</div>
+</td></tr></table>
+<div class='vspace'></div><hr />
+<h3>Bajuszozott listák</h3>
+<p>A bajuszozott listákat úgy csinálják, hogy csillag van helyezve a bal szélükre. Több csillag növeli a bajuszozási szintet:
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+* Első szintű lista elem
+** Második szintű lista elem
+** Még egy második szintű elem
+* Első szintű elem
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><ul><li>Első szintű lista elem
+<ul><li>Második szintű lista elem
+</li><li>Még egy második szintű elem
+</li></ul></li><li>Első szintű elem
+</li></ul>
+</td></tr></table>
+<div class='vspace'></div><hr />
+<h3>Vízszintes vonal</h3>
+<p>Négy vagy több kötőjel (----) a sor elején egy vízszintes vonalat készít.
+</p>
+<div class='vspace'></div><hr />
+<h3>Kiemelés</h3>
+<ul><li>Dupla felsővessző (''), azaz <em>két felsővessző</em>, használható a kiemelésre (általában <em>dölt/italic</em>)
+</li><li>Tripla felsővessző ('''), azaz <em>három felsővessző</em>, használható a hangsúlyozott kiemelésre (általában <strong>félkövér/bold</strong>)
+</li><li>Öt felsővessző ('''''), vagy tripla a duplán belül (<em>öt felsővessző</em>), használható egyéb fajta kiemelésre (általában <strong><em>félkövér dölt/bold italic</em></strong>)
+</li><li>Dupla majomfarkak (@@) azonos betüszélességű <code>monospace</code> szöveget jelölnek
+</li><li>A [+...+] jelöli a <span style='font-size:120%'>nagyobb betüméretű</span> szöveget és a [-...-] a <span style='font-size:83%'>kisebb betüméretű</span> szöveget
+</li><li>Kiemelések használhatoak többször is egy soron belül, de nem nyúlhatnak túl a sor szintű jelölés határain (például nem lehet bekezdés határ a félkövér szöveg közepén)
+</li></ul><p class='vspace'>Egyéb stílusok
+</p><ul><li><code class='escaped'>'+nagy/big+', '-kicsi/small-', '^hatvány kitevő/sup^', '_alsó index/sub_', {+beszúrás/ins+}, {-törlés/del-}</code>.<br /><big>nagy/big</big> , <small>kicsi/small</small> , <sup>hatvány kitevő/sup</sup> , <sub>alsó index/sub</sub> , <ins>beszúrás/ins</ins> , <del>törlés/del</del> 
+</li><li><code class='escaped'>`WikiSzo</code> WikiSzó hatástalanítása
+</li></ul><p class='vspace'>Megtekintendő a WikiStilus is a bonyolultabb formázási lehetöségek ügyében.
+</p>
+<div class='vspace'></div><hr />
+<h3>Hivatkozások</h3>
+<ul><li>Szavakat és mondatokat dupla szögletes zárójelek közt használva (úgy mint [[szöveg formázási szabályok]]) hivatkozást hoz létre az aktuális wiki más lapjaira
+</li><li>Egybe írt nagy kezdőbetüs szavak (úgy mint <a class='createlinktext' href='index.php-n=PmWikiHu.WikiSzavak-action=edit.html'>WikiSzavak</a>) is használhatóak más lapra mutató hivatkozások létrehozéséhoz, anélkül, hogy dupla szögletes zárójelekre volna szükség
+</li><li>Az URLek elé írt "http:", "ftp:", "gopher:", "mailto:", vagy "news:" automatikusan hivatkozást hoz létre mint például <a class='urllink' href='http://www.pmichaud.com/toast' rel='nofollow'>http://www.pmichaud.com/toast</a>.
+</li><li>A .gif, .jpg, vagy .png végzödésű URLek képekként lesznek feltüntetve a lapon
+</li><li>Tetszöleges szövegű hivatkozások létrehozhatóak akár [[<em>cél</em> | <em>szöveg</em>]], akár [[<em>szöveg</em> -&gt; <em>cél</em>]] formában. A <em>szöveg</em> egy kép URLje is lehet, amely esetben a kép lesz a hivatkozás a <em>cél</em>ra vagy a WikiSzo-ra.
+</li><li><a name='viszonyitasipont' id='viszonyitasipont'></a> Viszonyítási pontok a lapon (#-hivatkozások) <code>[[#viszonyitasipont]]</code> jelöléssel hozhatóak létre.
+</li></ul><div class='vspace'></div><hr />
+<h3>Címek</h3>
+<p>A címek a felkiáltó jel (<strong>!</strong>) bal szélen való elhelyezésével készülnek. Több felkiáltó jel növeli a cím besorolási szintjét. Például
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+! Első szintű cím
+!! Második szintű cím
+!!! Harmadik szintű cím
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><h1>Első szintű cím</h1>
+<h2>Második szintű cím</h2>
+<h3>Harmadik szintű cím</h3>
+</td></tr></table>
+<div class='vspace'></div><hr />
+<h3>Escape karaktersorok</h3>
+<p>Bármi ami [= és =] közé van helyezve, nem lesz értelmezve a PmWiki/PmWiki által. Ez lehetövé teszi olyan WikiSzavak használatat, amelyek nem hivatkozások és kikapcsolja a többi formázás értelmezését. A [= és =] átnyúlhat több soron is, ezáltal a hatását több sorra fejtve ki. Például szóköz[= a sor elején eredményeként a szöveg a következő =]-ig azonos betüszélességű lesz és PmWiki/PmWiki nem értelmezi ki. (hasznos a programok kilistázáshoz).
+</p>
+<div class='vspace'></div><hr />
+<h3>Számozott listák</h3>
+<p>A számozott listák a szám-jel (#) bal szélen való elhelyezésével készülnek.
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+# Felkészülés a kisérletre
+## Túros bukta kicsomagolása
+## Túros bukta behelyezése a kenyér pirítóba
+# Túros bukta sütés elkezdése
+# Egy lépés hátra
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><ol><li>Felkészülés a kisérletre
+<ol><li>Túros bukta kicsomagolása
+</li><li>Túros bukta behelyezése a kenyér pirítóba
+</li></ol></li><li>Túros bukta sütés elkezdése
+</li><li>Egy lépés hátra
+</li></ol>
+</td></tr></table>
+<div class='vspace'></div><hr />
+<h3>Meghatározás listák</h3>
+<p>A meghatározás listák a kettőspont bal szélen való elhelyezésével készülnek:
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+:kifejezés: kifejezés meghatározása
+::második szintű elem: második szintű elem meghatározása
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><dl><dt>kifejezés</dt><dd> kifejezés meghatározása
+<dl><dt>második szintű elem</dt><dd> második szintű elem meghatározása
+</dd></dl></dd></dl>
+</td></tr></table>
+<div class='vspace'></div><hr />
+<h3>Táblázatok</h3>
+<p>A táblázatok a '||' közé zárt mezök által vannak meghatározva.
+A bevezető és záró szóközös mezők középre igazítottak, az összes többi mező balra igazított. Az üres mezők hatására az öket megelöző mező több oszlopra fog átnyúlni. (Jelenleg nincs módszer a több soron való átnyújtásra.) Egy '||' kezdetű sor beállítja a következő táblázatok tulajdonságait.
+</p>
+<div class='vspace'></div><table class='markup vert' align='center'>
+      <tr><td class='markup1' valign='top'><pre>
+||align=center border=1 width=50%
+||Bal    || Közép  ||   Jobb||
+||A      ||    B   ||      C||
+||       || egyszerű || ||
+||       || átnyúló ||||
+</pre></td></tr><tr><td 
+        class='markup2' valign='top'><table align='center' border='1' width='50%' ><tr ><td  align='left'>Bal</td><td  align='center'>Közép</td><td  align='right'>Jobb</td></tr>
+<tr ><td  align='left'>A</td><td  align='center'>B</td><td  align='right'>C</td></tr>
+<tr ><td >&nbsp;</td><td  align='center'>egyszerű</td><td >&nbsp;</td></tr>
+<tr ><td >&nbsp;</td><td  align='center' colspan='2'>átnyúló</td></tr>
+</table>
+</td></tr></table>
+<p class='vspace'><span class='trail'><span class='wikitrail'>&lt;&lt;  | Tartalom |  &gt;&gt;</span></span>
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 28, 2006, at 04:11 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

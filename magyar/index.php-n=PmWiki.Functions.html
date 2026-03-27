@@ -1,0 +1,225 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Functions</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : PmWiki - RSS Feed'
+      href='index.php-n=PmWiki.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Functions' method='get'><input type='hidden' name='n' value='PmWiki.Functions' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Functions"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Functions-discussion?action=edit'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p>
+<span class='frame rfloat' style='font-size: smaller; background-color: #ffffcc;'> admins (advanced)</span>
+<span class='wikitrail'>&lt;&lt; <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Upload_Variables?action=edit'>Upload Variables</a> | <a class='wikilink' href='index.php-n=PmWiki.Variables.html'>PmWiki.Variables</a> | <a class='wikilink' href='index.php-n=PmWiki.PageVariables.html'>PmWiki.PageVariables</a> &gt;&gt;</span>
+</p>
+<p class='vspace'>This page describes some of the internal workings of PmWiki by explaining how some of the functions in pmwiki.php work. For a more brief list/overview on functions useful to for instance cookbook writers, see <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Functions' rel='nofollow'>Cookbook:Functions</a>. 
+</p>
+<div class='vspace'></div><h2><a name='PSS' id='PSS'></a> <code class='escaped'>PSS($string)</code></h2>
+<p>This function should always be used, passing parameters to functions called via <code class='escaped'>preg_replace</code>. Especially when defining a replacement with
+the <code class='escaped'>Markup()</code> function. It removes the escape in front of quotation marks. This function is frequently used in <code class='escaped'>scripts/stdmarkup.php</code>,
+for example in the definition of the <code class='escaped'>(:redirect:)</code>-directive.
+</p>
+<div class='vspace'></div><h2><a name='stripmagic' id='stripmagic'></a> <code class='escaped'>stripmagic($string)</code></h2>
+<p>This function should always be used when processing the contents of <code class='escaped'>$_POST</code> or <code class='escaped'>_GET</code> variables. It verifies <code class='escaped'>get_magic_quotes()</code>, if true,
+strips the automatically inserted escapes from the string.
+</p>
+<div class='vspace'></div><h2><a name='FmtPageName' id='FmtPageName'></a> <code class='escaped'>FmtPageName</code>($fmt, $pagename)</h2>
+<p><a name='FmtPageName-desc' id='FmtPageName-desc'></a>Returns <code class='escaped'>$fmt</code>, with $variable and $[internationalisation] substitutions performed, under the assumption that the current page is <code class='escaped'>pagename</code>. See <a class='wikilink' href='index.php-n=PmWiki.Variables.html'>PmWiki.Variables</a> for an (incomplete) list of available variables, <a class='wikilink' href='index.php-n=PmWiki.Internationalizations.html'>PmWiki.Internationalizations</a> for internationalisation.
+</p>
+<p class='vspace'>This is one of the major functions in PmWiki, see <a class='wikilink' href='index.php-n=PmWiki.FmtPageName.html'>PmWiki.FmtPageName</a> for
+lots of details.
+</p>
+<div class='vspace'></div><h2><a name='Markup' id='Markup'></a> <code class='escaped'>Markup</code>($name, $when, $pattern, $replace)</h2>
+<p><a name='Markup-desc' id='Markup-desc'></a>Adds a new markup to the conversion table.  Described in greater detail at PmWiki.CustomMarkup.
+</p>
+<p class='vspace'>This function is used to insert translation rules into the PmWiki's
+translation engine. The arguments to <code class='escaped'>Markup()</code> are all strings, where:
+</p>
+<div class='vspace'></div><dl><dt><code class='escaped'>$name</code></dt><dd> The string names the rule that is inserted.  If a rule of the same name already exists, then this rule is ignored.
+</dd><dt><code class='escaped'>$when</code></dt><dd> This string is used to control <em>when</em> a rule is to be applied relative to other rules.  A specification of "<code class='escaped'>&lt;xyz</code>" says to apply this rule prior to the rule named "xyz", while "<code class='escaped'>&gt;xyz</code>" says to apply this rule after the rule "xyz".  See <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/CustomMarkup' rel='nofollow'>CustomMarkup</a> for more details on the order of rules.
+</dd><dt><code class='escaped'>$pattern</code></dt><dd> This string is a <a class='urllink' href='http://www.php.net/preg_replace' rel='nofollow'>regular expression</a> that is used by the translation engine to look for occurences of this rule in the markup source.
+</dd><dt><code class='escaped'>$replace</code></dt><dd> This string will replace the matched text when a match occurs.
+</dd></dl><p class='vspace'>Also see: <a class='wikilink' href='index.php-n=PmWiki.CustomMarkup.html'>PmWiki.CustomMarkup</a> and <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Functions#Markup' rel='nofollow'>Cookbook:Functions#Markup</a>
+</p>
+<div class='vspace'></div><h2><a name='MarkupToHTML' id='MarkupToHTML'></a> <code class='escaped'>MarkupToHTML</code>($pagename, $str)</h2>
+<p><a name='MarkupToHTML-desc' id='MarkupToHTML-desc'></a> Converts the string <code class='escaped'>$str</code> containing PmWiki markup into the corresponding HTML code, assuming the current page is <code class='escaped'>$pagename</code>.
+</p>
+<p class='vspace'>Also see: <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Functions#MarkupToHTML' rel='nofollow'>Cookbook:Functions#MarkupToHTML</a>
+</p>
+<div class='vspace'></div><h2><a name='mkdirp' id='mkdirp'></a> <code class='escaped'>mkdirp</code>($dir)</h2>
+<p>The function <code class='escaped'>mkdirp</code>($dir) creates a directory, <code class='escaped'>$dir</code>, if it doesn't
+already exist, including any parent directories that might be needed.  For
+each directory created, it checks that the permissions on the directory are
+sufficient to allow PmWiki scripts to read and write files in that
+directory.  This includes checking for restrictions imposed by PHP's
+safe_mode setting.  If <code class='escaped'>mkdirp</code>() is unable to successfully create a
+read/write directory, <code class='escaped'>mkdirp</code>() aborts with an error message telling the
+administrator the steps to take to either create $dir manually or give
+PmWiki sufficient permissions to be able to do it.
+</p>
+<div class='vspace'></div><h2><a name='MakeLink' id='MakeLink'></a> <code class='escaped'>MakeLink</code>($pagename, $target, $txt, $suffix, $fmt)</h2>
+<p>The function <code class='escaped'>MakeLink</code>($pagename, $target, $txt, $suffix, $fmt) returns a ???. It's arguments are as follows:
+</p><pre> $pagename is the source page
+ $target is where the link should go
+ $txt is the value to use for '&#36;LinkText' in the output 
+ $suffix is any suffix string to be added to $txt
+ $fmt is a format string to use
+</pre><p class='vspace'>If $txt is NULL or not specified, then it is automatically computed from $target.
+</p>
+<p class='vspace'>If $fmt is NULL or not specified, then MakeLink uses the default
+format as specified by the type of link.  For page links this
+means the &#36;LinkPageExistsFmt and &#36;LinkPageCreateFmt variables,
+for intermap-style links it comes from either the &#36;IMapLinkFmt
+array or from &#36;UrlLinkFmt.  Inside of the formatting strings,
+&#36;LinkUrl is replaced by the resolved url for the link, &#36;LinkText
+is replaced with the appropriate text, and &#36;LinkAlt is replaced
+by any "title" (alternate text) information associated with the
+link.
+</p>
+<p class='vspace'>Also see: <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/MakeLink' rel='nofollow'>PmWiki:MakeLink</a> and <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Functions#MakeLink' rel='nofollow'>Cookbook:Functions#MakeLink</a>
+</p>
+<div class='vspace'></div><h2><a name='MakeUploadName' id='MakeUploadName'></a> <code class='escaped'>MakeUploadName</code>($pagename, $x)</h2>
+<p><code>MakeUploadName()</code> simply takes a string <code>$x</code> (representing an attachment's
+name) and converts it to a valid name by removing any unwanted characters.
+It also requires the name to begin and end with an alphanumeric character,
+and as of 2.0.beta28 it forces any file extensions to lowercase.
+This function is defined in <code>scripts/upload.php</code> and only used when uploads
+are enabled.
+</p>
+<p class='vspace'  style='background-color: #eee;'><span class='wikitrail'>&lt;&lt;  | <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Documentation_Index?action=edit'>Documentation Index</a> |  &gt;&gt;</span>
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on September 25, 2006, at 05:18 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

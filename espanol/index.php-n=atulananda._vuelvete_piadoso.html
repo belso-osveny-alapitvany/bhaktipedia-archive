@@ -1,0 +1,515 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Cualquiera que sea tu religión vuélvete piadoso</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : atulananda - RSS Feed'
+      href='index.php-n=atulananda.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=atulananda._vuelvete_piadoso' method='get'><input type='hidden' name='n' value='atulananda._vuelvete_piadoso' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Cualquiera que sea tu religión vuélvete piadoso"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=atulananda._vuelvete_piadoso-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=atulananda.atulananda.html'>Atulananda Acarya</a></h5>
+<hr />
+<p  style='text-align: right;'><small><a target='_blank'  class='attachlink' href='uploads/atulananda/vuelvete_piadoso.pdf' rel='nofollow'>Descargar pdf</a></small>
+</p>
+<div class='vspace'></div><h1>Cualquiera que sea tu religión vuélvete piadoso</h1>
+<p>Buenas tardes queridos amigos.
+</p>
+<p class='vspace'>Leemos el Bhagavad-gita por la misericordia de Srila Prabhupada, capítulo 7: 
+El conocimiento del Absoluto, texto 18. En este texto, Krishna está 
+explicando que hay cuatro clases de personas que se acercan a El.
+</p>
+<p class='vspace'>''"Cuatro clases de personas piadosas se acercan a mí: aquellos que 
+necesitan dinero, aquellos que están afligidos, los que buscan conocimiento 
+y los que tienen conocimiento ".'' 
+</p>
+<p class='vspace'>De estas cuatro personas, dice Krishna, los que ya tienen conocimiento son 
+los más elevados pero cualquier persona que se acerque a Krishna, ya es 
+considerada una persona piadosa. De esta manera este es un movimiento 
+sumamente amplio, el más amplio de todos ya que nadie puede abrir los 
+brazos más que Dios. 
+</p>
+<p class='vspace'>Krishna dice: "En la manera en que las personas se rinden a mí, yo los 
+recompenso" pero en  realidad Krishna está recompensando a todos. Todo 
+lo que tenemos lo recibimos de El. Todos somos sus devotos, algunos en 
+forma consciente, otros en forma inconsciente.
+</p>
+<p class='vspace'>Ciencia, conocimiento significa tomar conciencia de la verdad, de la realidad. 
+La realidad es algo que está sucediendo automáticamente con o sin nuestro 
+conocimiento. Pero cuando nosotros tenemos conocimiento es mejor porque 
+así podemos evitar el error. Por ejemplo, una persona puede evitarse 
+muchas enfermedades por bañarse. Por bañarnos todos los días nos 
+evitamos muchas enfermedades, pero tal vez muchas personas no sepan 
+esto. Muchos se bañan, porque tal vez ya se les volvió una costumbre. 
+</p>
+<p class='vspace'>Entonces por el simple hecho de bañarse están evitando muchas 
+enfermedades y están haciendo algo bueno. Pero no tienen verdadero 
+conocimiento de por qué lo están haciendo. De la misma manera estamos 
+recibiendo muchas cosas de Krishna en forma automática sin darnos 
+cuenta. Si nos diéramos cuenta, nos volveríamos muy profundos en nuestra 
+observación. Por ejemplo recibimos el aire. 
+</p>
+<p class='vspace'>Todo lo que recibimos proviene de Krishna. Krishna no está lejos, no está 
+separado de nosotros. Krishna está siempre con nosotros muy íntimamente. 
+Esta es una buena noticia para los piadosos y una mala noticia para los 
+impíos. Krishna siempre nos está mirando a través de la luz del sol, a través 
+de la luz de la luna, a través de nuestra propia mente (nuestra mente es una 
+delatora). 
+</p>
+<p class='vspace'>A veces uno hace algo incorrecto y la mente siempre lo está recordando. 
+Entonces hay muchos testigos: el aire, la tierra. Krishna lo ve todo en forma 
+perfecta. 
+</p>
+<p class='vspace'>En el Bhagavad-gita, Krishna nos dice: "Vuélvete piadoso. Cualquiera que 
+sea tu religión, cualquiera que sea tu realización, acércate a mí, aunque sea 
+sólo porque necesites dinero". Esa es una misericordia de Krishna. El que 
+nace pobre, el que no tiene dinero, no le queda otra que pedirle a Dios. Hay 
+una canción revolucionaria, una canción de Violeta Parra, una cantante de 
+protesta comunista. Ella decía que como los pobres no tienen nada, ellos 
+están obligados a pedirle a Dios, ya que el hombre rico les está robando lo 
+que ellos debería tener, lo que deberían recibir. En el Sri Isopanisad se dice 
+que el Señor supremo nos crea con una porción, es decir que cuando El nos 
+crea, hay una porción destinada para uno, para su subsistencia, pero otra 
+persona más pilla nos la quita.
+</p>
+<p class='vspace'>Entonces un devoto debe dar el ejemplo. El dice: "Imagínense que ustedes 
+están en una nave viajando a otro planeta y un astronauta se empieza a 
+comer todas las provisiones. Se come la ración del otro astronauta. 
+Imagínense que escándalo sería. Empezaría una guerra de inmediato. 
+Imagínense ahora que todo el planeta tierra es como una nave espacial, está 
+todo calculado, cuanto van a comer. Y si eso lo hacen los pequeños 
+científicos, como no lo va a hacer Krishna. Pero el hombre no respeta esto 
+sobre todo en esta era de Kali, esta era de materialismo, egoísmo y envidia. 
+El hombre sufre mucho y se desencanta con la ciencia, con el hombre. El 
+hombre entonces ora a Dios y le pide su misericordia, ya que no hay reyes 
+misericordiosos, no hay líderes misericordiosos, no hay nada, solamente 
+está Dios y los que lo representan debidamente: los vaisnavas, los devotos 
+que tienen un corazón puro. 
+</p>
+<p class='vspace'>Esa es la posición más elemental, hasta más vergonzosa, acercarse a Dios 
+para pedirle dinero, pero si no tienen a nadie, a quien más le van a pedir. Si 
+le pide a Krishna, Krishna lo considera una persona piadosa.
+</p>
+<p class='vspace'>Cualquier oración que nosotros elevemos al supremo, Krishna lo va a recibir 
+de buena manera. Y a manera que comencemos a orar y a pedirle a 
+Krishna, nuestra oración va a ser cada vez mejor. Vamos a desarrollar una 
+fe, una convicción de que hay algo superior, alguien que responde a nuestro 
+llamado. No estoy solo. Tal vez cuando esa persona reciba su dinero, se 
+olvide de Dios, porque quería más al dinero que a Dios. Pero esa persona se 
+va a dar cuenta que ahora que tiene el dinero no es feliz, las ansiedades 
+siguen, los problemas siguen, solamente han cambiado de nombre, es 
+como una enfermedad que cambia de nombre. En realidad estas enfermo, 
+ahora tienes otra enfermedad. El resultado es que estás sufriendo. Entonces 
+el hombre dice: "ahora tengo dinero pero igual estoy sufriendo. Voy a orarle 
+a Dios para que me quite este sufrimiento. Cuando estaba disfrutando, me 
+olvidé de El, ahora que estoy sufriendo, me acuerdo de El. Si le oro a Dios, 
+tal vez El me quite el sufrimiento y cuando me lo quita y me olvido de Dios, 
+ese sufrimiento vuelve."
+</p>
+<p class='vspace'>Uno se da cuenta que estando con Dios no hay sufrimiento ¿para qué 
+dejarlo entonces? Cuando Dios le quita el sufrimiento a uno, decimos: 
+"bueno, ya me quito el sufrimiento, vamos a probar con otra cosa. Me está 
+yendo mal en los negocios, o me está yendo mal con esta pareja, voy a 
+cambiar de hobby, voy a cambiar de ciudad."
+</p>
+<p class='vspace'>Siempre queremos cambiar, pero todas las parejas, todas las ciudades, 
+todos los hobbys siempre nos traen problemas y el que me está sacando 
+siempre de todos mis problemas es Krishna, entonces, ¿por qué no estar 
+siempre cerca de El?. El que es curioso dice: "¿quién es este señor que 
+está respondiendo a mi oración?. Yo miro a los pájaros, arriba de ellos hay 
+nubes, pero ¿qué es lo que hay más arriba?. ¿Quién es el que responde a 
+mis llamados?
+</p>
+<p class='vspace'>Ahí comienza nuestra búsqueda religiosa hasta que uno llega a conocer a 
+Dios. Ahí uno se vuelve un jñani, uno que tiene conocimiento. La persona 
+que tiene conocimiento de Dios, nunca más lo va a dejar. Dios no es algo 
+decepcionante, no es algo frustrante, tampoco es algo aburrido o monótono. 
+Krishna es néctar, éxtasis, constante bienaventuranza en cada palabra en 
+cada actividad. Nosotros tomamos contacto con Krishna al cantar Hare 
+Krishna, al estudiar estos libros maravillosos, nunca nos vamos a cansar. 
+De esta manera uno se vuelve udhaga (por encima de todos),  un devoto, un 
+bienqueriente, una luz para los demás un amigo, un sostén.
+</p>
+<p class='vspace'>Todo el mundo se está lamentando, pero Srila Bhaktissidhanta Sarasvati 
+decía: " Todo el mundo se está lamentando únicamente por una cosa 
+aunque no lo sabe, se lamentan de no tener conciencia de Krishna, se 
+lamentan de no conocer a Krishna". Así como nos podemos lamentar que 
+tenemos que pagar la cuenta de la luz. Si hubiera Sol todo el día, no 
+tendríamos que pagarla. Ellos no saben esto, sólo piensan que tienen que 
+pagarla. Pero si siempre hubiera Sol, no tendríamos ese problema. 
+Entonces si Krishna está en nuestra vida, no tendríamos ningún problema. 
+Todos los problemas son producidos por la sombra de la ignorancia. La 
+ansiedad que nos causa la ignorancia. No podemos ver que tenemos a 
+nuestro amigo, a nuestro bienqueriente y, ¿dónde está ese bienqueriente?. 
+Está en todas partes. A donde quiera que voy, ahí veo a mi bienqueriente, a 
+mi guardián y, ¿quién es tu guardián?.
+</p>
+<p class='vspace'>La única salida es hacia arriba. Si corres hacia los lados te vas a volver igual 
+que una ardilla, corriendo dentro de esas ruedas que colocan dentro de sus 
+jaulas. Se meten ellas y corren y siempre están en el mismo sitio.  De igual 
+manera Krishna es muy experto y nosotros estamos en una esfera, adonde 
+quiera que sea: norte, sur, este u oeste, en cualquier dirección, siempre se 
+está en el mismo lugar, en Martialoka, en el lugar de la muerte. Siempre se 
+va a estar donde hay nacimiento y muerte, donde hay miseria. Si corres 
+hacia los lados, si corres hacia abajo te vuelves una lombriz o un conejo 
+¿hacia adonde hay que salir?. Hacia arriba. Evidente. Pero, ¿cómo podemos 
+subir?
+</p>
+<p class='vspace'>Con el cuerpo no podemos subir, eso es un intento burdo, intento de gente 
+analfabeta, como cuando se ríen de la mitología griega, de Icaro, el que voló. 
+El voló con su padre y cayó. Todos se rieron de él, porque voló y tuvo que 
+volver a la tierra y murió. Así todos los aviones, todos los cohetes y todo lo 
+que a salido para arriba, ha vuelto. Entonces la solución no es ese intento 
+bruto. 
+</p>
+<p class='vspace'>A veces la gente se ríe de los indios, quienes tiraban lanzas y flechas a los 
+aviones para cazarlos, pero cuando los científicos lanzan un cohete al 
+espacio están haciendo lo mismo, ¿qué quieren cazar? ¿sabiduría, felicidad, 
+paz? Por eso lanzan una bala grande, para ver si cae algo de sabiduría, algo 
+de paz, pero lo único que cae es la misma bala.
+</p>
+<p class='vspace'>Esos son intentos burdos, intentos indígenas de gente incivilizada e inculta. 
+¿Qué significa sabiduría? La sabiduría no es un estado burdo, la sabiduría 
+es un estado sutil, abstracto. Por ejemplo si estamos al lado de un sabio, 
+pensamos que tiene muchas ideas en su cabeza, él no tiene fósiles, 
+pedazos de piedra en la cabeza.
+</p>
+<p class='vspace'>Cuando buscamos la verdad, estamos buscando algo sutil, algo abstracto. 
+Nosotros no somos estudiantes de los fósiles, estamos buscando la verdad. 
+Todas las leyes, todas las energías materiales burdas están sostenidas en 
+leyes sutiles, responden a leyes sutiles. 
+</p>
+<p class='vspace'>El conocimiento es algo superior, nosotros somos inferiores, somos 
+ignorantes, entonces sólo mediante la humildad, mediante la sumisión, este 
+conocimiento va a descender a nosotros. En realidad este conocimiento ya 
+descendió, tenemos el Bhagavad-gita, a Mahaprabhu bailando en éxtasis. 
+</p>
+<p class='vspace'>Mahaprabhu es la encarnación del Bhagavad-gita, es el resultado de tener 
+este conocimiento superior. Esa es la posición del devoto. El devoto quiere 
+ser sabio, el devoto no quiere ser inculto, él quiere entender todo, él quiere 
+comportarse bien, dentro de la sociedad, dentro del país, él quiere ser un 
+buen ciudadano, una persona honesta, pero también quiere ser sabio, quiere 
+coronar su existencia con la sabiduría, pero él sabe que esta sabiduría es 
+muy sutil es algo que ni los más inteligentes pueden percibir. 
+</p>
+<p class='vspace'>Esas leyes de las que hablan los científicos no las podemos ver. Todo el 
+mundo puede ver una piedra y no tropezarse con ella, pero estas leyes 
+incluso personas muy inteligentes, no las ven, no las captan, no las 
+perciben y así hay leyes más sutiles que estas y la gente no las entiende.
+</p>
+<p class='vspace'>Hay científicos, químicos que perciben leyes químicas, otros perciben leyes 
+físicas, otros, leyes sociales, leyes históricas, leyes psicológicas. Sin 
+embargo todas estas leyes están en un plano burdo, porque tienen relación 
+con la materia. Las leyes físicas se refieren a los objetos físicos, de que 
+manera la física, el átomo responde a leyes sutiles, las leyes matemáticas, 
+etc.
+</p>
+<p class='vspace'>Pero por encima de esto hay una ley más sutil que rige todo y esa es la 
+devoción, la ley del amor, el sentimiento. El sentimiento está por encima de 
+la inteligencia, de ahí nace todo. Si nosotros podemos tener devoción por 
+Dios, vamos a poder comprender todo en forma perfecta. El devoto está 
+percibiendo eso, él está sintiendo esa ley, a veces no percibe la ley 
+matemática, la ley física, la ley química, pero él está percibiendo un don 
+superior, una ley superior, la ley del amor, la ley de la relación que tenemos 
+todos entre nosotros. 
+</p>
+<p class='vspace'>Sambhanda, la unión, de que manera somos hermanos y de que manera 
+tenemos a Krishna, nuestro padre universal, de que manera estamos bajo el 
+peligro de la muerte, ese es un problema que escapa a los grandes 
+científicos, a los grandes filósofos. Ellos quedan encandilados analizando 
+esta naturaleza material, pero no van al fin, sólo analizan el estado 
+intermedio.
+</p>
+<p class='vspace'>¿Cómo funciona mi mente ?, ¿Cómo funciona mi inteligencia?, ¿De qué 
+manera funciona el proceso del conocimiento,  la adquisición del 
+conocimiento ? Así los filósofos se pierden en esas elucidaciones, pero ahí 
+no están analizando el alma, el fin de la vida. El devoto ya está analizando 
+eso y que hay mas allá de la muerte, de eso se está informando 
+científicamente, de que manera podemos decidir nuestro destino en el 
+momento de morir, cómo podemos decidir a donde vamos a ir, todo eso lo 
+sabe un devoto. 
+</p>
+<p class='vspace'>Esa es la ciencia más sutil, la matemática no funciona ahí, ni la física, ni la 
+química, ni la psicología, ahí solamente funciona la fe y la intuición 
+espiritual. La fe no es algo ciego, la fe es algo científico. Es algo tan 
+elemental y natural para un devoto que al final es solamente su sentido 
+común. Todo lo que él está aceptando en la conciencia de Krishna, lo 
+acepta como algo evidente, como algo lógico, algo de sentido común, 
+porque el señor Krishna nos permite esta percepción superior con sus 
+palabras en el Bhagavad-gita. Si nosotros estudiamos el Bhagavad-gita, 
+Krishna dice que esa persona lo está adorando con su inteligencia.
+</p>
+<p class='vspace'>El dice: "Yo voy a aclarar  la y enriquecer inteligencia de esa persona", y 
+esas cosas que parecen inconcebibles para otros, que parecen mitos o 
+tabúes, para el devoto se vuelve algo normal. 
+</p>
+<p class='vspace'>Eso es algo científico. Si nosotros escuchamos una conversación entre dos 
+científicos, puede que no entendamos nada. Nosotros no hemos tenido un 
+laboratorio en casa, todo lo que ellos experimentan y todo lo que ellos 
+concluyen, para nosotros es chino. Pero aún así, podrá ser muy 
+complicado, pero que sea complicado no significa que sea realmente útil, 
+que sea realmente necesario o importante, más bien significa que ellos 
+mismos están muy complicados y muy enredados en estas leyes 
+materiales.
+</p>
+<p class='vspace'>Es como tratar de sacarse una tela de araña, mientras más la tocas, más 
+quedas pegado. Entonces, los devotos también tienen su lenguaje y tal vez 
+este lenguaje pueda parecer complicado, pueda  ser incomprensible, pero 
+ellos están hablando en base a experiencias que han tenido. Nosotros no 
+podemos rechazar la afirmación de un devoto sin haber experimentado, así 
+como no podemos decirle a un científico que todo lo que dice es falso, si yo 
+no lo he experimentado. 
+</p>
+<p class='vspace'>Nosotros tenemos la  posibilidad de la experiencia espiritual. Podemos 
+volvernos científicos espirituales de inmediato, sin necesidad de entrar a una 
+universidad, sin pago de matricula, sin gastos extras. Ayudamos a abaratar 
+el presupuesto, ya que son menos horas de televisión, no mas cigarrillos, no 
+mas alcohol, no mas carne.
+</p>
+<p class='vspace'>Felicidad gratuita, sana, luminosa y benéfica para todo el mundo. Cualquier 
+tipo de felicidad material, necesariamente le causa sufrimiento a otros, 
+tomar alcohol, fumar, el sexo ilícito, las fiestas, todo eso está causando 
+ansiedad a otras entidades vivientes. Con la conciencia de Krishna, tu 
+felicidad se vuelve algo bueno para el universo entero.
+</p>
+<p class='vspace'>Por lo tanto la conciencia de Krishna es algo provechoso y beneficioso. 
+Cuando alguien canta Hare Krishna, uno experimenta una felicidad 
+inexplicable, una felicidad interna que no termina. Esa felicidad estaba ahí, 
+solo había que cantar Hare Krishna. 
+</p>
+<p class='vspace'>Srila Prabhupada explicó que esa es una prueba que lo que se está 
+recibiendo, es algo espiritual. El espíritu es por naturaleza feliz, así como el 
+azúcar es por naturaleza dulce. Uno no puede ponérsela en la lengua y 
+sentirla amarga o salada, sino dulce. El contacto con el espíritu produce 
+felicidad, paz, satisfacción. Así tiene que ser, esa es la naturaleza. Si uno 
+no puede incluso sentir esa felicidad cantando Hare Krishna, tiene que 
+hacerlo con el mejor espiritu, con cierta devoción, por eso es muy 
+importante la asociación con lo devotos y junto con ellos cantar Hare 
+Krishna, porque así nosotros podremos cantar con devoción, con un anhelo 
+espiritual, y de esa manera podremos tener experiencia espiritual. Y por 
+estudiar el Bhagavad-gita, podremos analizar el mundo bajo su luz. 
+</p>
+<p class='vspace'>El Bhagavad-gita es un manual práctico, no es un libro dogmático, no es un 
+libro que pertenezca a una secta en particular. Arjuna, el que recibió el 
+Bhagavad-gita, no pertenecía a ninguna religión. El solamente era un 
+ksatriya, un guerrero, un experto en tirar flechas. El no pertenecía a ninguna 
+religión. De todos modos Krishna le dijo: "Abandona toda religión, ríndete a 
+mí." 
+</p>
+<p class='vspace'>Las religiones están destinadas a amar a Dios, para conocer a Dios. Si uno 
+cree que su religión lo va a salvar por decir: "yo soy de tal religión." No, en la 
+religión se tiene que cumplir con un fin, si no se cumple con ese fin, no es 
+religión o no se está practicando bien. Hay que ser serios en nuestra 
+práctica. Si nosotros estudiamos el Bhagavad-gita, Krishna nos da una 
+visión filosófica de la vida y del mundo. Por ejemplo en el Bhagavad-gita, 
+Krishna nos dice que hay dos tipos de personas. Hay personas que tienen 
+una naturaleza divina y otros tienen una naturaleza demoníaca. Esto lo 
+podemos ver en el mundo. Hay personas buenas que se esfuerzan por ser 
+mejores y otras que no, que cada día quieren ser más malos. También 
+Krishna nos habla de cómo funcionan las modalidades de la naturaleza 
+material: la ignorancia, la pasión y la bondad. Y, así uno analiza todo esto, 
+como estas modalidades influyen en el trabajo, en el esfuerzo, en el 
+conocimiento, en el tipo de caridad, en el tipo de sacrificio. Vemos que eso 
+es algo científico. Hay personas en la modalidad de la ignorancia, que sólo 
+buscan la felicidad en las drogas, en el sueño, en la pereza. Otros están en 
+la modalidad de la pasión, sólo buscan la felicidad en el progreso material, 
+en el desarrollo económico, en la adquisición de bienes. Hay otros que 
+están en la modalidad de la bondad, ellos buscan la felicidad en el 
+conocimiento.
+</p>
+<p class='vspace'>En si todo lo que Krishna muestra en el Bhagavad-gita es conocimiento, 
+información acerca de cómo debemos ver nosotros este mundo material y 
+por verlo bajo esa perspectiva, Krishna nos enseña a verlo a El, a 
+reconocerlo a El. Principalmente nos ayuda a actuar sin apegarnos al fruto, 
+sin apegarnos al resultado. No se debe pensar que uno es dueño de los 
+resultados. Si piensas así, siempre vas a ser miserable, porque sólo vas a 
+ser el dueño de un resultado, el cual es siempre miserable. Hasta el hombre 
+más rico siente que su fruto es miserable, porque él piensa: "Si, pero si 
+podría haber ganado más." Así que aunque gane mucho, se lamenta. 
+Entonces, los resultados siempre producen amargura, amargura si no hay 
+resultado y amargura cuando hay mucho resultado. 
+</p>
+<p class='vspace'>En Chile había un hombre muy rico, él decía: "Yo nunca puedo reírme, 
+nunca puedo mostrarme feliz con la gente, porque apenas ven que estoy de 
+buen humor, aprovechan para pedirme un préstamo." De ahí salió la 
+expresión "cara de palo". También había un comentario del hombre más rico 
+del mundo, un japonés. Un periodista entrevistaba a las personas que vivían 
+cerca de él, cómo era. Uno de ellos dijo: "Hasta ahora no ha tenido 
+necesidad de ser simpático con nadie." Un tipo completamente prepotente, 
+orgulloso. El debía pensar: "Si le sonrío a alguien, algo me va a querer pedir 
+después." 
+</p>
+<p class='vspace'>Hace poco se murió un japonés multimillonario. Vivía en un departamento, 
+comía una tostada al día. Multimillonario y miserable, vivía como un 
+miserable. Krishna dice: "Si tú no me ofreces a mí, vas a ser miserable, no 
+vas a tener amigos ni bienquerientes, no vas a tener un futuro luminoso 
+después de la muerte. 
+</p>
+<p class='vspace'>El mensaje más importante del Bhagavad-gita es como actuar con 
+conciencia de Krishna, como actuar sin enredarse con los resultados, sin 
+frustrarnos si nos va mal, sin alegrarse si va bien. En realidad siempre nos 
+va bien, porque siempre estamos actuando, si estoy vivo, si estoy sano, 
+siempre puedo actuar. Cuando no puedo actuar es porque estoy enfermo, 
+entonces estoy sufriendo. Sólo quiero actuar, poder moverme, ahora 
+estamos sanos, podemos trabajar para Krishna. El hombre más rico o el del 
+mejor trabajo, cuando está enfermo, quiere curarse. El no dice: "que importa 
+que esté enfermo, total estoy ganando tanto dinero." No, él quiere curarse, él 
+quiere actuar. 
+</p>
+<p class='vspace'>La actividad es nuestra mayor rendición. Poder actuar, pero actuar para 
+quien, ¿actuar a ciegas, o para mí, o para mi familia, o para mi país? Todo 
+eso es insuficiente. Todas esas son metas egoístas. Debemos actuar para 
+Krishna, para el Absoluto. Esa es la gran ciencia de la acción enseñada en 
+el Bhagavad-gita. Si pudiéramos realizar eso, si estamos trabajando para un 
+amigo, para un bienqueriente, para el bien absoluto, y si realmente lo 
+pudiéramos hacer no solo en teoría, eso significa impulsar la prédica, apoyar 
+los programas de prédica, hacerse un devoto. 
+</p>
+<p class='vspace'>¿Qué significa hacerse un devoto? Significa volverse una persona con ideales elevados, dejar de ser un miserable televidente de telenovelas, dejar de ser un lector de periódicos y tomar el Bhagavad-gita, tener ideales superiores, luchar por algo grande. 
+</p>
+<p class='vspace'>Como dijo Jesucristo: "Busquen la riqueza del espíritu, lo demás lo 
+consiguen hasta los pájaros." No se crean tan profesionales, tan increíbles, 
+por estar comiendo tan suntuosamente, hasta los pájaros están comiendo. 
+Busquen el espíritu, vuélvanse héroes del espíritu, héroes de la libertad 
+trascendental. Un héroe puede sufrir muchas heridas, pero eso lo vuelve más 
+héroe todavía.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on January 01, 2009, at 01:13 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

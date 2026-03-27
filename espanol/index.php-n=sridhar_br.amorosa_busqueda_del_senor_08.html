@@ -1,0 +1,255 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Devoción libre de conocimiento – Primera Parte</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : sridhar_br - RSS Feed'
+      href='index.php-n=sridhar_br.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=sridhar_br.amorosa_busqueda_del_senor_08' method='get'><input type='hidden' name='n' value='sridhar_br.amorosa_busqueda_del_senor_08' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Devoción libre de conocimiento – Primera Parte"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=sridhar_br.amorosa_busqueda_del_senor_08-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=sridhar_br.sridhar_br.html'>B.R. Sridhar Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=sridhar_br.amorosa_busqueda_del_senor.html'>La Amorosa Búsqueda del Señor por Su Sirviente Perdido</a>
+</p>
+<div class='vspace'></div><h2>Devoción libre de conocimiento<br /><small>Primera Parte</small></h2>
+<pre> bhidyate hrdaya-granthis, chidyante sarva-samsayah 
+ ksiyante casya karmani, mayi drste `khilatmani 
+</pre><p class='vspace'>"Nuestra aspiración interna de rasa, éxtasis, yace sepultada en nuestros corazones, que se encuentran atados y sellados. No obstante, escuchar y cantar las glorias de Krsna rompe el sello del corazón y éste despierta y se abre para recibir a Krsna, el receptáculo del placer, el éxtasis mismo". 
+</p>
+<p class='vspace'>Aquí, el Srimad-Bhagavatam dice: "Hay un nudo en nuestros corazones, pero éste será destruido por la conciencia de Krsna. En ese momento, la corriente de nuestra tendencia innata hacia el amor divino (svarupa-sakti) inunda todo el corazón. Cuando el nudo del corazón es desatado, a medida que el alma dormida despierta, surgirá el concepto de Goloka que hay en nosotros y desbordará todo nuestro ser". 
+</p>
+<p class='vspace'>Aparentemente, este es un problema difícil. ¿Cómo aclarar todas nuestras dudas? ¿Es posible que el finito llegue a conocerlo todo? Esta declaración parece un poco inconsistente, absurda. Sin embargo, los Upanisads dicen: "Aquel que le conoce, lo conoce todo. Aquel que le obtiene, lo obtiene todo". ¿Cómo podrá saber el finito que lo tiene todo, que lo conoce todo? Parece absurdo, pero las Escrituras lo confirman. Y si este problema se soluciona, automáticamente se solucionan todos los demás. El finito experimentará la satisfacción plena, todas sus tendencias inquisitivas se verán colmadas. Esto no sólo se confirma en los Upanisads, sino también en el Srimad-Bhagavatam. 
+</p>
+<p class='vspace'>Cuando fui al Gaudiya Math por primera vez, me asociaba con los devotos con mucha cautela. Yo pensaba: "Ellos dicen que su prédica es la única verdad y que todo lo demás es falso". Eso es una píldora difícil de tragar. Ellos dicen: "Todos se encuentran sumidos en la ignorancia y lo que nosotros decimos es lo correcto". "¿Qué es esto?" pensaba. "Un hombre sensato no puede tragarse esta píldora tan fácilmente". Al principio, yo tampoco pude digerirlo con facilidad. Sin embargo, Sri Caitanya Mahaprabhu, el Srimad-Bhagavatam, el Bhagavad-gita y los Upanisads, confirman lo que ellos afirmaban. Todas estas autoridades dicen: "Sí, así es. Si llegas a conocerle, lo conocerás todo. Si le alcanzas, lo obtendrás todo". En un verso similar a estas líneas de los Upanisads, el Srimad-Bhagavatam (4.31.14) afirma también que la conciencia de Krsna aclara todas las dudas y como resultado llegamos al conocimiento verdadero. Allí está escrito: 
+</p>
+<div class='vspace'></div><pre> yatha taror mula-nisecanena, trpyanti tat-skandha-bhujopasakhah 
+ pranopaharac ca yathendriyanam, tathaiva sarvarhanam acyutejya 
+</pre><p class='vspace'>"Al regar la raíz de un árbol, automáticamente se nutren todas las hojas y las ramas. De manera similar, al proporcionar alimentos al estómago, todos los miembros del cuerpo se nutren. Asimismo, cuando satisfacemos a la concepción central del Supremo Absoluto, automáticamente serán cumplidas todas nuestras obligaciones". Esta es la grandeza, la misteriosa posición del Centro Absoluto: Él lo controla todo. Esta es la peculiar posición del Centro en el sistema del Todo Orgánico. 
+</p>
+<p class='vspace'>Si se captura una posición específica del cerebro, todo el cuerpo es controlado. Sólo se necesita una aguja en ese punto específico del cerebro y todas las funciones del cuerpo se paralizan. La peculiar posición del Centro Absoluto es algo así. De ese modo, lo imposible se vuelve posible. 
+</p>
+<p class='vspace'>Supongamos que yo soy una joven pobre que no tiene nada. Por lo general, no podría adquirir nada. Pero si me caso con un hombre rico, dueño de una gran fortuna, puedo llegar a controlar muchas cosas a través de mi relación con él. Aunque seamos pobres, nuestra relación con un señor poderoso nos convierte en dueños de muchas cosas. De manera similar, el Centro Absoluto lo controla todo y nuestra afectuosa relación con Él puede darnos autoridad sobre muchas cosas. Esto hace posible que el alma finita adquiera dominio sobre todas las cosas, a través del vínculo sutil del afecto. 
+</p>
+<p class='vspace'>A través de Krsna, todo es posible. Y mientras más nos acerquemos a Él, tanto más conquistaremos. Su influencia inspira a Sus devotos, cuyos corazones desbordan con todas Sus cualidades (sarva maha-guna-gana vaisnava-sarire, krsna-bhakte krsnera guna sakali sañcare, Caitanya-caritamrta, Madhya-lila 22.75). Aunque en realidad un devoto no sea el amo, a través del vínculo del amor puede llegar a ser el amo de todo. Esta es la línea de pensamiento que explican el Srimad-Bhagavatam y los Upanisads. 
+</p>
+<p class='vspace'>Sin una conexión verdadera con el Centro Absoluto, serán inútiles nuestros esfuerzos para conocerlo todo. Si tratamos de conocer aunque sea una partícula de arena, vidas enteras vendrán y se irán, millones de vidas pasarán y continuaremos analizando la arena, sin llegar a comprender una partícula siquiera. 
+</p>
+<p class='vspace'><strong>El centro absoluto</strong>
+</p>
+<p class='vspace'>Se nos dice: "Si deseas indagar, indaga acerca del Centro". Ese es el llamado de los Upanisads. "No pierdas tu tiempo tratando de analizar la más ínfima parte de esta creación, tratando de convertirte en su amo. No es posible. Tu indagación tendrá que ser debidamente guiada". Krsna dice. "Yo soy el Centro y digo: Conóceme y a través de Mí podrás conocerlo todo, porque Yo lo sé todo, lo controlo todo. Tu relación conmigo puede darte esa capacidad. Aproxímate a todo a través de Mí y así podrás conocer la posición exacta de todas las cosas. De lo contrario, apenas te familiarizarás con un aspecto parcial de la realidad y eso será algo externo e incompleto. Pasarás millones de vidas tratando en vano de comprender la realidad". 
+</p>
+<p class='vspace'>El Bhagavatam dice: 
+</p>
+<div class='vspace'></div><pre> athapi te deva padambhuja-dvaya, Prasada -lesanugrhita eva hi 
+ janati tattvam bhagavan mahimno, na canya eko `pi ciram vicinvan 
+</pre><p class='vspace'>"Sólo aquel que ha sido bendecido con la misericordia del Señor, puede conocer Su verdadera naturaleza. Por otra parte, aquellos que tratan de comprender Sus glorias inconcebibles a través del método empírico pueden estudiar y especular perennemente sin llegar a la conclusión correcta". 
+</p>
+<p class='vspace'>Aquí, a través del Bhagavatam, Krsna nos dice: "Puedes concentrarte eternamente en una dirección equivocada, sin posibilidad alguna de llegar al final del conocimiento. Pero si te aproximas al Centro Absoluto, en un instante podrás conocer lo que verdaderamente es". Esa es la dirección señalada por los Upanisads y el Srimad-Bhagavatam. Esa es la dirección que debemos tomar. Eso es devoción. 
+</p>
+<p class='vspace'>Esto resulta tan satisfactorio, que una vez alcanzado, no nos interesará conocer nada más. Sólo necesitamos concentrarnos en el servicio a Krsna, el Srimad-Bhagavatam (10.14.3) declara: 
+</p>
+<div class='vspace'></div><pre> jñane prayasam udapasya namanta eva 
+ jivanti san-mukharitam bhavadiya vartam 
+ sthane sthitah sruti-gatam tanu-van-manobhir 
+ ye prayaso `jita jito `py asi tais tri-lokyam 
+</pre><p class='vspace'>"Abandonando desdeñosamente todos los intentos intelectuales para comprender la Verdad Suprema, aquellos que desean conocerte deben rendirse a Ti por completo. Ellos deberán escuchar acerca de Tu Santo Nombre y trascendentales pasatiempos de labios de los devotos autorrealizados. Desde cualquier posición en que puedan encontrarse, ellos deben progresar, dedicándote plenamente cuerpo, mente y palabras. De esta manera, el Infinito, a quien jamás nadie puede conquistar, es conquistado a través del amor". 
+</p>
+<p class='vspace'>Sólo a través de la rendición podemos aproximarnos al Señor Supremo. Y cuando lo alcancemos, no nos interesará conocer ninguna otra cosa. No sentiremos interés alguno por lo que suceda o deje de suceder en el mundo exterior. Nos ocuparemos intensamente en Su servicio, sólo para Su satisfacción. Allí, en Su servicio, veremos colmado el objetivo de nuestras vidas. Y el conocimiento superfluo acerca de las "cosas externas" nos parecerá como basura. Podremos comprender, "¿qué necesidad hay de perder el tiempo en cálculos de toda clase? ¡El néctar está aquí! Es infinitamente más profundo que todo lo que puede encontrarse en el plano externo". Y en ese momento, dirigiremos toda nuestra atención a Su servicio. 
+</p>
+<p class='vspace'>A menudo se pregunta por qué Sri Caitanya Mahaprabhu hizo caso omiso del varnasrama-dharma, el sistema védico de las clases sociales, y por qué en nuestra escuela devocional se acepta a cualquier persona de cualquier posición social. Tenemos que superar las restricciones del sistema de castas (varnasrama-dharma), ofreciendo a Krsna los resultados de nuestras acciones (Krsna karmarpanam), así como la devoción mezclada con el deseo de disfrutar de los resultados de nuestras acciones (karma-misra-bhakti) y la devoción mezclada con el deseo de liberación (jñana-misra-bhakti). Todas ellas han sido rechazadas por Sri Caitanya Mahaprabhu. Su lema era: eho bahya age kaha ara, "todas estas cosas son superfluas, profundiza, profundiza". Cuando Sri Caitanya Mahaprabhu preguntó qué concepto era más amplio, más elevado que todas estas diferentes concepciones del teísmo, Ramananda Raya sugirió jñana-sunya-bhakti, la devoción pura. Cuando Ramananda Raya lo sugirió, Mahaprabhu dijo: "Sí, es ahí donde comienza el teísmo verdadero". 
+</p>
+<p class='vspace'><strong>Karma y jñana</strong> 
+</p>
+<p class='vspace'>Eso quiere decir que tanto karma, el trabajo fruitivo, como jñana, el cultivo del conocimiento, son innecesarios. Desde cualquier posición, uno puede emprender una vida de bhakti libre de karma y jñana. El bhakti sólo necesita desarrollarse a través del sukrti, la acumulación de actividades piadosas devocionales, y de ruci, nuestra avidez y anhelo por Krsna. Eso es lo que se necesita y no nuestra ambición de conocerlo todo (jñana) ni de tener una gran cantidad de energía bajo nuestro control (karma). Ambos senderos nos conducen a la explotación y a la renunciación. Pero dondequiera que uno se encuentre, si desea ponerse en contacto con el Señor, sólo necesita cierta inclinación para escuchar sobre El de una fuente apropiada, un santo genuino. Este es el verdadero comienzo del bhakti. Y así, uno puede ingresar en la escuela del bhakti independientemente de la posición que ocupe en el sistema social del varnasrama. 
+</p>
+<p class='vspace'>Para hacerse consciente de Krsna, uno no tiene que ser un sabio ni un hombre muy energético, ni ser dueño de una gran opulencia o poder. El único requisito es un gran anhelo por el Señor. Al escuchar de una fuente apropiada, un santo genuino, deberá encontrar cierta dulzura, cierto gusto en sus palabras y actividades. Ese gusto gradualmente le llevará más y más lejos dentro de ese reino superior. 
+</p>
+<p class='vspace'>Si los que van en busca de conocimiento y poder, jñanis y karmis, desean alcanzar el éxito en su búsqueda del Infinito, finalmente tendrán que desechar sus apegos, salirse de su círculo y llegar a esa posición. Tendrán que depender del gusto. El gusto es lo más importante. La principal calificación de un devoto es el gusto por las actividades del Señor. Eso es lo más esencial. La posición en que uno se encuentre no tiene importancia. A través del gusto, de la atracción por Krsna, uno progresará desde ruci hasta la meta última de la vida. 
+</p>
+<p class='vspace'>Por consiguiente, se nos dice: "Abandonando todo e incluso rechazando los conceptos sociales y religiosos como algo superfluo, ríndete a Krsna exclusivamente". Uno debe refugiarse de manera exclusiva en el Señor, sin titubeos, con plena confianza, abandonando la mala asociación y desechando incluso los principios regulativos que rigen la sociedad y la religión. Eso quiere decir que uno debe abandonar todo apego material. Saranagati, refugiarse por completo bajo Su protección. 
+</p>
+<p class='vspace'><strong>La enredadera de la devoción</strong> 
+</p>
+<p class='vspace'>Un devoto piensa: "Krsna es muy, pero muy dulce. No puedo esquivarlo, no puedo vivir sin saborear Su dulzura". Ese sentimiento es la semilla genuina que producirá la enredadera del bhakti, la enredadera de la devoción. Y ella crecerá poco a poco hasta tocar los pies de Krsna. 
+</p>
+<p class='vspace'>La enredadera crecerá, pero no tratará de buscar apoyo en ninguno de los planos de la conciencia dentro de este mundo, sino que crecerá más y más alto. Finalmente, cuando alcance el concepto personal acerca del Absoluto, experimentará alguna satisfacción. Sin embargo, no se detendrá allí, sino que continuará hasta Goloka. No se detendrá en la devoción calculadora de Vaikuntha. Atravesando ese plano, se elevará hasta la etapa de la devoción automática, espontánea. 
+</p>
+<p class='vspace'><strong>De vuelta a Dios</strong> 
+</p>
+<p class='vspace'>Allí encontraremos al Señor del amor. El amor es el factor de adoración y veneración que existe por doquier en ese plano. La característica esencial de ese plano es la relación de amor divino con el Objeto Central. Y en relación con Él encontraremos nuestra satisfacción. Eso es lo que todos necesitan: Entrar en la tierra del amor y lograr que se les ocupe en algún servicio amoroso a la representación central de la dulzura, la belleza y el amor absolutos. Ese Centro Absoluto Supremo descendió como Sri Caitanya Mahaprabhu para invitar a Sus sirvientes por largo tiempo perdidos, a regresar a casa. Él decía: "He venido a invitarlos y a llevarlos a todos a Mi hogar. ¡Vengan conmigo!" ¡Cuán preciada es la oportunidad que se nos ofrece! Cuando aceptemos Su proposición y se nos admita en esa línea, felizmente podremos regresar a casa, regresar a Dios. 
+</p>
+<p class='vspace'>Esta es la esencia misma de toda religión. Con conocimiento o sin él, cada una de las almas va en busca del amor divino. No obstante, diversos obstáculos surgen para hacernos desistir de nuestra campaña; pero nuestro corazón no se aquietará hasta que llegue allí. Una vez iniciada, nuestra travesía hacia Krsna no puede detenerse en ningún lugar. Es simplemente cuestión de tiempo. Podría pasar largo tiempo, eras completas podrían transcurrir, pero nuestro triunfo final no puede ser detenido. 
+</p>
+<p class='vspace'>Sólo Krsna puede realmente atraernos. No podremos saborear ninguna otra cosa en las profundidades de nuestro corazón ni aceptarla como nuestro destino final. Sólo queremos belleza y amor, no poder ni conocimiento. 
+</p>
+<p class='vspace'><strong>Mendigos de amor</strong> 
+</p>
+<p class='vspace'>Podríamos dar la idea que buscamos poder. A veces pensamos que debemos tenerlo todo; desearíamos esa capacidad controladora. Desearíamos que todo quede bajo nuestro control, que se haga todo aquello que nosotros queramos. Sin embargo, no es eso lo que en realidad buscamos. Quizás parece que buscamos poder, pero en última instancia, el poder no puede satisfacernos. A veces podemos pensar que deseamos saberlo todo. Tal vez no deseamos controlarlo todo, pero queremos conocerlo todo. No nos gusta ser ignorantes. Pero tampoco esa es la meta última que podrá satisfacer nuestra necesidad interna. No es eso lo que realmente queremos. Se nos debe educar acerca de nuestra necesidad real, la búsqueda interna de nuestros corazones. Si lo hacemos como es debido, descubriremos que todos somos mendigos de amor y afecto. En todas partes la adoración es la necesidad más profunda. Y sólo podrá satisfacerse plenamente en los pasatiempos de Krsna en Vrndavana. 
+</p>
+<p class='vspace'>Esta conclusión fue expuesta por Vedavyasa, el recopilador de las Escrituras védicas. Hasta los eruditos contemporáneos admiten que Vedavyasa ha difundido en los Vedas, Puranas , Mahabharata y Vedanta-sutra todas las líneas de pensamientos filosóficos existentes. Y en sus días postreros, en su madurez filosófica, legó el Srimad-Bhagavatam, que culmina en el concepto del amor divino, Krsna-prema. 
+</p>
+<p class='vspace'><strong>Queremos a Krsna</strong>
+</p>
+<p class='vspace'>El anhelo más profundo de todo ser viviente es la belleza, el amor, el afecto, la armonía, y no el poder, el conocimiento o cualquier otra cosa. Este es el veredicto de toda la creación en el tiempo y el espacio. Su causa común es una. No obstante, es muy raro que un alma alcance un estado tan diáfano de anhelo por la realidad como para comprender este punto. En este mundo son pocas las almas realmente conscientes de su más íntima necesidad. Son pocas las que realizan: "¡Queremos a Krsna! ¡Queremos a Vrndavana!" Tales almas sinceras no se encuentran con facilidad; esto se menciona en muchas partes de las Escrituras (manusyanam sahasresu... narayana parayana... Brahmananam sahasrebyo...). 
+</p>
+<p class='vspace'>Hay una sola meta. No se necesitan muchas, sino una, la única, la que verdaderamente ambicionamos: Una relación de amor divino. 
+</p>
+<p class='vspace'>No es posible lograr una compresión intelectual de la conciencia de Krsna. Así como una abeja no puede saborear la miel cuando lame por fuera el tarro de cristal, uno tampoco puede entrar en la región superior del espíritu por la fuerza del intelecto. Como sujetos estamos subordinados al Sujeto Supremo. Por lo tanto, tiene que haber seva, servicio. Seva es el factor absolutamente esencial. En el Bhagavad-gita se menciona que pranipata, aproximarse respetuosamente; pariprasna, la indagación sincera; y seva, una actitud de servicio; son indispensables para entrar en los dominios del amor divino. Krsna sólo se complacerá y descenderá mediante el servicio. Y sólo entonces podremos comprender la naturaleza del plano superior. Esto es conocimiento védico. 
+</p>
+<p class='vspace'>Nosotros somos tatastha-sakti, la potencia marginal, y si queremos llegar a conocer cualquier verdad acerca de la Realidad Superior, debemos comprender que esta es más sutil que nuestra propia existencia, que es supersubjetiva. Ella puede tocarnos, pero nosotros no podemos escalar hasta sus dominios por nuestro dulce deseo. Sólo podemos ir si se nos concede la gracia que nos puede elevar. 
+</p>
+<p class='vspace'>Aquel que tiene esta compresión podrá enfrentarse con todos los intelectualistas. El intelecto no tiene capacidad para entrar en el área subjetiva superior. Esa verdad suprema es atindriya-manasa-gocarah: Más allá del plano de los sentidos, de la mente y del intelecto. La expresión de Brahma, manaso vapuso vaco vaibhavam tava gocarah, admitiendo que Krsna estaba fuera del alcance del cuerpo, la mente y las palabras, no era sólo una declaración de los labios para afuera. Si deseamos conocer la Verdad Absoluta, la única condición para comprenderle a Él es una actitud sumisa. Así, Él podría complacerse con nuestros esfuerzos y revelársenos. La revelación divina no es tema acerca del cual podamos indagar en este mundo. Debemos estar dispuestos a servir de todo corazón. 
+</p>
+<p class='vspace'>Los científicos están descubriendo muchas cosas maravillosas. ¿Pero es que acaso no existían antes? ¿Son los científicos sus creadores? Esas verdades asombrosas ya estaban allí. Sólo que algunas de ellas están siendo descubiertas. No son creación de los científicos y por lo tanto, ellos no son superiores a esas verdades. En el mejor de los casos, ellos sólo pueden llegar a conocerlas parcialmente y eso con cierto esfuerzo. Pero la naturaleza consciente de la realidad, el razonamiento superior de la Divinidad, les resulta desconocido aunque continúen investigando, investigando, investigando. Todo lo que puedan descubrir no es más que la cobertura externa y no el espíritu verdadero, la esencia. Na te viduh svartha-gatim hi visnum. Está escrito en el Srimad-Bhagavatam (7.5.30): 
+</p>
+<div class='vspace'></div><pre> matir na krsne paratah svato va, mitho `bhipadyeta grha-vratanam 
+ adanta-gobir visatam tamisram, punah punas carvita-carvananam 
+</pre><p class='vspace'>El Srimad-Bhagavatam nos dice que podemos esforzarnos por entrar en el mundo de la realidad superior a través del intelectualismo, pero que regresaremos derrotados en nuestros intentos. Si tratamos de hacer presión con nuestra inteligencia para entrar en esos dominios, regresaremos insatisfechos, desesperanzados y andaremos errantes por este mundo de muerte una y otra vez. A través de sus diferentes fases, el mundo de la experiencia sensorial vendrá y se irá; pero no podrá entrar en ese plano espiritual. El único requisito para entrar en ese mundo es la rendición a un agente genuino de la Divinidad. Él puede enseñarnos el proceso y si podemos aceptarlo, estaremos capacitados para entrar en ese mundo. De lo contrario, tendremos que andar errantes en este mundo de la experiencia sensorial. 
+</p>
+<p class='vspace'>Algunos eruditos piensan que el conocimiento es primordial. Según ellos, si uno desea entrar en ese reino, primero deberá adquirir conocimiento a través de la erudición y luego tratar de alcanzar el amor. Ellos piensan que sólo a través del conocimiento podemos comprender lo que es el amor divino y que entonces se nos aceptará en esos dominios. Ellos no aprueban la idea del jñana-sunya-bhakti o "devoción libre de conocimiento". 
+</p>
+<p class='vspace'>Una vez, el fundador del Bharat Seva Asrama Sanga quería que yo me uniera a su misión. Yo le dije: "Mi cabeza ya ha sido vendida a las enseñanzas de Sri Caitanyadeva". Él dijo: "Sí, yo también lo venero, pero sostengo que primero tienes que aprender a desarrollar indiferencia hacia los placeres mundanos, como predicaba Buda. Después podrás estudiar el Vedanta de Sankara, comprender lo que es conocimiento verdadero y realizar que todo este mundo es nada y que Brahman, el Espíritu, lo es todo. Finalmente podrás acercarte al prema-dharma, el amor de Sri Caitanyadeva, al cual yo también considero como el logro más excelso". Yo contesté: "Usted lo dice, pero Sri Caitanyadeva no indicó que antes de llegar a Él debíamos ir a la escuela budista para aprender abnegación y luego a la escuela de Sankara para adquirir conocimiento vedántico. Él dijo que no importa donde uno se encuentre, uno debe buscar la asociación de un santo vaisnava y proseguir con sravana-kirtana, escuchar y cantar las glorias del Señor". Aquel hombre enmudeció. No pudo decir más. Fue silenciado. 
+</p>
+<p class='vspace'>En otra oportunidad, el presidente del Arya Samaj vino a verme cuando me encontraba yo en Karachi y me dijo: "Si el finito puede llegar a conocer al Infinito, entonces no es infinito". Yo repliqué: "Si el Infinito no puede darse a conocer al finito, no es Infinito". Él no encontró respuesta para mi argumento. 
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=sridhar_br.amorosa_busqueda_del_senor_07.html'>Dios como hijo</a> | <a class='wikilink' href='index.php-n=sridhar_br.amorosa_busqueda_del_senor.html'>La Amorosa Búsqueda del Señor por Su Sirviente Perdido</a> | <a class='wikilink' href='index.php-n=sridhar_br.amorosa_busqueda_del_senor_09.html'>Devoción libre de Conocimiento – Segunda Parte</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 10:05 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - La Bella Historia de Dios</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : atulananda - RSS Feed'
+      href='index.php-n=atulananda.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=atulananda.El_Srimad_Bhagvatam' method='get'><input type='hidden' name='n' value='atulananda.El_Srimad_Bhagvatam' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - La Bella Historia de Dios"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=atulananda.El_Srimad_Bhagvatam-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=atulananda.atulananda.html'>Atulananda Acarya</a></h5>
+<hr />
+<div class='vspace'></div><h1>EL SRIMAD BHAGAVATAM</h1>
+<h5>PRIMER CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Las_Preguntas_de_los_Sabios.html'>CAPITULO I - Las Preguntas de los Sabios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Divinidad_y_Servicio_Divino.html'>CAPITULO II - Divinidad y Servicio Divino </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Krsna_es_la_Fuente_de_Todas_las_Encarnaciones.html'>CAPITULO III - Krsna es la Fuente de Todas las Encarnaciones </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_La_Aparici%C3%B3n_de_Sri_Narada.html'>CAPITULO IV - La Aparición de Sri Narada </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Narada_Instruye_a_Vyasadeva_Acerca_del_Srimad_Bhagvatam.html'>CAPITULO V - Narada Instruye a Vyasadeva Acerca del Srimad Bhagvatam </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Conversaci%C3%B3n_entre_Narada_y_Vyasa.html'>CAPITULO VI - La Conversación entre Narada y Vyasa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_El_Hijo_de_Drona_es_Castigado.html'>CAPITULO VII - El Hijo de Drona es Castigado </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Las_Oraciones_de_Reina_Kunti.html'>CAPITULO VIII - Las Oraciones de Reina Kunti </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_La_Muerte_de_Bhismadeva.html'>CAPITULO IX - La Muerte de Bhismadeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_La_Partida_del_Se%C3%B1or_Krsna_para_Dvarka.html'>CAPITULO X - La Partida del Señor Krsna para Dvarka </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_La_Entrada_del_Se%C3%B1or_Krsna_en_Dvarka.html'>CAPITULO XI - La Entrada del Señor Krsna en Dvarka </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_El_Nacimiento_del_Rey_Pariksit.html'>CAPITULO XII - El Nacimiento del Rey Pariksit </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Dhritarastra_Deja_el_Palacio.html'>CAPITULO XIII - Dhritarastra Deja el Palacio </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_La_Partida_del_Se%C3%B1or_Krsna.html'>CAPITULO XIV - La Partida del Señor Krsna </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Los_P%C3%A1ndava_se_Retiran_a_Tiempo.html'>CAPITULO XV - Los Pándava se Retiran a Tiempo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_C%C3%B3mo_Maharaj_Pariksit_Recibi%C3%B3_a_la_Era_de_Kali.html'>CAPITULO XVI - Cómo Maharaj Pariksit Recibió a la Era de Kali </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_Castigo_y_Concesi%C3%B3n_del_Rey_a_Kali.html'>CAPITULO XVII - Castigo y Concesión del Rey a Kali </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Maharaj_Pariksit_es_Maldecido.html'>CAPITULO XVIII - Maharaj Pariksit es Maldecido </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Aparici%C3%B3n_de_Sukadeva_Goswami.html'>CAPITULO XIX - La Aparición de Sukadeva Goswami </a>
+</li></ul><div class='vspace'></div><h5>FIN DEL PRIMER CANTO</h5>
+<p>Reverencias a la Personalidad de Dios Narayan, a Nara-Narayan Risi, el ser humano supremo, a Srila Vyasadev el autor, y a Srila Prabhupad el traductor y comentador.
+</p>
+<div class='vspace'></div><h5>SEGUNDO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_El_Primer_Paso_en_la_Realizaci%C3%B3n_de_Dios.html'>CAPITULO I - El Primer Paso en la Realización de Dios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_El_Se%C3%B1or_en_el_Coraz%C3%B3n.html'>CAPITULO II - El Señor en el Corazón </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_El_Servicio_con_Devoci%C3%B3n_Pura-_El_Cambio_en_el_Coraz%C3%B3n.html'>CAPITULO III - El Servicio con Devoción Pura: El Cambio en el Corazón </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_El_Proceso_de_la_Creaci%C3%B3n.html'>CAPITULO IV - El Proceso de la Creación </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_La_Causa_de_Todas_las_Causas.html'>CAPITULO V - La Causa de Todas las Causas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Purusa-Sukta_Confirmado.html'>CAPITULO VI - Purusa-Sukta Confirmado </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Las_Encarnaciones_con_Sus_Funciones_Espec%C3%ADficas.html'>CAPITULO VII - Las Encarnaciones con Sus Funciones Específicas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Las_Preguntas_del_Rey_Pariksit.html'>CAPITULO VIII - Las Preguntas del Rey Pariksit </a>
+</li><li><a class='createlinktext' href='index.php-n=atulananda.CAPITULO_IX_-_Respuestas_Citando_la_Versi%C3%B3n_del_Se%C3%B1or-action=edit.html'>CAPITULO IX - Respuestas Citando la Versión del Señor </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_El_Bhagavatam_es_la_Respuesta_a_Todas_las_Preguntas.html'>CAPITULO X - El Bhagavatam es la Respuesta a Todas las Preguntas </a>
+</li></ul><div class='vspace'></div><h5>TERCER CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Las_Preguntas_de_Vidura.html'>CAPITULO I - Las Preguntas de Vidura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_El_Recuerdo_del_Se%C3%B1or_Krsna.html'>CAPITULO II - El Recuerdo del Señor Krsna </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Los_Pasatiempos_del_Se%C3%B1or_Fuera_de_Vrndavan.html'>CAPITULO III - Los Pasatiempos del Señor Fuera de Vrndavan </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Vidura_se_Acerca_a_Maitreya.html'>CAPITULO IV - Vidura se Acerca a Maitreya </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Las_Conversaciones_entre_Vidura_y_Maitreya.html'>CAPITULO V - Las Conversaciones entre Vidura y Maitreya </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Creaci%C3%B3n_de_la_Forma_Universal.html'>CAPITULO VI - La Creación de la Forma Universal </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Preguntas_Adicionales_de_Vidura.html'>CAPITULO VII - Preguntas Adicionales de Vidura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Garbhodakasayi_Visnu_Manifiesta_a_Brahma.html'>CAPITULO VIII - Garbhodakasayi Visnu Manifiesta a Brahma </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_Las_Oraciones_de_Brahma_en_Pos_de_la_Energ%C3%ADa_Creativa.html'>CAPITULO IX - Las Oraciones de Brahma en Pos de la Energía Creativa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_Las_Divisiones_de_la_Creaci%C3%B3n.html'>CAPITULO X - Las Divisiones de la Creación </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_C%C3%A1lculo_del_Tiempo_a_Partir_del_%C3%81tomo.html'>CAPITULO XI - Cálculo del Tiempo a Partir del Átomo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_La_Creaci%C3%B3n_de_los_Kumaras_y_de_Otros.html'>CAPITULO XII - La Creación de los Kumaras y de Otros </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_La_Aparici%C3%B3n_de_Sri_Varaha.html'>CAPITULO XIII - La Aparición de Sri Varaha </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_Diti_Queda_Embarazada_al_Atardecer.html'>CAPITULO XIV - Diti Queda Embarazada al Atardecer </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Descripci%C3%B3n_del_Reino_de_Dios.html'>CAPITULO XV - Descripción del Reino de Dios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_Jaya_y_Vijaya_Maldecidos_por_los_Sabios.html'>CAPITULO XVI - Jaya y Vijaya Maldecidos por los Sabios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_La_Victoria_de_Hiranyaksa.html'>CAPITULO XVII - La Victoria de Hiranyaksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_La_Batalla_entre_Varaha_e_Hiranyaksa.html'>CAPITULO XVIII - La Batalla entre Varaha e Hiranyaksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Muerte_de_Hiranyaksa.html'>CAPITULO XIX - La Muerte de Hiranyaksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XX_-_Conversaci%C3%B3n_entre_Maitreya_y_Vidura.html'>CAPITULO XX - Conversación entre Maitreya y Vidura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXI_-_Conversaci%C3%B3n_entre_Manu_y_Kardama.html'>CAPITULO XXI - Conversación entre Manu y Kardama </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXII_-_El_Matrimonio_de_Kardama_Muni_y_Devahuti.html'>CAPITULO XXII - El Matrimonio de Kardama Muni y Devahuti </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIII_-_La_Lamentaci%C3%B3n_de_Devahuti.html'>CAPITULO XXIII - La Lamentación de Devahuti </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIV_-_La_Renunciaci%C3%B3n_de_Kardama_Muni.html'>CAPITULO XXIV - La Renunciación de Kardama Muni </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXV_-_Las_Glorias_del_Servicio_con_Devoci%C3%B3n.html'>CAPITULO XXV - Las Glorias del Servicio con Devoción </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVI_-_Los_Principios_Fundamentales_de_la_Naturaleza_Material.html'>CAPITULO XXVI - Los Principios Fundamentales de la Naturaleza Material </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVII_-_Comprensi%C3%B3n_de_la_Naturaleza_Material.html'>CAPITULO XXVII - Comprensión de la Naturaleza Material </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVIII_-_Las_Instrucciones_de_Kapila_Referentes_al_Servicio_con_Devoci%C3%B3n.html'>CAPITULO XXVIII - Las Instrucciones de Kapila Referentes al Servicio con Devoción </a>  
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIX_-_El_Se%C3%B1or_Kapila_Explica_el_Servicio_con_Devoci%C3%B3n.html'>CAPITULO XXIX - El Señor Kapila Explica el Servicio con Devoción </a> 
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXX_-_Las_Actividades_Fruitivas_Desfavorables.html'>CAPITULO XXX - Las Actividades Fruitivas Desfavorables </a> 
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXXI_-_El_Movimiento_de_las_Entidades_Vivientes.html'>CAPITULO XXXI - El Movimiento de las Entidades Vivientes </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXXII_-_El_Enredo_en_las_Actividades_Fruitivas.html'>CAPITULO XXXII - El Enredo en las Actividades Fruitivas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXXIII_-_Las_Actividades_de_Sri_Kapila.html'>CAPITULO XXXIII - Las Actividades de Sri Kapila </a>
+</li></ul><div class='vspace'></div><h5>CUARTO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_%C3%81rbol_Geneal%C3%B3gico_de_las_Hijas_de_Manu.html'>CAPITULO I - Árbol Genealógico de las Hijas de Manu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Daksa_Maldice_al_Se%C3%B1or_Siva.html'>CAPITULO II - Daksa Maldice al Señor Siva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Conversaci%C3%B3n_entre_el_Se%C3%B1or_Siva_y_Sati.html'>CAPITULO III - Conversación entre el Señor Siva y Sati </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Sati_Deja_el_Cuerpo.html'>CAPITULO IV - Sati Deja el Cuerpo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Fracaso_del_Sacrificio_de_Daksa.html'>CAPITULO V - Fracaso del Sacrificio de Daksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Brahma_Satisface_al_Se%C3%B1or_Siva.html'>CAPITULO VI - Brahma Satisface al Señor Siva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_El_Sacrificio_Realizado_por_Daksa.html'>CAPITULO VII - El Sacrificio Realizado por Daksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Dhruva_Maharaj_Deja_el_Hogar.html'>CAPITULO VIII - Dhruva Maharaj Deja el Hogar </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_Dhruva_Vuelve_a_Casa.html'>CAPITULO IX - Dhruva Vuelve a Casa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_Dhruva_Maharaj_Lucha_Contra_los_Yaksas.html'>CAPITULO X - Dhruva Maharaj Lucha Contra los Yaksas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_Svayambhuva_Manu_aconseja_a_Dhruva_Maharaj.html'>CAPITULO XI - Svayambhuva Manu aconseja a Dhruva Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_Dhruva_Maharaj_Va_de_Vuelta_a_Dios.html'>CAPITULO XII - Dhruva Maharaj Va de Vuelta a Dios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Los_Descendientes_de_Dhruva_Maharaj.html'>CAPITULO XIII - Los Descendientes de Dhruva Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_La_Historia_del_Rey_Vena.html'>CAPITULO XIV - La Historia del Rey Vena </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Advenimiento_y_Coronaci%C3%B3n_del_Rey_Prthu.html'>CAPITULO XV - Advenimiento y Coronación del Rey Prthu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_Los_Recitadores_Profesionales_Alaban_al_Rey_Prthu.html'>CAPITULO XVI - Los Recitadores Profesionales Alaban al Rey Prthu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_La_Ira_de_Maharaj_Prthu_contra_la_Tierra.html'>CAPITULO XVII - La Ira de Maharaj Prthu contra la Tierra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Prthu_Maharaj_Orde%C3%B1a_a_la_Tierra.html'>CAPITULO XVIII - Prthu Maharaj Ordeña a la Tierra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_Los_Cien_Sacrificios_de_Caballo_del_Rey_Prthu.html'>CAPITULO XIX - Los Cien Sacrificios de Caballo del Rey Prthu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XX_-_El_Se%C3%B1or_Visnu_Aparece_en_la_Arena_de_Sacrificio.html'>CAPITULO XX - El Señor Visnu Aparece en la Arena de Sacrificio </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXI_-_Las_Instrucciones_de_Prthu_Maharaj.html'>CAPITULO XXI - Las Instrucciones de Prthu Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXII_-_Prthu_Maharaj_se_Encuentra_con_los_Kumara.html'>CAPITULO XXII - Prthu Maharaj se Encuentra con los Kumara </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIII_-_Prthu_Maharaj_Vuelve_a_Casa.html'>CAPITULO XXIII - Prthu Maharaj Vuelve a Casa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIV_-_La_Canci%C3%B3n_del_Se%C3%B1or_Siva.html'>CAPITULO XXIV - La Canción del Señor Siva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXV_-_Las_Caracter%C3%ADsticas_del_Rey_Pura%C3%B1jana.html'>CAPITULO XXV - Las Características del Rey Purañjana </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVI_-_Pura%C3%B1jana_Sale_a_Cazar_y_su_Esposa_se_Enoja.html'>CAPITULO XXVI - Purañjana Sale a Cazar y su Esposa se Enoja </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVII_-_El_Ataque_de_Chandavega_a_la_Ciudad_del_Rey_Pura%C3%B1jana%3B_el_Car%C3%A1cter_de_Kalakanya.html'>CAPITULO XXVII - El Ataque de Chandavega a la Ciudad del Rey Purañjana; el Carácter de Kalakanya </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVIII_-_Pura%C3%B1jana_Nace_como_Mujer_en_su_Pr%C3%B3xima_Vida.html'>CAPITULO XXVIII - Purañjana Nace como Mujer en su Próxima Vida </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIX_-_Las_Conversaciones_entre_Narada_Muni_y_el_Rey_Prachinabarhisat.html'>CAPITULO XXIX - Las Conversaciones entre Narada Muni y el Rey Prachinabarhisat </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXX_-_Las_Actividades_de_los_Prachetas.html'>CAPITULO XXX - Las Actividades de los Prachetas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXXI_-_Narada_Instruye_a_los_Prachetas.html'>CAPITULO XXXI - Narada Instruye a los Prachetas </a>
+</li></ul><div class='vspace'></div><h5>FIN DEL CUARTO CANTO.</h5>
+<p>Terminado el 26 de Agosto del 2003, en Buenos Aires, por gracia de Srila Prabhupad y vaisnavas. 
+</p>
+<div class='vspace'></div><h5>QUINTO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Las_Actividades_de_Priyavrata_Maharaj.html'>CAPITULO I - Las Actividades de Priyavrata Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Las_Actividades_de_Maharaj_Agnidra.html'>CAPITULO II - Las Actividades de Maharaj Agnidra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_La_Aparici%C3%B3n_de_Rsabhadeva.html'>CAPITULO III - La Aparición de Rsabhadeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Las_Caracter%C3%ADsticas_de_Rsabhadeva_la_Suprema_Personalidad_de_Dios.html'>CAPITULO IV - Las Características de Rsabhadeva la Suprema Personalidad de Dios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Las_Ense%C3%B1anzas_del_Se%C3%B1or_Rsabhadeva.html'>CAPITULO V - Las Enseñanzas del Señor Rsabhadeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Las_Actividades_del_Se%C3%B1or_Rsabhadeva.html'>CAPITULO VI - Las Actividades del Señor Rsabhadeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Las_Actividades_de_Bharata_Maharaj.html'>CAPITULO VII - Las Actividades de Bharata Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_El_Car%C3%A1cter_de_Bharata_Maharaj.html'>CAPITULO VIII - El Carácter de Bharata Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_El_Car%C3%A1cter_Supremo_de_Jada_Bharata.html'>CAPITULO IX - El Carácter Supremo de Jada Bharata </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_Conversaciones_Entre_Jada_Bharata_y_Maharaja_Rahugana.html'>CAPITULO X - Conversaciones Entre Jada Bharata y Maharaja Rahugana </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_Jada_Bharata_Instruye_al_Rey_Rahugana.html'>CAPITULO XI - Jada Bharata Instruye al Rey Rahugana </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_Conversaciones_entre_Maharaja_Rahugana_y_Jada_Bharata.html'>CAPITULO XII - Conversaciones entre Maharaja Rahugana y Jada Bharata </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Rahugana_Conversa_con_Jada_Bharata.html'>CAPITULO XIII - Rahugana Conversa con Jada Bharata </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_El_Bosque_del_Disfrute.html'>CAPITULO XIV - El Bosque del Disfrute </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Los_Descendientes_del_Rey_Priyavrata.html'>CAPITULO XV - Los Descendientes del Rey Priyavrata </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_Una_Descripci%C3%B3n_de_Jambhudvip.html'>CAPITULO XVI - Una Descripción de Jambhudvip </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_El_Descenso_del_R%C3%ADo_Ganges.html'>CAPITULO XVII - El Descenso del Río Ganges </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Las_Oraciones_de_los_Residentes_de_Jambudvip.html'>CAPITULO XVIII - Las Oraciones de los Residentes de Jambudvip </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Isla_de_Jambudvip.html'>CAPITULO XIX - La Isla de Jambudvip </a>
+</li></ul><div class='vspace'></div><h5>SEXTO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_La_Historia_de_Ajamila.html'>CAPITULO I - La Historia de Ajamila </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Ajamila_es_Liberado_por_los_Visnudutas.html'>CAPITULO II - Ajamila es Liberado por los Visnudutas </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Yamaraj_Instruye_a_sus_Mensajeros.html'>CAPITULO III - Yamaraj Instruye a sus Mensajeros </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Las_Oraciones_Hamsa_Guhya.html'>CAPITULO IV - Las Oraciones Hamsa Guhya </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Narada_Muni_es_Maldecido_por_Prajapati_Daksa.html'>CAPITULO V - Narada Muni es Maldecido por Prajapati Daksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Descendencia_de_las_Hijas_de_Daksa.html'>CAPITULO VI - Descendencia de las Hijas de Daksa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Indra_Ofende_a_su_Maestro_Espiritual_Brhaspati.html'>CAPITULO VII - Indra Ofende a su Maestro Espiritual Brhaspati </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_El_Escudo_Narayan_Kavacha.html'>CAPITULO VIII - El Escudo Narayan Kavacha </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_La_Aparici%C3%B3n_de_Vrtrasura.html'>CAPITULO IX - La Aparición de Vrtrasura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_La_Batalla_Entre_los_Semidioses_y_Vrtrasura.html'>CAPITULO X - La Batalla Entre los Semidioses y Vrtrasura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_Las_Cualidades_Trascendenales_de_Vrtrasura.html'>CAPITULO XI - Las Cualidades Trascendenales de Vrtrasura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_La_Gloriosa_Muerte_de_Vrtrasura.html'>CAPITULO XII - La Gloriosa Muerte de Vrtrasura </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_El_Rey_Indra_Acosado_por_la_Reacci%C3%B3n_Pecaminosa.html'>CAPITULO XIII - El Rey Indra Acosado por la Reacción Pecaminosa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_La_Lamentaci%C3%B3n_del_Rey_Chitraketu.html'>CAPITULO XIV - La Lamentación del Rey Chitraketu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Los_Santos_Narada_y_Angira_Instruyen_al_Rey.html'>CAPITULO XV - Los Santos Narada y Angira Instruyen al Rey </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_El_Rey_Alcanza_el_Refugio_del_Se%C3%B1or_Supremo.html'>CAPITULO XVI - El Rey Alcanza el Refugio del Señor Supremo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_Madre_Parvati_Maldice_a_Chitraketu.html'>CAPITULO XVII - Madre Parvati Maldice a Chitraketu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Diti_Hace_el_Voto_de_Matar_a_Indra.html'>CAPITULO XVIII - Diti Hace el Voto de Matar a Indra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Ceremonia_Pumsavana.html'>CAPITULO XIX - La Ceremonia Pumsavana </a>
+</li></ul><div class='vspace'></div><h5>SEPTIMO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_El_Se%C3%B1or_es_Igual_con_Todos.html'>CAPITULO I - El Señor es Igual con Todos </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Hiranyakasipu_Rey_de_los_Demonios.html'>CAPITULO II - Hiranyakasipu Rey de los Demonios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_El_Plan_de_Hiranyakasipu_para_Volverse_Inmortal.html'>CAPITULO III - El Plan de Hiranyakasipu para Volverse Inmortal </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Hiranyakasipu_Aterroriza_al_Universo.html'>CAPITULO IV - Hiranyakasipu Aterroriza al Universo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Prahlad_Maharaj_el_Santo_Hijo_de_Hiranyakasipu.html'>CAPITULO V - Prahlad Maharaj el Santo Hijo de Hiranyakasipu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Prahlad_Instruye_a_sus_Compa%C3%B1eros_Demonios.html'>CAPITULO VI - Prahlad Instruye a sus Compañeros Demonios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Lo_que_Prahlad_Aprendi%C3%B3_en_el_Vientre.html'>CAPITULO VII - Lo que Prahlad Aprendió en el Vientre </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_El_Se%C3%B1or_Nrsimhadeva_Mata_al_Rey_de_los_Demonios.html'>CAPITULO VIII - El Señor Nrsimhadeva Mata al Rey de los Demonios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_Prahlad_Pacifica_al_Se%C3%B1or_con_Oraciones.html'>CAPITULO IX - Prahlad Pacifica al Señor con Oraciones </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_Prahlad_el_Mejor_Entre_los_M%C3%A1s_Exaltados_Devotos.html'>CAPITULO X - Prahlad el Mejor Entre los Más Exaltados Devotos </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_La_Sociedad_Perfecta-_Las_Cuatro_Clases_Sociales.html'>CAPITULO XI - La Sociedad Perfecta: Las Cuatro Clases Sociales </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_La_Sociedad_Perfecta-_Las_Cuatro_Clases_Espirituales.html'>CAPITULO XII - La Sociedad Perfecta: Las Cuatro Clases Espirituales </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_El_Comportamiento_de_la_Persona_Perfecta.html'>CAPITULO XIII - El Comportamiento de la Persona Perfecta </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_La_Vida_Familiar_Ideal.html'>CAPITULO XIV - La Vida Familiar Ideal </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Instrucciones_para_los_Seres_Humanos_Civilizados.html'>CAPITULO XV - Instrucciones para los Seres Humanos Civilizados </a>
+</li></ul><div class='vspace'></div><h5>OCTAVO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Los_Manus-_Administradores_del_Universo.html'>CAPITULO I - Los Manus: Administradores del Universo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_La_Crisis_del_Elefante_Gajendra.html'>CAPITULO II - La Crisis del Elefante Gajendra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Las_Rendidas_Oraciones_de_Gajendra.html'>CAPITULO III - Las Rendidas Oraciones de Gajendra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Gajendra_Vuelve_al_Mundo_Espiritual.html'>CAPITULO IV - Gajendra Vuelve al Mundo Espiritual </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Los_Semidioses_Recurren_al_Se%C3%B1or.html'>CAPITULO V - Los Semidioses Recurren al Señor </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_Los_Semidioses_y_Demonios_Hacen_un_Pacto.html'>CAPITULO VI - Los Semidioses y Demonios Hacen un Pacto </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_El_Se%C3%B1or_Siva_Salva_al_Universo.html'>CAPITULO VII - El Señor Siva Salva al Universo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_El_Batido_del_Oc%C3%A9ano_de_Leche.html'>CAPITULO VIII - El Batido del Océano de Leche </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_El_Se%C3%B1or_Encarna_en_la_Forma_de_Mohini.html'>CAPITULO IX - El Señor Encarna en la Forma de Mohini </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_La_Batalla_entre_los_Semidioses_y_los_Demonios.html'>CAPITULO X - La Batalla entre los Semidioses y los Demonios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_El_Rey_Indra_Acaba_con_los_Demonios.html'>CAPITULO XI - El Rey Indra Acaba con los Demonios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_La_Encarnaci%C3%B3n_Mohini-murti_Confunde_al_Se%C3%B1or_Siva.html'>CAPITULO XII - La Encarnación Mohini-murti Confunde al Señor Siva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Descripci%C3%B3n_de_los_Futuros_Manus.html'>CAPITULO XIII - Descripción de los Futuros Manus </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_El_Sistema_de_Administraci%C3%B3n_Universal.html'>CAPITULO XIV - El Sistema de Administración Universal </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Bali_Maharaj_Conquista_los_Planetas_Celestiales.html'>CAPITULO XV - Bali Maharaj Conquista los Planetas Celestiales </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_El_Proceso_Payo-vrata_de_Adoraci%C3%B3n.html'>CAPITULO XVI - El Proceso Payo-vrata de Adoración </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII-_El_Se%C3%B1or_Accede_a_Ser_el_Hijo_de_Aditi.html'>CAPITULO XVII- El Señor Accede a Ser el Hijo de Aditi </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_El_Se%C3%B1or_Vamanadeva_la_Encarnaci%C3%B3n_como_Enano.html'>CAPITULO XVIII - El Señor Vamanadeva la Encarnación como Enano </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_El_Se%C3%B1or_Vamana_Mendiga_a_Bali_Maharaj.html'>CAPITULO XIX - El Señor Vamana Mendiga a Bali Maharaj </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XX_-_Bali_Maharaj_Entrega_el_Universo.html'>CAPITULO XX - Bali Maharaj Entrega el Universo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXI_-_Bali_Maharaj_es_Arrestado_por_el_Se%C3%B1or.html'>CAPITULO XXI - Bali Maharaj es Arrestado por el Señor </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXII_-_Bali_Maharaj_Rinde_su_Vida.html'>CAPITULO XXII - Bali Maharaj Rinde su Vida </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIII_-_Los_Semidioses_Recuperan_Sus_Moradas_Celestes.html'>CAPITULO XXIII - Los Semidioses Recuperan Sus Moradas Celestes </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIV_-_Matsya_la_Encarnaci%C3%B3n_de_Pez.html'>CAPITULO XXIV - Matsya la Encarnación de Pez </a>
+</li></ul><div class='vspace'></div><h5>NOVENO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_El_Rey_Sudyumna_se_Vuelve_Mujer.html'>CAPITULO I - El Rey Sudyumna se Vuelve Mujer </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Las_Dinast%C3%ADas_de_los_Hijos_de_Manu.html'>CAPITULO II - Las Dinastías de los Hijos de Manu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_El_Matrimonio_entre_Sukanya_y_Cyavana_Muni.html'>CAPITULO III - El Matrimonio entre Sukanya y Cyavana Muni </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_El_Rey_Ambaris_es_Insultado_por_Durvasa_Muni.html'>CAPITULO IV - El Rey Ambaris es Insultado por Durvasa Muni </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Durvasa_Salva_su_Vida.html'>CAPITULO V - Durvasa Salva su Vida </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Ca%C3%ADda_de_Saubhari_Muni.html'>CAPITULO VI - La Caída de Saubhari Muni </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Los_Hijos_de_Sagar_Encuentran_al_Se%C3%B1or_Kapiladev.html'>CAPITULO VIII - Los Hijos de Sagar Encuentran al Señor Kapiladev </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_La_Dinast%C3%ADa_de_Amsuman.html'>CAPITULO IX - La Dinastía de Amsuman </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_Los_Pasatiempos_del_Supremo_Se%C3%B1or_Ramachandra.html'>CAPITULO X - Los Pasatiempos del Supremo Señor Ramachandra </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_El_Se%C3%B1or_Ramachandra_Rige_el_Mundo.html'>CAPITULO XI - El Señor Ramachandra Rige el Mundo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_La_Dinast%C3%ADa_de_Maharaj_Nimi.html'>CAPITULO XIII - La Dinastía de Maharaj Nimi </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_El_Rey_Pururava_Encantado_por_Urvasi.html'>CAPITULO XIV - El Rey Pururava Encantado por Urvasi </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Parasurama_la_Encarnaci%C3%B3n_de_Guerrero.html'>CAPITULO XV - Parasurama la Encarnación de Guerrero </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_El_Se%C3%B1or_Parasurama_Destruye_la_Clase_Gobernante.html'>CAPITULO XVI - El Señor Parasurama Destruye la Clase Gobernante </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_El_Rey_Yayati_Recupera_Su_Juventud.html'>CAPITULO XVII - El Rey Yayati Recupera Su Juventud </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_El_Rey_Yayati_Alcanza_la_Liberaci%C3%B3n.html'>CAPITULO XIX - El Rey Yayati Alcanza la Liberación </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XX_-_La_Dinast%C3%ADa_de_Puru.html'>CAPITULO XX - La Dinastía de Puru </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXI_-_La_Dinast%C3%ADa_de_Bharata.html'>CAPITULO XXI - La Dinastía de Bharata </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXII_-_Los_Descendientes_de_Ajamidha.html'>CAPITULO XXII - Los Descendientes de Ajamidha </a>
+</li></ul><div class='vspace'></div><h5>DECIMO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Las_Preguntas_de_los_Sabios.html'>CAPITULO I - Las Preguntas de los Sabios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Divinidad_y_Servicio_Divino.html'>CAPITULO II - Divinidad y Servicio Divino </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Krsna_es_la_Fuente_de_Todas_las_Encarnaciones.html'>CAPITULO III - Krsna es la Fuente de Todas las Encarnaciones </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_La_Aparici%C3%B3n_de_Sri_Narada.html'>CAPITULO IV - La Aparición de Sri Narada </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Narada_Instruye_a_Vyasadeva_Acerca_del_Srimad_Bhagvatam.html'>CAPITULO V - Narada Instruye a Vyasadeva Acerca del Srimad Bhagvatam </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Conversaci%C3%B3n_entre_Narada_y_Vyasa.html'>CAPITULO VI - La Conversación entre Narada y Vyasa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_El_Hijo_de_Drona_es_Castigado.html'>CAPITULO VII - El Hijo de Drona es Castigado </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Las_Oraciones_de_Reina_Kunti.html'>CAPITULO VIII - Las Oraciones de Reina Kunti </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_La_Muerte_de_Bhismadeva.html'>CAPITULO IX - La Muerte de Bhismadeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_La_Partida_del_Se%C3%B1or_Krsna_para_Dvarka.html'>CAPITULO X - La Partida del Señor Krsna para Dvarka </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_La_Entrada_del_Se%C3%B1or_Krsna_en_Dvarka.html'>CAPITULO XI - La Entrada del Señor Krsna en Dvarka </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_El_Nacimiento_del_Rey_Pariksit.html'>CAPITULO XII - El Nacimiento del Rey Pariksit </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Dhritarastra_Deja_el_Palacio.html'>CAPITULO XIII - Dhritarastra Deja el Palacio </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_La_Partida_del_Se%C3%B1or_Krsna.html'>CAPITULO XIV - La Partida del Señor Krsna </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_Los_P%C3%A1ndava_se_Retiran_a_Tiempo.html'>CAPITULO XV - Los Pándava se Retiran a Tiempo </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_C%C3%B3mo_Maharaj_Pariksit_Recibi%C3%B3_a_la_Era_de_Kali.html'>CAPITULO XVI - Cómo Maharaj Pariksit Recibió a la Era de Kali </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_Castigo_y_Concesi%C3%B3n_del_Rey_a_Kali.html'>CAPITULO XVII - Castigo y Concesión del Rey a Kali </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Maharaj_Pariksit_es_Maldecido.html'>CAPITULO XVIII - Maharaj Pariksit es Maldecido </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Aparici%C3%B3n_de_Sukadeva_Goswami.html'>CAPITULO XIX - La Aparición de Sukadeva Goswami </a>
+</li></ul><div class='vspace'></div><h5>ONCEAVO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_La_Maldici%C3%B3n_Contra_la_Dinast%C3%ADa_Yadu.html'>CAPITULO I - La Maldición Contra la Dinastía Yadu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Maharaj_Nimi_se_Encuentra_con_los_Nueve_Yogendras.html'>CAPITULO II - Maharaj Nimi se Encuentra con los Nueve Yogendras </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_Del_C%C3%B3mo_Liberarse_de_la_Energ%C3%ADa_Ilusoria.html'>CAPITULO III - Del Cómo Liberarse de la Energía Ilusoria </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Drumila_Explica_al_Rey_Nimi_las_Encarnaciones_de_Dios.html'>CAPITULO IV - Drumila Explica al Rey Nimi las Encarnaciones de Dios </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Narada_Concluye_sus_Ense%C3%B1anzas_a_Vasudeva.html'>CAPITULO V - Narada Concluye sus Enseñanzas a Vasudeva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Dinast%C3%ADa_Yadu_se_Retira_a_Prabhasa.html'>CAPITULO VI - La Dinastía Yadu se Retira a Prabhasa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_El_Se%C3%B1or_Krsna_Instruye_a_Uddhava.html'>CAPITULO VII - El Señor Krsna Instruye a Uddhava </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_La_Historia_de_P%C3%ADngala.html'>CAPITULO VIII - La Historia de Píngala </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_El_Desprendimiento_de_lo_Material.html'>CAPITULO IX - El Desprendimiento de lo Material </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_La_Naturaleza_de_la_Actividad_Fruitiva.html'>CAPITULO X - La Naturaleza de la Actividad Fruitiva </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_Los_S%C3%ADntomas_de_las_Entidades_Vivientes.html'>CAPITULO XI - Los Síntomas de las Entidades Vivientes </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_M%C3%A1s_All%C3%A1_de_la_Renuncia_y_del_Conocimiento.html'>CAPITULO XII - Más Allá de la Renuncia y del Conocimiento </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Hamsa_Avatara_Responde_las_Preguntas_de_los_Hijos_del_Se%C3%B1or_Brahma.html'>CAPITULO XIII - Hamsa Avatara Responde las Preguntas de los Hijos del Señor Brahma </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIV_-_El_Se%C3%B1or_Krsna_Explica_el_Sistema_de_Yoga.html'>CAPITULO XIV - El Señor Krsna Explica el Sistema de Yoga </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XV_-_El_Se%C3%B1or_Krsna_Describe_las_Perfecciones_del_Yoga_M%C3%ADstico.html'>CAPITULO XV - El Señor Krsna Describe las Perfecciones del Yoga Místico </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVI_-_La_Opulencia_del_Se%C3%B1or.html'>CAPITULO XVI - La Opulencia del Señor </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVII_-_Descripci%C3%B3n_del_Sistema_Varnasrama.html'>CAPITULO XVII - Descripción del Sistema Varnasrama </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XVIII_-_Descripci%C3%B3n_del_Varnasrama-dharma.html'>CAPITULO XVIII - Descripción del Varnasrama-dharma </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIX_-_La_Perfecci%C3%B3n_del_Conocimiento_Espiritual.html'>CAPITULO XIX - La Perfección del Conocimiento Espiritual </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XX_-_El_Servicio_con_Devoci%C3%B3n_Pura_Sobrepasa_el_Conocimiento_y_el_Desapego.html'>CAPITULO XX - El Servicio con Devoción Pura Sobrepasa el Conocimiento y el Desapego </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXI_-_Explicaci%C3%B3n_del_Camino_V%C3%A9dico.html'>CAPITULO XXI - Explicación del Camino Védico </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXII_-_Los_Elementos_de_la_Creaci%C3%B3n_Material.html'>CAPITULO XXII - Los Elementos de la Creación Material </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIII_-_La_Canci%C3%B3n_del_Brahmana_de_Avanti.html'>CAPITULO XXIII - La Canción del Brahmana de Avanti </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIV_-_La_Filosof%C3%ADa_Sankhya.html'>CAPITULO XXIV - La Filosofía Sankhya </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXV_-_Las_Tres_Modalidades_de_la_Naturaleza_y_la_Trascendencia.html'>CAPITULO XXV - Las Tres Modalidades de la Naturaleza y la Trascendencia </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVI_-_El_Aila_Gita.html'>CAPITULO XXVI - El Aila Gita </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVII_-_El_Proceso_de_Adoraci%C3%B3n_a_la_Deidad.html'>CAPITULO XXVII - El Proceso de Adoración a la Deidad </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXVIII_-_J%C3%B1ana-yoga.html'>CAPITULO XXVIII - Jñana-yoga </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXIX_-_Bhakti-yoga.html'>CAPITULO XXIX - Bhakti-yoga </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXX_-_La_Partida_de_la_Dinast%C3%ADa_Yadu.html'>CAPITULO XXX - La Partida de la Dinastía Yadu </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XXXI_-_La_Partida_del_Se%C3%B1or.html'>CAPITULO XXXI - La Partida del Señor </a>
+</li></ul><div class='vspace'></div><h5>DOCEAVO CANTO</h5>
+<ul><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_I_-_Las_Dinast%C3%ADas_Degradadas_de_Kali-yuga.html'>CAPITULO I - Las Dinastías Degradadas de Kali-yuga </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_II_-_Los_S%C3%ADntomas_de_la_Era_de_Kali.html'>CAPITULO II - Los Síntomas de la Era de Kali </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_III_-_El_Bhumi-gita.html'>CAPITULO III - El Bhumi-gita </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IV_-_Las_Cuatro_Categor%C3%ADas_de_la_Aniquilaci%C3%B3n_Universal.html'>CAPITULO IV - Las Cuatro Categorías de la Aniquilación Universal </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_V_-_Las_Instrucciones_Finales_para_Maharaj_Pariksit.html'>CAPITULO V - Las Instrucciones Finales para Maharaj Pariksit </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VI_-_La_Muerte_de_Maharaj_Pariksit.html'>CAPITULO VI - La Muerte de Maharaj Pariksit </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VII_-_Los_Textos_Pur%C3%A1nicos.html'>CAPITULO VII - Los Textos Puránicos </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_VIII_-_Las_Oraciones_de_Markandeya_a_Nara-Narayan_Rsi.html'>CAPITULO VIII - Las Oraciones de Markandeya a Nara-Narayan Rsi </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_IX_-_Markandeya_Rsi_Ve_la_Potencia_Ilusoria_del_Se%C3%B1or.html'>CAPITULO IX - Markandeya Rsi Ve la Potencia Ilusoria del Señor </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_X_-_LEl_Se%C3%B1or_Siva_y_Uma_Glorifican_a_Markandeya_Rsi.html'>CAPITULO X - LEl Señor Siva y Uma Glorifican a Markandeya Rsi </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XI_-_Descripci%C3%B3n_Resumida_del_Mahapurusa.html'>CAPITULO XI - Descripción Resumida del Mahapurusa </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XII_-_Resumen_del_Srimad_Bhagvatam.html'>CAPITULO XII - Resumen del Srimad Bhagvatam </a>
+</li><li><a class='wikilink' href='index.php-n=atulananda.CAPITULO_XIII_-_Las_Glorias_del_Srimad_Bhagavatam.html'>CAPITULO XIII - Las Glorias del Srimad Bhagavatam </a>
+</li></ul><p class='vspace'><strong>Editor en Bhaktipedia:</strong> Sapta Rsi dd
+</p><div><a class='urllink' href='http://creativecommons.org/licenses/by-nc-sa/2.5/' rel='nofollow'><img src='http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png' alt='This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License' title='This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License' /></a></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on September 26, 2012, at 03:42 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

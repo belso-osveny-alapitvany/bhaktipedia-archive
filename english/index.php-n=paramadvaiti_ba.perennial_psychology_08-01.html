@@ -1,0 +1,679 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Practical application of OIDA-Therapy</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia in English<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Other languages</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Welcome to Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.about_bhaktipedia.html'>What is Bhaktipedia?</a>
+</li><li><a target='_blank'  class='urllink' href='http://bhaktipedia-news.blogspot.com' rel='nofollow'>News blog</a> 
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/english/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Catalogues</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Complete catalogue</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Catalogue by subject</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Study guide</a>
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>First steps...</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Philosophy and practice</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Confidential writings</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Supplementary literature</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=thesaurus.thesaurus.html'>Thesaurus</a>
+</p><ul><li><a class='wikilink' href='index.php-n=thesaurus.names.html'>Names</a>
+</li><li><a class='wikilink' href='index.php-n=thesaurus.places.html'>Places &amp; events</a>
+</li><li><a class='wikilink' href='index.php-n=thesaurus.definitions.html'>Definitions</a>
+</li></ul><p class='vspace'>Search Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/english/index.php?n=paramadvaiti_ba.perennial_psychology_08-01' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.perennial_psychology_08-01' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/english/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/english/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Practical application of OIDA-Therapy"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.perennial_psychology_08-01-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>Swami B.A. Paramadvaiti</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.perennial_psychology.html'>Perennial Psychology</a>
+</p>
+<div class='vspace'></div><h2>Practical Application of OIDA-Therapy</h2>
+<p>1. Diet (a). 
+</p>
+<p class='vspace'>The recommended diet for OIDA-Therapy is the lactovegetarian 
+diet or optionally the vegan diet. The OIDA-
+Therapy diet concept is connected to the concept of 
+all-embracing love and trying through diet to avoid any 
+unnecessary aggression towards animals. To try to eat 
+organically produced food which has not been adulterated 
+with genetical modification processes is more a part 
+of common sense than of OIDA-therapy. The same goes 
+for only using sea salt and natural sweeteners and whole 
+products (brown rice etc.) If you eat sane and healthy food 
+everything else will improve. In the ancient Sanskrit medical 
+treatise “Ayur Veda” there are many more diet recommendations 
+which simply can not be discussed here due 
+to lack of space. 
+</p>
+<p class='vspace'>2. OIDA meetings telling about one’s discovery 
+of faith (b) 
+</p>
+<p class='vspace'>One of the best ways of regaining faith is to listen to those 
+who have made progress in their own OIDA-therapy and 
+have thus recovered their faith in their own mystical traditions 
+learned during their upbringing or in any other 
+faith they feel inclined to. Such meetings should not have 
+a proselytizing element but rather reflect on the benefits of 
+a life with faith in opposition to the life they lived previously 
+without faith. 
+</p>
+<p class='vspace'>Such meetings also provide a forum for meeting other 
+people who are also searching for their faith and provide a 
+wonderful platform for conversations such as nr. 5; faith 
+and philosophy talks, nr. 10; the basis for the fear of faith 
+therapy, and allows people to get practically involved with 
+their own practise in nr. 9; sharing therapy. This platform 
+can even expand into home programs conducted by those 
+who have received help from the OIDA-Therapy. Such 
+meetings can start with the participants saying the OIDA 
+prayer, and the most beautiful presentations of such meetings 
+can later be put on the Internet to extend the influence 
+of such meetings to other people who have no chance 
+to attend such meetings. 
+</p>
+<p class='vspace'>3. 12 Step Program (a, b, c) 
+</p>
+<p class='vspace'>The 12 Step Program developed by the A.A. (Alcoholics 
+Anonymous) and N.A.( Narcotics Anonymous) is in the 
+same spirit as Oida-therapy with the direct application to a 
+concrete problem which was caused by a lack of faith. The 
+principle of not wanting to hurt anybody and feeling very 
+repentant if an individual has hurt anybody in the past is 
+the very essence of a healing attitude towards oneself. And 
+any type of engagement which decreases our capacity to 
+serve others is exactly what OIDA-Therapy wants to help 
+us to overcome. 
+</p>
+<p class='vspace'>4. Oida questionnaires to refine our 
+discrimination (a,b,c) 
+</p>
+<p class='vspace'>The OIDA questionnaires are helpful for all types of therapies. 
+They introduce to us a self-critical approach. They 
+also help us to question values that are widely accepted 
+but which are nonetheless full of faults. OIDA questionnaires 
+add some humor to our therapies. And they also 
+give us substance for a lot of discussions for group therapy 
+and for inter-religious dialogue. OIDA-Therapy never intends 
+to offend anyone, it rather teaches us to love people 
+in whatever stage of development they are in. At the same 
+time, if we are not self-critical we may never discover how 
+to make progress. To meditate on our inner voice to obtain 
+answers to sincere questions is a very nice process. And 
+then comes a more difficult stage which is to put into action 
+what we have been told by our inner voice. In this 
+connection it will also be important what type of association 
+we choose because it is much easier to follow one’s 
+ideals in the company of others who share them. 
+</p>
+<p class='vspace'>5. OIDA therapy: faith and philosophy talks (b) 
+</p>
+<p class='vspace'>People have lost faith due to those individuals claiming to 
+have faith but who behave in an unacceptable manner. Often 
+people also give up their faith to facilitate involvement 
+in attachments and activities which their faith restricted. 
+</p>
+<p class='vspace'>It is very healthy to reevaluate the teachings of any faith 
+tradition independent of the faulty or virtuous activities 
+of others and to reconsider these teachings in the light of 
+their impact on philosophy and social behavior. All the 
+different types of faith can be analyzed in this faith. With 
+the help of nr. 6; Chart meditation, different types of faith 
+can more clearly be understood. Most of the charts provide 
+bases for wonderful discussions. 
+</p>
+<p class='vspace'>To help make the meetings more concentrated they should 
+also start with the OIDA prayer. 
+</p>
+<p class='vspace'>6. Chart meditation (a, c) 
+</p>
+<p class='vspace'>The many OIDA chart and diagram meditations provide 
+a lot of educational information. The beginning of every 
+chart meditation is to read the introduction. The next step 
+is to try to find yourself in the chart. What is the message 
+for you from this chart? Does this chart confront you with 
+ideals which you are currently not putting into action? 
+</p>
+<p class='vspace'>Write on a piece of paper all that which makes you curious 
+about the chart and investigate more about it. OIDA-
+Therapy teaches us about that which we can understand 
+with reasoning as well as about that which is beyond our 
+reasoning faculty. Some of the charts will also help you 
+to understand more about other mystical traditions and 
+belief systems, thus they are also very helpful for interreligious 
+dialogue and an understanding of the OIDA Vedic 
+tradition. 
+</p>
+<p class='vspace'>7. Educational system therapy questionnaire 
+(a, c) 
+</p>
+<p class='vspace'>This questionnaire was especially created to give an understanding 
+of where our educational system has gone wrong 
+and thus kept us in illusion regarding some very important 
+aspects of life. And if you’re an adult and somehow 
+involved in the educational system yourself you can see 
+how irresponsible it is to teach lies to others as if they were 
+truths. 
+</p>
+<p class='vspace'>The OIDA-Therapy is a commitment with the truth. It 
+doesn’t work if we lie to ourselves or to others. Therefore 
+it will turn out to be a very great benediction if you or any 
+educational system takes it seriously and is willing to correct 
+your-/itself because how can you change somebody 
+who does not want to change? We are supposed to be the 
+well-wishers of those we educate. Therefore eliminating 
+lies and uncertainties presented as truth from the educational 
+agenda should be considered the first priority. 
+</p>
+<p class='vspace'>8. Getting to know and follow your mystical 
+tradition (a, b, c) 
+</p>
+<p class='vspace'>OIDA-Therapy encourages us to define what is the origin 
+of the faith we still have. We are supposed to study the 
+true mystical traditions and free ourselves from frustrations 
+which were created by those who previously discouraged 
+our faith. Once you have defined the values of your 
+faith, then hopefully you will have found one or more 
+persons with whom to share the practical application of 
+your faith. 
+</p>
+<p class='vspace'>We should try to become realized and philosophically profound 
+in that faith system. That means, we should develop 
+saintly qualities, be charitable with others and a good example 
+in general. That in itself should give you a healthy 
+vitality inasmuch as you are helpful to others and don’t 
+make trouble to others. If you’re not convinced about any 
+particular mystical tradition, feel free to study as much as 
+you like about other faith traditions. You will discover that 
+they are all very similar in nature. And even if you do not 
+find your place completely you can surely learn a lot from 
+studying about all the different faiths. So there is no way 
+you can lose. 
+</p>
+<p class='vspace'>9. OIDA sharing therapy 
+</p>
+<p class='vspace'>This therapy is connected with the central effort of OIDA-
+therapy to heal people and to make them happier. It is 
+natural for a person who has solved his problems through 
+any particular system to recommend that same process to 
+others. OIDA-therapy is for all those who suffer in this 
+world due to a life lacking in values or simply because of 
+having lost faith in the meaning of life. And we hope that 
+as people get benefited from OIDA-therapy they will also 
+try to share the benefit with others. 
+</p>
+<p class='vspace'>To collaborate with the efforts of OIDA specialists to organize 
+group therapy of type 2, 3, 5, 6, 10 and 11 are all 
+ideas to get involved. The more we know about OIDA-
+therapy the more qualified we become to participate in 
+such programs. The main principle is, you get what you 
+are giving; if you help others to find faith your own faith 
+will also be strengthened. 
+</p>
+<p class='vspace'>10. Fear of faith therapy 
+</p>
+<p class='vspace'>The Fear of Faith therapy is especially designed so that 
+those who have been brought up in atheistic systems or 
+who have had their hearts broken by the wrong behavior 
+of some hypocrite in the name of faith can be cured from 
+their fear that everything that has to do with faith is dangerous 
+or doesn’t deserve any of their attention. Good experiences 
+give us enthusiastic faith while bad experiences 
+may cause just the opposite. Many people nowadays have 
+been brought up in systems where it is almost considered 
+illicit or illegal to talk about any faith. Thus they may be 
+quite traumatized in relation to the entire topic. They need 
+to review like a serious student the entire history of faith, 
+the origin of humanity, the natural faith of indigenous 
+groups in the natural forces and the lives of the theists who 
+dedicated their existence to all-embracing love. 
+</p>
+<p class='vspace'>By studying all the material that OIDA-Therapy offers 
+there is quite a good chance that they become curious and 
+want to find out about the beauty of faith and its healing 
+values. 
+</p>
+<p class='vspace'>11. OIDA-Therapy: inter-religious dialogue 
+participation (b) 
+</p>
+<p class='vspace'>The inter-religious dialogue is very helpful for increasing 
+communication and appreciation between different 
+schools of faith as well as ethnic communities. Such dialogues 
+are currently being held in many parts of the world. 
+OIDA-therapy promotes the study of the history and the 
+applications of any mystical tradition. To study the history 
+of those who have committed violence, theft, murder, 
+slavery and other injustices in the name of religion is not 
+considered to be of any value from the point of view of 
+OIDA-therapy, but inasmuch as in different mystical traditions 
+saints have made their appearance, practiced and 
+taught all-embracing love it would certainly be valuable to 
+know more about it. 
+</p>
+<p class='vspace'>So what about the dialogue with religious institutions? 
+OIDA-therapy wants to give everybody the benefit of the 
+doubt. Every human has the chance to become a truly 
+mystical being. And it would not be fair to hold the mystics 
+and teachers of love responsible for nonsense done in 
+their name on a later date, nor can we disqualify the contributions 
+of all-embracing love even if they come from 
+people who belong to religious institutions that have previously 
+committed serious mistakes. The OIDA-therapy 
+inter-religious dialogue is foremost concentrated on creating 
+a common platform on which claims for exclusivity 
+are shunned and where individual responsibility for each 
+individual’s action is promoted as a universal principle 
+which includes the relationship between human beings 
+and animals. 
+</p>
+<p class='vspace'>Those who endorse violence towards other living entities 
+will hardly be attracted to the principles of OIDA-therapy. 
+It may thus be very doubtful that any healing will reach 
+them while they are still creating terror in the lives of others. 
+But it is always appreciated in the inter-religious dialogue 
+if the principles of universal love can somehow be 
+made more known. 
+</p>
+<p class='vspace'>12. Developing contact with your inner guide (a) 
+</p>
+<p class='vspace'>You may not be sure about taking help from any particular 
+mystical tradition, but you could be interested to know, 
+how mystical traditions have helped people. 
+</p>
+<p class='vspace'>Or you would like to get help from within. How to get 
+inspiration where to research about faith traditions. Or to 
+know at least theoretically how traditions, towards which 
+you feel sympathy, deal with the problems of life. 
+</p>
+<p class='vspace'>In this connection we like to recommend a specific prayer. 
+Considering that we all have our inner voice, we can approach 
+that help from inside. 
+</p>
+<p class='vspace'>„Oh my Lord, Creator and Maintainer of everyone, wherever 
+You are and whoever You are, I hope that You are 
+listening to me. I am your little child. I have decided that I 
+want to conduct my life under Your guidance and for Your 
+happiness. Please reveal in my heart, what You want me 
+to do and bring me to a person or place where I can learn 
+about the truth. 
+</p>
+<p class='vspace'>I, from my side, promise to You, that I will try to do everything 
+I am supposed to do. I will also try to stop doing 
+anything, which is not pleasing to You. 
+From now on, I am yours.” 
+</p>
+<p class='vspace'>Recite this prayer three times and meditate for five minutes 
+on its meaning and implications for your life. 
+</p>
+<p class='vspace'>Please take note that vegetarian diet and abstinence from 
+intoxication is favorable for practicing and understanding 
+this prayer. 
+</p>
+<p class='vspace'>Read in the Holy Scriptures of your mystical tradition. 
+</p>
+<p class='vspace'>Repeat this process at least once a month to review wether 
+your faith is growing, or the need for finding new answers 
+and light on your path is increasing. Write down what 
+is important for you in your own mystical tradition and 
+compare it with the respective chart (see: mystical tradition 
+identity chart in appendix) 
+</p>
+<p class='vspace'>13. Review your faith or other faith traditions 
+</p>
+<p class='vspace'>Review your faith according to some general guidelines 
+provided in the mystical tradition identity charts. 
+</p>
+<p class='vspace'>You can do the same review with other mystical traditions, 
+using their identity chart as a way to understand them better 
+or a way to deepen your faith in the common origin of 
+all mystic healing systems. 
+</p>
+<p class='vspace'>Read the chart and meditate how and when any of the 
+items were important for you or how have they influenced 
+your religious life and faith. 
+</p>
+<p class='vspace'>Write down where and why you have lost faith in any of 
+the items in your chart. 
+</p>
+<p class='vspace'>This will give rise to many questions within you. There are 
+four ways to deal with these questions: 
+</p>
+<p class='vspace'>Find a trustworthy person in your mystical tradition and 
+questions him about the respective topics. 
+</p>
+<p class='vspace'>Write all the questions on a piece of a paper and pray for 
+further inner guidance to be able to resolve your doubts. 
+</p>
+<p class='vspace'>Read what type of philosophical or practical answers and Still without your
+grace I feel no hope. 
+guidance are given by other mystical traditions and in this Please help me to
+heal my broken heart. 
+way find out more about the doubt in question. If you The world of violence is
+tormenting me. 
+feel that these inquiries are helping you to deepen or ex-Let me be a part of
+your loving plan. 
+pand your faith in a more universal, all embracing way, Let divine faith help us
+to see you everywhere, 
+then continue your investigation and your prayer for inner so that we may also
+think of you in our last hour” 
+guidance. 
+3. I have offended endlessly, 
+</p>
+<p class='vspace'>14. OIDA prayers (a, b) given suffering to animals and man. 
+</p>
+<p class='vspace'>I have ruined my health and brain, 
+One prayer is included in “Developing contact with your trying to enjoy and
+going insane. 
+inner guide”. Here are some additional prayers: I broke my word a thousand times 
+and still I thought that this is fine. 
+</p>
+<p class='vspace'>1. “Oh Lord, creator and maintainer of all beings, Oh Lord of the fallen, please
+come to me, 
+oh Divine Mother of devotion and faith, let me take shelter of your sacred feet. 
+please bestow your grace upon our brothers and sisters. And shower me with
+causeless grace, 
+Your universal form which sustain all of us to serve your cause with smiling
+face. 
+as mother earth and all the elements That faith will guide me that I share, 
+and your unlimited energies Your love with all so they come near.“ 
+which penetrate the material and spiritual realms, 
+allow us to have the faith to relate amongst us 4. Mysterious Faith, 
+with all embracing tender love and care. Please take me unto your shelter 
+Let all souls find shelter in your divine love, Guide me to your Lord of love 
+give us love to forgive and to be humble Remove my ignorance 
+give us your service as our guiding star. And selfish desires 
+Let us find the faith and love, as we are Make me strong 
+searching for you in different traditions and countries. To follow your ideals 
+Let us heal from our mistakes Make me humble 
+and become your trusted devotees To never offend 
+so that we may serve your family Make me simple 
+wherever we may meet them in our life. With wisdom 
+Oh my Lord of time and space, Make me sharp 
+please heal us from all disturbances Against illusion 
+and show us the way to you.“ Make me soft 
+To serve with love 
+</p>
+<p class='vspace'>2. „My divine Lord(...............................) Make me bright 
+(your preferred name for God), To see your light 
+people search for you all over the world. Give me determination 
+They sing your glories in many ways. To leave my faults 
+They make beautiful types of temples for you To follow you 
+They read holy books which teach about you. All the way 
+They visit sanctuaries connected to you or your beloved. So that someday 
+My soul can stay 
+With love personified. 
+Oh Faith Divine 
+I am Yours 
+Not mine 
+Egotism 
+Has me driven 
+But You have given 
+Hope again 
+Faith in love 
+Gift from above 
+Meaning to follow 
+Lessens to swallow 
+A way to go 
+To find my home 
+Oh flower of faith 
+Oh ray of light 
+Oh taste for truth 
+Oh love divine 
+Grant me Your grace 
+Your love is mine. 
+Send me the guide 
+To trust the wise 
+Without fanaticism 
+To heal with inner vision 
+To see the love in all 
+And serve the highest goal 
+</p>
+<p class='vspace'>15. The Holy Name Therapy 
+</p>
+<p class='vspace'>Repetition of sacred words addressing God or divinity in 
+different ways has been part of mystic traditions in general. 
+For those persons, who do not belong to any specific 
+mystic tradition, it is recommended to note, that through 
+repetition of sacred names - either mentally or verbally - a 
+contact with the higher realms can be established. This is 
+a scientific process, since it can be verified by each and 
+every one of us. It is like a cosmic universal prayer. It is 
+the recognition of our need for help. It is the initial faith 
+that some higher realm exists, and that it is aware of our 
+existence. It is an initial communication with the inner 
+voice or inner guardian. 
+</p>
+<p class='vspace'>In the Vedic tradition, the chanting of mantras is part of 
+every ceremony. It can be done either individually or collectively. 
+The tradition teaches us that there are no hard 
+and fast rules for invoking divine powers through the recitation 
+of the Holy Names of the Lord. 
+</p>
+<p class='vspace'>OIDA-therapy recommends an individual Holy Name 
+Meditation process, especially for those who have lost faith 
+in a specific source. The Holy Names are prayers from the 
+heart for receiving a special grace. They are prayers for a 
+intervention from above. That intervention brings hopefully 
+the recovery of our faith. To start this practice, it is 
+highly recommended to go into the forest or to any natural 
+setting. There we can feel the proximity of the energy 
+of Mother Nature. This will help us to find the peace of 
+mind and to concentrate better on the chanting. If it is 
+impossible for you to reach such a place, then try to find 
+any clean and quiet place where you will not be disturbed. 
+There you can bathe your body, mind and intellect in the 
+purifying influence of the Holy Names or invocations of 
+God, or His divine powers. 
+</p>
+<p class='vspace'>You can sit, stand or walk. Try to vibrate the divine sound 
+through your tongue, mind and ear. Meditate that the 
+sound is reaching and penetrating every cell of your body. 
+Try to mentally situate yourself in the mood of the universal 
+prayer: “Oh my Lord, Please let me become an instrument 
+of Your love. Oh my Lord, please guide me, so that 
+I can find my path to You. Oh my Lord, I want to offer 
+my very existence to You. Oh my Lord, please protect me 
+from anything, which could lead me away from You.” 
+These general prayers show the recommended mental attitudes. 
+They will help us to get a quick and positive result 
+from the meditation. You can do this meditation once a 
+day or more. Try to fix a regular time for it and do not interrupt 
+the meditation by talking with others or any other 
+activity. Since every mystic tradition has some recommended 
+invocation, we won’t go into further details here. 
+</p>
+<p class='vspace'>1. Hatha yoga – pranayama (a,c) 
+</p>
+<p class='vspace'>There are many yoga schools nowadays teaching different 
+varieties of systems which all originate in the sacred teachings 
+of Patanjali. They are very helpful for increasing the 
+capacity to concentrate. If you’re lucky and the teacher is 
+actually qualified to teach about the origin of Vedic culture, 
+kirtan and love for God, you may get a good start 
+there towards healing. Especially if you maintain contact 
+with somebody who is actually practicing the OIDA Veda 
+therapy. 
+</p>
+<p class='vspace'>2. OIDA-Veda chart meditation (a,c) 
+</p>
+<p class='vspace'>The information you can obtain from the charts allows 
+you to understand your identity and learn how the Vedas 
+guide the soul towards different spiritual perfections. 
+You will find various teachings which come from different 
+teachers of the Vedic scriptures all harmonized in the options 
+offered by OIDA Veda-therapy. OIDA Veda-therapy 
+has its roots in the oldest culture of the world which still 
+has much to offer to the world despite 400 years of Mogul 
+colonialization and 300 years of European colonialization. 
+The only reason India was able to survive this onslaught 
+of violence and cultural distortion is because the Vedic 
+teachings have been passed down from gurus to disciples 
+and they were not centralized under some ecclesiastical 
+structure. Thus the colonial powers in India were not able 
+to do what they did in South America (i.e. when they decapitated 
+the local traditions by killing all their priests and 
+intellectuals). 
+</p>
+<p class='vspace'>3. Yama – Niyama guidance to develop values 
+(a,c) 
+</p>
+<p class='vspace'>4. Mantra Chanting (a,b,c) 
+</p>
+<p class='vspace'>The 8 points of Yama and Niyama given in the Raja Yoga 
+system provide us with clear guidance in regards to how 
+to prepare for higher realizations. The same things happen 
+if we start to chant mantras with the appropriate explanations. 
+You can find the list of Yamas and Niyamas on our 
+homepage as well as a Mantra Chanting guide which for 
+the sake of space we haven’t included here. 
+</p>
+<p class='vspace'>Hunabku - Maya Symbol for Duality 
+</p>
+<p class='vspace'>The duality which we experience in our existence, 
+like black and white, hot and cold, pleasure and pain, 
+gives inspiration to search for that existence which is beyond 
+duality. For some that is the unmanifested Absolute 
+and for others it is the eternal love for God. 
+Whatever our eternal destination may be, 
+we have to learn to transcend duality. 
+</p>
+<p class='vspace'>Questionnaires 
+</p>
+<p class='vspace'>In the next section you can find some questioners which are able to help you to
+define your own situation. 
+</p>
+<p class='vspace'>Please answer the questionnaires in solitude, answer each question slowly, and
+while doing this, consult your inner 
+voice. 
+</p>
+<p class='vspace'>Answering these questionnaires helps you to have a clear view about the level of
+your ignorance (or more hopefully, your 
+clear understanding), and about the size of your ego. It also shows to which
+directions are you led by a too big ego, or 
+too little understanding - or by clear views and selflessness 
+</p>
+<p class='vspace'>The process of answering these questionnaires gives you also some hints about
+where to go from here. 
+</p>
+<p class='vspace'>The questionnaires for self-research
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.perennial_psychology_07-07.html'>Kurt Gödel</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.perennial_psychology.html'>Perennial Psychology</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.perennial_psychology_08-02.html'>Do you have faith?</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on March 03, 2008, at 02:28 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

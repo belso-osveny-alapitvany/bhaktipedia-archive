@@ -1,0 +1,749 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Conversación entre Manu y Kardama </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam3 - RSS Feed'
+      href='index.php-n=bhagavatam3.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam3.0-21' method='get'><input type='hidden' name='n' value='bhagavatam3.0-21' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Conversación entre Manu y Kardama "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam3.0-21-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhagavatam3.srimad_bhagavatam.html'>Srimad Bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo XXl</small><br /><br />Conversación entre Manu y Kardama</h1>
+<p class='vspace'>VERSO 1
+vidura uvaca
+svayambhuvasya ca manor
+vamsah parama-sammatah
+kathyatam bhagavan yatra
+maithunenaidhire prajah
+</p>
+<p class='vspace'>vidurah uvaca—Vidura dijo; svayambhuvasya—de Svayambhuva; ca—y; manoh—de Manu; vamsah—la dinastía; parama—muy; sammatah—apreciada; kathyatam—ten la bondad de describir; bhagavan—¡oh, sabio adorable!; yatra—en la cual; maithunena—por medio de la relación sexual; edhire—se multiplicó; prajah—la descendencia.
+TRADUCCIÓN
+Vidura dijo: La dinastía de Svayambhuva Manu ha sido muy apreciada. ¡Oh, sabio adorable!, te pido que me informes acerca de ese linaje, cuya descendencia se multiplicó por medio de la relación sexual.
+SIGNIFICADO
+La vida sexual regulada cuya finalidad es generar buena población es aceptable. En realidad, a Vidura no le interesaba escuchar narraciones sobre personas que únicamente se dedicaban a la vida sexual, sino que su interés por la descendencia de Svayambhuva Manu se debía a que en aquella dinastía habían nacido buenos reyes devotos, que fueron muy cuidadosos en proteger a sus súbditos mediante el conocimiento espiritual. Por esa razón, aquel que escuche el relato de sus actividades se iluminará más. Una palabra importante que se utiliza con respecto a esto es parama-sammatah, que señala la aprobación de las grandes autoridades a la descendencia creada por Svayambhuva Manu y sus hijos. En otras palabras, todos los sabios y autoridades de las Escrituras védicas aceptan la vida sexual dirigida a crear una población ejemplar.
+VERSO 2
+priyavratottanapadau
+sutau svayambhuvasya vai
+yatha-dharmam jugupatuh
+sapta-dvipavatim mahim
+</p>
+<p class='vspace'>priyavrata—Maharaja Priyavrata; uttanapadau—y Maharaja Uttanapada; sutau—los dos hijos; svayambhuvasya—de Svayambhuva Manu; vai—en verdad; yatha—de acuerdo con; dharmam—principios religiosos; jugupatuh—gobernaron; sapta-dvipa-vatim—que consta de siete islas; mahim—el mundo.
+TRADUCCIÓN
+Los dos grandes hijos de Svayambhuva Manu, Priyavrata y Uttanapada, gobernaron el mundo, que consta de siete islas, ciñéndose estrictamente a los principios religiosos.
+SIGNIFICADO
+El Srimad-Bhagavatam relata también las vidas de los grandes gobernantes de diversas partes del universo. En este verso se mencionan los nombres de Priyavrata y Uttanapada, hijos de Svayambhuva que gobernaron esta Tierra, que se divide en siete islas. Esas siete islas todavía existen: Asia, Europa, Ýfrica, América, Australia y los Polos Norte y Sur. El Srimad-Bhagavatam no trata de la historia cronológica de todos los reyes de la India, sino que registra los hechos de los reyes más importantes, como Priyavrata, Uttanapada y muchos otros, como el Señor Ramacandra y Maharaja Yudhisthira, pues las actividades de reyes tan piadosos merecen ser oídas; la gente puede beneficiarse estudiando sus vidas.
+VERSO 3
+tasya vai duhita brahman
+devahutiti visruta
+patni prajapater ukta
+kardamasya tvayanagha
+</p>
+<p class='vspace'>tasya—de ese manu; vai—en verdad; duhita—la hija; brahman—¡oh, santo brahmana!; devahuti—llamada Devahuti; iti—así; visruta—fue conocida; patni— esposa; prajapateh—del señor de los seres creados; ukta—se ha hablado de; kardamasya—de Kardama Muni; tvaya—por ti; anagha—¡oh persona sin pecado!
+TRADUCCIÓN
+¡Oh, santo brahmana!, ¡oh, persona sin pecado!, te has referido a la hija de Manu de nombre Devahuti llamándola esposa del sabio Kardama, el señor de los seres creados.
+SIGNIFICADO
+Aquí estamos hablando de Svayambhuva Manu, pero en la Bhagavad-gita oímos acerca de Vaivasvata Manu. La era actual le pertenece a Vaivasvata Manu. Anteriormente gobernó Svayambhuva Manu, cuyo mandato comienza en la era de Varaha, el milenio en que el Señor apareció como jabalí. En un día de la vida de Brahma hay catorce manus, y los incidentes particulares de la vida de cada manu son diferentes. El Vaivasvata Manu de la Bhagavad-gita es distinto de Svayambhuva Manu.
+VERSO 4
+tasyam sa vai maha-yogi
+yuktayam yoga-laksanaih
+sasarja katidha viryam
+tan me susrusave vada
+</p>
+<p class='vspace'>tasyam—en ella; sah—Kardama Muni; vai—de hecho; maha-yogi—gran yogi místico; yuktayam—dotada; yoga-laksanaih—con los ocho síntomas de la perfección yóguica; sasarja—propagó; katidha—cuántas veces; viryam— descendencia; tat—esa narración; me—a mí; susrusave—que estoy ansioso de oír; vada—di.
+TRADUCCIÓN
+¿Cuántos hijos engendró ese gran yogi en la princesa, que estaba dotada con las ocho perfecciones yóguicas? ¡Oh!, te ruego que me digas esto, pues estoy ansioso de oírlo.
+SIGNIFICADO
+Vidura preguntó aquí acerca de Kardama Muni y su esposa Devahuti, y acerca de los hijos que tuvieron. También se explica que Devahuti era muy avanzada en la práctica del yoga óctuple. Enumeradas, las ocho partes de la práctica del yoga son: (1) control de los sentidos; (2) seguir estrictamente las reglas y regulaciones; (3) práctica de las posturas de sentarse; (4) control de la respiración; (5) retirar los sentidos de los objetos de los sentidos; (6) concentración de la mente; (7) meditación; y (8) autorrealización. Después de la autorrealización siguen otras ocho etapas de perfección, que se denominan yoga-siddhis. Marido y mujer, Kardama y Devahuti, eran avanzados en la práctica del yoga; el esposo era un maha-yogi, un gran místico, y la esposa era yoga-laksana, una persona avanzada en el yoga. Se unieron y tuvieron hijos. Antiguamente la costumbre de los grandes sabios y personas santas era tener hijos después de lograr la perfección en sus vidas; hasta ese momento, respetaban estrictamente las reglas y regulaciones del celibato. Para lograr la perfección de la autorrealización y del poder místico se precisa seguir brahmacarya (las reglas y regulaciones del celibato). En las Escrituras védicas no hay ninguna regulación que permita simultáneamente continuar disfrutando de toda la complacencia material de los sentidos que nos plazca, según nuestro capricho, mientras nos volvemos grandes meditadores a condición de darle dinero a un desvergonzado.
+VERSO 5
+rucir yo bhagavan brahman
+dakso va brahmanah sutah
+yatha sasarja bhutani
+labdhva bharyam ca manavim
+</p>
+<p class='vspace'>rucih—Ruci; yah—quien; bhagavan—adorable; brahman—¡oh, santo sabio!; daksah—Daksa; va—y; brahmanah—del Señor Brahma; sutah—el hijo; yatha— de qué manera; sasarja—generaron; bhutani—descendencia; labdhva—tras obtener; bharyam—como esposas; ca—y; manavim—a las hijas de Svayambhuva Manu.
+TRADUCCIÓN
+¡Oh, santo sabio!, dime cómo generaron hijos el adorable Ruci y Daksa, el hijo de Brahma, después de obtener por esposas a las otras dos hijas de Svayambhuva Manu.
+SIGNIFICADO
+Todas las grandes personalidades que aumentaron la población del universo al principio de la creación reciben el nombre de prajapatis. A Brahma también se le conoce con el nombre de Prajapati, así como a algunos de sus últimos hijos. Svayambhuva Manu también recibe el nombre de Prajapati, al igual que Daksa, otro hijo de Brahma. Svayambhuva Manu tuvo dos hijas, akuti y Prasuti. Con akuti se casó el prajapati Ruci, y con Prasuti se casó Daksa. Estas parejas y sus descendientes produjeron una cantidad de hijos inmensa para poblar el universo entero. La pregunta de Vidura fue: «¿Cómo engendraron la población en el principio?».
+VERSO 6
+maitreya uvaca
+prajah srjeti bhagavan
+kardamo brahmanoditah
+sarasvatyam tapas tepe
+sahasranam sama dasa
+</p>
+<p class='vspace'>maitreyah uvaca—el gran sabio Maitreya dijo; prajah—hijos; srja—engendró; iti—de este modo; bhagavan—el venerable; kardamah—Kardama Muni; brahmana—del Señor Brahma; uditah—habiendo recibido la orden; sarasvatyam —a orillas del río Sarasvati; tapah—penitencia; tepe—practicó; sahasranam—de miles; samah—años; dasa—diez.
+TRADUCCIÓN
+El gran santo Maitreya respondió: Designado por el Señor Brahma para poblar los mundos con sus descendientes, el adorable Kardama Muni practicó penitencias a orillas del río Sarasvati durante diez mil años.
+SIGNIFICADO
+De aquí se desprende que, antes de alcanzar la perfección, Kardama Muni meditó en yoga durante diez mil años. También Valmiki Muni, según sabemos, practicó meditación yoga durante sesenta mil años, antes de alcanzar la perfección. Por lo tanto, para practicar el yoga con éxito es imprescindible una vida muy larga, de unos cien mil años de duración; entonces es posible lograr la perfección en el yoga. En caso contrario, no se puede alcanzar la auténtica perfección. Seguir las regulaciones, controlar los sentidos y practicar las diversas posturas de sentarse no son más que las prácticas preliminares. No comprendemos cómo puede la gente quedar cautivada con el fraudulento sistema de yoga que afirma que se puede alcanzar la perfección de volverse uno con Dios simplemente por meditar quince minutos al día. Esta era (Kali-yuga) es la era del embuste y de la riña. Lo cierto es que con esas proposiciones facilonas no hay posibilidad de alcanzar la perfección del yoga. Las Escrituras védicas afirman claramente tres veces —para darle mayor énfasis: kalau nasty eva nasty eva nasty eva— que en esta era de Kali, no hay otro camino, no hay otro camino, no hay otro camino que harer nama, cantar el santo nombre del Señor.
+VERSO 7
+tatah samadhi-yuktena
+kriya-yogena kardamah
+samprapede harim bhaktya
+prapanna-varadasusam
+</p>
+<p class='vspace'>tatah—entonces, en esa penitencia; samadhi-yuktena—en trance; kriya-yogena— con adoración bhakti-yoga; kardamah—el sabio Kardama; samprapede—sirvió; harim—a la Personalidad de Dios; bhaktya—con servicio devocional; prapanna—a las almas entregadas; varadasusam—el que otorga toda bendición.
+TRADUCCIÓN
+Durante ese período de penitencia, adorando por medio de servicio devocional en trance a la Personalidad de Dios, que otorga rápidamente toda bendición a aquellos que recurren a Él en busca de protección, el sabio Kardama logró Su favor.
+SIGNIFICADO
+Aquí se explica la importancia de la meditación. Kardama Muni practicó meditación mística de yoga durante diez mil años tan sólo para complacer a la Suprema Personalidad de Dios, Hari. Así pues, ya sea que practiquemos yoga, o especulemos y busquemos a Dios investigando, nuestros esfuerzos deben combinarse con el proceso devocional. Sin devoción, nada puede ser perfecto. El perfeccionamiento y la iluminación apuntan a la Suprema Personalidad de Dios. En el Capítulo Sexto de la Bhagavad-gita se dice claramente que aquel que se ocupa constantemente en actividades de conciencia de Krishna es el yogi más elevado. La Personalidad de Dios, Hari, cumple los deseos del devoto que se ha entregado a Él. Para lograr el éxito verdadero debemos entregarnos a los pies de loto de la Personalidad de Dios, Hari, Krishna. El servicio devocional, es decir, ocuparnos en el proceso de conciencia de Krishna, es el método directo, y todos los demás métodos, aunque recomendados, son indirectos. En esta era de Kali, el método directo es especialmente más factible que el indirecto, porque la gente vive poco tiempo, tiene poca inteligencia, es pobre, y la afligen muchos inconvenientes y miserias. Por esa razón, el Señor Caitanya ha dado el más grande don: en esta era, para alcanzar la perfección en la vida espiritual es suficiente cantar el santo nombre de Dios.
+Las palabras samprapede harim significan que Kardama Muni satisfizo con su servicio devocional a la Suprema Personalidad de Dios, Hari. La palabra kriya-yogena expresa también servicio devocional. Kardama Muni no solamente meditó; también se ocupó en servicio devocional; para llegar a la perfección en la práctica del yoga o la meditación, hay que ofrecer servicio devocional, escuchando, cantando, recordando, etc. Recordar también es meditación. Pero, ¿a quién hay que recordar?: a la Suprema Personalidad de Dios. No solamente recordarle; también hay que escuchar acerca de Sus actividades y cantar Sus glorias. Esa información está en las Escrituras autoritativas. Después de diez mil años ocupado en la ejecución de diversos tipos de servicio devocional, Kardama Muni alcanzó la perfección de la meditación, cosa imposible en esta era de Kali, en que es muy difícil vivir siquiera cien años. En la época actual, ¿quién tendría éxito en la ejecución estricta de las muchas reglas y regulaciones del yoga? Por otra parte, la perfección sólo la alcanzan las almas entregadas. ¿Qué entrega puede haber en donde ni se menciona a la Personalidad de Dios? Y, ¿qué práctica de yoga, donde no se medita en la Personalidad de Dios? Por desgracia, la gente de esta era, en especial la gente de naturaleza demoníaca, quiere que la engañen. Así pues, la Suprema Personalidad de Dios envía grandes engañadores que, en nombre del yoga, les descarrían y hacen inútiles y condenadas sus vidas. Por eso en el verso 17 del Capítulo Dieciséis de la Bhagavad-gita se afirma claramente que los sinvergüenzas que se erigen a sí mismos en autoridades, enorgullecidos con el dinero ilícito que han reunido, practican yoga sin seguir los libros autorizados. Están muy orgullosos del dinero que han estafado a personas inocentes que quisieron ser engañadas.
+VERSO 8
+tavat prasanno bhagavan
+puskaraksah krte yuge
+darsayam asa tam ksattah
+sabdam brahma dadhad vapuh
+</p>
+<p class='vspace'>tavat—entonces; prasannah—complacido; bhagavan—la Suprema Personalidad de Dios; puskara-aksah—de ojos de loto; krte yuge—en Satya-yuga; darsayam asa—mostró; tam—ante Kardama Muni; ksattah—¡oh, Vidura!; sabdam—que sólo por medio de los Vedas se puede entender; brahma—la Verdad Absoluta; dadhat—exhibiendo; vapuh—Su cuerpo trascendental.
+TRADUCCIÓN
+Entonces, en Satya-yuga, la Suprema Personalidad de Dios de ojos de loto, complacido, Se manifestó ante Kardama Muni y le reveló Su forma trascendental, que sólo por medio de los Vedas se puede entender.
+SIGNIFICADO
+Aquí hay dos puntos muy significativos. El primero es que Kardama Muni alcanzó el éxito mediante la práctica del yoga al principio de Satya- yuga, época en que la vida humana duraba cien mil años. Kardama Muni alcanzó el éxito, y el Señor, complacido con él, le reveló Su forma, que no es imaginaria. Los impersonalistas a veces recomiendan concentrar la mente arbitrariamente en cualquier forma que imaginemos o que nos guste. Pero aquí se dice muy claramente que la forma que el Señor reveló a Kardama Muni por Su divina gracia se describe en las Escrituras védicas. Sabdam brahma: En las Escrituras védicas se señalan claramente las formas del Señor. Kardama Muni no descubrió una forma imaginaria del Señor, como algunos sinvergüenzas pretenden; él vio realmente la forma eterna, bienaventurada y trascendental del Señor.
+VERSO 9
+sa tam virajam arkabham
+sita-padmotpala-srajam
+snigdha-nilalaka-vrata-
+vaktrabjam virajo 'mbaram
+</p>
+<p class='vspace'>sah—Kardama Muni; tam—a Él; virajam—sin contaminación; arka-abham— resplandeciente como el Sol; sita—blancos; padma—lotos; utpala—nenúfares; srajam—collar; snigdha—lisos; nila—azul negruzco; alaka—de mechones de cabello; vrata—abundantes; vaktra—rostro; abjam—como el loto; virajah— inmaculado; ambaram—vestido.
+TRADUCCIÓN
+Kardama Muni vio a la Suprema Personalidad de Dios, que está libre de contaminación material, en Su forma eterna, refulgente como el Sol. Llevaba un collar de lotos blancos y de nenúfares. El Señor iba vestido de inmaculadas sedas amarillas, y las oscuras ondas de Su sedoso cabello embellecían Su rostro de loto.
+VERSO 10
+kiritinam kundalinam
+sankha-cakra-gada-dharam
+svetotpala-kridanakam
+manah-sparsa-smiteksanam
+</p>
+<p class='vspace'>kiritinam—adornado con una corona; kundalinam—llevando pendientes; sankha—concha; cakra—disco; gada—maza; dharam—sosteniendo; sveta— blanco; utpala—nenúfar; kridanakam—juguete; manah—corazón; sparsa— tocando; smita—sonriendo; iksanam—y mirando.
+TRADUCCIÓN
+Iba adornado con una corona y pendientes. Con tres de Sus manos sostenía la concha, el disco y la maza que Le caracterizan, y en la cuarta tenía un nenúfar blanco. Miró a Su alrededor con la actitud feliz y sonriente que cautiva el corazón de todos los devotos.
+VERSO 11
+vinyasta-caranambhojam
+amsa-dese garutmatah
+drstva khe 'vasthitam vaksah-
+sriyam kaustubha-kandharam
+</p>
+<p class='vspace'>vinyasta—habiendo sido puestos; carana-ambhojam—pies de loto; amsa-dese— en la espalda; garutmatah—de Garuda; drstva—habiendo visto; khe—en el aire; avasthitam—de pie; vaksah—sobre Su pecho; sriyam—marca auspiciosa; kaustubha—la gema Kaustubha; kandharam—cuello.
+TRADUCCIÓN
+En Su pecho había una marca dorada, y la famosa gema Kaustubha pendía de Su cuello; estaba de pie en el aire, con Sus pies de loto sobre la espalda de Garuda.
+SIGNIFICADO
+En los versos del 9 al 11 se describe la forma trascendental eterna del Señor; se entiende que estas descripciones proceden de la versión védica autoritativa. No son, ciertamente, imaginación de Kardama Muni. Incluso impersonalistas como Sankaracarya admiten que los ornamentos del Señor están más allá de los conceptos materiales; dice: Narayana, la Suprema Personalidad de Dios, no tiene nada que ver con la creación material. La diversidad que existe en el Señor, es decir, Su cuerpo, Su forma, Su vestido, Sus órdenes, Sus palabras, no es obra de la energía material, sino que todo ello se confirma en las Escrituras védicas. Mediante el yoga, Kardama Muni vio realmente al Señor Supremo tal como es. No tiene sentido ver una forma imaginada de Dios después de practicar yoga durante diez mil años. La perfección del yoga no culmina, pues, en el nihilismo o el impersonalismo; por el contrario, la perfección del yoga se alcanza con la visión real de la Personalidad de Dios en Su forma eterna. El proceso de conciencia de Krishna ofrece la forma de Krishna directamente. Esa forma se describe en la Brahma-samhita, una Escritura védica autoritativa: La morada de Krishna está hecha de piedra cintamani, y en ella el Señor juega como un pastorcillo de vacas y es servido por muchos miles de gopis. Esas descripciones son autoritativas, y la persona consciente de Krishna las acepta directamente y basa en ellas sus actos y su prédica, y practica servicio devocional siguiendo los mandamientos de las Escrituras autoritativas.
+VERSO 12
+jata-harso 'patan murdhna
+ksitau labdha-manorathah
+girbhis tv abhyagrnat priti-
+svabhavatma krtañjalih
+</p>
+<p class='vspace'>jata-harsah—naturalmente lleno de júbilo ; apatat—cayó; murdhna—con su cabeza; ksitau—en el suelo; labdha—habiéndose logrado; manah-rathah—su deseo; girbhih—con oraciones; tu—y; abhyagrnat—satisfizo; priti-svabhava- atma—cuyo corazón por naturaleza está siempre lleno de amor; krta-añjalih— con las manos juntas.
+TRADUCCIÓN
+Kardama Muni, cuando comprendió cabalmente la presencia personal de la Suprema Personalidad de Dios, se sintió muy satisfecho, al ver cumplido su deseo trascendental. Cayó al suelo, y, postrándose, ofreció reverencias a los pies de loto del Señor. Su corazón, por naturaleza, estaba lleno de amor por Dios; juntando sus manos satisfizo al Señor con oraciones.
+SIGNIFICADO
+La comprensión de la forma personal del Señor es la etapa más elevada de perfección del yoga. En el Capítulo Sexto de la Bhagavad-gita, donde se explica la práctica del yoga, se dice que la comprensión de la forma personal del Señor es la perfección del yoga. Tras la práctica de las posturas de sentarse y de otros principios regulativos del yoga, finalmente se alcanza la etapa de samadhi, la absorción en el Supremo. En samadhi se puede ver a la Suprema Personalidad de Dios en Su forma parcial como Paramatma, tal como Él es. En las Escrituras autoritativas del yoga, como los Patañjali-sutras, se explica que el samadhi es un placer trascendental. El yoga de que tratan los libros de Patañjali es un sistema autorizado, y los supuestos yogis que modernamente se han inventado sus propias vías, sin consultar a las autoridades, son simplemente ridículos. El sistema de yoga de Patañjali se denomina astanga-yoga. Los impersonalistas, como son monistas, a veces contaminan el sistema de yoga de Patañjali. Éste explica que el alma se complace de un modo trascendental cuando encuentra a la Superalma y La ve. Si se admite la existencia de la Superalma y del alma individual, la teoría impersonalista del monismo queda anulada. Por esa razón, algunos impersonalistas y filósofos nihilistas distorsionan a su conveniencia el sistema de Patañjali y contaminan el proceso de yoga.
+Según Patañjali, aquel que se libera de todos los deseos materiales alcanza su posición real, su posición trascendental, y la comprensión de ese estado recibe el nombre de poder espiritual. Aquellos que se ocupan en actividades materiales están en contacto con las modalidades de la naturaleza material. Ese tipo de personas aspiran a: (1) ser religiosos, (2) enriquecerse económicamente, (3) poder complacer los sentidos, y, por último, (4) volverse uno con el Supremo. Según los monistas, cuando un yogi se vuelve uno con el Supremo y pierde su existencia individual, alcanza el estado más elevado, que se denomina kaivalya. Pero, en realidad, kaivalya es el estado de comprensión de la Personalidad de Dios. Kaivalya, o en términos de Patañjali, la comprensión del poder espiritual, es el entendimiento unitario de que el Señor Supremo es completamente espiritual y que en el estado de iluminación espiritual plena se puede entender qué es Él, es decir, se puede entender a la Suprema Personalidad de Dios. Según Patañjali, el estado de aquel que está liberado de los deseos materiales y fijo en la comprensión trascendental del ser y del Superser recibe el nombre de cit-sakti. La iluminación espiritual plena brinda una percepción de felicidad espiritual, que según la Bhagavad-gita es la felicidad suprema y está más allá de los sentidos materiales. Se explican dos clases de trance, samprajñata y asamprajñata, es decir, especulación mental y autorrealización. En estado de samadhi, o asamprajñata, se puede comprender la forma espiritual del Señor mediante los sentidos espirituales. Ésa es la meta final de la iluminación espiritual.
+Según Patañjali, aquel que está fijo en la comprensión constante de la forma suprema del Señor ha alcanzado el estado de perfección. Ése es el caso de Kardama Muni. Sin alcanzar ese estado de perfección, que está más allá de la perfección que se alcanza en las primeras etapas del sistema de yoga, no hay iluminación suprema. En el sistema de astanga-yoga hay ocho perfecciones. El yogi que las obtiene puede volverse más ligero que lo más ligero, y más grande que lo más grande, y puede conseguir todo lo que desee. Pero ni siquiera ese éxito material es la perfección u objetivo final del yoga. El objetivo final se explica aquí: Kardama Muni vio a la Suprema Personalidad de Dios en Su forma eterna. El servicio devocional comienza con la relación entre el alma individual y el Alma Suprema, es decir, Krishna y Sus devotos, y una vez que se establece esa relación, ya no hay posibilidad de caer. Si alguien quiere alcanzar la etapa de ver directamente a la Suprema Personalidad de Dios por medio del sistema de yoga, pero en lugar de ello se ve atraído por el logro de algún poder material, entonces se desvía, y su progreso se detiene. El disfrute material que recomiendan los falsos yogis no tiene nada que ver con la experiencia trascendental de la felicidad espiritual. Los devotos verdaderos del bhakti-yoga solamente aceptan como necesidades materiales de la vida aquellas absolutamente imprescindibles para mantener unidos el cuerpo y el alma; se abstienen por completo de toda complacencia material exagerada de los sentidos. Están dispuestos a soportar toda clase de penalidades, siempre y cuando con ello puedan progresar en la comprensión de la Personalidad de Dios.
+VERSO 13
+rsir uvaca
+justam batadyakhila-sattva-raseh
+samsiddhyam aksnos tava darsanan nah
+yad-darsanam janmabhir idya sadbhir
+asasate yogino rudha-yogah
+</p>
+<p class='vspace'>rsih uvaca—el gran sabio dijo; justam—se consigue; bata—¡ah!; adya—ahora; akhila—todo; sattva—de bondad; raseh—que eres el receptáculo; samsiddhyam— el éxito completo; aksnoh—de los ojos; tava—de Ti; darsanat—de la vista; nah— por nosotros; yat—de quien; darsanam—vista; janmabhih—pasando por nacimientos; idya—¡oh, Señor adorable!; sadbhih—de posición gradualmente elevada; asasate—aspiran; yoginah—yogis; rudha-yogah—habiendo conseguido la perfección en el yoga.
+TRADUCCIÓN
+El gran sabio Kardama dijo: ¡Oh, Señor supremamente adorable!, la capacidad de mi vista está ahora colmada, habiendo tenido la perfección suprema de poder verte a Ti, que eres el receptáculo de todas las existencias. Inmersos en profunda meditación por muchas vidas sucesivas, los yogis avanzados aspiran a ver Tu forma trascendental.
+SIGNIFICADO
+Aquí se describe a la Suprema Personalidad de Dios como el receptáculo de toda bondad y de todo placer. Excepto para aquel que está bajo la influencia de la modalidad de la bondad, no hay verdadero placer. Por esa razón, cuando ponemos nuestro cuerpo, nuestra mente y nuestras palabras al servicio del Señor, estamos en la más elevada etapa de perfección de la bondad. Kardama Muni dice: «Tu Señoría es el receptáculo de todo lo que cabe bajo la denominación de bondad, y, al poder tener una experiencia directa de Ti, ante nuestros ojos, ahora hemos obtenido la perfección de la vista». Estas afirmaciones son la situación devocional pura; para el devoto, la perfección de los sentidos es ocuparlos en el servicio del Señor. El sentido de la vista alcanza la perfección cuando miramos la belleza del Señor; la facultad de oír, cuando escuchamos las glorias del Señor; la facultad del gusto, cuando disfrutamos comiendo prasada. La perfección que alcanzamos cuando ocupamos todos los sentidos en relación con la Personalidad de Dios recibe, técnicamente, el nombre de bhakti-yoga, que supone desapegar los sentidos del desenfreno material y apegarlos al servicio del Señor. Cuando nos liberamos de todas las designaciones de la vida condicionada y nos ocupamos plenamente en el servicio del Señor, nuestro servicio se llama bhakti- yoga. Kardama Muni admite que ver personalmente al Señor en bhakti-yoga es la perfección de la vista. Kardama Muni no exagera la excelsa perfección de ver al Señor. Él da como prueba que aquellos que están verdaderamente elevados en el yoga aspiran, vida tras vida, a ver esa forma de la Personalidad de Dios. Él no era un yogi fingido. Aquellos que verdaderamente recorren el sendero avanzado sólo aspiran a ver la forma eterna del Señor.
+VERSO 14
+ye mayaya te hata-medhasas tvat-
+padaravindam bhava-sindhu-potam
+upasate kama-lavaya tesam
+rasisa kaman niraye 'pi ye syuh
+</p>
+<p class='vspace'>ye—aquellas personas; mayaya—por la energía ilusoria; te—de Ti; hata—se ha perdido; medhasah—cuya inteligencia; tvat—Tus; pada-aravindam—pies de loto; bhava—de la existencia mundana; sindhu—el océano; potam—la nave para cruzar; upasate—adoran; kama-lavaya—para conseguir placeres triviales; tesam— sus; rasi—Tú otorgas; isa—¡oh, Señor!; kaman—deseos; niraye—en el infierno; api—incluso; ye—deseos que; syuh—pueden obtenerse.
+TRADUCCIÓN
+Tus pies de loto son la segura nave que nos permite atravesar el océano de la nesciencia mundana. Sólo aquellos a quienes el hechizo de la energía ilusoria les ha arrebatado la inteligencia adorarán esos pies con vistas a obtener los placeres de los sentidos, que son triviales y momentáneos, y que están al alcance incluso de las personas que se están pudriendo en el infierno. Sin embargo, ¡oh, mi Señor!, Tú eres tan bondadoso que incluso a ellos les otorgas Tu misericordia.
+SIGNIFICADO
+Como se afirma en el Capítulo Séptimo de la Bhagavad-gita, hay dos clases de devotos: aquellos que desean placeres materiales, y aquellos que no desean nada más que servir al Señor. Los placeres materiales están al alcance incluso de los perros y de los cerdos, que viven en condiciones de vida infernales. El cerdo también come, duerme y disfruta plenamente de la vida sexual, y también se siente muy satisfecho con ese disfrute infernal de la existencia material. Los yogis modernos aconsejan que, como tenemos sentidos, debemos disfrutar plenamente, como los perros y los gatos, y aun así podemos seguir practicando yoga. Aquí Kardama Muni censura esa postura, diciendo que esos placeres materiales están al alcance de los perros y los gatos en las condiciones infernales de vida. El Señor es tan bondadoso que, si los mal llamados yogis se satisfacen con placeres infernales, Él puede darles lo que necesiten para que tengan los placeres materiales que deseen, pero lo que no pueden alcanzar es el estado de perfección al que llegó Kardama Muni.
+Las personas infernales y demoníacas no saben realmente cuál es la perfección más elevada a que aspirar, y por eso creen que la meta más elevada de la vida es la complacencia de los sentidos. Su consejo es que demos satisfacción a los sentidos y que, al mismo tiempo, con algún mantra y alguna que otra práctica, podemos aspirar a la perfección, que no es muy difícil conseguir. A esas personas se las describe aquí como hata-medhasah, «aquellos cuyos cerebros se han echado a perder». Aspiran a disfrutar de la materia perfeccionándose en el yoga o la meditación. En la Bhagavad-gita el Señor afirma que aquellos que adoran a los semidioses han perdido su inteligencia. De la misma manera, también Kardama Muni afirma aquí que aquel que aspira a disfrutar de la materia mediante la práctica del yoga, no tiene cerebro y es el tonto más grande que existe. En realidad, alguien que practique el yoga y sea inteligente solamente debe aspirar a cruzar el océano de la nesciencia adorando a la Personalidad de Dios, y a ver los pies de loto del Señor. Sin embargo, el Señor es tan bondadoso que, también hoy en día, las personas sin cerebro reciben la bendición de volverse gatos, perros o cerdos, y de disfrutar la felicidad material de la vida sexual y de la complacencia de los sentidos. El Señor confirma esa bendición en la Bhagavad-gita: «Cualquier cosa que deseen recibir de Mí, Yo se la ofrezco según su deseo».
+VERSO 15
+tatha sa caham parivodhu-kamah
+samana-silam grhamedha-dhenum
+upeyivan mulam asesa-mulam
+durasayah kama-dughanghripasya
+</p>
+<p class='vspace'>tatha—similarmente; sah—yo mismo; ca—también; aham—yo; parivodhu- kamah—deseando casarme; samana-silam—con una muchacha de carácter parecido; grha-medha—en la vida de casado; dhenum—una vaca de la abundancia; upeyivan—he acudido; mulam—a la raíz (pies de loto); asesa—de todo; mulam—la fuente; durasayah—con deseos de disfrute; kama-dugha—que complace todos los deseos; anghripasya—(de Ti) que eres el árbol.
+TRADUCCIÓN
+Por esa razón, deseando casarme con una muchacha de carácter parecido al mío que pueda ser una verdadera vaca de la abundancia en mi vida matrimonial, también yo, para satisfacer mis deseos de disfrute he buscado el refugio de Tus pies de loto, que son la fuente de todo, pues Tú eres como un árbol de deseos.
+SIGNIFICADO
+A pesar de haber censurado a las personas que se dirigen al Señor en busca de beneficios materiales, Kardama Muni expresó su incapacitación y su deseo material ante el Señor diciendo: «Sé que no se Te debe pedir nada material; no obstante, deseo casarme con una muchacha de carácter parecido al mío». Es muy significativa la frase «de carácter parecido al mío». En el pasado, los jóvenes se casaban con muchachas de tendencias compatibles; se formaban parejas de naturalezas semejantes, para que fuesen felices. En la India hace sólo unos veinticinco años, y tal vez hoy aún se haga, los padres solían consultar el horóscopo de la posible pareja para ver si verdaderamente podían unirse sus condiciones sicológicas. Esas consideraciones son muy importantes. Actualmente no se hacen esas consultas previas al matrimonio, y la consecuencia es que poco después del matrimonio vienen el divorcio y la separación. En el pasado, los esposos solían vivir juntos pacíficamente durante toda su vida, pero hoy en día eso se ha vuelto una tarea muy difícil.
+Kardama Muni quería tener una esposa con sus mismas inclinaciones, porque, en cuestiones de avance material y espiritual, es necesaria la asistencia de una esposa. Se dice que una esposa trae consigo la satisfacción de todos los deseos en lo tocante a religión, desarrollo económico y complacencia de los sentidos. Aquel que tenga una buena esposa debe ser considerado un hombre afortunado. En astrología se considera afortunado al hombre que tiene grandes riquezas, muy buenos hijos o una esposa muy buena. Y se considera que el más afortunado es el que tiene una buena esposa. Antes de casarse hay que elegir una esposa con la que se tengan afinidades, y no enamorarse de la supuesta belleza ni de otros aspectos atractivos desde el punto de vista de la complacencia de los sentidos. En el Canto Duodécimo del Bhagavatam se dice que en Kali-yuga el matrimonio estará basado en consideraciones de tipo sexual; tan pronto como algo falle en la vida sexual, se suscitará la cuestión del divorcio.
+Kardama Muni pudo haberle pedido su bendición a Uma, pues en las Escrituras se recomienda adorar a Uma para conseguir una buena esposa. Pero él prefirió adorar a la Suprema Personalidad de Dios, pues en el Bhagavatam se recomienda que todos, tanto si están llenos de deseos, como si no tienen deseos o desean liberarse, deben adorar al Señor Supremo. De estas tres clases de hombres, uno trata de ser feliz por medio de la satisfacción de sus deseos materiales, otro quiere ser feliz volviéndose uno con el Supremo, y el otro, el hombre perfecto, es el devoto: no quiere ninguna recompensa de la Suprema Personalidad de Dios; solamente quiere ofrecer servicio amoroso trascendental. En cualquier caso, todos deben adorar a la Suprema Personalidad de Dios, pues Él satisfará los deseos de todos. La ventaja de adorar a la Persona Suprema es que incluso aquel que tiene deseos de disfrute material, si adora a Krishna, se volverá gradualmente un devoto puro y no tendrá más anhelos materiales.
+VERSO 16
+prajapates te vacasadhisa tantya
+lokah kilayam kama-hato 'nubaddhah
+aham ca lokanugato vahami
+balim ca suklanimisaya tubhyam
+</p>
+<p class='vspace'>prajapateh—que eres el amo de todas las entidades vivientes; te—de Ti; vacasa —bajo la dirección; adhisa—¡oh, mi Señor!; tantya—con una cuerda; lokah— almas condicionadas; kila—en verdad; ayam—estas; kama-hatah—vencidas por los deseos de disfrute; anubaddhah—son atadas; aham—yo; ca—y; loka- anugatah—siguiendo los pasos de las almas condicionadas; vahami—ofrezco; balim—oblaciones; ca—y; sukla—¡oh, personificación de la religión!; animisaya —que existes como el tiempo eterno; tubhyam—a Ti.
+TRADUCCIÓN
+¡Oh, mi Señor!, Tú eres el amo y líder de todas las entidades vivientes. Bajo Tu dirección, todas las almas condicionadas están constantemente ocupadas en satisfacer sus deseos, como si estuviesen atadas con una cuerda. Siguiendo sus pasos, ¡oh, personificación de la religión!, también yo Te ofrezco oblaciones a Ti, que eres el tiempo eterno.
+SIGNIFICADO
+En el Katha Upanisad se afirma que el Señor Supremo es el líder de todas las entidades vivientes. Él es quien las sustenta y les concede todo lo que necesitan y desean. Ninguna entidad viviente es independiente; todas dependen de la misericordia del Señor Supremo. Por lo tanto, la instrucción de los Vedas es que disfrutemos de la vida siguiendo las indicaciones del líder supremo, la Personalidad de Dios. Las Escrituras védicas, entre ellas el Isopanisad, nos dicen que, como todo Le pertenece a la Suprema Personalidad de Dios, no debemos adueñarnos de la propiedad de otros, sino disfrutar de la parte individual que nos ha sido asignada. Para la entidad viviente, el mejor planteamiento es aceptar las directrices del Señor Supremo y disfrutar de la vida, tanto material como espiritual.
+Podría surgir una pregunta: Kardama Muni era avanzado en la vida espiritual; ¿por qué, entonces, no pidió al Señor la liberación? ¿Por qué quiso disfrutar de la vida material a pesar de estar viendo al Señor Supremo y de tener una experiencia directa de Él? La respuesta es que no todo el mundo está capacitado para liberarse del cautiverio material. El deber de todos, por lo tanto, es disfrutar de acuerdo con su posición presente, pero siguiendo las directrices del Señor, es decir, los Vedas. Se considera que los Vedas son las palabras habladas directamente por el Señor. El Señor nos da la oportunidad de disfrutar de la vida material según nuestro deseo, y al mismo tiempo nos señala en los Vedas los modos y procesos por los que regirnos, de modo que gradualmente podamos elevarnos hasta liberarnos del cautiverio material. Las leyes de la naturaleza encadenan a las almas condicionadas que han venido al mundo material a enseñorearse de la naturaleza material. Lo mejor es regirse por las reglas védicas; eso nos ayudará a elevarnos gradualmente hasta la liberación.
+Kardama Muni se dirige al Señor con el nombre de sukla, que significa «el líder de la religión». La persona piadosa debe seguir las reglas de la religión, pues son reglas prescritas por el Señor personalmente. Nadie puede inventar o elaborar una religión; «religión» significa los mandamientos o leyes del Señor. En la Bhagavad- gita el Señor dice que religión significa entregarse a Él. Por lo tanto, debemos seguir las regulaciones védicas y entregarnos al Señor Supremo, porque ésa es la meta suprema de perfección de la vida humana. Debemos llevar una vida piadosa, seguir las reglas y regulaciones de la religión, casarnos y vivir pacíficamente para elevarnos al nivel de iluminación espiritual más elevado.
+VERSO 17
+lokams ca lokanugatan pasums ca
+hitva sritas te caranatapatram
+parasparam tvad-guna-vada-sidhu-
+piyusa-niryapita-deha-dharmah
+</p>
+<p class='vspace'>lokan—asuntos mundanos; ca—y; loka-anugatan—aquellos que participan de los asuntos mundanos; pasun—que son como animales salvajes; ca—y; hitva— habiendo abandonado; sritah—refugiándose; te—Tus; carana—pies de loto; atapatram—parasol; parasparam—entre sí; tvat—Tus; guna—cualidades; vada—en conversaciones; sidhu—embriagante; piyusa—con el néctar; niryapita— extinguidas; deha-dharmah—las necesidades primarias del cuerpo. 
+TRADUCCIÓN
+Sin embargo, las personas que, habiendo abandonado los estereotipados asuntos mundanos y a los que, como animales, participan de ellos, se han refugiado bajo el parasol de Tus pies de loto bebiendo en sus conversaciones el néctar embriagador de Tus cualidades y actividades, pueden liberarse de las necesidades primarias del cuerpo material.
+SIGNIFICADO
+Tras manifestar su necesidad de casarse, Kardama Muni afirma que el matrimonio y otros asuntos sociales son regulaciones estereotipadas para personas adictas al disfrute material de los sentidos. Los principios de la vida animal —comer, dormir, aparearse y defenderse—, en realidad, son necesidades del cuerpo, pero aquellos que se ocupan en el proceso trascendental de conciencia de Krishna y abandonan todas las actividades estereotipadas de este mundo material, están liberados de los convencionalismos sociales. Las almas condicionadas están bajo el hechizo de la energía material, o, en otras palabras, del tiempo eterno —pasado, presente y futuro—, pero tan pronto como emprenden el proceso de conciencia de Krishna, trascienden los límites del pasado y del presente, y llevan a cabo únicamente las actividades eternas del alma. Para disfrutar de la vida material hay que actuar siguiendo los mandamientos védicos, pero aquellos que han adoptado el servicio devocional del Señor están libres del temor a las regulaciones de este mundo material. Tales devotos no se preocupan por los convencionalismos de las actividades materiales; aceptan con entusiasmo aquel refugio que es como un parasol que protege del sol del ciclo repetido de nacimientos y muertes.
+La constante transmigración del alma de un cuerpo a otro es la causa del sufrimiento en la existencia material. Esa vida condicionada en la existencia material se denomina samsara. Quien haya ejecutado buenas obras puede nacer en una condición material muy favorable, pero el proceso que regula el ciclo de nacimientos y muertes es como un fuego terrible. Esto lo ha explicado Sri Visvanatha Cakravarti Thakura en su oración al maestro espiritual, en la que compara el ciclo de nacimientos y muertes, samsara, con un incendio forestal. El fuego se enciende en el bosque de una manera espontánea por la fricción de la madera seca, sin que nadie lo provoque, y ningún cuerpo de bomberos o de voluntarios puede apagarlo. Sólo una nube, derramando agua constantemente, puede apagar el voraz incendio. La nube se compara con la misericordia del maestro espiritual. La gracia del maestro espiritual hace que aparezca la nube de la misericordia de la Personalidad de Dios; sólo entonces, cuando caen las lluvias de la conciencia de Krishna, puede apagarse el fuego de la existencia material. Eso se explica también aquí. Para liberarnos de los estereotipos de la vida condicionada de la existencia material, tenemos que refugiarnos en los pies de loto del Señor, no con la actitud en que caen los impersonalistas, sino con servicio devocional, cantando y escuchando acerca de las actividades del Señor. Sólo entonces podremos liberarnos de las acciones y reacciones de la existencia material. Aquí se nos recomienda que abandonemos la vida condicionada de este mundo material y la compañía de los mal llamados seres humanos civilizados que no pasan de seguir los mismos principios estereotipados de comer, dormir, defenderse y aparearse, aunque de un modo refinado. Aquí se dice que el proceso de cantar y escuchar las glorias del Señor es tvad-guna-vada-sidhu. Sólo bebiendo el néctar de cantar y escuchar los pasatiempos del Señor podremos olvidar la embriaguez de la existencia material.
+VERSO 18
+na te 'jaraksa-bhramir ayur esam
+trayodasaram tri-satam sasti-parva
+san-nemy ananta-cchadi yat tri-nabhi
+karala-sroto jagad acchidya dhavat
+</p>
+<p class='vspace'>na—no; te—Tu; ajara—del Brahman imperecedero; aksa—sobre el eje; bhramih—girando; ayuh—duración de la vida; esam—de los devotos; trayodasa— trece; aram—radios; tri-satam—trescientas; sasti—sesenta; parva—funciones; sat—seis; nemi—llantas; ananta—innumerables; chadi—hojas; yat—el cual; tri— tres; nabhi—centros de rotación; karala-srotah—con tremenda velocidad; jagat—el universo; acchidya—acortando; dhavat—corre.
+TRADUCCIÓN
+Tu rueda, que tiene tres centros de rotación, gira en torno al eje del imperecedero Brahman. Tiene trece radios, 360 junturas, seis llantas y sobre ella hay innumerables hojas talladas. Aunque su revolución acorta la vida de toda la creación, esta rueda, de tremenda velocidad, no puede influir en la duración de la vida de los devotos del Señor.
+SIGNIFICADO
+El factor tiempo no puede influir en la duración de la vida de los devotos. En la Bhagavad-gita se afirma que una pequeña ejecución de servicio devocional nos salva del mayor de los peligros. El mayor peligro es la transmigración del alma de un cuerpo a otro, y ese proceso sólo se puede detener mediante el servicio devocional al Señor. En las Escrituras védicas se afirma: harim vina na srtim taranti: Sin la misericordia del Señor no se puede detener el ciclo de nacimientos y muertes. En la Bhagavad-gita se afirma que entender la naturaleza trascendental del Señor y de Su advenimiento, Su partida y Sus actividades es la única manera de detener el ciclo de la muerte y poder ir de regreso a Él. El factor tiempo se fragmenta en muchas divisiones de momentos, horas, meses, años, períodos, estaciones, etc. Todas las divisiones mencionadas en este verso se determinan según los cálculos astronómicos de las Escrituras védicas. Hay seis estaciones, que se llaman rtus, y tres períodos de cuatro meses, denominados caturmasya. Tres períodos de cuatro meses completan un año. Según los cálculos de astronomía védica, hay trece meses. El decimotercer mes recibe el nombre de adhi-masa o mala-masa, y se añade cada tres años. Sin embargo, el factor tiempo no puede influir en la duración de la vida de los devotos. En otro verso se afirma que el Sol, cuando se levanta y cuando se pone, se lleva la vida de todas las entidades vivientes, pero no puede llevarse la vida de aquellos que están ocupados en servicio devocional. Aquí se compara el tiempo con una gran rueda de 360 junturas, seis llantas en forma de estaciones, e innumerables hojas en forma de momentos. Esa rueda gira sobre la existencia eterna, el Brahman.
+VERSO 19
+ekah svayam sañ jagatah sisrksaya-
+dvitiyayatmann adhi-yogamayaya
+srjasy adah pasi punar grasisyase
+yathorna-nabhir bhagavan sva-saktibhih
+</p>
+<p class='vspace'>ekah—uno; svayam—Tú mismo; san—siendo; jagatah—los universos; sisrksaya —con deseo de crear; advitiyaya—sin igual; atman—en Ti mismo; adhi— controlando; yoga-mayaya—mediante yogamaya; srjasi—Tú creas; adah—estos universos; pasi—Tú mantienes; punah—de nuevo; grasisyase—Tú darás fin; yatha—como; urna-nabhih—una araña; bhagavan—¡oh, Señor!; sva-saktibhih— con su propia energía.
+TRADUCCIÓN
+Mi querido Señor, Tú solo creas los universos. ¡Oh, Personalidad de Dios!, Tú, deseando crear estos universos, los creas, los mantienes y de nuevo los retraes mediante Tus propias energías, que están bajo el control de Tu segunda energía, yogamaya, tal como una araña, que crea una telaraña con su propia energía y de nuevo la retrae.
+SIGNIFICADO
+En este verso, dos palabras importantes anulan la teoría impersonalista de que todo es Dios. Aquí Kardama dice: «¡Oh, Personalidad de Dios!, Tú estás solo pero tienes diversas energías». Es también muy significativo el ejemplo de la araña. La araña es una entidad viviente individual que, mediante su energía, crea una telaraña sobre la cual juega; cuando así lo desea, reabsorbe la telaraña, dando fin así al juego. La araña no se vuelve impersonal cuando fabrica una telaraña con su saliva. Análogamente, la creación y manifestación de las energías materiales o espirituales no vuelven impersonal a su creador. La oración en sí sugiere que Dios tiene sentidos y puede escuchar las oraciones y cumplir los deseos del devoto. Por lo tanto, Él es sac-cid-ananda-vigraha, la forma de bienaventuranza, conocimiento y eternidad.
+VERSO 20
+naitad batadhisa padam tavepsitam
+yan mayaya nas tanuse bhuta-suksmam
+anugrahayastv api yarhi mayaya
+lasat-tulasya bhagavan vilaksitah
+</p>
+<p class='vspace'>na—no; etat—este; bata—en verdad; adhisa—¡oh, Señor!; padam—mundo material; tava—Tu; ipsitam—deseo; yat—el cual; mayaya—por Tu energía externa; nah—para nosotros; tanuse—Tú manifiestas; bhuta-suksmam—los elementos densos y sutiles; anugrahaya—para otorgar misericordia; astu—que sea; api—también; yarhi—cuando; mayaya—por medio de Tu misericordia sin causa; lasat— espléndida; tulasya—con un collar de hojas de tulasi; bhagavan—la Suprema Personalidad de Dios; vilaksitah—se percibe.
+TRADUCCIÓN
+Mi querido Señor, aunque Tú no lo deseas, manifiestas esta creación de elementos densos y sutiles tan sólo para satisfacción de nuestros sentidos. Que Tu misericordia sin causa esté con nosotros, pues has aparecido ante nosotros en Tu forma eterna, adornado con un espléndido collar de hojas de tulasi.
+SIGNIFICADO
+Aquí se afirma claramente que la creación del mundo material no se debe al deseo personal del Señor Supremo; lo crea Su energía externa porque las entidades vivientes quieren disfrutar de él. No ha sido creado para aquellos que, libres del deseo de disfrutar de la complacencia de los sentidos, ofrecen constantemente servicio amoroso trascendental y son eternamente conscientes de Krishna. Para ellos existe eternamente el mundo espiritual, y allí disfrutan. En otra parte del Srimad-Bhagavatam se afirma que, para aquellos que se han refugiado en los pies de loto de la Suprema Personalidad de Dios, el mundo material no sirve para nada; el mundo material está lleno de peligros a cada paso, y por ello no es para los devotos, sino para las entidades vivientes que quieren asumir el riesgo de enseñorearse de la energía material. Krishna es tan bondadoso que concede a las entidades vivientes disfrutadoras de los sentidos un mundo aparte, creado por Él para que disfruten como deseen; pero, al mismo tiempo, Él adviene en Su forma personal. El Señor crea el mundo material sin desear hacerlo, pero desciende en Su forma personal, o envía a alguien digno de Su confianza, como por ejemplo a uno de sus hijos, a un sirviente o a un escritor como Vyasadeva, para que den enseñanzas a la gente. Y Él mismo también nos enseña personalmente cuando habla la Bhagavad-gita. La creación siempre va acompañada de esa labor de propaganda, que busca convencer a las descarriadas entidades vivientes que se están pudriendo en este mundo material de que regresen a Él y se Le entreguen. Por eso la instrucción definitiva de la Bhagavad-gita es: «Abandona todas las ocupaciones que te has creado en el mundo material y simplemente entrégate a Mí. Yo te protegeré de todas las reacciones pecaminosas».
+VERSO 21
+tam tvanubhutyoparata-kriyartham
+sva-mayaya vartita-loka-tantram
+namamy abhiksnam namaniya-pada-
+sarojam alpiyasi kama-varsam
+</p>
+<p class='vspace'>tam—esto; tva—Tú; anubhutya—al comprender; uparata—sin apego; kriya— disfrute de las actividades fruitivas; artham—para; sva-mayaya—mediante Tu propia energía; vartita—causados; loka-tantram—los mundos materiales; namami— ofrezco reverencias; abhiksnam—continuamente; namaniya—adorables; pada- sarojam—pies de loto; alpiyasi—al insignificante; kama—deseos; varsam—derramando.
+TRADUCCIÓN
+Ofrezco sin cesar mis respetuosas reverencias a Tus pies de loto, que son un refugio meritorio, pues Tú derramas toda bendición sobre los insignificantes. Para dar una oportunidad a todas las entidades vivientes de tener una experiencia directa de Ti y, como consecuencia, desapegarse de la actividad fruitiva, Tú has expandido los mundos materiales mediante Tu propia energía.
+SIGNIFICADO
+De modo que todos, ya bien deseen el disfrute material, la liberación o el servicio amoroso trascendental del Señor, deben ocuparse en servicio y ofrecer reverencias al Señor Supremo, porque el Señor puede conceder a todos las bendiciones que deseen. En la Bhagavad-gita, el Señor afirma: ye yatha mam prapadyante: A quien desee ser un próspero disfrutador en el mundo material, el Señor le concede esa bendición; a quien desee liberarse del enredo del mundo material, el Señor le da la liberación; y a quien desee ocuparse constantemente en Su servicio, siendo completamente consciente de Krishna, el Señor le concede esa bendición. Él ha prescrito en los Vedas muchas ejecuciones rituales de sacrificio para el disfrute material, de modo que la gente puede sacar provecho de esas instrucciones y disfrutar de la vida material en los planetas superiores o en una noble familia de la aristocracia. Esos medios se indican en los Vedas, y podemos beneficiarnos de ellos. Algo parecido ocurre con aquellos que quieren liberarse del mundo material.
+Si no estamos hastiados del disfrute del mundo material, no podemos aspirar a la liberación. La liberación es para quienes están hastiados del disfrute material. Por eso el Vedanta-sutra dice: athato brahma-jijñasa: Aquellos que han abandonado los intentos de ser felices en el mundo material pueden inquirir sobre la Verdad Absoluta. Aquellos que quieren conocer la Verdad Absoluta pueden recurrir al Vedanta-sutra y al Srimad-Bhagavatam, la verdadera explicación del Vedanta- sutra. Como la Bhagavad-gita también es Vedanta-sutra, entendiendo el Srimad- Bhagavatam, el Vedanta-sutra o la Bhagavad-gita podemos obtener conocimiento verdadero. Aquel que obtiene conocimiento verdadero se vuelve teóricamente uno con el Supremo, y cuando comienza realmente a servir al Brahman, es decir, cuando emprende el proceso de conciencia de Krishna, no sólo está liberado, sino también situado en la vida espiritual. De la misma manera, quienes deseen enseñorearse de la naturaleza material tienen muchas posibilidades de disfrute; el Señor pone el conocimiento y la ciencia materiales a disposición de aquellos que deseen disfrutar de ellos. La conclusión es que, para cualquier bendición que deseemos, es necesario adorar a la Suprema Personalidad de Dios. Es muy significativa la palabra kama-varsam, pues indica que el Señor satisface los deseos de cualquiera que se dirija a Él. Pero alguien que ama a Krishna sinceramente y, al mismo tiempo, quiere disfrute material, se encuentra confuso. Krishna, siendo muy bondadoso con él, le da una oportunidad de ocuparse en el servicio amoroso trascendental del Señor y, de este modo, le hace olvidar gradualmente la alucinación.
+VERSO 22
+sir uvaca
+ity avyalikam pranuto 'bja-nabhas
+tam ababhase vacasamrtena
+suparna-paksopari rocamanah
+prema-smitodviksana-vibhramad-bhruh
+</p>
+<p class='vspace'>rsih uvaca—el gran sabio Maitreya dijo; iti—así; avyalikam—sinceramente; pranutah—habiendo sido alabado; abja-nabhah—el Señor Visnu; tam—a Kardama Muni; ababhase—contestó; vacasa—con palabras; amrtena—tan dulces como el néctar; suparna—de Garuda; paksa—los hombros; upari—sobre; rocamanah—brillando; prema—de afecto; smita—con una sonrisa; udviksana— mirando; vibhramat—moviendo graciosamente; bhruh—cejas.
+TRADUCCIÓN
+Maitreya prosiguió: Tras recibir esas sinceras palabras de alabanza, el Señor Visnu, que montado sobre Garuda irradiaba un hermoso resplandor, contestó con palabras tan dulces como el néctar. Sus cejas se movieron muy graciosamente cuando miró al sabio con una sonrisa llena de afecto.
+SIGNIFICADO
+Es significativa la palabra vacasamrtena. Siempre que habla, el Señor lo hace desde el mundo trascendental; no habla desde el mundo material. Como Él es trascendental, Sus palabras y Sus actividades también son trascendentales. Todo lo relacionado con Él es trascendental. La palabra amrta hace referencia a alguien que no se enfrenta con la muerte. Las palabras y las actividades del Señor son inmortales; de modo que no son un producto de este mundo material. El sonido de este mundo material y el del mundo espiritual son completamente diferentes. El sonido del mundo espiritual es nectáreo y eterno, mientras que el del mundo material es desaborido y tiene final. El sonido del santo nombre —Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare— hace aumentar eternamente el entusiasmo de quien lo canta. Si repetimos de forma monótona palabras materiales, acabaremos hartos, pero si cantamos Hare Krishna las veinticuatro horas del día, nunca nos hartaremos; al contrario, nos sentiremos animados a continuar cantando más y más. La palabra vacasamrtena se mencionó específicamente cuando el Señor respondió al sabio Kardama, puesto que Él habló desde el mundo trascendental. Respondió con palabras trascendentales, y cuando habló, Sus cejas se movieron con gran afecto. Cuando un devoto alaba las glorias del Señor, Él Se siente muy satisfecho, y le concede Su bendición trascendental sin reservas, porque Él siempre es inmotivadamente misericordioso con Su devoto.
+VERSO 23
+sri-bhagavan uvaca
+viditva tava caityam me
+puraiva samayoji tat
+yad-artham atma-niyamais
+tvayaivaham samarcitah
+</p>
+<p class='vspace'>sri-bhagavan uvaca—el Señor Supremo dijo; viditva—entendiendo; tava—tu; caityam—condición mental; me—por Mí; pura—antes; eva—ciertamente; samayoji—fue preparado; tat—eso; yat-artham—por lo cual; atma—de la mente y los sentidos; niyamaih—con disciplina; tvaya—por ti; eva—sólo; aham—Yo; samarcitah—he sido adorado.
+TRADUCCIÓN
+El Señor Supremo dijo: Habiendo conocido de antemano lo que estaba en tu mente, te he preparado ya aquello por lo que Me has adorado tan bien con la disciplina de tu mente y tus sentidos.
+SIGNIFICADO
+La Suprema Personalidad de Dios, en Su aspecto de Param- atma, está situado en el corazón de todos. Por esa razón, Él conoce el pasado, el presente y el futuro de cada persona individual, además de sus deseos, actividades y todo lo relacionado con ella. Se afirma en la Bhagavad-gita que Él está situado en el corazón como testigo. La Personalidad de Dios conocía el deseo íntimo de Kardama Muni, y ya había dispuesto lo necesario para que se cumpliese. Él nunca decepciona al devoto sincero, desee lo que desee, pero nunca concede nada que pueda deteriorar el servicio devocional de alguien.
+VERSO 24
+na vai jatu mrsaiva syat
+prajadhyaksa mad-arhanam
+bhavad-vidhesu atitaram
+mayi sangrbhitatmanam
+</p>
+<p class='vspace'>na—no; vai—en verdad; jatu—nunca; mrsa—inútil; eva—sólo; syat—puede haber; praja—de las entidades vivientes; adhyaksa—¡oh, líder!; mat-arhanam— adórame a Mí; bhavat-vidhesu—a personas como tú; atitaram—enteramente; mayi—en Mí; sangrbhita—está fija; atmanam—de aquellos cuya mente.
+TRADUCCIÓN
+El Señor continuó: Mi querido rsi, ¡oh, líder de las entidades vivientes!, aquellos que Me sirven adorándome con devoción, especialmente las personas como tú, que Me lo han entregado todo, nunca se sentirán decepcionados.
+SIGNIFICADO
+Aun si tiene algunos deseos, aquel que se ocupa en el servicio del Señor nunca se decepciona. Aquellos que se ocupan en Su servicio reciben los nombres de sakama y akama. Los que acuden a la Suprema Personalidad de Dios en busca de disfrute material son sakama, y los devotos que no tienen deseos materiales de complacencia de los sentidos sino que sirven al Señor con amor espontáneo son akama. Los devotos sakama se dividen en cuatro clases: los afligidos, los que necesitan dinero, los inquisitivos y los sabios. Hay quien adora al Señor porque está afligido mental o físicamente; hay quien Le adora porque necesita dinero; algún otro, porque siente curiosidad por conocerle tal como es; y otros quieren conocer al Señor como los filósofos, mediante la labor investigadora de su sabiduría. Ninguna de esas cuatro clases de hombres se decepciona; cada una recibe el resultado que desea por su adoración.
+VERSO 25
+prajapati-sutah samran
+manur vikhyata-mangalah
+brahmavartam yo 'dhivasan
+sasti saptarnavam mahim
+</p>
+<p class='vspace'>prajapati-sutah—el hijo del Señor Brahma; samrat—el emperador; manuh— Svayambhuva Manu; vikhyata—bien conocida; mangalah—la rectitud de cuyos actos; brahmavartam—Brahmavarta; yah—aquel que; adhivasan—viviendo en; sasti—gobierna; sapta—siete; arnavam—océanos; mahim—la Tierra.
+TRADUCCIÓN
+El emperador Svayambhuva Manu, el hijo del Señor Brahma, bien conocido por la rectitud de sus actos, tiene su capital en Brahmavarta, y gobierna sobre la Tierra y sus siete océanos.
+SIGNIFICADO
+A veces se afirma que Brahmavarta es una parte de Kuruksetra, o que Kuruksetra en sí está situado en Brahmavarta, porque a los semidioses se les recomienda la ejecución de prácticas espirituales rituales en Kuruksetra. Pero, según la opinión de otros, Brahmavarta es una parte de Brahmaloka desde donde gobernó Svayambhuva. En la superficie de la Tierra hay muchos lugares que también se conocen en los sistemas planetarios superiores; en este planeta hay lugares, como Vrndavana, Dvaraka y Mathura, que también están situados eternamente en Krsnaloka. Sobre la superficie de la Tierra hay muchos nombres con esta característica, y pudiera ser, como aquí se afirma, que Svayambhuva Manu gobernase este planeta en la era del Jabalí. Es significativa la palabra mangalah. Mangala se refiere a alguien elevado en todo lo relacionado con las opulencias de prácticas religiosas, poder gubernativo, limpieza y todas las demás buenas cualidades. Vikhyata significa «famoso». Svayambhuva Manu era famoso por poseer todas las buenas cualidades y opulencias.
+VERSO 26
+sa ceha vipra rajarsir
+mahisya satarupaya
+ayasyati didrksus tvam
+parasvo dharma-kovidah
+</p>
+<p class='vspace'>sah—Svayambhuva Manu; ca—y; iha—aquí; vipra—¡oh, santo brahmana!; raja-rsih—el rey santo; mahisya—con la reina; satarupaya—llamada Satarupa; ayasyati—vendrá; didrksuh—deseando ver; tvam—a ti; parasvah—pasado mañana; dharma—en actividades religiosas; kovidah—experto.
+TRADUCCIÓN
+Pasado mañana, ¡oh, brahmana!, ese famoso emperador, que es experto en actividades religiosas, vendrá aquí con la reina, Satarupa, con la intención de verte.
+VERSO 27
+atmajam asitapangim
+vayah-sila-gunanvitam
+mrgayantim patim dasyaty
+anurupaya te prabho
+</p>
+<p class='vspace'>atma-jam—a su propia hija; asita—negros; apangim—ojos; vayah—edad adulta; sila—con carácter; guna—con buenas cualidades; anvitam—dotada; mrgayantim— buscando; patim—un esposo; dasyati—él dará; anurupaya—que eres adecuado; te—a ti; prabho—Mi querido señor. 
+TRADUCCIÓN
+Tiene una hija ya adulta de ojos negros. Está en edad de casarse, y tiene buen carácter y todas las buenas cualidades. Ella también está buscando un buen esposo. Mi querido señor, sus padres vendrán a verte solamente para entregártela por esposa, pues eres exactamente el adecuado para ella.
+SIGNIFICADO
+Siempre correspondió a los padres la tarea de seleccionar un buen esposo a una buena hija. Aquí se afirma claramente que Manu y su esposa venían a ver a Kardama Muni para ofrecerle su hija, pues ésta tenía buenas cualidades y sus padres estaban buscando un hombre de las mismas características. Ése es el deber de los padres. No deben echar a sus hijas a la vía pública para que se busquen un esposo, pues las muchachas ya adultas, cuando buscan un novio, se olvidan de considerar si su elegido es verdaderamente el que les conviene. Por la fuerza del impulso sexual, una joven puede aceptar a cualquiera, pero cuando son los padres los que eligen, ellos pueden considerar a quién se puede aceptar y a quién no. Por lo tanto, según el sistema védico, los padres entregan su hija a un joven adecuado; nunca se permite que sea ella quien seleccione su propio esposo independientemente.
+VERSO 28
+samahitam te hrdayam
+yatreman parivatsaran
+sa tvam brahman nrpa-vadhuh
+kamam asu bhajisyati
+</p>
+<p class='vspace'>samahitam—ha estado absorto; te—tu; hrdayam—corazón; yatra—en quien; iman—durante todos estos; parivatsaran—años; sa—ella; tvam—a ti; brahman— ¡oh, brahmana!; nrpa-vadhuh—la princesa; kamam—según tu deseo; asu—muy pronto; bhajisyati—servirá.
+TRADUCCIÓN
+Esa princesa, ¡oh, santo sabio!, será exactamente el ideal que tuviste en tu corazón durante todos estos largos años. Pronto será tuya, y te servirá a tu entera satisfacción.
+SIGNIFICADO
+El Señor bendice al devoto satisfaciendo todos sus deseos íntimos. Así pues, el Señor dijo a Kardama Muni: «La joven que viene para casarse contigo es una princesa, hija del emperador Svayambhuva, y es justamente la ideal para ti». Solamente por la gracia de Dios puede alguien ver cumplidos sus deseos de obtener una buena esposa. Y también solamente por la gracia de Dios encuentra una joven un esposo tal como ella deseaba. Se dice entonces que si Le oramos al Señor Supremo en todas las cuestiones de nuestra existencia material, todo saldrá bien, exactamente tal como lo deseamos. En otras palabras, debemos refugiarnos en la Suprema Personalidad de Dios en toda circunstancia, y depender completamente de Su decisión. El hombre propone y Dios dispone. De modo que debemos confiar a la Suprema Personalidad de Dios la satisfacción de nuestros deseos; ésa es la mejor solución. Kardama Muni deseaba únicamente una esposa, pero, por ser devoto del Señor, Él le seleccionó una esposa que era hija de un emperador, una princesa. Fue así como la esposa que Kardama Muni obtuvo superaba todas sus expectativas. Si dependemos de la elección de la Suprema Personalidad de Dios, la opulencia de las bendiciones recibidas será mayor que lo que hayamos deseado.
+También se señala aquí significativamente que Kardama Muni era un brahmana, mientras que el emperador Svayambhuva era un ksatriya. Así pues, el matrimonio entre miembros de distintas castas era corriente incluso en aquellos días. Lo estipulado era que un brahmana podía casarse con la hija de un ksatriya, pero un ksatriya no podía casarse con la hija de un brahmana. En la historia de la edad védica tenemos el testimonio de que Sukracarya ofreció su hija a Maharaja Yayati, pero el rey tuvo que rehusar casarse con la hija de un brahmana; sólo pudieron casarse con el consentimiento especial del brahmana. Vemos, por lo tanto, que en los días de antaño, hace muchísimos millones de años, no estaban prohibidos los matrimonios entre miembros de castas distintas, sino que estaban reglamentados en el sistema de comportamiento social.
+VERSO 29
+ya ta atma-bhrtam viryam
+navadha prasavisyati
+virye tvadiye rsaya
+adhasyanty añjasatmanah
+</p>
+<p class='vspace'>ya—ella; te—por ti; atma-bhrtam—sembrada en ella; viryam—la semilla; nava- dha—nueve hijas; prasavisyati—parirá; virye tvadiye—en las hijas engendradas por ti; rsayah—los sabios; adhasyanti—engendrarán; añjasa—en total; atmanah— hijos.
+TRADUCCIÓN
+Tú sembrarás en ella tu semilla, y ella traerá al mundo nueve hijas. En esas hijas engendradas por ti, los sabios, a su vez, engendrarán hijos.
+VERSO 30
+tvam ca samyag anusthaya
+nidesam ma usattamah
+mayi tirthi-krtasesa-
+kriyartho mam prapatsyase
+</p>
+<p class='vspace'>tvam—tú; ca—y; samyak—correctamente; anusthaya—habiendo cumplido; nidesam—orden; me—Mi; usattamah—completamente limpio; mayi—a Mí; tirthi-krta—habiéndome cedido; asesa—todos; kriya—de acciones; arthah—los frutos; mam—a Mí; prapatsyase—alcanzarás.
+TRADUCCIÓN
+Con el corazón limpio por haber cumplido Mi orden correctamente, cediéndome los frutos de todos tus actos, finalmente Me alcanzarás.
+SIGNIFICADO
+Aquí son significativas las palabras tirthi-krtasesa-kriyarthah. Tirtha significa «lugar santificado donde se da caridad». La gente solía ir a lugares de peregrinaje y dar caridad con gran generosidad. Todavía hoy sigue en vigor ese sistema. Por eso el Señor dijo: «Para que santifiques tus actividades y los resultados de tus acciones, Me lo ofrecerás todo a Mí». Esto se confirma también en la Bhagavad-gita: «Si haces algo, comes algo, ofreces algo en sacrificio, el resultado sólo debes dármelo a Mí». En otro pasaje de la Bhagavad-gita, el Señor dice: «Yo soy el disfrutador de todos los sacrificios, de todas las penitencias y de todo lo que se hace para bienestar de la humanidad o de la sociedad». Por lo tanto, todas las actividades destinadas al bienestar de la familia, la sociedad, el país o la humanidad en general deben ejecutarse con conciencia de Krishna. Ésa es la instrucción que el Señor dio a Kardama Muni. Maharaja Yudhisthira recibió a Narada Muni diciendo: «Cualquier lugar en que Tú estés presente se santifica, porque el Señor en persona está siempre en Tu corazón». De la misma manera, si somos conscientes de Krishna y, actuamos bajo la dirección del Señor y de Su representante, todo se santifica. Kardama Muni siguió esa indicación del Señor y, por ello, recibió la mejor esposa y el mejor hijo, como se revelará en versos posteriores.
+VERSO 31
+krtva dayam ca jivesu
+dattva cabhayam atmavan
+mayy atmanam saha jagad
+draksyasy atmani capi mam
+</p>
+<p class='vspace'>krtva—habiendo mostrado; dayam—compasión; ca—y; jivesu—hacia los seres vivos; dattva—habiendo dado; ca—y; abhayam—garantía de seguridad; atma- van—autorrealizado; mayi—en Mí; atmanam—a ti mismo; saha jagat—junto con el universo; draksyasi—percibirás; atmani—en ti mismo; ca—y; api—también; mam—a Mí.
+TRADUCCIÓN
+Mostrándote compasivo con todas las entidades vivientes, alcanzarás la autorrealización. Garantizando a todos su seguridad, percibirás en Mí todos los universos y tu propio ser, y a Mí mismo en ti.
+SIGNIFICADO
+Aquí se describe el sencillo proceso de autorrealización para todas las entidades vivientes. El primer principio a entender es que este mundo es producto de la voluntad suprema. Hay una identidad entre el mundo y el Señor Supremo. Los impersonalistas tergiversan esa identidad: dicen que la Verdad Absoluta Suprema pierde Su existencia separada al transformarse en el universo. De este modo, piensan que el Señor es el mundo y todo lo que hay en él. Esa idea de los impersonalistas es panteísmo, pues consideran que todo es el Señor. Pero los devotos personales del Señor lo consideran todo como propiedad del Señor Supremo. Cualquier cosa, todo lo que vemos, es la manifestación del Señor Supremo; por esa razón, todo debe ocuparse en el servicio del Señor. Eso es unidad. La diferencia entre el impersonalista y el personalista es que el impersonalista no acepta la existencia separada del Señor, pero el personalista acepta al Señor; entiende que el Señor, aunque Se distribuye de muchas maneras, tiene Su existencia personal separada. Esto se explica en la Bhagavad-gita: «Yo Me extiendo por todo el universo en Mi forma impersonal. Todo reposa en Mí, pero Yo no estoy presente». Con respecto a esto es muy ilustrativo el ejemplo del Sol y la luz del Sol. El Sol se extiende por todo el universo mediante su luz, y todos los planetas reposan en esa luz del Sol. Pero los planetas son todos diferentes del planeta Sol; aunque reposen en la luz del Sol, no se puede decir que también los planetas son el Sol. Tampoco es muy inteligente el supuesto panteísta o impersonal de que todo es Dios. La postura correcta, que el propio Señor explica, es que nada puede existir sin Él y, a pesar de ello, no es cierto que todo es Él. Él es distinto de todo. Además, aquí el Señor dice también: «Tú verás todo lo que hay en el mundo como no diferente de Mí». Esto quiere decir que todo debe ser considerado un producto de la energía del Señor y que, por lo tanto, todo debe emplearse para servir al Señor. Cada uno debe utilizar su energía en su propio interés. Ésa es la perfección de la energía.
+Para utilizar verdaderamente esa energía en nuestro propio provecho, debemos ser compasivos. La persona consciente de Krishna, el devoto del Señor, siempre es compasivo. No está satisfecho con ser devoto solamente él, y trata de difundir el conocimiento del servicio devocional entre todos. Muchos devotos del Señor han tenido que correr muchos riesgos para difundir el servicio devocional del Señor entre la gente. Eso es lo que hay que hacer.
+Se dice también que una persona que va al templo y adora al Señor con gran devoción, pero no manifiesta piedad por la gente ni respeta a los demás devotos, está en la categoría de devoto de tercera clase. El devoto de segunda clase es aquel que es misericordioso y compasivo con las almas caídas. Ese devoto siempre es consciente de su posición como sirviente eterno del Señor; por lo tanto, hace amistad con los devotos del Señor, muestra compasión por la gente en general, enseñándoles el servicio devocional, y se niega a cooperar o relacionarse con los no devotos. Mientras no muestre compasión por la gente en su servicio de devoción al Señor, será un devoto de tercera clase. El devoto de primera clase da a todos los seres vivientes la seguridad de que no hay nada que temer en esta existencia material: «Vivamos conscientes de Krishna y conquistemos la ignorancia de la existencia material».
+Aquí se indica que Kardama Muni recibió del Señor las instrucciones de ser muy compasivo y liberal en su vida familiar, y de dar seguridad a la gente en su vida de renuncia. El sannyasi, aquel que está en la orden de vida de renuncia, tiene la misión de iluminar a la gente; para hacerlo, debe viajar, yendo de casa en casa. El jefe de familia, bajo el hechizo de maya, está absorto en asuntos familiares y olvida su relación con Krishna. Si muere en esa condición de olvido, como los gatos y los perros, su vida habrá sido inútil. Por lo tanto, el sannyasi tiene el deber de ir y despertar a las olvidadizas almas, iluminándolas acerca de su relación eterna con el Señor, y ocuparlas en servicio devocional. El devoto debe ser misericordioso con las almas caídas, y también debe liberarlas del temor dándoles seguridad. Cuando alguien se vuelve devoto del Señor, inmediatamente se convence de que el Señor le protege. El Temor en persona teme al Señor; ¿cómo puede afectar entonces al devoto?
+Liberar del temor a los hombres comunes es el mayor acto de caridad. El sannyasi, aquel que está en la orden de vida de renuncia, debe ir vagando de puerta en puerta, de pueblo en pueblo, de ciudad en ciudad, y de país en país, por todo el mundo, viajando lo más lejos que pueda, iluminando a los jefes de familia en el proceso de conciencia de Krishna. La persona casada que ha sido iniciada por un sannyasi tiene el deber de propagar el proceso de conciencia de Krishna desde su hogar; en la medida de lo posible, debe invitar a su casa a sus amigos y vecinos, y organizar clases acerca del proceso de conciencia de Krishna. Organizar una clase significa cantar el santo nombre de Krishna y hablar de la Bhagavad-gita o del Srimad-Bhagavatam. Hay una enorme cantidad de obras literarias para la difusión del proceso de conciencia de Krishna, y todo jefe de familia tiene la obligación de aprender acerca de Krishna de labios de su maestro espiritual sannyasi. En el servicio del Señor hay una división del trabajo. El deber del casado es ganar dinero, pues el sannyasi no debe ganar dinero, sino depender por completo de los jefes de familia. El casado debe ganar dinero haciendo negocios o con su profesión, y debe gastar como mínimo un cincuenta por ciento de sus ingresos en propagar el movimiento para la conciencia de Krishna; puede gastar un veinticinco por ciento en su familia, y el veinticinco por ciento restante debe ahorrarlo para posibles emergencias. Rupa Gosvami dio ejemplo de esto, de modo que los devotos deben seguirlo.
+En realidad, ser uno con el Señor Supremo significa ser uno con el interés del Señor. Llegar a ser uno con el Señor Supremo no implica volverse tan grande como Él. Eso es imposible. La parte nunca es igual al todo. La entidad viviente siempre es una parte minúscula. Por lo tanto, su unidad con el Señor consiste en que tiene el mismo interés que el Señor. El Señor quiere que toda entidad viviente piense siempre en Él, sea Su devota y Le adore siempre. Esto se afirma claramente en la Bhagavad-gita: man-mana bhava mad-bhaktah. Krishna quiere que todos piensen en Él siempre. Todos deben ofrecer reverencias a Krishna siempre. Ésa es la voluntad del Señor Supremo, y los devotos deben tratar de satisfacer Su deseo. Como el Señor es ilimitado, Su deseo también es ilimitado. No conoce barreras y, por lo tanto, el servicio del devoto también es ilimitado. En el mundo trascendental hay una competición ilimitada entre el Señor y el servidor: el Señor quiere satisfacer Sus deseos ilimitadamente, y el devoto también Le sirve para satisfacer Sus ilimitados deseos. La unidad entre los intereses del Señor y del devoto es ilimitada.
+VERSO 32
+sahaham svamsa-kalaya
+tvad-viryena maha-mune
+tava ksetre devahutyam
+pranesye tattva-samhitam
+</p>
+<p class='vspace'>saha—con; aham—Yo; sva-amsa-kalaya—Mi propia porción plenaria; tvat- viryena—con tu semen; maha-mune—¡oh, gran sabio!; tava ksetre—en tu esposa; devahutyam—en Devahuti; pranesye—instruiré; tattva—de los principios fundamentales; samhitam—en la doctrina. 
+TRADUCCIÓN
+¡Oh, gran sabio!, además de tus nueve hijas, Yo también Me manifestaré por medio de tu esposa, Devahuti, en la forma de una porción plenaria. Instruiré a Devahuti en el sistema de filosofía que trata de los principios o categorías fundamentales.
+SIGNIFICADO
+Aquí la palabra svamsa-kalaya indica que el Señor aparecería como Kapiladeva, el hijo de Devahuti y Kardama Muni. Él presentó por vez primera la filosofía sankhya, que aquí recibe el nombre de tattva-samhita. El Señor predijo a Kardama Muni que aparecería en la encarnación de Kapiladeva para propagar la filosofía sankhya. La gente suele conocer la filosofía sankhya que propagó otro Kapiladeva, pero esa filosofía sankhya es diferente de la que el Señor expuso personalmente. Hay dos clases de filosofía sankhya: una es la filosofía sankhya atea, y la otra es la filosofía sankhya devocional. El Sankhya de Kapila- deva, el hijo de Devahuti, es una filosofía devocional.
+Hay diversas manifestaciones del Señor. Él es uno, pero Se ha vuelto muchos. Él se divide en dos tipos diferentes de expansiones, kala y vibhinnamsa. Las entidades vivientes en general son expansiones vibhinnamsa, y las ilimitadas expansiones de visnu-tattva, como Vamana, Govinda, Narayana, Pradyumna, Vasudeva y Ananta, reciben el nombre de svamsa-kala. Svamsa se refiere a una expansión directa, y kala designa a una expansión de la expansión del Señor original. Baladeva es una expansión de Krishna, y de Baladeva Se expande Sankarsana; de modo que Sankarsana es kala, pero Baladeva es svamsa. Sin embargo, entre Ellos no hay diferencia. Esto se explica muy bien en la Brahma-samhita (5.46): diparcir eva hi dasantaram abhyupetya. Con una vela podemos encender una segunda vela; con ésta, una tercera; luego una cuarta y así sucesivamente, podemos encender miles de velas, y ninguna de ellas es inferior a las demás en difundir luz. Todas las velas tienen pleno potencial luminoso, pero siempre podemos distinguir la primera vela de la segunda, de la tercera, de la cuarta, etc. De la misma manera, tampoco hay diferencia entre la expansión inmediata del Señor y Su expansión secundaria. Esta consideración se aplica en los mismos términos a los nombres del Señor: como Él es absoluto, Su nombre, Su forma, Sus pasatiempos, Sus cualidades y los enseres relacionados con Él, todos tienen la misma potencia. En el mundo absoluto, el nombre Krishna es la representación sonora trascendental del Señor. No hay ninguna diferencia entre la potencia de Sus cualidades, nombre, forma, etc. Si cantamos el nombre del Señor, Hare Krishna, eso tiene tanta potencia como el Señor en persona. No hay diferencia potencial entre la forma del Señor que adoramos y la forma del Señor que está en el templo. No debemos pensar que estamos adorando un muñeco o una estatua del Señor, aun si otros consideran que es una estatua. Como en potencia no hay ninguna diferencia, obtenemos el mismo resultado adorando a la estatua del Señor que si adoramos al Señor en persona. Ésa es la ciencia del proceso de conciencia de Krishna.
+VERSO 33
+maitreya uvaca
+evam tam anubhasyatha
+bhagavan pratyag-aksajah
+jagama bindusarasah
+sarasvatya parisritat
+</p>
+<p class='vspace'>maitreyah uvaca—el gran sabio Maitreya dijo; evam—así; tam—a él; anubhasya —habiendo hablado; atha—entonces; bhagavan—el Señor; pratyak—directamente; aksa—con sentidos; jah—que es percibido; jagama—Se fue; bindu-sarasah—del lago Bindu-sarovara; sarasvatya—por el río Sarasvati; parisritat—rodeado.
+TRADUCCIÓN
+Maitreya continuó: Después de hablar así a Kardama Muni, el Señor, que solamente Se revela cuando los sentidos son conscientes de Krishna, Se marchó de aquel lago, el Bindu-sarovara, en torno al cual fluía el río Sarasvati.
+SIGNIFICADO
+En este verso hay una palabra muy significativa. Aquí se dice que el Señor es pratyag-aksaja. Él es imperceptible para los sentidos materiales, y a pesar de ello, puede ser visto. Esto parece contradictorio. Nuestros sentidos son materiales; entonces, ¿cómo podemos ver al Señor Supremo? Él recibe el nombre de adhoksaja, que significa que es invisible para los sentidos materiales. Aksaja significa «conocimiento que se percibe con los sentidos materiales». El Señor no es un objeto que pueda ser entendido mediante las especulaciones de nuestros sentidos materiales, y por ello también recibe el nombre de ajita; Él conquistará, pero nadie puede conquistarle. Entonces, ¿qué significa que, a pesar de todo, se Le puede ver? Se ha explicado que nadie puede escuchar el trascendental nombre de Krishna, nadie puede entender Su forma trascendental, y nadie puede asimilar Sus pasatiempos trascendentales; no es posible. Entonces, ¿cómo es que se Le puede ver y entender? Los sentidos de aquel que ha sido instruido en el servicio devocional y ofrece servicio al Señor, se purifican poco a poco de la contaminación material. Cuando los sentidos están purificados, esa persona puede ver, entender, escuchar, etc. La purificación de los sentidos materiales y la percepción de la forma, el nombre y las cualidades trascendentales de Krishna se combinan juntos en una palabra, pratyag-aksaja, que aquí aparece.
+VERSO 34
+niriksatas tasya yayav asesa-
+siddhesvarabhistuta-siddha-margah
+akarnayan patra-rathendra-paksair
+uccaritam stomam udirna-sama
+</p>
+<p class='vspace'>niriksatah tasya—mientras miraba; yayau—Él Se fue; asesa—todas; siddha- isvara—las almas liberadas; abhistuta—glorifican; siddha-margah—el camino al mundo espiritual; akarnayan—oyendo; patra-ratha-indra—de Garuda (rey de las aves); paksaih—con las alas; uccaritam—vibrados; stomam—himnos; udirna- sama—que forman el Sama Veda.
+TRADUCCIÓN
+Mientras el sabio se quedaba mirándolo, el Señor Se alejó por el sendero que lleva a Vaikuntha, un sendero que glorifican todas las grandes almas liberadas. El sabio se quedó escuchando mientras el batir de las alas de Garuda, el portador del Señor, difundía la vibración de los himnos que forman la base del Sama Veda.
+SIGNIFICADO
+En las Escrituras védicas se declara que las dos alas de Garuda, el ave trascendental que lleva al Señor a todas partes, son dos divisiones del Sama Veda denominadas brhat y rathantara. Garuda actúa como portador del Señor; por eso se considera que es el príncipe trascendental de todos los transportadores. Garuda comenzó a emitir con sus dos alas la vibración del Sama Veda, que los grandes sabios cantan para pacificar al Señor. Brahma, Siva, Garuda y otros semidioses adoran al Señor con poesía selecta, y los grandes sabios Le adoran con los himnos de las Escrituras védicas, como los Upanisads y el Sama Veda. El devoto escucha esas declamaciones del Sama Veda siempre que Garuda, otro gran devoto del Señor, bate sus alas.
+Aquí se afirma claramente que el sabio Kardama se puso a mirar el sendero que siguió el Señor al ser llevado a Vaikuntha. De este modo se confirma que el Señor desciende de Su morada, Vaikuntha, en el cielo espiritual, y que Garuda Le transporta. Los trascendentalistas corrientes no adoran el camino que lleva a Vaikuntha. Sólo aquellos que ya están liberados del cautiverio material pueden volverse devotos del Señor. Aquellos que no están liberados del cautiverio material no pueden entender el trascendental servicio devocional. En la Bhagavad- gita se afirma claramente: yatatam api siddhanam. Hay muchas personas que están tratando de alcanzar la perfección esforzándose por liberarse del cautiverio material, y aquellos que realmente están liberados reciben el nombre de brahma- bhutas o siddhas. Solamente los siddhas, las personas liberadas del cautiverio material, pueden volverse devotos. Esto se confirma también en la Bhagavad-gita: Cualquiera que se ocupe en el proceso de conciencia de Krishna, el servicio devocional, está ya liberado de la influencia de las modalidades de la naturaleza material. Aquí se confirma también que quienes adoran el sendero del servicio devocional son las personas liberadas, no las almas condicionadas. El alma condicionada no puede entender el servicio devocional del Señor. Kardama Muni era un alma liberada que vio al Señor Supremo en persona, directamente. No cabe duda de que estaba liberado, y por eso pudo ver a Garuda llevando al Señor camino a Vaikuntha, y pudo escuchar el batir de sus alas vibrando el sonido de Hare Krishna, la esencia del Sama Veda.
+VERSO 35
+atha samprasthite sukle
+kardamo bhagavan rsih
+aste sma bindusarasi
+tam kalam pratipalayan
+</p>
+<p class='vspace'>atha—después; samprasthite sukle—cuando el Señor Se hubo ido; kardamah— Kardama Muni; bhagavan—el muy poderoso; rsih—sabio; aste sma—permaneció; bindu-sarasi—a orillas del lago Bindu-sarovara; tam—aquel; kalam—tiempo; pratipalayan—en espera.
+TRADUCCIÓN
+Después de la partida del Señor, el venerable sabio Kardama permaneció a orillas del Bindu-sarovara en espera del momento anunciado por el Señor.
+VERSO 36
+manuh syandanam asthaya
+satakaumbha-paricchadam
+aropya svam duhitaram
+sa-bharyah paryatan mahim
+</p>
+<p class='vspace'>manuh—Svayambhuva Manu; syandanam—en la carroza; asthaya—habiendo montado; satakaumbha—hecha de oro; paricchadam—la cubierta exterior; aropya—poniendo en él; svam—a su propia; duhitaram—hija; sa-bharyah—junto con su esposa; paryatan—viajando por todo; mahim—el globo.
+TRADUCCIÓN
+Svayambhuva Manu montó en su carroza, decorada con adornos de oro, en compañía de su esposa. Subió también con ellos a su hija, y comenzó a viajar por toda la Tierra.
+SIGNIFICADO
+El emperador Manu, como gran gobernante del mundo, pudo haber delegado en un representante la tarea de buscar un esposo adecuado para su hija, pero como sentía por ella el amor que un padre debe sentir, salió personalmente de su estado en una carroza de oro, acompañado sólo de su esposa, para buscarle un marido adecuado.
+VERSO 37
+tasmin sudhanvann ahani
+bhagavan yat samadisat
+upayad asrama-padam
+muneh santa-vratasya tat
+</p>
+<p class='vspace'>tasmin—en ésa; su-dhanvan—¡oh, gran arquero Vidura!; ahani—en el día; bhagavan—el Señor; yat—el cual; samadisat—predicho; upayat—llegó; asrama- padam—a la santa ermita; muneh—del sabio; santa—completados; vratasya— cuyos votos de austeridad; tat—aquél.
+TRADUCCIÓN
+¡Oh, Vidura!, llegaron a la ermita del sabio, que acababa de completar sus votos de austeridad en el mismo día que el Señor había predicho.
+VERSOS 38-39
+yasmin bhagavato netran
+nyapatann asru-bindavah
+krpaya samparitasya
+prapanne 'rpitaya bhrsam
+</p>
+<p class='vspace'>tad vai bindusaro nama
+sarasvatya pariplutam
+punyam sivamrta-jalam
+maharsi-gana-sevitam
+</p>
+<p class='vspace'>yasmin—en el cual; bhagavatah—del Señor; netrat—del ojo; nyapatan— cayeron; asru-bindavah—lágrimas; krpaya—por compasión; samparitasya—que estaba abrumado; prapanne—hacia el alma entregada (Kardama); arpitaya— situado sobre; bhrsam—extremadamente; tat—aquel; vai—en verdad; bindu- sarah—lago de lágrimas; nama—llamado; sarasvatya—del río Sarasvati; pariplutam—rebosante; punyam—santa; siva—auspiciosa; amrta—néctar; jalam—agua; maha-rsi—de grandes sabios; gana—por multitudes; sevitam— servidos.
+TRADUCCIÓN
+El santo lago Bindu-sarovara, que rebosa con las aguas del río Sarasvati, era un lugar frecuentado por multitudes de sabios eminentes. Sus santas aguas no solamente eran auspiciosas, sino tan dulces como el néctar. Se le dio el nombre de Bindu-sarovara porque allí habían caído lágrimas de los ojos del Señor, debido a sus intensos sentimientos de compasión hacia el sabio que había buscado Su protección.
+SIGNIFICADO
+Kardama emprendió austeridades para conseguir la misericordia sin causa del Señor, y cuando el Señor llegó allí, sintió tanta compasión que derramó lágrimas de placer, que formaron el Bindu-sarovara. Por esa razón, los grandes sabios y los doctos eruditos adoran el Bindu-sarovara, pues, según la filosofía de la Verdad Absoluta, el Señor y las lágrimas de Sus ojos no son diferentes. Al igual que las gotas de transpiración caídas del dedo gordo del pie del Señor formaron el sagrado Ganges, las lágrimas de los trascendentales ojos del Señor formaron el Bindu-sarovara. Ambos son entidades trascendentales y reciben la adoración de grandes sabios y eruditos. Aquí se describe el agua del Bindu-sarovara como sivamrta-jala. Siva significa «que cura». Cualquiera que beba el agua del Bindu-sarovara se curará de todas las enfermedades materiales; de igual manera, cualquiera que se bañe en el Ganges se aliviará también de todas las enfermedades materiales. Grandes eruditos y autoridades aceptan estas afirmaciones, y todavía, incluso en esta caída era de Kali, se actúa en conformidad con ellas.
+VERSO 40
+punya-druma-lata-jalaih
+kujat-punya-mrga-dvijaih
+sarvartu-phala-puspadhyam
+vana-raji-sriyanvitam
+</p>
+<p class='vspace'>punya—piadosos; druma—de árboles; lata—de plantas trepadoras; jalaih— con bosquecillos; kujat—emitiendo chillidos; punya—piadosos; mrga—animales; dvijaih—con aves; sarva—en todas; rtu—las estaciones; phala—en frutas; puspa— en flores; adhyam—ricos; vana-raji—de huertos de árboles; sriya—con la belleza; anvitam—adornado.
+TRADUCCIÓN
+Las riberas del lago eran un vergel de plantas trepadoras y árboles piadosos, ricos en frutas y flores de todas las estaciones, que brindaban refugio a las aves y animales piadosos, que emitían diversos chillidos. La belleza de los bosquecillos de árboles silvestres adornaba el lago.
+SIGNIFICADO
+Aquí se afirma que el Bindu-sarovara estaba rodeado de aves y árboles piadosos. Al igual que en la sociedad humana hay diversas clases de hombres, virtuosos y piadosos unos, impíos y pecadores otros, también entre los árboles y las aves existen los píos y los impíos. Se consideran impíos los árboles que no producen buenas frutas ni flores, y son impías aquellas aves que, como los cuervos, son muy desagradables. No había en los alrededores del Bindu-sarovara ni una sola ave ni un solo árbol que fueran impíos. Todos los árboles daban frutas y flores, y todas las aves cantaban las glorias del Señor: Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/Hare Rama, Hare Rama, Rama Rama, Hare Hare.
+VERSO 41
+matta-dvija-ganair ghustam
+matta-bhramara-vibhramam
+matta-barhi-natatopam
+ahvayan-matta-kokilam
+</p>
+<p class='vspace'>matta—rebosantes de júbilo; dvija—de pájaros; ganaih—en bandadas; ghustam—resonaba; matta—embriagadas; bhramara—de abejas; vibhramam— vagando; matta—enloquecidos; barhi—de pavos reales; nata—de danzarines; atopam—orgullo; ahvayat—llamándose entre sí; matta—alegres; kokilam—cucos.
+TRADUCCIÓN
+En el paraje resonaban las notas de pájaros rebosantes de júbilo. Las abejas vagaban embriagadas, y los pavos reales, ebrios, danzaban llenos de orgullo. Cucos alborozados se llamaban unos a otros.
+SIGNIFICADO
+Aquí se describe la belleza de los agradables sonidos que se escuchaban en el lago Bindu-sarovara. Las abejas negras zumbaban embriagadas por la miel. Los pavos reales, como actores y actrices, danzaban llenos de júbilo, y los felices cucos llamaban a sus parejas con bellos sonidos.
+VERSOS 42-43
+kadamba-campakasoka-
+karañja-bakulasanaih
+kunda-mandara-kutajais
+cuta-potair alankrtam
+</p>
+<p class='vspace'>karandavaih plavair hamsaih
+kurarair jala-kukkutaih
+sarasais cakravakais ca
+cakorair valgu kujitam
+</p>
+<p class='vspace'>kadamba—flores kadamba; campaka—flores campaka; asoka—flores asoka; karañja—flores karañja; bakula—flores bakula; asanaih—con árboles asana; kunda—kunda; mandara—mandara; kutajaih—y con árboles kutaja; cuta-potaih—con jóvenes árboles de mango; alankrtam—adornado; karandavaih—con patos karandava; plavaih—con plavas; hamsaih—con cisnes; kuraraih—con águilas pescadoras; jala-kukkutaih—con pájaros acuáticos; sarasaih—con grullas; cakravakaih—con pájaros cakravaka; ca—y; cakoraih—con pájaros cakora; valgu—agradables; kujitam—vibraciones sonoras de los pájaros.
+TRADUCCIÓN
+Ýrboles floridos, como el kadamba, campaka, asoka, karañja, bakula, asana, kunda, mandara, kutaja y árboles jóvenes de mango, adornaban el lago Bindu- sarovara. Llenaban el aire las agradables notas de los patos karandava, los plavas, cisnes, águilas pescadoras, pájaros acuáticos, grullas, cakravakas y cakoras.
+SIGNIFICADO
+A la mayoría de los árboles, frutas y aves de los entornos del lago Bindu-sarovara que aquí se mencionan, no podemos encontrarles su equivalente en español. Todos los árboles nombrados son muy piadosos, pues pueden producir hermosas flores aromáticas, como las campaka, kadamba y bakula. Los dulces sonidos de los pájaros acuáticos y de las grullas hacían de los alrededores del lago un lugar sumamente agradable, y creaban una atmósfera espiritual muy adecuada.
+VERSO 44
+tathaiva harinaih krodaih
+svavid-gavaya-kuñjaraih
+gopucchair haribhir markair
+nakulair nabhibhir vrtam
+</p>
+<p class='vspace'>tatha eva—así mismo; harinaih—por ciervos; krodaih—por jabalíes; svavit— por puercos espines; gavaya—un animal salvaje muy parecido a la vaca; kuñjaraih—por elefantes; gopucchaih—por mandriles; haribhih—por leones; markaih—por monos; nakulaih—por mangostas; nabhibhih—por ciervos almizcleros; vrtam—rodeado.
+TRADUCCIÓN
+En sus orillas abundaban los ciervos, jabalíes, puercos espines, gavayas, elefantes, mandriles, leones, monos, mangostas y ciervos almizcleros.
+SIGNIFICADO
+El ciervo almizclero no se encuentra en todos los bosques, sino únicamente en lugares como el Bindu-sarovara. Siempre está embriagado por el aroma del almizcle que segrega su ombligo. La gavaya, la variedad de vaca aquí citada, tiene un penacho de pelo en el extremo de la cola. Ese penacho de pelo se utiliza como abanico en la adoración de Deidades en los templos. Las gavayas reciben a veces el nombre de camaris, y se consideran muy sagradas. En la India quedan todavía gitanos, mercaderes nómadas, que prosperan comerciando con kasturi (almizcle) y con los penachos de pelo de las camaris. La demanda de esos artículos por parte de las clases elevadas de la población hindú es grande, y el negocio continúa aún hoy en las grandes ciudades y poblaciones de la India.
+VERSOS 45-47
+pravisya tat tirtha-varam
+adi-rajah sahatmajah
+dadarsa munim asinam
+tasmin huta-hutasanam
+</p>
+<p class='vspace'>vidyotamanam vapusa
+tapasy ugra-yuja ciram
+natiksamam bhagavatah
+snigdhapangavalokanat
+tad-vyahrtamrta-kala-
+piyusa-sravanena ca
+</p>
+<p class='vspace'>pramsum padma-palasaksam
+jatilam cira-vasasam
+upasamsritya malinam
+yatharhanam asamskrtam
+</p>
+<p class='vspace'>pravisya—entrando; tat—en aquel; tirtha-varam—el mejor de los lugares sagrados; adi-rajah—el primer rey (Svayambhuva Manu); saha-atmajah—junto con su hija; dadarsa—vio; munim—al sabio; asinam—sentado; tasmin—en la ermita; huta—ofreciendo oblaciones; huta-asanam—al fuego sagrado; vidyotamanam— brillando resplandecientemente; vapusa—de su cuerpo; tapasi—en penitencia; ugra—terriblemente; yuja—dedicado al yoga; ciram—durante mucho tiempo; na—no; atiksamam—muy demacrado; bhagavatah—del Señor; snigdha— afectuosa; apanga—oblicua; avalokanat—de la mirada; tat—de Él; vyahrta—de las palabras; amrta-kala—como la Luna; piyusa—el néctar; sravanena—por oír; ca—y; pramsum—alto; padma—flor de loto; palasa—pétalo; aksam—ojos; jatilam—mechones enmarañados; cira-vasasam—vestido con harapos; upasamsritya—habiéndose acercado; malinam—desaseado; yatha—como; arhanam—gema; asamskrtam—sin pulir.
+TRADUCCIÓN
+Entrando con su hija en aquel lugar tan sagrado y acercándose al sabio, Svayambhuva Manu, el primer monarca, lo vio sentado en su ermita, cuando acababa de propiciar al fuego sagrado vertiendo oblaciones en él. Su cuerpo era muy brillante; aunque estaba ocupado desde hacía mucho tiempo en austeras penitencias, no estaba demacrado, pues el Señor había vuelto hacia él Su afectuosa mirada, y además había escuchado el néctar que fluye de las palabras del Señor, semejantes a la Luna. El sabio era alto, de ojos grandes como los pétalos del loto, y tenía los cabellos enredados sobre la cabeza. Se vestía con harapos. Svayambhuva Manu se acercó y vio que estaba un tanto sucio, como una gema sin pulir.
+SIGNIFICADO
+Ésa es la descripción de un brahmacari-yogi. Por la mañana, el primer deber del brahmacari que busca la elevación espiritual es huta-hutasana, ofrecer oblaciones en sacrificio al Señor Supremo. Aquellos que practican brahmacarya no pueden dormir hasta las siete o las nueve de la mañana. Deben levantarse muy temprano, por lo menos hora y media antes de la salida del Sol, y ofrecer oblaciones o, en esta era, cantar el santo nombre del Señor, Hare Krishna. Como nos recuerda el Señor Caitanya: kalau nasty eva nasty eva nasty eva gatir anyatha: En esta era no hay otro camino, no hay otro camino, no hay otro camino, que el canto del santo nombre del Señor. El brahmacari debe levantarse temprano por la mañana y, después de adoptar su postura, debe cantar el santo nombre del Señor. La propia fisonomía del sabio delataba que había emprendido grandes austeridades; eso distingue a quien está observando brahmacarya, el voto de celibato. Quien no vive así manifiesta los signos de la lujuria en su rostro y en su cuerpo. La palabra vidyotamanam indica que su cuerpo mostraba el aspecto de un brahmacari. Ése es el certificado de aquel que ha emprendido grandes austeridades en yoga. Un borracho, fumador o mujeriego nunca es apto para practicar el yoga. Los yogis generalmente estan muy delgados, porque no viven en situaciones cómodas, pero Kardama Muni no estaba demacrado, pues había visto personalmente a la Suprema Personalidad de Dios. Aquí la palabra snigdha- pangavalokanat significa que fue lo bastante afortunado como para ver personalmente al Señor Supremo. Tenía un aspecto sano, porque había recibido las nectáreas vibraciones sonoras de los labios de loto de la Personalidad de Dios. Lo mismo ocurre con aquel que escucha la vibración sonora trascendental del santo nombre del Señor, Hare Krishna: su salud mejora también. Hemos visto en la práctica mejorar su salud a muchos brahmacaris y grhasthas conectados con la Asociación Internacional para la Conciencia de Krishna, y cómo sus rostros han cobrado un nuevo lustre. Es esencial que el brahmacari ocupado en progresar espiritualmente tenga un aspecto muy sano y brillante. La comparación del sabio con una gema sin pulir es muy apropiada. Aunque una gema acabada de extraer de la mina tiene un aspecto basto, eso no disminuye su brillo. De la misma manera, Kardama, aunque no estaba bien vestido y su cuerpo no estaba bien limpio, causaba la misma impresión que una joya.
+VERSO 48
+athotajam upayatam
+nrdevam pranatam purah
+saparyaya paryagrhnat
+pratinandyanurupaya
+</p>
+<p class='vspace'>atha—entonces; utajam—a la ermita; upayatam—se acercó; nrdevam—el monarca; pranatam—se postró; purah—ante; saparyaya—con honor; paryagrhnat —le recibió; pratinandya—saludándole; anurupaya—que corresponde a la posición de un rey.
+TRADUCCIÓN
+Al ver que el monarca había ido a su ermita y se postraba ante él, el sabio le saludó bendiciéndole y le recibió con el honor que merecía.
+SIGNIFICADO
+El emperador Svayambhuva Manu no solamente se acercó a la choza de hojas secas del eremita Kardama, sino que, además, le ofreció reverencias respetuosas. Por su parte, el eremita tenía el deber de ofrecer bendiciones a los reyes que solían visitar su ermita en la jungla.
+VERSO 49
+grhitarhanam asinam
+samyatam prinayan munih
+smaran bhagavad-adesam
+ity aha slaksnaya gira
+</p>
+<p class='vspace'>grhita—recibido; arhanam—el honor; asinam—sentado; samyatam—guardó silencio; prinayan—deleitando; munih—el sabio; smaran—recordando; bhagavat— del Señor; adesam—la orden; iti—así; aha—habló; slaksnaya—dulce; gira—con una voz.
+TRADUCCIÓN
+Después de recibir las atenciones del sabio, el rey se sentó y guardó silencio. Trayendo a su memoria las instrucciones del Señor, Kardama habló entonces al rey de la siguiente manera, deleitándole con sus dulces acentos.
+VERSO 50
+nunam cankramanam deva
+satam samraksanaya te
+vadhaya casatam yas tvam
+hareh saktir hi palini
+</p>
+<p class='vspace'>nunam—seguramente; cankramanam—el viaje; deva—¡oh, señor!; satam—a los virtuosos; samraksanaya—para proteger; te—tú; vadhaya—para matar; ca—y; asatam—a los demonios; yah—la persona que; tvam—tú; hareh—de la Suprema Personalidad de Dios; saktih—la energía; hi—puesto que; palini—protectora.
+TRADUCCIÓN
+Tu viaje, ¡oh, señor!, seguramente tiene la finalidad de proteger a los virtuosos y matar a los demonios, pues tú personificas la energía protectora de Sri Hari.
+SIGNIFICADO
+Según muchas Escrituras védicas, especialmente según las historias del Srimad-Bhagavatam y de los Puranas, los reyes piadosos de la antigüedad tenían por costumbre recorrer sus reinos para proteger a los ciudadanos piadosos y para castigar o matar a los impíos. A veces cazaban animales en los bosques para practicar el arte de matar, pues sin esa práctica no podrían matar a los indeseables. Para los ksatriyas es lícito incurrir en ese tipo de violencia, porque tienen el deber de usar la violencia con buenos fines. Aquí se mencionan claramente dos términos: vadhaya, «para matar», y asatam, «a los indeseables». La energía protectora del rey y la energía del Señor Supremo se consideran equivalentes. En la Bhagavad-gita (4.8), el Señor dice: paritranaya sadhunam vinasaya ca duskrtam. El Señor desciende para proteger a los piadosos y matar a los demonios. Por lo tanto, la potencia para proteger a los piadosos y matar a los demonios o indeseables es directamente una energía del Señor Supremo, y se considera que el rey o la cabeza ejecutiva del Estado poseen esa energía. En esta era es muy difícil encontrar a un jefe de estado de esas características, experto en matar a los indeseables. Los jefes de estado modernos se sientan cómodamente en sus palacios y tratan, sin motivo alguno, de matar a las personas inocentes.
+VERSO 51
+yo 'rkendv-agnindra-vayunam
+yama-dharma-pracetasam
+rupani sthana adhatse
+tasmai suklaya te namah
+</p>
+<p class='vspace'>yah—tú, que; arka—del Sol; indu—de la Luna; agni—de Agni, el dios del fuego; indra—de Indra, el señor del cielo; vayunam—de Vayu, el dios del viento; yama— de Yama, el dios del castigo; dharma—de Dharma, el dios del comportamiento piadoso; pracetasam—y de Varuna, el dios de las aguas; rupani—las formas; sthane—cuando es necesario; adhatse—tú adoptas; tasmai—a Él; suklaya—al Señor Visnu; te—a ti; namah—reverencias.
+TRADUCCIÓN
+Cuando es necesario, tú haces de dios del Sol, de dios de la Luna, de Agni, el dios del fuego; de Indra, el señor del paraíso; de Vayu, el dios del viento; de Yama, el dios del castigo; de Dharma, el dios del comportamiento piadoso; y de Varuna, el dios que gobierna las aguas. ¡Toda reverencia a ti, que no eres otro que el Señor Visnu!
+SIGNIFICADO
+Como el sabio Kardama era un brahmana y Svayambhuva era un ksatriya, no era de esperar que el sabio ofreciese reverencias al rey, porque su posición social era más elevada. Sin embargo, le ofreció reverencias porque Svayambhuva Manu, en su posición de manu, rey y emperador, era el representante del Señor Supremo. El Señor Supremo es adorable para todos, sean brahmanas, ksatriyas o sudras. Como representante del Señor Supremo, el rey era digno de las reverencias respetuosas de todos.
+VERSOS 52-54
+na yada ratham asthaya
+jaitram mani-ganarpitam
+visphurjac-canda-kodando
+rathena trasayann aghan
+</p>
+<p class='vspace'>sva-sainya-carana-ksunnam
+vepayan mandalam bhuvah
+vikarsan brhatim senam
+paryatasy amsuman iva
+</p>
+<p class='vspace'>tadaiva setavah sarve
+varnasrama-nibandhanah
+bhagavad-racita rajan
+bhidyeran bata dasyubhih
+</p>
+<p class='vspace'>na—no; yada—cuando; ratham—en el carruaje; asthaya—habiendo montado; jaitram—victorioso; mani—de joyas; gana—con adornos; arpitam—guarnecido; visphurjat—tañendo; canda—un temible sonido, apropiado para castigar a criminales; kodandah—arco; rathena—con la presencia de ese carro; trasayan— amenazando; aghan—a todos los delincuentes; sva-sainya—de tus soldados; carana—con los pies; ksunnam—marcando el paso; vepayan—haciendo temblar; mandalam—el globo; bhuvah—de la Tierra; vikarsan—dirigiendo; brhatim— gran; senam—ejército; paryatasi—tú patrullas; amsuman—el brillante Sol; iva— como; tada—entonces; eva—ciertamente; setavah—códigos religiosos; sarve— todos; varna—de varnas; asrama—de asramas; nibandhanah—obligaciones; bhagavat—por el Señor; racitah—creados; rajan—¡oh, rey!; bhidyeran—las romperían; bata—¡ay!; dasyubhih—los granujas.
+TRADUCCIÓN
+Si tú no montases en tu victorioso carruaje enjoyado, cuya simple presencia es una amenaza para los malvados, si no hicieses oír el implacable sonido de tu arco, y si no viajases por el mundo como el brillante Sol, a la cabeza de un gran ejército cuyo paso marcial hace temblar el globo terráqueo, los granujas y sinvergüenzas romperían todas las leyes morales que rigen los varnas y los asramas creados personalmente por el Señor.
+SIGNIFICADO
+Un rey responsable tiene el deber de proteger las órdenes sociales y espirituales de la sociedad humana. Las órdenes espirituales se dividen en cuatro asramas —brahmacarya, grhastha, vanaprastha y sannyasa—, y las órdenes sociales, atendiendo al trabajo y las cualidades, las constituyen los brahmanas, los ksatriyas, los vaisyas y los sudras. Estas órdenes sociales, conforme a los diversos niveles de trabajo y cualificación, se describen en la Bhagavad-gita. Por desgracia, la falta de reyes responsables que den la necesaria protección, ha convertido ahora el sistema de órdenes sociales y espirituales en un sistema de castas hereditario. Pero ese sistema no es el verdadero. Se entiende por sociedad humana aquella sociedad que está progresando hacia la iluminación espiritual. La palabra arya designaba a los sectores más avanzados de la sociedad humana; arya se refiere a aquellos que están progresando. La pregunta, entonces, es: «¿Qué sociedad está progresando?». Progreso no significa crear «necesidades» materiales innecesaria- mente y desperdiciar así la energía humana en una sobrecarga de supuestas comodidades materiales. El verdadero progreso es el progreso hacia la iluminación espiritual, y la civilización aria era aquella comunidad que perseguía ese objetivo. Los hombres inteligentes, los brahmanas, de los que Kardama Muni es un ejemplo, se ocupaban del cultivo de la espiritualidad, y los ksatriyas, como el emperador Svayambhuva, gobernaban el país y comprobaban que las condiciones para la iluminación espiritual fuesen ideales. El rey tiene el deber de viajar por todo el país y velar por que todo esté en orden. La civilización hindú basada en los cuatro varnas y asramas se deterioró cuando fue colonizada por extranjeros, pues éstos no siguieron la civilización de varnasrama. De este modo, el sistema varnasrama ha degenerado ahora en el sistema de castas.
+Aquí se confirma que la institución de cuatro varnas y cuatro asramas es bhagavad-racita, que significa «diseñada por la Suprema Personalidad de Dios». Esto se confirma también en la Bhagavad-gita: catur-varnyam maya srstam. El Señor dice que la institución de cuatro varnas y cuatro asramas «fue creada por Mí». Nada creado por el Señor puede ser cancelado o cubierto. Las divisiones de varnas y asramas continuarán existiendo, sea en su forma original o en su forma degradada, pero como fueron creadas por el Señor, la Suprema Personalidad de Dios, no pueden desaparecer. Son como el Sol, una creación de Dios, y por ello subsistirán. Tapado por las nubes o en un cielo despejado, el Sol continuará existiendo. Algo parecido ocurre con el sistema de varnasrama: cuando se degrada, parece un sistema de castas hereditario, pero en toda sociedad hay una clase de hombres inteligentes, una clase militar, una clase mercantil y una clase obrera. Cuando la cooperación entre esas comunidades se regula conforme a los principios védicos, hay paz y avance espiritual. Pero el sistema de castas se degrada cuando hay odios, abuso de autoridad y desconfianza mutua, y, como aquí se dice, se crea un estado de cosas deplorable. En la actualidad, el mundo entero está en esa condición deplorable debido a tantos intereses creados. La causa está en la degeneración de las cuatro castas de varnas y asramas.
+VERSO 55
+adharmas ca samedheta
+lolupair vyankusair nrbhih
+sayane tvayi loko 'yam
+dasyu-grasto vinanksyati
+</p>
+<p class='vspace'>adharmah—iniquidad; ca—y; samedheta—prosperaría; lolupaih—que simplemente van tras el dinero; vyankusaih—sin ser controlados; nrbhih—por hombres; sayane tvayi—cuando tú te tiendas a descansar; lokah—el mundo; ayam—este; dasyu—por los malvados; grastah—atacado; vinanksyati—perecerá.
+TRADUCCIÓN
+Si dejases de pensar en la situación del mundo, la iniquidad prosperaría en él, pues los que únicamente andan tras el dinero no encontrarían oposición. El mundo perecería ante el ataque de esos malvados.
+SIGNIFICADO
+Debido a que la división científica de cuatro varnas y cuatro asramas está desapareciendo, el mundo entero está siendo gobernado por indeseables sin preparación religiosa, política ni de organización social, y está en una situación deplorable. La institución de cuatro varnas y cuatro asramas cuenta con principios educativos para los distintos tipos de hombres. De la misma manera que modernamente se necesitan ingenieros, médicos y electricistas, que reciben su educación en diversas instituciones científicas, antiguamente las clases sociales más elevadas, es decir, la clase intelectual (los brahmanas), la clase gobernante (los ksatriyas), y la clase mercantil (los vaisyas), también recibían una educación adecuada. La Bhagavad-gita explica los deberes de los brahmanas, ksatriyas, vaisyas y sudras. Sin esa educación, el que nace en una familia brahmana o ksatriya pretende ser brahmana o ksatriya por derecho de nacimiento, aunque ejecute los deberes de un sudra. Esas indebidas pretensiones convierten el sistema científico de órdenes sociales en un sistema de castas, degradando por completo el sistema original. Debido a esto, hoy en día la sociedad es un caos, y no hay en ella ni paz ni prosperidad. Aquí se afirma claramente que, sin la vigilancia de un rey fuerte, hombres impíos y sin las cualidades necesarias, pretenderán formar parte de un determinado nivel social, y eso hará que todo el orden social perezca.
+VERSO 56
+athapi prcche tvam vira
+yad-artham tvam ihagatah
+tad vayam nirvyalikena
+pratipadyamahe hrda
+</p>
+<p class='vspace'>atha api—a pesar de todo esto; prcche—yo pregunto; tvam—a ti; vira—¡oh, valiente rey!; yat-artham—el propósito; tvam—tú; iha—aquí; agatah—hayas venido; tat—eso; vayam—nosotros; nirvyalikena—sin ahorrar esfuerzos; pratipadyamahe—cumpliremos; hrda—de todo corazón.
+TRADUCCIÓN
+A pesar de todo esto, ¡oh, valiente rey!, yo te pregunto por el propósito de tu visita. Sea lo que sea, no ahorraremos esfuerzos en satisfacerlo.
+SIGNIFICADO
+Cuando alguien va de visita a casa de un amigo, debe entenderse que le lleva algún fin específico. Kardama Muni pudo comprender que un rey tan importante como Svayambhuva, aunque viajase para inspeccionar la situación de su reino, debía tener algún propósito especial para ir a su ermita. Así pues, se dispuso a satisfacer el deseo del rey. En la antigüedad era costumbre que los sabios visitasen a los reyes y que los reyes visitasen a los sabios en sus ermitas; ambos se alegraban de cumplir los propósitos del otro. Esa relación recíproca se denomina bhakti-karya. Hay un verso que describe muy bien la relación de mutuo beneficio entre el brahmana y el ksatriya (ksatram dvijatvam). Ksatram significa «la orden real», y dvijatvam significa «la orden brahmínica». Ambas órdenes se beneficiaban mutuamente. La orden real protegía a los brahmanas para favorecer el progreso espiritual de la sociedad, y los brahmanas daban a la orden real sus valiosas instrucciones sobre cómo elevar gradualmente a los ciudadanos y al estado en la perfección espiritual.
+Así terminan los significados de Bhaktivedanta del Capítulo Vigésimo Primero del Canto Tercero del Srimad-Bhagavatam, titulado «Conversación entre Manu y Kardama».
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on August 30, 2012, at 11:02 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

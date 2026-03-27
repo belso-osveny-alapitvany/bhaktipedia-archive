@@ -1,0 +1,815 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Cosmología en Juicio </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : pierre_st_clair - RSS Feed'
+      href='index.php-n=pierre_st_clair.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=pierre_st_clair.cosmolog%c3%ada_en_juicio' method='get'><input type='hidden' name='n' value='pierre_st_clair.cosmología_en_juicio' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Cosmología en Juicio "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=pierre_st_clair.cosmolog%C3%ADa_en_juicio-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=enciclopedia.pierre_st_clair.html'>Pierre St. Clair</a></h5>
+<hr />
+<div class='vspace'></div><h5>Índice</h5>
+<hr />
+<ul><li><a class='createlinktext' href='index.php-n=pierre_st_clair.Mito_de_la_creaci%C3%B3n-action=edit.html'>Mito de la creación</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.El_universo_en_1980-action=edit.html'>El universo en 1980</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.Las_leyes_del_universo-action=edit.html'>Las leyes del universo</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.En_el_estrado-action=edit.html'>En el estrado</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.La_gran_falacia-action=edit.html'>La gran falacia</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.Una_teoria_de_todo-action=edit.html'>Una teoria de todo</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_7-action=edit.html'>cosmologia 7</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_8-action=edit.html'>cosmologia 8</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_9-action=edit.html'>cosmologia 9</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_10-action=edit.html'>cosmologia 10</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_11-action=edit.html'>cosmologia 11</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_12-action=edit.html'>cosmologia 12</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_13-action=edit.html'>cosmologia 13</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_14-action=edit.html'>cosmologia 14</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_15-action=edit.html'>cosmologia 15</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_16-action=edit.html'>cosmologia 16</a>
+</li><li><a class='createlinktext' href='index.php-n=pierre_st_clair.cosmologia_17-action=edit.html'>cosmologia 17</a>
+</li></ul><div class='vspace'></div><h1>Introducción</h1>
+<p>Ninguna parte de este libro puede ser reproducida en alguna forma ni por cualquier medio, incluyendo el almacenamiento de la información y sistemas de 
+recuperación, sin el permiso escrito del autor.
+</p>
+<p class='vspace'>Por Qué Escribí Este Libro 
+</p>
+<p class='vspace'>Cuando era niño le pregunté a mi mamá, “¿De dónde vengo?” Ella trató de explicar cómo un hombre y una mujer tienen relaciones sexuales. Eso sonaba realmente “¿Por qué alguien haría eso?” Le pregunte. Para los padres esta es una pregunta difícil de responder. Desde el punto de vista de un adulto es algo fácil de comprender, pero para un niño es algo incomprensible. Ellos, o lo  aceptan tal y 
+como se les dice, o piensan que suena como una locura.
+</p>
+<p class='vspace'>Los niños son tan curiosos. Poco después, ellos preguntan acerca de la creación en un sentido más amplio. “¿De dónde proviene todo?” A esta pregunta se le da una respuesta fácil: “Todo evolucionó en el transcurso del tiempo.” O, “Todo proviene 
+</p>
+<p class='vspace'>de Dios.” 
+</p>
+<p class='vspace'>A pesar de tener en mente las mejores intenciones, los padres y los líderes 
+</p>
+<p class='vspace'>religiosos a menudo fallan en responder las preguntas importantes. Muchos niños 
+</p>
+<p class='vspace'>no se convencen de lo que les dicen.
+</p>
+<p class='vspace'>Cuando somos adolescentes cuestionamos las respuestas. Deseamos saber por 
+</p>
+<p class='vspace'>qué a las personas buenas les suceden cosas malas, o por qué a las personas malas 
+</p>
+<p class='vspace'>les pasan cosas buenas. Durante la guerra, las madres de ambos bandos le oran a 
+</p>
+<p class='vspace'>Dios para que sus hijos regresen a casa. En ambos bandos hay hijos que no 
+</p>
+<p class='vspace'>regresan. 
+</p>
+<p class='vspace'>Los jóvenes piensan por sí mismos. Mi hermana no se creyó eso de que venimos 
+</p>
+<p class='vspace'>de Dios. Ella se volvió atea. Yo tampoco me lo creí, pues yo pensé que tanto los 
+</p>
+<p class='vspace'>ateos como los teístas eran fanáticos, ya que de ninguna de las dos cosas existe 
+</p>
+<p class='vspace'>evidencia. Entonces me volví agnóstico.
+</p>
+<p class='vspace'>Yo realmente tenía preguntas acerca del significado de la vida. ¿Por qué estamos 
+</p>
+<p class='vspace'>todos aquí y cuál es el propósito de todo? Para satisfacer mis inclinaciones 
+</p>
+<p class='vspace'>intelectuales y fidedignas yo requería de respuestas completas. 
+</p>
+<p class='vspace'>En 1980 yo estaba fascinado con la serie de televisión llamada Cosmos. El 
+</p>
+<p class='vspace'>reconocido astrónomo estadounidense Carl Sagan nos llevó por un viaje a través 
+</p>
+<p class='vspace'>del universo para descubrir sus secretos. A mí me cayó bien, pues él era sensato, 
+</p>
+<p class='vspace'>lógico y seguro de sí mismo. Sus explicaciones eran sistemáticas, verosímiles y 
+</p>
+<p class='vspace'>demostrables. Esa fue la manera en que él presentó la moderna comprensión 
+</p>
+<p class='vspace'>científica del universo.
+</p>
+<p class='vspace'>Mi visita a Londres en abril del 2011 fue un  punto decisivo en mi búsqueda de 
+</p>
+<p class='vspace'>respuestas. Me estaba quedando donde unos amigos, quienes en lo mejor de la  
+</p>
+<p class='vspace'>tradición de la hospitalidad británica, al llegar me ofrecieron té y una agradable 
+</p>
+<p class='vspace'>conversación. Al ver que me encontraba cansado, ellos me mostraron dónde podía 
+</p>
+<p class='vspace'>descansar después de mi largo viaje.
+</p>
+<p class='vspace'>El cuarto tenía una repisa de madera oscura que era del alto y el ancho de toda la 
+</p>
+<p class='vspace'>pared y estaba llenó de libros; realmente era una verdadera biblioteca. Por antojo, 
+</p>
+<p class='vspace'>miré los títulos. Un título llamó mi atención: The Goldilocks Enigma –El Enigma 
+</p>
+<p class='vspace'>de Ricitos de Oro-.
+</p>
+<p class='vspace'>Tal vez la palabra “enigma” le hablo a mi propia búsqueda de respuestas. A 
+</p>
+<p class='vspace'>medida que hojeaba por las páginas, el autor, el físico británico Dr. Paul Davies, les 
+</p>
+<p class='vspace'>revelaba a los lectores un problema que ha desconcertado a los cosmólogos desde 
+</p>
+<p class='vspace'>los años 60s.
+</p>
+<p class='vspace'>La ciencia ha descubierto que el universo está ajustado de manera tan fina en 
+</p>
+<p class='vspace'>cada uno de los detalles que incluso los ajustes más leves en las leyes de la 
+</p>
+<p class='vspace'>naturaleza significaría que la vida, tal y como la conocemos, nunca podría haber 
+</p>
+<p class='vspace'>surgido. Dicho de otra manera, todo en el cosmos está “perfectamente como debe 
+</p>
+<p class='vspace'>ser para sustentar la vida; algo similar a lo que ricitos de oro descubrió en la casa 
+</p>
+<p class='vspace'>de los tres osos.  
+</p>
+<p class='vspace'>Wow! ¿Por qué nuestro universo está hecho a la medida y con tanta precisión 
+</p>
+<p class='vspace'>como para que la vida surja? Me quedé despierto leyendo casi toda la noche. Mi 
+</p>
+<p class='vspace'>deseo de saber había sido re-encendido. Tuve una apreciación renovada por el 
+</p>
+<p class='vspace'>poder que tiene la ciencia para proporcionar ideas y explicaciones. Mis 
+</p>
+<p class='vspace'>pensamientos retornaron a mi propia aventura de descifrar los misterios de la vida. 
+</p>
+<p class='vspace'>Yo estaba emocionado.
+</p>
+<p class='vspace'>Mi primera inclinación fue volver a ver la serie Cosmos. Me conseguí los DVD’s y 
+</p>
+<p class='vspace'>me embarqué en un segundo viaje por el tiempo y el espacio con el Profesor Sagan. 
+</p>
+<p class='vspace'>Después de leer The Goldilocks Enigma –El Enigma de Ricitos de Oro- y de ver 
+</p>
+<p class='vspace'>Cosmos, surgieron muchas preguntas. 
+</p>
+<p class='vspace'>Me embarque en un viaje para examinar a fondo los datos científicos que 
+</p>
+<p class='vspace'>explican la realidad y el origen del universo. Necesitaba obtener hechos verdaderos, 
+</p>
+<p class='vspace'>al encontrar afirmaciones ilógicas y extravagantes en el estudio de cada uno de los 
+</p>
+<p class='vspace'>relatos de la creación.
+</p>
+<p class='vspace'>Desde tiempo inmemorial, cada civilización y cultura tuvo una historia acerca de 
+</p>
+<p class='vspace'>la creación. Es curioso que las consideremos mitos, – a  excepción de la nuestra. 
+</p>
+<p class='vspace'>Las ideas acerca de quiénes somos y de dónde venimos son importantes. Ellas 
+</p>
+<p class='vspace'>influyen sobre nuestras acciones. Utilizamos nuestra comprensión del pasado para 
+</p>
+<p class='vspace'>tomar decisiones en el presente y crear el futuro que deseamos tener mañana. 
+</p>
+<p class='vspace'>Las culturas antiguas siempre pensaban que su propia historia de la creación era 
+</p>
+<p class='vspace'>correcta, y así nosotros estamos igual de confiados de que nuestra historia 
+</p>
+<p class='vspace'>científica es la correcta. En cada tradición, mi propio sistema de creencias siempre 
+</p>
+<p class='vspace'>es el que mejor suena.
+</p>
+<p class='vspace'>En la actualidad tenemos acceso a todas las historias que nos precedieron acerca 
+</p>
+<p class='vspace'>de la creación. Al público en general le gusta las historias con pinceladas gruesas y 
+</p>
+<p class='vspace'>personajes valientes. El relato científico de la creación que es enseñado en los 
+</p>
+<p class='vspace'>colegios y universidades también es una historia, –una historia basada en la 
+</p>
+<p class='vspace'>ciencia–, pero no es más que una historia.
+</p>
+<p class='vspace'>La mayoría de los físicos están dispuestos a admitir que lo que sabemos hoy en 
+</p>
+<p class='vspace'>día probablemente será corregido de manera considerable en un futuro. Sin 
+</p>
+<p class='vspace'>embargo, la sociedad no prospera basándose en incertidumbres. Cuando el relato 
+</p>
+<p class='vspace'>científico de la creación es dicho en la forma de una narración, o historia, se filtra, 
+</p>
+<p class='vspace'>hacia los colegios y el público en general, en la forma de una trama concreta, 
+</p>
+<p class='vspace'>coherente. Se quita casi toda la incertidumbre, si no es que toda. Por lo tanto, el 
+</p>
+<p class='vspace'>relato de la creación es presentado como un hecho que tiene que ser aprendido, en 
+</p>
+<p class='vspace'>vez de ideas que tienen que ser exploradas.  
+</p>
+<p class='vspace'>Contrario a la creencia popular, en la actualidad la cosmología y la certidumbre no 
+</p>
+<p class='vspace'>se encuentran en sincronía. Tampoco son uniformes dentro de todo el ámbito que 
+</p>
+<p class='vspace'>abarca nuestro universo. No todas las explicaciones científicas son igualmente 
+</p>
+<p class='vspace'>válidas. Cuando a las explicaciones les falta certeza, pero son presentadas como 
+</p>
+<p class='vspace'>casi ciertas, se encuentran al borde de la tergiversación.
+</p>
+<p class='vspace'>El mundo de nuestra experiencia diaria es bien comprendido. El mundo sub-
+</p>
+<p class='vspace'>atómico es mucho menos conocido. Tenemos aún mucho menos comprensión de 
+</p>
+<p class='vspace'>los gigantescos agujeros negros, las galaxias lejanas, los quásares, y el origen último 
+</p>
+<p class='vspace'>de la materia y la energía. A las explicaciones acerca de estos hechos les hace falta 
+</p>
+<p class='vspace'>datos y experimentos que puedan certificarse. Éstas son en su mayoría 
+</p>
+<p class='vspace'>interpretaciones imaginativas de los datos, carentes de certeza de la experiencia 
+</p>
+<p class='vspace'>diaria en donde la ciencia nos provee con tecnología estable.
+</p>
+<p class='vspace'>La ciencia es un negocio impresionante. La tecnología como los smart phones y 
+</p>
+<p class='vspace'>las computadoras portátiles hacen maravillas, o si no lo hacen, podemos encontrar 
+</p>
+<p class='vspace'>la razón por la cual no lo hacen. La ciencia tiene muchos beneficios y aquí se 
+</p>
+<p class='vspace'>encuentra sobre terreno firme. Pero deseo saber si la historia del Big Bang del 
+</p>
+<p class='vspace'>universo verdaderamente representa la realidad, o simplemente se trata de un “no 
+</p>
+<p class='vspace'>sabemos” bien vestido. 
+</p>
+<p class='vspace'>Si el relato de la creación de la Biblia es un mito, como muchos científicos 
+</p>
+<p class='vspace'>sostienen, entonces yo también me preguntaba hasta qué punto el relato científico 
+</p>
+<p class='vspace'>podía ser también un mito de la creación. El Webster’s Online Dictionary nos 
+</p>
+<p class='vspace'>brinda la siguiente definición de mito:
+</p>
+<p class='vspace'>representaba una creencia con respecto a un hecho o fenómeno, y en el cual 
+</p>
+<p class='vspace'>a menudo se personifican las fuerzas de la naturaleza y del alma.” 
+</p>
+<p class='vspace'>Un mito de la creación es una narración de cómo comenzó todo y cómo es que 
+</p>
+<p class='vspace'>las entidades vivientes llegaron, en primera instancia, a habitar el mundo. En la 
+</p>
+<p class='vspace'>sociedad en la que éste es hablado, un mito de la creación usualmente se considera 
+</p>
+<p class='vspace'>que transmite verdades profundas. Es comprendido como una historia verdadera, 
+</p>
+<p class='vspace'>aun cuando su real existencia no se pueda verificar. 
+</p>
+<p class='vspace'>Para una persona por fuera de esa sociedad, el mismo mito tiene el significado 
+</p>
+<p class='vspace'>general de una leyenda que puede no ser verdad. Dicho de otra forma, las personas 
+</p>
+<p class='vspace'>a quienes no se les enseñó la historia desde una temprana edad a menudo no la 
+</p>
+<p class='vspace'>aceptan. Esto significa que la historia del mito no es evidente de manera intuitiva, 
+</p>
+<p class='vspace'>sino tiene que ser aprendida. Del aprendizaje sigue la transmisión, y a través de la 
+</p>
+<p class='vspace'>transmisión se originan diferentes versiones.
+</p>
+<p class='vspace'>Las versiones contradictorias de la creación no están limitadas a los cuenteros 
+</p>
+<p class='vspace'>tradicionales. Existen varias versiones de la historia que da la ciencia de la 
+</p>
+<p class='vspace'>creación, conocidas por los versados en la materia, –los físicos que están tratando 
+</p>
+<p class='vspace'>de descifrar las anomalías y los misterios del universo. Dichas discrepancias se le 
+</p>
+<p class='vspace'>ocultan al público que persiste con seguridad. Pero, ¿a qué precio?
+</p>
+<p class='vspace'>La ciencia ha aumentado considerablemente nuestra capacidad de usar y 
+</p>
+<p class='vspace'>explotar los recursos, y de destruir los mitos tradicionales. Aun así mucha gente 
+</p>
+<p class='vspace'>acepta los valores morales de la religión mucho tiempo después de que hayan 
+</p>
+<p class='vspace'>dejado de creer las visiones del mundo que representan. ¿Nos brinda la ciencia los 
+</p>
+<p class='vspace'>valores y el significado personal inherente a muchas de las explicaciones 
+</p>
+<p class='vspace'>tradicionales? 
+</p>
+<p class='vspace'>POR QUÉ DEBE LEER ESTE LIBRO
+</p>
+<p class='vspace'>Se asume que los relatos científicos se basan en la observación y evidencia. Por lo 
+</p>
+<p class='vspace'>tanto, el relato cosmológico de la creación es único, pues la autoridad no se basa en 
+</p>
+<p class='vspace'>información objetiva verificable.
+</p>
+<p class='vspace'>Los astrofísicos presentan sus ideas cosmológicas como científicas, (respaldadas 
+</p>
+<p class='vspace'>por la evidencia), cuando éstas en su mayoría son una nube de probabilidades y 
+</p>
+<p class='vspace'>advertencias. Los medios de comunicación presentan estas explicaciones como 
+</p>
+<p class='vspace'>ciencia verdadera, y el público confiado las interpreta como “relatos verdaderos”. 
+</p>
+<p class='vspace'>Hoy en día, los científicos están encontrando anomalías que no encajan en 
+</p>
+<p class='vspace'>ninguna de las teorías predominantes. Un artículo en la edición de mayo del 2014 
+</p>
+<p class='vspace'>del Scientific American, Supersymmetry and the Crisis in Physics –Super-simetría 
+</p>
+<p class='vspace'>y la Crisis de la Física-, recalca una calamidad de proporciones gigantescas.
+</p>
+<p class='vspace'>Colisionador de Hadrones], (LHC su sigla en inglés), ha descartado casi 
+</p>
+<p class='vspace'>todas las mejores versiones de la súper-simetría. Los resultados negativos 
+</p>
+<p class='vspace'>han comenzado a producir, si no una gran crisis en la física de partículas, 
+</p>
+<p class='vspace'>por lo menos un pánico generalizado.”
+</p>
+<p class='vspace'>El artículo revela que los teóricos que trabajan en la física de partículas admiten 
+</p>
+<p class='vspace'>que se encuentran en un estado de confusión. Es evidente que existe un “pánico 
+</p>
+<p class='vspace'>generalizado” de que los físicos de partículas estén colocando su atención en la 
+</p>
+<p class='vspace'>dirección equivocada.
+</p>
+<p class='vspace'>En Canadá, científicos del Perimeter Institute for Theoretical Physics (PI), 
+</p>
+<p class='vspace'>afirman que la situación actual dentro de la comunidad de la física está llena de 
+</p>
+<p class='vspace'>especulaciones absurdas, síntoma de una crisis invasiva.  El director del PI, Neil 
+</p>
+<p class='vspace'>Turok, lo expresó de la siguiente manera: “En este momento la física teórica se 
+</p>
+<p class='vspace'>encuentra en una encrucijada…De cierta manera hemos entrado a una crisis muy 
+</p>
+<p class='vspace'>profunda.”
+</p>
+<p class='vspace'>El Dr. Turok sostiene que la teoría de cuerdas y la idea de los multiversos, que 
+</p>
+<p class='vspace'>algunos teóricos promueven de manera activa son “la máxima catástrofe.” Los 
+</p>
+<p class='vspace'>periódicos, los blog posts y los foros científicos sugieren que una revisión de los 
+</p>
+<p class='vspace'>principios fundamentales puede ser la solución de la actual crisis.
+</p>
+<p class='vspace'>En ciertas ocasiones se le da un giro a los resultados que no sirven, “Pues bien, 
+</p>
+<p class='vspace'>nosotros anticipamos este resultado.” La táctica es utilizada para darles a los 
+</p>
+<p class='vspace'>experimentos credibilidad cuando la publicidad inicial acerca de un 
+</p>
+<p class='vspace'>descubrimiento proyectado fue puesto a prueba. Pero cuando los trabajos y grandes 
+</p>
+<p class='vspace'>sumas de dinero están en juego, no encontrar buenos resultados es considerado 
+</p>
+<p class='vspace'>toda una pesadilla.
+</p>
+<p class='vspace'>Las personas, creemos que la mayoría de los relatos científicos se basan en la 
+</p>
+<p class='vspace'>observación y la evidencia. Más, el relato cosmológico acerca de la creación carece 
+</p>
+<p class='vspace'>de información certificable. El énfasis se hace en filosóficas ideas, esperanzas y 
+</p>
+<p class='vspace'>aspiraciones enmascaradas como relevantes teorías. Cuando las explicaciones se 
+</p>
+<p class='vspace'>divorcian de la información comprobable se alejan de la ciencia y las varias 
+</p>
+<p class='vspace'>versiones compiten por la mayor elegancia, como si fueran concursantes de un  
+</p>
+<p class='vspace'>reinado de belleza.
+</p>
+<p class='vspace'>Este libro examina los más grandes problemas de la física como se haría en un 
+</p>
+<p class='vspace'>tribunal de justicia. Más de 64 físicos y matemáticos reconocidos presentan su 
+</p>
+<p class='vspace'>testimonio sobre la base científica de la cosmología, como si fueran llamados al 
+</p>
+<p class='vspace'>El juicio revela el peculiar hecho de que los físicos admiten que únicamente el 4 
+</p>
+<p class='vspace'>por ciento de la materia y la energía del universo es conocida. ¡Un 96 por ciento de 
+</p>
+<p class='vspace'>la materia y la energía del universo permanece siendo un oscuro misterio!
+</p>
+<p class='vspace'>Otros problemas retan la percepción que tenemos de la física. Existe una 
+</p>
+<p class='vspace'>preocupación general acerca de las teorías más importantes como el Big Bang, la 
+</p>
+<p class='vspace'>Relatividad General, la Mecánica Cuántica, La Teoría de Cuerdas, La Gravedad, el 
+</p>
+<p class='vspace'>Corrimiento al Rojo, y la Velocidad de la Luz.
+</p>
+<p class='vspace'>Los primeros capítulos comparan el relato científico de la creación del universo 
+</p>
+<p class='vspace'>con la historia de la creación tradicional. Descubrimos un secreto de la física, –el 
+</p>
+<p class='vspace'>extraordinario bío-amigable fino ajuste del universo entero.
+</p>
+<p class='vspace'>En el Capítulo Cuatro llamamos al estrado a Stephen Hawking. Repetimos su 
+</p>
+<p class='vspace'>entrevista que fue transmitida en “Larry King Live” y revisamos un panel científico 
+</p>
+<p class='vspace'>que discute el libro de Hawking The Grand Design –Diseño Grandioso-.
+</p>
+<p class='vspace'>Los Capítulos Cinco a Siete presentan un análisis detallado de la teoría de la 
+</p>
+<p class='vspace'>creación del “diseño grandioso” de Hawking. Varios científicos cuestionan y 
+</p>
+<p class='vspace'>rebaten sus puntos de vista. Nuestro fiscal identifica y evalúa las fallas en sus 
+</p>
+<p class='vspace'>argumentos.
+</p>
+<p class='vspace'>En el Capítulo Ocho veremos las matemáticas en la física moderna. Tanto los 
+</p>
+<p class='vspace'>matemáticos como los físicos revelan que muchas de las ecuaciones matemáticas 
+</p>
+<p class='vspace'>no representan el mundo real. Descubrimos que las Leyes de Newton y la Teoría de 
+</p>
+<p class='vspace'>la Relatividad de Einstein no explican qué es lo que causa la fuerza gravitacional, o 
+</p>
+<p class='vspace'>si es inherente a la materia.
+</p>
+<p class='vspace'>El Capítulo Nueve continúa examinando el asunto de la gravedad por medio de 
+</p>
+<p class='vspace'>la Mecánica Cuántica y la Teoría de Cuerdas. Estas teorías por su parte también son 
+</p>
+<p class='vspace'>incapaces de comprender a plenitud la gravedad, –la fuerza más común presente 
+</p>
+<p class='vspace'>en la naturaleza. También examinamos varias situaciones que ilustran que la 
+</p>
+<p class='vspace'>velocidad de la luz puede que no sea el límite máximo de velocidad en el universo, 
+</p>
+<p class='vspace'>contrario a lo que cree la mayoría de la gente.
+</p>
+<p class='vspace'>El Capítulo Diez revela la teoría cosmológica de que existen muchos universos, 
+</p>
+<p class='vspace'>en conjunto denominados como el Multiverso. Mi esposa dice que suena a una 
+</p>
+<p class='vspace'>marca de cereales para el desayuno, aún así prestigiosos físicos creen que existe 
+</p>
+<p class='vspace'>una infinitud de universos paralelos, donde copias de mí y de usted tienen vidas 
+</p>
+<p class='vspace'>diferentes. Se trata de una creencia pues no existen datos que confirmen estas 
+</p>
+<p class='vspace'>Después de leer acerca de los universos paralelos con copias de cada uno, el 
+</p>
+<p class='vspace'>Capítulo Once examina la cultura de Santa Claus, con la cual los niños son 
+</p>
+<p class='vspace'>engañados intencionalmente para que crean que la fábula del Polo Norte es real. 
+</p>
+<p class='vspace'>¿Por qué la sociedad lleva  a cabo un elaborado montaje para engañar a nuestros 
+</p>
+<p class='vspace'>Los Capítulos Doce y Trece examinan el dilema de Edwin Hubble, el gran 
+</p>
+<p class='vspace'>astrónomo americano quien originalmente propuso un universo en expansión 
+</p>
+<p class='vspace'>basándose en la interpretación del corrimiento al rojo. Más tarde él se retractó de 
+</p>
+<p class='vspace'>su punto de vista inicial y declaró que el corrimiento al rojo no debe ser empleado 
+</p>
+<p class='vspace'>como prueba de un universo que se expande. Pero a pesar de esto la hipótesis 
+</p>
+<p class='vspace'>original que él abandonó aún es enseñada como un hecho científico.
+</p>
+<p class='vspace'>En el Capítulo Catorce una gran cantidad de astrofísicos argumentan que no 
+</p>
+<p class='vspace'>sucedió el Big Bang. El modelo del Big Bang del universo ya no es para muchos 
+</p>
+<p class='vspace'>físicos la teoría de la creación aceptada, incluyendo Stephen Hawking. A pesar de 
+</p>
+<p class='vspace'>esto, ¡Aún es enseñada a nivel mundial como la historia científica de la creación!
+</p>
+<p class='vspace'>En el Capítulo Quince, el jurado delibera acerca de los argumentos presentados. 
+</p>
+<p class='vspace'>Después de analizar los asuntos, el Capítulo Dieciséis presenta el veredicto del 
+</p>
+<p class='vspace'>jurado. Basados en la evidencia, varios científicos reconocidos comentan acerca de 
+</p>
+<p class='vspace'>la decisión tomada.
+</p>
+<p class='vspace'>El Capítulo diecisiete evalúa las más reciente noticias en la ciencia: “Fraude en la 
+</p>
+<p class='vspace'>Literatura Científica”, el “Boson de Higgs”, y “Las Ondulaciones del Big Bang”.   
+</p>
+<p class='vspace'>La intención de este libro es investigar imparcialmente el relato científico acerca 
+</p>
+<p class='vspace'>de la creación. Esto es necesario pues la historia ha cambiado de manera 
+</p>
+<p class='vspace'>considerable a lo largo de los últimos 100 años. Por otra parte, las historias 
+</p>
+<p class='vspace'>tradicionales acerca de la creación no han cambiado. La mayoría de los científicos 
+</p>
+<p class='vspace'>las tildan de supersticiones de la era de bronce que ahora la ciencia ha descartado 
+</p>
+<p class='vspace'>mediante  evidencia fiable.
+</p>
+<p class='vspace'>En lo que respecta al Profesor de la Universidad de Oxford, Richard Dawkins, él 
+</p>
+<p class='vspace'>considera que la fe religiosa es, “fe ciega en la ausencia de evidencia. Pienso que se 
+</p>
+<p class='vspace'>trata de una creencia sin evidencia. Como científico y educador, me gusta la idea de 
+</p>
+<p class='vspace'>que creemos cosas porque existe evidencia.”1
+</p>
+<p class='vspace'>Él argumenta que verdad significa evidencia. Me gusta eso. Así que aceptemos la 
+</p>
+<p class='vspace'>premisa de Dawkins: de manera racional creemos que las cosas son ciertas debido 
+</p>
+<p class='vspace'>a que hay evidencia. Nuestro objetivo es observar que tanto se atienen a este 
+</p>
+<p class='vspace'>principio los relatos de la creación, tanto el tradicional como el moderno. El 
+</p>
+<p class='vspace'>resultado de nuestro riguroso método pondrá al descubierto profundos secretos.
+</p>
+<p class='vspace'>Dado el caso de que cada paradigma científico posee razones epistemológicas 
+</p>
+<p class='vspace'>para estar en lo cierto, la gente puede preguntarse ¿por qué ocurre el ‘cambio’? Si 
+</p>
+<p class='vspace'>todo está aparentemente bien, ¿por qué las olas siguen sacudiendo el bote?
+</p>
+<p class='vspace'>El método científico es un proceso gradual, paso a paso. Cada paso sucesivo 
+</p>
+<p class='vspace'>invalida el paso anterior– el cambio de paradigma. El tema principal de este libro 
+</p>
+<p class='vspace'>es examinar las anomalías que continúan sacudiendo el bote.
+</p>
+<p class='vspace'>Los cursos de física no enseñan anomalías. Pero si confrontamos los datos de 
+</p>
+<p class='vspace'>información anormales, tenemos que revisar nuestra comprensión. En la 
+</p>
+<p class='vspace'>actualidad tenemos que admitir que algunas de las cosas que pensábamos conocer, 
+</p>
+<p class='vspace'>(como el 96% del universo), realmente nos son desconocidas.
+</p>
+<p class='vspace'>Mi método es investigar en las revistas científicas, no en los textos académicos, 
+</p>
+<p class='vspace'>para descubrir lo que está sucediendo. Espero desafíos a la evidencia presentada. A 
+</p>
+<p class='vspace'>algunos puede que no les guste lo que voy a destapar. Ellos pueden objetar que yo 
+</p>
+<p class='vspace'>no sé nada, que tengo una agenda para exponer ciertas falacias, o que es un reporte 
+</p>
+<p class='vspace'>incompleto. Es por esta razón que dejé que los expertos hablaran.
+</p>
+<p class='vspace'>Así pues, le digo a esos críticos, “Vayan a la fuente original y debatan con ellos.”
+</p>
+<p class='vspace'>Hasta que el supuesto conocimiento sea delatado como erróneo, ideas con 
+</p>
+<p class='vspace'>información equivocada evolucionaran hasta convertirse en varios sistemas de 
+</p>
+<p class='vspace'>creencias. La cosmología de hace 100 años ya no es más un hecho. Similarmente, lo 
+</p>
+<p class='vspace'>que sabemos hoy en día, en el 2065 puede ser considerado una creencia con 
+</p>
+<p class='vspace'>información errónea. La gente del siglo 22 podría reírse de la extraña comprensión 
+</p>
+<p class='vspace'>que teníamos en el siglo 20. Esto es cierto  de una generación a otra.
+</p>
+<p class='vspace'>La famosa banda de rock, The Who, en 1965 tenía un éxito en el Top Ten con 
+</p>
+<p class='vspace'>“My Generation.” La canción le habla a una generación más vieja que no puede 
+</p>
+<p class='vspace'>comprender a la nueva. Cada generación sucesiva experimenta esto, la brecha 
+</p>
+<p class='vspace'>generacional. Pero no mucho después, la gente joven se convierte en la generación 
+</p>
+<p class='vspace'>vieja y acaban en una situación similar a la de sus padres.
+</p>
+<p class='vspace'>Aunque las personas siempre desean saber, irónicamente permanecen en la 
+</p>
+<p class='vspace'>ignorancia si es que no aceptan la información nueva y rechazan la antigua. A 
+</p>
+<p class='vspace'>menos que estén dispuestos a actualizar sus mapas de manera regular, ellos 
+</p>
+<p class='vspace'>permanecen apegados a la ignorancia, pues en la ciencia el conocimiento de ayer es 
+</p>
+<p class='vspace'>la ignorancia de hoy.
+</p>
+<p class='vspace'>Por ejemplo, los hechos, que escribí en mi examen de física en 1969, han sido 
+</p>
+<p class='vspace'>reemplazados por datos actualizados. Si en el examen de hoy diera las mismas 
+</p>
+<p class='vspace'>respuestas, yo lo perdería. Por lo tanto, poseo un título en ignorancia. Esta es la 
+</p>
+<p class='vspace'>situación de la cosmología pues  los “hechos” fluyen constantemente.
+</p>
+<p class='vspace'>Como la mayoría de las personas, los físicos no son unos santos en su servicio al 
+</p>
+<p class='vspace'>público y el respeto a la verdad. Por lo tanto mi libro examina el caso de la ciencia 
+</p>
+<p class='vspace'>exactamente como lo haría un abogado ante un tribunal de justicia.
+</p>
+<p class='vspace'>La evidencia debe estar más allá de la duda razonable en la mente de las 
+</p>
+<p class='vspace'>personas inteligentes; algo similar a los fundamentos que emplea un juez para 
+</p>
+<p class='vspace'>decidir el veredicto. Después de leer este libro el público desinformado ya no estará 
+</p>
+<p class='vspace'>desinformado. 
+</p>
+<p class='vspace'>Ahora, yo no soy un científico o un abogado. Pero sí soy un periodista 
+</p>
+<p class='vspace'>investigativo que tiene un algo de inteligencia y una pizca de sentido común, que 
+</p>
+<p class='vspace'>desea conocer que es verdad y qué es fantasía.
+</p>
+<p class='vspace'>He llevado a cabo toneladas de investigaciones y he puesto todo en perspectiva. 
+</p>
+<p class='vspace'>Yo presento las opiniones de las luminarias de la física: Copérnico, Galileo, Kepler, 
+</p>
+<p class='vspace'>Newton, Einstein, Edwin Hubble, Fred Hoyle, Carl Sagan, Richard Feynman, 
+</p>
+<p class='vspace'>Stephen Hawking, Roger Penrose, Paul Davies, Brian Greene, Max Tegmark, Sean 
+</p>
+<p class='vspace'>Carroll y otros personajes importantes.
+</p>
+<p class='vspace'>Este libro se dirige al corazón de los problemas más graves de la astrofísica. 
+</p>
+<p class='vspace'>Existe suficiente evidencia convincente, incluso para convencer a los escépticos 
+</p>
+<p class='vspace'>más intransigentes. Ellos pueden no estar de acuerdo o debatirlo; pero he brindado 
+</p>
+<p class='vspace'>los hechos, la ciencia, la historia y los análisis necesarios para que usted pueda 
+</p>
+<p class='vspace'>verlo todo en perspectiva y también comprenderlo. Usted puede que encuentre 
+</p>
+<p class='vspace'>alguna confrontación y controversia pero que harán al libro más interesante y 
+</p>
+<p class='vspace'>dramático.
+</p>
+<p class='vspace'>La gente razonable desea investigar cada característica de una controversia y 
+</p>
+<p class='vspace'>llegar a sus propias conclusiones. Me esfuerzo por brindarle toda la información 
+</p>
+<p class='vspace'>que necesite, y ponérsela justo en sus dedos, para que pueda estar informado 
+</p>
+<p class='vspace'>acerca del relato científico del universo. Una publicación balanceada siempre es 
+</p>
+<p class='vspace'>una adición valiosa a la biblioteca de una persona.
+</p>
+<p class='vspace'>Yo no presento fórmulas y ecuaciones para hacer de este un libro seco. El 
+</p>
+<p class='vspace'>propósito que tengo es informar al público, no aburrirlo. Por lo tanto, si usted 
+</p>
+<p class='vspace'>posee una inclinación hacia la información técnica, simplemente búsquela en 
+</p>
+<p class='vspace'>En  una entrevista de la Discover magazine, Lewis Thomas reveló un hecho 
+</p>
+<p class='vspace'>desconcertante:
+</p>
+<p class='vspace'>fundamentalmente equivocados.... La única pieza sólida de verdad científica 
+</p>
+<p class='vspace'>con la cual me siento completamente seguro es el hecho de que somos unos 
+</p>
+<p class='vspace'>profundos ignorantes acerca de la naturaleza...Este repentino confrontar   
+</p>
+<p class='vspace'>con la profundidad y la envergadura de la ignorancia representa la 
+</p>
+<p class='vspace'>contribución más significativa al intelecto humano de la ciencia del siglo 
+</p>
+<p class='vspace'>veinte.”2
+</p>
+<p class='vspace'>Como el periodista investigativo que soy, mi trabajo es determinar si el relato 
+</p>
+<p class='vspace'>científico en realidad es verdad. Es por esto que este libro presenta la evidencia que 
+</p>
+<p class='vspace'>convenció a Lewis Thomas de su conclusión, además de muchas más desde ese 
+</p>
+<p class='vspace'>entonces.
+</p>
+<p class='vspace'>Mi modus operandi es simplemente una misión de buscar los hechos. Usted, el 
+</p>
+<p class='vspace'>lector, se encontrará dentro del jurado. Usted juzgará el resultado y decidirá por sí
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 24, 2015, at 06:43 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

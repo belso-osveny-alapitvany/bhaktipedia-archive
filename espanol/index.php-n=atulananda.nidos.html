@@ -1,0 +1,456 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Nidos</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : atulananda - RSS Feed'
+      href='index.php-n=atulananda.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=atulananda.nidos' method='get'><input type='hidden' name='n' value='atulananda.nidos' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Nidos"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=atulananda.nidos-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=atulananda.atulananda.html'>Atulananda Acarya</a></h5>
+<hr />
+<p  style='text-align: right;'><small><a target='_blank'  class='attachlink' href='uploads/atulananda/nidos.pdf' rel='nofollow'>Descargar pdf</a></small>
+</p>
+<div class='vspace'></div><h1>Nidos</h1>
+<h3>1</h3>
+<p>Cuando las avecillas son pequeñas<br />Como latido de corazón<br />Que dejar el nido les pareciera<br />Más allá de toda expectación
+</p>
+<p class='vspace'>Llorando sólo por sus padres<br />Como si hambrientas de amor<br />¿Cuándo natura ordena y sabe:<br />Que deben volar, irse, sin contención?
+</p>
+<p class='vspace'>(¿Cuándo el ave escucha y siente voz de cielo<br />y se va sin dejar huella en su vuelo?)
+</p>
+<p class='vspace'>¿Cuándo la perra desteta a sus cachorros<br />Nacidos ciegos, temblorosos, aullantes?<br />¿Cuándo natura ordena y del todo<br />Los manda al mundo a vivir errantes?
+</p>
+<p class='vspace'>Al temeroso ternero, ¿Lo viste amando?<br />A los conejos niños, a los niños venados,<br />El monito a su madre aferrado... ¿Cuándo...<br />natura sabe y ordena el tiempo acabado?
+</p>
+<p class='vspace'>¡Cuántos nidos tejidos en sueños!<br />Se terminan, ¡todos ellos se terminan!<br />Sólo el árbol retiene el recuerdo<br />De lo que el tiempo cortó a guillotina...
+</p>
+<p class='vspace'>Mira mis manos con grilletes cortados<br />Amando a un Sol que espera por siempre<br />¡Oh el nido, los nidos dejados!<br />¡Oh Amado, que me cuesta tenerte!
+</p>
+<p class='vspace'>2
+</p>
+<p class='vspace'>Llegó un trovador a mi pueblo,<br />llegó cantando:
+</p>
+<p class='vspace'>¿Cuándo el ave escucha, siente,<br />voz de cielo,<br />Y se va sin dejar huella<br />en su vuelo?
+</p>
+<p class='vspace'>Tengo callos en mis manos, gorro de paja... 
+</p>
+<p class='vspace'>Un día, después que me miró ella:<br />Mojé la tierra,<br />Amasé el barro<br />Alcé mi choza<br />Al lado de un pozo de deseos...<br />
+Puedo hablar de jilgueros<br />Puedo hablar de rosas<br />Clavan mi recuerdo<br />A veces me destrozan
+</p>
+<p class='vspace'>No vi, perdonen, no vi<br />Que el ave canta y vuela<br />Quise retener su canto<br />En mi tierra
+</p>
+<p class='vspace'>El crimen de la jaula<br />Quise aplicar a mis sueños<br />Ellos mismos me dejaron<br />Para darme otros nuevos
+</p>
+<p class='vspace'>Mira mis manos sin grilletes:<br />Sostienen amor, libertad, esperanza<br />¡Mira al Sol que espera por siempre!<br />¡Mira Su baño de luz y gracia!
+</p>
+<p class='vspace'>3
+</p>
+<p class='vspace'>Y esos pájaros que se desearon un día<br />Y juntos juntaron paja, hilos,<br />ramitas secas, casi arriesgando la vida...<br />Y en esa primavera... armaron su nido...
+</p>
+<p class='vspace'>Así los vi en sus trabajos unidos<br />Cantando con fresca esperanza<br />Y compartir, llevando al nido, <br />Sus frutos de búsqueda y caza
+</p>
+<p class='vspace'>Un solo corazón  parecían<br />Llegando a atender el piar de sus niños<br />Y les enseñaron a volar un día<br />Poniendo en ello cuidado y cariño
+</p>
+<p class='vspace'>Los vi intentar con sus alitas pequeñas<br />Su mirar asustado ante un mundo extraño...<br />Volverse los padres verdaderas fieras<br />Si amenazaban su escaso rebaño...
+</p>
+<p class='vspace'>Y vi un día en huesos al árbol florido<br />Solo y callado el nido en sus manos<br />Porque la vida abraza, y luego da olvido<br />A esos mismos que una vez se amaron
+</p>
+<p class='vspace'>Cuando era un niño me preguntaba<br />Al ver y escuchar tales nidos de amor:<br />¿Cuánto duran?........... ¿Porqué se acaban?<br />Y recuerdo el haber sentido dolor
+</p>
+<p class='vspace'>Mas aún me espera el jardín del camino<br />Y aún espera mi corazón el amor<br />Mas es distinto hoy mi saber, y oro y digo:<br />¡Señor dame Tu nido, quita mi ilusión!
+</p>
+<p class='vspace'>4
+</p>
+<p class='vspace'>El trovador volvió a mi pueblo<br />Con esta canción:
+</p>
+<p class='vspace'>¿Cuánto duran...... Porqué se acaban:<br />las ilusiones del corazón?
+</p>
+<p class='vspace'>Yo le serví una fiesta<br />De mi cosecha de amor<br />Le dije: ven embriágate<br />Con el nombre del Señor
+</p>
+<p class='vspace'>Ese era un loco<br />¡Más loco que yo!<br />Y la jarra de mi vino<br />Me la arrebató
+</p>
+<p class='vspace'>Hoy cantamos bajo el árbol<br />Cantamos cantamos los dos<br />Hasta que vimos ambos:<br />¡Idas las penas, ido el dolor!
+</p>
+<p class='vspace'>5 
+</p>
+<p class='vspace'>Y cantó el trovador embriagado:<br />¿Sabes porqué el mundo dejo?<br />Porque lo veo, ¡y no soy amargado!<br />Como un océano de defectos
+</p>
+<p class='vspace'>Amas tú la semilla, el brote, la flor...<br />Mas uno mata al otro y los traga la tierra...<br />Recién nacido... niño... joven........hoy:<br />¿Dónde han ido esos cuerpos que tuviera?
+</p>
+<p class='vspace'>¿Hay acaso seguridad de algo?<br />¿No ves nos rodea un terrible silencio?<br />¿Qué dice tu ser, quién eres, qué valgo?<br />¿No callan la tierra, los astros, los muertos?
+</p>
+<p class='vspace'>¿No calla aquel, aquella que te acompaña?<br />¿No callan tus vidas venidas de lejos?<br />¿El mar, el bosque, los astros...  no callan?<br />¿Si no porqué anciano niño, sigues perplejo?
+</p>
+<p class='vspace'>¿No es profundo, insondable tu pecho?<br />¿No son tus pasos de errante solitario?<br />¿No ves silencio cerca, lejos; fuera, dentro?<br />¿No ves la tumba en que nos han sellado?
+</p>
+<p class='vspace'>Veo en la noche las estrellas calladas<br />Escucho alarmado el lenguaje del océano<br />Hablan mil seres al cruzarse miradas<br />¡No hay amor, no hay unión entre ellos...!
+</p>
+<p class='vspace'>Escucho la sinfonía nocturna de grillos<br />Saludar la mañana a los pájaros<br />¿Qué dicen?... No cala el sonido<br />El origen, el fin, de mis perdidos pasos
+</p>
+<p class='vspace'>¿Quién comprendió al nacer mi llanto?<br />¿Adónde se van las tantas figuras?<br />¡Tantas formas, artes, sueños, trabajos!<br />¡Es nacer y correr......... a la sepultura!
+</p>
+<p class='vspace'>Con su luz embriaga el sol al universo<br />Su ausencia crea un coro luminoso de estrellas<br />Está solo el hombre, la bestia, el sentimiento...<br />Dime si acaso, al callar, algo queda...
+</p>
+<p class='vspace'>La tristeza de un amor que no existe<br />Abraza el ser en este páramo sombrío<br />Crea rimas, canta, llora, se resiste:<br />A aceptar este vertiginoso río
+</p>
+<p class='vspace'>¿Es  verdad lo que digo o miente<br />Mi sentir cuando el mundo observo...?<br />¿No lo ves, transido de muerte,<br />No ves el sueño herido..... el deseo?
+</p>
+<p class='vspace'>¿Quién da alabanza a la vida?<br />¿Quién morir no quisiera?<br />Todo placer que termina<br />En pena, se metarfosea 
+</p>
+<p class='vspace'>Nunca se sacia el rico<br />No termina de aprender el sabio<br />¡Son llevados al crucifijo<br />Aquellos que han amado!
+</p>
+<p class='vspace'>No complace el padre al hijo<br />No se complacen los amantes<br />Ni salud, ni juventud, ni vicios<br />¡No complacen, no complacen!
+</p>
+<p class='vspace'>Cada uno lleva su pena callada<br />Y teme el desenlace futuro<br />Se atan y desatan amarras<br />Hasta ser expulsados del mundo
+</p>
+<p class='vspace'>“La insatisfacción a todos penetra”<br />¡A esto todo resumo!<br />Dime amigo: si es locura, si piensas<br />Que sólo he dicho absurdos
+</p>
+<p class='vspace'>¡Oh trovador, cantor de poemas!<br />No sirven las ciencias que aprendiste<br />Es verdad que calla el cielo y la tierra<br />A quienes el egoísmo aflige
+</p>
+<p class='vspace'>No olvides el canto que te di<br />Te enseñará el lenguaje del alma<br />Profundiza, ve dentro, tendrás allí:<br />La voz del Amado que no calla
+</p>
+<p class='vspace'>¡Oh infinito ser! ¡De andar eterno!<br />No juzgues el existir por una chispa<br />Porque creces te quejas, ¿no estás viendo<br />Que el alma encarcelada se te agita?
+</p>
+<p class='vspace'>¿Dijo el Señor una vez siquiera<br />que este mundo es placentera morada?<br />Prueba hoy tu conciencia la pena<br />A algo superior siendo invitada
+</p>
+<p class='vspace'>Rechaza el joven sus juegos de niño<br />El mismo beso de su madre le incomoda<br />“¡Busca más! ¡busca más!”- clama el latido<br />de un corazón que trascendencia añora
+</p>
+<p class='vspace'>No te frenes en el vértigo del mundo<br />Su dolor es bendición que nos incita<br />A buscar en el alma más profundo<br />Lo que el ser en reclamo nos grita
+</p>
+<p class='vspace'>Todo corre en precipitada carrera<br />Devorados de atrás por la no existencia<br />Corres a lo eterno sin saberlo siquiera<br />El entender negado, de la trascendencia
+</p>
+<p class='vspace'>Entonces tuve que hablarle  de Goura<br />De quien unió en Su canto a mil almas<br />Gritaba exaltado: ¡Gloria, gloria!<br />Y llorando vio: ¡que todo bailaba!
+</p>
+<p class='vspace'>6
+</p>
+<p class='vspace'>¿Sabes?... quiero darle mi amor a Dios<br />porque todos en el mundo me fallaron<br />Y peor que eso: antes les fallé yo<br />¡Oh Señor, corrige a este desalmado!
+</p>
+<p class='vspace'>De niño y joven fui egoísta y petulante<br />Lleno de ignorancia y lleno de lujuria<br />Quería llevarme el mundo por delante<br />¡Oh Señor, corrige a esta inútil criatura!
+</p>
+<p class='vspace'>Fui indolente y cruel con los que me amaron<br />Pensaba que ese era el deber de ellos<br />Nunca los serví, nunca fui de su agrado<br />¡Oh Señor corrígeme y hazme bueno!
+</p>
+<p class='vspace'>No entiendo las lides del amor<br />No entiendo porqué se conocen los hombres<br />El mundo es oscuro, un traidor,<br />¡Oh Señor, corrige a este desvalido y pobre!
+</p>
+<p class='vspace'>Muestras mi rostro en mi propia historia<br />Me haces comer mi sembrada cicuta<br />Recurro a Ti para aliviar mi memoria<br />¡Oh Señor corrige a éste, que no amó nunca!
+</p>
+<p class='vspace'>Tu misticismo maneja el acontecer del mundo<br />Que no se sostiene sin soles ni estrellas,<br />Sin mente, sin energías, sin sentires profundos,<br />¿Esperas que este pequeño, sin Ti, lo comprenda?
+</p>
+<p class='vspace'>Canto impaciente el santo nombre<br />Para que se despeje el batallón de nubes<br />Y de nuevo Te digo: mira a este pobre<br />Al que lo agobia tanta pesadumbre
+</p>
+<p class='vspace'>Nunca Te dije esto pero la ilusión me clava<br />una ardiente viga en mi pecho<br />Es imposible, ¡no hay forma de sacarla!<br />¿Dejarás desfallecer a este inepto?
+</p>
+<p class='vspace'>Nunca Te dije pero ahora veo muchos errores<br />Que horrorosos cometí siendo cruel<br />¿Cómo haré? Quiero que se me perdonen<br />¿Será posible si me acerco a Tus pies?
+</p>
+<p class='vspace'>Veo sonreír el rostro de Tu deidad graciosa<br />El gesto de Su mano dice: ánimo, nada temas<br />¿Cuánto esperaré, Señor, hasta que generosa<br />Sea pura mi alma y se convierta en mi ofrenda?
+</p>
+<p class='vspace'>7
+</p>
+<p class='vspace'>Srila Bhakativinoda me enseñó a orar y por eso digo:<br />Nunca hice algo bueno en mi vida<br />Cuando Te oro, es para beneficiarme a mí mismo<br />¡Oh Señor! ¿Me matarás, quitarás mi perfidia? 
+</p>
+<p class='vspace'>¿Me cambiarás de acero a fuego?<br />¿De egoísta a generoso?<br />¿De hipócrita a sincero?<br />¡Oh Señor! ¿Serás piadoso?
+</p>
+<p class='vspace'>Sólo recorrí mis vidas haciendo muchos pecados<br />¿Tendrás paciencia y tolerancia para perdonarme?<br />Quiero cantar Tu nombre, buscar lo sagrado,<br />Acabar conmigo, entre los Tuyos contarme...
+</p>
+<p class='vspace'>Tú eres un océano de gracia infinita<br />Nadie imagina la belleza de Tu excelencia<br />Tu sol da ánimo para que exista<br />en mí la esperanza de Tu presencia
+</p>
+<p class='vspace'>8
+</p>
+<p class='vspace'>Este sentir vino y el trovador vino<br />Vino con un canto nuevo<br />Similar al mío<br />Y dijimos:
+</p>
+<p class='vspace'>Queremos dar las gracias y así pagar nuestras deudas<br />Que no se pagan ni con discursos ni dinero<br />Sólo se pagan con la actitud sincera<br />De sentir y servir por lo que debemos
+</p>
+<p class='vspace'>Cuando nací molesté al universo entero<br />Y escribió mi vida la pluma del cielo<br />“estas son tus cualidades, estos tus defectos”<br />los sabios que leen me lo dijeron 
+</p>
+<p class='vspace'>Un astro me dio premios, otro me dio castigo<br />Sus voces de luz indicaron mi camino<br />Pensando en mi bien, desde que fui un niño,<br />Me cuidaron los sabios, la tierra, los libros...
+</p>
+<p class='vspace'>Le debo a todos los que mi bien desearon<br />A todos los que un día me dieron su afecto<br />A todos los que para mi bien me hablaron<br />Aun si no fueron de profundos consejos
+</p>
+<p class='vspace'>Le debo a los animales mi Guru me dijo<br />A los antepasados, al mar, las aves y el río<br />A la brisa, al árbol, al pasto, que en sacrificio<br />Para el bien de los demás han vivido
+</p>
+<p class='vspace'>No puedo vivir sin el gusano<br />No puedo vivir sin enemigos<br />Sin la nube, sin el rayo,<br />Esto, del sabio aprendimos
+</p>
+<p class='vspace'>Camino como un gran sinvergüenza<br />Pisando una prestada tierra<br />¿Cuándo - exclamo con impaciencia-<br />pagará este infame sus deudas?
+</p>
+<p class='vspace'>Canta el santo nombre este endeudado<br />Que sufre el dolor de ser explotador<br />¡Oh Gurudev! De ti ni hablo<br />¿Se puede pagar tu regalo de amor?
+</p>
+<p class='vspace'>¿Cuándo tendré la gracia de ser visto con buenos ojos<br />Por esas grandes almas que se santifican<br />Que en el intento de hacer el bien a los otros<br />Llenan sus vidas de sabiduría infinita?
+</p>
+<p class='vspace'>9
+</p>
+<p class='vspace'>Debajo de esta fría e indolente capa que nos separa y cubre<br />Está el plano del amor donde las almas hermanas danzan de alegría<br />Unidas en Dios, en el éxtasis del prema que en sambandha las une<br />¡Oh Señor! Canto Tu nombre con la esperanza de alcanzar ese nivel un día
+</p>
+<p class='vspace'>Ahí no habrá ningún concepto mezquino, nada que su dulce relación enturbie<br />La mente pura, guardada por un corazón devoto, sin explotación ni egoísmo<br />¿Cuándo me darás esa sanidad, ese recurrir a Ti por toda certidumbre?<br />¿Cuándo al cantar Tu nombre sentiré la  música de Tu amor armonizando\\ abismos?
+</p>
+<p class='vspace'>¡Mahananda! ¡Mahananda! Cantaba una voz una mañana<br />¡Oh éxtasis Supremo! ¡Todo el amor Te pertenece!<br />Hazte dueño, hazte dueño de esta pobre alma<br />A la que el tormento del mundo enflaquece
+</p>
+<p class='vspace'>Cuando perciba esa realidad de la que los sabios hablan<br />Todo será positivo y estará endulzado por el océano del néctar<br />Ahora las dualidades, el yo y lo mío, me amargan<br />Y mi envidia de Ti no permite que yo te pertenezca
+</p>
+<p class='vspace'>Cuando el nombre y los santos me den su gracia<br />Todo estará claro ese virtuoso día<br />El mundo me vence con su colosal falacia<br />Sólo en Ti espera reposo mi vida
+</p>
+<p class='vspace'>Cuando el sol salga Tú alumbrarás todo<br />Y mi amor vencerá mis penas, temores y enemigos<br />Ese amor me lo darás Tú de algún modo<br />Cuando por algún servicio Me sonrías complacido
+</p>
+<p class='vspace'>Busco Tus pies de loto desde un sinnúmero de vidas<br />Tú sabes esto y Tus sabios enseñan lo mismo<br />Permite que esta vez mi alma rendida<br />No vea aparte de Ti ningún otro camino
+</p>
+<p class='vspace'>10
+</p>
+<p class='vspace'>Tú estás ahí, aunque no puedo percibirte<br />¡Océano de amor! Los santos Te descubren<br />¡Sólo Dios basta! ¡Sólo Dios! Siendo sabios insisten<br />Sin permitir que mi espíritu se disturbe 
+</p>
+<p class='vspace'>Mira dentro, en lo profundo, y ama:<br />Las miserias con que el mundo te remece<br />Vienen sus ráfagas para avivar la llama<br />De un amor puro que olvidado adormece
+</p>
+<p class='vspace'>Cuando hayas sufrido los tormentos de la vida<br />Frustrados tus sueños, acabada tu empresa<br />Sentirás cómo tu interior da cabida<br />A una esperanza que en la ceniza empieza 
+</p>
+<p class='vspace'>La brisa de Su flauta avivará tu sentimiento<br />Y encontrarás realidades que no muestran los ojos<br />¡Oh, descubrirás mil verdades en un solo momento!<br />¡Verás el mundo como un inmenso despojo!
+</p>
+<p class='vspace'>El corazón puro te mostrará las realidades del éxtasis<br />Que escapan a las garras de los sucios sentidos<br />¡Sólo ese amor posee el néctar por el cual te remeces!<br />¡Sólo el amor da razón a los que existimos!
+</p>
+<p class='vspace'>11
+</p>
+<p class='vspace'>Y como ven<br />Después de un lejano tiempo<br />Volvió el trovador a mi pueblo<br />Vino diciendo:
+</p>
+<p class='vspace'>¡Sólo Dios basta! ¡Sólo Dios!<br />¡El mundo es sólo despojo!
+</p>
+<p class='vspace'>Él había vivido muchas penas<br />Él había mojado sus ojos<br />“Hemos olvidado el Amor”<br />Dijimos entre nosotros
+</p>
+<p class='vspace'>No queremos ciencias, no queremos poder,<br />Ni dinero, ni fama, ni sexo<br />Queremos libertad, amar, saber:<br />Lo que el Supremo ha dispuesto
+</p>
+<p class='vspace'>Que Tu voluntad nos conduzca como a títeres<br />¡Muévenos por Tu océano con el viento de Tu voz!<br />Tu realidad es la que vale, ¡Ven!, ¡venciste!<br />¡Ocupa nuestro trono! ¡oh benigno Señor!
+</p>
+<p class='vspace'>Acabado todo valor en este mundo inmundo<br />Con mente, cuerpo, inteligencia, venimos a Ti<br />Derrotado y por fin alegre el corazón desnudo<br />Quiere ser llenado con espíritu servil
+</p>
+<p class='vspace'>¡Oh Señor! Termina esta ilusión que nos hiere a todos<br />Que tanto a Ti y a nosotros nos hace sufrir<br />¡Alégrate Señor mirando cómo:<br />Oramos por el tesoro de podernos rendir!
+</p>
+<p class='vspace'>12
+</p>
+<p class='vspace'>El trovador estaba más sabio<br />Tras pasar por la escuela de la vida<br />Con sus frutos dulces y amargos<br />De alegres y agobiantes días<br />Y dijo:
+</p>
+<p class='vspace'>Tres clases de condiciones vemos<br />Por las que pasan distintos hombres<br />Unos sólo sufren por no haber sido buenos<br />Otros gozan la vida habiendo sido mejores<br />
+Y otros sufren aun habiendo sido buenos<br />Porque el Señor quiere darles frutos más altos<br />Que no dan los árboles de estos cielos<br />Sino que es la miel de Su amoroso abrazo...
+</p>
+<p class='vspace'>Casi ni creí lo que escuchaba<br />Que estuviese hablando de modo tan sabio<br />Lo abracé y le dije: ¡habla! ¡habla!<br />Y él continuó emocionado:
+</p>
+<p class='vspace'>Celoso, cuando el Señor nos llama<br />Destruye todo para dar Su presencia<br />Decidido entonces Su amor no calla<br />Y muy resuelto Su voluntad nos muestra
+</p>
+<p class='vspace'>Pero Su amor no es limitado ni egoísta<br />Como el gran sol su luz y calor se expande<br />Todo abraza, cuanto llega a su vista,<br />Y aun más lejos hasta a perdidos valles
+</p>
+<p class='vspace'>Todos danzan de alegría al sentirse amados<br />Por ese océano de bienaventuranza pura<br />Árboles, aves, bestias, hombres, vueltos hermanos<br />Crecen en un amor entre sí en un canto que es locura
+</p>
+<p class='vspace'>¿Cuándo llegará el día en que mi cruel corazón despierte<br />a esa realidad que nos trajo el bendito Gouranga?<br />¡Oh, enfermo de vanidad y egoísmo mi ser adolece<br />y no puede recoger el fruto natural del alma!
+</p>
+<p class='vspace'>Es por amor que renuncia el que renuncia<br />Para probar y dar un amor mayor que no se frustra<br />Como mezquinos y duros los ven aquellos<br />Que sin dar el suyo buscan amores ajenos
+</p>
+<p class='vspace'>Hay un rico que a los demás empobrece<br />Y hay otro rico que a los demás enriquece<br />El santo sabio eleva a otros a sus alturas<br />El pedante elogia sus logros mas a nadie ayuda
+</p>
+<p class='vspace'>Todo lo que el Señor nos pide es para nuestro beneficio<br />Pues Él puede prescindir de nosotros como el sol de la chispa<br />“Ven a Mí, ven a Mí...” nos dice invitándonos a Su hogar infinito<br />Y nos muestra desde el primer paso el sendero a Su dicha
+</p>
+<p class='vspace'>“Ven, sentirás lo que Yo siento<br />Vivirás en el abrigo de Mi regazo<br />Es frío el mundo, indolente, muerto...<br />Quiero darte el éxtasis que acompaña Mis pasos...”
+</p>
+<p class='vspace'>“Escucha esto, ser creado para el propósito de Mi amor:<br />Placeres, poder, conocimiento... pertenecen al mundo inferior<br />Te di eso para que sustentes tu vida mientras tanto<br />no puedas beber el elixir del sagrado canto, del nombre de Dios
+</p>
+<p class='vspace'>Repite Mi nombre con el anhelo del amor<br />Suplica prema en la repetición de cada palabra<br />Sé un mendigo de la riqueza de tu corazón<br />Que ni un otro bien en los tres mundos valga
+</p>
+<p class='vspace'>Quiero darle la aurora a tu vida<br />Y quitar las estrellas que lloran en tu noche<br />Que ni una pena mengue tu alegría<br />Pues ese don doy a quienes Me conocen
+</p>
+<p class='vspace'>Amigo solitario de tantos caminos luminosos<br />Me hablaste en tantas lenguas, Me pediste tantas cosas<br />¡Ay que Me duele y cansa Tu andar quejumbroso!<br />Álzate, sube, ven al hogar, ¿olvidas que sólo en Mí se reposa?”
+</p>
+<p class='vspace'>Así dijo el trovador de muchas trovas<br />Embriagado con muy refinado vino<br />Y cantamos y cantamos en mi alcoba<br />¡Hasta sentir que el sol ya había salido!
+</p>
+<p class='vspace'>13
+</p>
+<p class='vspace'>La alegría del hombre es como una estrella<br />Que brilla tímida y débil en el océano nocturno<br />Que en cualquier momento la devora la pena<br />Del sagaz e imprevisible horroroso mundo
+</p>
+<p class='vspace'>Mas tiene su natural encanto sin duda<br />Pues el cielo de la noche junto a otras decora<br />Pero más bella es su reina llamada luna<br />Mas su círculo se esfuma tan pronto se forma
+</p>
+<p class='vspace'>Llenamos nuestros bolsillos de esas estrellas<br />Tenues brillos prestados del Sol alegría<br />Otros triunfantes de la luna se adueñan<br />Mas se les desvanece con el pasar de los días
+</p>
+<p class='vspace'>No quiero el engaño de esos brillos prestados<br />Para vivir en la noche incierta de Tu ausencia<br />El miedo corroe, el cansancio, todo es robado<br />¡Quiero el perfecto resplandor de Tu presencia!
+</p>
+<p class='vspace'>14
+</p>
+<p class='vspace'>¡Oh los devotos que aman, a ellos quiero!<br />Desde el fuero más íntimo de mi conciencia<br />Que son puros, que son sabios y austeros,<br />Que son buenos y me tendrán paciencia
+</p>
+<p class='vspace'>¡A una víbora abrazar prefiero,<br /> Antes que dejar a esos dulces santos!<br />Pues sin ellos el mundo es infierno<br />Morada de engaños, de probado espanto
+</p>
+<p class='vspace'>No es posible amar a Krsna sin ellos<br />Pues nos dan al Señor en todos sus actos<br />Hacen realidad lo que sería un sueño<br />Sin sus consejos, compañía y canto
+</p>
+<p class='vspace'>A través de ellos Krsna nos da Su corazón<br />Pues a Durvasa dijo: “Soy el corazón de Mis devotos”<br />Así lo más amado suyo nos da el Señor<br />Cuando anhelantes buscamos Sus pies de loto
+</p>
+<p class='vspace'>Queremos a Krsna pero Él nos dice:<br />Te doy aquello que Yo mismo adoro<br />Me tienes a Mí si ellos te bendicen<br />Pues con orgullo Me ocupo en sus logros
+</p>
+<p class='vspace'>Es la muestra del gran amor de Krsna<br />El darnos Sus más preciadas joyas<br />Él dice: “son más que Mi propia vida<br />Son el adorno de Mi corona
+</p>
+<p class='vspace'>Son el fruto de Mi árbol<br />Son la dulzura de Mi amor<br />¿Sin ellos cuánto valgo,<br />Cómo amo si solo estoy?
+</p>
+<p class='vspace'>¿Si solo estoy qué bueno tengo?<br />¿Si solo estoy a quién atraigo?<br />Si no tengo padres, amigos, siervos,<br />Es porque la envidia me ha rodeado
+</p>
+<p class='vspace'>¿Si todo es Uno dónde está el amor?<br />Si todo es Uno, todo es envidia<br />Por ello sirvo a Mis devotos Yo<br />¡Pues nos somos el alma y vida!”
+</p>
+<p class='vspace'>Así los busco a ellos<br />Tan difíciles de hallar como el bhakti<br />Sólo aparecen cuando un ruego<br />Sincero y ferviente se hace
+</p>
+<p class='vspace'>¡Y tantos tengo, tantos tengo!<br />¿Cómo calcular mi riqueza?<br />Por gracia suprema vinieron<br />¡Por esta alma que a vivir empieza!
+</p>
+<p class='vspace'>15	
+</p>
+<p class='vspace'>Canción especial del trovador<br />Y en un viejo baúl<br />Atacado por el musgo<br />Encontré esta canción<br />Llamando a lo más profundo:
+</p>
+<p class='vspace'>De tu noche de mil especies<br />De ameba a anciano cuaternario<br />de Brahma, sapo, rey a veces<br />De girasol, bestia miles de años<br />Cubierto por un cuerpo<br />Mente, inteligencia, ego falso<br />Por maya abatido, mal dirigidos pasos<br />En los ríos de la vida,<br />que arrastran tanto, tanto
+</p>
+<p class='vspace'>De tu noche de mil especies<br />víctima del verdugo aplauso<br />de la ciencia inconsciente<br />del karma que anuda lazos<br />de la codicia, el orgullo, el odio<br />de los mil hongos mentales<br />solitaria víctima de pasiones<br />ajena a las mil verdades<br />que se prohibe se ovacionen
+</p>
+<p class='vspace'>De tu noche de mil especies<br />ya en tu escafandra de semiconsciente\\ 
+despierta a la vida y siente<br />el latir que por ti late<br />que hay un sol, un viento compartido<br />las estrellas de la noche<br />un cerro, un peñasco, un río<br />un brillo en todos los ojos<br />de los inocentes como niños<br />sin cañones ni altavoces
+</p>
+<p class='vspace'>despierta a la vida y siente<br />el latir que por ti late<br />lava la sangre de tus dientes<br />deja tu ropa de combate<br />toma la flor herida de tus sueños<br />y dueño de tus pasiones: álzate
+</p>
+<p class='vspace'>álzate a cimas verdaderas<br />que sólo el santo alcanza<br />pisa resuelto la miseria<br />a que otros hacen alabanza<br />pisa muerte, pisa miedos,<br />pisa triunfos, fama, ego,<br />pisa: la tanta ignorancia
+</p>
+<p class='vspace'>y alza, alza vuelo<br />¿para qué tan oscuro y pequeño?
+</p>
+<p class='vspace'>canta la verdad eterna<br />que el sol lee a cada paso<br />siente la alegría interna<br />que se abre al canto en el ocaso<br />y al murmurar de tus labios<br />no le des jamás descanso<br />así cuida la semilla<br />como a una almita que le cantas<br />para que se esté tranquila<br />para que haya real esperanza
+</p>
+<p class='vspace'>bien murmura y canta<br />llama el llanto a tus ojos<br />llama el llanto y así avanza<br />avanza y termina<br />los mil pasos de la vida<br />de una vida tan antigua<br />como tu pena y la vía<br />que circunda el espacio
+</p>
+<p class='vspace'>detén tus pasos y mira<br />que puedes triunfar de veras<br />pisa muerte, pisa miserias<br />pisa noche y triunfante<br />álzate, álzate a los pies<br />de la Belleza Suprema
+</p>
+<p class='vspace'>es Él quien con amor te mira<br />te invita a Su ribera<br />te dice: 'alza, camina<br />deja esta extranjera tierra<br />que tengo para ti<br />mi amistad verdadera...'<br />y escucha escucha Su flauta<br />como suena y suena<br />por ti es que ella canta<br />porque tú no la recuerdas<br />¿porqué no la recuerdas?
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 03, 2008, at 03:09 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,613 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Revelaciones de un sabio</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_swami - RSS Feed'
+      href='index.php-n=bhaktivedanta_swami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_swami.revelaciones' method='get'><input type='hidden' name='n' value='bhaktivedanta_swami.revelaciones' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Revelaciones de un sabio"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_swami.revelaciones-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a></h5>
+<hr />
+<div class='vspace'></div><h1>Revelaciones de un sabio</h1>
+<p>Introducción
+</p>
+<p class='vspace'>Esta nueva colección que presenta la Sociedad Internacional para la Conciencia de Krishna tiene por objeto poner al alcance del mundo de habla hispana las hermosas y educativas historias de la antigua India que se encuentra en las obras de Su Divina Gracia A.C. Bhaktivedanta Swami Prabhupada. Srila Prabhupada tradujo esas obras de las antiquísimas Escrituras védicas (las más antiguas del mundo) y las explicó con la perfecta visión de un alma autorrealizada. La literatura védica es sumamente extensa y sería imposible para el atareado hombre moderno poder estudiarla toda. Sin embargo gracias a la minuciosa selección que ha hecho este gran sabio y devoto puro de Krishna podemos obtener de la lectura de sus obras el miómo beneficio que obtendríamos del estudio completo de todas las Escrituras védicas con la ventaja de no arrieógarnos a dar malas interpretaciones o a perder de vista lo que se persigue con el estudio de dicha Escritura.
+</p>
+<p class='vspace'>Srila Prabhupada no interpreta estas obras para acomodarlas a propósitos ocultos. Su sencilla vida personal alejada de las motivaciones, aspiraciones y logros materiales demuestra que su presentación tiene el znico objeto de brindar un conocimiento espiritual puro tal como él lo recibió a través de una cadena ininterrumpida de maestros que se remonta hasta el propio expositor y compilador de las Escrituras el Señor Krishna. En la más famosa de estas Escrituras, el Bhagavad-gita el Señor Krishna confirma esto:
+“Es a Mí [Krishna], a quien hay que conocer a través de todos los Vedas; en verdad Yo soy el compilador del Vedanta y el conocedor de los Vedas” (Bg. 15.15)
+</p>
+<p class='vspace'>Las historias que componen esta Colección India Mística no son mitológicas. La mayoría de los lugares en los que se desarrollaron azn existen en la India y en muchos de ellos hay monumentos con los que se conmemoran los hechos que en esta colección se describen. Pero la literatura védica también narra sucesos que ocurrieron en otros planetas y en otros universos y su comprobación está por supuesto más allá del alcance de nuestras limitades capacidades materiales. No obstante el lector cometería un grave error en creer que estas historias son producto de la imaginación fértil de algún ser humano. En todas las principales Escrituras reveladas del mundo se habla de un plano espiritual en el que mora el Ser Supremo a diferencia del plano humano o plano material. En las Escrituras védicas encontramos la mióma información general pero además hay información más detallada acerca de cómo están construidos ambos mundos. 
+</p>
+<p class='vspace'>En efecto en ellas se explica que en el mundo material hay infinidad de universos, en cada universo hay infinidad de planetas y en todos los planetas hay vida.
+Demostrar o tan siquiera respaldar la autenticidad de las afirmaciones de los Vedas y escritos védicos 
+complementarios es tarea que está fuera de la competencia de este libro pero el lector interesado en este apasionante tema puede acudir a otras obras de Su Divina Gracia tales como el Srimad-Bhagavatam, el Bhagavad-gita, La ciencia de la autorrealización, etc; en los que mediante un estudio exhaustivo se establece la autoridad de los Vedas de un modo irrefutable.
+Los Editores.
+</p>
+<p class='vspace'>Uno
+</p>
+<p class='vspace'>El Rey Bharata se convierte en ciervo
+</p>
+<p class='vspace'>Una larga vida
+</p>
+<p class='vspace'>Maharaja Bharata era un rey de este mundo muy culto y de amplia experiencia. A pesar de que antiguamente los gobiernos eran monárquicos todos los reyes eran muy afectuosos con los ciudadanos  por lo que reinaba la tranquilidad en la sociedad.
+</p>
+<p class='vspace'>Con gran fe el rey Bharata realizó sacrificios de diversa índole y de esta manera su corazón se libró de toda contaminación. Su servicio devocional al Supremo Señor Krishna aumentaba día a día.
+</p>
+<p class='vspace'>El destino estableció que Maharaja Bharata disfrutaría de la opulencia material por un lapso de diez mil años multiplicados por mil. Al concluir ese período se retiró de la vida familiar y dividió entre sus hijos la riqueza que sus antepasados le habían legado. Luego abandonó su hogar paterno la fuente de toda opulencia y emprendió el camino hacia Pulaha-asrama situado en Hardwar (lugar de peregrinación en las márgenes del río Ganges al pie del Himalaya).
+</p>
+<p class='vspace'>Maharaja Bharata vivía solo en los jardines de Pulaha-asrama donde recogía diversas flores, ramitas y hojas de tulasi; también recogía agua del río Gandaki así como raíces frutas y tubérculos. Éstas eran sus ofrendas a la Suprema Personalidad de Dios y adorándolo así permanecía satisfecho; de esta manera su corazón se mantenía puro y no abrigaba el menor deseo por los deleites materiales. Todos sus deseos materiales se esfumaron y estando así firmemente situado, se sentia plenamente satisfecho y establecido al servicio devocional.
+</p>
+<p class='vspace'>Un gran místico
+</p>
+<p class='vspace'>Maharaja Bharata quien era un devoto muy elevado se dedicó así continuamente a servir con devoción al Señor. 
+</p>
+<p class='vspace'>Naturalmente su amor por Krishna aumentó más y más hasta derretir su corazón. En consecuencia él perdió gradualmente todo apego por los deberes regulativos. Los vellos de su cuerpo se erizaban y manifestaba todos los síntomas físicos del éxtasis; tantas lágrimas fluían de sus ojos que no podian ver nada. Así él meditaba constantemente en los rojizos pies de loto del Señor. A semejanza de un lago, su corazón en esos momentos se llenaba con el agua del amor extático. Y cuando su mente se sumergía en dicho lago se olvidaba incluso del servicio regulativo al Señor.
+Maharaja Bharata lucía muy bello: tenía una cabellera rizada y abundante, la cual siempre estaba húmeda pues se bañaba tres veces al día y se vestía con una piel de venado. Adoraba al Señor entonando los himnos del Rg Veda como el que dice: "La Suprema Personalidad de Dios está situada en el plano de la bondad pura. Él iluminaba a todo el universo y concede todas las bendiciones a Sus devotos. El Señor ha creado el universo a partir de Su propia potencia espiritual. De acuerdo con Sus deseos el Señor se hizo presente en este universo como la Superalma y en virtud de sus diversas potencias Él mantiene a todas las entidades vivientes que anhelan los goces materiales. Ofrezco mis respetuosas reverencias al Señor quien concede la inteligencia".
+</p>
+<p class='vspace'>Meditación interrumpida
+</p>
+<p class='vspace'>Un día Maharaja Bharata se sentó por unos minutos a la orilla del río Gandaki y comenzó a entonar su mantra. Estando así se acercó al río a beber una venada muy sedienta. Mientras bebía con gran satisfacción, un león que se encontraba en las proximidades rugió estruendosamente. Todas las entidades vivientes se aterrorizaron y la venada también lo escuchó. Por naturaleza la venada siempre está temerosa de ser muerta y siempre se encuentra a la defensiva así que cuando escuchó el tumultuoso rugido del león se atemorizó mucho. Mirando desesperadamente en todas direcciones y aún sin haber terminado de beber repentinamente cruzó el río. La venada estaba preñana y al saltar impulsada por el temor parió un cervatillo que cayó a las fluentes aguas del río. Después de cruzar el río, la venada negra se sintió muy triste pues se encontraba separada de su rebaño y había perdido a su crío. Más tarde, cayó en una cueva y murió instantáneamente.
+</p>
+<p class='vspace'>Mientras el gran rey Bharata se hallaba junto al río vió al cervatillo huérfano flotando aguas abajo y sintió una inmensa compasión por él. Cual un amigo sincero rescató al animalillo de la corriente y a sabiendas de su orfandad lo llevo a su asrama.
+</p>
+<p class='vspace'>Surge el afecto
+</p>
+<p class='vspace'>Con el tiempo, Maharaja Bharata se encariñó mucho con el cervatillo. Se dedicó a criarlo y alimentarlo con pasto. Se preocupaba siempre por protegerlo contra los ataques de los tigres y otros animales. Cuando el cervatillo estaba impaciente, él lo acariciaba y así siempre le brindaba a veces, hasta lo besaba de cariño. Debido a que Bharata Maharaja se apegó a la crianza del cervatillo, descuido las reglas y regulaciones conducentes al progreso de la vida espiritual y paulatinamente se fue olvidando de adorar a la Suprema Personalidad de Dios. Al cabo de unos días olvidó por completo su progreso espiritual. Cuando una persona ha desarrollado conciencia espiritual o conciencia de Krishna, por naturaleza se torna compasiva hacia todas las entidades vivientes que sufren en el mundo material. Tales personas avanzadas obviamente meditan en el sufrimiento de toda la humanidad. Sin embargo si uno desconoce el sufrimiento material de las almas caídas y se compadece solamente de su carencia de comodidades corporales como le sucedió a Maharaja Bharata tal compasión es la causa de su propia caída. Aquel que es realmente compasivo hacia la humanidad caída y sufriente, deberá tratar de elevar a la gente del plano de conciencia material al estado espiritual. En cuanto al ciervo, Maharaja Bharata se volvió muy compasivo pero olvidó que le era imposible elevar al cervatillo al plano de conciencia espiritual pues en última instancia no era sino un animal. Resultó muy peligroso que Maharaja Bharata sacrificara todos los principios regulativos sólo por cuidar a un animal. 
+</p>
+<p class='vspace'>Un apego desmedido
+</p>
+<p class='vspace'>Debido al afecto que Maharaja Bharata sentía por el ciervo terminó durmiendo, caminando, bañándose y hasta comiendo con él. De esta forma su corazón quedó prendado de afecto hacia el cervatillo. Cuando Maharaja Bharata deseaba internarse en el bosque para recoger hierba kusa, flores, leños, hojas, frutas, raices y agua temía que los perros, los chacales, los tigres y demás animales feroces pudieran matar al ciervo por lo que siempre se lo llevaba consigo. Cuando iban al bosque, a Maharaja Bharata le atraía mucho el comportamiento infantil del animal e incluso lo cargaba sobre sus hombros debido al afecto que sentía por el. Su corazón estaba tan lleno de amor por el ciervo que a veces lo ponia en su regazo o lo hacía dormir encima de él y sentia así un gran placer acariciándolo.
+</p>
+<p class='vspace'>"¿Dónde está mé ciervo?"
+</p>
+<p class='vspace'>Si Maharaja Bharata se encontraba adorando al Señor o entregado a alguna ceremonia ritual, aunque no hubiese terminado, ocasionalmente se solía parar para ver al ciervo. Lo buscaba para cerciorarse de que estuviese cómodo y si así era, su mente y corazón quedaban satisfechos y bendecía al animalillo con estas palabras: "Mi querido cervatillo que seas muy feliz en todo".
+</p>
+<p class='vspace'>Si Maharaja Bharata perdía de vista al ciervo se perturbaba mucho, como el avaro que se siente muy infeliz al perder la riqueza alcanzada. Si el ciervo se alejaba, se llenaba de angustia y lamentaba la separación, confundido decia lo siguiente: "¡Ay!, el venado se encuentra indefenso, ¡qué infortunio! Aunque yo mismo he sido un infiel, ¿regresará el venado y tendrá fe en mí? ¡Ay!, ¿podré volver a ver a este animal que está bajo la protección del Señor y que no teme a los tigres y otros animales? ¿Lo veré nuevamente vagando por el jardín comiendo hierba fresca?". En un sentido materialista, tal vez sean loables estos pensamientos; pero desde el punto de vista espiritual, el rey estaba en realidad cayendo de su prominente posición espiritual al apegarse a un aminal.
+</p>
+<p class='vspace'>En una ocasión similar en la que el ciervo no apareció, el rey pensó: "No sé qué haya ocurrido, pero tal vez el venado cayó presa de un lobo, o un perro, o de una manada de jabalíes, o del tigre solitario. ¿Cuándo regresará? ¿Cuándo lo veré de nuevo haciendo sus actividades que me agradan tanto? ¿Cuándo volverá a apaciguar mi corazón herido? ¡Ay de mí!, cuando el venadillo jugaba conmigo y me veía fingir estar meditando con los ojos cerrados, solía correr alrededor de mí impulsado por la ira que nace del amor y temerosamente me tocaba con las puntas de sus suaves cuernos que se sienten cual si gotas de agua".
+</p>
+<p class='vspace'>Lamentación innecesaria
+</p>
+<p class='vspace'>Hablando así como un loco, Maharaja Bharata se levantó y salió. Al ver las huellas del cervatillo en el suelo, las elogió así lleno de afecto: "Las pequeñas, bellas, muy auspiciosas y suaves huellas del venado están marcadas sobre la superficie de este afortunado planeta. Esta serie de huellas me indican a mí que estoy sufriendo la pérdida de mi ciervo el camino que él recorrió a través del bosque y me llevan a la recuperación de mi riqueza perdida".
+Al observar las manchas oscuras de la Luna creciente, las que le recordaban al venado Maharaja Bharata dijo: "¿Acaso puede la Luna, que es tan generosa con los infelices, también ser generosa con mi ciervo a sabiendas de que es huérfano y se ha extraviado de su hogar? La Luna le ha brindado un refugio junto a ella para protegerlo de los ataques temibles del león".
+</p>
+<p class='vspace'>Viendo la luz de la Luna continuó hablando como un loco: "El ciervo me era tan sumiso y querido que ahora que se encuentra lejos de mí siento su separación como la de mi propio hijo. A causa de la ardiente fiebre por la separación sufro como sé estuviera envuelto en las llamas de un incendio forestal. Mi corazón que es igual al lirio del campo se consume en llamas. Al verme tan acongojado, la Luna seguramente vierte su néctar luminoso sobre mí, al igual que un amigo arroja agua sobre otro amigo para calmarlo de la alta fiebre que lo agobia".
+</p>
+<p class='vspace'>Llega la muerte
+</p>
+<p class='vspace'>[óg]Mientras Maharaja Bharata buscaba al venado y lamentaba su ausencia sufrió una caída y murió. Al morir, el rey vio que el ciervo estaba junto a él como un hijo lamentando su muerte. En realidad la mente del rey estaba absorta en el cuerpo del venado y como consecuencia —como les sucede a aquellos que están privados de conciencia de Krishna—, abandonó este mundo, al venado y a su cuerpo material y adquirió el cuerpo de un ciervo.
+</p>
+<p class='vspace'>Cuando una persona abandona su propio cuerpo recibe otro que es acorde a su estado mental en el momento de fallecer. Al morir una persona siempre piensa en aquello que lo ha embelesado en la vida. Y según los principios de esta ley, ya que Bharata Maharaja siempre pensaba en el venado y se olvidó de adorar al Señor Supremo adquirió el cuerpo de un venado. Sin embargo, por haberse elevado a la plataforma más alta del servicio devocional no olvidó los incidentes de su vida anterior.
+</p>
+<p class='vspace'>Un cuerpo de animal
+</p>
+<p class='vspace'>En un cuerpo de venado Bharata Maharaja comenzó a lamentar su suerte: "¡Qué deógracia! He caído del sendero de las personas autorrealizadas. Abandoné a mis verdaderos hijos, mi esposa y mi hogar para progresar en la vida espiritual y encontré refugio en un lugar solitario y sagrado del bosque. Alcanzé el autocontrol y la autorrealización y me dediqué constantemente al servicio devocional, escuchando, pensando, cantando, adorando y recordando a la Suprema Personalidad de Dios. Triunfé en mi propósito tanto que mi mente siempre esta absorta en el servicio devocional. No obstante, a causa de mi propia necedad, mi mente se apegó una vez más —en esta ocación a un venado, y ahora obtuve el cuerpo de un venado y estoy muy apartado de mis prácticas devocionales".
+</p>
+<p class='vspace'>Aunque Bharata Maharaja recibió el cuerpo de un venado a través del arrepentimiento constante se desvinculó totalmente de todas las cosas materiales. Él no reveló nada a nadie y dejando a su madre venada en un lugar conocido como la Montaña de Kalañjara donde él había nacido una vez más, se internó en el bosque de Salagrama y fue al asrama de Pulastya y Pulaha. Durante su permanencia en ese asrama, el gran rey Bharata Maharaja tuvo mucho cuidado de no volver a caer víctima de las malas compañías. Sin revelar a nadie su pasado permaneció en ese asrama y su alimento sólo consistía en hojas secas. No estaba exactamente solo porque tenía la compañía de la Superalma. De esta manera, aguardó la muerte en su cuerpo de venado, bañandose en aquel lugar sagrado. Finalmente abandonó ese cuerpo de animal.
+</p>
+<p class='vspace'>Dos
+</p>
+<p class='vspace'>El Místico Jada-Bharata
+</p>
+<p class='vspace'>Como un loco
+</p>
+<p class='vspace'>Maharaja Bharata había sido especialmente dotado con la misericordia del Señor y podía recordar los incidentes de su vida anterior: aunque había encarnado en un cuerpo de brahmana sentía aún mucho temor de sus amigos y parientes que no eran devotos. Él tenía mucho cuidado en sus relaciones por miedo a caer nuevamente. En consecuencia, se presentaba a la vista del público como un loco, sordomudo y ciego para evitar que le dirigieran la palabra y así se protegía de las malas compañías. Internamente siempre pensaba en los pies de loto del Señor y cantaba Sus glorias que son la salvación de la esclavitud de las actividades fruitivas; de esta manera estaba protegido contra los ataques de los que no eran devotos.
+</p>
+<p class='vspace'>La mente de su padre brahmana estaba colmada de afecto por él a su hijo Jada Bharata por quien sentía un gran apego. A pesar de que Jada Bharata se mostraba renuente a acatar las instrucciones de su padre el brahmana no obstante le enseñó a bañarse y mantenerse limpio. A pesar de esto Jada Bharata se comportaba ante su padre como un tonto, aun cuando el padre lo instruyera con propiedad acerca del conocimiento védico. Él se comportaba en esta forma para que su padre creyera que era inepto para la instrucción y cesara todo intento por continuarla. Así actuaba él de una manera completamente contraria. En su posición como Jada Bharata, Bharata Maharaja siempre estaba mentalmente dedicado al servicio devocional. Y como había observado los principios regulativos durante tres vidas consecutivas no tenía el menor interés en continuar practicándolos a pesar de los firmes deseos de su padre brahmana.
+</p>
+<p class='vspace'>La muerte no olvida
+</p>
+<p class='vspace'>A Jada Bharata el padre brahmana lo consideraba su vida misma y se sentía muy apegado a él. Estaba convencido de la conveniencia de educar correctamente a su hijo y ensimismado en sus esfuerzos infructuosos intentó enseñarle la práctica de los votos védicos, la higiene, el estudio de los Vedas, los métodos regulativos, el servicio al maestro espiritual y el método de ofrecer un sacrificio de fuego. Hizo todo lo posible para transmitir estas enseñanzas a su hijo pero sus esfuerzos resultaron en vano. Desde el fondo de su corazón anhelaba que su hijo llegara a ser un erudito‚ pero todos sus intentos fracasaron. Al igual que todos, este brahmana estaba apegado a su hogar y olvidó que algún día moriria. La muerte sin embargo no olvida, y a su debido tiempo se apareció y lo llevó consigo.
+</p>
+<p class='vspace'>Aunque lo maltrataran
+</p>
+<p class='vspace'>Después del fallecimiento de su padre los nueve hermanastros de Jada Bharata que lo consideraban un tonto carente de material gris, abandonaron los esfuerzos del padre por impartirle una educación completa. Ninguno de ellos estaba espiritualmente iluminado en el servicio devocional del Señor, y en consecuencia, no podían comprender la posición tan elevada de Jada Bharata. Lo maltrataban y a su vez, Jada Bharata se comportaba como un demente, sordomudo y ciego y no protestaba ni trataba de disuadirlos de lo contrario. Cuando le pedían que hiciera algo obedecía mecánicamente.
+</p>
+<p class='vspace'>Fuerte como un toro
+</p>
+<p class='vspace'>Cualesquier alimento que conseguía mendigando o como paga o que aparecieran por sí solos, ya fuesen pocos de buen sabor, rancios o insípidos, los aceptaba y los consumía. Nunca comía nada para el deleite de sus sentidos porque ya estaba liberado del concepto corporal que lo induce a uno a hacer distinciones entre los alimentos sabrosos y los desagradables. Como tenía plena conciencia trascendental del servicio devocional, no estaba afectado por las dualidades resultantes del concepto corporal.
+</p>
+<p class='vspace'>Su cuerpo era tan fuerte como el de un toro, con músculos muy desarrollados. No le preocupaba ni el invierno, ni el verano, ni el viento, ni la lluvia y nunca se cubría. Se acostaba sobre el suelo, nunca se bañaba ni se aplicaba aceites. Y debido a que su cuerpo estaba sucio, ocultaba su conocimiento y su fulgor espiritual como si se tratara de una valiosa gema recubierta de polvo, y su única vestimenta era un sucio taparrabo y su ennegrecido cordón sagrado. Comprendiendo que Jada Bharata era de origen brahmana, la gente se refería a él como brahma-bandhu (el hijo en desgracia de un brahmana) y otros apelativos. Siendo así insultado y despreciado por las personas materialistas vagaba de aquí para allá.
+</p>
+<p class='vspace'>Sin ningún resentimiento
+</p>
+<p class='vspace'>Srila Narottama dasa Thakura cantó: deha-smrté nahe yara samsara-bandhana kahan tara. Aquel que no guarda el deseo de conservar el cuerpo o que no está ansioso de mantenerlo en orden y que está satisfecho bajo cualquier circunstancia debe estar loco o liberado. En realidad Bharata Maharaja, en su vida como Jada Bharata estaba completamente liberado de las dualidades materiales.
+</p>
+<p class='vspace'>Jada Bharata solía trabajar sólo por el sustento y sus hermanastros  aprovechándose de esto, lo sometían a trabajos agrícolas a cambio de algunos alimentos. Él no era muy hábil en estos oficios pues no sabía esparcir la tierra ni emparejar el terreno. Sus hermanos acostumbraban a darle arroz quebrado, pan grasoso, cáscaras de arroz, granos carcomidos por los gusanos o los que se habían adherido a la olla y estaban quemados, y no obstante Jada Bharata los aceptaba gustoso como si se tratara de un rico néctar. No les guardaba ningún resentimiento y todo lo ingería con aprecio.
+</p>
+<p class='vspace'>Cuando uno es insensible a toda dualidad o sea a la felicidad o la aflición de este mundo material, se está apto para la vida eterna. Bharata Maharaja estaba empeñado en dar por concluido sus asuntos en este mundo material y por lo mismo le tenía sin cuidado el mundo de la dualidad. Se sentía completo en el estado de conciencia de Krishna y estaba muy alejado del bien y del mal, de la felicidad y de la desgracia. Según se cita en el Caitanya-caritamrta: "En el mundo material los conceptos del bien y del mal son meras especulaciones mentales, por lo tanto es un error decir: esto es bueno y esto es malo". Uno debe comprender que en el mundo material de la dualidad el pensar en términos de bueno y malo es sólo una maquinación de la mente. Sin embargo, uno no debe imitar ese estado de conciencia sino que debe estar "verdaderamente” situado en el plano espiritual de la neutralidad.
+</p>
+<p class='vspace'>Un hombre-animal
+</p>
+<p class='vspace'>El líder de unos dacoits proveniente de una familia sudra de clase baja, deseando tener un hijo, quiso adorar a la diosa Bhadra Kali, ofreciéndole a un hombre imbécil en sacrificio porque no se le consideraba diferente a un animal. 
+</p>
+<p class='vspace'>Los hombres de clase baja como los sudras adoran a semidioses como la diosa Kali o Bhadra Kali para que les conceda sus deseos materiales. Para ello, a menudo sacrifican a un ser humano ante la deidad y tratan de escoger a una persona de escasa inteligencia, en otras palabras a un animal en el cuerpo de un hombre. El líder de los dacoits capturó a un hombre-animal para sacrificarlo, pero éste escapó y el líder envió a sus subordinados para que le dieran caza. Corriendo en diferentes direcciones en vano y deambulando en la espesura de la noche llegaron a un arrozal donde vieron a Jada Bharata, quien estaba sentado en una elevación del terreno y vigilaba el campo contra los ataques de los ciervos y los jabalíes. Los subordinados y sirvientes del jefe dacoit determinaron que Jada Bharata contaba con las cualidades de un hombre-animal y decidieron que era el ejemplar perfecto para el sacrificio. Sus rostros se iluminaron de felicidad y lo sujetaron con cuerdas para luego llevárselo al templo de la diosa Kali.
+</p>
+<p class='vspace'>¡No del matadero!
+</p>
+<p class='vspace'>Seguidamente todos los ladrones de acuerdo con sus imaginativos rituales para sacrificar hombres-animales bañaron a Jada Bharata, lo vistieron con atuendos nuevos, lo decoraron con ornamentos propios de un animal, untaron su cuerpo con aceites aromáticos y lo adornaron con tilaka, pulpa de sándalo y guirnaldas. Lo alimentaron opíparamente y luego lo llevaron ante la diosa Kali, a la que le ofrecieron incienso lamparillas de ghee, guirnaldas, granos tostados, espigas tiernas, brotes, frutos y flores. De esta manera adoraban a la deidad antes de matar al hombre-animal entonando cánticos y plegarias al son de tambores y trompetas y haciendo que Jada Bharata se sentara ante la deidad.
+</p>
+<p class='vspace'>En cumplimiento de los Vedas todo debe hacerse segun los principios regulativos pero los ladrones y bribones habían elaborado su propio proceso para matar. Las secciones de los Vedas dirigidas a quienes están sumidos en al ignorancia, dan instrucciones para sacrificar un animal tal como una cabra o un búfalo ante la diosa Kali, pero no se hace mención alguna de matar a un hombre a pesar de lo torpe que éste pueda ser. Este proceso fue inventado por los mismos dacoits. El sacrificio de una cabra o un animal similar ante la diosa Kali se menciona en las Escrituras, a fin de evitar que la gente consuma carne de los mataderos y tenga que responsabilizarse por dicha matanza. El alma condicionada tiene la tendencia natural al consumo de carne y en consecuencia, las Escrituras otorgan algunas concesiones. En realidad, las Escrituras védicas están dirigidas a poner fin a dichas actividades abominables, mas imparten principios regulativos para que las personas que comen carne se corrijan gradualmente
+</p>
+<p class='vspace'>Salvado por la Diosa
+</p>
+<p class='vspace'>Uno de los bribones haciendo las veces de sumo sacerdote estaba presto a ofrecerle a la diosa Kali la sangre de jada Bharata a quien consideraban un hombre-animal para que ella la bebiera como si fuera licor. Por consiguiente, tomó una poderosa y afilada espada y consagrándola por medio del mantra de Bhadra Kali la blandió para matar a Jada Bharata.
+</p>
+<p class='vspace'>Todos los pillos y ladrones que habían hecho los preparativos para adorar a la diosa Kali eran gente muy baja. Estaban poseídos por el deseo de alcanzar grandes riquezas y por ello tenían la audacia de desobedecer los preceptos védicos a tal grado que iban a matar a Jada Bharata un alma autorrealizada nacida en una familia brahmana. Motivados por la envidia los dacoits trajeron a Jada Bharata ante la diosa Kali para ser sacrificado. Este tipo de gente siempre incurre en actividades movidas por la envidia y por eso se atrevieron a intentar dar muerte a Jada Bharata. Jada Bharata era amigo de todas las entidades vivientes no tenía ningún enemigo y constantemente se lo veía absorto meditando en la Suprema Personalidad de Dios. Era hijo de un buen brahmana y estaba prohibido matarlo aún cuando hubiera sido un enemigo o una persona agresiva. 
+</p>
+<p class='vspace'>De cualquier forma no existia ninguna razón para matar a Jada Bharata y la diosa Kali no lo pudo tolerar. Comprendiendo de inmediato que los dacoits pecadores estaban a punto de asesinar a un gran devoto del Señor, repentinamente el cuerpo de la deidad estalló en múltiples pedazos y la misma diosa Kali emergió de él con un cuerpo ardiente y de un resplandor intenso e intolerable.
+</p>
+<p class='vspace'>Sin tolerar las ofensas cometidas, la diosa Kali enfurecida los deslumbró con su mirada y enseñó sus dientes curvos y feroces. Sus ojos estaban enrojecidos de ira y manifestó sus terribles características asumiendo un cuerpo espantoso como si estuviera preparada para destruir la creación entera. Saltando violentamente desde el altar inmediatamente decapitó a todos los ladrones con la misma espada conque iban a dar muerte a Jada Bharata. Luego comenzó a beber la sangre caliente que manaba de los cuellos decapitados de los bribones como si se tratara de licor. Compartió esta bebida embriagante con sus compañeras brujas y demonias que borrachas por la sangre comenzaron a cantar en voz alta y a bailar cual si estubieran dispuestas a aniquilar el universo entero. A la vez comenzaron a jugar con las cabezas de los pillos y ladrones tirándoselas como sé fueran balones.
+</p>
+<p class='vspace'>Diferente del cuerpo
+</p>
+<p class='vspace'>Es misión de la diosa Kali el matar y castigar a los demonios. Indiferentes al proceso de conciencia de Krishna algunas personas tontas tratan de complacer a la diosa ofreciéndole muchas  cosas abominables, pero cuando existe una pequeña discrepancia en la veneración, la diosa castiga a sus fieles quitándoles la vida. Los individuos demoníacos adoran a la diosa Kali con el fin de obtener beneficios materiales, mas no se les perdonan los pecados cometidos en nombre de tal adoración, pues está estrictamente prohibido sacrificar a un hombre-animal ante la deidad.
+</p>
+<p class='vspace'>En el caso de un devoto del Señor, como lo era Jada Bharata que está firmemente convencido de su identidad espiritual, éste nunca se identifica con el cuerpo porque sabe que el alma espiritual es diferente del cuerpo. En consecuencia no le teme a nada y aun cuando su vida se viera amenazada no experimenta temor alguno ni tampoco trata a sus enemigos como tales. Éstas son las cualidades de los devotos. Los devotos dependen en todo momento de la Suprema Personalidad de Dios y el Señor siempre está ansioso de brindarles plena protección en todas las circunstancias.
+</p>
+<p class='vspace'>Tres
+</p>
+<p class='vspace'>Encuentro con el rey Rahugana
+</p>
+<p class='vspace'>¡Cuidado con las hormigas!
+</p>
+<p class='vspace'>Después del incidente en el templo de la diosa Kali el rey Rahugana gobernante de los estados conocidos como Sindhu y Sauvira se dirigía hacia Kapil-asrama. Cuando los portadores del palanquín real llegaron a las orillas del río Iksumati necesitaron otro portador. Por lo tanto comenzaron a buscar a alguna persona y por casualidad encontraron a Jada Bharata. Ellos consideraron el hecho de que Jada Bharata era muy joven y fuerte y tenía extremidades firmes y de igual manera que las vacas y los asnos lucía apto para cargar bultos. Con esto en mente, a pesar de que la gran alma Jada Bharata no era apta para esa clase de trabajo ellos sin titubear lo forzaron a cargar el palanquín. Sin embargo Jada Bharata lo portaba erráticamente debido a su sentido de no violencia ya que antes de dar un paso al frente se fijaba para ver si iba a pisar a las hormigas. Por consiguiente no podía llevar el mismo paso con los demás portadores. Debido a esto, el palanquín iba sacudiéndose así que el rey Rahugana inmediatamente les pregunto a los portadores: "¿Por qué portan el palanquín de manera irregular? —Mejor llévenlo bien".
+</p>
+<p class='vspace'>A pesar de que Jada Bharata fue forzado a llevar el palanquín no renunció a sus sentimientos de compasión hacia las pobres hormigas del camino. Un devoto del Señor Krishna siempre tiene un corazón bondadoso para con todas las entidades vivientes que adquieren diferentes formas corporales. Aquellos que no son devotos del Señor Krishna solamente consideran digna de compasión a la sociedad humana, pero Krishna afirma ser el padre supremo de todas las formas de vida. Por consiguiente el devoto de Krishna se cuida de no aniquilar extemporánea ó innecesariamente a ninguna forma de vida. Todas las entidades vivientes tienen que completar un cierto lapso de tiempo encarceladas en un tipo particular de cuerpo material. Ellas deben cumplir con la duración asignada a un cuerpo en particular antes de poder ascender o evolucionar a otro cuerpo. El matar a un animal o a cualquier otro ser viviente tan sólo le dificulta el que complete su término de encarcelamiento en cierto cuerpo. Por lo tanto uno no debe matar cuerpos para complacer sus sentidos porque esto lo implica en actividades pecaminosas.
+</p>
+<p class='vspace'>El rey se molesta
+</p>
+<p class='vspace'>Así pues cuando los portadores del palanquín oyeron las palabras amenazadoras de Maharaja Rahugana se sintieron muy temerosos de su castigo y comenzaron a hablarle de la siguiente manera: "Oh señor, por favor date cuenta de que no somos negligentes al desempeñar nuestras obligaciones. Hemos estado cargando fielmente este palanquín de acuerdo con tus deseos pero este hombre que recientemente se nos unió a trabajar no puede caminar velozmente. Por lo tanto no podemos cargar el palanquín con él".
+</p>
+<p class='vspace'>Los demás portadores del palanquín eran sudras poco inteligentes u obreros mientras que Jada Bharata no solamente era un sacerdote brahmana de casta alta sino tambien un gran devoto. Los sudras no simpatizan con los demás seres vivientes, pero un devoto no puede actuar como un sudra. Los sudras caminaban con el palanquín sin importarles las hormigas que estaban en el suelo, pero Jada Bharata no podía actuar como un sudra y por consiguiente surgieron dificultades.
+</p>
+<p class='vspace'>El rey Rahugana pudo comprender lo que decían los portadores quienes temían que se les castigara y entendió tambien que tan sólo debido a la culpa de una persona no se llevaba el palanquín adecuadamente. Sabiendo esto perfectamente bien y oyendo las súplicas se enojó un poco, a pesar de que era muy versado en la ciencia política y tenía mucha experiencia. Su ira surgió debido a su naturaleza innata de rey. Por lo tanto le habló de la siguiente manera a Jada Bharata cuya refulgencia espiritual no era claramente visible al estar cubierta de igual manera que un fuego es cubierto por las cenizas.
+</p>
+<p class='vspace'>El sarcasmo del rey
+</p>
+<p class='vspace'>El rey Rahugana le dijo a Jada Bharata: "Cuántos problemas acarrea esto mi querido hermano. Realmente te ves muy fatigado porque has cargado este palanquín tú solo sin ayuda durante mucho tiempo y por una larga distancia. Además, por tu avanzada edad te has fatigado mucho. Mi querido amigo veo que no eres muy fuerte ni muy vigoroso. ¿Qué no cooperan contigo los demás cargadores?” De esta manera el Rey criticaba a Jada Bharata con palabras sarcásticas. Sin embargo, a pesar de que se le criticaba así Jada Bharata no tomaba a pecho lo que estaba ocurriendo. Él sabía que no era aquel cuerpo pues había alcanzado su identidad espiritual; y que no era ni gordo ni delgado. Ni tenía nada que ver con aquella masa de materia con aquel cuerpo con sus dos manos y piernas; en otras palabras había comprendido completamente su identidad espiritual. Por lo tanto, no le afectó esta crítica sarcástica del rey y sin decir nada continuó cargando el palanquín igual que antes.
+</p>
+<p class='vspace'>Aunque le mataran el cuerpo
+</p>
+<p class='vspace'>Jada Bharata estaba completamente liberado. Ni siquiera le importó cuando los dacoits trataron de matar su cuerpo; él sabía con certeza que no era el cuerpo. Aun séi hubieran matado a su cuerpo, a él no le hubiera importado porque estaba convencido completamente de la tesis del Bhagavad-gita (2.20): na hanyate hanyamane sarire. Sabía que aunque mataran su cuerpo, él no moriría. Aunque él no protestó, la Suprema Personalidad de Dios a través de su gente Bhadra Kali, no pudo tolerar la injusticia de los dacoits; así pues se salvó por la misericordia de Krishna y los ladrones murieron. En este caso, mientras portaba el palanquín tambien sabía que él no era el cuerpo. Ese cuerpo era muy fuerte y vigoroso, estaba en muy buena condición y era muy adecuado para cargar el palanquín. Como ya se había liberado del concepto corporal las palabras sarcásticas del rey no lo afectaron. El cuerpo se crea de acuerdo con nuestro propio karma y la naturaleza material proporciona los ingredientes para que se desarrolle cierto tipo de cuerpo. El alma que está cubierta por el cuerpo es diferente de la estructura corporal; por lo tanto cualquier, cosa favorable o maliciosa que se le haga al cuerpo no afecta al alma espiritual. El precepto védico dice asango hy ayai purusah: al alma espiritual nunca le afecta las disposicione materiales.
+</p>
+<p class='vspace'>Un regaño injusto
+</p>
+<p class='vspace'>Cuando el rey notó que el palanquín continuaba sacudiéndose se enojó mucho y dijo: "Tu bribón, ¿qué estás haciendo? ¿Estás muerto a pesar de que tu cuerpo vive? ¿Qué no sabes que yo soy tu amo? No me estás atendiendo y no estás obedeciendo mis órdenes. Por esta desobediencia ahora te castigaré de la misma manera que Yamaraja, el superintendente de la muerte, castiga a las personas pecadoras. Te daré el tratamiento adecuado para que vuelvas a tus cabales y hagas lo correcto".
+</p>
+<p class='vspace'>Como el rey Rahugana se consideraba rey, él estaba en el concepto corporal y debido a su ira reprendió a Jada Bharata con palabras innecesarias y contradictorias. Jada Bharata era un devoto sumamente elevado y la morada querida de la Suprema Personalidad de Dios. A pesar de que el Rey se consideraba muy erudito no conocía la posición de un devoto avanzado situado en el servicio devocional ni podía reconocer sus caracteristicas. En Jada Bharata residía la Suprema Personalidad de Dios y siempre llevaba la forma del Señor dentro de su corazón. Él era el querido amigo de todas las entidades vivientes y no albergaba ningún concepto corporal, por lo tanto sonrió y dijo las siguientes palabras.
+</p>
+<p class='vspace'>La respuesta de Jada Bharata
+</p>
+<p class='vspace'>"Mi querido Rey y héroe —dijo Jada Bharata—, todo lo que me has dicho en forma sarcástica es ciertamente verdad. La carga que lleva este cuerpo no me pertenece porque yo soy el alma espiritual. Yo soy diferente de cuerpo, por lo tanto, yo no soy el portador del palanquín, el cuerpo es el quelo carga. Por supuesto como tú has insinuado, no me he esforzado cargando este palanquín puesto que estoy desapegado del cuerpo. Tú has dicho que no soy vigoroso ni fuerte, y estas palabras son propias de una persona que no conoce la diferencia entre el cuerpo y el alma. El cuerpo puede ser gordo o delgado pero ningún hombre erudito diría tales cosas del alma espiritual. Por lo que respecta al alma espiritual, yo no soy ni gordo ni flaco; por lo tanto, estás en lo justo cuando dices que no soy muy vigoroso". 
+</p>
+<p class='vspace'>La ruleta de la vida
+</p>
+<p class='vspace'>Jada Bharata continuó diciendo: "Por lo que respecta a que piensas que eres el rey y amo, y así pues estás tratando de darme órdenes también es incorrecto porque estas posiciones son temporales. Hoy tú eres el rey y yo soy tu sirviente, pero mañana esta posición puede cambiar y tú serás mi sirviente y yo tu amo. Estas son circunstancias temporales y han sido creadas por la providencia".
+</p>
+<p class='vspace'>En esta vida uno puede ser rey y en la proxima vida uno puede ser un perro de acuerdo con la ley del karma. El alma espiritual duerme profundamente debido a la fuerza de la naturaleza material; se le coloca en un tipo de condición y luego se le vuelve a cambiar a otro tipo. Sin autorrealización y conocimiento la vida codicionada continúa y uno afirma falsamente ser un rey, un sirviente, un gato o un perro; éstas son tan sólo transformaciones diferentes ocasionadas por la disposición suprema. Uno no debe dejarse engañar por esos conceptos corporales y temporales. En realidad, nadie es un amo dentro del mundo material porque todos están bajo el control de la naturaleza material que está bajo el control de la Suprema Personalidad de Dios. Por lo tanto la Suprema Personalidad de Dios Krishna es el amo final.
+</p>
+<p class='vspace'>El rey reacciona
+</p>
+<p class='vspace'>El concepto material que el rey Rahugana tenía de sí mismo identificándose como rey quedó así destruido. 
+</p>
+<p class='vspace'>Inmediatamente bajó de su palanquín y se postró por completo en el suelo con su cabeza a los pies de loto de Jada Bharata de tal manera que se le perdonaran sus palabras insultantes en contra del gran brahmana.
+En el Bhagavad-gita (4.2), el Señor Krishna dice: "Esta ciencia suprema se recibió así a través de la cadena de sucesión discipular y los reyes santos la entendieron de ese modo. Pero en el transcurso del tiempo la sucesión se rompió y por ello la ciencia tal como es parece estar perdida". A través de la sucesión discipular los miembros de la clase real estaban en el mismo plano que las grandes personas santas. En la antigüedad ellos podían comprender la filosofía de la vida y sabían cómo entrenar a los ciudadanos para que llegaran a ese mismo nivel; en otras palabras, ellos sabían cómo redimir a los ciudadanos de los enredos del nacimiento y de la muerte. Todo el proceso de la civilización védica se basa en ese punto, debemos saber cómo conquistar la repetición de nacimientos y muertes. Maharaja Rahugana también conocía el propósito de la vida; por lo tanto cuando Jada Bharata le presentó la filosofía de la vida, él la apreció inmediatamente. éste es el fundamento de la sociedad védica.
+</p>
+<p class='vspace'>Los eruditos, los brahmanas, las personas santas y los sabios que conocían perfectamente bien el propósito védico aconsejaban a los miembros de la orden real sobre cómo beneficiar a las masas en general y mediante su cooperación las masas se beneficiaban y todo era próspero. Maharaja Rahugana alcanzó esa perfección de comprender el valor de la vida humana; por lo tanto lamentaba sus palabras insultantes a Jada Bharata, así que inmediatamente descendió de su palanquín y cayó a los pies de loto de Jada Bharata a fin de que se le perdonara y para oír más de labios de él acerca de los valores de la vida que se conocen como brahma-jiñasa (inquirir sobre la Verdad Absoluta). En la actualidad los altos funcionarios gubernamentales ignoran los valores de la vida y cuando las personas santas tratan de difundir el conocimiento védico, los supuestos líderes no les ofrecen sus reverencias respetuosas sino que tratan de obstruir la propaganda espiritual.
+</p>
+<p class='vspace'>La actitud correcta
+</p>
+<p class='vspace'>El rey Rahugana le dijo a Jada Bharata: "Oh brahmana parece que andas por este mundo en una forma muy disimulada y eres desconocido por los demás. ¿Quién eres? ¿Eres un brahmana erudito o una persona santa? Veo que llevas un cordón sagrado. ¿Podría preguntar de quién eres discípulo? ¿En dónde vives? ¿Porqué has venido a este lugar? ¿Es tu misión al venir aquí hacernos el bien? Por favor dime, ¿quién eres?".
+</p>
+<p class='vspace'>Maharaja Rahugana estaba muy ansioso de recibir mayor información sobre el conocimiento védico porque pudo comprender que Jada Bharata pertenecía a una familia brahmana. Él aceptaba a Jada Bharata como un guru, pero un guru debe probar su posición no solamente por usar un cordón sagrado de brahmana sino también mediante el conocimiento progresivo de la vida espiritual. Si uno desea recibir conocimiento espiritual debe acercarse a un guru genuino.
+</p>
+<p class='vspace'>Hay que acudir a un guru
+</p>
+<p class='vspace'>"Mi querido señor —continuó el rey Rahugana—, parece que la influencia de tu gran conocimiento espiritual está oculta. En realidad estás despojado de toda relación material y totalmente absorto en pensamientos sobre el Supremo. Por consiguiente, eres ilimitadamente avanzado en el conocimiento espiritual. Por favor, dime por qué estás vagando como un tonto. ¡Oh, gran persona santa!, tú has pronunciado palabras que son aprobadas por el proceso de yoga, pero no nos es posible comprender lo que has dicho; por lo tanto bondadosamente explícanoslo. Yo considero a tu amable persona como el maestro más elevado del poder místico pues tú conoces la ciencia espiritual a la perfección. Tú eres el más excelso de todos los sabios eruditos y has descendido para beneficiar a toda la sociedad humana. Tú has venido a otorgar el conocimiento espiritual; por lo tanto yo te pregunto, ¡Oh maestro espiritual!, ¿cuál es el refugio más seguro en este mundo? Yo estoy muy apegado a la vida familiar y a las actividades mundanas y estoy ciego en conocimiento espiritual. No obstante, ahora estoy presente delante de ti y estoy tratando de obtener la iluminación de parte tuya, ¿cómo puedo avanzar en la vida espiritual?”. Uno debe acercarse a un guru como Jada Bharata, un representante de la Suprema Personalidad de Dios para indagar acerca de la meta de la vida humana.
+</p>
+<p class='vspace'>Pidiendo perdón
+</p>
+<p class='vspace'>El rey Rahugana siguió diciendo: "Lo que has dicho me ha parecido ser contradictorio. Oh, el mejor amigo de los afligidos, he cometido una gran ofensa al insultarte. Yo estaba engreído con prestigio falso por poseer el cuerpo de un rey. Por este motivo sin duda me he vuelto un ofensor. Por lo tanto, oro para que bondadosamente me otorgues tu misericordia sin causa. Si lo haces se me redimirá de las actividades pecaminosas que me he acarreado por insultarte.
+</p>
+<p class='vspace'>Oh, mi querido señor, tú eres el amigo de la Suprema Personalidad de Dios, que es el amigo de todas las entidades vivientes; por lo tanto tú eres igual para con todos y estás libre de la concepción corporal. Aunque he cometido una ofensa al insultarte sé que no existe pérdida ni  ganancia para ti debido al insulto. Tú estás fijo en tu determinación pero yo he cometido una ofensa y debido a esto seré destruido sin demora". Maharaja Rahugana era muy inteligente y estaba consciente de los efectos adversos que surgen al insultar a un devoto del Señor; por lo tanto él estaba muy ansioso de que Jada Bharata lo perdonara. Siguiendo los pasos de Maharaja Rahugana, todos debemos ser muy cautelosos de no cometer una ofensa a los pies de loto de un devoto del Señor.
+</p>
+<p class='vspace'>Cuatro
+</p>
+<p class='vspace'>Jada Bharata instruye al rey
+</p>
+<p class='vspace'>"Mi querido rey —dijo Jada Bharata—, a pesar de que tú no tienes experiencia estás tratando de hablar como un hombre muy culto. Por consiguiente no se te puede considerar un experto". Entre las personas en general el 99.9 por ciento tratan de hablar como si fuesen consejeros expertos, pero en realidad están desprovistos de conocimiento espiritual y por lo tanto, son como niños enixpertos hablando tonterías. Por consiguiente no se les puede dar ninguna importancia a sus palabras; uno debe aprender de Krishna o de Su devoto. Nuestras palabras son valiosas si hablamos basados en esta experiencia, es decir en base al conocimiento espiritual. En la actualidad todo el mundo está lleno de gente tonta; ellas están tratando de gobernar la sociedad humana, pero como están desprovistas de conocimiento espiritual, el mundo entero está en una condición caótica. Para liberarnos de estas condiciones miserables, debemos desarrollar conciencia de Krishna y tomar lecciones de una personalidad elevada como Jada Bharata. Ésa es la única manera de resolver los problemas de la vida material.
+</p>
+<p class='vspace'>La mente y el elefante
+</p>
+<p class='vspace'>Jada Bharata dijo lo siguiente: "Mientras la mente de la entidad viviente permanezca contaminada por las modalidades de la naturaleza material, dicha mente es exactamente igual a un elefante independiente y descontrolado. El resultado es que la entidad viviente permanece en el mundo material para gozar y sufrir los placeres y los dolores que se deben a la actividad material. Porque la mente está absorta en deseos de actividades piadosas e impías, naturalmente está sujeta a las transformaciones de la lujuria y de la ira; de esta manera queda atraida por el goce material de los sentidos. Por lo tanto la mente origina el nacimiento en diferentes tipos de cuerpos entre los semidioses los seres humanos, los animales y las aves. Cuando la mente está situada en una posición más elevada o más baja acepta un cuerpo material más elevado o más bajo"
+</p>
+<p class='vspace'>La transmigración entre las diversas especies de vida se debe a que la mente está contaminada con determinadas cualidades materiales. La existencia material significa estar completamente controlado por la naturaleza material; la mente es el centro que acepta los dictados de la naturaleza material. De esta forma la entidad viviente es transportada a diferentes tipos de cuerpo continuamente milenio tras milenio. Debido a que la entidad viviente olvida al Señor Supremo Krishna está atada por las leyes de la naturaleza material.  
+</p>
+<p class='vspace'>La mente es un arma de dos filos
+</p>
+<p class='vspace'>Pero de igual manera que la mente es la causa de la esclavitud también puede ser la causa de la liberación; cuando la mente se dedica al servicio del Señor se le llama trascendental y cuando la mente se dedica a la complacencia material de los sentidos se le llama material. En la actualidad, en nuestro estado condicionado, nuestra mente está completamente absorta en la complacencia material de los sentidos, pero se puede purificar y regresarla a su estado de conciencia de Krishna original mediante el proceso del servicio devocional. Cuando se purifican la mente y los sentidos toda nuestra existencia se purifica y nuestras designaciones también se purifican; uno ya no se considera un ser humano, un semidiós, un gato, un perro, un hindú, un musulmán, etcétera. Cuando se purifican los sentidos y la mente y uno se dedica completamente al servicio de Krishna, se libera y regresa al hogar regresa a Dios.
+</p>
+<p class='vspace'>La mente es la culpable
+</p>
+<p class='vspace'>Jada Bharata le explicó esto al rey Rahugana con las siguientes palabras: "Cuando la mente de la entidad viviente se absorbe en la complacencia de los sentidos en el mundo material, le ocasiona una vida condicionada y sufrimiento dentro de esa situación material; sin embargo, cuando la mente se desapega del goce material se vuelve la causa de la liberación. Cuando la llama en una lámpara quema la mecha incorrectamente, la lámpara se ennegrece pero cuando la lámpara está llena de ghee (mantequilla clarificada) y está ardiendo adecuadamente entonces hay una iluminación brillante. De manera similar cuando la mente se absorbe en la complacencia material de los sentidos, promueve el brillo original del estado de conciencia de Krishna". 
+</p>
+<p class='vspace'>Todo sufren en este mundo material debido a la mente; por lo tanto es adecuado entrenar la mente o limpiarla del apego material y dedicarla completamente al servicio del Señor, esto se llama dedicación espiritual. Debemos dedicar la mente completamente a las actividades conscientes de Krishna, entonces ésa será la causa de nuestra liberación, de que regresemos al hogar, de regreso a Dios.
+</p>
+<p class='vspace'>"La mente sin control —dijo Jada Bharata— es el mayor enemigo de la entidad viviente; si uno la descuida o le da una oportunidad se hará más y más poderosa y llegará a ser victoriosa. Aunque no es real, es muy fuerte, pues ella cubre la posición constitucional del alma. Oh Rey, por favor trata de conquistar esa mente con el arma del servicio a los pies de loto del maestro espiritual y la Suprema Personalidad de Dios; haz esto con el mayor cuidado". 
+</p>
+<p class='vspace'>Cómo lidiar con ella
+</p>
+<p class='vspace'>Existe un arma sencilla con la que se puede conquistar la mente: ignorarla. La mente siempre nos está diciendo que hagamos esto o aquello; por lo tanto debemos ser muy expertos en desobedecer las órdenes de la mente. En forma gradual debemos entrenar a la mente en obedecer las órdenes del alma; no debemos obedecer las órdenes de la mente. Éstas son las enseñanzas de todas las Escrituras. Si no lo hacemos así estaremos condenados a seguir los dictados de la mente. 
+</p>
+<p class='vspace'>El rey Rahugana dijo: "Oh el mejor de los brahmanas, mi cuerpo está lleno de cosas sucias y a mi visión la ha picado la serpiente del orgullo; a causa de mis conceptos materiales, yo estoy enfermo. Tus enseñanzas nectáreas son la medicina adecuada para el que sufre de esa fiebre y son como el agua fresca para el que está quemándose por el calor. Pero estas enseñanzas misteriosas del yoga que me has dado para alcanzar la autorrealización, parecen muy difíciles de entender. Por favor, repítemelas de una manera sencilla para que pueda comprenderlas; mi mente es muy curiosa y deseo comprender esto claramente".
+</p>
+<p class='vspace'>La función del guru
+</p>
+<p class='vspace'>Los textos védicos dicen: tasmad gurum prapadyeta jijñasur sreya uttamam. Cualquier hombre inteligente debe ser muy inquisitivo para poder conocer la ciencia trascendental a fondo; por lo tanto uno debe acercarse a un guru o maestro espiritual. Aunque Jada Bharata le explicó todo a Maharaja Rahugana, parece ser que su inteligencia no era lo suficientemente perfecta para comprender con claridad; por lo tanto le pidió una mayor explicación. 
+</p>
+<p class='vspace'>Como se indica en el Bhagavad-gita (4.31): tad viddhi pranipatena pariprasnena sevaya. El estudiante debe acercarse a un maestro espiritual y entregarse completamente a él (pranipatena); tambien debe hacerle preguntas a fin de entender sus enseñanzas (pariprasnena). Uno no debe solamente entregarse al maestro espiritual sino también prestarle servicio amoroso (sevaya) para que el maestro espiritual esté complacido con el estudiante y le explique el tema trascendental con mayor claridad. Se debe evitar un espíritu desafiante ante el maestro espiritual si estamos verdaderamente interesados en aprender las enseñanzas védicas a fondo. 
+</p>
+<p class='vspace'>El cuerpo y el alma
+</p>
+<p class='vspace'>Jada Bharata, el brahmana, autorrealizado dijo: "Entre las diversas combinaciones y permutaciones materiales existen diversas formas y transformaciones mundanas; por algún motivo éstas se mueven en la superficie de la tierra y se llaman cargadores de palanquines. Las transformaciones materiales que no se mueven son objetos materiales densos como las piedras. De todos modos, el cuerpo material está hecho de tierra y piedra en la forma de pies, tobillos, pantorrillas, rodillas, muslos, torsos, cuello y cabeza. Sobre los hombros va el palanquín de madera y dentro del palanquín está el supuesto rey de Sauvira. El cuerpo de rey es tan sólo otra transformación de la tierra, pero dentro de ese cuerpo, está su señoría creyéndose equivocadamente el rey del estado de Sauvira".
+</p>
+<p class='vspace'>Después de analizar los cuerpos materiales de los portadores del palanquín de su pasajero, Jada Bharata concluye que la verdadera fuerza viviente es la entidad viviente. La entidad viviente es el retoño o fruto del Señor Krishna; por lo tanto dentro de este mundo material entre las cosas animadas el principio verdadero es el Señor Supremo. Debido a Su presencia todo funciona y existen acciones y reacciones y al que comprende al Señor como la causa original de todo, se le entiende como perfectamente situado en el plano de conocimiento. Aunque estaba falsamente orgulloso de ser rey, Maharaja Rahugana no estaba verdaderamente situado en el plano de conocimiento; por lo tanto estaba reprendiendo a los portadores del palanquín incluyendo al brahmana autorrealizado Jada Bharata. Ésta fue la primera acusación que Jada Bharata hizo en contra del Rey que se atrevía a hablarle a un brahmana erudito desde el ámbito insustancial de la ignorancia identificando a todas las cosas con la materia. 
+</p>
+<p class='vspace'>Abusando de los ciudadanos
+</p>
+<p class='vspace'>"Estas personas inocentes que portan tu palanquín sin pago alguno, con seguridad están sufriendo por esta injusticia —le dijo Jada Bharata—, su condición es muy lamentable porque los has forzado a que se dediquen a portar tu palanquín. Esto prueba que eres cruel y severo y sin embargo por causa del prestigio falso creías que estabas protegiendo a los ciudadanos".
+</p>
+<p class='vspace'>Cuando un rey cree que, debido a que es el jefe del Estado puede utilizar a los ciudadanos para su propia complacencia de los sentidos, está muy equivocado; su deber es proteger a los ciudadanos. Se indica en el Srimad-Bhagavatam que en la actual era de Kali los dirigentes gubernamentales serán asaltantes y ladrones. Estos asaltantes y ladrones toman el dinero y las propiedades del público a la fuerza o por medio de conspiraciones y a medida que avanza la era de Kali podemos notar que estas caracteristicas ya son visibles. Con seguridad nos podemos imaginar cuán deteriorada va a estar la civilización humana al final del Kali-yuga. 
+</p>
+<p class='vspace'>En verdad no existirá ningún hombre cuerdo capaz de entender a Dios y nuestra relación con él; en otras palabras los seres humanos van a ser igual a los animales.
+</p>
+<p class='vspace'>Los estafadores y los estafados
+</p>
+<p class='vspace'>Cuando el rey o jefe de gobierno no observa los principios adecuados, la naturaleza genera castigos en la forma de guerra, hambre etcétera. Por lo tanto, si el jefe de gobierno no conoce la meta de la vida, no debería hacerse cargo de gobernar al pueblo. En realidad el propietario supremo de todo es el señor Krishna pues Él es el sustento de todos; el rey es tan sólo el representante del Señor facultado para cuidar del manejo y el mantenimiento de las cosas. Por lo tanto, el deber del jefe de Estado es mantener al pueblo en general de tal manera que las personas finalmente conozcan la meta de la vida. Desafortunadamente el dirigente tonto y el pueblo en general no saben que la meta final de la vida es comprender y acercarse al Señor Krishna. Sin este conocimiento todos están en la ignorancia y toda la sociedad está llena de estafadores y estafados.
+"Polvo eres..."
+</p>
+<p class='vspace'>Jada Bharata siguió explicando: "Todos los que estamos en la superficie del globo somos entidades vivientes en diferentes formas, algunos de nosotros nos movemos y algunos no. Todos nosotros llegamos a la existencia, permanecemos en ella durante algún tiempo, y se nos aniquila cuando el cuerpo vuelve a mezclarse con la tierra, todos somos apenas diferentes transformaciones de la tierra. Los diferentes cuerpos y capacidades son tan sólo transformaciones de la tierra y existen solamente de nombre porque todo sale de la tierra y cuando todo se aniquila vuelve a mezclarse con la tierra: en otras palabras, somos sólo polvo y sólo seremos polvo. Todos pueden analizar este punto, ¿entonces cuál es la verdad final? La respuesta es que la verdad final es aquel conocimiento sin dualidades; el que nos da la liberación, el que no tiene igual, que es omnipresente y que está más allá de la imaginación. El entendimiento pleno de este conocimiento supremo se adquiere comprendiendo a la Persona Suprema Krishna". 
+</p>
+<p class='vspace'>Jada Bharata entonces dijo: "Mi querido rey Rahugana a menos que uno tenga la oportunidad de untar todo su cuerpo con el polvo de los pies de loto de los grandes devotos no podrá comprender la Verdad Absoluta".
+</p>
+<p class='vspace'>La importancia del devoto puro
+</p>
+<p class='vspace'>Uno no puede alcanzar la perfección de la vida espiritual con sólo observar las enseñanzas de los Vedas. Uno debe acercarse a un devoto puro y por la gracia de ese devoto uno puede comprender la Verdad Absoluta Krishna y su relación con Él.
+</p>
+<p class='vspace'>"¿Quiénes son estos devotos puros?”, añadió Jada Bharata y describiendo sus características continuó: "En una reunión de devotos puros no se discuten asuntos materiales. En una reunion de devotos puros solamente se discuten las virtudes las formas y los pasatiempos de la Suprema Personalidad de Dios; es a Él que se alaba y venera con toda la atención. En la compañía de devotos puros, al oír constantemente esos temas con respeto, incluso una persona que desea fusionarse en la existencia de la Verdad Absoluta abandona esta idea y gradualmente se apega al servicio del Señor Krishna". 
+</p>
+<p class='vspace'>Remembranza
+</p>
+<p class='vspace'>Entonces Jada Bharata explicó: "En el nacimiento anterior se me conoció como Maharaja Bharata. Yo alcancé la perfección al desapegarme completamente de las actividades materiales mediante la experiencia directa y mediante la experiencia indirecta que recibí al comprender los Vedas. Yo estaba plenamente dedicado al servicio del Señor, pero debido a mi mala suerte me encariñé mucho con un pequeño venado, tanto así que descuidé mis obligaciones espirituales. Debido a mi profundo afecto por el venado en mi siguiente vida tuve que aceptar el cuerpo de un venado. Mi querido y heróico rey, debido a mis sinceros servicios al Señor, en el pasado pude recordar toda mi vida anterior incluso mientras estuve en el cuerpo de un venado. Como estoy consciente de mi caída en mi vida pasada siempre me mantengo alejado de la compañía de los hombres ordinarios. Como estoy temeroso de su compañía mala y materialista, vago solo sin que los demás me noten".
+</p>
+<p class='vspace'>Ciertamente es una gran caída pasar de la vida humana a la vida animal pero en el caso de Bharata Maharaja o de cualquier devoto el servicio devocional al Señor nunca es en vano. En el momento de la muerte, por las leyes de la naturaleza la mente se absorbe en cierto tipo de pasamiento; esto nos puede llevar a la vida animal, sin embargo para un devoto no hay nada que perder. Aunque Bharata Maharaja recibío el cuerpo de un venado, él no olvidó su posición; por consiguiente en el cuerpo del venado tuvo mucho cuidado de recordar la causa de su caída. 
+</p>
+<p class='vspace'>Como resultado de esto se le dio la oportunidad de nacer en una familia de brahmanas muy puros; así pues su servicio al Señor nunca fue en vano. 
+</p>
+<p class='vspace'>Las buenas compañías
+</p>
+<p class='vspace'>"Tan sólo por asociarse con devotos prominentes —dijo Jada Bharata— cualquiera puede alcanzar la perfección del conocimiento y con la espada del conocimiento puede cortar en pedazos las relaciones ilusorias dentro del mundo material. A través de la compañía de los devotos uno se puede dedicar al servicio del Señor oyendo y cantando. Así uno puede revivir su estado de conciencia de Krishna adormecido y apegándose al cultivo del estado de conciencia de Krishna, puede regresar a casa regresar a Dios incluso en esta vida".
+</p>
+<p class='vspace'>Para llegar a liberarnos de la  esclavitud material, uno debe renunciar a la companía de las personas mundanas y aceptar la compañía de los devotos, uno desarrolla conciencia de Krishna la cual está adormecida dentro de sí. Este movimiento para adquirir conciencia de Krishna les está dando esta oportunidad a todos, pues le estamos dando refugio a cualquiera que seriamente desee progresar en el proceso de conciencia de Krishna. Nosotros nos ocupamos de su alojamiento y comida para que puedan cultivar tranquilamente la conciencia de Krishna y puedan regresar a casa, regresar a Dios incluso en esta vida.
+</p>
+<p class='vspace'>Cinco
+</p>
+<p class='vspace'>La anología del bosque
+</p>
+<p class='vspace'>"Mi querido rey Rahugana —dijo Jada Bharata continuando con sus enseñanzas—, la entidad viviente vaga por la senda del mundo material que le es muy difícil de atravesar, y aceptar los nacimientos y muertes reiterados. Ella trabaja con mucho tezón día y noche exactamente igual que un comerciante que entra a un bosque a adquirir algunos artículos para venderlos  después con algún provecho. Sin embargo realmente no puede alcanzar la felicidad dentro de este mundo material".
+</p>
+<p class='vspace'>La senda de "maya"
+</p>
+<p class='vspace'>Uno puede comprender muy fácilmente cuán difícil e insuperable es la senda de la complacencia de los sentidos.
+</p>
+<p class='vspace'>Sin saber lo que es la senda de la complacencia de los sentidos, uno se implica en la repetición de nacimientos y acepta diferentes tipos de cuerpos una y otra vez; así uno sufre en la existencia material. En esta vida nos podemos creer muy felices siendo norteamericanos, hindúes, ingleses o alemanes etc., pero en la próxima vida debemos aceptar otro cuerpo de entre 8,400,000 especies. El siguiente cuerpo se debe aceptar inmediatamente de acuerdo con el karma. Se nos forzará a aceptar cierto tipo de cuerpo y protestar no servira de nada pues así es la estricta ley de la naturaleza. Debido a que la entidad viviente es ignorante de su vida eternamente dichosa queda atraída por las actividades materiales bajo el hechizo de maya. En este mundo nunca se puede experimentar la felicidad, sin embargo la entidad viviente trabaja muy tenaúmente para alcanzarla. A esto se le llama maya.
+</p>
+<p class='vspace'>Los saqueadores del bosque
+</p>
+<p class='vspace'>"Oh rey Rahugana —dijo Jada Bharata—, en este bosque de la existencia material hay saqueadores muy poderosos. Cuando el alma condicionada entra al bosque a adquirir un poco de ganancia material los saqueadores la engañan; así pues el comerciante condicionado no sabe cómo gastar su dinero y se lo roban estos saqueadores. De igual manera que tigres, chacales y otros animales feroces del bosque que están preparados para arrebatar un cordero de la custodia de su protector, así la esposa y los hijos entran al corazón del comerciante y lo saquean de muchas maneras diferentes".
+</p>
+<p class='vspace'>En el bosque existen muchos saqueadores, asaltantes, chacales y tigres; los chacales se comparan con nuestra esposa e hijos. En la obscuridad de la noche los chacales aúllan muy fuerte y de manera similar nuestra esposa e hijos de este mundo material también gritan como chacales. Los hijos dicen: "Padre deseo esto; dámelo yo soy tu hijo querido", o la esposa dice: "Yo soy tu esposa querida; por favor dame esto, esto se necesita ahora". De esta manera los ladrones del bosque nos saquean y sin conocer la finalidad de la vida humana constantemente se nos engaña. Todo mundo trabaja muy duro para ganar dinero, pero nadie sabe que su propio y verdadero interés está en servir a la Suprema Personalidad de Dios. En lugar de gastar el dinero para avanzar en el Movimiento para la Conciencia de Krishna, uno gasta el dinero gastado con tanto trabajo en clubes, burdeles, alcohol, mataderos, etcétera. Debido a las actividades pecaminosas, uno queda implicado en el proceso de transmigración y así tiene que aceptar un cuerpo tras otro. Estando absorto de esta manera en una condición de angustia uno nunca alcanza la felicidad.
+</p>
+<p class='vspace'>Mosquito y fantasma
+</p>
+<p class='vspace'>Jada Bharata dijo: "En este bosque existen enramadas formadas de matorrales hierbas y enredaderas. En estas enramadas al alma condicionada siempre la molestan los mosquitos que pican con crueldad (personas envidiosas). Algunas veces ve un palacio imaginario en el bosque y algunas veces se queda perplejo al ver algún espíritu fugaz o fantasma que aparece tal como un meteoro en el cielo".
+</p>
+<p class='vspace'>Todo mundo está dedicado a ganarse la vida en alguna profesión u ocupación. En estas transacciones uno tiene que conocer a mucha gente indeseable y su comportamiento se compara con las picaduras de los mosquitos y esto crea condiciones muy desagradables. Aun en medio de estos disturbios uno se imagina que va a construir una gran casa y que vivirá en ella permanentemente aunque sabe que no podrá hacerlo. El oro se compara con un espíritu fugaz el que aparece tal como un meteoro en el cielo se exhibe por un momento y luego desaparece. Por lo general los karmis o trabajadores fruitivos se sienten atraídos por el oro o el dinero, pero a estos se les compara con fantasmas y brujas.
+</p>
+<p class='vspace'>El remolino del sexo
+</p>
+<p class='vspace'>"Mi querido rey —dijo Jada Bharata—, el comerciante que está en la senda del bosque del mundo material con su inteligencia embaucada por el hogar, la riqueza, los parientes, etcétera, corre de un lugar a otro buscando el éxito. Algunas veces el polvo de un remolino le cubre los ojos, es decir, por su propia lujuria queda cautivado por la belleza de su esposa. especialmente después de su periodo menstrual. Por consiguiente se ciega y no puede ver a dónde va, ni lo que está haciendo".
+</p>
+<p class='vspace'>Una persona materialista hace de su esposa el centro de la atracción y trabaja muy duro día y noche. Su único goce en la vida material es la relación sexual; por lo tanto a los karmis los atraen las mujeres tales como sus amigas o sus esposas. En efecto ellos no pueden vivir sin tener relaciones sexuales y bajo estas circunstancias a la esposa se le compara con su remolino especialmente después de su período menstrual. 
+</p>
+<p class='vspace'>Los que observan estrictamente las reglas y regulaciones de la vida familiar se dedican al sexo solamente una vez al mes después del período menstrual. Al esperar con ilusión esta oportunidad sus ojos quedan sobrecogidos ante la belleza de su esposa, así pues se dice que el remolino les cubre los ojos con polvo.
+</p>
+<p class='vspace'>Tal persona lujuriosa no sabe que todas sus actividades materiales están siendo observadas por diferentes semidioses, en especial el dios del Sol y que las están anotando para el karma de su próximo cuerpo. Los cálculos astrológicos se llaman jyoti-sastra; y como el jyoti o la refulgencia del mundo material viene de las diferentes estrellas y planetas la ciencia se llama jyoti-sastra o la ciencia de las luminarias. Se indica nuestro futuro al hacer los cálculos del jyoti, en otras palabras todas las luminarias —las estrellas, el Sol y la luna— atestiguan las actividades del alma condicionada. Así pues al alma se le otorga un tipo particular de cuerpo. Una persona lujuriosa cuyos ojos están cubiertos por el polvo del remolino de la existencia material no se pone a pensar que las diferentes estrellas y planetas están observando sus actividades y que están siendo registradas. Sin saber esto, el alma condicionada comete toda clase de actividades pecaminosas para complacer sus deseos lujuriosos.
+</p>
+<p class='vspace'>El grillo indiscreto
+</p>
+<p class='vspace'>Jada Bharata dijo: "Al vagar por el bosque el mundo mundo material, el alma condicionada a veces oye un grillo invisible haciendo sonidos ásperos, lo que molesta mucho a sus oídos. Algunas veces su corazón se apena con los sonidos de las lechuzas que son iguales a las palabras ásperas de sus enemigos. Algunas veces se refugian en un árbol que no tiene ni frutas ni flores; él se acerca a ese árbol porque está abrumado por el fuerte apetito y por lo tanto sufre. Él quisiera encontrar agua pero tan sólo es ilusionado por un espejismo y corre tras él".
+</p>
+<p class='vspace'>El mundo material está lleno de gente envidiosa. Incluso dentro de nuestro círculo íntimo existe mucha murmuración y esto se compara con la vibración sonora del grillo en el bosque. Uno no puede ver al grillo pero sí oye su sonido y se aflige. ésta es la naturaleza del mundo; uno no puede evitar la pena mental debido a las murmuraciones de la gente envidiosa. Al estar muy apesadumbrados, algunas veces le pedimos ayuda a una persona pecadora, pero no puede ayudarnos porque no tiene inteligencia. Así pues, la entidad viviente se siente desilusionada. Esto es igual que correr tras un espejismo en el desierto en un esfuerzo por encontrar agua. Esas actividades no producen ningún resultadotangible; debido a que lo dirige la energía ilusoria un alma condicionada sufre de muchas maneras.
+</p>
+<p class='vspace'>Ríos, incendios e impuestos
+</p>
+<p class='vspace'>"Algunas veces —dijo Jada Bharata al rey Rahugana—, el alma condicionada brinca a un río poco profundo o si tiene pocos granos para alimentarse va a pedir comida a las personas que no son nada caritativas. Algunas veces sufre del calor ardiente de la vida familiar que es como un incendio forestal y algunas veces se entristece cuando su riqueza a la que ama como a su propia vida la saquean los reyes en el nombre de impuestos muy pesados".
+</p>
+<p class='vspace'>Cuando uno tiene calor debido al sol abrasador algunas veces brinca a un río para sentir alivio; sin embargo si el río está casi seco y el agua es poco profunda, uno se puede romper los huesos al brincar en él. El alma condicionada siempre está experimentando condiciones miserables y algunas veces sus esfuerzos por obtener ayuda de los amigos son exactamente igual a brincar en un río seco. De esas acciones no saca ningún provecho y solamente se rompe los huesos. Algunas veces al experimentar una escasez de comida uno puede acudir a una persona que no puede ni desea dar caridad. Cuando un hombre tiene que pagar al gobierno impuestos muy pesados se siente muy triste. Los impuestos muy fuertes nos obligan a esconder nuestros ingresos, pero a pesar de este esfuerzo los agentes del gobierno a menudo están tan pendientes y son tan rudos que de cualquier manera se llevan todo el dinero, y el alma condicionada queda muy apesadumbrada. Así pues, las personas están tratando de llegar a ser felices en el mundo material, pero esto es igual a tratar de ser felices en un incendio forestal. Nadie desea ser feliz en la vida familiar o en la vida mundana pero por las leyes de la naturaleza todos tenemos que aceptar la infelicidad y la angustia.
+</p>
+<p class='vspace'>Castillos en el aire
+</p>
+<p class='vspace'>Jada Bharata luego dijo: "Algunas veces derrotada o saqueada por un poderoso agente superior, una entidad viviente pierde todas sus posesiones; entonces, se torna taciturna y lamentando su perdida algunas veces cae inconsciente. Otras veces imagina una ciudad magnífica en la que desea vivir felizmente con los miembros de su familia y con su riqueza. Ella se siente plenamente satisfecha si esto es posible pero esa supuesta felicidad dura solamente un momento".
+</p>
+<p class='vspace'>Algunas veces en el bosque aparece un gran castillo, en realidad este castillo no existe en ninguna parte más que en nuestra imaginación. En el bosque material el alma condicionada algunas veces completa grandes castillos y rascacielos y desperdicia su energía en esas cosas esperando vivir en ellos pacificamente para siempre con su familia. Sin embargo, las leyes de la naturaleza no lo permiten; pues su felicidad puede durar algunos años, pero como el dueño del castillo tiene que abandonarlo en el momento de la muerte todo se pierde eventualmente. Así son las transacciones mundanas; incluso si uno es feliz durante un tiempo un enemigo muy poderoso puede saquearlo todo. Existen muchos ejemplos en que grandes hombres de negocios de repente se vuelven mendigos en la calle. Sin embargo, la naturaleza de la existencia material es tal que las personas tontas se sienten atraídas por estas transacciones y se olvidan de la verdadera ocupación; la autorrealización.
+</p>
+<p class='vspace'>La felicidad familiar
+</p>
+<p class='vspace'>Jada Bharata dijo: "Algunas veces el comerciante que está en el bosque desea subir a los cerros y a las montañas pero como su calzado es insuficiente se lastima los pies con los pequeños fragmentos de piedra y las espinas de la montaña. Al ser lastimado por ellos se siente muy apesadumbrado. Algunas veces una persona que está apegada a su familia se siente abrumada por el hambre y debido a su miseria se enfurece con los miembros de su familia".
+</p>
+<p class='vspace'>Nuestra familia es comparada con la montañas elevadas, pues el estar feliz con ella es igual al caso del hombre hambriento tratando de subir a una montaña llena de espinas. Casi el 99.9 por ciento de la población es feliz en la vida familiar a pesar de todos los intentos que se hacen para complacer a los miembros de la familia. En los países occidentales por el descontento de los miembros de la familia en realidad no existe la vida familiar. Existen muchos casos de divorcio y por descontento los hijos se van de la protección de sus padres. Incluso si uno tiene suficiente dinero para mantener a una familia, la situación es tal que nadie es feliz en la vida familiar. Cuando la mente de alguien está muy perturbada dicha persona se satisface enojándose con su pobre esposa e hijos. Naturalmente la esposa y los hijos dependen del padre pero el padre si no puede mantener adecuadamente a la familia se perturba mentalmente y por lo tanto castiga 
+innecesariamente a los miembros de la familia. 
+</p>
+<p class='vspace'>Al sentir repugnancia por la vida familiar uno se separa de la familia por medio del divorcio o por algún otro medio. Por consiguiente, de acuerdo con la civilización védica él debe retirarse de la vida familiar en la edad madura; uno debe retirarse voluntariamente de la vida familiar a los cincuenta años de edad. Si una persona ha de separarse, ¿por qué no hacerlo voluntariamente? La separación sistemática es mejor que la separación forzada. La separación forzada no hace a nadie feliz, pero por consentimiento mutuo o mediante la disposición védica uno debe separarse de sus asuntos familiares a cierta edad y debe depender completamente de Krishna. Esto hace que nuestra vida tenga éxito. 
+</p>
+<p class='vspace'>La serpiente del materialismo
+</p>
+<p class='vspace'>"El alma condicionada en el mundo material —Jada Bharata dijo—, es a veces sofocada por una serpiente; en ese momento se queda tirada en el bosque como una persona muerta desprovista de conciencia y de conocimiento. Algunas veces otras víboras venenosas la pican. Al estar carente de conciencia cae en un pozo obscuro de vida infernal sin esperanza de que se le rescate".
+</p>
+<p class='vspace'>Cuando uno queda inconsciente al ser mordido por una víbora uno no puede comprender qué es lo que sucede fuera del cuerpo. La condición de inconciencia es la condición del sueño profundo, de manera similar el alma condicionada está realmente durmiendo. Las personas no comprenden que en realidad están dormidas en este mundo material desprovistas del conocimiento de la vida espiritual. Por lo tanto, Caitanya Mahaprabhu dice: "Yo he traído la medicina para despertar a todas las entidades vivientes del sueño perpetuo; por favor reciban el santo nombre del Señor el maha-mantra  Hare Krishna y despierten". 
+</p>
+<p class='vspace'>Los enredos sexuales
+</p>
+<p class='vspace'>Jada Bharata luego dijo: "Algunas veces para obtener un poco de goce sexual insignificante uno busca mujeres corrompidas; en este intento nos insultan y golpean los parientes de esas mujeres. Esto es igual que ir a sacar un poco de miel de una colmena y ser atacado por las abejas. Algunas veces, después de gastar mucho dinero uno puede obtener otra mujer para un poco más de goce de los sentidos; mas desafortunadamente al objeto de la complacencia de los sentidos la mujer se la lleva a plagia otro corrompido".
+</p>
+<p class='vspace'>Esta caza de mujeres está sucediendo en el bosque del mundo material, alguna veces legalmente y algunas veces ilegalmente. Por consiguiente en el Movimiento para la conciencia de Krishna a los devotos se les prohiben las relaciones sexuales ilícitas, así se evitan muchas dificultades. Uno debe permanecer satisfecho con una mujer estando debidamente casado. Una persona puede satisfacer sus deseos sensuales con su esposa sin crear problemas en la sociedad y recibir el castigo por ello. 
+</p>
+<p class='vspace'>Más reveses
+</p>
+<p class='vspace'>"Algunas veces —agregó Jada Bharata—, la entidad viviente está ocupada contrarrestando las alteraciones naturales como el frío congelante, el calor abrasador, los fuertes vientos, la lluvia excesiva, etcétera y cuando uno no puede hacerlo se siente muy infeliz. Algunas veces se le engaña en las transacciones de negocios, una vez tras otra; de esta manera con el engaño las entidades vivientes crean enemistades entre ellas. En la senda del bosque de la existencia material algunas veces una persona no tiene riqueza y por lo tanto no tiene un hogar adecuado una cama o un lugar para sentarse, ni tampoco un goce familiar apropiado. Por lo tanto, sale a mendigar dinero a los demás, pero cuando no se cumplen los deseos mendigando entonces quiere pedir prestado o robar las propiedades de los demás, así pues se le insulta en la sociedad".
+</p>
+<p class='vspace'>Todo termina en enemistad
+</p>
+<p class='vspace'>Jada Bharata siguió explicando: "Debido a las transacciones monetarias las relaciones se ponen muy tensas y terminan en enemistad. Algunas veces el esposo y la esposa caminan por la senda del progreso material y para conservar su relación trabajan muy duro. Algunas veces debido a la falta de dinero o debido a enfermedades se sienten muy avergonzados y casi mueren".
+</p>
+<p class='vspace'>En este mundo material existen muchas transacciones entre las personas y las sociedades y también entre naciones, pero gradualmente éstas terminan en enemistad entre las dos partes. En nuestros días la mayoría de los países se han desarrollado económicamente, pero debido a los intercambios comerciales las relaciones parecen estar tirantes. Finalmente se declaran guerras entre las naciones y como resultado de estas agitaciones políticas hay destrucción en todo el mundo y las personas sufren enormemente.
+</p>
+<p class='vspace'>"Mi querido rey —dijo Jada Bharata—, en la senda del bosque de la vida material una persona primero pierde a su padre y a su madre y después de la muerte de estos, él se apega a sus hijos recién nacidos. De esta manera vaga por la senda del progreso material y eventualmente se siente desconcertado; no obstante nadie sabe cómo salir de ella incluso hasta el momento de la muerte". Así pues estas cosas continúan de la misma manera generación tras generación sin que nadie pueda alcanzar la liberación de las inconvenencias de la vida material.
+Políticos incompetentes
+</p>
+<p class='vspace'>Jada Bharata dijo: "Han existido y existen muchos héroes sociales y políticos que han conquistado enemigos con poder igual al de ellos sin embargo por su ignorancia al creer que la tierra es suya se pelean entre ellos y ofrecen sus vidas en la batalla. Ellos no son capaces de tomar la senda de la vida espiritual que aceptan los que están en la orden renunciada. A pesar de que son grandes héroes y dirigentes políticos, ellos no pueden tomar la senda de la realización espiritual".
+</p>
+<p class='vspace'>Los grandes dirigentes políticos podrán conquistar enemigos políticos de igual fuerza, pero desafortunadamente no pueden dominar sus fuertes sentidos, los enemigos que siempre los acompañan. Al no poder conquistar a estos enemigos cercanos, tan sólo tratan de conquistar a otros enemigos y finalmente ellos mueren en la lucha por la existencia. Ellos no toman la senda de la comprensión espiritual ni llegan a ser sannyasis o miembros de la orden renunciada. Algunas veces estos grandes dirigentes se disfrazan de sannyasis y se hacen llamar mahatmas, pero su único interés es conquistar a sus enemigos políticos. Como malogran su vida con la ilusión de "ésta es mi tierra y mi familia", ellos no pueden progresar espiritualmente ni lograr la liberación de las garras de maya.
+Odios en el león
+</p>
+<p class='vspace'>"Algunas veces —le dijo Jada Bharata al rey Rahugana—, la entidad viviente en el bosque de la existencia material se refugia en las enredaderas y desea oír el piar de las aves en esas enredaderas. Como les teme a los leones rugientes del bosque se hace amigo de las grullas de las garzas y de los buitres".
+</p>
+<p class='vspace'>En el bosque del mundo material existen muchos animales y aves árboles y enredaderas. Algunas veces el ser viviente desea refugiarse en las enredaderas; en otras palabras desea ser feliz con que lo abracen los brazos de su esposa que son como enredaderas. Dentro de las enredaderas hay muchas aves cantando; esto indica que él quiere complacerse oyendo la dulce voz de su esposa sin embargo en la vejez, algunas veces teme a la muerte inminente que se compara con un león rugiente. Para salvarse del ataque del león se refugia en algunos svamis, yogis, encarnaciones, simuladores y timadores falsos; siendo engañado por la energía ilusoria de esta manera él malogra su vida. Se dice harim vina mrtim na taranti: nadie puede salvarse del peligro inminente de la muerte sin refugiarse en la Suprema Personalidad de Dios. La palabra hari indica al león así como al Señor Supremo; para salvarse de las garras de Hari el león de la muerte uno debe refugiarse en el Haré supremo, la Suprema Personalidad de Dios. 
+</p>
+<p class='vspace'>Las personas con un escaso acopio de conocimiento se refugian en simuladores y timadores no devotos para salvarse de las garras de la muerte. En el bosque del mundo material el ser viviente primero que nada quiere ser muy feliz refugiándose en los brazos de su esposa, que son como enredaderas, y escuchan su dulce voz. Después, a veces se refugia en supuestos gurus que son como grullas, garzas y buitres. Así se le engaña de ambas maneras por no refugiarse en el Señor Supremo.
+</p>
+<p class='vspace'>Los monos santos
+</p>
+<p class='vspace'>"Al ser engañado por ellos —dijo Jada Bharata—, la entidad viviente del bosque del mundo material trata de renunciar a la compañia de estos supuestos yogis, svamis y encarnaciones y se asocia con devotos verdaderos, pero debido al infortunio no puede seguir las instrucciones del maestro espiritual o devotos avanzados; por lo tanto renuncia a su compañía y regresa a la compañía de los monos que tan sólo están interesados en la complacencia de los sentidos y en las mujeres. Él se satisface asociándose con quienes gozan de los sentidos y entregándose así al sexo y la embriaguez malogra de su vida. Al ver los rostros de los que se deleitan de los sentidos se torna desmemoriado y se aproxima a la muerte".
+</p>
+<p class='vspace'>Los supuestos espiritualistas se asemejan a los monos; externamente los monos algunas veces parecen sadhus u hombres santos porque viven en el bosque y recogen frutas, pero su único deseo es tener muchas monas y gozar de la vida sexual. Algunas veces los supuestos espiritualistas al buscar la vida espiritual se asocian con devotos que están conscientes de Krishna, pero aquellos no pueden ejecutar los principios regulativos ni pueden seguir la senda de la vida espiritual. Por consiguiente dejan la compañía de los devotos y se asocian con los que complacen a los sentidos y que se compara con los monos. De nuevo reviven su vida sexual y la embriaguez y al verse los rostros los unos a los otros se sienten satisfechos; de esta manera pasan sus vidas hasta el momento de la muerte.
+</p>
+<p class='vspace'>Instrucciones tajantes
+</p>
+<p class='vspace'>Jada Bharata dijo: "Cuando la entidad viviente se vuelve como un mono que brinca de una rama a otra, permanece en el árbol de la vida familiar sin ningún otro interés que el del sexo. Así pues lo patea su esposa de igual manera que el burro es pateado por la burra e imposibilitado de poder escapar, permanece impotente en esa situación. Algunas veces cae víctima de una enfermedad incurable lo que es como caerse en la caverna de una montaña. Él siente temor de la muerte como el elefante que está en el fondo de aquella caverna y permanece desamparado asiéndose a las ramas de una enredadera. Oh rey Rahugana, si el alma condicionada de una manera u otra logra salir de su peligrosa situación, nuevamente regresa a su hogar a gozar de la vida sexual porque así es el apego. Por lo tanto, bajo el hechizo de la energía material, del Señor continúa vagando en el bosque de la existencia material sin poder descubrir su verdadero interés ni siquiera al momento de la muerte. Mi querido rey Rahugana tú también eres víctima de la energía externa ya que estás situado en la senda de la atracción por el placer material. Para que te vuelvas un amigo ecuánime con todas las entidades vivientes ahora yo te aconsejo que renuncies a tu posición de rey y al cetro con el que castiga a los criminales. Renuncia a la atracción por los objetos de los sentidos y toma la espada del conocimiento afilada por el servicio devocional al Señor Krishna. Entonces podrás cortar el duro nudo de la energía ilusoria y cruzar al otro lado del océano de la ignorancia".
+</p>
+<p class='vspace'>En el Bhagavad-gita el Señor Krishna compara al mundo material con el árbol de la ilusión del que nos debemos liberar arrancándonos de él: "La verdadera forma de ese árbol no se puede percibir en este mundo. Nadie puede entender dónde termina, dónde comienza, ni dónde está su base. Pero de un modo decidido uno debe cortar con el arma del desapego ese árbol fuertemente enraizado. Después uno debe buscar aquel lugar del cual una vez que se ha ido a él nunca se regresa  y entregarse allí a esa Suprema Personalidad de Dios a partir de quien todo comenzó y todo se ha extendido desde tiempo inmemorial” (Bg. 15.3-4).
+Humano mejor que semidiós
+</p>
+<p class='vspace'>El rey Rahugana dijo: "Este nacimiento como ser humano es el mejor de todos; incluso el nacimiento entre los semidioses en los planetas celestiales no es tan glorioso como el nacimiento como ser humano en esta Tierra. ¿De qué sirve la posición tan excelsa de un semidiós en los planetas celestiales si debido a la gran cantidad de comodidades materiales no tiene la posibilidad de asociarse con devotos".
+</p>
+<p class='vspace'>Incluso en esta Tierra los que son muy opulentos generalmente no tienen interés en dedicarse al proceso de conciencia de Krishna. Una persona inteligente que realmente está interesada en liberarse de las garras materiales debe buscar la compañia de devotos puros. Mediante esa compañía uno puede llegar a desapegarse gradualmente de la atracción material, del dinero y de las mujeres.
+</p>
+<p class='vspace'>El rey se libera
+</p>
+<p class='vspace'>El rey Rahugana entonces le dijo a Jada Bharata: "Realmente no es tan maravilloso que con sólo estar cubierto por el polvo de tus pies de loto uno inmediatamente alcance el plano del servicio devocional puro al Señor Krishna, que no está siquiera al alcance de grandes semidioses como Brahma. Al estar contigo solamente por un momento ahora ya me he librado de todos los argumentos del prestigio falso y de la falta de discernimiento que son las raíces del enredo en el mundo material. Ahora ya estoy libre de todos estos problemas; por lo tanto ofrezco mis reverencias respetuosas a las grandes personalidades espirituales aun si están escondidas bajo diferentes apariencias. Por la misericordia de ellos que haya buena fortuna en las dinastías reales que siempre los están ofendiendo".
+</p>
+<p class='vspace'>El rey Rahugana estaba muy arrepentido por haber forzado a Jada Bharata a que llevara su palanquín; por lo tanto comenzó a ofrecer oraciones de toda clase de brahmanas y personas autorrealizadas a pesar de que pudieran estar jugando como niños o escondiéndose bajo diferentes apariencias. Al estar engreídas por su posición las dinastías reales generalmente ofenden a estas grandes personalidades. Por lo tanto el rey Rahugana comenzó a ofrecer sus reverencias respetuosas a ellos para que las dinastías reales que los hayan ofendido no fueran a deslizarse hasta una condición infernal.
+</p>
+<p class='vspace'>Había algunas olas de descontento en la mente de Jada Bharata porque el rey Rahugana lo había insultado y lo había hecho cargar su palanquín, pero Jada Bharata no hizo caso de esto y su corazón una vez más quedó calmado y tranquilo como un océano. Como era un devoto del Señor Krishna era naturalmente muy bondadoso de corazón y por lo tanto le explicó al rey sobre la posición constitucional del alma. Luego olvidó el insulto porque el rey Rahugana lastimeramente le rogó su perdón tendido a sus pies de loto. Después de esto Jada Bharata volvió a vagar por la tierra de igual manera que antes.
+</p>
+<p class='vspace'>Conclusión
+</p>
+<p class='vspace'>El gran sabio Sukadeva Gosvami ha dicho: "Las actividades de Bharata Maharaja son maravillosas pues renunció a todo lo que se les dificulta renunciar a los demás. Él renunció a su reino, a su esposa y a su familia; su opulencia era tan grande que incluso los semidioses la envidiaban y sin embargo renunció a ella. Era digno de una gran personalidad como el ser un gran devoto, pues renunció a todo porque estaba muy atraído por la belleza, la opulencia, la reputación, el conocimiento, la fuerza y la renunciación de la Suprema Personalidad de Dios Krishna. Krishna es tan atractivo que uno puede renunciar por él a todas las cosas deseables. Incluso al estar en el cuerpo de un venado Maharaja Bharata no olvidó a la Suprema Personalidad de Dios".
+</p>
+<p class='vspace'>El nombre de Dios es Krishna (el supremamente atractivo) porque él es tan atractivo que los devotos puros pueden  renunciar a todo lo que está dentro de este mundo material por él. Maharaja era un rey ideal, instructor y emperador del mundo; poseía todas las opulencias del mundo material, pero Krishna es tan atractivo que atrajo a Maharaja Bharata desde todas sus posesiones materiales. Sin embargo de una forma u otra el Rey se sintió afectado por un pequeño venado y cayendo de su posición tuvo que aceptar el cuerpo de un venado en su siguiente vida. Por la gran misericordia de Krsnam no olvidó su posición y pudo comprender cómo había caído. Por lo tanto, en la vida siguiente como Jada Bharata, maharaja Bharata fue muy cuidadoso de no echar a perder su energía y por lo tanto se presentaba como una persona sordomuda, de esta manera podía concentrarse en su servicio devocional. De una forma u otra si una persona se siente atraída por Krishna, cualquier cosa que haga en servicio devocional es de beneficio permanente. Incluso si uno cae de su posición debido a su inmadurez o a las malas compañías sus beneficios devocionales no se pierden nunca. Maharaja Bharata es un ejemplo de esto. El movimiento para la Conciencia de Krishna por lo tanto, le está dando a todos la oportunidad de dedicarse al servicio devocional a Krishna, cuando menos durante algún tiempo. Un poco de servicio devocional nos dará ímpetu para avanzar y así lograr que nuestra vida tenga éxito.
+</p>
+<p class='vspace'>Glosario
+</p>
+<p class='vspace'>asrama— lugar donde los acetas practican sus regulaciones espirituales.
+</p>
+<p class='vspace'>atma— alma.
+</p>
+<p class='vspace'>Bhagavad-gita— el libro que contiene las instrucciones dadas por el Señor Sri Krishna a Su amigo Arjuna en el campo de batalla de Kuruksetra.
+</p>
+<p class='vspace'>brahmana— la clase de los hombres inteligentes de acuerdo con el sistema de órdenes sociales y espirituales.
+Caitanya-caritamrta— la Escritura autorizada que escribió Krsnadasa Kaviraja en la que se describen las enseñanzas y pasatiempos del Señor Caitanya.
+</p>
+<p class='vspace'>Caitanya Mahaprabu— Krishna Mismo quien apareció en el Siglo XV en Navadvipa Bengala. Él fue el inaugurador del canto en congregación del maha-mantra Hare Krishna y Su vida fue el ejemplo más perfecto de la práctica de las enseñanzas del Bhagavad-gita.
+Conciencia de Krishna— el proceso mediante el cual se absorbe la mente en el Señor Sri Krishna, la Suprema Personalidad de Dios a través del servicio devocional que se ejecuta con el cuerpo la mente y las palabras.
+</p>
+<p class='vspace'>dacoit— un ladrón miembro de una pandilla de ladrones en India o Burma.
+</p>
+<p class='vspace'>guru— maestro espiritual.
+</p>
+<p class='vspace'>Hare Krishna Hare Krishna Krishna Krishna Hare Hare Hare Rama Hare Rama Rama Rama Hare Hare— el maha-mantra o gran canto de la líberación. Krishna y Rama son nombres del Señor y Hare se refiere a la energía del Señor. Estos nombres han sido recomendados particularmente para ser cantados en esta era.
+</p>
+<p class='vspace'>Kali-yuga— la cuarta era o yuga de un ciclo recurrente de cuatro yugas las cuales afectan los diferentes planetas del universo. Kali-yuga es la "era de hierro" la cual se caracteriza por la riña y la hipocresía.
+</p>
+<p class='vspace'>karma— (1) acción material ejecutada de acuerdo con las regulaciones de las Escrituras; (2) acción concerniente al desarrollo del cuerpo material; (3) cualquier acción material que ha de traer una reacción subsecuente; (4) reacción material en que se incurre debido a las actividades fruitivas.
+</p>
+<p class='vspace'>Krishna— nombre propio del Señor Supremo en Su forma original trascendental; la Suprema Personalidad de Dios, el orador de El Bhagavad-gita.
+</p>
+<p class='vspace'>kusa pasto— un tipo particular de pasto usado en ritos y practicas devocionales.
+</p>
+<p class='vspace'>maha-mantra— Véase Hare Krishna.
+maya— ilusión; energía de Krishna que engaña a la entidad viviente haciéndola olvidar al Señor Supremo.
+Srimad-Bhagavatam— la Escritura védica autoritativa que trata exclusivamente de los pasatiempos de la Personalidad de Dios y de Sus devotos.
+</p>
+<p class='vspace'>sudras— hombres de clase baja generalmente carentes de sabiduría espiritual.
+</p>
+<p class='vspace'>Vedas los— cuatro Escrituras en las que se presenta el conocimiento original hablado primero por Dios, que explica fundamentalmente cómo retornar al mundo espiritual después de rvivir próspera y cómodamente en este mundo.
+yoga— el proceso de vincularse con la Suprema Verdad Absoluta a través del bhakti o la devoción. Consta de diversas ramificaciones que culminan en el amor puro por Dios y en la readmisión al mundo espiritual.
+</p>
+<p class='vspace'>Su Divina Gracia A.C. Bhaktivedanta Swami Prabhupada. (1896–1977).
+</p>
+<p class='vspace'>Nacio en Calcuta en el seno de una familia de devotos de Krishna Su Divina Gracia A.C. Bhaktivedanta Swami Prabhupada dedicó toda su vida a la práctica y propagación del conocimiento espiritual que procede de la antiquísima tradición védica.
+</p>
+<p class='vspace'>En 1922, después de concluir sus estudios universitarios Srila Prabhupada conoció a su maestro espiritual Srila Bhaktisiddhanta Sarasvati Gosvami Maharaja (1874-1937), el erudito y devoto más destacado de la época fundador del Gaudiya Matha (un instituto védico con 64 centros en la India). Encomendado por Srila Bhaktisiddhanta con la misión de divulgar el conocimiento védico en el idioma inglés, Srila Prabhupada comenzó a prepararse para ello a través del estudio la prédica y la publicació de sus propios escritos. Hasta el momento de su desaparición, su carrera de escritor trajo a la luz más de setenta volúmenes de traducciones comentarios y estudios sobre las obras clásicas de la India, de los cuales se han distribuido hasta la fecha más de cien millones de ejemplares en cuarenta idiomas.
+</p>
+<p class='vspace'>En 1965 a la avanzada edad de sesenta y nueve años Srila Prabhupada navegó hasta los Estados Unidos fundando en Nueva York, la Sociedad Internacional para la Conciencia de Krishna (ISKCON) que durante doce años dirigió y vio crecer hasta convertirse en una confederación mundial de más de cien asramas, escuelas, templos, institutos y comunidades agricolas. Sus discípulos están continuando el movimiento que él comenzó.
+</p>
+<p class='vspace'>Nota acerca de las palabras sáncritas transliteradas.
+Nota acerca de las palabras sáncritas transliteradas.
+Las vocales se pronuncian aproximadamente como en español excepto que hay vocales cortas y vocales largas. Estas últimas llevan una raya encima. Las vocales cortas son más breves que en español. Las vocales largas tienen el doble de duración que las vocales cortas y son como las vocales acentuadas en español. Las vocales sánscritas r se pronuncia ri
+</p>
+<p class='vspace'>Las consonantes se pronuncian casi todas como en español, con estas excepciones: cuando van seguidas de una h (kh gh ch jh th dh ph bh) son aspiradas es decir se pronuncian emitiendo con cierta fuerza el aire de la garganta. La g se pronuncia como g de goma. La j se pronuncia como una ll fuerte. La y se pronuncia como la i de ionósfera. La ll se pronuncia como la l en sol. La s y la s se pronuncian como una sh suave así como en la palabra sha. La h es aspirada.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on April 26, 2011, at 01:12 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

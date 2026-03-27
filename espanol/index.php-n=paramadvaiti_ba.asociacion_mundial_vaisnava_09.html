@@ -1,0 +1,686 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - El Presente</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=paramadvaiti_ba.asociacion_mundial_vaisnava_09' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.asociacion_mundial_vaisnava_09' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - El Presente"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.asociacion_mundial_vaisnava_09-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramadvaiti Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.asociacion_mundial_vaisnava.html'>Vishva Vaisnava Raj Sabha – Asociación Mundial Vaisnava</a>
+</p>
+<div class='vspace'></div><h2>El Presente</h2>
+<p>La WVA ha estado involucrada con muchos y diferentes proyectos. Aún cuanto más tiempo pasa, mas ideas aparecen. Aquí nosotros presentamos los Comités, que han sido concebidos para organizar las actividades de la WVA. Las entrevistas con el coordinador de cada comité, reflejan el potencial para incrementar nuestro servicio.
+</p>
+<p class='vspace'>1. VVRS-WVA Comité para la preservación de Vrindavan Dham:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Colectar fondos y proveer  ayuda para la preservación de los lugares Santos. 
+</p>
+<p class='vspace'>B.	Enviar representantes a las organizaciones activas, que trabajan para el control del desarrollo de Vrindavana.
+</p>
+<p class='vspace'>Coordinador: Swami B.V. Sadhu
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuándo vino por primera vez a Vrindavana? 
+</p>
+<p class='vspace'>B.V. Sadhu (BVS): La primera vez, yo vine a Vrindavana cuando mi abuelo, Raja Raghunandan Prasad Singh, me trajo en 1945. Desde ese tiempo yo he venido dos veces por año. Subsecuentemente desde ese tiempo Vrindavana ha pasado a través de muchos cambios. Yo estoy muy feliz, por poder ser parte de este esfuerzo para ayudar a Vrindavana, a estar de la manera, como esta destinada a ser. 
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son las principales cosas, que usted piensa que son importantes para Vrindavana?
+</p>
+<p class='vspace'>BVS: Vrindavana tiene que ser limpiada, y la atmósfera pacifica y espiritual tiene que ser protegida. Cuando usted invita a alguien a su casa, y esta está sucia, entonces usted se sentirá muy avergonzado. Vrindavana es nuestro hogar, el lugar de la Divina Pareja y nuestros guardianes eternos; así que nosotros deberíamos hacer todo lo posible en esta relación. Otros lugares religiosos como Tirupati y Vaishnavadevi son ejemplos de cuan bellos y trascendentales lugares pueden ser. Especialmente la ribera es un lugar lleno de monumentos históricos, y el principal lugar, que  cada visitante definitivamente irá a ver. Si esto no esta bien mantenido, entonces esto es embarazoso para todos nosotros. De acuerdo a la naturaleza de la WVA, nuestro principal trabajo es simplemente, informar y comunicar; pero en este Comité particular, nosotros deberíamos actualmente tratar en lo posible, de influenciar la situación local, y hacer  a  todas las misiones, participar de una manera práctica, limpiando por lo menos, todos los alrededores de sus propios templos. 
+</p>
+<p class='vspace'>Pregunta: ¿Cómo pueden las misiones participar?
+</p>
+<p class='vspace'>VBS: Primero, ellos realmente deben volverse conscientes del los problemas. Segundo, ellos deben formar un Comité en su propia misión, para manejar la situación, y evaluar qué pueden hacer ellos por eso. Ellos pueden tratar de recaudar los fondos, para este propósito en particular. Entonces, ellos tienen que estar seguros de que ellos mismos  no son los responsables,  de ensuciar a Vrindavana,  por tirar tazas plásticas, etc. Ellos pueden también investigar, si quieren adoptar un templo antiguo en el dham y arreglarlo de nuevo. Hay muchos lugares en ruinas, y algunos son de gran importancia para nuestra sampradaya como el bhajana de Jagannath Das Babaji Maharaja en Surya Kunda. Entonces los secretarios de las diferentes misiones, deberían comunicarse con nuestro Comité, para que juntamente podamos ganar alguna fuerza para influenciar y participar, con otras organizaciones activas, en esas áreas. Casi todas las diferentes misiones religiosas en Vrindavana, son muy poderosas y bastante adineradas también. Así,  que si nosotros permaneciéramos juntos, e impresionáramos al gobierno, con nuestro sincero deseo de embellecer Vrindavana, realmente no habría muchos obstáculos, para lograr algo tangible. Por otro lado, si nosotros no hacemos algo por esto, esta situación simplemente no permanecerá, si no que más bien se volverá peor. 
+</p>
+<p class='vspace'>Lo que previamente los Reyes de India – como mi abuelo – hicieron, como conseguir peregrinos y mantener maravillosos templos, gosalas, y dharma asrams; diferentes misiones de diferentes partes del mundo, están haciendo lo mismo hoy. Este solo Comité da suficientes razones, para que todas las misiones tomen un interés serio en la WVA y ayuden a ésta noble causa. Nosotros tenemos que ayudar tan, man y dan – física, mental y económicamente – para éste divino lugar de Radha y Krishna. 
+</p>
+<p class='vspace'>2.	VVRS – WVA  Comité para la preservación de Mayapur Dham: 
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Colectar fondos y otras ayudas, para la preservación de estos santos lugares.
+</p>
+<p class='vspace'>B.	Enviar representantes a organizaciones activas, que trabajan para el control y el desarrollo de Mayapur.
+</p>
+<p class='vspace'>C.	El Saraswat Gaudiya Vaishnava Association, el cual comenzó por el Bhaktivedanta Swami Charity Trust , ha unido muchos Vaisnavas venerables en la sucesión discípular de Srila Bhaktisiddhanta Saraswati Thakur Prabhupada. Esta asociación tiene muy buenos planes para Mayapur Dham, y otros buenos proyectos. El Comité administrador de la WVA, decidió cooperar con la SGVA y siempre envía algunos representantes a sus encuentros anuales. Nosotros publicaremos noticias acerca de su progreso en nuestra página Web. 
+</p>
+<p class='vspace'>Coordinador: Esto está al cuidado de las comunidades Vaisnavas locales. El coordinador es cambiado cada año.  
+</p>
+<p class='vspace'>3.	VVRS-WVA Comité de Preservación de  Jagannath Puri Dham:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Colectar fondos y otras ayudas para la preservación de estos santos lugares.
+</p>
+<p class='vspace'>B.	Enviar representantes a organizaciones activas que trabajan para el control y desarrollo de Jagannath Puri.
+</p>
+<p class='vspace'>Coordinador: Vidyapati Das.
+</p>
+<p class='vspace'>4.	VVRS-WVA Siddhanta, Comité de dignidad Guru Varga:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Preservar, promover y entender el siddhanta puro, en la sampradaya Gaudiya Vaisnava.
+</p>
+<p class='vspace'>B.	Dirigir cualquier pregunta que surja sobre siddhanta e investigar las respuestas a aquellas preguntas. 
+</p>
+<p class='vspace'>C.	Presentar los estudios al Comité Administrador para confirmación (posible votación).
+</p>
+<p class='vspace'>D.	Hacer un estudio del programa de estudios en conexión con la Universidad Védica de Florida y otras academias Vaisnavas. Enviar los estudiantes (si se necesita) para asistir con los proyectos académicos de esas escuelas.
+</p>
+<p class='vspace'>E.	Requerir los ensayos de los Vaisnavas mayores sobre  preguntas especiales.
+</p>
+<p class='vspace'>F.	Hacer todo lo posible por complacer a los Vaisnavas, con respecto al presentado siddhanta.
+</p>
+<p class='vspace'>Coordinador: Swami B.A. Paramadvaiti.
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Puede por favor explicarnos primero la función del Comité?
+</p>
+<p class='vspace'>B:A: Paramadvaiti (BAP): El Vaisnavismo, nuestras conclusiones filosóficas (siddhanta) y las actividades de nuestra sucesión discípular, están frecuentemente bajo ataque. Esto no es sorprendente considerando que nuestra filosofía no es tímida, al señalar los perjudiciales efectos del estilo de vida materialista, también como la deficiencia en las así llamadas prácticas religiosas; por ejemplo, negar a Dios la capacidad para pensar, sentir, y desear. Además de eso, por todas partes la historia, ha estado en numerosas ocasiones, donde los individuos han tratado de tomar ventaja, de las enseñanzas trascendentales de la escuela Vaisnava, para satisfacer sus propios propósitos mundanos, hasta el punto de ir incluso, en contra de los principios morales. El Siddhanta, Comité de Dignidad Guru Varga evolucionó de la necesidad de dar una clara visión del Vaisnavismo, en el interés común de todas las misiones Vaisnavas, cuando el Vaisnavismo es atacado.
+</p>
+<p class='vspace'>Pregunta: ¿Cómo procedería si tal caso ocurre?
+</p>
+<p class='vspace'>BAP: Por la asociación con grandes y avanzados devotos, todos los problemas serán resueltos. Esta es la tradición de la escuela Vaisnava; consultar las escrituras, los santos, y al maestro espiritual, y entonces con la ayuda de nuestro propio corazón, sacar las conclusiones. Si cualquier problema aparece, todos aquellos que han mantenido unido nuestro Comité, son contactados.  Esta es la naturaleza de todos los Comités de la WVA, que cualquier interesado en este campo particular, puede contactar y reunir un Comité (por razones prácticas, esto es normalmente hecho hoy, a través de una dirección de E-mail). En caso de emergencias, Yo como el coordinador del Comité, unido con el secretario de la WVA y la secretaría de Prensa de la WVA, podemos decidir que causa o acción tomar. Pero el criterio de éxito en nuestra actividad, siempre será que los devotos mayores sean complacidos y confiar,  que todos los Vaisnavas sean beneficiados. 
+</p>
+<p class='vspace'>Pregunta: ¿Podría darnos algún ejemplo de su trabajo?
+</p>
+<p class='vspace'>BAP: Los Vaisnavas están predicando en muchos países donde el Vaisnavismo no existe o es minoría absoluta. Esto crea muchas situaciones complicadas También la relación guru-discípulo es a menudo malentendida,  por estar arraigada en un culto bastante personal,  que pertenece a una tradición trascendental. En Polonia en defensa de los devotos locales, quienes estuvieron bajo ataque del nuncio Católico, nosotros testificamos en la corte. Cuando Sri Hanuman y el Señor Krishna fueron mal representados en la serie Xena, nosotros organizamos una protesta en la cual unimos cerca de 200 organizaciones (la mayoría de origen Hindú). Fue notable, que el acarya local de la Ramanuya sampradaya en Vrindavana, se reunió con nuestros Gaudiya Vaisnavas, poniendo el ejemplo de que la WVA puede hacer más que sólo traer a los seguidores de Bhaktisiddhanta Saraswati Thakur Prabhupada a servir a una causa común.
+</p>
+<p class='vspace'>La más delicada situación esta si los gobiernos o autoridades locales, quieren detener nuestras actividades misioneras.  En un caso en Bolivia, la misión Vaisnava entera fue cerrada, las propiedades confiscadas y los devotos arrojados a la cárcel, sólo porque la hija de un ciudadano influyente Boliviano, se había unido al movimiento de Conciencia de Krishna en Alemania.  En otras palabras, los problemas que nosotros podemos enfrentar son totalmente impredecibles, y la WVA a través de este Comité puede extender la mano a los miembros de la Vishva Hindú Parishad y otras organizaciones importantes, para ayudar a rescatar a los Vaisnavas, en situaciones complicadas. Por supuesto, nosotros tenemos que ganar experiencia al respecto.
+</p>
+<p class='vspace'>Pregunta: ¿Qué debe hacer una persona, si tiene algún problema?
+</p>
+<p class='vspace'>BAP: Debería hacer un reporte detallado y enviar una copia a la secretaría de prensa, al secretario de la WVA y a mi. Nosotros entonces  discutimos,  si la WVA debe estar inmediatamente involucrada. Si el asunto no es tan urgente, nosotros enviamos el reporte a todos los miembros del Comité y requerimos su participación.
+</p>
+<p class='vspace'>Pregunta: ¿Qué opina acerca del debate filosófico?
+</p>
+<p class='vspace'>BAP: Eso también se ataca en nuestro Comité. Si una difícil pregunta filosófica surge, nosotros requeriremos a todos los acaryas mayores, para que nos den un comentario o escriban un ensayo sobre el punto en cuestión. La oportunidad para la discusión, estará disponible a algunos individuos o miembros de la misión, que estuvieran interesados, y las respuestas serían publicadas en la revista de la WVA. La WVA no tienen la inclinación para imponer nada , ni para entrar en ningún litigio agresivo. La WVA  apela a la sanidad, justicia e  imparcialidad. Cuando un escritor del periódico Hinduism Today (El Hinduismo hoy), proclamó que los Vaisnavas no son Hindúes, y que por esto no deberían recibir ninguna donación de la comunidad Hindú, yo envié un reporte clarificando nuestra posición (ver apéndice). Incluso la carta no provocó ningún impacto, y no fue publicada. Más tarde Tusta Krishna Das contactó al editor en jefe del periódico, lanzando una queja contra el escritor y su actitud. El editor en jefe se disculpó y prometió aclarar este tema entero por escrito.  En el mundo de los medios de comunicación, y la comunicación en Internet, nosotros tenemos que ser muy conscientes y reaccionar rápidamente, para que las falsedades del Vaisnavismo, no creen ninguna impresión equívoca acerca de nosotros.
+</p>
+<p class='vspace'>5.	VVRS-WVA Comité de Educación:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Informar acerca de la existencia de programas educacionales de misiones miembros.
+</p>
+<p class='vspace'>B.	Promover y comunicar programas educacionales Vaisnavas.
+</p>
+<p class='vspace'>C.	Crear una base de datos de logros educacionales del mundo Vaisnava. 
+</p>
+<p class='vspace'>D.	Traducir guías de estudio de  la Literatura Vaisnava mundial. 
+</p>
+<p class='vspace'>E.	Establecer niveles de programas de grado para Vaisnavas. 
+</p>
+<p class='vspace'>Actualmente los siguientes proyectos están conectados con este Comité:
+a.	Academias Vaisnavas en muchas ciudades alrededor del mundo.<br />b.	Universidad Védica de Florida.<br />c.	Programa de Educación Vaisnava por Internet.
+</p>
+<p class='vspace'>Coordinador: Swami B.V. Vaishnava
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: Con relación a los niños de los devotos y otros Vaisnavas jóvenes que se convierten al Vaisnavismo, cuáles son sus planes educacionales y vocacionales para entrenarlos para sus necesidades futuras. 
+</p>
+<p class='vspace'>B:V: Vaishnava (BVV): Realmente no es el trabajo de la WVA, resolver los problemas particulares. Pero en  el Comité de Educación, nosotros estamos muy involucrados acerca del compromiso práctico con los miembros, de conectarlos con la fe Vaisnava. Tomando en consideración que muchas personas al volverse Vaisnavas, no pueden continuar en el negocio u ocupación de sus parientes, pues ellos están en contra de los principios Vaisnavas; nosotros debemos tratar de utilizar una red laboral, el poder del conocimiento Vaisnava, y diferentes servicios ofrecidos por la comunidad Vaisnava del mundo, para proveer compromisos alternativos a los devotos nuevos. 
+</p>
+<p class='vspace'>Específicamente en el mundo occidental, a menudo surgen las preguntas en la comunidad Vaisnava: Cómo comprometer a la gente para mantener la comunidad, o para el individuo Vaisnava grhastas, cómo simplemente mantenerse  lo suficientemente bien, para que ellos puedan seguir apoyando las actividades espirituales, de sus respectivas misiones. En la práctica nosotros vemos, que las actividades tradicionales, tales como la venta de libros Vaisnavas en las calles, no son la respuesta a largo plazo. Además, si consideramos el ejemplo de otras religiones en Occidente, vemos que su entorno social, provee muchos trabajos para sus propios  miembros. La trascendental caridad de los Vaisnavas, combinada con la caridad social, tal como los dispensarios farmacéuticos de caridad, las escuelas, centros de rehabilitación para drogadictos, centros de emergencias, etc., son realmente apropiados y tienen tradición en nuestra sampradaya. La WVA, y los cursos educacionales proporcionados por las diferentes academias Vaisnavas, pueden ayudar a muchos a este respecto.
+</p>
+<p class='vspace'>Pregunta: ¿Usted alentaría a los Vaisnavas a establecer organizaciones no gubernamentales para actividades sociales? 
+</p>
+<p class='vspace'>BVV: Las NGO con orientación por el entorno educacional, y el trabajo de bienestar social, son muy útiles para presentar y conectar las actividades Vaisnavas, con el resto del mundo. Esto es a menudo necesario, para unir a organizaciones orientadas sin ánimo de lucro, ya que es más fácil conseguir el apoyo público de esta manera, y comunicar los valores Vaisnavas a mucha gente. Pero en muchas ocasiones, los Vaisnavas también han demostrado su caridad,  en el nombre de sus instituciones religiosas. Eso se ha decidido de acuerdo al tiempo, el lugar y las circunstancias. 
+</p>
+<p class='vspace'>Pregunta: ¿No esta esto, muy en la línea de la sociedad varnasrama?
+</p>
+<p class='vspace'>BVV: Eso es sentido común. Si no hubiera comida en el mercado, los Vaisnavas inmediatamente irían y sembrarían su propio alimento. Si no hubiera doctores, los Vaisnavas inmediatamente estudiarían Ayurveda y otros métodos de sanación. Igualmente el varnasrama trabaja con la oferta y la demanda. Cada persona que no vive una estricta vida monástica, tiene que incorporarse en el varnas. Y aquellos que están viviendo en el ashram, su vida también depende  del funcionamiento del varnas. Pero es un hecho, que el trabajo orientado a la educación para preparar devotos, que sean capaces de hacer alguna contribución útil a la sociedad, está más influenciado por las consideraciones del mundo relativo, y a menudo devotos nuevos y  las misiones más jóvenes, no reconocen totalmente, sus responsabilidades en esta conexión. Aunque un brahmana puro y un Vaisnava tienen derecho a recibir donaciones, para ser usadas en beneficio de otros, es imposible de percibir en un creciente número de Vaisnavas, de ashrams y sus congregaciones,  mantenerse  ellos mismos pidiendo del público. Esto es, porque diferentes misiones se están interesando mas acerca de esto, y a menudo esto ha  parecido  fructífero, el volver a las actividades comerciales, para proporcionarse los fondos, en lugar de simplemente apelar a las donaciones. Nosotros oramos para que muchos Vaisnavas educados y responsables, de diferentes misiones, puedan ofrecer sus capacitaciones para el beneficio de las próximas generaciones. La WVA puede proveer una  extensa base de datos, para aquellos que estén interesados en calificarse, pueden encontrar un fácil acceso a los cursos y seminarios, para educación e intercambio de experiencias en una base internacional. 
+</p>
+<p class='vspace'>Pregunta: ¿De qué manera ayudará el Comité de Educación, al mundo Vaisnava?
+</p>
+<p class='vspace'>BVV: No existe casi ningún campo en el cual éste, no pueda ayudar. Considere esto: Los Gaudiya Vaisnavas por tradición, les gusta ir a cada país, ciudad y pueblo a predicar. Para esto, ellos usualmente requieren de las visas, las cuales cada vez más, están incrementando la dificultad para ser obtenidas. Las visas religiosas se conceden en la mayoría de los países cuando alguien, califica para esto. Por el establecimiento de algunas normas internacionales tales como bhakti sastra, etc. u otras categorías tales como, monjes de templo, profesores de música devocional, profesores de filosofía Vaisnava, éstas serán  más fáciles de conseguir, y colaborar a las jóvenes misiones Vaisnavas en otros países, o ayudar a preparar nuevas misiones.
+</p>
+<p class='vspace'>Pregunta: ¿Podría mencionar algunos otros beneficios?
+</p>
+<p class='vspace'>BVV: Desarrollando una gran cantidad de profesores, guías y material de estudio, nuestras enseñanzas crecen en calidad. Nuestros estudiantes  de todas las edades, se vuelven más y más calificados, y nosotros podemos también ir a  Internet, con cursos de estudio en la casa, para extender la mano con las enseñanzas Vaisnavas, a cada rincón del globo. Aunque los Vaisnavas no creen que usted esté necesariamente avanzado, por acumular demasiado conocimiento, no obstante, en el mundo de hoy, los grados universitarios son muy apreciados. Desde éste  punto de vista, fue que los títulos y grados fueron incorporados, en la tradición de nuestra familia, (no para inflar el  ego de alguien más). Cualquier tipo de orgullo, incluyendo el orgullo que da tener conocimiento, es un peligro en el sendero de la devoción. Pero no promover la adquisición de conocimiento especifico, sería un crimen para las futuras generaciones. Por eso, todos los Vaisnavas continúan publicando su literatura. Pero cuál es el beneficio de esto, si las  personas no la 
+aprovechan. El Comité de Educación quiere suministrar material de estudio de todas las ciencias Vedicas, en todos los idiomas, para facilitar el estudio  en los  varnasrama  alrededor del mundo. Ya el trabajo extenso ha entrado en esto, pero en otros campos, existe una gran falta de comunicación entre los diferentes profesores, traductores, escuelas y academias. El Comité de Educación de la WVA tratará de cerrar esa brecha. 
+</p>
+<p class='vspace'>Pregunta: ¿Qué hay acerca de los gastos, para el cubrimiento de todo este trabajo? 
+</p>
+<p class='vspace'>BVV: A través del Internet y de la participación voluntaria de muchas personas, interesadas en este campo, nosotros podemos tener el suministro para bibliotecas enteras, en el formato digital, y  el espíritu general, de hacer la investigación disponible a otros, libre de cargos, se está extendiendo entre los Vaisnavas. De otra manera, nuestro Comité no tendría como sufragar los gastos, con los que actualmente corren los colegios o universidades. Esto tiene que ser trabajado fuera, por las misiones especificas con sus diferentes patrocinadores, matrículas estudiantiles, etc. 
+</p>
+<p class='vspace'>Pregunta: ¿Toda este moderno material de estudio disponible, no interfiere con la relación guru-discípulo?
+</p>
+<p class='vspace'>BVV: Ha habido siempre oportunidades para extraviarse, con o sin conocimiento. Uno debería siempre estudiar las escrituras con la ayuda y guía de otros Vaisnavas; el conocimiento sin la práctica del servicio devocional, no puede  satisfacer al mismo.  Pero en una sociedad en la cual están los  valores de los cultos brahmínicos, el conocimiento debe ser de libre acceso, y no ser restringido a  clase alguna, lo cual sólo crearía otro sistema de casta distorsionado. El conocimiento es una herramienta, pero solo por la gracia de Dios puede conceder sabiduría, y la sabiduría es la meta de todo el conocimiento. Esa es la libertad en  la Religión Védica; todo eso, independientemente de casta y credo, puede conseguir tanta sabiduría, que ellos anhelen volverse Vaisnavas. 
+</p>
+<p class='vspace'>6.	VVRS-WVA Comité Mundial  Secular:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Recibir los reportes de problemas creados del mundo secular, en contra de cualquier misión miembro.
+</p>
+<p class='vspace'>B.	Publicar las declaraciones de apoyo a los Vaisnavas, quienes están bajo ataque.
+</p>
+<p class='vspace'>C.	Informar acerca de estas situaciones.
+</p>
+<p class='vspace'>D.	Establecer Vaisnavas,  para dirigir cualquier situación, donde un grupo Vaisnava es reprimido o perturbado  de otra manera, en sus actividades.
+</p>
+<p class='vspace'>E.	Liberar a los Vaisnavas que han sido encarcelados, por sus actividades misioneras. 
+</p>
+<p class='vspace'>F.	Establecer la credibilidad de nuestra sampradaya por el mantenimiento de los archivos de revisiones escolásticas, casos judiciales, recortes de periódicos y otras evidencias en archivo, para evidencias en posibles conflictos. Por ejemplo: Una misión Vaisnava fue demandada en Polonia, y nosotros enviamos un representante de la WVA a testificar en la corte. 
+</p>
+<p class='vspace'>Coordinador:  Swami B.V. Vamana
+</p>
+<p class='vspace'>Otras funciones y contactos del Comité:
+</p>
+<p class='vspace'>a.	Aconsejar a las misiones Vaisnavas, que quieren establecerse legalmente. 
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuál es el campo de las actividades del Comité Mundial Secular?
+</p>
+<p class='vspace'>BVV: El Comité Mundial Secular, cuida  como el mundo generalmente ve a la Asociación Mundial Vaisnava, y la imagen publica de las diferentes misiones Vaisnavas El Comité Mundial Secular también  controla, como la gente en el mundo, relata las sagradas tradiciones de la Religión Védica.  Si cualquier Vaisnava se encuentra en peligro o falsamente acusado, el Comité Mundial Secular se notifica, e informa a los miembros y prepara las propuestas para contrarrestar tal situación. La gente en el mundo debería sentir, que ellos no pueden hacer y deshacer, con los Vaisnavas y lo que es sagrado para ellos. Porque ésta es una religión mundial, nosotros tenemos que sentar un precedente. Al mismo tiempo, tenemos que mostrar al mundo, que no somos  fanáticos agresivos, sino que somos poseedores de una cultura muy amorosa, entendidos y listos para corregir a cualquiera, que  actúe  equivocadamente  contra  nuestro nombre, gente y proyectos. 
+</p>
+<p class='vspace'>Ya la secretaría de Prensa de la WVA se ha dirigido, en años recientes a muchos y complicados problemas, y ha trabajado junto con otras organizaciones tales como AHAD (American Hindu Anti Defamation) para defender la dignidad de nuestra escuela de  pensamiento. Esto incluyó algunos casos en las cortes judiciales, algunas series de televisión que distorsionaban la imagen de las Deidades Vedicas y muchos otros casos similares (no hay espacio para enumerarlas). Cuando la gente ataca a un Vaisnava individualmente, o a alguna pequeña misión en algún lugar, ellos pueden sentir que pueden hacerlo  fácilmente; pero si ellos realizan,  que sólo han traído a ellos, el enojo de cientos y millones de Hindúes y organizaciones Vaisnavas, con poderosas representaciones por todo el mundo, la gente tendrá un rápido segundo para pensar acerca de sus actividades. Actualmente, la gente no puede permitirse el lujo de ir en contra de ningún sistema religioso sincero, porque ellos ofrecen la mejor ayuda para todos aquellos que están perdidos en un desesperado ateísmo, adicción a las drogas e inmoralidades; por esto los Vaisnavas por tradición, no han ahorrado esfuerzos,  por traer a la gente la iluminación espiritual; nosotros deberíamos estar muy interesados de lo que el mundo esta pensando acerca de nosotros.
+</p>
+<p class='vspace'>7.	VVRS-WVA, Comité de Publicaciones:
+</p>
+<p class='vspace'>Campo de Actividades: 
+</p>
+<p class='vspace'>A.	Colectar libros, fotografías y otros materiales los cuales estén en disposición, para ser usados por todos los miembros.
+</p>
+<p class='vspace'>B.	El índice de las valiosas bibliotecas de los miembros.
+</p>
+<p class='vspace'>C.	Comunicar todos los resultados a los miembros, a través del Internet o por solicitud.
+</p>
+<p class='vspace'>D.	Establecer la librería en Internet de literatura Vaisnava. 
+</p>
+<p class='vspace'>Corrientemente los siguientes proyectos están conectados con este Comité:
+</p>
+<p class='vspace'>a.	Librería de la Academia Vaisnava – Miami
+</p>
+<p class='vspace'>b.	Librería del Gopinatha Gaudiya Math – Mayapur
+</p>
+<p class='vspace'>c.	Librería Néctar de Internet
+</p>
+<p class='vspace'>d.	Librería del ISEV – Bogotá
+</p>
+<p class='vspace'>e.	Grupo de Publicaciones Mandala – San Francisco.
+</p>
+<p class='vspace'>f.	SEVA (Servicio Editorial de los Vaisnavas Acharyas)
+</p>
+<p class='vspace'>g.	Librería ilustrada para Niños en Internet (www.damodara.de)
+</p>
+<p class='vspace'>Coordinador: Vidagdha Madhava Das
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son las metas del departamento de Publicaciones de la WVA?
+</p>
+<p class='vspace'>Vidagdha Madhava Das (VMD): Los seis Goswamis de Vrindavana y muchos otros Vaisnavas Acharyas, nos han dejado un tesoro, la casa de la literatura con sus diferentes comentarios del Bhagavad-Gita, Srimad Bhagavatam, Chaitanya Caritamrita y una multitud de otros clásicos d la literatura Vaisnava, por diferentes Vaisnavas Acharyas hasta hoy. La humanidad puede recibir la propia guía de cómo salir del mundo material de lujuria, deseo y odio; también puede aprender a apegarse a Krishna y al servicio devocional puro. La WVA quiere ayudar a todos aquellos, que estén interesados en la publicación de ésta literatura, y de que esté  disponible en todos los idiomas, como  también de  publicar el trabajo de arte, para producirlo de una forma bella. Todos aquellos Vaisnavas generosos, quienes están listos para ofrecer sus materiales impresos y trabajos editoriales, a todos los predicadores del mundo, están invitados a enviar su material a nuestra oficina, y nosotros lo tendremos disponible a través de nuestra librería Vedica en nuestra pagina de la WVA. La idea de una librería Védica también permite a la gente de todo el mundo, tener acceso a los  tesoros publicados por muchas de las misiones. Existen también librerías administradas por miembros de la WVA, quienes tratan de mantener todas esta literatura en existencia, para aquellos que desean tenerla en forma impresa. El rey Biganbira después que el robo los libros de Srinivas Acharya, arrepentido trabajó duramente para distribuir esta literatura por toda India. Nosotros podemos repetir ese pasatiempo a través del Internet. Aquellos que no desean compartir su material con otros editores Vaisnavas, pueden enviarnos una lista de todos los títulos que  tienen y una lista de precios; así nosotros podremos publicarla, y  aquellos que estén interesados en este libro, sabrán donde pedirlo.
+</p>
+<p class='vspace'>Pregunta: ¿Qué hay acerca de las publicaciones impresas por la WVA?
+</p>
+<p class='vspace'>VMD: La WVA ha publicado nueve periódicos y volantes noticiosos hasta ahora, los cuales fueron básicamente publicados, por los esfuerzos individuales de diferentes miembros. Aquellos que desean contribuir con artículos, o volantes noticiosos, se dirigen a la Homepage de la  WVA, a la pagina noticiosa VINA, o pueden enviarlos directamente al coordinador de Internet  de la WVA, y él los remitirá a ellos. Nosotros estamos invitando a todos los miembros de la WVA a usar (grabado) el logotipo de la WVA (como fue propuesto por el Vicepresidente de la WVA, Srila B: B: Tirtha Maharaja) y nuestra dirección Homepage, en sus publicaciones junto con su propio logotipo (el logotipo de la WVA puede ser encontrado en el CD). La distribución de literatura trascendental, es muy importante porque el servicio devocional que no esta de acuerdo a los Srutis, Smritis y Puranas simplemente creará disturbios en la sociedad. Hoy la distribución de los libros se ha extendido en la producción y distribución de audio cassettes, CD roms, películas etc. y la WVA quiere alentar a los miembros a organizar las ferias comerciales, por lo menos una vez cada cuatro años, donde cada misión tenga un gran mostrador para exhibir pinturas de sus templos y Deidades, publicaciones, cintas de audio, películas, libros para niños y cualquier otra parafernalia que hayan desarrollado, para hacer la vida espiritual más atrayente a las masas en general, como también a los practicantes avanzados. Los primeros dos melas como estos, se celebraron en Srivas Angam durante Gour-purnima, patrocinados por la Misión VRINDA en 1996 y más tarde, por la Misión Chaitanya en 1997.No hay ninguna fecha todavía, de la próxima feria comercial. Tan pronto como tal evento tome lugar, será ampliamente anunciada en  Internet o en el boletín noticioso de la WVA. Estos boletines de la WVA pueden  pedirse desde la librería VRINDA (vrinda@nde.vsnl.net.in).
+</p>
+<p class='vspace'>8.	VVRS-WVA COMITÉ DE INTERNET:
+</p>
+<p class='vspace'>Campo de actividades: 
+</p>
+<p class='vspace'>A.	Supervisar los contenidos de la pagina  (Homepage) de la WVA.
+</p>
+<p class='vspace'>B.	Colectar mas información para la pagina.
+</p>
+<p class='vspace'>C.	Guiar a los miembros sobre cómo hacer sus propias paginas.
+</p>
+<p class='vspace'>D.	Mantener la pagina noticiosa VINA.
+</p>
+<p class='vspace'>Coordinador: Pancha Tattva Das
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Qué beneficio puede Internet ofrecer a la WVA?
+</p>
+<p class='vspace'>Pancha Tattva Das (PTD): Internet es la única manera para  predicar en  grande. Si Srila Bhaktisiddhanta Saraswati Thakur Prabhupada llamó a la prensa fotográfica, “brihat mridanga”, nosotros solo podemos llamar al Internet, la “Mega brihat mridanga” porque permite a las personas en cualquier parte del mundo escoger, leer, e imprimir cientos de diferentes títulos de la literatura Vaisnava. Existen cerca de 500 sitios en Internet, hechos por los Vaisnavas, y el número se incrementa diariamente. Los mejores diseñadores utilizan la escritura de Java para incluir el sonido, muestran diapositivas y otros movimientos en una presentación tal como la  diapositiva Vrindavan Dham Parikrama de la WVA (disponible en la pagina de la WVA). VINA (Agencia Vaisnava noticiosa en Internet) es un sitio visitado por miles de personas diariamente. Este promueve todos los escritos maravillosos y discusiones filosóficas entre los Vaisnavas de una forma muy cortés. También está el periódico Internacional Vaisnava en Internet en diferentes idiomas.
+</p>
+<p class='vspace'>No existe mejor manera para promover una actividad, más allá de las fronteras del país en el cual uno vive, que Internet. Muchos devotos a cargo de templos en la India han establecido departamentos de sistemas en sus templos. Los servicios locales hacen que  la conexión a Internet sea más económica, que el mismo uso de los teléfonos.  A través de la WVA y  la pagina noticiosa VINA, la unidad entre las misiones Vaisnavas está claramente demostrada, y puede así ser probada a cualquier grupo escéptico, donde quiera que estén. Periódicos pueden ser impresos, pero es muy difícil y costoso distribuirlos a todos los Vaisnavas del mundo. Así que usted puede ver qué tan útil es esto. Igualmente. A través de Internet el monopolio del conocimiento ha terminado. Esto definitivamente ayudará a hacer al mundo (incluyendo el mundo Vaisnava) de mentalidad menos estrecha, menos elitista, con menos prejuicios y conciencia de clase. Nosotros también enviamos las noticias a todos los subscriptores a través de un servicio llamado Vedantanet, y también muchos otros proyectos en Internet están siendo desarrollados, para servir a la comunidad Vaisnava mas y más. Hacer su propia pagina hoy es muy fácil, y para publicitarla, la pagina de la WVA es un comunicador maravilloso;  hoy en día existen paginas Vaisnavas de ingeniosa búsqueda. Este es un Comité muy dinámico e ideas nuevas están llegando cada día. En una de las paginas usted podrá escuchar al Bhagavad Gita ser leído en dieciséis idiomas.  ¿Quién podría tener algo como esto? Solamente alguien como Srila Rupa Goswami, cuando él recomendó que nosotros deberíamos usar todo, en el servicio a Krishna.
+</p>
+<p class='vspace'>9.	VVRS-WVA Comité de boletín noticioso y periódico:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Colectar noticias y néctar.
+</p>
+<p class='vspace'>B.	Publicar y distribuir el periódico de la WVA.
+</p>
+<p class='vspace'>C.	Mantener relaciones con el servicio de noticias de Internet.
+</p>
+<p class='vspace'>D.	Organizar la traducción en  diferentes idiomas.
+</p>
+<p class='vspace'>E.	Publicar resultados y actividades de los diferentes Comités de la WVA.
+</p>
+<p class='vspace'>F.	Fomentar en  grupos Vaisnavas, la publicación de periódicos Vaisnavas asociados a los ideales de la WVA
+</p>
+<p class='vspace'>Actualmente los siguientes proyectos están conectados con éste Comité:
+</p>
+<p class='vspace'>Periódico Vishva Vaishnava Raj Sabha
+</p>
+<p class='vspace'>Traducción al Español: Alicante<br />Traducción al Alemán: Berlín<br />Traducción al Portugués: Sao Paulo<br />Traducción al Húngaro: Szeged
+</p>
+<p class='vspace'>Otras funciones y contactos del Comité:
+</p>
+<p class='vspace'>a.	Contactar a todos los secretarios de misiones, para conseguirles y remitirles noticias importantes de sus misiones al periódico. 
+</p>
+<p class='vspace'>b.	Mantener los periódicos en las librerías de todas las misiones Vaisnavas. 
+</p>
+<p class='vspace'>Coordinador: Arjuna Das
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son sus metas respecto a la presentación de la revista de la WVA?
+</p>
+<p class='vspace'>Arjuna Das (AD): La revista es significativa para todos los seguidores del Señor Chaitanya. Nosotros queremos dar una completa apreciación de las maravillosas actividades  realizadas por los devotos de todas las misiones. Especialmente queremos hacer que nuestros lectores tomen conciencia, de la gran necesidad de trabajar juntos en todos esos proyectos, en los cuales compartimos un interés común. Nosotros tenemos mucho en común, y tan poco que nos divida. La WVA es una organización sombrilla. Como tal, no puede promover a cualquier misión en particular. Justo como Sri Krishna levantó la Colina de Govardhan, como un pequeño niño sostiene levantada una sombrilla, de la misma manera, todos los Vaisnavas sinceros, deberían tratar de mantener el ideal de la WVA muy en alto, para proteger a los devotos de las torrenciales lluvias del sectarismo; todo esto por el interés común de predicar el mensaje de Mahaprabhu. Nos gusta complacer a nuestros lectores Vaisnavas, con noticias especiales de los diferentes Comités de la WVA. Para mantener la revista fácilmente disponible a todos, nosotros no haremos muy costosa su publicación; más bien nos enfocaremos en la calidad de lo esencial.
+</p>
+<p class='vspace'>Así, mucho material acerca de la WVA ya está  publicado y disponible, en la pagina de la WVA. Nosotros vamos a organizar ese material de tal forma, que todos sentirán el deseo de participar. 
+</p>
+<p class='vspace'>10.	VVRS-WVA Comité para Mela y Reuniones:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Recibir a todos los devotos y administrar las reuniones.
+</p>
+<p class='vspace'>B.	Organizar ferias donde las diferentes misiones, puedan exhibir sus esfuerzos y publicaciones de prédica.
+</p>
+<p class='vspace'>C.	Organizar simposios Vaisnavas.
+</p>
+<p class='vspace'>Coordinador: Jay Krishna Das
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son los diferentes eventos que la WVA mantiene cuando los devotos vienen juntos, y qué diferentes tipos de encuentros son sostenidos?
+</p>
+<p class='vspace'>Jay Krishna Das (JKD): Reuniones significa sadhu sanga; venir junto con todos los devotos, y prácticamente ser testigos de esos devotos anunciando, como hacer algo por la causa común, desde las diferentes misiones. No es fácil sostener encuentros eficaces,  considerando el hecho de que los devotos están esparcidos por todo  el mundo. Aunque los devotos están usualmente, excesivamente cargados en su energía, manejando sus parikramas y otras actividades, cuando ellos vienen a Vrindavana o Mayapur, nosotros organizamos nuestras reuniones generales de trabajo, con el Comité directivo, estas veces. Fuera de estas santas sesiones, es casi imposible, mantener muchos devotos simultáneamente en un mismo lugar. A veces, diferentes eventos internacionales y festivales de nagar sankirtana de la WVA, han sido arreglados entre los devotos involucrados en la WVA. En adición a aquellos, hay  cabildos reunidos en diferentes países. En Kartica en 1999, nosotros concluimos el 11º encuentro Internacional de la WVA. Prácticamente todos, pueden organizar  reuniones de un cabildo de la WVA en su ciudad. Para que sean  más exitosos con las reuniones, será necesario que las  misiones envíen un secretario a las reuniones, quienes tienen el deber principal de conectar las actividades de su misión con las actividades de la WVA. También es necesario que los Comités individuales de la WVA, sostengan reuniones entre los diferentes miembros, más allá de sus respectivos proyectos. Prácticamente todos los Vaisnavas aceptan y dan la bienvenida a las actividades de la WVA, pero muy pocos se han tomado el tiempo para leer todos los detalles de las presentaciones de la WVA, y no hay mucha inclinación a sostener reuniones y discusiones durante los tiempos de los parikramas. La pagina de la WVA se ha vuelto un lugar importante, donde muchas opiniones diferentes son expresadas. Esto tomará algún tiempo, hasta que la  importancia de la WVA, reciba cuantioso y positivo crédito. Este libro fue precisamente compilado, para conseguir mas interés, conciencia y mayor participación. Pero todas estas observaciones, no impiden el establecimiento de diferentes proyectos por la WVA. Por ejemplo, el Comité de adopción de templos, ha tenido tanto éxito, que hoy, ya algunos dieciocho templos han sido adoptados en los sagrados dhams.  Otro ejemplo es el interés creciente en los  proyectos seva dham. La creciente participación y la organización de los encuentros de la WVA, prácticamente cada año en otra misión miembro, se muestra claramente que la mayoría de los devotos quiere ser parte de la WVA. Nosotros trataremos de hacer la organización más eficiente y más atractiva, especialmente la traducción la cual es necesaria para el nacido Vaisnavismo occidental. La cosa más importante es que  en la WVA, cualquiera que quiera pueda participar.
+</p>
+<p class='vspace'>Pregunta: ¿Cuándo y dónde son organizadas aquellas reuniones?
+</p>
+<p class='vspace'>JKD: Los datos exactos de las reuniones son anunciados en la pagina de la WVA. Estas reuniones son sostenidas dos veces al año;  en Sri Mayapur Dham durante Gour-purnima, y en Sri Vrindavana  Dham durante Kartika. Uno de nuestros objetivos fue hacer un Nama Hatta en una feria, y ofrecer gratuitamente  el espacio para que cada misión colocara una mesa de prédica. Nosotros ya organizamos, dos de tales ferias en Calcuta donde diferentes misiones, tuvieron la oportunidad de exhibir sus esfuerzos de prédica y sus publicaciones. Esas clases de ferias son realmente nuevas para los Vaisnavas, y tomará tiempo hacerlas ganar popularidad. Nosotros también sostuvimos el primer simposio en 1999, y fuimos capaces de conseguir muy distinguidos oradores de casi todas las misiones del Gaudiya Math.
+</p>
+<p class='vspace'>Nosotros requerimos a los coordinadores de los Comités, para estar disponibles para las discusiones con otras personas, seriamente interesadas en sus Comités, y preparar reportes de sus Comités para la pagina noticiosa VINA, y para el Comité Administrador. 
+</p>
+<p class='vspace'>11.	VVRS-WVA Comité Medioambiental:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Investigar, comunicar y promover soluciones para los problemas medioambientales dentro y fuera, de las comunidades Vaisnavas. 
+</p>
+<p class='vspace'>Coordinador: Swami B.V. Hrsikesh
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Podría usted explicar la preocupación de la WVA por la ecología?
+</p>
+<p class='vspace'>B.V. Hrsikesh (BVH): Este es un asunto de máxima urgencia; más importante que eso, es solamente volverse un devoto puro de Krishna. Como predicadores del movimiento del Señor Chaitanya, nosotros no podemos ignorar los modernos descubrimientos acerca de los riesgos ambientales y sus consideraciones respecto a la salud. El Señor Krishna mismo enseñó esto, por lo que expelía Kaliya desde Vrindavana, cuando Kaliya estaba contaminando el santo río Yamuna, con su veneno. Tradicionalmente la actitud Védica es la más sensata, la más saludable y pura de todos los estilos de vida.  Estas y otras numerosas referencias sstricas a la Madre Tierra, y el cumulo de reacciones provenientes del daño a los animales, plantas, y al medio ambiente, son prueba de que nuestra tradición no es culpable de estas ofensas. Pero el moderno estilo de vida, y la ignorancia generalizada sobre la cantidad de riesgos del modernismo, está afectando también a la comunidad Vaisnava. Ejemplos de esto, es la aparición de vasos plásticos e incluso platos, en los festivales Vaisnavas, los cuales más tarde terminan en la basura de la ciudad y como veneno para el Yamuna. Muchas personas también ignoran el hecho de que las bolsas plásticas, cuando son comidas por las vacas, pueden matarlas. 
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son sus metas?
+</p>
+<p class='vspace'>BVH: Nosotros queremos que todos se vuelvan, ambientalistas y conscientes espiritualmente. Ansiamos ver a los Vaisnavas corriendo al frente de los movimientos ecologistas. Deseamos alentar a todas las misiones a vivir un estilo de vida sano, y a producir su propia comida orgánica, o como mínimo comprar su comida en fincas orgánicas siempre que sea posible. Nosotros queremos que los Vaisnavas entiendan los peligros de procesar comida, cuyos ingredientes no son a menudo vegetarianos, y que no se encuentran escritos en los empaques. Queremos informar a cada uno acerca de los peligros  de la agricultura industrial, y los beneficios de los tratamientos naturales, del Ayurveda y muchas otras  medicinas alternativas. Deseamos incrementar la investigación y el cambio entre los Vaisnavas, acerca del uso de energías alternativas; la energía solar, la del viento, del estiércol, de los desperdicios orgánicos, biogas y la protección a las vacas, son sólo pequeños ejemplos a considerar. Si nosotros no vamos en esta dirección, recibiremos una gran reacción de  infelicidad. Primero que todo, nosotros seremos culpables de ignorar el conocimiento común,  acerca de una mejor vida del medioambiente, y segundo, aquellas personas en el mundo que son conscientes de hacer las cosas de una mejor manera, pensarán que los Vaisnavas son unos ambientalistas ignorantes ( o indiferentes), y no sentirán mucha inclinación por escuchar Krishna katha de ellos. 
+</p>
+<p class='vspace'>Pregunta: ¿Pero no será imposible vivir de acuerdo a esos grandes ideales?
+</p>
+<p class='vspace'>BVH: Todo en este mundo debe ser ajustado de acuerdo al tiempo, lugar y circunstancia; y Srila Rupa Goswami ha autorizado definitivamente, que nosotros deberíamos utilizar todo para el servicio de Krishna, pero nosotros tenemos que ser cuidadosos en no arriesgar, el propósito final de nuestra predica. Tenemos que vivir un estilo de vida frugal, y ocupar nuestro tiempo en actividades de beneficio trascendental. Vida simple con pensamiento elevado, fue enseñado a nosotros por nuestros maestros espirituales; y nosotros vemos que los Vaisnavas ascetas, apenas prestaban alguna atención en la fabricación del bhajana personal, ni que hablar de perseguir comodidades modernas. Nosotros contamos con muchos especialistas en el mundo Vaisnava, con conocimiento acerca de éstos aspectos. Aquellos que estén interesados en unirse a  este Comité, son bienvenidos a ofrecer sus experiencias, en la forma de artículos a nuestra página y tomar ventaja para promover esta trascendental conciencia ecológica.  
+</p>
+<p class='vspace'>12.	Comité para la Adopción de Templos:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Recibir la solicitud de los templos que desean ser adoptados o que quieren establecer una relación templo-hermano, con otros.
+</p>
+<p class='vspace'>B.	Hacer que esta información esté disponible a los miembros interesados.
+</p>
+<p class='vspace'>Coordinador: Swami B.A. Paramadvaiti
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuál es el interés de la WVA, en la adopción de templos?
+</p>
+<p class='vspace'>B.A. Paramadvaiti (BAP): La adopción de templos y los templos hermanos, es una idea la cual está siendo aplicada en muchas partes del mundo, para  favorecer lugares pobres;  o conseguir gente que patrocine, áreas en particular  para mantenerlas mejor. El proyecto viene del Comité de la Preservación de Vrindavan Dham. Este puede ser adicionalmente extendido, a alentar reuniones privadas para la adopción de calles, ghats, samadhis, estanques, señales en las calles etc. Permítame primero darle un pequeño antecedente histórico:
+</p>
+<p class='vspace'>La bella y medieval Vrindavana, se construyó de una manera  única, en piedras de arenisca de  colores rojo y crema, incluyendo los antiguos templos de Vrindavana, dharma, gosalas y alojamientos residenciales de los Maharajas y Ranis por toda India y países vecinos, y también de algunos ricos negociantes de Bengala. Esta es una ciudad llena de embajadas espirituales de diferentes partes del mundo. Después de la partición en 1947, los reyes de India perdieron su poderío y sus capacidades para financiar la manutención de los templos y dharma, los cuales anteriormente tenían categoría real en su esplendor y parafernalia. Así que la gran mayoría de estas inapreciables gemas, cayeron en la negligencia hasta el grado de que, incluso los trabajadores de muchos lugares, no contaban con ninguna cuota para su manutención. La nueva India, demasiado involucrada con el desarrollo industrial, se olvido acerca de su herencia cultural. La Sociedad de Arquitectos recibió algunos de los más distinguidos edificios bajo su cargo, pero hizo muy poco para preservar estos importantes lugares tales como, el templo de Radha Madan Mohan y el templo de Radha Govindaji. Entonces la secunda consecuencia tuvo lugar. Empleados sin salario, en cuclillas comenzaron a alquilar espacios en los maravillosos edificios, para recibir algún ingreso. Bellos arcos tallados en piedra, fueron llenados con concreto y ladrillo, para crear mas cuartos; y no hay ni un penique para reparar estos edificios antiguos. Las palanganas para adorar a la Deidad, todo el tiempo estuvieron bajo allanamiento,  y en muchos templos, cazadores de tesoros robaron las Deidades y destruyeron los edificios, en  busca de tesoros reales dejados atrás. Encima de eso, bandidos locales junto con los intrusos, trataron de conseguir estos edificios antiguos, para venderlos en el mercado. Usted puede imaginar lo vergonzoso, para las oficinas gubernamentales y la municipalidad.
+</p>
+<p class='vspace'>Pregunta: ¿Qué puede hacerse sobre esto?
+</p>
+<p class='vspace'>BAP: Muy poco. Esto es un fenómeno cultural histórico. Solo con una gran inversión, podría uno hacer justicia a esta situación. Los templos pueden ser adoptados, porque los templos nunca pueden realmente ser apropiados; las Deidades son de propiedad de los templos Los miembros que están listos para los arreglos de los edificios, y quienes puedan conseguir a aquellos que vivan en el templo readecuado etc. pueden salvar viejos templos y conseguir llevarlos  de regreso a sus bellas formas. Desde que existen mas y más comunidades Vaisnavas alrededor del mundo, y el interés en Vrindavana está creciendo tanto, es completamente natural hacer algún dham seva , como adoptar un edificio, el cual posiblemente puede servir para la acomodación de invitados de las respectivas misiones, cuando ellos vengan al santo dham. En otros casos pueden haber también, acuerdos mutuos entre las misiones Vaisnavas interesadas, o individualmente con sacerdotes locales, un verdadero y mancomunado manejo de algún templo, a cambio de alguna entrada financiera. La WVA no está involucrada en la parte administrativa de esto. La WVA promueve el concepto y conecta las partes, si eso es posible. Desde el comienzo de este proyecto, más de quince templos han sido adoptados, y algunos proyectos de  templos-hermanos han comenzado. Algunos de estos templos, como el Dauji Mandir ha sido, y está siendo renovado en su hermosa forma, y puede ser visitado por aquellos que estén interesados en este tipo de trabajo. Vrinda Kunja es otro ejemplo, fue un templo que quedó totalmente destruido, por codiciosos cazadores de tesoros. Este ahora está rodeado por los más bellos jardines. Y está el Pandavali Kunja en Keshi Ghat, el cual está aún siendo reparado. Este servirá como museo, de la historia del Vaisnavismo de  Vrindavana. 
+</p>
+<p class='vspace'>Definitivamente, hay muchos mas proyectos los cuales pueden ser logrados. Esto es cada vez más difícil, pero es  necesario para este proyecto, que simultáneamente, la anterior belleza de Vrindavana, sea igualmente recuperada. Usualmente aquellos que adoptan templos, tienen algún interés o necesidad. La adopción de partes de Vrindavana, como un acto puro de generosa caridad, por la  causa del embellecimiento de  Vrindavana, está siendo organizada. Es nuestro deber como devotos del Señor Krishna, hacer posible cada esfuerzo, para hacer del sitio de recreo de la infancia del Señor Krishna, el más extraordinario lugar de peregrinaje en el mundo. Es una deshonra ver como la suciedad se amontona en el Yamuna, y considerar que cualquier ordinaria y pequeña ciudad en Europa, está recibiendo estéticamente mayor atención, y que la joya medieval arqueológica de Vrindavana, se perderá si nosotros no actuamos. Hay muchas  misiones Vaisnavas poderosas, y muchas de ellas invierten mucho dinero en grandes edificios, y nuevas construcciones, pero si la antigua Vrindavana se pierde, será imposible traerla de vuelta. 
+</p>
+<p class='vspace'>13.	VVRS-WVA Comité para la solución de Conflictos.
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Recibir los reportes de quejas.
+</p>
+<p class='vspace'>B.	Enviar los reportes a los miembros Vaisnavas mayores, en lo posible, para conseguir sus consejos por escrito, para el conflicto. 
+</p>
+<p class='vspace'>C.	Distribuir estos consejos entre todos los miembros; presentar sugerencias finales para mitigar los problemas al Comité Administrador de la WVA, para el voto de la mayoría; y presentar la recomendación conjunta de la solución,  para las partes involucradas en el conflicto. 
+</p>
+<p class='vspace'>Coordinador: Swami B.V. Vishnu
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>La Asociación Vaisnava Mundial está basada, alrededor de la causa común de diferentes misiones Vaisnavas. Esta realmente no ingresa, en la actividad particular de las diferentes misiones. Y en el campo común, existen  muy pequeños o casi no hay conflictos; solo en el caso de que algún miembro sienta, que otros miembros groseramente tergiversan a la WVA a través de sus actividades; esta situación puede ser revisada, por el Comité para la resolución de conflictos. Srila Bhakti Vichar Vishnu Maharaja es el coordinador de este Comité; nosotros estamos haciéndole unas pocas preguntas, acerca de qué considera él, la cosa más importante para este Comité.
+</p>
+<p class='vspace'>Pregunta: ¿Qué situaciones puede este Comité dirigir?
+</p>
+<p class='vspace'>BVV: My Guru Srila B:V: Puri Maharaja, me concedió la orden de renunciante (sannyasa), y yo he estado viajando con él alrededor del mundo, en muchas ocasiones. Viajando con él, yo he visto la necesidad urgente para  un foro común de la Comunidad Vaisnava Mundial, del foro común de la WVA.
+</p>
+<p class='vspace'>Pregunta: Vishnu Maharaja, a usted le ha sido confiado la coordinación del Comité para la resolución de conflictos. ¿Cuál ve usted, como el principal objetivo para ser consumado? 
+</p>
+<p class='vspace'>BVV: Nosotros no tenemos generalmente ningún problema, lo que nosotros tenemos es una gran falta de participación. Muchos de los Vaisnavas no se toman el tiempo para comprender, el valor del trabajo de la WVA, y si cualquier problema  aparece, nuestros acaryas mayores, nos ayudarán a resolverlo. Así que realmente, yo no veo ninguna dificultad. El punto real aquí es crear una fuerte base común, para todos esos temas que cada misión comparte, alguna necesidad o interés. La WVA es un campo abierto para  que participe cada Vaisnava, quienquiera que desee llevar más allá ese espíritu, es bienvenido. Nosotros necesitamos muchas más secretarías y voluntarios, y más energía para ser invertida en la WVA. Pero incluso eso es  tan  relevante, como que ellos son realmente personas calificadas interesadas en llevar más allá la causa. La WVA es una cosa viviente, este es el espíritu de la misión de Mahaprabhu, y se extenderá por todos lados con la madurez de las diferentes misiones. Cualquier cosa que esta allí ahora, ya tiene base sólida.  Nosotros podemos construir encima de eso. 
+</p>
+<p class='vspace'>La gente en este mundo que no son Vaisnavas,  pueden seguir una muy buena idea,  que son las metas de la comunidad Vaisnava, y que nuestros acaryas nos han dado hasta ahora,  para ayudar a la humanidad. 
+</p>
+<p class='vspace'>14.	VVRS-WVA Comité Unificador:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Dedicarse ellos mismos a reclutar nuevos miembros para la WVA.
+</p>
+<p class='vspace'>B.	Promover la WVA a otras sampradayas.
+</p>
+<p class='vspace'>C.	Visitar las misiones Vaisnavas, que no son miembros activos de la WVA.
+</p>
+<p class='vspace'>D.	Reportar al Comité Administrador del resultado.
+</p>
+<p class='vspace'>E.	Presentar las demandas escritas de la WVA a las misiones Vaisnavas, 
+para volverse miembros. 
+</p>
+<p class='vspace'>Coordinador: Nitai Das Brahmachari
+</p>
+<p class='vspace'>15.VVRS-WVA Comité para los proyectos de Caridad y Ayuda
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Hacer una lista de todas las misiones Vaisnavas, que trabajan con ayuda y caridad.
+</p>
+<p class='vspace'>B.	Publicar las noticias de los Vaisnavas, relatando labores de ayuda y caridad, en VINA.
+</p>
+<p class='vspace'>El Comité que alienta a las misiones Vaisnavas, a establecer dispensarios de caridad, hospitales, la distribución de comida y otros  proyectos de ayuda y caridad, que adicionalmente realizan una  contribución Vaisnava al mundo. 
+</p>
+<p class='vspace'>Coordinador: Raghunath Das
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cuáles son las metas del Comité de Caridad y Ayuda de la WVA?
+</p>
+<p class='vspace'>Raghunath Das (RD): Es nuestra meta, el crear una red de operaciones de caridad y ayuda, similar a la Cruz Roja y otras importantes caridades. Nuestros maestros espirituales nos han dado mucha caridad. Por supuesto, la numero uno es la caridad espiritual, para ayudar a la gente a entender que ellos son almas eternas, responsables por todo lo que ellos hacen. Pero nuestros acaryas  - por ejemplo A.C. Bhaktivedanta Swami Maharaja – también fijó muchas metas para sus discípulos. Él dijo que diez kilómetros alrededor del templo en Mayapur, nadie iría hambriento, y él inspiró uno de los más  grandes  programas de distribución de comida en el mundo, el cual aún continúa 24 años después de su partida, y sigue creciendo. Esto es natural para un profesional Vaisnava, el estar caritativamente dispuesto. Este es el por qué, nosotros invitamos a todos aquellos que estén involucrados en las profesiones de la salud, para asociarse al Programa de Doctores Conscientes, y así dar sus servicios gratuitamente, a todos aquellos que han renunciado a sus estudios, trabajos, ingresos y seguros, y han dedicado sus vidas al servicio de Dios. Además ellos también pueden crear  centros, con  tratamiento gratis, para las personas pobres. 
+</p>
+<p class='vspace'>La WVA no organiza ella misma estas caridades, pero proporciona la comunicación entre las diferentes organizaciones de caridad, dando estímulos e ideas que podrían demostrar al mundo, cuan prácticos y bien dispuestos son los Vaisnavas. Los Vaisnavas son para dukha dukhi; muy compasivos con  las almas sufridas. Ellos sienten gran sufrimiento, cuando ellos ven el sufrimiento de otros. 
+</p>
+<p class='vspace'>El Comité reportará regularmente, el incremento en obras de  caridad Vaisnava y esfuerzos de ayuda. Algunos templos pueden simplemente tener un dispensario medico y alguna distribución regular de comida vegetariana, y algunos pueden idear obras de caridad Vaisnava, con un organizador de actividades diferentes.
+</p>
+<p class='vspace'>Pregunta: ¿Quién espera usted, que apoye financieramente estos esfuerzos caritativos?
+</p>
+<p class='vspace'>RD: Nosotros trabajaremos juntos, con cualquiera que deseé darnos una mano. Muchas agencias gubernamentales, ayudan con comestibles, a organizar la distribución de nutritivas comidas vegetarianas. Muchas compañías están también inclinadas a ayudar, en la organización de estas obras. Nuestros ingeniosos amigos y miembros, están todos comprometidos a apoyar y actuar responsablemente, en el esfuerzo por hacer de este mundo, un  mejor lugar para vivir. 
+</p>
+<p class='vspace'>Pregunta: ¿También quiere que los monjes, participen individualmente en la tarea de ayudar a las organizaciones de caridad?
+</p>
+<p class='vspace'>RD: Eso depende de sus respectivos maestros espirituales. Muchos casos en el pasado, han demostrado que esto es perfectamente posible. Las obras de caridad Vaisnava son una buena forma, de contactarse con el publico, quien siente que esa caridad es una expresión de la paz y la belleza, las cuales se desarrollan en una persona, que ha logrado algún avance espiritual. Así, junto con la caridad, nuestros valores trascendentales son promovidos.
+</p>
+<p class='vspace'>15.	VVRS-WVA Comité de Comunicación Interreligiosa.
+</p>
+<p class='vspace'>Campo de actividades: 
+</p>
+<p class='vspace'>A.	Publicar artículos comparativos sobre religión, religión Vaisnava y otras tradiciones religiosas.
+</p>
+<p class='vspace'>B.	Enviar representaciones al parlamento mundial de la religión; y a otros foros locales o internacionales, para mantener una relación de amistad y participación, con proyectos entre diferentes creencias. 
+</p>
+<p class='vspace'>C.	Exponer  los valores Vaisnavas a otras religiones. 
+</p>
+<p class='vspace'>Coordinador: Bhakti Ananda Goswami
+</p>
+<p class='vspace'>Entrevista con Swami B.A. Paramadvaiti:
+</p>
+<p class='vspace'>Pregunta: ¿Cuál es el propósito del Comité de Comunicación  Interreligiosa?
+</p>
+<p class='vspace'>B.A. Paramadvaiti (BAP): Nuestro Comité es de vital importancia. Nosotros no deberíamos olvidar que muchos Vaisnavas hoy, están predicando en áreas donde ellos son minoría. Los fanatismos religiosos muchas veces crean enfrentamientos tan fuertes, que incluso templos son destruidos, y la vida de personas religiosas son puestas en peligro. Afortunadamente ahora, hay muchas personas en el mundo, quienes están buscando las soluciones para evitar esos enfrentamientos, basados en prejuicios de turbas fanáticas. Pero nosotros no deberíamos subestimar el peligro potencial, para los predicadores Vaisnavas en muchos lugares; porque es muy fácil para las personas, experimentar dificultades, y tratar de culpar a cualquiera que se comporte de manera diferente, a lo que  son ellos. Aquellos Vaisnavas que predican en países extranjeros, y establecen misiones permanentes allí, quienes consiguen hombres de las comunidades locales para vivir el estilo de vida de los Vaisnavas, pueden seguramente apreciar la importancia del Comité de Comunicación interreligiosa. Lo principal es que nosotros tenemos que aprender a respetar a otros, si nosotros esperamos ser respetados. 
+</p>
+<p class='vspace'>Subsecuentemente,  existen foros interreligiosos hoy en día, casi por todas partes. Si nosotros no participamos en ellos, entonces la gente de otras creencias religiosas, interpretarán  eso, como que nosotros no respetamos a las personas de otras religiones, y desistirían de  sus tentativas, de extender invitaciones amistosas a nosotros. Srila Bhaktivinoda Thakur nunca habría tenido tal actitud. En sus enseñanzas muy a menudo, nosotros encontramos citas, demostrando respeto hacia las otras creencias. Esto es lo natural, si usted quiere predicar a personas en otros países, con otras culturas y otras religiones. 
+</p>
+<p class='vspace'>Pregunta: ¿Ha tenido usted, alguna experiencia práctica en éste campo?
+</p>
+<p class='vspace'>BAP: Si, yo estuve en el Parlamento Mundial de la Religión en Capetown, en Sur Africa. Muchos otros Vaisnavas estuvieron allí. El evento, el cual tuvo 7000 delegados de todas las religiones, comenzó con un harinama sankirtana y también terminó con un gran kirtana sobre el escenario. Junto a muchos intercambios personales, y muchas lecturas dadas por los Gaudiya Vaisnavas, fue memorable que la gran mayoría de delegados, comieran diariamente en el restaurante de los Hare Krishna, localizado en el primer piso del Hope Center. Esto  me deleitó, el ver a los Musulmanes, Cristianos y Budistas sentados en el restaurante, comiendo laddhus y pakoras, todas ofrecidas a Krishna.
+</p>
+<p class='vspace'>Igualmente, nosotros hemos tenido experiencias maravillosas en Colombia, en Sur América. Los foros entre religiones han tenido tal  éxito, que virtualmente el gobierno de Colombia, ha otorgado igual posición a los templos Vaisnavas y a las iglesias Cristianas. Hoy nosotros podemos realizar matrimonios, legal y oficialmente, y nosotros hemos comenzado escuelas, seminarios y la intervención en la prisión. Adicionalmente, cuando los eventos entre religiones tienen lugar, nosotros tenemos una gran oportunidad de exponer, las enseñanzas de nuestros Gurudevas, al país entero.
+</p>
+<p class='vspace'>En Alemania, nosotros también tuvimos experiencias maravillosas. El foro interreligioso en la ciudad de Freiburg, se ha venido realizando ya hace muchos años.  Jivanuga Prabhu y su esposa han participado activamente. Recientemente ellos fueron invitados, a tres días de retiro con 70 Protestantes y sacerdotes Católicos, para revisar todo el material utilizado en las escuelas alemanas, acerca del Hinduismo. Los tres días de retiro, fueron tan exitosos, que el organizador declaró, que ellos nunca habían tenido tan maravilloso retiro espiritual, en su lugar. Como una conclusión del retiro, se decidió que un nuevo libro acerca del Hinduismo para las escuelas Alemanas, bajo la guía de Jivanuga Prabhu, sería publicado.
+</p>
+<p class='vspace'>El desarrollo ecuménico interreligioso en el mundo, es muy positivo. Pero este requiere una gran reflexión. Por ejemplo, una gran pintura de los devotos haciendo harinama, fue colgada en un monasterio Católico en Roma, mostrando su respeto por las actividades de los Vaisnavas. Toda esta aparente mentalidad abierta, no obstante los acercamientos son interrumpidos por sectarios, que fácilmente se vuelven peligrosos, si nosotros no mantenemos muy buenas relaciones con otras personas religiosas, que reclamarán a ellos el averiguar más,  sobre Sri Chaitanya Mahaprabhu. El orgullo religioso está profundamente arraigado. “Nosotros somos los únicos que seremos salvados, o quienes  estamos salvados ya “, éste tipo de mentalidad, algunas veces nosotros incluso la encontramos en algunas misiones Vaisnavas. Así que,  no es para sorprenderse que tal mentalidad exista, en muchas tradiciones religiosas. La evolución teísta del mundo será realzada, por aquellos cuyas enseñanzas, estén profundamente arraigadas en la verdad, y quienes son amorosos y están generosamente dispuestos, hacia todos los demás. El hecho de que hoy, en los foros interreligiosos, la trascendental verdad sobre el Vaisnavismo, puede ser expuesta y ser escuchada por los practicantes serios de otras religiones, es una plataforma revolucionaria. Por supuesto, esto también significa que nosotros debemos estar listos para escuchar a sus comprensiones teológicas. Esto está en nuestra tradición. Sri Chaitanya Mahaprabhu escuchó por un largo tiempo a Sarvabhauma Bhattacharya, y solamente dio su siddhanta después de que Sarvabhauma insistió en oírlo hablar de ello.
+</p>
+<p class='vspace'>Pregunta: ¿Cuál es su idea, de lo que se podría haber hecho por las misiones Vaisnavas, a favor de sus trabajos interreligiosos?
+</p>
+<p class='vspace'>BAP: Prácticamente hay foros interreligiosos por todo el mundo ahora. Esto sería bueno, si los Vaisnavas hacen contacto y participan en sus funciones; nosotros estamos ansiosos de que ellos nos reporten cualquier desarrollo, y que nosotros también podamos fomentar otros, con el mismo trabajo. Innecesario decir, que tales devotos deberían estar muy bien preparados, y ser  incondicionalmente amistosos. 
+</p>
+<p class='vspace'>16.	VVRS-WVA Comité de Arte Védico:
+</p>
+<p class='vspace'>Campo de Actividades:
+</p>
+<p class='vspace'>A.	Colectar las direcciones de los artistas Vaisnavas.
+</p>
+<p class='vspace'>B.	Presentar sus trabajos por Internet.
+</p>
+<p class='vspace'>C.	Organizar exhibiciones.
+</p>
+<p class='vspace'>D.	Cooperar en los grandes proyectos de arte Vaisnava.
+</p>
+<p class='vspace'>E.	Enseñar a los jóvenes artistas.
+</p>
+<p class='vspace'>F.	Ayudar a decorar el santo dham.
+</p>
+<p class='vspace'>Coordinador: Bhaktisiddhanta Das.
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Cómo puede el arte, posiblemente afectar a la Comunidad Mundial Vaisnava?
+</p>
+<p class='vspace'>Bhaktisiddhanta Das (BD): Primero, la Asociación Mundial Vaisnava (WVA), significa el mundo entero. Yo pienso que el mundo entero es una potencial Comunidad Vaisnava, así que la tarea a mano, es hacer al mundo entero Consciente de Krishna. A través del vehículo de la cultura y el arte, el mundo puede volverse consciente de Krishna. Cada uno, es potencialmente un Vaisnava, esto es un  estimulo en un programa de educación, para educar al mundo, dentro del océano de misericordia, encontrado en las enseñanzas del Señor Chaitanya, en conjunto con  la Literatura Védica. La pregunta es cómo  expandir el Movimiento del Señor Chaitanya. Pre-ordenadamente de la información de mucho tiempo atrás, de nuestros anteriores acaryas, de que éste sería un logro cultural, la expansión de la Conciencia de Krishna, alrededor del mundo será una conquista cultural. Muchas  personas pueden no visitar el templo, posiblemente a ellos les angustia lo desconocido, incluso pueden ser  incapaces de preguntar, y así formular sus temores; pero algo pueden entender, o profundizar. Todos los grandes acaryas no han proveído con el más grande de los  bienes, la información de que la Conciencia de Krishna es una realidad. Pero esta predestinado que la expansión de la Conciencia de Krishna, sobre el globo entero será a través de la cultura. 
+</p>
+<p class='vspace'>Pregunta: ¿Pero, cómo tendrá lugar ésta revolución cultural?
+</p>
+<p class='vspace'>BS: La revolución ya está en marcha. La palabra Conciencia de Krishna, ya ha alcanzado a las personas por todo el mundo. Puede existir alguna connotación negativa, porque la gente es confrontada con la Conciencia de Krishna en los aeropuertos, con los devotos distribuyendo libros en las calles, danzando en, con la cabeza afeitada. El Movimiento es una ventanilla a la revolución cultural, que muchos consideraron que   empezó a crecer en la revolución hippy, pero más bien el movimiento hippy fue justo un vehículo para el lanzamiento de la Conciencia de Krishna. El eslogan de los 60 fue: “Cante el santo Nombre, y permanezca elevado para siempre” Así, muchas esculturas y pinturas han sido producidas. La Conciencia de Krishna se está extendiendo alrededor del mundo, debido a ésta contribución cultural. Las pinturas en nuestros libros, la construcción y decoración de templos, la adoración a la Deidad, los ingeniosos adornos, los kirtana con grandes cantantes que hicieron una contribución para la Comunidad Vaisnava; todo esto es cultura. Los sucesos culturales de los pasados treinta años, yo siento que son sólo el comienzo. 
+</p>
+<p class='vspace'>Pregunta: ¿Qué podemos ver más adelante, en los próximos treinta años?
+</p>
+<p class='vspace'>BS: Más de lo mismo, más muchos y  nuevos acercamientos para ampliar la revolución Cultural de la Conciencia de Krishna. Yo personalmente he dedicado mi vida a este objetivo, de expandir la Conciencia de Krishna a través del arte. Yo tengo 40 años de experiencia profesional, en varios campos del arte. Fui profesor de pintura del sistema universitario en Nueva York; y  abandone una  profesión muy lucrativa, como artista profesional trabajando en  Madison Avenue; así es mi sentimiento personal por el futuro del arte, de  la Conciencia de Krishna, que vendrá en  presentaciones de alta calidad, exhibiciones en los mayores museos,  arte clásico de la  India y literatura Vaisnava. Estas exhibiciones con pinturas y esculturas, tendrán un doble propósito; primero mostrar la singularidad de nuestra cultura Védica Vaisnava, y ser un vehículo para exponer el arte de miles de artistas Vaisnavas. Existen muchos artistas Vaisnavas, comprometidos por completo en sus profesiones; pero el futuro mostrará miles y miles más, que conseguirán la realización de ese arte Vaisnava, en  la máxima forma  de arte, conocido por el mundo. 
+</p>
+<p class='vspace'>Pregunta: ¿Cómo puede justificar esta fuerte declaración?
+</p>
+<p class='vspace'>BS: Esta es una pregunta para el uno o el otro; el arte por Amor a Dios, o el arte ateo por ninguna causa. El movimiento moderno de arte no objetivo, significa el arte que no tiene objeto u objetivo, y por lo tanto debe ser secundario a un océano cultural de significado profundo, el cual aún yace, en parte escondido y en el estado inactivo, en el lenguaje sánscrito. La India tiene el más grande conocimiento, conocido por el hombre. Este es el conocimiento más antiguo de todas las religiones y culturas. La cultura, como nosotros la conocemos, comienza y termina en India. La cultura Védica fue una cultura mundial en el tiempo y presencia del Señor Krishna. El Señor Supremo mismo habló de  éste gran conocimiento, antes de la batalla de Kurukshetra.
+</p>
+<p class='vspace'>Pregunta: Todo el mundo está en la búsqueda de Dios. ¿Cómo puede una revolución cultural ayudar en esto?
+</p>
+<p class='vspace'>Dios está diciendo: Aquí estoy, este es mi nombre, este es mi número telefónico el cual es el maha mantra, yo quiero a todo el mundo en mi creación, para saber quién soy yo, y yo sólo quiero tu amor. El Señor está pidiendo, que nosotros solo  reconozcamos, que Él es Dios. Así el programa cultural de Conciencia de Krishna, es para mostrar, quién es Dios. Krishna está diciendo Yo soy Dios, y nosotros estamos diciendo Krishna es Dios, así que ¿cuál es la diferencia?
+</p>
+<p class='vspace'>Pregunta: Prácticamente hablando, ¿cómo logrará esta revolución cultural?
+</p>
+<p class='vspace'>BS: Esta es la era de la ciencia, permítame hablar como científico. Si usted tiene una molla de oro, usted quiere compartir ese oro. El Bhagavad Gita,  el Srimad Bhagavatam y todas las otras formas de literatura Védica, forman está molla de oro. Nuestro deber como artistas es vaciar esta molla de oro, hacia el mundo entero, a través de todos los diferentes medios, música, drama, danza, literatura, pintura, escultura, arquitectura. 
+</p>
+<p class='vspace'>Pregunta: ¿Cuál es el mejor medio para distribuir este conocimiento?
+</p>
+<p class='vspace'>BS: Es conocido que cada forma de arte es un vehículo esotérico para expandir un gran conocimiento. En las civilizaciones pasadas, los grandes filósofos han incorporado este gran conocimiento Védico, en varias formas sutiles de arte. Por ejemplo, en varios movimientos de danza, ritmos, vibraciones de sonido, y también en el campo visual, los grandes conocimientos han sido comunicados, secretamente tejidos, algunas veces en feudos ocultos, así como en expresiones visuales directas.
+</p>
+<p class='vspace'>Pregunta: ¿Cómo es su arte de Conciencia de Krishna; hay alguna diferencia con el arte Cristiano?
+</p>
+<p class='vspace'>BS: La civilización Occidental por completo está basada en un libro, La Biblia. El arte de Conciencia de Krishna, es una colección de miles de libros. Y los más importantes de ellos son el Bhagavad Gita y el Srimad Bhagavatam; en el Bhagavad Gita Krishna está hablando, y en el Bhagavatam Krishna es descrito. Pero la diferencia entre el arte de Conciencia de Krishna y cualquier otro arte, aparte del efecto, de que más literatura esta disponible en Conciencia de Krishna, la expresión del arte de Conciencia de Krishna es un acto de devoción y adoración. En el Cristianismo, el gran arte como las Catedrales de la Europa medieval, son ejemplo de amor puro por Dios. Si usted entra en Notre Dame en París, y escucha el gran órgano, entonces usted esta en el mundo espiritual. Yo lo experimente por mí mismo, y sentí que yo estaba en el mundo espiritual, cuando escuché el órgano sonar. Esto es lo mejor del Cristianismo. Usted puede alcanzar a Dios como un Cristiano, como un Judío, como un Musulmán, si esto es hecho puramente. Pero mucha gente está comiendo carne, ellos perdieron la oportunidad del servicio devocional puro. Cristo dijo: “Usted no matará”, pero aún la mayoría de los Cristianos están comiendo carne. La Conciencia de Krishna significa volver a la sinceridad y pureza medieval. 
+</p>
+<p class='vspace'>Pregunta: ¿Cómo llevará esta información, a los artistas en el mundo?
+</p>
+<p class='vspace'>BS: WWW, exhibiciones, grandes proyectos, programas educativos generales, programas de trabajo/estudio, trabajando con artistas y siendo especializado en los proyectos; proyectos para decorar los  dhams, las ciudades santas de India; todas esas actividades bajo el estandarte de la Asociación Mundial Vaisnava. Colección de artistas que están presentemente comprometidos, en el arte de Conciencia de Krishna, y exhibiendo sus trabajos en grandes festivales, y trabajando sobre nuevos frentes; esto es un arte de vanguardia. El arte de Conciencia de Krishna, está sobrecargado con una potencia, que no tiene otro arte,  porque este es puro; y los artistas trabajan por la perfección y la pureza de la evolución en un nuevo estilo,  único en el mundo. Los devotos hablan a través del arte desde  años de profunda realización a Dios, y a través de los años de estudio de las antiguas escrituras. El conocimiento de un artista se ve en su arte. Servicio puro devocional significa servicio simplemente, ejecutando el más fino arte  posible, en las formas más puras que se pueden manifestar; así que esta será una  revolución artística, en tanto, los artistas del mundo lean esta literatura Védica, una nueva revolución cultural emergerá. 
+</p>
+<p class='vspace'>18. VVRS-WVA Comité de Reconocimiento  Audarya:
+</p>
+<p class='vspace'>Campo de actividades:
+</p>
+<p class='vspace'>A.	Recibir recomendaciones sobre contribuciones especiales hechas al mundo Vaisnava.
+</p>
+<p class='vspace'>B.	El Comité Audarya estará dando la más excelente contribución (para cada categoría, un reconocimiento por separado será otorgado) para  una ocasión especial. 
+</p>
+<p class='vspace'>Coordinador:  Swami B.S. Damodar
+</p>
+<p class='vspace'>Entrevista:
+</p>
+<p class='vspace'>Pregunta: ¿Qué es el reconocimiento Audarya?
+</p>
+<p class='vspace'>B.S. Damodar (BSD): Esta fue una idea propuesta y patrocinada, por la misión VRINDA. Todavía se encuentra en fase de desarrollo. La idea es hacer una mayor divulgación, por las excelentes contribuciones hechas, a quienes diseminan el Vaisnavismo. El reconocimiento Audarya significa animar a los devotos que están trabajando en muchos y diferentes campos:
+</p>
+<p class='vspace'>Publicación de Libros, Producción de películas, Construcciones de Templos, Grabación de música, Presentaciones dramatizadas, dham seva, Contribuciones artísticas, Paginas en Internet, Caridades Vaisnavas, Aplicaciones Ecológicas de un proyecto Vaisnava. 
+</p>
+<p class='vspace'>En cualquier lugar del mundo, las mejores  contribuciones son reconocidas, con diferentes tipos de valores y prestigiosos reconocimientos. Hasta ahora, la idea del reconocimiento  Audarya es simplemente,  el reconocer los excelentes servicios, a los Vaisnavas del mundo. Cosas similares, como reconocimientos y títulos, han sido dados anteriormente por  las diferentes misiones, a sus miembros. La idea del reconocimiento Audarya, es para estimular a cualquiera que ayude a las metas propuestas por los ejemplos de nuestro guru parampara.  De esta manera el reconocimiento Audarya, puede incluso ser dado a alguien que libró a los Vaisnavas, que estuvieron detenidos, por su labor predicadora, por ejemplo. Audarya significa magnanimidad, que es la marca de Sri Sri Gauranga y Nityananda; el reconocimiento Audarya comenzará tan pronto como, mas de las secretarias de las diferentes misiones, participen activamente del Comité de Reconocimiento Audarya.  
+</p>
+<p class='vspace'>Pregunta: ¿Cómo definirá quién conseguirá el reconocimiento?
+</p>
+<p class='vspace'>BSD: Nosotros estamos recibiendo recomendaciones desde cualquier miembro, de cualquier categoría. Entonces el Comité de Reconocimiento, el cual consiste en 5 miembros de diferentes misiones, revisará las diferentes recomendaciones y votará, por simple mayoría, la mejor de las contribuciones. Esto se decidió para evitar malos entendidos, de que los reconocimientos serían dados a acaryas de alguna misión determinada. Los reconocimientos son más dirigidos, a las contribuciones innovadoras, de los diferentes campos creativos. El potencial del reconocimiento Audarya, es maravilloso, y nosotros lamentamos que no ha entrado a manifestarse de lleno. Pero como muchos otros aspectos de la WVA, ellos están  potencialmente listos para ser explorados, tan pronto como sea posible. 
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.asociacion_mundial_vaisnava_08.html'>La Historia</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.asociacion_mundial_vaisnava.html'>Vishva Vaisnava Raj Sabha – Asociación Mundial Vaisnava</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.asociacion_mundial_vaisnava_10.html'>El Futuro</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 19, 2008, at 01:31 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

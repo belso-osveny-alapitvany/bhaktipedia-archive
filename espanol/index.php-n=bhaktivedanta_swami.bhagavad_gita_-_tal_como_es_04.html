@@ -1,0 +1,928 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - El Conocimiento Trascendental</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_swami - RSS Feed'
+      href='index.php-n=bhaktivedanta_swami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_04' method='get'><input type='hidden' name='n' value='bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_04' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - El Conocimiento Trascendental"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_04-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es.html'>El Bhagavad Gita – Tal Como Es</a>
+</p>
+<div class='vspace'></div><h2><small>Capítulo IV</small><br /><br />El Conocimiento Trascendental</h2>
+<p>VERSO 1
+</p>
+<div class='vspace'></div><pre> sri-bhagavan uvaca
+ imam vivasvate yogam
+ proktavan aham avyayam
+ vivasvan manave praha 
+ manur iksvakave ’bravit
+</pre><p class='vspace'>sri-bhagavan uvaca—la Suprema Personalidad de Dios dijo; imam—este; vivasvate—al dios del Sol; yogam—la ciencia de la relación de uno con el Supremo; proktavan—instruí; aham—Yo; avyayam—imperecedera; vivasvan—Vivasvan (el nombre del dios del Sol); manave—al padre de la humanidad (de nombre Vaivasvata); praha—dijo; manuh—el padre de la humanidad; iksvakave—al rey Iksvaku; abravit—dijo.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>La Personalidad de Dios, el Señor Sri Krishna, dijo: Yo le enseñé esta imperecedera ciencia del yoga a Vivasvan, el dios del Sol, y Vivasvan se la enseñó a Manu, el padre de la humanidad, y Manu a su vez se la enseñó a Iksvaku.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí encontramos la historia de El Bhagavad-gita a partir de una época remota en que le fue entregado a la orden real de todos los planetas, comenzando con el planeta Sol. Los reyes de todos los planetas tienen la principal función de proteger a los habitantes de los mismos, y, por lo tanto, la orden real debe entender la ciencia de El Bhagavad-gita, a fin de ser capaz de gobernar a los ciudadanos y protegerlos del cautiverio material de la lujuria. La vida humana está hecha para el cultivo del conocimiento espiritual en una relación eterna con la Suprema Personalidad de Dios, y los mandatarios de todos los Estados y de todos los planetas están obligados a impartirles a los ciudadanos ese conocimiento, por medio de la educación, la cultura y la devoción. En otras palabras, todos los jefes de Estado tienen la función de propagar la ciencia del proceso de conciencia de Krishna, de modo que la gente pueda sacar provecho de esta gran ciencia y pueda seguir un sendero triunfante, haciendo uso de la oportunidad que brinda la forma de vida humana.
+En este milenio, el dios del Sol es conocido como Vivasvan, el rey del Sol, el cual es el origen de todos los planetas del sistema solar. En El Brahma-samhita (5.52) se declara:
+</p>
+<div class='vspace'></div><pre> yac-caksur esa savita sakala-grahanam
+ raja samasta-sura-murtir asesa-tejah
+ yasyajñaya bhramati sambhrta-kala-cakro
+ govindam adi-purusam tam aham bhajami
+</pre><p class='vspace'>El Señor Brahma dijo: "Permítaseme adorar a la Suprema Personalidad de Dios, Govinda [Krishna], quien es la Persona Original, y bajo cuya orden el Sol, que es el rey de todos los planetas, adquiere inmenso poder y calor. El Sol representa el ojo del Señor, y recorre su órbita obedeciendo la orden de Él".
+</p>
+<p class='vspace'>El Sol es el rey de los planetas, y el dios del Sol (actualmente de nombre Vivasvan) rige el planeta Sol, el cual controla a todos los demás planetas mediante el suministro de calor y luz. El Sol gira bajo la orden de Krishna, y en un principio el Señor Krishna hizo que Vivasvan fuera Su primer discípulo en entender la ciencia de El Bhagavad-gita. Por consiguiente, el Gita no es un tratado especulativo dirigido al insignificante erudito mundano, sino un libro modelo de conocimiento que desciende desde tiempo inmemorial.
+</p>
+<p class='vspace'>En El Mahabharata (Santi-parva 348.51–52) encontramos la historia del Gita de la siguiente manera:
+</p>
+<div class='vspace'></div><pre> treta-yugadau ca tato
+ vivasvan manave dadau 
+ manus ca loka-bhrty-artham
+ sutayeksvakave dadau
+ iksvakuna ca kathito
+ vyapya lokan avasthitah
+</pre><p class='vspace'>"Al comienzo del milenio conocido como Treta-yuga, Vivasvan le entregó a Manu esta ciencia de la relación con el Supremo. Manu, siendo el padre de la humanidad, se la dio a su hijo, Maharaja Iksvaku, el rey de este planeta Tierra y antepasado de la dinastía Raghu, en la que apareció el Señor Ramacandra". De modo que, El Bhagavad-gita existía en la sociedad humana desde la época de Maharaja Iksvaku.
+</p>
+<p class='vspace'>Hasta los actuales momentos, apenas han transcurrido cinco mil años de Kali-yuga, la cual dura 432.000 años. La época anterior a ésa fue la de Dvapara-yuga (800.000 años), y la anterior a esta última fue la de Treta-yuga (1.200.000 años). Así pues, hace unos 2.005.000 años, Manu le habló El Bhagavad-gita a su discípulo e hijo Maharaja Iksvaku, el rey de este planeta Tierra. La era del Manu actual se calcula que debe durar unos 305.300.000 años, de los cuales han pasado 120.400.000. Aceptando que antes del nacimiento de Manu el Señor le habló el Gita a Su discípulo Vivasvan, el dios del Sol, un cálculo aproximado indica que el Gita se habló por lo menos hace 120.400.000 años; y en la sociedad humana ha existido por dos millones de años. El Señor lo habló de nuevo hace unos cinco mil años, esta vez a Arjuna. Éste es un cálculo aproximado de los períodos que comprende la historia del Gita, según el propio Gita y según el orador, el Señor Sri Krishna. El Bhagavad-gita le fue hablado al dios del Sol, Vivasvan, porque él también es un ksatriya, y porque es el padre de todos los ksatriyas que son descendientes del dios del Sol, o los ksatriyas surya-vamsa. Como El Bhagavad-gita es igual que los Vedas, ya que lo habló la Suprema Personalidad de Dios, el conocimiento que en él se expone es apauruseya, sobrehumano. Puesto que las instrucciones védicas se aceptan tal como son, sin interpretación humana, al Gita debe aceptársele, por ende, sin una interpretación mundana. Puede que los pendencieros mundanos especulen acerca del Gita a su manera, pero eso no es El Bhagavad-gita tal como es. Por consiguiente, El Bhagavad-gita hay que aceptarlo tal como es, de manos de la sucesión discipular, y aquí se describe que el Señor se lo habló al dios del Sol, el dios del Sol se lo habló a su hijo Manu, y Manu se lo habló a su hijo Iksvaku.
+</p>
+<p class='vspace'>VERSO 2
+</p>
+<div class='vspace'></div><pre> evam parampara-praptam
+ imam rajarsayo viduh
+ sa kaleneha mahata
+ yogo nastah parantapa
+</pre><p class='vspace'>evam—así pues; parampara—por sucesión discipular; praptam—recibida; imam—esta ciencia; raja-rsayah—los reyes santos; viduh—entendieron; sah—ese conocimiento; kalena—en el transcurso del tiempo; iha—en este mundo; mahata—gran; yogah—la ciencia de la relación de uno con el Supremo; nastah—disperso; parantapa—¡oh, Arjuna, subyugador de los enemigos!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Esta ciencia suprema se recibió así a través de la cadena de sucesión discipular, y los reyes santos la entendieron de ese modo. Pero en el transcurso del tiempo la sucesión se rompió, y, por ello, la ciencia tal como es parece estar perdida.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Se afirma claramente que el Gita estaba dirigido en especial a los reyes santos, porque ellos tenían que llevar a cabo el propósito del mismo al gobernar a los ciudadanos. Desde luego, El Bhagavad-gita nunca estuvo dirigido a las personas demoníacas, que disiparían su valor sin beneficiar a nadie, y urdirían todo tipo de interpretaciones según sus caprichos personales. Tan pronto como el propósito original se dispersó a causa de las motivaciones de los comentaristas inescrupulosos, surgió la necesidad de restablecer la sucesión discipular. Hace cinco mil años, el propio Señor detectó que la sucesión discipular se había roto y, en consecuencia, declaró que el propósito del Gita parecía estar perdido. De la misma manera, en la actualidad también hay muchísimas ediciones del Gita (especialmente en inglés), pero prácticamente ninguna de ellas se ha presentado siguiendo a la sucesión discipular autorizada. Hay infinidad de interpretaciones, elaboradas por diferentes eruditos mundanos, pero prácticamente ninguno de ellos acepta a la Suprema Personalidad de Dios, Krishna, aunque todos hacen un buen negocio con las palabras de Sri Krishna. Ese espíritu es demoníaco, porque los demonios no creen en Dios, sino que simplemente disfrutan de la propiedad del Supremo. Debido a que hay una gran necesidad de una traducción del Gita tal como se recibe en el sistema parampara (de sucesión discipular), aquí se hace el intento de satisfacer esa gran necesidad. Si El Bhagavad-gita se acepta tal como es, constituye un gran don para la humanidad, pero si se toma como un tratado de especulaciones filosóficas, es simplemente una pérdida de tiempo.
+</p>
+<p class='vspace'>VERSO 3
+</p>
+<div class='vspace'></div><pre> sa evayam maya te ‘dya
+ yogah proktah puratanah
+ bhakto ‘si me sakha ceti
+ rahasyam hy etad uttamam
+</pre><p class='vspace'>sah—la misma; eva—ciertamente; ayam—esta; maya—por Mí; te—a ti; adya—hoy; yogah—la ciencia del yoga; proktah—hablada; puratanah—muy antigua; bhaktah—devoto; asi—eres; me—Mi; sakha—amigo; ca—también; iti—por lo tanto; rahasyam—misterio; hi—ciertamente; etat—este; uttamam—trascendental.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Esta antiquísima ciencia de la relación con el Supremo te la expongo hoy a ti, porque tú eres Mi devoto así como también Mi amigo, y puedes por ello entender el misterio trascendental de la misma.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Existen dos clases de hombres: el devoto y el demonio. El Señor escogió a Arjuna como receptor de esta gran ciencia, porque Arjuna era un devoto del Señor; pero al demonio no le es posible entender esta gran y misteriosa ciencia. Existen muchas ediciones de este gran libro de conocimiento. Algunas de ellas tienen comentarios escritos por los devotos, y otras tienen comentarios escritos por los demonios. El comentario de los devotos es auténtico, mientras que el de los demonios es inútil. Arjuna acepta a Sri Krishna como la Suprema Personalidad de Dios, y cualquier comentario que se le haga al Gita siguiendo los pasos de Arjuna, es verdadero servicio devocional que se le presta a la causa de esta gran ciencia. Los hombres demoníacos, no obstante, no aceptan al Señor Krishna tal como es Él. Más bien, inventan algo acerca de Krishna y desencaminan a la generalidad de los lectores, apartándolos del sendero de las instrucciones de Krishna. Aquí se da una advertencia acerca de esos senderos engañosos. Uno debe tratar de seguir la sucesión discipular que procede de Arjuna y, de ese modo, beneficiarse con esta gran ciencia de El Srimad Bhagavad-gita.
+</p>
+<p class='vspace'>VERSO 4
+</p>
+<div class='vspace'></div><pre> arjuna uvaca
+ aparam bhavato janma
+ param janma vivasvatah
+ katham etad vijaniyam
+ tvam adau proktavan iti
+</pre><p class='vspace'>arjunah uvaca—Arjuna dijo; aparam—menor; bhavatah—Tú; janma—nacimiento; param—superior; janma—nacimiento; vivasvatah—del dios del Sol; katham—cómo; etat—esto; vijaniyam—he de entender; tvam—Tú; adau—al principio; proktavan—instruida; iti—así pues.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Arjuna dijo: Vivasvan, el dios del Sol, nació antes que Tú, por lo cual es mayor que Tú. ¿Cómo puedo entender que en el principio Tú le hayas enseñado esta ciencia a él?
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Arjuna es un reconocido devoto del Señor. Así que, ¿cómo no iba a creer en las palabras de Krishna? Lo cierto es que Arjuna no está preguntando en beneficio propio, sino por el bien de aquellos que no creen en la Suprema Personalidad de Dios, o los demonios, a quienes no les gusta la idea de que a Krishna se le acepte como la Suprema Personalidad de Dios; es sólo para ellos que Arjuna pregunta acerca de este punto, como si él mismo no estuviera consciente de la posición de la Personalidad de Dios, o Krishna. Como se hará patente en el Capítulo Diez, Arjuna sabía perfectamente bien que Krishna es la Suprema Personalidad de Dios, el manantial de todo y la última palabra en trascendencia. Claro que, Krishna también apareció en esta Tierra como hijo de Devaki. A un hombre ordinario le resulta muy difícil entender cómo Krishna siguió siendo la misma Suprema Personalidad de Dios, la persona eterna original. Por consiguiente, para aclarar ese punto, Arjuna le hizo la pregunta a Krishna, de manera que Él Mismo pudiera hablar con autoridad. Que Krishna es la autoridad suprema, lo acepta el mundo entero, no sólo en la actualidad, sino desde tiempo inmemorial, y únicamente los demonios lo rechazan. De todos modos, puesto que Krishna es la autoridad aceptada por todos, Arjuna le hizo a Él esa pregunta, para que Krishna pudiera describirse a Sí Mismo sin que lo explicaran los demonios, que siempre tratan de deformarlo de una manera en que ellos y sus seguidores puedan entender. Es necesario que todo el mundo, por su propio bien, conozca la ciencia de Krishna. Por eso, cuando el propio Krishna habla de Sí Mismo, es auspicioso para todos los mundos. Puede que a los demonios les resulten extrañas las explicaciones que el propio Krishna da, porque ellos siempre estudian a Krishna desde su propio punto de vista; pero aquellos que son devotos les dan una cálida bienvenida a las declaraciones de Krishna, cuando éstas las habla el propio Krishna. Los devotos siempre adorarán esas autoritativas declaraciones de Krishna, porque siempre están ansiosos de saber muchísimo más acerca de Él. Los ateos, quienes consideran a Krishna un hombre ordinario, pueden de esa manera llegar a saber que Krishna es sobrehumano, que es sac-cid-ananda-vigraha—la forma eterna de la bienaventuranza y el conocimiento—, que es trascendental, y que se halla por encima del dominio de las modalidades de la naturaleza material, y por encima de la influencia del espacio y el tiempo. Un devoto de Krishna, tal como Arjuna, está indudablemente por encima de cualquier malentendido en relación con la posición trascendental de Krishna. Que Arjuna le hiciera esta pregunta al Señor, es simplemente un intento que el devoto hace de desafiar la actitud atea de personas que toman a Krishna por un ser humano ordinario, sujeto a las modalidades de la naturaleza material.
+</p>
+<p class='vspace'>VERSO 5
+</p>
+<div class='vspace'></div><pre> sri-bhagavan uvaca
+ bahuni me vyatitani
+ janmani tava carjuna
+ tany aham veda sarvani
+ na tvam vettha parantapa
+</pre><p class='vspace'>sri-bhagavan uvaca—la Personalidad de Dios dijo; bahuni—muchos; me—Míos; vyatitani—han pasado; janmani—nacimientos; tava—tuyos; ca—y también; arjuna—¡oh, Arjuna!; tani—esos; aham—Yo; veda—sé; sarvani—todo; na—no; tvam—tú; vettha—sabes; parantapa—¡oh, subyugador del enemigo!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>La Personalidad de Dios dijo: Tanto tú como Yo hemos pasado por muchísimos nacimientos. Yo los puedo recordar todos, pero tú no, ¡oh, subyugador del enemigo!
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En El Brahma-samhita (5.33), se encuentra la información de que hay muchísimas encarnaciones del Señor. Allí se dice:
+</p>
+<div class='vspace'></div><pre> advaitam acyutam anadim ananta-rupam
+ adyam purana-purusam nava-yauvanam ca
+ vedesu durlabham adurlabham atma-bhaktau
+ govindam adi-purusam tam aham bhajami
+</pre><p class='vspace'>"Yo adoro a Govinda [Krishna], la Suprema Personalidad de Dios, quien es la persona original, absoluta, infalible y sin comienzo. Aunque Él se expande en una cantidad ilimitada de formas, aun así es la misma persona original, el más antiguo y la persona que siempre se ve como un joven lozano. Esas eternas, bienaventuradas y omniscientes formas del Señor, por lo general no las entienden los mejores eruditos védicos, pero siempre se les manifiestan a los devotos puros".
+</p>
+<p class='vspace'>También se afirma en El Brahma-samhita (5.39):
+</p>
+<div class='vspace'></div><pre> ramadi-murtisu kala-niyamena tisthan
+ nanavataram akarod bhuvanesu kintu
+ krsnah svayam samabhavat paramah puman yo
+ govindam adi-purusam tam aham bhajami
+</pre><p class='vspace'>"Yo adoro a Govinda [Krishna], la Suprema Personalidad de Dios, quien siempre se encuentra en diversas encarnaciones, tales como Rama y Nrsimha, así como también en muchas encarnaciones secundarias, pero quien es la Personalidad de Dios original, conocido como Krishna, y quien, además, se encarna personalmente".
+</p>
+<p class='vspace'>También en los Vedas se dice que el Señor, aunque es aquel que no tiene igual, se manifiesta en infinidad de formas. Él es como la piedra vaidurya, que cambia de color y, aun así, sigue siendo la misma. Todas esas múltiples formas las entienden los devotos puros, pero no se pueden entender mediante un simple estudio de los Vedas (vedesu durlabham adurlabham atma-bhaktau). Devotos tales como Arjuna son compañeros constantes del Señor, y cuando quiera que el Señor se encarna, los devotos asociados también se encarnan, para poder servir al Señor de diferentes maneras. Arjuna es uno de esos devotos, y de este verso se deduce que, unos millones de años atrás, cuando el Señor Krishna le habló El Bhagavad-gita al dios del Sol, Vivasvan, Arjuna también estaba presente, haciendo otro papel. Pero la diferencia que hay entre el Señor y Arjuna es que el Señor recordaba el incidente, mientras que Arjuna no lo recordaba. Ésa es la diferencia que hay entre la entidad viviente parte integral, y el Señor Supremo. Aunque a Arjuna se le trata aquí como el poderoso héroe que podía subyugar a los enemigos, no obstante es incapaz de recordar lo que había ocurrido en sus diversos nacimientos pasados. De modo que, una entidad viviente, por grande que pueda ser desde el punto de vista material, nunca puede ser igual al Señor Supremo. Cualquiera que sea un compañero constante del Señor, es sin duda una persona liberada, pero no puede ser igual al Señor. En El Brahma-samhita se describe al Señor como infalible (acyuta), lo cual significa que Él nunca se olvida de Sí, a pesar de estar en contacto con lo material. Luego el Señor y la entidad viviente nunca pueden ser iguales en todos los aspectos, ni siquiera si la entidad viviente está tan liberada como Arjuna. Aunque Arjuna es un devoto del Señor, a veces olvida la naturaleza del Señor, pero, por la gracia divina, un devoto puede entender al instante la condición infalible del Señor, mientras que un no devoto, o un demonio, no puede entender esa naturaleza trascendental. Así pues, estas descripciones del Gita no las pueden entender los cerebros demoníacos. Krishna recordaba actos que había realizado millones de años atrás, pero Arjuna no podía recordarlos, pese al hecho de que tanto Krishna como Arjuna son de una naturaleza eterna. También podemos destacar aquí que una entidad viviente olvida todo debido a su cambio de cuerpo, pero el Señor recuerda porque no cambia Su cuerpo sac-cid-ananda. Él es advaita, que significa que no hay diferencia alguna entre Su cuerpo y Él Mismo. Todo en relación con Él es espíritu, mientras que el alma condicionada es diferente de su cuerpo material. Y como el cuerpo y el ser del Señor son idénticos, Su posición siempre es diferente a la posición de la entidad viviente ordinaria, incluso cuando Él desciende al plano material. Los demonios no pueden acomodarse a esta naturaleza trascendental del 
+Señor, que el propio Señor explica en el verso siguiente.
+</p>
+<p class='vspace'>VERSO 6
+</p>
+<div class='vspace'></div><pre> ajo ‘pi sann avyayatma
+ bhutanam isvaro ‘pi san
+ prakrtim svam adh/isthaya
+ sambhavamy atma-mayaya
+</pre><p class='vspace'>ajah—innaciente; api—aunque; san—siendo así; avyaya—sin deteriorarse; atma—cuerpo; bhutanam—de todos aquellos que nacen; isvarah—el Señor Supremo; api—aunque; san—siendo así; prakrtim—en la forma trascendental; svam—Mía; adhisthaya—estando situado así; sambhavami—Me encarno; atma-mayaya—mediante Mi energía interna.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aunque soy innaciente y Mi cuerpo trascendental nunca se deteriora, y aunque soy el Señor de todas las entidades vivientes, aun así aparezco en cada milenio en Mi trascendental forma original.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El Señor ha hablado acerca de la peculiaridad de Su nacimiento: aunque puede que Él aparezca como una persona ordinaria, recuerda todo lo relacionado con Sus muchísimos "nacimientos" pasados, mientras que un hombre común y corriente no puede recordar lo que ha hecho ni siquiera unas cuantas horas antes. Si se le pregunta a alguien qué hizo exactamente a la misma hora el día anterior, al hombre común le sería muy difícil responder de inmediato. Seguramente que tendría que escarbar en su memoria para recordar qué estaba haciendo exactamente a la misma hora el día anterior. Y, no obstante, a menudo los hombres se atreven a declarar que son Dios, o Krishna. Uno no debe dejarse engañar por esas pretensiones sin sentido. Y, además, el Señor explica Su prakrti, o Su forma. Prakrti significa "naturaleza", y también significa svarupa, o "la forma de uno mismo". El Señor dice que Él aparece en Su propio cuerpo. Él no cambia de cuerpo, como sí lo hace la entidad viviente común, que cambia de un cuerpo a otro. Puede que la entidad viviente tenga una clase de cuerpo en el nacimiento actual, pero en el siguiente nacimiento tendrá un cuerpo diferente. En el mundo material, la entidad viviente no tiene un cuerpo fijo, sino que transmigra de un cuerpo a otro. Sin embargo, el Señor no hace eso. Cuando quiera que Él aparece, lo hace en el mismo cuerpo original, por medio de Su potencia interna. En otras palabras, Krishna aparece en este mundo material en Su eterna forma original, con dos manos y sosteniendo una flauta. Él aparece precisamente en Su cuerpo eterno, no contaminado por este mundo material. Aunque Él aparece en el mismo cuerpo trascendental y es el Señor del universo, aun así parece que Él nace como una entidad viviente ordinaria. Y aunque Su cuerpo no se deteriora como un cuerpo material, aun así parece que el Señor Krishna crece de la infancia a la niñez y de la niñez a la juventud. Pero, lo que es muy sorprendente, nunca envejece más allá de la juventud. En la época de la Batalla de Kuruksetra, Él tenía muchos nietos en casa, o, en otras palabras, Él ya había envejecido suficientemente según los cálculos materiales. Aun así, se veía tal como un hombre joven de veinte o veinticinco años. Nunca vemos un retrato de Krishna en la vejez, porque él nunca envejece como nosotros, si bien es la persona más anciana de toda la creación —del pasado, del presente y del futuro—. Ni Su cuerpo ni Su inteligencia se deterioran o cambian alguna vez. Por consiguiente, queda claro que, a pesar de estar en el mundo material, Él es la misma e innaciente forma eterna de bienaventuranza y conocimiento, inmutable en lo que respecta a Su cuerpo e inteligencia trascendentales. De hecho, Su aparición y desaparición son como la salida del Sol, el movimiento de éste ante nosotros y su subsecuente desaparición de nuestra vista. Cuando el Sol se pierde de vista, creemos que se ha puesto, y cuando el Sol está ante nuestros ojos, pensamos que se halla en el horizonte. En realidad, el Sol siempre está en su posición fija. Pero debido a nuestros sentidos insuficientes y defectuosos, hablamos de que el Sol aparece y desaparece en el cielo. Y como Su aparición y desaparición son completamente distintas de las de cualquier entidad viviente común y corriente, es obvio que Él es conocimiento eterno y bienaventurado, mediante Su potencia interna, y que nunca lo contamina la naturaleza material. Los Vedas también confirman que la Suprema Personalidad de Dios es innaciente, y que, sin embargo, parece nacer en múltiples manifestaciones. Las Escrituras védicas complementarias también confirman que, aunque el Señor parece nacer, aun así no cambia de cuerpo. En el Bhagavatam, Él aparece en forma de Narayana ante Su madre, con cuatro manos y los adornos de las seis clases de opulencias plenas. Su aparición en Su eterna forma original constituye Su misericordia sin causa, que se les otorga a las entidades vivientes de modo que puedan concentrarse en el Señor Supremo tal como es Él, y no en invenciones mentales o imaginaciones, que es lo que el impersonalista cree equivocadamente que son las formas del Señor. Según el diccionario Visva-kosa, la palabra maya, o atma-maya, se refiere a la misericordia sin causa del Señor. El Señor está consciente de todas Sus apariciones y desapariciones anteriores, pero una entidad viviente común, en cuanto obtiene otro cuerpo, olvida todo lo referente a su cuerpo pasado. Él es el Señor de todas las entidades vivientes, porque, mientras se encuentra en esta Tierra, realiza actividades maravillosas y sobrehumanas. Así pues, el Señor siempre es la misma Verdad Absoluta, y no presenta diferenciación alguna entre Su forma y Su ser, o entre Su calidad y Su cuerpo. Ahora pudiera surgir la pregunta de por qué el Señor aparece y desaparece en este mundo. Ello se explica en el verso siguiente.
+</p>
+<p class='vspace'>VERSO 7
+</p>
+<div class='vspace'></div><pre> yada yada hi dharmasya
+ glanir bhavati bharata
+ abhyutthanam adharmasya
+ tadatmanam srjamy aham 
+</pre><p class='vspace'>yada yada—cuando quiera y dondequiera; hi—indudablemente; dharmasya—de la religión; glanih—discrepancias; bhavati—se manifiesta; bharata—¡oh, descendiente de Bharata!; abhyutthanam—predominio; adharmasya—de la irreligión; tada—en ese entonces; atmanam—ser; srjami—manifiesto; aham—Yo.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Cuando quiera y dondequiera que haya una declinación en la práctica religiosa, ¡oh, descendiente de Bharata!, y un aumento predominante de la irreligión, en ese entonces Yo mismo desciendo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La palabra srjami es significativa aquí. Srjami no se puede emplear en el sentido de creación, porque, de acuerdo con el verso anterior, no existe creación de la forma o cuerpo del Señor, ya que todas las formas existen eternamente. Por lo tanto, srjami significa que el Señor se manifiesta tal como Él es. Aunque el Señor aparece en un momento programado, es decir, al final de la Dvapara-yuga del vigésimoctavo milenio del séptimo Manu de un día de Brahma, aun así Él no está obligado a someterse a esas reglas y regulaciones, porque está en completa libertad de actuar a voluntad de muchas maneras. En consecuencia, Él aparece por Su propia voluntad cuando quiera que haya un predominio de la irreligiosidad y una desaparición de la verdadera religión. Los principios de la religión se presentan en los Vedas, y cualquier discrepancia en lo referente a la ejecución debida de las reglas de los Vedas, lo vuelve a uno irreligioso. En el Bhagavatam se declara que esos principios constituyen las leyes del Señor. Únicamente el Señor puede manufacturar un sistema de religión. Los Vedas también se aceptan como palabras que en un principio el propio Señor le comunicó a Brahma desde dentro del corazón. De modo que, los principios de dharma, o de la religión, son las órdenes directas de la Suprema Personalidad de Dios (dharmam tu saksad-bhagavat- pranitam). Estos principios se indican claramente a todo lo largo de El Bhagavad-gita. El propósito de los Vedas es el de establecer dichos principios bajo la orden del Señor Supremo, y al final del Gita el Señor ordena directamente que el principio más elevado de la religión es el de entregarse sólo a Él, y nada más. Los principios védicos lo incitan a uno a entregarse a Él por completo; y cuando quiera que las personas demoníacas perturban esos principios, el Señor aparece. Por el Bhagavatam sabemos que el Señor Buda es la encarnación de Krishna que apareció cuando el materialismo se hallaba extendido y los materialistas estaban usando como pretexto la autoridad de los Vedas. Aunque en los Vedas hay ciertas reglas y regulaciones restrictivas en cuanto al sacrificio de animales con ciertos propósitos específicos, la gente de tendencias demoníacas, no obstante, se dio al sacrificio de animales sin hacer referencia a los principios védicos. El Señor Buda apareció para detener esa necedad y establecer los principios védicos de la no violencia. Así pues, todos y cada uno de los avataras, o encarnaciones del Señor, tiene una misión específica, y a todos ellos se los describe en las Escrituras reveladas. A nadie se lo debe aceptar como avatara, a menos que se lo mencione en las Escrituras. No es cierto que el Señor aparece únicamente en la tierra hindú. Él puede manifestarse dondequiera y cuando quiera que desee aparecer. En todas y cada una de las encarnaciones, Él habla tanto de religión como pueda entender la gente en particular que se encuentre bajo esas circunstancias específicas. Pero la misión es la misma: llevar a la gente hacia el estado de conciencia de Dios y de obediencia a los principios de la religión. Algunas veces, Él desciende personalmente, y a veces envía a Su representante fidedigno, en la forma de Su hijo o sirviente, o Él Mismo desciende en alguna forma disfrazada.
+</p>
+<p class='vspace'>Los principios de El Bhagavad-gita se le hablaron a Arjuna, y, además, a otras personas muy elevadas, porque él estaba muy adelantado en comparación con las personas ordinarias de otras partes del mundo. "Dos más dos son cuatro" constituye un principio matemático verdadero, tanto en la clase de aritmética para principiantes, como también en el curso adelantado. Aun así, hay matemáticas superiores y matemáticas elementales. Por lo tanto, en todas las encarnaciones del Señor se enseñan los mismos principios, pero éstos parecen ser superiores o inferiores en diferentes circunstancias. Los principios superiores de la religión comienzan con la aceptación de las cuatro órdenes y los cuatro estados de vida social, tal y como se explicará más adelante. Todo el propósito de la misión de las encarnaciones es el de despertar en todas partes el estado de conciencia de Krishna. Esa conciencia es manifiesta y no manifiesta, sólo bajo diferentes circunstancias.
+</p>
+<p class='vspace'>VERSO 8
+</p>
+<div class='vspace'></div><pre> paritranaya sadhunam
+ vinasaya ca duskrtam
+ dharma-samsthapanarthaya
+ sambhavami yuge yuge
+</pre><p class='vspace'>paritranaya—para la redención; sadhunam—de los devotos; vinasaya—para la aniquilación; ca—y; duskrtam—de los infieles; dharma—principios de la religión; samsthapana-arthaya—para restablecer; sambhavami—aparezco; yuge—milenio; yuge—tras milenio.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Para redimir a los piadosos y aniquilar a los infieles, así como para restablecer los principios de la religión, Yo mismo aparezco milenio tras milenio.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>De acuerdo con El Bhagavad-gita, un sadhu (hombre santo) es un hombre con conciencia de Krishna. Puede que una persona parezca ser irreligiosa, pero si posee a plenitud las cualidades del estado de conciencia de Krishna, se le debe considerar un sadhu. Y duskrtam se le aplica a aquellos que no les interesa el estado de conciencia de Krishna. Aunque esos infieles, o duskrtam, estén adornados con educación mundana, se los describe como necios y lo más bajo de la humanidad, mientras que a una persona que esté dedicada al cultivo de conciencia de Krishna en un ciento por ciento se la acepta como sadhu, aunque no sea ni erudita ni muy culta. En lo que se refiere a los ateos, no es necesario que, para destruirlos, el Señor Supremo aparezca tal como es Él, como hizo en el caso de los demonios Ravana y Kamsa. El Señor tiene muchos agentes capaces de eliminar demonios. Pero el Señor desciende especialmente para tranquilizar a Sus devotos puros, que siempre están acosados por las personas demoníacas. El demonio hostiga al devoto, aunque este último resulte ser pariente suyo. Si bien Prahlada Maharaja era hijo de Hiranyakasipu, no obstante su padre lo persiguió; aunque Devaki, la madre de Krishna, era hermana de Kamsa, ella y su esposo, Vasudeva, fueron perseguidos, sólo porque Krishna les iba a nacer a ellos. De manera que, Krishna apareció principalmente para salvar a Devaki antes que para matar a Kamsa, pero ambas acciones se realizaron simultáneamente. Por eso se dice aquí que el Señor aparece en diferentes encarnaciones para redimir al devoto y eliminar a los infieles demonios.
+En El Caitanya-caritamrta de Krsnadasa Kaviraja, los versos siguientes (Madhya 20.263–264) resumen estos principios de la encarnación:
+</p>
+<div class='vspace'></div><pre> srsti-hetu yei murti prapañce avatare
+ sei isvara-murti ávatara' nama dhare  
+ mayatita paravyome sabara avasthana
+ visve ávatari' dhare ávatara' nama
+</pre><p class='vspace'>"El avatara, o encarnación de Dios, desciende del Reino de Dios con el fin de llevar a cabo la manifestación material. Y esa forma en particular de la Personalidad de Dios que así desciende se denomina encarnación o avatara. Esas encarnaciones están en el mundo espiritual, el Reino de Dios. Cuando ellas descienden a la creación material, adoptan el nombre de avatara".
+</p>
+<p class='vspace'>Hay varias clases de avataras —tales como los purusavataras, los gunavataras, los lilavataras, los sakty- avesavataras, los manvantaravataras y los yugavataras—, todos los cuales aparecen por todas partes del universo en el momento programado. Pero el Señor Krishna es el Señor primordial, el manantial de todos los avataras. El Señor Sri Krishna desciende con el propósito específico de mitigar las angustias de los devotos puros, que están muy ansiosos de verlo en Sus pasatiempos originales de Vrndavana. Por consiguiente, el propósito principal del avatara de Krishna consiste en satisfacer a Sus devotos puros.
+El Señor dice que Él Mismo se encarna en cada milenio. Eso indica que Él también se encarna en la Era de Kali. Como se declara en El Srimad-Bhagavatam, la encarnación de la Era de Kali es el Señor Caitanya Mahaprabhu, quien propagó la adoración de Krishna mediante el movimiento de sankirtana (el canto en congregación de los santos nombres), y difundió el cultivo de conciencia de Krishna a todo lo largo de la India. Él predijo que esta cultura del sankirtana se difundiría por el mundo entero, de pueblo en pueblo y de aldea en aldea. Al Señor Caitanya, en Su carácter de encarnación de Krishna, la Personalidad de Dios, se le describe de un modo secreto, mas no directo, en las secciones confidenciales de las Escrituras reveladas, tales como los Upanisads, El Mahabharata y el Bhagavatam. A los devotos del Señor Krishna los atrae mucho el movimiento de sankirtana del Señor Caitanya. Este avataran del Señor no mata a los infieles, sino que los redime mediante Su misericordia sin causa.
+</p>
+<p class='vspace'>VERSO 9
+</p>
+<div class='vspace'></div><pre> janma karma ca me divyam
+ evam yo vetti tattvatah
+ tyaktva deha/m punar janma
+ naiti mam eti so 'rjuna
+</pre><p class='vspace'>janma—nacimiento; karma—trabajo; ca—también; me—Míos; divyam—trascendentales; evam—de esta manera; yah—todo aquel que; vetti—conozca; tattvatah—en realidad; tyaktva—dejando a un lado; deham—este cuerpo; punah—de nuevo; janma—nacimiento; na—jamás; eti—alcanza; mam—a Mí; eti—alcanza; sah—él; arjuna—¡oh, Arjuna!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, Arjuna!, aquel que conoce la naturaleza trascendental de Mi aparición y actividades, al abandonar este cuerpo no vuelve a nacer de nuevo en este mundo material, sino que alcanza Mi morada eterna.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El descenso del Señor desde su morada trascendental ya se explicó en el verso seis. Aquel que puede entender la verdad de la aparición de la Personalidad de Dios ya está liberado del cautiverio material, y, por ende, regresa al Reino de Dios inmediatamente después de dejar el presente cuerpo material. Que la entidad viviente se libere del cautiverio material no es fácil en absoluto. Los impersonalistas y los yogis logran la liberación, únicamente después de muchas dificultades y muchísimos nacimientos. Incluso entonces, la liberación que logran —el fundirse en el brahmajyoti impersonal del Señor— es únicamente parcial, y existe el riesgo de regresar a este mundo material. Pero el devoto, por el simple hecho de entender la naturaleza trascendental del cuerpo y las actividades del Señor, alcanza la morada del Señor después de terminar con este cuerpo, y no corre el riesgo de regresar a este mundo material. En El Brahma-samhita (5.33) se afirma que el Señor tiene muchísimas formas y encarnaciones: advaitam acyutam anadim ananta-rupam. Aunque existen muchas formas trascendentales del Señor, aun así son la misma y única Suprema Personalidad de Dios. Uno tiene que entender este hecho con convicción, aunque a los eruditos mundanos y filósofos empíricos les resulte incomprensible. Como se dice en los Vedas (El Purusa-bodhini Upanisad):
+</p>
+<div class='vspace'></div><pre> eko devo nitya-lilanurakto
+ bhakta-vyapi hrdy antaratma
+</pre><p class='vspace'>"Con muchísimas formas trascendentales, la única Suprema Personalidad de Dios está eternamente activa, en relaciones con Sus devotos puros". Esta declaración védica la confirma el Señor personalmente en este verso del Gita. Todo aquel que acepte esta verdad —al amparo de la autoridad de los Vedas y de la Suprema Personalidad de Dios— y que no pierda el tiempo en especulaciones filosóficas, alcanza la etapa más elevada y perfecta de la liberación. Por el simple hecho de aceptar esta verdad en base a la fe, uno puede lograr la liberación sin ninguna duda. La versión védica tat tvam asi se aplica de hecho en este caso. Cualquiera que entienda que el Señor Krishna es el Supremo, o que le dice al Señor: "Tú eres el Brahman Supremo, la Personalidad de Dios", es seguro que se libera instantáneamente y, en consecuencia, su participación de la asociación trascendental del Señor queda garantizada. En otras palabras, un devoto del Señor que sea así de fiel logra la perfección, y eso lo confirma la siguiente aseveración védica:
+</p>
+<div class='vspace'></div><pre> tam eva viditvati-mrtyum eti
+ nanyah pantha vidyate ‘yanaya
+</pre><p class='vspace'>"Uno puede lograr la etapa perfecta de liberarse del nacimiento y la muerte, por el simple hecho de conocer al Señor, la Suprema Personalidad de Dios, y no hay otra manera de lograr esa perfección" (El Svetasvatara Upanisad 3.8). Que no haya ningún otro recurso significa que cualquiera que no entienda que el Señor Krishna es la Suprema Personalidad de Dios, es seguro que se halla sumido en la modalidad de la ignorancia y, por ende, no logrará la salvación por el simple hecho de —digámoslo así— lamer la botella de miel por fuera, o interpretar El Bhagavad- gita según la erudición mundana. Esos filósofos empíricos puede que asuman papeles muy importantes en el mundo material, pero no se vuelven necesariamente merecedores de la liberación. Semejantes eruditos engreídos tienen que esperar que les llegue la misericordia sin causa del devoto del Señor. Por consiguiente, uno debe cultivar conciencia de Krishna con fe y conocimiento, y, de esa manera, lograr la perfección.
+</p>
+<p class='vspace'>VERSO 10
+</p>
+<div class='vspace'></div><pre> vita-raga-bhaya-krodha 
+ man-maya mam upasritah
+ bahavo jñana-tapasa
+ puta mad-bhavam agatah
+</pre><p class='vspace'>vita—liberado de; raga—apego; bhaya—temor; krodhah—e ira; mat-maya—totalmente en Mí; mam—en Mí; upasritah—estando totalmente situado; bahavah—muchos; jñana—del conocimiento; tapasa—mediante la penitencia; putah—purificándose; mat-bhavam—amor trascendental por Mí; agatah—logran tener.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Estando liberadas del apego, el temor y la ira, estando totalmente absortas en Mí y refugiándose en Mí, muchísimas personas se purificaron en el pasado mediante el conocimiento acerca de Mí, y de ese modo todas ellas alcanzaron el estado de amor trascendental por Mí.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Como se explicó anteriormente, a una persona que está demasiado afectada por lo material, le resulta muy difícil entender la naturaleza personal de la Suprema Verdad Absoluta. Por lo general, la gente que está apegada a la concepción corporal de la vida se encuentra tan absorta en el materialismo, que le resulta prácticamente imposible entender que el Supremo puede ser una persona. Esos materialistas ni siquiera pueden imaginar que existe un cuerpo trascendental que es imperecedero, que está colmado de conocimiento y que es dichoso eternamente. Bajo el concepto materialista, el cuerpo es perecedero, está colmado de ignorancia y es completamente desdichado. Por lo tanto, cuando a la generalidad de la gente se le informa de la forma personal del Señor, mantienen en mente esa misma idea corporal. Para esos hombres materialistas, la forma de la gigantesca manifestación material es lo supremo. En consecuencia, ellos consideran que el Supremo es impersonal. Y, como están demasiado absortos en lo material, los asusta el concepto de retener la personalidad después de liberarse de la materia. Cuando se les informa que la vida espiritual también es individual y personal, sienten temor de volverse personas de nuevo, a raíz de lo cual prefieren, naturalmente, una especie de fusión con el vacío impersonal. Ellos suelen equiparar a las entidades vivientes con las burbujas del océano, las cuales se funden en el océano. Ésa es la máxima perfección de la existencia espiritual que se logra sin personalidad individual. Es una especie de etapa aterradora de la vida, desprovista del conocimiento perfecto de la existencia espiritual. Además, hay muchas personas que no pueden entender en absoluto la existencia espiritual. Agobiadas por muchísimas teorías y contradicciones de diversos tipos de especulación filosófica, se hastían o se disgustan, y concluyen neciamente que no hay ninguna causa suprema y que, en definitiva, todo es un vacío. Esta clase de personas se hallan en una condición enferma de la vida. Algunas personas están demasiado apegadas a lo material y, por consiguiente, no le prestan atención a la vida espiritual; otras quieren fundirse en la suprema causa espiritual; y otras no creen en nada, ya que por desesperación están disgustadas con toda clase de especulaciones espirituales. Esta última clase de hombres se refugian en alguna clase de embriagante, y sus alucinaciones sentimentales se aceptan a veces como visión espiritual. Uno tiene que deshacerse de todas las tres etapas de apego al mundo material: el descuido de la vida espiritual, el temor de una identidad personal espiritual y el concepto de vacío que surge de la frustración en la vida. Para librarse de estas tres etapas del concepto material de la vida, uno tiene que refugiarse por completo en el Señor, guiado por el maestro espiritual genuino, y seguir las disciplinas y principios regulativos de la vida devocional. La última etapa de la vida devocional se denomina bhava, o amor trascendental por Dios.
+</p>
+<p class='vspace'>Según El Bhakti-rasamrta-sindhu (1.4.15–16), la ciencia del servicio devocional:
+</p>
+<div class='vspace'></div><pre> adau sraddha tatah sadhu-
+ sango 'tha bhajana-kriya
+ tato 'nartha-nivrttih syat
+ tato nistha rucis tatah
+ athasaktis tato bhavas
+ tatah premabhyudañcati
+ sadhakanam ayam premnah
+ pradurbhave bhavet kramah
+</pre><p class='vspace'>"Al principio, uno debe tener un deseo preliminar de autorrealizarse. Eso lo llevará a uno a la etapa de tratar de asociarse con personas que estén elevadas espiritualmente. En la siguiente etapa, uno es iniciado por un maestro espiritual elevado y, bajo la instrucción de él, el devoto neófito comienza el proceso del servicio devocional. Mediante la ejecución del servicio devocional bajo la guía del maestro espiritual, uno se libera de todo apego material, logra estabilidad en la autorrealización y adquiere un gusto por oír hablar de la Absoluta Personalidad de Dios, Sri Krishna. Ese gusto lo lleva a uno más adelante en el apego por el estado de conciencia de Krishna, que madura hasta volverse bhava, o la etapa preliminar del amor trascendental por Dios. El verdadero amor por Dios se denomina prema, la etapa más elevada y perfecta de la vida". En la etapa de prema existe una dedicación constante al trascendental servicio amoroso del Señor. De modo que, mediante el lento proceso del servicio devocional, bajo la guía del maestro espiritual genuino, uno puede alcanzar la máxima etapa, liberándose de todo apego material, del temor de la personalidad individual espiritual y de las frustraciones que culminan en el vacío filosófico. Así, finalmente uno puede llegar a la morada del Señor Supremo.
+</p>
+<p class='vspace'>VERSO 11
+</p>
+<div class='vspace'></div><pre> ye yatha mam prapadyante
+ tams tathaiva bhajamy aham 
+ mama vartmanuvartante 
+ manusyah partha sarvasah
+</pre><p class='vspace'>ye—todos los que; yatha—como; Mam—a Mí; prapadyante—entrega; tan—a ellos; tatha—así; eva—indudablemente; bhajami—Yo recompenso; aham—Yo; mama—Mi; vartma—sendero; anuvartante—siguen; manusyah—todos los hombres; partha—¡oh, hijo de Prtha!; sarvasah—en todos los aspectos.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>En la medida en que todos ellos se entregan a Mí, Yo los recompenso. Todo el mundo sigue Mi sendero en todos los aspectos, ¡oh, hijo de Prtha!
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Todo el mundo está buscando a Krishna en los diferentes aspectos de Sus manifestaciones. A Krishna, la Suprema Personalidad de Dios, se lo llega a conocer parcialmente en Su refulgencia brahmajyoti impersonal y como la Superalma omnipresente que mora dentro de todo, incluso dentro de las partículas atómicas. Pero a Krishna sólo lo llegan a comprender plenamente Sus devotos puros. En consecuencia, Krishna es el objeto de la comprensión de todos, y, por eso, absolutamente todo el mundo es satisfecho de un modo acorde con sus deseos de tenerlo. En el mundo trascendental, Krishna también corresponde con Sus devotos puros en la actitud trascendental, tal como el devoto quiere que Él sea. Un devoto puede que quiera a Krishna como su amo Supremo; otro, como su amigo personal; otro, como su hijo; y aun otro más, como su amante. Krishna recompensa a todos los devotos por igual, conforme a sus diferentes intensidades de amor por Él. En el mundo material se encuentran las mismas correspondencias de sentimientos, y el Señor los intercambia igualmente con los diferentes tipos de adoradores. Tanto aquí como en la morada trascendental, los devotos puros se asocian con el Señor en persona, y tienen la oportunidad de prestarle un servicio personal y, de ese modo, obtener una dicha trascendental con Su amoroso servicio. En lo que respecta a los que son impersonalistas y que quieren suicidarse espiritualmente aniquilando la existencia individual de la entidad viviente, Krishna también los ayuda, absorbiéndolos en Su refulgencia. Esos impersonalistas no acceden a aceptar a la eterna y bienaventurada Personalidad de Dios; en consecuencia, no pueden saborear la bienaventuranza del trascendental servicio personal del Señor, habiéndose extinguido su individualidad. Algunos de ellos, que ni siquiera están situados firmemente en la existencia impersonal, regresan a este campo material a exhibir sus deseos latentes de realizar actividades. A ellos no se los admite en los planetas espirituales, sino que se les da de nuevo una oportunidad de actuar en los planetas materiales. A aquellos que son trabajadores fruitivos, el Señor, en Su carácter de yajñesvara, les otorga los resultados que anhelan de sus deberes prescritos; y a aquellos que son yogis en busca de poderes místicos, se les otorgan dichos poderes. En otras palabras, todo el mundo depende únicamente de Su misericordia para lograr el éxito, y todas las clases de procesos espirituales no son más que diferentes grados de éxito en el mismo sendero. Por lo tanto, a menos que uno llegue a la máxima perfección del estado de conciencia de Krishna, todos los intentos permanecen imperfectos, tal como se afirma en El Srimad-Bhagavatam (2.3.10):
+</p>
+<div class='vspace'></div><pre> akamah sarva-kamo va 
+ moksa-kama udara-dhih
+ tivrena bhakti-yogena
+ yajeta purusam param
+</pre><p class='vspace'>"Ya sea que uno no tenga deseos [la condición de los devotos], o que desee toda clase de resultados fruitivos, o que se halle tras la liberación, uno debe tratar con todos sus esfuerzos de adorar a la Suprema Personalidad de Dios, para lograr la perfección completa, que culmina en el estado de conciencia de Krishna".
+</p>
+<p class='vspace'>VERSO 12
+</p>
+<div class='vspace'></div><pre> kanksantah karmanam siddhim
+ yajanta iha devatah
+ ksipram hi manuse loke
+ siddhir bhavati karma-ja
+</pre><p class='vspace'>kanksantah—deseando; karmanam—de las actividades fruitivas; siddhim—perfección; yajante—ellos adoran mediante los sacrificios; iha—en el mundo material; devatah—los semidioses; ksipram—muy rápidamente; hi—ciertamente; manuse—en la sociedad humana; loke—dentro de este mundo; siddhih—el éxito; bhavati—se logra; karma-ja—del trabajo fruitivo.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Los hombres de este mundo desean tener éxito en las actividades fruitivas, y para ello adoran a los semidioses. Prontamente, por supuesto, los hombres obtienen resultados del trabajo fruitivo en este mundo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Hay un concepto muy erróneo acerca de los dioses o semidioses de este mundo material; y hombres de poca inteligencia, aunque se hacen pasar por grandes eruditos, toman a esos semidioses por varias formas del Señor Supremo. En realidad, los semidioses no son diferentes formas de Dios, sino que son diferentes partes integrales de Dios. Dios es uno, y las partes integrales son muchas. Los Vedas dicen: nityo nityanam, Dios es uno. Isvarah paramah krsnah. El Supremo Dios es uno —Krishna—, y a los semidioses se les delegan poderes para dirigir este mundo material. Todos esos semidioses son entidades vivientes (nityanam) con diferentes grados de poder material. Ellos no pueden ser iguales al Dios Supremo —Narayana, Visnu o Krishna—. Todo aquel que piense que Dios y los semidioses están en el mismo nivel, recibe el nombre de ateo, o pasandi. Ni siquiera los grandes semidioses, tales como Brahma y Siva, pueden ser equiparados con el Señor Supremo. De hecho, al Señor lo adoran semidioses tales como Brahma y Siva (siva-viriñci-nutam). Con todo, es muy curioso que haya muchos líderes de la sociedad humana a quienes hombres necios adoran bajo la errónea creencia del antropomorfismo o zoomorfismo. Iha devatah designa a un semidiós u hombre poderoso de este mundo material. Pero Narayana, Visnu o Krishna, la Suprema Personalidad de Dios, no pertenece a este mundo. Él está por encima de la creación material o, en otras palabras, es trascendental a ella. Incluso Sripada Sankaracarya, el líder de los impersonalistas, sostiene que Narayana, o Krishna, se encuentra más allá de esta creación material. Sin embargo, gente necia (hrta-jñana) adora a los semidioses, porque quiere resultados inmediatos. Ellos obtienen los resultados, pero no saben que los resultados que se obtienen de esa manera son temporales y para personas poco inteligentes. La persona inteligente está consciente de Krishna y no necesita adorar a los insignificantes semidioses, en busca de algún beneficio temporal inmediato. Los semidioses de este mundo material, así como también sus adoradores, desaparecerán con la aniquilación de este mundo material. Los dones de los semidioses son materiales y temporales. Tanto los mundos materiales como sus habitantes, entre ellos los semidioses y sus adoradores, son burbujas en el océano cósmico. No obstante, en este mundo, la sociedad humana busca locamente cosas temporales tales como la opulencia material de poseer tierra, familia y enseres disfrutables. Para obtener esas cosas temporales, la gente adora a los semidioses o a hombres poderosos de la sociedad humana. Si un hombre consigue algún puesto en el gobierno por haber adorado a un líder político, considera que ha obtenido una gran bendición. Por eso, todos ellos se arrodillan ante los llamados líderes, o "peces gordos", a fin de obtener dones temporales, y, en efecto, los obtienen. Hombres así de necios no están interesados en el cultivo de conciencia de Krishna para encontrarles una solución permanente a las dificultades de la existencia material. Todos ellos están en busca de disfrute de los sentidos, y para obtener una pequeña facilidad para ello, se ven atraídos a adorar a entidades vivientes apoderadas, que se conocen como semidioses. Este verso indica que la gente difícilmente se interesa en el proceso de conciencia de Krishna. En su mayor parte les interesa el disfrute material, a raíz de lo cual adoran a alguna entidad viviente poderosa.
+</p>
+<p class='vspace'>VERSO 13
+</p>
+<div class='vspace'></div><pre> catur-varnyam maya srstam
+ guna-karma-vibhagasah
+ tasya kartaram api mam
+ viddhy akartaram avyayam
+</pre><p class='vspace'>catuh-varnyam—las cuatro divisiones de la sociedad humana; maya—por Mí; srstam—creadas; guna—de la cualidad; karma—y el trabajo; vibhagasah—en términos de la división; tasya—de eso; kartaram—el padre; api—aunque; mam—a Mí; viddhi—has de saber; akartaram—como el que no hace; avyayam—inmutable.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Según las tres modalidades de la naturaleza material y el trabajo asociado con ellas, Yo creo las cuatro divisiones de la sociedad humana. Y aunque Yo soy el creador de ese sistema, debes saber que no hago nada, pues soy inmutable.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El Señor es el creador de todo. Todo nace de Él, todo es mantenido por Él, y todo, después de la aniquilación, reposa en Él. Él es, por ende, el creador de las cuatro divisiones del orden social, que comienzan con la clase de los hombres inteligentes, técnicamente llamados brahmanas por estar situados en el estado de la modalidad de la bondad. A continuación está la clase administrativa, cuyos miembros se denominan técnicamente ksatriyas, por estar situados en el estado de la modalidad de la pasión. Los comerciantes, denominados los vaisyas, están situados en el estado de la mezcla de las modalidades de la pasión y la ignorancia. Y los sudras, o la clase laboral, están situados en el estado de la modalidad ignorante de la naturaleza material. A pesar de que el Señor Krishna creara las cuatro divisiones de la sociedad humana, Él no pertenece a ninguna de esas divisiones, porque no es una de las almas condicionadas, una sección de las cuales constituye la sociedad humana. La sociedad humana es similar a cualquier otra sociedad animal, pero con el fin de elevar a los hombres fuera del nivel animal, el Señor creó las antedichas divisiones, para el desarrollo sistemático de conciencia de Krishna. La tendencia de un hombre en particular hacia el trabajo la determinan las modalidades de la naturaleza material que él ha adquirido. Esas características de la vida, conforme a las diferentes modalidades de la naturaleza material, se describen en el Capítulo Dieciocho de este libro. Una persona con conciencia de Krishna, sin embargo, se encuentra incluso por encima de los brahmanas. Aunque los brahmanas por aptitud se supone que saben de Brahman, la Suprema Verdad Absoluta, la mayoría de ellos únicamente se acercan a la manifestación Brahman impersonal del Señor Krishna. Pero un hombre que trasciende el limitado conocimiento de un brahmana y logra obtener el conocimiento acerca de la Suprema Personalidad de Dios, el Señor Sri Krishna, se convierte en una persona con conciencia de Krishna o, en otras palabras, en un vaisnava. El proceso de conciencia de Krishna incluye conocimiento acerca de todas las diferentes expansiones plenarias de Krishna, es decir, Rama, Nrsimha, Varaha, etc. Y así como Krishna es trascendental a ese sistema de cuatro divisiones de la sociedad humana, una persona con conciencia de Krishna también es trascendental a todas las divisiones de dicha sociedad, ya sea que consideremos las divisiones de la comunidad, de la nación o de las especies.
+</p>
+<p class='vspace'>VERSO 14
+</p>
+<div class='vspace'></div><pre> na mam karmani limpanti
+ na me karma-phale sprha
+ iti mam yo ‘bhijanati
+ karmabhir na sa badhyate
+</pre><p class='vspace'>na—nunca; mam—a Mí; karmani—toda clase de trabajos; limpanti—afectan; na—ni; me—Mí; karma-phale—en la acción fruitiva; sprha—aspiración; iti—así pues; mam—a Mí; yah—aquel que; abhijanati—sabe; karmabhih—mediante la reacción de ese trabajo; na—nunca; sah—él; badhyate—se enreda.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>No hay ningún trabajo que Me afecte, ni ambiciono los frutos de la acción. Aquel que entiende esta verdad acerca de Mí, tampoco se enreda en las reacciones fruitivas del trabajo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Así como en el mundo material hay leyes constitucionales que estipulan que el rey nunca hace nada malo, o que el rey no está sujeto a las leyes del Estado, de modo similar, el Señor, aunque es el creador de este mundo material, no es afectado por las actividades del mismo. Él crea y permanece apartado de la creación, mientras que las entidades vivientes se enredan en los resultados fruitivos de las actividades materiales, debido a su propensión a enseñorearse de los recursos materiales. El propietario de un establecimiento no es responsable de las actividades buenas y malas de los trabajadores, sino que los mismos trabajadores son responsables de ellas. Las entidades vivientes están dedicadas a sus respectivas actividades de complacencia de los sentidos, y esas actividades no las ordena el Señor. Para progresar en la complacencia de los sentidos, las entidades vivientes se dedican al trabajo de este mundo, y aspiran a una felicidad celestial después de la muerte. El Señor, siendo completo en Sí Mismo, no siente atracción por la supuesta felicidad celestial. Los semidioses del cielo sólo son Sus dedicados sirvientes. El propietario nunca desea la felicidad de grado inferior que los trabajadores desean. Él está apartado de las acciones y reacciones materiales. Por ejemplo, las lluvias no son responsables de los diferentes tipos de vegetación que aparecen en la tierra, aunque sin esas lluvias no hay posibilidad de que crezca la vegetación. El smrti védico confirma este hecho de la siguiente manera:
+</p>
+<div class='vspace'></div><pre> nimitta-matram evasau
+ srjyanam sarga-karmani
+ pradhana-karani-bhuta
+ yato vai srjya-saktayah
+</pre><p class='vspace'>"En las creaciones materiales, el Señor es únicamente la causa suprema. La causa inmediata es la naturaleza material, mediante la cual la manifestación cósmica se hace visible". Los seres creados son de muchas variedades —tales como los semidioses, los seres humanos y los animales inferiores—, y todos ellos están sujetos a las reacciones de sus pasadas actividades, buenas o malas. El Señor sólo les da las facilidades adecuadas para esas actividades, y las regulaciones de las modalidades de la naturaleza. Pero Él nunca es responsable de sus actividades pasadas y presentes. En El Vedanta-sutra (2.1.34) se confirma que el Señor nunca se vuelve parcial por ninguna entidad viviente: vaisamya-nairgrnye na sapeksatvat. La entidad viviente es responsable de sus propios actos. El Señor únicamente le brinda facilidades por medio de la naturaleza material, la energía externa. Todo aquel que esté plenamente versado en todas las complejidades de esta ley de karma, o de las actividades fruitivas, no queda afectado por los resultados de sus actividades. En otras palabras, la persona que entiende esta naturaleza trascendental del Señor es una persona experimentada en lo referente al proceso de conciencia de Krishna, y, en consecuencia, nunca está supeditada a las leyes del karma. Aquel que no conoce la naturaleza trascendental del Señor y que cree que las actividades del Señor apuntan a los resultados fruitivos, como en el caso de las actividades de las entidades vivientes ordinarias, se enreda indudablemente en las reacciones fruitivas. Pero aquel que conoce a la Verdad Suprema es un alma liberada y que está fija en el estado de conciencia de Krishna.
+</p>
+<p class='vspace'>VERSO 15
+</p>
+<div class='vspace'></div><pre> evam jñatva krtam karma
+ purvair api mumuksubhih
+ kuru karmaiva tasmat tvam
+ purvaih purvataram krtam
+</pre><p class='vspace'>evam—así pues; jñatva—sabiendo bien; krtam—fue realizado; karma—trabajo; purvaih—por las autoridades pasadas; api—en verdad; mumuksubhih—que alcanzaron la liberación; kuru—tan sólo realiza; karma—deber prescrito; eva—indudablemente; tasmat—por consiguiente; tvam—tú; purvaih—por los predecesores; purva-taram—en la antig+uedad; krtam—tal como los realizaron.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>En la antiguedad, todas las almas liberadas actuaron con esa comprensión acerca de Mi naturaleza trascendental. Así pues, debes cumplir con tu deber, siguiendo sus pasos.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Hay dos clases de hombres. Algunos de ellos tienen el corazón repleto de cosas materiales contaminadas, y otros están libres de lo material. El proceso de conciencia de Krishna es igualmente beneficioso para estos dos grupos de personas. Aquellos que están llenos de cosas sucias pueden seguir la línea del proceso de conciencia de Krishna, para practicar un proceso de limpieza gradual observando los principios regulativos del servicio devocional. Aquellos que ya se han limpiado de las impurezas pueden continuar actuando en el mismo estado de conciencia de Krishna, de manera que otros puedan seguir sus actividades ejemplares y, con ello, beneficiarse. Personas necias o neófitas en el proceso de conciencia de Krishna a menudo quieren retirarse de las actividades, sin tener conocimiento del proceso de conciencia de Krishna. El Señor no aprobó el deseo que Arjuna tenía de retirarse de las actividades del campo de batalla. Uno sólo tiene que saber cómo actuar. Retirarse de las actividades del proceso de conciencia de Krishna y sentarse aparte haciendo alarde de estar consciente de Krishna, es menos importante que participar de hecho en el campo de las actividades, por el bien de Krishna. A Arjuna se le aconseja aquí actuar con conciencia de Krishna, siguiendo los pasos de los discípulos anteriores del Señor, tales como Vivasvan, el dios del Sol, según ya se mencionó aquí. El Señor Supremo conoce todas Sus actividades pasadas, así como las de aquellas personas que actuaron con conciencia de Krishna en el pasado. Por lo tanto, Él recomienda los actos del dios del Sol, quien aprendió el arte con el Señor unos millones de años antes. Todos esos alumnos del Señor Krishna se mencionan aquí como personas liberadas desde el pasado y dedicadas al desempeño de deberes asignados por Krishna.
+</p>
+<p class='vspace'>VERSO 16
+</p>
+<div class='vspace'></div><pre> kim karma kim akarmeti
+ kavayo ‘py atra mohitah
+ tat te karma pravasksyami
+ yaj jñatva moksyase ‘subhat
+</pre><p class='vspace'>kim—qué es; karma—acción; kim—qué es; akarma—inacción; iti—así pues; kavayah—los inteligentes; api—también; atra—en este asunto; mohitah—confundidos; tat—eso; te—a ti; karma—trabajo; pravaksyami—he de explicar; yat—aquello; jñatva—conociendo; moksyase—te liberarás; asubhat—de la mala fortuna.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Incluso los inteligentes se confunden al tener que determinar lo que es la acción y lo que es la inacción. Ahora te explicaré lo que es la acción, sabiendo lo cual te liberarás de todo infortunio.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La acción con conciencia de Krishna tiene que ejecutarse siguiendo los ejemplos de devotos genuinos anteriores. Eso se recomienda en el verso 15. En el verso siguiente se explicará por qué esa acción no debe ser independiente.
+Para actuar con conciencia de Krishna, uno tiene que ser dirigido por personas autorizadas que formen parte de una línea de sucesión discipular, tal como se explicó al comienzo de este capítulo. El sistema de conciencia de Krishna se le expuso primero al dios del Sol, el dios del Sol se lo explicó a su hijo Manu, Manu se lo explicó a su hijo Iksvaku, y el sistema está vigente en esta Tierra desde esa época tan remota. Por lo tanto, uno tiene que seguir los pasos de las autoridades anteriores que forman parte de la línea de sucesión discipular. De lo contrario, hasta los hombres más inteligentes de todos se confunden en lo referente a las acciones modelo del proceso de conciencia de Krishna. Por esta razón, el Señor decidió instruir a Arjuna directamente en el cultivo de conciencia de Krishna. Gracias a la instrucción directa que el Señor le dio a Arjuna, cualquiera que siga los pasos de Arjuna es seguro que no se confundirá.
+Se dice que uno no puede determinar los caminos de la religión simplemente mediante el conocimiento experimental imperfecto. En realidad, sólo el propio Señor puede estipular los principios de la religión. Dharmam tu saksad- bhagavat-pranitam (El Srimad-Bhagavatam 6.3.19). Nadie puede manufacturar un principio religioso mediante la especulación imperfecta. Uno debe seguir los pasos de grandes autoridades tales como Brahma, Siva, Narada, Manu, los Kumaras, Kapila, Prahlada, Bhisma, Sukadeva Gosvami, Yamaraja, Janaka y Bali Maharaja. Mediante la especulación mental, uno no puede determinar qué es religión o qué es autorrealización. De manera que, el Señor, por misericordia sin causa para con Sus devotos, le explica a Arjuna directamente lo que es acción y lo que es inacción. Sólo la acción que se realiza con conciencia de Krishna puede liberar a una persona del enredo de la existencia material.
+</p>
+<p class='vspace'>VERSO 17
+</p>
+<div class='vspace'></div><pre> karmano hy api boddhavyam
+ boddhavyam ca vikarmanah
+ akarmanas ca boddhavyam
+ gahana karmano gatih
+</pre><p class='vspace'>karmanah—del trabajo; hi—indudablemente; api—también; boddhavyam—debe entenderse; boddhavyam—para entenderse; ca—también; vikarmanah—del trabajo prohibido; akarmanah—de la inacción; ca—también; boddhavyam—debe entenderse; gahana—muy difícil; karmanah—del trabajo; gatih—entrada.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Las complejidades de la acción son muy difíciles de entender. Por consiguiente, uno debe saber bien lo que es la acción, lo que es la acción prohibida y lo que es la inacción.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Si uno es sincero en lo referente a liberarse del cautiverio material, tiene que entender las diferencias que hay entre la acción, la inacción y las acciones desautorizadas. Uno tiene que aplicarse en ese análisis de la acción, la reacción y las acciones pervertidas, porque se trata de un tema muy difícil. Para entender el proceso de conciencia de Krishna y la acción conforme a sus modalidades, uno tiene que llegar a saber cuál es su relación con el Supremo; es decir, aquel que ha aprendido perfectamente, sabe que cada entidad viviente es un servidor eterno del Señor y que, en consecuencia, uno tiene que actuar con conciencia de Krishna. Todo El Bhagavad-gita está dirigido hacia esa conclusión. Cualesquiera otras conclusiones que vayan en contra de este estado de conciencia y sus acciones acompañantes, son vikarmas, o acciones prohibidas. Para entender todo esto, uno tiene que asociarse con autoridades del proceso de conciencia de Krishna, y aprender el secreto con ellas; esto es como aprender con el Señor directamente. De lo contrario, hasta la persona más inteligente de todas se habrá de confundir.
+</p>
+<p class='vspace'>VERSO 18
+</p>
+<div class='vspace'></div><pre> karmany akarma yah pasyed
+ akarmani ca karma yah
+ sa buddhiman manusyesu
+ sa yuktah krtsna-karma-krt
+</pre><p class='vspace'>karmani—en acción; akarma—inacción; yah—aquel que; pasyet—observa; akarmani—en la inacción; ca—también; karma—acción fruitiva; yah—aquel que; sah—él; buddhi-man—es inteligente; manusyesu—en la sociedad humana; sah—él; yuktah—se halla en la posición trascendental; krtsna-karma-krt—aunque estén dedicados a toda clase de actividades.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquel que ve la inacción en la acción, y la acción en la inacción, es inteligente entre los hombres y se halla en la posición trascendental, aunque esté dedicado a toda clase de actividades.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquel que actúa con conciencia de Krishna se halla libre naturalmente de las ataduras del karma. Como todas las actividades las realiza para Krishna, él no disfruta ni sufre de ninguno de los efectos del trabajo; él es inteligente en la sociedad humana, aun a pesar de estar dedicado a toda clase de actividades para Krishna. Akarma significa sin reacción al trabajo. El impersonalista, por temor, cesa las actividades fruitivas, de modo que la acción resultante no sea un obstáculo en el sendero de la autorrealización. Pero el personalista conoce bien su posición de servidor eterno de la Suprema Personalidad de Dios. Por ende, él se dedica a las actividades del proceso de conciencia de Krishna. Como todo lo hace para Krishna, disfruta únicamente de felicidad trascendental en el desempeño de su servicio. Es sabido que aquellos que están dedicados a este proceso no tienen deseos de obtener complacencia personal de los sentidos. El sentido de la servidumbre eterna en relación con Krishna lo vuelve a uno inmune a toda clase de elementos reactivos del trabajo.
+</p>
+<p class='vspace'>VERSO 19
+</p>
+<div class='vspace'></div><pre> yasya sarve samarambhah
+ kama-sankalpa-varjitah
+ jñanagni-dagdha-karmanam
+ tam ahuh panditam budhah
+</pre><p class='vspace'>yasya—aquel cuyo; sarve—toda clase de; samarambhah—intentos; kama—basado en el deseo de complacencia de los sentidos; sankalpa—determinación; varijitah—están desprovistos de; jñana—de conocimiento perfecto; agni—por el fuego; dagdha—quemado; karmanam—cuyo trabajo; tam—a él; ahuh—declaran; panditam—eruditos; budhah—aquellos que saben.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Se entiende que alguien tiene pleno conocimiento, cuando cada uno de sus esfuerzos está desprovisto del deseo de complacer los sentidos. Los sabios dicen que él es un trabajador cuyas reacciones del trabajo han sido quemadas por el fuego del conocimiento perfecto.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Sólo una persona con pleno conocimiento puede entender las actividades de una persona con conciencia de Krishna. Como la persona con conciencia de Krishna está desprovista de toda clase de propensiones a la complacencia de los sentidos, debe entenderse que ha quemado todas las reacciones de su trabajo, mediante el conocimiento perfecto de su posición constitucional como servidor eterno de la Suprema Personalidad de Dios. Aquel que ha logrado esta perfección del conocimiento es verdaderamente erudito. El desarrollo de ese conocimiento de servidumbre eterna en relación con el Señor, se asemeja al fuego. Dicho fuego, una vez encendido, puede quemar toda clase de reacciones del trabajo.
+</p>
+<p class='vspace'>VERSO 20
+</p>
+<div class='vspace'></div><pre> tyaktva karma-phalasangam
+ nitya-trpto nirasrayah
+ karmany abhipravrtto ‘pi
+ naiva kiñcit karoti sah
+</pre><p class='vspace'>tyaktva—habiendo abandonado; karma-phala-asangam—apego por resultados fruitivos; nitya—siempre; trptah—estando satisfecho; nirasrayah—sin ningún refugio; karmani—en actividad; abhipravrttah—estando plenamente dedicado; api—a pesar de; na—no; eva—ciertamente; kiñcit—cualquier cosa; karoti—hace; sah—él.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Abandonando todo apego a los resultados de sus actividades, siempre satisfecho e independiente, él no ejecuta ninguna acción fruitiva, aunque está dedicado a toda clase de actividades.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Esta libertad del cautiverio de las acciones resulta posible únicamente en el estado de conciencia de Krishna, cuando uno hace todo para Krishna. Una persona consciente de Krishna actúa por el amor puro que le profesa a la Suprema Personalidad de Dios, y, en consecuencia, no siente atracción por los resultados de la acción. Dicha persona ni siquiera está apegada a su manutención personal, pues todo se lo deja a Krishna, ni tampoco está ella ansiosa de conseguir cosas ni de proteger cosas que ya posee. Ella cumple con su deber lo mejor que puede, y le deja todo lo demás a Krishna. Una persona así de desapegada siempre está libre de las reacciones resultantes de lo bueno y lo malo; es como si no estuviera haciendo nada. Ése es el signo del akarma, o de las acciones sin reacciones fruitivas. Por lo tanto, cualquier otra acción desprovista de conciencia de Krishna ata al trabajador, y ése es el verdadero aspecto del vikarma, tal como se explicó aquí anteriormente.
+</p>
+<p class='vspace'>VERSO 21
+</p>
+<div class='vspace'></div><pre> nirasir yata-cittatma
+ tyakta-sarva-parigrahah
+ sariram kevalam karma
+ kurvan napnoti kilbisam
+</pre><p class='vspace'>nirasih—sin desear el resultado; yata—controladas; citta-atma—la mente y la inteligencia; tyakta—abandonando; sarva—todo; parigrahah—sentido de posesión de las pertenencias; sariram—en mantener el cuerpo y el alma juntos; kevalam—únicamente; karma—trabajo; kurvan—haciendo; na—nunca; apnoti—adquiere; kilbisam—reacciones pecaminosas.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>El hombre que posee una comprensión tal, actúa con la mente y la inteligencia perfectamente controladas, abandona todo sentido de propiedad de sus posesiones y actúa únicamente para satisfacer las necesidades básicas de la vida. Obrando así, no es afectado por reacciones pecaminosas.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquel que está consciente de Krishna no espera resultados buenos ni malos de sus actividades. Él tiene la mente y la inteligencia perfectamente controladas. Él sabe que, como es parte integral del Supremo, el papel que desempeña como parte integral del todo no es una actividad que él mismo ejecuta, sino únicamente una actividad que el Supremo ejecuta a través de él. Cuando la mano se mueve, no se mueve por sí sola, sino en virtud del esfuerzo de todo el cuerpo. Una persona consciente de Krishna siempre está acoplada con el deseo supremo, pues ella no tiene ningún deseo personal de complacer los sentidos. Ella se mueve exactamente igual que una pieza de una máquina. La pieza de la máquina requiere ser lubricada y limpiada para su mantenimiento; así pues, un hombre consciente de Krishna se mantiene mediante su trabajo, tan sólo con el fin de estar apto para actuar en el trascendental servicio amoroso del Señor. Él es, por lo tanto, inmune a todas las reacciones de sus esfuerzos. Al igual que un animal, ni siquiera es dueño de su propio cuerpo. Una persona cruel que posea un animal, a veces mata al animal, y éste ni siquiera protesta. Ni tampoco tiene el animal verdadera independencia. Una persona consciente de Krishna, totalmente dedicada a la autorrealización, tiene muy poco tiempo para poseer falsamente algún objeto material. Con el fin de mantener el cuerpo y el alma, ella no requiere de medios ilícitos para acumular dinero, de modo que no la contaminan semejantes pecados materiales. Dicha persona está libre de todas las reacciones a sus acciones.
+</p>
+<p class='vspace'>VERSO 22
+</p>
+<div class='vspace'></div><pre> yadrccha-labha-santusto
+ dvandvatito vimatsarah
+ samah siddhav asiddhau ca
+ krtvapi na nibadhyate
+</pre><p class='vspace'>yadrccha—por sí sola; labha—con ganancia; santustah—satisfecho; dvandva—dualidad; atitah—superado; vimatsarah—libre de envidia; samah—estable; siddhau—en el éxito; asiddhau—fracaso; ca—también; krtva—haciendo; api—aunque; na—nunca; nibadhyate—es afectado. 
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Él se satisface con ganancias que vienen por sí mismas, ha superado la dualidad, está libre de toda envidia y es estable tanto en el éxito como en el fracaso. Por eso, él nunca se enreda aunque ejecute acciones.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Una persona consciente de Krishna no hace mucho esfuerzo ni siquiera para mantener su cuerpo. Ella se satisface con ganancias que se obtienen sin buscarse. Ella no mendiga ni pide prestado, sino que trabaja honestamente, en la medida de sus posibilidades, y se satisface con cualquier cosa que obtiene mediante su propia y honesta labor. Esa persona es, pues, independiente en cuanto concierne a su subsistencia. Ella no permite que el servicio de nadie estorbe su propio servicio en el proceso de conciencia de Krishna. Sin embargo, por el bien del servicio del Señor puede participar en cualquier clase de actividades, sin que la perturbe la dualidad del mundo material. La dualidad del mundo material se siente en la forma del calor y el frío o la felicidad y la desdicha. Una persona consciente de Krishna está por encima de la dualidad, porque no vacila en actuar de cualquier manera en aras de la satisfacción de Krishna. De manera que, ella es estable tanto en el éxito como en el fracaso. Estas señales se vuelven visibles cuando uno se halla en plena posesión del conocimiento trascendental.
+</p>
+<p class='vspace'>VERSO 23
+</p>
+<div class='vspace'></div><pre> gata-sangasya muktasya
+ jñanavasthita-cetasah
+ yajñayacaratah karma
+ samagram praviliyate
+</pre><p class='vspace'>gata-sangasya—de aquel que está desapegado de las modalidades de la naturaleza material; muktasya—del liberado; jñana-avasthita—situado en la trascendencia; cetasah—cuya sabiduría; yajñaya—por Yajña (Krishna); acaratah—actuando; karma—trabajo; samagram—la totalidad; praviliyate—se funde enteramente.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>El trabajo de un hombre que está desapegado de las modalidades de la naturaleza material y que tiene plenamente en su posesión el conocimiento trascendental, se 
+funde enteramente en la trascendencia.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Al uno volverse plenamente consciente de Krishna se libera de todas las dualidades y, por ende, se libera de las contaminaciones de las modalidades materiales. Uno puede volverse liberado, porque conoce su posición constitucional en relación con Krishna, y, por eso, su mente no puede ser apartada del estado de conciencia de Krishna. En consecuencia, todo lo que uno hace, lo hace por Krishna, quien es el Visnu primordial. De modo que, técnicamente todos los trabajos de uno son sacrificios, porque el sacrificio tiene por objeto satisfacer a la Persona Suprema, Visnu o Krishna. Las reacciones resultantes de toda esa clase de trabajos se funden indudablemente en la trascendencia, y uno no sufre los efectos materiales.
+</p>
+<p class='vspace'>VERSO 24
+</p>
+<div class='vspace'></div><pre> brahmarpanam brahma havir
+ brahmagnau brahmana hutam
+ brahmaiva tena gantavyam
+ brahma-karma-samadhina
+</pre><p class='vspace'>brahma—de naturaleza espiritual; arpanam—contribución; brahma—el Supremo; havih—mantequilla; brahma—espiritual; agnau—en el fuego de la consumación; brahmana—por el alma espiritual; hutam—ofrecido; brahma—reino espiritual; eva—ciertamente; tena—por él; gantavyam—a ser alcanzado; brahma—espiritual; karma—en las actividades; samadhina—mediante la absorción total.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Una persona que está plenamente absorta en el estado de conciencia de Krishna es seguro que llegará al reino espiritual, en virtud de su total contribución a las actividades espirituales, en las que la consumación es absoluta y lo que se ofrece es de la misma naturaleza espiritual.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí se describe la manera en que las actividades del proceso de conciencia de Krishna pueden conducirlo a uno finalmente a la meta espiritual. En el proceso de conciencia de Krishna existen diversas actividades, y todas ellas se describirán en los versos que siguen. Pero por el momento sólo se describe el fundamento del estado de conciencia de Krishna. Un alma condicionada, enredada en la contaminación material, es seguro que actuará en la atmósfera material, y, sin embargo, tiene que salirse de ese ambiente. El proceso mediante el cual el alma condicionada puede salirse de la atmósfera material, es el proceso de conciencia de Krishna. Por ejemplo, un paciente que padece de trastornos intestinales por ingerir productos lácteos en exceso, es curado mediante otro producto lácteo: el requesón. El alma condicionada y absorta en lo material puede curarse mediante el proceso de conciencia de Krishna tal como se presenta aquí en el Gita. Este proceso se conoce por lo general con el nombre de yajña, o actividades (sacrificios) que se hacen únicamente para la satisfacción de Visnu, o Krishna. Cuanto más las actividades del mundo material se realicen con conciencia de Krishna, o únicamente para Visnu, más se espiritualizará la atmósfera mediante la absorción total. La palabra brahma (Brahman) significa "espiritual". El Señor es espiritual, y los rayos de Su cuerpo trascendental se denominan brahmajyoti, Su refulgencia espiritual. Todo lo que existe se encuentra situado en ese brahmajyoti, pero cuando al jyoti lo cubre la ilusión (maya) o la complacencia de los sentidos, se denomina material. Este velo material puede ser removido de inmediato, mediante el proceso de conciencia de Krishna; así pues, la ofrenda en aras del estado de conciencia de Krishna, el agente consumidor de dicha ofrenda o contribución, el proceso de consumo, el contribuyente y el resultado son todos, en conjunto, Brahman, o la Verdad Absoluta. La Verdad Absoluta cubierta por maya se denomina materia. La materia que se acopla por la causa de la Verdad Absoluta, recobra su calidad espiritual. El proceso de conciencia de Krishna es aquel mediante el cual la conciencia ilusoria se convierte en Brahman, o el Supremo. Cuando la mente está plenamente absorta en el estado de conciencia de Krishna, se dice que está en samadhi, o en trance. Cualquier cosa que se haga en ese estado de conciencia trascendental se denomina yajña, o sacrificio que se le ofrece al Absoluto. En esa condición de conciencia espiritual, el contribuyente, la contribución, el consumo, el ejecutor o líder de la celebración y el resultado o ganancia última, todo se vuelve uno en el Absoluto, el Brahman Supremo. Ése es el método de conciencia de Krishna.
+</p>
+<p class='vspace'>VERSO 25
+</p>
+<div class='vspace'></div><pre> daivam evapare yajñam
+ yoginah paryupasate
+ brahmagnav apare yajñam
+ yajñenaivopajuhvati
+</pre><p class='vspace'>daivam—en la adoración de los semidioses; eva—así; apare—algunos otros; yajñam—sacrificios; yoginah—los místicos; paryupasate—adoran perfectamente; brahma—de la Verdad Absoluta; agnau—en el fuego; apare—otros; yajñam—sacrificio; yajñena—mediante el sacrificio; eva—así pues; upajuhvati—ofrecen.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Algunos yogis adoran perfectamente a los semidioses ofreciéndoles diferentes sacrificios, y otros ofrecen sacrificios en el fuego del Brahman Supremo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Como se describió anteriormente, una persona dedicada al desempeño de deberes con conciencia de Krishna se conoce también como un yogi perfecto, o un místico de primera. Pero también hay otros que realizan sacrificios similares en la adoración de los semidioses, y aun otros que le ofrecen sacrificios al Brahman Supremo, o el aspecto impersonal del Señor Supremo. De manera que, hay diferentes clases de sacrificios, en términos de diferentes categorías. Esas diferentes categorías de sacrificios, realizados por diferentes tipos de ejecutores, únicamente demarcan variedades de sacrificios de un modo superficial. Verdadero sacrificio significa satisfacer a Visnu, el Señor Supremo, a quien también se conoce como Yajña. Todas las diferentes variedades de sacrificios se pueden incluir dentro de dos divisiones principales: el sacrificio de posesiones mundanas y el sacrificio en pos del conocimiento trascendental. Aquellos que se encuentran en estado de conciencia de Krishna sacrifican todas las posesiones materiales en aras de la satisfacción del Señor Supremo, mientras que otros, que quieren alguna felicidad material temporal, sacrifican sus posesiones materiales para satisfacer a semidioses tales como Indra, el dios del Sol, etc. Y otros, que son impersonalistas, sacrifican su identidad, mediante el acto de fundirse en la existencia del Brahman impersonal. Los semidioses son entidades vivientes poderosas, designadas por el Señor Supremo para el mantenimiento y supervisión de todas las funciones materiales, tales como la calefacción, la irrigación y la iluminación del universo. Aquellos que están interesados en los beneficios materiales adoran a los semidioses mediante diversos sacrificios, conforme a los rituales védicos. Ellos se denominan bahv-isvara-vadi, o creyentes en muchos dioses. Pero otros, que adoran el aspecto impersonal de la Verdad Absoluta y consideran que las formas de los semidioses son temporales, sacrifican su ser individual en el fuego supremo y, de ese modo, terminan sus existencias individuales mediante el acto de fundirse en la existencia del Supremo. Esos impersonalistas sacrifican su tiempo en la especulación filosófica para entender la naturaleza trascendental del Supremo. En otras palabras, los trabajadores fruitivos sacrifican sus posesiones materiales para obtener disfrute material, mientras que el impersonalista sacrifica sus designaciones materiales con miras a fundirse en la existencia del Supremo. Para el impersonalista, el altar del fuego de sacrificio es el Brahman Supremo, y la ofrenda es el ser que el fuego del Brahman consume. Sin embargo, la persona consciente de Krishna —como Arjuna, por ejemplo— sacrifica todo para satisfacer a Krishna, y, así pues, tanto todas sus posesiones materiales como su propio ser, todo lo sacrifica por Krishna. Por eso, dicha persona es el yogi de primera, pero no pierde su existencia individual.
+</p>
+<p class='vspace'>VERSO 26
+</p>
+<div class='vspace'></div><pre> srotradinindriyany anye
+ samyamagnisu juhvati
+ sabdadin visayan anya
+ indriyagnisu juhvati 
+</pre><p class='vspace'>srotra-adini—como el proceso de oír; indriyani—sentidos; anye—otros; samyama—de restricción; agnisu—en los fuegos; juhvati—ofrecen; sabda-adin—vibración sonora, etc.; visayan—objetos de la complacencia de los sentidos; anye—otros; indriya—de los órganos de los sentidos; agnisu—en los fuegos; juhvati—sacrifican.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Unos [los brahmacaris puros] sacrifican el proceso de oír y los sentidos en el fuego del control de la mente, y otros [los casados regulados] sacrifican los objetos de los sentidos en el fuego de los sentidos.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Los miembros de las cuatro divisiones de la vida humana, es decir, los brahmacaris, los grhasthas, los vanaprasthas y los sannyasis, tienen todos la misión de volverse yogis o trascendentalistas perfectos. Como la vida humana no está hecha para que disfrutemos de la complacencia de los sentidos como los animales, las cuatro órdenes de la vida humana están dispuestas de modo tal, que uno pueda volverse perfecto en la vida espiritual. Los brahmacaris, o los estudiantes que se encuentran bajo el cuidado de un maestro espiritual auténtico, controlan la mente absteniéndose de la complacencia de los sentidos. A ellos se les menciona en este verso, indicando que sacrifican el proceso de oír y los sentidos en el fuego de la mente controlada. Un brahmacari oye únicamente palabras relativas al proceso de conciencia de Krishna; oír constituye el principio básico de la comprensión y, en consecuencia, el brahmacari puro se dedica por completo a harer namanukirtanam: a cantar acerca de las glorias del Señor y a oír hablar de ellas. Él evita las vibraciones de los sonidos materiales y ocupa el sentido de la audición en recibir la vibración sonora trascendental de Hare Krishna, Hare Krishna. De modo similar, las personas casadas, quienes tienen cierta licencia para complacer los sentidos, realizan esos actos con gran restricción. Tener vida sexual, embriagarse y comer carne son tendencias generales de la sociedad humana, pero un casado regulado no se entrega a una vida sexual sin restricción, ni a otros placeres de los sentidos. Por consiguiente, el matrimonio basado en los principios de la vida religiosa es algo corriente en todas las sociedades humanas civilizadas, porque ése es el camino a seguir para una vida sexual restringida. Esa vida sexual desapegada y restringida también es una clase de yajña, porque la persona casada que se restringe, sacrifica en beneficio de la vida trascendental superior su tendencia general hacia la complacencia de los sentidos.
+</p>
+<p class='vspace'>VERSO 27
+</p>
+<div class='vspace'></div><pre> sarvanindriya-karmani
+ prana-karmani capare
+ atma-samyama-yogagnau
+ juhvati jñana-dipite
+</pre><p class='vspace'>sarvani—de todos; indriya—los sentidos; karmani—funciones; prana-karmani—funciones del aire vital; ca—también; apare—otros; atma-samyama—del control de la mente; yoga—el proceso de vinculación; agnau—en el fuego de; juhvati—
+ofrecen; jñana-dipite—debido al anhelo de autorrealizarse.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Otros, que están interesados en lograr la autorrealización a través del control de la mente y los sentidos, ofrecen a manera de oblaciones las funciones de todos los sentidos y del aire vital, en el fuego de la mente controlada.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí se menciona el sistema de yoga concebido por Pantañjali. En El Yoga-sutra de Patañjali, al alma se le da los nombres de pratyag-atma y parag-atma. Mientras el alma se mantiene apegada al disfrute de los sentidos, recibe el nombre de parag-atma, pero en cuanto la misma alma se desapega de dicho disfrute, se la llama pratyag-atma. El alma está supeditada a las funciones de diez clases de aire que actúan dentro del cuerpo, y ello se percibe a través del sistema respiratorio. El sistema de yoga Patañjali le enseña a uno a controlar de una forma técnica las funciones del aire del cuerpo, con objeto de que, finalmente, todas las funciones del aire interno favorezcan el proceso de purificar al alma del apego material. Según este sistema de yoga, pratyag-atma es el fin último. A este pratyag-atma se lo retira de las actividades con la materia. Los sentidos interaccionan con los objetos de los sentidos —tal como el oído, para oír; los ojos, para ver; la nariz, para oler; la lengua, para probar; la mano, para tocar—, y todos están, de ese modo, dedicados a actividades externas al ser. Todo ello se conoce como las funciones del prana-vayu. El apana-vayu va hacia abajo, el vyana- vayu actúa para encoger y expandir, el samana-vayu ajusta el equilibrio, el udana-vayu va hacia arriba; y cuando uno se ilumina, los ocupa a todos en la búsqueda de la autorrealización.
+</p>
+<p class='vspace'>VERSO 28
+</p>
+<div class='vspace'></div><pre> dravya-yajñas tapo-yajña
+ yoga-yajñas tathapare
+ svadhyaya-jñana-yajñas ca
+ yatayah samsita-vratah
+</pre><p class='vspace'>dravya-yajñah—sacrificando las posesiones de uno; tapah-yajñah—sacrificio mediante austeridades; yoga-yajñah—sacrificio mediante el misticismo óctuple; tatha—así pues; apare—otros; svadhyaya—sacrificio mediante el estudio de los Vedas; jñana-yajñah—sacrificio mediante el cultivo del conocimiento trascendental; ca—también; yatayah—personas iluminadas; samsita-vratah—entregados a estrictos votos.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Algunos, habiendo aceptado estrictos votos, llegan a iluminarse mediante el sacrificio de sus posesiones, y otros, mediante la ejecución de severas austeridades, mediante la práctica del yoga del misticismo óctuple o mediante el estudio de los Vedas para avanzar en el cultivo de conocimiento trascendental.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Estos sacrificios pueden acomodarse en varias divisiones. Hay personas que sacrifican sus posesiones en la forma de diversas clases de caridades. En la India, la comunidad mercantil adinerada o las órdenes principescas abren diversas clases de instituciones caritativas, tales como dharma-sala, anna-ksetra, atithi-sala, anathalaya y vidya-pitha. También en otros países hay muchos hospitales, asilos de ancianos y fundaciones caritativas similares, destinadas a distribuir entre los pobres comida, educación y asistencia médica gratuita. Todas esas actividades caritativas se denominan dravyamaya-yajña. Hay otros que, en busca de una elevación superior en la vida o para llegar a ser promovidos a planetas superiores del universo, aceptan voluntariamente muchas clases de austeridades, tales como candrayana y caturmasya. Estos procesos entrañan severos votos para conducir la vida bajo ciertas reglas rígidas. Por ejemplo, bajo el voto de caturmasya, el que lo sigue no se afeita durante cuatro meses del año (de julio a octubre), no come ciertas comidas, no come dos veces al día y no sale de la casa. Ese sacrificio de las comodidades de la vida se denomina tapomaya- yajña. Aun hay otros, que se dedican a diferentes clases de yogas místicos, tales como el sistema Patañjali (de fundirse en la existencia del Absoluto), o hatha-yoga o astanga-yoga (para determinadas perfecciones). Y algunos viajan a todos los lugares santos de peregrinaje. Todas esas prácticas se denominan yoga- yajña, sacrificio por un cierto tipo de perfección del mundo material. Hay otros que se dedican al estudio de diferentes Escrituras védicas, específicamente los Upanisads y los Vedanta- sutras, o la filosofía sankhya. Todo ello se denomina svadhyaya- yajña, u ocupación en el sacrificio de los estudios. Todos estos yogis están fielmente dedicados a diferentes tipos de sacrificios, y están buscando un nivel de vida superior. Sin embargo, el proceso de conciencia de Krishna es diferente a esos otros, porque consiste en el servicio directo que se le presta al Señor Supremo. El estado de conciencia de Krishna no se puede alcanzar mediante ninguno de los antedichos tipos de sacrificios, sino únicamente por la misericordia del Señor y Su devoto genuino. Por consiguiente, el proceso de conciencia de Krishna es trascendental.
+</p>
+<p class='vspace'>VERSO 29
+</p>
+<div class='vspace'></div><pre> apane juhvati pranam
+ prane ‘panam tathapare
+ pranapana-gati ruddhva
+ pranayama-parayanah
+ apare niyataharah
+ pranan pranesu juhvati
+</pre><p class='vspace'>apane—en el aire que actúa hacia abajo; juhvati—ofrecen; pranam—el aire que actúa hacia afuera; prane—en el aire que va hacia afuera; apanam—el aire que va hacia abajo; tatha—así como también; apare—otros; prana—del aire que va hacia afuera; apana—y el aire que va hacia abajo; gati—el movimiento; ruddhva—impidiendo; prana-ayama—trance inducido al interrumpir la respiración por completo; parayanah—inclinado así; apare—otros; niyata—habiendo controlado; aharah—comiendo; pranan—el aire que sale; pranesu—en el aire que sale; juhvati—sacrifican.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aun otros, que se inclinan por el proceso de restringir la respiración para permanecer en trance, lo practican ofreciendo el movimiento del aire que sale en el aire que entra, y el aire que entra en el que sale, y, de esa manera, al final permanecen en trance, suspendiendo la respiración por completo. Otros, reduciendo el comer, ofrecen en sí mismo el aire que sale, como un sacrificio.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Este sistema de yoga para controlar la respiración se denomina pranayama, y en el sistema de hatha-yoga se practica al principio a través de diferentes maneras de sentarse. Todos estos procesos se recomiendan para controlar los sentidos y para avanzar en el proceso de la comprensión espiritual. Esta práctica entraña controlar los aires internos del cuerpo para invertir las direcciones de su paso. El aire apana desciende y el aire prana asciende. El yogi pranayama practica respirar en el sentido opuesto, hasta que las corrientes se neutralizan en el puraka, o equilibrio. El acto de ofrecer el aire exhalado en el inhalado, se denomina recaka. Cuando ambas corrientes de aire se detienen por completo, se dice que uno se encuentra en el estado de kumbhaka-yoga. Mediante la práctica del kumbhaka-yoga, los yogis aumentan la duración de la vida en muchísimos años. Una persona consciente de Krishna, sin embargo, como se encuentra siempre en el estado del trascendental servicio amoroso del Señor, se convierte automáticamente en el controlador de los sentidos. Como sus sentidos siempre están dedicados al servicio de Krishna, no tiene ninguna posibilidad de verse ocupada de otra manera. Así que, al final de la vida es trasladada naturalmente al plano trascendental del Señor Krishna; en consecuencia, ella no hace ningún intento de aumentar su longevidad. Ella es ascendida de inmediato al plano de la liberación, tal como se declara en El Bhagavad-gita (14.26):
+</p>
+<div class='vspace'></div><pre> mam ca yo ‘vyabhicarena
+ bhakti-yogena sevate
+ sa gunan samatityaitan
+ brahma-bhuyaya kalpate
+</pre><p class='vspace'>"Aquel que se dedica a prestarle al Señor un servicio devocional puro, trasciende las modalidades de la naturaleza material y es elevado de inmediato al plano espiritual". Una persona consciente de Krishna comienza en la etapa trascendental, y permanece constantemente en ese estado de conciencia. Por lo tanto, no hay caída, y al final entra en la morada del Señor sin demora alguna. La práctica de la limitación al comer se logra automáticamente cuando uno come sólo prasadam de Krishna, o comida que primero se le ha ofrecido al Señor. Reducir el comer es muy provechoso en lo referente al control de los sentidos. Sin control de los sentidos no hay ninguna posibilidad de salirse del enredo material.
+</p>
+<p class='vspace'>VERSO 30
+</p>
+<div class='vspace'></div><pre> sarve ‘py ete yajña-vido
+ yajña-ksapita-kalmasah
+ yajña-sistamrta-bhujo
+ yanti brahma sanatanam
+</pre><p class='vspace'>sarve—todos; api—aunque aparentemente diferentes; ete—estos; yajña-vidah—versados en el propósito de la ejecución de sacrificios; yajña-ksapita—habiéndose limpiado del resultado de esas ejecuciones; kalmasah—de las reacciones pecaminosas; yajña-sista—del resultado de esas ejecuciones de yajña; amrta-bhujah—aquellos que han probado ese néctar; yanti—se acercan; brahma—la suprema; sanatanam—atmósfera eterna.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Todos estos ejecutores que conocen el significado del sacrificio se limpian de las reacciones pecaminosas, y, como han probado el néctar de los resultados de los sacrificios, avanzan hacia la eterna atmósfera suprema.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>De la explicación anterior acerca de los diferentes tipos de sacrificios (es decir, el sacrificio de las posesiones, del estudio de los Vedas o de las doctrinas filosóficas y de la ejecución del sistema de yoga) se descubre que la finalidad común de todos ellos es la de controlar los sentidos. La complacencia de los sentidos es la raíz de la existencia material; por consiguiente, a menos que uno se sitúe en un plano aparte de la complacencia de los sentidos, no habrá ninguna posibilidad de elevarse al plano eterno de pleno conocimiento, plena bienaventuranza y plena vida. Ese plano se encuentra en la atmósfera eterna, o la atmósfera Brahman. Todos los sacrificios anteriormente mencionados lo ayudan a uno a limpiarse de las reacciones pecaminosas de la existencia material. Mediante ese progreso en la vida, además de uno volverse feliz y opulento en esta vida, al final entra en el eterno Reino de Dios, ya sea fundiéndose en el Brahman impersonal o asociándose con la Suprema Personalidad de Dios, Krishna.
+</p>
+<p class='vspace'>VERSO 31
+</p>
+<div class='vspace'></div><pre> nayam loko ‘sty ayajñasya
+ kuto ‘nyah kuru-sattama  
+</pre><p class='vspace'>na—nunca; ayam—este; lokah—planeta; asti—hay; ayajñasya—de aquel que no hace ningún sacrificio; kutah—donde hay; anyah—el otro; kuru-sattama—¡oh, el 
+mejor entre los Kurus!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, tú, el mejor de la dinastía Kuru!, sin sacrificio, jamás se puede ser feliz en este planeta ni en esta vida, ¿qué puede decirse, entonces, de la siguiente?
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En cualquier forma de existencia material en la que uno se halle, uno es ignorante constantemente de su verdadera situación. En otras palabras, la existencia en el mundo material se debe a las múltiples reacciones de nuestras vidas pecaminosas. La ignorancia es la causa de la vida pecaminosa, y esta última es la causa de que uno se continúe arrastrando en la existencia material. La forma humana de vida es la única salida para escaparse de este enredo. Los Vedas, por lo tanto, nos brindan una oportunidad de escaparnos, al señalar los senderos de la religión, la comodidad económica, la complacencia regulada de los sentidos y, finalmente, los medios para salirnos por completo de esta condición desdichada. El sendero de la religión, o de las diferentes clases de sacrificios que se recomendaron anteriormente, resuelve de forma automática todos nuestros problemas económicos. Mediante la ejecución de yajña, podemos tener suficiente comida, suficiente leche, etc., aun a pesar de que ocurra un supuesto aumento de población. Cuando el cuerpo está bien aprovisionado, naturalmente la siguiente etapa es la de satisfacer los sentidos. Los Vedas prescriben, por lo tanto, el matrimonio sagrado, para regular la complacencia de los sentidos. Con ello, uno se eleva gradualmente al plano en el que se libera del cautiverio material, y la máxima perfección de la vida liberada consiste en asociarse con el Señor Supremo. La perfección se logra mediante la ejecución de yajñas (sacrificios), tal como se describió anteriormente. Ahora bien, si una persona no se siente inclinada a realizar yajñas acorde con los Vedas, ¿cómo puede esperar tener una vida feliz, así fuera en este cuerpo? Y ni qué hablar de otro cuerpo en otro planeta. Hay diferentes grados de comodidades materiales en diferentes planetas del cielo, y en todos los casos hay una inmensa felicidad disponible para personas dedicadas a las diferentes clases de yajñas. Pero la clase más alta de felicidad que un hombre puede alcanzar, es la de ser promovido a los planetas espirituales mediante la práctica del proceso de conciencia de Krishna. Una vida llena de conciencia de Krishna es, por ende, la solución a todos los problemas de la existencia material.
+</p>
+<p class='vspace'>VERSO 32
+</p>
+<div class='vspace'></div><pre> evam bahu-vidha yajña
+ vitata brahmano mukhe
+ karma-jan viddhi tan sarvan
+ evam jñatva vimoksyase
+</pre><p class='vspace'>evam—así pues; bahu-vidhah—diversas clases de; yajñah—sacrificios; vitatah—se difunden; brahmanah—de los Vedas; mukhe—a través de la boca; karma-jan—nacido del trabajo; viddhi—debes saber; tan—ellos; sarvan—todos; evam—así pues; jñatva—sabiendo; vimoksyase—te liberarás.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Los Vedas aprueban todos estos diferentes tipos de sacrificios, y todos ellos nacen de diferentes tipos de trabajo. Conociéndolos de ese modo, tú lograrás liberarte.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En los Vedas se mencionan diferentes tipos de sacrificios, tal como se discutió anteriormente, que se amoldan a los diferentes tipos de trabajadores. Como los hombres se encuentran tan absortos en el concepto corpóreo, esos sacrificios están dispuestos de modo tal, que uno pueda trabajar ya sea con el cuerpo, con la mente o con la inteligencia. Pero todos ellos se recomiendan para que al final uno se libere del cuerpo. El Señor confirma aquí eso con Sus propias palabras.
+</p>
+<p class='vspace'>VERSO 33
+</p>
+<div class='vspace'></div><pre> sreyan dravya-mayad yajñaj
+ jñana-yajñah parantapa
+ sarvam karmakhilam partha
+ jñane parisamapyate
+</pre><p class='vspace'>sreyan—más grande; dravya-mayat—de las posesiones materiales; yajñat—que el sacrificio; jñana-yajñah—sacrificio con conocimiento; parantapa—¡oh, castigador del enemigo!; sarvam—todos; karma—actividades; akhilam—en su totalidad; partha—¡oh, hijo de Prtha!; jñane—con conocimiento; parisamapyate—terminan en.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, castigador del enemigo!, el sacrificio que se hace con conocimiento es mejor que el sacrificio de las posesiones materiales. Al fin y al cabo, ¡oh, hijo de Prtha!, todos los sacrificios del trabajo culminan en el conocimiento trascendental.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El propósito de todos los sacrificios es el de llegar al estado de pleno conocimiento, luego liberarse de los sufrimientos materiales, y, finalmente, dedicarse al trascendental servicio amoroso del Señor Supremo (el estado de conciencia de Krishna). Sin embargo, existe un misterio en relación con todas estas diferentes actividades de sacrificio, y uno debe conocer ese misterio. Los sacrificios adoptan a veces diferentes formas, según la fe específica del ejecutor. Cuando la fe de uno alcanza la etapa del conocimiento trascendental, al ejecutor de los sacrificios se le debe considerar más adelantado que aquellos que simplemente sacrifican posesiones materiales sin ese conocimiento, pues sin la adquisición de conocimiento, los sacrificios permanecen en el plano material, y no proporcionan ningún beneficio espiritual. El verdadero conocimiento culmina en el estado de conciencia de Krishna, la máxima etapa del conocimiento trascendental. Sin la elevación del conocimiento, los sacrificios son simplemente actividades materiales. Cuando, sin embargo, se elevan al nivel del conocimiento trascendental, todas esas actividades entran en el plano espiritual. Dependiendo de las diferencias de los estados de conciencia, las actividades de los sacrificios algunas veces se denominan karma-kanda, o actividades fruitivas, y otras veces, jñana-kanda, o conocimiento en busca de la verdad. Es mejor cuando el fin es el conocimiento.
+</p>
+<p class='vspace'>VERSO 34
+</p>
+<div class='vspace'></div><pre> tad viddhi pranipatena
+ pariprasnena sevaya
+ upadeksyanti te jñanam
+ jñaninas tattva-darsinah
+</pre><p class='vspace'>tat—ese conocimiento acerca de los diferentes sacrificios; viddhi—trata de entender; pranipatena—acudiendo a un maestro espiritual; pariprasnena—mediante preguntas sumisas; sevaya—prestando servicio; upadeksyanti—ellos te iniciarán; te—a ti; jñanam—en el conocimiento; jñaninah—los autorrealizados; tattva—de la verdad; darsinah—videntes.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Tan sólo trata de aprender la verdad acudiendo a un maestro espiritual. Hazle preguntas de un modo sumiso y préstale servicio. Las almas autorrealizadas pueden impartirte conocimiento, porque han visto la verdad.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El sendero de la comprensión espiritual es indudablemente difícil. El Señor nos aconseja, por ello, que acudamos a un maestro espiritual genuino que forme parte de la línea de sucesión discipular proveniente del propio Señor. Nadie puede ser un 
+maestro espiritual genuino, si no sigue este principio de sucesión discipular. El Señor es el maestro espiritual original, y una persona que forme parte de la sucesión discipular, puede comunicarle a su discípulo el mensaje del Señor tal como es. Nadie puede llegar a la iluminación espiritual mediante un proceso que él mismo haya manufacturado, como lo estilan farsantes necios. El Bhagavatam (6.3.19) dice: dharmam tu saksad- bhagavat-pranitam, el sendero de la religión lo enuncia el Señor directamente. De manera que, la especulación mental o los argumentos áridos no pueden ayudarlo a uno a encontrar la senda correcta. Ni puede uno progresar en la vida espiritual mediante el estudio independiente de libros de conocimiento. Para recibir el conocimiento, uno tiene que acudir a un maestro espiritual genuino. A un maestro espiritual de esa índole se le debe aceptar con plena entrega, y uno debe servir al maestro espiritual como un sirviente ordinario, sin vanidad. Satisfacer al maestro espiritual autorrealizado es el secreto del avance en la vida espiritual. Las preguntas y la sumisión constituyen la combinación idónea para lograr la comprensión espiritual. A menos que haya sumisión y servicio, las preguntas que se le hagan al maestro espiritual versado no serán eficaces. Uno debe ser capaz de pasar la prueba del maestro espiritual, y cuando el maestro ve el deseo genuino del discípulo, automáticamente lo bendice con genuina comprensión espiritual. En este verso se condenan tanto la adhesión ciega como las preguntas absurdas. No sólo debe uno oír sumisamente al maestro espiritual, sino que también se debe llegar a comprender claramente lo que él dice, con sumisión, servicio y preguntas. Un maestro espiritual genuino es por naturaleza muy bondadoso con el discípulo. Así pues, cuando el estudiante es sumiso y siempre está dispuesto a prestar servicio, la correspondencia del conocimiento y las preguntas se vuelve perfecta.
+</p>
+<p class='vspace'>VERSO 35
+</p>
+<div class='vspace'></div><pre> yaj jñatva na punar moham
+ evam yasyasi pandava
+ yena bhutany asesani
+ draksyasy atmany atho mayi
+</pre><p class='vspace'>yat—lo cual; jñatva—sabiendo; na—nunca; punah—de nuevo; moham—a la ilusión; evam—así; yasyasi—irás; pandava—¡oh, hijo de Pandu!; yena—mediante el cual; bhutani—las entidades vivientes; asesani—todas; draksyasi—verás; atmani—en el Alma Suprema; athau—o en otras palabras; mayi—en Mí.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Habiendo obtenido verdadero conocimiento proveniente de un alma autorrealizada, nunca volverás a ser víctima de semejante ilusión, pues, por medio de ese conocimiento, verás que todos los seres vivientes no son más que parte del Supremo, o, en otras palabras, que son Míos.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El resultado de recibir conocimiento proveniente de un alma autorrealizada, o de alguien que conoce las cosas tal como son, es que se aprende que todos los seres vivientes son partes integrales de la Suprema Personalidad de Dios, el Señor Sri Krishna. El sentido de tener una existencia que esté separada de Krishna se denomina maya (ma—no, ya—es esto). Algunos creen que no tenemos nada que ver con Krishna, que Krishna es únicamente una gran personalidad histórica, y que el Absoluto es el Brahman impersonal. En realidad, como se declara en El Bhagavad-gita, ese Brahman impersonal es la refulgencia personal de Krishna. Krishna, como Suprema Personalidad de Dios, es la causa de todo. En El Brahma-samhita se afirma claramente que Krishna es la Suprema Personalidad de Dios, la causa de todas las causas. Incluso los millones de encarnaciones que hay, son sólo diferentes expansiones de Él. De forma similar, las entidades vivientes también son expansiones de Krishna. Los filósofos mayavadis creen erróneamente que Krishna pierde Su propia existencia separada en Sus muchas expansiones. Este pensamiento es de naturaleza material. En el mundo material tenemos la experiencia de que, cuando una cosa se distribuye en fragmentos, pierde su propia identidad original. Pero los filósofos mayavadis no logran entender que "absoluto" significa que uno más uno es igual a uno, y que uno menos uno también es igual a uno. Así es en el mundo absoluto.
+</p>
+<p class='vspace'>Debido a la carencia de suficiente conocimiento en lo referente a la ciencia absoluta, ahora estamos cubiertos de ilusión y, en consecuencia, creemos que estamos separados de Krishna. Aunque somos partes separadas de Krishna, aun así no somos diferentes de Él. La diferencia corporal de las entidades vivientes es maya, o en otras palabras, no es un hecho real. Todos tenemos la función de satisfacer a Krishna. Únicamente en virtud de maya, Arjuna creyó que la relación física y temporal que lo unía a sus familiares, era más importante que su relación espiritual y eterna con Krishna. Toda la enseñanza del Gita apunta hacia este fin: que el ser viviente, en su carácter de servidor eterno de Krishna, no puede separarse de Krishna, y su sentido de ser una entidad aparte de Krishna se denomina maya. Las entidades vivientes, como partes integrales del Supremo, tienen un propósito que cumplir. Habiendo olvidado ese propósito desde un tiempo inmemorial, se han situado en diferentes cuerpos, como hombres, animales, semidioses, etc. Esas diferencias físicas surgen del olvido del servicio trascendental del Señor. Pero cuando uno se dedica al servicio trascendental a través del proceso de conciencia de Krishna, de inmediato queda liberado de esa ilusión. Uno puede adquirir ese conocimiento puro únicamente con el maestro espiritual genuino, y de ese modo puede evitar el engaño de que la entidad viviente es igual a Krishna. El conocimiento perfecto consiste en saber que el Alma Suprema, Krishna, es el refugio supremo de todas las entidades vivientes, y que, por haber abandonado ese refugio, las entidades vivientes son engañadas por la energía material e imaginan que tienen una identidad separada. Así pues, bajo diferentes patrones de identidad material, se olvidan de Krishna. No obstante, cuando esas entidades vivientes engañadas se sitúan en el estado de conciencia de Krishna, ha de saberse que se hallan en la senda de la liberación, tal como se confirma en el Bhagavatam (2.10.6): muktir hitvanyatha-rupam svarupena vyavasthitih. Liberación significa situarse en la posición constitucional de eterno servidor de Krishna (el estado de conciencia de Krishna).
+</p>
+<p class='vspace'>VERSO 36
+</p>
+<div class='vspace'></div><pre> api ced asi papebhyah
+ sarvebhyah papa-krt-tamah
+ sarvam jñana-plavenaiva
+ vrjinam santarisyasi
+</pre><p class='vspace'>api—incluso; cet—si; asi—tu eres; papebhyah—de los pecadores; sarvebhyah—de todos; papa-krt-tamah—el más grande de los pecadores; sarvam—todas esas reacciones pecaminosas; jñana-plavena—por medio del bote del conocimiento trascendental; eva—ciertamente; vrjinam—el océano de los sufrimientos; santarisyasi—cruzarás por completo.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aun cuando se te considere el más pecador de todos los pecadores, cuando te sitúes en el bote del conocimiento trascendental serás capaz de cruzar el océano de los sufrimientos.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La debida comprensión acerca de la posición constitucional de uno en relación con Krishna es tan perfecta, que de inmediato puede sacarlo a uno de la lucha por la existencia que se lleva a cabo en el océano de la nesciencia. Este mundo material se considera a veces que es como un océano de nesciencia, y a veces, como un bosque en llamas. En el océano, por muy experto nadador que uno sea, la lucha por la existencia es muy severa. Si alguien se presenta y saca del océano al desesperado nadador, se vuelve el salvador más grande de todos. El conocimiento perfecto que se recibe proveniente de la Suprema Personalidad de Dios, constituye el sendero de la liberación. El bote del proceso de conciencia de Krishna es muy sencillo, pero al mismo tiempo es el más sublime que existe.
+</p>
+<p class='vspace'>VERSO 37
+</p>
+<div class='vspace'></div><pre> yathaidhamsi samiddho ‘gnir
+ bhasma-sat kurute ‘rjuna
+ jñanagnih sarva-karmani
+ bhasma-sat kurute tatha
+</pre><p class='vspace'>yatha—tal como; edhamsi—leña; samiddhah—ardiente; agnih—fuego; bhasma-sat—a cenizas; kurute—reduce; arjuna—¡oh, Arjuna!; jñana-agnih—el fuego del conocimiento; sarva-karmani—todas las reacciones a las actividades materiales; bhasma-sat—a cenizas; kurute—reduce; tatha—de manera similar.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Así como un fuego ardiente convierte la leña en cenizas, ¡oh, Arjuna!, así mismo el fuego del conocimiento reduce a cenizas todas las reacciones de las actividades materiales.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El conocimiento perfecto acerca del ser y el Superser y de la relación que hay entre ellos, se dice aquí que se asemeja al fuego. Este fuego no sólo quema todas las reacciones de las actividades impías, sino también todas las reacciones de las actividades piadosas, reduciéndolas a cenizas. Hay muchas etapas de reacción: reacción en formación, reacción en estado de fructificación, reacción ya obtenida y reacción a priori. Pero el conocimiento acerca de la posición constitucional de la entidad viviente reduce todo a cenizas. Cuando uno tiene conocimiento completo, todas las reacciones, tanto a priori como a posteriori, quedan consumidas. En los Vedas (El Brhad-aranyaka Upanisad 4.4.22) se declara: ubhe uhaivaisa ete taraty amrtah sadhv- asadhuni, "Uno supera tanto las acciones piadosas del trabajo como las impías".
+</p>
+<p class='vspace'>VERSO 38
+</p>
+<div class='vspace'></div><pre> na hi jñanena sadrsam
+ pavitram iha vidyate
+ tat svayam yoga-samsiddhah
+ kalenatmani vindati
+</pre><p class='vspace'>na—nada; hi—ciertamente; jñanena—con conocimiento; sadrsam—en comparación; pavitram—santificado; iha—en este mundo; vidyate—existe; tat—eso; svayam—él mismo; yoga—con devoción; samsiddhah—aquel que es maduro; kalena—en el transcurso del tiempo; atmani—en sí mismo; vindati—disfruta.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>En este mundo no hay nada tan sublime y puro como el conocimiento trascendental. Dicho conocimiento es el fruto maduro de todo misticismo, y aquel que se ha vuelto experto en la práctica del servicio devocional, disfruta de ese conocimiento internamente, a su debido tiempo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Cuando hablamos de conocimiento trascendental, lo hacemos en términos de la comprensión espiritual. Siendo esto así, no hay nada tan sublime y puro como el conocimiento trascendental. La ignorancia es la causa de nuestro cautiverio, y el conocimiento es la causa de nuestra liberación. Este conocimiento es el fruto maduro del servicio devocional, y cuando uno se sitúa en el estado de conocimiento trascendental, no tiene que buscar la paz en ninguna otra parte, pues disfruta de paz interna. En otras palabras, este conocimiento y la paz culminan en el estado de conciencia de Krishna. Ésa es la última palabra de El Bhagavad- gita.
+</p>
+<p class='vspace'>VERSO 39
+</p>
+<div class='vspace'></div><pre> sraddhaval labhate jñanam
+ tat-parah samyatendriyah
+ jñanam labdhva param santim
+ acirenadhigacchati
+</pre><p class='vspace'>sraddha-van—un hombre fiel; labhate—alcanza; jñanam—conocimiento; tat-parah—muy apegado a él; samyata—controlado; indriyah—sentido; jñanam—conocimiento; labdhva—habiendo alcanzado; param—trascendental; santim—paz; acirena—muy pronto; adhigacchati—logra.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Un hombre fiel que se consagra al conocimiento trascendental y que subyuga los sentidos, es merecedor de obtener ese conocimiento, y al adquirirlo, encuentra rápidamente la suprema paz espiritual.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Ese conocimiento en estado de conciencia de Krishna puede adquirirlo una persona fiel que cree firmemente en Krishna. Se dice que uno es fiel, cuando uno piensa que simplemente por actuar con conciencia de Krishna puede lograr la máxima perfección. Esta fe se adquiere por medio del desempeño del servicio devocional y del canto de Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare, que limpia el corazón de uno de toda suciedad material. Y, por encima de esto, se deben controlar los sentidos. Una persona que es fiel a Krishna y que controla los sentidos, puede lograr fácilmente y sin demora la perfección del conocimiento de conciencia de Krishna.
+</p>
+<p class='vspace'>VERSO 40
+</p>
+<div class='vspace'></div><pre> ajñas casraddadhanas ca
+ samsayatma vinasyati
+ nayam loko ‘sti na paro
+ na sukham samsayatmanah
+</pre><p class='vspace'>ajñah—un necio que no tiene ningún conocimiento acerca de las Escrituras modelo; ca—y; asraddadhanah—sin fe en las Escrituras reveladas; ca—también; samsaya—de dudas; atma—una persona; vinasyati—cae; na—nunca; ayam—en este; lokah—mundo; asti—hay; na—ni; parah—en la otra vida; na—no; sukham—felicidad; samsaya—dudosa; atmanah—de la persona.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Pero las personas ignorantes e infieles que dudan de las Escrituras reveladas, no adquieren conciencia de Dios sino que caen. Para el alma que duda no hay felicidad ni en este mundo ni en el otro.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>De entre muchas Escrituras reveladas modelo y autoritativas, El Bhagavad-gita es la mejor. Personas que prácticamente son como animales, no tienen fe en las Escrituras reveladas modelo, ni conocimiento acerca de ellas. Y algunos, pese a que conocen las Escrituras reveladas o pueden citar pasajes de ellas, en realidad no tienen fe en esas palabras. Y aun pese a que otros puede que tengan fe en Escrituras tales como El Bhagavad-gita, no creen en la Personalidad de Dios, Sri Krishna, o no lo adoran. Esas personas no pueden tener ninguna posición en el proceso de conciencia de Krishna. Ellas caen. De entre todas las personas antedichas, aquellas que no tienen fe y que siempre tienen dudas, no progresan en absoluto. Los hombres que no tienen fe en Dios y en Su palabra revelada, no encuentran bien alguno en este mundo ni en el otro. Para ellos, no hay felicidad en absoluto. Por lo tanto, uno debe seguir con fe los principios de las Escrituras reveladas, y, de ese modo, ser elevado al plano del conocimiento. Únicamente ese conocimiento lo ayudará a uno a ser promovido al plano trascendental de la comprensión espiritual. En otras palabras,las personas con dudas no tienen ninguna posición en absoluto en el ámbito de la emancipación espiritual. Luego uno debe seguir los pasos de grandes acaryas de la sucesión discipular, para así lograr el éxito.
+</p>
+<p class='vspace'>VERSO 41
+</p>
+<div class='vspace'></div><pre> yoga-sannyasta-karmanam
+ jñana-sañchinna-samsayam
+ atmavantam na karmani
+ nibadhnanti dhanañjaya
+</pre><p class='vspace'>yoga—mediante el servicio devocional con karma-yoga; sannyasta—aquel que ha renunciado; karmanam—los frutos de las acciones; jñana—mediante el conocimiento; sañchinna—cortado; samsayam—dudas; atma-vantam—situado en el ser; na—nunca; karmani—trabajos; nibadhnanti—atan; dhanañjaya—¡oh, conquistador de riquezas!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquel que realiza servicio devocional y renuncia a los frutos de sus acciones, y cuyas dudas han sido destruidas por el conocimiento trascendental, está verdaderamente situado en el ser. Así pues, a él no lo atan las reacciones del trabajo, ¡oh, conquistador de riquezas!
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquel que sigue la instrucción de El Bhagavad-gita tal como la imparte el Señor, la propia Personalidad de Dios, se libera de todas las dudas, por la gracia del conocimiento trascendental. Él, como parte integral del Señor y con plena conciencia de Krishna, ya se encuentra en posesión del conocimiento acerca del ser. En virtud de ello, está indudablemente por encima del cautiverio de la acción.
+</p>
+<p class='vspace'>VERSO 42
+</p>
+<div class='vspace'></div><pre> tasmad ajñana-sambhutam
+ hrt-stham jñanasinatmanah
+ chittvainam samsayam yogam
+ atisthottistha bharata
+</pre><p class='vspace'>tasmat—por lo tanto; ajñana-sambhutam—nacido de la ignorancia; hrt-stham—situado en el corazón; jñana—del conocimiento; asina—con el arma; atmanah—del ser; chittva—cortando; enam—esta; samsayam—duda; yogam—en el yoga; atistha—sitúate; uttistha—levántate a pelear; bharata—¡oh, descendiente de Bharata!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Por lo tanto, las dudas que te han surgido en el corazón debido a la ignorancia, deben ser cortadas con el arma del conocimiento. Armado con el yoga, ¡oh, Bharata!, levántate y pelea.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El sistema de yoga que se enseña en este capítulo se denomina sanatana-yoga, o las actividades eternas que realiza la entidad viviente. Este yoga tiene dos divisiones de sacrificios: una se denomina el sacrificio de las posesiones materiales, y la otra se denomina el conocimiento acerca del ser, que es una actividad espiritual pura. Si el sacrificio de las posesiones materiales no se acopla con la iluminación espiritual, entonces dicho sacrificio se vuelve material. Pero aquel que realiza esos sacrificios con un objetivo espiritual, o en carácter de servicio devocional, hace un sacrificio perfecto. Cuando llegamos a las actividades espirituales, encontramos que éstas también se dividen en dos: la comprensión del ser propio (o la posición constitucional de uno), y la verdad relativa a la Suprema Personalidad de Dios. Aquel que sigue el sendero de El Bhagavad- gita tal como es, puede entender muy fácilmente estas dos importantes divisiones del conocimiento espiritual. Para él no existe ninguna dificultad en obtener conocimiento perfecto acerca del ser como parte integral del Señor. Y esa comprensión es provechosa, pues dicha persona puede entender fácilmente las actividades trascendentales del Señor. Al comienzo de este capítulo, el propio Señor Supremo discutió Sus actividades trascendentales. Aquel que no entiende las instrucciones del Gita es infiel, y se debe considerar que está haciendo mal uso de la independencia fragmentaria que el Señor le ha otorgado. Aquel que, a pesar de dichas instrucciones, no entiende la verdadera naturaleza del Señor como la eterna, bienaventurada y omnisciente Personalidad de Dios, es ciertamente el necio más grande de todos. Mediante la aceptación gradual de los principios del proceso de conciencia de Krishna, puede disiparse la ignorancia. El estado de conciencia de Krishna se despierta mediante diferentes tipos de sacrificios en honor de los semidioses, mediante el sacrificio en honor del Brahman, mediante el sacrificio a través del celibato, mediante el sacrificio en la vida de casado, en el control de los sentidos, en la práctica del yoga místico, en la penitencia, en la renuncia a las posesiones materiales, en el estudio de los Vedas y en la participación en la institución social denominada varnasrama-dharma. Todos éstos se conocen como sacrificios, y todos ellos están basados en la acción regulada. Pero dentro de todas esas actividades, el factor importante es la autorrealización. Aquel que busca ese objetivo es el verdadero estudiante de El Bhagavad-gita, pero aquel que duda de la autoridad de Krishna, fracasa. Por consiguiente, a uno se le aconseja estudiar El Bhagavad-gita, o cualquier otra Escritura, bajo la guía de un maestro espiritual genuino, con servicio y entrega. Un maestro espiritual genuino forma parte de la sucesión discipular eterna, y no se aparta en absoluto de las instrucciones del Señor Supremo, tal como se le impartieron hace millones de años al dios del Sol, de quien las instrucciones de El Bhagavad-gita han descendido al reino terrenal. Uno debe, pues, seguir el sendero de El Bhagavad-gita tal como se expresa en el propio Gita, y cuidarse de personas egoístas en busca de engrandecimiento personal, que alejan a los demás del sendero verdadero. El Señor es, en definitiva, la Persona Suprema, y Sus actividades son trascendentales. Aquel que entiende esto es una persona liberada, desde el mismo comienzo de su estudio del Gita.
+</p>
+<p class='vspace'>Así terminan los significados de Bhaktivedanta correspondientes al Cuatro Capítulo de El Srimad Bhagavad-gita, en relación con el conocimiento trascendental.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_03.html'>Karma yoga</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es.html'>El Bhagavad Gita – Tal Como Es</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_05.html'>Karma yoga: Acción con Conciencia de Krsna</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on April 12, 2008, at 03:03 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Cálculo del Tiempo a partir del átomo </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam3 - RSS Feed'
+      href='index.php-n=bhagavatam3.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam3.0-11' method='get'><input type='hidden' name='n' value='bhagavatam3.0-11' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Cálculo del Tiempo a partir del átomo "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam3.0-11-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhagavatam3.srimad_bhagavatam.html'>Srimad Bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo Xl</small><br /><br />Cálculo del Tiempo a partir del átomo</h1>
+<p class='vspace'>VERSO 1
+maitreya uvaca
+caramah sad-visesanam
+aneko 'samyutah sada
+paramanuh sa vijñeyo
+nrnam aikya-bhramo yatah
+</p>
+<p class='vspace'>maitreyah uvaca—Maitreya dijo; caramah—final; sat—efecto; visesanam— síntomas; anekah—innumerables; asamyutah—no mezclado; sada—siempre; parama-anuh—átomos; sah—eso; vijñeyah—debe entenderse; nrnam—de hombres; aikya—unidad; bhramah—erróneo; yatah—del cual. 
+TRADUCCIÓN
+La partícula elemental de la manifestación material, que es indivisible y que no forma parte de un cuerpo, se denomina átomo. Existe siempre como una entidad invisible, incluso después de la disolución de todas las formas. El cuerpo material no es más que una combinación de esos átomos, pero el hombre común lo entiende erróneamente. 
+SIGNIFICADO
+La descripción atómica que hace el Srimad-Bhagavatam es prácticamente la misma que da la moderna ciencia del atomismo, y se describe aún más en el Paramanu-vada de Kanada. También en la ciencia moderna se acepta que el átomo es la partícula elemental indivisible que compone el universo. El Srimad-Bhagavatam es el texto completo de todas las clases de conocimiento, incluso de la teoría del atomismo. El átomo es la forma diminuta y sutil del tiempo eterno. 
+VERSO 2
+sata eva padarthasya
+svarupavasthitasya yat
+kaivalyam parama-mahan
+aviseso nirantarah
+</p>
+<p class='vspace'>satah—de la manifestación efectiva; eva—ciertamente; pada-arthasya—de cuerpos físicos; svarupa-avasthitasya—permaneciendo en la misma forma, incluso hasta el momento de la disolución; yat—aquello que; kaivalyam—unidad; parama—lo supremo; mahan—ilimitado; avisesah—formas; nirantarah— eternamente. 
+TRADUCCIÓN
+Los átomos son el estado elemental del universo manifiesto. Cuando permanecen en su propia forma, sin formar diferentes cuerpos, se les llama la unidad ilimitada. Existen sin duda diferentes cuerpos con formas físicas, pero los propios átomos forman toda la manifestación.
+VERSO 3
+evam kalo 'py anumitah
+sauksmye sthaulye ca sattama
+samsthana-bhuktya bhagavan
+avyakto vyakta-bhug vibhuh
+</p>
+<p class='vspace'>evam—así pues; kalah—tiempo; api—también; anumitah—medido; sauksmye—en lo sutil; sthaulye—en las formas densas; ca—también; sattama— ¡oh, tú, el mejor de todos!; samsthana—combinaciones de los átomos; bhuktya— por el movimiento; bhagavan—la Suprema Personalidad de Dios; avyaktah—no manifestado; vyakta-bhuk—controlando todo movimiento físico; vibhuh—el gran potencial.
+TRADUCCIÓN
+Uno puede estimar el tiempo midiendo el movimiento de la combinación atómica de los cuerpos. El tiempo es la potencia de la todopoderosa Personalidad de Dios, Hari, que controla todo movimiento físico, aunque Él no es visible en el mundo físico. 
+VERSO 4
+sa kalah paramanur vai
+yo bhunkte paramanutam
+sato 'visesa-bhug yas tu
+sa kalah paramo mahan
+</p>
+<p class='vspace'>sah—ese; kalah—tiempo eterno; parama-anuh—atómico; vai—ciertamente; yah—el cual; bhunkte—pasa a través; parama-anutam—el espacio de un átomo; satah—de todo el agregado; avisesa-bhuk—pasando a través de la exhibición no dual; yah tu—el cual; sah—ese; kalah—tiempo; paramah—el supremo; mahan—el grande. 
+TRADUCCIÓN
+El tiempo atómico se mide de acuerdo con un espacio atómico específico que cubre. Ese tiempo que cubre el agregado no manifiesto de átomos se denomina el gran tiempo. 
+SIGNIFICADO
+El tiempo y el espacio son dos términos correlativos. El tiempo se mide en función de cierto espacio de átomos que cubre. El tiempo que sirve de pauta se calcula en términos del movimiento del Sol. El tiempo atómico se calcula como el tiempo que el Sol tarda en pasar por encima de un átomo. El tiempo más grande de todos abarca toda la existencia de la manifestación no dual. Todos los planetas giran y recorren un espacio, y el espacio se calcula en términos de átomos. Cada planeta tiene su órbita particular de rotación, en la cual se mueve sin desviarse, y, en forma similar, el Sol tiene su órbita. El cálculo completo del tiempo de la creación, mantenimiento y disolución, medido en términos de la circulación de los sistemas planetarios totales hasta el fin de la creación, se conoce como el kala supremo. 
+VERSO 5
+anur dvau paramanu syat
+trasarenus trayah smrtah
+jalarka-rasmy-avagatah
+kham evanupatann agat
+</p>
+<p class='vspace'>anuh—átomo doble; dvau—dos; parama-anu—átomos; syat—se vuelven; trasarenuh—hexátomo; trayah—tres; smrtah—considerado; jala-arka—de luz solar a través de los agujeros de la tela metálica de una ventana; rasmi—mediante los rayos; avagatah—puede conocerse; kham eva—hacia el cielo; anupatan agat— ascendiendo. 
+TRADUCCIÓN
+La división del tiempo burdo se calcula de la siguiente manera: dos átomos forman un átomo doble, y tres átomos dobles forman un hexátomo. Ese hexátomo se ve en la luz solar que entra a través de los agujeros de la tela metálica de una ventana. Uno puede ver claramente que el hexátomo asciende hacia el cielo. 
+SIGNIFICADO
+Se describe al átomo como una partícula invisible, pero, cuando seis de esos átomos se combinan, se denominan trasarenu, y éste se ve en la luz solar que se cuela a través de los agujeros de la tela metálica de una ventana. 
+VERSO 6
+trasarenu-trikam bhunkte
+yah kalah sa trutih smrtah
+sata-bhagas tu vedhah syat
+tais tribhis tu lavah smrtah
+</p>
+<p class='vspace'>trasarenu-trikam—combinación de tres hexátomos; bhunkte—tiempo que tardan en integrarse; yah—aquello que; kalah—duración del tiempo; sah—ese; trutih—con el nombre de truti; smrtah—se denomina; sata-bhagah—cien trutis; tu—pero; vedhah—denominado vedha; syat—así ocurre; taih—por ellos; tribhih—tres veces; tu—pero; lavah—lava; smrtah—así llamado. 
+TRADUCCIÓN
+El lapso de tiempo necesario para la integración de tres trasarenus se denomina truti, y cien trutis constituyen un vedha. Tres vedhas constituyen un lava.
+SIGNIFICADO
+Se calcula que si se divide un segundo en 1.687,5 partes, cada parte es la duración de un truti, que es el tiempo que se emplea en la integración de dieciocho partículas atómicas. Esa combinación de átomos para formar diferentes cuerpos crea el cálculo del tiempo material. El Sol es el punto central para el cálculo de todas las diferentes duraciones. 
+VERSO 7
+nimesas tri-lavo jñeya
+amnatas te trayah ksanah
+ksanan pañca viduh kastham
+laghu ta dasa pañca ca
+</p>
+<p class='vspace'>nimesah—el lapso de tiempo denominado nimesa; tri-lavah—la duración de tres lavas; jñeyah—ha de ser conocida; amnatah—así se llama; te—ellos; trayah— tres; ksanah—el lapso de tiempo denominado ksana; ksanan—dichos ksanas; pañca—cinco; viduh—uno debe entender; kastham—el lapso de tiempo denominado kastha; laghu—el lapso de tiempo denominado laghu; tah—esos; dasa pañca—quince; ca—también. 
+TRADUCCIÓN
+El lapso de tiempo de tres lavas es igual a un nimesa; la combinación de tres nimesas constituye un ksana; cinco ksanas se combinan para formar un kastha; y quince kasthas constituyen un laghu. 
+VERSO 8
+laghuni vai samamnata
+dasa pañca ca nadika
+te dve muhurtah praharah
+sad yamah sapta va nrnam
+</p>
+<p class='vspace'>laghuni—esos laghus (de dos minutos cada uno); vai—exactamente; samam- nata—se denomina; dasa pañca—quince; ca—también; nadika—un nadika; te—de ellos; dve—dos; muhurtah—un momento; praharah—tres horas; sat—seis; yamah—un cuarto del día o de la noche; sapta—siete; va—o; nrnam—de cálculo humano. 
+TRADUCCIÓN
+Quince laghus constituyen un nadika, que también recibe el nombre de danda. Dos dandas constituyen un muhurta, y seis o siete dandas constituyen un cuarto del día o de la noche, según el cálculo humano. 
+VERSO 9
+dvadasardha-palonmanam
+caturbhis catur-angulaih
+svarna-masaih krta-cchidram
+yavat prastha-jala-plutam
+</p>
+<p class='vspace'>dvadasa-ardha—seis; pala—de la escala de peso; unmanam—tarro de medida; caturbhih—por el peso de cuatro; catuh-angulaih—que mide cuatro dedos; svarna—de oro; masaih—del peso; krta-chidram—haciendo un agujero; yavat— mientras que; prastha—que mide un prastha; jala-plutam—llenado con agua. 
+TRADUCCIÓN
+El tarro para medir un nadika o danda puede prepararse con un tarro de cobre de seis pala de peso [400 gramos], en el que se perfora un agujero con una sonda de oro que pese cuatro masa y que mida cuatro dedos de largo. Cuando el tarro se coloca en el agua, el tiempo que ésta tarda en rebosarlo se denomina danda. 
+SIGNIFICADO
+Se aconseja aquí que la perforación del tarro medidor, hecho de cobre, debe hacerse con una sonda que no pese más de cuatro masa y que no mida más de cuatro dedos. Esto regula el diámetro del agujero. El tarro es sumergido en el agua, y el tiempo de rebosamiento se denomina danda. Ésa es otra manera de medir la duración de un danda, tal como se mide el tiempo con arena en un recipiente de vidrio. Parece ser que en tiempos de la civilización védica no había escasez de conocimiento en física, química o matemáticas superiores. Las medidas se calculaban de diferentes maneras, en la forma más simple en que pudiera hacerse. 
+VERSO 10
+yamas catvaras catvaro
+martyanam ahani ubhe
+paksah pañca-dasahani
+suklah krsnas ca manada 
+</p>
+<p class='vspace'>yamah—tres horas; catvarah—cuatro; catvarah—y cuatro; martyanam—de los seres humanos; ahani—duración del día; ubhe—tanto el día como la noche; paksah—quincena; pañca-dasa—quince; ahani—días; suklah—blanca; krsnah— negra; ca—también; manada—medido. 
+TRADUCCIÓN
+Se calcula que en el día del ser humano hay cuatro praharas, que también reciben el nombre de yamas, y otros cuatro en la noche. En forma similar, quince días y noches son una quincena, y en un mes hay dos quincenas, una blanca y una negra. 
+VERSO 11
+tayoh samuccayo masah
+pitrnam tad ahar-nisam
+dvau tav rtuh sad ayanam
+daksinam cottaram divi
+</p>
+<p class='vspace'>tayoh—de ellos; samuccayah—conjunto; masah—mes; pitrnam—de los planetas Pitas; tat—ese (mes); ahah-nisam—día y noche; dvau—dos; tau— meses; rtuh—una estación; sat—seis; ayanam—el movimiento del Sol en seis meses; daksinam—meridional; ca—también; uttaram—septentrional; divi—en los cielos. 
+TRADUCCIÓN
+El conjunto de dos quincenas es un mes, y ese período es un día y una noche completos en los planetas Pitas. Dos de esos meses constituyen una estación, y seis meses constituyen un movimiento completo del Sol, de sur a norte. 
+VERSO 12
+ayane cahani prahur
+vatsaro dvadasa smrtah
+samvatsara-satam nrnam
+paramayur nirupitam
+</p>
+<p class='vspace'>ayane—en el movimiento solar (de seis meses); ca—y; ahani—un día de los semidioses; prahuh—se dice; vatsarah—un año civil; dvadasa—doce meses; smrtah—se llama así; samvatsara-satam—cien años; nrnam—de seres humanos; parama-ayuh—duración de vida; nirupitam—se estima. 
+TRADUCCIÓN
+Dos movimientos solares hacen un día y una noche de los semidioses, y esa combinación de día y noche es un año civil completo para el ser humano. La duración de la vida del ser humano es de cien años. 
+VERSO 13
+graharksa-tara-cakra-sthah
+paramanv-adina jagat
+samvatsaravasanena
+paryety animiso vibhuh
+</p>
+<p class='vspace'>graha—planetas influyentes, como la Luna; rksa—astros luminosos como Asvini; tara—estrellas; cakra-sthah—en la órbita; parama-anu-adina—juntamente con los átomos; jagat—todo el universo; samvatsara-avasanena—al final de un año; paryeti—completa su órbita; animisah—el tiempo eterno; vibhuh—el Todopoderoso. 
+TRADUCCIÓN
+Las estrellas influyentes, los planetas, los astros luminosos y los átomos de todas partes del universo están girando en sus respectivas órbitas bajo la dirección del Supremo, representado por el kala eterno. 
+VERSO 14
+samvatsarah parivatsara
+ida-vatsara eva ca
+anuvatsaro vatsaras ca
+viduraivam prabhasyate
+</p>
+<p class='vspace'>samvatsarah—órbita del Sol; parivatsarah—dando vueltas alrededor de Brhaspati; ida-vatsarah—órbita de las estrellas; eva—tal y como son; ca—también; anuvatsarah—órbita de la Luna; vatsarah—un año civil; ca—también; vidura—¡oh, Vidura!; evam—así pues; prabhasyate—se les dice así. 
+TRADUCCIÓN
+Hay cinco nombres diferentes para las órbitas del Sol, la Luna, las estrellas y los astros luminosos del firmamento, y cada una de ellas tiene su propio samvatsara. 
+SIGNIFICADO
+Los temas de física, química, matemáticas, astronomía, tiempo y espacio que se tratan en los versos anteriores del Srimad-Bhagavatam son sin duda muy interesantes para los estudiantes del tema en particular, pero, en lo que respecta a nosotros, no los podemos explicar con mucho detalle en términos de conocimiento técnico. El asunto se resume mediante la declaración de que, por encima de todas las diferentes ramas de conocimiento, se encuentra el supremo control de kala, la representación plenaria de la Suprema Personalidad de Dios. Nada existe sin Él, y, por lo tanto, todo, por maravilloso que pueda parecer a nuestro escaso conocimiento, no es más que la obra de la varita mágica del Señor Supremo. En lo que respecta al tiempo, nos permitimos adjuntar aquí una tabla de equivalencias de tiempo en términos del reloj moderno:
+Un trutI - 8/13.500 de segundo
+Un vedha -  8/135 de segundo
+Un lava - 8/45 de segundo
+Un nimesa - 8/15 de segundo
+Un ksana - 8/5 de segundo
+Un kastha - 8 segundos
+Un laghu - 2 minutos
+Un danda - 30 minutos
+Un prahara - 3 horas
+Un día – 12 horas
+Una noche – 12 horas
+Un paksa – 15 días
+Dos paksas constituyen un mes, y doce meses constituyen un año civil, es decir, una órbita completa del Sol. La esperanza de vida de un ser humano es de cien años. Así es la medida controladora del tiempo eterno. 
+La Brahma-samhita (5.52) afirma la existencia de ese control de la siguiente manera: 
+yac-caksur esa savita sakala-grahanam
+raja samasta-sura-murtir asesa-tejah
+yasyajñaya bhramati sambhrta-kala-cakro
+govindam adi-purusam tam aham bhajami
+«Yo adoro a Govinda, el Señor primigenio, la Suprema Personalidad de Dios, bajo cuyo control incluso el Sol, al que se considera el ojo del Señor, gira dentro de la órbita fija del tiempo eterno. El Sol es el rey de todos los sistemas planetarios, y tiene una ilimitada potencia de calor y luz».
+VERSO 15
+yah srjya-saktim urudhocchvasayan sva-saktya
+pumso 'bhramaya divi dhavati bhuta-bhedah
+kalakhyaya gunamayam kratubhir vitanvams
+tasmai balim harata vatsara-pañcakaya
+</p>
+<p class='vspace'>yah—aquel que; srjya—de la creación; saktim—las semillas; urudha—de diversas maneras; ucchvasayan—vigorizando; sva-saktya—mediante su propia energía; pumsah—de la entidad viviente; abhramaya—para disipar la oscuridad; divi—durante el día; dhavati—se mueve; bhuta-bhedah—distinto de toda otra forma material; kala-akhyaya—con el nombre de tiempo eterno; guna-mayam—los resultados materiales; kratubhih—mediante ofrendas; vitanvan—ampliando; tasmai—a él; balim—elementos de ofrenda; harata—se deben ofrecer; vatsara- pañcakaya—ofrendas cada cinco años. 
+TRADUCCIÓN
+¡Oh, Vidura! El Sol anima a todas las entidades vivientes con su calor y luz ilimitados. Él disminuye la duración de la vida de todas las entidades vivientes con objeto de liberarlas de la ilusión de su apego material, y amplía el sendero de la elevación al reino celestial. De esa manera, se mueve en el firmamento a una gran velocidad, y, por lo tanto, todo el mundo debe ofrecerle respetos una vez cada cinco años, con todos los elementos de adoración. 
+VERSO 16
+vidura uvaca
+</p><pre> pitr-deva-manusyanam
+</pre><p>ayuh param idam smrtam
+paresam gatim acaksva
+ye syuh kalpad bahir vidah
+</p>
+<p class='vspace'>vidurah uvaca—Vidura dijo; pitr—los planetas Pitas; deva—los planetas celestiales; manusyanam—y la de los seres humanos; ayuh—duración de la vida; param—final; idam—en su propia medida; smrtam—calculada; paresam—de las entidades vivientes superiores; gatim—duración de la vida; acaksva—ten la bondad de calcular; ye—todos aquellos que; syuh—son; kalpat—del milenio; bahih— fuera; vidah—sumamente eruditos. 
+TRADUCCIÓN
+Vidura dijo: Ahora entiendo las duraciones de vida de los residentes de los planetas Pitas y de los planetas celestiales, así como también la de los seres humanos. Ten la bondad de informarme ahora de las duraciones de vida de esas entidades vivientes sumamente eruditas, que se encuentran más allá del alcance de un kalpa.
+SIGNIFICADO
+La disolución parcial del universo que ocurre al final del día de Brahma no afecta a todos los sistemas planetarios. Los planetas de entidades vivientes sumamente eruditas, como los sabios Sanaka y Bhrgu, no son afectados por las disoluciones de los milenios. Todos los planetas son de diferentes tipos, y cada uno está controlado por un diferente kala-cakra o programación del tiempo eterno. El tiempo del planeta Tierra no se aplica a otros planetas más elevados. Por consiguiente, Vidura pregunta aquí acerca de la duración de la vida en otros planetas. 
+VERSO 17
+bhagavan veda kalasya
+gatim bhagavato nanu
+visvam vicaksate dhira
+yoga-raddhena caksusa
+</p>
+<p class='vspace'>bhagavan—¡oh, espiritualmente poderoso!; veda—tú sabes; kalasya—del tiempo eterno; gatim—movimientos; bhagavatah—de la Suprema Personalidad de Dios; nanu—como consecuencia lógica; visvam—todo el universo; vicaksate—ve; dhirah—aquellos que están iluminados; yoga-raddhena—mediante el poder de la visión mística; caksusa—mediante los ojos. 
+TRADUCCIÓN
+¡Oh, espiritualmente poderoso! Tú puedes entender los movimientos del tiempo eterno, que es la forma controladora de la Suprema Personalidad de Dios. Porque eres una persona iluminada, puedes ver todo mediante el poder de la visión mística. 
+SIGNIFICADO
+Aquellos que han llegado a la etapa más elevada y perfecta del poder místico, y que pueden ver todo lo que hay en el pasado, en el presente y en el futuro, reciben el nombre de tri-kala-jñas. En forma similar, los devotos del Señor pueden ver claramente todo lo que se encuentra en las Escrituras reveladas. Los devotos de Sri Krishna pueden entender la ciencia de Krishna muy fácilmente, así como también la situación de la creación material y de la creación espiritual, sin dificultad. Los devotos no tienen que esforzarse por obtener ningún yoga-siddhi o perfección de poderes místicos. Por la gracia del Señor, que está situado en el corazón de todo el mundo, son competentes para entenderlo todo. 
+VERSO 18
+maitreya uvaca
+</p><pre> krtam treta dvaparam ca
+</pre><p>kalis ceti catur-yugam
+divyair dvadasabhir varsaih
+savadhanam nirupitam
+</p>
+<p class='vspace'>maitreyah uvaca—Maitreya dijo; krtam—la era de Satya; treta—la era de Treta; dvaparam—la era de Dvapara; ca—también; kalih—la era de Kali; ca—y; iti— así pues; catuh-yugam—cuatro milenios; divyaih—de los semidioses; dvada- sabhih—doce; varsaih—miles de años; sa-avadhanam—aproximadamente; nirupitam—comprobado. 
+TRADUCCIÓN
+Maitreya dijo: ¡Oh, Vidura! Los cuatro milenios se denominan los yugas Satya, Treta, Dvapara y Kali. El número total de años de todos éstos en conjunto es igual a doce mil años de los semidioses. 
+SIGNIFICADO
+Cada año de los semidioses equivale a 360 años del hombre. Como se aclarará en los versos siguientes, 12.000 años de los semidioses, incluyendo los períodos de transición denominados yuga-sandhyas, constituyen el total de los cuatro milenios anteriormente mencionados. Así pues, el conjunto de los cuatro milenios comprende 4.320.000 años.
+VERSO 19
+catvari trini dve caikam
+krtadisu yatha-kramam
+sankhyatani sahasrani
+dvi-gunani satani ca
+</p>
+<p class='vspace'>catvari—cuatro; trini—tres; dve—dos; ca—también; ekam—uno; krta-adisu—en la era de Satya; yatha-kramam—y otras siguientes; sankhyatani—haciendo un total de; sahasrani—miles; dvi-gunani—dos veces; satani—cientos; ca—también. 
+TRADUCCIÓN
+La duración del milenio de Satya equivale a 4.800 años de los semidioses; la duración del milenio de Treta equivale a 3.600 años de los semidioses; la duración del milenio de Dvapara equivale a 2.400 años; y la del milenio de Kali es de 1.200 años de los semidioses. 
+SIGNIFICADO
+Como se mencionó anteriormente, un año de los semidioses es igual a 360 años de los seres humanos. La duración del Satya-yuga es entonces 4.800 x 360, es decir, 1.728.000 años. La duración del Treta-yuga es de 3.600 x 360, es decir, 1.296.000 años. La duración del Dvapara-yuga es de 2.400 x 360, es decir, 864.000 años. Y el último, el Kali-yuga, dura 1.200 x 360, es decir, 432.000 años. 
+VERSO 20
+sandhya-sandhyamsayor antar
+yah kalah sata-sankhyayoh
+tam evahur yugam taj-jña
+yatra dharmo vidhiyate
+</p>
+<p class='vspace'>sandhya—período de transición anterior; sandhya-amsayoh—y período de transición posterior; antah—dentro de; yah—aquello que; kalah—lapso de tiempo; sata-sankhyayoh—cientos de años; tam eva—ese período; ahuh—ellos llaman; yugam—milenio; tat-jñah—los astrónomos expertos; yatra—en los que; dharmah—religión; vidhiyate—se realiza. 
+TRADUCCIÓN
+Los períodos de transición anteriores y posteriores a cada milenio, que, como se mencionó anteriormente, abarcan unos cuantos cientos de años, se conocen como yuga-sandhyas o conjunciones de dos milenios, según los astrónomos expertos. En esos períodos, se realiza toda clase de actividades religiosas. 
+VERSO 21
+dharmas catus-pan manujan
+krte samanuvartate
+sa evanyesv adharmena
+vyete padena vardhata
+</p>
+<p class='vspace'>dharmah—religión; catuh-pat—cuatro dimensiones completas; manujan— humanidad; krte—en el Satya-yuga; samanuvartate—apropiadamente mantenida; sah—esa; eva—ciertamente; anyesu—en otros; adharmena—por la influencia de la irreligión; vyeti—decayó; padena—en una parte; vardhata—aumentando gradual y proporcionalmente. 
+TRADUCCIÓN
+¡Oh, Vidura! En el milenio Satya, la humanidad mantenía apropiada y completamente los principios de la religión; pero en otros milenios, la religión gradualmente disminuyó en parte, a medida que la irreligión se admitía proporcionalmente. 
+SIGNIFICADO
+En el milenio Satya imperaba la ejecución completa de los principios religiosos. Gradualmente, los principios de la religión disminuyeron en una parte en cada uno de los milenios siguientes. En otras palabras, actualmente hay una parte de religión y tres partes de irreligión. Por consiguiente, la gente de esta era no es muy feliz. 
+VERSO 22
+tri-lokya yuga-sahasram
+bahir abrahmano dinam
+tavaty eva nisa tata
+yan nimilati visva-srk
+</p>
+<p class='vspace'>tri-lokyah—de los tres mundos; yuga—los cuatro yugas; sahasram—mil; bahih—fuera de; abrahmanah—hasta Brahmaloka; dinam—es un día; tavati— uno similar (período); eva—ciertamente; nisa—es la noche; tata—¡oh, querido!; yat—debido a; nimilati—duerme; visva-srk—Brahma. 
+TRADUCCIÓN
+Fuera de los tres sistemas planetarios [Svarga, Martya y Patala], los cuatro yugas multiplicados por mil constituyen un día del planeta de Brahma. Un período similar constituye una noche de Brahma, en la que el creador del universo duerme. 
+SIGNIFICADO
+Cuando Brahma duerme durante su noche, los tres sistemas planetarios que se encuentran por debajo de Brahmaloka se sumergen en el agua de la devastación. En su condición dormida, Brahma sueña con Garbhodakasayi Visnu, y recibe instrucción del Señor para la rehabilitación del área del espacio devastada. 
+VERSO 23
+nisavasana arabdho
+loka-kalpo 'nuvartate
+yavad dinam bhagavato
+manun bhuñjams catur-dasa
+</p>
+<p class='vspace'>nisa—noche; avasane—terminación; arabdhah—comenzando con; loka- kalpah—creación adicional de los tres mundos; anuvartate—sigue; yavat—hasta; dinam—el día; bhagavatah—del señor (Brahma); manun—los manus; bhuñjan— existiendo a lo largo de; catuh-dasa—catorce. 
+TRADUCCIÓN
+Después del final de la noche de Brahma, la creación de los tres mundos comienza de nuevo en el día de Brahma, y continúan existiendo a lo largo de las duraciones de vida de catorce consecutivos manus, los padres de la humanidad. 
+SIGNIFICADO
+Al final de la vida de cada manu hay también disoluciones más cortas. 
+VERSO 24
+svam svam kalam manur bhunkte
+sadhikam hy eka-saptatim
+</p>
+<p class='vspace'>svam—propio; svam—conforme a ello; kalam—duración de la vida; manuh— manu; bhunkte—disfruta; sa-adhikam—un poco más de; hi—ciertamente; eka- saptatim—setenta y uno. 
+TRADUCCIÓN
+Todos y cada uno de los manus disfrutan de una vida de un poco más de 71 conjuntos de cuatro milenios. 
+SIGNIFICADO
+La duración de la vida de un manu comprende 71 conjuntos de cuatro milenios, como se describe en el Visnu Purana. La duración de la vida de un manu es de unos 852.000 años según el cálculo de los semidioses, o, según el cálculo de los seres humanos, 306.720.000 años. 
+VERSO 25
+manvantaresu manavas
+tad-vamsya rsayah surah
+bhavanti caiva yugapat
+suresas canu ye ca tan
+</p>
+<p class='vspace'>manu-antaresu—después de la disolución de todos y cada uno de los manus; manavah—otros manus; tat-vamsyah—y sus descendientes; rsayah—los siete famosos sabios ; surah—devotos del Señor; bhavanti—florecen; ca eva—también todos ellos; yugapat—simultáneamente; sura-isah—semidioses como Indra; ca—y; anu—seguidores; ye—todos; ca—también; tan—ellos. 
+TRADUCCIÓN
+Después de la disolución de todos y cada uno de los manus, el siguiente manu aparece en orden, juntamente con sus descendientes, que rigen los diferentes planetas; pero los siete famosos sabios, y semidioses como Indra y sus seguidores, tales como los gandharvas, aparecen todos simultáneamente con el manu.
+SIGNIFICADO
+Hay catorce manus en un día de Brahma, y cada uno de ellos tiene diferentes descendientes. 
+VERSO 26
+esa dainan-dinah sargo
+brahmas trailokya-vartanah
+tiryan-nr-pitr-devanam
+sambhavo yatra karmabhih
+</p>
+<p class='vspace'>esah—todas esas creaciones; dainam-dinah—diariamente; sargah—creación; brahmah—en términos de los días de Brahma; trailokya-vartanah—rotación de los tres mundos; tiryak—animales inferiores a los seres humanos; nr—seres humanos; pitr—de los planetas Pitas; devanam—de los semidioses; sambhavah— aparición; yatra—en la cual; karmabhih—en el ciclo de actividades fruitivas.
+TRADUCCIÓN
+En la creación, durante el día de Brahma, los tres sistemas planetarios —Svarga, Martya y Patala— giran, y los habitantes, entre los que se encuentran los animales inferiores, los seres humanos, los semidioses y los pitas, aparecen y desaparecen en términos de sus actividades fruitivas. 
+VERSO 27
+manvantaresu bhagavan
+bibhrat sattvam sva-murtibhih
+manv-adibhir idam visvam
+avaty udita-paurusah
+</p>
+<p class='vspace'>manu-antaresu—en cada cambio de manu; bhagavan—la Personalidad de Dios; bibhrat—manifestando; sattvam—Su potencia interna; sva-murtibhih—mediante Sus diferentes encarnaciones; manu-adibhih—como Manu; idam—este; visvam—el universo; avati—mantiene; udita—descubriendo; paurusah—potencias divinas. 
+TRADUCCIÓN
+En todos y cada uno de los cambios de manu, la Suprema Personalidad de Dios aparece mediante la manifestación de Su potencia interna en diferentes encarnaciones, como Manu y otras. De esa manera, mantiene el universo mediante un poder descubierto. 
+VERSO 28
+tamo-matram upadaya
+pratisamruddha-vikramah
+kalenanugatasesa
+aste tusnim dinatyaye
+</p>
+<p class='vspace'>tamah—la modalidad de la ignorancia, o la oscuridad de la noche; matram— una insignificante porción únicamente; upadaya—aceptando; pratisamruddha- vikramah—suspendiendo toda capacidad de manifestación; kalena—mediante el eterno kala; anugata—fundido en; asesah—innumerables entidades vivientes; aste—permanece; tusnim—en silencio; dina-atyaye—al final del día. 
+TRADUCCIÓN
+Al final del día, bajo la insignificante porción de la modalidad de la oscuridad, la poderosa manifestación del universo se sumerge en la oscuridad de la noche. Por influencia del tiempo eterno, las innumerables entidades vivientes permanecen sumergidas en esa disolución, y todo se halla en silencio.
+SIGNIFICADO
+Este verso es una explicación de la noche de Brahma, que es el efecto de la influencia del tiempo que está en contacto con una insignificante porción de las modalidades de la naturaleza material influenciadas por la oscuridad. La disolución de los tres mundos la efectúa la encarnación de la oscuridad, Rudra, representada por el fuego del tiempo eterno que arde por los tres mundos. Estos tres mundos se conocen como Bhuh, Bhuvah y Svah (Patala, Martya y Svarga). Las innumerables entidades vivientes se sumergen en esa disolución, la cual parece ser la caída del telón en la escena de la energía del Señor Supremo, y de esa manera todo queda en silencio. 
+VERSO 29
+tam evanv api dhiyante
+loka bhur-adayas trayah
+nisayam anuvrttayam
+nirmukta-sasi-bhaskaram
+</p>
+<p class='vspace'>tam—eso; eva—ciertamente; anu—después; api dhiyante—están fuera de la visión; lokah—los planetas; bhuh-adayah—los tres mundos: Bhuh, Bhuvah y Svah; trayah—tres; nisayam—en la noche; anuvrttayam—común; nirmukta—sin brillo; sasi—la Luna; bhaskaram—el Sol. 
+TRADUCCIÓN
+Cuando ocurre la noche de Brahma, los tres mundos están fuera de la visión, y el Sol y la Luna están sin brillo, tal como en el debido curso de una noche ordinaria. 
+SIGNIFICADO
+Se entiende que el brillo del Sol y de la Luna desaparecen de la esfera de los tres mundos, pero el Sol y la Luna en sí no se desvanecen. Aparecen en la porción restante del universo, que se encuentra más allá de la esfera de los tres mundos. La porción en la que está ocurriendo la disolución permanece sin rayos solares y sin luz de la Luna. Todo permanece a oscuras y lleno de agua, y soplan infatigables vientos, como se explica en los versos siguientes. 
+VERSO 30
+tri-lokyam dahyamanayam
+saktya sankarsanagnina
+yanty usmana maharlokaj
+janam bhrgv-adayo 'rditah
+</p>
+<p class='vspace'>tri-lokyam—cuando las esferas de los tres mundos; dahyamanayam—siendo incendiadas; saktya—por la potencia; sankarsana—de la boca de Sankarsana; agnina—por el fuego; yanti—van; usmana—calentados por el calor; mahah- lokat—de Maharloka; janam—a Janaloka; bhrgu—el sabio Bhrgu; adayah—y otros; arditah—sintiéndose afligidos de este modo. 
+TRADUCCIÓN
+La devastación ocurre debido al fuego que emana de la boca de Sankarsana, y, por ello, grandes sabios como Bhrgu y otros habitantes de Maharloka se transportan a Janaloka, sintiéndose afligidos por el calor del ardiente fuego, que hace estragos por los tres mundos inferiores. 
+VERSO 31
+tavat tri-bhuvanam sadyah
+kalpantaidhita-sindhavah
+plavayanty utkatatopa-
+canda-vateritormayah
+</p>
+<p class='vspace'>tavat—entonces; tri-bhuvanam—los tres mundos; sadyah—inmediatamente después; kalpa-anta—al comienzo de la devastación; edhita—inflados; sindhavah— todos los océanos; plavayanti—inundan; utkata—violenta; atopa—agitación; canda—huracán; vata—por vientos; irita—soplados; urmayah—olas.
+TRADUCCIÓN
+Al comienzo de la devastación, todos los mares se desbordan, y vientos huracanados soplan con gran violencia. Como consecuencia, las olas de los mares se agitan feroces, y de inmediato los tres mundos se llenan de agua. 
+SIGNIFICADO
+Se dice que el fuego ardiente de la boca de Sankarsana arde devoradoramente durante cien años de los semidioses, es decir, 36.000 años humanos. Luego, durante otros 36.000 años, hay torrentes de lluvia, acompañados por violentos vientos y olas, y los mares y océanos se desbordan. Estas reacciones de 72.000 años son el comienzo de la devastación parcial de los tres mundos. La gente olvida todas esas devastaciones de los mundos, y piensa que es feliz en medio del progreso material de la civilización. Esto se denomina maya: «aquello que no es».
+VERSO 32
+antah sa tasmin salila
+aste 'nantasano harih
+yoga-nidra-nimilaksah
+stuyamano janalayaih
+</p>
+<p class='vspace'>antah—dentro; sah—esa; tasmin—en esa; salile—agua; aste—hay; ananta—Ananta; asanah—en el asiento de; harih—el Señor; yoga—místico; nidra—sueño; nimila-aksah—ojos cerrados; stuyamanah—siendo glorificado; jana-alayaih—por los habitantes de los planetas Janalokas. 
+TRADUCCIÓN
+El Señor Supremo, la Personalidad de Dios, yace en el agua con Sus ojos cerrados y tendido sobre Ananta, y los habitantes de los planetas Janalokas, con las manos juntas, Le ofrecen sus gloriosas oraciones. 
+SIGNIFICADO
+No debemos creer que la condición dormida del Señor es igual que nuestro sueño. Aquí se menciona específicamente la palabra yoga-nidra, lo cual indica que la condición durmiente del Señor es también una manifestación de Su potencia interna. Siempre que se utilice la palabra yoga, debe entenderse que se refiere a aquello que es trascendental. En la etapa trascendental, todas las actividades siempre están presentes, y son glorificadas por oraciones de grandes sabios como Bhrgu. 
+VERSO 33
+evam-vidhair aho-ratraih
+kala-gatyopalaksitaih
+apaksitam ivasyapi
+paramayur vayah-satam
+</p>
+<p class='vspace'>evam—así pues; vidhaih—mediante el proceso de; ahah—días; ratraih—por noches; kala-gatya—avance del tiempo; upala-ksitaih—mediante dichos síntomas; apaksitam—declinó; iva—tal como; asya—su; api—aunque; parama-ayuh—duración de la vida; vayah—años; satam—cien. 
+TRADUCCIÓN
+En esa forma, el proceso del agotamiento de la duración de la vida existe para cada uno de los seres vivientes, incluso para Brahma. La vida de uno dura únicamente cien años, en términos de los tiempos de los diferentes planetas. 
+SIGNIFICADO
+Todo ser viviente vive cien años, en términos de los tiempos que existen en diferentes planetas para diferentes entidades. Estos cien años de vida no son iguales en cada caso. La duración más larga de los cien años corresponde a Brahma, pero, aunque la vida de Brahma es muy larga, expira con el transcurso del tiempo. Brahma también teme a su muerte, y por eso realiza servicio devocional para el Señor, sólo para liberarse de las garras de la energía ilusoria. Los animales, por supuesto, no tienen ningún sentido de responsabilidad, pero incluso los humanos, que han desarrollado un sentido de responsabilidad, pasan su valioso tiempo sin ocuparse en el servicio devocional del Señor; viven alegremente, sin tener miedo a la muerte inminente. Ésa es la locura de la sociedad humana. El loco no tiene ninguna responsabilidad en la vida. En forma similar, el ser humano que no desarrolla un sentido de responsabilidad antes de morir, no es mejor que el loco que trata de disfrutar de la vida material muy alegremente, sin preocuparse por el futuro. Es necesario que todo ser humano se haga responsable de prepararse para la siguiente vida, aunque tenga una duración de vida como la de Brahma, la más eminente de todas las criaturas vivientes del universo. 
+VERSO 34
+yad ardham ayusas tasya
+parardham abhidhiyate
+purvah parardho 'pakranto
+hy aparo 'dya pravartate
+</p>
+<p class='vspace'>yat—aquello que; ardham—mitad; ayusah—de la duración de la vida; tasya—su; parardham—un parardha; abhidhiyate—se denomina; purvah—la anterior; para-ardhah—mitad de la duración de la vida; apakrantah—habiendo pasado; hi—ciertamente; aparah—la última; adya—en este milenio; pravartate— ha de comenzar. 
+TRADUCCIÓN
+Los cien años de la vida de Brahma se dividen en dos partes: la primera mitad y la segunda mitad. La primera mitad de la duración de la vida de Brahma ya pasó, y la segunda mitad está transcurriendo ahora. 
+SIGNIFICADO
+Ya hemos hablado de la duración de cien años en la vida de Brahma en muchos pasajes de esta obra, y también se describe en la Bhagavad- gita (8.17). Ya han pasado cincuenta años de la vida de Brahma, y aún faltan por completarse cincuenta años más; así que, también para Brahma, la muerte es inevitable. 
+VERSO 35
+purvasyadau parardhasya
+brahmo nama mahan abhut
+kalpo yatrabhavad brahma
+sabda-brahmeti yam viduh 
+</p>
+<p class='vspace'>purvasya—de la primera mitad; adau—al comienzo; para-ardhasya—de la mitad superior; brahmah—Brahma-kalpa; nama—de nombre; mahan—muy grande; abhut—se manifestó; kalpah—milenio; yatra—en el cual; abhavat—apareció; brahma—Brahma; sabda-brahma iti—los sonidos de los Vedas; yam—los cuales; viduh—ellos conocen. 
+TRADUCCIÓN
+Al comienzo de la primera mitad de la vida de Brahma, hubo un milenio denominado Brahma-kalpa, en el que apareció Brahma. El nacimiento de los Vedas fue simultáneo al nacimiento de Brahma. 
+SIGNIFICADO
+Según el Padma Purana (Prabhasa-khanda), en treinta días de Brahma ocurren muchos kalpas, como el Varaha-kalpa y el Pitr-kalpa. Treinta días hacen un mes de Brahma desde la Luna llena hasta la desaparición de la Luna. Doce de esos meses hacen un año, y cincuenta años hacen un parardha, la mitad de la duración de la vida de Brahma. La aparición Sveta-varaha del Señor es el primer cumpleaños de Brahma. La fecha de nacimiento de Brahma es en el mes de marzo, de acuerdo con el cálculo astronómico hindú. Esta declaración se reproduce de la explicación de Srila Visvanatha Cakravarti Thakura.
+VERSO 36
+tasyaiva cante kalpo 'bhud
+yam padmam abhicaksate
+yad dharer nabhi-sarasa
+asil loka- saroruham
+</p>
+<p class='vspace'>tasya—del Brahma-kalpa; eva—ciertamente; ca— también; ante—al final de; kalpah—milenio; abhut—comenzó a existir; yam—el cual; padmam—Padma; abhicaksate—se denomina; yat—en el cual; hareh—de la Personalidad de Dios; nabhi—en el ombligo; sarasah—del receptáculo de agua; asit—había; loka—del universo; saroruham—loto. 
+TRADUCCIÓN
+El milenio siguiente al primer milenio de Brahma se conoce como el Padma-kalpa, debido a que en ese milenio creció la flor de loto universal del receptáculo umbilical de agua de la Personalidad de Dios, Hari. 
+SIGNIFICADO
+El milenio que sigue al Brahma-kalpa se conoce como el Padma-kalpa, debido a que el loto universal crece en ese milenio. El Padma-kalpa también recibe el nombre de Pitrkalpa en ciertos Puranas. 
+VERSO 37
+ayam tu kathitah kalpo
+dvitiyasyapi bharata
+varaha iti vikhyato
+yatrasic chukaro harih
+ayam—este; tu—pero; kathitah—conocido como; kalpah—el milenio actual; dvitiyasya—de la segunda mitad; api—ciertamente; bharata—¡oh, descendiente de Bharata!; varahah—Varaha; iti—así pues; vikhyatah—es célebre; yatra—en el cual; asit—apareció; sukarah—forma de cerdo; harih—la Personalidad de Dios. 
+TRADUCCIÓN
+¡Oh, descendiente de Bharata! El primer milenio de la segunda mitad de la vida de Brahma también se conoce como el milenio Varaha, debido a que la Personalidad de Dios aparece en ese milenio como la encarnación cerdo. 
+SIGNIFICADO
+Los diferentes milenios conocidos como los kalpas Brahma, Padma y Varaha son un poco desconcertantes para el hombre común. Hay algunos estudiosos que piensan que estos kalpas son un único y mismo kalpa. De acuerdo con Srila Visvanatha Cakravarti, el Brahma-kalpa del comienzo de la primera mitad parece ser el Padma-kalpa. Sin embargo, podemos simplemente atenernos la texto, y entender que el milenio actual está en la segunda mitad de la duración de la vida de Brahma. 
+VERSO 38
+kalo 'yam dvi- parardhakhyo
+nimesa upacaryate
+avyakrtasyanantasya
+hy anader jagad-atmanah 
+</p>
+<p class='vspace'>kalah—tiempo eterno; ayam—este (como se mide mediante la duración de la vida de Brahma); dvi-parardha-akhyah—medido por las dos mitades de la vida de Brahma; nimesah—menos de un segundo; upacaryate—es así medido; avyakrt-asya—de aquel que es inmutable; anantasya—del ilimitado; hi—ciertamente; anadeh—de aquel que no tiene comienzo; jagat-atmanah—del alma del universo. 
+TRADUCCIÓN
+La duración de las dos partes de la vida de Brahma, como se mencionó anteriormente, se estima que es igual a un nimesa [menos de un segundo] para la Suprema Personalidad de Dios, que es inmutable e ilimitado, y la causa de todas las causas del universo. 
+SIGNIFICADO
+El gran sabio Maitreya ha dado una descripción considerable del tiempo de diferentes dimensiones, comenzando desde el átomo y ascendiendo hasta la duración de la vida de Brahma. Ahora, intenta dar una idea del tiempo de la ilimitada Personalidad de Dios. ánicamente da una clave de Su tiempo ilimitado, usando como pauta la vida de Brahma. Toda la duración de la vida de Brahma se estima que es menos de un segundo del tiempo del Señor, como se explica en la Brahma-samhita (5.48) de la siguiente manera: 
+yasyaika-nisvasita-kalam athavalambya
+jivanti loma-vilaja jagad-anda-nathah
+visnur mahan sa iha yasya kala-viseso
+govindam adi-purusam tam aham bhajami
+«Yo adoro a Govinda, la Suprema Personalidad de Dios, la causa de toda causa, cuya porción plenaria es Maha-Visnu. Todos los directores de los innumerables universos [los brahmas] viven únicamente refugiándose en el tiempo que ocupa una de Sus respiraciones». Los impersonalistas no creen en la forma del Señor, y, por tanto, difícil es que crean en el sueño del Señor. Obtienen su idea a partir de una base débil de conocimiento; todo lo calculan en términos de la capacidad del hombre. Creen que la existencia del Supremo es justamente lo opuesto a la existencia humana activa; debido a que el ser humano tiene sentidos, el Supremo debe carecer de percepción sensoria; debido a que el ser humano tiene una forma, el Supremo debe ser amorfo; y debido a que el ser humano duerme, el Supremo no debe dormir. El Srimad-Bhagavatam, sin embargo, no está de acuerdo con esos impersonalistas. Se afirma claramente aquí que el Señor Supremo descansa en estado de yoga-nidra, como se explicó anteriormente. Y debido a que duerme, naturalmente ha de respirar, y la Brahma-samhita confirma que dentro de Su período respiratorio nacen y mueren innumerables brahmas. 
+Existe un completo acuerdo entre el Srimad-Bhagavatam y la Brahma-samhita. El tiempo eterno nunca se pierde con la vida de Brahma. Continúa, pero no tiene capacidad de controlar a la Suprema Personalidad de Dios, debido a que el Señor es el controlador del tiempo. En el mundo espiritual indudablemente hay tiempo, pero éste no controla las actividades. El tiempo es ilimitado, y el mundo espiritual es también ilimitado, ya que todo lo que hay allí existe en el plano absoluto. 
+VERSO 39
+kalo 'yam paramanv-adir
+dvi-parardhanta isvarah
+naivesitum prabhur bhumna
+isvaro dhama-maninam 
+</p>
+<p class='vspace'>kalah—el tiempo eterno; ayam—este; parama-anu—átomo; adih—comenzando desde; dvi-parardha—dos grandes períodos de tiempo; antah—hasta el final; isvarah—controlador; na—nunca; eva—ciertamente; isitum—para controlar; prabhuh—capaz; bhumnah—del Supremo; isvarah—controlador; dhama-maninam— de aquellos que están absortos en el cuerpo. 
+TRADUCCIÓN
+El tiempo eterno es ciertamente el controlador de diferentes dimensiones, desde la del átomo hasta las grandes divisiones de la duración de la vida de Brahma; pero, no obstante, está controlado por el Supremo. El tiempo puede controlar sólo a aquellos que están absortos en el cuerpo, incluso ascendiendo hasta Satyaloka o los otros planetas superiores del universo. 
+VERSO 40
+vikaraih sahito yuktair
+visesadibhir avrtah
+andakoso bahir ayam
+pañcasat-koti-vistrtah
+</p>
+<p class='vspace'>vikaraih—mediante la transformación de los elementos; sahitah—juntamente con; yuktaih—siendo amalgamados así; visesa—manifestaciones; adibhih—por ellas; avrtah—cubierto; anda-kosah—el universo; bahih—fuera; ayam—este; pañcasat—cincuenta; koti—diez millones; vistrtah—extendido. 
+TRADUCCIÓN
+Este mundo material fenoménico se extiende en un diámetro de seis mil millones de kilómetros, en forma de una combinación de ocho elementos materiales, transformados en dieciséis categorías adicionales, por dentro y por fuera, de la siguiente manera. 
+SIGNIFICADO
+Como se explicó anteriormente, el mundo material por entero es un despliegue de dieciséis diversidades y ocho elementos materiales. Los estudios analíticos del mundo material constituyen la materia de la que trata la filosofía sankhya. Las primeras dieciséis diversidades son los once sentidos y los cinco objetos de los sentidos, y los ocho elementos están constituidos por la materia densa y la sutil, es decir, la tierra, el agua, el fuego, el aire, el cielo, la mente, la inteligencia y el ego. Todos éstos, en conjunto, se distribuyen por todas partes del universo, el cual se extiende diametralmente por seis mil millones de kilómetros. Además de este universo que conocemos, hay innumerables otros universos. Algunos de ellos son más grandes que éste, y todos ellos se agrupan bajo elementos materiales similares, como se describe a continuación. 
+VERSO 41
+dasottaradhikair yatra
+pravistah paramanuvat
+laksyate 'ntar-gatas canye
+kotiso hy anda-rasayah
+</p>
+<p class='vspace'>dasa-uttara-adhikaih—con un espesor diez veces mayor; yatra—en el cual; pravistah—entró; parama-anu-vat—como átomos; laksyate—(la masa de universos) aparece como; antah-gatah—se juntan; ca—y; anye—en el otro; kotisah— agrupados; hi—para; anda-rasayah—inmenso conjunto de universos. 
+TRADUCCIÓN
+Cada una de las capas de elementos que cubren los universos es diez veces más gruesa que la anterior, y todos los universos agrupados aparecen como átomos en un inmenso conjunto.
+SIGNIFICADO
+Las coberturas de los universos también están constituidas por los elementos tierra, agua, fuego, aire y éter, y cada una es diez veces más gruesa que la anterior. La primera cobertura del universo es de tierra, y es diez veces más gruesa que el propio universo. Si el universo tiene un tamaño de seis mil millones de kilómetros, entonces el tamaño de la cobertura de tierra del universo es de seis mil millones multiplicado por diez. La cobertura de agua es diez veces mayor que la cobertura de tierra, la cobertura de fuego es diez veces mayor que la cobertura de agua, la cobertura de aire es diez veces mayor que la de fuego, la cobertura de éter es aún diez veces mayor que la de aire, y así sucesivamente. El universo que se encuentra dentro de las coberturas de materia aparece como un átomo en comparación con las coberturas, y el número de universos les es desconocido incluso a aquellos que pueden estimar las coberturas de los universos.
+VERSO 42
+tad ahur aksaram brahma
+sarva-karana-karanam
+visnor dhama param saksat
+purusasya mahatmanah
+</p>
+<p class='vspace'>tat—eso; ahuh—se dice; aksaram—infalible; brahma—el supremo; sarva-karana—toda causa; karanam—la causa suprema; visnoh dhama—la morada espiritual de Visnu; param—el supremo; saksat—sin duda; purusasya—de la encarnación purusa; mahatmanah—de Maha-Visnu.
+TRADUCCIÓN
+Por consiguiente, se dice que la Suprema Personalidad de Dios, Sri Krishna, es la causa original de toda causa. Así pues, la morada espiritual de Visnu es eterna, sin duda alguna, y es también la morada de Maha-Visnu, el origen de todas las manifestaciones. 
+SIGNIFICADO
+Sri Maha-Visnu, que Se encuentra descansando en yoga-nidra en el océano Causal y creando innumerables universos mediante Su proceso respiratorio, sólo aparece temporalmente en el mahat-tattva para la manifestación temporal de los mundos materiales. Es una porción plenaria de Sri Krishna, y, en consecuencia, aunque no es diferente de Sri Krishna, Su aparición formal como encarnación en el mundo material es temporal. La forma original de la Personalidad de Dios es de hecho el svarupa, la forma verdadera, y reside eternamente en el mundo Vaikuntha (Visnuloka). La palabra mahatmanah se utiliza aquí para indicar a Maha-Visnu, y Su verdadera manifestación es Sri Krishna, que recibe el nombre de parama, como se confirma en la Brahma-samhita:
+isvarah paramah krsnah
+sac-cid-ananda-vigrahah
+anadir adir govindah
+sarva-karana-karanam
+«El Señor Supremo es Krishna, la Personalidad de Dios original, conocido como Govinda. Su forma es eterna, y llena de bienaventuranza y conocimiento, y Él es la causa original de toda causa.»
+Así terminan los significados de Bhaktivedanta del Capítulo Undécimo del Canto Tercero del Srimad-Bhagavatam, titulado: «Cálculo del tiempo a partir del átomo».
+</p>
+<div class='vspace'></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on August 30, 2012, at 10:28 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

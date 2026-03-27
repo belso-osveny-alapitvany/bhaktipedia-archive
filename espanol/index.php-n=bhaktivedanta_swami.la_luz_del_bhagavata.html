@@ -1,0 +1,879 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - La Luz del Bhagavata </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_swami - RSS Feed'
+      href='index.php-n=bhaktivedanta_swami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_swami.la_luz_del_bhagavata' method='get'><input type='hidden' name='n' value='bhaktivedanta_swami.la_luz_del_bhagavata' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - La Luz del Bhagavata "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_swami.la_luz_del_bhagavata-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a></h5>
+<hr />
+<div class='vspace'></div><h1>La Luz del Bhagavata</h1>
+<dl><dd><ul><li>-Pedimos disculpas por no poder plasmar las ilustraciones del libro en este sitio web-
+</li></ul></dd></dl><p class='vspace'>Introducción
+</p>
+<p class='vspace'>De todas las obras clásicas en el vasto tesoro de la sempiterna literatura Védica de la India, el Srimad- Bhagavatam es la más sublime y preciosa, porque expresa  la esencia  de la verdad espiritual en hermosos pasajes poéticos. En el Décimo Canto de esta incomparable obra maestra, hay una descripción del otoño de la India en época de lluvias, como una extensa metáfora para explicar diferentes aspectos de la sabiduría trascendental. Por ejemplo, los cielos nublados de las noches otoñales, que cubren la luna y las estrellas, representan el materialismo de la era actual, que oculta la verdadera sabiduría de la mente humana.
+</p>
+<p class='vspace'>Cuando en 1961, Su Divina Gracia A. C. Bhaktivedanta Swami Prabhupada  fue invitado a asistir al Congreso para el Cultivo del Espíritu Humano, en Japón, concibió la idea de presentar la descripción del otoño del Bhagavatam a través de una serie de pinturas acompañadas por sendos textos. El título que le puso fue La Luz del Bhagavata. Seleccionando  (cuarenta y ocho o cuarentiocho) versos de gran impacto visual, Srila Prabhupada preparó comentarios detallados para los versos, así como las notas para guiar a los artistas en el diseño de los cuadros. Al ver que le sería imposible asistir a la conferencia, abandonó el proyecto.
+Con el tiempo, algunos discípulos de Srila Prabhupada, reconociendo la importancia literaria y artística de La Luz del Bhagavata, encargaron a la renombrada artista china Madame Li Yun Sheng la ejecución de las ilustraciones tal como él las había concebido. Ahora, estas primorosas pinturas aparecen en este volumen, junto con el texto original. En La Luz del  Bhagavata, la prosa evocativa de Srila Prabhupada y las atractivas pinturas de Madame Li, en el clásico estilo Gongbi, se combinan para dar una fresca y reveladora idea de las vitales y perdurables verdades de la tradición espiritual más antigua del mundo.
+</p>
+<p class='vspace'>Contratapa
+</p>
+<p class='vspace'>Su Divina Gracia A. C. Bhaktivedanta Swami Prabhupada (1896-1977) es reconocido como el embajador cultural más grande de la India. Durante su vida escribió más de setenta volúmenes de traducciones y estudios sumarios de los clásicos espirituales más importantes de la India. Se han vendido más de 150 millones de copias de sus libros, impresos en más de cuarenta idiomas. El noventa por ciento de las principales universidades del mundo han adquirido colecciones completas de sus obras más importantes. Él fundó la Sociedad Internacional para la Conciencia de Krishna, hecho que ha sido considerado por reconocidos eruditos como un significativo evento en la historia religiosa moderna.
+</p>
+<p class='vspace'>"Los libros de Srila Prabhupada hay que guardarlos como un tesoro. Nadie que lea estos libros con una mente abierta, cualquiera sea su fe o concepción filosófica, puede dejar de sentirse conmovido o impresionado."<br />Dr. Barry Gelade<br />Profesor de Sicología<br />Universidad de Oxford
+</p>
+<p class='vspace'>"Las obras de Srila Prabhupada revelan una profunda erudición... Sus libros son una verdadera enciclopedia de la filosofía, la religión y la cultura de la India."
+Dr. Ranjan Borra<br />Biblioteca del Congreso<br />de los Estados Unidos
+</p>
+<p class='vspace'>"Su Divina Gracia A. C. Bhaktivedanta Swami Prabhupada está realizando una valiosa labor y sus libros son contribuciones significativas para la salvación de la humanidad."<br />Sri Lal Bahudar Shastri<br />Ex-Primer Ministro de la India
+</p>
+<p class='vspace'>Prefacio
+</p>
+<p class='vspace'>Ofrecemos nuestras respetuosas reverencias a los pies de loto de Su Divina Gracia A. C. Bhaktivedanta Swami Prabhupada, Fundador-acarya de la Sociedad Internacional para la Conciencia de Krishna, quien ha entregado La Luz del Bhagavata a todo el mundo. Estamos complacidos de presentar para el placer de nuestro maestro esta publicación de su obra sublime, La Luz del Bhagavata.
+De todos los escritos de Su Divina Gracia, este trabajo es quizá el más singular. Fue escrito en Vrndavana, en 1961, en respuesta a una invitación a asistir a una conferencia mundial— el Congreso para el Cultivo del Espíritu Humano— a celebrarse en Japón. Como la mayoría de los participantes a la conferencia eran orientales, Srila Prabhupada reflexionó profundamente sobre la manera más apropiada de presentar las eternas enseñanzas del Srimad-Bhagavatam a los orientales. El Bhagavatam original fue escrito hace cinco mil años en la forma de un libro sumamente extenso, compuesto de dieciocho mil versos. Los participantes a la conferencia no tendrían tiempo para oírlo todo. Por lo tanto, él escogió para la presentación, un capítulo de la versión original.
+</p>
+<p class='vspace'>El capítulo que seleccionó era una descripción del otoño en Vrndavana, el lugar de advenimiento del Señor Krishna. Srila Prabhupada sabía que los orientales son muy aficionados a las descripciones de la naturaleza y que la estación del otoño es especialmente auspiciosa para ellos. Presentar la filosofía espiritual con ejemplos de la naturaleza sería lo más adecuado para su comprensión. Para cada fenómeno de la estación se podría presentar una enseñanza paralela. Por ejemplo, el oscuro y nublado atardecer de la estación lluviosa del otoño, cuando las estrellas son invisibles, se compara con la actual civilización materialista y atea, en que las brillantes estrellas de la sabiduría Bhagavata (los devotos y las Escrituras) están temporalmente oscurecidas. En total, Srila Prabhupada compuso cuarenta y ocho (o cuarentiocho) comentarios para acompañar los versos del capítulo en referencia.
+</p>
+<p class='vspace'>El proyecto de Srila Prabhupada consistía en que los organizadores de la conferencia encontraran un artista oriental cualificado para ilustrar cada verso, y escribió las instrucciones con las cuales el artista podría diseñar cada pintura. Él esperaba que las pinturas y las explicaciones que las acompañaban constituyeran una exhibición impresionante para los asistentes a la conferencia. De ser posible, deseaba que se publicara un libro conteniendo las ilustraciones y los textos.
+Debido a circunstancias desafortunadas, Srila Prabhupada no pudo asistir a la conferencia y todo el proyecto de La Luz del Bhagavata  fue pospuesto. De hecho, en el momento de la desaparición de Srila Prabhupada, La Luz del Bhagavata  permanecía sin ser publicada y todavía no se habían hecho las ilustraciones.
+</p>
+<p class='vspace'>Por eso, la tarea de completar este magno proyecto fue dejada en manos del Bhaktivedanta Book Trust, la casa editorial dedicada a imprimir todos los libros de Srila Prabhupada. Particularmente, el trabajo le fue asignado a la sucursal del Book Trust en Hong Kong, ya que Srila Prabhupada tenía especialmente destinado este libro para los orientales. Después de mucho buscar, tuvimos la gran fortuna de conseguir la colaboración de la renombrada artista Madame Li Yung Sheng, cuyo maduro talento creativo y delicado pincel podían completar de manera apropiada las hermosas descripciones del otoño presentadas por Prabhupada. Así, la hermosa refulgencia de la luz del Bhagavata  puede ahora brillar sobre el mundo entero.
+</p>
+<p class='vspace'>Este libro ha sido dividido en dos secciones para adecuarse a diferentes tipos de lectores. Aquellos que prefieren contemplar con imaginación  poética, apreciarán la primera parte que contiene las 48 hermosas reproducciones a color, realizadas en menos de un año por Madame Li, esmerada en los más mínimos detalles pese a lo avanzado de su edad y a que a veces le fallaba la vista. Indudablemente, esta colección presenta la culminación de la larga y destacada carrera de una de las grandes artistas de la China moderna. El estilo de pintura Gongbi, junto con las descripciones poéticas de Srila Prabhupada que aparecen a un lado, forman una incomparable combinación de las dos tradiciones culturales más antiguas del mundo— India y China.
+</p>
+<p class='vspace'>Los lectores que deseen penetrar más profundamente en la filosofía de La Luz del Bhagavata, pueden continuar con la sección en blanco y negro del libro. Allí encontrarán los comentarios completos escritos por Srila Prabhupada junto a las reproducciones en miniatura de las pinturas que los ayudará a identificar la pintura que está siendo descrita.
+</p>
+<p class='vspace'>LOS EDITORES
+</p>
+<p class='vspace'>Título del original "Light of the Bhagavata"<br />Este libro fue traducido al español del original en inglés por:
+</p>
+<p class='vspace'>Vasudeva Parayana Dasa (Juan Ugo)<br />Daru Krishna Dasa (Daniel Ghiotti)<br />Doctora Dora Bazán<br />Homero Morey
+</p>
+<p class='vspace'>Ilustración 1
+</p>
+<p class='vspace'>La llegada de las nubes, acompañada de truenos y destellos de relámpago por todo el cielo, proporciona una imagen de vivificante esperanza. Cubierto por nubes azul oscuro, el cielo aparece vestido artificialmente. Los truenos y relámpagos, dentro de las nubes, son signos de esperanza para una nueva forma de vida.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El cielo sereno, ilimitadamente espacioso, se compara con la Verdad Absoluta. Las entidades vivientes son verdades manifestadas en relación con las modalidades de la naturaleza material. La nube azul oscuro cubre sólo una parte insignificante del cielo ilimitado y esta cubierta fraccionaria es comparada con la cualidad de la ignorancia o el olvido de la verdadera naturaleza del ser viviente. Una entidad viviente es tan pura como el inconmensurable cielo. Sin embargo, en su tendencia a disfrutar del mundo material, es cubierta por la nube del olvido. Debido a esta cualidad, llamada tamas (ignorancia), se considera diferente del Todo Absoluto y olvida su pureza, la cual es similar a la del cielo despejado. Este olvido ocasiona el separatismo por el ego falso. Así, las entidades vivientes olvidadizas individual y colectivamente emiten sonidos como las nubes estruendosas: "Yo soy esto", "Esto es nuestro", o "Esto es mío". Esta inclinación de falso separatismo, es llamada la cualidad de rajas y origina una fuerza para crear un dominio sobre la modalidad de tamas. El destello del relámpago es el único fulgor de esperanza que puede conducirlo a uno a la senda del conocimiento y por lo tanto, es comparado con la modalidad de sattva, o bondad.
+El cielo inconmensurable, o la omnipenetrante Verdad Absoluta (brahman), no es diferente de la parte cubierta del cielo, pero, simultáneamente la totalidad del cielo es diferente de su parte fraccional que sí puede ser cubierta por una nube oscura. La nube, acompañada por truenos y relámpagos, no puede cubrir el cielo inconmensurable. 
+</p>
+<p class='vspace'>Por lo tanto, la Verdad Absoluta, comparada con la totalidad del cielo, es simultáneamente una con la entidad viviente manifestada y diferente de ella. La entidad viviente es únicamente una muestra de la Verdad Absoluta y puede verse velada por la circunstancial nube de la ignorancia.
+</p>
+<p class='vspace'>Hay dos grupos de filósofos, generalmente conocidos como los monistas y los dualistas. El monista cree en la unidad de la Verdad Absoluta y la entidad viviente, pero el dualista cree en las identidades separadas de la entidad viviente y la Verdad Absoluta. Por encima de estas dos clases de filósofos, existe la filosofía de acintya-bhedabheda tattva o la verdad de unidad y diferencia simultáneas. Esta filosofía fue presentada por el Señor Sri Caitanya Mahaprabhu en Su explicación de los Vedanta-sutras. El Vedanta es el canal de las interpretaciones filosóficas, y por lo tanto, no puede ser propiedad exclusiva de ninguna clase de filósofo. Un buscador sincero de la Verdad Absoluta se llama Vedantista. Veda significa "conocimiento". Cualquier especialidad del conocimiento es una parte del conocimientoVédico Vedanta significa la conclusión última de todas las ramas del conocimiento. Así como a la filosofía se la llama ciencia de todas las ciencias, Vedanta es la filosofía última de todas las especulaciones filosóficas.
+</p>
+<p class='vspace'>Ilustración 2
+</p>
+<p class='vspace'>El calor abrasador del Sol evapora agua de los mares, ríos, lagos y estanques y en todas partes hay poca agua. La gente siente sed y mira al cielo buscando lluvia, pero sin esperanzas. Sin embargo, justo en el momento oportuno comienzan a caer lluvias torrenciales por todas partes, aun sobre las piedras duras. Y la Tierra se inunda.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El Estado benefactor impone a sus ciudadanos diversas formas de impuestos abrasadores: impuesto a la renta, impuesto a las ventas, impuesto a la propiedad, impuesto a los terminales de transporte, impuesto al consumo, impuesto de Aduanas y tantos otros. Pero a su debido tiempo cuando se acumula una gran suma de dinero proveniente de los impuestos ésta se utiliza para el bienestar de los ciudadanos en formas diversas No obstante, a veces sucede que los beneficios provenientes de lo recaudado en los impuestos cae como lluvia sobre hombres de Estado que tienen corazón de piedra, incapaces de utilizar el dinero apropiadamente y que lo despilfarran para la complacencia de sus sentidos.
+</p>
+<p class='vspace'>El hombre común cree que la distribución desigual de la lluvia representa la ira de la naturaleza por nuestros actos pecaminosos, y en un sentido esto es cierto. Por lo tanto, para tener una distribución equitativa de los impuestos recaudados por el Estado, los ciudadanos necesitan ser escrupulosamente honestos y virtuosos. Deben ser honestos con el pago de los impuestos al Estado y deben tener representantes honestos para vigilar la administración. En la moderna disposición de estados democráticos, los ciudadanos no tienen motivos para quejarse, ya que toda la administración es conducida por el mismo pueblo. Si el pueblo mismo es deshonesto, la maquinaria administrativa será corrupta. A pesar de que a un mal gobierno del pueblo se le dé un nombre bueno o elegante, si el pueblo no es bueno, no puede tener un buen gobierno, no importa qué partido maneje la administración. Por lo tanto, el buen carácter en la conciencia de la masa del pueblo es el principio más necesario para un buen gobierno y para la distribución equitativa de la riqueza.
+</p>
+<p class='vspace'>Antiguamente los reyes recibían clases de filosofía política de parte de maestros ideales y, aldea por aldea, se enseñaba a los ciudadanos los principios de la autorrealización, de acuerdo con los códigos védicos para la elevación de la sociedad, tanto material como espiritual. En consecuencia, los ciudadanos eran conscientes de Dios y honestos en su conducta y los reyes eran responsables por el bienestar del Estado. Estos mismos principios básicos son aceptados por los gobiernos democráticos en la actualidad, ya que un partido político  irresponsable siempre es destituido por votación y debe entregar el poder al partido responsable para un mejor gobierno. En la administración cósmica hay un solo partido, formado por los sirvientes de Dios y las deidades responsables de los diferentes planetas mantienen las leyes cósmicas de acuerdo con las órdenes del Señor Supremo. Pero el pueblo sufre a causa de su propia insensatez.
+</p>
+<p class='vspace'>Y, ¿cuál es esa insensatez? En el Bhagavad-gita se dice que la gente debe ejecutar yajñas, o sacrificios para la satisfacción del Supremo.* El Supremo es omnipenetrante. Por lo tanto, la gente debe aprender a ejecutar yajñas para satisfacer a la omnipenetrante Verdad Suprema. Existen diferentes yajñas prescritos para diferentes eras, y en la era actual de la industria del hierro, se recomienda el yajña  que ilumina la mente de las masas para la conciencia de Dios. Este proceso de yajña se llama sankirtana-yajña, o agitación de las masas para invocar la pérdida conciencia espiritual del hombre. Tan pronto como se siga este movimiento, con cantos, danzas y banquetes espirituales, la gente automáticamente se volverá obediente y honesta.
+La obediencia es la primera ley de la disciplina. La gente se ha vuelto desobediente de las leyes de Dios y, por lo tanto, ni la lluvia ni la riqueza se distribuyen equitativamente. Un hombre que es desobediente no puede tener ninguna buena cualificación. Cuando son desobedientes los líderes que conducen a un pueblo desobediente, toda la atmósfera de la administración se contamina y se llena de peligros, tal como cuando un ciego conduce a otros ciegos. Por lo tanto, los impuestos del estado deben ser empleados para edificar el carácter de toda la gente. Esto traerá felicidad a los ciudadanos del Estado.
+</p>
+<div class='vspace'></div><ul><li>annad bhavanti bhutani parjanyad anna-sambhavah
+</li></ul><p>yajñad bhavati parjanyo yajñah karma-samudbhavah
+</p>
+<p class='vspace'>Todos los cuerpos vivos subsisten de granos alimenticios, los cuales se producen como resultado de las lluvias. Las lluvias se producen como resultado de yajña [sacrificio], y el yajña nace de los de los deberes prescritos.
+(Bg 3.14)
+</p>
+<p class='vspace'>Ilustración 3
+</p>
+<p class='vspace'>Atraídas por la electricidad en todo el cielo e impelidas por vientos poderosos, las nubes cubren gradualmente la superficie de la Tierra para satisfacer a la gente necesitada, dándoles agua, que es la sustancia de sus vidas. Las nubes derraman lluvia sobre el hombre, como la misericordia del Señor, quien siempre es bondadoso con el ser viviente necesitado.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Debemos saber siempre que Dios es permanentemente bondadoso con nosotros. A pesar de nuestra gran desobediencia a las leyes de la naturaleza establecidas por Dios, el Señor es suficientemente bondadoso como para encargarse de nuestra manutención. El agua es uno de los elementos más importantes para nuestra manutención, ya que sin agua no podemos producir granos ni mitigar nuestra sed. También se necesita abundante agua para muchos otros propósitos. Así, el Señor ha preservado el agua en las tres cuartas partes del planeta y la ha hecho salada para que se conserve. El agua salada no se descompone y éste es un arreglo de la providencia. 
+</p>
+<p class='vspace'>El Señor ha puesto al poderoso Sol a evaporar el agua de los planetas como la Tierra y destilarla, transformándola en agua pura dentro de las nubes, para luego almacenarla sobre los picos de las montañas, tal como nosotros almacenamos agua en tanques elevados para su distribución posterior. Parte de la reserva de agua es refrigerada en forma de hielo de tal manera que no inunde la Tierra inútilmente. El hielo se derrite gradualmente a lo largo del año, fluye a través de los grandes ríos y se desliza nuevamente hacia el mar para su preservación.
+Por lo tanto, las leyes de la naturaleza de Dios no son ciegas ni accidentales, como concluyen los hombres de escaso conocimiento. Detrás de las leyes de la naturaleza se encuentra el cerebro viviente de Dios, tal  como  siempre existe un legislador detrás de todas las leyes del Estado. No interesa si vemos o no al legislador detrás de las leyes comunes; debemos admitir que existe un legislador. La materia nunca puede actuar automáticamente, sin una mano viviente y, por lo tanto, debemos admitir la existencia de Dios, el ser viviente supremo, tras las leyes de la naturaleza. El Señor dice en el Bhagavad-gita que la naturaleza trabaja bajo Su supervisión.* La naturaleza es únicamente una energía, detrás la energía existe una central y un cerebro, tal como detrás la energía eléctrica existe una central eléctrica, donde todo es conducido por el cerebro del ingeniero residente. La naturaleza material trabaja perfecta y no ciegamente, debido a la supervisión del Supremo y Poderoso Dios. En los himnos védicos (Atharva Veda) esto mismo se confirma. Es únicamente bajo la supervisión de Dios que se conducen todas las leyes naturales.
+</p>
+<p class='vspace'>En caso de extrema necesidad el Señor distribuye Su misericordia en forma de lluvias sobre la tierra ardiente. Él suministra agua cuando estamos prácticamente al borde de la muerte por su escasez. Dios es indudablemente misericordioso, pero nos otorga Su misericordia cuando la necesitamos más. Esto es así debido a que olvidamos a Dios tan pronto como obtenemos Su misericordia. Por lo tanto, debemos recordar la misericordia de Dios constantemente  si deseamos evitar la aflicción. A pesar del olvido antes descrito estamos eternamente relacionados con Él. El Bhagavad-gita confirma que las leyes de la naturaleza son severas debido a que son conducidas por tres diferentes modalidades. Pero alguien que se rinde al Señor vence fácilmente la severidad de la naturaleza.**
+</p>
+<div class='vspace'></div><ul><li>mayadhyaksena prakrtih suyate sa-caracaram
+</li></ul><p>hetunanena kaunteya jagad viparivartate
+</p>
+<p class='vspace'>Esta naturaleza material, que es una de Mis energías, funciona bajo Mi dirección, ¡oh, hijo de Kunti!, y produce a todos los seres móviles e inmóviles. Por orden suya, esta manifestación es creada y aniquilada una y otra vez.
+(Bg 9.10)
+</p>
+<div class='vspace'></div><dl><dd><ul><li>daivi hy esa guna-mayi mama maya duratyaya
+</li></ul></dd></dl><p>mam eva ye prapadyante mayam etam taranti te
+</p>
+<p class='vspace'>Esta energía divina Mía, integrada por las tres modalidades de la naturaleza material, es difícil de superar. Pero aquellos que se han entregado a Mí, pueden atravesarla fácilmente.
+(Bg 7.14)
+</p>
+<p class='vspace'>Ilustración 4
+</p>
+<p class='vspace'>Después de las lluvias torrenciales, los campos y bosques en todas direcciones se ven verdes y saludables. Así ellos se parecen a un hombre que ha cumplido severas austeridades por algún beneficio material y ha logrado ya su propósito, ya que un hombre así, es fuerte, saludable y atractivo.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El verdor de la estación lluviosa no es más que una demostración temporal. Se ve muy agradable, pero debemos recordar que no durará. Similarmente, existen personas que se someten a severas austeridades por algún beneficio material. Aquellos que son sensatos, evitan esto. Las austeridades severas por beneficios temporales son simplemente una pérdida de tiempo y energía. La pérdida y la ganancia material están destinadas de acuerdo con la formación de cada cuerpo particular. Existen 8, 400, 000 especies de vida y cada tipo de cuerpo está destinado a disfrutar y sufrir de acuerdo con su formación particular. Los placeres y los sufrimientos corporales del hijo de un hombre rico son diferentes a los del hijo de un hombre pobre. Aunque nadie se somete a severas austeridades para obtener miserias, éstas llegan sin que se lo pidan. Similarmente, la felicidad que estamos destinados a disfrutar, nos llega aun sin desearla.
+</p>
+<p class='vspace'>Aun si fuéramos capaces de evitar la aflicción y disfrutar artificialmente de alguna felicidad material por méritos temporales, no representa ningún beneficio verdadero en la vida. Nuestro deber es lograr felicidad permanente y vida eterna.  Es únicamente con tal propósito —por el máximo beneficio— que debemos emprender todo tipo de penitencias y austeridades.
+</p>
+<p class='vspace'>Este beneficio máximo se puede lograr en la forma humana de vida. La felicidad permanente es posible cuando uno se encuentra libre de las causas materiales de la felicidad, ya que la continuación de la esclavitud material significa la continuación de las tres miserias. La vida humana sirve para terminar con estas miserias.
+</p>
+<p class='vspace'>No debemos tratar de ser hermosos como las flores de la estación o el verdor, que florece en la estación lluviosa, pero que se fatiga en el invierno. No es nada deseable vivificarse con las nubes de ignorancia y disfrutar de la visión  del verdor temporal. Uno debe tratar de vivir en el despejado cielo infinito inundado por los rayos del Sol y la Luna. Esto es lo que realmente deseamos. Una vida de libertad en eternidad, conocimiento completo y una atmósfera bienaventurada es el profundo deseo de un alma iluminada. Debemos someternos a todo tipo de austeridades y penitencias para alcanzar esa fuente permanente de felicidad.
+</p>
+<p class='vspace'>Ilustración 5
+</p>
+<p class='vspace'>Las noches en la estación lluviosa son totalmente oscuras. No se pueden ver ni las estrellas centelleantes en el horizonte ni la hermosa Luna. Ellas están cubiertas por las nubes. Y las insignificantes luciérnagas, se hacen notorias en ausencia de las luminarias del cielo.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Tal como se producen los cambios de estación durante el año, también existen cambios de eras dentro de la duración del mundo cósmico manifestado. Estas eras cambiantes se llaman yugas, o periodos. Así como existen tres modalidades de la naturaleza, también existen diferentes eras dominadas por estas tres modalidades. El periodo dominado por la modalidad de la bondad, se llama Satya-yuga, el periodo de la pasión, se llama Treta yuga, el período de la pasión y la ignorancia combinadas se llama Dvapara-yuga y el periodo de la oscuridad y la ignorancia (el último periodo) se llama Kali-yuga o la era de las riñas. La palabra Kali significa "riña". Kali-yuga se compara a la estación lluviosa debido a que muchas dificultades de la vida se experimentan durante esta húmeda estación.
+En Kali-yuga hay escasez de gobiernos adecuados. 
+</p>
+<p class='vspace'>Al atardecer uno puede guiarse por las estrellas y la Luna, pero en la estación lluviosa la luz que guía proviene de insignificantes luciérnagas. La verdadera luz de la vida es el conocimiento Védico. El Bhagavad-gita afirma que el propósito del Veda es conocer a la toda poderosa Personalidad de Dios*, pero en esta era de riña, existen riñas hasta por el tema de la existencia de Dios. En la civilización atea de la era de riña hay innumerables sociedades, comunidades y sectas religiosas; la mayoría de las cuales está tratando de desterrar a Dios de la religión. En ausencia del Sol y las estrellas, las luciérnagas quieren destacar.  Estos pequeños grupos, que siguen diversos conceptos religiosos, son como luciérnagas tratando de destacar ante los ojos de la gente ignorante. Ahora existen algunas encarnaciones falsas que la gente sigue, sin la autoridad de las literaturas Védicas. También hay una permanente competencia entre los grupos de una y otra encarnación. El conocimiento Védico proviene de una tradición desde el maestro espiritual a través de la cadena de sucesión discipular y el conocimiento debe adquirirse sin desviación a través de esta cadena. En la  actual era de riñas, la cadena se ha roto aquí y allá, y ahora el Veda es interpretado por hombres desautorizados que no lo comprenden. Los así llamados seguidores de los Vedas, niegan la existencia de Dios, tal como en la oscuridad de un atardecer nublado las luciérnagas niegan la existencia de la Luna y las estrellas. La gente sensata no debe permitir que la acechen tales hombres inescrupulosos. 
+</p>
+<p class='vspace'>El Bhagavad-gita es el resumen de todo el conocimiento Védico debido a que es hablado por la misma Personalidad de Dios que impartió el conocimiento Védico dentro del corazón de Brahma, el primer ser creado del universo. El Srimad-Bhagavatam fue hablado especialmente para guiar a la gente de esta era, oscurecida por la nube de la ignorancia.
+</p>
+<div class='vspace'></div><ul><li> sarvasya caham hrdi sannivisto mattah smrtir jñanam apohanam ca
+</li></ul><p>vedais ca sarvair aham eva vedyo vedanta-krd veda-vid eva caham
+</p>
+<p class='vspace'>Yo me encuentro en el corazón de todos, y de Mí proceden el recuerdo, el conocimiento y el olvido. Es a Mí a quien hay que conocer a través de todos los Vedas. En verdad, Yo soy el compilador de El Vedanta y el conocedor de los Vedas.
+(Bg. 15.15)
+</p>
+<p class='vspace'>Ilustración 6
+</p>
+<p class='vspace'>Al oír el sonido de las lluvias torrenciales, las ranas salen de las cuevas de las montañas y comienzan a cantar, como brahmacaris  que   cantan himnos Védicos por orden del maestro espiritual.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>En esta era de civilización atea, los sabios de los grupos religiosos reconocidos mundialmente y que creen en Dios, deben salir de sus lugares de reclusión y predicar la ciencia de Dios, la Voluntad Suprema, a toda la gente. Ahora los hindúes, musulmanes, cristianos y los miembros de los demás grupos que tienen fe convincente en la autoridad de Dios, no deben quedarse ociosamente sentados a observar en silencio el rápido crecimiento de una civilización atea. Existe la voluntad suprema de Dios y ninguna nación o sociedad puede vivir en paz y prosperidad sin la aceptación de esta verdad vital.
+</p>
+<p class='vspace'>La advertencia está allí y los líderes responsables de los grupos religiosos deben reunirse y establecer una declaración formal de principios comunes  de una liga de devotos del Señor. No es necesario que las almas autorrealizadas vivan en reclusión. Las almas autorrealizadas perfectas, ocupadas en el servicio del Señor, no temen a maya, así como los ciudadanos respetuosos de las leyes del Estado nunca temen a la policía. Estos audaces devotos de Dios siempre hablan científicamente acerca de la existencia de Dios, aun frente al riesgo de la muerte. Tales devotos de Dios sienten compasión por las masas, que han olvidado completamente al Señor Supremo y que se ocupan  en la falsa búsqueda de felicidad que culmina en los placeres disfrutados por los cerdos y perros.
+</p>
+<p class='vspace'>Ilustración 7
+</p>
+<p class='vspace'>Los pequeños arroyos, que casi se secaron durante los meses de mayo y junio, ahora comienzan a desbordarse, tal como los presuntuosos que súbitamente desbordan los límites de su presupuesto.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Uno debe aprender la seriedad del mar y de los arroyos. El mar siempre está dentro de sus límites a pesar de que muchos ríos vierten agua en él. En forma similar, uno debe utilizar apropiadamente las ventajas de la vida y no malgastarlas en propósitos que no tienen valor permanente. Las personas sensuales y descontroladas juegan con las ventajas del cuerpo y acumulan riquezas. Pero la fuerza del cuerpo debe utilizarse para la autorrealización, no para la complacencia de los sentidos. Los seres humanos tienen dos clases de temperamento.  Algunos son introspectivos y otros son extravagantes. Los que son extravagantes están enamorados de los aspectos externos de la belleza fenomenal y no tienen idea de la manifestación total. Ellos prácticamente están dormidos a la introspección y son incapaces de obtener  ningún valor permanente de las ventajas de la forma humana, pero alguien que ha desarrollado la introspección es tan serio como el mar. Mientras que los extravagantes duermen tranquilos y en silencio, las personas serias utilizan todas las ventajas de la forma humana de vida.
+</p>
+<p class='vspace'>Aunque las tendencias animalísticas del cuerpo deben ser minimizadas, los que son extravagantes se desbordan temporalmente de disfrute material. Sin embargo tan pronto termina la estación lluviosa de la vida, ellos se secan tanto como el fondo de los ríos. La vida sirve para el propósito adecuado, o sat— aquello que existe para siempre. En el mundo material nada es sat, o eterno, pero el mal negocio del mundo material puede usarse para el mejor propósito. La mente dedicada a la extravagancia es un mal negocio, pero uno puede hacer el mejor uso de la mente mediante la introspección.
+</p>
+<p class='vspace'>Ilustración 8
+</p>
+<p class='vspace'>El colorido verdor del pasto recién brotado, las flores de estación, la umbrela de las ranas, las mariposas y las otras variedades de la estación lluviosa representan perfectamente una familia de bien, absorta en la vanidad de sus posesiones particulares.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Un hombre rico exhibe su opulencia en diferentes formas multicolores. Tiene un buen bungalow residencial, con terreno suficiente y un jardín muy bien cuidado. El bungalow está decorado con muebles y alfombras modernas. Hay automóviles de colores deslumbrantes y un equipo de radio recibiendo y difundiendo noticias coloridas y canciones melodiosas. Todo esto cautiva a su propietario, como si estuviese en el país de los sueños de su propia creación.
+</p>
+<p class='vspace'>El mismo hombre era tan seco como la tierra agotada y no tenía  ninguna de estas opulencias, en ese entonces su comportamiento era sencillo, pero desde que obtuvo todos estos medios materiales de placer, olvidó el principio que establece que todo en el mundo viene y se va como los cambios de estación. El hermoso Fuerte Rojo y el Taj Mahal fueron construidos por Shah Jahan, quien abandonó ese lugar hace mucho tiempo y otros también han venido y se han ido del mismo lugar, como flores de estación. Las posesiones materiales son sólo como flores de estación, o las flores se marchitan, o el jardinero mismo se marcha. Esta es la ley de la naturaleza. Por lo tanto, si queremos vida, conocimiento y bienaventuranza permanentes, debemos buscarlos en otra parte, no en la variable y temporal estación lluviosa, que está inundada de tantas variedades de agradables visiones que se desvanecen cuando la estación termina.
+</p>
+<p class='vspace'>Las manifestaciones materiales de las cosas, no son más que representaciones oscurecidas de la realidad, que se compara a los espejismos del desierto. En el desierto no hay agua, pero el tonto venado corre detrás del agua ilusoria en el desierto para mitigar su corazón sediento. El agua no es irreal, sino que el lugar donde la buscamos es engañoso. El avance de la civilización materialista es como un espejismo en el desierto. El venado corre tras el agua en el desierto a toda velocidad y la ilusión del agua se desplaza hacia adelante a la misma velocidad del venado tonto. El agua existe, pero no debemos buscarla en el desierto. Por su experiencia pasada, una entidad viviente recuerda la verdadera felicidad de su existencia espiritual original, pero, desde que se olvidó de sí misma, busca la felicidad espiritual o permanente en la materia, aunque esto sea imposible de lograr.
+</p>
+<p class='vspace'>Ilustración 9
+</p>
+<p class='vspace'>Una escena pintoresca de los verdes arrozales anima el corazón del agricultor pobre, pero entristece la cara del capitalista, que vive explotando a los campesinos pobres.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Con buenas lluvias, el trabajo del campesino prospera. La agricultura es la más noble de las profesiones. Hace a la sociedad feliz, rica, saludable, honesta y espiritualmente avanzada para alcanzar una vida mejor después de la muerte. La comunidad vaisya, o la clase mercantil, asume esta profesión. En el Bhagavad-gita se describe a los vaisyas como los agricultores naturales, protectores de las vacas y comerciantes en general. Cuando el Señor Sri Krishna  se encarnó en Vrndavana, disfrutó convirtiéndose en el hijo amado de una familia vaisya como esa. Nanda Maharaja fue un gran protector de las vacas. Y el Señor Sri Krishna, como el muy querido hijo de Nanda Maharaja, acostumbraba cuidar los animales de Su padre en los bosques circundantes. A través de Su ejemplo personal, el Señor Sri Krishna quiso enseñarnos el valor de la protección de las vacas. Se dice que Nanda Maharaja poseía novecientas mil vacas, y en la época del Señor Sri Krishna —aproximadamente hace cinco mil años, el territorio conocido como  Vrndavana estaba inundado con leche y mantequilla. Por lo tanto, las profesiones ofrecidas por Dios a la humanidad son la agricultura y la protección de las vacas.
+</p>
+<p class='vspace'>El comercio esta  destinado al transporte de los excedentes de producción a lugares donde son escasos, pero cuando los comerciantes se vuelven demasiado codiciosos y materialistas, se dedican al comercio y a la industria en gran escala. Con la falsa promesa de ganar más dinero, atraen a los pobres agricultores a ciudades industriales y antihigiénicas. El industrial y el capitalista no quieren que el campesino permanezca en su casa, satisfecho con su producción agrícola. Cuando los campesinos se encuentran satisfechos debido a una exuberante cosecha de granos alimenticios, el corazón de  los capitalistas se entristece. Pero el hecho real es que la humanidad debe depender de la agricultura y subsistir en base a ella.
+</p>
+<p class='vspace'>Nadie puede producir arroz y trigo en grandes fábricas de acero. El industrial recurre a los aldeanos para comprar los granos que es incapaz de producir en su fábrica. El pobre agricultor acepta un anticipo del capitalista y vende su producto a un bajo precio. En consecuencia, cuando los granos se producen en abundancia, los campesinos se vuelven más fuertes financieramente y entonces el capitalista se deprime al ser incapaz de explotarlos.
+</p>
+<p class='vspace'>Ilustración 10
+</p>
+<p class='vspace'>Tal como un ser viviente, por prestar servicio al Señor Hari obtiene una forma trascendentalmente atractiva; similarmente, todos los habitantes de la Tierra y del agua asumen formas hermosas al aprovechar la lluvia apenas cae.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Nosotros tenemos una experiencia práctica con nuestros estudiantes en la Sociedad Internacional Para la Conciencia de Krishna. Antes de volverse estudiantes, ellos tenían una mala apariencia, aunque poseían naturalmente un aspecto físico atractivo; pero debido a la falta de información acerca de la Conciencia de Krishna, parecían sucios e infelices. Desde que se han integrado a la Conciencia de Krishna, su salud ha mejorado, y por seguir las reglas y regulaciones ha incrementado el brillo de su cuerpo. Cuando visten ropas de color azafrán, con tilaka en la frente y cuentas en la mano y alrededor del cuello, lucen exactamente como si viniesen exactamente de Vaikuntha.
+</p>
+<p class='vspace'>Los residentes del agua son los peces, las ranas, etc. y los residentes de la Tierra, las vacas, los venados y así sucesivamente. Por beber y bañarse constantemente en el agua fresca de la lluvia, los animales cansados y sedientos se refrescan, el color de sus cuerpos se torna brillante, mientras su salud se vigoriza por la llegada de la nueva agua de lluvia. Los lagos, estanques y ríos se limpian y se vigorizan con los aguaceros y se vuelven más hermosos. Similarmente, un devoto del Señor Supremo que aprovecha el hermoso y vigorizante aguacero de las descripciones trascendentales de Dios que se encuentran en la literatura Védica, encuentra su conciencia espiritual vigorizada y fresca. De esta manera, su cuerpo espiritualizado se vuelve muy hermoso.
+</p>
+<p class='vspace'>Ilustración 11
+</p>
+<p class='vspace'>En la estación de lluvia, cuando los ríos crecen y se precipitan hacia el océano, y el viento dispersa las olas, el océano parece estar agitado. Similarmente, si una persona ocupada en el proceso de  yoga místico no es muy avanzada en la vida espiritual puede ser afectada por las modalidades de la naturaleza y de esa manera será perturbada por el impulso sexual.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Una persona fija en el conocimiento espiritual no será seducida por el atractivo de la naturaleza material en la forma de una mujer hermosa y del placer sexual disfrutado en su compañía. Sin embargo, alguien que aún es inmaduro en el cultivo del conocimiento espiritual puede ser atraído en cualquier momento por la ilusión de la felicidad pasajera, tal como el océano se agita por los ríos impetuosos y por las ráfagas de viento que se producen durante la estación de lluvias. Por lo tanto, es muy importante fijarnos en los pies de loto de un maestro espiritual genuino que sea un representante de Dios, de manera que no seamos arrastrados por la agitación sexual.
+</p>
+<p class='vspace'>Ilustración 12
+</p>
+<p class='vspace'>Las montañas, aunque son golpeadas por lluvias torrenciales durante la estación lluviosa, no se estremecen, igual que los corazones de quienes están dedicados a la trascendental Personalidad de Dios nunca se alteran, ni siquiera cuando están agobiados por grandes desgracias.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Debido a que una persona espiritualmente avanzada acepta cualquier adversidad en la vida como la misericordia del Señor, es elegible para entrar al reino espiritual. A pesar de que una persona adopte servicio devocional al Señor Supremo a veces puede enfermarse, empobrecerse o decepcionarse por los acontecimientos de la vida. Un verdadero devoto del Señor considera siempre que estos sufrimientos se deben a sus actividades pecaminosas pasadas, y así, sin perturbarse, espera pacientemente la misericordia del Señor Supremo. Tales devotos son comparados con las grandes montañas que nunca se estremecen, ni aun cuando son golpeadas por las lluvias torrenciales durante la estación lluviosa, por el contrario, tales devotos permanecen humildes en la iluminación espiritual. Libres del orgullo y la envidia, obtienen fácilmente la misericordia del Señor y regresan al hogar, de vuelta al Supremo.
+</p>
+<p class='vspace'>Ilustración 13
+</p>
+<p class='vspace'>En la estación lluviosa algunos caminos no se frecuentan y se cubren de largo herbaje y se hace entonces muy difícil ver el camino. Similarmente, en esta era, los brahmanas no estudian apropiadamente las Escrituras trascendentales. Cubiertas por los efectos del tiempo, las Escrituras están prácticamente perdidas y es muy difícil entenderlas o seguirlas.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Un camino cubierto es exactamente como un brahmana que no está acostumbrado a estudiar ni a ejecutar las reformatorias prácticas de los mandatos Védicos y se cubre con el largo herbaje de la ilusión. En tal condición olvidadiza de su naturaleza constitucional, no recuerda su posición de servicio eterno a la Suprema Personalidad de Dios. Desviada por el excesivo crecimiento de temporada de las largas hierbas creadas por maya, una persona se identifica con las producciones ilusorias de la naturaleza y sucumbe ante la ilusión, olvidando su vida espiritual.
+</p>
+<p class='vspace'>Ilustración 14
+</p>
+<p class='vspace'>Los relámpagos son inconstantes en sus relaciones amistosas y no pueden permanecer fieles a ninguna de las nubes, aun cuando ellas son amigas de todo el mundo; exactamente como una mujer lujuriosa no permanece fiel ni siquiera en compañía de un hombre que posee excelentes cualidades
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Durante la estación lluviosa, los relámpagos aparecen en un grupo de nubes e inmediatamente en otro grupo de nubes. Este fenómeno se compara con una mujer lujuriosa que no fija su mente en un solo hombre. Una nube es comparada con una persona cualificada debido a que derrama lluvia y da sustento a muchas personas; similarmente, un hombre que es cualificado da sustento a muchas criaturas vivientes, tal como a los miembros de la familia o a muchos trabajadores de una empresa. Desafortunadamente, toda su vida puede ser trastornada por una esposa que se divorcie de él. Cuando el esposo está perturbado, toda la familia se arruina, los niños se dispersan o el negocio se cierra y todo es afectado. Por lo tanto, se recomienda que una mujer que desea avanzar en la Conciencia de Krishna viva pacíficamente con un esposo y que la pareja no se separe bajo ninguna circunstancia. Marido y mujer deben controlar la indulgencia sexual o concentrar la mente en la Conciencia de Krishna, para que su vida pueda ser exitosa. Después de todo, en el mundo material un hombre necesita una mujer y una mujer necesita un hombre. Cuando ambos se unen, deben vivir pacíficamente en conciencia de Krishna, y no deben ser inquietos como los relámpagos, centelleando de un grupo de nubes a otro.
+</p>
+<p class='vspace'>Ilustración 15
+</p>
+<p class='vspace'>En medio del tronar del cielo nublado, aparece un arco iris que no tiene cuerda. Su aparición se compara con la aparición de la Suprema Personalidad de Dios o de Sus sirvientes en medio de la atmósfera material.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>La palabra sánscrita guna significa "cualidad" o "modalidad", así como también "soga" o "cuerda". Cuando aparece un arco iris durante la estación lluviosa, se observa que es como un arco sin guna, o cuerda. Similarmente, la aparición de la Personalidad de Dios o de Sus sirvientes trascendentales no tiene nada que ver con las modalidades cualitativas de la naturaleza material. La aparición fenomenal de la trascendencia está libre de las cualidades de la naturaleza material y se parece a un arco sin cuerda.
+</p>
+<p class='vspace'>El trascendental Señor Supremo es eternamente la forma de la existencia trascendental, el conocimiento y la bienaventuranza. La energía material trabaja bajo Su buena voluntad y, por lo tanto, Él nunca es afectado por las modalidades de la naturaleza material. Cuando Él aparece ante nosotros, en medio de las interacciones materiales, permanece siempre sin ser afectado tal como un arco iris sin cuerda. Mediante Su energía inconcebible, el Señor Supremo puede aparecer y desaparecer como un arco iris que aparece y desaparece sin ser afectado por el trueno estruendoso ni por el cielo nublado. El Señor es eternamente lo más grande de lo grande y lo más pequeño de lo pequeño. Las entidades vivientes que son sus partes y parcelas, son lo más pequeño de lo pequeño y Él es el más grande de lo grande como la Verdad Absoluta, la Suprema Personalidad de Dios.
+</p>
+<p class='vspace'>Ilustración 16
+</p>
+<p class='vspace'>En la noche, por la gracia de la luz de la Luna, se pueden ver las nubes moverse en el cielo. Inclusive la Luna misma parece moverse también, tal como un ser viviente parece estar moviéndose debido a la falsa identificación con la materia.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Por la noche, en la estación lluviosa, las nubes que se mueven y reflejan la luz de la Luna, hacen que la Luna parezca moverse. Esto se llama ilusión. El alma espiritual, o el ser viviente, es la raíz de todas las actividades del cuerpo material, pero, debido a la ilusión, el alma espiritual permanece cubierta por los cuerpos materiales burdo y sutil. Cubierta así, el alma condicionada se identifica con el cuerpo material y queda sujeta al sentido del ego falso.
+</p>
+<p class='vspace'>Este ego falso obliga a un ser viviente a considerar que su cuerpo material es el ser, que la progenie del cuerpo son sus niños y que el lugar de nacimiento del cuerpo es un objeto de adoración. Así, el concepto de nacionalismo del ser viviente es otro tipo de ignorancia. Debido a la ignorancia, un ser viviente se identifica con el lugar de su nacimiento y se emociona con los conceptos erróneos de las ideas nacionales. De hecho, sin embargo, un ser viviente no pertenece a ninguna nación o especie de vida. El no tiene nada que ver con el cuerpo, así como la Luna no tiene nada que ver con las nubes en movimiento.
+La Luna está lejos de las nubes y se encuentra fija en su propia órbita, pero la ilusión presenta una escena en la cual la Luna parece estar moviéndose. Un ser viviente no debe dejarse llevar por el concepto erróneo del cuerpo material; debe saber siempre que es trascendental a la identidad corporal. Este es el sendero del conocimiento y el conocimiento completo fija al ser viviente en la órbita de las actividades espirituales.
+</p>
+<p class='vspace'>La fuerza viviente espiritual es siempre activa por naturaleza. Por ilusión, sus actividades están erróneamente orientadas en relación con el cuerpo; pero en la condición liberada del conocimiento completo, sus actividades son dirigidas por la devoción espiritual. Liberación no significa detener las actividades; significa ser purificado de las actividades ilusorias y volverse trascendental a las relaciones con los cuerpos burdo y sutil.
+</p>
+<p class='vspace'>Ilustración 17
+</p>
+<p class='vspace'>Cuando las nubes aparecen en el cielo, los pavos reales comienzan a danzar en éxtasis, tal como un alma sincera reboza de alegría  ante la visita de un santo a su casa.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El deber de los sabios y santos es ir de puerta en puerta, iluminando a los jefes de familia con el conocimiento espiritual. La vida familiar se compara a un pozo oscuro. En un pozo oscuro, las ranas no pueden ver la luz libre del cielo despejado. El oscuro pozo de la vida familiar destruye el alma. Por lo tanto, uno debe salir de ella de tal manera que pueda ver la luz de la visión espiritual. Los santos y los sabios misericordiosamente  tratan de sacar a las almas caídas del oscuro pozo de la vida familiar. En consecuencia, un jefe de familia iluminado se complace con la visita de tales santos y sabios. La mente de un jefe de familia, que es un alma condicionada está siempre alterada por las tres miserias de la vida material. Todos desean ser felices en su vida familiar, pero las leyes de la naturaleza no permiten que uno sea feliz en la existencia material, la cual es como un incendio forestal espontáneo.
+</p>
+<p class='vspace'>En la era de Kali, como ya fue descrito, la gente común no se complace más con la presencia de santos y sabios, ni se interesa en la iluminación espiritual. Pese a ello, los santos y los sabios aceptan todo tipo de riesgos para propagar el mensaje de Dios. El Señor Jesucristo, Thakura Haridasa, el Señor Nityananda Prabhu y muchos otros sabios arriesgaron su vida para propagar el mensaje de Dios. Los santos y sabios autorrealizados toman tales riesgos para conseguir la iluminación espiritual de la gente común. Ellos no hacen votos de silencio que puedan ganarles una gloria barata entre la masa ignorante. Dios se  satisface únicamente cuando sus devotos aceptan todo tipo de riesgos para propagar Sus glorias. Tales devotos no le temen al difícil viaje para cruzar el océano de la ignorancia. Ellos están siempre ansiosos por el bienestar de las almas caídas, que se encuentran apegadas al falso disfrute de la vida materialista en la cual olvidan su eterna relación con Dios.
+</p>
+<p class='vspace'>Es deber de los santos y sabios iluminar a las almas caídas, y, recíprocamente, es deber de los jefes de familia recibir a los santos y sabios cordialmente, tal como el pavo real danza en éxtasis ante la presencia de las nubes en el cielo. El incendio de las tres miserias experimentadas  por los hombres materialistas, sólo puede extinguirse mediante la nube de misericordia de los santos y sabios que pueden derramar el agua de los mensajes trascendentales que acabarán con las miserias de los jefes de familia
+</p>
+<p class='vspace'>Ilustración 18
+</p>
+<p class='vspace'>Muchas plantas y enredaderas que estaban casi muertas durante los meses de abril y mayo son nuevamente visibles bajo diversas formas debido a que se nutren a través de sus raíces en contacto con la tierra húmeda. Estas innumerables plantas y enredaderas se parecen a personas que se secan mediante severas penitencias para conseguir algún beneficio material, pero, que luego de alcanzar sus objetivos, se vuelven voluptuosamente obesas, nutridas por el placer de los sentidos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>En el Bhagavad-gita se dice que cuando el día de Brahma concluye, las creaciones manifestadas de todo el universo desaparecen y, después del fin de la noche de Brahma, la creación se manifiesta nuevamente*. Así, la creación cósmica en su manifestación y no manifestación, se parece a las enredaderas y plantas que surgen durante la estación lluviosa y que gradualmente desaparecen cuando la estación concluye.
+</p>
+<p class='vspace'>Aun cuando las plantas y enredaderas ya no se ven, sus semillas permanecen, y estas semillas dormidas fructifican en contacto con el agua. Tal como las semillas, las chispas espirituales existen en un estado latente después que la manifestación cósmica es aniquilada y, cuando la manifestación cósmica reaparece, todos los seres vivientes silenciosos dentro del vientre de la naturaleza material se manifiestan y se ocupan en el placer de los sentidos y, de ese modo, crecen voluptuosamente obesos.
+</p>
+<p class='vspace'>Para alcanzar la liberación, se debe estar completamente purificado de las formas pervertidas del deseo. Un ser viviente no puede apagar los deseos y tratar de eliminar artificialmente las acciones del deseo, es más peligroso que los mismos deseos activos. Todos los deseos deben ser corregidos y encauzados hacia las actividades espirituales; de otra manera, los mismos deseos volverán a manisfestarse repetidamente a través de diferentes variedades de disfrute material, condicionando al ser viviente a una esclavitud material perpetua.
+</p>
+<p class='vspace'>bhuta-gramah sa evayam bhutva bhutva praliyate
+ratry-agame ’vasah partha prabhavaty ahar-agame
+</p>
+<p class='vspace'>Una y otra vez, cuando llega el día de Brahma, todas las entidades vivientes pasan a existir, y con la llegada de la noche de Brahma son aniquiladas irremediablemente.
+Bg. 8.19
+</p>
+<p class='vspace'>Ilustración 19
+</p>
+<p class='vspace'>Una grulla se encuentra en la orilla de un estanque que siempre está agitada por flujo de agua, el barro y las piedras. La grulla es como un jefe de familia que está perturbado en el refugio de su hogar, pero que a causa de un gran apego, no quiere cambiar su posición.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura 
+</p>
+<p class='vspace'>La olvidadiza vida del alma condicionada en la vida familiar es un pozo oscuro, asesino del alma. Esta es la opinión de Sri Prahlada Maharaja, el célebre devoto del Señor. Para un alma autorrealizada nunca se recomienda demasiado apego por la tierra y el hogar. Por lo tanto, la duración de la vida humana debe dividirse metódicamente.
+</p>
+<p class='vspace'>La primera etapa se llama brahmacarya-asrama, o la orden de vida en la niñez, cuando el futuro hombre es entrenado para el principal objetivo de la vida. La siguiente etapa es grhastha-asrama, en la cual el hombre es entrenado para entrar a la trascendencia. Luego viene el vanaprastha-asrama, el estado preliminar de la vida renunciante. El último estado recomendado es la orden de sannyasa, o la orden de vida renunciante. De esta manera, uno acepta un proceso gradual de actividades espirituales con miras a la meta final de la liberación.
+Desafortunadamente, por falta de suficiente cultura del espíritu humano, nadie quiere abandonar la vida de jefe de familia, aunque esté llena de molestias y barro.
+</p>
+<p class='vspace'>Y aquellos que están demasiado apegados, a pesar de las molestias de la enlodada vida familiar son comparados a las grullas que se paran a orillas del río por un poco de placer para los sentidos, pese a todos los inconvenientes que allí existen. Debemos recordar siempre que la sociedad, la amistad, y el amor que supuestamente debemos disfrutar en la vida familiar son únicamente representaciones opacas de la verdadera sociedad, amistad, y amor correspondido que existen en el reino de Dios. La vida condicionada de la existencia material no es real, pero debido a nuestra ignorancia, estamos apegados a ese espejismo. La idea de sociedad, amistad y amor no es falsa de ninguna manera, pero el lugar donde estamos buscando esto es irreal. Tenemos que abandonar esta falsa posición y elevarnos a la realidad. Este debe ser el objetivo de la vida y ése es el resultado de cultivar el espíritu humano.
+</p>
+<p class='vspace'>Desafortunadamente, por falta de suficiente cultivo de este espíritu, el hombre materialista siempre se apega a este falso lugar, a pesar de todos sus inconvenientes. Se dice que un hombre debe abandonar la orden de jefe de familia a la edad de cincuenta años. Pero en esta era de ignorancia, hasta un hombre viejo quiere rejuvenecer sus funciones corporales, colocándose una dentadura artificial y haciendo un simulacro de vida juvenil, pese a encontrarse al borde de la muerte. Especialmente los políticos, como las grullas, están demasiado apegados al falso prestigio de posición y rango y siempre buscan la reelección, inclusive hasta el final de su agitada vida. Estos son algunos de los síntomas de una vida sin cultura.
+</p>
+<p class='vspace'>Ilustración 20
+</p>
+<p class='vspace'>Sobre las costas y sobre los setos de los campos de arroz se desatan lluvias torrenciales. Estos disturbios se parecen a los creados por los perecederos detractores de los principios normales de los Vedas, quienes están influidos por la era de Kali.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Originalmente, el sendero de la autorrealización fue establecido por el patrón de instrucciones de los Vedas. Srila Vyasadeva dividió el Veda original en cuatro divisiones llamadas Sama, Atharva, Rg y Yajur Veda. Luego, él dividió los mismos Vedas en dieciocho Puranas (suplementos) y el Mahabharata. Luego, el mismo autor nuevamente los resumió en los Vedanta-sutras. El propósito de todas estas literaturas Védicas es comprender que nuestro ser es una entidad espiritual, que se halla externamente relacionada con la Suprema Personalidad de Dios, la forma plenamente atractiva, Sri Krishna.
+Pero todas estas diferentes literaturas Védicas fueron sistemáticamente distorsionadas por el violento ataque de la era de Kali, tal como los setos  de los arrozales y las orillas del río son distorsionadas por los violentos ataques de las intensas lluvias. Los ataques de distorsión son llevados a cabo por filósofos ateos que únicamente están interesados en comer, beber, alegrarse y disfrutar. 
+</p>
+<p class='vspace'>Todos estos ateos están en contra de las Escrituras reveladas debido a que están tremendamente apegados al placer de los sentidos y al más burdo materialismo. También existen otros que no creen en la eternidad de la vida. Algunos de ellos proponen que la vida es finalmente aniquilada y que únicamente se conserva la energía material. Otros están menos interesados en las leyes físicas, pero no creen nada más allá de su experiencia. Y otros inclusive, igualan el espíritu con la materia y declaran que la distinción entre ellos es ilusoria.
+</p>
+<p class='vspace'>No hay duda que los Vedas permanecen como los libros de sabiduría más reconocidos, desde cualquier punto de vista. Pero, con el transcurso del tiempo, el sendero Védico ha sido atacado por filósofos como Carvaka, Buddha, Arhat, Kapila, Patañjali, Sankara, Vaikarana, Jaimini, los Nyayakas, los Vaisesikas, los Sagunistas, los empíricos, los Pasupata Saivas, los Saguna Saivas, los Brahmas, los Aryas y muchos otros (la lista de especuladores no Védicos crece cada día sin restricción). El sendero de los Vedas no concuerda con ningún principio desprovisto de una relación eterna con Dios, la obtención de Su servicio devocional y la culminación en amor trascendental por Él.
+</p>
+<p class='vspace'>Ilustración 21
+</p>
+<p class='vspace'>El viento lleva las nubes a diferentes partes del globo y las nubes distribuyen lluvia para la satisfacción de toda la gente, tal como los reyes y comerciantes ricos distribuyen sus riquezas acumuladas, inspirados por sacerdotes religiosos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Como ya se ha explicado, las cuatro divisiones de la sociedad— a saber, la clase de hombres inteligentes (los brahmanas), la clase gobernante ( los ksatriyas), la clase mercantil (los vaisyas) y la clase laboral (los sudras)— están destinadas a alcanzar una meta en la vida: La autorrealización, o el cultivo del espíritu humano. La clase inteligente de hombres, los brahmanas, debe inspirar a los ksatriyas y vaisyas en la realización de sacrificios para el cultivo espiritual, y por lo tanto, la cooperación entre los brahmanas, ksatriyas y vaisyas eleva a la gente común, o a la clase ordinaria de hombres trabajadores. Tan pronto como se detiene esta cooperación entre las cuatro clases de hombres en la sociedad y se abandonan los principios básicos de la cultura espiritual, la estructura social de la humanidad se vuelve una segunda edición de la vida animal, basada en las inclinaciones a comer, dormir, temer y aparearse. Es deber de los hombres inteligentes influenciar a los miembros de las comunidades ricas —ksatriyas, vaisyas— para hacer sacrificios en aras de la cultura espiritual. Únicamente de esta manera, se puede mitigar plenamente la tensión entre los capitalistas y los trabajadores.
+</p>
+<p class='vspace'>En esta era de Kali, en la cual una pequeña diferencia de opinión conduce a la disputa, hasta llegar incluso a la sedición, es deber de los hombres inteligentes —los brahmanas— inspirar desinteresadamente a la gente rica a realizar sacrificios con este propósito. Con esto se sugiere que los hombres de la clase inteligente no deben tratar de volverse ksatriyas o vaisyas, ni deben desempeñarse en las ocupaciones de las otras clases; por el contrario, los brahmanas deben simplemente guiarlos en el cultivo espiritual, tal como el viento lleva las nubes hacia otros lugares para derramar agua. El viento mismo no es quien asume la responsabilidad de verter agua.
+Los hombres más inteligentes de la sociedad son los santos y los sabios que han sacrificado todo para el servicio de la cultura espiritual.
+</p>
+<p class='vspace'>Su deber es viajar entre la sociedad humana e inspirar a sus miembros para que ellos mismos se ocupen en actividades de cultura espiritual, sacrificando sus palabras, dinero, inteligencia y vida. Este debe ser el motivo de la vida humana para hacer de ella un éxito completo. Una sociedad sin gusto por la cultura espiritual es un fuego ardiente y en ese fuego todos sufren perpetuamente las tres miserias. Tal como las nubes derraman agua sobre un ardiente fuego en el bosque y así lo extinguen, los hombres inteligentes que trabajan como los maestros espirituales de la sociedad, derraman agua sobre el ardiente fuego de las miserias al diseminar el conocimiento espiritual e inspirar a los estratos más ricos de la sociedad para que ayuden en la causa. Los templos de adoración, por ejemplo, son construidos por los ricos y esos templos están destinados a impartir educación espiritual a la gente en general. Las ceremonias espirituales periódicas se observan para inspirar, no para explotar. Si ahora existen fallas debido a la era de Kali, éstas deben ser rectificadas, pero las instituciones deben salvarse.
+</p>
+<p class='vspace'>Ilustración 22
+</p>
+<p class='vspace'>Después de concluida la estación lluviosa, el bosque de Vrndavana estaba lleno de frutas  como dátiles y zarzamoras que maduraban sobre árboles y arbustos. El Señor Sri Krishna, junto con su hermano mayor Sri Baladeva y otros pastorcillos del vecindario entraron al hermoso bosque, acompañados por las vacas, para exhibir pasatiempos trascendentales con Sus amigos eternos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El Señor Sri Krishna, la Suprema Personalidad de Dios, aparece con su séquito personal una vez cada 4,320,000,000 años y exhibe Sus enseres trascendentales, sólo para atraer a las almas condicionadas del mundo material. Si bien el mundo material es únicamente una sombra del mundo espiritual, las entidades enjauladas materialmente buscan la felicidad espiritual aquí, en una forma pervertida por el apego materialista. Los filósofos empíricos, con escaso acopio de conocimiento, imaginan una visión espiritual que es impersonal. Pero el ser viviente espiritual, menos atraído por la forma impersonal de emancipación espiritual, se siente más atraído por la forma material y queda sin esperanza de emancipación espiritual.
+</p>
+<p class='vspace'>Por lo tanto, la Absoluta Personalidad de Dios, por su misericordia ilimitada y sin causa, desciende del reino espiritual y exhibe Sus pasatiempos personales en Vrndavana la réplica del planeta Krsnaloka en el cielo espiritual. Vrndavana es el lugar más sagrado dentro de este universo cósmico y la gente que está buscando alcanzar la emancipación espiritual por entrar al reino de Dios, puede hacer un hogar en Vrndavana y volverse un estudiante serio de los Seis Gosvamis, quienes fueron instruidos por el Señor Sri Caitanya Mahaprabhu.
+</p>
+<p class='vspace'>Los Seis Gosvamis estaban encabezados por Srila Rupa Gosvami, que era seguido por Srila Sanatana, Srila Bhatta Raghunatha, Srila Jiva, Srila Gopala Bhatta y Srila Raghunatha Dasa Gosvami. Todos ellos estaban seriamente ocupados en la investigación y excavación del misterio de Vrndavana-Dhama.
+</p>
+<p class='vspace'>El Señor Sri Krishna, la Suprema Personalidad de Dios apareció en Vrndavana, aproximadamente hace cinco mil años y los vestigios de Su aparición en Vrndavana se perdieron de vista. Pero el Señor Sri Caitanya Mahaprabhu, quien es el mismo Señor Sri Krishna en la forma de un gran devoto, apareció en Navadvipa, un distrito de Bengala Occidental y excavó los lugares santos donde transcurrieron los pasatiempos trascendentales del Señor Sri Krishna. Él instruyó a los Seis Gosvamis para que escribieran literatura autorizada sobre el culto de Vrndavana y cualquier estudiante serio, ansioso de saber acerca del Señor Supremo, debe aprovechar esta literatura invalorable y la guía de sabios autorizados para así conocer al Señor de Vrndavana, Sri Krishna, la Suprema Personalidad de Dios.
+</p>
+<p class='vspace'>Ilustración 23
+</p>
+<p class='vspace'>Las vacas que seguían al Señor en el bosque se movían lentamente debido a sus pesadas ubres cargadas de leche. Pero cuando el Señor las llamaba por sus nombres específicos, se ponían alertas, y mientras se acercaban a Él, sus ubres se desbordaban y derramaban leche sobre el suelo, debido a su afecto por el Señor.
+Enseñanzas de la Pintura
+Gracias a Escrituras como el Brahma-Samhita se sabe que en la morada espiritual del Señor las casas son de piedra-de-toque y los árboles son árboles de deseo. El Señor está acostumbrado a cuidar allí a miles y miles de Kamadhenus (vacas capaces de suministrar ilimitadas cantidad de leche). Y todas las casas, los árboles y las vacas no son cualitativamente diferentes del Señor. El Señor y Sus enseres en la morada espiritual son uno y lo mismo en cualidad, aunque existen diferencias para el placer del Señor. En el mundo material nosotros también poseemos enseres para nuestros placeres en la vida, pero debido a que están hechos de materia, son destructibles al final. En el cielo espiritual existen las mismas variedades de placer pero todos están destinados al Señor. Allá únicamente el Señor es el disfrutador y beneficiario supremo y todos los demás son disfrutados por el Señor. Allí el Señor es servido por toda clase de servidores y tanto el amo como los servidores son de la misma cualidad. Esta variedad espiritual es exhibida por el Señor cuando desciende en Vrndavana y nosotros debemos saber que el Señor desciende con su grupo personal de vacas, pastorcillos y pastorcillas, quienes no son sino expansiones espirituales del mismo Señor para Sus propios placeres. Así, cuando eran llamadas por el Señor, las vacas rebosaban de afectuosa alegría, tal como los pechos de la madre rebosan de leche cuando el niño llora por ella.
+</p>
+<p class='vspace'>Todos nosotros, las entidades vivientes, somos expansiones diferenciadas del Señor, pero nuestro afecto por el Señor se halla sumergido en nuestro interior, cubierto artificialmente por la cualidad material de la ignorancia. El cultivo espiritual está destinado a revivir el afecto natural del ser viviente por el Señor. Los ingredientes del fuego ya se encuentran presenten en los fósforos y una pequeña fricción basta para encender el fuego. Similarmente, nuestro afecto natural por el Señor tiene que ser revivido con un poco de entrenamiento. Específicamente, tenemos que recibir los mensajes del Señor con corazón purificado.
+</p>
+<p class='vspace'>Por medio de la realización espiritual, uno tiene que purificar el corazón y conocer las cosas en su verdadera perspectiva.  Tan pronto como uno lo hace  el flujo de nuestro afecto natural empieza a inclinarse hacia el Señor y a medida que este flujo aumenta uno se vuelve más y más autorrealizado en diferentes relaciones con el Señor. El Señor es el centro de todo el afecto de todos los seres vivientes, quienes son Sus partes y porciones. Cuando el afecto natural por el Señor se obstruye por el deseo de imitar Su Señorío, se dice que uno está en maya, o ilusión. Maya no tiene existencia real, pero, mientras continúen sus alucinaciones, se sufren sus reacciones. El Señor por su misericordia sin causa, muestra la realidad de la vida para que nuestras alucinaciones se disipen completamente.
+</p>
+<p class='vspace'>Ilustración 24
+</p>
+<p class='vspace'>Cuando el Señor entró al bosque de Vrndavana, todos los habitantes del bosque, tanto animados como inanimados, estaban ansiosos por recibirlo. Él vio que las flores del bosque, plenamente florecidas, lloraban en éxtasis, chorreando miel de sus pétalos. En las rocas empinadas, las cascadas fluían alegremente y se podían oír dulces sonidos de las cuevas cercanas.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El Señor tiene múltiples energías y por lo tanto, Él y sus energías son idénticos. Entre Sus diferentes energías, la energía material es una, y en el Bhagavad-gita se dice que la energía material es inferior en calidad a la energía espiritual. La energía espiritual es superior debido a que sin el contacto con la energía espiritual, la energía material no puede producir nada. Pero la fuente de todas las energías es la todo atractiva Personalidad de Dios, Sri Krishna.
+</p>
+<p class='vspace'>Este mundo material es una combinación de materia y espíritu, pero el mundo espiritual, que está muy, muy lejos del cielo material, es puramente espiritual y no tiene contacto con la materia. En el mundo espiritual todo es espíritu. Ya hemos hablado de esto. La Personalidad de Dios, fuente original de todas las energías, es capaz de convertir espíritu en materia y materia en espíritu. Para Él no existe diferencia entre materia y espíritu. Por eso es llamado kaivalya.
+</p>
+<p class='vspace'>En Sus pasatiempos trascendentales, el Señor Sri Krishna corresponde con espíritu, no con materia. Cuando Él está en el mundo mortal, las cualidades materiales no pueden afectarlo. Un electricista sabe cómo hacer funcionar a la electricidad. Con ayuda de la electricidad, él puede transformar el agua en frío o calor. Similarmente, la Personalidad de Dios mediante Su poder inconcebible puede transformar materia en espíritu y espíritu en materia. Por lo tanto, por la gracia del Todopoderoso, todo es materia y espíritu, si bien para el ser viviente sí existe diferencia entre materia y espíritu.
+</p>
+<p class='vspace'>Flores, cascadas, árboles, frutas, colinas, cuevas, pájaros, bestias y seres humanos no son más que combinaciones de la energía de Dios. Por eso, cuando la Personalidad de Dios apareció ante ellos, todos se inclinaron espiritualmente y, por afecto natural desearon servir al Todopoderoso, de acuerdo con sus diferentes aptitudes.
+</p>
+<p class='vspace'>Existen diferentes etapas del desarrollo espiritual en la materia. En el mundo material, las chispas espirituales de la Personalidad de Dios están cubiertas por la energía material en diferentes proporciones y, gradualmente, se espiritualizan en diversas especies de vida. La forma humana de vida representa el desarrollo completo de los sentidos para la realización espiritual de nuestro afecto original por el Señor. Por eso, si a pesar de esta oportunidad de vida humana, somos incapaces de revivir nuestro afecto natural por el Señor, debemos saber que estamos desperdiciando nuestra vida. Sin embargo, por la gracia del Señor, la conciencia espiritual de cada especie de vida puede ocupar su lugar apropiado y expresar su afecto espiritual por el Señor en santa-rasa, tal como fue demostrado por la tierra, el agua, las colinas, los árboles, las frutas y las flores de Vrndavana durante la presencia del Señor Sri Krishna, la Personalidad de Dios.
+</p>
+<p class='vspace'>Ilustración 25
+</p>
+<p class='vspace'>El Señor correspondía a los sentimientos de los habitantes del bosque de Vrndavana. Cuando caía un aguacero, el Señor se refugiaba al pie de los árboles o en las cuevas y disfrutaba del sabor de diferentes frutas con Sus eternos asociados, los pastorcillos. Él jugaba con ellos,  Se sentaba con ellos y comía frutas con ellos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Volverse uno con Dios no indica siempre que un ser viviente se fusione con  la existencia del Señor. Volverse uno con Dios significa alcanzar nuestra cualidad espiritual original. A menos que uno alcance su cualidad espiritual, no puede entrar en el reino de Dios. Los miembros de la escuela impersonalista explican su idea de unidad, con el ejemplo de la mezcla del agua de río con el agua de mar. Pero nosotros debemos saber que en el agua de mar existen seres vivientes que no se fusionan con la existencia del agua sino que mantienen sus identidades separadas y disfrutan la vida dentro del agua. Ellos son uno con el agua en el sentido que han alcanzado la cualidad de vivir dentro del agua. Similarmente, el mundo espiritual no deja de tener sus enseres separados. En el reino espiritual, un ser viviente puede mantener su identidad espiritual separada y disfrutar de la vida con el ser espiritual supremo, la Personalidad de Dios.
+</p>
+<p class='vspace'>En Vrndavana, todas las entidades espirituales —los pastorcillos, las pastorcillas, el bosque, los árboles, las colinas, el agua, las frutas, las vacas y todos los demás— disfrutan la vida espiritualmente en asociación con el Señor, Sri Krishna. Ellos son simultáneamente uno con el Señor y son diferentes de Él. Pero, finalmente, son uno en diferentes variedades.
+</p>
+<p class='vspace'>Ilustración 26
+</p>
+<p class='vspace'>El Señor disfrutó en compañía del Señor Baladeva y los otros pastorcillos y, a veces, se sentaba con ellos sobre el mismo banco de piedra. Sentados, tomaban alimentos sencillos como arroz, dhal, vegetales, pan y cuajada, que habían traído de sus hogares y que compartían en intercambios amistosos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>En el Bhagavad-gita el Señor ha expresado Su voluntad de aceptar frutas, flores, hojas y agua de Su devoto, cuando se Le han ofrecido con afecto devocional. El Señor puede comer cualquier cosa, debido a que todo no es más que una transformación de su propia energía. Pero cuando se trata de ofrecerle algo, las ofrendas deben hacerse de acuerdo con lo que el Señor ha ordenado. No podemos ofrecerle lo que Él no ha ordenado. A la Personalidad de Dios, Sri Krishna, no se le puede ofrecer nada fuera de alimentos como arroz, dhal, cereales, vegetales, leche y preparaciones de leche y azúcar. En Jagannatha Puri se Le ofrecen al Señor estos alimentos y en todas las Escrituras los mismos alimentos se mencionan por doquier.
+</p>
+<p class='vspace'>El Señor nunca tiene hambre ni necesita alimento para llenar Su estómago vacío. Él es completo en Sí mismo, aun así Él, misericordiosamente siempre come los alimentos ofrecidos con afecto sincero por Sus devotos. Los pastorcillos traían de sus hogares alimentos sencillos y el Señor, quien constantemente es servido por cientos de miles de diosas de la fortuna, está siempre feliz al aceptar los alimentos sencillos de Sus amigos devotos. Todos los parientes del Señor son Sus devotos únicamente y están situados en diferentes relaciones trascendentales como amigos, parientes y amantes, El Señor obtiene placer trascendental por aceptar servicio de Sus diferentes tipos de devotos, que están situados en diferentes clases de rasas. Estos rasas trascendentales se reflejan pervertidamente en la atmósfera material y así, únicamente por ignorancia, el ser viviente espiritual busca vanamente la misma bienaventuranza en la materia.
+</p>
+<p class='vspace'>Ilustración 27
+</p>
+<p class='vspace'>Después de fuertes lluvias, las tierras de pastoreo se hallaban cubiertas con pasto verde y los toros y las vacas yacían sobre él (¿quién es él?), plenamente satisfechos. Las vacas, seguidas de sus terneros, parecían cansadas de pastar, debido a sus ubres rebosantes de leche. Tranquilamente, las vacas y los terneros descansaban y rumiaban, masticando su alimento.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>La protección y el campo de pastoreo para las vacas se encuentran entre las necesidades esenciales de la sociedad y el beneficio de toda la gente. La grasa animal que requiere el cuerpo humano bien puede obtenerse de la leche de vaca. La leche de vaca es muy importante para la energía humana. El desarrollo económico de la sociedad depende de una suficiente producción de cereales, de bastante leche y el adecuado transporte y distribución de esos productos. El Señor Sri Krishna, a través de Su ejemplo personal, nos enseñó la importancia de la protección de las vacas, que no está circunscrita a la India solamente, sino que corresponde a todos los seres humanos en todo el universo.
+</p>
+<p class='vspace'>Las personas poco inteligentes subestiman el valor de la leche de vaca que también se llama gorasa, o jugo del cuerpo de la vaca. La leche es la forma más valiosa de gorasa y con ella podemos preparar muchos alimentos nutritivos para el mantenimiento del cuerpo. La matanza de vacas llevada a cabo por la sociedad humana es una de las políticas suicidas más burdas y los hombres deseosos de educar el espíritu humano, deben antes dirigir su atención al asunto de la protección de las vacas.
+</p>
+<p class='vspace'>Si realmente deseamos cultivar el espíritu humano en la sociedad, debemos contar con hombres inteligentes de primera clase para guiarla. Y para desarrollar los tejidos más finos de nuestro cerebro, debemos asimilar los valores vitamínicos de la leche. Los devotos adoran al Señor Krishna dirigiéndose a Él como el bienqueriente de los brahmanas y las vacas.
+</p>
+<p class='vspace'>La clase de hombres más inteligentes, que han obtenido un perfecto conocimiento sobre los valores espirituales, se llaman brahmanas. Ninguna sociedad puede perfeccionarse en el conocimiento trascendental sin la guía de estos hombres superiores y ningún cerebro puede asimilar la forma sutil de conocimiento, sin un tejido cerebral fino. Para estos importantes tejidos cerebrales necesitamos suficiente cantidad de leche y preparaciones lácteas.
+</p>
+<p class='vspace'>Definitivamente, necesitamos proteger la vaca para tener el mayor beneficio de este importante animal. Por eso, la protección de las vacas no es meramente un sentimiento religioso, sino el medio de asegurar el más grande beneficio para la sociedad humana.
+</p>
+<p class='vspace'>Ilustración 28
+</p>
+<p class='vspace'>Después de la estación lluviosa, todo el hermoso paisaje era atractivo a los ojos de todos, incluso a los de Sri Krishna, la causa de todas las causas.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Debemos apreciar siempre la energía creadora del Señor Supremo. La hermosa naturaleza, aunque material y por lo tanto, temporal, está siempre llena de las glorias del creador. Existe una clase de filósofos que condena a la creación material como falsa. Dicen que Brahman es verdad, pero que la creación es falsa. Esto no está bien. La creación temporal también es una verdad relativa. Es de hecho la representación temporal de la creación eterna. El alma olvidadiza no tiene información de la creación espiritual conocida como Sanatana Dhama, pero la creación temporal nos da una idea de esta creación original por eso al utilizar la creación temporal en el servicio del Señor, los devotos hacen el mejor uso de un mal negocio.
+</p>
+<p class='vspace'>Todo emana del Señor como diferentes energías y por lo tanto todo debe ser ocupado únicamente en Su servicio. Tan pronto como las cosas temporales son utilizadas en Su servicio asumen valores permanentes. El proceso de tal ocupación al servicio del Señor es lo que los sabios llaman cikitsitam o "bien tratado". Si tenemos algún tipo de problema en el estómago por beber leche, el médico prescribe esta misma leche en forma de yogur que no es sino leche tratada. Similarmente, la creación temporal del mundo material, indudablemente esta llena de miserias, pero al ser aceptada su relación con el Señor Supremo se vuelve "bien tratada" como el yogur. Cualquier cosa aceptada con plena conciencia de Dios tiene su valor espiritual y, por la gracia del Todopoderoso, sus efectos materiales disminuyen en relación con el creciente grado de conciencia espiritual. Ese es el proceso para cultivar el espíritu humano.
+</p>
+<p class='vspace'>Ilustración 29
+</p>
+<p class='vspace'>Así llegó a su fin la estación lluviosa. Empezó el otoño y no había más nubes en el cielo. Todos los estanques de agua se pusieron cristalinos y el viento ya no era potente. El Señor Krishna, con su hermano mayor, el Señor Balarama, vivieron en Vrndavana  durante esta auspiciosa estación.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Cuando el cielo está sin nubes, no existe ya diferencia entre la parte que estuvo cubierta y aquella que nunca lo estuvo. En forma similar, cuando la entidad viviente, ahora cubierta por las modalidades de la naturaleza material, se libera de la ignorancia, la pasión y la así llamada bondad, se vuelve una con la Verdad Absoluta. Tal unidad se llama mukti, o liberación de las miserias de la vida material. Existen cinco clases diferentes de mukti. Los impersonalistas prefieren fundirse con la existencia de la Trascendencia, pero los personalistas o devotos no aniquilan su individualidad, y así, los devotos del Señor disfrutan individualmente la variedad espiritual en los planetas del cielo espiritual.
+</p>
+<p class='vspace'>El cielo material también es el cielo espiritual, pero está cubierto por las modalidades de la naturaleza material. Esta naturaleza material también es una creación temporal del Señor, tal como la nube es una creación del Señor. Cuando la nube de las modalidades materiales se disipa, se dice que la naturaleza material ha sido aniquilada.
+</p>
+<p class='vspace'>Existen dos clases de entidades vivientes, las condicionadas y las puras. La naturaleza material es creada para las entidades vivientes condicionadas, y las almas condicionadas son puestas en ella para volverse almas puras no condicionadas. Aquellas que se liberan por medio del servicio devocional, entran en el reino eterno de Dios y aquellas que pierden su oportunidad, se pudren en las letárgicas condiciones materiales, a veces en forma manifiesta y a veces en forma no manifiesta. El Señor Sri Krishna desciende para reivindicar a las almas condicionadas.
+</p>
+<p class='vspace'>Ilustración 30
+</p>
+<p class='vspace'>En otoño, todos los estanques de agua se enriquecen con el crecimiento de lotos. Las aguas fangosas recuperan su normal claridad y hermosura, tal como las condicionadas almas caídas una vez más se enriquecen espiritualmente en el servicio devocional.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>No deberíamos frustrarnos con nuestra fangosa vida de existencia material porque tan pronto aceptamos voluntariamente el servicio devocional al Señor, toda nuestra vida se vuelve clara como el agua en otoño. Desprovista de nuestra relación con Dios, nuestra vida es árida, pero tan pronto como la mente fangosa se despeja por asociación espiritual o por el cultivo del espíritu humano, las tres miserias de la vida material se disipan inmediatamente. Así, el loto del conocimiento fructifica gradualmente y este proceso gradual de desarrollo anuncia la bienaventuranza trascendental.
+</p>
+<p class='vspace'>Todo el proceso espiritual se llama técnicamente yoga, o unirse con el Supremo. Algo así como una larga escalera donde los escalones ascendentes se denominan trabajo regulado, conocimiento trascendental, poderes místicos y finalmente bhakti-yoga, servicio devocional. El bhakti-yoga es puro, sin mezcla y se encuentra completamente mas allá de todos los  pasos preliminares. Tal servicio devocional puro al Señor Supremo fue mostrado en Vrndavana cuando el Señor descendió allí, de esa manera el yoga exhibido por las gopis de Vrndavana es el mas elevado amor puro por Dios, la perfección del bhakti-yoga. Elevarse al estado del amor mostrado por las gopis es muy difícil, pero este estado puede ser alcanzado por las almas condicionadas serias.
+</p>
+<p class='vspace'>Desafortunadamente, los neófitos baratos hacen alarde de los éxtasis trascendentales de las gopis, rebajándolos al plano mundano como manifestaciones pervertidas. A causa de tales caricaturas indeseables, ellos preparan su camino al infierno. Sin embargo, los estudiantes serios del yoga lo practican de veras y así alcanzan la perfección más elevada en bhakti-yoga, tal como se declara en el Bhagavad-gita (6.47).
+</p>
+<p class='vspace'>yoginam api sarvesam mad-gatenantar-atmana
+sraddhavan bhajate yo mam sa me yuktatamo matah
+</p>
+<p class='vspace'>Ilustración 31
+</p>
+<p class='vspace'>Los aspectos predominantes del otoño son cuatro: no hay agua en el cielo, se marchitan las hierbas que crecieron por doquier en la estación lluviosa, los caminos fangosos y los campos se secan y los estanques de agua se vuelven claros como el cristal. Estos cuatro aspectos de la atmósfera otoñal se comparan a las cuatro órdenes de la vida.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>En el sistema de varnasrama, el estudiante va al asrama del maestro, toma  lecciones de él y le sirve, inclusive como un sirviente doméstico. Los problemas del estudiante se mitigan tan pronto alcanza el conocimiento trascendental en términos de su relación con Sri Krishna, la Personalidad e Dios. Así como las nubes blancas ya no cargan más el peso de agua en el cielo de otoño, el estudiante descubre que los problemas de sacar agua para el maestro no son más un trabajo pesado si, por la gracia de su maestro, alcanza el conocimiento espiritual.
+</p>
+<p class='vspace'>Los jefes de familia que engendran hijos sin restricción, tal como las hierbas en la estación lluviosa, se quedan solos tan pronto alcanzan el estado de servicio devocional. La planificación familiar de una civilización atea no puede detener el crecimiento de una población no deseada, que es como las hierbas. La gente debe aprender a controlar su vida sexual por restricción voluntaria. Tal restricción voluntaria es posible cuando se está conectado con el servicio del Señor. Esto se confirma en el Bhagavad-gita*. 
+</p>
+<p class='vspace'>Los devotos del Señor que están bien situados se abstienen del placer material de los sentidos porque están atraídos por la belleza de la Trascendencia. La restricción forzosa mediante la planificación familiar, o por medios artificiales parecidos, no funciona por mucho tiempo; tenemos que ser atraídos por la Trascendencia. Se puede abandonar una calidad inferior de placer tan pronto se recibe la calidad superior de placer espiritual. La planificación familiar es exitosa sólo cuando uno está ocupado en cultivar el espíritu humano.
+</p>
+<p class='vspace'>Los vanaprasthas, que evitan voluntariamente asearse y dejan crecer sus barbas y uñas, ya no sienten tales incomodidades cuando se ocupan en el servicio del Señor. Y sobre todo los mendicantes, que aceptan un voto para abstenerse de la vida sexual, ya no sienten el impulso sexual cuando están fijos en el servicio trascendental del Señor.
+</p>
+<p class='vspace'>Por lo tanto, en las cuatro órdenes espirituales y en los cuatro grados de vida social, el servicio devocional al Señor es esencial. Sin esta relación, todos los principios regulativos de varna y asrama se vuelven pesadas obligaciones, tal como son en la era de Kali. Cuando los principios regulativos no tienen objetivo los varnas, se transforman en un sistema de castas y los asramas se vuelven asunto de diferentes negociantes. Todas estas anomalías del sistema social actual pueden enmendarse únicamente por el cultivo del espíritu humano en el servicio devocional del Señor.
+</p>
+<div class='vspace'></div><ul><li>visaya vinivartante niraharasya dehinah
+</li></ul><p>rasa-varjam raso 'py asya param drstva nivartate
+</p>
+<p class='vspace'>Al alma encarnada se la puede alejar del disfrute de los sentidos, aunque el gusto por los objetos de los sentidos aún quede en ella. Pero, al experimentar un gusto superior y dejar por ello semejantes ocupaciones, su conciencia queda fija.
+Bg. 2.59
+</p>
+<p class='vspace'>Ilustración 32
+</p>
+<p class='vspace'>Las hermosas nubes blancas, libres de toda responsabilidad de distribuir agua, flotan en el aire, como mendicantes libres de toda responsabilidad familiar.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Mientras alguien esté apegado a las así llamadas responsabilidades de cargas familiares, siempre estará lleno de preocupaciones o ansiedades para cubrir sus gastos familiares. Las cuatro órdenes de la vida social tal como son concebidas en el sistema de varnasrama, son muy científicas y cooperativas. Durante la vida de estudiante a uno se le enseña los principios básicos de la forma humana de vida.
+</p>
+<p class='vspace'>Alguien que ingresa a la vida de jefe de familia puede ejecutar los deberes de jefe de familia debido a que ya ha sido entrenado para este trabajo en el brahmacarya-asrama. Y después de los cincuenta años, el jefe de familia se retira de la vida familiar y se prepara para la vida de  sannyasi.
+</p>
+<p class='vspace'>El jefe de familia está moralmente obligado a mantener a los miembros de los otros tres asramas, a saber losbrahmacaris los vanaprasthas  y los sannyasis. De esta manera, a cada miembro de la sociedad se le daba una oportunidad de retirarse a una orden más elevada de cultivo espiritual y los jefes de familia no abandonaban a nadie. Todos,  brahmacaris, vanaprasthas y  sannyasis, reducían sus necesidades al mínimo y por eso nadie regateaba el mantenerlos en las necesidades simples de la vida.
+</p>
+<p class='vspace'>Sin embargo, en Kali-yuga todo el sistema se ha vuelto al revés y los estudiantes viven lujosamente, a expensas del padre o del suegro. Cuando el educado e indulgente estudiante se vuelve un jefe de familia a fuerza de sus títulos universitarios, necesita dinero de cualquier forma para satisfacer todo tipo de comodidades corporales y por lo tanto, no puede dar ni un centavo para los así llamados vanaprasthas y  sannyasis. Los vanaprasthas y  sannyasis de hoy son aquellos que fracasaron en la vida familiar. De esta manera, los así llamados sannyasis tratan de construir otro hogar en el nombre del sannyasa-asrama y se permiten toda clase de lujos a expensas de otros. Así todos estos varnas y asramas ahora se han convertido en muchos fraudes trascendentales.
+</p>
+<p class='vspace'>Pero esto no significa que en ellos no hay realidad. No se puede concluir que no existe buen dinero sólo porque se hallan encontrado algunas monedas falsificadas. El sannyasa-asrama está destinado a la completa liberación de todas las ansiedades y sirve para elevar a las almas caídas que están sumergidas en el materialismo. Pero a menos que el  sannyasi se libere de todas las preocupaciones y ansiedades, como una nube blanca, es difícil que haga algo bueno para la sociedad.
+</p>
+<p class='vspace'>Ilustración 33
+</p>
+<p class='vspace'>Existen cascadas que caen de las colinas del bosque, pero a veces no fluye agua de ellas. Así que las cascadas no son como los aguaceros corrientes. Ellas se comparan con los grandes reformadores, que hablan o no hablan, según el tiempo lo requiera.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Existen dos tipos de predicadores religiosos, a uno de ellos se le llama predicador profesional y al otro acarya. Los predicadores profesionales son como aguaceros del cielo, pero los acaryas son como las cascadas. Los comerciantes profesionales del Bhagavatam y del Ramayana hablarán de esa parte de las Escrituras que interesa a los sentidos mundanos de la audiencia. El recitador profesional del  Bhagavatam, por ejemplo, casi siempre habla del rasa-lila que al neófito le parecerá semejante a los tratos corrientes de un hombre y una mujer. De este modo, los recitadores profesionales consiguen dinero de los así llamados admiradores. Sin embargo, un &gt;acarya nunca hablara del rasa-lila a la masa. Los capítulos del Bhagavatam referentes al rasa-lila son la parte más confidencial de las Escrituras y están destinados a estudiantes avanzados en la realización espiritual. En el  Bhagavatam hay doce cantos, y el rasa-lila está en el Décimo. Así antes que alguien llegue al Décimo Canto, el  Bhagavatam trata de convencerlo de la naturaleza trascendental de la Verdad Absoluta. A menos que uno haya entendido la posición espiritual de la Suprema Personalidad de Dios, es seguro que Lo tomará por un hombre ordinario y por eso cometerá ofensas a Sus pies de loto por tantas actividades indeseables.
+</p>
+<p class='vspace'>acarya es el que conoce bien las Escrituras y enseña a sus discípulos según su capacidad para entender y avanzar en la realización espiritual. Por lo tanto, él a veces habla y a veces no habla. Los santos mensajes de Dios tienen que ser recibidos del alma realizada y no del hombre profesional, tal como uno no debe aceptar la leche tocada por la lengua de una serpiente. La leche es buena, pero tan pronto es tocada por la lengua de la serpiente se vuelve venenosa. Por lo tanto, el acarya no es un mercenario proveedor de instrucciones como el recitador profesional de las Escrituras.
+</p>
+<p class='vspace'>Ilustración 34
+</p>
+<p class='vspace'>Durante la estación lluviosa se acumulan pequeños estanques de agua que en el otoño se secan gradualmente. Las pequeñas criaturas que juegan en éstos pequeños estanques no entienden que sus días ahora están contados y que muy pronto terminarán. Así, ellos son como hombres tontos que, sin preocuparse por el cercano día de su muerte, están absortos en el así llamado disfrute de la vida familiar.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Los políticos tontos están demasiado apegados a la vida familiar. Un gran político significa  un gran hombre de familia. Un hombre de familia ordinario está apegado a su limitada familia de esposa e hijos pero los grandes políticos extienden el mismo sentimiento familiar a un círculo más amplio y así quedan encumbrados por el falso prestigio, el honor y el interés propio. El político nunca se retira de la política aunque haya disfrutado ya de muchos puestos codiciables, como los de ministro o presidente. Cuánto más viejo es, más apegado está a su falso prestigio. E incluso, al cabo de su vida, piensa que todo se arruinará sin él. Él es tan tonto que no ve que muchos otros políticos que pensaban como él han venido y se han ido sin que hubiera ganancia o pérdida por su ausencia. Estos hombres de familia, grandes y pequeños, son como el pequeño pez en los estanques de agua, que se secan gradualmente durante el otoño. Son tontos porque piensan que el apego a su familia, aun al final de su vida, será capaz de protegerlo de las crueles garras de la muerte.
+</p>
+<p class='vspace'>Como ya se mencionó, la vida humana debe dividirse en cuatro secciones: la vida de estudiante, la de jefe de familia, la vida preparatoria y la vida de dedicación al servicio del Señor. Uno debe retirarse de cualquier tipo de vida familiar, grande o pequeña a la edad de cincuenta años y así prepararse para la próxima vida. Este es el proceso de civilización humana. A los jefes de familia se les da una pensión por su servicio de tal manera que puedan vivir una vida de cultivo más elevado. Pero los hombres tontos, incluso reacios a aceptar esta pensión, tratan de incrementar artificialmente la duración de su vida. 
+</p>
+<p class='vspace'>Tales hombres tontos deberían aprender la lección de los estanques de agua que se secan y deben saber, por su propio interés, que la vida es eterna y que continúa aun después de la muerte. Únicamente el cuerpo cambia, ya sea espiritual o materialmente. Un hombre inteligente debe ser cauteloso para saber que clase de cuerpo le va a ser otorgado y debe prepararse para una vida mejor en otros planetas aun si se niega a regresar al Supremo.
+</p>
+<p class='vspace'>Ilustración 35
+</p>
+<p class='vspace'>Cuando los pequeños estanques de agua se calientan excesivamente debido al calor abrasador del Sol de otoño, los pobres animalitos, con sus numerosos familiares, sufren terriblemente, así como los pobres jefes de una familia numerosa sufren estrechez económica y aún así continúan engendrando niños debido al descontrol de sus sentidos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>La vida humana está destinada a controlar los sentidos, ya que los sentidos descontrolados son la causa de la esclavitud material. Pero para los tontos, el placer de los sentidos es el eje de las actividades de la vida. Todos los hombres se someten a deberes arduos y penosos día y noche y durante todas las estaciones del año únicamente para disfrutar del placer de los sentidos con sus cónyuges. Estas criaturas tontas no tienen información de otro placer. Especialmente en una civilización atea, el placer de los sentidos, aceptado en nombre de la cultura y la filosofía lo es todo. Los hombres adictos a este placer se llaman  krpanas.
+</p>
+<p class='vspace'>Cuando los  krpanas tienen muchos niños y sufren el calor abrasador de la vida familiar, unos líderes parecidos a ellos les aconsejan la planificación familiar. La idea de planificación familiar consiste en que el placer de los sentidos no debe reducirse sino que debe realizarse un control de la natalidad, con medidas artificiales. Tales métodos de control de la natalidad se llaman bhruna-hatya o asesinato del niño en embrión. Tal asesinato es un acto pecaminoso y en las Escrituras reveladas se señala un infierno específico para los que cometen tales pecados.
+Cultivo espiritual significa aspirar a una ocupación mejor en la vida. Cuando un hombre se ocupa en tal vida de cultivo, el deseo por aparearse disminuye automáticamente y los sufrimientos de la vida familiar descontrolada se mitigan sin medios artificiales.
+</p>
+<p class='vspace'>Por lo tanto, la atención de un ser humano debe ser atraída hacia el cultivo del espíritu humano, porque esto lo protegerá gradualmente de todo tipo de desconcierto y lo llevará a un estado de vida más elevado, para un disfrute real y eterno en contacto personal con la Suprema Personalidad de Dios, Sri Krishna.
+</p>
+<p class='vspace'>Ilustración 36
+</p>
+<p class='vspace'>Con el avance de la estación del otoño, la tierra húmeda y los lodazales comienzan a secarse y la verde vegetación comienza a desteñirse. Esta sequía y decoloración se parece a la desaparición gradual del falso sentido de afinidad y ego.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El progreso en el cultivo del espíritu humano ocasiona la desaparición gradual del ego materialista. Cubierta por la ignorancia, la pasión y la así llamada bondad, el alma espiritual cree que ella es lo más importante y se cubre con un falso sentido del ego. Así falsamente identifica el alma con el cuerpo y sus relaciones corporales con las cosas materiales se vuelven los objetos de su atracción. Esta falsa identificación y atracción por la materia gradualmente se seca y se desvanece al tener éxito en el cultivo del espíritu humano. Ese es el efecto de tal cultivo superior. El progreso en la cultura espiritual ocasiona la desintegración del falso ego y de la atracción material.
+</p>
+<p class='vspace'>La meta última del cultivo del espíritu humano es la comprensión de Dios y la rendición a Dios con un sentido pleno de Su naturaleza omnipresente. Cuando un alma liberada se rinde así a los pies de loto del Dios omnipresente, el océano de ignorancia se vuelve tan insignificante como el agua contenida en la pequeña huella de un ternero. Inmediatamente él se vuelve elegible para ser promovido al reino espiritual y ya no tiene nada que ver con el miserable territorio del mundo material.
+</p>
+<p class='vspace'>El cultivo del espíritu humano no es, por eso, un simple ajuste de las anomalías materialistas. Es el proceso de preparación para ser promovidos al reino espiritual. Nadie puede controlar los sufrimientos de la existencia material, pero por medio del cultivo espiritual, uno puede elevarse sobre los efectos de tal vida miserable. Como ejemplo puede citarse la condición de un coco seco. La pulpa del coco seco, automáticamente se separa de su cáscara externa. En forma similar, la cáscara externa, o sea la cubierta material burda y sutil del alma se separa automáticamente del alma espiritual que puede entonces vivir una existencia espiritual, si bien aparentemente aun está dentro de la cáscara seca. A esta independencia del falso sentimiento del ego se le llama liberación del alma.
+</p>
+<p class='vspace'>Ilustración 37
+</p>
+<p class='vspace'>Con el inicio de la estación del otoño, el mar encrespado se vuelve tranquilo y sereno, como un filósofo después de la autorrealización, que no es ya perturbado por las modalidades de la naturaleza.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>EL resultado de la autorrealización es el cese de la tormenta del deseo y la lujuria que son producto de las modalidades de la ignorancia y la pasión. El cese de la tormenta no significa que el mar queda inactivo. Cuando las tormentas amainan, la navegación puede realizarse fácilmente. Según el sistema hindú de navegación, hay una ceremonia a orillas del mar conocida como el día del coco. En el día del coco se le ofrece al mar un coco debido a que se ha pacificado y a partir de ese día, los barcos de altamar zarpan hacia el extranjero.
+</p>
+<p class='vspace'>Las tres modalidades de la naturaleza dividen las actividades humanas en dos esferas diferentes, una externa y otra introspectiva. Mientras un hombre sea dominado por las modalidades de la ignorancia y la pasión, es externamente activo en el deseo y la lujuria. Los hombres absortos en el deseo y la lujuria se llaman asuras y siempre están buscando mujeres y dinero. A causa de las mujeres y el dinero, los asuras explotan toda fuente de desarrollo económico. Como resultado de esta civilización  asúrica, toda la sociedad humana se vuelve como un mar tormentoso, sin vestigio alguno de paz ni prosperidad.
+Un enfoque del mundo demasiado externo hace surgir un excesivo y difícil tipo de industria y comercio en gran escala, conocido comougra-karma. La palabra ugra significa "arduo" o "difícil" y karma significa "trabajo". El desarrollo de arduos y difíciles esfuerzos industriales entorpece siempre el cultivo progresivo del espíritu humano. Los líderes asúricos de la sociedad nunca se retiran de tales tareas lujuriosas, a menos que sean matados por las leyes de la naturaleza. Según ellos no hay porqué retirarse ni cultivar el espíritu humano. Pero los hombres en la modalidad de la bondad tienen una mente introspectiva; después de una lucha regulada por la existencia, se retiran y ocupan su tiempo en cultivar el espíritu humano.
+</p>
+<p class='vspace'>De acuerdo con el principio varnasrama, es obligatorio que uno se retire después de los cincuenta años de edad, sin considerar otras circunstancias. Las oficinas comerciales cierran a una hora fija, sin importar cuánto trabajo resta. Similarmente después de los cincuenta años uno debe retirarse de la vida externa y activa para dedicarse al cultivo introspectivo del espíritu humano. Este retiro debe ser obligatorio, de tal manera que los viejos tontos ya no perturben el progreso pacífico de la cultura espiritual. En el gobierno democrático moderno, nadie debe ser elegido después de los cincuenta años. De lo contrario, la tormenta del océano de ignorancia no puede ser detenida para permitir que los barcos y botes zarpen de vuelta al Supremo. Los enemigos más grandes del progreso de la cultura espiritual en la sociedad humana son los viejos fósiles de los partidos políticos, que están ciegos y tratan de conducir a otros ciegos. Ellos causan el desastre en una sociedad humana pacífica. Los miembros de la generación joven no son tan estúpidos como los viejos políticos y por lo tanto, por ley del Estado, estos viejos políticos deberían retirarse de la vida activa a la edad de cincuenta años.
+</p>
+<p class='vspace'>Ilustración 38
+</p>
+<p class='vspace'>Para conservar el agua después de la estación lluviosa, los campesinos comienzan a reconstruir los setos de los campos de arroz, tal como los yogis tratan de utilizar la energía acumulada para la autorrealización.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>El ser viviente es la energía marginal de la Absoluta Personalidad de Dios y puede utilizar Sus reservas de energía ya sea externa o internamente. Cuando es utilizada internamente la energía se identifica con la energía interna de la Personalidad de Dios; pero, cuando la misma reserva de energía es utilizada en Su energía externa, se identifica con tal energía externa. Todas las energías interna, externa y marginal son emanaciones de Él —el Supremo— y actúa diferentemente para probar la diversidad en la unidad. La unidad es el Señor y las energías representan la diversidad. El Señor es tan poderoso que Él puede hacer cualquier cosa simplemente por Su dulce deseo. Como se mencionó anteriormente, todo es hecho por Sus energías en una forma natural, con pleno conocimiento y completa perfección. Esta es la información que tenemos de las literaturas Védicas.
+</p>
+<p class='vspace'>La energía interna y la energía marginal son de la misma calidad superior y la energía externa es de calidad inferior. Esta es la información que tenemos en el Bhagavad-gita. Debido a que la entidad viviente pertenece a la energía marginal y es de la misma calidad que la energía interna, le es completamente natural cooperar con ella. Pero cuando la entidad viviente prefiere cooperar con la energía externa, se pone en dificultades. Por el proceso llamado  pratyahara (desviación) el yoga desvía nuestras energías de lo externo a lo interno.
+</p>
+<p class='vspace'>La energía de nuestros sentidos no debe ser reprimida, sino desviada. Los sentidos deben purificarse, de tal manera que sirvan al Señor en lugar de perturbar Su armonía establecida. Toda la armonía cósmica es un hecho establecido por el deseo del Supremo. Así que tenemos que ver el deseo supremo en cada acto de la situación cósmica. Esa es la instrucción del Isopanisad. La vida humana es una oportunidad para entender esta armonía cósmica y, por lo tanto, nuestra reserva de energía, que es comparada al agua conservada en el arrozal, debe utilizarse únicamente para éste propósito.
+</p>
+<p class='vspace'>Así como no existe posibilidad de lluvia en el otoño, nosotros no tendremos la posibilidad inmediata de obtener nuevamente un cuerpo humano si utilizamos nuestras reservas de energía para el placer de los sentidos. Los sentidos pueden utilizarse para el servicio del Señor. Si se los usa apropiadamente, pueden alcanzar la perfección más elevada al estar ocupados directamente en el servicio del Señor, en Su presencia personal. Cuando la entidad viviente regresa así al hogar, de vuelta al Supremo y se ocupa en el servicio personal del Señor, se dice que ha alcanzado samsiddhi paramah, la perfección más elevada, esto se confirma en el Bhagavad-gita.*
+</p>
+<div class='vspace'></div><ul><li>mam upetya punar janma
+</li></ul><p>duhkhalayam asasvatam
+napnuvanti mahatmanah
+samsiddhim paramam gatah
+</p>
+<p class='vspace'>Después de llegar a Mí, las grandes almas, que son yogis en estado de devoción, jamás regresan a este mundo temporal, el cual está lleno de sufrimientos, ya que han logrado la máxima perfección.
+Bg. 8.15
+</p>
+<p class='vspace'>Ilustración 39
+</p>
+<p class='vspace'>En el otoño existe un abismo de diferencia entre el día y la noche. Durante el día el extremado calor del Sol es insoportable, pero en la noche la luz de la Luna es muy confortable y refrescante. En forma similar, el Señor Sri Krishna es reconfortante tanto para las gopis como para el iluso hombre mundano, que acepta el cuerpo como si fuera el alma.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Mientras el ser viviente, bajo la ilusión, acepte el cuerpo o la mente como si fueran el alma, siempre será infeliz, igual que un hombre en el calor ardiente del otoño. Pero cuando el mismo ser viviente se vuelve un devoto del Señor Sri Krishna, la Personalidad de Dios, vive una vida reconfortante como los rayos refrescantes de la luna en otoño. El Señor Sri Krishna es tan misericordioso que desciende para rescatar a la doliente humanidad y predica el Bhagavad-gita con el deseo intenso de que todos los seres vivientes abandonen sus ocupaciones y se refugien a Sus pies de loto. Esta es la parte más confidencial de toda Escritura revelada.
+</p>
+<p class='vspace'>Aquí se da el ejemplo de las damiselas de Vrajabhumi Vrndavana (las gopis) ya que estas consortes eternas del Señor sufrían terriblemente por la separación del Señor Krishna, cuando el Señor se ausentaba  para atender las vacas en el bosque. Durante la ausencia de Krishna, todo el día parecía a las gopis tan insoportable como un caluroso día de otoño. El Señor apreciaba tanto este sentimiento natural de las gopis que confesó Su incapacidad para corresponder este intenso amor. El Señor Caitanya elogió los sentimientos de las gopis como la modalidad de adoración más elevada que se pueda prestar al Señor. La conclusión es que la práctica regular del bhakti-yoga conducirá al devoto al plano de amor intenso por el Señor. Esta es la única cualificación por la cual se permite al alma condicionada incorporarse a la vida de bienaventuranza eterna en el reino de Dios. Las tres miserias de la existencia material se nulifican inmediatamente por el intenso amor a Dios. Este es el objetivo final del cultivo del espíritu humano.
+</p>
+<p class='vspace'>Ilustración 40
+</p>
+<p class='vspace'>En el despejado cielo de otoño las estrellas centelleantes parecen brillar más y más, igual que un trascendentalista con una clara visión del propósito de los Vedas.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Se dice que el significado de los Vedas se vuelve claro para alguien que no solamente es un devoto sincero del Señor, sino también un servidor sincero del maestro espiritual. El maestro espiritual conoce el propósito de los Vedas, lo practica personalmente y enseña al discípulo acerca de la verdadera luz de los Vedas. El maestro espiritual supremo, el Señor Sri Krishna, nos enseña la importancia de los Vedas en el siguiente verso del Bhagavad-gita (15.16)
+</p>
+<p class='vspace'>dvav imau purusau loke
+ksaras caksara eva ca
+ksarah sarvani bhutani
+kutastho ‘ksara ucyate
+</p>
+<p class='vspace'>El Señor dice que en los Vedas se menciona que existen dos clases de seres vivientes, el falible y el infalible. Aquellos seres vivientes que están materialmente enjaulados son todos falibles, mientras que aquellos que no están condicionados y se hallan situados eternamente en la esfera espiritual se llaman aksara, o infalible. Entonces el Señor dice, 
+</p>
+<p class='vspace'>uttamah purusas tv anyah
+paramatmety udahrtah
+yo loka-trayam avisya
+bibharty avyaya isvarah
+yasmat ksaram atito ‘ham
+aksarad api cottamah
+ato ‘smi loke vede ca
+prathitah purusottamah
+</p>
+<p class='vspace'>"Aparte de estos innumerables seres vivientes falibles e infalibles, existe otra personalidad superior conocida como Paramatma. Él penetra los tres mundos y existe como el controlador supremo."
+</p>
+<p class='vspace'>"Y debido a que Yo (el Señor Sri Krishna) Soy trascendental a todos ellos, aun a aquellos que son infalibles, Soy conocido en todos los Vedas e historias ( los Puranas, el Mahabharata, el Ramayana, etc.) como la Suprema Personalidad de Dios Absoluta".(Bg..15.17.18)
+</p>
+<p class='vspace'>El significado de los Vedas se explica aun más claramente en el Srimad Bhagavatam. La conclusión de las literaturas Védicas es que el Señor Sri Krishna es el señor primigenio y la causa de todas las causas. Él posee Su forma eterna de dos brazos como Syamasundara, exactamente con los rasgos del joven más hermoso y esa es la suma y sustancia de los Vedas en lo concerniente a Dios. Dios es uno, pero las entidades vivientes, tanto las liberadas como las condicionadas, son muchas y tienen diferentes niveles de posición. Las entidades vivientes nunca son iguales a Dios, pero como partes y porciones del Señor son eternamente Sus sirvientes. Mientras las entidades vivientes estén normalmente situadas como Sus sirvientes son felices; de otra manera son siempre infelices. Esta es la conclusión Védica.
+</p>
+<p class='vspace'>Ilustración 41
+</p>
+<p class='vspace'>En el despejado cielo de otoño la Luna hermosa entre las hermosas estrellas es el centro de todas las miradas, tal como el Señor Sri Krishna es la atracción central de la dinastía Vrsni o en la familia Yadu.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>La Personalidad de Dios, Sri Krishna, apareció en la familia Yadu. Desde entonces, la dinastía Yadu ha sido luminosa como la luna de otoño. La aparición y desaparición del Señor son similares a la aparición y desaparición del Sol. Al Sol se le ve primero en el horizonte oriental, pero eso no significa que el Sol sea producto de ese horizonte. El Sol esta fijo en su propia órbita y no nace ni se pone nunca. Pero debido a que lo vemos primero en el horizonte oriental, podemos decir que el Sol sale por ese lado. Similarmente la aparición de Dios en alguna familia particular no significa que Él esté limitado por las obligaciones hacia esa familia. 
+</p>
+<p class='vspace'>Él es completamente independiente; puede aparecer y desaparecer en cualquier parte y en todas partes porque Él es omnipenetrante.
+</p>
+<p class='vspace'>Las personas poco inteligentes no pueden entender la aparición y desaparición del Señor como una encarnación, pero no existen razonamientos válidos que respalden a tales incrédulos. Si Dios es omnipresente como el poder de la electricidad, Él puede manifestarse en cualquier sitio dentro de Su creación. Cuando Él esta dentro no podemos verlo, pero cuando Él esta fuera, es visto por todos, aunque muy pocos lo conocen tal como Él es. Todo el mundo ve al Sol todos los días, pero eso no significa que todos conocen lo que el Sol realmente es. Similarmente cuando el Señor Sri Krishna estaba presente hace cinco mil años, muy pocos podían saber lo que Él era.
+</p>
+<p class='vspace'>Cualquiera que llegue a conocerlo tal como Él es, se libera al instante, y al momento de dejar este cuerpo presente, tal persona regresa al Supremo, para no volver jamás a este universo de múltiples miserias. En el Bhagavad-gita (4.9) el Señor confirma esto como sigue:
+</p>
+<p class='vspace'>janma karma ca me divyam
+evam yo vetti tattvatah
+tyaktva deham punar janma
+naiti mam eti so 'rjuna
+</p>
+<p class='vspace'>"Mi nacimiento y actividades son todos trascendentales. Alguien que en realidad los conoce no será condicionado por otro cuerpo material, sino que regresará a Mi morada donde no existe nacimiento ni muerte".
+</p>
+<p class='vspace'>Pero existen personas necias que Lo toman como si fuese un hombre corriente, desconociendo la esencia de Sus aspectos trascendentales. En el Bhagavad-gita (9.11) el Señor afirma esto:
+</p>
+<p class='vspace'>avajananti mam mudha
+manusim tanum asritam
+param bhavam ajananto
+mama bhuta-mahesvaram
+</p>
+<p class='vspace'>"Los necios se burlan de Mí cuando desciendo en forma humana. Ellos no conocen Mi naturaleza trascendental ni Mi dominio supremo sobre todo lo que existe."
+</p>
+<p class='vspace'>Ilustración 42
+</p>
+<p class='vspace'>Por la noche, en el otoño, la atmósfera es muy placentera, porque no es muy caliente ni es muy fría. El viento suave que soplaba entre los jardines de frutas y flores en Vrndavana, complacía a todos —a todos, menos a las gopis que siempre estaban atrapadas por un sincero abatimiento debido a la ausencia de Krishna.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Existen dos clases de sentimientos trascendentales entre las personas ocupadas en la adoración del Señor. Uno se llama sambhoga y el otro se llama viraha. De acuerdo con las autoridades en la línea discipular, la adoración viraha es más agradable que la adoración sambhoga. Sambhoga tiene lugar con el contacto directo, mientras que viraha se produce sin ese contacto directo. EL Señor Caitanya Mahaprabhu nos enseñó a aceptar la adoración viraha. En nuestra condición actual, no podemos hacer ningún contacto directo con la Suprema Personalidad de Dios. Pero si practicamos la forma de adoración viraha trascendentalmente podremos comprender la presencia del Señor más amorosamente que en Su presencia real.
+</p>
+<p class='vspace'>Sin amor a Dios, ni siquiera tiene sentido el contacto directo. Durante la presencia del Señor había miles y miles de personas pero, debido a que ellos no tenían amor por Dios, difícilmente podían comprender la Personalidad de Dios, Sri Krishna. Por eso debemos primero activar nuestro amor latente por Dios, cumpliendo las reglas prescritas y siguiendo los pasos de las autoridades que están verdaderamente fijas en el amor a Dios. Las gopis dan el ejemplo más elevado del amor puro por Dios. El Señor Caitanya, en el clímax de la realización, exhibió la adoración viraha en la modalidad de las gopis.
+</p>
+<p class='vspace'>En el mundo terrenal también existe un atisbo de ese viraha. Una amorosa consorte, un esposo o un amigo, pueden enloquecer por algún tiempo debido a la ausencia de su amado. Sin embargo, tal estado mental no es permanente. El amoroso esposo, o la esposa, se entregan a otro y olvidan todo el pasado. Esto es así porque tales relaciones del mundo material no son reales.
+</p>
+<p class='vspace'>Sin embargo, la situación espiritual es completamente distinta. Un verdadero amante de Dios no puede olvidarlo nunca, aun a cambio de todo lo demás. El devoto del Señor no puede ser feliz en ninguna circunstancia sin el Señor. En ausencia del Señor, el devoto se relaciona con Él recordando Su separación. Debido a que el Señor es absoluto el sentimiento de separación del devoto es trascendentalmente más agradable que el contacto directo. 
+</p>
+<p class='vspace'>Esto es posible únicamente cuando desarrollamos amor genuino por Él. En tal estado, el devoto siempre  está unido al Señor por sentimientos de separación que se vuelven más agudos e intolerables en circunstancias apropiadas. El suave viento recordaba a las gopis la asociación del Señor y ellas sintieron Su separación agudamente.
+</p>
+<p class='vspace'>Ilustración 43
+</p>
+<p class='vspace'>En la estación del otoño todos los pájaros, bestias y hombres quedan sexualmente dispuestos y el toro, el venado, el pájaro, el hombre y otras criaturas masculinas fecundan a la fuerza al sexo bello. Una fecundación similar ocurre como resultado del servicio devocional al Señor.
+Enseñanzas de la Pintura
+El servicio devocional al Señor nunca se presta en vano. En el momento oportuno, el resultado de nuestro servicio devocional llegará, aun sin desearlo. Los devotos puros no desean ninguna recompensa del Señor a cambio de su servicio; ellos no hacen intercambios comerciales con el Señor. Pero el Señor espontáneamente complace todos los deseos de Sus devotos.
+</p>
+<p class='vspace'>Puede parecer que un devoto del Señor se vuelve cada vez más y más pobre en términos de prosperidad material; pero objetivamente no es así. El ejemplo típico son los Pandavas. Los cinco hermanos, encabezados por el rey Yudhisthira, soportaron todo tipo de dificultades debido a la conspiración de sus primos dirigidos por Duryodhana. Pero a la larga, el Señor Krishna puso en el trono al rey Yudhisthira y sus enemigos fueron derrotados. El rey Yudhisthira nunca se perturbó por las calamidades que los agobiaron aun cuando el Señor  Krishna era siempre su compañero. Los Pandavas nunca oraron al Señor por algún beneficio, excepto Su servicio devocional y, a su debido tiempo, todo salió a favor de los devotos.
+</p>
+<p class='vspace'>Por lo tanto un devoto debe ejecutar su servicio devocional con plena energía, tolerancia y confianza. Debe ejecutar sus deberes programados, ser puros de corazón y servir en asociación de devotos. Estos seis puntos conducirán al devoto por el sendero del éxito. Uno no debe desanimarse en el desempeño del servicio devocional. Los fracasos pueden no ser perjudiciales, sino más bien ser los pilares del éxito. Uno debe tener buena fe en los principios regulativos seguidos por las almas autorrealizadas y no debe dudar del resultado final de ese servicio devocional. Por el contrario, debe seguir ejecutando sus deberes prescritos sin vacilar y nunca debe dejarse influir por la asociación  indeseable.
+</p>
+<p class='vspace'>No debemos considerar el regreso al Supremo como un juego. Debemos tomarlo seriamente, tal como se ordena en las Escrituras. Para un seguidor estricto, el resultado es seguro y cierto. Cuando sea el momento adecuado los resultados vendrán por su propia fuerza. Dhruva Maharaja se puso a adorar a Dios para conseguir algo específico, pero cuando estuvo realmente en contacto con Dios no quiso nada del Señor. Sin embargo, el Señor concedió a  Dhruva Maharaja ambos beneficios. Es decir, el Señor satisfizo sus deseos y también le otorgó la salvación eterna. Estas son las enseñanzas que aprendemos de todas las Escrituras reveladas. Dios todopoderoso concede los resultados que deseamos y por eso debemos desear aquello que eterno, bienaventurado y pleno de conocimiento. En el servicio devocional, no debemos esforzarnos por aquello que es temporal e inútil.
+</p>
+<p class='vspace'>Ilustración 44
+</p>
+<p class='vspace'>En la estación del otoño todas las fuentes de agua están llenas de flores de loto. También hay flores que se parecen al loto pero son de una clase diferente. Entre ellas hay una flor llamada kumuda. Cuando sale el Sol, todas las flores, menos la kumuda, florecen hermosamente. Similarmente los hombres que semejan al loto, disfrutan con el advenimiento de un rey responsable; pero los hombres que son como la kumuda no gustan de la existencia de un rey.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>En esta era de Kali, la gente quiere gobernarse a sí misma, porque los reyes se han vuelto corruptos. Antiguamente no era así. Los hijos de los reyes eran entrenados bajo la guía de un buen brahmana-acarya, tal como los Pandavas y los Kauravas fueron puestos bajo la instrucción del cualificado profesor  brahmana  Sri Dronacarya. Los príncipes eran rigurosamente entrenados en política, economía, artes militares, ética y moral, ciencias y, sobre todo en el servicio devocional al Señor. Solo después de tan buen entrenamiento se permitía a los príncipes acceder al trono. Cuando tal príncipe se volvía rey, también era guiado por el consejo de buenos brahmanas. Aun en la Edad Media, Maharaja Candragupta fue guiado por el brahmana erudito Canakya Pandita.
+</p>
+<p class='vspace'>En una monarquía, un hombre suficientemente entrenado era capaz de conducir él solo los asuntos del estado. Pero en una democracia nadie es entrenado como un príncipe; en vez de eso, los políticos son elegidos para ocupar puestos administrativos de responsabilidad mediante arreglos diplomáticos. En lugar de un rey o un ejecutivo supremo, en una democracia existen muchos casi-reyes: el presidente, los ministros, los diputados, los secretarios, los secretarios asistentes, los secretarios privados y los subsecretarios. Hay un número de partidos —políticos, sociales y comunales— y existen miembros del partido, simpatizantes del partido y así sucesivamente. Pero ninguno está suficientemente entrenado para encargarse de los verdaderos intereses de los gobernados. En un así llamado gobierno democrático la corrupción está más extendida que en una autocracia o una  monarquía.
+</p>
+<p class='vspace'>Los hombres que tratan de prosperar bajo la apariencia de sirvientes del pueblo, no quieren un buen rey como cabeza de estado. Ellos son como las flores kumuda, que no disfrutan de la salida del Sol. La palabra ku significa "malo" y mud significa "placer". Las personas que quieren explotar el poder administrativo para su propio interés, no gustan de la presencia de un buen rey. Si bien profesan la democracia, lo que ellos quieren es ser reyes. Y así compiten por votos a través de propaganda sucia y disfrutan de la política, pero no quieren un rey. Los ladrones y bandoleros tampoco disfrutan ante la presencia de un buen rey. Es por el bien del pueblo que se debe tener como cabeza del Estado a un rey bien entrenado.
+</p>
+<p class='vspace'>Ilustración 45
+</p>
+<p class='vspace'>Después que los nuevos granos fueron segados y traídos a casa desde los arrozales, la gente comenzó a observar la ceremonia navanna en todas partes, ante la presencia del Señor Sri Krishna y Baladeva.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>De acuerdo con la cultura Védica, los eruditos consideran que todos los productos naturales como los granos alimenticios, las frutas, las flores y la leche son enviados por Dios. Nadie puede manufacturar estas cosas en fábricas hechas por el hombre, no importa lo científicamente avanzada que la gente pueda ser. La gente puede hacer preparaciones con los alimentos enviados por Dios, pero no puede manufacturar los ingredientes naturales. Por lo tanto, los hombres espiritualmente cultos se sienten agradecidos con el Señor cuando, por su gracia, obtienen suficientes alimentos naturales.
+</p>
+<p class='vspace'>La ceremonia navanna-prasana se observa como una forma de reconocimiento al Señor por Sus regalos. Los granos recién cosechados deben ser ofrecidos primero al Señor por los aldeanos, ya sea individual o colectivamente; en ambos casos, todos los miembros de la aldea deberán compartir el prasadam ofrecido así al Señor. 
+</p>
+<p class='vspace'>Tales ceremonias hacen a la gente feliz y próspera. Siempre debemos reconocer la misericordia de Dios. No debemos pensar que podemos producir abundantes granos alimenticios sólo con la ayuda de tractores y fertilizantes. Estos pueden ayudarnos únicamente como instrumentos para la producción; pero, sin la sanción del Señor no es posible tener granos, aunque haya camiones y fertilizantes.
+Cuando el Señor Krishna y Baladeva estaban presentes, los hombres buenos de Vrndavana comprendían que su provisión de granos alimenticios era suficiente debido a la presencia del Señor. Algunas personas de Vrndavana, incluso el padre del Señor Krishna, Nanda Maharaja, acostumbraban a realizar sacrificios para congraciarse con Indra, el rey del cielo, porque él es quien controla las lluvias. Sin buenas lluvias, no se producen granos y, por eso, la gente ofrecía sacrificios a Indra. Sin embargo, el Señor Sri Krishna detuvo esta antigua ceremonia y aconsejó a Su Padre que ofreciese el mismo sacrificio al Señor Supremo. Su propósito era enseñarnos que no necesitamos satisfacer a todos los semidioses encargados de los diferentes asuntos cósmicos; en   vez de eso, debemos ofrecer sacrificios al Señor Supremo, porque el Señor es el amo y todos los demás Sus sirvientes. La famosa ceremonia anna-kuta, realizada especialmente en Vrndavana y en otras partes de la India, fue así establecida por el Señor y la gente aún sigue este camino, adorando a la colina Govardhana, donde el Señor solía disfrutar cuidando a las vacas. La gente también adora a Giri Govardhana, por ser idéntica al Señor, debido a que no existe diferencia entre Dios, Sus enseres y Sus pasatiempos.
+</p>
+<p class='vspace'>Ilustración 46
+</p>
+<p class='vspace'>Los comerciantes, los predicadores, los reyes y los estudiantes, que estuvieron confinados en sus casas durante los meses de junio, julio, agosto y septiembre, comienzan a salir y obtienen el éxito, tal como las almas perfectas obtienen el cuerpo requerido, tan pronto abandonan el actual.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>A la gente en general—especialmente a los comerciantes, los predicadores, los reyes y los estudiantes— se le aconseja no abandonar sus hogares durante los cuatro meses de la estación lluviosa. Estos cuatro meses son conocidos como Caturmasya y existen para todos reglas específicas que cumplir en este período, en parte por razones de salud y en parte para la realización espiritual. Durante esta época, los mercaderes no pueden comerciar libremente; las almas dedicadas, como los sannyasis, no pueden predicar libremente las doctrinas de los Vedas, los reyes no pueden salir a y los estudiantes no pueden ir a las escuelas, que están cerradas. Pero después del período de Caturmasya, todos ellos tienen libertad para salir y cumplir con sus deberes respectivos y, por hacerlo, pueden alcanzar los resultados que deseen.
+</p>
+<p class='vspace'>Similarmente, no se puede lograr los efectos deseados de nuestras penitencias mientras no nos liberemos del cuerpo actual. Existen diferentes maneras de practicar los distintos tipos de yoga para obtener diferentes resultados en diferentes esferas de vida. No todo es lo mismo. Existen variedades de vida, variedades de planetas y variedades de éxito en la realización espiritual. Y todo eso se puede lograr cuando hayamos concluido el período de vida, semejante al Caturmasya. Por lo tanto, es una tontería imaginar que podemos ir a otros planetas en nuestros cuerpos actuales. Si queremos ir a Devaloka, los planetas de semidioses, debemos obtener las cualificaciones requeridas. Lo mismo sucede si queremos regresar al reino de Dios. Si queremos quedarnos en este planeta, en una mejor condición de vida, también eso dependerá de los logros requeridos. En cualquier caso, esos logros pueden obtenerse sólo después de abandonar este cuerpo.
+</p>
+<p class='vspace'>Los comerciantes, los predicadores, los reyes y los estudiantes, conforman las cuatro clases importantes de la sociedad humana. Los mercaderes deben preocuparse de que todo el mundo tenga su parte exacta del alimento que Dios ha dado como  regalo.  Los sannyasis predicadores, deben ir de puerta en puerta para predicar el significado de la conciencia de Dios; no para construir mathas y  templos, sino para iluminar a la gente. El rey debe salir de su hogar para ver con sus propios ojos cómo marchan las cosas (Maharaja Pariksit, mientras viajaba, vio a un hombre, Kali, intentando matar a una vaca, el rey inmediatamente lo castigó). Y los estudiantes deben  acumular conocimiento dondequiera que  se encuentre disponible. El trabajo combinado de estas cuatro clases está destinado al bienestar general de la sociedad. 
+</p>
+<p class='vspace'>Ilustración 47
+</p>
+<p class='vspace'>De la trascendencia, llamada Krsnaloka, emana una refulgencia luminosa que se parece a la cola de un cometa. Esta refulgencia luminosa es ilimitada, inconmensurable e insondable. Dentro de esta refulgencia, existen innumerables planetas resplandecientes. Cada uno de ellos es autoluminoso. En algún lugar, una parte limitada de esa luminosa refulgencia es cubierta por la energía material, tal como una parte del cielo es cubierta por una nube. Dentro de esta energía material, existen innumerables universos, en cada universo, existen innumerables planetas materiales. La Tierra es uno de estos planetas. Así podemos entender qué parte tan insignificante de todo el cosmos es este globo en el que vivimos.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Krsnaloka es, como se menciona aquí, la residencia de la Personalidad de Dios, la Trascendencia original. La refulgencia luminosa que emana de Krsnaloka, es el brillo personal del Señor. El todopoderoso Señor, pleno de energías inconcebibles, Se expande en diversas formas y energías. Existen formas de Su energía, así como formas de Su persona. Él posee innumerables energías y, por lo tanto, puede hacer cualquier cosa, como lo desee; y estas cosas ocurren inmediatamente, con toda perfección. Sus energías son como el calor y la luz que se expanden del fuego. Toda la manifestación cósmica no es más que una expansión de Sus energías, que son emanaciones de Él y, por lo tanto, las emanaciones son simultáneamente uno con Él y diferentes de Él.
+</p>
+<p class='vspace'>La Trascendencia se compara a la leche y las emanaciones son comparadas al yogur. El yogur no es sino leche, pero al mismo tiempo, es diferente de la leche. El yogur es una preparación de la leche, pero no puede utilizarse en lugar de la leche. A veces, el Señor es también comparado con un árbol: la raíz del árbol es la causa del tronco, las ramas, las ramitas, las hojas y los frutos, pero aun así el tronco no es el fruto, el fruto no es la hoja, ni la raíz  es la hoja. Cuando se necesita agua, ésta debe ser vertida en la raíz y no en las hojas. Verter agua en las hojas no tiene ninguna utilidad, pero verter agua en la raíz cumple todos los propósitos de la cultura espiritual.
+</p>
+<p class='vspace'>Krsnaloka también es llamada Goloka Vrndavana. Debajo de Goloka está Hari-Dhama, Mahesa-Dhama y Devi-Dhama.  Hari (Visnu, Narayana) es la expansión formal del Señor. Mahesa (Siva) es la expansión energética formal del Señor y Devi es la expansión energética del Señor. Las entidades vivientes también son expansiones energéticas del Señor. Existen dos clases diferentes de entidades vivientes, conocidas como almas liberadas y almas condicionadas. Los planetas que están dentro de la refulgencia luminosa se llaman Hari-Dhama. En estos planetas, la deidad predominante es Hari, y las deidades predominadas son las almas liberadas. Los aspectos de las almas liberadas y los de Hari son casi los mismos; sin embargo, Hari es el predominador y las almas liberadas son las  predominadas. Los innumerables planetas en Hari-Dhama son predominados por diferentes expansiones del Señor y todos ellos tienen diferentes nombres.
+</p>
+<p class='vspace'>Los universos dentro de la energía material son llamados Devi-Dhama y dentro del Devi-Dhama, la deidad predominante es Visnu, quien es asistido por Brahma y Siva. Devi-Dhama es controlado por tres modalidades, a saber, bondad, pasión e ignorancia. Visnu es la encarnación de la bondad, Brahma de la pasión y Siva de la ignorancia. Brahma crea, Visnu mantiene y Siva destruye la creación material. La creación material aparece por el deseo del Señor y nuevamente es aniquilada por Su deseo. Pero a pesar de que los universos de la energía material son creados y aniquilados así, los planetas en Hari-Dhama existen siempre.
+</p>
+<p class='vspace'>A las entidades vivientes condicionadas que desean disfrutar y no servir, se les da una oportunidad para buscar la liberación dentro del Devi-Dhama. Algunos entran en Hari-Dhama, otros en Mahesa-Dhama y otros permanecen dentro de Devi-Dhama. Mahesa-Dhama es el lugar marginal entre Hari-Dhama y Devi-Dhama. Los impersonalistas, que quieren fundirse en la existencia de la Trascendencia, son colocados  dentro de Mahesa-Dhama. Los que quieren permanecer en los sistemas planetarios de los universos materiales, pueden hacerlo en diferentes planetas. Pero aquellos, que quieren salir de la energía material, pueden entrar a Hari-Dhama e ir ya sea a cualquiera de los diferentes planetas que existen allí o directamente ir a Krsnaloka.
+</p>
+<p class='vspace'>El sistema de bhakti-yoga nos hace elegibles para entrar a Hari-Dhama; el sistema de jñana-yoga, nos hace elegibles para ingresar a Mahesa-Dhama y el sistema de karma-yoga nos obliga a permanecer en Devi-Dhama, para nacer y morir repetidamente, cambiando de cubierta material, de acuerdo al tipo de karma que se realiza.
+</p>
+<p class='vspace'>Ilustración 48
+</p>
+<p class='vspace'>La Luna, o Candraloka es uno de los cuatro lugares importantes de residencia de los semidioses. Más allá del lago Manasa está el monte Sumeru. En el lado oriental de esta montaña esta el planeta Devadhani, donde reside Indra. En el lado sur está el planeta conocido como Samyamani, donde  Yamaraja reside. En el lado occidental está el planeta conocido como Nimlocani, la residencia de Vayu, el semidiós que controla el viento. Y del lado norte de la montaña está la Luna, también conocida como Vibhavari.
+</p>
+<p class='vspace'>Enseñanzas de la Pintura
+</p>
+<p class='vspace'>Todos estos diferentes planetas se hallan dentro del universo en el que está situado el nuestro. Las personas que son demasiado materialistas siempre se ocupan en el disfrute de los sentidos. Tales personas adoran a diosas y semidioses materiales para satisfacer sus deseos materiales. A ellos les gusta ejecutar muchos yajñas para congraciarse con los diferentes semidioses y con los antepasados que están en el cielo. Tales personas son automáticamente promovidas a la Luna, donde disfrutan del soma, una bebida celestial.
+</p>
+<p class='vspace'>La Luna es demasiado fría para los habitantes de esta Tierra y por eso los intentos de las personas que quieren ir allí con sus cuerpos terrenales, son vanos. El simple hecho de ver la Luna desde lejos no nos capacita para entender su verdadera situación. Uno tiene que cruzar el lago Manasa, luego la montaña Sumeru y solamente después puede uno describir la órbita de la Luna. Además de eso, a ningún hombre común se le permite entrar a ese planeta. Incluso los que son admitidos allí después de la muerte, tienen que haber realizado los deberes prescritos para satisfacer a los pitas y a los devas y, aun así, ellos son enviados de regreso a la Tierra, después de un determinado lapso de vida en la Luna.
+</p>
+<p class='vspace'>Por eso, los hombres con una conciencia desarrollada, no desperdician el tiempo en hacer excursiones, reales o imaginarias, a la Luna. Tales personas inteligentes no se esfuerzan por alcanzar placeres sensoriales pasajeros. Al contrario, aplican sus reservas de energía en el cultivo espiritual. Ellos ejecutan sus deberes religiosos para la satisfacción del Señor Supremo y no para el placer personal de los sentidos. Los síntomas de tales devotos excepcionales del Señor son: el estar desapegados del placer material, estar satisfechos, ser puros de corazón, apegados al servicio devocional, libres del afecto por las cosas temporales y desprovistos del ego falso. De acuerdo con los mandatos Védicos, tales grandes personalidades alcanzan, finalmente, el lugar donde predomina la Suprema Personalidad de Dios; donde no existen la muerte, el nacimiento, la vejez ni la enfermedad. En el camino a estos planetas espirituales, tales personalidades pasan  través de la línea solar llamada arcirmarga. Y en el camino, pueden ver todos los planetas que hay entre la tierra y el mundo espiritual.
+</p>
+<p class='vspace'>La Artista<br />Madame Li Yun Sheng nació en Tientsin, en Hopei, China, en 1924. Su interés en la pintura se inició en su temprana niñez. Antes de graduarse en la Academia Central de Artes de Pekín en 1950, ella estudió con Mr. Chen Shao Mei, un consumado artista. Seguidamente trabajó como diseñadora gráfica, pero su reputación como artista se difundió rápidamente y en 1959, fue elegida miembro del Instituto Chino de Investigación de la Pintura (China).
+Las pinturas de este libro son el testimonio más reciente de su excelencia en el tradicional estilo de pintura de la escuela Gongbi. Ellas son la culminación de una carrera destacada, durante la cual sus pinturas fueron elogiadas por el célebre artista chino Xu Bei Hong y exhibidas ampliamente por el gobierno chino, tanto dentro como fuera de China. Cuando dejó China para dirigirse a Hong Kong, en 1979, no le fue posible llevar ninguna de sus pinturas, porque se las consideraba en aquel tiempo, parte del tesoro del arte chino. Desde entonces, el público de Hong Kong ha disfrutado con las exposiciones de sus pinturas en el Shatin Municipal Hall y en el Star House, en Tsim Sha Tsui. Su obra también ha sido motivo de artículos  en muchos periódicos y revistas.
+</p>
+<p class='vspace'>El estilo Gongbi es muy complejo en sus descripciones primorosamente detalladas de las figuras y el escenario chinos, como puede deducirse del meticuloso cuidado y labor en la obra de Madame Li. Tan solo después de una vida de práctica y experiencia, ella ha adquirido tal destreza. Ahora ella dedica la mayor parte del tiempo a enseñar a los estudiantes que están interesados en aprender y preservar esta fina tradición artística, de la cual ella es uno de los pocos maestros que quedan.
+</p>
+<p class='vspace'>El Autor
+</p>
+<p class='vspace'>Su Divina Gracia A. C. Bhaktivedanta Swami Prabhupada apareció en este mundo en 1896, en Calcuta, India. En 1922, también en Calcuta, conoció a su maestro espiritual, Srila Bhaktisiddhanta Sarasvati Gosvami, el erudito y devoto más destacado de la época, fundador del Gaudiya Matha (un instituto védico con sesenta y cuatro centros en toda la India). A Srila Bhaktisiddhanta le agradó este educado joven, y lo convenció de que dedicara su vida a la enseñanza del conocimiento védico. Srila Prabhupada se volvió su seguidor, y años después (en 1933), en Allahabad se convirtió en su discípulo formalmente iniciado.
+En su primer encuentro (en 1922), Srila Bhaktisiddhanta le pidió a Srila Prabhupada que difundiera el conocimiento védico en el idioma inglés. En los años siguientes, Srila Prabhupada escribió un comentario sobre el Bhagavad-gita, el más importante de todos los textos védicos, y asistió en las actividades del Gaudiya Matha. En 1944, sin ninguna ayuda, comenzó una revista quincenal en inglés, llamada Back to Godhead (publicada en español como De vuelta al Supremo). Él la redactaba y pasaba a máquina los manuscritos, revisaba las pruebas de galera, e incluso distribuía gratuitamente los ejemplares de la misma, y hacía grandes esfuerzos por mantener la publicación.
+La Sociedad Gaudiya Vaisnava, en reconocimiento a la erudicción y a la devoción de Srila Prabhupada, lo honró en 1947 con el título de "Bhaktivedanta". En 1950, Srila Prabhupada se retiró de la vida  familiar. Cuatro años después adoptó la orden de retiro (vanaprastha), para consagrarle más tiempo a sus estudios y escritos, y poco después viajó a la sagrada ciudad de Vrndavana. Allí vivió en el histórico templo de Radha-Damodara, dedicándose durante varios años a escribir y estudiar profundamente. En 1959 adoptó la orden de vida de renuncia (sannyasa). En Radha-Damodara Srila Prabhupada escribió Viaje Fácil a otros Planetas, y comenzó la obra maestra de su vida:traducir y comentar el Srimad-Bhagavatam, la crema de las Escrituras védicas—, una colección de libros que consta de dieciocho mil versos.
+Después de publicar tres volúmenes del Bhagavatam, Srila Prabhupada fué a los Estados Unidos en 1965, a cumplir con la misión que su maestro espiritual le había confiado. Ya en Occidente, Su Divina Gracia escribió ochenta volúmenes de traducciones, comentarios y estudios sobre las obras clásicas de la India. Cuando Srila Prabhupada llegó por primera vez a la ciudad de Nueva York en un buque de carga, se encontraba prácticamente sin dinero, y no tenía seguidores; pero en julio de 1966, después de casi un año de grandes dificultades, fundó la Sociedad Internacional para la Conciencia de Krishna. Hasta el momento de su muy lamentable partida, acaecida el 14 de noviembre de 1977, dirigió la Sociedad y la vió crecer y convertirse en una confederación mundial de má de cien asramas, escuelas, templos, institutos y comunidades agrícolas.
+En 1968, Srila Prabhupada fundó Nueva Vrndavana, una comunidad védica  experimental que se encuentra en las colinas de Virginia Occidental, E.U.A. Sus discípulos, inspirados por el éxito de Nueva Vrndavana, la cual es hoy en día una pujante comunidad agrícola de mil doscientas hectáreas, han fundado desde entonces varias comunidades similares en diversos otros lugares del mundo.
+En 1975 se inauguraron en Vrndavana, India, el magnifico templo Krishna-Balarama y la Casa Internacional de Huéspedes. En 1978 se inauguró en Playa Juhu, Bombay, un complejo cultural formado por un templo, un moderno teatro, una casa de huéspedes y un restaurante de cocina vegetariana. Quizás el proyecto más osado de Srila Prabhupada haya sido la fundación de lo que será una ciudad de cincuenta mil residentes, en Mayapur, Bengala Occidental. Sridhama Mayapur será un modelo ideal de la vida védica que se menciona en los Vedas, la cual tiene como objetivo satisfacer las necesidad materiales de la sociedad, y brindarle la perfección espiritual.
+Srila Prabhupada trajo además a Occidente el sistema védico de educación primaria y secundaria. El gurukula ("la escuela del maestro espiritual") comenzó apenas en 1972, y ya tiene cientos de estudiantes y muchos centros alrededor del mundo.
+Sin embargo, la contribución más significativa de Srila Prabhupada la constituyen sus libros. La comunidad académica lo respeta por su autoridad, profundidad y claridad, y los ha convertido en libros regulares de texto en numerosos cursos universitarios. Además, las traducciones de los libros de Srila Prabhupada aparecen ahora en cuarenta idiomas. El Bhaktivedanta Book Trust, establecido en 1972 para publicar las obras de Su Divina Gracia, se ha convertido así en la mayor editorial del mundo en el campo de la religión y la filosofía de la India. Entre sus proyectos más importantes estuvo la publicación del  Sri Caitanya-caritamrta, una obra Bengalí clásica. Srila Prabhupada hizo la traducción y el comentario de sus dieciocho volúmenes en apenas dieciocho meses. A pesar de su avanzada edad, Srila Prabhupada viajó alrededor del mundo catorce veces en sólo doce años, en giras de conferencias que lo llevaron a seis continentes. Pese a un itinerario tan vigoroso, Srila Prabhupada continuaba escribiendo prolíficamente. Sus escritos constituyen una memorable biblioteca de la filosofía, la religión y la cultura védica.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 30, 2011, at 03:04 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

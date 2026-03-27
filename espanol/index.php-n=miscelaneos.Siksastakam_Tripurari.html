@@ -1,0 +1,610 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Sri Sriksastakam</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : miscelaneos - RSS Feed'
+      href='index.php-n=miscelaneos.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=miscelaneos.Siksastakam_Tripurari' method='get'><input type='hidden' name='n' value='miscelaneos.Siksastakam_Tripurari' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Sri Sriksastakam"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=miscelaneos.Siksastakam_Tripurari-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<hr />
+<h1>INTRODUCCIÓN</h1>
+<p>Sentí la inspiración para escribir este comentario del Siksastakam cuando terminé una serie de charlas sobre esta óctuple enseñanza de Sri Krishna Caitanya en el verano del 2004. Las charlas se realizaron en el archipiélago Finlandés donde los días son tan largos durante los meses de verano que la noche nunca eclipsa completamente al sol. En medio de la abundante luz la oscuridad no puede entrar. Cuando disfrutábamos bajo la luz de ambos, de la del sol y la del Sri Siksastakam, era como si ni la oscuridad ni la ignorancia tuvieran ninguna cabida allí.
+</p>
+<p class='vspace'>Al retornar a California quienes escucharon la conferencia del Siksastakam me animaron a escribir un comentario. Inicialmente vacilé, pero luego descubrí que en los más de quinientos años desde que éstos fueron hablados, muy poco se había escrito acerca de ellos. Aunque el Padyavali de Sri Rupa incluye estos versos junto con otros, mientras trataba otros temas más generales, no los comenta ni los presenta bajo algún orden particular. El Sri Caitanya-caritamrta  fue el primero en darle un orden a los versos y una posición histórica: en la narrativa de Kaviraja, Mahaprabhu se las comunica a Raya Ramananda y a Svarupa Damodara en el final de Su lila manifiesto. Krishnadasa Kaviraja también los explica en forma breve. Me sorprendió descubrir que desde el tiempo de Sri Rupa y de Sri Krishnadasa Kaviraja, hasta la aparición del Sri Sanmodana-Bhasyam de Thakura Bhaktivinoda, a fines del siglo XIX, fue que hubo alguna explicación mayor del significado de este poema.
+</p>
+<p class='vspace'>Después de considerar esto y el hecho de que el comentario más significativo hubiese aparecido en nuestro linaje, fue que dejé mi vacilación inicial de lado. Al estudiar el comentario de Bhaktivinoda Thakur sentí que en su misericordia había dejado un servicio a sus seguidores en la forma de detallar sobre su ilustre Sri Sanmodana-Bhasyam. Como bien pueden suponer quienes están familiarizados con los escritos de Thakura Bhaktivinoda, su trabajo es muy original. Tal vez el aspecto más significativo del comentario de Thakura Bhaktivinoda es el paralelo que ha trazado  entre cada uno de los ocho versos de Gaura y los estados del Bhakti que comienzan con la fe inicial (Sraddha) y que terminan con PREMA. Él también vincula las siete glorias del Sankirtana de Sri Krishna, que son establecidas en el  primer verso del Siksastakam, con los siete siguientes versos, estableciendo éstos como surgidos de esas glorias que figuran en el primer verso, lo que constituye una visión destacable.
+</p>
+<p class='vspace'>Después de escribir el Sri Sanmodana-bhasyam, Thakura Bhaktivinoda también enfatizó la relación entre los ocho versos del Siksastakam con las ocho etapas del Bhakti en su Bhajana-rahasya, un texto que nos enseña a meditar en el Siksastakam al tiempo que uno progresa espiritualmente. Al revelar esta relación en ambos, tanto en el Sri Sanmodana-bhasyam y en el Bhajana-rahasya, Thakura Bhaktivinoda enfatiza la importancia de conocer nuestro nivel de avance, algo que él identifica con la verdadera belleza, porque es impropio considerarse más cualificado de lo que uno está en realidad. Debido a este énfasis, la explicación de Thakura Bhaktivinoda del Siksastakam sirve como un mapa para nuestro viaje interior, ayudándonos a definir nuestro objetivo (Prema) y a trazar nuestro curso con integridad espiritual.
+</p>
+<p class='vspace'>El comentario de Thakura fue seguido por otro comentario, Vivrtti, escrito por el heredero de su legado espiritual, Sri Bhaktisiddhanta Sarasvati Thakura. El Vivrtti de Sarasvati Thakura sigue muy de cerca lo iniciado por Thakura Bhaktivinoda. El presente comentario halla inspiración en el Vivrtti de Thakura Bhaktisiddhanta al excavar en la mina de las ideas de su predecesor. También guía al lector a través de la resumida explicación presentada por Sri Krishnadas Kaviraj Gosvami.
+</p>
+<p class='vspace'>Este comentario ha sido escrito en principio para aquellos familiarizados con el Vaisnavismo Gaudiya, al tiempo que también busca informar a todas las personas con inclinaciones espirituales acerca de la insondable profundidad de la contribución de Sri Krishna Caitanya. 
+</p>
+<p class='vspace'>Ningún trabajo es perfecto, especialmente aquellos que tratan con la perfección espiritual. Que los devotos avanzados señalen cualquier error para mi beneficio y que también ellos mismos puedan escribir más sobre el Siksastakam. Yo ruego que todos aquellos que han ayudado a que este comentario se imprima, sean bendecidos, y que éste inspire a sus lectores a recorrer el sendero del Prema.
+</p>
+<p class='vspace'>Swami B. V. Tripurari.
+</p>
+<p class='vspace'>VERSO 1
+</p>
+<p class='vspace'>ceto-darpana-marjanam bhava-maha-davagni-nirvapanam
+sreyah-kairava-candrika-vitaranam vidya-vadhu-jivanam
+anandambhudi-vardhanam prati-padam purnamrtasvadanam
+sarvatma-snapanam param vijayate sri-krsna-sankirtanam
+</p>
+<p class='vspace'>ceto — de la mente;  darpana – el espejo; marjanam – limpiando; bhava – de la vida material; maha-dava-agni – gran bosque en llamas; nirvapanam – extinguiendo; sreyah – de buena fortuna; kairava -- el loto blanco; candrika – por los rayos de luna; vitaranam – difundir; vidya – del conocimiento; vadhu – esposa; jivanam – la vida; ananda – de la bienaventuranza;  ambhudi – el mar; vardhanam – aumentando; prati-padam – a cada paso; purna-amrta – del néctar absoluto; asvadanam – dando a probar; sarva – completamente; atma-snapanam – limpiando al ser; param – exclusivo; vijayate – triunfa sobre todos; sri-krsna-sankirtanam – el canto congregacional del santo nombre de Sri Krishna.
+</p>
+<p class='vspace'>¡El exclusivo Sankirtana de Sri Krishna triunfa sobre todo!
+Limpia el espejo de la mente, extingue el gran fuego del bosque de la vida material, y con sus rayos de luna abre el loto blanco de la buena fortuna.
+Es la vida de la novia llamada sabiduría.
+Incrementa el mar de la bienaventuranza trascendental, a cada paso da el sabor absoluto del néctar inmortal, y limpia el ser en todos los aspectos.
+</p>
+<p class='vspace'>Cuando buscaba el amor más elevado durante Su lila en la tierra, Rasaraj Krishna quedó sobrecogido al probar la grandeza del amor de Sri Radha, debido a esto, todo se vio enriquecido, como nunca antes Él lo había experimentado. Debido a que hasta entonces se había considerado el rey del amor, esta experiencia lanzó a Krishna a una crisis existencial, forzándolo a responder la difícil pregunta: ¿Soy realmente Yo el rey del amor, cuando es evidente que el amor de Radha sobrepasa todo lo que he experimentado?  
+</p>
+<p class='vspace'>Cuando la primera razón de Su descenso –probar el amor más elevado- quedó así frustrado, esto a su vez afectó Su habilidad para concretar Su segundo propósito: enseñarle al mundo acerca del amor.
+</p>
+<p class='vspace'>Para resolver esta doble crisis, Krishna, manteniendo Su naturaleza, intentó robar las emociones de Radha. Un ladrón inteligente sabe donde esconderse. ¿A dónde se fue Syama?. Ese hermoso ladrón de tez oscura se escondió en la era de la oscuridad, en Kali-yuga, disfrazándose como un sadhu. Sin embargo eso que robó era más brillante que millones de soles. Así, cuando Sus devotos –los más queridos de Radha- Lo buscaron, no fue difícil para ellos encontrarlo.
+</p>
+<p class='vspace'>Al intuir Su posible captura por parte de Sus devotos, Krishna, en un esfuerzo por desviar la atención, repartió los bienes robados, aconsejándole a cada persona que los recibía que los fuese pasando de uno a otro. Esto, sin embargo, solo empeoró las cosas, pues al ver la gran distribución de prema los devotos comenzaron a sospechar. Ellos sabían que un amor tan radiante como el de Sri Radha podía solo ser experimentado en relación con Krishna y que por ello El debía estar en medio de todo esto. Más aún, aunque Krishna había tratado de distribuir Sus bienes para deshacerse de ellos, debido a que la naturaleza del prema es expandirse aun más, Su tez se volvió dorada. Atraídos por Su color dorado y  al ver la medida de Su prema, ellos Le apodaron Goura Krishna y procedieron a difundir esta verdad por el mundo entero. Al final, este Krishna dorado, cautivo por las dos mejores amigas de Radha, escribió Sus confesiones  en ocho estrofas, rogando por misericordia. Sólo después de recibir esa misericordia fue capaz de comprender las consecuencias de lo que había hecho y de probar del todo el amor de Sri Radha.
+</p>
+<p class='vspace'>Goura Krishna, también conocido como Sri Krishna Caitanya, es la respuesta a la crisis existencial de rasaraj Krishna. Para mantener el sentido de Sí mismo como el rey del amor, Krishna tuvo que probar el amor de Sri Radha. Por ello se disfrazó como un devoto y experimentó el sentimiento del amor de Ella. Actuando como Goura, Krishna fue capaz de probar los límites de este amor. Habiendo realizado Su primer propósito pudo prestar atención apropiada al segundo. Habiéndolo saboreado lo enseñó y lo enseño bien. La esencia de Su degustación y enseñanza se encuentra en Sus ocho estrofas conocidas como Siksastakam.
+Los slokas del Siksastakam se encuentran en la colección de versos de Sri Rupa Goswami conocido como Padyavali. Sin embargo, éstos no figuran allí en orden sino que diseminados a lo largo del libro. Fue un seguidor de Rupa Goswami, Krishnadasa Kaviraj Goswami, quien primero presentó esta obra en una sola pieza, como un poema de ocho versos en un orden secuencial, donde cada estrofa indica una progresión espiritual interna. 
+</p>
+<p class='vspace'>En el Caitanya-caritamrta, Krishnadasa Kaviraj visualiza a Sri Krishna Caitanya en medio de Rama Raya y Damodara Svarupa, desvaneciéndose ante Su propio Siksastakam. Este poema es presentado después que Kaviraja Krishnadasa ha completado la narración del Acarya-lila de Gaura Krishna. Cada matiz del lila de Gaura Krishna sirve como una lección de amor, y así, con la recitación de este poema empieza a cerrarse la cortina de este gracioso drama de distribución divina.
+</p>
+<p class='vspace'>El venerable Krishnadas Kaviraj comenta que una vez Gaura Raya permaneció despierto toda la noche absorto en un Bhava particular, recitando varios versos y saboreando su significado. Prabhu Gaura lleno de felicidad dijo: “Escuchen Svarupa, Rama Raya, el sacrificio del sankirtan es el medio de adorar a Krishna en la era de Kali. Sólo por realizar esta práctica, quienes son muy inteligentes, alcanzan los pies de loto de Krishna”. Gaura Raya entonces citó lo que es sin duda el abhideya-tattva-sloka más importante del Srimad Bhagavatam, para fundamentar Su extática y profunda realización: 
+</p>
+<div class='vspace'></div><pre>	(En Kali-yuga) aquellos de inteligencia teológica superior
+	Lo adoran con convicción junto con Sus asociados
+	a través del sacrificio del sankirtana.
+	Con Sus ornamentados brazos en alto como Sus armas,
+	constantemente pronuncia las sílabas Krish-na.
+	Él es Krishna (oscuro) aunque dorado en Su gloria.
+</pre><p class='vspace'>Es en este Bhagavata Sloka que Sanatana Gosvami encontró a Krishna escondiéndose en Kali-yuga, y luego de establecer esto, Gaura Krishna recitó el primer verso de su Siksastakam en alabanza al sankirtana de Sri Krishna.
+</p>
+<p class='vspace'>Param vijayate sri-krishna-sankirtanam!
+</p>
+<p class='vspace'>Al comienzo de Su óctuple enseñanza Goura Krishna promulga las virtudes del sankirtana de Sri Krishna, en un esfuerzo por despertar sraddha, fe, en su eficacia y así elevar este sraddha, hasta la expresión externa de saranagati o rendición. 
+Una fe de esta naturaleza es la que se requiere para recorrer el sendero del bhakti marga. Lleno de esta fe, Gaura Krishna clama: param vijayate sri krishna sankirtanam.
+</p>
+<p class='vspace'>Las palabras param vijayate invitan a adherirse al sankirtana de Krishna y a renunciar a todo otro proceso. Con un énfasis similar puesto en sraddha y saranagati, el Bhagavad Gita, la canción de Krishna a Arjuna, llega a su conclusión. Las famosas palabras sarva-dharman parityajya mam ekam saranam vraja llevan la canción de Sri Krishna a un término. Siguiendo esta conclusión, la vida de Krishna, el Srimad Bhagavatam, comienza con el mismo énfasis. Las palabras dharmah projjhita-kaitavo ‘tra dan inicio al libro acerca de Su vida. Ambas, la declaración concluyente del Bhagavad Gita y la afirmación inicial del Srimad Bhagavatam, defienden la fe en la exclusiva devoción a Sri Krishna y la rendición que corresponde a ésta. 
+Así como las palabras conclusivas del Bhagavad Gita de Krishna son poderosas aunque precedidas por  más de seis cientos versos que las justifican, así también son las líneas iniciales del Srimad Bhagavatam, potentes y bien fundamentadas cuando desechan toda otra expresión del dharma e incluso el ideal de la salvación. La insistencia en la devoción exclusiva presentada al principio del Bhagavata está seguida por casi dieciocho mil versos que fundamentan su premisa. Similarmente, el énfasis inicial del Siksastakam en sraddha y saranagati, ha sido precedido por toda la vida de amor divino de Goura Krishna, la que habla más fuerte que el precepto. La posición de Gaura también está fundamentada por las virtudes del nama-sankirtana que Él enumera en su sloka inicial del Siksastakam. los siete versos que siguen del Siksastakam, y el océano literario basado en las escrituras sagradas, revela que los Gosvamis de Vrindavan y sus sucesores lo extrajeron del Siksastakam de Gaura Krishna. 
+</p>
+<p class='vspace'>Así, desde el comienzo del Siksastakam se promueve la fe en la eficiencia del sankirtana exclusivo de Sri Krishna. Esta fe no es ciega, ni una creencia dogmática, sino más bien es una fe luminosa trazada desde la revelación. Esta fe otorga cambios en nuestras vidas, un cambio del corazón que incluye saranagati, la etapa en la cual el drama del Krishna-bhakti se lleva a cabo. Estos primeros seis pasos en la escala hacia vraja-bhakti- desde el sraddha inicial hasta ruci  gusto - constituye el proceso de plena elevación al estado de saranagati dentro del corazón, conectando  el rayo de fe que al principio se despierta en uno con el sol de esta misma, que no desaparece en esa tierra que está más allá de la duda y de la concepción errónea. Es la fe en la eficiencia del sankirtana de Sri Krishna que lo sitúa a uno en el camino, y es el sankirtana lleno de fe en sí mismo que lo mueve a uno a lo largo de este camino.
+</p>
+<p class='vspace'>Mientras Sri Caitanya glorifica el sankirtana en un esfuerzo por despertar la fe en su eficiencia, él no explica el significado del término sankirtana, el que,  aparte de su significado común, tiene otro especial para Sri Caitanya y Sus seguidores. Aquí, en el Siksastakam, Mahaprabhu califica Su sankirtana refiriéndose a éste como “Sri Krishna sankirtana”. Para extraer el néctar de estas cuatro palabras es necesario entender su significado - Sri, Krishna, sam, y kirtana- y así poder realizar la riqueza de las intenciones de Sri Caitanya.
+</p>
+<p class='vspace'>Kirtana significa glorificar a otro. Esta palabra deriva de la raíz verbal kirti que significa fama. Quien haga conocidas las virtudes de otro se volverá él mismo virtuoso. En general, uno se vuelve glorioso por glorificar a los demás, como opuesto a la glorificación de uno mismo. Uno puede glorificar el nombre, las cualidades, la forma, o las actividades de otra persona haciendo diferentes tipos de kirtana.
+</p>
+<p class='vspace'>Aquí en el Siksastakam, Sri Caitanya enfatiza el nama-kirtana, pero no el kirtana de cualquier nombre. Él hace un llamado al kirtana exclusivo del nombre de Dios, el que es considerado como no diferenciado de Dios mismo. De haber alguna diferencia entre Krishna y Su nombre, es que en Su nombre El es más accesible. Sri Rupa Gosvamipada ha explicado esto en su Sri-krishna-namastakam:
+</p>
+<div class='vspace'></div><pre>	¡Oh, Harinama!
+	Te manifiestas en dos svarupas:
+	como “lo nombrado” y como “el Nombre.”
+	La fama del Nombre excede a la del nombrado.
+	¿Qué prueba hay de esto?
+	El gran ofensor del Nombre,
+	que con sinceridad se arrepiente
+	mediante palabras y la adoración del Nombre,
+	siempre se bañará en el mar del éxtasis.
+</pre><p class='vspace'>Así, en la forma de Krishna kirtana, Krishna nama es ambos, siendo uno con Dios y altamente accesibles al mismo tiempo.
+</p>
+<p class='vspace'>Mahaprabhu ha ido mucho más lejos en validar Su método de kirtana, recomendando no sólo hacer kirtana del nombre de Krishna sino sankirtana del Krishna nama. Sam significa pleno, completo y de gran amplitud. La palabra sankirtana implica una glorificación integral, tanto cualitativa como cuantitativamente. La glorificación es cuantitativamente completa si es unánime -- si todos los presentes participan. Así sankirtana  sugiere la glorificación al unísono con otras personas afines, como así también la asociación con personas santas -- sadhu sanga.
+</p>
+<p class='vspace'>La calidad del sankirtana de Goura Krishna no se puede comprender sin mencionar a Sri Radha. La palabra Sri  en la primera estrofa de Gaura habla de la divina consorte de Krishna. Es en esta búsqueda del amor de Ella que Krishna se vuelve Gaura y canta en sankirtana. Él canta en la modalidad de Ella, viéndose a Sí mismo a través de los ojos de Ella. Nadie conoce a Krishna mejor que Sri Radha. El amor de Ella es conocido como samartha-rati, amor competente. Este es capaz de conquistar a Krishna por completo, y como veremos al final del sloka del Sisksastakam. es el tipo de amor que Sri Caitanya prueba y distribuye en el sankirtan de Sri Krishna: El amor de más alta calidad, el prema de Sri Radha en mahabhava.
+</p>
+<p class='vspace'>Aunque sankirtan es el dharma de Kali-yuga, en el presente ciclo de yuga hay una concesión especial. Gaur Krishna no sólo distribuye dharma de la manera más expansiva, sino que distribuye la más alta calidad de prema, invitando a todo el mundo al lugar más confidencial de Su propio corazón. Así El ha tejido una corona de flores para ambos, para prema y sankirtana, y busca engalanar al mundo entero con este bello adorno. 
+</p>
+<p class='vspace'>Cuando el rey de Puri vio el sankirtana de los asociados de  Gaura por primera vez, se maravilló por completo (camatkara). Nunca había sido testigo de este tipo de kirtan, de este tipo de danza, de este tipo de amor. Prataparudra Maharajá no era ajeno a la glorificación de Krishna. Él presidía una ciudad centrada en la glorificación de Krishna, una ciudad que  hospedaba a millones de peregrinos. Cuando le preguntó a su cuñado, Gopinath Acarya, qué tipo de kirtana era, él respondió, caitanyera srsti ei prema-sankirtana: “Esta es la creación de Sri Caitanya, se llama prema sankirtana.” No todas las formas de sankirtana ofrecen prema, pero el sankirtana de Goura Krishna consiste sólo en prema. De hecho, incluso desaprueba la sola liberación o mukti.
+</p>
+<p class='vspace'>El principal nama-mantra invocado por Sri Caitanya en Su prema-sankirtana figura mencionado en el sruti. El Kalisantarana Upanisad llama a este nama mantra de dieciséis nombres el taraka-brahma nama. Taraka significa liberador, y así implica que cantar este nama-mantra conlleva a la liberación del samsara, especialmente en Kali-yuga. De hecho, este es el nama mantra que el yugavatara distribuye en la oscura era de Kali, el nama-mantra Hare Krishna. Sin embargo, ni el yugavatara para la era de Kali, ni los Upanisads hablan de prema.
+</p>
+<p class='vspace'>Esta concesión especial de prema-sankirtana es el resultado de que Sri Caitanya sea Krishna. Él no es el Kali-yuga avatara usual que aparece en este mundo para liberar a las personas del nacimiento y la muerte recomendando el yuga-dharma. Él no es un avatara de Narayana o de Krishna, sino que es Krishna mismo.  Aunque enseña el yuga-dharma, tiene otro plan interno para Sí mismo. Él no canta tan sólo el taraka-brahma nama sino que el paraka-brahma nama. Paraka significa “competente”. En este caso implica que el Hare Krishna nama-mantra cantado por El es capaz no sólo de liberarlo a uno del samsara sino que además de entregar el tesoro del prema. Así, la frase del Siksastakam “param vijayate sri-krishna-sankirtanam” anuncia la gloria de la mejor forma de sadhana/sadhya, o de la práctica espiritual que de un modo natural lleva a la más elevada forma de perfección espiritual en prema. ¿Qué necesidad hay entonces de cualquier otro tipo de sadhana y dónde podrá uno encontrar un sadhya más elevado?
+</p>
+<p class='vspace'>Después de elogiar esta práctica espiritual primordial con las palabras param vijayate sri-krishna-sankirtanam, Sri Caitanya delinea siete efectos del nama-sankirtana. En la visión de Thakura Bhaktivinoda estos siete efectos se corresponden con los siete pasos secuenciales que siguen a sraddha y sadhu-sanga  y que terminan con prema, tal como lo definió Sri Rupa Gosvami en su Bhakti-rasamrta-sindhu. Sri Rupa escribe:
+</p>
+<p class='vspace'>Primero fe, luego santa asociación,
+seguida por el acto del bhajana,
+resultando en el cese de los obstáculos, 
+luego firmeza, gusto, apego, 
+éxtasis y amor divino.
+Este es el orden de las etapas 
+a través de las cuales prema se manifiesta en los sadhakas.
+</p>
+<p class='vspace'>Los primeros dos pasos, sraddha y sadhu-sanga, ya han sido explicados. Después de despertar la fe en el método de Su divina locura y sabiendo que lo mejor es continuar en la compañía de los sadhus, Sri Caitanya ha elegido enumerar siete glorias particulares del nama-sankirtana, las que corresponden a los siete pasos que hacen falta para alcanzar Krishna prema. Cada uno de estos pasos se describen con gran detalle en las siete siguientes estrofas del Siksastakam.
+</p>
+<p class='vspace'>CETO-DARPANA-MARJANAM
+</p>
+<p class='vspace'>Cetah es una palabra sánscrita que no posee una traducción al inglés. Es usualmente traducida como corazón, mente o conciencia. Ella deriva de la raíz verbal cit, que significa conocer o tomar conciencia. Así, se refiere a aquella facultad interna por la cual uno se vuelve conciente de sí mismo. Aquí Gaura-raya compara esta facultad con un espejo, con el espejo de la conciencia. Un espejo no tiene imagen por sí mismo pero refleja cualquier imagen que se ponga delante de él. Si el espejo de nuestra conciencia está afectado por el deseo material, va a proyectar una imagen o sentido de identificación material. Sriman Mahaprabhu ha comparado tal deseo y la consiguiente imagen que se proyecta, con el polvo acumulado en el espejo de nuestra conciencia.
+</p>
+<p class='vspace'>El alma, jiva, existe, puede ser conciente de su existencia y existe para un propósito. El propósito de la jiva es el servir y así amar. Cuando su existencia se identifica con la materia (misra-sattva), la falta de conciencia de su verdadero ser da pie a una identificación material (ahankara), y en consecuencia su propósito se mantiene incompleto, por servir los deseos que nacen de su identificación material (kama). Este polvo de motivación material puede eliminarse al limpiar el espejo de nuestra conciencia.
+</p>
+<p class='vspace'>Limpiar el espejo de nuestra conciencia es el objetivo de niskama-karma-yoga, el yoga de la acción desinteresada. Por lograr este objetivo, la jiva no se identifica más con la materia (suddha-sattva), y alcanza el conocimiento de sí misma como conciencia (brahma-jñana), y en forma parcial consigue su propósito, aunque esta suspendida en el disfrute de la identificación con el brahman (brahmananda). Sin embargo, limpiar el corazón es sólo el efecto inicial del nama-sankirtana, no es el resultado final. El nama-sankirtana limpia el espejo de nuestra conciencia de una manera que involucra usar nuestra inteligencia (su-medhasa) para suavizar nuestro corazón. Esto lo hace situando el espejo de nuestra conciencia ante el Krishna nama, que es el perfecto objeto del amor. Esto no sólo resulta en la limpieza del polvo del deseo material e identificación desde el espejo de nuestra conciencia, sino que en experimentar un estado puro de existencia (visuddha-sattva), en ser concientes de nuestra identidad espiritual (samvit), y en completar nuestro propósito en el amor (hladini).
+</p>
+<p class='vspace'>Tal como hemos visto en el análisis de la segunda estrofa del Siksastakam, la asociación con el Krishna nama conlleva el caer bajo la influencia del svarupa-sakti de Krishna, porque el Krishna nama está lleno de su sakti. Es sólo en esta condición que la jiva puede alcanzar su potencial completo. El primer paso en esta dirección es sraddha, seguido por sadhu-sanga. Después de tomar refugio del guru, en el contexto del sadhu-sanga, uno recibe instrucciones del guru (bhajana-kriya) que ponen a este proceso de limpieza (anartha-nivritti) en acción. Las etapas de bhajana-kriya y anartha-nivritti concuerdan con el efecto inicial del nama-sankirtana y son explicadas más en el segundo verso.
+</p>
+<p class='vspace'>BHAVA-MAHA-DAVAGNI-NIRVAPANAM
+</p>
+<p class='vspace'>El segundo efecto del nama-sankirtana es liberarse del gran fuego de la existencia material, bhava-maha-davagni-nirvapanam.  La metáfora de un bosque en llamas es usualmente empleada para ayudarnos a entender la naturaleza de la existencia material. Tal como un incendio forestal muchas veces no es causado por algo externo sino que se inicia naturalmente por la fricción de dos árboles, similarmente quienes moran en esta existencia material son los responsables por las perturbaciones que crean mediante sus deseos. Dios no es el culpable. El karma es la mano severa de la naturaleza que responde ante todas las formas de explotación. La naturaleza no es para ser explotada de acuerdo a los caprichos de la mente, ella más bien pertenece a Dios.
+</p>
+<p class='vspace'>Aunque un incendio forestal por lo general comienza por sí mismo, no se apaga solo. Aún más, los esfuerzos humanos por extinguir esos incendios muchas veces son inútiles y dejan a los bomberos orando porque llueva. Similarmente, aunque Dios no es el responsable del sufrimiento de la existencia material, solo Él puede poner fin a éste. La expiación y el cultivo del auto-conocimiento son comparados a los esfuerzos humanos por extinguir los deseos de manera que no sea posible que estos aumenten.
+</p>
+<p class='vspace'>Donde los esfuerzos humanos fallan, sólo Dios puede hacer la diferencia. El nama-sankirtana desciende de Dios. Narottama dasa Thakura escribe, golokera prema-dhana hari-nama-sankirtana: “El Harinama-sankirtana es la misericordia del amor de Goloka”. Con el fin de poder abrazar el regalo del amor de Goloka, el nama-sankirtana primero apaga el fuego del incendio del bosque de la existencia material. Cuando por la gracia del Krishna-nama este fuego de los deseos materiales se extingue, el sadhana se vuelve nistha, estable, aunque el humo de esos deseos aún se mantenga. Con ambos pies aún en este mundo, los ojos del sadhaka miran fijos a Goloka. En esta etapa la práctica espiritual se vuelve tan inquebrantable hacia el exterior como iluminada hacia el interior.  El espíritu de la práctica del  sadhaka en esta etapa se analiza en la tercera estrofa del Siksastakam.
+</p>
+<p class='vspace'>SREYAH-KAIRAVA-CANDRIKA-VITARANAM
+</p>
+<p class='vspace'>La frase sreyah-kairava-candrika-vitaranam nos habla de ruci-bhakti. Esta es la tercera etapa mencionada en el verso de Rupa Gosvami detallando el desarrollo del sadhaka desde sraddha a prema. Sri Krishna Caitanya lo describe aquí como el tercer efecto del nama-sankirtana. Este efecto –la etapa de ruci- se encuentra más desarrollado en el cuarto verso del Siksastakam.
+</p>
+<p class='vspace'>La palabra sreyah se refiere a algo auspicioso y bello. El Krishna nama es lo más auspicioso entre todo lo auspicioso, incluyendo otros nombres de Dios. Gaura Krishna le ha dado al mundo nama-srestham, la más auspiciosa y espléndida concepción del Santo Nombre. En esta conexión Thakura Bhaktivinoda cita la bien conocida estrofa del Skanda Purana que glorifica el santo nombre de Krishna, madhura-madhuram etan mangalam mangalam: “Es lo más dulce de lo dulce, lo más auspicioso de lo auspicioso”.
+</p>
+<p class='vspace'>Cuando el fuego ardiente de la existencia material es extinguido mediante  el nama-sankirtana, el Krishna nama comienza a bendecir a su discípulo con los hermosos rayos de la luna de su esplendor. Esos esplendorosos rayos son el svarupa-sakti que emana del Krishna-nama. Aquí el corazón del sadhaka se compara con el florecer nocturno del loto blanco, kumuda. En la etapa de ruci, el corazón del sadhaka es puro como un loto blanco, sin el tinte de la pasión mundana. Por esta razón Mahaprabhu ha elegido la metáfora de un kumuda blanco en lugar de uno rojo. En el ruci-bhakti, el corazón, previamente contraído por la sombra de la lujuria, comienza a florecer en el amor como un loto blanco en contacto con los rayos de la luna. La luz de la luna es un reflejo que en este caso representa una semblanza de bhava. En ruci-bhakti uno es aún un sadhaka, y el rayo del sol del prema que es bhava, aún no ha aparecido en el corazón, sin embargo uno experimenta una semejanza de bhava, un ininterrumpido gusto por cantar y por otras prácticas de la devoción. Los ruci-bhaktas no tienen apegos materiales, sólo están apegados a los medios para alcanzar prema. Su sraddha/saranagati ha madurado y así se ha erigido en sus corazones la plataforma sobre la cual el lila de Krishna pronto se va a manifestar.
+</p>
+<p class='vspace'>VIDYA-VADHU-JIVANAM
+</p>
+<p class='vspace'>Cuando el apego a los medios para alcanzar prema maduran, se transforman en apego por el objeto del prema, Sri Krishna, quien entonces aparece en el corazón del sadhaka. Esta etapa del desarrollo se llama asakti, la etapa final del sadhana-bhakti. Gaura Krishna poéticamente describe este cuarto efecto del nama-sankirtana como “la vida de la novia llamada sabiduría”, vidya-vadhu-jivanam. Este efecto será desarrollado con mayor detalle en el quinto verso del Siksastakam. 
+Vidya es comúnmente traducida como “conocimiento práctico”, diferenciándola del conocimiento abstracto y teórico. Conocimiento aplicado es devoción y así también se puede decir que en el análisis final el más elevado conocimiento es bhakti. Esta es la opinión de Sri Krishna indicada en Sus líneas iniciales del capitulo noveno del Gita. Ahí Krishna dice que El ahora describirá al rey del conocimiento, raja-vidya y el estudio cuidadoso del capítulo revela que este rey del conocimiento es la devoción pura.
+</p>
+<p class='vspace'>El sruti concuerda con esto. En el Gopala-tapani-upanisad encontramos, gopi-jana-vidya-kala-prerakah: “(Krishna) es el maestro (prerakah) de las gopis, quienes son las potencias (kala) del conocimiento (vidya) que es el amor caracterizado por la compasión”. En otras palabras, el amor puro que las gopis expresan representa el conocimiento. Sri Prabodhananda Sarasvati añade, “las doncellas vaqueras (gopis) son las partes del conocimiento perfecto– la amorosa devoción, en un humor particular”. Comentando la frase vidya-vadhu-jivanam  en su  Bhajana-rahasya, Thakura Bhaktivinoda ofrece más fundamentos a la noción que la devoción es conocimiento puro al citar el Srimad-Bhagavatam: “El conocimiento verdadero es aquel por el cual uno se vuelve conciente de Krishna”. Él también cita el siguiente verso del Garuda Purana, que también está citado en el Hari-bhakti-vilasa:
+</p>
+<p class='vspace'>¡Oh, rey!, Si quieres obtener el más grande jñana,
+o si quieres ir tras ese objetivo,
+entonces glorifica a Govinda con el mayor fervor.
+</p>
+<p class='vspace'>En el comentario de Sanatana Gosvami a este verso del Hari-bhakti-vilasa, él escribe, “El más elevado conocimiento es la gloria de la devoción por Krishna”.
+</p>
+<p class='vspace'>Este más elevado conocimiento, que es devoción madura por Krishna, es una manifestación del Krishna svarupa-sakti. Siendo femenino, este sakti es apropiadamente mencionado como una novia. Al decir que el sankirtana de Krishna es la vida de la novia sabiduría, El está en efecto diciendo que Krishna nama, que no es diferente de Krishna, es el esposo del  bhakti. De hecho, la traducción literal de la frase vidya-vadhu-jivanam es “la vida (esposo) de la novia llamada sabiduría”. Así Krishna nama, como se expresa en el nama-sankirtana, es la vida de la novia llamada sabiduría, esta novia es el svarupa-sakti de Krishna, Su más elevada manifestación, la cual es Sri Radha.
+</p>
+<p class='vspace'>ANANDAMBUDHI-VARDHANAM
+</p>
+<p class='vspace'>En el momento en que el conocimiento del svarupa se manifiesta, uno pasa del nivel final de sadhana-bhakti al de bhava-bhakti. El sadhya de sadhana es bhava. En esta etapa el sadhaka ha levantado el ancla de la vida material y ahora se encuentra a la deriva en el mar del éxtasis. Aunque la jiva se mantiene infinitesimal, en bhava-bhakti sin embargo ella experimenta infinita dicha en un ilimitado océano de emociones espirituales. El sankirtana de Sri Krishnacandra produce este océano de éxtasis que aumenta sin límites, tal como la luna hace que la marea suba. Los bhava-bhaktas no están agitados por las demandas de los sentidos. Ellos son personas sobrias. Sin embargo, el éxtasis del nama-sankirtana a veces los hace ver como agitados e intoxicados.
+</p>
+<p class='vspace'>Bhava-bhakti está indicado por la frase anandambhudi-vardhanam: “(El sankirtana de Sri Krishna) aumenta el océano del éxtasis”. Esta misma frase es usada por Srinivasa Acarya en su Sad-gosvamy-astakam, cuando describe como los seis Gosvamis eran expertos en incrementar el océano del éxtasis por su compromiso con el nama-sankirtana, anandambhudi-vardhanaika-nipunau. Srinivasa dice además que los Gosvamis salvaron a los demás de la minúscula gota de éxtasis que se encuentra en la salvación monista, kaivalya-nistarakau.  Esto significa que las emociones de bhava-bhakti  hacen ver la liberación impersonal como una minúscula gota, (moksa-laghutakrt), en comparación con el océano de éxtasis que bhava-bhakti implica. Este efecto del sankirtana está explicado en mayor detalle en el sexto verso del Siksastakam.   
+</p>
+<p class='vspace'>PRATI-PADAM PURNAMRTASVADANAM
+</p>
+<p class='vspace'>Cuando el rayo de prema que aparece en el corazón como bhava se cultiva apropiadamente a través del nama-sankirtana, se transforma en prema. Cuando se alcanza el prema, uno saborea (asvadanam) la totalidad (purnam) del néctar de la inmortalidad (amrta) a cada paso (prati-padam). Este prema se experimenta primero como intolerables punzadas por la separación de Krishna seguidas del gozo de la unión. Sin embargo, a cada paso, tanto en la unión como en la separación, el prema-bhakta saborea el néctar de la inmortalidad.
+</p>
+<p class='vspace'>La inmortalidad se compara con el néctar eterno, con la fuente de la juventud. La vida más allá de la muerte, sin embargo, no es la copa completa de la inmortalidad. La totalidad del néctar de la inmortalidad comprende saborear prema por siempre, en un mundo donde cada palabra es una canción y cada paso es un baile en nama-sankirtana. Así el nama-sankirtana, a diferencia de otras prácticas espirituales, es ambos sadhana y sadhya. Es la práctica espiritual primordial que no sólo lo lleva a uno a la eternidad sino que continúa manifestándose en la perfección como prema-sankirtana. Este sadhya–prema — es la gloria final del nama-sankirtana, y será tratada con mayor profundidad en la séptima y octava estrofa del Siksastakam.
+</p>
+<p class='vspace'>SARVATMA-SNAPANAM
+</p>
+<p class='vspace'>Las limitaciones del amor mundano no existen en prema. El amor mundano no involucra al alma verdadera, ni tampoco los sentidos materiales o la mente están alguna vez satisfechos por él. En el amor mundano uno no tiene sentidos perfectos, pero el prema nos garantiza sentidos espirituales para poder complacer los sentidos trascendentales de Krishna. Sin esos sentidos espirituales sería imposible para uno saborear completamente el prema. Cuando se obtiene prema nuestros sentidos, mente y alma se bañan por completo en una lluvia de amor espiritual, quedando así ellos del todo satisfechos.
+</p>
+<p class='vspace'>La palabra atma significa cuerpo, mente y alma. Así sarvatma-snapanam indica que el nama-sankirtana purifica no sólo el alma sino también el cuerpo y la mente. La palabra atma puede también referirse a Krishna, Quien es el alma de todas las almas, y en prema no solo los devotos quedan bañados con ese amor, sino que ellos también, con su amor, bañan a Krishna.
+</p>
+<p class='vspace'>En prema uno se absorbe del todo en su identidad espiritual (svarupavesa), y queda inmerso en el océano del néctar del servicio a Krishna. Después de recitar el primer verso del Siksastakam, Sri Gaurasundara lo explica a Rama Raya y a Damodara Svarupa, resumiendo los efectos del sankirtana de Sri Krishna:
+</p>
+<p class='vspace'>El sankirtana destruye los pecados del samsara
+al limpiar nuestra conciencia.
+Da paso al bhakti-sadhana –
+y al sadhya del Krishna-prema.
+Otorga el sabor del néctar inmortal del prema
+y alcanza a Krishna,
+y así lo ahoga a uno en un mar
+de dulce servicio para siempre.
+</p>
+<p class='vspace'>VERSO DOS
+</p>
+<p class='vspace'>namnam akari bahudha nija-sarva-saktis
+tatrarpita niyamitah smarane na kalah
+etadrsi tava arpa bhagavan mamapi
+durdaivam idrsam ihajani nanuragah
+</p>
+<p class='vspace'>namnam – santos nombres; akari –manifestado; bahudha – tantos; nija-sarva-saktih – todo Su propio poder; tatra – hay (en ellos); arpita – depositado; niyamitah – no hay reglas; smarane – recordar; na – no; kalah – hora; etadrsi – tan grande; tava – tu; arpa – misericordia; Bhagavan – ¡Oh, Bhagavan!; mama – mío; api – pero; durdaivam – desgracia; idrsam – tal; iha – aquí (para el santo nombre); ajan – nacer; na – no; anuragah – atracción.
+</p>
+<p class='vspace'>Tantos nombres has manifestado,
+y en ellos has investido Tu poder completo.
+No hay hora, ni regla para recordarlos.
+¡Oh, Bhagavan, Tu misericordia es tan grande!
+Pero sólo mira mi infortunio, mi desgracia:
+No siento por Tu nombre atracción ninguna.
+</p>
+<p class='vspace'>Al continuar con las alabanzas de las glorias del Krishna nama,  Sri Krishna Caitanya manifiesta Su asombro con las palabras etadrsi tava krpa bhagavan: “¡Oh, Bhagavan, Tu misericordia es tan grande!”. En la opinión de Mahaprabhu, la magnánima prédica llega a su punto culmine con la aparición del Krishna nama. El Krishna nama es tan elevado, tan grande, pero aún así Mahaprabhu lo hace muy sencillo de alcanzar. A pesar que no es diferente de Krishna mismo, el Krishna nama es aún más misericordioso.
+</p>
+<p class='vspace'>Después de recitar este segundo verso de Su Siksastakam, Gaura Krishna comienza a develar su significado explicándole a Rama Raya y Svarupa Damodara que Dios tiene muchos nombres porque la gente tiene muchos deseos. De esta manera aprendemos que hay una relación entre los deseos de las jivas y los nombres de Bhagavan, tal como existe una entre la condición del corazón de las jivas y Bhagavan en persona. El reciproca con las jivas de acuerdo a sus deseos. En el Bhagavad-gita Sri Krishna le dice a Arjuna, “En la medida en que se rinden a Mí, así mismo Yo les correspondo. Todos siguen Mi camino en todo aspecto, ¡oh Partha!”
+</p>
+<p class='vspace'>¿Cuántos nombres tiene Bhagavan? Tiene tantos como hay deseos en el corazón de las jivas. Debido a eso, el Vedanta-sutra nos dice que toda palabra que indica algún objeto o poder, es primero y ante todo un nombre de Dios:
+</p>
+<p class='vspace'>Las palabras primeramente denotan a Dios
+porque Él reside en todas las cosas,
+tanto en las móviles como en las inmóviles.
+Pero esas palabras referentes a Dios
+sólo se conocen con el tiempo,
+después de haberlas escuchado de las escrituras.
+</p>
+<p class='vspace'>Mahaprabhu en persona demuestra la veracidad de este extracto del sutra, de que todas las palabras son nombres de Dios. En Su juventud fue reconocido por Su erudición y tuvo muchos alumnos. Después de recibir diksa Vaisnava de Sri Isvara Puripada y aprender las conclusiones del bhakti-sastra bajo su guía, comenzó a explicar todas las palabras sánscritas que designan objetos materiales como primeramente referidas a Krishna y sólo secundariamente a los objetos en sí. Él identificó el aspecto particular de Krishna que reside en cada objeto material, y que es la causa de que ese objeto sea llamado de  esa manera en particular. Él comprendió que todas las palabras que denotan algún poder o energía también hacen referencia, por extensión, a su fuente de energía fundamental, y que lo que es deseable en cualquier objeto, lo es gracias a la presencia de Dios. Baladeva Vidyabhusana afirma que tal realización es el objetivo del Vedanta – vasudevah sarvam iti. Al comentar el sutra anterior en su Govinda-bhasya, escribe, “El objetivo del Vedanta es dar a saber que toda palabra es en realidad un nombre de Dios.”
+</p>
+<p class='vspace'>Aunque todas las palabras son nombres de Dios, Gaura enfatiza en esta estrofa del Siksastakam aquellos nombres de Krishna que se refieren directamente a la persona de Sri Krishna, a Sus formas, cualidades y lila. Mahaprabhu dice que Bhagavan Sri Krishna ha manifestado muchos nombres en este mundo (por la lengua de Sus devotos) y que estos nombres están llenos del sakti personal de Krishna. Estos nombres Lo identifican en el lila con Sus devotos – son Sus nombres primarios cantados por Sus devotos puros. Son los nombres que cada uno de Sus devotos mantienen como lo más preciado para su corazón, porque representan un sentimiento particular de amor por Bhagavan. Por otro lado, nombres tales como Brahman y Paramatma, son nombres secundarios de Dios, que no tienen relación con el juego divino energizado por Su sakti interno.
+</p>
+<p class='vspace'>Los devotos puros de Krishna son personificaciones de Su svarupa-sakti, en reciprocidad a lo cual Krishna hace Su aparición. Su amor – el svarupa-sakti de Krishna investido en sus corazones – causa que Krishna aparezca en una forma que se corresponde con sus purificados corazones. ¿Entonces, dónde reside Krishna?. Él reside en el corazón de Sus devotos. ¿Cuál es Su nombre por el que ellos se refieren a Él tan amorosamente? No debiera ser una sorpresa, sin embargo, cuando escuchamos que el Krishna nama está investido con el Krishna sakti, es porque Krishna está completamente investido en Sus devotos, siendo esta la causa de que se dirijan a Él tan cariñosamente. Este es el Vedanta de Sri Krishna Caitanya: el supremo energético (saktiman), es simultáneamente uno y diferente de Su energía (sakti), acintya-bhedabheda-tattva.
+</p>
+<p class='vspace'>¿Qué hay en un nombre? Todo. Sabemos que debemos cuidar de no entregar nuestro nombre a cualquiera – en la actualidad sería como hablar de nuestro número de identidad – el cual no se lo damos a cualquiera, a fin de cuidar lo que tenemos. Si estamos presentes en tal magnitud en nuestro nombre material, ¿qué tanto más no lo estará Krishna en el suyo? Esos nombres que están llenos de Su sakti personal y que con frecuencia nos hablan más sobre Él de lo que Él mismo está conciente, porque estos nombres nos hablan de Krishna de la manera en que es sentido por Sus devotos. Nada es más encantador para Krishna que escuchar estos nombres, porque son expresiones del amor que Sus devotos sienten por Él.
+</p>
+<p class='vspace'>Mientras Gaura Krishna continúa glorificando el nama-sankirtana, él habla sobre la facilidad con la que se realiza. Puede ser hecho en cualquier momento y en cualquier lugar. Mahaprabhu explica estas glorias del nama-sankirtana a Rama Raya y Svarupa Damodara: “No hay reglas referentes a tiempo o circunstancia; incluso si uno canta el nombre mientras come o  duerme, puede alcanzar la perfección.”
+</p>
+<p class='vspace'>A pesar que Mahaprabhu está hablando acerca de la facilidad de ejecutar el nama-sankirtana en este segundo verso del Siksastakam, no vale de mucho que él use la palabra smarane, indicando asimismo nama-smaranam. Practicar el Krishna nama con la japa, en donde el santo nombre de Krishna se susurra o se recuerda en la mente mientras se cuenta en la japa-mala, es considerado nama-smaranam, como opuesto a nama-kirtana. Esta meditación en el Krishna nama, como nama-sankirtan, no depende de condiciones particulares para que sea provechoso. A diferencia de la meditación en el yoga-marga, la cual debe ser hecha bajo ciertas condiciones y requiere de un corazón puro para que sea productiva, la meditación en Krishna nama puede ser realizada mientras se camina, cuando se está sentado o en cualquier momento, ya sea que uno tenga un corazón puro o impuro. Porque la disciplina espiritual del Krishna nama es, en último término, una expresión del amor más elevado que trasciende el decoro religioso, y no está limitada por las regulaciones que rigen a otras disciplinas espirituales, tales como a yoga y jñana.
+</p>
+<p class='vspace'>En comparación, el jñana-marga no es un sendero fácil de recorrer. Este enfatiza la renunciación al mundo (sannyasa), el estudio del Vedanta y la introspección, cosas que son difíciles en comparación al nama-sankirtana. Aunque Mahaprabhu aceptó sannyasa, no recurrió al jñana-marga, y tampoco estuvo preocupado por el estudio del vedanta y por la vida de introspección. De hecho, Sri Isvara Puri, el diksa guru de Mahaprabhu, le advirtió de no ocuparse en las típicas tareas de la orden de sannyasa, tales como el estudio del Vedanta. Al llamarlo a Él un tonto y decirle que no estaba cualificado para estudiar el Vedanta, Sri Isvara Puri reveló que en Kali-yuga la gente no está preparada para tales prácticas. El estudio del Vedanta es una larga y tediosa tarea y en Kali-yuga el tiempo es limitado y la memoria es pobre. En lugar del estudio, la simple práctica de nama-sankirtana está recomendada.
+</p>
+<p class='vspace'>Sin embargo, la facilidad y simpleza con la que el nama-sankirtana se ejecuta no disminuye su valor. Debido a la fortaleza y potencia con que experimentó el nama-sankirtana, Mahaprabhu convirtió a muchos sannyasis de Benarés, del estudio del Vedanta (jñana-marga) al bhakti-marga. Al principio estos sannyasis pensaron que Sri Krishna Caitanya era tan solo un sentimentalista y que cantar y bailar eran inapropiados para un sannyasi, quien debe guiarse más por la razón y por las sagradas escrituras, que por la mente o sus emociones. Sin embargo, Mahaprabhu demostró que el amor espiritual, a diferencia del amor material, está basado en el conocimiento, Vedanta. De hecho, Mahaprabhu dejó bien explicado que la clara expresión de amor que está en el corazón del nama-sankirtana es la esencia del Vedanta.
+</p>
+<p class='vspace'>Así cuando Mahaprabhu nos dice en este verso del Siksastakam que el nama-sankirtana es fácil de ejecutar y no está obstaculizado por las reglas de las leyes Védicas, no debiéramos pensar que no tiene conexión con el Vedanta, que es meramente sentimental y que no se fundamenta en el conocimiento. De hecho, Krishna nama es ambos, brahman y las maneras de realizar el brahman. Porque brahman es el tema exclusivo 
+del Vedanta-sutra, el Siksastakam, siendo un comentario del Krishna-nama, es también un comentario del brahman y en este sentido sería el comentario de Mahaprabhu acerca del Vedanta. Por consiguiente, vamos a examinar la esencia del sutra de Vyasa, a la luz del Siksastakam de Mahaprabhu, en aras de agregar mayores fundamentos a la idea que aunque Krishna-sankirtana es fácil de ejecutar, es, no obstante, una práctica que está bien pensada y basada en las escrituras sagradas.
+</p>
+<p class='vspace'>El sutra de Vyasa comienza por aconsejar que indaguemos sobre la naturaleza de brahman, athato brhama-jijñasa: “Ahora, por lo tanto, es el momento de inquirir acerca de la naturaleza del Absoluto.” Brahman, nos dicen los sutras en el próximo aforismo de Vyasa, es janmady asya yatah, “Aquel de quien emana el mundo.” Por eso indagamos acerca de la naturaleza de lo que origina el mundo. ¿Cómo vamos a hacer esta indagación? El tercer sutra de Vyasa responde, sastra-yonitvat: “La revelación en la forma del sonido divino es la matriz que da vida al conocimiento del brahman”. Más si queremos cumplir con este mandato de entender la revelación a través del sonido de la escritura, podremos encontrarnos con un obstáculo: que este sonido revelado es muy variado y los Vedas son una auténtica jungla de sonidos, que al menos en apariencia defiende muchas posturas o intereses. ¿Cómo puede el sonido divino, que es tan diverso, dar nacimiento a la singular experiencia del brahman?
+</p>
+<p class='vspace'>Por cierto todos los caminos no conducen al mismo lugar y ante esta duda el sutra responde, tat tu samanvayat: “Cuando se analiza en todo su contexto, resulta claro que la totalidad del sonido revelado apunta en una misma dirección”. En otras palabras, aunque podemos encontrar muchas directrices en las escrituras, que parecen apuntar en varias direcciones, cuando la totalidad de la escritura es estudiada y sus directrices son entendidas en su contexto, queda claro que las escrituras apuntan a una sola cosa: brahman.
+</p>
+<p class='vspace'>Sin embargo, hacer un estudio profundo de las escrituras reveladas no es un proyecto pequeño y el tiempo en Kali-yuga es muy reducido. Por esta razón Isvara Puri advierte a Mahaprabhu que no estudie el Vedanta. En lugar de eso, le indica que cante un sonido consistente en dos sílabas, “krs-na”. El muy misericordioso Srila Rupa Gosvami ha escrito una afirmación similar: “Los srutis, los divinos sonidos de los Upanisads, como refulgentes gemas de conocimiento, están enfocando su luz hacia un sólo sonido, ‘Krishna’.” Porque por este único sonido uno puede comprender la naturaleza de brahman en mayor medida que mediante cualquier otro sonido o combinación de éstos. El Gopala-tapani revela aún más, al decir que las afirmaciones del Upanisad nos iluminan acerca de la naturaleza de brahman, aunque el sonido “Krishna” es brahman, Param Brahman – namo vedanta-vedyaya – y así el sruti apunta a este sonido por conocimiento comprensivo del brahman. Por lo tanto, hablar acerca de Krishna y cantar Su nombre nos revela mucho más sobre brahman que el pronunciar las sentencias del Upanisad tales como tat tvam asi y so’ ham. Respecto a esto, Sriman Mahaprabhu ha dicho:
+</p>
+<p class='vspace'>Los sonidos del sruti  se mantienen lejos
+del inmortal néctar de hablar acerca de Hari.
+Al pronunciarlos, no hay  transformaciones extáticas, 
+no se erizan los vellos, no tiembla el cuerpo,
+no se derrite el corazón, ni se llora en éxtasis.
+</p>
+<p class='vspace'>Es este éxtasis, el cual indica un amplio entendimiento de brahman, el que Sri Caitanyadeva defiende en su Siksastakam. Este conocimiento completo del brahman es la experiencia misma de brahman, no tan solo como origen del mundo sino como rasa, como hermoso rapto sagrado. La convicción de Mahaprabhu que brahman es rasa y que aquellos que realizan esto son capaces de saborear rasa, está apoyada  por el dictamen del Taitariya Upanisad, raso vai sah, “El brahman en sí mismo es rasa. Alcanzar este rasa por cierto lo vuelve a uno dichoso.” Cuando entendemos que brahman no es solamente la fuente u origen del mundo, sino que también es un encantador embelesamiento sagrado, entendemos en realidad que rasa es el origen del mundo. El rasa original del que brahman en última instancia trata – el amor de Radha-Krishna – es el origen de la sombra de rasa que guía a este mundo. Comprender del todo a brahman como rasa y trascender esa sombra de rasa que aparece como este mundo, significa tomar pleno refugio en el sonido sagrado. En consecuencia, la declaración final del sutra de Vyasa nos dice, “La liberación es a través del sonido, la liberación es a través del sonido.” Este sutra se refiere en definitiva al sonido más sagrado de todos – “Krishna.”
+</p>
+<p class='vspace'>El entendimiento del Vedanta de Mahaprabhu, representado en Su Siksastakam, está también sustentado por el Srimad-Bhagavatam, el cual de acuerdo con el Garuda Purana es el propio comentario de los sutras hecho por Vyasadeva. Tal como los sutras concluyen defendiendo el nama-kirtana, así también lo hace el Srimad-Bhagavatam. Este fruto maduro del árbol de la sabiduría Védica comienza, al igual que el Vedanta-sutra, con las palabras janmady asya yatah, las que identifican a Krishna como el origen del mundo. Lo que se refiere al resto de la misma manera con un rotundo apoyo al nama-sankirtan. 
+</p>
+<p class='vspace'>Así, en esta sección hemos examinado la esencia del sutra de Vyasa a la luz del Siksastakam de Mahaprabhu. Hicimos esto para dar más apoyo a la idea que, aunque el sankirtana de Krishna es sencillo de realizar, ésta es no obstante una práctica que está bien pensada y basada en las escrituras sagradas. Como hemos visto, aunque el nama-sankirtana es fácil de ejecutar y cualquiera con fe en su eficacia puede realizarlo, uno precisa una argumentación lógica y basada en las escrituras en favor del compromiso exclusivo con este nama-sankirtana, los seguidores de los ocho preceptos de Mahaprabhu nos pueden proveer de esto.
+</p>
+<p class='vspace'>Nuestro análisis, desde el comienzo de este capitulo hasta ahora, se ha centrado en dos virtudes del Sri Krishna-sankirtana: el poder inherente del Krishna-nama, por estar colmado con el sakti de Krishna, y la facilidad con la cual el sankirtana de Sri Krishna se ejecuta. El considerar estas dos virtudes da dicha al corazón de Gaura Krishna. Sin embargo, hay otro pensamiento que repentinamente Lo hunde en el océano de la desesperación. Al cantar la segunda mitad de esta estrofa del Siksastakam, Sri Krishna Caitanya quedó doblegado por la lamentación seguida de la humildad, y en el humor de un sadhaka manifestó una duda.
+</p>
+<p class='vspace'>Esta duda de Mahaprabhu, samsaya, viene después de Su tesis original o visaya. Después de manifestar Su duda, la refuerza citando evidencia para apoyar la antitesis (purvapaksa) de Su tesis original. Al expresarse de esta manera, Mahaprabhu sigue el estándar establecido para el análisis en los comentarios clásicos del Vedanta, donde visaya, samsaya y purvapaksa son utilizados y luego seguidos por el siddhanta, es decir, por una concluyente y armonizante síntesis que está respaldada por las escrituras sagradas. Vamos a examinar el visaya, samsaya y purvapaksa de Gaura hasta llegar a Su siddhanta.
+</p>
+<p class='vspace'>La tesis de Mahaprabhu (visaya) se encuentra en el primer verso y en la primera mitad del verso segundo, y es que el sankirtana de Sri Krishna es la panacea universal. Su duda (samsaya) se encuentra en la segunda mitad del verso dos. Ahí Gaura Krishna dice que El es desafortunado o durdaivam. Esta afirmación consiste en la duda que mientras otros pueden experimentar los maravillosos efectos del nama-sankirtana, este no es Su caso. Para afianzar esta duda con un argumento opuesto (purvapaksa), Mahaprabhu ofrece evidencia en la línea final de su segundo verso. En ese sentido Él afirma que no tiene amor por el Krishna-nama, nanuragah, a pesar de su naturaleza misericordiosa y de los gloriosos efectos que se obtienen por ocuparse en él. Así la antítesis está considerada para el bien del sadhaka que duda: quizás nama-sankirtana no sea la panacea universal después de todo.
+</p>
+<p class='vspace'>El siddhanta que refuta la antítesis es que mientras el nama-sankirtana es la panacea universal, para experimentar profundo apego por el Krishna-nama, uno debe aproximarse a él con la humildad que Mahaprabhu manifiesta en este verso y en el verso tercero. Tal humildad implica un acercamiento sistemático bajo la guía de Sri Guru, porque ser humilde con el Krishna-nama  supone ser humilde con quien lo porta, con quien el Krishna-nama ha aceptado venir  a nuestra vida. Si alguien dudara de la eficacia del nama-sankirtana, por no haber experimentado sus efectos aún después de haberlo practicado, tal duda debería ser dejada al entender que aunque Krishna-nama puede ser cantado bajo cualquier circunstancia, para experimentar su plena gloria uno debe aproximarse a Nama Prabhu con las bendiciones del Guru y debe participar en el nama-sankirtana bajo su guía. De esta manera, gradualmente, todo lo que nos impide abrazar el Krishna-nama por completo, será removido, y se despejará el camino hacia el avance espiritual. Así, nama-sankirtana viene al mundo a través del guru-parampara, y el Krishna-nama elige revelarse a aquellos que honran este hecho con todas sus ramificaciones.
+</p>
+<p class='vspace'>En este punto, uno con justicia podría preguntar cómo una práctica espiritual que se dice no estar obstaculizada por restricciones de tiempo, lugar y circunstancia –que es relativamente libre de reglas – deba ser ejecutada bajo la guía de otra persona, con todo lo que esto conlleva, para que pueda ser efectiva. La respuesta a esta duda es que mientras el nama-sankirtana trasciende las regulaciones que rigen a otras prácticas espirituales, existen no obstante, algunos factores que ayudan a crear un ambiente favorable para que Krishna-nama elija manifestar su absoluta gloria. Sri Krishna mismo corrobora esto en el Bhagavad-gita. Cuando describe las principales características de los mahatmas, dice que ellos están siempre ocupados en kirtana, pero su participación en kirtana está calificada con las palabras yatantas ca drdha-vratah: “esforzándose con determinación en el cumplimiento de sus votos”.” Este firme cumplimiento de votos implica el seguir la guía de Sri Guru, sastra y sadhu, en un esfuerzo por limpiar los impedimentos y crear un ambiente favorable para el canto.
+</p>
+<p class='vspace'>¿Qué le impide a uno aprovechar las glorias del nama-sankirtana? Tan solo el infortunio (durdaivam) en la forma de anarthas. Los anarthas son literalmente “falsos valores”. Son esas actividades y padrones de pensamiento que se introducen y obstaculizan nuestra habilidad de entender lo que es realmente valioso. Por la influencia de ellos uno se distrae incluso cuando canta el Krishna nama, y por esta causa uno no puede obtener el absoluto beneficio del canto.
+</p>
+<p class='vspace'>Los anarthas son variados y numerosos. Surgen en el ámbito del karma tanto de los actos piadosos como de los impíos. También surgen del mismo cultivo del Krishna bhakti, como, por ejemplo, la fama y fortuna que podamos obtener por la ejecución de Krishna Bhakti, puede después crear orgullo y apego material. Si uno no tiene claro lo que en realidad tiene que cultivar, se inclinará más por la maleza que por la enredadera del bhakti. Por último, los anarthas también surgen de las ofensas generadas por el orgullo o prathista. En relación a esto, Thakura Bhaktivinoda cita el siguiente verso de Hari-bhakti-vilasa en su Bhajana-rahasya:
+</p>
+<p class='vspace'>Aún después de renunciar a los anarthas,
+las raíces del orgullo, pueden mantenerse.
+Uno debería por ello evitar este prathista,
+como si fueran las aguas contaminadas en un desaguadero.
+</p>
+<p class='vspace'>Cuando los sadhakas toman el sendero del nama-dharma con humildad, con las bendiciones de Sri Guru, aprenden el verdadero método de nama-bhajana. Ellos aprenden lo que es favorable y desfavorable para el canto, muestran gratitud hacia el preceptor, y al hacer esto, se vuelven aptos para la práctica espiritual, al estar fortalecidos por la sabiduría, el ejemplo y el encanto de un devoto experimentado. El adherirse a las instrucciones de Sri Guru habilita al sadhaka para que progrese a pesar de sus anarthas, de tal forma que gradualmente los arrancará de raíz. Sumisión al Guru requiere de humildad. Esta humildad propicia el bhakti y el bhakti a su vez fomenta una mayor humildad. 
+</p>
+<p class='vspace'>En este verso Gaurahari se expresa tanto con lamentación como con humildad. Se lamenta por Su desafortunada condición y así su corazón se hincha de dainya o humildad. Los sadhakas debieran sentirse así. Esta humildad tan sincera atrae la gracia y la simpatía de Sri Krishna, poniendo fin para siempre a la dolorosa estadía en este samsara. Por lo tanto Sri Krishnadasa Kaviraja Gosvami comenta que aunque Mahaprabhu manifiesta lamentación en el segundo verso del Siksastakam, cuando escucha su significado todo Su dolor es acallado.
+</p>
+<p class='vspace'>Independiente de cuán caído uno pueda ser, el sincero reconocimiento de nuestra condición y la consiguiente humildad que resulte de ello, atraerán una simpatía y un poder que está más allá de uno. Sriman Mahaprabhu, el gran maestro, nos da aquí esta lección. Cuando existe un sincero reconocimiento de nuestra desafortunada condición (durdaivam), se genera una natural humildad que atrae la simpatía del Krishna-nama y así se soluciona el problema planteado en este segundo verso, el que a pesar de ser tan grandes las glorias del nama-sankirtana uno no sienta atracción por él. 
+</p>
+<p class='vspace'>La humildad y el deseo de sobreponerse a los anarthas no hacen que todos ellos desaparezcan de inmediato, pero debido a que ellos atraen la simpatía del Krishna nama, él se mantiene con uno a pesar de los antecedentes de ofensas que uno posea, y de esta manera, por su gracia, uno se purifica gradualmente y el nama-bhajana se mantiene estable y firme.
+</p>
+<p class='vspace'>VERSO TRES 
+trnad api sunicena
+taror iva sahisnuna
+amanina manadena
+kirtaniyah sada harih
+</p>
+<p class='vspace'>trnat api – como el pasto; su-nicena – con humildad; taroh – que un árbol; iva – como; sahisnuna – tolerancia; amanina – con modestia; mana-dena – con veneración; kirtaniyah – ser glorificado; sada --  constantemente; harih – Harih
+</p>
+<p class='vspace'>Sé humilde como la brizna de pasto,
+sé más tolerante que el árbol,
+no esperes reconocimiento,
+aún así muestra veneración por todos,
+uno debe glorificar a Hari siempre.
+</p>
+<p class='vspace'>Desde las profundidades de Su desesperación, Gaura Krishna emerge y llega a la orilla de la esperanza, al tiempo que llama a sus queridos asociados, “Oh Svarupa, Rama Raya, escuchen las características del tipo de nama-kirtana por el cual el prema se despierta.” Con estas palabras Sri Krishna Caitanya precede su tercer verso del Siksastakam, con Su corazón rebosando de humildad.
+</p>
+<p class='vspace'>¿Qué clase de nama-kirtana despierta prema? Mahaprabhu dice, “El canto constante de Hari, hecho con humildad, tolerancia y venerando a los demás.” Aunque es poético, este verso es usualmente percibido como una dulce amargo, difícil de tragar. Hay un muy conocido dicho en Bengala del oeste que dice: “Cuando escucho del prema-dharma de Sri Krishna Caitanya quiero volverme Su seguidor, pero cuando escucho el tercer verso de Su Siksastakam me doy cuenta que es imposible.” Nosotros no debiéramos pensar así, porque el mismo Krishna-nama nos va a cualificar gradualmente para cantar con estos síntomas en la medida que progresemos de anistha bhajana-kriya pasando por anartha-nivrtti  hasta nisthita bhajana-kriya. De este modo, con una práctica estable que no esté interrumpida por los anarthas, nuestro canto nos llevará hasta prema.
+</p>
+<p class='vspace'>Que el sendero al prema-prayojana está pavimentado con este verso del Siksastakam, se demuestra en las conversaciones entre Mahaprabhu y Raghunatha Dasa Gosvami, quien es el prayojana-tattvacarya del Vaisnavismo Gaudiya. Prayojana-tattva  literalmente significa “la verdad metafísica con respecto a la meta.” La meta es prema, Radha prema, Krishna prema. Debido a que Raghunatha Dasa habla profundamente de este ideal en sus escritos, ha sido nombrado el acarya del prayojana de los preceptos de Gaura. Antes, en Su Jagannatha Puri lila, Mahaprabhu personalmente puso a Raghunatha Dasa bajo el cuidado de Svarupa Damodara. Pero una vez Raghunatha Dasa abrigó el deseo de escuchar alguna instrucción directa de boca de Mahaprabhu, referente a la meta de la vida y a cómo obtenerla, es decir, el sadhana-sadhya-tattva. Cuando Svarupa Damodara informó a Sri Caitanya acerca de este deseo de Raghunatha Dasa, Mahaprabhu se sonrió y le dijo que  ya lo había asignado a él como su instructor porque en realidad “tú sabes más que Yo”. Pero aun así consintió hacerlo y le dijo lo siguiente al Raghu de Svarupa:
+</p>
+<p class='vspace'>No escuches ni digas cosas mundanas.
+No comas alimentos sabrosos, ni estés a la moda, (no tengas una conciencia material)
+No esperes honores, pero sí honra a los demás.
+Canta siempre el nombre de Krishna, 
+e internamente sirve a Radha-Krishna en Vraja.
+Estas son, a manera de resumen, Mis instrucciones,
+de Svarupa recibirás una guía más detallada.  
+</p>
+<p class='vspace'>Después de decir esto, como para concluir Sus instrucciones a Raghunatha Dasa, Mahaprabhu citó este tercer verso del Siksastakam al prayojana-tattvacarya, dejándole claro que el sendero al prema pasa a través de este verso. En efecto, Mahaprabhu ha dicho que si tuviese que resumir todas Sus instrucciones acerca de sadhana-sadhya-tattva en un solo verso, éste sería el indicado. Podríamos haber esperado que el prayojana-tattvacarya hubiese recibido instrucciones mucho más esotéricas que las que se enfatizan en este verso: humildad, tolerancia, canto constante, etc. Sin embargo, al Mahaprabhu mencionar este verso acentúa la importancia de cumplir con estas cuatro obligaciones al cantar el santo nombre. Al mencionarle este verso a Raghunatha Dasa, Mahaprabhu de hecho lo está promulgando, como si lo estuviese clamando en público, de modo que todos Sus seguidores lo acepten como una instrucción central. Sólo escuchemos lo que el más sabio y santo poeta, Kaviraja Gosvami Sri Krishnadasa, categóricamente anuncia al respecto:
+</p>
+<p class='vspace'>Alzando mis brazos declaro, “Escuchen todos!
+Aten esta estrofa en el hilo del nama,
+como una guirnalda alrededor de sus cuellos.
+Obedece este sloka bajo la orden del Señor,
+y con certeza los pies de Sri Krishna serán tu refugio.
+</p>
+<p class='vspace'>Somos aún más bendecidos por la pluma de Krishnadasa Kaviraja Gosvami al dejarnos la explicación dada por Mahaprabhu a Rama Raya y Svarupa Damodara:
+</p>
+<p class='vspace'>A pesar que los Vaisnavas son avanzados, ellos se consideran más bajos que una brizna de pasto y al igual que los árboles, toleran cualquier adversidad. Cuando un árbol está siendo talado, no protesta, y si está muriéndose de calor, nada pide para beber. Da su riqueza— su sombra y todo lo demás – a cualquiera que la pida, mientras que soporta el calor y la lluvia, y al mismo tiempo protege a los demás. A pesar que los Vaisnavas son nobles, están libres de orgullo, ofreciendo a todos el debido respeto, sabiendo que junto a toda jiva se encuentra Krishna. Con este tipo de actitud, quien cante el nombre de Krishna alcanzará el refugio de Sus pies de loto y despertará el prema.
+</p>
+<p class='vspace'>Sin embargo, no es fácil cantar el nombre de Krishna con esta humilde mentalidad, a pesar de que es esencial para quien está en busca del prema. Como hemos visto, uno experimentará esta clase de canto después de alcanzar nisthita bhajana-kriya, que es el objetivo a corto plazo en el largo y a veces sinuoso camino a casa. Desde este punto en adelante el camino se vuelve recto y amplio, las reglas se transforman en realizaciones, y lo blanco y negro pasan a volverse distintas tonalidades de grises. Esta etapa provee al corazón de una amorosa fe en armonía con el intelecto. La fe se vuelve bien pensada, y más aun, porque este ejercicio fomenta un sadhana intensificado, da como resultado una certeza interior y una firme fe, derivada más del saber que del pensar. Además, esta confianza espiritual está seguida por una humildad en continuo aumento, en la medida que el sadhaka se rinde ante la profundidad del tema que está estudiando. Él sabe que somos por siempre estudiantes en este campo, un campo de conocimiento en el cual este mismo saber tiene un plan que nos incluye. De pronto el sujeto – el individuo  – comienza a percibirse como un objeto en manos del Krishna-nama, y ese mundo que antes veía a través de las limitaciones de su mente, le manifiesta una vida propia, respaldada por la voluntad de Dios.
+</p>
+<p class='vspace'>El medio ambiente natural habló a Mahaprabhu dándole un amistoso consejo – sé humilde como el pasto y tolerante como el árbol—y en el humor de un sadhaka, Él mismo consideró que carecía de estas virtudes. Aunque al parecer la naturaleza no nos habla de esta manera, sería más acertado decir que somos nosotros quienes no estamos escuchando. No sólo no la estamos escuchando a ella, que ejecuta todos sus actos de acuerdo a la orden de Dios, sino que no estamos escuchando a Gaura. Carecemos de humildad y tolerancia al no considerar este verso de Gaura cuando caminamos por el pasto y éste se doblega con humildad bajo nuestros pies. Olvidamos la poesía de Mahaprabhu cuando el árbol sin quejarse tolera el sol del verano para darnos su sombra. Debemos prestar mucha atención a Dios y al guru, al libro Bhagavatam y a la persona Bhagavata – nityam bhagavata-sevaya--, si esperamos que ellos compartan sus secretos con nosotros. Nistha implica esa clase de canto atento que da vida al mundo. En la medida que el corazón de uno cambia con el nama-dharma, con el continuo cultivo de la humildad y la tolerancia, el ambiente que nos rodea,  que antes nos parecía opuesto, es percibido como lo que realmente es – amistoso. Así como el sadhaka realiza que está rodeado por simpatizantes y por personas afectuosas, una sensación de esperanza ilumina su ser.
+</p>
+<p class='vspace'>El venerable Visvanatha Cakravarti Thakura explica en su Madhurya Kadambini que en la etapa de nistha los anarthas que surgen del buen y mal karma se destruyen por completo purna. Sin embargo, el término purna de Sri Visvanatha no implica que los anarthas estén del todo erradicados en nistha. Como Visvanatha Cakravarti Thakura lo explica y el Srimad Bhagavatam lo confirma, en esta etapa aún se mantienen vestigios de estos anarthas, nasta-prayesv abhadresu. Aunque el fuego de la existencia material ya está prácticamente extinguido bhava-maha-davagni-nirvapanam, el humo aun no se ha disuelto por completo, se mantendrá hasta que uno alcance el estado de asakti, donde los anarthas surgidos de nuestro karma serán destruidos del todo atyantiki y la liberación de la existencia material será completa.
+</p>
+<p class='vspace'>Cuando el sadhaka deja el pequeño mundo de la mente y su consecuente miseria, experimenta la primera de las características de suddha-bhakti: la liberación del sufrimiento (klesaghni). El sufrimiento es un resultado del karma y se experimenta en la mente. Lo que le causa alegría a uno será causa de aflicción para otro. El duelo por la muerte de una persona podrá ser causa de festejo para otra. Más allá de la percepción relativa de la mente sobre el bien y el mal, sobre la alegría y la tristeza, está el reino de la conciencia. En nisthita bhajana-kriya el Krishna-nama remueve la ceguera mental y los lentes oscuros de la ignorancia (tamas) y de la pasión (rajas), que han oscurecido el hecho que formamos parte de la naturaleza de la conciencia y no de la materia. En este estado uno ve las cosas con claridad (sattva), uno sabe bien cuáles son las verdaderas prioridades, no pudiendo ya ser más engañado o distraído por los valores falsos, porque el verdadero conocimiento es de la naturaleza de sattva.
+</p>
+<p class='vspace'>Este paso de anistha bhajana-kriya, a través de anartha-nivrtti, hasta llegar a nisthita bhajana-kriya, por la gracia del Krishna-nama, está descrita por Srila Suta Gosvami en el Srimad Bhagavatam:
+</p>
+<p class='vspace'>Krishna, El amigo del devoto sincero, limpia el corazón de quien escucha y canta Sus virtuosas actividades. Por servir al bhagavata en forma continua  la irreligiosidad se destruye por completo y se alcanza la firme devoción, o naisthiki-bhakti, por Quien es alabado con canciones trascendentales. En ese momento, la influencia de rajas y tamas – de la lujuria y la avaricia – no afectan más a ese devoto que se ha situado en sattva y que está pleno de felicidad.
+</p>
+<p class='vspace'>Por “servicio constante al bhagavata”, se entiende tanto el escuchar el Srimad-Bhagavatam como el servir a la persona que personifica sus preceptos. Si el resultado del escuchar regularmente el bhagavata y el servir al devoto bhagavata es lo mismo, debería quedar claro que “escuchar el libro” involucra mucho más que un simple ejercicio intelectual. El conocimiento teórico casi siempre fomenta el orgullo, mientras que la sabiduría fomenta la humildad. No obstante, uno debería estudiar el Bhagavata cuidadosamente. Este libro da una embestida total al mero ejercicio intelectual necio hecho en nombre de una supuesta búsqueda espiritual. Le enseña a uno a utilizar su cabeza, pero  disminuyendo su importancia, con el fin de suavizar el corazón. Y al final, se termina exhibiendo el bondadoso y puro amor de las gopis sin educación, por el príncipe vaquerito de Vraja. Tanto el canto constante del Krishna-nama como el servicio sin reservas requieren de humildad. Estos dos van de la mano.
+</p>
+<p class='vspace'>Sri Visvanatha Cakravarti Thakura describe dos clases de nistha: uno relacionado con el canto constante y otro con la humildad y sus cualidades similares. Estas dos clases de nistha son saksat-bhakti-vartini, nistha que está en directa relación con bhakti, y tad-anukula-vastu-vartini, nistha que está relacionado con lo que es favorable al bhakti. El verso de Mahaprabhu incluye a ambos. Las palabras kirtaniyah sada harih indican firmeza en escuchar y cantar, y porque estos dos son bhakti directo, kirtaniyah sada harih se refiere a saksat bhakti-vartini nistha. El resto del verso hace referencia a tad-anukula-vastu-vartini-nistha, porque tiene relación con lo que es favorable al bhakti pero que no es bhakti en sí mismo, a cualidades tales como la tolerancia y otras.
+</p>
+<p class='vspace'>Aunque la humildad esté considerada como una cualidad favorable al bhakti, en lugar de ser bhakti propiamente dicho, entre todas las cualidades favorables ésta es única, porque en su expresión plena está muy cerca de ser saksat-bhakti o bhakti en sí. En su comentario del Brhad-bhagavatamrta, Sri Sanatana Gosvami describe primero a la humildad como un prerrequisito esencial para obtener la devoción. El Jaiva Dharma de Thakura Bhaktivinoda, ha ido un poco más allá, al describir la humildad como una característica inherente a Bhaktidevi misma. Más tarde, en su Brhad-Bhagavatamrta, Sri Sanatan dirá lo mismo.
+</p>
+<p class='vspace'>Como hemos aprendido al investigar el segundo sloka del Siksastakam, el Krishna-nama se siente atraído por la humildad del sadhaka y se mantiene con él, a pesar de la continua presencia de anarthas, incluyendo el nama-aparadha. La humildad descrita en el comentario del segundo verso, sin embargo, no es el rostro completo de la humildad. Es aquella que remueve los obstáculos a la fe. Esta expresión de humildad lo vuelve a uno apto para recibir la gracia de Dios. Esta surge de la mente cuando aprecia el contraste entre la misericordia del Krishna-nama con la resistencia de uno a recibir esa misericordia. La humildad descrita en el tercer verso, sin embargo, proviene del alma.
+</p>
+<p class='vspace'>La humildad que nace del alma es un subproducto natural del avance espiritual. Se comienza a manifestar en la etapa de nistha. En nisthita-bhajana-kriya el alma finita se aproxima a la puerta de lo infinito. Por encima de esa puerta hay un letrero que dice, kirtaniyah sada harih: “Canta siempre el nombre de Hari”, y el limpiapies de entrada de este umbral dice, su nicena: “Sé humilde”. En esta conjunción entre tiempo y eternidad – entre lo finito y lo infinito— surge una humildad natural, al entenderse uno como finito por primera vez. Aquí, finito deja de ser una palabra más y pasa a ser una realización, como así también la humildad que promueve. En su comentario al Siksastakam, Thakura Bhaktivinoda describe esta condición como una humildad innata que surge del completo desinterés por el disfrute sensorial. La humildad del segundo verso, en contraposición, deriva del remordimiento por el apego al disfrute material.
+</p>
+<p class='vspace'>Aunque nistha es un estado intermedio, lo que encontramos en él no deja de ser importante. La humildad que aparece en quien tiene algo de qué enorgullecerse es significativa. El sentido de humildad alcanzado en esta etapa conduce al sadhaka a la perfección y se mantiene con él para siempre. Sriman Mahaprabhu ha destacado el ejemplo de Sri Rupa y Sanatana Gosvamis para que todos los sadhakas tomen nota de él. Después de reunirse con ellos en Ramakeli, Mahaprabhu les contó de su humildad a Sus demás asociados. Él les dijo, “Al ver y escuchar de su humildad, una piedra se derretiría. ‘Siéntanse satisfechos, les dije, porque al ser glorificados, ustedes no se consideran así. Debido a esto, Krishna pronto los va a liberar.’”
+</p>
+<p class='vspace'>Al igual que con la humildad, hay dos clases de tolerancia. El primer tipo está descrito en el Gita. Sri Krishna le dice a Arjuna que debería tolerar la felicidad y la angustia material entendiéndolas como lo que son. Ellas son meras percepciones captadas por los sentidos, las cuales la mente después clasifica como buenas o malas, como felicidad o tristeza, y así sucesivamente. Nuestra mente evalúa nuestra experiencia como positiva o negativa y así vivimos en el mundo de esta determinación mental. En lugar de dejarnos sacudir y voltear por estas evaluaciones mentales – evitando lo negativo y persiguiendo lo positivo – deberíamos cultivar la tolerancia en el contexto de la práctica espiritual, fruto de lo cual será la experiencia de una realidad no filtrada por la mente. Tal serena y bien pensada tolerancia, es un ingrediente esencial de la práctica espiritual básica.
+</p>
+<p class='vspace'>Aunque este estándar de tolerancia es de alto orden, el tercer verso de Mahaprabhu nos habla de otro aún más elevado. Es un nivel de tolerancia que se alcanza por cultivar nama-sankirtana y que genera prema. Este estándar de tolerancia está descrito en el Srimad-Bhagavatam. Así, desde la tolerancia del Gita en el reino de la inteligencia, avanzamos a la tolerancia del Bhagavata en el reino del alma:
+</p>
+<p class='vspace'>Quien aspira por Tu misericordia, mientras tolera las reacciones por sus faltas pasadas y ofrece reverencias con sus palabras, corazón y acciones, se vuelve el heredero natural de mukti y del eterno servicio a Tus pies de loto.
+</p>
+<p class='vspace'>Este estándar más elevado de tolerancia se manifiesta cuando se acaba uno de los principales anarthas que surgen del karma. Cuando esta etapa se desarrolla y uno progresa a etapas más elevadas de sadhaka-bhakti (ruci y asakti), la felicidad y angustia de uno son causados más por bhakti y aparadha que por el karma. Un nivel inferior de tolerancia, por el contrario, implica tan solo tolerar el propio karma. El misericordioso Visvanatha Cakravarti Thakur, en su comentario al siguiente verso del Bhagavata, expone el nivel más alto de tolerancia que comienza con nistha y que se completa del todo en asakti,:
+</p>
+<p class='vspace'>El devoto piensa, “Ya que un alma rendida no está del todo bajo las normas del karma y del tiempo, lo que parece ser influencia de ellos en mi vida es en realidad un arreglo personal de Krishna (para ayudarme a avanzar espiritualmente). Bhagavan por cierto sabe lo que es mejor para mí, dado que yo mismo no lo sé. Así que es por Su misericordia hacia mí que se involucra personalmente en mi vida, a veces dándome felicidad y en otras dándome tristeza. Él hace esto sólo con el fin de ocuparme en Su servicio”. Quien piense así se volverá el receptáculo (daya-bhak) de dos resultados: de la liberación y del servicio divino (mukti-pada). 
+</p>
+<p class='vspace'>La palabra daya-bhak implica herencia. Como la herencia de los padres sustenta a un niño, así la herencia de la liberación y del servicio divino mantiene la vida del devoto. Esta herencia no es dada toda de una vez. Ella viene en cuotas, comenzando con nisthita bhajana-kriya.
+</p>
+<p class='vspace'>El ejemplo del árbol dado por Mahaprabhu también nos habla fuertemente de nistha, porque además de ser tolerante, un árbol es firme, sus raíces son profundas y es inamovible. Nistha significa inmutable, inalterado ante el llamado de la mente y de los sentidos. Irónicamente, los primeros dos síntomas de alguien que es inmutable en el sadhana del nama-dharma, la humildad y la tolerancia, implican una considerable flexibilidad.
+</p>
+<p class='vspace'>Bhaktivinoda Thakura ha explicado que la tolerancia mencionada en el Siksastakam incluye la misericordia. Él ha concluido esto a partir de la propia explicación de Mahaprabhu referente a la tolerancia del árbol. Éste tolera las inclemencias del tiempo o aún cuando está siendo cortado, da su misericordia a los demás. En su Gitavali, Bhaktivinoda Thakura escribe que cuando uno se vuelva tolerante como un árbol pasará de la violencia a dar protección. En su Sri Sanmodana-bhasyam, él describe esta cualidad de la tolerancia como un tipo de compasión pura, libre de envidia.   
+</p>
+<p class='vspace'>Aunque las virtudes de la humildad y tolerancia adornan al sadhaka y lo identifican como un sadhu, en la etapa de nistha él está libre de ego y no se apega al respeto que los demás le puedan ofrecer. Tal sadhaka serio rechaza el orgullo de ser un sadhu. Para no aceptar este respeto, y debido a que ve a cada ser viviente como el lugar donde reposa Dios, un naisthiki-bhakta ofrece todo respeto a los demás de acuerdo a su posición.
+</p>
+<p class='vspace'>Para concluir nuestra exposición, se debe enfatizar que este tercer verso del Siksastakam se refiere a las pautas para poder alcanzar prema. Aunque el requisito inicial para tomar el sendero de Krishna es sólo la fe, debido a que este verso hace referencia a una fe firme – nistha – va a exigir una actitud más avanzada, en la forma de apropiado decoro y disposición. Esta disposición más avanzada está en contraste con la palabra durdaivam del verso anterior, indicando que en la etapa anterior a nistha uno aún tiene malos comportamientos basados en falsos valores. El infortunio que uno padece antes de alcanzar nistha es que debido a este mal comportamiento uno no desarrolla apego por el nama-sankirtana. De todos los tipos de anarthas que surgen de este mal comportamiento, las ofensas al Krishna-nama son las más dañinas. Thakura Bhaktivinoda escribe en la octava estrofa de su poema Saranagati, ”Mi durdaiva (mi infortunio) son las diez ofensas”. Afortunadamente estos pecados del alma pueden ser remediados mediante el canto atento que se da en la etapa de nistha – kirtaniyah sada harih – el cual despeja el camino hacia el prema.
+</p>
+<p class='vspace'>Debido a que las etapas más elevadas de bhakti no pueden ser alcanzadas sin primero haber llegado a la etapa del canto sin ofensas, los seguidores de Mahaprabhu han destacado este verso y el estado de nistha, señalándolo como el objetivo interno al que se debe aspirar en la búsqueda del prema. Sin nistha – sin humildad, tolerancia, ausencia de orgullo y canto atento – no habrá prema. El naisthiki-bhakta con su bien desarrollada discriminación claramente ve la diferencia entre kama y prema. Habiendo dejado kama atrás, él o ella mira sólo hacia delante, con ambos ojos fijos en el objetivo.
+</p>
+<p class='vspace'>VERSO CUATRO
+</p>
+<p class='vspace'>na dhanam na janam na sundarim
+kavitam va jagad-isa kamaye
+mama janmani janmanisvare
+bhavatad bhaktir ahaituki tvayi
+</p>
+<p class='vspace'>na—no; dhanam – riqueza; na – no; janam – seguidores; na – no; sundarim kavitam – bellas mujeres, sabiduría, verso verse; va – o; jagat-isa – ¡Oh, Señor del universo!; kamaye – yo deseo; mama – mi; janmani – después de nacer; isvare – ¡Oh, Pranesvara!; bhavatat – que exista; Karmah – servicio con devoción ; ahaituki – sin causa ; tvayi – hacia Ti.
+</p>
+<p class='vspace'>¡Oh, Señor del universo!,
+No deseo riqueza, seguidores,
+bellas mujeres, sabiduría o verso verse.
+Sólo pido por bhakti sin causa hacia Ti,
+¡Oh, Pranesvara!, nacimiento tras nacimiento.
+</p>
+<p class='vspace'>El venerable Krishnadasa Kaviraja Gosvami relata que después que Mahaprabhu recitó el tercer verso del Siksastakam, Su humildad aumentó y oró por tener devoción pura. El amor de Gaura Krishna aumentó Su humildad y esta humildad incrementó Su amor aún más. Kaviraja Mahasaya comenta que la naturaleza del amor es esta: el devoto que posee amor siente que no tiene ni siquiera el aroma de éste.
+</p>
+<p class='vspace'>Después que el corazón se ha limpiado de los principales anarthas y el sadhana se vuelve inmutable, el sadhaka desarrolla un gusto natural por el nama-sankirtana. Lo que antes era medicina ahora se vuelve alimento. La devoción inmutable (apratihata) se vuelve sin causa (ahaituki). Esta etapa es conocida como ruci (gusto), en la cual el sadhaka se apega a la devoción misma carente de deseos fruitivos o del deseo de la liberación. Así el sadhaka no tiene ningún otro interés más que en continuar escuchando y cantando con devoción pura, suddha-karma. La actitud piadosa del sadhaka comienza a transformarse, desde la sumisión en busca de la emoción espiritual, a una vida emocional de anhelo espiritual.
+</p>
+<p class='vspace'>En este cuarto verso Mahaprabhu describe ruci en términos de sus tatastha-laksana (características marginales) y svarupa-laksana (características principales). Su tatastha-laksana es estar libre de segundas intenciones, y su svarupa-laksana es apego al karma. De esta manera es prácticamente un sinónimo de suddha-karma tal como lo define Srila Rupa Gosvami. Sri Rupa explica que suddha-karma se caracteriza marginalmente por estar desprovisto del deseo de liberación, de logros mundanos, o de cualquier otra cosa aparte del placer de Krishna. Su principal característica es un espíritu de devoción favorable a Krishna.
+</p>
+<p class='vspace'>Mahaprabhu describe las característica marginales del ruci-karma cuando dice que no tiene deseo de riqueza (na dhanam). Esto significa que no tiene deseos de bienestar económico (artha) y por consiguiente tampoco tiene atracción por la riqueza fruto del conocimiento religioso (dharma). Cuando Mahaprabhu dice que no tiene ansias de seguidores (na janam), incluye el apego a esposa, hijos, amigos, y por todo aquello en lo cual uno gasta su dinero en aras del disfrute de los sentidos (kama). El disfrute de los sentidos está también enfatizado aquí con la palabra sundarim, la que literalmente significa “hermoso” y de esta forma representa el más formidable de los deseos, el deseo de compañía. Tal como con artha y con dharma, Mahaprabhu dice también que no ansía kama (na janam na sundarim). Tampoco tiene ningún deseo por el conocimiento material ni por las artes (kavitam va). Todo esto cae dentro del ámbito del karma. Así como Mahaprabhu no tiene interés en el ámbito del karma, de la misma manera no le interesa el conocimiento que conduce a la liberación. La palabra kavitam en este verso, puede referirse tanto al conocimiento material como al conocimiento que lleva a la liberación de la existencia material. Las palabras janmani janmani se refieren a liberarse del nacimiento y de la muerte, y además indican moksa o liberación.
+</p>
+<p class='vspace'>Así encontramos los cuatro objetivos de la humanidad --dharma, artha, kama y moksa-- representados en este verso. Estos cuatro valores, los llamados cuatro purusartha, o necesidades/ideales (artha) humanos (purusa), incluyen el completo rango de las metas del hombre, como así también el trascender la experiencia humana (en la realización de brahman). Gaura Krishna y el sadhaka que ha alcanzado el nivel de ruci no desean ninguna de ellas.
+</p>
+<p class='vspace'>Todas las actividades humanas están arraigadas en el deseo, en el deseo de alcanzar el placer y el deseo de evitar el dolor. El deseo puede dividirse en tres categorías: primero está el deseo por el placer sensorial, el cual nunca satisface a nadie pero lo lleva a buscar la misma experiencia sensual una y otra vez; en segundo lugar está el deseo por las adquisiciones materiales, riqueza, honor, poder, seguridad y así sucesivamente. Este tipo de deseo es progresivo, no obliga a una repetición sin sentido, sino más bien inclina a proseguir constantemente metas más grandes. En tercer lugar está el deseo por la virtud, el buen carácter, la rectitud y así sucesivamente, que es más progresivo aún y da una sensación de satisfacción y claro entendimiento acerca de la naturaleza de este mundo.
+</p>
+<p class='vspace'>Estas tres clases de deseos son producto de la influencia de las tres gunas de la naturaleza material –tamas, rajas y sattva- manifestadas en la psiquis humana. Son conocidas, respectivamente, como kama (placer), artha (poder), y dharma (virtud). Las tres de ellas implican la clara necesidad de ser algo: de ser gratificado, de ser poderoso, o de ser virtuoso.
+</p>
+<p class='vspace'>El virtuoso percibe el hecho que una vida basada en la necesidad de ser algo, obscurece la percepción de lo que ya somos. Esto da a la vida del virtuoso absoluto valor y superioridad sobre las aspiraciones de poder y placer, las cuales bajo la influencia de la virtud también poseen una importancia limitada. El ego verdadero del virtuoso es el puente potencial para trascender el ego falso. Cruzar ese puente, con la energía de la práctica espiritual, lleva a moksa, a la liberación de las necesidades. Al llegar ahí nos encontramos con nosotros mismos. Sentimos que no tenemos la necesidad de llegar a ser alguien porque ya somos mucho más grandes que cualquier cosa que la limitada experiencia humana nos pueda ofrecer. Desde el ámbito de lo experimentado (la materia), entramos al ámbito del que experimenta (la conciencia).
+</p>
+<p class='vspace'>Sin embargo, en este verso encontramos que el ideal de Mahaprabhu trasciende incluso moksa. Implícito en Su falta de interés por trascender el nacimiento y la muerte, está el hecho que para aquel que ha alcanzado ruci la red del samsara está prácticamente desmantelada. Esto sucede como un subproducto del nama-sankirtana. El único deseo que Mahaprabhu tiene en este punto es el deseo por bhakti, bhakti por su propio bien – bhavatad bhaktir ahaituki tvayi. Una vez más esta es la característica principal de ruci-bhakti. Mahaprabhu está ahora preparado para probar todo lo que la vida liberada ofrece – una relación trascendental con Dios más allá de las ataduras materiales.
+</p>
+<p class='vspace'>La materia provee sólo un tergiversado o falso sentido del placer/disfrute, poder/seguridad y virtud/sabiduría. En relación con la materia uno puede experimentar un sentido de placer temporal, de existencia y conocimiento material. El placer, poder y virtud inherente en una unidad de conciencia, una jiva, son mucho más grandes que las que uno puede experimentar en relación con la materia. Habitando en el ser, uno experimenta el disfrute inherente de la conciencia, de la existencia eterna y del conocimiento de uno mismo como una unidad de conciencia. Sin embargo, la inherente seguridad, disfrute y conocimiento en la jiva es menor en comparación a lo extensas que éstas son en Dios.
+</p>
+<p class='vspace'>A pesar que la seguridad (sat), sabiduría (cit) y placer (ananda) son inherentes al jiva, Dios es el contenedor de estas tres. En Dios ellas se manifiestan en un grado mucho mayor en la forma de sandhini, samvit y hladini. Así, la seguridad, sabiduría y disfrute que experimenta una jiva que despierta a una relación amorosa con Dios, son mucho mayores a los que se puedan sentir de un modo independiente a tal relación. Cuando el alma liberada prueba una vida liberada en relación con Dios, realiza su forma eterna, su servicio eterno y la alegría del amor por Dios. Esta vida liberada en relación con Dios es el ideal del sudha-bhakti, el cual el sadhaka ha venido cultivando en el sadhana del nama-sankirtana. Antes de que ésta se manifieste, uno primero se vuelve virtuoso (anartha-nivrtti). La vida virtuosa está seguida por una primera fase de liberación que sería la del karma (nistha), y ya en la etapa de ruci uno comienza a saborear una vida ideal de devoción pura en amor por Dios. Este gusto o ruci se manifiesta en la forma de apego por escuchar y cantar el nama-sankirtana, y una atracción especial por una vida de post-liberación en comparación con los cuatro pálidos purusarthas que se persiguen comúnmente.
+</p>
+<p class='vspace'>Al rechazar los cuatro purusarthas, Mahaprabhu sigue la guía del Srimad-Bhagavatam. Como se mencionó antes, cuando hablábamos de la primera estrofa de Mahaprabhu, el Bhagavatam retoma exactamente donde el Bhagavad-gita finaliza. En la conclusión del Gita Sri Krishna dice, sarva-dharman parityajya: “Renuncia a todo lo concerniente al dharma”. Esto se compara con el vastu-nirdesa-sloka del Bhagavatam, el cual comienza con las palabras dharmah projjhita-kaitavo ’tra: “Rechazando todas las formas de falso dharma”. Por falso dharma este verso se refiere a todas las expresiones del dharma que no tienen como meta el prema. Sridhara Svami, el antiguo comentarista del Bhagavatam, quien fue tan reverenciado por Mahaprabhu, indica que la palabra projjhita (rechazo absoluto) en este verso, incluye no solamente al dharma anteriormente citado sino también a moksa. Así debe quedar claro en este importante verso del Bhagavatam que la conclusión del Gita no es tan sólo la defensa del dharma trascendental en busca de la liberación o moksa, sino que, así como el Bhagavatam apunta a prema, de la misma manera lo hace el Gita.
+</p>
+<p class='vspace'>Krsnadas Kaviraja Gosvami cita el vastu-nirdesa-sloka del Bhagavatam en su Sri Caitanya-caritamrta en el contexto de explicar su propio namaskara-sloka glorificando la divina distribución del nama-sankirtana de Gaura-Nityananda. Ahí él dice:
+</p>
+<p class='vspace'>Krishna y Balarama, quienes previamente jugaron en Vraja, 
+con Su resplandor más magnífico
+que millones de soles y lunas,
+han aparecido en el este – en el horizonte de Gauda-
+por Su simpatía hacia toda la creación. 
+La aparición de Sri Krishna Caitanya
+y Prabhu Nityananda
+ha llenado al mundo entero de ananda.
+Así como el sol y la luna disipan la oscuridad
+y con su aparición lo iluminan todo,
+así estos dos Hermanos predican prema-dharma
+y disipan la oscuridad de la ignorancia que cubre a las entidades vivientes,
+con el presente de la sustancia verdadera, la realidad última.
+Yo llamo a la oscuridad de la ignorancia kaitava o engaño.
+Todo comienza con el deseo por dharma, artha, kama y moksa.
+</p>
+<p class='vspace'>En comparación a la luz de amor emanada por prema, la ley Védica concerniente a dharma, artha, kama y moksa, constituye una oscura celda para criminales. El prema-dharma  de Gaura Nityananda, extraído a partir del Srimad-Bhagavatam, viene a liberar a todos de la ley de los sagrados textos Védicos que le preceden. Visto en términos del sankirtana de Mahaprabhu, el Srimad-Bhagavatam es el Nuevo Testamento de la escritura Védica. Todo lo que ha venido antes de eso, que enfatiza los cuatro purusarthas es ahora substituido por Su mensaje de prema. El amor de Dios –prema-dharma— satisface todas las normas y enseñanzas de los Vedas. Este es el pancana-purusartha, la quinta y principal necesidad de la humanidad. Como el más misericordioso preceptor de Mahaprabhu, Sri Isvara Puri, lo instruye:
+</p>
+<p class='vspace'>Mientras el quinto fin
+es un océano de néctar inmortal –la dicha del prema—
+la felicidad de moksa y lo demás, son a lo más una gota.
+</p>
+<p class='vspace'>Así aprendemos de Sri Isvara Puri que los humanos se diferencian de los animales no solo porque pueden razonar, sino porque al ejercer su razonamiento en forma apropiada pueden amar en verdad, al aprender a amar a Dios. El conocimiento nos conduce al despego y a moksa, pero prema–amor— nos lleva a una vida de post-liberación. Este es el mensaje del Bhagavatam que Mahaprabhu abrazó de corazón. Es una invitación a participar en el juego eterno del Krishna lila.
+</p>
+<p class='vspace'>Así como hemos visto en este cuarto verso del Siksastakam, Mahaprabhu, representando un devoto que ha alcanzado ruci, se mantiene bien posicionado para gradualmente experimentar prema-dharma y el drama del Krishna lila. Cuando el sadhaka alcanza ruci, saranagati está completamente en su sitio, tal como su sraddha ha madurado por la virtud de estar en contacto con la tierra de la fe. Ahora la etapa –saranagati— en la cual el drama del Krishna Lila se está ejecutando, está establecido en el corazón del sadhaka. Las semillas del deseo material son destruidas y la semilla del bhakti que ya ha brotado en la forma de sraddha, comienza a florecer.
+</p>
+<p class='vspace'>La belleza del florecimiento de sraddha brilla con gran resplandor, encantado por la reconfortante luna de Sri Krishnacandra. Este florecer de ruci encanta el mundo entero y también cautiva el corazón del saddhaka. En su sombra existe el deseo material y representa a la oscuridad. Mientras la infelicidad es removida (klesaghni), la vida del sadhaka se vuelve verdaderamente auspiciosa (subhada). Esta auspiciosidad comienza en nistha y se manifiesta completamente en ruci. En la primera estrofa del Siksastakam, Mahaprabhu se ha referido a este y otros efectos de ruci con las palabras sreyah-kairava candrika-vitaranam. Esta frase nos ofrece adentrarnos aún más en la naturaleza de ruci que Mahaprabhu está describiendo acá en el verso cuatro.
+</p>
+<p class='vspace'>La palabra sreyah significa el más auspicioso, y aquí se refiere a la auspiciosidad cuádruple que caracterizan al suddha-bhakti en la etapa de ruci. Sri Rupa describe esta auspiciosidad cuádruple en su Bhakti-rasamrta-sindhu:
+</p>
+<p class='vspace'>El sabio dice que del bhakti
+cuatro tipos de auspiciosidad emergen:
+habilidad natural para complacer a la gente
+y atraer el afecto de todos,
+poseer todas las buenas cualidades,
+y una condición de felicidad.
+</p>
+<p class='vspace'>El sadhaka que ha alcanzado ruci es así, complaciente, popular, capacitado y feliz. Su propia felicidad no es material sino la bendición de brahmananda. Es la felicidad de la esperanza del suddha-bhakti, la cual crecerá dentro del sadhaka desde este punto hasta la perfección.
+</p>
+<p class='vspace'>Junto con la auspiciosidad, tres deseos espirituales son experimentados por el sadhaka en la etapa de ruci. Ellos se manifiestan en el intelecto del practicante y son así cultivados intencionalmente. Estas aspiraciones son el deseo de servir a Krishna favorablemente (abukulya-abhilasa), el deseo de alcanzar un servicio específico a Krishna (prapty-abhylasa) y el deseo de establecer una relación afectiva con Krishna (sauharda-abhilasa). Ellos aparecen  con mayor intensidad en la etapa de asakti y se establecen completamente en la etapa de bhava.
+</p>
+<p class='vspace'>Así es como ruci es la etapa en la que el sadhaka experimenta logros positivos tangibles. Es el comienzo del amor actual de Dios. El sadhaka ha perdido interés en el deseo material, y la preocupación por la liberación es opacada por el especial gusto por escuchar y cantar que se han despertado en él. Semejante es la vida del sadhaka, llena de cosas favorables y deseo espiritual. El sadhaka comienza a desear despedirse del mundo y su Dios (paramatma), de quien la baddha-jiva se origina, al mismo tiempo que el gusto por el Krishna lila comienza a tomar prioridad por sobre el juego de creación de Paramatma (srsti-lila) y todo lo que eso implica.
+</p>
+<p class='vspace'>Mientras Mahaprabhu va inclinándose desde el mundo del deseo material hacia su ideal interior, él reverencia por última vez a la manifestación de Krishna que rige el mundo, refiriéndose a si mismo en este verso con el nombre de Jagadisa. Este nombre de Dios se refiere a la característica de Paramatma de Dios, el supervisor del mundo y al aspecto aisvarya de la Deidad de Mahaprabhu, Krishna. Sin embargo, no es hasta la etapa de asakti que la Deidad viene a sentarse en el corazón del sadhaka y desplaza completamente a Paramatma, en el estado de ruci este desplazamiento comienza a manifestarse. En consecuencia, después de dirigirse a su Deidad como Jagadisa en la primera mitad de este verso, Mahaprabhu entonces se refiere a si mismo como Isvara. Por este nombre él no se refiere a Paramatma sino más bien a su Pranesvara, el Señor (isvara) de su vida (prana), Sri Krishna. De esta manera él ruega por devoción pura por Krishna, su Pranesvara, vida tras vida y no por Paramatma de quien se está despidiendo.
+</p>
+<p class='vspace'>A pesar de que las baddha-jivas son originalmente manifestadas de Paramatma, si ellas aspiran al Vraja prema, ellas están enfocadas en Krishna, Radha-Krishna.  Sin embargo, Sri Krishna está perdido en su Vraja lila y ha olvidado su Divinidad. Él es simultáneamente Dios y descuidado de su Divinidad, descuidado por la fuerza del amor de sus devotos, que provoca el que aparezca como un amigo íntimo o amante. Aunque es verdad que a pesar que Krishna en primer lugar se pierde en el amor, él aún así mantiene su Divinidad y puede así escuchar las oraciones de sus sadhakas, uno puede legítimamente preguntar en cual etapa de la práctica espiritual las oraciones del sadhaka son capaces de atraer la atención personal de Krishna y, más aún, en cual etapa el seva del sadhaka se vuelve lila-seva, el seva interno que alcanza a Krishna en su nitya-lila. Mientras algunos pueden insistir que Krishna personalmente escucha las oraciones de sus sadhakas en cualquier etapa del sadhana, Thakura Bhaktivinoda dice, “Las oraciones de quien es un saranagata son escuchadas por Sri Nanda-kumara.” Así como ya hemos aprendido, saranagati es completa en el estado de ruci.
+</p>
+<p class='vspace'>Por invocar el nombre Isvara/Pranesvara en esta cuarta estrofa en contraste al nombre de Jagadisa, Mahaprabhu sugiere que el cambio hacia el actual lila-seva del sadhaka tiene su más temprano comienzo en ruci, mientras uno se mueve desde la jurisdicción del Paramatma a la jurisdicción de la Deidad personal de uno, situada en su eterno lila. El significado más profundo de la palabra candrika, rayo de luna, que se encuentra en el primer verso del Siksastakam, es que la influencia del svarupa-sakti comienza a mostrarse de manera muy leve en la etapa de ruci, al tiempo que Sri Krishnacandra bendice a su devoto. La influencia del svarupa-sakti se desarrolla aún más al tiempo que ruci madura transformándose en asakti, y se completa en bhava.
+</p>
+<p class='vspace'>Podría algún sadhaka, quien aún no ha alcanzado ruci o asakti, desesperarse con esta conclusión que en las etapas tempranas de sadhana el Paramatma está involucrado en la vida de uno más que en la Deidad personal de uno, él o ella pueden tomar consuelo en el mismo Mahaprabhu Visvambhara, así como en el más misericordioso Nityananda. Aunque Mahaprabhu ora a Jagadisa y a su Pranesvara en este verso, sus seguidores debieran orarle a él. Él es Visvambhara, el mantenedor del universo, y él es Krishna mismo, la fuente de todos los avataras. Él es el yugavatara y está perdido en mahabhava. De esta manera él es ambos, nuestro Jagadisa y nuestro Pranesvara. Con una mano él se pone en contacto con la baddha-jiva, con el yuga-dharma y con la otra él llega hasta el punto más alto de Vraja prema, mientras él baila en nama-sankirtana. Él es Krishna mismo, todavía presente en el mundo por los sadhakas en su acarya-lila, y como su otro yo, Sri Nityananda Prabhu, él está aún mucho más presente, con ambas manos extendidas a todas las almas materialmente condicionadas. Thakura Bhaktivinoda ha enfatizado que adorar a Gaura-Nityananda en dasya-bhakti genera Vraja prema. Adorar en Nadiya, vivir en Vrindavana. Gaura-Nityananda escucha las oraciones de sus sadhakas, incluso aquellos que no tienen ruci, y así como sus sadhakas que han alcanzado ruci, Gaura-Nityananda comienza a abrir la puerta del servicio en el lila eterno de Krishna.
+</p>
+<p class='vspace'>Con miras a un mejor entendimiento de ruci y del raganuga-bhakti que Mahaprabhu apunta en su Siksastakam, será útil el concluir el comentario en este verso con una breve argumentación de los dos tipos de sadhakas que buscan el ideal de raganuga-bhakti – Vraja prema. Sri Jiva Gosvami divide a los sadhakas quienes cultivan raganuga-bhakti en dos categorías, ajata-ruci sadhakas (aquellos que no han alcanzado ruci) y jata-ruci sadhakas (aquellos que han alcanzado ruci). Ajata-ruci raganuga-sadhakas son inspirados a cultivar raganuga-bhakti por la asociación de aquellos que ya han saboreado raga-bhatki. Sri Jiva describe a los ajata-ruci sadhakas así:
+</p>
+<p class='vspace'>Aquellos que no han alcanzado ruci aún pueden comprometerse con raganuga-bhakti simplemente a través de la asociación con un devoto que tenga este tipo de atracción, pero ellos debieran conectarse en tal práctica combinado con vaidhi-bhakti… El significado de la combinación de raganuga y vaidhi, es que uno externamente practica vaidhi-bhakti al hacerlo uno con raganuga, en la medida en que uno es capaz de hacerlo.
+</p>
+<p class='vspace'>¿Qué significa practicar externamente vaidhi-bhakti mientras lo hacemos uno con raganuga-bhakti, de acuerdo a la habilidad de cada uno?. Significa el involucrarse en las practicas del vaidhi-bhakti tales como escuchar y cantar en nama-sankirtana, con miras a alcanzar un gusto específico por el bhakti, que continúa con el despertar del amor divino exhibido por los eternos asociados de Sri Krishna en Vraja y, al tiempo que la vida interna de uno comienza a manifestarse, involucrarse en el lila Smaranam de Krishna. 
+</p>
+<p class='vspace'>De acuerdo a Sri Jiva Gosvami, ambos ajata-ruci sadhakas y jata-ruci sadhakas se conectan en el lila samaranam.  Ajata-ruci sadhakas, aunque meditan en Vrindavan lila a través del Krishna mantra entregado por su guru, carecen de tres cosas: un sentido de identidad en el Krishna Lila, una intención específica u objetivo con respecto a la participación en el lila, y el sentido de que su práctica está siendo aceptada como lila-seva. Jata-ruci sadhakas son más avanzados, y debido a que han alcanzado la madurez en ruci, ellos tienen un floreciente sentido de su identidad espiritual, un servicio ideal, y el sentido que su práctica está aproximándose al lila-seva.
+</p>
+<p class='vspace'>Aquellos con y sin ruci también son descritos por Srila Rupa Gosvami en su Upadesamrta, versos 7 y 8. En el verso 7 Sri Rupa explica que tal como uno que es afligido por la ictericia no puede saborear la dulzura de la caña de azúcar, similarmente alguien afligido por la ignorancia no puede saborear la dulzura del Krishna nama. Sin embargo, la caña de azúcar es la cura natural para la ictericia, y así cuando uno es curado de la ictericia por comer caña de azúcar, uno puede saborear su dulzura inherente. Similarmente, alguien curado de la ignorancia por cantar el Krishna nama puede saborear la dulzura inherente en el santo nombre de Krishna. En el verso 8 Sri Rupa prescribe las actividades devocionales como adecuadas para quienes se han curado de la ignorancia por seguir su consejo en el verso 7, aquellos que están saboreando la dulzura de Krishna nama.  Estos devotos son sadhakas que ha alcanzado madurez en ruci. Sri Rupa escribe:
+</p>
+<p class='vspace'>Mientras viva en Vraja y siguiendo a sus habitantes, alguien que posea un inherente y espontáneo amor debiera utilizar todo su tiempo en atentamente ejercitar la lengua en cantar y la mente en recordar el nombre de Krishna, su forma, cualidades y pasatiempos, en este orden. Está es la esencia de todos los consejos.
+</p>
+<p class='vspace'>Así como Mahaprabhu ha clarificado en este cuarto verso de Siksastakam, que alguien ardiendo por deseos de riqueza, mujeres/hombres, e incluso sabiduría, carece de calificación para actualmente vivir en Vraja y seguir a sus habitantes en cada sentido. Nosotros debiéramos desear volvernos residentes de Vraja, pero así como este verso del Siksastakam nos instruye, debiéramos estar claros en qué significa merecer tal bendición, con tal que nuestro deseo sea realista y así nos inspire a atender el trabajo que está al alcance de la mano. Sólo cuando los deseos materiales son revisados por una inteligencia espiritual es posible un sadhana estable. Este sadhana estable inunda los deseos materiales de tal forma que ellos no tienen ninguna posibilidad de fructificar, y así uno gradualmente desarrolla el gusto por el sadhana. Así como este gusto se intensifica, se transforma en apego espiritual por el objeto de devoción de uno. Esta es la etapa de asakti, a la cual Mahaprabhu vuelca su atención con toda humildad.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on January 28, 2014, at 01:29 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,959 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - II. Minden városban és faluban</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=paramadvaiti_ba.csaladunk_a_gaudija_math_03' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.csaladunk_a_gaudija_math_03' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - II. Minden városban és faluban"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramádvaiti Szvámí</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math.html'>Családunk, a Gaudíja Math</a>
+</p>
+<div class='vspace'></div><h2>II. Minden városban és faluban</h2>
+<ul><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#a'>A Gaudija Math ágai</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#b'>Srí Navadvip Dhám Pracsárini Szabhá</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#c'>A Csaitanja Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#d'>A Gaudija Misszió</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#e'>Vaisnava ácsárják, a 12. nemzedék új missziói és projektjei</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_03.html#f'>A tizenharmadik nemzedék Vaisnava Ácsárjái, új missziói és tervei</a>
+</li></ul><p class='vspace'><a name='a' id='a'></a>
+</p><h3>A Gaudija Math ágai</h3>
+<p>A következő rész a különféle Gaudija Math missziókat sorolja fel. Némelyik nagyon nagy misszió, mások kisebb ágak, amelyeket egyes vaisnavák indítottak el. Közös az, hogy mindegyik a Csaitana-fa önálló ága. Csaknem mindegyik adott ki könyveket és folyóiratokat, megnyitott egy vagy több templomot. A felsorolás nem teljes, mégis képet ad arról, milyen széles körben elterjedt a Gaudija Math befolyása. Megmutatja azt is, hogy milyen mértékben terjedt ki, és hogyan szolgálja az egész világot a vaisnava jelenlét növelésével.
+</p>
+<p class='vspace'>Ha valaki további információt szeretne az egyes vaisnava missziókról, alapítóikról vagy tagjaikról, kérjük, nézze meg a Visva Vaisnava Rádzs Szabhá (WVA-VVRS) Internet honlapját, amely megpróbál naprakész információt adni a világszerte terjedő vaisnava tevékenységekről. Mivel nem kaptunk minden misszióról teljes információt, némelyiknek csak a neve jelenik meg, tevékenységeik részletei nélkül. Kérem, bocsássanak meg, ha még nem tisztultam meg eléggé az összes csodálatos vaisnava, misszióik és szolgálataik dicsőítésével. Kérem azt is, hogy tájékoztassanak tudatlanságomról és hibáimról, hogy a következő kiadásban kiegészíthessem az információt. Köszönöm megértésüket. A következő oldalakon használt rövidítések:
+</p>
+<p class='vspace'>WVA-VVRS = Vaisnava Világszövetség, Visva Vaisnava Rádzs Szabhá<br />G = nemzedék, M = Mahárádzs, B = Bhakti
+</p>
+<p class='vspace'><a name='b' id='b'></a> 
+</p><h4>Srí Navadvip Dhám Pracsárini Szabhá</h4>
+<p>Alapító ácsárja: Srila Bhaktivinoda Thákur (9. nemzedék). Vipin Bihári Goszvámitól kapott vaisnava diksát, siksát pedig Srila Dzsagannáth dász Babadzsitól (8. nemzedék). Később, 1908-ban Srila Bhaktivinoda Thákur megkapta a Babadzsi-vesát Srila Gaurkisora dász Babadzsitól. Szamádhi Mandir Godrum Navadvipban.
+</p>
+<p class='vspace'>Következő ácsárja: Srila Prabhupád Bhaktisziddhánta Szaraszvati Thákur (11. nemzedék). Srila Gaurkisor dász Babadzsi tanítványa (10. nemzedék).
+</p>
+<p class='vspace'>Jelenlegi ácsárja: A Csaitanja Math ácsárjája.
+</p>
+<p class='vspace'>Ágak: Az első Jógapith-ban. Aztán Srivász Anganban, Advaita Anganban, Gadádhar Bhavanban.
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>megépítették a Gaurkisor dász Babadzsi M. szamádhi mandirt Májápurban (Sri Csaitanja MathÖ
+</li><li>megépítették a Sri Nrisingha Mandirt
+</li><li>bevezették a Náma Hatta programot
+</li><li>1894-ben a Tripura-állam mahárádzsáját, Bir Csandra Dev Burman Mánikja Bahádurt nevezték ki a Pracsárini Szabá első elnökévé
+</li></ul><p class='vspace'>A Szabhá célkitűzései:
+</p><ul><li>rendbehozni Navadvip Dhámot, széles körben hirdetni szentségét, dicsőségét, valamint vallási és történelmi fontosságát
+</li><li>fenntartani a Jógapith Sri Mandirnak nevezett templomot Sri Csaitanja Maháprabhu születési helyén Sri Májápurban; folytatni a napi széva púdzsát a múrtiknak, név szerint Sri Gaur-Visnuprijának, és a többi beállított múrtinak, időszakos ünnepségekkel a múrtik tiszteletére
+</li><li>fenntartani az árja sásztrák könyvtárát – Védák, Upanisádok és bhakti irodalom – és az olvasószobákat a nagyközönség használatára
+</li><li>történelmi anyagok és régészeti emlékek gyűjtése Sri Navadvip Dhámmal kapcsolatban
+</li><li>bhakti irodalom népszerűsítése és kiadása
+</li><li>Csatuhspathi létesítése és fenntartása, a szanszkrit és a bhakti irodalom tanulmányozásához
+</li><li>terjeszteni az árja sásztrák – Védák, Upanisádok és bhakti irodalom – ismeretét
+</li><li>birtokba venni, fenntartani, birtokolni, vezetni vagy irányítani a Jógapith Sri Mandirként és Srivász Anganként ismert földtulajdont, épületeket és templomokat, mindkettő Májápurban
+</li><li>új épületeket emelni, bővíteni, helyreállítani, rendbe hozni, biztonságossá tenni és vásárolni újabb ingó és ingatlan tulajdont, a fenti célok előmozdítására
+</li><li>kitüntetéseket és díjakat adni, tiszteletben részesíteni a bhakti irodalom tudósait, és azokat, akik érdemdús szolgálatot végeztek a nevezett szabhának és múrtiknak
+</li><li>mindent megtenni, ami szükséges, vagy a szabhá és a fentiek célkitűzéseit előmozdítja
+</li></ul><p class='vspace'><a name='c' id='c'></a>	
+</p><h4>A Csaitanja Math</h4>
+<p>Alapító ácsárja: Paramapúdzsapáda Srila Prabhupád Bhaktisziddhánta Szaraszvati Thákur (11. nemzedék)
+</p>
+<p class='vspace'>Srila Gaurkisor dász Bababdzsi M. (10. nemzedék) tanítványa. Szamádhi Mandir a Csaitanja Math-ban, Májápur.
+</p>
+<p class='vspace'>Srila Prabhupád Bhaktisziddhánta Szaraszvati Thákur (Srila Szaraszvati Thákur) a Visva Vaisnava Rádzs Szabhá elnöke volt.
+</p>
+<p class='vspace'>Következő ácsárják:
+</p><ul><li>Srila Bhakti Vilász Tírtha M. (12. nemzedék). Srila Szaraszvati Thákur sisjája volt, és Srila Bhakti Vigján Asram M.-tól kapott szannjászt. Szamádhi mandirjaik a májápuri Sri Csaitanja Math-ban.
+</li><li>Srila Bhakti Kuszum Sraman M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, Srila B.V. Tírtha M.-tól kapott szannjászt a májápuri Sri Csaitanja Mathban.
+</li><li>Srila Bhakti K. Tapaszvi M (12. nemzedék). Srila Szaraszvati Thákur sisjája. Szamádhi mandir a májápuri Srivász Anganban.
+</li></ul><p class='vspace'>Jelenlegi ácsárják: többen
+</p>
+<p class='vspace'>Ágak: 66
+</p>
+<p class='vspace'>Ezek később szétváltak, és jelenleg 42 van.
+</p>
+<p class='vspace'>Srila Szaraszvati Thákur szannjász avatottjai: 20
+</p>
+<p class='vspace'>Kiadott könyvek: Közel 300 bengáli, szanszkrit, angol és hindi nyelven
+</p>
+<p class='vspace'>A misszióból keletkezett új missziók: kb. 25
+</p>
+<p class='vspace'>Srila Prabhupád Bhaktisziddhánta Szaraszvati Thákur a következő módszereket alkalmazta Sri Csaitanja Maháprabhu tanításának gyakorlására és hirdetésére:
+</p>
+<div class='vspace'></div><ol><li>A bhakti irodalom terjesztése és népszerűsítése érdekében több nyomdát létesített: Bhagavat press Krsnanagarban, Nadia Prakas Printing Sri Májápurban, Gaudija Printing Works Kalkuttában, és a kattaki Paramártha Press. Szerkesztette és kiadta a bhakti irodalom nagy köteteit, főleg a hat Goszvámi és a Gaudija vaisnava iskolák más vaisnava mesterei sásztráit. Az emberek könnyen megkaphatták ezeket a könyveket, ingyen, vagy névleges áron.
+</li><li>Elindított több folyóiratot, amelyek kizárólag a bhaktival foglalkoztak. Többek között:
+<ul><li>Szaddzsan Tosani, bengáli havilap
+</li><li>The Harmonist, angol havilap
+</li><li>A Gaudija, bengáli hetilap
+</li><li>Nadia Prakás, bengáli napilap
+</li><li>A Bhagavat, kéthetente hindi nyelven
+</li><li>A kirtan, asszami havilap
+</li><li>A Paramarthi, kéthetente orisszai nyelven
+</li></ul></li><li>Képkiállításokon mutatta be Sri Csaitanja és a szentek életét és tanításait, az Upanisádokból, Puránákból, Mahábháratából és Rámájanából vett történetekkel és prédikációkkal együtt. Ez a prédikálási módszer nagy hatást keltett még írástudatlan emberek, nők és gyermekek között is.
+</li><li>Házról házra és faluról falura prédikált, csoportos találkozókat és beszélgetéseket tartott. Ezzel a céllal prédikátorait nemcsak India legtávolabbi falvaiba küldte el, északtól délig és kelettől nyugatig, hanem Burmába és Európába is.
+</li><li>Vallási ünnepeket rendezett minden központban és mathban, ezek vonzották az embereket, és alkalmat adtak nekik arra, hogy vallási témákról halljanak.
+</li><li>Bevezette és népszerűsítette a vaisnava szmritiket, úgymint Szanátana Goszvámitól a Hari Bhakti Vilászt, és Sri Gopál Bhatta Goszvámitól a Szat Krijá Szár Díipikát és a Szamszkára Dípikát. A vaisnava gyakorlatot (ácsár) a nevezett szmriti művek alapján vezette be tanítványai között, ami a sráddhát és egyéb vallási szertartásokat illeti.
+</li><li>Bevezette és megadta a pancsarátrika diksát a tanítványainak, kaszttól függetlenül, és ezáltal feljogosította őket arra, hogy Bhagaván Visnut imádják.
+</li><li>Másik célja az volt, hogy bevezesse a tisztán vaisnava oktatást, és ezért adta ki a Hari Námámrta Vjákaranát, Sri Dzsíva Goszvámi szanszkrit nyelvtankönyvét, és létrehozott egy Szanszkrit Akadémiát ennek tanulmányozására. Most ez az egyik tantárgy, és diplomát lehet szerezni Upádhi Vjákaran Tírthán.
+</li><li>Létrehozott egy Szanszkrit Akadémiát (Bhágavata Pathaszála vagy Paravidjá-pitha), ahol a saját irányítása alatt tanulmányozták a bhakti irodalmat, szakértő panditokat hozott Udupiból (Dél-India) és más helyekről, hogy a különféle iskolák filozófiáját tanítsák.
+</li><li>Létrehozott egy bennlakásos angol főiskolát is Sri Májápurban, a Thákur Bhaktivinoda Intézetet, ahol a vaisnava hit alapján oktatták a fiatal fiúkat. Nem hitt az Isten nélküli nevelésben. Ezt követően Srila B.V. Tírtha M. is alapított egy elemi iskolát, amelyet Thákur Bhaktivinodáról neveztek el.
+</li><li>Helyreállította a régi vagy elhanyagolt templomokat és vallási fontosságú helyeket, régi, Sri Csaitanja Maháprabhu és más vaisnava szentek életével kapcsolatos helyeket fedezett fel. Templomokat és emlékműveket állított Indiaszerte, azokon a helyeken, amelyeket Sri Csaitanja Maháprabhu meglátogatott.
+</li><li>Bevezette a vaisnava irodalom, filozófia és a vallási szekták története tíz vizsgáját.
+</li><li>Felélesztette a Sri Rúpa és Sri Szanátana Goszvámik által alapított Sri Visva Vaisnava Rádzs Szabhát.
+</li><li>Bevezette tanítványai között a brahmacsári, vanaprasztja és szannjász gyakorlatát, melyek mind az Istenség szolgálatára irányulnak. Ez a gyakorlat az életszabályozás egészséges módszere, az első lépés a lelki életbe való belépéshez.
+</li></ol><p class='vspace'>Srila Prabhupád Bhaktisziddhánta Szaraszvati Goszvámi Thákur világszerte népszerűsítette a rendkívül kiváló Gaudija vaisnavizmust. Megalapította a Sri Csaitanja Mathot Sri Májápurban – ez a város manapság a Gaudija Math vagy száz ágának templomaival és kolostoraival van tele. India különböző résziben és külföldön is létrehozta az imádat helyeit.
+</p>
+<p class='vspace'>Más jellemzők és eredmények:
+</p>
+<p class='vspace'>Srila B. Vilász Tírtha M. által alapított mathok:
+</p><ul><li>Banga, Ny-Bengál, Haridász Thákur bhadzsan-kutir
+</li><li>Guntur Gaudija Math, Andhra Prades
+</li><li>Burdvan, Kulija Grám – Thákur Haridász bhadzsan-szthánja
+</li><li>Diamond Harbor Gaudija Math, 1963
+</li></ul><p class='vspace'>Vaisnava folyóiratok:
+</p><ul><li>Dainik Nadia Prakás, e napi kaidvány szerkesztője Srila Bhakti Promode Puri M. volt
+</li><li>Gaudija – Bhakti Vilász Tírtha M. Különféle nyelveken adták ti, többek között hindi, bengáli, orija, asszami és angol nyelven
+</li></ul><p class='vspace'>Parikramák:
+</p><ul><li>Vradzsa-mandal parikram
+</li><li>Navadvip Dhám parikram
+</li></ul><p class='vspace'>Homeopátikus gyógyszertárak.
+</p>
+<p class='vspace'><a name='d' id='d'></a>
+</p><h4>A Gaudija Misszió</h4>
+<p>Alapító ácsárja: Srila Prabhupád Bhaktisziddhánta Szaraszvati Thákur (11. nemzedék)
+</p>
+<p class='vspace'>A Gaudija Misszió központja a kalkuttai Bágh Bazár Gaudija Math lett, Bhakti Prasád Puri M. (12. nemzedék) vezetésével. A missziót Srila Bhakti Keval Audulaumi M. (12. nemzedék) folytatta.
+</p>
+<p class='vspace'>Következő ácsárják:
+</p><ul><li>Srila Bhakti Keval Audulaumi M. (12. nemzedék). Srila Szaraszvati Thákur sisjája. Szamádhi mandir Godrum, Navadvipban.
+</li><li>Srila Bhakti Srirúp Bhagavat M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjásu Srila B.K. Audulaumi M.-tól. Szamádhi mandir Godrum, Navadvip.
+</li></ul><p class='vspace'>Jelenlegi ácsárja: Srila Bhakti S. Parivradzsak M. (13. nemzedék). Srila B.K. Audulaumi M. tanítványa és szannjász-tanítványa.
+</p>
+<p class='vspace'>Ágak: 34
+</p>
+<p class='vspace'>Szannyás avatottak: kb. 60
+</p>
+<p class='vspace'>A misszióból származó új ágak: 4
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>Srila B.K. Audulaumi M. két kirtant írt: Sri Ksetra Dhám parikram, és Navadvip Dhám parikram.
+</li><li>Bhakti patra – havilap bengáli nyelven (Kalkutta)
+</li><li>Orvosi szolgáltatást és gyógyszertárakat hozott létre.
+</li></ul><p class='vspace'>Az általa alapított templomok:
+</p><ul><li>Bhaktisziddhánta Szaraszvati Gaudija Math, Godrum Dhám. Itt van srila Szaraszvati Thákur puspa szamádhija.
+</li><li>Rádhá-Govinda Gaudija Math, Haila Gandhi, Po. Kerület, Lálá Bazár, Asszam
+</li><li>Bhakti Keval Audulaaumi Gaudija Math, Mughalszerai kerület, Bihár
+</li><li>Bhagavat GM, Po. Karim gandzs, Asszam
+</li></ul><p class='vspace'>Kiemelkedő tevékenységek:
+</p><ul><li>Nagyon különleges kirtan stílusa volt. A misszió a Gaudija Math sok, korábban bérelt épületét is megvásárolta.
+</li></ul><p class='vspace'><a name='e' id='e'></a>
+</p><h3>Vaisnava ácsárják, a 12. nemzedék új missziói és projektjei</h3>
+<p  style='text-align: center;'><em>Az ácsárják neve szerinti abc rendben.</em>
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Prakás Aranja M. (12. nemzedék)</h4>
+<p>Srila Szaraszvati Thákurtól kapott szannjászt.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Vaibhav Aranja M. missziója</h4>
+<p>Alapító ácsárja: Srila Bhakti Vaibhav Aranja M. (12. nemzedék). A WVA-VVRS alapító tagja. Srila Szaraszvati Thákur sisjája, szannjász Srila B. Bhudev Srouti M.-tól.
+</p>
+<p class='vspace'>Létesítés: Krsna Balarám Mandir, Mathurá. Szamádhi mandir ugyanott.
+</p>
+<p class='vspace'>A misszióból keletkezett új missziók: 3
+</p>
+<p class='vspace'>Srila Bhakti Vaibhav Aranja M. komoly prédikációt folytatott a levelekben, amelyeket a tanítványainak írt a világ minden részébe. Bezárt egy vágóhidat Mathurában.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Sudhá Asram Mahárádzs missziója</h4>
+<p>Alapító ácsárja: Srila Bhakti Sudhá Asram M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Srila B. Vaikanás M.-tól. Szamádhi mandir Májápurban.
+</p>
+<p class='vspace'>Ágak: 4
+</p>
+<p class='vspace'>Elindított egy iskolát Kalkuttában.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Szambal Bhavat Mahárádzs (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól.
+</p>
+<div class='vspace'></div><h4>Sri Gauránga Gaudija Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Szaurabhi Bhakti Szár M. (12. nemzedék). WVA-VVRS alapító tagja. Srila Szaraszvati Thákur sisjája, szannjász Srila Bhakti Szaranga Goszvámi M.-tól. Szamádhi mandir Májápurban.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Szundar Szudir Ácsárja M. (13. nemzedék)
+</p>
+<p class='vspace'>Ágak: 4
+</p>
+<p class='vspace'>Szannjász avatottak: 6
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Randzsan Bhaktiszár (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól.
+</p>
+<p class='vspace'>Srila Bhakti Bhúsan Bharati M. (12. nemzedék)
+</p>
+<p class='vspace'>Srila Szaraszvati Thákur sisjája. WVA-VVRS alapító tagja.
+</p>
+<div class='vspace'></div><h4>Sri Rúpánuga Bhadzsanasram</h4>
+<p>Alapító ácsárja: Sril bhakti Vilásu Bharai M. (12. nemzedék), szannjász Srila Bhakti Souti Goszvámi M.-tól.
+</p>
+<p class='vspace'>Múrtik: Sri Rádhá-Sjámaszundar. Szamádhi mandir Sri Rúpánuga Bhadzsanasram, Májápurban.
+</p>
+<p class='vspace'>Szannjász tanítványok: 1
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Szádhan Tatpar M. (13. nemzedék), szannjász Srila Bhakti Vilász Bharati M.-tól.
+</p>
+<p class='vspace'>Könyvek: sok
+</p>
+<p class='vspace'>Más jellemzők:
+egy nagyon szép templom, tele Bhagaván-lílá diorámákkal
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Proszun Bodhajan M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól.
+</p>
+<div class='vspace'></div><h4>Institute of Oriental Philosophy</h4>
+<p>Alapító ácsárja: Srila Bhakti Hrdaj Bon M. (12. nemzedék)
+</p>
+<p class='vspace'>Srila Szaraszvati Thákur sisjája. Szamádhi mandir és bhadzsan kutir a vrndávani Madan Mohan templomban.
+</p>
+<p class='vspace'>Következő ácsárja: Srila Bhakti Raszika Bon M. (13. nemzedék)
+</p>
+<p class='vspace'>WVA-VVRS alapító tagja.
+</p>
+<div class='vspace'></div><h4>Srila Krsnánanda Bon M. (13. nemzedék)</h4>
+<p>Mindketten B.H. Bon M.-tól kaptak szannjászt.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Gopánanda Bon M. (13. nemzedék). WVA-VVRS alapító tagja.
+</p>
+<p class='vspace'>Ágak: 4
+</p>
+<p class='vspace'>Szannjász avatottak: 20
+</p>
+<p class='vspace'>Kiadott könyvek: 40
+</p>
+<p class='vspace'>A misszióból származó új missziók: 2
+</p>
+<p class='vspace'>Könyvek: sok
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>Srila Bhakti Hrdaj Bon M. volt az első Gaudija vaisnava, aki prédikálni kezdett a nyugaton. Templomokat alapított Londonban és Berlinben.
+</li><li>Ő hozta el első európait Indiába, Bhakta Szadánanda Szvámit. Bon M. gyakorlatilag Európa valamennyi fontos egyetemén prédikált.
+</li><li>Találkozott Anglia királyával és királynőjével, sok más arisztokratával Európában. Megtanult németül, hogy jobban adjon elő a német egyetemeken.
+</li><li>Többször körülutazta az egész világot.
+</li><li>A mahantok választott vezetője volt a Kumbha Melán, oktatási projektjeit sok indiai vezető támogatta.
+</li></ul><div class='vspace'></div><h4>Gaur Gadádhar Gaudija Math</h4>
+<p>Alapító ácsárja: Bhakti Prapanna Damodar M. (12. nemzedék)
+</p>
+<p class='vspace'>Srila Szaraszvati Thákur sisjája. WVA-VVRS alapító és tiszteletbeli tagja.
+</p>
+<p class='vspace'>Léterehozott egy Sri Sri Gaur Gadádhar mathot, Puriban.
+</p>
+<div class='vspace'></div><h4>Sri Gaur Gadádhar Math</h4>
+<p>A misszió alapítója: Sri Dvidzsa Bani Náth (12. nemzedék) a Csaitanja Math irányítása alatt, diksa Srila Szaraszvati Thákurtól, és babadzsi Srila Bhakti Promode Puri M.-tól 1994-ben.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Dzsjóti M. (13. nemzedék)
+</p>
+<p class='vspace'>WVA-VVRs alapító tagja.
+</p>
+<div class='vspace'></div><h4>Srila B. Vilász Gavaszthi Nemi Mahárádzs (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól. Nagy pandit, sok tanítványa volt, íret egy könyvet, és később mindennel meghódolt Srila Szaraszvati Thákurnak.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Gambhir Giri Mahárádzs (12. nemzedék)</h4>
+<p>Srila Szaraszvati Thákur sisjája. WVA-VVRS alapító tag.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Szarvasza Giri Mahárádzs missziója</h4>
+<p>Alapító ácsárja: Srila Bhakti Szarvasza Giri M. (12. nemzedék). Szannjász Srila Szaraszvati Thákurtól. Saját mathot nyitott Vrndávanban.
+</p>
+<div class='vspace'></div><h4>Gaudija Szanga</h4>
+<p>Alapító ácsárja: Srila Bhakti Szaranga Goszvámi M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Srila B.R. Sridhar M.-tól. Szamádhi mandir Nandan Ácsárja Bhavan, Májápurban.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Szuhrt Akincsana M. (13. nemzedék). Szannjász Srila Bhakti Szaranga Goszvámi M.-tól. A WVA-VVRS alapító tagja.
+</p>
+<p class='vspace'>Ágak: 30
+</p>
+<p class='vspace'>Szannjász avatottak: 40
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 20
+</p>
+<p class='vspace'>A misszióból származó új missziók: 4
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>megtalálták az Imli Tala szent helyet Vrndávanban
+</li><li>Srila Bhakti Szaranga Goszvámi M. együtt ment Srila Bhakti Pradip Tírtha M.-al Angliába, és prédikált.
+</li><li>Állandó központot alapítottak Londonban.
+</li><li>Navadvip Dhám parikram
+</li><li>Létrehozták a Sri Nitái Gaur találkozóhelyet Májápurban (Nandan Ácsárja Bhavan).
+</li></ul><div class='vspace'></div><h4>Gaudija Védánta Szamiti</h4>
+<p>Alapító ácsárja: Srila Bhakti Pragján Kesava M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Bhakti Raksak Sridhar De Goszvámi M.-tól.
+</p>
+<p class='vspace'>Szamádhi mandir. Dévánanda Gaudija Math, Navadvip.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhaktivédánta Vamana M. (12.nemzedék). Szannjász Srila B.P. Kesava M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 50
+</p>
+<p class='vspace'>Szannjász avatottak: 50
+</p>
+<p class='vspace'>Könyvek: kb. 100 sok nyelven
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>évente nagyon nagy Navadvip Dhám parikram
+</li><li>évente Vrndávan Dhám parikram
+</li><li>több folyóirat hindi, bengáli és angol nyelven
+</li><li>Srila Bhakti Pragján Kesava M. nagyon művelt lemondott volt, gazdag családból.
+</li><li>Írt egy Vaisnava Vidzsaj című könyvet is, a Májávádi filozófia ellen
+</li><li>Alapított egy Gaudija Math központot Mathurában
+</li><li>ő adott szannjászt az ISKCON alapítójának, Srila A.C. Bhaktivédánta Szvámi M.-nak
+</li></ul><div class='vspace'></div><h4>Srila Niskincsana Krsna dász Babadzsi M. (12. nemzedék)</h4>
+<p>Srila Szaraszvati Thákur sisjája. Mindenki szerette. Szamádhi mandirja Nandagrámban van, Szanátana Goszvámi bhadzsan kutirja mellett. Valamennyi misszió boldog volt, amikor kirtant énekelt.
+</p>
+<div class='vspace'></div><h4>Sri Csaitanja Gaudija Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Dajita Mádhava M. (12.nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Srila B.G. Vaikanás M.-tól. Szamádhi mandir a Sri Csaitanja Gaudija Mathban, Májápurban.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Ballabh Tírtha M. (13. nemzedék). Szannjász S.B.D. Mádhava M.-tól. Srila Tírtha M. a WVA-VVRS alapító tagja és alelnöke.
+</p>
+<p class='vspace'>Ágak: kb. 24. Pandzsábban és Asszamban.
+</p>
+<p class='vspace'>Szannjász avatottak: kb. 60
+</p>
+<p class='vspace'>Kiadott könyvek: 40
+</p>
+<p class='vspace'>A misszióból származó új missziók: 4
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>építettek egy templomot a Gaudija Math alapítójának szülőhelyén, Puriban
+</li><li>nagy vendégházak a szent Dhámban
+</li><li>évente Navadvip Dhám parikram, minden harmadik évben Vradzs Mandal parikram
+</li><li>havilap: Csaitanja Vani
+</li><li>máig három világkörüli út, Maháprabhu Acsintja bheda-abheda-tattvájának szakértő előadója
+</li></ul><div class='vspace'></div><h4>Sri Krsna Csaitanja Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Kamal Madhuszúdana M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Srila B.R. Sridhar M.-tól. Szamádhi mandir Májápurban.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Prinan Visnu Dévatam M. (13. nemzedék). WVA-VVRS alapító tagja.
+</p>
+<p class='vspace'>Ágak: 6
+</p>
+<p class='vspace'>Szannjász avatottak: 5
+</p>
+<p class='vspace'>Kiadott könyvek: 5
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>templomai nagyon díszesek
+</li><li>nagy tudós volt
+</li></ul><div class='vspace'></div><h4>Srila Najanánanda dász Babadzsi M. (12. nemzedék).</h4>
+<p>Srila Szaraszvati Thákur sisjája. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>Srila Najanánanda dász Babadzsi M. felügyelte az építkezéseket a Csaitanja Math összes ágában. Srila Szaraszvati Thákur adta ezt a szolgálatot.
+</li><li>Most Gaur Gadadhar Csampahatta Gaudija Math központjának a vezetője. A Csampahatta Gaudija Math szolgálatát az elmúlt 71 év óta látja el.
+</li><li>Srila Najanánanda dász Babadzsi M. mindig fehér ruhát viselt, Srila Szaraszvati Thákur utasításai szerint, lemondott szelleme ellenére. Később Srila Bhakti Promode Puri M.-től kapott babadzsit.
+</li></ul><div class='vspace'></div><h4>Paramahamsza Gaudija Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Alok Paramahamsza M. (12. nemzedék). Srila Szaraszvati Thákur sisjája. Szannjász Srila B.R. Sridhar M.-tól. B.A. Paramahamsza Srila Szaraszvati Thákur személyes szolgája volt és azelőtt vele prédikált.Szamádhi mandirja Sri Májápur Dhámban, Isodhjánban van.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Szadhak Niskincsana M. (13. nemzedék). Diksa Paramahamsza M.-tól, és szannjász B. Promode Puri M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Szannjász tanítványok: 3
+</p>
+<p class='vspace'>Srimad B.S. Niskincsan M. korrában egy nagy májápuri földesúr ügyintézője volt. Az ő felelőssége volt a Grantha kiadóhivatal.
+</p>
+<div class='vspace'></div><h4>Gopináth Gaudija Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Promode Puri M. (12. nemzedék). A WVA-VVRS elnöke. Srila Szaraszvati Thákur sisjája, szannjász S.B.G. Vaikanás M.-tól.
+</p>
+<p class='vspace'>Ágak: 15
+</p>
+<p class='vspace'>Szannjász avatottak: 120
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 80
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>kiváló író és sok lap szerkesztője
+</li><li>kiadványai, többek között: Nadia Prakás, Csaitanja Vani, Gaudija, Bhagavat Darsan
+</li><li>Srila B.P. Puri M. szakértő minden púdzsában és múrti-beállításban, templomok szentelésében, stb.
+</li><li>Életében több, mint 80 múrtit állított be, az elsőt Jógapith-ban.
+</li><li>Egyike a Gaudija Math első tagjainak
+</li><li>Sok idős vaisnava, más missziók hittestvérei és ácsárjái eljöttek, hogy konzultáljanak vele.
+</li><li>Felélesztette a Visva Vaisnava Rádzs Szabhát, 1994-ben.
+</li><li>Csaknem 100 éves, még mindig templomokat nyit meg, segít másoknak.
+</li><li>Helyreállította a Kesi Ghatot és a híres Daudzsi Mandirt Vrndávanban.
+</li><li>Híres a hittestvéreivel való együttműködésről.
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Srirúp Puri M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól, Szvarúp Gandzs védelmezője. Srila Szaraszvati Thákur bizalmas társa.
+</p>
+<div class='vspace'></div><h4>Sri Krsna Csaitanja Misszió</h4>
+<p>Alapító ácsárja: Srila Bhakti Vaibhav Puri M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, szannjász Srila B. Giri M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 16
+</p>
+<p class='vspace'>Szannjász avatottak: 20
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 30 Orisszában
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>prédikált Orisszában
+</li><li>szép templomépítések
+</li><li>prédikált Dél-Indiában
+</li><li>helyreállította a vrndávani Rádhá-Vrndávan Csandra régi Szeva Kundzsa templomát
+</li><li>nemrégen járta körül Európát, 86 éves korában
+</li></ul><div class='vspace'></div><h4>Srila Szadánanda Szvámi (12. nemzedék)</h4>
+<p>Srila Szaraszvati Thákur sisjája.
+</p>
+<p class='vspace'>Könyvek: 6 németül, mások svédül, angolul és spanyolul
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>ő volt az első német vaisnava
+</li><li>Srila B.M. Bon M. hozta őt Indiába
+</li><li>Indiában élt a gurujával, Srila Szaraszvati Thákurral, és később visszatért Németországba és Svédországba
+</li><li>Ezt Srila B.M. Bon M. egy tanítványának, Vamana dásznak (Walter Eidlitz, 13. nemzedék) segítségével tette. Ez volt az első alkalom, hogy Gaudija vaisnava irodalmat adtak ki Indián kívül.
+</li><li>Prédikáltak egyetemeken is, és elindították az első európai vaisnava kört.
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Vaibhav Szagar M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól. A múrtikat szolgálta Mamghatiban.
+</p>
+<div class='vspace'></div><h4>Szakhi Csaran Babu (12. nemzedék)</h4>
+<p>Nagyon sokat tett a Gaudija Mathért. Sok hittestvérnek és missziónak segített. Imli Talában lépett szamádhiba.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Kumud Szanta Mahárádzs Missziója</h4>
+<p>Alapító ácsárja: Srila Bhakti Kumud Szanta M. (12. nemzedék). WVA-VVRS alapító tag. Srila Szaraszvati Thákur sisjája, szannjász S.B.G. Vaikanás M.-tól.
+</p>
+<p class='vspace'>Ágak: 6
+</p>
+<p class='vspace'>Szannjász avatottak: 30
+</p>
+<p class='vspace'>Kiadott könyvek: 12
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>mindig segít a vaisnava ünnepek rendezésében
+</li><li>prédikált a nyugaton is
+</li><li>fő központja Beherla, Kalkutta
+</li></ul><div class='vspace'></div><h4>Prof. Srila Niszikantha Szanjal (12. nemzedék)</h4>
+<p>Srila Szaraszvati Thákur sisjája. Nem nyitott saját missziót, de írt angolul egy fontos könyvet: Sri Krsna Csaitanja. Saját guruja írta a bevezetést ehhez a könyvhöz. Professzor volt a Ravenshaw College-ban, és sok Gaudija Math kiadvány főszerkesztője.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Szvarúp Szár Mahárádzs (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól.
+</p>
+<div class='vspace'></div><h4>Szaraszvat Gaudija Asram</h4>
+<p>Alapító ácsárja: Srila Bhakti Srirúp Sziddhanti M. (12. nemzedék)
+</p>
+<p class='vspace'>Srila Szaraszvati Thákur sisjája.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Sri Bhakti Randzsan Szagar M. (13. nemzedék). WVA-VVRS alapító tag. Szannjász Srila Bhakti Srirúp Sziddhanti M.-tól.
+</p>
+<p class='vspace'>Ágak: 3
+</p>
+<p class='vspace'>Szannjász avatottak: 7
+</p>
+<p class='vspace'>Kiadott könyvek: 40
+</p>
+<p class='vspace'>Sok fontos könyvet írt és adott ki, az egyik a Guru Prestha; másokat már régóta nem lehetett megkapni.
+</p>
+<p class='vspace'>Más jellemzők:
+három nagyon díszes templomot épített, állandó teista kiállítással, a teljes templomi terület szobrai között
+</p>
+<div class='vspace'></div><h4>Sri Csaitanja Szaraszvat Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Raksak Sridhar Dev Goszvámi M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, tőle kapta a szannjászt is. A WVA-VVRS alapító tagja. Szamádhi Mandir a navadvipi Sri Csaitanja Szaraszvat Mathban.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Srila Bhakti Szundar Govinda M. (13. nemzedék). Szannjász Srila B.E. Sridhar M.-tól.
+</p>
+<p class='vspace'>Ágak: 50
+</p>
+<p class='vspace'>Szannjász avatottak: kb. 30
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 200 (fordítások más nyelvekre)
+</p>
+<p class='vspace'>A misszióból szármató új missziók: csaknem 10
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<div class='vspace'></div><ul><li>Vaisnava Tosani, angol havilap
+</li><li>kiadványok sok nyelven
+</li><li>folyóiratok több nyelven
+</li><li>évente Navadvip Dhám parikram és Vradzs Mandal pariksam
+</li><li>központok világszerte
+</li><li>Srila B.R. Sridhar M.-t nagy tisztelettel elfogadta a legtöbb vaisnava. Több eredeti Gaudija Mathot megnyitott. Írt sok dalt is, amelyeket sok helyen énekelnek a Gaudija Mathban, pl. a lelki tanítómesteréhez írt dalt, a Sri Sri Premadhám Dev Sztótramot. Egyértelműen továbbfejlesztette a Srimad Bhagavad Gita sziddhantikus megértését, Az Édes Abszolút Rejtett Kincsében, és az összes Gaudija vaisnava magasztalja magasztos művét és stílusát a Sri Sri Prapanna Dzsivanámrtamban. Élete utolsó éveiben prédikálása az egész világra kiterjedt, és a könyveit sok nyelven kiadták. Sok lelki tanítómester kért tőle tanácsot. Nagy szanszkrit tudós és költő volt.
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Bhudev Srouti M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól. Csalgrám Midnapurban nyitotta meg a saját mathját, előkészítette guruja cikkeit a Gaudija Patrika számára.
+</p>
+<div class='vspace'></div><h4> ISKCON – Nemzetközi Krsna-tudat Társaság, BBT – Bhakrivedanta Book Trust</h4>
+<p>Alapító ácsárja: Srila A.C. Bhaktivédánta Szvámi M. (12. nemzedék). Srila Szaraszvati Thákur sisjája, és szannjász S.B.P. Kesava M.-tól. Szamádhi mandir a vrndávani Krsna Balarám Mandirban.
+</p>
+<p class='vspace'>Srila Bhaktivédánta Szvámi M. az egész világot és hittestvéreit is meglepte kiemelkedő eredményeivel. Egymaga valóra váltotta Sri Csaitanja Maháprabhu jövendölését: Krsna szent nevét a világ minden falvában és városában énekelni fogják.
+</p>
+<p class='vspace'>Srila B.R. Sridhar M. mondta: „Amit Sri Csaitanja Maháprabhu bejelentett, Srila Bhaktivinoda Thákur eltervezett, Srila Prabhupád Bhaktisziddhánta Szaraszvati Goszvámi M. elindított, azt ő teljesítette be.”
+</p>
+<p class='vspace'>Jelenlegi ácsárják: sokan
+</p>
+<p class='vspace'>Ágak: kb. 500
+</p>
+<p class='vspace'>Szannjász avatottak: kb. 150
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 3000 (64 nyelven)
+</p>
+<p class='vspace'>Nyomtatva és kiosztva: 400 millió
+</p>
+<p class='vspace'>A misszióból származó új missziók: 15
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>az alapító 108 központot hozott létre a világ minden részében, később a tanítványai még többet
+</li><li>sok vegetáriánus étterem és farmközösség
+</li></ul><p class='vspace'>Bhaktivedanta Book Trust
+</p>
+<div class='vspace'></div><ul><li>Kiadványok több, mint 64 nyelven. A Srimad Bhágavatam és a Csaitanja-csaritámrta első teljes angol kiadásai, Srila A.C. Bhaktivédánta Szvámi M. magyarázataival.
+</li><li>több honlap az Interneten, digitális formátumú prédikáláshoz
+</li></ul><p class='vspace'>Bhaktivédánta Archives:
+</p><ul><li>Vedabase – vaisnava klasszikus könyvek 80 fordítását tartalmazó számítógépes adatbázis, digitális formátumban, Bhaktivédánta magyarázataival
+</li><li>fölvett leckék és dalok könyvtára, magnószalagon és CD-n (mágneses és digitális média formátumok)
+</li><li>14,000 levél a tanítványainak
+</li></ul><p class='vspace'>Bhaktivedanta Institute:
+</p><ul><li>tudományos kutatás, kiadványok és konferenciák
+</li><li>hagyományos vaisnava művészetek támogatása, világszerte
+</li><li>oktató szemináriumok művészetekről és tudományokról
+</li><li>„Origins magazine”, élet és anyag kérdések elemzése
+</li></ul><p class='vspace'>Egyéb kiadványok:
+</p><ul><li>az alapító életrajza, írta Srila Szatszvarúp dász Goszvámi
+</li><li>Vissza az Istenséghez, angolul és sok más nyelven (az alapító indította el 1944-ben)
+</li><li>Hare Krsna World – nemzetközi újság angolul
+</li><li>ISKCON Television – vaisnava TV úttörők
+</li><li>ISKCON Cinema – Sri Jadubara és Srimati Visákhá sok filmet készítettek a prédikáláshoz
+</li></ul><p class='vspace'>Egyéb prédikáló tevékenyégek:
+</p><ul><li>pada-jatrák világszerte – járás és prédikálás a föld körül
+</li><li>Ratha-játrák a nagyvárosokban az egész világon (több, mint 50)
+</li><li>az ISKCON alapítójának TV-életrajza, két évig közvetítették Indiában
+</li><li>Gurukulák – úttörő munka, a védikus elvek megvalósítása az elemi iskolai oktatásban
+</li><li>praszádam osztás, ételsegély, és világszerte vegetáriánus éttermek
+</li><li>FATE – Első Amerikai Transzcendentális Kiállítás
+</li><li>kísérletek világszerte önellátó farmközösségek létrehozására
+</li><li>behatolás politikailag nagyon nehéz területekre, pl. kommunista és muszlim országok; a Krsna-tudat sikeres megalapozása ezeken a területeken
+</li><li>zenéjükbe felvették a Mahámantrát és más szent énekeket, és így nagyon híressé tették Krsna nevét
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Pradip Tírtha Mahárádzs (10. nemzedék)</h4>
+<p>Srila Bhaktivinoda Thákur tanítványa, szannjász Srila Szaraszvati Thákurtól.
+</p>
+<p class='vspace'>Nagy író volt, kiadta a Bhagavadgítá egy kommentárját. Angliába küldték prédikálni.
+</p>
+<div class='vspace'></div><h4>Sri Csaitanja Gaudija Math</h4>
+<p>Alapító: Srila Bhakti Gaurab Vaikanás M. (12. nemzedék)
+</p>
+<p class='vspace'>Ez Srila Bhakti Dajita Mádhava M. (12. nemzedék) Sri Csaitanja Gaudija Math-jának egyik ága.
+</p>
+<p class='vspace'>Szannjász avatottak: 13
+</p>
+<p class='vspace'>Kiadott könyvek: 10
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Gaurab Vaikanás M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól. Mathot alapított az orisszai Bhuvanesvarában. Ismerik Rádzs Panditként is.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Szudhir Jacshak M. (12. nemzedék)</h4>
+<p>Szannjász Srila Szaraszvati Thákurtól. Jól ismert, mint nagy szakács, és Vrndávanban szolgált.
+</p>
+<div class='vspace'></div><h4>Sri Csaitanja Bhagavat Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Vicsár Jadzsavár M. (12. nemzedék). Szannjász Srila Szaraszvati Thákurtól.
+</p>
+<p class='vspace'>Jelenlegi ácsárja: Bhakti Visztar VisnuM. (13. nemzedék)
+</p>
+<p class='vspace'>WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 6
+</p>
+<p class='vspace'>Szannjász avatottak: 10
+</p>
+<p class='vspace'>Kiadott könyvek: 6
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>Srila Bhakti Vicsár Jadzsavár szamádhija Májápurban van. Ő volt Srila Szaraszvati Thákur utolsó szannjászija.
+</li><li>Templomai nagyon díszesek.
+</li><li>Ő volt az első, aki egy nyilvános vaisnava találkozón kijelentette, Srila A.C. Bhaktivedánta Szvámi biztosan egy sakti-avesa-avatár, amiért meg tudta tenni, amire kiválasztották. Srila B.R. Sridhar M. egyetértett ezzel az intuícióval. 
+</li></ul><p class='vspace'><a name='f' id='f'></a>
+</p><h3>Vaisnava ácsárják, a 13. nemzedék új missziói és projektjei</h3>
+<p  style='text-align: center;'><em>Az ácsárja nevének abc rendjében</em>
+</p>
+<div class='vspace'></div><h4>International Association – Sri Csaitanja Bhakti Raksak Mandapa</h4>
+<p>Alapító ácsárja: Srila Badri Nárájan Bhagavat Búsan (13. nemzedék). A.C. Bhaktivedánta Szvámi M. és Srila B.R. Sridhar M. sisjája.
+</p>
+<p class='vspace'>Ágak: 10
+</p>
+<p class='vspace'>Kiadott könyvek: 14
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>kiadványok angolul és spanyolul
+</li><li>Jayasri Classics kiadóhivatal
+</li><li>központokat nyitott Rádhá Kundában és Gadádhar Danta Szamádhi Szevaite Vrndávanban
+</li><li>Ratha játrá a venezuelai Caracas-ban
+</li></ul><div class='vspace'></div><h4>Bhakti Keval Audulaumi Gaudija Math</h4>
+<p>Alapító: Srila Bhakti Vilász Bharati M. (13. nemzedék). WVA-VVRS alapító tag. Bhakti Keval Audulaumi M. sisjája.
+</p>
+<p class='vspace'>Ágak: 6. Ő nyitotta meg a Bágh Bazár Gaudija Misszió egyik ágát.
+</p>
+<p class='vspace'>Könyvek: 2 bengáli nyelven
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Raszánanda Bon M. (13. nemzedék)</h4>
+<p>WVA-VVRS alapító tag. S.B.M. Bon M. sisjája.
+</p>
+<p class='vspace'>Ágak: 1; Bon M. Gaudija Math, Májápur
+</p>
+<div class='vspace'></div><h4>Bhaktivedanta Institute ISKCON</h4>
+<p>Elnök: Srila Bhakti Szvarúp Dámodar M. (13. nemzedék)
+</p>
+<p class='vspace'>Szannjász Srila A.C. Bhaktivedánta Szvámi M.-tól.
+</p>
+<p class='vspace'>WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Más jellemzők:
+tudományos konferenciákat szervez a tudomány és vallás szintéziséről
+</p>
+<div class='vspace'></div><h4>Sripad Dasarath Szúta dász B. (13. nemzedék)</h4>
+<p>Srila A.C. Bhaktivedánta Szvámi sisjája. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Könyvek: kb. 100 vaisnava könyv fordítója és kiadója.
+</p>
+<div class='vspace'></div><h4>ISKCON Bhuvanesvar</h4>
+<p>Alapító: Srila Gour Govinda Szvámi (13. nemzedék). Szannjász Bhaktivédánta Szvámi M.-tól. Szamádhi mandir Sri Sri Krsna Balarám Mandirban, ISKCON Bhuvanesvar.
+</p>
+<p class='vspace'>Könyvek: személyesen fordította le guruja könyveit orisszai nyelvre
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>különböző könyveket és folyóiratokat írt
+</li><li>megnyitott egy templomot Bhuvanesvarában	
+</li><li>emelkedett bhakta volt, nagy és művelt tudós
+</li></ul><div class='vspace'></div><h4>Sri Csaitanja Mudráni Gaudija Math</h4>
+<p>Alapító: Srila Bhakti Prakás Hrsikes M. (13. nemzedék)
+</p>
+<p class='vspace'>Harinám Srila A.C. Bhaktivedánta Szvámi M.-tól., diksa Srila B.R. Sridhar M.-tól, és szannjász Srila B.P. Puri M.-tól.
+</p>
+<p class='vspace'>WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<div class='vspace'></div><ul><li>missziókat nyitott Bulgáriában és Malajziában
+</li><li>kiadta Srila B.R. Sridhar M. sok könyvét, angol nyelven
+</li><li>a WVA-VVRS folyóirat szerkesztője
+</li></ul><p class='vspace'>Szadhu-Szanga folyóirat
+</p>
+<div class='vspace'></div><h4>Bhaktivédánta Szvámi Asram Tröszt</h4>
+<p>Alapító: Srila Bhaktivédánta Ksirodakáji Visnu M. (13. nemzedék), Srila Bhaktivédánta Szvámi M. sisjája, és szannjász Srila B.A. Paramadvaiti M.-tól.
+</p>
+<p class='vspace'>WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 2 (Vrndávan és London)
+</p>
+<p class='vspace'>Kiadott könyvek: 20
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<p class='vspace'>Bhagavat Darsan folyóirat hindi nyelven
+</p>
+<div class='vspace'></div><h4>Krsna Intézet</h4>
+<p>Alapító: Sripad Kusakratha dász Brahmacsári (13. nemzedék), Srila A.C. Bhaktivédánta Szvámi M. sisjája, szanszkrit tudós is.
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<p class='vspace'>több, mitn 300 kötetnyi Goszvámi irodalom fordítója és kiadója
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Mádhava Mahárádzs (13. nemzedék)</h4>
+<p>Srila B.D. Mádhava M. sisjája, A WVA-VVRS alapító tagja.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Prabhav Mahávir M. (13. nemzedék)</h4>
+<p>Srila B.D. Mádhava M. sisjája. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 3
+</p>
+<p class='vspace'>Kiadott könyvek: 3
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<p class='vspace'>prédikál Vrndávanban és nyugati országokban
+</p>
+<div class='vspace'></div><h4>Magyar Vaisnava Hindu Misszió</h4>
+<p>Alapító: Srila Bhakti Abhaj Nárájan M. (13. nemzedék). WVA-VVRS alapító tag. Félelem nélküli prédikátor; Srila A.C. Bhaktivédánta Szvámi M. tanítványa volt, szannjász Srila B.K. Sridhar M.-tól. Szamádhi mandirja Balástyán, Magyarország.
+</p>
+<p class='vspace'>Jelenlegi ácsárják: Srila Bhakti Kamal Tírtha M. (14. nemzedék), szannjász Srila Bhakti Abhaj Nárájan M.-tól; WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Srila Krsnánanda Prabhu (14. nemzedék), WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 5
+</p>
+<p class='vspace'>Szannjász avatottak: 1
+</p>
+<p class='vspace'>Kiadott könyvek: 40
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>Kagylókürt folyóirat, évente négyszer magyarul
+</li><li>Gangesz, vaisnava folyóirat évente négyszer magyarul
+</li><li>Srila Bhakti Abhaj Nárájan az első prédikátor a Vasfüggöny mögött
+</li><li>lefordította a Bhagavad-gítát oroszra és magyarra
+</li><li>templomokat nyitott Magyarországon, Romániában, Bulgáriában és Jugoszláviában
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Kinkara Nárájan M. (13. nemzedék)</h4>
+<p>Srila B.K. Sraman M. tanítványa, szannjász Srila B.P. Puri M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Templomok: Sri Sri Rádhá-Govinda, Milan Kundzsa, Rádhá-Govinda-Maháprabhu, Parganas, Nyugat-Bengál.
+</p>
+<div class='vspace'></div><h4>Sripad Nrsinghánanda dász Adhikári (13. nemzedék)</h4>
+<p>WVA-VVRS tag.
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>ISKCON Television – a világ első vaisnava videoszolgáltatásának igazgatója
+</li><li>több, mint 200 videót készített és adott ki vaisnava témákról
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Vikás Padmanábha M. (13. nemzedék)</h4>
+<p>S.B.R. Sridhar M. sisjájam szannjász S.B.P. Puri M.-tól. WVA-VVRS alapító tag.
+</p>
+<div class='vspace'></div><h4>VRINDA – Vaisnava kultúra és tanulmányok vrndávani intézete, ISEV – Védikus tanulmányok Főintézete, SEVA – Vaisnava ácsárják kiadói szolgáltatása</h4>
+<p>Alapító ácsárja. Srila Bhakti Alok ParamádvaitiM. (13. nemzedék). WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Srila A.C. Bhaktivédánta Szvámi M. sisjája, szannjász Srila B.R. Sridhar M.-tól.
+</p>
+<p class='vspace'>Más ácsárják:
+</p><ul><li>Srila Bhakti Vimal Haridzsan M. (13. nemzedék). Srila A.C. Bhaktivédánta Szvámi M. sisjája, szannjász Srila B.R. Sridhar Ma.-tól. WVA-VVRS alapító tag. Szamádhi mandir: Sri Sri Guru Gauránga-Rádhá-Vradzsesvara, Bogotá, Columbia.
+</li><li>Srila Atulánanda Ácsárja Prabhu (13. nemzedék), A.C. Bhaktivédánta Szvámi M. sisjája. WVA-VVRS alapító tag.
+</li></ul><p class='vspace'>Ágak: 82
+</p>
+<p class='vspace'>Szannjász avatottak: 15
+</p>
+<p class='vspace'>Kiadott könyvek: 120
+</p>
+<p class='vspace'>A misszióból származó új missziók: 2
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>VRNDA régi templomokat állított helyre Vrndávanban, többek között Vrnda Kundzsa Mandir, Gopála Mandir ls a Jamuná Kundzsa az Imli Talánál.
+</li><li>Sok vegetáriánus étterem, asram és farm közösség Európában, Észak-, Közép- és Dél-Amerikában, valamint Indiában.
+</li><li>Kiadványok németül, spanyolul és angolul.
+</li><li>Az ISEV olyan program, amely levelező bhakti jóga tanfolyamokat is szervez.
+</li><li>A vaisnavizmus első német és spanyol Internet jelenléte.
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Paramárthi M. (13. nemzedék)</h4>
+<p>Srila B.R. Sridhar M. sisjája, szannjász Srila B.P. Puri M.-tól. Van egy központja Asszamban.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Parvirádzsak M. (13. nemzedék)</h4>
+<p>Elindított egy missziót Májápurban, és Howrah, Kalkuttában. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Navadvip Dhám parikram szervezője.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Praszun Puri Mahárádzs missziója</h4>
+<p>Alapító ácsárja: Srila Bhakti Praszun Puri M. (13. nemzedék). Srila B. Vilász Tírtha M. tanítványa. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Kiadott könyvek: 2
+</p>
+<div class='vspace'></div><h4>Rádhá-Krsna Math</h4>
+<p>Alapító ácsárja: Srila Bhakti Vidzsaj Puri M. (13. nemzedék)
+</p>
+<p class='vspace'>WVA-VVRS alapító tag. S.B. Szaran Szanta M. tanítványa, és szannjász S.B.P. Puri M.-tól.
+</p>
+<p class='vspace'>Más ácsárják: Srila Bhakti Mangal M. (13. nemzedék)
+</p>
+<p class='vspace'>S.B. Szaran Szanta M. sisjája.
+</p>
+<p class='vspace'>Ágak: 1, Kalkuttában
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Vaibhava Szagar Mahárádzs (13. nemzedék)</h4>
+<p>Srila B. Vilász Tírtha M. sisjája. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 1, Májápurban
+</p>
+<p class='vspace'>Más jellemzők:
+</p>
+<p class='vspace'>Rudradvip Gaudija Math gondnoka. A Gaudija Math irodalom kitűnő könyvtárát tartja fenn.
+</p>
+<div class='vspace'></div><h4>Sripad Szatjarádzs dász Adhikári (13. nemzedék)</h4>
+<p>Srila A.C. Bhaktivédánta Szvámi M. tanítványa. Folk Books alapítója. Journal of Vaisnava Studies – negyedévenként jelenik meg, tudományos cikkekkel - kiadója.
+</p>
+<p class='vspace'>Könyvek: sok könyv szerzője, vaisnava kutatásról
+</p>
+<div class='vspace'></div><h4>Csaitanja Misszió</h4>
+<p>Alapító: Srila Dzsagat Guru Sziddhaszvarúpánanda Paramahamsza (13. nemzedék)
+</p>
+<p class='vspace'>Srila A.C. Bhaktivédánta Szvámi M. tanítványa, WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 80
+</p>
+<p class='vspace'>Kiadott könyvek: 30, angolul
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>a 60-as években jógi volt Hawaiin, és sok tanítványa volt
+</li><li>később meghódolt, összes tanítványával együtt, Srila A.C. Bhaktivédánta Szvámi M.-nak
+</li><li>Life-force Nrws angolul, lengyelül, oroszul és filippínó nyelven
+</li><li>kábel-TV prédikálás úttörője
+</li><li>Srila A.C. Bhaktivédánta Szvámi M. egy másik tanítványa kíséri, Sripad Tuszta Krsna dász (13. nemzedék)
+</li><li>sok füzetet adott ki, vaisnava útmutatással szociális témákról
+</li><li>missziója sok kommunista országban is prédikál
+</li></ul><div class='vspace'></div><h4>Srila Bhakti Sziddhanti M. (13. nemzedék)</h4>
+<p>Srila B.R. Sridhar M. sisjája, szannjász Srila B.P. Puri M.-tól. Van egy központja Navadvipban.
+</p>
+<div class='vspace'></div><h4>Csaitanja Isa Mandalam</h4>
+<p>Alapító ácsárja: Srila Bhakti Nandan Szvámi M. (13. nemzedék). Arila B.R. Sridhar M. sisjája, és szannjász S.B.P. Puri M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Központok: Anglia, USA és Malajzia
+</p>
+<p class='vspace'>Kiadott könyvek: 6
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Szvarúp Tírtha M. (13. nemzedék)</h4>
+<p>WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Sisja és szannjász Srila B.S. Bhagavat M.-tól, a Bágh Bazár Gaudija Math-tól. Misszió Kalkutta mellett. Jól ismert, mint nemzetközi prédikátor.
+</p>
+<div class='vspace'></div><h4>Gaudija Vaisnava Társaság</h4>
+<p>Alapító ácsárja: Srila Bhaktivédánta Tripurári M. (13. nemzedék). Srila A.C. Bhaktivédánta Szvámi M. sisjája, és szannjász ugyancsak tőle. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Ágak: 6
+</p>
+<p class='vspace'>Szannjász avatottak: 3
+</p>
+<p class='vspace'>Kiadott könyvek: kb. 20
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>az alapító sok könyvet írt
+</li><li>kiadja a Gaudija Védánta folyóiratot – negyedévente angolul
+</li><li>az egyik legjobb filozófiai vaisnava folyóirat
+</li><li>szintén ő adja ki a Clarion Call-t
+</li><li>arról híres, hogy megszervezte a világ legnagyobb vaisnava könyvosztását
+</li></ul><p class='vspace'>Más ácsárják: Srila Bhakti Gaurava Narasimha M. (13. nemzedék). WVA-VVRS alapító tag. Sisja és szannjász Srila A.C. Bhaktivédánta Szvámi M.-tól.
+</p>
+<p class='vspace'>Szannjász avatottak: 3
+</p>
+<p class='vspace'>Kiadott könyvek: 2
+</p>
+<p class='vspace'>Más jellemzők:
+az első nyugaton született vaisnava, aki mandirt nyitott Vrndávanban és Dél-Indiában
+</p>
+<div class='vspace'></div><h4>Mantra Meditáció, Hawaii</h4>
+<p>Alapító: Srila Trija Mahásaja M. (13. nemzedék). Srila A.C. bhaktivédánta Szvámi M. sisjája. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Más jellemzők:
+</p><ul><li>renoválási projekt Govardhan Vrndávanban
+</li><li>hírlevél angolul, múrti-imádat szakértője
+</li></ul><div class='vspace'></div><h4>Sri Csaitanja Gaudija Szevásram</h4>
+<p>Alapító ácsárja: Srila B. Szambandha Jacshak M. (13. nemzedék).
+</p>
+<p class='vspace'>B. Vilász Tírtha M. sisjája, szannjász B.P. Puri M.-tól.
+</p>
+<p class='vspace'>Csaitanja Math ácsárjája, Midnapur, Ny. Bengál.
+</p>
+<div class='vspace'></div><h4>Srila Bhakti Jati M. (13. nemzedék)</h4>
+<p>Srila B. Vilász Tírtha M. sisjája, szannjász Srila B.P. Puri M.-tól. WVA-VVRS alapító tag.
+</p>
+<p class='vspace'>Rádhá-Kunda Kundzsa Bihári
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_02.html'>A békét hozó</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math.html'>Családunk, a Gaudíja Math</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.csaladunk_a_gaudija_math_04.html'>III. Vaisnava kapcsolatok</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on March 04, 2008, at 09:59 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

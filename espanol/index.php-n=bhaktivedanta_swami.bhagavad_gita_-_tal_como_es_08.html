@@ -1,0 +1,659 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Alcanzando al Supremo</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_swami - RSS Feed'
+      href='index.php-n=bhaktivedanta_swami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_08' method='get'><input type='hidden' name='n' value='bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_08' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Alcanzando al Supremo"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_08-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es.html'>El Bhagavad Gita – Tal Como Es</a>
+</p>
+<div class='vspace'></div><h2><small>Capítulo VIII</small><br /><br />Alcanzando al Supremo</h2>
+<p>VERSO 1
+</p>
+<div class='vspace'></div><pre> arjuna uvaca
+ kim tad-brahma kim adhyatmam
+ kim karma purusottama
+ adhibhutam ca kim proktam
+ adhidaivam kim ucyate
+</pre><p class='vspace'>arjunah uvaca—Arjuna dijo; kim—qué; tat—eso; brahma—Brahman; kim—qué; adhyatmam—el ser; kim—qué; karma—actividades fruitivas; purusa-uttama—¡oh, Persona Suprema!; adhibhutam—la manifestación material; ca—y; kim—qué; proktam—se denomina; adhidaivam—los semidioses; kim—qué; ucyate—se llama.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Arjuna preguntó: ¡Oh, mi Señor!, ¡oh, Persona Suprema!, ¿qué es Brahman? ¿Qué es el ser? ¿Qué son las actividades fruitivas? ¿Qué es esta manifestación material? Y, ¿qué son los semidioses? Por favor explícame eso.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En este capítulo, el Señor Krishna responde diferentes preguntas de Arjuna, comenzando con la pregunta "¿qué es Brahman?". El Señor también explica el karma, las actividades fruitivas, el servicio devocional y los principios del yoga, y el servicio devocional en su forma pura. El Srimad-Bhagavatam explica que a la Suprema Verdad Absoluta se la conoce como Brahman, Paramatma y Bhagavan. Además, la entidad viviente, el alma individual, también recibe el nombre de Brahman. Arjuna también pregunta acerca del atma, lo cual se refiere al cuerpo, al alma y a la mente. Según el diccionario védico, atma se refiere a la mente, al alma, al cuerpo y también a los sentidos.
+</p>
+<p class='vspace'>Arjuna se ha dirigido al Señor Supremo por el nombre de Purusottama, la Persona Suprema, lo cual significa que le estaba haciendo estas preguntas no sólo a un amigo, sino a la Persona Suprema, con el entendimiento de que Él era la suprema autoridad capaz de dar respuestas definitivas.
+</p>
+<p class='vspace'>VERSO 2
+</p>
+<div class='vspace'></div><pre> adhiyajñah katham ko 'tra
+ dehe smin madhusudana
+ prayana-kale ca katham
+ jñeyo ’si niyatatmabhih
+</pre><p class='vspace'>adhiyajñah—el Señor del sacrificio; katham—cómo; kah—quién; atra—aquí; dehe—en el cuerpo; asmin—este; madhusudana—¡oh, Madhusudana!; prayana-kale—a la hora de la muerte; ca—y; katham—cómo; jñeyah asi—pueden conocerte; niyata-atmabhih—los autocontrolados.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, Madhusudana!, ¿quién es el Señor del sacrificio y cómo vive en el cuerpo? Y, ¿cómo pueden conocerte a la hora de la muerte aquellos que están dedicados al servicio devocional?
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>"El Señor del sacrificio" puede referirse a Indra o a Visnu. Visnu es el principal de los semidioses primarios, incluyendo a Brahma y a Siva, e Indra es el principal de los semidioses administrativos. Tanto a Indra como a Visnu se los adora mediante la ejecución de yajñas. Pero Arjuna pregunta aquí que quién es en verdad el Señor del yajña (sacrificio), y cómo reside el Señor en el cuerpo de la entidad viviente.
+Arjuna se dirige al Señor por el nombre de Madhusudana, ya que, en una ocasión, Krishna mató a un demonio llamado Madhu. A decir verdad, estas preguntas, que eran de la categoría de las dudas, no debieron haber surgido en la mente de Arjuna, porque Arjuna es un devoto consciente de Krishna. Por lo tanto, estas dudas son como demonios. Puesto que Krishna es muy experto en matar demonios, aquí Arjuna se dirige a Él como Madhusudana, para que Krishna le mate las demoníacas dudas que se le vienen a la mente.
+</p>
+<p class='vspace'>Ahora bien, la palabra prayana-kale de este verso es muy significativa, porque todo lo que hagamos en la vida se pondrá a prueba en el momento de la muerte. Arjuna está muy ansioso de aprender acerca de aquellos que están dedicados constantemente al proceso de conciencia de Krishna. ¿Cómo tienen que comportarse en ese último momento? A la hora de la muerte, todas las funciones del cuerpo se trastornan, y la mente no se encuentra en una buena condición. Perturbado de ese modo por la situación del cuerpo, puede que uno no sea capaz de recordar al Señor Supremo. Maharaja Kulasekhara, un gran devoto, ora lo siguiente: "Mi querido Señor, en este preciso momento estoy muy sano, y es mejor que yo muera de inmediato, de modo que el cisne de mi mente trate de entrar en el tallo de Tus pies de loto". La razón por la que se usa esta metáfora es porque al cisne, un ave acuática, le gusta meterse entre las flores de loto; su diversión consiste en entrar en la flor de loto. Maharaja Kulasekhara le dice al Señor: "Ahora no tengo la mente perturbada y estoy muy sano. Si muero ya, pensando en Tus pies de loto, estaré seguro entonces de que mi ejecución de Tu servicio devocional se volverá perfecta. Pero si tengo que esperar hasta que me llegue la muerte natural, entonces no sé lo que va a ocurrir, porque en ese momento las funciones del cuerpo se van a trastornar, la garganta se me va a obstruir, y no sé si voy a poder cantar Tu nombre. Mejor déjame morir de inmediato". Arjuna pregunta cómo puede una persona fijar la mente en los pies de loto de Krishna en ese momento.
+</p>
+<p class='vspace'>VERSO 3
+</p>
+<div class='vspace'></div><pre> sri-bhagavan uvaca
+ aksaram brahma paramam
+ svabhavo’dhyatmam ucyate
+ bhuta-bhavodbhava-karo
+ visargah karma-samjñitah
+</pre><p class='vspace'>sri-bhagavan uvaca—la Suprema Personalidad de Dios dijo; aksaram—indestructible; brahma—Brahman; paramam—trascendental; svabhavah—naturaleza eterna; adhyatmam—el ser; ucyate—se llama; bhuta-bhava-udbhava-karah—que produce los cuerpos materiales de las entidades vivientes; visargah—creación; karma—actividades fruitivas; samjñitah—se denomina.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>La Suprema Personalidad de Dios dijo: La indestructible y trascendental entidad viviente recibe el nombre de Brahman, y su naturaleza eterna se llama adhyatma, el ser. La acción que está relacionada con el desarrollo de estos cuerpos materiales se denomina karma, o actividad fruitiva.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El Brahman es indestructible, existe eternamente y su constitución no cambia en ningún momento. Pero más allá del Brahman se encuentra el Parabrahman. El Brahman se refiere a la entidad viviente, y el Parabrahman se refiere a la Suprema Personalidad de Dios. La posición constitucional de la entidad viviente es diferente de la posición que ella adopta en el mundo material. En medio de la conciencia material, ella tiene la naturaleza de tratar de ser la ama de la materia, pero en medio de la conciencia espiritual, conciencia de Krishna, su posición es la de servir al Supremo. Cuando la entidad viviente tiene conciencia material, tiene que adoptar diversos cuerpos en el mundo material. Eso se denomina karma, o la creación variada realizada por la fuerza de la conciencia material.
+En la literatura védica, a la entidad viviente se la llama jivatma y Brahman, pero nunca se la llama Parabrahman. La entidad viviente (jivatma) adopta diferentes posiciones: a veces se sumerge en la oscura naturaleza material y se identifica con la materia, y a veces se identifica con la naturaleza espiritual superior. Por eso se la llama la energía marginal del Señor Supremo. Según se identifique con la naturaleza material o con la espiritual, recibe un cuerpo material o uno espiritual. En la naturaleza material puede adquirir un cuerpo de entre cualquiera de las 8.400.000 especies de vida, pero en la naturaleza espiritual sólo tiene un cuerpo. En la naturaleza material, a veces se manifiesta como hombre, semidiós, animal, bestia, ave, etc., conforme a su karma. A veces, con el fin de ir a planetas celestiales materiales y disfrutar de las facilidades que hay en ellos, realiza sacrificios (yajña), pero cuando su mérito se agota, regresa de nuevo a la Tierra en la forma de un hombre. Ese proceso se denomina karma.
+</p>
+<p class='vspace'>El Chandogya Upanisad describe el proceso védico de los sacrificios. En el altar del sacrificio, cinco clases de ofrendas se convierten en cinco clases de fuego. A las cinco clases de fuego se las concibe como: los planetas celestiales, las nubes, la tierra, el hombre y la mujer; y las cinco clases de ofrendas del sacrificio son: la fe, el que disfruta en la Luna, la lluvia, los granos y el semen.
+En el proceso del sacrificio, la entidad viviente hace sacrificios específicos para ir a planetas celestiales específicos, y, en consecuencia, llega a ellos. Cuando el mérito del sacrificio se agota, la entidad viviente desciende a la Tierra en forma de lluvia, luego adopta la forma de granos, los granos son comidos por el hombre y se transforman en semen, y el semen fecunda a una mujer, con lo cual la entidad viviente consigue una vez más la forma humana, para realizar sacrificios y repetir así el mismo ciclo. De esa manera, la entidad viviente va y viene perpetuamente por la senda material. Sin embargo, la persona consciente de Krishna evita esos sacrificios. Ella emprende directamente el proceso de conciencia de Krishna, y con ello se prepara para ir de vuelta a Dios.
+</p>
+<p class='vspace'>Los comentaristas impersonalistas de El Bhagavad-gita suponen de un modo irrazonable que, en el mundo material, el Brahman adopta la forma de la jiva, y para fundamentar esto se refieren al Capítulo Quince, verso 7, del Gita. Pero en ese verso, el Señor también habla de la entidad viviente como "un fragmento eterno de Mí". El fragmento de Dios, la entidad viviente, puede caer en el mundo material, pero el Señor Supremo (Acyuta) nunca cae. Por lo tanto, esa suposición de que el Brahman Supremo adopta la forma de la jiva, no es aceptable. Es importante recordar que en la literatura védica se distingue al Brahman (la entidad viviente) del Parabrahman (el Señor Supremo).
+</p>
+<p class='vspace'>VERSO 4
+</p>
+<div class='vspace'></div><pre> adhibhutam ksaro bhavah
+ purusas cadhidaivatam
+ adhiyajño’ham evatra
+ dehe deha-bhrtam vara
+</pre><p class='vspace'>adhibhutam—la manifestación física; ksarah—cambiando constantemente; bhavah—naturaleza; purusah—la forma universal, que incluye a todos los semidioses, tales como el Sol y la Luna; ca—y; adhidaivatam—llamada adhidaivam; adhiyajñah—la Superalma; aham—Yo (Krishna); eva—ciertamente; atra—en este; dehe—cuerpo; deha-bhrtam—de los encarnados; vara—¡oh, el mejor!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, tú, el mejor de los seres encarnados!, la naturaleza física, que está cambiando constantemente, se denomina adhibhutam [la manifestación material]. La forma universal del Señor, que incluye a todos los semidioses, como los del Sol y de la Luna, se denomina adhidaivam. Y Yo, el Señor Supremo, representado como la Superalma en el corazón de cada ser encarnado, Me llamo adhiyajña [el Señor del sacrificio].
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La naturaleza física está cambiando constantemente. Los cuerpos materiales pasan por lo general a través de seis etapas: nacen, crecen, permanecen por algún tiempo, producen algunos subproductos, decaen y luego desaparecen. Esa naturaleza física se denomina adhibhuta. Ella es creada en determinado momento, y será aniquilada en determinado momento. El concepto de la forma universal del Señor Supremo, la cual incluye a todos los semidioses y sus diferentes planetas, se denomina adhidaivata. Y presente en el cuerpo junto con el alma individual se encuentra la Superalma, una representación plenaria del Señor Krishna. La Superalma se denomina el Paramatma o adhiyajña, y está situada en el corazón. La palabra eva es particularmente importante en el contexto de este verso, porque con esta palabra el Señor recalca que el Paramatma no es diferente de Él. La Superalma, la Suprema Personalidad de Dios, que se halla sentada al lado del alma individual, es el testigo de las actividades del alma individual y es la fuente de los diversos tipos de conciencia que tiene el alma. La Superalma le da al alma individual la oportunidad de actuar libremente, y presencia sus actividades. Las funciones de todas esas diferentes manifestaciones del Señor Supremo, quedan claras automáticamente para el devoto puro y consciente de Krishna que está dedicado a prestarle un servicio trascendental al Señor. La gigantesca forma universal del Señor, denominada adhidaivata, la contempla el neófito que no puede acercarse al Señor Supremo en Su manifestación como la Superalma. Al neófito se le aconseja que contemple la forma universal, o el virat-purusa, cuyas piernas se considera que son los planetas inferiores, cuyos ojos se considera que son el Sol y la Luna, y cuya cabeza se considera que es el sistema planetario superior.
+</p>
+<p class='vspace'>VERSO 5
+</p>
+<div class='vspace'></div><pre> anta-kale ca mam eva
+ smaran muktva kalevaram
+ yah prayati sa mad-bhavam
+ yati nasty atra samsayah
+</pre><p class='vspace'>anta-kale—al final de la vida; ca—también; mam—a Mí; eva—ciertamente; smaran—recordando; muktva—abandonando; kalevaram—el cuerpo; yah—aquel que; prayati—va; sah—él; mat-bhavam—Mi naturaleza; yati—consigue; na—no; asti—hay; atra—aquí; samsayah—duda.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Y quienquiera que al final de la vida abandone el cuerpo recordándome únicamente a Mí, de inmediato alcanza Mi naturaleza. De esto no hay ninguna duda.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En este verso se recalca la importancia del proceso de conciencia de Krishna. Todo aquel que abandone el cuerpo en estado de conciencia de Krishna, es trasladado de inmediato a la naturaleza trascendental del Señor Supremo. El Señor Supremo es el más puro de los puros. Por lo tanto, todo aquel que esté consciente de Krishna constantemente, también es el más puro de los puros. La palabra smaran ("recordando") es importante. Recordar a Krishna no le es posible al alma impura que no ha practicado el proceso de conciencia de Krishna mediante el servicio devocional. En consecuencia, uno debe cultivar conciencia de Krishna desde el mismo comienzo de la vida. Si uno quiere lograr el éxito al final de su vida, el proceso de recordar a Krishna es esencial. De modo que, se debe cantar constante e incesantemente el maha-mantra: Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare / Hare Rama, Hare Rama, Rama Rama, Hare Hare. El Señor Caitanya ha aconsejado que uno sea tan tolerante como un árbol (taror iva sahisnunay). A una persona que canta Hare Krishna se le pueden presentar muchísimos impedimentos. No obstante, tolerando todos esos impedimentos, uno debe continuar cantando Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare / Hare Rama, Hare Rama, Rama Rama, Hare Hare, de modo que al final de su vida pueda tener todo el beneficio del proceso de conciencia de Krishna.
+</p>
+<p class='vspace'>VERSO 6
+</p>
+<div class='vspace'></div><pre> yam yam vapi smaran bhavam
+ tyajaty ante kalevaram
+ tam tam evaiti kaunteya
+ sada tad-bhava-bhavitah
+</pre><p class='vspace'>yam yam—todo lo que; va—cualquiera de ellos; api—también; smaran—recordando; bhavam—naturaleza; tyajati—abandona; ante—al final; kalevaram—este cuerpo; tam tam—similar; eva—ciertamente; eti—obtiene; kaunteya—¡oh, hijo de Kunti!; sada—siempre; tat—ese; bhava—estado de existencia; bhavitah—recordando.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Cualquier estado de existencia que uno recuerde cuando abandone el cuerpo, ese estado alcanzará sin falta.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí se explica el proceso mediante el cual uno cambia su naturaleza en el crítico momento de la muerte. La persona que al final de su vida abandona su cuerpo pensando en Krishna, alcanza la naturaleza trascendental del Señor Supremo, pero no es cierto que una persona que piense en algo diferente de Krishna, alcance el mismo estado trascendental. Éste es un punto que debemos notar muy cuidadosamente. ¿Cómo es posible morir en el estado mental apropiado? Maharaja Bharata, aunque era una gran personalidad, pensó en un venado al final de su vida, y, por ello, en su siguiente vida fue trasladado al cuerpo de un venado. Aunque como venado él recordaba sus actividades pasadas, tuvo que aceptar ese cuerpo de animal. Indudablemente, los pensamientos que se tienen en el transcurso de la vida se acumulan e influyen en los pensamientos que uno tiene en el momento de la muerte; así que, esta vida crea la siguiente vida de uno. Si en la vida actual uno vive bajo la influencia de la modalidad de la bondad y piensa siempre en Krishna, es posible que al final de su vida uno recuerde a Krishna. Eso lo ayudará a uno a ser trasladado a la naturaleza trascendental de Krishna. Si uno está absorto de un modo trascendental en el servicio de Krishna, entonces su siguiente cuerpo será trascendental (espiritual), no material. Por consiguiente, el canto de Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare / Hare Rama, Hare Rama, Rama Rama, Hare Hare, es el mejor proceso para que al final de la vida uno cambie con éxito el estado de su existencia.
+</p>
+<p class='vspace'>VERSO 7
+</p>
+<div class='vspace'></div><pre> tasmat sarvesu kalesu 
+ mam anusmara yudhya ca 
+ mayy arpita-mano buddhir
+ mam evaisyasy asamsayah
+</pre><p class='vspace'>tasmat—por lo tanto; sarvesu—en todo; kalesu—momento; mam—a Mí; anusmara—continúa recordando; yudhya—pelea; ca—también; mayi—a Mí; arpita—entregando; manah—mente; buddhih—intelecto; mam—a Mí; eva—con certeza; esyasi—llegarás; asamsayah—sin ninguna duda.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Por lo tanto, Arjuna, siempre debes pensar en Mí en la forma de Krishna, y al mismo tiempo desempeñar tu deber prescrito de pelear. Con tus actividades dedicadas a Mí y con la mente y la inteligencia fijas en Mí, llegarás a Mí sin duda alguna.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Esta instrucción que se le da a Arjuna es muy importante para todos los hombres que están dedicados a las actividades materiales. El Señor no dice que uno deba abandonar sus deberes u ocupaciones prescritas. Uno puede continuar con ellos, y al mismo tiempo pensar en Krishna mediante el canto de Hare Krishna. Eso lo librará a uno de la contaminación material, y le ocupará la mente y la inteligencia en Krishna. Mediante el canto de los nombres de Krishna, uno se trasladará al planeta supremo, Krsnaloka, sin ninguna duda.
+</p>
+<p class='vspace'>VERSO 8
+</p>
+<div class='vspace'></div><pre> abhyasa-yoga-yuktena
+ cetasa nanya-gamina
+ paramam purusam divyam
+ yati parthanucintayan
+</pre><p class='vspace'>abhyasa-yoga—mediante la práctica; yuktena—estando dedicado a la meditación; cetasa—mediante la mente y la inteligencia; na anya-gamina—sin que se aparten; paramam—el Supremo; purusam—la Personalidad de Dios; divyam—trascendental; yati—uno alcanza; partha—¡oh, hijo de Prtha!; anucintayan—pensando constantemente en.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquel que medita en Mí como Suprema Personalidad de Dios, con la mente constantemente dedicada a recordarme a Mí, y que no se aparta del sendero, él, ¡oh, Partha!, es seguro que llega a Mí.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En este verso el Señor Krishna hace énfasis en la importancia de recordarlo a Él. Uno revive su recuerdo de Krishna mediante el canto del maha-mantra, Hare Krishna. Mediante esta práctica de cantar y oír la vibración sonora del Señor Supremo, se ocupan el oído, la lengua y la mente de uno. Esta meditación mística es muy fácil de practicar, y lo ayuda a uno a alcanzar al Señor Supremo. Purusam significa disfrutador. Aunque las entidades vivientes pertenecen a la energía marginal del Señor Supremo, se hallan en medio de la contaminación material. Ellas se creen disfrutadoras, pero no son el disfrutador supremo. Aquí se afirma claramente que el disfrutador supremo es la Suprema Personalidad de Dios, en Sus diferentes manifestaciones y expansiones plenarias, tales como Narayana, Vasudeva, etc.
+</p>
+<p class='vspace'>Mediante el canto de Hare Krishna, el devoto puede pensar constantemente en el objeto de la adoración —el Señor Supremo—, en cualquiera de Sus aspectos —Narayana, Krishna, Rama, etc.—. Esta práctica lo purificará y al final de su vida, debido a su canto constante, será trasladado al Reino de Dios. La práctica del yoga consiste en meditar en la Superalma que está dentro; de forma similar, mediante el canto de Hare Krishna, uno siempre fija la mente en el Señor Supremo. La mente es veleidosa y, en consecuencia, es necesario ocuparla a la fuerza en pensar en Krishna. Un ejemplo que se da a menudo es el de la oruga que piensa en volverse una mariposa, y, de ese modo, se transforma en una mariposa en la misma vida. Así mismo, si pensamos constantemente en Krishna, es seguro que al final de nuestra vida tendremos la misma constitución física que Krishna.
+</p>
+<p class='vspace'>VERSO 9
+</p>
+<div class='vspace'></div><pre> kavim puranam anusasitaram
+ anor aniyamsam anusmared yah
+ sarvasya dhataram acintya-rupam
+ aditya-varnam tasmasah parastat
+</pre><p class='vspace'>kavim—aquel que lo sabe todo; puranam—el más antiguo; anusasitaram—el controlador; anoh—que el átomo; aniyamsam—más pequeño; anusmaret—siempre piensa en; yah—aquel que; sarvasya—de todo; dhataram—el sustentador; acintya—inconcebible; rupam—cuya forma; aditya-varnam—luminoso como el Sol; tamasah—a la oscuridad; parastat—trascendental.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Se debe meditar en la Persona Suprema como aquel que lo sabe todo, que es el más antiguo de todos, que es el controlador, que es más pequeño que lo más pequeño, que es el sustentador de todo, que está más allá de toda concepción material, que es inconcebible y que siempre es una persona. Él es luminoso como el Sol, y es trascendental, más allá de esta naturaleza material.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En este verso se menciona el proceso a seguir para pensar en el Supremo. Lo más importante de todo es que Él no es impersonal o vacío. Uno no puede meditar en algo impersonal o vacío. Eso es muy difícil. Sin embargo, el proceso que se sigue para pensar en Krishna es muy fácil, y se expone aquí concretamente. En primer lugar, el Señor es purusa, una persona: pensamos en la persona Rama y en la persona Krishna. Y ya sea que uno piense en Rama o en Krishna, en este verso de El Bhagavad-gita se dice cómo es Él. El Señor es kavi, es decir, conoce el pasado, el presente y el futuro, y, por ende, lo conoce todo. Él es la personalidad más antigua que existe, porque es el origen de todo; todo nace de Él. Él es, además, el supremo controlador del universo, y el sustentador e instructor de la humanidad. Él es más pequeño que lo más pequeño. La entidad viviente es la diezmilésima parte de la punta de un cabello, pero el Señor es tan inconcebiblemente pequeño, que entra en el corazón de esa partícula. Por eso se lo llama "más pequeño que lo más pequeño". 
+</p>
+<p class='vspace'>En Su carácter de Supremo, Él puede entrar en el átomo y en el corazón de lo más pequeño que existe, y controlarlo en forma de la Superalma. Aunque Él es así de pequeño, aun así es omnipresente y lo mantiene todo. Todos estos sistemas planetarios son sustentados por Él. A menudo nos preguntamos cómo estos grandes planetas flotan en el aire. Aquí se dice que el Señor Supremo, por medio de Su energía inconcebible, está sustentando a todos estos grandes planetas y sistemas de galaxias. La palabra acintya ("inconcebible") es muy significativa en relación con esto. La energía de Dios está más allá de nuestra concepción, más allá de la jurisdicción de nuestro pensamiento, y, por consiguiente, se dice que es inconcebible (acintya). ¿Quién puede objetar este punto? Él se encuentra difundido por todo este mundo material y, sin embargo, está más allá de él. Nosotros ni siquiera podemos comprender este mundo material, que es insignificante en comparación con el mundo espiritual, así que, ¿cómo vamos a comprender lo que está más allá de él? Acintya significa aquello que está más allá de este mundo material, aquello que nuestro argumento, nuestra lógica y nuestra especulación filosófica no pueden tocar, aquello que es inconcebible. Por lo tanto, las personas inteligentes, evitando el argumento y la especulación inútil, deben aceptar lo que se declara en Escrituras tales como los Vedas, El Bhagavad-gita y El Srimad-Bhagavatam, y deben seguir los principios que en ellas se estipulan. Esto lo llevará a uno a entender.
+</p>
+<p class='vspace'>VERSO 10
+</p>
+<div class='vspace'></div><pre> prayana-kale manasacalena
+ bhaktya yukto yoga-balena caiva
+ bhruvor madhye pranam avesya samyak
+ sa tam param purusam upaiti divyam
+</pre><p class='vspace'>prayana-kale—en el momento de la muerte; manasa—por medio de la mente; acalena—sin que se aparte; bhaktya—con toda devoción; yuktah—dedicado; yoga-balena—mediante el poder del yoga místico; ca—también; eva—ciertamente; bhruvoh—las dos cejas; madhye—entre; pranam—el aire vital; avesya—estableciendo; samyak—por completo; sah—él; tam—eso; param—trascendental; purusam—la Personalidad de Dios; upaiti—consigue; divyam—en el reino espiritual.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquel que, en el momento de la muerte, fije su aire vital entre las cejas y, por la fuerza del yoga, con una mente recta, se dedique a recordar al Señor Supremo con toda devoción, ciertamente que llegará a la Suprema Personalidad de Dios.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En este verso se afirma claramente que, a la hora de la muerte, la mente debe estar fija en la devoción por la Suprema Personalidad de Dios. A los expertos en yoga se les recomienda que eleven la fuerza vital hasta el entrecejo (hasta el ajña-cakra). Aquí se está sugiriendo la práctica del sat-cakra-yoga, que implica el meditar en los seis cakras. El devoto puro no practica ese yoga, pero como él siempre está dedicado al proceso de conciencia de Krishna, en el momento de morir puede recordar a la Suprema Personalidad de Dios, por la gracia de Él. Esto se explica en el verso 14.
+</p>
+<p class='vspace'>En este verso es significativo el uso específico de la palabra yoga-balena, porque sin la práctica del yoga —ya sea el sat-cakra-yoga o el bhakti-yoga—, a la hora de la muerte no se puede llegar a ese estado trascendental de la existencia. Al morir, uno no puede recordar súbitamente al Señor Supremo; se debe haber practicado algún sistema de yoga, especialmente el sistema del bhakti-yoga. Como en el momento de morir se tiene la mente muy perturbada, durante la vida se debe practicar la trascendencia a través del yoga.
+</p>
+<p class='vspace'>VERSO 11
+</p>
+<div class='vspace'></div><pre> yad aksaram veda-vido vadanti
+ visanti yad yatayo vita-ragah
+ yad icchanto brahmacaryam caranti
+ tat te padam sangrahena pravaksye
+</pre><p class='vspace'>yat—aquello que; aksaram—la sílaba om; veda-vidah—personas versadas en los Vedas; vadanti—dicen; visanti—entran; yat—en el cual; yatayah—grandes sabios; vita-ragah—en la orden de vida de renuncia; yat—aquello que; icchantah—deseando; brahmacaryam—celibato; caranti—practican; tat—eso; te—a ti; padam—situación; sangrahena—en resumen; pravaksye—explicaré.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Las personas que están versadas en los Vedas, que profieren el omkara y que son grandes sabios de la orden de renuncia, entran en el Brahman. Al desear esa perfección, uno practica celibato. Ahora te explicaré brevemente ese proceso, mediante el cual se puede lograr la salvación.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>El Señor Sri Krishna le ha recomendado a Arjuna la práctica del sat-cakra-yoga, en 
+la que uno coloca en el entrecejo el aire de la vida. Dando por sentado que Arjuna quizás no sepa cómo practicar el sat-cakra-yoga, el Señor explica el proceso en los versos siguientes. El Señor dice que aunque el Brahman no tiene igual, tiene diversas manifestaciones y aspectos. En especial para los impersonalistas, el aksara, o el omkara —la sílaba om—, es idéntica al Brahman. Krishna explica aquí el Brahman impersonal, en el que entran los sabios de la orden renunciante.
+En el sistema védico del conocimiento, a los estudiantes se les enseña desde el mismo comienzo a proferir el om y aprender lo referente al Supremo Brahman impersonal, mientras viven con el maestro espiritual en completo celibato. De ese modo, ellos llegan a comprender dos de los aspectos del Brahman. Esa práctica es muy esencial para el adelanto del estudiante en la vida espiritual, pero en los actuales momentos, esa clase de vida de brahmacari (de soltero célibe) no es posible en absoluto. La estructura social del mundo ha cambiado tanto, que no hay ninguna posibilidad de practicar celibato desde el comienzo de la vida de estudiante. Por todas partes del mundo hay muchas instituciones para diferentes departamentos del conocimiento, pero no hay ninguna institución reconocida en la que se pueda educar a los estudiantes en los principios de brahmacari. A menos que se practique celibato, el adelanto en la vida espiritual es muy difícil. Por lo tanto, el Señor Caitanya, de conformidad con las disposiciones de las Escrituras para esta era de Kali, ha anunciado que en esta era no es posible llevar a cabo ningún proceso para comprender al Supremo, aparte del canto del santo nombre del Señor Krishna: Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare.
+</p>
+<p class='vspace'>VERSO 12
+</p>
+<div class='vspace'></div><pre> sarva-dvarani samyamya 
+ mano hrdi nirudhya ca 
+ murdhny adhayatmanah pranam
+ asthito yoga-dharanam
+</pre><p class='vspace'>sarva-dvarani—todas las puertas del cuerpo; samyamya—controlando; manah—la mente; hrdi—en el corazón; nirudhya—confinando; ca—también; murdhni—en la cabeza; adhaya—fijación; atmanah—del alma; pranam—el aire vital; asthitah—situado en; yoga-dharanam—la situación yóguica.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>La situación yóguica es la de estar desapegado de todas las ocupaciones de los sentidos. Cerrando todas las puertas de los sentidos y fijando la mente en el corazón y el aire vital en la parte superior de la cabeza, uno se establece en el yoga.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Para practicar yoga tal como se sugiere aquí, primero hay que cerrarle las puertas a todo el disfrute de los sentidos. Esta práctica se denomina pratyahara, o el acto de apartar los sentidos de sus objetos. Los órganos de los sentidos para adquirir conocimiento —los ojos, los oídos, la nariz, la lengua y el tacto— deben ser controlados por completo, y a ellos no se les debe permitir dedicarse a la complacencia propia. De ese modo, la mente se enfoca en la Superalma que está en el corazón, y la fuerza vital es elevada a la parte superior de la cabeza. En el Capítulo Sexto se describe ese proceso de forma detallada. Pero, como se mencionó antes, ese método no es práctico en esta era. El mejor proceso es el de conciencia de Krishna. Si uno siempre es capaz de fijar la mente en Krishna mediante el servicio devocional, le será muy fácil permanecer en un trance trascendental imperturbable, es decir, en samadhi.
+</p>
+<p class='vspace'>VERSO 13
+</p>
+<div class='vspace'></div><pre> om ity ekaksaram brahma
+ vyaharan mam anusmaran
+ yah prayati tyajan deham
+ sa yati paramam gatim
+</pre><p class='vspace'>om—la combinación de letras om (omkara); iti—así pues; eka-aksaram—la sílaba única; brahma—absoluto; vyaharan—profiriendo; mam—a Mí (Krishna); anusmaran—recordando; yah—todo el que; prayati—deje; tyajan—abandonando; deham—este cuerpo; sah—él; yati—consigue; paramam—el supremo; gatim—destino.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Si después de situarse en esa práctica del yoga y de proferir la sagrada sílaba om, la suprema combinación de letras, uno piensa en la Suprema Personalidad de Dios y abandona su cuerpo, es seguro que llegará a los planetas espirituales.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí se afirma claramente que om, el Brahman y el Señor Krishna no son diferentes. El om es el sonido impersonal de Krishna, pero el sonido Hare Krishna contiene al om. El canto del mantra Hare Krishna se recomienda claramente para esta era, por lo cual si uno abandona su cuerpo al final de la vida cantando Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare, llegará sin duda a uno de los planetas espirituales, de conformidad con la modalidad de su práctica. Los devotos de Krishna entran en el planeta de Krishna, Goloka Vrndavana. Para los personalistas también hay infinidad de otros planetas en el cielo espiritual, conocidos como planetas Vaikunthas, mientras que los impersonalistas permanecen en el brahmajyoti.
+</p>
+<p class='vspace'>VERSO 14
+</p>
+<div class='vspace'></div><pre> ananya-cetah satatam
+ yo mam smarati nityasah
+ tasyaham sulabhah partha
+ nitya-yuktasya yoginah
+</pre><p class='vspace'>ananya-cetah—sin desviación de la mente; satatam—siempre; yah—todo el que; mam—a Mí (Krishna); smarati—recuerda; nityasah—regularmente; tasya—a él; aham—Yo soy; su-labhah—fácil de conseguir; partha—¡oh, hijo de Prtha!; nitya—regularmente; yuktasya—dedicado; yoginah—para el devoto.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Para aquel que siempre Me recuerda sin desviación, Yo soy fácil de obtener, ¡oh, hijo de Prtha!, debido a su constante ocupación en el servicio devocional.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Este verso describe especialmente el destino final al que llegan los devotos puros que sirven a la Suprema Personalidad de Dios mediante el bhakti-yoga. En versos anteriores se han mencionado cuatro clases de devotos: los afligidos, los indagadores, aquellos que buscan ganancia material y los filósofos especuladores. También se han descrito diferentes procesos de liberación: el karma-yoga, el jñana-yoga y el hatha-yoga. Los principios de esos sistemas de yoga tienen añadido un poco de bhakti, pero en este verso se menciona particularmente el bhakti-yoga puro, sin ninguna mezcla de jñana, karma o hatha. Como se indica con la palabra ananya-cetah, en el bhakti-yoga puro el devoto no desea nada aparte de Krishna. Un devoto puro no desea ser promovido a los planetas celestiales, ni busca la unidad con el brahmajyoti ni la salvación o la liberación del enredo material. El devoto puro no desea nada. En El Caitanya-caritamrta, al devoto puro se lo llama niskama, que significa que él no tiene ningún deseo de procurar su bien personal. La paz perfecta le pertenece sólo a él, y no a aquellos que se esfuerzan por el beneficio personal. Mientras que el jñana-yogi, el karma-yogi o el hatha-yogi tienen sus propios intereses egoístas, un devoto perfecto no tiene ningún otro deseo más que el de complacer a la Suprema Personalidad de Dios. Por consiguiente, el Señor dice que a alguien que está consagrado a Él de un modo resuelto, le es fácil 
+conseguirlo a Él.
+</p>
+<p class='vspace'>El devoto puro siempre se dedica a prestarle servicio devocional a Krishna en uno de Sus diversos aspectos personales. Krishna tiene diversas encarnaciones y expansiones plenarias, tales como Rama y Nrsimha, y el devoto puede escoger fijar la mente en cualquiera de esas trascendentales formas del Señor Supremo, con un servicio amoroso. Esa clase de devoto no se encuentra con ninguno de los problemas que plagan a los practicantes de otros yogas. El bhakti-yoga es muy sencillo, puro y fácil de ejecutar. Uno puede comenzar simplemente con el canto de Hare Krishna. El Señor es misericordioso con todos, pero como ya lo hemos explicado, Él se inclina de un modo especial por aquellos que siempre lo sirven sin desviación. El Señor ayuda a esos devotos de diversas maneras. Como se afirma en los Vedas, (El Katha Upanisad 1.2.23): yam evaisa vrnute tena labhyas/ tasyaisa atma vivrnute tanum svam, aquel que está plenamente entregado y dedicado al servicio devocional del Señor Supremo, puede entenderlo a Él tal como Él es. Y como se declara en El Bhagavad-gita (10.10): dadami buddhi-yogam tam, el Señor le da a ese devoto la inteligencia suficiente como para que al final el devoto pueda llegar a Él en Su reino espiritual.
+</p>
+<p class='vspace'>La característica especial que tiene el devoto puro es la de que siempre está pensando en Krishna sin desviación y sin considerar el tiempo o el lugar. No tiene que haber ningún impedimento. Él debe ser capaz de desempeñar su servicio en cualquier parte y en cualquier momento. Algunos dicen que el devoto debe permanecer en lugares sagrados tales como Vrndavana, o algún pueblo sagrado en el que el Señor vivió, pero el devoto puro puede vivir en cualquier parte y crear la atmósfera de Vrndavana por medio de su servicio devocional. Sri Advaita le dijo al Señor Caitanya: "Dondequiera que Tú te encuentres, ¡oh, Señor!, ahí es Vrndavana".
+</p>
+<p class='vspace'>Como se indica con las palabras satatam y nityasah, que significan "siempre", "regularmente" o "todos los días", el devoto puro constantemente recuerda a Krishna y medita en Él. Éstas son cualidades del devoto puro para quien el Señor es muy fácil de conseguir. El bhakti-yoga es el sistema que el Gita recomienda por encima de todos los demás. Por lo general, los bhakti-yogis se ocupan de cinco diferentes maneras: (1) santa-bhakta, se ocupan en el servicio devocional en estado de neutralidad; (2) dasya-bhakta, se ocupan en el servicio devocional como sirvientes; (3) sakhya-bhakta, se ocupan como amigos; (4) vatsalya-bhakta, se ocupan como padres o madres; y (5) madhurya-bhakta, se ocupan como amantes conyugales del Señor Supremo. De cualquiera de esas maneras, el devoto puro siempre está dedicado de un modo constante al amoroso servicio trascendental del Señor Supremo y no puede olvidar al Señor Supremo, y por eso para él el Señor es fácil de conseguir. El devoto puro no puede olvidar al Señor Supremo ni por un momento, y, de la misma manera, el Señor Supremo no puede olvidar a Su devoto puro ni por un momento. Ésa es la gran bendición del proceso de conciencia de Krishna que consiste en el canto del maha-mantra, Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare.
+</p>
+<p class='vspace'>VERSO 15
+</p>
+<div class='vspace'></div><pre> mam upetya punar janma
+ duhkhalayam asasvatam
+ napnuvanti mahatmanah
+ samsiddhim paramam gatah
+</pre><p class='vspace'>mam—a Mí; upetya—llegando; punah—de nuevo; janma—nacimiento; duhkha-alayam—lugar de sufrimientos; asasvatam—temporal; na—nunca; apnuvanti—logran; maha-atmanah—las grandes almas; samsiddhim—perfección; paramam—máxima; gatah—habiendo logrado.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Después de llegar a Mí, las grandes almas, que son yogis en estado de devoción, jamás regresan a este mundo temporal, el cual está lleno de sufrimientos, ya que han logrado la máxima perfección.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Como este temporal mundo material está lleno de los sufrimientos del nacimiento, la vejez, las enfermedades y la muerte, aquel que logra la máxima perfección y llega al planeta supremo, Krsnaloka, Goloka Vrndavana, naturalmente no desea regresar. Al planeta supremo se lo describe en la literatura védica como avyakta, aksara y parama-gati; en otras palabras, ese planeta se encuentra fuera del alcance de nuestra visión material y es inexplicable, pero es la máxima meta, el destino de los mahatmas (las grandes almas). Los mahatmas reciben mensajes trascendentales de labios de los devotos iluminados, y de ese modo se desarrolla en ellos gradualmente el servicio devocional con conciencia de Krishna; y ellos quedan tan absortos en el servicio trascendental, que dejan de desear elevarse a ninguno de los planetas materiales, y ni siquiera quieren ser trasladados a ningún planeta espiritual. Ellos sólo quieren a Krishna y la compañía de Krishna, y nada más. Ésa es la máxima perfección de la vida. Este verso menciona específicamente a los devotos personalistas del Señor Supremo, Krishna. Estos devotos en estado de conciencia de Krishna logran la máxima perfección de la vida. En otras palabras, ellos son las almas supremas.
+</p>
+<p class='vspace'>VERSO 16
+</p>
+<div class='vspace'></div><pre> a-brahma-bhuvanal lokah
+ punar avartino ‘rjuna 
+ mam upetya tu kaunteya
+ punar janma na vidyate
+</pre><p class='vspace'>a-brahma—hasta el planeta Brahmaloka; bhuvanat—de los sistemas planetarios; lokah—planetas; punah—de nuevo; avartinah—de regresar; arjuna—¡oh, Arjuna!; mam—a Mí; upetya—llegando; tu—pero; kaunteya—¡oh, hijo de Kunti!; punah janma—volver a nacer; na—nunca; vidyate—ocurre.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Desde el planeta más elevado del mundo material hasta el más bajo de ellos, todos son lugares de sufrimiento en los que ocurre el reiterado proceso del nacimiento y la muerte. Pero aquel que llega a Mi morada, ¡oh, hijo de Kunti!, nunca vuelve a 
+nacer.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Tarde o temprano, todas las clases de yogis —los karma-yogis, los jñana-yogis, los hatha-yogis, etc.— tienen que llegar a la perfección devocional del bhakti-yoga, o el proceso de conciencia de Krishna, antes de que puedan ir a la trascendental morada de Krishna y jamás regresar. Aquellos que llegan a los planetas materiales más elevados de todos, los planetas de los semidioses, quedan de nuevo supeditados al reiterado proceso del nacimiento y la muerte. Así como las personas de la Tierra son elevadas a planetas superiores, la gente de planetas superiores tales como Brahmaloka, Candraloka e Indraloka, cae a la Tierra. La práctica del sacrificio denominado pañcagni-vidya, que se recomienda en El Chandogya Upanisad, lo capacita a uno para llegar a Brahmaloka, pero si en Brahmaloka uno no cultiva su conciencia de Krishna, debe entonces regresar a la Tierra. Aquellos que en los planetas superiores progresan en el cultivo de conciencia de Krishna, son elevados gradualmente a planetas cada vez más elevados, y en el momento de la devastación universal son trasladados al reino espiritual eterno. En su comentario a El Bhagavad-gita, Sridhara Svami cita este verso:
+</p>
+<div class='vspace'></div><pre> brahmana saha te sarve
+ samprapte pratisañcare
+ parasyante krtatmanah
+ pravisanti param padam
+</pre><p class='vspace'>"Cuando ocurre la devastación de este universo material, Brahma y sus devotos, quienes están constantemente dedicados al proceso de conciencia de Krishna, son trasladados al universo espiritual y a planetas espirituales específicos, conforme a sus deseos".
+</p>
+<p class='vspace'>VERSO 17
+</p>
+<div class='vspace'></div><pre> sahasra-yuga-paryantam
+ ahar yad brahmano viduh
+ ratrim yuga-sahasrantam
+ te 'ho-ratra-vido janah
+</pre><p class='vspace'>sahasra—mil; yuga—milenios; paryantam—constituyen; ahah—día; yat—aquello que; brahmanah—de Brahma; viduh—ellos saben; ratrim—noche; yuga—milenios; sahasra-antam—de igual modo, terminando después de mil; te—ellos; ahah-ratra—día y noche; vidah—que entiende; janah—gente.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>En función de los cálculos humanos, el conjunto de mil eras constituye la duración de un día de Brahma. Y ésa es también la duración de su noche.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La duración del universo material es limitada. Esa duración se manifiesta en ciclos de kalpas. Un kalpa es un día de Brahma, y un día de Brahma consta de mil ciclos de cuatro yugas, o eras: Satya, Treta, Dvapara y Kali. El ciclo de Satya se caracteriza por la virtud, la sabiduría y la religión, sin que en él prácticamente exista la ignorancia y el vicio, y el yuga dura 1.728.000 años. En el Treta-yuga se introduce el vicio, y este yuga dura 1.296.000 años. En el Dvapara-yuga hay una declinación aún mayor de la virtud y la religión, con el vicio en aumento, y este yuga dura 864.000 años. Y, finalmente, en el Kali-yuga (el yuga en el que hemos estado viviendo durante los últimos 5.000 años), hay una abundancia de contienda, ignorancia, irreligión y vicio, con la virtud verdadera prácticamente inexistente, y este yuga dura 432.000 años. En el Kali-yuga el vicio aumenta hasta tal punto, que al terminar el yuga el propio Señor Supremo aparece como el avatara Kalki, destruye a los demonios, salva a Sus devotos y comienza otro Satya-yuga. Luego, el proceso se pone en marcha de nuevo. Estos cuatro yugas, al transcurrir mil veces, constituyen un día de Brahma, y el mismo número constituye una noche. Brahma vive cien de esos "años", y luego muere. Según los cálculos terrenales, esos "cien años" ascienden a un total de 311.040.000.000.000 de años terrestres. De acuerdo con esos cálculos, la vida de Brahma parece fantástica e interminable, pero desde el punto de vista de la eternidad es tan fugaz como la luz del relámpago. En el océano Causal hay infinidad de Brahmas que surgen y desaparecen como las burbujas en el Atlántico. Brahma y su creación son todos parte del universo material y, por consiguiente, están en flujo constante.
+En el universo material, ni siquiera Brahma está libre del proceso del nacimiento, la vejez, las enfermedades y la muerte. Sin embargo, Brahma está dedicado directamente al servicio del Señor Supremo en la administración de este universo, y, en consecuencia, logra de inmediato la liberación. A los sannyasis elevados se los promueve al planeta específico de Brahma, Brahmaloka, que es el planeta más elevado del universo material y el cual sobrevive a todos los planetas celestiales de los estratos superiores del sistema planetario; pero a su debido tiempo, Brahma y todos los habitantes de Brahmaloka tienen que someterse a la muerte, conforme a la ley de la naturaleza material.
+</p>
+<p class='vspace'>VERSO 18
+</p>
+<div class='vspace'></div><pre> avyaktad vyaktayah sarvah
+ prabhavanty ahar-agame
+ ratry-agame praliyante
+ tatraivavyakta-samjñake
+</pre><p class='vspace'>avyaktat—de lo no manifiesto; vyaktayah—entidades vivientes; sarvah—todas; prabhavanti—se manifiestan; ahah-agame—al comienzo del día; ratri-agame—a la caída de la noche; praliyante—son aniquiladas; tatra—dentro de eso; eva—ciertamente; avyakta—lo no manifiesto; samjñake—que se denomina.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Al comienzo del día de Brahma, todas las entidades vivientes se manifiestan del estado no manifiesto, y luego, cuando cae la noche, se funden de nuevo en lo no manifiesto.
+</p>
+<p class='vspace'>VERSO 19
+</p>
+<div class='vspace'></div><pre> bhuta-gramah sa evayam
+ bhutva bhutva praliyate
+ ratry-agame ‘vasah partha
+ prabhavaty ahar-agame
+</pre><p class='vspace'>bhuta-gramah—el conjunto de todas las entidades vivientes; sah—éstas; eva—ciertamente; ayam—esto; bhutva bhutva—naciendo reiteradamente; praliyate—es aniquilado; ratri—de la noche; agame—a la llegada; avasah—automáticamente; partha—¡oh, hijo de Prtha!; prabhavati—se manifiesta; ahah—del día; agame—a la llegada.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Una y otra vez, cuando llega el día de Brahma, todas las entidades vivientes pasan a existir, y con la llegada de la noche de Brahma son aniquiladas irremediablemente.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Los poco inteligentes, quienes tratan de permanecer dentro de este mundo material, pueden ser elevados a planetas superiores, y luego tienen que descender de nuevo a este planeta Tierra. Durante el día de Brahma, ellos pueden exhibir sus actividades en planetas superiores e inferiores de este mundo material, pero cuando llega la noche de Brahma todos ellos son aniquilados. En el día, ellos reciben diversos cuerpos para las actividades materiales, y de noche dejan de tener cuerpos y más bien permanecen encerrados en el cuerpo de Visnu. Luego, a la llegada del día de Brahma, ellos se manifiestan de nuevo. Bhutva bhutva praliyate: durante el día se manifiestan, y de noche vuelven a ser aniquilados. Finalmente, cuando la vida de Brahma se termina, todos ellos son aniquilados y permanecen en un estado no manifiesto durante millones y millones de años. Y cuando Brahma vuelve a nacer en otro milenio, ellos se manifiestan de nuevo. De esa manera, el hechizo del mundo material los cautiva. Pero aquellas personas inteligentes que emprenden el proceso de conciencia de Krishna, emplean la forma de vida humana plenamente en el servicio devocional del Señor, cantando Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare/ Hare Rama, Hare Rama, Rama Rama, Hare Hare. De ese modo, ellas se trasladan incluso en esta vida al planeta espiritual de Krishna, y ahí se vuelven dichosas eternamente, sin estar supeditadas a esos renacimientos.
+</p>
+<p class='vspace'>VERSO 20
+</p>
+<div class='vspace'></div><pre> paras tasmat tu bhavo ‘nyo
+ ‘vyakto ‘vyaktat sanatanah
+ yah sa sarvesu bhutesu
+ nasyatsu na vinasyati
+</pre><p class='vspace'>parah—trascendental; tasmat—a eso; tu—pero; bhavah—naturaleza; anyah—otra; avyaktah—no manifiesta; avyaktat—a lo no manifiesto; sanatanah—eterna; yah sah—aquello que; sarvesu—toda; bhutesu—manifestación; nasyatsu—siendo aniquilada; na—nunca; vinasyati—es aniquilada.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Mas, existe otra naturaleza no manifiesta, que es eterna y trascendental a esta 
+materia manifestada y no manifestada. Esa naturaleza es suprema y nunca es aniquilada. Cuando todo en este mundo es aniquilado, esa parte permanece tal como es.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La energía espiritual y superior de Krishna es trascendental y eterna. Esa energía está más allá de todos los cambios de la naturaleza material, la cual es manifestada y aniquilada durante los días y las noches de Brahma. La energía superior de Krishna es de una calidad totalmente opuesta a la naturaleza material. La naturaleza superior y la inferior se explican en el Capítulo Siete.
+</p>
+<p class='vspace'>VERSO 21
+</p>
+<div class='vspace'></div><pre> avyakto ‘ksara ity uktas
+ tam ahuh paramam gatim
+ yam prapya na nivartante
+ tad dhama paramam mama
+</pre><p class='vspace'>avyaktah—no manifiesto; aksarah—infalible; iti—así pues; uktah—se dice; tam—aquello; ahuh—se conoce; paramam—supremo; gatim—destino; yam—aquello que; prapya—obteniendo; na—nunca; nivartante—regresa; tat—esa; dhama—morada; paramam—suprema; mama—Mi.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquello que los vedantistas describen como no manifiesto e infalible, aquello que se conoce como el destino supremo, ese lugar del que, después de llegar a él, nunca se regresa, ésa es Mi morada suprema.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En El Brahma-samhita se describe la morada suprema de la Personalidad de Dios, Krishna, como cintamani-dhama, un lugar en el que se cumplen todos los deseos. La morada suprema del Señor Krishna, conocida como Goloka Vrndavana, está llena de palacios hechos de piedra de toque. Ahí también hay árboles, llamados "árboles de los deseos", que dan cualquier tipo de comestibles que se les pida, y hay vacas, conocidas como vacas surabhi, que suministran leche en cantidades ilimitadas. En esa morada, al Señor lo sirven cientos de miles de diosas de la fortuna (Laksmis), y a Él se lo llama Govinda, el Señor original y la causa de todas las causas. El Señor acostumbra a tocar Su flauta (venum kvanantam). Su forma trascendental es lo más atractivo que existe en todos los mundos: Sus ojos son como pétalos de loto, y el color de Su cuerpo es como el color de las nubes. Él es tan atractivo, que Su belleza supera la de miles de Cupidos. Él lleva una tela azafrán, una guirnalda alrededor del cuello y una pluma de pavo real en el cabello. En El Bhagavad-gita, el Señor Krishna sólo da una pequeña indicación acerca de Su morada personal, Goloka Vrndavana, que es el planeta supremo del reino espiritual. En El Brahma-samhita se da una descripción vívida de él. La literatura védica (El Katha Upanisad 1.3.11) declara que no hay nada superior a la morada de la Divinidad Suprema, y que esa morada es el destino último (purusan na param kiñcit sa kastha parama gatih). Cuando uno llega a ella, nunca regresa al mundo material. La morada suprema de Krishna y el propio Krishna no son diferentes entre sí, ya que son de la misma calidad. En esta Tierra, Vrndavana, una ciudad que se encuentra a 145 kilómetros del Sureste de Delhi, es una réplica de ese Goloka Vrndavana supremo ubicado en el cielo espiritual. Cuando Krishna descendió a esta Tierra, se divirtió en esa región específica conocida como Vrndavana, que ocupa unos 218 kilómetros cuadrados del distrito de Mathura, 
+India.
+</p>
+<p class='vspace'>VERSO 22
+</p>
+<div class='vspace'></div><pre> purusah sa parah partha
+ bhaktya labhyas tv ananyaya
+ yasyantah-sthani bhutani
+ yena sarvam idam tatam
+</pre><p class='vspace'>purusah—la Personalidad Suprema; sah—Él; parah—el Supremo, el más grande de todos; partha—¡oh, hijo de Prtha!; bhaktya—por medio del servicio devocional; labhyah—que puede conseguirse; tu—pero; ananyaya—puro, sin desviación; yasya—a quien; antah-sthani—dentro; bhutani—toda esta manifestación material; yena—por quien; sarvam—todo; idam—todo lo que podamos ver; tatam—está imbuido.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>A la Suprema Personalidad de Dios, quien es más grande que todos, se lo consigue mediante la devoción pura. Aunque Él se encuentra en Su morada, es omnipresente, y todo está situado dentro de Él.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí se afirma claramente que el destino supremo, del cual no hay regreso, es la morada de Krishna, la Persona Suprema. El Brahma-samhita describe esa morada suprema como ananda-cinmaya-rasa, un lugar en el que todo está colmado de bienaventuranza espiritual. Toda la variedad que ahí se manifiesta es de la calidad de la bienaventuranza espiritual: ahí nada es material. Esa variedad se expande como la expansión espiritual de la propia Divinidad Suprema, pues la manifestación que hay ahí procede totalmente de la energía espiritual, tal como se explica en el Capítulo Siete. En lo que respecta a este mundo material, aunque el Señor siempre está en Su morada suprema, no obstante Él es omnipresente mediante Su energía material. De modo que, mediante Sus energías materiales y espirituales, Él está presente en todas partes —tanto en el universo material como en el espiritual—. Yasyantah-sthani significa que todo se sustenta dentro de Él, o bien dentro de Su energía espiritual, o dentro de Su energía material. El Señor es omnipresente mediante esas dos energías.
+</p>
+<p class='vspace'>Entrar en la suprema morada de Krishna, o los innumerables planetas Vaikuntha, sólo es posible por medio del bhakti, el servicio devocional, tal como se indica aquí claramente con la palabra bhaktya. Ningún otro proceso puede ayudarlo a uno a llegar a esa morada suprema. Los Vedas (El Gopala-tapani Upanisad 3.2) también describen la morada suprema y a la Suprema Personalidad de Dios. Eko vasi sarva-gah krsnah. En esa morada sólo hay una Suprema Personalidad de Dios, cuyo nombre es Krishna. Él es la Deidad misericordiosa y suprema, y aunque se encuentra ahí como único, se ha expandido en forma de millones y millones de expansiones plenarias. Los Vedas dicen que el Señor es como un árbol, que, aunque está fijo, produce muchas variedades de frutos, flores y hojas que cambian. Las expansiones plenarias del Señor que presiden en los planetas Vaikuntha tienen cuatro brazos, y se las conoce por una variedad de nombres: Purusottama, Trivikrama, Kesava, Madhava, Aniruddha, Hrsikesa, Sankarsana, Pradyumna, Sridhara, Vasudeva, Damodara, Janardana, Narayana, Vamana, Padmanabha, etc.
+</p>
+<p class='vspace'>El Brahma-samhita (5.37) también confirma que, aunque el Señor siempre está en la morada suprema, Goloka Vrndavana, Él es omnipresente, por lo cual todo se lleva a cabo como debe ser (goloka eva nivasaty akhilatma-bhutah). Como se declara en los Vedas (El Svetasvatara Upanisad 6.8): parasya saktir vividhaiva sruyate/ svabhaviki jñana-bala-kriya ca, las energías del Señor Supremo son tan expansivas, que, aunque Él está sumamente lejos, ellas, sistemáticamente y sin ninguna falla, conducen todo en la manifestación cósmica.
+</p>
+<p class='vspace'>VERSO 23
+</p>
+<div class='vspace'></div><pre> yatra kale tv anavrttim
+ avrttim caiva yoginah
+ prayata yanti tam kalam
+ vaksyami bharatarsabha
+</pre><p class='vspace'>yatra—en el cual; kale—momento; tu—y; anavrttim—no regresa; avrttim—regresa; ca—también; eva—ciertamente; yoginah—diferentes clases de místicos; prayatah—habiendo partido; yanti—consigue; tam—ese; kalam—momento; vaksyami—describiré; bharata-rsabha—¡oh, tú, el mejor de los Bharatas!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>¡Oh, tú, el mejor de los Bharatas!, ahora te voy a explicar los diferentes momentos 
+en los que, cuando el yogi se va de este mundo, regresa a él o no regresa.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>A los devotos puros del Señor Supremo, quienes son almas totalmente entregadas, no les importa cuándo van a abandonar sus cuerpos ni con qué método. Ellos dejan todo en manos de Krishna, y de ese modo regresan a Dios fácil y felizmente. Pero aquellos que no son devotos puros, y que dependen más bien de métodos de iluminación espiritual tales como el karma-yoga, el jñana-yoga y el hatha-yoga, deben abandonar el cuerpo en un momento adecuado, y así estar seguros de si van o no a regresar al mundo del nacimiento y la muerte.
+</p>
+<p class='vspace'>Si el yogi es perfecto, puede elegir el momento y la situación en la que quiere encontrarse al irse de este mundo material. Pero si no es tan perfecto, su éxito depende entonces de que accidentalmente se vaya en un determinado momento que sea adecuado. El Señor explica en el siguiente verso cuáles son los momentos adecuados para irse y no regresar. Según el acarya Baladeva Vidyabhusana, la palabra sánscrita kala que se usa aquí, se refiere a la deidad regente del tiempo.
+</p>
+<p class='vspace'>VERSO 24
+</p>
+<div class='vspace'></div><pre> agnir jyotir ahah suklah
+ san-masa uttarayanam
+ tatra prayata gacchanti
+ brahma brahma-vido janah
+</pre><p class='vspace'>agnih—fuego; jyotih—luz; ahah—día; suklah—la quincena blanca; sat-masah—los seis meses; uttara-ayanam—cuando el Sol pasa al lado Norte; tatra—ahí; prayatah—aquellos que mueren; gacchanti—van; brahma—al Absoluto; brahma-vidah—que conocen al Absoluto; janah—personas.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aquellos que conocen al Brahman Supremo, llegan a ese Supremo yéndose del mundo durante la influencia del dios del fuego, durante la luz, en un momento auspicioso del día, durante la quincena de la Luna creciente o durante los seis meses en que el Sol viaja por el Norte.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Cuando se mencionan el fuego, la luz, el día y la quincena de la Luna, se 
+sobrentiende que por sobre todos ellos hay diversas deidades regentes que organizan todo para el paso del alma. A la hora de la muerte, la mente lo transporta a uno por la senda que lleva a una nueva vida. Si uno abandona el cuerpo en el momento que se señaló antes, ya sea por accidente o por disposición, le es posible llegar al brahmajyoti impersonal. Los místicos que están adelantados en la práctica del yoga pueden planear en qué momento y lugar van a dejar el cuerpo. Los demás no tienen ningún control sobre ello; si por accidente se van en un momento auspicioso, entonces no regresarán al ciclo del nacimiento y la muerte, pero si no es así, hay muchas probabilidades de que tengan que regresar. Sin embargo, para el devoto puro en estado de conciencia de Krishna no hay el temor de que pueda regresar, ya sea que abandone el cuerpo en un momento auspicioso o inauspicioso, por accidente o por disposición.
+</p>
+<p class='vspace'>VERSO 25
+</p>
+<div class='vspace'></div><pre> dhumo ratris tatha krsnah
+ san-masa daksinayanam
+ tatra candramasam jyotir
+ yogi prapya nivartate
+</pre><p class='vspace'>dhumah—humo; ratrih—noche; tatha—también; krsnah—la quincena de la Luna menguante; sat-masah—los seis meses; daksina-ayanam—cuando el Sol pasa al lado Sur; tatra—ahí; candramasam—el planeta Luna; jyotih—la luz; yogi—el místico; prapya—llegando; nivartate—regresa.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>El místico que se va de este mundo durante el humo, durante la noche, durante la 
+quincena de la Luna menguante o durante los seis meses en que el Sol pasa al Sur, llega al planeta Luna, pero regresa de nuevo.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>En el Tercer Canto de El Srimad-Bhagavatam, Kapila Muni indica que aquellos 
+que en la Tierra son expertos en lo referente a las actividades fruitivas y los métodos de los sacrificios, al morir llegan a la Luna. Esas elevadas almas viven en la Luna durante unos 10.000 años (según el tiempo de los semidioses), y beben soma-rasa y así disfrutan de la vida. Tarde o temprano, ellos regresan a la Tierra. Esto significa que en la Luna hay seres vivos de clases superiores, aunque no se los pueda percibir con los sentidos ordinarios.
+</p>
+<p class='vspace'>VERSO 26
+</p>
+<div class='vspace'></div><pre> sukla-krsne gati hy ete
+ jagatah sasvate mate
+ ekaya yaty anavrttim
+ anyayavartate punah
+</pre><p class='vspace'>sukla—luz; krsne—y oscuridad; gati—maneras de morir; hi—ciertamente; ete—estas dos; jagatah—del mundo material; sasvate—de los Vedas; mate—en opinión; ekaya—con una; yati—va; anarvrttim—para no regresar; anyaya—con la otra; avartate—regresa; punah—de nuevo.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>De acuerdo con la opinión védica, hay dos maneras de irse de este mundo: una en la luz y la otra en la oscuridad. Cuando uno se va en la luz, no regresa; pero cuando se va en la oscuridad, sí lo hace.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>La misma descripción de la partida y regreso la cita el acarya Baladeva Vidyabhusana, tomándola de El Chandogya Upanisad (5.10.3–5). Aquellos que son trabajadores fruitivos y especuladores filosóficos, desde tiempo inmemorial han estado yendo y viniendo constantemente. De hecho, ellos no logran la salvación final, porque no se entregan a Krishna.
+</p>
+<p class='vspace'>VERSO 27
+</p>
+<div class='vspace'></div><pre> naite srti partha janan
+ yogi muhyati kascana
+ tasmat sarvesu kalesu
+ yoga-yukto bhavarjuna
+</pre><p class='vspace'>na—nunca; ete—estos dos; srti—senderos diferentes; partha—¡oh, hijo de Prtha!; janan—incluso si sabe; yogi—el devoto del Señor; muhyati—se confunde; kascana—cualquiera; tasmat—por lo tanto; sarvesu kalesu—siempre; yoga-yuktah—dedicado al proceso de conciencia de Krishna; bhava—vuélvete; arjuna—¡oh, Arjuna!
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>Aunque los devotos conocen esos dos senderos, ¡oh, Arjuna!, nunca se confunden. Por lo tanto, siempre mantente fijo en la devoción.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Aquí, Krishna le aconseja a Arjuna que no se deje perturbar por las diferentes sendas que el alma puede seguir cuando abandona el mundo material. Al devoto del Señor Supremo no lo debe preocupar si se va por disposición o por accidente. El devoto debe estar firmemente establecido en el estado de conciencia de Krishna y debe cantar Hare Krishna. Él debe saber que el preocuparse por cualquiera de esos dos senderos es problemático. La mejor manera de estar absorto en el estado de conciencia de Krishna es la de siempre estar acoplado a Su servicio, y eso hará que la senda de uno al reino espiritual sea segura, cierta y directa. La palabra yoga-yukta es especialmente significativa en este verso. Aquel que está firme en el yoga, está dedicado constantemente al proceso de conciencia de Krishna en todas sus actividades. Sri Rupa Gosvami aconseja: anasaktasya visayan yatharham upayuñjatah, uno debe estar desapegado en lo que respecta a los asuntos materiales y hacer todo con conciencia de Krishna. Mediante ese sistema, que se denomina yukta-vairagya, se logra la perfección. Así pues, al devoto no lo perturban estas descripciones, porque él sabe que su paso a la morada suprema está garantizado por el servicio devocional.
+</p>
+<p class='vspace'>VERSO 28
+</p>
+<div class='vspace'></div><pre> vedesu yajñesu tapahsu caiva
+ danesu yat punya-phalam pradistam
+ atyeti tat sarvam idam viditva
+ yogi param sthanam upaiti cadyam
+</pre><p class='vspace'>vedesu—en el estudio de los Vedas; yajñesu—en las ejecuciones de yajña, sacrificio; tapahsu—al someterse a diferentes tipos de austeridades; ca—también; eva—ciertamente; danesu—al dar caridad; yat—aquello que; punya-phalam—el resultado del trabajo piadoso; pradistam—dirigido; atyeti—supera; tat sarvam—todos ésos; idam—esto; viditva—sabiendo; yogi—el devoto; param—suprema; sthanam—morada; upaiti—llega; ca—también; adyam—original.
+</p>
+<p class='vspace'>TRADUCCIÓN
+</p>
+<p class='vspace'>La persona que acepta el sendero del servicio devocional no está desprovista de los resultados que se obtienen del estudio de los Vedas, de la ejecución de sacrificios austeros, de la caridad o de la ejecución de actividades filosóficas y fruitivas. Por el simple hecho de realizar servicio devocional, ella consigue todo eso, y al final llega a la eterna morada suprema.
+</p>
+<p class='vspace'>SIGNIFICADO
+</p>
+<p class='vspace'>Este verso es el resumen de los Capítulos Siete y Ocho, los cuales tratan específicamente del proceso de conciencia de Krishna y del servicio devocional. Uno tiene que estudiar los Vedas bajo la guía del maestro espiritual, y someterse a muchas austeridades y penitencias mientras vive bajo el cuidado de él. El brahmacari tiene que vivir en la casa del maestro espiritual tal como un sirviente, y pedir limosna de puerta en puerta y llevársela al maestro espiritual. Él sólo come cuando el maestro se lo ordena, y si un día el maestro olvida llamar al estudiante a comer, éste ayuna. Éstos son algunos de los principios védicos para observar brahmacarya.
+</p>
+<p class='vspace'>Después de que el estudiante estudia los Vedas bajo la guía del maestro por un período que va de los cinco a los veinte años, se puede convertir en un hombre de un carácter perfecto. El estudio de los Vedas no es para el recreo de especuladores de butaca, sino para la formación del carácter de uno. Después de este adiestramiento, al brahmacari se le permite entrar en la vida familiar y casarse. 
+</p>
+<p class='vspace'>Cuando ya es un cabeza de familia, él tiene que celebrar muchos sacrificios, a fin de poder conseguir mayor iluminación. Además, debe dar caridad según el país, el momento y el lugar, sabiendo discriminar entre la caridad influida por la bondad, la influida por la pasión y la influida por la ignorancia, tal como se describe en El Bhagavad-gita. Luego, después de retirarse de la vida de casado, al aceptar la orden de vanaprastha, él se somete a severas penitencias, viviendo en los bosques, vistiéndose con la corteza de los árboles, dejando de afeitarse, etc. Por seguir las órdenes de brahmacarya, de vida de casado, de vanaprastha y, finalmente, de sannyasa, uno llega a elevarse a la etapa perfecta de la vida. En ese momento, algunas personas son elevadas a los reinos celestiales, y cuando se vuelven aún más adelantadas, se liberan y van al cielo espiritual, ya sea al brahmajyoti impersonal, a los planetas Vaikunthas o a Krsnaloka. Ésa es la senda que describen las Escrituras védicas.
+</p>
+<p class='vspace'>Sin embargo, la belleza del proceso de conciencia de Krishna estriba en que de un solo golpe, por el hecho de dedicarse al servicio devocional, uno puede superar todos los rituales de las diferentes órdenes de la vida.
+</p>
+<p class='vspace'>Las palabras idam viditva indican que uno debe entender las instrucciones que Sri Krishna da en este capítulo y en el Séptimo Capítulo de El Bhagavad-gita. Uno no debe tratar de entender estos capítulos mediante la erudición o la especulación mental, sino oyéndolos en compañía de devotos. Los capítulos que van del seis al doce constituyen la esencia de El Bhagavad-gita. Los primeros seis capítulos y los últimos seis son como coberturas de los seis capítulos intermedios, que están protegidos por el Señor de un modo especial. Si uno es lo suficientemente afortunado como para entender El Bhagavad-gita —especialmente estos seis capítulos intermedios— en compañía de los devotos, entonces su vida se vuelve gloriosa de inmediato, más allá de todas las penitencias, los sacrificios, las caridades, las especulaciones, etc., ya que uno puede conseguir todos los resultados de esas actividades simplemente mediante el proceso de conciencia de Krishna.
+</p>
+<p class='vspace'>Aquel que tiene un poquito de fe en El Bhagavad-gita debe aprender El Bhagavad-gita con un devoto, porque al comienzo del Cuarto Capítulo se afirma claramente que El Bhagavad-gita sólo lo pueden entender los devotos; nadie más puede entender perfectamente el propósito de El Bhagavad-gita. De modo que, uno debe aprender El Bhagavad-gita con un devoto de Krishna, y no con especuladores mentales. Ése es un signo de fe. Cuando uno busca a un devoto y finalmente consigue la compañía de un devoto, comienza de hecho a estudiar y entender El Bhagavad-gita. En virtud del adelanto que se haga en la compañía del devoto, uno es colocado en el servicio devocional, y ese servicio disipa todos los recelos que uno pueda tener acerca de Krishna, o Dios, y acerca de las actividades, la forma, los pasatiempos, el nombre y otros aspectos de Krishna. Después de que esos recelos han sido despejados perfectamente, uno queda fijo en su estudio. Uno disfruta entonces del estudio de El Bhagavad-gita, y alcanza el estado en el que siempre se siente consciente de Krishna. En la etapa adelantada, uno se enamora de Krishna por completo. Esa etapa muy elevada y perfecta de la vida capacita al devoto para ser trasladado a la morada que Krishna tiene en el cielo espiritual, Goloka Vrndavana, donde el devoto se vuelve feliz para siempre.
+</p>
+<p class='vspace'>Así terminan los significados de Bhaktivedanta del Octavo Capítulo de El Srimad Bhagavad-gita, en lo referente al tema "Alcanzando al Supremo".
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_07.html'>El Conocimiento del Absoluto</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es.html'>El Bhagavad Gita – Tal Como Es</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhagavad_gita_-_tal_como_es_09.html'>El Conocimiento más Confidencial</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on April 12, 2008, at 03:09 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

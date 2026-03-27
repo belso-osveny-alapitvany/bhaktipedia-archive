@@ -1,0 +1,463 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Ekanta Bhakti</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : narottam_das_thakur - RSS Feed'
+      href='index.php-n=narottam_das_thakur.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=narottam_das_thakur.prema_bhakti_candrika_05' method='get'><input type='hidden' name='n' value='narottam_das_thakur.prema_bhakti_candrika_05' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Ekanta Bhakti"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=narottam_das_thakur.prema_bhakti_candrika_05-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=narottam_das_thakur.narottam_das_thakur.html'>Narottama dasa Thakura</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=narottam_das_thakur.prema_bhakti_candrika.html'>Sri Prema Bhakti Candrika, Los Rayos Lunares de la Devoción Amorosa</a>
+</p>
+<div class='vspace'></div><h2>Ekanta Bhakti<br /><small>Proceso de Servicio Devocional Fijo</small></h2>
+<pre> srimad-rupa-gosvami-prabhupadenoktam
+ anyabhilasita-sunyam
+ jñana-karmady-anavrta,
+ anukulyena krsnanu-
+ silanam bhaktir uttama
+</pre><p class='vspace'>srimad-rupa-gosvami-prabhupadena - por Srila Rupa Gosvami Prabhupada; uktam - dicho; anya - además del servicio devocional; abhilasita - acto de desear; sunyam - desprovisto de; jñana - el sendero de los monistas; karma - labor fruitiva; adi - etcétera; anavrtam - descubierto por; anukulyena - favorablemente; krsna - la Suprema Personalidad de Dios, el Señor Krsna; anusilanam - de obrar prácticamente; bhaktih - servicio devocional; uttama - cualidad superior.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Srila Rupa Gosvami Prabhupada ha dicho (Bhakti-rasamrta-sindhu 1.1.11):
+</p>
+<p class='vspace'>“La cualidad superior del servicio devocional a Krsna, es actuar favorablemente para la Personalidad de Dios. Esto significa que el servicio no debe ser cubierto por el sendero de los monistas, los trabajadores fruitivos u otros deseos, excepto el servicio devocional”. 
+</p>
+<p class='vspace'>SIGNIFICADO
+Srila Rupa Gosvami comienza con el servicio devocional puro y define desde el principio las características del servicio no adulterado al Señor. En la Bhagavad-gita se refiere que cuatro clases de hombres que han realizado actividades piadosas en el pasado adoptan el servicio devocional del Señor. Ellos son: los que sufren, los afligidos por la pobreza, los eruditos y los inquisitivos. El hombre que sufre adopta el servicio devocional con miras a recibir algún favor del Señor. El afligido por la pobreza, también adopta el servicio devocional para remover sus adversidades. El erudito adopta el servicio devocional no por algún  provecho material sino por la salvación espiritual y el inquisitivo toma el servicio devocional meramente para conocer los principios del teísmo, etc. Todos estos devotos no son devotos puros porque todos adoptan las actividades devocionales con una intención de provecho personal.  Srila Rupa Gosvami al comienzo de su definición de servicio devocional desea imprimir sobre nosotros, que no hay cuestión de provecho personal en el servicio devocional puro. Dicho servicio debe prestarse al Señor, en mérito al amor puro por Dios, que yace dormido en todo ser viviente. Así como a nadie se le enseña la forma de reír o de llorar o de iniciar la vida sexual, asimismo el amor por Dios es espontáneo y a nadie se le pide que lo aprenda por un agente externo. Empero, así como la vida sexual o demás actividades espontáneas similares del hombre son a veces conspicuas por su ausencia, en mérito a una condición enfermiza del cuerpo como ser la impotencia, etc., similarmente, debido al estado enfermizo de la entidad viviente, en mérito a la prolongada asociación con la energía material, el amor por Dios tiene que ser despertado por los servicios prácticos y prescritos. Tales servicios rutinarios serán analizados en su debido momento. En lo que respecta a la definición  del servicio devocional puro, aquí se describe que ese servicio devocional debe ser activo. No hay sitio para la acción mental especulativa, en el servicio devocional. Anusilanam significa labor práctica. Dicha labor práctica se hace en relación con el cuerpo, la mente y el habla y también en términos de tendencias iniciativas y obstructivas. Ese trabajo práctico se hace favorable y desfavorablemente. Y existen muchas secciones y subsecciones de ese modo práctico de pensar, sentir y desear para beneficio de Krsna. La labor práctica fundamental en el servicio devocional es aceptar un maestro espiritual práctico, tanto iniciador como instructor, y preguntarle en relación a todos los problemas prácticos en la línea del servicio devocional. El devoto que ha acatado las normas primarias en este sentido, gradualmente cultivará un apego y gusto por el servicio. Tras ello, se experimentará un clima de constante asociación para el servicio devocional y ese temperamento ayudará al devoto a elevarse al nivel de posición fija en el rango. Todas estas etapas superiores de mejoras devocionales, dependerán en mayor o menor medida de la misericordiosa bendición de un devoto superior, que ya está ocupado en el servicio trascendental amoroso.
+</p>
+<p class='vspace'>La palabra Krsna indica a la Personalidad de Dios con Sus infinitas expansiones. El Señor se expande a Sí Mismo en innumerables formas, como ser Sri Rama, Sri Nrsmha, Si Varaha, y muchas otras encarnaciones y rayos de expansiones. Algunas de ellas se mencionan en las Escrituras como el Bhagavata Purana, y todas ellas son Visnu-tattva y en tal sentido están al mismo nivel de equiparación con Krsna. En otras palabras, la palabra Krsna incluye a todas las demás expansiones y encarnaciones de la Personalidad de Dios.  El proceso del servicio devocional en el nivel primario, es el mismo que el del servicio devocional de Krsna o Visnu o Narayana. En los niveles superiores de servicio, hay diferencia del rasa, lo cual ya hemos discutido al comienzo de esta traducción. En la diferenciación crítica del estudio del rasa, hay una diferencia trascendental específica de reciprocidad del servicio devocional, pero en esencia no hay diferencia entre el servicio de Rama o Krsna.  Estas diferencias particulares serán  abordadas más adelante.
+</p>
+<p class='vspace'>El empleo específico de la palabra anukulyena es significativo. Significa que el servicio amoroso del Señor  y no un simple apego por el Señor es lo calificado como servicio devocional. Cuando el apego es caprichoso, no es servicio devocional. El apego de Kamsa con Krsna era desde el lado opuesto del amor, mas existía un apego indirecto por el Señor. Esa suerte de apego no se acepta como servicio devocional. Los devotos deben prestar  al Señor un servicio que sea aceptable para El. Por consiguiente, el devoto neófito debe tomar refugio en un devoto superior que ya esté ocupado en el servicio del Señor, bajo la dirección del maestro espiritual, quien es el intermediario entre Krsna y el devoto. La orden del Señor se transmite al devoto a través del medio del maestro espiritual. En consecuencia, lo primero que hay que hacer es aceptar el servicio de un maestro espiritual fidedigno.
+</p>
+<p class='vspace'>A partir del estudio del Bhagavad-gita, que está directamente hablado por el Señor, podemos tener un vislumbre de nuestra relación eterna con el Señor. Allí se explica claramente que la entidad viviente debe adoptar el servicio del Señor, dejando de lado todas las demás ocupaciones.
+</p>
+<p class='vspace'>En dicho libro de conocimiento se enseña además que el hombre que predica las enseñanzas del Bhagavad-gita  es el sirviente más confidencial del Señor. De ello se deriva que la naturaleza del servicio que es aceptable para el Señor por lo general es la ocupación constante por parte del devoto en el servicio, sin ninguna desviación y dicho servicio, especialmente en esta era de olvido, es educar a las masas en la cuestión de la conciencia de Dios.
+</p>
+<p class='vspace'>El maestro espiritual genuino puede orientar al devoto en los principios de las etapas primarias del servicio devocional al Señor. Si la persona no ha cultivado la actitud de servicio amoroso al Señor, ocupándose bajo la dirección del maestro espiritual, no hace ningún progreso. La prueba del servicio devocional se analizará más adelante. Nadie puede proclamar haber progresado en el servicio devocional sin que sea probado por los síntomas.
+</p>
+<p class='vspace'>Srila Jiva Gosvami dice que cuando nos referimos a invitar al guerrero, eso no significa que estemos invitando a las armas del guerrero. El guerrero significa estar siempre adornado o acompañado por las armas, mas el anfitrión no se aboca a complacer a las armas sino al propio luchador.  Similarmente, debemos saber si el Señor está satisfecho con nuestro servicio, sin apegarnos demasiado a las fórmulas. Hay muchos que posan de ser devotos mas cuando son puestos en la dura prueba de los síntomas genuinos, por lo general entran en la categoría de los materialistas. El Señor Caitanya dice que krsna-prema o el amor genuino por el Señor, es la última palabra en el reino del servicio devocional. En ausencia de tal amor genuino por Krsna, que es seguido por los síntomas del desapego por las cosas materiales, no se obtiene la aprobación. La palabra anu sugiere servicio al Señor sin intervalo alguno. Hay que estar ocupado en el servicio completamente y siempre. No debe haber ninguna interrupción en dicho progreso de servicio devocional. Estos son algunos de los síntomas reales del servicio devocional. demás de estos, existen otros síntomas secundarios, que son como sigue:
+</p>
+<p class='vspace'>El devoto debe estar completamente libre de todos los demás deseos, excepto el del servicio devocional. Ese es el nivel de servicio devocional de primera calidad. Los otros deseos ajenos al servicio devocional están contenidos mayormente dentro del karma, jñana, yoga, etc. Jñana o conocimiento es generalmente aceptado en nombre del monismo o para volverse uno con el Supremo. Al decir que el servicio devocional no debe estar tocado por el jñana, estamos implicando esta filosofía de unidad. Caso contrario, el conocimiento atinente a la cultura de los servicios devocionales debe obtenerse necesariamente con pleno vigor. Sin el conocimiento específico relativo al tema del servicio devocional puro, con referencia al contexto de los Vedas, Puranas, Mahabharata y las regulaciones pañcaratrika, ningún servicio devocional permanecerá digno de fe. Toda pretensión de servicio devocional sin el conocimiento de las Escrituras antes mencionadas, no son sino elementos perturbadores en el sendero.
+</p>
+<p class='vspace'>Al hablar del karma desapegado del servicio devocional, significamos las acciones fruitivas mencionadas en los smrti sastras para obtener la elevación en la existencia material. El servicio devocional ha de estar libre de tales actividades fruitivas, pero tal obra  conducente al desarrollo del servicio devocional debe ser cultivada. Ese trabajo que ayuda al esclarecimiento del servicio devocional debe ser cultivado. La palabra adi es la suma total de todas las actividades no devocionales como ser el yoga o las penitencias innecesarias respecto a la gratificación de los sentidos.
+</p>
+<p class='vspace'>Grandes reyes como Ravana o Hiranyakasipu sobrellevaron severas penitencias por muchísimos años para obtener el beneficio temporal del disfrute sensual, pero en definitiva no pudieron protegerse a sí mismos, pese a todas estas penitencias, del castigo impuesto por la Personalidad de Dios. La conclusión es que el cultivo del servicio devocional del Señor debe estar restringido dentro de las actividaes devocionales puras solamente y nada más. Tales actividades se mencionan elaboradamente en el Bhagavatam  y otras Escrituras. El Bhakti-rasamrta-sindhu entra asimismo en la categoría de tales Escrituras.
+</p>
+<p class='vspace'>TEXTO 1
+</p>
+<div class='vspace'></div><pre> anya-abhilasa chadi   jñana karma parihari
+ kaya mane kariba bhajana
+ sadhu-sange krsna-seva   na pujiba devi-deva
+ ei bhakti parama-karana
+</pre><p class='vspace'>anya - otros; abhilasa - deseos; chadi - abandonar; jñana - conocimiento especulativo; karma - actividades fruitivas; parihari - abandona; kaya mane - con el cuerpo y la mente; kariba - harás; bhajana - adoración; sadhu-sange - en la asociación de los devotos; krsna-seva - sirviendo al Señor Krsna; na - no; pujiba -  adoraré; devi - semidiosas; deva - o semidioses; ei - así pues; bhakti - servicio devocional; parama - el supremo; karana - proceso.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Adoraré al Señor con el cuerpo y la mente, abandonando los deseos de actividades fruitivas y la especulación mental. Serviré al Señor Krsna en  asociación  con los devotos, sin adorar a otros semidioses.  Este es el supremo proceso del servicio devocional.
+</p>
+<p class='vspace'>TEXTO 2
+</p>
+<div class='vspace'></div><pre> maha janera jei patha   tate habe anurata
+ purbapara kariya bicara
+ sadhana-smarana-lila   ihate na kara hela
+ kaya mane kariya sasara
+</pre><p class='vspace'>maha janera - de los mahajanas; jei - en el cual; patha - sendero; tate - en ese; habe - será; anurata - apegado; purbapara - previo y posterior; kariya - haciendo; bicara - consideración; sadhana - practica; smarana - recuerdo; lila - pasatiempos; ihate - en este; na - no; kara - hagas; hela - descuido; kaya-mane - con el cuerpo y la mente; kariya - haciendo; susara - esencia.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Consideraré cuidadosamente y seguiré el sendero exhibido por los mahãjanas (grandes personalidades) anteriores y actuales. No se debe descuidar la práctica de recordar los pasatiempos del Señor, pues el servicio devocional debe ser realizado con la mente así como con el cuerpo. Esta es la esencia del sadhana.
+</p>
+<p class='vspace'>SIGNIFICADO: Los mahãjanas anteriores son aludidos como los sabios de Dandakaranya, los srutis  descritos en el Brihãt Vamana Purana y el Candrakani, etc. Ellos estaban en extremo ansiosos por tener a Krsna como su amante. De ahí que aceptaron el humor y la forma de una gopi amada, y se ocuparon en el servicio amoroso de Sri Krsna.  Sri Bilvamangala Thakura  alcanzó asimismo el humor de una sakhi, por ambicionar el humor de una sakhi de Srimati Rãdhikã.  De tal modo, él exhibió el temperamento de una sakhi y el proceso de adoración de Krsna atento a la guía de las sakhis. Puesto que estas personalidades aparecieron ante Sriman Mahãprabhu, son conocidas como los mahãjanas previos. Sin embargo, los actuales mahãjanas son los Seis Gosvãmis, liderados por Srila Rupa y Sanãtana Gosvãmis.
+</p>
+<p class='vspace'>La palabra susãra significa la máxima perfección.
+</p>
+<p class='vspace'>TEXTO 3
+</p>
+<div class='vspace'></div><pre> asat-sanga sada tyaga    chada anya gita-raga
+ karmi jñani parihari dure
+ kebala bhakata-sanga    prema-katha-rasa-ranga
+ lila-katha vraja-rasa-pure
+</pre><p class='vspace'>asat-sanga - mala asociación; sada - siempre; tyaga - deja de lado; chada - abandona; anya - otros; gita-raga - apego por las canciones mundanas; karmi - trabajador fruitivo; jñani - especulador mental; parihari - rechaza; dure - lejos; kebala - solo; bhakata-sanga - asociación con devotos; prema-katha - tópicos de amor; rasa - melosidades; ranga - felicidad; lila-katha - pasatiempos; vraja-rasa-pure - en Vraja.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Oh, mis queridos hermanos, abandonen la mala asociación de los karmis y jñanis desde lejos, y abandonen el apego por cantar canciones no relacionadas con Krsna.  Asóciense solo con devotos y sumérjanse en los tópicos de los pasatiempos amorosos de Krsna en Vraja.
+</p>
+<p class='vspace'>TEXTO 4
+</p>
+<div class='vspace'></div><pre> jogi nyasi karmi jñani    anya-deba-pujaka dhyani
+ iha-loka dure parihari
+ karma dharma duhkha soka  jeba thake anya joga
+ chadi bhaja giribara-dhari
+</pre><p class='vspace'>yogi - los yogis; nyasi - los renunciados; karmi - trabajadores fruitivos; jñani - impersonalistas;  anya-deba-pujaka - adoradores de los semidioses; dhyani - los meditadores; iha-loka - estas personas; dure - lejos; parihari - abandona; karma - acciones fruitivas; dharma - deberes religiosos; duhkha - miserias; soka - lamentos; jeba - cualesquiera; thake - en estos;  anya - otro;  joga - apego; chadi - dejando de lado; bhaja - adoración; giribara-dhari - el levantador de la Colina de Govardhana.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Por favor abandona la asociación de los yogis, sannyasis, karmis, jñanis, meditadores y adoradores de los semidioses.  Abandona también el apego por todas las variedades de actividades fruitivas, los deberes religiosos, los pesares, las lamentaciones y los objetos materiales. Tan solo adora a Krsna, el levantador de la Colina de Govardhana.
+</p>
+<p class='vspace'>SIGNFICADO: La palabra anya-yoga se refiere al apego personal por la esposa, los hijos y los objetos materiales.
+</p>
+<p class='vspace'>TEXTO 5
+</p>
+<div class='vspace'></div><pre> tirtha-jãtra parisrama    kebala manera-bhrama
+ sarva-siddhi govinda-carana
+ drdha-bisbasa hrde dhari   mada-matsar jya parihari
+ sada kara ananya bhajana
+</pre><p class='vspace'>tirtha-jatra - viajando a los lugares santos; parisrama - dura labor; kebala - solamente; manera - mente; bhrama - ilusión; sarba-siddhi - la más elevada perfección; govinda-carana - los pies de loto de Govinda; drdha - firme; visvasa - convicción; hrde - en el corazón; dhari - conservando; mada - orgullo; matsarjya - envidia; parihari - abandona; sada - siempre; kara - haz; ananya - bhajana - inmaculado.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Viajar a los lugares santos es una pérdida de energía y es nacido de la ilusión, pues los pies de loto de Govinda son la perfección de nuestra vida. Por lo tanto, uno debe dejar de lado el orgullo y la envidia y con firme determinación en el corazón adorar siempre al Señor sin desviación.
+</p>
+<p class='vspace'>SIGNIFICADO: Sarvasiddhi se refiere a la perfección obtenida de la ejecución de actividades piadosas como ser la visita a los lugares santos y demás. Mada significa la felicidad que nos deja sin inteligencia. Matsarya significa la incapacidad de tolera la superioridad de alguien más.
+</p>
+<p class='vspace'>TEXTO 6
+</p>
+<div class='vspace'></div><pre> krsna-bhakta sanga kari    krsna-bhakta anga heri
+ sraddhanbita sravana-kirtana
+ arcana vandana dhyana    nava-bhakti maha-jñana
+ ei bhakti parama-karana
+</pre><p class='vspace'>krsna-bhakta - los devotos de Krsna; sanga-kari - por asociarse; krsna-bhakta - los devotos de Krsna; anga heri - viendo Sus cuerpos; sraddhãnbita - con fe; sravana-kirtana - oyendo y cantando; arcana - adorando; vandana - ofreciendo plegarias; dhyana - meditando; naba-bhakti - nueve tipos de servicio devocional; maha-jñana - sitio más elevado;  ei-bhakti - este servicio devocional; parama - supremo; karana - método.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>El mejor proceso de servicio devocional es oír, cantar, adorar, glorificar y meditar con fe en los Nombres, la Forma, las Cualidades y Pasatiempos de Krsna, en asociación con los devotos de Krsna, mediante las nueve formas del bhakti.
+</p>
+<p class='vspace'>SIGNIFICADO:  Oír con fe los nombres, cualidades y pasatiempos del Señor Supremo se denomina sravana. Cantar claramente y con fe los nombres del Señor Supremo es kirtana. La ofrenda de ingredientes adorables con los mantras apropiados, después de purificarse personalmente, es arcana.   El recuerdo parcial de los nombres, cualidades y pasatiempos del Señor se denomina smaranam. Dhyãna es otra palabra para smarana. Hay cinco niveles de smaranam: smaranam, dharanam,  dhyãnam, dhrubanu smrti y samadhi.
+</p>
+<p class='vspace'>La ocupación parcial de la mente se denomina smarana. El apartar la mente de todos los objetos materiales y ocupar ordinariamente la mente en el Señor es dharana. Pensar específicamente en los nombre, formas, etc. del Señor es dhyana. Meditar sin interrupción en las formas del Señor, tal como una corriente de néctar es denominado “dhruvanu smrti”.  La manifestación constante de los nombres, formas, cualidades y pasatiempos como único objeto de adoración, es llamado samadhi. La palabra sraddhanvita que significa “estar dotado de fe”, no obstante, se aplica a los cinco procesos antes mencionados.
+</p>
+<p class='vspace'>TEXTO 7
+</p>
+<div class='vspace'></div><pre> hrsike govinda-seva   na pujiba devi-deva
+ ei ta ananya-bhakti-katha
+ ara jata upalambha    visesa sakali dambha
+ dekhite lagaye mane vyatha
+</pre><p class='vspace'>hrsike - con el sentido; govinda-seva - sirviendo al Señor Supremo Govinda; na - no; pujiba - adorará; devi-deva - semidioses y semidiosas; ei - este; ta - solamente; ananya - inmaculado; bhakti - servicio devocional; katha - tópicos; ara jata - todo lo demás; upalambha - condenado; visesa - particularmente; sakali - todo; dambha - orgullo; dekhite - ver; lagaye - siente; mane - en la mente; byatha - sufrimiento.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Serviré a Govinda con todos mis sentidos y no adoraré a los semidioses y semidiosas. Este es el más elevado principio del servicio devocional. Todos los demás procesos son simplemente nacidos del orgullo y siento un gran dolor en mi corazón al verlos.
+</p>
+<p class='vspace'>SIGNIFICADO: No se debe adorar a otros semidioses separadamente, como ser Madre Parvati o el Señor Siva, sino que se debe servir solo a Sri Govinda con todos los sentidos. El esfuerzo personal solo debe aplicarse a la celebración del kirtana de Krsna, sravana o katha.
+</p>
+<p class='vspace'>TEXTO 8
+</p>
+<div class='vspace'></div><pre> dehe baise ripu-gana    jateka indriya-gana
+ keha kara badhya nahi haya
+ sunile na suna kana   janile na jane prana
+ dadhaite na pare niscaya
+</pre><p class='vspace'>dehe - en el cuerpo; baise - reside; ripu-gana - los enemigos; jateka - todo; indriya-gana - los sentidos; keha - cualquiera; karo - de cualquier otro; badhya - controlado; nahi - no; haya - es; sunile - por oír; na - no; suna - oye; kana - oídos; janile - conociendo; na - no; jane - conoce; prana - vida; dadhaite - determinar; na - no; pare - puede; niscaya - confianza.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Los seis enemigos, la lujuria, la ira, la codicia, la ilusión, el orgullo y la envidia y los cinco sentidos de la vista, el sonido, el aroma, el sabor y el tacto residen en mi cuerpo pero soy incapaz de controlarlos. Aunque oigo y entiendo reiteradamente que uno debe servir a Krsna con todos los sentidos, de todos modos no puedo aceptarlo con firme determinación.
+</p>
+<p class='vspace'>TEXTO 9
+</p>
+<div class='vspace'></div><pre> kama krodha moha lobha    mada matsarjya dambha-saha
+ sthane sthane nijukta kariba
+ ananda kari hrdaya    ripu kari parajaya
+ anayase govinda bhajiba
+</pre><p class='vspace'>kama - lujuria; krodha - ira; moha - ilusión; lobha - codicia; mada - orgullo; mãtsarjya - envidia; dambha-saha - con vanidad; sthãne sthãne - en sus respectivos lugares; nijãkta - ocupa; kariba - hará; ãnanda - felicidad; kari - haciendo; hrdaya - corazón; ripu - los enemigos; kari - hace; parãjaya - derrotar; anãyãse  - fácilmente; govinda - el Señor Govinda; bhajiba - adorará.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Ocuparé la lujuria, la ira, la codicia, la ilusión, la envidia y el orgullo en sus debidos lugares. De esta forma, derrotaré a los enemigos y con éxtasis en el corazón adoraré a Govinda sin dificultad.
+</p>
+<p class='vspace'>TEXTO 10
+</p>
+<p class='vspace'>krsna sevã - servicio a Krsna; kãmãrpane -ocupar la lujuria; krodha - ira; bhakta - devoto; dvesi-jane - personas envidiosas; lobha - codicia; sãdhu-sange - en la asociación de los devotos; hari-kathã - tópicos de Hari; moha - ilusión; ista-lãbha - obteniendo; bine - sin; mada -orgullo; krsna - el Señor Krsna; guna-gãne - glorificando las cualidades; nijukta - ocupado; kariba - hará; jathã tathã - debidos lugares.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Ocuparé mi lujuria en el anhelo por servir a Krsna y usaré mi ira contra aquellos que son envidiosos de los devotos.  Codiciaré oír los tópicos de Hari en asociación con los devotos. Me ilusionaré si fracaso en llegar a mi Señor adorable y me sentiré orgulloso de cantar las glorias de Krsna. De este modo, los ocuparé en sus respectivos deberes.
+</p>
+<p class='vspace'>TEXTO 11
+</p>
+<div class='vspace'></div><pre> anyathã svatantra kãma    anarthãdi jãra nãma
+ bhakti-pathe sadã deya bhanga
+ kibã bã karite pãre    kãma-krodha sãdhakere
+ jadi haya sãdhu-janãra sanga
+</pre><p class='vspace'>anyathã -de otro modo; svatantra - independiente; kãma - lujuria; anarthãdi - cosas indeseables; jãra - cuyos; nãma - nombres; bhakti-pathe - en el sendero del servicio devocional; sadã - siempre; deya - da; bhanga - ruinas; kibã  - que; bã - más; karite pãre - puede hacer; kãma - lujuria; krodha - ira; sãdhakere - a los practicantes; jadi - si; haya - es; sãdhu-janãra - de los devotos; sanga - asociación.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>De otro modo, los deseos lujuriosos independientes, que son el origen de todas las cosas indeseables siempre disturbarán el sendero del servicio devocional. Qué daño pueden ocasionar los deseos lujuriosos y la ira a un practicante del servicio devocional si se asocia con devotos.
+</p>
+<p class='vspace'>TEXTO 12
+</p>
+<p class='vspace'>krodhã - por la ira; bã nã - que no; kare - hace; kibã - que; krodha - ira; tyaga - abandonal sadã - siempre; dibã - dará; lobha - codicia; moha - ilusión; ei -este; ta -es todo; kathana - opinión; chaya - seis; ripu - enemigos; sadã - siempre; hina - inferior; kariba - hará; manera - de la mente; adhina - bajo el control; krsnacandra - el Señor Krsna; kariya smarana - por recordar.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>La ira lo arruina todo. Por consiguiente, siempre dejo de lado la ira, la codicia y la ilusión. Controlaré a los seis enemigos con la ayuda de mi mente mientras recuerdo al Señor Krsna.
+</p>
+<p class='vspace'>SIGNIFICADO: Siguiendo el verso del Bhagavad-gita 7:14: mãm eva ye prapadyante mãyam etãm taranti te, uno debe recordar a Krsna y tener bajo control a estos enemigos.
+</p>
+<p class='vspace'>TEXTO 13
+</p>
+<div class='vspace'></div><pre> ãpani pãlãbe saba    suniyã govinda raba
+ simha-rabe jena kari-gana
+ sakali vipatti jãbe mahãnanda sukha-pãbe
+ jãra haya ekãnta bhajana
+</pre><p class='vspace'>ãpani - automáticamente; pãlãbe - huir; saba - todo; suniyã - oyendo; govinda - el Señor Govinda; raba - sonido; simha rabe - por el sonido de un león; jena - tal como; kari-gana - los venados; sakali - todos; vipatti - peligros; jãbe - desaparecerá; mahãnanda - gran placer; sukha - felicidad; pãbe - hará; jãra - quien; haya - es; ekãnta - inmaculado; bhajana - adoración.
+</p>
+<p class='vspace'>Todos los enemigos huirán al oír la vibración sonora del nombre de Govinda, tal como huye el venado al oír el rugido del león.  Quien realice servicio devocional puro, sentirá una gran felicidad y todos sus peligros desaparecerán.
+</p>
+<p class='vspace'>TEXTO 14
+</p>
+<div class='vspace'></div><pre> nã kariha asat-cesta    lãbha pujã pratistha
+ sadã cinta govinda-carana
+ sakali vipanti jãbe   mahãnanda sukha pãbe
+ prema-bhakti parama-kãrana
+</pre><p class='vspace'>nã - no; kariha - hace; asat - mal; cesta - esfuerzo; lãbha - ganancia; pujã - adoración; pratistha - distinción; sadã - siempre; cinta -recordar; govinda-carana - los pies de loto de Govinda; sakali - todo; vipatti - peligro; jãbe - irá; mahãnanda - éxtasis; sukha - feliz; pãbe - recibirá; prema-bhakti - servicio devocional amoroso; parama - supremo; kãrana - proceso.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Por lo tanto mi querida mente, no te esfuerces por la mala asociación, la ganancia, la adoración y la distinción, sino recuerda siempre los pies de loto de Govinda. Por favor ocúpate en servicio devocional amoroso con gran felicidad y todos tus peligros serán destruidos. 
+</p>
+<p class='vspace'>TEXTO 15
+</p>
+<div class='vspace'></div><pre> asat-kriya kutinãti chãda anya paripãti
+ anya debe nã kariha rati
+ ãpana ãpana sthane   piriti sabhãya tane
+ bhakti-pathe padaye bigati
+</pre><p class='vspace'>asat-kriya - actividades pecaminosas; kutinãti - duplicidad; chãda - abandonar; anya - otro; paripãti - cuidado corporal; anya debe - a otros semidioses; nã - no; kariha - hacer; rati - apego; ãpana ãpana - respectivo; sthãne - lugares; piriti - amor; sanhãya - todo; tane - atrae; bhakti-pathe - en el sendero de la devoción; padaye - sucede; bigati - frenado.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Por favor abandona toda duplicidad, las actividades ilusorias y la búsqueda de la felicidad corporal. No te apegues a la adoración de los diversos semidioses.  El amor material y el afecto por la relación material atraen a todos hacia sus respectivas ilusiones y en tal sentido el avance en el sendero del servicio devocional es frenado.
+</p>
+<p class='vspace'>SIGNIFICADO: El significado de las palabras asat kriya es que incluso después de renunciar a las actividades irreligiosas, estas actividades sucedáneas igualmente incapacitan para seguir el sendero del bhakti. Sabhãya se refiere a todas las personas.
+</p>
+<p class='vspace'>TEXTO 16
+</p>
+<p class='vspace'>Naisthika Bhajana - Servicio Devocional Fijo
+</p>
+<div class='vspace'></div><pre> ãpãna bhajana-patha    tahe habe anurata
+ ista-deva-sthãne-lilã-gãna
+ naisthika bhajana ei    tomãre kahinu bhãi
+ hanumãn tãhãte pramãna
+</pre><p class='vspace'>ãpãna - el propio; bhajana-patha - sendero de adoración; tahe - en ese; habe - estará; anurata -apegado; ista-deva - Señor adorable; sthãne - en el lugar; lilã-gãna - cantar los pasatiempos; naisthika - fijo; bhajana - adoración; ei - este; tomãre - a ti; kahinu  - hablando; bhãi - oh hermano; hanumãn - Sri Hanuman; tãhãte - en ese; pramãna - ejemplo.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Oh querido hermano, mente mía, ocúpate continuamente en el sendero del servicio devocional y apégate a glorificar los pasatiempos de Sri Krsna en Vrndavana. Este proceso de servicio devocional se conoce como servicio devocional estable. El principal ejemplo del mismo es Hanuman.
+</p>
+<p class='vspace'>TEXTO 17
+</p>
+<div class='vspace'></div><pre> srinãthe jãnaki-nãthe
+ cãbhhedah paramãtmani
+ tathãpi mama sarvasvam
+ rãmah kamala-locanah
+</pre><p class='vspace'>srinãthe - el Señor de Laksmi; jãnaki-nãthe - el Señor de Sitã; ca - además; abhedah - ninguna diferencia; paramãtmani - Superalma; tathãpi - de todos modos; mama - mi; sarvasvam - todo en todo; rãmah - el Señor Ramacandra; kamala-locanah - de ojos de loto.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Como dijera Sri Hanuman: “Aunque Sri Narayana, el esposo de Laksmidevi y Sri Rãma, el esposo de Sitadevi son ambos la Superalma, de todos modos Sri Rãma de ojos de loto es mi todo en todo.
+</p>
+<p class='vspace'>SINIFICADO: No hay diferencia entre Sri Narayana, el Señor de Laksmidevi y Sri Rãmacandra, el esposo de Sitadevi, porque Ambos son la Suprema Personalidad de Dios, el Alma Suprema Unica. De todos modos, mi Señor Rãmacandra de ojos de loto lo es todo para mí; sin El, nada tiene valor para mí.
+</p>
+<p class='vspace'>Por este verso,  se demuestra la dedicación “avadhitvam” al objeto de deseo personal, avadhvitam significa limitación. 
+</p>
+<p class='vspace'>TEXTO 17
+</p>
+<div class='vspace'></div><pre> devaloka pitrloka pãya tãrã-mahã-sukha
+ sãdhu sãdhu bale anuksana
+ jugala bhajana jãrã   premãnande bhãse tãrã
+ tribhubanatãndera nichani
+</pre><p class='vspace'>devaloka - planetas celestiales; pitrloka - los planetas de los ancestros; pãya - reciben; tãrã - ellos; mahã-sukha - gran felicidad; sãdhu-sãdhu - bien hecho; bale -dirigidos; anuksana - siempre; jugala-bhajana - adoración de la Divina Pareja; jãntrã - aquellos; premãnande - en el océano del amor; bhãse - flotan; tãrã - ellos; tribhubana - los tres mundos; tãndera - de su; nichani - insignificante.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>Aquellos que adoran a Sus Divinas Señorías Sri Sri Rãdhã-Krsna flotan en el océano del amor extático y los habitantes de los tres mundos completos adoran a esas personas. Los semidioses y los antepasados se complacen grandemente y derraman sus bendiciones diciendo, “bien hecho, bien hecho”.
+</p>
+<p class='vspace'>SIGNIFICADO: Podría surgir la duda respecto a si se abandona la adoración de los semidioses, luego de que modo podemos saldar la deuda debida a ellos y a los antepasados. De modo de remover esta duda, Srila Narottama Dãsa Thãkura está diciendo aquí que quien adora a Sri Krsna, dejando de lado la adoración de los semidioses, ciertamente complace a los semidioses y antepasados con su servicio devocional sin tacha. Dicho devoto ya no está más en deuda con nadie. Tal como al regar la raíz de un árbol, todas las ramas, sub-ramas, hojas, palillos y retoños son automáticamente nutridos. Asimismo, si se adora a Sri Krsna, que es el refugio Supremo, todos los semidioses, sabios, antepasados, se complacen automáticamente.  Los antepasados danzan de júbilo y dicen:  “Mira, hay un devoto de Krsna nacido en mi familia. El nos liberará. nrtyanti pitarah sarve nrtyanti ca pitãmahãh madvamse vaisnavo ‘jãtah sa me trãtã bhavisyati
+</p>
+<p class='vspace'>TEXTO 19
+</p>
+<div class='vspace'></div><pre> prthak ãbãsa-joge  duhkamaya-visaya-bhãge
+ vraja bãsa govinda-sevana
+ krsna-kathã krsna-nãma    satya-satya rasa-dhãma
+ braja-loka-sange anuksana
+</pre><p class='vspace'>prthak - separados; ãbãsa-joge - residen en; duhkamaya - pleno de miseria; visaya-bhãge - disfrutes materiales; braja  - en Vraja; bãsa - reside; gobinda-sevana - servicio a Sri Govinda; krsna-kathã - tópicos del Señor Krsna; krsna-nãma - los santos nombres de Krsna; satya-satya - verdaderamente; rasa-dhãma - la morada de la bienaventuranza trascendental; braja-loka-sange - en la asociación de los residentes de Vraja; anuksana - constantemente.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>No se debe vivir en lugares ordinarios y disfrutar de los objetos materiales que están llenos de miserias, sino que se debe vivir en Vraja y servir a Sri Govinda. Los nombres y tópicos de Sri Krsna son ciertamente la reserva de todo placer y hay que glorificarlos constantemente en asociación con los residentes de Vraja.
+</p>
+<p class='vspace'>SIGNIFICADO: La palabra ãbãsa-joge significa construir una residencia. Todos los lugares excepto Vraja son materiales. Dondequiera haya disponibles disfrutes materiales, está la presencia de las modalidades de la naturaleza material y la consecuente miseria. Si se reside en otro sitio que no es Vraja, se padecerá automáticamente la miserable vida material. Mas si se reside en Vraja, entonces se puede adorar felizmente los pies de loto de Govinda.  De ser imposible vivir personalmente en Vraja, entonces hay que hacerlo mentalmente, y de ese modo alcanzar la felicidad de adorar a Krsna. Sin embargo, si quien reside en Vraja no adora los pies de loto de Sri Govinda, entonces no obtendrá ninguna felicidad viviendo allí. Al respecto, Srila Krsnadãsa Kavirãja Gosvãmi ha declarado en el siguiente verso:
+</p>
+<p class='vspace'>TEXTO 20
+</p>
+<div class='vspace'></div><pre> vrndãvane kimathavãnija mandira vã
+ kãrãgrhe kimathavã kanakasane vã
+ indram jaje kimathavã narakam bhajãmi
+ sri krsna-sevanãmrta na sukham kadãpi
+</pre><p class='vspace'>vrndãvane - en Vrndãvana; kimathavã - o; nija mandira - propia casa; vã - o; kãrãgrhe - en prisión; kimathavã - o; kanakasane - en un trono dorado; vã - o; indram - el puesto de Indra; jaje - concedido; kimathavã - o; narakam - en el infierno; bhajãmi - llegar; sri krsna - el Señor Krsna; sevanãmrta - el néctar de este servicio; na - no; sukham - felicidad; kadãpi - siempre.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>“Ya sea que viva en Vrndãvana o en el hogar, ya sea que viva en prisión o me siente en un trono de oro, ya sea que me recompensen con el puesto de Indra o vaya al infierno, no hay felicidad en ninguna parte sin la adoración de Krsna”.
+</p>
+<p class='vspace'>SIGNIFICADO:  Si alguien reside constantemente en Vraja y oye y canta sobre los nombres y pasatiempos de Sri Krsna con los residentes de Vraja, luego ciertamente recibirá bienaventuranza trascendental. En otras palabras, es la fuente del mayor placer.
+</p>
+<p class='vspace'>TEXTO 21
+</p>
+<div class='vspace'></div><pre> sadã sebã-abhilasa    mane kari bisoyãsa
+ sarbakhãya haiyã nirbhaya
+ narottama dãsa bole    padinu asat-bhole
+ paritrãna kara mahãsaya
+</pre><p class='vspace'>sadã - siempre; sebã - servicio;  abhilãsa - deseo; mane kari - en la mente; bisoyãsa - con fe; sarbakhãya - en todos los sentidos; haiyã - estando;  nirbhaya - sin temor; narottama-dãsa  Narottama dãsa;  bole - dice; padinu - cayó; asat-bhole - en la falsa concepción; paritrãna - liberar; kara - por favor; mahãsaya - Oh Señor.
+</p>
+<p class='vspace'>TRADUCCION
+</p>
+<p class='vspace'>En mi mente, con fe firme y sin temor, siempre deseo el servicio de Sus Señorías en todos los sentidos. Narottama dãsa ora: “ ¡Oh Sri Krsna, Señor Sumamente misericordioso! He caído en la miserable ilusión material, por favor libérame”.
+</p>
+<p class='vspace'>SIGNIFICADO:  La palabra visoyãsa significa visvasa o fe. Manteniendo una vigorosa fe en las declaraciones anteriores, uno debe tomar refugio en los pies de loto del Señor Krsna, por todos los medios y vivir sin temor con los residentes de Vraja, deseando constantemente el servicio de Sri Krsna. La palabra mahãsaya significa “Oh Sri Krsna”.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=narottam_das_thakur.prema_bhakti_candrika_04.html'>Sri Guru Mahima</a> | <a class='wikilink' href='index.php-n=narottam_das_thakur.prema_bhakti_candrika.html'>Sri Prema Bhakti Candrika, Los Rayos Lunares de la Devoción Amorosa</a> | <a class='wikilink' href='index.php-n=narottam_das_thakur.prema_bhakti_candrika_06.html'>Atma-nivedana</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 16, 2008, at 10:23 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

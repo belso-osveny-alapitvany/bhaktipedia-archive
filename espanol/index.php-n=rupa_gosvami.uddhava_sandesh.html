@@ -1,0 +1,858 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Uddhava Sandesh</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : rupa_gosvami - RSS Feed'
+      href='index.php-n=rupa_gosvami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=rupa_gosvami.uddhava_sandesh' method='get'><input type='hidden' name='n' value='rupa_gosvami.uddhava_sandesh' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Uddhava Sandesh"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=rupa_gosvami.uddhava_sandesh-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<h5><a class='wikilink' href='index.php-n=rupa_gosvami.rupa_gosvami.html'>Rupa Goswami</a></h5>
+<hr />
+<p  style='text-align: right;'><small><a target='_blank'  class='attachlink' href='uploads/rupa_gosvami/uddhava_sandesh.pdf' rel='nofollow'>Descargar pdf</a></small>
+</p>
+<div class='vspace'></div><h1>Uddhava Sandesh</h1>
+<p>TEXTO - 1
+</p>
+<p class='vspace'>Una vez, en Matura, el Señor Krsna estaba sentado en un trono en Su  Krida-Bhavan. Observó que las flores habían comenzado a florecer y nuevas hojas brotaban de los árboles. Pensó para sí que Matura se asemeja a una novia. Mentras apreciaba esa dulce escena, los recuerdos de Sus pasatiempos en Vrndavana florecieron en Su corazón.
+</p>
+<p class='vspace'>NOTA:  Este Uddhava-Sandesh, es la historia de Vasudeva Krishna abriendo Su corazón a Su íntimo amigo Uddhava.  En total, son 131 slokas.
+</p>
+<p class='vspace'>Un punto más confidencial, es que en Matura, la expansión de Vasudeva de  Krishna estaba presente, Quien, en  la época de Akrura, siendo enviado por Kamsa para traer a Krishna a Matura, había estado presente en el cuerpo de Krishna, con el propósito de matar a los demonios, aceptando plegarias de los semidioses y otros pasatiempos, teñidos con el humor de respeto y reverencia.  Krishna Mismo siempre está disfrutando pasatiempos amorosos íntimos en Vraja, de esta forma, El nunca pone un pie fuera de Vraja-Vrndavana, o tiene nada que ver con lo que sucede más allá de los límites de Vraja Dhama o los pasatiempos de Vraja.  Con el propósito de satisfacer a los devotos, que desean reciprocar con El, en diferentes humores, que no pueden ser acomodados en Vraja, El se ha expandido a Sí Mismo en ilimitadas formas.
+</p>
+<p class='vspace'>En tal sentido, hallamos en este "Uddhava-Sandesh" que Vasudeva solicita a Uddhava ir a Vrndavana, a tranquilizar a los amigos y parientes de Krishna, recordándoles sus pasatiempos con Krishna.  Además, Vasudeva-Krishna Se lamenta de Su separación del cuerpo de Krishna, y no poder así ser más el testigo de la simple relación íntima entre los Vrajavasis y Krishna.  Habiendo oído del cisne-mensajero enviado por Lalita-sakhi, del intenso sufrimiento de los Vrajavasis debido a su separación de Krishna (el mensaje que le fuera dado al cisne, está registrado en este maravilloso libro de Rupa Gosvami:  'Hamsaduta'),  Su propio humor de separación había aumentado, así, El deseaba llegar a los Vrajavasis a través de este mensaje. El está enviando a Uddhava, Su devoto íntimo, amigo y consejero, de modo que pueda ser testigo del amor puro e inmotivado de los Vrajavasis, especialmente el amor de las Vraja gopis.
+</p>
+<p class='vspace'>El resultado de la ida de Uddhava a Vraja-Vrndavana y ver el amor de los Vrajavasis, fue que él oró por, y obtuvo la bendición, de vivir en Vraja como una simple enredadera, de manera de poder obtener el polvo de los pies de loto de los Vrajavasis, Uddhava vive eternamente en la orilla del Kusum Sarovara como gulma lata (una enredadera).
+</p>
+<p class='vspace'>Si surgiera la pregunta, dónde estaba el Krishna original si El no había salido de Vrndavana, la simple verdad es que El estaba escondido en los arbustos, para divertirse.
+</p>
+<p class='vspace'>TEXTO - 2
+</p>
+<p class='vspace'>Seguidamente, el Señor Krishna, debido al súbito recuerdo de Sus pasatiempos de Vrndavana, comenzó a respirar muy pesadamente y la guirnalda de loto alrededor de Su cuello, comenzó a sacudirse. Mientras Krishna recordaba Sus asombrosos pasatiempos con las Vraja-gopis, incesantes lágrimas fluían de Sus ojos, debido a Su incapacidad de disfrutar nuevamente de estos pasatiempos.  Se quedó petrificado, semejante a una pintura.
+</p>
+<p class='vspace'>TEXTO - 3
+</p>
+<p class='vspace'>Luego el Señor Krishna pensó por un momento cómo cruzar a la otra orilla de ese océano de dolor, procedió a subir al techo tachonado de joyas del palacio.  Viendo que Uddhava se Le había acercado, deseó revelarle Su corazón, mas debido a los sentimientos de amor, no pudo pronunciar palabra. 
+</p>
+<p class='vspace'>TEXTO - 4
+</p>
+<p class='vspace'>"Oh, océano de buenas cualidades Uddhava, tú eres Mi relación confidencial, debido a tu guía y consejo, nosotros, los Yadavas, estamos disfrutando de completa prosperidad. Por estos motivos, quiero darte el servicio de concretar un deseo Mío muy secreto. Si uno entrega la obra deseada de uno a una persona llena de buenas cualidades, entonces puede estar seguro del resultado.
+</p>
+<p class='vspace'>NOTA:  Sukadeva Gosvami dijo:  El supremamente inteligente Uddhava, fue el mejor consejero de la dinastía Yadu, un amigo amado del Señor Sri Krishna y un discípulo directo de Brhaspati.
+(Srimad-Bhagavatam 10-46-1)
+</p>
+<p class='vspace'>Uddhava es el primo-hermano de Vasudeva-Krishna.
+</p>
+<p class='vspace'>TEXTO - 5
+</p>
+<p class='vspace'>¡Oh, amigo mío!  Cuando nos enteramos por Gandini Nandan (Akrura) de la vanidosa orden de Kamsa, vinimos junto con él desde Vrndavana a Matura.  En ese momento, los jóvenes Vrajavasis entraron en un océano de separación de Mí.
+¡Oh, Mi querido amigo!  De una u ora forma, ahora conservan su fuerza vital dentro de sus cuerpos.
+</p>
+<p class='vspace'>NOTA:  La orden de Kamsa era:  Por favor, ve al pueblo de Nanda, donde viven los dos hijos de Anakadundubhi, y tráelos hasta aquí sin demora, en este carruaje.
+(Srimad-Bhagavatam 10-36-32)
+</p>
+<p class='vspace'>TEXTO - 6
+</p>
+<p class='vspace'>¡Oh, amigo Mío!  De todas esa gopis, la hermosa Srimati Radharani, quien no tiene igual y es más querida a Mí que mi vida,  de algún modo permanece viva, debido a Lalita y sus otras amigas gopis, quienes La convencen hábilmente de que muy pronto volveré a Vrndavana. 	 
+</p>
+<p class='vspace'>TEXTO - 7
+</p>
+<p class='vspace'>¡Oh, Uddhava, el mejor de los consejeros!  Por favor ve a Nandagrama, la capital de Nanda Maharaja, que está situada en una hermosa colina cubierta por maravillosas enredaderas, y los mejores árboles y rodeada por una pared hecha de joyas invaluables.
+</p>
+<p class='vspace'>Allí, ten la amabilidad de dar mi mensaje a Srimati Radharani, que ha sido mordida por la serpiente de la separación y está sintiendo una infinita angustia en Su corazón. Por favor, trata de traerla de vuelta a la vida y hazla feliz nuevamente.
+</p>
+<p class='vspace'>TEXTO - 8
+</p>
+<p class='vspace'>¡Oh, Mi querido amigo! En este universo, hay muchos lugares santos e importantes donde Yo aparezco en diversas formas de Deidad, para llevar felicidad a Mis devotos puros, como tú mismo.  Mas te juro honestamente que no hay lugar que Me traiga más felicidad a Mi corazón que Gokula (Vraja).
+</p>
+<p class='vspace'>TEXTO - 9
+</p>
+<p class='vspace'>Allí en Vraja-Vrndavana, qué decir de los seres móviles, incluso los árboles, enredaderas y otras entidades vivientes inmóviles, inamovibles, hubieran ardido en el fuego de la separación hace mucho tiempo, si no fuera por las lágrimas de las gopis que caían sobre ellas.
+</p>
+<p class='vspace'>TEXTO - 10
+</p>
+<p class='vspace'>¡Mi querido amigo!  Cuando las gopis Me veían, aunque fuera un poquito afligido, eran muy infelices, aunque no hubieran sufrido ni un poquito si una montaña de aflicción hubiera caído sobre ellas. Así que, por favor no les cuentes acerca de la infinita infelicidad que estoy sintiendo debido a su separación, simplemente recuérdales cuánto las amo.
+</p>
+<p class='vspace'>TEXTO - 11
+</p>
+<p class='vspace'>¡Oh, hermano! La Colina de Nandisvara (Nandagrama)  está lejos de Matura, así que por favor ve de inmediato. El camino es muy fácil y hermoso. Cuando entres en un océano de bienaventuranza al ver a Vraja, Yo también estaré  feliz, porque cuando una persona altamente cualificada está feliz, sus amigos queridos también lo están.
+</p>
+<p class='vspace'>NOTA:  Por la ruta que Uddhava fuera enviado, Nandagrama estaba a unos 90 Km. de Matura.  Uddhava fue enviado por la misma ruta por la que Krishna viniera desde Nandagrama.  Los siguientes veinte slokas describen la ruta que Krishna quiere que tome Uddhava.
+</p>
+<p class='vspace'>TEXTO - 12
+</p>
+<p class='vspace'>¡Oh, sabio!  El primer lugar que verás en tu viaje es Gokama Ksetra, donde el esposo de Gauri (Siva), está en la forma de Gokama, tan solo para rescatar a las entidades vivientes del océano de aflicción.
+Muy cerca de Gokama Ksetra, está el sangam de los ríos Yamuna y Sarasvati, que conceden todos los deseos de las entidades vivientes.
+</p>
+<p class='vspace'>TEXTO - 13
+</p>
+<p class='vspace'>Cuando llegué por primera vez a Matura, fue en el sangam del Yamuna-Sarasvati donde las hermosas mujeres de Matura me dieron la bienvenida con sus hermosas miradas de soslayo. Una hermosa dama se dirigió a su amiga de esta forma:
+</p>
+<p class='vspace'>"Oh, ese Krsna, que por el dulce sonar de Su flauta hizo que se aflojaran las ropas de las gopis, hoy está parado delante tuyo. Todas las glorias a tí."
+</p>
+<p class='vspace'>TEXTO  - 14
+</p>
+<p class='vspace'>Oh, Uddhava, a continuación,  prosigue a Ambicavana, que dispensa la suprema bienaventuranza. En ese Ambicavana he liberado a Vidyadhara de nombre Sudarsana, de la forma de una serpiente que vino de  pronto del lago Kaliya y trató de matar a Mi padre, Nanda Maharaja,  cuando liberé a Mi padre, las gopis se pusieron muy felices.
+</p>
+<p class='vspace'>TEXTO - 15
+</p>
+<p class='vspace'>¡Oh, paciente!  Tú luego te sientas en tu carro, pero no ncesitas ir a ese lugar en la ribera del Yamuna donde lastimé los colmillos del elefante Kuvalyapira, porque las personas gentiles no tienen nada que hacer con los demonios.
+</p>
+<p class='vspace'>TEXTO  - 16-17
+</p>
+<p class='vspace'>Primero ve hacia el sur, y luego hacia el norte. Llegarás al ghata en Tirthraja Akrura, donde hay muchas variedades de flores y pájaros. Luego prosigue de ese lugar donde he mostrado a Akrura Mi forma de cuatro brazos y Goloka de los Vrajavasis. Ahora pasarás las residencias de los brahmanas de Yajna, quienes se rehúsaron a alimentarMe, aunque se los pedí. No debes desear verlos,  aunque debes pasar muy cerca de sus casas, y aunque no desees ver a sus esposas, que están siempre cantando acerca de Mis pasatiempos, aún así debes tomar darsana y purificar tus ojos.
+</p>
+<p class='vspace'>NOTA:   Los residentes de los Yajna-brahmanas,  se conoce como Bhojala-sthali o Bhatrol.
+</p>
+<p class='vspace'>TEXTO - 18
+</p>
+<p class='vspace'>Uddhava, por favor luego pasa rápidamente a través del Tirtha de Kotik, que está lleno de muchas variedades de flores y árboles. La primera vez que pasé por esa área, una casta niña Me miró con amor espontáneo y alzó sus dos brazos mientras reía gentilmente.
+</p>
+<p class='vspace'>NOTA:   El área entre Akrura-ghata y Chatikara, se conoce como Kotik Tirtha.  Kotik, el supremo.
+</p>
+<p class='vspace'>TEXTO - 19
+</p>
+<p class='vspace'>De la misma manera, debes proseguir por la zona de Sattikara (Chatikara), que está bajo el control de las abejas negras. Una vez, mientras estaba jugando en ese lugar, Sridama adoptó la forma de Garuda y Yo me senté en su espalda, por doce días  (como Visnu).
+</p>
+<p class='vspace'>NOTA:  Hay un templo de Garuda-Govinda en Chatikara, con una Deidad de Govinda que tiene doce brazos, sentado en la espalda de Garuda.
+</p>
+<p class='vspace'>Este es el lugar donde Krishna vivió, después de dejar Mahavana (Gokula).
+</p>
+<p class='vspace'>TEXTO - 20
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Cuando estaba viniendo a Matura, pasé por el bosque (Sattikara) y las damas se hablaron de este modo,
+Oh, vanidosas, miren, Syamasundara me está mirando solo a mí.
+De esa forma, las damas de ese lugar, Me contemplaban con inocencia.
+</p>
+<p class='vspace'>TEXTO - 21
+</p>
+<p class='vspace'>En el lado izquierdo de ese bosque, hay muchas aldeas y en el lado derecho está el Lago Kaliya.
+Evitando esos lugares, toma el sendero que está sombreado por enredaderas, que 
+son tan espesas que el sol no puede penetrar, y  en uno de sus lados, está bordeado de lagos llenos de flores de loto.
+</p>
+<p class='vspace'>TEXTO - 22
+</p>
+<p class='vspace'>A continuación, llegarás al Tirtha de Mrigahara, donde está el venado, y está cubierto por enredaderas  y flores.  En la mañana solía ir a jugar a ese bosque, y cuando tocaba mi flauta de dulce sonido, venían los impacientes venados, para aliviar los dolores de la separación que habían sentido durante toda la larga noche.
+</p>
+<p class='vspace'>NOTA:  Este bosque se conoce como Mrigahara, debido  los muchos venados (Mriga) que había aquí. También se conoce como Magahara el camino (Maga) por el que Krishna viajaba. Hoy se conoce con el mismo nombre de Maghera.
+</p>
+<p class='vspace'>TEXTO - 23
+</p>
+<p class='vspace'>Cuando fui traído a Matura por Akrura, las Jóvenes gopis, semejantes a pimpollos en flor, cuyos  rostros brillaban como frescas flores florecientes, Me miraban desde lejos, arrojando miles de flechas, en la forma de sus dulces miradas de soslayo penetrantes. 
+</p>
+<p class='vspace'>TEXTO - 24
+</p>
+<p class='vspace'>"Amigos, miren eso, allí está Madhava, que hizo que Radha se enamorara de El, por el poder de Sus miradas sensuales y está ahora sentado en un carro, saliendo para Matura."
+</p>
+<p class='vspace'>Oh, Uddhava, cuando los maravillosos pasatiempos de las jóvenes gopis y el dulce recuerdo de Radha despertaron en Mi corazón de esta manera, comencé a transpirar en abundancia y me quedé como una imagen pintada.
+</p>
+<p class='vspace'>TEXTO 25
+</p>
+<p class='vspace'>Cerca de Nagendra Bhog (Area de Govardhana), está el lugar donde Radharani masajeó Mis pies, mientras Yo dormía feliz. Asegúrate de visitar ese pueblo, que posee la fragancia de Ksirasagara, donde Mis manos fueron atadas.  Disfruto de un placer ilimitado allí.
+</p>
+<p class='vspace'>TEXTO - 26
+</p>
+<p class='vspace'>¡Mi querido amigo Uddhava! allí se oye el sonido del batir de la cuajada en todas direcciones, hasta una distancia de dieciséis millas, te traerá gran alegría.
+Juro que en ese lugar hay una gran manada de vacas benditas, creadas por Brahma, que pueden satisfacer al mundo entero con la cantidad de ghi que producen.
+</p>
+<p class='vspace'>TEXTO  - 27-28
+</p>
+<p class='vspace'>Luego visita Shalmala Grama (Sahara) que trae victoria a los Vrajavasis. Allí verás miles de búfalos, y en cada prado, niños pastorcillos actuando Mis variados pasatiempos.
+</p>
+<p class='vspace'>En ese Sahara Grama, que puede ser visto incluso desde una lejana distancia, trayendo felicidad a los ojos, vive Upananda. Cuando fuí traído a Matura en el carro, comí allí una manteca muy sabrosa.
+</p>
+<p class='vspace'>NOTA:  Upananda es el hermano mayor de Nanda Maharaja.
+</p>
+<p class='vspace'>TEXTO - 29
+</p>
+<p class='vspace'>Luego, puedes proseguir a Rahela (Rahera), donde las gopis solían disfrutar maravillosos pasatiempos. Por la noche, Yo solía ir allí y con Mi flauta llamar a las gopis. Cuando todas las gopis oían el sonido de la flauta, venían corriendo, sin preocuparse si iban bien vestidas o no.
+</p>
+<p class='vspace'>TEXTO - 30
+</p>
+<p class='vspace'>¡Uddhava!  Cuando las gopis estaban ocupadas batiendo la cuajada Yo solía robar su mantequilla y luego alimentar a Mis amigos, haciéndolos de esta forma muy felices. Ese lugar de pasatiempo lleno de árboles floridos, es famoso por el nombre de Pritashava.  Por cierto que te aliviarás allí de tu fatiga.
+</p>
+<p class='vspace'>TEXTOS - 31-32
+</p>
+<p class='vspace'>Los árboles de banana, sacudidos por los vientos y plenos de fragantes flores de ashoka, esa hermosa, maravillosa morada trascendental (Nandagrama) de Nanda Maharaja, te traerá bienaventuranza infinita.
+En el costado sur de ese Nandagrama, está el lugar que incluso hoy se conoce como Vidyutkari (Vrajavari). Cuando las gopis vieron que Yo iba a Matura, se desconsolaron y desorientaron, y cayeron como si hubieran sido golpeadas por rayos luminosos.
+</p>
+<p class='vspace'>NOTA:  Nandagrama se extiende hasta este sitio.
+</p>
+<p class='vspace'>TEXTO - 33
+</p>
+<p class='vspace'>Oh, Uddhava,  el guía Akrura, que estaba rebosante de amor, Me había visto volver del goshala. Aunque él estaba preocupado en su corazón de que Kamsa lo había enviado para llevarMe a Matura, aún así, lágrimas de bendición caían de sus ojos y regaron los árboles Kadamba que adornaban ese sitio, que es famoso como el Tirtha Souyatrika.
+</p>
+<p class='vspace'>NOTA:  El tirtha Souyatrika, está ubicado en el sendero que va desde Vrajavasi a la actual ciudad de Nandagrama.
+</p>
+<p class='vspace'>TEXTO - 34
+</p>
+<p class='vspace'>Allí verás muchos terneros semejantes a cristales blancos, que corren alrededor después de haber liberado sus colas de las manos de los pastorcillos. También verás muchos terneros haciendo travesuras, luego de oler las matas de hierba.
+</p>
+<p class='vspace'>TEXTO - 35
+</p>
+<p class='vspace'>Oh, Uddhava, detrás del goshala está Mi lugar de asiento, hecho de piedra blanca, que es eterno y desde el cual emana una fragancia maravillosa.  Cuando las gopis observan ese sitio, asoma en ellas una emoción llamada mottayita.
+NOTA:  Mottayita es definido en el Ujjvalanilamani de Rupa Gosvami (11.47). Cuando una heroína recuerda, oye o ve a su héroe, o cualquier cosa relacionada con él, el amor por él brota en su corazón, y ella anhela fuertemente su asociación.
+</p>
+<p class='vspace'>TEXTO - 36
+</p>
+<p class='vspace'>Una gopi dijo a su amiga, "Mira con cuidado, ese no es el polvo levantado por las vacas, sino el humo causado por los fuegos, y ese sonido que crees proviene de la flauta de Krishna, es el sonido del bambú soplando en el viento.  El sol aún no se ha puesto en el oeste, ven, pintaré un cuadro en tus pechos".
+</p>
+<p class='vspace'>NOTA:  Aquí comienza una oración en sánscrito de doce slokas, que finaliza con el texto cuarenta y siete, en los cuales Vasudeva Krishna recuerda algunas de las dulces conversaciones de las gopis.
+</p>
+<p class='vspace'>TEXTO - 37
+</p>
+<p class='vspace'>Una gopi dice a su inquieta amiga, mientras Krishna va al bosque; "El sonido de la flauta de Krishna viene del bosque, mas no debes correr hacia allí, el polvo de las vacas ya no puede verse. De modo que ajusta tus ropas flojas y entra a la casa de inmediato, pues los mayores ya están allí".
+</p>
+<p class='vspace'>TEXTO - 38
+</p>
+<p class='vspace'>"Oh, sakhi, has estado tratando de enhebrar esa guirnalda de flores desde la mañana temprano, ahora es de noche. ¿Aún no fuíste capaz de terminarla? "
+Oh, encantadora, el polvo verde de las huellas de los terneros ha formado nubes y cubierto el cielo, aliviando así los ojos sedientos de las gopis.
+</p>
+<p class='vspace'>NOTA:  Esta conversación entre Padma y Candravali, es citada por Rupa Gosvami en su Ujjvala-nilamani (10:83) en el capítulo Vibhaves-uddipana (Eso que estimula el amor extático).  Debido a ver el polvo levantado por las vacas, se estimuló su amor extático.
+</p>
+<p class='vspace'>TEXTO - 39
+</p>
+<p class='vspace'>Tú, vieja charlatana, ¿porqué estás diciendo palabras tan duras? ¿El corazón de que joven no se atraería por ver a Krishna entrando al goshala, usando una guirnalda de malati, cubierta con el polvo levantado por las pezuñas de los terneros, y el aroma de Su cuerpo endulzando todas las direcciones? Al mirar a Krishna, todas se ponen ansiosas y anhelantes.
+</p>
+<p class='vspace'>TEXTO - 40
+</p>
+<p class='vspace'>Abandona el temor a tus superiores y Tu timidez y al menos ven a la puerta principal.  Esperas ansiosamente todo el día para ver a Krishna y no dejas Tu departamento, ni siquiera para venir al balcón, a echar una mirada a Krishna.  
+</p>
+<p class='vspace'>¡Oh, niña de dulce naturaleza, mira!  Mukunda, que ha robado el corazón de las gopis, viene hacia aquí, rodeado de abejorros atraídos por Su dulce aroma y gunja-mala.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo Dieciocho:  sanbhoga-prakarana (unión), (18: 12).  Visakha está hablando a Radharani.
+</p>
+<p class='vspace'>TEXTO - 41
+</p>
+<p class='vspace'>¡Oh, Manditangi!  Cuando Krishna está entrando al goshala, es encantado por el sonido de Tus ajorcas, entonces, ¿cuál es la necesidad de tratar de encantarLo con Tus ojos? Si un venado puede ser encantado por un dulce sonido,  ¿entonces para qué capturarLo?  Vierte así la red de Tus dulces miradas.
+</p>
+<p class='vspace'>NOTA:   mandit  - decorado,  angi-  cuerpo. Manditangi es un nombre de Srimati Radharani.
+</p>
+<p class='vspace'>TEXTO - 42
+</p>
+<p class='vspace'>¡Oh, Candravali!  El dulce sonido que proviene de tus tobilleras, ha entrado en el corazón de Krishna. Así, El se ha confundido y está yendo de aquí para allá en el goshala, habiendo olvidado el sendero a  la casa de Nanda Maharaja. Oh, sakhi, ¿dónde has aprendido este arte?
+</p>
+<p class='vspace'>TEXTO - 43
+</p>
+<p class='vspace'>¡Oh, hermosa niña!  Llena de sentimiento maternal,  Madre Yasoda está esperando a Krishna en la puerta. Krishna simplemente está parado aquí respirando profundamente y transpirando (debido a que no ve tu rostro). Por ello, abandona Tu vivvokbhava y muéstrale Tu cara de loto, a través de las hojas de esta enredadera.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha descrito el vivvokbhava en su Ujjvala.nilamani (11:52) como la indiferencia hacia un objeto amado, debido al orgullo.
+</p>
+<p class='vspace'>Syama dijo a Radharani:  Krishna, el matador de Aghasura, ahora está parado delante de Tí, mirando Tu rostro con fijeza, esperando una respuesta Oh, níña loca, Tú lo miras con una profunda sonrisa desdeñosa, y luego Lo ignoras, y comienza a enhebrar Tu guirnalda de flores silvestres. (Ujjvala-nilamani 11: 54).
+</p>
+<p class='vspace'>TEXTO - 44
+</p>
+<p class='vspace'>¡Oh, Radhe! ¡Tan solo mira al destructor de Kamsa! Sri Krishna ha soltado Su vara y Su flauta se desliza de Su mano junto con Su cuerno de búfalo.
+</p>
+<p class='vspace'>Nanda Maharaja también está mirando desde la distancia.  Te pido que dejes de mirar a Krishna de ese modo lujurioso y no Lo violentes delante de Sus superiores.
+</p>
+<p class='vspace'>TEXTO - 45
+</p>
+<p class='vspace'>¡Oh, Radhe!  Tan solo por una mirada Tuya, Krishna está mirando anhelosamente desde el goshala una y otra vez, hacia Tu puerta.
+</p>
+<p class='vspace'>Entonces, ¿porqué Tú, sin razón, te quedas dentro y tratas de satisfacer Tu corazón mirando por las rendijas de las ventanas? Ten la amabilidad de abandonar Tu vanidad y sal al patio y satisface al Señor de Tu vida.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo Dieciséis.  Mana-Prakarana (16:13)
+</p>
+<p class='vspace'>TEXTO - 46
+</p>
+<p class='vspace'>¡Mira amiga mía!   Krishna está nuevamente llamando a Gouri (Radhika) una y otra vez. Frente a nosotras, Ella pretende ser tan tímida y casta que no sale a la puerta. Mas los arbustos, enredaderas y árboles saben cuán casta y tímida Ella es, cuando corre al bosque al oír el dulce sonido de la flauta de Krishna.
+</p>
+<p class='vspace'>TEXTO - 47
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Cuando estaba en Vraja, cada noche, esas gopis sonrientes de ojos azules, que siempre deseaban disfrutar pasatiempos amorosos Conmigo, hablaban de Mis diversos pasatiempos.
+</p>
+<p class='vspace'>TEXTO - 48-49
+</p>
+<p class='vspace'>En esa Nandagrama, temprano en la mañana, cuando las gopis comenzaban a batir la cuajada, sus brazos aparecían maravillosamente hermosos y gotas de sudor adornaban sus mejillas.  Su cabello cubría sus frentes, haciéndolas parecer muy hermosas, y con sus bocas de loto cantaban Mis pasatiempos.   Cuando el sonido de las ajorcas que adornaban los brazos de esas gopis de ojos de loto, se mezclaba con el batir y el canto, Yo me despertaba feliz de Mi sueño.
+</p>
+<p class='vspace'>TEXTO - 50
+</p>
+<p class='vspace'>Mi querida amiga (Lalita). Tú sigue diciéndoMe que no me dé a Krishna, así que, está bien, tú pinta un retrato de Krishna para Mí, y Me sentaré en Mi habitación todo el día, con Mis oídos cerrados  (así no oigo el sonido de Su flauta llamando), permaneciendo enojada con El.   Si el retrato de Krishna está ante Mí, Yo puedo tener Su darsana todo el tiempo, y podré seguir tu orden.  
+</p>
+<p class='vspace'>NOTA:  Los siguientes catorce slokas forman una oración en sánscrito. Vasudeva-Krishna está tratando de describir Nandagrama a Uddhava mas toda vez que lo intenta, recuerda el amor supremo de las gopis y así, una vez más, comienza a describir su amor único por Krishna.
+</p>
+<p class='vspace'>TEXTO - 51
+</p>
+<p class='vspace'>Un día, Visakha Me dijo, Krishna:  Aquí en Vraja hay muchas jóvenes dignas para complacerte, pero ninguna es tan afectuosa y digna como mi amiga (Radha).
+Así que, por favor, nunca La disgustes,  Tú eres, sin duda, el guru de la sagacidad, mas tan solo mira frente a Tí,  mi amiga (Radha) está dirigiendo las flechas de Sus miradas del arco de Su entrecejo, para reducir Tu tamaño.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo siete, dutibheda (Variedades de mensajeros- 7:71).
+</p>
+<p class='vspace'>TEXTO - 52
+</p>
+<p class='vspace'>¡Oh, inteligente mensajero!  No hables acerca de esa persona (Krishna), quien siempre está disfruando en la orilla del Yamuna, frente a mí.  Nunca me acercaré a El.  Soy famoso en este mundo por tener el corazón de piedra y no creo que vaya a temblar por oír acerca de Krishna.  Es debido al viento que sopla.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo Trece Vyabhicari (Un transgresor 13:63).
+</p>
+<p class='vspace'>TEXTO - 53
+</p>
+<p class='vspace'>¡Oh, Krishna! Detén esta charla dulce y lisonjera. Mi amiga (Radha) ha esperado sola en el jardín, toda la noche, por Tí. Es una pena que Tú tengas que mantener relaciones con todas las gopis. Ahora puedes quedarte en mi casa y hacer allí Tu hogar.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilmani en el Capítulo Ocho sakhi-prakarana (Las Amigas de Srimati Radharani 8:86).
+</p>
+<p class='vspace'>TEXTO - 54
+</p>
+<p class='vspace'>¡Oh, hermosa Damisela (Radha)!  Tu guirnalda de malati está marchita y tirada en el suelo.  Krishna espera en un humor abatido en Tu  puerta.  Has estado despierta toda la noche y Tus amigas están llorando.  ¡Oh, mi querida amiga! ¿Qué gusto obtienes de esta ira? No veo que nadie sea infeliz sin razón.
+</p>
+<p class='vspace'>TEXTO - 55
+</p>
+<p class='vspace'>¡Oh, abeja negra (Krishna)! ¿Porqué estás rondando alrededor, tratando de tomar la fragancia de Mi cara de loto y no permitiéndoMe  cumplir  Mis deberes para con Mi esposo? Debes zumbar incansablemente (tocar Tu flauta), luego ir al denso Punnaga kunja (jardín).
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloja en su Ujjvala-nilamani en el Capítulo Cinco:  nayikabheda-prakarana (variedades de heroínas  5:30).
+</p>
+<p class='vspace'>TEXTO - 56
+</p>
+<p class='vspace'>¡Oh, amigo! Incluso si Krishna está parado delante de Mí, yo no tengo miedo, ni corro a esconderme en el kunja cuando tú estás presente, porque tú eres muy fuerte y Me protegerás.
+</p>
+<p class='vspace'>(Lalita contesta):  qué decir de Pitambara (Krishna), Nadie puede tocarTe delante mío.
+</p>
+<p class='vspace'>TEXTO - 57
+</p>
+<p class='vspace'>¡Oh, astuto! Con el pretexto de traerMe a recoger flores, Me has traído a este jardín distante.  ¿Porqué estás cantando alto y riendo dulcemente?
+</p>
+<p class='vspace'>(Krishna contesta): Estoy cantando alto una y otra vez, simplemente para atraer al Krishnasaramrga (un tipo de venado).
+</p>
+<p class='vspace'>TEXTO - 58
+</p>
+<p class='vspace'>¡Mi querido amiga!  Conozco el verdadero motivo por el que estás viniendo al Yamuna una y otra vez, te has enamorado de pundrikeksan (Krishna de ojos de loto blanco).
+¿Qué tenemos que ver tú y yo con los lotos blancos? Vengo una y otra vez a la orilla del Yamuna, a disfrutar pasatiempos amorosos con Raktapadma (Krishna, cuyos ojos son como pétalos de loto rojo).
+</p>
+<p class='vspace'>TEXO - 59
+</p>
+<p class='vspace'>¡Oh, inquieta! (Radha)!  Tú siempre estás entre damas naturalmente decentes, entonces, ¿porqué deseas abrazar a ese Krishnakantha?
+</p>
+<p class='vspace'>Amiga, lo que dices es cierto, pero ese arrogante y vigoroso rey de los pavos reales, Quien ha derrotado a la serpiente Kaliya, Me ataca por la fuerza.
+</p>
+<p class='vspace'>NOTA:  Aquí Krishna es comparado a un pavo real y las gopis a serpientes.  El pavo real, es el enemigo natural de las serpientes. El siempre las ataca y las vence.
+</p>
+<p class='vspace'>Krishnakantha:  Krishna, Cuyo cuello es azul oscuro, como el de un pavo real.
+</p>
+<p class='vspace'>TEXTO - 60
+</p>
+<p class='vspace'>¡Oh, niña ansiosa (Candravali)! No sigas corriendo a la puerta, a ver si viene Krishna, pues vas a arder en el fuego de la desilusión.
+</p>
+<p class='vspace'>¡Oh, niña tonta! Si hoy no veo a Krishna, Quien destruye toda aflicción, entonces entraré a ese fuego.
+</p>
+<p class='vspace'>NOTA:  Saibya gopi se está dirigiendo a Candravali.
+</p>
+<p class='vspace'>TEXTO - 61
+</p>
+<p class='vspace'>¡Oh, amiga querida!  Hoy Krishna, Cuyos ojos están intoxicados de anhelo vehemente, me aferró con Su mano de loto. Por eso estoy temblando.
+¡Oh, niña tonta, por favor habla bajo, tus mayores están cerca y pueden oírte!
+</p>
+<p class='vspace'>(La primera gopi cambia el significado de lo que ha sido dicho antes).
+</p>
+<p class='vspace'>Hoy estuve en la orilla del Yamuna, cuando de pronto un elefante negro intoxicado me atrapó con su trompa como el loto.  Por eso estoy temblando sin control.
+</p>
+<p class='vspace'>TEXTO - 62
+</p>
+<p class='vspace'>¡Amiga! Los muchos maravillosos pasatiempos que Krishna ha realizado aquí en Vrndavana han despertando en mí un anhelo intenso.  Qué voy a hacer ahora.
+¡Oh, niña traviesa!  Ahora comprendo tu ardiente deseo por ese Nandanandana (Krishna).
+Oh, amiga, no me mal entiendas.  Es al Krishnasara (venado) a quien amo y recuerdo.
+</p>
+<p class='vspace'>TEXTO - 63
+</p>
+<p class='vspace'>¡Mi querido Uddhava! De esta forma, esas hermosas niñas-gopis han hablado tan dulces palabras que estaban llenas de significado y amor.  Debido a su naturaleza simple y pura, Yo escuchaba con entusiasmo esas charlas.  ¿Dónde está la oportunidad de oír esas dulces palabras ahora?
+</p>
+<p class='vspace'>TEXTO - 64
+</p>
+<p class='vspace'>¡Oh, niña gentil (Visakha)! ¿Quién es esa hermosa joven de tez oscura?
+</p>
+<p class='vspace'>"La hija de un pastor"
+</p>
+<p class='vspace'>"¿Porqué ha venido Ella aquí?"
+</p>
+<p class='vspace'>" Para atar el nudo de la amistad Contigo"
+</p>
+<p class='vspace'>"La acepto como Mi amiga íntima".
+</p>
+<p class='vspace'>"Entonces, abrázala con fuerza".
+</p>
+<p class='vspace'>¡Oh, Uddhava! Cuando Radha Me abrazó, Ella realizó que Yo era Krishna.  Radha se sintió turbada en ese momento.
+</p>
+<p class='vspace'>TEXTO . 65
+</p>
+<p class='vspace'>En Vraja, hay muchos kundas en las orillas de los cuales hemos colocado muchas estacas en el suelo. Yo las hice con Mis propias manos, junto con los pastorcillos, con piedra pura, para atar a los traviesos y felices terneros, que siempre estaban tratando de escaparse.
+</p>
+<p class='vspace'>TEXTO - 66
+</p>
+<p class='vspace'>¡Oh, justo! ¡Qué clase de futuro ha escrito el creador, para nosotras las gopis! En la noche,  el mensajero de los reyes (Akrura) llegó a Nandagrama y estaba susurrando algún asunto secreto en el oído de Krishna, en privado.
+</p>
+<p class='vspace'>TEXTO - 67
+</p>
+<p class='vspace'>¡Oh, niña inquieta!  Cumpliendo la orden de Nanda Maharaja, el oficial de policía está proclamando en la plaza pública.
+</p>
+<p class='vspace'>"Hoy Krsna va a Matura".	
+</p>
+<p class='vspace'>Mi ojo derecho está temblando una y otra vez, como señal de algo inauspicioso, y mi corazón se está quebrando en pedazos.  ¿Quién sabe cuál será nuestro destino?
+</p>
+<p class='vspace'>NOTA: Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani  Capítulo Diecisiete, vipralambha (Sentimiento de vida en separación 17-8).
+</p>
+<p class='vspace'>TEXTO - 68
+</p>
+<p class='vspace'>¡Oh, mi querido amigo!  Cuando me enteré de que Krishna iría a Matura mañana, oré para que la noche fuera lenta, mas observa que la noche pecaminosa mostró su verdadera naturaleza (pasando rápido).  Es verdad que las cosas negras, en la modalidad de la ignorancia (noche) nunca se preocupan de los demás.
+</p>
+<p class='vspace'>TEXTO  -69
+</p>
+<p class='vspace'>¡Oh, justo!  En el tiempo que queda antes de que Akrura se lleve a Krishna a Matura, te ruego cuides y riegues a la enredadera malati, que está creciendo en Mi patio, y que siempre ha dado flores para adornar las orejas de Krishna.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani Capítulo Trece, vyabhicari (Transgrediendo los lazos del matrimonio 13:50).
+</p>
+<p class='vspace'>Radha se está dirigiendo a Lalita.
+</p>
+<p class='vspace'>TEXTO - 70
+</p>
+<p class='vspace'>¡Oh, vanidosa niña!  No ves las centellas que caen sobre Mi cabeza,  y estás pensando en proteger a esta enredadera de flores.  ¡Oh, voy a morir justo ahora!  Sal fuera de la casa ahora mismo y mira, Krishna ya se ha sentado en el carro para irse a Matura.
+</p>
+<p class='vspace'>TEXTO - 71
+</p>
+<p class='vspace'>Oh, noble dama, ¿es que nadie en todo Vraja va a detenerLo? ¿ No se romperán las patas de estos caballos pecaminosos? ¿No va a sucederle algo a la rueda del carro? ¡Qué! ¿El matador del demonio Kesi, Krishna, está realmente yendo a Matura?
+</p>
+<p class='vspace'>TEXTO - 72
+</p>
+<p class='vspace'>¡Oh, Akrura!  Tan solo mira enfrente de tí, esa hermosa niña con una cintura delgada, que ha abandonado toda verguenza.  ¿Qué cosa sin igual irá Ella a hacer?
+Hasta que no pongas a este brillante Krishna fuera de tu carro, Ella no bajará la brillante espada que tiene en sus manos (para suicidarse).
+</p>
+<p class='vspace'>TEXTO - 73
+</p>
+<p class='vspace'>¡Oh,  brumosa niña!  Abre Tus ojos y mira por última vez a Krishna. Abandona ese estado ilusorio y no Te engañes a Tí Misma merced a una última mirada de Krishna. ¡Oh, no! Este impío Akrura, pese a haber oído nuestro llanto  está alejando rápidamente el carro.
+</p>
+<p class='vspace'>TEXTO - 74
+</p>
+<p class='vspace'>¡Oh, esbelta niña (Radha)! Al no poder ver Tu rostro, las lágrimas caen profusamente de los ojos de Krishna. Mas debido al polvo levantado por los cascos de los caballos, habrá allí un malentendido (la gente comprenderá que se debe al polvo levantado por los cascos de los caballos lo que provoca el llanto en los ojos de Krishna).
+</p>
+<p class='vspace'>TEXTO  - 75
+</p>
+<p class='vspace'>¡Oh, Akrura!  No mates así a las mujeres de Vraja (llevándote a Krishna)  y destruye la fama de la dinastía Yadu.
+</p>
+<p class='vspace'>(Krishna), Oh, Uddhava, cuando Me estaba yendo para Matura,  las gopis de Vraja se lamentaban de este modo, y así se arrojaron en un océano de lamentos. 
+</p>
+<p class='vspace'>NOTA:  Aquel que está cometiendo esta acción impía no debe ser llamado Akrura.  El es tan extremadamente cruel que sin siquiera tratar de consolar a las apenadas moradoras de Vraja, se está llevando a Krishna. Quien es más querido para nosotras, que la vida misma. (Akrura significa "no cruel"). (Srimad-Bhagavatam 10-39-26).
+</p>
+<p class='vspace'>TEXTO  - 76
+</p>
+<p class='vspace'>Cerca de Nandagrama está el puro Pavana- sarovara. Las gopis iban allí con el pretexto de llenar sus cántaros. Rodeando ese lago, hay muchos bosques secretos donde disfrutar.  Ellos son espesos y llenos del aroma de los lotos, e infinito número de abejas negras se arremolinan alrededor.
+</p>
+<p class='vspace'>NOTA:  Pavana-Sarovara es el sarovara favorito de Krishna, fue creado por Pavana, el padre de Visakha-devi, para el placer de Krishna. 
+</p>
+<p class='vspace'>Tal parece que Vasudeva-Krishna primero  hace que Uddhava realice el parikrama de Nandagrama, mas a medida que El recuerda cada lugar de pasatiempo, El describe nuevamente el amor extático de las gopis.
+</p>
+<p class='vspace'>TEXTO - 77
+</p>
+<p class='vspace'>¡Oh, amiga (Visakha)! La zona que rodea Nandagrama está llena de los lugares de pasatiempos de Krishna, y la tierra está decorada con las huellas de Sus pies de loto. Para la gente de este mundo, este lugar es indescriptiblemente maravilloso y todo-atractivo.  ¡Mas ay de mí! Ahora este asombroso lugar  está haciendo arder mi corazón.
+</p>
+<p class='vspace'>NOTA:  Aquí comienza el párrafo del sloka catorce, que termina con el texto 90.
+</p>
+<p class='vspace'>TEXTO - 78
+</p>
+<p class='vspace'>¡Oh, Sumukhi (Radha)!   La dulce fragancia de Tu amor puro por Krishna hará definitivamente que hoy o mañana, El venga y Te abrace, como una  guirnalda alrededor de Tu cuello. Entonces, ¿porqué hablas estas palabras que son como dardos de luz que atraviesan los corazones de Tus amigas?
+</p>
+<p class='vspace'>TEXTO - 79
+</p>
+<p class='vspace'>¡Oh, niña abatida (Radha)!  ¿Porqué tienes dudas de que Krishna volverá?  Krishna definitivamente volverá, de modo que no llores continuamente de ese modo.
+</p>
+<p class='vspace'>¡Oh, sakhi!  Debido al obligado fuego de la separación, todos Mis órganos vitales se queman y rompen.  Abandonaría feliz este cuerpo, pero Mi cuerpo es incomparable, debido a que Ha sido abrazado por Krishna.
+</p>
+<p class='vspace'>TEXTO - 80
+</p>
+<p class='vspace'>¡Oh, delicada niña (Radha)!  ¿Porqué Te lamentas de este modo que rompe el corazón, arrojando así al mundo a un infinito océano de infelicidad? Tan solo ten paciencia en Tu corazón, pues si ese rey de gente sagaz no recuerda Su promesa (volveré rápido a Vraja) y no regresa,  todos en los tres mundos Lo acusarán.
+</p>
+<p class='vspace'>TEXTO - 81
+</p>
+<p class='vspace'>¡Oh, sakhi! Pensé que Mi Krishna, el matador del demonio Madhu, nunca se iría de Vraja, y que siempre disfrutaría pasatiempos amorosos con El.  Pensando de esa manera, solía enojarme con El y portarme mal. Mas quién sabía que el guru de los malos, el  muy cruel Akrura vendría y arrojaría un relámpago en nuestras cabezas (llevándose a Krishna lejos de nosotros)?.
+</p>
+<p class='vspace'>TEXTO - 82
+</p>
+<p class='vspace'>¡Oh, sakhi! Ni siquiera tengo una gota de amor por Krishna en Mi corazón. He aparecido en este mundo simplemente para enseñar a todos cómo amar a Krishna. Por eso estoy llorando, y esa es la única razón de que aún viva, aunque no pueda ver al hermoso Krishna, Cuya principal acompañante es la flauta.
+</p>
+<p class='vspace'>NOTA:   El Señor Caitanya Mahaprabhu expresó el mismo humor. 
+</p>
+<p class='vspace'>"Mis queridos amigos, no tengo la más ligera pizca de amor por Dios dentro de Mi corazón. Cuando Me vean llorando en separación, solo estoy exhibiendo falsamente una demostración de Mi gran fortuna. Por cierto,  no viendo el hermoso rostro de Krishna tocando Su flauta, continúo viviendo Mi vida, como un insecto, sin propósito.
+(Caitanya-caritamrta Madhya lila 2-55)
+</p>
+<p class='vspace'>TEXTO - 83
+</p>
+<p class='vspace'>Oh, sakhi, sigo diciéndome a Mí misma, Krishna volverá pronto, mas, ¿cuánto tiempo puedo seguir viviendo engañándome a Mí Misma de este modo?
+</p>
+<p class='vspace'>Al fin y al cabo, soy tan solo una débil mujer de Vraja.  Los árboles florecientes y los lugares donde Krishna disfrutó Sus pasatiempos, Me recuerdan forzosamente a El. Así, Mi corazón  está siendo quebrado y soy arrojada al suelo una y otra vez.
+</p>
+<p class='vspace'>TEXTO - 84
+</p>
+<p class='vspace'>Oh, sakhi, ¿cuándo será que ese Krishna dulcemente sonriente, el destruidor de la fama de Cupido, Cuyas miradas sensuales son arrojadas al arco de Mis hermosas cejas curvas, venga y tranquilice Mi mente?
+</p>
+<p class='vspace'>TEXTO - 85
+</p>
+<p class='vspace'>¡Oh, sakhi! No es bueno el propio deseo que tiene Krishna de ir a vivir a Matura, no puedo tolerar ese dolor. Mas el dolor causado por el arañazo de Su promesa ("Volveré al cabo de dos o  tres días"), está hiriendo Mi corazón y no me permite terminar con Mi vida. 
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloja en su Ujjvala-nilamani Capítulo Diecisiete vipralambha (Amor en separación 17: 10).
+</p>
+<p class='vspace'>TEXTO - 86
+</p>
+<p class='vspace'>¡Oh, sakhi!  ¿Cuándo le será posible a Mi lengua el saborear los dulces labios de Krishna?  ¿Cuándo será Mi cuerpo abrazado por Su cuerpo sereno y Mis ojos vean Su hermoso cuerpo decorado, Mi nariz huela Su dulce fragancia y Mis oídos oigan las dulces palabras Suyas? Oh, ¿cuándo podré ocupar Mis cinco sentidos completamente en el servicio de Krishna?
+</p>
+<p class='vspace'>TEXTO - 87
+</p>
+<p class='vspace'>¡Oh, sakhi!  Cuándo será que el hijo de Nanda Maharaja, Krishna, Quien satisface los sentidos de todos, vuelva a Nandagrama y reviva a todos, de modo que todo sea nuevamente verde y fresco, y así alivie a mis ojos de su infinito sufrimiento, exhibiendo Sus divertidos pasatiempos delante de Mí.
+</p>
+<p class='vspace'>TEXTO - 88
+</p>
+<p class='vspace'>¡Oh, Krishna!  Antes Te dí por garantizado, y no Te ofrecí el debido respeto. Ahora, nunca volveré a enojarme Contigo, y seré obediente.  Te lo ruego, por favor, aparece nuevamente en el sendero de Mis ojos.
+Aunque no esté escrito en Mi destino que tenga Tu servicio, aún así tengo el deseo de Servirte.  De modo que, por favor, estoy recordando Tu infinita misericordia y Te ruego de este modo.
+</p>
+<p class='vspace'>TEXTO - 89
+</p>
+<p class='vspace'>¡Oh, Krishna!  Te llevaré a la casita en el  nikunja (la enramada) y Te acostaré en una suave cama de flores, mientras Me río y juego Contigo, colocaré una sabrosa  nuez de betel en Tu boca, Te serviré felizmente.
+</p>
+<p class='vspace'>TEXTO - 90
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Cuando las gopis estaban totalmente absortas de ese modo en Karunabhava, y sus  fuertes gritos de lamentos llenaban todo Vraja, los viajeros que pasaban por el camino, al oír sus fuertes lamentos, cubrieron sus oídos, y con lágrimas cayendo de sus ojos, se alejaron corriendo de Vraja.
+</p>
+<p class='vspace'>TEXTO -91
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Cuando tu carro, tirado por caballos que usan joyas doradas, llegue a Nandagrama, Radha y las otras niñas-gopis, vendrán corriendo, creyendo que Yo he llegado. Debes detener tu carro cerca de ellas.
+</p>
+<p class='vspace'>TEXTO - 92
+</p>
+<p class='vspace'>¡Oh, sabio!  Por favor, ofrece Mis completas reverencias a esos hermosos árboles y enredaderas puras de Vrndavana, que siempre están siendo besados por abejorros zumbantes.  Cuyos nuevos retoños y brotes han servido para que las gopis se adornen  y así atraerMe a ellas.
+</p>
+<p class='vspace'>NOTA:  Ahora Vasudeva-Krishna comienza a relatar a Uddhava el mensaje a ser entregado.
+</p>
+<p class='vspace'>TEXTO - 93
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Esas hermosas vacas, que al oír el dulce sonido de mi flauta se pusieron  inquietas  e hicieron  a un lado a sus terneros, corrieron hacia Mí con lágrimas derramándose de sus ojos.
+Acércate amablemente a ellas y canta Mis glorias en voz alta y pregúntales con mucho amor cómo se encuentran.
+</p>
+<p class='vspace'>TEXTO  -94
+</p>
+<p class='vspace'>Cuando Brahma había robado sus terneros, Yo tomé la forma de esos terneros y bebí la dulce leche de esas vacas. Por favor, ofrece Mis reverencias una y otra vez a Mis madres (las vacas).
+</p>
+<p class='vspace'>TEXTO - 95
+</p>
+<p class='vspace'>Cuando iba al bosque a ver las flores, Sridama y Mis otros queridos amigos venían corriendo a Tocarme, gritando:  "Yo seré el primero. Yo seré el primero".
+Tomando Mi nombre y preguntando por su bienestar, abrázalos afectuosamente una y otra vez en Mi nombre.
+</p>
+<p class='vspace'>TEXTO - 96
+</p>
+<p class='vspace'>Luego de haber matado a Kamsa, enfrente de todos, hablé dulces y amables palabras de iluminación a Nanda Maharaja y lo envié de vuelta a Vraja.  Tomando Mi nombre, debes muy gentil y respetuosamente rendirte a sus pies de loto, diciendo, " Krishna ofrece Sus infinitas reverencias".
+</p>
+<p class='vspace'>TEXTO - 97
+</p>
+<p class='vspace'>Acto seguido, tomando Mi nombre en Tus labios, ofrece Mis completas reverencias a los pies de loto de Mi madre. Yo soy su único hijo, así ella está sintiendo infinita pena y se ha puesto muy delgada.  Ella alzó su dedo una y otra vez, maldiciendo a Kamsa, "Tú te llevaste a mi Krishna, de modo que serás destruído".
+</p>
+<p class='vspace'>TEXTO 98
+</p>
+<p class='vspace'>Ella (Madre Yasoda) está siempre cantando Mis nombres, y en un profundo humor de separación, inspira muy hondo, el sonido "Ha Krishna" sale de su garganta.  Se baña en su propio sudor  y su cuerpo se marchita  mientras derrama lágrimas de sus ojos, humedeciendo sus ropas, ella se para intensamente en el camino a Matura, esperando Mi regreso.
+</p>
+<p class='vspace'>TEXTO - 99
+</p>
+<p class='vspace'>El verano caliente, Akrura ha quitado a la fuerza el agua de su alma, dejando la tierra de su corazón agrietada, sin agua. El lago de sus cuerpos se ha secado completamente.  Sus rostros como el loto han desmejorado y la tórtola de la fuerza vital de esas gopis se ha escondido en el lodo vacío de su esperanza.  
+</p>
+<p class='vspace'>NOTA:  En esta analogía, Akrura es comparado al verano caliente y Krishna, al agua en el lago de los cuerpos de las gopis.  El cuerpo de las gopis es comparado a la tierra agrietada en el lecho del lago, después que el sol del verano ha evaporado el agua, y sus rostros son comparados a los lotos secos.
+Las tórtolas (sus aires-vitales) que son amenazadas cuando el agua del lago es reducida, tratando así de refugiarse en el lodo vacío  (la esperanza de las gopis de que Krishna vuelva). 
+</p>
+<p class='vspace'>TEXTO - 100
+</p>
+<p class='vspace'>¡Oh, océano de buenas cualidades (Uddhava)!  Vas a Nandagrama como el mensajero de este ofensor.  Allí las gopis están sufriendo debido al dolor de la separación. Todos y cada uno de sus miembros están agitados. Quizás te maldigan, mas si te presentas ante ellas de un modo humilde y auto-controlado, con tus manos juntas, ellas verán que este sirviente sin pecado está arrepentido por las acciones de su amo.
+</p>
+<p class='vspace'>TEXTO -101
+</p>
+<p class='vspace'>Cuando las gopis te vean usar las mismas ropas que Yo y con Mi misma apariencia, ellas se te acercarán  (pensando que tú eres Yo). Mas cuando se den cuenta de su error, se sorprenderán mucho, se inquietarán, dudarán y sus mentes fluctuarán.
+Surgirán en ellas muchos otros humores y comenzarán a hablar entre sí, mas tú permanece allí sin obstruírlas  y entrega lentamente Mi cautivante mensaje.
+</p>
+<p class='vspace'>TEXTO 102
+</p>
+<p class='vspace'>Primero preséntate a tí mismo,  "Yo soy el secretario de los asuntos conyugales de esa persona que tiene un fuerte deseo de disfrutar en el bosque, en las orillas del Yamuna, quien es el amo de las sesenta y cuatro artes, quien es llevado a Matura por Akrura.  He venido a ustedes como Su mensajero. Mi nombre es Uddhava".
+</p>
+<p class='vspace'>TEXTO - 103
+</p>
+<p class='vspace'>¡Oh, damas gentiles!  Debido a tan intensa separación, Krishna está suspirando profundamente, y Sus hermosos labios han empalidecido. No tiene interés en ninguna clase de placeres. Su garganta está blanca como la espuma, El siempre está recordando sus ilimitadas cualidades con un corazón apenado.  Su amado les envía este indescriptible mensaje.
+</p>
+<p class='vspace'>TEXTO - 104
+</p>
+<p class='vspace'>¡Oh gopis gentiles!   ¿No vienen ahora los demonios a asustarlas como antes? ¿Están todas felices y tranquilas? ¿Recuerdan alguna vez los dulces bosques de Vrndavana donde Yo acostumbraba disfrutar con ustedes, de acuerdo a sus deseos?
+</p>
+<p class='vspace'>TEXTO - 105
+</p>
+<p class='vspace'>Mis padres y otros parientes Me tienen atado con su dulce plática y diversas labores auspiciosas.  Por eso tengo que quedarme en Matura. Recuerdo todos los pasatiempos amorosos que disfrutamos, por eso mis días aquí en Matura pasan con gran dificultad.
+</p>
+<p class='vspace'>TEXTO -106
+</p>
+<p class='vspace'>Conozco su naturaleza trascendental, de modo que tengan la amabilidad de perdonarMe, pero la verdad es que todas ustedes son las responsables de romper Mi corazón y volverme loco por hacer que el amor por ustedes brotara en mi débil corazón. Me es muy difícil pasar siquiera medio momento sin ustedes.
+</p>
+<p class='vspace'>TEXTO - 107
+</p>
+<p class='vspace'>¡Oh, graciosas jovencitas!  Aunque cada noche en sus sueños, disfrutan de la danza rasa Conmigo, (Krishna)  allí, en la dulce Vrndavana una y otra vez ustedes gritan "¡Krishna nos ha abandonado!"
+</p>
+<p class='vspace'>¿No se sienten avergonzadas por hacer tales falsas acusaciones?
+</p>
+<p class='vspace'>TEXTO - 108
+</p>
+<p class='vspace'>¡Oh, Candravali!  Debido a los dulces movimientos de tus ojos y los amorosos movimientos de tus cejas, tuve la fuerza para vencer a los tres mundos.  
+</p>
+<p class='vspace'>Ahora, cuando recuerdo esos mismos movimientos amorosos de tus cejas, Mi corazón se quiebra. 
+</p>
+<p class='vspace'>NOTA:  Ahora Vasudeva-Krishna está dando un mensaje específico a las ocho gopis principales:  Radharani, Candravali, Lalita, Visakha, Syama, Padma, Bhadra y Saibya.
+</p>
+<p class='vspace'>TEXTO - 109
+</p>
+<p class='vspace'>¡Oh, Visakha de hermoso cuerpo suave!  ¿Recuerdas aquel día en que Yo tiré de tus ropas con gran alegría en un hermoso bosque? Cuando se aproximó una dama de edad, al verla, dije, " Oh, niña maliciosa, devuélveme Mi guirnalda gunja que escondes debajo de tus ropas. Cuando dije eso, Me sentí avergonzado".
+</p>
+<p class='vspace'>TEXTO - 110
+</p>
+<p class='vspace'>¡Oh, Visakha!  Tú eres afortunada porque puedes expresar la pena y angustia de Tu corazón a tus amigas y así obtener un poco de alivio.
+</p>
+<p class='vspace'>Mas desafortunadamente, Yo no tengo a nadie, aquí en Matura para abrirle Mi corazón.
+</p>
+<p class='vspace'>TEXTO - 111
+</p>
+<p class='vspace'>Oh, Syama, incluso ahora Mi corazón  está palpitando debido al recuerdo de tus dulces palabras embriagantes envueltas en Tu risa gentil que destruye la paciencia.
+</p>
+<p class='vspace'>TEXTO - 112
+</p>
+<p class='vspace'>¡Oh, Padma!  Tú recordarás ese día cuando Yo pretendía dormir en el lata-kunja. Tú trataste de robar Mi flauta .  En ese momento, Yo tiré de tus ropas, una y otra vez, con ambas manos, cuando recuerdo esos pasatiempos disfrutados ese día, Mi corazón  se hace pedazos.
+</p>
+<p class='vspace'>TEXTO - 113
+</p>
+<p class='vspace'>¡Mi querida Lalita!   Tú solías disfrutar del abrazo Conmigo en un lugar solitario y otros deportes amorosos.  Ahora debes estar rodando en el polvo debido  a intensos sentimientos de separación,  en ese estado melancólico y débil, ¿cómo puedes seguir viviendo?
+</p>
+<p class='vspace'>TEXTO - 114
+</p>
+<p class='vspace'>Oh, hermosa Bhadra,  tu amado Krishna a Quien le prestaste  un maravilloso servicio que conquista el corazón, cada noche en los kunjas de Vrndavana,  está ahora siendo servido en Matura por nuevas personas desprovistas de amor puro. 
+</p>
+<p class='vspace'>Estoy infelizmente aceptando tranquilamente sus servicios.
+</p>
+<p class='vspace'>TEXTO - 115
+</p>
+<p class='vspace'>Oh, Saybia, por favor, trata de tolerar la fuerte influencia de Cupido.  Yo volveré en dos o tres días para satisfacer todos tus deseos conyugales
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo Diecisiete, Vipralambha (17:12).
+</p>
+<p class='vspace'>TEXTO - 116
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Cuando tú hayas presentado Mi mensaje de un modo cautivante y educado a esas gopis de ojos de loto, ellas se liberarán de su aflicción y pena.
+</p>
+<p class='vspace'>Luego, podrás acercarte amablemente a Radharani, que vive en el templo de Mi corazón, Ella se siente atormentada e indefensa.
+</p>
+<p class='vspace'>TEXTO - 117
+</p>
+<p class='vspace'>En esa espléndida Vrndavana, Radharani debe estar yaciendo en una cama fresca de hojas de loto, rodeada por Sus sirvientas, llorando continuamente.  Su cuerpo se habrá vuelto muy delgado, mas tú comprenderás que Su fuerza vital aún está presente, por la fluctuante vibración de Su cuello.
+</p>
+<p class='vspace'>TEXTO - 118
+</p>
+<p class='vspace'>Esa enredadera-madhavi (Radha) debe estar muy inquieta y sobreviviendo con gran dificultad, puesto que Madhava (primavera, krishna) se ha ido.
+</p>
+<p class='vspace'>En el momento en que yo llegaba  a Matura, esa virtuosa dama Radha parecía muy solitaria y acongojada. Le he prometido que volvería rápido. Ella está viva por esa esperanza.
+</p>
+<p class='vspace'>TEXTO - 119
+</p>
+<p class='vspace'>¡Oh, Uddhava!  Por favor, toma esta siempre fresca guirnalda de flores de cinco colores (Vaijayanti). Radha yace en un estado de inconsciencia próxima a la muerte.  Esta guirnalda tiene el poder de traer a la Radha de ojos de loto de vuelta a la conciencia.
+</p>
+<p class='vspace'>TEXTO - 120
+</p>
+<p class='vspace'>Debido a la fragancia de esta guirnalda, Radha vendrá a la conciencia externa, y con lágrimas en Sus ojos, comenzará a mirar a todas partes.
+</p>
+<p class='vspace'>Luego, muy humildemente, debes acercarte a Radha, que estará manifestando síntomas extáticos.
+</p>
+<p class='vspace'>TEXTO - 121
+</p>
+<p class='vspace'>Sosteniendo la guirnalda en tu mano, debes acercarte a esa cama de pétalos de loto, con un corazón puro, luego de pedir primero permiso a las sirvientas de Radha, con tus ojos; debes sentarte cerca de la cama y dar Mi mensaje a Radharani.
+</p>
+<p class='vspace'>TEXTO - 122
+</p>
+<p class='vspace'>¡Oh, paciente (Radha)!  Esa persona a Quien Tú consideras más querida que todas Tus relaciones. Esa misma persona   Que Te considera más querida que todas Sus relaciones, Quien es más querida a Tí que Tu vida, para Quien Tú eres más querida que Su vida. Oh, devi (Radha) ese corazón de Krishna está ardiendo debido a la separación de Tí.
+</p>
+<p class='vspace'>TEXTO 123
+</p>
+<p class='vspace'>Sé que el sol de la separación ha secado el lago de Tu corazón, y el pez de Tu fuerza vital está esforzándose por aliento en Tu garganta.   Mas, ¡Qué tengo que hacer aquí! El viento de Mis relaciones Me frena de acercarme a Tí, y así Me estoy ahogando en el océano de Mi deseo de encontrarTe.
+</p>
+<p class='vspace'>NOTA:   Krishna Se está comparando a Sí Mismo con  una nube que es llevada por el viento de acuerdo a su deseo. Uno de los nombres de Krishna es Ghanasyama.
+</p>
+<p class='vspace'>TEXTO - 124
+</p>
+<p class='vspace'>¡Oh, Vidhumukhi!  La reunión que ocurre cada noche entre Tú y Yo no es un sueño. Yo estoy sufriendo debido a que no puedo dormir porque Tú tienes el conocimiento de cierto poder para obligarme por la fuerza a apartarme de los Yadavas.
+</p>
+<p class='vspace'>NOTA:  Krishna está disfrutando cada noche con Radha, Quien piensa que Ella está soñando.  Aquí, Krishna está acusando a Radha de tener cierto poder para obligarLo por la fuerza a estar cada noche con Ella, así, es incapaz de dormir.
+</p>
+<p class='vspace'>TEXTO . 125
+</p>
+<p class='vspace'>El hijo de Nanda Maharaja, Quien Se agita de amor por Tí, Te solicita humildemente que mires ese madhavikunja en la Colina de Govardhana, que fue testigo de nuestros primeros pasatiempos conyugales.
+</p>
+<p class='vspace'>NOTA:  Srila Rupa Gosvami ha citado este sloka en su Ujjvala-nilamani en el Capítulo Diez: vibhavonuddipanah, eso que estimula el amor extático 10:89.
+</p>
+<p class='vspace'>TEXTO . 126
+</p>
+<p class='vspace'>Oh, Radha, muy pronto apareceré delante de Tus ojos con Mi flauta ubicada en Mi boca y adornado con el pigmento rojo de la Colina de Nandisvara.  En ese momento, Te aliviaré de Tu pesar y disolveré la pena que Tú estás sintiendo en todos tus miembros, y Te rociaré con amor.
+</p>
+<p class='vspace'>TEXTO - 127
+</p>
+<p class='vspace'>Debido al intenso amor que surge dentro de Mí, las lágrimas fluyen de Mis ojos y bajo la fuerte influencia de Cupido, besaré Tus mejillas que se han vuelto amarillas y  abrazaré con fuerza Tu cuello tembloroso.  Así, causaré que disfrutes definitivamente de un festival de amor.
+</p>
+<p class='vspace'>TEXTO - 128
+</p>
+<p class='vspace'>¡Oh, altamente inteligente Uddhava!  Tú eres la principal de las personas eruditas. De modo que ten la amabilidad de entregar de esta forma Mi glorioso mensaje a esas gopis de ojos azules, y muéstrales la costa de ese océano de separación.
+Por favor, quédate por unos días en Vraja para llevar felicidad a todos.
+</p>
+<p class='vspace'>TEXTO -129
+</p>
+<p class='vspace'>¡Oh, amigo mío!  Tu ida al Nandagrama de Nanda Maharaja,  no servirá tan solo a Mi propósito, sino que tú alcanzarás el beneficio supremo cuando contemples el humor amoroso espontáneo de las Vrajavasis hacia Mí.
+</p>
+<p class='vspace'>Y cuando tú recuerdes estas dulces palabras Mías, comprenderás su temperamento.
+</p>
+<p class='vspace'>TEXTO - 130
+</p>
+<p class='vspace'>Aquel que siempre saborea los pasatiempos trascendentales de Krishna en Vraja y que baila en gran éxtasis sobre el resto del mandala de Matura, Cuyos pies de loto sirven eternamente de refugio a Rupa Gosvami.
+Que este poema cause que el corazón de Sri Caitanya Mahaprabhu rebose de amor 
+extático.
+</p>
+<p class='vspace'>TEXTO - 131
+</p>
+<p class='vspace'>La muy misericordiosa Suprema Personalidad de Dios, Krishna, Quien disfruta pasatiempos infantiles con Sridama y los otros pastorcillos, quien baila con las hermosas niñas gopis y también destruye divertidamente a muchos demonios, debe ser recordado, pues El te enviará a la otra orilla del océano del nacimiento y la muerte.
+</p>
+<p class='vspace'>Oro por que este intento de presentar el muy profundo "Uddhava Sandesh" de Srila Rupa Gosvami, pese a sus obvios defectos, traiga algo de gozo a los corazones  de los Vaisnavas.
+</p>
+<p class='vspace'>Y si cae alguna  lágrima, entonces mi profundo deseo habrá sido cumplido.
+</p>
+<div class='vspace'></div><div class='datasheet' > 
+<div><a class='urllink' href='http://creativecommons.org/licenses/by-nc-sa/2.5/' rel='nofollow'><img src='http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png' alt='This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License' title='This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License' /></a></div>
+</div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:12 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

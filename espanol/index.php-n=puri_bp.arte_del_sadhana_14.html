@@ -1,0 +1,415 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Practica y Predica</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_14' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_14' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Practica y Predica"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_14-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>Practica y Predica</h2>
+<pre> namo mahã-vadãnyãya
+ krsna-prema-pradãya te
+ krsnãya krsna-caitanya-
+ nãmne gaura-tvise namah
+</pre><p class='vspace'>“Ofrezco mis respetuosas reverencias al Señor Sri Krishna quien viene con una refulgencia dorada y ostenta el nombre de Krishna Caitanya. En esta forma, El es más magnánimo que cualquier otro avatar, incluso que Krishna Mismo, porque distribuye libremente lo que nadie ha dado nunca antes, el amor puro por Krishna”.
+(Caitanya Caritãmrta 2.19.53)
+</p>
+<p class='vspace'>Con este verso Srila Rupa Gosvãmi sintetiza el temperamento de Caitanya Mahãprabhu, ofreciendo homenaje a la identidad del Señor Caitanya, Su nombre, forma, cualidades y pasatiempos. Rupa identifica a Mahãprabhu como Krishna Mismo de la manera más perfecta, como el amante de las gopis de Vraja y explica que Mahãprabhu es famoso por el nombre de Krishna Caitanya. Asimismo, Krishnadãsa Kavirãja Gosvãmi escribió:
+</p>
+<div class='vspace'></div><pre> sesã-lilãya dhare nãma sri-krsna-caitanya
+ sri-krsna jãnãye saba visva kaila dhanya
+</pre><p class='vspace'>“En la última parte de Su vida, El fue conocido como Sri Krishna Caitanya. El significado de Su nombre es que El bendice al mundo entero dando conciencia (caitanya) de Krishna”.
+(Caitanya Caritãmrta 1.3.34)
+</p>
+<p class='vspace'>La forma de Mahãprabhu se describe con las palabras gaura-tvise, “Aquel cuyo cuerpo es de un matiz dorado”.
+</p>
+<p class='vspace'>Svarupa Dãmodara describe al Señor como rãdhã-bhãva-dyuti-suvalita, poseyendo el color del oro fundido como el de Srimati Rãdhãrãni. Las principales cualidades de Mahãprabhu de compasión y munificencia son reveladas con las palabras mahã-vadanyãya y Su pasatiempo de distribuir el amor por Dios, el prema, que no es poseído siquiera por los dioses como Brahmã y Siva, se describe con las palabras krsna-prema-pradãya.
+</p>
+<p class='vspace'>Tras completar Sus magnánimos pasatiempos plenos de dulzura, la Persona Suprema, Vrajendranandana Sri Krishna, dejó la Tierra junto con Sus asociados eternos, las vacas, los pastores y las pastoras. Al regresar a Su morada eterna, Goloka, pensó de la siguiente manera: “Todo este tiempo no He dispensado el amor puro de Mí Mismo en el mundo. Por leer estudiosamente las Escrituras, las almas jivas pueden llegar a entender su verdadera identidad y ocuparse en Mi servicio acatando el vidhi-mãrga. Mas por seguir solamente este método de servicio devocional, nadie puede alcanzar el nivel supremo de la devoción encontrado en los residentes de Vraja. En el sendero vidhi, el devoto está constantemente consciente de Mi majestad y en tal sentido su amor no alcanza los pináculos de intensidad que son comunes en Vraja. La devoción diluida por la conciencia de Mi divina majestad no Me complace tanto.
+</p>
+<div class='vspace'></div><pre> sakala jagate more kare vidhi-bhakti
+ vidhi-bhaktye vraja-bhãva pãite nãhi sakti
+ aisvarya-jñãnete saba jagat misrita
+ aisvarya-sithila-preme nãhi mora prita
+ aisvarya-jñãne vidhi-bhajana kariyã
+ vaikunthake jãya catur-vidha mukti pãñã
+</pre><p class='vspace'>“Todos en el mundo Me adoran conforme a los mandamientos de las Escrituras, mas por este proceso de vaidhi bhakti no se alcanzan los humores amorosos de Vraja. Todo el mundo Me contempla con respeto y veneración, pero la devoción diluida por dicha conciencia de Mi majestad no es Mi preferida. Aquel que adora de acuerdo a los mandatos Escriturales en un humor de respeto y veneración, alcanza las cuatro clases de liberación y va a Vaikuntha”.
+(Caitanya Caritãmrta 1.3.15-7)
+</p>
+<p class='vspace'>“El devoto que sigue el sendero vidhi sin duda obtiene una de las cuatro clases de liberación en Vaikuntha, sãrsti (poseyendo riquezas idénticas a las Mías), sãmipya (residiendo en Mi cercanía), sãlokya (residiendo en el mismo planeta que Yo) o sãrupya (teniendo una forma como la Mía). Mas ni siquiera los Vaisnavas en el vidhi-mãrga poseen deseo alguno por la sãyujyã mukti, pues implica sumergirse en Mi aspecto personal y perder Su identidad como Mis sirvientes. 
+</p>
+<div class='vspace'></div><pre> sãyujya sunite bhaktera hay ghrnã laijã bhaya 
+ maraka vãñchaya tabu sãyujya nã laya
+</pre><p class='vspace'>“Cuando un devoto oye sobre la sãyujya mukti siente disgusto, vergüenza y temor. El antes iría al infierno que fundirse en el Brahman informe.
+(Caitanya Caritãmrta 2.6.268)
+</p>
+<p class='vspace'>“Mis devotos exclusivos no desean sino el gozo de Servirme y no consideran que alguna otra cosa pueda acarrear la felicidad. Deseo predicar por todo el mundo un sendero de amor puro que trascienda el vidhi-mãrga. Predicaré la actividad religiosa fundamental para Kali Yuga, el canto de Mis Santos Nombres y mezclando el Nombre con los diferentes humores de relaciones de servidumbre, amistad, protección y amor erótico, haré danzar al mundo de éxtasis. Adoptaré el temperamento de un devoto y experimentando Yo Mismo el éxtasis amoroso, enseñaré el sendero del amor puro al mundo. Quien no lleva a la práctica una enseñanza religiosa particular no puede esperar predicarla efectivamente.
+</p>
+<div class='vspace'></div><pre> yuga-dharma pravartãmu nãma-sankirtana
+ cãri bhãva-bhakti diyã nãcãmu bhuvana
+ ãpani karimu bhakta-bhãva angikãre
+ ãpani ãcari bhakti sikhãimu sabãre
+ ãpane nã kaile dharma sikhãna nã yãya
+ ei ta siddhanta gitã-bhãgavate gãya
+</pre><p class='vspace'>“Inauguraré personalmente la religión de la era, el nãma-sankirtana, el canto en congregación del Santo Nombre. Concediendo el amor extático de Dios al mundo, lo haré danzar. Asumiré el rol de un devoto y enseñaré el servicio devocional a todos, practicándolo Yo Mismo. Nadie puede enseñar las actividades religiosas a los demás, sin ponerlas personalmente en práctica. El Gitã y el Bhãgavatam confirman esta verdad.
+(Caitanya Caritãmrta 1.3.26)
+</p>
+<p class='vspace'>“Yo establezco los principios religiosos para cada Era a través de Mis porciones plenarias. Solo Yo, sin embargo, puedo dispensar la clase de servicio amoroso hallado en Vraja”.
+(Caitanya Caritãmrta 1.3.26)
+</p>
+<p class='vspace'>“La prédica de los principios religiosos de una Era puede ser propagada por cualquiera de Mis ilimitadas expansiones, porciones plenarias o parciales. Sin embargo, el don supremo del vraja-prema no puede ser dado por nadie más excepto Yo, Vrajendranandana. En consecuencia, descenderé a la superficie de la Tierra con Mis asociados próximos y, ocupándome en diversos pasatiempos encantadores con ellos, distribuiré el canto de los Santos Nombres y el vraja-prema”. (Anubhãsya 1.3.13-28)
+</p>
+<p class='vspace'>Después de decidirlo de ese modo, el potente Señor adoptó el color dorado y el espíritu de Su amada Radha, Su potencia completa y apareció en Navadvipa-Mãyãpura, como el hijo de Jagannãtha Misra y Saci Devi. Este hecho ocurrió en el amanecer de Kali Yuga. 
+</p>
+<p class='vspace'>El amanecer o primera parte de la era de Kali (kali-kãle prathama sandhyãya) es explicado por nuestro adorable Srila Prabhupãda en su Anubhãsya como sigue: “La palabra sandhyã alude a la sexta parte de la Era en su comienzo y fin. El prathama-sandhyã es en tal sentido el comienzo de la Era y es una doceava parte de su período completo.  El sesa-sandhyã es la misma longitud de tiempo al final de la Era. Puesto que Kali Yuga dura 432.000 años solares, su prathama-sandhyã continúa por 36.000 años. El Señor Caitanya apareció en Navadvipa Mãyãpur después de transcurridos 4.586 años solares de Kali Yuga”.
+</p>
+<p class='vspace'>En la primera parte de Su vida, Mahãprabhu fue llamado Visvambhara, “Aquel que sostiene al mundo”. El hizo honor al nombre distribuyendo el amor por Dios. Asimismo, en la última parte de Su vida, fue conocido como Krishna Caitanya, “Conciencia de Krishna”.  Haciendo consciente de Krishna a la gente del mundo, trajo a todos la buena fortuna. 
+</p>
+<div class='vspace'></div><pre> prathama lilãya tãntra visvambhara nãma
+ bhakti-rase-barila dharila bhuta-grãma
+ dubhrn dhãtura artha posana dhãtana
+ pusila dharila prema diyã tri-bhuvana
+ sesa-lilaya dhare nãma sri-krsna-caitanya
+ sri-krsna jãnãye saba visva kaila dhanya
+</pre><p class='vspace'>“En Sus primeros pasatiempos el Señor Caitanya fue conocido con el nombre de Visvambhara porque inundó (bhara) al mundo (visva) con el néctar de la devoción y de tal modo salvó a todos los seres vivientes. La raíz verbal dubhrn [que es la raíz de la palabra bhara] indica fomento y mantenimiento. De manera que este nombre indica que Mahãprabhu nutre y mantiene a los tres mundos, distribuyendo el amos por Dios.  En sus últimos pasatiempos, El fue conocido como Sri Krishna Caitanya. El bendijo al mundo entero enseñando sobre el Señor Sri Krishna”.
+(Caitanya Caritãmrta 1.3.32-34)
+</p>
+<p class='vspace'>Sri Caitanya Mahãprabhu aceptó el humor de un devoto de modo de predicar el gran tesoro del amor elevado y refulgente por Krishna a través de Sus propios actos de saborearlo. Este gran ejemplo es ciertamente la norma que debemos seguir.
+</p>
+<p class='vspace'><strong>MAHÃPRABHU, EL JARDINERO EN EL HUERTO DEL AMOR</strong>
+</p>
+<p class='vspace'>El pasatiempo de Krishna en Vraja es de munificencia (audãrya) en el cual predomina la dulzura (mãdhurya), mientras que Su pasatiempo de Navadvipa como Gaura, es de dulzura en el cual predomina la munificencia.  En este espíritu de munificencia, el compasivo Señor Gaurãnga asumió la función de un jardinero que planta un huerto de árboles frutales de amor en Navadvipa. En ocasiones se expresa que Mahãprabhu es el árbol del amor extático por Krishna, mas por un giro divino, El es también el que disfruta los frutos de este árbol y los distribuye. A la vez que el Señor saboreaba el gusto de dichos frutos, El también los entregaba con sumo entusiasmo, tanto, que utilizaba las dos  manos. Y al hacerlo, decía:
+</p>
+<div class='vspace'></div><pre> chalã mãlãkãra ãmi kãhãn kãhãn jãba
+ chalã vã kata phala pãriyã bilãba
+ ekalã uthãñã dite haya parisrama
+ keha pãya keha nã pãya rahe mane bhrama
+ ataeva ãmi ãjñã dilun sabãkãre
+ jãhãn tãhãn prema-phala deha jãre tãre
+</pre><p class='vspace'>“Puesto que Soy el único jardinero, ¿a cuántos sitios diferentes puedo ir? Y puesto que Estoy solo, ¿cuántos frutos puedo recoger y entregar? Es sumamente agotador tratar de reunir los frutos y distribuirlos solo; Me perturba saber que algunos recibirán Mi fruto y otros no. Por lo tanto, ordeno a todos que distribuyan estos frutos del amor a todos los que vean, dondequiera vayan”.
+(Caitanya Caritãmrta 1.9.34-6)
+</p>
+<p class='vspace'>De esta forma, Mahãprabhu solicitó a los que recibieron Su misericordia que Lo ayudaran. De este modo, ellos pueden Servirlo.
+</p>
+<div class='vspace'></div><pre> ãtma-icchãmrte vrksa siñci nirantara
+ tãhãte asankhya phala vrksera upara
+ ataeva saba phala deha jãre tãre
+ khãiyã hauk loka ajara amare
+</pre><p class='vspace'>“Yo riego constantemente el árbol con el néctar de Mi deseo personal. Como resultado, hay incontables frutos de amor en él. En consecuencia, les pido a todos que distribuyan estos frutos a todos, por todas partes, para que ellos, comiéndolos, se libren todos de la vejez y de la muerte”.
+(Caitanya Caritãmrta 1.9.38-9)
+</p>
+<p class='vspace'>Mahãprabhu especifica además que es el deber especial de los nacidos en la India el asumir este servicio:
+</p>
+<div class='vspace'></div><pre> bhãrata-bhumite haila manusya janma-jãra
+ janma sãrthaka kari kara para-upakãra
+</pre><p class='vspace'>“Quienquiera haya tomado nacimiento humano en la tierra de Bhãrata debe hacer su vida exitosa y ocuparse en la obra de bienestar social”.
+(Caitanya Caritãmrta 1.9.41)
+</p>
+<p class='vspace'>El Señor Caitanya Mahãprabhu distribuyó así de compasivamente los frutos del amor de Dios en Su esfuerzo por hacer al mundo afortunado. Mas nosotros somos tan miserables que somos indiferentes a este don inmaculado y nos rehusamos a aceptarlo; qué decir de participar en el servicio de la prédica.
+</p>
+<p class='vspace'><strong>LAS INSTRUCCIONES DE MAHÃPRABHU A KURMA Y VÃSUDEVA</strong>
+</p>
+<p class='vspace'>Cuando el Señor Sri Caitanya Mahãprabhu fue a peregrinar por el sur de la India, distribuyó el nombre de Krishna y el Krishna prema a los habitantes, convirtiéndolos en Vaisnavas. Uno de los primeros lugares sagrados que visitó en India del Sur fue la morada de Kürma, una forma deidad de la encarnación tortuga del Señor.
+</p>
+<p class='vspace'>En esa ciudad vivía un brahmana Védico llamado Kürma Vipra. Cuando Kürma vio a Mahãprabhu, se impresionó por Su refulgencia espiritual y Lo invitó a su casa a comer. Junto con toda su familia, sirvió a Mahãprabhu con mucha devoción, encantando al Señor con su humildad y fe. Kürma se encantó tanto con el Señor que cuando fue el momento de que El partiera, no se sintió capaz de soportar Su separación. Cayó a los pies del Señor y suplicó que le permitiera acompañarlo dondequiera fuera. El Señor se agradó mucho con la actitud de Kürma, pero de todos modos le respondió con las siguientes palabras:
+</p>
+<div class='vspace'></div><pre> prabhu kahe aiche bãta kabhu nã kahibã
+ grhe rahi krsna-nãma nirantara laibã
+ jãre dekha tãre kaha krsna upadesa
+ ãmãra ãjñãya guru haña tãra ei desa
+ kabhu nã bãdhibe tomãya visaya taranga
+ punar api ei thãi pãbe mora sanga
+</pre><p class='vspace'>“Nunca vuelvas a sugerir eso. Antes bien, debes quedarte en el hogar y cantar constantemente el santo nombre de Krishna. Instruye a todo el que veas en la religión de Krishna. Sé un maestro espiritual por Mi orden y libera a todos en esta tierra. Hazlo y nunca más volverás a verte enredado en las olas de la vida materialista. Ciertamente, un día tendrás Mi compañía nuevamente, aquí, en este mismo lugar”.
+(Caitanya Caritãmrta 2.7.127-9)
+</p>
+<p class='vspace'>Esta era la forma en que el Señor difundía la conciencia de Krishna en Sus viajes de Puri a Setubandha, en el extremo sur del subcontinente, purificando el camino con el toque de Sus pies de loto. El solía detenerse misericordiamente en las casas de los brahmanas como Kürma, derramándoles Su gracia, enseñándoles a cantar los Santos Nombres y a enseñar el canto a los demás.
+</p>
+<p class='vspace'>Esa noche, el Señor se quedó en la casa de Kürma y a la mañana siguiente, después de bañarse, se preparó para continuar Su camino, Kürma Vipra Lo siguió parte del camino, hasta que el Señor le dijo que regresara a su casa. Mientras tanto, un leproso llamado Vãsudeva, también se encontraba camino a la casa de Kürma. El se había enterado que Mahãprabhu estaba allí y tenía la esperanza de conseguir una mirada del Señor. Cuando Vãsudeva se enteró por Kürma que el Señor ya había partido, se desconcertó tanto que cayó desmayado al suelo, lamentándose de su desgracia.
+</p>
+<p class='vspace'>El Señor, como el morador omnisciente de todos los seres, estaba completamente enterado de la aflicción de Vãsudeva y aunque ya había recorrido una gran distancia desde la casa de Kürma, regresó para conceder al leproso la oportunidad de Verlo. No solo permitió que Vãsudeva Lo viera sino que incluso lo abrazó afectuosamente. Mahãprabhu es el amigo de los afligidos y Su milagroso contacto de inmediato curó a Vãsudeva de la lepra y lo convirtió en un hombre sano y apuesto.
+</p>
+<p class='vspace'>Vãsudeva Vipra estaba maravillado al ver la infinita misericordia del Señor Supremo y con lágrimas en los ojos glorificó al Señor con un verso hablado por Sudãmã Vipra, del Bhãgavatam:
+</p>
+<div class='vspace'></div><pre> kvãham daridrah pãpiyãn
+ kva krsnah sri-niketanah
+ brahma-bandhur iti smãham
+ bãhubhyãm parirambhitah
+</pre><p class='vspace'>“ ¡Tan solo vean la diferencia entre un pecador miserable como yo y la morada de la Diosa de la Fortuna, Sri Krishna!  Pese a que soy un brahmana descalificado, El me ha cobijado misericordiosamente en Sus brazos”.
+(Caitanya Caritãmrta 10.89.16)
+</p>
+<p class='vspace'>Cuando Vãsudeva se hubo convertido en un joven hermoso como resultado del milagroso contacto con Mahãprabhu, comprendió que Sri Caitanya no era otro que el océano de toda virtud y el amo de los más caídos, la Persona Suprema, Hari Mismo. Y dijo: “Hasta las clases más bajas de la sociedad se desagradaban al contemplar las supuraciones de mi cuerpo leproso. Ellos huían corriendo toda vez que me veían llegar. La única persona que podía ser tan misericordiosa como para tocarme, es el Señor supremamente independiente, cuyo único dolor es contemplar el dolor de los demás. ¡Oh Señor muy misericordioso! Pienso sin embargo que estaba mejor siendo un leproso intocable. Ahora que me has hecho apuesto sin duda me embriagaré de vanidad y seré incapaz de recordar Tus pies de loto”.
+</p>
+<p class='vspace'>Mahãprabhu consideró a Vãsudeva Vipra como sumamente calificado debido a su humildad y con la voz entrecortada le instruyó extáticamente a que obrara como un ãcãrya, tal como le había ordenado a Kürma:
+</p>
+<div class='vspace'></div><pre> prabhu kahe kabhu tomãya nã habe abhimana
+ nirantara kaha tumi krsna krsna nãma
+ krsna upadesi kara jivera nistãra
+ acirãte krsna tomã karibena pãra
+</pre><p class='vspace'>“Nunca volverás a ser vanidoso si cantas constantemente el nombre de Krishna. Libera a las almas caídas instruyéndolas sobre Krishna y Krishna te liberará muy rápidamente del mundo material”.
+(Caitanya Caritãmrta 2.7.147-8)
+</p>
+<p class='vspace'>Tras haber dado estas certezas a Vãsudeva, el supremamente misericordioso Mahãprabhu dejó la ciudad de peregrinaje de Kürmaksetra.  Kürma Vipra y Vãsudeva se abrazaron y cantaron las glorias de Mahãprabhu, con los ojos llenos de lágrimas por la tristeza de Su partida. Krishnadãsa Kavirãja Gosvãmi ha descrito esta historia como “la liberación de Vãsudeva” , llamando a Mahãprabhu Vãsudevãmrtaprada, “el que da la ambrosía a Vãsudeva”.
+</p>
+<p class='vspace'><strong>LA PREDICA NO REQUIERE QUE SE RENUNCIE AL HOGAR</strong>
+</p>
+<p class='vspace'>Srila Prabhupãda Bhaktisiddhãnta Sarasvati Thãkura ha comentado las instrucciones de Mahãprabhu a Kürma Vipra con las siguientes palabras: “Para los que están determinados a abandonar todo para tomar refugio en El y Servirlo exclusivamente, el Señor Supremo Sri Caitanya Mahãprabhu brinda aquí la instrucción de permanecer en el hogar, o sea, dejar de lado el orgullo de ser un heroico ejecutante del bhajana y adoptar una práctica regular de cantar el santo nombre de Krishna y, con la humildad característica de los que permanecen en la etapa familiar, instruir a los demás en el canto de los Santos Nombres.  Aquel que adopte los deberes del maestro espiritual de esta forma, nunca se verá enredado en “las olas de la vida materialista” en la forma del deseo de auto-engrandecimiento.
+</p>
+<p class='vspace'>“Muchas personas necias piensan que predicar escribiendo libros, como lo hicieran Rupa Gosvãmi, Sanãtana Gosvãmi, Jiva Gosvãmi o Raghunãtha dãsa Gosvãmi, o tomando una gran cantidad de discípulos como Madhvãcãrya, Rãmãnujãcãrya o Narottama dãsa Thãkura, es un impedimento en la práctica espiritual. Ciertamente, estas personas menos inteligentes incluso declaran que tales actividades son mentalmente enredadoras. Adheridos a tales ideas erróneas, se vuelven ofensores de los muchos devotos puros que no tienen nada que ver con el mundo material y de todos modos predican. Esta enseñanza del Señor a Kürma y Vãsudeva está destinada a tales personas. Si ellos analizan estas instrucciones cuidadosamente, dejarán de lado su orgullo y el falso show de humildad y avanzarán en la causa del bhajana genuino, enseñando, 
+antes que evidenciando desdén por los que carecen de devoción por el Señor”. 
+(Anubhãsya 2.7.130)
+</p>
+<p class='vspace'>Srila Prabhupãda continúa: Sri Krishna Caitanya derramó conciencia sobre los seres vivientes inconscientes. Tras hacerlo, El instruyó a los que habían vuelto a la conciencia y estaban atraídos por el servicio del Señor, a adoptar el rol de maestros o ãcãryas y hacer por los demás lo que El había hecho por ellos. A través de este pasatiempo de predicar el sendero Escritural y llevar más almas a la familia infalible del Señor, Gaurasundara reveló plenamente las glorias de Su encarnación”.
+(Anubhãsya 2.7.152)
+</p>
+<p class='vspace'>A ciertas personas les cuesta entender el significado de la instrucción del Señor, en cuanto a adoptar la práctica de cantar los Santos Nombres y simultáneamente predicarlos. Si tales personas continúan y se visten como gurus, adoptan las cualidades demoníacas como el orgullo, el egoísmo y la arrogancia y caminan hacia los portales del infierno. Por este motivo, el devoto debe hacer el voto de ocuparse en la práctica devocional personal, encabezada por el canto y predicar las actividades con un espíritu de humilde servicio a los sirvientes del Señor. Por así hacerlo, uno será librado de todas las preocupaciones en relación a la influencia de las cualidades demoníacas. Mahãprabhu Mismo enseñó que la verdadera identidad del individuo no está relacionada con el concepto corporal de la vida: “Yo soy el sirviente del sirviente del sirviente del Señor de las gopis”. Aquel que conserve viva esta conciencia a la vez que busca su propio bienestar y el de los demás, está libre del temor o la caída. Caso contrario, uno puede muy bien sucumbir a la tentación del orgullo.
+</p>
+<p class='vspace'>Bhaktivinoda Thãkura ha cantado sobre el peligro del orgullo para aquel que de otro modo se ocupa en la actividad de prédica:
+</p>
+<div class='vspace'></div><pre> ãmi ta vaisnava ei buddhi haile
+ amãni nã haba ãmi
+ pratisthãsa ãsi hrdaya dusibe
+ haibo niraya-gãmi
+
+ nije srestha mãni ucchistãdi-dãne
+ abhimãna habe bhãra
+ tãi sisya tava thãkiba sarvadã
+ nã laiba puja kãra
+</pre><p class='vspace'>“Si pienso que me he convertido en Vaisnava, entonces nunca me libraré del orgullo. El deseo de prestigio se depositará en mi corazón y lo contaminará y me iré al infierno. Considerándome superior a los demás, les dejaré los remanentes de mi comida y de ese modo me llenaré de arrogancia. Por consiguiente, Oh Vaisnava Thãkura, prometo ser siempre su discípulo y nunca aceptar adoración de nadie”.
+(Kalyãna-kalpa-taru)
+</p>
+<p class='vspace'>Si desestimamos esta instrucción de la gran autoridad, Bhaktivinoda Thãkura, entonces seremos afectados por nuestra conducta ofensiva. Se puede engañar muy fácilmente a la gente inocente anunciando de la boca para afuera las enseñanzas del servicio devocional a la vez que se piensa internamente, “Yo soy un maestro espiritual” o “Yo soy un Vaisnava”, pero no se puede engañar al Señor que mora dentro del corazón y conoce cada pensamiento. ¿Cómo cabe esperar engañarlo a El? Si Lo ignoramos, cometemos ofensas que resultarán en nuestra degradación a especies inferiores de vida y padecimiento infernal.
+</p>
+<p class='vspace'><strong>ALABANZA DE SANÃTANA SOBRE HARIDASA THÃKURA</strong>
+</p>
+<p class='vspace'>El asociado más amado de Mahãprabhu, Sanãtana Gosvãmi, alabó a Haridãsa Thãkura, el gran maestro del Santo Nombre, como el ejemplo ideal de la habilidad para armonizar las prácticas del canto del Santo Nombre y educar a las personas sobre el canto.
+</p>
+<div class='vspace'></div><pre> sanãtana kahe tomã-sama-kebã ãche ãna 
+ mahãprabhura gane tumi mahã-bhãgyavãm
+ avatara-kãrya prabhura nãma-pracãre
+ sei nija-kãrya prabhu karena tomãra dvãre
+ pratyaha kara tina-laksa nãma-sankirtana
+ sabãra ãge kara nãmera mahimã kathana
+ ãpane ãcare keha nã kare pracãra
+ pracãra karena keha, nã karena ãcãra
+ ãcãra pracãra nãmera karaha dui kãrya
+ tumi sarva-guru tumi jagatera ãrya
+</pre><p class='vspace'>Sanãtana Gosvãmi preguntó: “Haridãsa Thãkura, ¿hay alguien igual a ti? Tú eres el más bendito de los asociados de Sri Caitanya Mahãprabhu. El propósito de la encarnación del Señor es diseminar el canto de Sus santos nombres, mas El está haciendo esta labor a través tuyo. Tú cantas diariamente 300.000 Santos Nombres y cuentas a todos sobre las glorias de cantar. Algunos cumplen los mandatos de la vida espiritual pero no hacen nada por difundir estas enseñanzas, mientras que otros predican pero no siguen personalmente los principios. Tú sin embargo, haces las dos cosas y por consiguiente, eres el maestro espiritual de todos, una verdadera persona religiosa en este mundo”.
+(Caitanya Caritãmrta 3.4.99-103)
+</p>
+<p class='vspace'>En su Anubhãsya, nuestro muy adorable Srila Prabhupãda hizo los siguientes comentarios sobre estos versos: “Haridãsa Thãkura es el maestro espiritual de todo el universo y el objeto de veneración de todos. Como brahmana,  por el proceso de la iniciación, el cantaba el Nombre puro y está calificado de tal modo como un ãcãrya o aquel que presenta el standard ideal de práctica. Además, a través del canto sonoro de estos nombres y sus glorias, él inició a todos los seres vivientes del mundo, en el sacrificio del Santo Nombre. Por así hacerlo, se calificó como pracãraka o predicador. De este modo, Haridãsa se ocupaba en la práctica y en la diseminación de la enseñanza”.
+(Anubhãsya 3.4.99-193)
+</p>
+<p class='vspace'><strong>ADQUIRIENDO LA AUTORIDAD PARA PREDICAR</strong>
+</p>
+<p class='vspace'>Hemos visto que Mahãprabhu Mismo observó que Haridãsa mantenía ese standard en la prédica de los Santos Nombres. La importancia de la autoridad en la enseñanza es explicada asimismo por Krishna en Sus instrucciones a Arjuna en el Bhagavad-gitã:
+</p>
+<div class='vspace'></div><pre> yad yad ãcarati sresthas
+ tad tad evetaro janah
+ sa yat pramãnam kurute
+ lokas tad anuvartate
+</pre><p class='vspace'>“El comportamiento de la gente superior es imitado por los comunes; eso que ellos aceptan como autorizado es seguido por el resto de la sociedad”.
+(Gitã 3.21)
+</p>
+<p class='vspace'>Las palabras “gente superior” (srestha) alude a quienes son autoridades genuinas o mahãjanas, que ostentan los niveles más altos de moralidad. Su sendero es el que debemos seguir, como fuera declarado por Yudhisthira en respuesta a las preguntas de Yamarãja: mahãjano yena gatah sa panthã - “El sendero de los mahãjanas es el que deben seguir todos”.
+Los mahãjanas o grandes autoridades, están libres de los cuatro defectos”: (1) bhrama (error) o la tendencia a tomar lo real por irreal o a la inversa, como ser una soga por una víbora, etc.; (2) pramãda, errores emergentes de la falta de cuidado o atención; (3) karanã-patava, limitaciones de los sentidos que resultan en percepciones erróneas y (4) vipralipsã, el deseo de engañar.  Cuando alguien tiene del deseo de engañar, entonces pese a saber que su conocimiento es inadecuado, presume que conoce o, aún en posesión de la verdad, la esconde de los demás. Todo aquel que esté libre de estos defectos ha de ser considerado autorizado. Hay que aprender de la persona sabia en las Escrituras y disciplinada por las normas de conducta santas; que es experimentada en las prácticas del servicio devocional y está libre de la ira, la envidia y el odio. Puede que alguien sea capaz de citar cientos de versos de la Escritura y hacer discursos gloriosos y elocuentes, pero si no ha adoptado las normas de conducta establecidas por Sri Caitanya Mahãprabhu, su retórica por sí sola no tendrá ningún efecto. La prédica sin la práctica es inútil.
+</p>
+<p class='vspace'>El Bhãgavatam narra la historia de cómo Mahãrãja Pariksit (2) se encontró con la forma personificada de Kali Yuga, quien al comienzo de la era de Kali estaba creando el caos en la Tierra. Pariksit quiso hacer desaparecer por completo de la Tierra a Kali, mas Kali le oró para que se le entregara un lugar propio. Pariksit entonces le concedió cinco lugares donde podría vivir, los cuales se conocen como las moradas de la irreligión. Ellos son: (1) las guaridas de apuestas o cualquier parte donde se realicen apuestas; (2) los sitios de intoxicación, tabernas, guaridas de apuestas o cualquier lugar donde se consuman drogas (incluyendo el tabaco); (3) en cualquier lugar donde se practique el sexo ilícito, o sea, donde ocurran relaciones sexuales fuera del matrimonio o incluso el excesivo apego por el cónyuge legítimo; (4) dondequiera se practique violencia sobre los animales, a saber, los mataderos y todos los demás sitios donde los humanos ingieran carne como comida y (5) dondequiera se acumulen grandes cantidades de oro. Todo lugar donde se gaste dinero para propósitos ajenos al servicio del Señor, está siendo mal empleado y resulta en un enredo indeseable. Prabhupãda Bhaktisiddhãnta Sarasvati declara que las apuestas destruyen la veracidad; la intoxicación resulta en la destrucción de la austeridad; el sexo ilícito destruye la pureza interna y externa y la ingestión de carne destruye la misericordia. Evitar estas actividades pecaminosas es el pilar de la religiosidad y la tolerancia de las mismas es el establecimiento de la irreligión. La posesión de una gran riqueza conlleva al modo de vida pecaminoso. Por consiguiente, dondequiera haya una considerable acumulación de riquezas, se encuentran la mentira, la arrogancia, la lujuria y la violencia.
+</p>
+<div class='vspace'></div><pre> athaitãni na seveta
+ bubhusuh purusah kvacit
+ visesato dharma-silo
+ rãjã loka-patir guruh
+</pre><p class='vspace'>“En tal sentido, aquel que desee su bienestar individual, debe abstenerse de ocuparse en las antes mencionadas actividades pecaminosas. Los piadosos, los reyes, los líderes y maestros deben tener especial cuidado en evitarlas”.
+(Srimad Bhãgavatam 1.17.41)
+</p>
+<p class='vspace'>Aquel que habita en cualquiera de las cinco moradas de Kali no podrá mantener las debidas normas de conducta o siquiera esperar que su prédica fructifique. Por esta razón, Mahãprabhu previno reiteradamente a los devotos contra la asociación de los no devotos y sensuales. La conclusión es que un no Vaisnava, pese a su sabiduría, inteligencia o elocuencia como orador, nunca puede esperar ser un predicador efectivo si es un libertino, aunque haga declaraciones de lealtad a Mahãprabhu. El asociado de Mahãprabhu, Jagadãnanda Pundit dijo: 
+</p>
+<div class='vspace'></div><pre> gorãra ãmi gorãra ãmi mukhe balile nã cale
+ gorãra ãcãra gorãra pracãra laile phala phale
+</pre><p class='vspace'>“No es suficiente con simplemente promocionar repetidamente que uno es devoto de Mahãprabhu, diciendo, ‘Yo soy de Gaura, yo soy de Gaura’. Aquellos que adoptan las prácticas enseñadas por Mahãprabhu así como Su misión de prédica obtienen los resultados de ser seguidores de Mahãprabhu”.
+(Prema-vivarta)
+</p>
+<p class='vspace'>Narottama dãsa Thãkura, en su Prema-bhakti-candrikã, critica asimismo la asociación con los no devotos. Las plegarias e himnos de Narottama dãsa están reunidos en el Prãrthanã y Prema-bhakti-candrikã, mientras que las de Bhaktivinoda Thãkura, se encuentran en el Saranãgati, Kalyãna-kalpa-taru, Gitãvali y Gita-mãlã. Las canciones de estos ãcãryas contienen la esencia de todas las Escrituras devocionales. Estos libros deben estudiarse después de tomar refugio en un maestro espiritual genuino y aceptar de él los principios de la conducta Vaisnava.  A medida que uno sigue adelante para convertirse en un devoto puro y genuino, puede beneficiar considerablemente a las almas condicionadas, predicando el mensaje extraído de estos textos. 
+</p>
+<p class='vspace'><strong>TOMANDO REFUGIO EN EL SEÑOR:  LA VIDA DEL DEVOTO</strong>
+</p>
+<p class='vspace'>La primera canción del Saranãgati de Bhaktivinoda Thãkura, es como sigue:
+</p>
+<div class='vspace'></div><pre> sri krsna caitanya prabhu jive dayã kari
+ sva-parsada sviya dhãma saha avatari
+ atyanta durlabha prema karibãre dãna
+ sikhãya saranãgati bhakatera prãna
+ dainya, ãtma-nivedana, goptrtve varana
+ avasya raksibe krsna visvãsa pãlana
+ bhakti-anukula-mãtra kãryera svikãra
+ bhakti-pratikula-bhãva varjanãngikãra
+ sad-anga saranãgati haibe jãnhãra
+ tãnhãra prãrthanã sune sri-nanda-kumãra
+ rupa sanãtana pade dante trna kari
+ bhakativinoda pare dui pada dhari
+ kãndiyã kãndiyã bale ãmi ta adhama
+ sikhãye saranãgati karahe uttama 
+</pre><p class='vspace'>“Por compasión a las jivas caídas, Sri Krishna Caitanya apareció en este mundo con todos Sus asociados eternos y Su morada eterna. Deseando derramar sobre ellas el sumamente raro amor por Sí Mismo, El enseñó el proceso de tomar refugio en el Señor, que es tan importante para los devotos. La humildad, la auto-rendición, aceptar a Krishna como el protector personal, la creencia en que Krishna nos salvará en todas las circunstancias, el emprender solo las actividades conducentes al desarrollo del amor por Krishna y rechazar todo lo que va en detrimento de ello; estos son los seis elementos de tomar refugio. El hijo de Nanda, Krishna, escucha las plegarias de cualquiera que tome refugio en El de este modo. Me postro y aferro los pies de Rupa y Sanãtana con total humildad. Llorando, ‘Soy sumamente caído’, suplico. ‘Por favor, enséñenme la forma de tomar refugio en Krishna para que pueda perfeccionar mi vida humana”.
+</p>
+<p class='vspace'>Sin tomar refugio de este modo, no se puede perfeccionar la vida humana y liberarse de la oscuridad del condicionamiento material. Mas si así lo hacemos, podremos predicar debidamente sobre el nombre de Krishna, la forma, cualidades y pasatiempos.
+</p>
+<p class='vspace'>Como escribiera Srila Prabhupãda, prãna ãche tãnra se hetu-pracãra - “Quien está vivo, predica”. (Vaisnava ke?). Por consiguiente, incluso antes de predicar, el primer deber del devoto es adoptar este proceso de rendición, que es la vida de todo devoto. Solo entonces recibirá las bendiciones de Krishna y será digno de predicar el mensaje que fuera dado por Mahãprabhu Mismo. Caso contrario, no será más que un cadáver y su prédica no beneficiará ni a los demás ni a su persona. Podemos ganar fama y provecho de la gente materialista de este mundo, pero no sostendremos ningún valor en la plataforma trascendental. Srila Prabhupãda escribió asimismo en su poema Vaisnava ke?
+</p>
+<div class='vspace'></div><pre> sri dayita-dãsa kirtanete ãsa
+ kara uccaihsvare hari-nãma-rava
+</pre><p class='vspace'>“Tu única esperanza es la ejecución del harinãma-sankirtana, de manera que canta los Santos Nombres tan alto como puedas”.
+</p>
+<p class='vspace'>Está claro que Srila Prabhupãda con estas palabras nos está pidiendo que cantemos los Santos Nombres sonoramente. Si cantamos sin vida, ¿no sería acaso eso una fuente de desconcierto para él?
+</p>
+<p class='vspace'>Los aspirantes a la perfección espiritual pueden cometer muchas ofensas. Considerar al guru un mortal ordinario es la ofensa más grave de todas. Aquel que piense de ese modo, nunca puede predicar triunfalmente el mensaje del Señor. ¿Puede alguien que pretenda estar predicando sin poner en la práctica el mensaje, complacer ciertamente a Mahãprabhu, quien declaró Personalmente: “Yo Mismo pongo en práctica los principios religiosos y luego los predico”?
+</p>
+<p class='vspace'>Oramos al maestro espiritual para que nos conceda la fuerza e inteligencia para estar realmente fijos en la práctica del servicio devocional y seguidamente distribuir el mensaje de Mahãprabhu por todas partes. Quiera El darnos a beber el néctar del prema. Una vez embriagados con este prema seremos capaces de cantar verdaderamente Sus glorias.
+</p>
+<p class='vspace'>En lo que respecta  a los devotos en el sendero rãgãnugã, ellos pueden aspirar a servir a Krishna en una relación de servidumbre, amistad, protección o amor conyugal, mas su aspiración no debe ser falsa. Deben acatar las directivas del maestro espiritual y solo entonces eso resultará en la gran fortuna de servir al Señor. Antes de simplemente pretender que se posee la codicia trascendental, el devoto iniciado debe considerar el canto sin ofensas como la práctica devocional confidencial o interna principal. Luego, por la gracia de su guru, despierta esta ambición trascendental. Esta es la principal actividad del bhakta consagrado y es la enseñanza que uno debe tratar de diseminar. A partir de dicha práctica y prédica, nuestro bien último será alcanzado así como el bien último de todos en el mundo. Esto es absolutamente cierto.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_13.html'>Controlando la Mente</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_15.html'>El sendero del amor apasionado</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:26 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

@@ -1,0 +1,471 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - A bhaktihoz kedvező feltételek elemzése</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivinoda - RSS Feed'
+      href='index.php-n=bhaktivinoda.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=bhaktivinoda.bhagavat-arka-maricsimala_16' method='get'><input type='hidden' name='n' value='bhaktivinoda.bhagavat-arka-maricsimala_16' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - A bhaktihoz kedvező feltételek elemzése"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivinoda.bhagavat-arka-maricsimala_16-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivinoda.bhaktivinoda.html'>Bhaktivinóda Thákura</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivinoda.bhagavat-arka-maricsimala.html'>Bhagavat-arka-maricsimála</a>
+</p>
+<div class='vspace'></div><h2><small>15. fejezet</small><br /><br />A bhaktihoz kedvező feltételek elemzése<br /><small>bhakti anukulya vicarah</small></h2>
+<p>07.09.18 Prahláda Mahárádzsa az Úr Nrsimhadevának
+</p>
+<p class='vspace'>Ó Uram, Nrsimhadeva! Bhaktáid, a felszabadult lelkek (hamszák) között transzcendentális szerető szolgálatodba merülve tökéletesen meg fogok szabadulni azoktól a szennyeződésektől, melyeket az anyagi természet három kötőerejével való kapcsolat okoz, és képes leszek majd dicsőségedet zengeni, Uram, aki olyan kedves vagy számomra. Az Úr Brahmá és tanítványi láncolata nyomdokait hűségesen követve énekelek majd dicsőségedről, s így kétségtelenül képes leszek majd átszelni a tudatlanság óceánját.
+</p>
+<p class='vspace'>11.11.48 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Kedves Udhavám, Én magam vagyok a legvégső menedék és az élet útja a szent, felszabadult személyek számára, ezért ha valaki nem végzi szerető odaadó szolgálatomat, amelyet a bhaktáimmal való társulás tesz lehetővé, az ilyennek semmi hatékony eszköze nincs arra, hogy kimeneküljön az anyagi létezésből.
+</p>
+<p class='vspace'>11.12.01-06 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége szólt: Kedves Uddhavám, tiszta bhaktáimmal társulva megsemmisítheti az anyagi érzékkielégítés összes tárgyaihoz való ragaszkodását. Az ilyen megtisztító társulás odavezet, hogy a bhaktám irányít Engem. Végezheti valaki az astanga jóga-rendszert, folytathatja az anyagi természet elemeinek filozófiai elemzését, gyakorolhatja az erőszaknélküliséget és a jámborság más közönséges tetteit, zengheti a Védákat, végezhet lemondásokat, elfogadhatja a lemondott életrendet, bemutathat áldozatokat, áshat kutakat, ültethet fákat, megtehet más dolgokat a köz javára, adományozhat, betarthat szigorú fogadalmakat, imádhatja a félisteneket, zenghet bizalmas mantrákat, felkeresheti a szent helyeket, elfogadhat szigorú vagy kevésbé szigorú fegyelmi szabályokat, de még ezekkel sem fog irányítani Engem. (1-2) Minden jugában sok, a szenvedély és tudatlanság kötőerejében levő élőlény nyerte el bhaktáim társaságát. Az olyan élőlények is elnyerik legfelsőbb hajlékomat, mint a Daitják, Ráksaszák, madarak, vadállatok, Gandharvák, Apszarák, Nágák, Sziddhák, Csaranák, Guhjakák és Vidjádharák, valamint azok az alantasabb származású emberi lények, mint a vaisják, súdrák, nők és mások. Vrtrászura, Prahláda Mahárádzsa és mások is úgy kerültek a hajlékomba, hogy bhaktáimmal társultak; ugyanígy az olyan személyiségek, mint Vrsaparva, Bali Mahárádzsa, Bánászura, Maja, Vibhísana, Szugríva, Hanumán, Dzsámbaván, Gadzsendra, Dzsatáju, Tuladhara, Dharma-vjaddha, Kubdzsa, a vrndávanai gopík és az áldozatokat végző brahmanák feleségei. (3-6)
+</p>
+<p class='vspace'>11.12.07 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Azok a személyek, akiket említettem, nem tanulmányozták komolyan a védikus irodalmat, nem imádtak nagy szenteket, nem tettek szigorú fogadalmakat, és nem végeztek lemondásokat. Csak azért értek el Engem, mert Velem és bhaktáimmal társultak.
+</p>
+<p class='vspace'>03.23.55 Devahutí Kardama Muninak
+</p>
+<p class='vspace'>Ha aza érzékkielégítés érdekében keressük valaki társaságát, az kétségtelenül rabságot eredményez, ám ugyanez a társulás egy szenttel a felszabadulás útjára vezet, még akkor is, ha tudás nélkül tesszük.
+</p>
+<p class='vspace'>11.02.29 Mahárádzsa Nimi a kilenc Jogendrának
+</p>
+<p class='vspace'>A feltételekhez kötött lelkek számára az emberi testet a legnehezebb elnyerni, és bármely pillanatban el lehet veszíteni. De úgy gondolom, hogy még az emberi életet elértek is tirkán nyerik el a tiszta bhakták társaságát, akik kedvesek Vaikuntha Ura számára.
+</p>
+<p class='vspace'>11.02.30 Mahárádzsa Nimi a kilenc Jogendrának
+</p>
+<p class='vspace'>Ezért, ó teljesen bűntelenek, arra kérlek benneteket, kegyeskedjetek elmondani, mi a legfelsőbb jó. Végül is a születés és a halál világában a tiszta szentekkel való társulásnak még fél pillanata is páratlan kincs bárki számára.
+</p>
+<p class='vspace'>11.11.29-30 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége szólt: Ó Uddhava, a szent mindig kegyes, és soha sem sért meg másokat. Még akkor is türelmes és megbocsátó az élőlényekkel szemben, ha azok agresszívak. Ereje, életének értelme magából az igazságból származik, minden irigységtől és féltékenységtől mentes, az elméje anyagi boldogságban és szenvedésben ugyanaz marad. Minden idejét arra fordítja, hogy mások javáért dolgozzon. Értelmét soha sem zavarják meg az anyagi vágyak, és uralkodik az érzékein. Viselkedése mindig kedves és példás, sohasem durva, és nem vágyik anyagi tulajdonra. Soha sem törekszik a közönséges, világi cselekedetekben, és nagyon vigyáz arra, hogy mit eszik. Ezért mindig békés és állhatatos marad. A szent meggondolt, és egyedüli menedékeként Engem fogad el.
+</p>
+<p class='vspace'>11.11.31-32 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>A szent nagyon elővigyázatos a kötelességei végzésében, soha sem enged a felszínes változásoknak, mert még kétségbeejtő helyzetekben is állhatatos és nemes. Fölülkerekedett a hat anyagi tulajdonságon (éhség, szomjúság, siránkozás, illúzió, öregség és halál). Egyáltalán nem vágyik a tiszteletre, és mindenkinek felajánlja a tiszteletét. Nagy szakértelemmel éleszti fel másokban a Krsna-tudatot, és ezért sohasem csap be senkit. Mindenkinek jóakaró barátja és nagyon kegyes. Az ilyen szentet a legműveltebb embernek kell tekinteni. Tökéletesen megérti, hogy a különféle védikus írásokban Általam előírt közönséges vallásos kötelességeknek kedvező tulajdonságaik vannak, amelyek az elvégzőiket megtisztítják, és tudja, hogy az ilyen kötelességek elhanyagolása problémákat teremt az életükben. Végső soron azonban kizárólag az Én lótuszvirág lábaimnál talál menedéket, lemond ezekről a közönséges vallásos kötelességekről, és egyedül Engem imád. Így az összes élőlény között a legjobbnak kell tekinteni.
+</p>
+<p class='vspace'>11.26.27 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Bhaktáim Rám szögezik elméjüket, és nem függenek…
+</p>
+<p class='vspace'>11.26.34 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Bhaktáimnak isteni szemeik vannak, míg a Nap csak külső látást enged, azt is csak akkor, amikor fölkel az égen. Bhaktáim az igazán imádandó istenségek és a valódi család; ők nem mások, mint az önvaló, és végső soron nem különböznek Tőlem.
+</p>
+<p class='vspace'>01.1310 Mahárádzsa Judhisthíra Vidurának
+</p>
+<p class='vspace'>Uram, az olyan bhakták, mint amilyen te vagy, maguk a megszemélyesült szent helyek. Mivel a szívedben hordod az Istenség Személyiségét, minden helyet zarándokhellyé változtatsz.
+</p>
+<p class='vspace'>01.18.13 Saunaka Rsi Szúta Goszváminak
+</p>
+<p class='vspace'>Ha eljutunk a mennyei bolygókra vagy megszabadulunk az anyagtól, még az sem hasonlítható össze annak az értékével, ha csupán egyetlen pillanatot is eltöltünk az Úr bhaktájának társaságában. Mit mondhatnánk akkor az anyagi áldásokról az anyagi jólét formájában, amelyek azok számára vannak, akikre halál vár?
+</p>
+<p class='vspace'>01.19.33 Mahárádzsa Pariksit Sukadeva Goszváminak
+</p>
+<p class='vspace'>Csupán az, hogy rád emlékezünk, azonnal megszenteli hajlékainkat, mit sem szólva arról, amikor látunk, megérintünk téged, megmossuk szent lábad, és otthonunkban ülőhellyel kínálunk.
+</p>
+<p class='vspace'>03.05.03 Vidura Maitreja Rsinek
+</p>
+<p class='vspace'>Ó uram, szerte a földön nagy jótét lelkek vándorolnak az Istenség Legfelsőbb Személyisége nevében, hogy könyörületet mutassanak az elesett lelkek iránt, akik nem akarják alárendelni magukat az Úrnak.
+</p>
+<p class='vspace'>03.25.20-21, 23 Kapiladeva Devahutínak
+</p>
+<p class='vspace'>Minden művelt ember jól tudja, hogy a szellemi lélek számára az anyaghoz való ragaszkodás a legerősebb kötelék. De ha ugyanez a ragaszkodás az önmegvalósított bhakták iránt nyilvánul meg, az megnyitja a felszabadulás kapuját. (20) Egy szádhura az jellemző, hogy türelemes, kegyes és barátságos minden élőlénnyel szemben. Nincsenek ellenségei, békés, engedelmeskedik a szentírásoknak, s minden tulajdonsága fenséges. (21) A szádhuk örökké Rólam, az Istenség Legfelsőbb Személyiségéről beszélnek és hallanak, ezért amiatt, hogy mindig kedvteléseimre és cselekedeteimre gondolnak, nem szenvednek az anyagi gyötrelmektől. (23)
+</p>
+<p class='vspace'>03.25.24 Kapiladeva Devahutínak
+</p>
+<p class='vspace'>Ó anyám, ó erényes hölgy, ezekkel a tulajdonságokkal rendelkeznek a nagy bhakták, akik mentesek minden ragaszkodástól. Próbálj ragaszkodni az ilyen szent emberekhez, mert ez semlegesíti az anyagi ragaszkodás végzetes hatását.
+</p>
+<p class='vspace'>04.04.12 Szatideví Daksának
+</p>
+<p class='vspace'>Kétszerszületett Daksa! Egy olyan ember, mint te, csak hibát keres másokban. Az Úr Siva azonban nemcsak nem nézi mások hibáit, de ha valakiben egy parányi jó tulajdonságot felfedez, azt a sokszorosára nagyítja. Szerencsétlenségedre te egy ilyen nagy lélekben találtál hibát.
+</p>
+<p class='vspace'>04.22.19 Szanat-kumára Prthu Mahárádzsának
+</p>
+<p class='vspace'>A bhakták társaságában elhangzó beszélgetések, kérdéseik és válaszaik mind a beszélő, mind a hallgatóság számára bizonyító erejűek. Az ilyen találkozók mindenkit valódi boldogsággal áldanak meg.
+</p>
+<p class='vspace'>04.29.39-40 Nárada Muni Prácsinabarhi királynak
+</p>
+<p class='vspace'>Kedves királyom, a tiszta bhakták, akik követik a szabályokat és az előírásokat, s akiknek tudata tiszta, nagy lelkesedéssel hallgatják és zengik az Istenség Legfelsőbb Személyisége dicsőségét. Aki lehetőséget kap arra, hogy ott, ahol e tiszta bhakták élnek, meghallja szavaik szünet nélkül hömpölygő nektárját, mely olyan, akár a folyó hullámzása, az megfeledkezik az élet szükségleteiről – az éhségről és a szomjúságról – és nem hat rá többé semmilyen félelem, bánat és illúzió.
+</p>
+<p class='vspace'>04.29.46 Nárada Muni Prácsinabarhi királynak
+</p>
+<p class='vspace'>Kedves királyok, az egész világot kusa-fűszálak szúrós hegyei borítják. Mindez büszkévé tett, mert oly sok állatot megöltél az áldozatok során. Ostobaságodban nem tudtad, hogy az odaadó szolgálat az egyetlen, amellyel elégedetté lehet tenni az Istenség Legfelsőbb Személyiségét. Nem érted meg ezt a tényt. Kizárólag olyan cselekedeteket szabadna végrehajtanod, amelyekkel kedvében jársz az Istenség Személyiségének. Olyan nevelést kell kapnunk, hogy felemelkedhessünk a Krsna-tudat szintjére.
+</p>
+<p class='vspace'>04.30.33 A Pracseták Srí Visnunak
+</p>
+<p class='vspace'>Drága Urunk, azért imádkozunk, hogy míg anyagi szennyezettségünk miatt ebben az anyagi világban kell maradnunk, és egyik testből a másikba, egyik bolygóról a másikra kell vándorolnunk, addig azoknak a társaságát élvezhessük, akik örökké kedvteléseeidről beszélnek. Imádkozunk, hogy bármilyen testben és bármilyen bolygón legyünkis, élet élet után elnyerjük ezt az áldást.
+</p>
+<p class='vspace'>05.05.03 Rsabhadeva a fiainak
+</p>
+<p class='vspace'>Akik szeretnék felébreszteni a Krsna-tudatukat, és erősíteni akarják Isten iránti szeretetüket, azok semmi olyat nem szeretnek tenni, ami nem áll kapcsolatban Krsnával. Nem szeretnek olyan emberekkel találkozni, akiket egyedül testük fenntartása, az elvés, az alvás, a párzás és a védekezés érdekel. Nem ragaszkodnak az otthonukhoz, még ha családosok, akkor sem. Nem ragaszkodnak a feleségükhöz, a gyermekeikhez, a barátaikhoz vagy a vagyonukhoz sem, ugyanakkor nem tekintenek közömbösen kötelességük végrehajtására. Az ilyen emberek épp csak annyi pénzt gyűjtenek össze, amelynek a segítségével testüket és lelküket együtt tudják tartani.
+</p>
+<p class='vspace'>05.12.12-13 Dzsada Bharat Rahúgana királynak
+</p>
+<p class='vspace'>Kedves Rahúgana király, ha valakinek nem adatik meg a lehetőség, hogy testét tetőtől-talpig a nagy bhakták lótuszlábának porával dörzsölje be, nem valósíthatja meg az Abszolút Igazságot. Az Abszolút Igazságot sem a nőtlenségi fogadalom betartásával (brahmacsarja), sem a családos élet szabályainak szigorú követésével, sem vánapraszthaként otthonunkat elhagyva vagy a szannjásza rendbe lépve, sem szigorú vezeklésekkel, télen a vízbe merülve, nyáron pedig tűzben vagy a perzselő napon állva nem lehet megismerni. Az Abszolút Igazság megértésének számtalan folyamata van, az Abszolút Igazság azonban csak az előtt tárul fel, aki elnyerte egy nagy bhakta kegyét. (12) És kik ezek a tiszta bhakták? A tiszta bhakták sohasem beszélnek anyagi témákról, politikáról vagy szociológiáról. Egyedül az Istenség Legfelsőbb Személyiségének tulajdonságairól, formáiról és kedvteléseiről társalognak, s teljes figyelemmel dicsőítik és imádják Őt. Társaságukban az ilyen témák tiszteletteljes és állandó hallgatásával még az az ember is feladja elképzelését, aki az Abszolút Igazság létébe akar olvadni,és lassanként ragaszkodni kezd Vászudeva szolgálatához.
+</p>
+<p class='vspace'>06.03.20 Jamarádzsa a hírnökeinek
+</p>
+<p class='vspace'>Az Úr Brahmá, Bhagaván Nárada, az Úr Siva, a négy Kumára, az Úr Kapila (Devahutí fia), Szvájambhuva Manu, Prahláda Mahárádzsa, Dzsanaka Mahárádzsa, Bhísma nagyatya, Bali Mahárádzsa, Sukadeva Goszvámi és én magam ismerjük a vallás igazi elvét.
+</p>
+<p class='vspace'>06.14.04-05 Mahárádzsa Pariksit Sukadeva Goszváminak
+</p>
+<p class='vspace'>Ó bráhmanák kiválósága, Sukadeva Goszvámi! Sok olyan ember közül, aki követi a vallásos elveket, csak néhány akar kiszabadulni az anyagi világból, és sok ezer olyan ember közül, aki felszabadulásra vágyik, csupán egy éri el azt igazán, feladva a társadalomhoz, a barátsághoz, a szerelemhez, a szülőföldhöz, az otthonhoz, a feleséghez és a gyerekekhez fűződő anyagi ragaszkodását. És sok-sok ezer ilyen felszabadult lélek között rendkívül ritka az, aki megérti a felszabadulás valódi jelentését.(4) Ó nagy bölcs, a felszabadult és a felszabadulásról tökéletes tudással rendelkező lelkek milliárdjai közül talán egy akar, aki az Úr Nárájana, Krsna bhaktája. Az ilyen teljesen békés bhakta rendkívül ritka. (5)
+</p>
+<p class='vspace'>06.17.28 Az Úr Siva Párvatínak
+</p>
+<p class='vspace'>A bhakták, akik kizárólag az Istenség Legfelsőbb Személyisége, Nárájana odaadó szolgálatát végzik, semmilyen élethelyzettől nem riadnak vissza. Számukra a mennyei bolygók, a felszabadulás és a pokoli bolygók nem különböznek egymástól, mert egyedül az Úr szolgálata érdekli őket.
+</p>
+<p class='vspace'>07.10.18-19 Az Úr Nrsimhadeva Prahláda Mahárádzsának
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége így szólt: Kedves Prahládám, ó legtisztább, nagy szent! Apád megtisztult, családod huszonegy ősatyjával együtt. Amiatt, hogy ebben a családban jöttél a világra, az egész dinasztia megtisztult. (18) Bárhol és bármikor éljenek békés, egyenlő szemléletű bhakták, akik szépen viselkednek, s akiket jó tulajdonságok ékesítenek, az a helyés azok a családok még akkor is megtisztulnak, ha kárhozatra vannak ítélve. (19)
+</p>
+<p class='vspace'>09.04.63,65-68 Nárájana Durvásza Muninak
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége így szólt a bráhmanához: Én teljesen bhaktáim irányítása alatt állok. Valójában egyáltalán nem vagyok független. Mivel bhaktáimnak egyáltalán nincsenek anyagi vágyai, egyedül az ő szívük mélyén ülök. Még bhaktáim bhaktái is nagyon kedvesek Számomra, saját bhaktámról nem is beszélve. (63) A tiszta bhakták lemondanak otthonukról, feleségükről, gyermekeikről, rokonaikról, gazdagságukról, sőt még életükről is, pusztán azért, hogy Engem szolgáljanak, s nem vágynak semmilyen anyagi felődésre sem ebben az életben, sem a következőben. Hogyan tudnám hát bármikor is elhagyni őket? (65) Ahogy az erényes asszonyok tartják kezükben szolgálatukon át szelíd férjüket, úgy kerítenek hatalmukba Engem is a tiszta bhakták, akik mindenkivel szemben egyenlőek, s akik szívük mélyén tökéletesen ragaszkodnak Hozzám. (66) Bhaktáimat, akik mindig elégedettek azzal, hogy szerető szolgálatomba mélyednek, nem érdekli még a négyféle felszabadulás (szálokja, szárúpja, számípja és szársti) sem, habár szolgálatukkal mindezt automatikusan elérik. Mit mondhatnánk akkor az olyan mulandó boldogságról, mint amelyet a felsőbb bolygórendszerekbe való felemelkedés jelent? (67) A tiszta bhakta mindig szívem mélyén van, s Én mindig tiszta bhaktám szívében vagyok. Bhaktáim nem ismernek Rajtam kívül semmi mást, és Én nem ismerek senki mást, csupán őket. (68)
+</p>
+<p class='vspace'>09.09.06 Bhagiratha Gangádevínek
+</p>
+<p class='vspace'>Bhagiratha így szólt: Akik szentek, mert odaadó szolgálatot végeznek, s akik ezért az élet lemondott rendjében élnek anyagi vágyaktól mentesen, valamint akik tiszta bhakták, és jártasak a Védákban említett szabályozó elvek követésében, azok mindig dicsőségese, viselkedésük tiszta, és képesek felszabadítani minden elesett lelket. Amikor ilyen tiszta bhakták fürdenek majd a vizedben, ez kétségtelenül semlegesíteni fogja a másoktól származó,felhalmozódott bűnös visszahatásokat, mert ezek a bhakták mindig szívük mélyén hordják az Istenség Legfelsőbb Személyiségét, aki képes megsemmisíteni minden bűnös visszahatást.
+</p>
+<p class='vspace'>10.08.04 Nárada Muni Garga Muninak
+</p>
+<p class='vspace'>Ó uram, ó nagy bhakta, az olyan személyiségek, mint te, nem saját érdekükben vándorolnak egyik helyről a másikra, hanem a szerencsétlen grhaszthák (családosok) kedvéért. Nekik semmi hasznuk nem származik abból, hogy mindenhova elmenjenek.
+</p>
+<p class='vspace'>10.14.30 Az Úr Brahmá Srí Krsnának
+</p>
+<p class='vspace'>Kedves Uram, imádkozom, hogy olyan szerencsés legyek, hogy ebben az életben, mint Úr Brahmá, vagy egy másik életben, akár szülessek meg, a bhaktáid közé számíthassak. Imádkozom, hogy akárhol legyek, akár az állati fajokban, odaadó szolgálatot végezhessek lótuszvirág lábaidnak.
+</p>
+<p class='vspace'>10.48.30 Krsna Akrúrának
+</p>
+<p class='vspace'>Az olyan magasztos lelkek, mint te, a szolgálat igazi tárgyai és a legimádandóbb tekintélyek azok számára, akik az életben a legfőbb jót kívánják. A félistenek általában a saját érdekeikkel törődnek, a szent bhakták azonban soha.
+</p>
+<p class='vspace'>10.48.31 Krsna Akrúrának
+</p>
+<p class='vspace'>Senki sem tagadhatja, hogy vannak szent helyek, szent folyókkal, vagy hogy a félistenek megjelennek a földből és kőből készült múrtikban. Ezek azonban csak hosszú idő után tisztítják meg a lelket, a szent viszont már pusztán azáltal megtisztítanak, hogy látják őket.
+</p>
+<p class='vspace'>10.51.53 Mucsukunda király Krsnának
+</p>
+<p class='vspace'>Ó Acsjuta, amikor egy vándorló lélek anyagi élete megszűnt, elérheti tiszta bhaktáid társaságát. És amikor társul velük, felébred benne az odaadás Irántad, aki a bhakták célja, minden ok és hatás Ura vagy.
+</p>
+<p class='vspace'>11.02.47 Havir Mahárádzsa Niminek
+</p>
+<p class='vspace'>A bhaktát, aki hittel végzi a múrti imádatát a templomban, de nem viselkedik megfelelően más bhaktákkal vagy általában az emberekkel szemben, prakrta-bhaktának, materialista hívőnek nevezik, és úgy tekintik, hogy a legalacsonyabb helyzetben van. A közbülső, vagy másodosztályú, madhjama-adhikárinak nevezett bhakta felajánlja a szeretetét az Istenség Legfelsőbb Személyiségének, őszinte barátja az Úr összes hívének, kegyes a tudatlanokkal szemben, akik ártatlanok, és figyelmen kívül hagyja azokat, akik irigykednek az Istenség Legfelsőbb Személyiségére.
+</p>
+<p class='vspace'>11.02.45 Havir Mahárádzsa Niminek
+</p>
+<p class='vspace'>Sri Havir szólt: A legfejlettebb bhakta mindenben valamennyi lélek lelkét, az Istenség Legfelsőbb Személyiségét, Srí Krsnát látja. Következésképpen mindent a Legfelsőbb Úrral kapcsolatban lát, és megérti, hogy minden, ami létezik, örökké benne van az Úrban.
+</p>
+<p class='vspace'>11.02.48-50 Havir Mahárádzsa Niminek
+</p>
+<p class='vspace'>Aki ezt az egész világot az Úr Visnu energiájának látja, az se nem undorodik, se nem örvendezik túlzottan, még akkor sem, amikor érzékei kapcsolatba kerülnek tárgyaikkal. Valóban ő a legnagyobb a bhakták között. (48) Az anyagi világban az anyagi test mindig alá van vetve a születésnek és a pusztulásnak. Hasonlóan az életlevegőt (a pránát) is állandóan zaklatja az éhség és a szomjúság, az elme mindig aggódik, az értelem az után sóvárog, amit nem kaphat meg, és végül minden érzék kimerül az anyagi természettel folytatott állandó küzdelemben. A kéjvágyon alapuló, gyümölcsöző tettektől az szabadul meg, akit nem zavarnak meg az anyagi lét elkerülhetetlen szenvedései, és aki egyedül a Legfelsőbb Úrnál, Vászudevánál vett menedéket. (49) Aki az Úr lótuszvirág lábainál vett menedéket, az még attól a vágytól is megszabadul, hogy élvezze az anyagi érzékkielégítést. Nem is sző olyan terveket az elméjében, hogy a nemi életet, a társadalmi presztízst és a pénzt élvezze. Ezért őt bhagavatottamának, az Úr tiszta hívének tekintik, aki a legmagasabb szinten áll. (50)
+</p>
+<p class='vspace'>11.02.51-52 Havir Mahárádzsa Niminek
+</p>
+<p class='vspace'>Biztos, hogy az előkelő születés, a szigorú lemondások és jámbor tettek végzése büszkévé tesz. Még jobban eltelik magával az, aki fontos helyet foglal el a társadalomban, mert a szülei a varnásrama nevű társadalmi rendszer nagyon tisztelt tagjai. Ha azonban valaki e kiváló anyagi érdemek ellenére még egy cseppnyi büszkeséget sem érez magában, az ilyet az Istenség Legfelsőbb Személyisége legkedvesebb szolgájának kell tekinteni. (51) Amikor egy bhakta felhagy azzal az önző felfogással, hogy azt gondolja, „ez az én tulajdonom, az pedig az övé”, amikor már nem törődik saját anyagi teste örömeivel és a kényelmetlenségekkel szemben közömbös, akkor tökéletesen békéssé és elégedetté válik. Úgy tartja, hogy csak egy az élőlények között, akik mind az Istenség Legfelsőbb Személyiségének a szerves részei. Az ilyen elégedett Vaisnavát az odaadó szolgálat legmagasabb szintjén állónak tekintik. (52)
+</p>
+<p class='vspace'>11.02.53-55 Havir Mahárádzsa Niminek
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyiségének lótuszvirág lábait kutatják még a legnagyobb félistenek is, amilyenek Brahmá és Siva, akik Őt életüknek és lelküknek fogadták el. Az Úr tiszta bhaktája sohasem, semmilyen körülmények között sem felejtheti el azokat a lótuszvirág lábakat. Egy pillanatra sem mond le azok menedékéről – még egy fél pillanatra sem – még azért az áldásért sem, hogy az egész univerzumon uralkodjon és élvezze annak fenségét. Az Úr ilyen hívét a legjobb Vaisnavának kell tekinteni. (53) Hogy is égethetné tovább az anyagi szenvedés tüze azok szívét, akik a Legfelsőbb Urat imádják? Az Úr lótuszvirág lábai számtalan hősies tettet hajtottak végre, és lábujjain a szépséges körmök értékes ékszerekre hasonlítanak. Körmeinek ragyogása olyan, mint a hűsítő holdfény, mert azonnal enyhíti a szenvedést a tiszta bhakta szívében, ahogyan a hold hűvös fényének megjelenése is lehűti a nap égető hevét. (54) Az Istenség Legfelsőbb Személyisége olyan kegyes a feltételekhez kötött lelkekhez, hogy ha szent nevein szólítják, akár szándékukon kívül vagy vonakodva, az Új kész arra, hogy számtalan bűnös visszahatást megsemmisítsen.
+</p>
+<p class='vspace'>11.11.33 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>A bhaktáim vagy pontosan tudják, vagy nem tudják, mi vagyok, mi vagyok, és hogyan létezem, de ha tiszta szeretettel imádnak engem, a legjobb hívőknek tekintem őket.
+</p>
+<p class='vspace'>11.26.26 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Ezért az értelmes személynek minden rossz társaságot el kell utasítania, ehelyett szent bhakrákkal kell társulnia, akik szavai elvágják az elme túlzott ragaszkodását.
+</p>
+<p class='vspace'>11.20.27-31 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Ha felébredt benne a dicsőségemről szóló történeteekbe vetett hit, megundorodott minden anyagi cselekvéstől, tudja, hogy minden érzékkielégítés csak szenvedéshez vezet, de mégsem képes lemondani az érzéki élvezetről, bhaktám maradjon boldog, imádjon Engem nagy hittel és meggyőződéssel. Ha néha élvezi is az érzékeit, tudja, hogy minden érzékkielégítés nyomorúságos eredményhez vezet, és ezeket a tetteket őszintén megbánja. (27-28) Amikor egy értelmes személy állandóan Engem imád, szerető odaadó szolgálattal, ahogyan azt elmondtam, a szíve megszilárdul Bennem. Így minden anyagi vágy megsemmisül a szívében. (29) Átvágja a szívben levő csomót, minden bizalmatlansága megszűnik, a gyümölcsöző tettek lánca is megszakad, amikor úgy lát Engem, mint az Istenség Legfelsőbb Személyiségét. (30) Ezért az Én szerető szolgálatomat végző, elméjét Rám szögező bhakta általában nem a tudás és lemondás művelésével éri el a legnagyobb tökéletességet ebben a világban. (31)
+</p>
+<p class='vspace'>11.20.32-33 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Mindent, amit gyümölcsöző tettekkel, vezekléssel, tudással, elkülönüléssel, misztikus jógával, adományozással, vallásos kötelességekkel és az élet tökéletessé tételének egyéb eszközeivel el lehet érni, könnyű szerrel elér az Én hívem, szerető szolgálatom által. Ha valahogy arra vágyakozna, hogy elérje a mennyet, a felszabadulást vagy az Én hajlékomat, könnyen megkapja ezeket az áldásokat is.
+</p>
+<p class='vspace'>11.20.36 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>A világi jóból és rosszból származó anyagi jámborság és bűn nem is létezhetnek az Én tiszta bhaktáimban, akik anyagi sóvárgástól mentesen, minden körülmények között megőrzik lelki tudatosságukat. Elérnek Engem, a Legfelsőbb Urat, ki túl vagyok mindenen, amit az anyagi értelem felfoghat.
+</p>
+<p class='vspace'>04.08.29 Nárada Muni Dhruva Mahárádzsának
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége elérésének folyamata csodálatos. Aki intelligens, annak el kell fogadnia ezt az utat, és elégedettnek kell lennie mindennel, bármi kedvező vagy kedvezőtlen történik is az Ő legfelsőbb akaratából.
+</p>
+<p class='vspace'>04.08.33-34 Nárada Muni Dhruva Mahárádzsának
+</p>
+<p class='vspace'>Az embernek arra kell törekednie, hogy bármit rendel el számára a legfelsőbb akarat, legyen az akár boldogság, akár szenvedés, élete során minden körülmények között elégedjen meg vele. Aki ilyen módon tűr, az könnyedén áthatolhat a tudatlanság sötétségén. (33) Mindenkinek így kell cselekednie: ha egy nála kiválóbb emberrel találkozik, akkor legyen nagyon boldog, ha egy nála kevésbé kiválóval, akkor legyen hozzá könyörületes, ha pedig egy vele egyenrangút lát, barátkozzon vele. Ily módon sohasem lesz rá hatással az anyagi világ háromféle szenvedése. (34)
+</p>
+<p class='vspace'>04.18.04-05 A Földanya Prthu Mahárádzsának
+</p>
+<p class='vspace'>Aki követi azokat az elveket és utasításokat, amelyeket a múlt nagy bölcsei adtak, az a mindennapi életben is alkalmazni tudja ezeket az útmutatásokat. Az ilyen ember nagyon könnyen élvezheti az életet és annak örömeit. (4) Az az ostoba ember, aki az elmebeli spekuláció segítségével saját utakat és eszközöket talál ki, s nem ismeri el a bölcsek tekintélyét, akik kifogástalan utasításokat adtak, az újra és újra kudarcot vall törekvéseiben. (5)
+</p>
+<p class='vspace'>05.01.18 Az Úr Brahmá Mahárádzsa Prijavratának
+</p>
+<p class='vspace'>Aki családi életet él, és módszeresen felülkerekedik az elméjén és az öt érzékszervén, az az erődjében lakozó királyhoz hasonlatos, aki legyőzi nagy erejű ellenségeit. Ha az ember a családos életben tapasztalatot szerez, és kéjes vágyai lecsillapodnak, bárhová mehet veszély nélkül.
+</p>
+<p class='vspace'>07.11.14-15 Nárada Muni Mahárádzsa Judhisthírának
+</p>
+<p class='vspace'>A bráhmanának hat kötelessége van. A ksatrija nem fogadhat el adományt, de a másik öt hivatást ő is végezheti. Egy király vagy ksatrija nem vethet ki adót a bráhmanákra, de keresheti azzal a kenyerét, hogy csekélyke adót, vámot és bírságot szed a többi alattvalótól. (14) A kereskedők közössége mindig kövesse a bráhmanák útmutatásait, hivatásuk pedig a földművelés, a kereskedelem és a tehénvédelem legyen. A súdrák egyetlen kötelessége az, hogy egy rangosabb társadalmi rendhez tartozó mester szolgálatába szegődjenek, és szolgálják őt. (15)
+</p>
+<p class='vspace'>07.11.24 Nárada Muni Mahárádzsa Judhisthírának
+</p>
+<p class='vspace'>Hódolatát ajánlja a társadalom felsőbb osztályainak (a bráhmanáknak, a ksatrijáknak és a vaisjáknak), mindig nagyon tiszta, mentes a kétszínűségtől, szolgálja a mesterét, áldozatot végez mantrák éneklése nélkül, nem lop, mindig igazat mond, és minden védelmet megad a teheneknek és a bráhmanáknak – ezek a súdra tulajdonságai.
+</p>
+<p class='vspace'>07,11,30,32,35 Nárada Muni Mahárádzsa Judhisthírának
+</p>
+<p class='vspace'>A sankarának nevezett kevert osztályok közül azokat, akik nem tolvajok, antevaszájinak vagy csandáláknak (kutyaevőknek) hívják. Nekik szintén megvannak a saját családi hagyományaik. (30) Ha valaki a hivatása végzése során a természet kötőerőiben elfoglalt helyzete szerint cselekszik, és fokozatosan felhagy ezekkel a tettekkel, eljut a niskáma szintre. (32) Ha valakin egy bráhmana, ksatrija, vaisja vagy súdra jellemvonásai mutatkoznak meg a korábbi leírásoknak megfelelően, akkor az osztályozásnak e jellemzői szerint kell besorolnunk őt, még akkor is, ha egy másik kasztban született.
+</p>
+<p class='vspace'>10.01.38 Vaszudeva Kamsza királynak
+</p>
+<p class='vspace'>Ó nagy hős, aki megszületett, annak meg is kell halnia, mert a halál a testtel együtt születik. Meghalhatunk ma vagy csupán száz év múlva, ám a halál minden élőlény számára biztos.
+</p>
+<p class='vspace'>10.14.38 Az Úr Brahmá Srí Krsnának
+</p>
+<p class='vspace'>Vannak emberek, akik azt mondják, „Mindent tudok Krsnáról.” Hadd gondolkodjanak így. Ami engem illet, nem kívánok sokat beszélni erről. Ó Uram, hadd mondjak mégis ennyit: Ami a fenségeidet illeti, azok mind túl vannak elmém, testem és szavaim körén.
+</p>
+<p class='vspace'>06.15.03 Nárada Muni Angira Rsinek és Mahárádzsa Csitraketunak
+</p>
+<p class='vspace'>Ó király, ahogyan a hullámok terelik össze a parányi homokszemeket, s aztán újra elsodorják őket, úgy hozza össze és szakítja el egymástól az idő is az anyagi testbe került élőlényeket.
+</p>
+<p class='vspace'>09.05.14 Durvásza Muni Mahárádzsa Ambarisának
+</p>
+<p class='vspace'>Kedves királyom, ma tapasztalhattam az Istenség Legfelsőbb Személyisége bhaktáinak kiválóságát, mert bár sértést követtem el, te mégis jó szerencsémért imádkoztál.
+</p>
+<p class='vspace'>10.02.33 A félistenek Srí Krsnának
+</p>
+<p class='vspace'>Ó Mádhava, Istenség Legfelsőbb Személyisége, szerencse istennőjének Ura! Ha azok a bhakták, akik a legmélyebb szeretetet érzik Irántad, néha elbuknak az odaadás útján, ők nem úgy buknak el, mint az abhakták, mert még mindig védelmezed őket. Így aztán féelelm nélkül kelnek át ellenségeik fején, és csak haladnak tovább az odaadó szolgálat útján.
+</p>
+<p class='vspace'>07.09.44 Prahláda Mahárádzsa az Úr Nrsimhadevának
+</p>
+<p class='vspace'>Drága Uram, Nrsimhadeva, látom, hogy sok szent van a világon, de csak saját felszabadulásuk érdekli őket. A nagy városokkal mit sem törődve a Himálajába vagy az erdőbe vonulnak, hogy némasági fogadalmat téve (mauna-vrata) meditáljanak. Nem gondolnak mások felszabadulására. Én azonban nem akarok egyedül felszabadulni, s magam mögött hagyni ezeket a szerencsétlen ostobákat és gazembereket. Tudom, hogy Krsna-tudat nélkül, anélkül hogy elnyerné lótuszlábad menedékét, senki sem lehet boldog. Szeretném hát visszahozni őket lótuszlábad oltalmába.
+</p>
+<p class='vspace'>10.14.36 Az Úr Brahmá Srí Krsnának
+</p>
+<p class='vspace'>Kedves Uram, krsna, amíg az emberek nem válnak a bhaktáiddá, anyagi ragaszkodásaik és vágyaik tolvajok maradnak, otthonaik börtönök, családtagjaik iránti gyengéd érzelmeik pedig bilincsek.
+</p>
+<p class='vspace'>10.14.08 Az Úr Brahmá Srí Krsnának
+</p>
+<p class='vspace'>Kedves Uram, aki komolyan kivárja, amíg indokolatlan kegyedben részesíted, és közben türelmesen elviseli múltbeli rossz tettei visszahatásait, valamint tiszteletteljes hódolatát ajánlja Neked a szívével, szavaival és testével, az biztosan kiérdemli a felszabadulást, mert ez a jogos igénye lett.
+</p>
+<p class='vspace'>10.88.08 Krsna Mahárádzsa Judhisthírának
+</p>
+<p class='vspace'>Az Istenség Személyisége szólt: Ha különösen kedvelek valakit, akkor szép lassan megfosztom minden gazdagságától. Ekkor a rokonok és a barátok cserben hagyják a szegénységtől sújtott embert. Ilyen módon az egyik szenvedést a másik után szenvedi el.
+</p>
+<p class='vspace'>10.41.51 Sukadeva Goszvámi Mahárádzsa Pariksitnak
+</p>
+<p class='vspace'>Szudáma a Krsna, minden létezés Felsőlelke iránti megingathatatlan odaadást, a bhaktáival való barátságot, és a valamennyi élőlény iránti transzcendentális részvétet választotta.
+</p>
+<p class='vspace'>05.18.12 Prahláda Mahárádzsa az Úr Nrsimhadevának
+</p>
+<p class='vspace'>Akiben tiszta odaadás alakult ki az Istenség Legfelsőbb Személyisége, Vászudeva iránt, annak a testében minden félisten és azok nagyszerű tulajdonságai, például a vallás, a tudás és lemondás megnyilvánulnak. Ellenben annak, aki nem végez odaadó szolgálatot, és az anyagi tetteknek él, nincsenek jó tulajdonságai. Az ilyen embert még akkor is saját elméje vezeti, és akkor is az Úr külső energiáját szolgálja, ha esetleg jól ért a misztikus jógához, vagy becsületes törekvésével sikeresen eltartja családját és rokonait. Hogyan lehetne akár egyetlen jó tulajdonsága egy ilyen embernek?
+</p>
+<p class='vspace'>03.22.37 Maitreja Rsi Vidurának
+</p>
+<p class='vspace'>Ezért, ó Vidura, hogyan okozhatnának szenvedést a test, az elme, a természet, az emberek és más élőlények azoknak, akik az Úr Krsna tökéletes védelmét élvezik az odaadó szolgálatban?
+</p>
+<p class='vspace'>11.20.19 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Amikor a lelki szinten összpontosított elme hirtelen eltér helyzetétől, gondosan ismét vissza kell vezetni az önvaló irányítása alá, az előírt módozatok követésével.
+</p>
+<p class='vspace'>11.14.18-19 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Kedves Uddhavám, ha a bhaktám még nem uralkodik teljesen az érzékein, lehet, hogy anyagi vágyak zaklatják, de mégsem fogja legyőzni őt az anyagi érzékkielégítés, mert megingathatatlan odaadással van Irántam. (18) Kedves Uddhavám, ahogyan a lobogó tűz hamuvá változtatja a tüzifát, az Irántam való odaadás is hamuvá égeti a bhaktáim által elkövetett bűnöket. (19)
+</p>
+<p class='vspace'>11.14.21-22 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Engem, az Istenség Legfelsőbb Személyiségét csak az nyerhet el, aki tiszta odaadó szolgálatot végez, és teljes hite van Bennem. Természetes, hogy kedves vagyok azoknak a híveimnek, akik Engem tartanak szeretetteljes szolgálatuk egyetlen céljának. Az ilyen odaadó szolgálat végzésével még a kutyevők is megtisztulhatnak alantas születésük szennyezőitől. (21) Sem a becsületesen és kegyesen végzett vallásos cselekedetek, sem a nagy lemondással megszerzett tudás nem…
+</p>
+<p class='vspace'>11.14.23 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Ha a haj nem áll égnek, hogyan olvadhat meg a szív? És ha a szív nem olvad meg, hogyan folyhatnak a szemekből a szeretet könnyei? Ha valaki nem sír lelki boldogságában, hogyan végezhet az Úrnak szerető szolgálatot? És a tudat hogyan tisztulhat meg ilyen szolgálat nélkül?
+</p>
+<p class='vspace'>11.03.23-24 Prabuddha Mahárádzsa Niminek
+</p>
+<p class='vspace'>Az őszinte tanítványnak meg kell tanulnia, hogyan kapcsolja le az elmét minden anyagitól, valamint hogyan ápolja a pozitív kapcsolatot a lelki tanítómesterével és a többi szent bhaktával. Kegyesnek kell lennie azokhoz, akikkel egyenlő szinten van, a magasabb lelki helyzetben levőket pedig alázatosan kell szolgálnia. Így kell megtanulnia, hogyan bánjon helyesen minden élőlénnyel. (23) Ahhoz, hogy a lelki tanítómestert szolgálhassa, a tanítványnak meg kell tanulnia a tisztaságot, az aszkézist, a türelmet, a hallgatást, egyszerűséget, tanulmányoznia kell a védikus tudást, nőtlenségben kell élnie, és egykedvűen el kell viselnie minden anyagi ellentétpárt, amilyenek a meleg és a hideg, a boldogság és a szenvedés. (24)
+</p>
+<p class='vspace'>11.03.25-26 Prabuddha Mahárádzsa Niminek
+</p>
+<p class='vspace'>Amikor a meditációt gyakorolja, állandóan úgy kell látnia magát, mint a lélek örök ismerőjét, az Urat pedig úgy, mint mindennek abszolút irányítóját. Ha a meditációján javítani akar, éljen magányos helyen, hagyjon fel a házához és háztartásához való hamis ragaszkodással. Mondjon le az ideiglenes anyagi test díszítéséről, viseljen megvetett helyen talált rongyokat vagy fakérget. Ilyen módon tanulja meg, hogyan legyen minden anyagi helyzetben elégedett. (25) Legyen szilárd a hite, hogy minden sikert elér az életben azáltal, ha követi azokat a szentírásokat, amelyek az Istenség Legfelsőbb Személyisége, Bhagaván dicsőségéről beszélnek; ugyanakkor azonban kerülje el más szentírások gyalázását. Szigorúan uralkodnia kell az elméjén, a beszédén és a testi cselekvésein, mindig igazat kell mondania, és tökéletesen le kell igáznia az elmét és az érzékeket. (26)
+</p>
+<p class='vspace'>11.03.27-28 Prabuddha Mahárádzsa Niminek
+</p>
+<p class='vspace'>Az Úr csodálatos transzcendentális cselekedetit kell hallgatnia és dicsőítenie, azokon kell meditálnia. Az Istenség Legfelsőbb Személyiségének különösen a megjelenésében, tetteiben, tulajdonságaiban és szent neveiben kell elmerülnie. Ezzel az inspirációval úgy kell végeznie mindennapi cselekedeteit, mint felajánlást az Úrnak. Az áldozatokat, adományozást és lemondásokat kizárólag az Úr megelégedésére végezze. Csak azokat a mantrákat zengje, amelyek az Istenség Legfelsőbb Személyiségét magasztalják. Még a vallásos cselekedeteit is ajánlja fel az Úrnak. Bármit találjon kellemesnek vagy élvezetesnek, azonnal ajánlja fel a Legfelsőbb Úrnak, és még a feleségét, gyermekeit, otthonát és életlevegőjét is ajánlja fel az Istenség Legfelsőbb Személyisége lótuszvirág lábainál.
+</p>
+<p class='vspace'>10.81.04 Krsna Szudáma bráhmanának
+</p>
+<p class='vspace'>Ha valaki szeretettel és odaadással ajánl fel Nekem egy levelet, egy virágot, egy gyümölcsöt vagy vizet, el fogom fogadni azt.
+</p>
+<p class='vspace'>06.09.49 Az Úr Nárájana a félisteneknek
+</p>
+<p class='vspace'>Akik úgy vélik, hogy az anyagi kincseken túl nincs semmi más, vagy azt hiszik, hogy ez az élet végső célja, azokat fösvényeknek (krpanáknak) hívják. Az ilyen emberek nem tudják, mi az, amire a léleknek valóban szüksége van. Ezenkívül azt az embert, aki megadja az ilyen ostobáknak azt, amire vágynak, szintén ostobának kell tekinteni.
+</p>
+<p class='vspace'>06.11.27 Vrtrászura a Legfelsőbb Úrnak
+</p>
+<p class='vspace'>Ó Uram, mesterem! Gyümölcsöző tetteim következtében bolyongok itt az anyagi világban, ezért csak jámbor és megvilágosodott bhaktáid között keresek barátokat. Testemhez, feleségemhez, gyermekeimhez és otthonomhoz fűződő ragaszkodásom külső energiád bűvöletében tovább folytatódik, mégis azt kívánom, bár ne kötődnék hozzájuk. Elmém, tudatomés mindenem egyedül Hozzád ragaszkodjon, ó Uram!
+</p>
+<p class='vspace'>11.02.42 Kavi Mahárádzsa Niminek
+</p>
+<p class='vspace'>Odaadás, a Legfelsőbb Úr közvetlen tapasztalása és elkülönülés minden egyébtől – ez a három egyidejűleg következik be annak, aki az Istenség Legfelsőbb Személyiségénél keresett menedéket; ugyanúgy, ahogyan az evő is egyszerre élvez, táplálkozik és szabadul meg az éhségtől, minden falattal egyre jobban.
+</p>
+<p class='vspace'>05.19.27 A félistenek énekelnek
+</p>
+<p class='vspace'>Az Istenség Legfelsőbb Személyisége teljesíti a bhakta anyagi vágyait, ha a bhakta ilyen szándékkal fordul Hozzá, de nem ad olyan áldást neki, ami azt eredményezné, hogy még több áldást kérjen. Ám lótuszlábainál még akkor is örömmel nyűjt menedéket a bhaktának, ha az nem vágyik rá, s ez a menedék teljesíti minden kívánságát. Ez a Legfelsőbb Személy különleges kegye.
+</p>
+<p class='vspace'>07.06.19 Prahláda Mahárádzsa a démonok fiainak
+</p>
+<p class='vspace'>Ó démonok fiai, az Istenség Legfelsőbb Személyisége, Nárájana az eredeti Felsőlélek, minden élőlény atyja. Éppen ezért bárki, még egy gyerek vagy öregember is könnyedén, bármilyen körülmények között elégedetté teheti és imádhatjaŐt. Az élőlények és az Istenség Legfelsőbb Személyisége közötti kapcsolat örök, ezért az Úrnak nem nehéz örömet okozni.
+</p>
+<p class='vspace'>11.25.25 Srí Krsna Uddhavának
+</p>
+<p class='vspace'>Az erdőben lakás a jóság kötőerejében van, városban lakni a szenvedély kötőereje, de ha valaki olyan házban él, amelyben szerencsejátékot űznek, az a tudatlanság kötőerejét árulja el. Ha valaki azon a helyen él, ahol Én vagyok, az transzcendentális. A lelki életre irányuló hit a jóság kötőerejében van, a gyümölcsöző munkában gyökerező hit a szenvedély kötőerejében, a vallástalan tettek a tudatlanság kötőerejében vannak. A tiszta odaadó szolgálatomba vetett hit azonban tisztán transzcendentális. (27) Az egészséges, tiszta és nehézségek nélkül szerzett étel a jóság kötőerejében van, az érzékeknek azonnali örömet adó étel a szenvedély kötőerejében, a tisztátalan és szenvedést okozó étel a tudatlanság kötőerejében. (28)
+</p>
+<p class='vspace'>11.05.04 Csamásza Rsi Mahárádzsa Niminek
+</p>
+<p class='vspace'>Sokan vannak, akiknek kevés alkalmuk nyílik arra, hogy részt vegyenek az istenség Legfelsőbb Személyiségéről, Hariról szóló beszélgetésekben, így aztán nehezükmre esik, hogy tévedhetetlen dicsőségét zengjék. Az olyan személyek, mint a nők, a súdrák és más elesett osztályok mindig kiérdemlik az olyan nagy személyiségek kegyét, amilyen te vagy.
+</p>
+<p class='vspace'>10.14.58 Sukadeva Goszvámi Mahárádzsa Pariksitnak
+</p>
+<p class='vspace'>Azoknak, akik elfogadták az Úr, a kozmikus megnyilvánulás menedéke és Murári, Mura démon ellensége lótuszvirág lábai hajóját, az anyagi világ óceánja csak olyan, mint a víz a borjú patanyomában. Céljuk a param padam, Vaikuntha, az a hely, ahol nincsenek anyagi szenvedések, nem pedig az a hely, ahol minden lépésnél veszély leselkedik.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivinoda.bhagavat-arka-maricsimala_15.html'>A bhaktihoz kedvezőtlen feltételek elemzése</a> | <a class='wikilink' href='index.php-n=bhaktivinoda.bhagavat-arka-maricsimala.html'>Bhagavat-arka-maricsimála</a> | <a class='wikilink' href='index.php-n=bhaktivinoda.bhagavat-arka-maricsimala_17.html'>A bhava fokozatos megnyilvánulása</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on March 05, 2008, at 09:07 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

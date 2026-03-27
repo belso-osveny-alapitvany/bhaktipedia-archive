@@ -1,0 +1,852 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - El Bhagavatam es la Respuesta a Todas las Preguntas </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam2 - RSS Feed'
+      href='index.php-n=bhagavatam2.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam2.0-10' method='get'><input type='hidden' name='n' value='bhagavatam2.0-10' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - El Bhagavatam es la Respuesta a Todas las Preguntas "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam2.0-10-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhagavatam2.srimad_bhagavatam.html'>Srimad Bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo X</small><br /><br />El Bhagavatam es la Respuesta a Todas las Preguntas</h1>
+<p>VERSO 1
+sri-suka uvaca
+atra sargo visargas ca
+sthanam posanam utayah
+manvantaresanukatha
+nirodho muktir asrayah
+</p>
+<p class='vspace'>sri-sukah uvaca—Srila Sukadeva Gosvami dijo; atra—en este Srimad-Bhagavatam; sargah—declaración acerca de la creación del universo; visargah—declaración acerca de la subcreación; ca—también; sthanam—los sistemas planetarios; posanam—protección; utayah—el impulso creativo; manvantara—cambios de Manus; isa-anukathah—la ciencia de Dios; nirodhah—yendo de vuelta al hogar, de vuelta a Dios; muktih—liberación; asrayah—el súmmum bonum.
+TRADUCCIÓN
+Srila Sukadeva Gosvami dijo: En el Srimad-Bhagavatam, las declaraciones se agrupan en diez divisiones, respecto a lo siguiente: la creación del universo, la subcreación, los sistemas planetarios, la protección que brinda el Señor, el impulso creativo, el cambio de Manus, la ciencia de Dios, el regreso al hogar, de vuelta a Dios, la liberación y el súmmum bonum.
+VERSO 2
+dasamasya visuddhy-artham
+navanam iha laksanam
+varnayanti mahatmanah
+srutenarthena cañjasa
+</p>
+<p class='vspace'>dasamasya—del súmmum bonum; visuddhi—aislamiento; artham—propósito; navanam—de los otros nueve; iha—en este Srimad-Bhagavatam; laksanam—características; varnayanti—ellos describen; maha-atmanah—los grandes sabios; srutena—mediante testimonios védicos; arthena—mediante explicación directa; ca—y; añjasa—resumidamente.
+TRADUCCIÓN
+Para aislar la trascendencia del súmmum bonum, las características del resto se describen a veces mediante inferencias védicas, algunas veces mediante la explicación directa, y algunas veces mediante explicaciones resumidas dadas por los grandes sabios.
+VERSO 3
+bhuta-matrendriya-dhiyam
+janma sarga udahrtah
+brahmano guna-vaisamyad
+visargah paurusah smrtah
+</p>
+<p class='vspace'>bhuta—los cinco elementos toscos (el cielo, etc.); matra—objetos percibidos por los sentidos; indriya—los sentidos; dhiyam—de la mente; janma—creación; sargah—manifestación; udahrtah—se denomina “la creación”; brahmanah—de Brahma, el primer purusa; guna-vaisamyat—por interacción de las tres modalidades de la naturaleza; visargah—nueva creación; paurusah—actividades resultantes de la naturaleza; smrtah—se conoce así.
+TRADUCCIÓN
+La creación elemental de los dieciséis componentes de la materia —a saber, los cinco elementos [fuego, agua, tierra, aire y cielo], el sonido, la forma, el sabor, el aroma, la textura, y los ojos, los oídos, la nariz, la lengua, la piel y la mente— se conoce como sarga, mientras que la subsiguiente y resultante interacción de las modalidades de la naturaleza material, se denomina visarga.
+SIGNIFICADO
+Con el fin de explicar las diez divisiones características del Srimad-Bhagavatam, existen siete versos continuos. El primer de esos versos a que se ha hecho referencia, trata de las dieciséis manifestaciones elementales, constituidas por la tierra, el agua, etc., con el ego material compuesto de inteligencia y mente materiales. La creación subsiguiente es un resultado de las reacciones de las dieciséis energías antedichas del primer purusa, la encarnación Maha-Visnu de Govinda, como lo explicará más adelante Brahma en su tratado Brahma-samhita (5.47), de la siguiente manera:
+yah karanarnava-jale bhajati sma yoga-
+nidram ananta-jagad-anda-sa-roma-kupah
+adhara-saktim avalambya param sva-murtim
+govindam adi-purusam tam aham bhajami
+La primera encarnación purusa de Govinda, el Señor Krishna, conocida como el Maha-Visnu, entra en un sueño místico yoga-nidra, y los innumerables universos se encuentran en potencia en todos y cada uno de los agujeros capilares de Su cuerpo trascendental.
+Como se mencionó en el verso anterior, srutena (o haciendo referencia a las conclusiones védicas), la Suprema Personalidad de Dios, directamente hace posible la creación mediante la manifestación de Sus energías específicas. Sin esa referencia védica, la creación parece ser producto de la naturaleza material. Esta conclusión es fruto de un escaso acopio de conocimiento. Del estudio de las referencias védicas se concluye que, el origen de todas las energías (es decir, la interna, la externa y la marginal) es la Suprema Personalidad de Dios. Y, como se explicó anteriormente, la conclusión ilusoria es la que dice que la creación la hace la inerte naturaleza material. La conclusión védica es luz trascendental, mientras que la conclusión no védica es oscuridad material. La potencia interna del Señor Supremo es idéntica al Señor Supremo, y la potencia externa se anima al ponerse en contacto con la potencia interna. Las partes integrales de la potencia interna que reaccionan al ponerse en contacto con la potencia externa, se denominan potencia marginal, o entidades vivientes.
+Así pues, la creación original proviene directamente de la Suprema Personalidad de Dios, o Param Brahman, y la creación secundaria, como resultado de la reacción de los ingredientes originales, la hace Brahma. En esa forma se inician las actividades del universo entero.
+VERSO 4
+sthitir vaikuntha-vijayah
+posanam tad-anugrahah
+manvantarani sad-dharma
+utayah karma-vasanah
+</p>
+<p class='vspace'>sthitih—la situación correcta; vaikuntha-vijayah—la victoria del Señor de Vaikuntha; posanam—manutención; tat-anugrahah—Su misericordia sin causa; manvantarani—el reinado de los Manus; sat-dharmah—el deber ocupacional perfecto; utayah—incentivo para el trabajo; karma-vasanah—deseo de trabajo fruitivo.
+TRADUCCIÓN
+La situación idónea para las entidades vivientes consiste en obedecer las leyes del Señor, y de ese modo poseer una perfecta paz mental bajo la protección de la Suprema Personalidad de Dios. Los Manus y sus leyes tienen la función de dar una dirección correcta en la vida. El incentivo para la actividades es el deseo de realizar trabajo fruitivo.
+SIGNIFICADO
+Este mundo material es creado, mantenido por algún tiempo, y luego aniquilado por la voluntad del Señor. Los ingredientes de la creación y el creador subordinado, Brahma, son creados primero por el Señor Visnu en sus encarnaciones primera y segunda. La primera encarnación purusa es Maha-Visnu, y la segunda encarnación purusa es Garbhodakasayi Visnu, de quien se crea Brahma. El tercer purusa-avatara es Ksirodakasayi Visnu, que vive como la Superalma de todo lo que hay en el universo, y que mantiene la creación generada por Brahma. Siva es uno de los muchos hijos de Brahma, y él aniquila la creación. De manera que, el creador original del universo es Visnu, y por Su misericordia sin causa Él también es el sustentador de los seres creados. En consecuencia, es deber de las almas condicionadas reconocer la victoria del Señor, y de ese modo volverse devotos puros y vivir pacíficamente en este mundo, donde los sufrimientos y los peligros existen siempre. Las almas condicionadas, que consideran que esta creación material es el lugar para satisfacer los sentidos, y que, así pues, son engañadas por la energía externa de Visnu, se quedan de nuevo para ser sometidas a las leyes de la naturaleza material, la creación y la destrucción.
+En la Bhagavad-gita se dice que todos los planetas son destructibles, comenzando con el planeta más elevado de este universo, y descendiendo hasta el planeta más bajo, Patalaloka, y las almas condicionadas puede que viajen por el espacio, bien sea mediante el buen o mal trabajo, o mediante aeronaves modernas, mas en todas partes es seguro que han de morir, si bien la duración de la vida en diferentes planetas es diferente. La única manera de lograr la vida eterna es ir de vuelta al hogar, de vuelta a Dios, donde no hay más renacimiento como en los planetas materiales. Las almas condicionadas, inconscientes de este hecho muy simple por haber olvidado su relación con el Señor de Vaikuntha, tratan de planear una vida permanente en este mundo material. Engañadas por la energía externa, se dedican así a diversos tipos de desarrollo económico y religioso, olvidando que su función es la de ir de regreso al hogar, de regreso a Dios. Ese olvido es tan fuerte, debido a la influencia de maya, que las almas condicionadas no quieren en absoluto ir de regreso a Dios. Mediante el disfrute de los sentidos, repetidamente se vuelven víctimas del nacimiento y la muerte, y, así pues, malogran sus vidas humanas, que son oportunidades de regresar a Visnu. Las Escrituras directivas hechas por los Manus en diferentes eras y milenios, se denominan sad-dharma, buena guía para los seres humanos, los cuales deben aprovechar para su propio beneficio todas las Escrituras reveladas, a fin de llevar la vida a feliz término. La creación no es falsa, pero es una manifestación temporal cuyo único objetivo es darles la oportunidad a las almas condicionadas de ir de regreso a Dios. El deseo de ir de regreso a Dios y las funciones que se realizan en esa dirección, constituyen el sendero correcto del trabajo. Cuando se acepta ese sendero regulativo, el Señor les da plena protección a Sus devotos, por Su misericordia sin causa, mientras que los no devotos arriesgan sus propias actividades, para atarse a una cadena de reacciones fruitivas. La palabra sad-dharma es significativa en relación con esto. Sad-dharma, o el deber que se realiza para ir de regreso a Dios, y, así pues, volverse Su devoto puro, es la única actividad piadosa; todas las demás personas puede que finjan ser piadosas, pero de hecho no lo son. Es sólo por esta razón que el Señor aconseja en la Bhagavad-gita que uno abandone todas las supuestas actividades religiosas y se dedique por completo al servicio devocional del Señor, para librarse de todas las ansiedades que causa la peligrosa vida de la existencia material. Trabajar dentro del sad-dharma es la dirección correcta de la vida. El objetivo de uno en la vida debe ser el ir de regreso al hogar, de regreso a Dios, y no el someterse a repetidos nacimientos y muertes en el mundo material, mediante la obtención de cuerpos buenos o malos, para una existencia temporal. En eso estriba la inteligencia de la vida humana, y uno debe desear las actividades de la vida en función de ello.
+VERSO 5
+avataranucaritam
+hares casyanuvartinam
+pumsam isa-kathah prokta
+nanakhyanopabrmhitah
+</p>
+<p class='vspace'>avatara—encarnación de Dios; anucaritam—actividades; hareh—de la Personalidad de Dios; ca—también; asya—de Sus; anuvartinam—seguidores; pumsam—de las personas; isa-kathah—la ciencia de Dios; proktah—se dice; nana—diversas; akhyana—narraciones; upabrmhitah—descritas.
+TRADUCCIÓN
+La ciencia de Dios describe las encarnaciones de la Personalidad de Dios y Sus diferentes actividades, juntamente con las actividades de Sus grandes devotos.
+SIGNIFICADO
+Durante el transcurso de la existencia de la manifestación cósmica, se crea la cronología de la historia, que registra las actividades de las entidades vivientes. La generalidad de la gente tiene la tendencia a aprender historia y las narraciones acerca de diferentes hombres y tiempos, pero debido a una falta de conocimiento acerca de la ciencia de Dios, no se inclina a estudiar al historia de las encarnaciones de la Personalidad de Dios. Debe recordarse siempre, que la creación material se crea para la salvación de las almas condicionadas. El misericordioso Señor, movido por Su misericordia sin causa, desciende a diversos planetas del mundo material, y actúa en pro de la salvación de las almas condicionadas. Eso hace que valga la pena leer la historia y las narraciones. El Srimad-Bhagavatam ofrece esos trascendentales temas del Señor en relación con grandes devotos. Por lo tanto, se les debe dar una respetuosa recepción auditiva a los temas acerca de los devotos y el Señor.
+VERSO 6
+nirodho ’syanusayanam
+atmanah saha saktibhih
+muktir hitvanyatha rupam
+sva-rupena vyavasthitih
+</p>
+<p class='vspace'>nirodhah—la terminación de la manifestación cósmica; asya—de Su; anusayanam—cuando la encarnación purusa, Maha-Visnu, se acuesta en un estado de sueño místico; atmanah—de las entidades vivientes; saha—juntamente con; saktibhih—con las energías; muktih—liberación; hitva—abandonando; anyatha—de lo contrario; rupam—forma; sva-rupena—con forma constitucional; vyavasthitih—situación permanente.
+TRADUCCIÓN
+La fusión de la entidad viviente —juntamente con su tendencia viviente condicional— con la acostada mística de Maha-Visnu, se denomina la terminación de la manifestación cósmica. La liberación es la situación permanente de la forma de la entidad viviente, después de que ésta abandone los cambiables cuerpos materiales toscos y sutiles.
+SIGNIFICADO
+Tal como se ha discutido en diversas ocasiones, existen dos tipos de entidad viviente. La mayoría de ellas siempre están liberadas, es decir, son nitya-muktas, mientras que otras siempre están condicionadas. Las almas que siempre están condicionadas tienen la tendencia a desarrollar una mentalidad de enseñoreamiento de la naturaleza material, y, por lo tanto, la creación cósmica material se manifiesta para darles a estas almas dos clases de facilidades. Una facilidad consiste en que el alma condicionada pueda actuar de acuerdo con su tendencia de enseñoreamiento de la manifestación cósmica, y la otra facilidad le da al alma condicionada una oportunidad de ir de regreso a Dios. Así que, después de la terminación de la manifestación cósmica, la mayoría de las almas condicionadas se funden en la existencia de la Personalidad de Dios, Maha-Visnu —quien yace en Su sueño místico— para ser creadas de nuevo en la siguiente creación. Pero algunas de las almas condicionadas, que siguen el sonido trascendental en la forma de las Escrituras védicas y que, por ello pueden ir de regreso a Dios, obtiene cuerpos originales y espirituales, después de abandonar los cuerpos toscos y sutiles, que son materiales y condicionales. Los cuerpos materiales condicionales se desarrollan debido al olvido que padecen las entidades vivientes de su relación con Dios, y, durante el transcurso de la manifestación cósmica, las almas condicionadas reciben una oportunidad de revivir su condición de vida original, con la ayuda de Escrituras reveladas, tan misericordiosamente recopiladas por el Señor en Sus diferentes encarnaciones. Leer u oír hablar de dichas Escrituras trascendentales lo ayuda a uno a volverse liberado, aun en el estado condicional de la existencia material. Todas las Escrituras védicas apuntan hacia el servicio devocional de la Personalidad de Dios, y tan pronto como uno se encuentra fijo en ese punto, de inmediato queda liberado de la vida condicional. Las formas materiales toscas y sutiles se debe simplemente a la ignorancia del alma condicionada, y tan pronto ésta se sitúa en el servicio devocional del Señor, se vuelve merecedora de ser liberada del estado condicional. Ese servicio devocional consiste en sentir una atracción trascendental por el Supremo, debido a que Él es la fuente de todos los humores agradables. Todo el mundo busca disfrutar de algún humor placentero, pero nadie conoce a la suprema fuente de toda atracción (raso vai sah rasam hyevayam labdhvanadi bhavati). Los himnos védicos les hablan a todos acerca de la fuente suprema de todo placer; el ilimitado manantial de todo placer es la Personalidad de Dios, y aquel que es lo suficientemente afortunado como para recibir esa información a través de Escrituras trascendentales tales como el Srimad-Bhagavatam, se vuelve permanentemente liberado, para así ocupar su lugar apropiado en el Reino de Dios.
+VERSO 7
+abhasas ca nirodhas ca
+yato ’sty adhyavasiyate
+sa asrayah param brahma
+paramatmeti sabdyate
+</p>
+<p class='vspace'>abhasah—la manifestación cósmica; ca—y; nirodhah—y su terminación; ca—también; yatah—de la fuente; asti—es; adhyavasiyate—se manifiestan; sah—Él; asrayah—fuente; param—el Supremo; brahma—Ser; paramatma—la Superalma; iti—así pues; sabdyate—llamado.
+TRADUCCIÓN
+El Supremo, quien es célebre como el Ser Supremo o el Alma Suprema, es la fuente suprema de la manifestación cósmica, y también su depósito y su terminación. Por ello, Él es el Manantial Supremo, la Verdad Absoluta.
+SIGNIFICADO
+Como se explica en el mismo comienzo del Srimad-Bhagavatam: janmady asya yatah, vadanti tat tattva-vidas tattvam yaj jñanam advayan/ brahmeti paramameti bhagavan iti sabdyate, son sinónimos de la fuente suprema de todas las energías, denominada Parama-brahma, Paramatma o Bhagavan. La palabra iti que se usa aquí, en este verso, completa los sinónimos, y, así pues, se refiere a Bhagavan. Esto habrá de explicarse más en los versos posteriores, pero este Bhagavan en fin de cuentas significa el Señor Krishna, debido a que el Srimad-Bhagavatam ya ha aceptado a Krishna como la Suprema Personalidad de Dios. Krsnas tu bhagavan svayam. La fuente original de todas las energías, o el súmmum bonum, es la Verdad Absoluta, que se denomina Parama-brahma, etc., y Bhagavan es la última palabra en Verdad Absoluta. Incluso entre los sinónimos de Bhagavan tales como Narayana, Visnu y Purusa, la última palabra es Krishna, como se confirma en la Bhagavad-gita: aham sarvasya prabhavo mattah sarvam pravartate, etc. Además de esto, el Srimad-Bhagavatam es la representación del Señor Krishna, como una encarnación sonora del Señor.
+krsne sva-dhamopagate
+dharma-jñanadibhih saha
+kalau nasta-drsam esah
+puranarko ’dhunoditah
+(Bhag. 1.3.43)
+Así pues, como conclusión general, el Señor Krishna es la fuente última de todas las energías, y la palabra Krishna significa eso. Y para explicar a Krishna o la ciencia de Krishna, se ha preparado el Srimad-Bhagavatam. En el Primer Canto del Srimad-Bhagavatam, esa verdad queda indicada en las preguntas y respuestas de Suta Gosvami y grandes sabios tales como Saunaka, y en los Capítulos Primero y Segundo del Canto se explica eso. En el Tercer Capítulo se encuentra más explícito este asunto, y en el Cuarto Capítulo se encuentra aún más explícito. En el Segundo Canto se hace énfasis adicional en que la Verdad Absoluta es la Personalidad de Dios, y se señala al Supremo Señor Krishna. El resumen del Srimad-Bhagavatam en cuatro versos, tal como lo hemos discutido ya, es un compendio. La expresión final de esta Suprema Personalidad de Dios queda confirmada por Brahma en su Brahma-samhita, al decir isvarah paramah krsnah sac-cid-ananda-vigrahah. Eso mismo se concluye en el Tercer Canto del Srimad-Bhagavatam. En los Cantos Décimo y Undécimo del Srimad-Bhagavatam se explica detalladamente todo el tema. Al hablar de los cambios de los Manus o manvantaras, tales como el Svayambhuva-manvantara y el Caksusa-manvantara, según se discute en los Cantos Tercero, Cuarto, Quinto, Sexto y Séptimo del Srimad-Bhagavatam, se señala al Señor Krishna. En el Octavo Canto, el Vaivasvata-manvantara explica indirectamente el mismo asunto, y en el Noveno Canto se encuentra el mismo significado. En el Duodécimo Canto se explica lo mismo de un modo adicional, específicamente en relación con las diferentes encarnaciones del Señor. Así pues, del estudio de todo el Srimad-Bhagavatam se concluye que el Señor Sri Krishna es el súmmum bonum último, o la fuente última de toda energía. Y de acuerdo con los grados de los adoradores, puede que se den diferentes indicaciones acerca de a nomenclatura a usar, como Narayana, Brahma, Paramatma, etc.
+VERSO 8
+yo ’dhyatmiko ’yam purusah
+so ’sav evadhidaivikah
+yas tatrobhaya-vicchedah
+puruso hy adhibhautikah
+</p>
+<p class='vspace'>yah—aquel que; adhyatmikah—posee los órganos de los sentidos; ayam—esta; purusah—personalidad; sah—él; asau—ése; eva—también; adhidaivikah—deidad controladora; yah—aquella que; tatra—ahí; ubhaya—de ambos; vicchedah—separación; purusah—persona; hi—para; adhibhautikah—el cuerpo visible o la entidad viviente que mora en el cuerpo.
+TRADUCCIÓN
+La persona individual que posee diferentes instrumentos para los sentidos se denomina la persona adhyatmika, y la deidad controladora individual de los sentidos se denomina adhidaivika. El cuerpo que se ve en los globos de los ojos se denomina la persona adhibhautika.
+SIGNIFICADO
+El supremo súmmum bonum controlador es la Personalidad de Dios en Su porción plenaria de Paramatma, o la manifestación de la Superalma. En la Bhagavad-gita (10.42), se dice:
+athava bahunaitena
+kim jñatena tavarjuna
+vistabhyaham idam krtsnam
+ekamsena sthito jagat
+Todas las deidades controladoras, tales como Visnu, Brahma y Siva, son diferentes manifestaciones del aspecto Paramatma de la Suprema Personalidad de Dios, Sri Krishna, quien se exhibe de esa manera al entrar en todos y cada uno de los universos que se generan de Él. Pero aun así, aparentemente existen las divisiones del controlador y lo controlado. Por ejemplo, en el departamento de control de alimentos, el controlador de la comida es una persona hecha de los mismos ingredientes que la persona que está controlada. En forma similar, todos y cada uno de los individuos del mundo material están controlados por los semidioses superiores. Como ejemplo de esto, nosotros tenemos nuestros sentidos, pero los sentidos están controlados por deidades controladoras superiores. No podemos ver sin luz, y el controlador de la luz es el Sol. El dios del Sol se encuentra en el planeta Sol, y nosotros, los seres humanos individuales, o cualquier otro ser de esta Tierra, nos encontramos controlados por el dios del Sol en lo que respecta a nuestros ojos. En forma similar, todos los sentidos que poseemos están controlados por los semidioses superiores, que son también tan entidades vivientes como lo somos nosotros, pero los unos están apoderados, mientras que los otros estamos controlados. La entidad viviente controlada se denomina la persona adhyatmika, y el controlador se denomina la persona adhidaivika. Todas esas posiciones en el mundo material se deben a diferentes actividades fruitivas. Cualquier ser viviente individual puede volverse el dios del Sol o incluso Brahma, o cualquier otro dios del sistema planetario superior, mediante un grado más elevado de trabajo piadoso, y, en forma similar, uno se vuelve controlado por los semidioses superiores, debido a grados inferiores de actividades fruitivas. Así que, toda entidad viviente individual está sujeta al control supremo del Paramatma, quien pone a todos en las diferentes posiciones de controlador y controlado.
+Aquello que distingue al controlador y al controlado, es decir, el cuerpo material, se denomina el purusa adhibhautico. Al cuerpo se lo llama a veces purusa, tal como se confirma en los Vedas con el siguiente himno: sa va esa puruso ‘nna-rasamayah. Este cuerpo se denomina la encarnación anna-rasa. Este cuerpo depende de comida. Sin embargo, la entidad viviente que mora dentro del cuerpo no come nada, debido a que el propietario es, en esencia, espíritu. El cuerpo material requiere de reemplazos de materia, debido al deterioro y desgaste del cuerpo mecánico. Por lo tanto, la diferencia que hay entre la entidad viviente individual y las deidades planetarias controladoras, radica en el cuerpo anna-rasamaya. Puede que el Sol tenga un cuerpo gigantesco y que el hombre tenga un cuerpo más pequeño, pero todos esos cuerpos visibles están hechos de materia; sin embargo, el dios del Sol y la persona individual, que se relacionan como controlador y controlado, son las mismas partes integrales espirituales del Señor Supremo, y es el Ser Supremo el que coloca a las diferentes partes integrales en diferentes posiciones. Y, así pues, se concluye que la Suprema Persona es el refugio de todos.
+VERSO 9
+ekam ekatarabhave
+yada nopalabhamahe
+tritayam tatra yo veda
+sa atma svasrayasrayah
+</p>
+<p class='vspace'>ekam—uno; ekatara—otro; abhave—en ausencia de; yada—debido a; na—no; upalabhamahe—perceptible; tritayam—en tres estados; tatra—ahí; yah—el que; veda—que conoce; sah—él; atma—la Superalma; sva—propio; asraya—refugio; asrayah—del refugio.
+TRADUCCIÓN
+Todos los tres antedichos estados de diferentes entidades vivientes, son interdependientes. En ausencia de uno de ellos, no se entienden los otros. Pero el Ser Supremo, que ve a cada uno de ellos como el refugio del refugio, es independiente de todos, y, por lo tanto, Él es el refugio supremo.
+SIGNIFICADO
+Existen innumerables entidades vivientes que dependen unas de otras con la relación de controlado y controlador. Pero, sin el medio de la percepción, nadie puede conocer ni entender quién es el controlado y quién es el controlador. Por ejemplo, el Sol controla la capacidad de nuestra visión; podemos ver el Sol debido a que posee un cuerpo, y la luz del Sol es útil sólo porque tenemos ojos. Si no tuviéramos ojos, la luz del Sol sería inútil, y sin la luz del Sol, los ojos serían inútiles. Así pues, son interdependientes, y ninguno de ellos es independiente. Luego surge la pregunta natural acerca de quién hizo que fueran interdependientes. Aquel que hizo esa relación de interdependencia, debe ser en fin de cuentas completamente independiente. Como se declara al principio del Srimad-Bhagavatam: la fuente última de todos los objetivos interdependientes, es el sujeto completo e independiente. Esta fuente última de toda interdependencia es la Verdad Suprema, o Paramatma, la Superalma, quien no depende de ninguna otra cosa. Él es svasrayasrayah. Él sólo depende de Sí Mismo, y, así pues, Él es el refugio supremo de todo. Si bien Paramatma y Brahman están subordinados a Bhagavan, debido a que Bhagavan es Purusottama, o la Superpersona, Él es también la fuente de la Superalma. En la Bhagavad-gita (15.18), el Señor Krishna dice que Él es el Purusottama y la fuente de todo, y, así pues, se concluye que Sri Krishna es la fuente y refugio últimos de todas las entidades, incluso de la Superalma y el Brahman Supremo. Aun si se acepta que no hay diferencia entre la Superalma y el alma individual, el alma individual depende de la Superalma para liberarse de la ilusión producto de la  energía material. El individuo se encuentra bajo las garras de la energía ilusoria, y, por lo tanto, si bien cualitativamente es uno con la Superalma, se encuentra bajo la ilusión de identificarse con la materia. Y el alma individual, para desprenderse de ese concepto ilusorio acerca de la verdadera vida, tiene que depender de la Superalma para ser reconocida como uno con Él. También en ese sentido la Superalma es el refugio supremo. Y no hay duda de ello.
+La entidad viviente individual, el jiva, depende siempre de la Superalma, Paramatma, debido a que el alma individual olvida su identidad espiritual, mientras que la Superalma, Paramatma, no olvida Su posición trascendental. En la Bhagavad-gita se mencionan específicamente esas posiciones separadas del jivatma y el Paramatma. En el Capítulo Cuarto se representa que Arjuna, el alma jiva, ha olvidado sus muchísimos nacimientos anteriores, pero el Señor, la Superalma, no olvida. El Señor recuerda incluso cuándo le enseñó la Bhagavad-gita al dios del Sol, uno billones de años atrás. El Señor puede recordar esos millones y billones de años, según se declara en la Bhagavad-gita (7.26) de la siguiente manera:
+vedaham samatitani
+vartamanani carjuna
+bhavisyani ca bhutani
+mam tu veda na kascana
+El Señor, en Su bienaventurado cuerpo eterno de conocimiento, está plenamente consciente de todo lo que ocurrió en el pasado, de lo que ocurre en el presente, y también de lo que ocurrirá en el futuro. Pero, a pesar de que Él es el refugio tanto de Paramatma como de Brahman, las personas que poseen poco acopio de conocimiento son incapaces de comprenderlo tal como Él es.
+La propaganda que habla de la identidad que hay entre la conciencia cósmica y la conciencia de las entidades vivientes individuales es completamente extraviadora, debido a que incluso una persona o alma individual tal como Arjuna, no podía recordar sus acciones pasadas, aun a pesar de que él está siempre con el Señor. Y, ¿qué puede saber de su pasado, presente y futuro, el diminuto hombre ordinario que proclama falsamente ser uno con la conciencia cósmica?
+VERSO 10
+puruso ’ndam vinirbhidya
+yadasau sa vinirgatah
+atmano ’yanam anvicchann
+apo ’sraksic chucih sucih
+</p>
+<p class='vspace'>purusah—la Persona Suprema, Paramatma; andam—los universos; vinirbhidya—haciendo que cada uno de ellos se encuentre situado separadamente; yada—cuando; asau—el mismo; sah—Él (el Señor); vinirgatah—salió; atmanah—de Sí; ayanam—recostado en el lugar apropiado; anvicchan—deseando; apah—agua; asraksit—creó; sucih—el más puro; sucih—trascendental.
+TRADUCCIÓN
+Después de separar los diferentes universos, la gigantesca forma universal del Señor [Maha-Visnu], que salió de océano Causal, el lugar de aparición del primer purusa-avatara, entró en cada uno de los universos separados, deseando recostarse en la trascendental agua creada [Garbhodaka].
+SIGNIFICADO
+Después del análisis de las entidades vivientes y del Señor Supremo, Paramatma, la fuente independiente de todos los demás seres vivientes, Srila Sukadeva Gosvami está presentando ahora la necesidad primordial que hay de prestarle servicio devocional al Señor, que es la única ocupación a la que deben dedicarse todas las entidades vivientes. El Supremo Señor Sri Krishna y todas Sus porciones plenarias y extensiones de porciones plenarias, no son diferentes entre Sí, y, así pues, en todos y cada uno de Ellos se encuentra la suprema independencia. Con el fin de demostrar esto, Sukadeva Gosvami (tal como se lo prometió al rey Pariksit) describe aquí la independencia de la Personalidad de Dios purusa-avatara, incluso en la esfera de la creación material. Estas actividades del Señor son también trascendentales, y, por lo tanto, son también lila, o pasatiempos, del absoluto Señor. Esos pasatiempos del Señor son muy favorables para que aquellos que oyen hablar de ellos logren la autorrealización en el campo del servicio devocional. Algunas personas puede que arguyan lo siguiente: ¿Por qué, entonces, no disfrutar del lila trascendental del Señor tal como se exhibió en la tierra de Mathura y Vrndavana, que es más dulce que cualquier otras cosa del mudo? Srila Visvanatha Cakravarti Thakura responde que los pasatiempos que el Señor tuvo en Vrndavana son para que los saboreen los devotos avanzados del Señor. Los devotos neófitos interpretarán mal esas actividades trascendentales y supremas del Señor, y, por lo tanto, los pasatiempos que el Señor tiene en la esfera material, relacionados con la creación, manutención y destrucción, son en verdad para que los disfruten los prakrtas, o devotos mundanos del Señor. Así como el sistema de yoga principalmente basado en los ejercicios corporales, es para la persona que está demasiado apegada a la concepción corporal de la existencia, en forma similar, los pasatiempos del Señor relacionados con la creación y la destrucción del mundo material, son para aquellos que están demasiado apegados a lo material. Para esas criaturas mundanas, las funciones del cuerpo y las funciones del mundo cósmico a través de las leyes físicas relacionadas con el Señor, también están incluidas, por consiguiente, cuando se entiende al legislador, la Suprema Personalidad de Dios. Los científicos explican las funciones materiales mediante muchísimos términos tecnológicos de la ley material, pero esos ciegos científicos olvidan al legislador. Uno no debe dejarse maravillar por el dispositivo mecánico del complicado motor o dinamo, sino que más bien debe alabar al ingeniero que crea esa maravillosa máquina de trabajo. Ésa es la diferencia entre el devoto y el no devoto. Los devotos siempre están llenos de alabanzas al Señor, el cual dirige las leyes físicas. En la Bhagavad-gita (9.10) se describe de la siguiente manera cómo el Señor dirige la naturaleza material:
+mayadhyaksena prakrtih
+suyate sacaracaram
+hetunanena kaunteya
+jagad viparivartate
+“La naturaleza material, llena de leyes físicas, es una de Mis diferentes energías; por lo tanto, ni es independiente, ni ciega. Debido a que Yo soy trascendentalmente poderoso, con sólo lanzarle una mirada a la naturaleza material, las leyes físicas de la naturaleza actúan tan maravillosamente como lo hacen. Las acciones y reacciones de las leyes físicas actúan sobre la base de eso, y, así pues, el mundo material es creado, mantenido y aniquilado, una y otra vez”.
+Sin embargo, los hombres que poseen un escaso acopio de conocimiento se asombran al estudiar las leyes físicas, tanto de dentro de la estructura del cuerpo individual, como de dentro de la manifestación cósmica, y neciamente menosprecian la existencia de Dios, dando por sentado que las leyes físicas son independientes y que carecen de todo control metafísico. La Bhagavad-gita (9.11) responde a esa necedad con las siguientes palabras:
+avajananti mam mudha
+manusim tanum asritam
+param bhavam ajananto
+mama bhuta-mahesvaram
+“Lo hombres necios [mudhah] no reconocen a la Personalidad de Dios con Su eterna forma de bienaventuranza y conocimiento”. El hombre necio piensa que el cuerpo trascendental del Señor es como el suyo, y, por lo tanto, no puede pensar en el ilimitado poder controlador del Señor, quien no se encuentra visible en la actuación de las leyes físicas. Sin embargo, el Señor aparece ante la vista de la ente en general, cuando Él desciende mediante Su propia potencia personal. El Señor Krishna se encarnó tal como Él es, y desempeñó papeles muy maravillosos como el propio Señor, y la Bhagavad-gita trata de esas acciones y conocimientos maravillosos. Aun así, los hombres necios no aceptarán al Señor Krishna como el Supremo Señor. Por lo general, ellos se fijan en los aspectos infinitesimales e infinitos del Señor, debido a que ellos mismos son incapaces de volverse tanto lo infinitesimal como lo infinito; pero uno debe saber que los tamaños infinitesimal e infinito del Señor no son Sus glorias más elevadas. La manifestación más maravillosa del poder del Señor se exhibe cuando el infinito Señor se vuelve visible ante nuestros ojos como uno de nosotros. Sin embargo, Sus actividades son diferentes de las de los seres finitos. El levantamiento de una montaña a la edad de siete años y el casamiento con dieciséis mil princesas en la flor de la juventud, son algunos de los ejemplos de Su energía infinita, pero los mudhas, después de verlos u oír hablar de ellos, los desprecian diciendo que son legendario, y toman al Señor por uno de ellos. Ellos no pueden entender que el Señor Sri Krishna, a pesar de encontrarse en la forma de un ser humano mediante Su propia potencia, es no obstante el Supremo Señor, con plena potencia como el controlador supremo.
+Sin embargo, cuando los mudhas les brindan una sumisa recepción auditiva a los mensajes del Señor tal como se encuentran en el Srimad-Bhagavad-gita o en el Srimad-Bhagavatam, a través del canal de la sucesión discipular, dichos mudhas también se vuelven devotos del Señor, por la gracia de Su devoto puro. Y sólo por esa razón, tanto en el Bhagavad-gita como en el Srimad-Bhagavatam se describen los pasatiempos del Señor en el mundo material, para beneficio de esos hombres que poseen un escaso acopio de conocimiento.
+VERSO 11
+tasv avatsit sva-srstasu
+sahasram parivatsaran
+tena narayano nama
+yad apah purusodbhavah
+</p>
+<p class='vspace'>tasu—en ésa; avatsit—residía; sva—propia; srstasu—en lo referente a la creación; sahasram—mil; parivatsaran—años a Su medida; tena—por esa razón; narayanah—la Personalidad de Dios de nombre Narayana; nama—nombre; yat—debido a; apah—agua; purusa-udbhavah—emanada de la Suprema Persona.
+TRADUCCIÓN
+Esa Suprema Persona no es impersonal, y, por lo tanto, tiene como cualidad distintiva la de ser un nara, o persona. Por consiguiente, el agua trascendental que emana del Supremo Nara se conoce como nara. Y debido a que Él se acuesta en esa agua, se lo conoce como Narayana.
+VERSO 12
+dravyam karma ca kalas ca
+svabhavo jiva eva ca
+yad-anugrahatah santi
+na santi yad-upeksaya
+</p>
+<p class='vspace'>dravyam—elementos físicos; karma—acción; ca—y; kalah—tiempo; ca—también; sva-bhavah jivah—las entidades vivientes; eva—ciertamente; ca—también; yat—cuya; anugrahatah—por la misericordia de; santi—existe; na—no; santi—existe; yat-upeksaya—por negligencia.
+TRADUCCIÓN
+Uno debe saber definitivamente que todos los ingredientes materiales, las actividades, el tiempo y las modalidades, así como las entidades vivientes que están destinadas a disfrutar de todo ello, existen sólo por Su misericordia, y tan pronto como Él no se ocupa de ellos, todo se vuelve inexistente.
+SIGNIFICADO
+Las entidades vivientes son las disfrutadoras de los ingredientes materiales, el tiempo, las modalidades, etc., debido a que quieren enseñorearse de la naturaleza material. El Señor es el disfrutador supremo, y las entidades vivientes tienen la función de asistir al Señor en Su disfrute, y participar así en el disfrute trascendental de todo el mundo. El disfrutador y el disfrutado participan ambos del disfrute, pero las entidades vivientes, engañadas por la energía ilusoria, quieren volverse disfrutadoras como el Señor, si bien no están hechas para ese disfrute. En la Bhagavad-gita se dice que las jivas, las entidades vivientes, constituyen la naturaleza superior del Señor, o para prakrti, y eso mismo se dice en el Visnu-Purana. Luego las entidades vivientes nunca son los purusas, o los disfrutadores verdaderos. Por ello, el espíritu que posee la entidad viviente de disfrutar en el mundo material, es falso. En el mundo espiritual, las entidades vivientes son de naturaleza pura, en virtud de lo cual son asociadas del disfrute del Señor Supremo. En el mundo material, el espíritu de disfrute que poseen las entidades vivientes en razón de sus propias acciones (karma), gradualmente se esfuma por las leyes de la naturaleza, y la energía ilusoria dicta, entonces, en los oídos de las almas condicionadas, que deben volverse uno con el Señor. Ésa es la última trampa de la energía ilusoria. Cuando la última ilusión es también eliminada por la misericordia del Señor, la entidad viviente queda de nuevo reinstalada en su posición original, y, de esa manera, queda verdaderamente liberada. Para que se logre esa liberación de las garras materiales, el Señor crea el mundo material, lo mantiene por cierto tiempo (durante mil de Sus años, según se afirma en el verso anterior), y luego lo aniquila de nuevo por Su voluntad. De modo que, las entidades vivientes dependen por completo de la misericordia del Señor, y todos sus supuestos disfrutes, logrados mediante el mejoramiento científico, son hechos polvo cuando el Señor lo desea.
+VERSO 13
+eko nanatvam anvicchan
+yoga-talpat samutthitah
+viryam hiranmayam devo
+mayaya vyasrjat tridha
+</p>
+<p class='vspace'>ekah—Él, uno solo; nanatvam—variedades; anvicchan—deseando así; yoga-talpat—desde la cama del sueño místico; samutthitah—generando así; viryam—el semen; hiranmayam—matiz dorado; devah—el semidiós; mayaya—por la energía externa; vyasrjat—creó perfectamente; tridha—en tres aspectos.
+TRADUCCIÓN
+El Señor, mientras yacía en Su cama de sueño místico, generó el símbolo seminal, de matiz dorado, a través de la energía externa, debido a Su deseo de manifestar diversas variedades de entidades vivientes procedentes sólo de Él.
+SIGNIFICADO
+En la Bhagavad-gita (9.7-8) se establecen de la siguiente manera la creación y la aniquilación del mundo material:
+sarva-bhutani kaunteya
+prakrtim yanti mamikam
+kalpa-ksaye punas tani
+kalpadau visrjamy aham
+prakrtim svam avastabhya
+visrjami punah punah
+bhuta-gramam imam krtsnam
+avasam prakrter vasat
+“Al final de cada milenio, las fuerzas creativas, a saber, la naturaleza material y las entidades vivientes que luchan dentro de la naturaleza material, se funden todas en el cuerpo trascendental del Señor, y de nuevo, cuando el Señor desea manifestarlas, todas ellas son de nuevo desplegadas por Él.
+“Por consiguiente, la naturaleza material está actuando bajo el control del Señor. Todas ellas, por mediación de la naturaleza material y bajo el control del Señor, son así repetidamente creadas y aniquiladas, por la voluntad del Señor”.
+En consecuencia, antes de la creación o manifestación del mundo cósmico material, el Señor existe como energía total (maha-samasti), y, así pues, deseando difundirse en muchos, se expande adicionalmente para volverse la energía multitotal (samasti). A partir de la energía multitotal, Él se expande adicionalmente en tres dimensiones, convirtiéndose en individuos adhyatmika, adhidaivika y adhibhautika, como se explicó antes (vyasti). De ahí que toda la creación y las energías creativas sean diferentes, y simultáneamente no lo sean. Debido a que todo es una emanación de Él (el Maha-Visnu o Maha-samasti), ninguna parte de las energías cósmicas es diferente de Él. Pero todas esas energías expandidas tienen funciones y un despliegue específicos diseñados por el Señor, y, por lo tanto, son diferentes del Señor simultáneamente. Las entidades vivientes son también una energía similar (potencia marginal) del Señor, y, así pues, son uno con Él y diferentes de Él, simultáneamente.
+En la etapa de la no manifestación, las energías vivientes permanecen potentes dentro del Señor, y cuando se las suelta en la manifestación cósmica se exhiben de diferentes maneras, en términos de los diferentes deseos que se encuentran bajo las modalidades de la naturaleza. Esas manifestaciones diferenciadas de las energías vivientes son estados condicionados de las entidades vivientes. Sin embargo, las entidades vivientes liberadas que se encuentran en la manifestación sanatana (eterna› son almas entregadas incondicionalmente, y, por lo tanto, no están sujetas a las condiciones de la creación y la aniquilación. De modo que, esta creación ocurre en virtud del vistazo que el Señor lanza desde Su cama de sueño místico. Y, así pues, todos los universos y el señor del universo, Brahma, son manifestados y aniquilados una y otra ves.
+VERSO 14
+adhidaivam athadhyatmam
+adhibhutam iti prabhuh
+athaikam paurusam viryam
+tridhabhidyata tac chrnu
+</p>
+<p class='vspace'>adhidaivam—las entidades controladoras; atha—ahora; adhyatmam—las entidades controladas; adhibhutam—los cuerpos materiales; iti—así pues; prabhuh—el Señor; atha—en esa forma; ekam—sólo una; paurusam—de Su Señoría; viryam—potencia; tridha—en tres; abhidyata—dividida; tat—eso; srnu—tan sólo óyeme decir.
+TRADUCCIÓN
+Tan sólo óyeme decir cómo la potencia de Su Señoría divide la unidad en tres partes, que reciben el nombre de entidades controladoras, entidades controladas y cuerpos materiales, de la manera mencionada anteriormente.
+VERSO 15
+antah sarira akasat
+purusasya vicestatah
+ojah saho balam jajñe
+tatah prano mahan asuh
+</p>
+<p class='vspace'>antah sarire—dentro del cuerpo; akasat—del cielo; purusasya—de Maha-Visnu; vicestatah—mientras así se está tratando o deseando; ojah—la energía de los sentidos; sahah—fuerza mental; balam—fuerza corporal; jajñe—generadas; tatah—después; pranah—la fuerza viviente; mahan asuh—el manantial de la vida de todos.
+TRADUCCIÓN
+Del cielo, situado dentro del cuerpo trascendental del Maha-Visnu manifestador, se genera la energía de los sentidos, la fuerza mental y la fuerza corporal, así como también el total del manantial de la fuerza viviente total.
+VERSO 16
+anuprananti yam pranah
+pranantam sarva-jantusu
+apanantam apananti
+nara-devam ivanugah
+</p>
+<p class='vspace'>anuprananti—siguen los síntomas de vida; yam—a quien; pranah—sentidos; pranantam—esforzándose; sarva-jantusu—en todas las entidades vivientes; apanantam—cesar de trabajar; apananti—todos los demás paran; nara-devam—un rey; iva—como; anugah—los seguidores. 
+TRADUCCIÓN
+Así como los seguidores de un rey siguen a su señor, en forma similar, cuando la energía total está en movimiento, todas las demás entidades vivientes se mueven, y cuando la energía total cesa de trabajar, todas las demás entidades vivientes detienen las actividades de los sentidos.
+SIGNIFICADO
+Las entidades vivientes individuales dependen por completo de la energía total del purusa supremo. Nadie tiene una existencia independiente, de la misma manera que ninguna lámpara eléctrica tiene una refulgencia independiente. Todos y cada uno de los instrumentos eléctricos dependen por completo de la central eléctrica principal, y ésta, para generar electricidad, depende de la fuente de agua; la fuente de agua depende de las nubes, las nubes dependen del Sol, y el Sol depende de la creación, y la creación depende del movimiento de la Suprema Personalidad de Dios. Así pues, la Suprema Personalidad de Dios es la causa de todas las causas.
+VERSO 17
+pranenaksipata ksut trd
+antara jayate vibhoh
+pipasato jaksatas ca
+pran mukham nirabhidyata
+</p>
+<p class='vspace'>pranena—por la fuerza viviente; aksipata—siendo agitada; ksut—hambre; trt—sed; antara—de dentro; jayate—genera; vibhoh—del Supremo; pipasatah—estando deseoso de apagar la sed; jaksatah—estando deseoso de comer; ca—y; prak—en primer lugar; mukham—la boca; nirabhidyata—se abrió.
+TRADUCCIÓN
+La fuerza viviente, agitada por el virat-purusa, generó el hambre y la sed, y cuando Él deseó beber y comer, se abrió la boca.
+SIGNIFICADO
+El proceso por el cual todos los seres vivientes manifiestan sus órganos y percepciones sensuales en el vientre de la madre, parece seguir los mismos principios que se siguen en el caso del virat-purusa, el total de todas las entidades vivientes. Por lo tanto, la causa suprema de toda generación no es algo impersonal o carente de deseos. Los deseos de tener todas las clases de percepción de los sentidos y órganos de los sentidos existen en el Supremo, y por ello aparecen en las personas individuales. Ese deseo es característico del ser viviente supremo, la Verdad Absoluta. Debido a que Él tiene el total de todas las bocas, las entidades vivientes individuales poseen boca. Los mismo ocurre con todos los demás sentidos y órganos de los sentidos. Aquí, la boca es la representación simbólica de todos los órganos de los sentidos, pues los mismos principios se aplican también a todos ellos.
+VERSO 18
+mukhatas talu nirbhinnam
+jihva tatropajayate
+tato nana-raso jajñe
+jihvaya yo ’dhigamyate
+</p>
+<p class='vspace'>mukhatah—de la boca; talu—el paladar; nirbhinnam—siedo generado; jihva—la lengua; tatra—luego de eso; upajayate—se manifiesta; tatah—después de eso; nana-rasah—diversos sabores; jajñe—se manifestaron; jihvaya—con la lengua; yah—los cuales; adhigamyate—se saborean.
+TRADUCCIÓN
+De la boca se manifestó el paladar, y luego se generó también la lengua. Después de esto aparecieron todos los diferentes sabores, para que la lengua pudiera saborearlos.
+SIGNIFICADO
+Este proceso de evolución sugiere la explicación de la presencia de las deidades controladoras (adhidaiva), debido a que Varuna es la deidad controladora de todos los jugos sabrosos. Por lo tanto, la boca se vuelve el lugar de asiento de la lengua, que saborea todos los diferentes jugos, cuya deidad controladora es Varuna. Esto sugieren, entonces, que Varuna también se generó juntamente con el desarrollo de la lengua. La lengua y el paladar, siendo instrumentos, son adhibhuta, o formas de materia, pero la deidad actuando, que es una entidad viviente, es adhidaiva, mientras que la persona sometida a la función es adhyatma. Así pues, las tres categorías también se explican, en relación con su aparición después de la apertura de la boca del virat-purusa. Los cuatro principios mencionados en este verso sirven para explicar los tres principios básicos, a saber, los adhyatma, adhidaiva y adhibhuta, tal como se explicó anteriormente.
+VERSO 19
+vivaksor mukhato bhumno
+vahnir vag vyahrtam tayoh
+jale caitasya suciram
+nirodhah samajayata
+</p>
+<p class='vspace'>vivaksoh—cuando hubo necesidad de hablar; mukhatah—de la boca; bhumnah—del Supremo; vahnih—el fuego o la deidad controladora del fuego; vak—vibración; vyahrtam—discursos; tayoh—por ambos; jale—en el agua; ca—sin embargo; etasya—de todos estos; suciram—un tiempo muy, muy largo; nirodhah—suspensión; samajayata—continuó.
+TRADUCCIÓN
+Cuando el Supremo deseó hablar, se vibraron discursos por la boca. Luego se generó de la boca la deidad controladora llamada Fuego. Pero cuando Él yacía en el agua, todas esas funciones permanecieron suspendidas.
+SIGNIFICADO
+La peculiaridad del desarrollo gradual de los diferente sentidos, queda sustentada simultáneamente por sus deidades controladoras. Debe entenderse, por lo tanto, que las actividades de los órganos de los sentidos son controladas por la voluntad del Supremo. Los sentidos están brindándoles, por así decirlo, una licencia a las almas condicionadas, las cuales han de usarlos apropiadamente, bajo el control de la deidad controladora delegada por el Señor Supremo. Aquel que viola esas regulaciones controladoras, tiene que ser castigado con la degradación a un nivel inferior de vida. Considérese, por ejemplo, la lengua y su deidad controladora, Varuna. La lengua está hecha para comer, y los hombres, los animales y las aves, tiene cada cual sus diferentes gustos, debido a sus diferente licencias. El gusto de los seres humanos y el del cerdo no están en el mismo nivel. Sin embargo, la deidad controladora confiere o certifica un determinado tipo de cuerpo, cuando la entidad viviente en cuestión manifiesta un gusto en función de diferentes modalidades de la naturaleza. Si el ser humano manifiesta un gusto carente de discriminación, como ocurre con el cerdo, entonces la deidad controladora queda ciertamente certificada para conferirle en el siguiente período el cuerpo de un cerdo. El cerdo acepta toda clase de alimentos, incluso excremento, y un ser humano en el que se ha desarrollado un gusto indiscriminado como ése, debe estar dispuesto a aceptar una vida degradada en su siguiente vida. Semejante vida es también la gracia de Dios, debido a que el Señor le otorga la facilidad. Después de la muerte, el siguiente cuerpo se ofrece mediante un control superior, no ciegamente. El ser humano debe, entonces, ponerse en guardia en lo que se refiere a qué clase de cuerpo habrá de tener en su siguiente vida. Una vida irresponsable en la que no se hacen discriminaciones es arriesgada, y eso lo declaran todas las Escrituras.
+VERSO 20
+nasike nirabhidyetam
+dodhuyati nabhasvati
+tatra vayur gandha-vaho
+ghrano nasi jighrksatah
+</p>
+<p class='vspace'>nasike—en las fosas nasales; nirabhidyetam—siendo desarrollada; dodhuyati—soplando rápidamente; nabhasvati—respiración de aire; tatra—después de eso; vayuh—aire; gandha-vahah—percibiendo olores; ghranah—sentido del olfato; nasi—en la nariz; jighrksatah—deseando percibir olores.
+TRADUCCIÓN
+Luego, cuando el supremo purusa deseó percibir olores, se generaron las fosas nasales y la respiración, aparecieron los olores y el instrumento nasal, y la deidad controladora del aire, llevando el olor, también se manifestó.
+SIGNIFICADO
+El instrumento nasal, el olor, y la deidad controladora —el aire—, así como el olfato, etc., se manifestaron todos simultáneamente cuando el Señor deseó oler. Los mantras védicos confirman esa declaración con la afirmación que se encuentran en los Upanisads, que indica que todo es deseado primero por el Supremo, antes de que la entidad viviente subordinada pueda actuar sobre la base de ello. Sólo cuando el Señor ve, la entidad viviente puede ver; cuando el Señor huele, la entidad viviente puede oler, etc. Lo que se quiere decir es que la entidad viviente no puede hacer nada independientemente. Tan sólo puede pensar en hacer algo independientemente, pero no puede actuar independientemente. Esa independencia de pensamiento existe por la gracia del Señor, mas al pensamiento puede dársele forma por la gracia del Señor, y, por lo tanto, el refrán corriente dice que “el hombre propone y Dios dispone”. Toda la explicación se centra en el asunto de la dependencia absoluta que tienen las entidades vivientes, y la independencia absoluta del Señor Supremo. Las personas poco inteligentes que dicen encontrarse en un mismo nivel que Dios, deben primero demostrar que son absolutas e independientes, y luego deben probar su afirmación de que son uno con Dios.
+VERSO 21
+yadatmani niralokam
+atmanam ca didrksatah
+nirbhinne hy aksini tasya
+jyotis caksur guna-grahah
+</p>
+<p class='vspace'>yada—mientras; atmani—a Sí Mismo; niralokam—sin ninguna luz; atmanam—Su propio cuerpo trascendental; ca—también otras formas corporales; didrksatah—deseó mirar a; nirbhinne—debido a haber surgido; hi—así que; aksini—de los ojos; tasya—de Él; jyotih—el Sol; caksuh—los ojos; guna-grahah—la capacidad de ver.
+TRADUCCIÓN
+Así pues, cuando todo existía en la oscuridad, el Señor deseó verse a Sí Mismo y a todo lo que se había creado. Luego, los ojos, el iluminador dios Sol, la capacidad de visión y el objeto de la vista, se manifestaron todos.
+SIGNIFICADO
+El universo es por naturaleza una densa oscuridad, y, en consecuencia, toda la creación se denomina tamas, u oscuridad. La noche es el verdadero aspecto del universo, pues en ella uno no puede ver nada, ni siquiera a sí mismo. El Señor, debido a Su misericordia sin causa, deseó verse a Sí Mismo así como también a toda la creación, y, por ello, el Sol se manifestó, la capacidad de la visión de todas las entidades vivientes se hizo posible, y los objetos de la visión también se manifestaron. Esto significa que el mundo fenomenal por entero se hizo visible después de la creación del Sol.
+VERSO 22
+bodhyamanasya rsibhir
+atmanas taj jighrksatah
+karnau ca nirabhidyetam
+disah srotram guna-grahah
+</p>
+<p class='vspace'>bodhyamanasya—deseando comprender; rsibhih—por las autoridades; atmanah—del Ser Supremo; tat—eso; jighrksatah—cuando deseó comprender; karnau—los oídos; ca—también; nirabhidyetam—se manifestaron; disah—la dirección o el dios del aire; srotram—la capacidad de oír; guna-grahah—y los objetos de la audición.
+TRADUCCIÓN
+Con el desarrollo en los grandes sabios del deseo de saber, se manifestaron los oídos, la capacidad de oír, la deidad controladora de la audición, y los objetos de la misma. Los grandes sabios deseaban oír hablar acerca del Yo.
+SIGNIFICADO
+Como se afirma en la Bhagavad-gita, mediante el adelanto del conocimiento se debe tratar de estudiar al Señor Supremo, el súmmum bonum de todo. Conocimiento no sólo significa conocimiento físico o conocimiento de las leyes de la naturaleza, las cuales actúan por indicación del Señor. Los científicos están ansiosos de oír hablar acerca de las leyes físicas que actúan en la naturaleza material. Ellos están ansiosos de oír hablar por medio de la radio y la televisión, de cosas que ocurren muy lejos de ellos, en otros planetas; más deberían saber que la capacidad de oír y los instrumentos para oír les fueron dados por el Señor para oír hablar acerca del Yo, o acerca del Señor. Desdichadamente, la capacidad de oír está siendo mal empleada en oír las vibraciones de los acontecimientos mundanos. Los grandes sabios estaban interesados en oír hablar acerca del Señor a través del conocimiento védico, y nada más. Ése es el comienzo de la recepción auditiva del conocimiento.
+VERSO 23
+vastuno mrdu-kathinya
+laghu-gurv-osna-sitatam
+jighrksatas tvan nirbhinna
+tasyam roma-mahi-ruhah
+tatra cantar bahir vatas
+tvaca labdha-guno vrtah
+</p>
+<p class='vspace'>vastunah—de toda la materia; mrdu—suavidad; kathinya—dureza; laghu—liviandad; guru—pesadez; osna—calor; sitatam—frío; jighrksatah—deseando percibir; tvak—la sensación del tacto; nirbhinna—distribuidos; tasyam—en la piel; roma—vellos del cuerpo; mahi-ruhah—así como los árboles; tatra—ahí; ca—también; antah—dentro; bahih—fuera; vatah tvaca—el sentido del tacto o la piel; labdha—habiendo sido percibidos; gunah—objetos de la percepción de los sentidos; vrtah—generados.
+TRADUCCIÓN
+Cuando apareció un deseo de percibir las características físicas de la materia, tales como la suavidad, la dureza, el calor, el frío, la liviandad y la pesadez, se generaron el trasfondo de la sensación, la piel, los poros cutáneos, los vellos del cuerpo y sus deidades controladoras (los árboles). Por dentro y por fuera de la piel se encuentra una cobertura de aire a través de la cual se hizo patente la percepción de los sentidos.
+SIGNIFICADO
+Las características físicas de la materia, tales como la suavidad, son objetos de la percepción de los sentidos, y, así pues, el conocimiento físico es el objeto de la sensación del tacto. Uno puede medir la temperatura de la materia si la toca con la mano, y uno puede medir el peso de un objeto si lo levanta con la mano, y, con ello, puede estimar su pesadez o liviandad. La piel, los poros cutáneos y los vellos del cuerpo son todos interdependientes con la sensación del tacto. El aire que sopla dentro y fuera de la piel es también un objeto de la percepción de los sentidos. Esa percepción de los sentidos es también una fuente de conocimiento, y, por lo tanto, aquí se sugiere que el conocimiento físico o fisiológico se encuentra subordinado al conocimiento del Yo, tal como se mencionó anteriormente. El conocimiento del Yo puede expandirse para incluir conocimiento de los fenómenos, pero el conocimiento físico no puede conducir al conocimiento del Yo.
+&gt;Sin embargo, existe una íntima relación entre los vellos del cuerpo y la vegetación del cuerpo de la Tierra. Los vegetales son un nutrimento para la piel, tanto en la forma de comida como de medicina, tal como se afirma en el Tercer Canto: tvacam asya vinirbhinnam vivisur dhisnyam osadhih.
+VERSO 24
+hastau ruruhatus tasya
+nana-karma-cikirsaya
+tayos tu balavan indra
+adanam ubhayasrayam
+</p>
+<p class='vspace'>hastau—las manos; ruruhatuh—se manifestaron; tasya—Sus; nana—diversos; karma—trabajo; cikirsaya—estando así de deseoso; tayoh—de ellas; tu—sin embargo; balavan—para dar fuerza; indrah—el semidiós del cielo; adanam—actividades de la mano; ubhaya-asrayam—dependientes tanto del semidiós como de la mano.
+TRADUCCIÓN
+Después, cuando la Suprema Persona deseó realizar diversas variedades de trabajos, se manifestaron las dos manos y su fuerza controladora, e Indra, el semidiós del cielo, así como también los actos que dependen tanto de las manos como del semidiós.
+SIGNIFICADO
+En cada caso podemos notar con provecho que los órganos de los sentidos de la entidad viviente jamás son independientes en ninguna etapa. El Señor es conocido como el Señor de los sentidos (Hrsikesa). Así pues, los órganos de los sentidos de las entidades vivientes se manifiestan por la voluntad del Señor, y cada órgano es controlado por un cierto tipo de semidiós. De modo que, nadie puede alegar ser dueño de los sentidos. La entidad viviente está controlada por los sentidos, los sentidos están controlados por los semidioses, y los semidioses son los sirvientes del Señor Supremo. Así está organizado el sistema de la creación. Todo está controlado finalmente por el Señor Supremo, y no existe independencia alguna ni de la naturaleza material ni de la entidad viviente. La entidad viviente ilusionada que dice ser el señor de sus sentidos, se encuentra bajo las garras de la energía externa del Señor. En tanto una entidad viviente continúe envanecida por su diminuta existencia, ha de entenderse que se encuentra bajo el control estricto de la energía externa del Señor, y no hay posibilidad alguna de liberarse de las garras de la ilusión (maya), por mucho que uno se declare alma liberada.
+VERSO 25
+gatim jigisatah padau
+ruruhate ’bhikamikam
+padbhyam yajñah svayam havyamç
+karmabhih kriyate nrbhih
+</p>
+<p class='vspace'>gatim—movimiento; jigisatah—deseando así; padau—las piernas; ruruhate—manifestándose; abhikamikam—con un propósito; padbhyam—de las piernas; yajñah—el Señor Visnu; svayam—Él Mismo, personalmente; havyam—los deberes; karmabhih—por la ocupación obligatoria de uno; kriyate—causados para ser hechos; nrbhih—por diferentes seres humanos.
+TRADUCCIÓN
+Luego, debido a Su deseo de controlar el movimiento, se manifestaron Sus piernas, y de las piernas se generó la deidad controladora llamada Visnu. Mediante Su supervisión personal de este acto, todas las variedades de seres humanos se ocupan laboriosamente en el sacrificio constituido por las ocupaciones obligatorias.
+SIGNIFICADO
+Todo ser humano está dedicado a su ocupación obligatoria específica, y esas actividades se vuelven visibles a medida que los hombres van de un lado a otro. Esto se ve de forma muy resaltante en las grandes ciudades del mundo: la gente se mueve por todas partes de las ciudades con gran preocupación, de un lugar a otro. Este movimiento no se limita sólo a las grandes ciudades, sino que también se ve fuera de ellas, de un lugar a otro, o de una ciudad a otra, por intermedio de diferentes vehículos. Los hombres se mueven por las carreteras mediante automóviles y rieles, por debajo de la tierra mediante ferrocarriles subterráneos, y por el cielo mediante aviones, con el propósito de lograr el éxito en sus negocios. Pero en todos esos movimientos, el verdadero propósito consiste en acumular riquezas para una vida confortable. Por esa vida confortable, el científico trabaja y el artista trabaja, el ingeniero trabaja y el técnico trabaja, todos en diferentes ramas de la actividad humana. Pero ellos no saben cómo hacer que las actividades tengan como propósito el cumplimiento de la misión de la vida humana. Debido a que no conocen ese secreto, todas sus actividades apuntan hacia la meta de la complacencia de los sentidos descontrolada, y, por lo tanto, con todos esos asuntos se están adentrando inconscientemente en las regiones más profundas de la oscuridad.
+Debido a que a ellos los ha cautivado la energía externa del Señor Supremo, han olvidado por completo a Supremo Señor Visnu, y, así pues, han dado por sentado que esta vida, tal como se encuentra actualmente manifestada bajo las condiciones de la naturaleza material, lo es todo para disfrutar de la mayor cantidad de complacencia de los sentidos. Pero semejante concepción errónea de la vida no puede brindarle a nadie la deseada paz de la mente, y, en consecuencia, a pesar de todo el avance del conocimiento, logrado con el uso de los recursos de la naturaleza, nadie es feliz en esta civilización material. El secreto es que a cada paso ellos deberían tratar de ejecutar sacrificios encaminados hacia la paz mundial. La Bhagavad-gita (18.45-46) también aconseja el mismo secreto en los siguientes versos:
+sve sve karmany abhiratah
+samsiddhim labhate narah
+sva-karma-niratah siddhim
+yatha vindati tac chrnu
+</p>
+<p class='vspace'>yatah pravrttir bhutanam
+yena sarvam idam tatam
+sva-karmana tam abhyarcya
+siddhim vindati manavah
+</p>
+<p class='vspace'>El Señor le dijo a Arjuna: “Tan sólo óyeme decir cómo uno puede alcanzar la perfección más elevada de la vida, con sólo desempeñar su ocupación obligatoria especificada. El hombre puede alcanzar la perfección más elevada de la vida si adora al Señor Supremo y ejecuta sacrificios en pro del Supremo Señor Visnu, quien es omnipresente, y por cuyo control todo ser viviente adquiere las facilidades que ha deseado, de acuerdo con sus propensiones personales”.
+No hay nada de malo en tener diferentes propensiones en la vida, debido a que cada ser humano tiene una independencia proporcional para esbozar el plan de su vida mediante diferentes ocupaciones, mas uno debe esforzarse en la vida por saber perfectamente bien que no se es independiente de un modo absoluto. Es indudable que uno se encuentra bajo el control del Señor Supremo y bajo el influjo de diferentes fuerzas actuantes. Sabiendo esto, uno debe esforzarse por servir al Señor Supremo mediante su trabajo y el resultado de su labor, tal como lo prescriben las autoridades expertas en el trascendental servicio amoroso del Supremo Señor Visnu. La pierna es el instrumento más importante del cuerpo para la ejecución de esas ocupaciones obligatorias que hay en la vida, ya que sin la ayuda de las piernas, uno no se puede mover de un lugar a otro, y, por lo tanto, el Señor tiene un control  especial de las piernas de todos los seres humanos, las cuales son para ejecutar yajñas.
+VERSO 26
+nirabhidyata sisno vai
+prajanandamrtarthinah
+upastha asit kamanam
+priyam tad-ubhayasrayam
+</p>
+<p class='vspace'>nirabhidyata—salió; sisnah—el órgano genital; vai—ciertamente; praja-ananda—placer sexual; amrta-arthinah—aspirando a saborear el néctar; upasthah—el órgano masculino o femenino; asit—fue creado; kamanam—de los lujuriosos; priyam—muy querido; tat—eso; ubhaya-asrayam—refugio de ambos.
+TRADUCCIÓN
+Luego, para el placer sexual, engendrar prole y saborear néctar celestial, el Señor manifestó el órgano genital, y por ello existe dicho órgano y su deidad controladora, el Prajapati. El objeto del placer sexual y la deidad controladora se encuentran bajo el control del órgano genital del Señor.
+SIGNIFICADO
+El placer celestial que tiene el alma condicionada es el placer sexual, y ese placer se saborea mediante el órgano genital. La mujer es el objeto del placer sexual, y tanto la percepción de los sentidos que procede del placer sexual, como la mujer, están controladas por el Prajapati, quien se encuentra bajo el control del órgano genital del Señor. El impersonalista debe aprender con este verso que el Señor no es impersonal, pues Él tiene Su órgano genital, del cual dependen todos los objetos placenteros de la vida sexual. Nadie se hubiera tomado la molestia de mantener hijos, si no se saboreara un néctar celestial a través de la relación sexual. Este mundo material se crea para darles a las almas condicionadas una oportunidad de rejuvenecerse e ir de vuelta al hogar de vuelta a Dios, y, por lo tanto, el proceso de generación del ser viviente es necesario para mantener el propósito de la creación. El placer sexual constituye un incentivo para esa acción, y por ello uno puede incluso servir al Señor en el acto de dicho placer sexual. El servicio cuenta, cuando los hijos nacidos de dicho placer sexual son adiestrados debidamente en el desarrollo de la conciencia de Dios. Todo el objetivo de la creación material consiste en revivir la conciencia de Dios latente de la entidad viviente. En otras formas de vida diferentes de la forma humana, el placer sexual es resaltante sin ningún motivo de servicio en pro de la misión del Señor. Pero en la forma humana, el alma condicionada puede prestarle servicio al Señor al crear una prole apta para el logro de la salvación. Uno puede engendrar cientos de hijos y disfrutar del celestial placer de la relación sexual siempre que y cuando sea capaz de adiestrarlos en lo referente al desarrollo de la conciencia de Dios. De no ser así, el engendrar hijos se encuentra al nivel de la procreación de los cerdos. Más bien, el cerdo es más experto que el ser humano, debido a que el cerdo puede engendrar una docena de cerditos a la vez, mientras que el ser humano puede dar a luz sólo un niño a la vez. Así que uno siempre debe recodar que el órgano genital, el placer sexual, la mujer y la prole, están todos relacionados con el servicio al Señor, y aquel que olvida esa relación con el servicio del Señor Supremo, queda sujeto al triple sufrimiento de la existencia material. La percepción del placer sexual se encuentra presente en el cuerpo del perro, mas no existe el sentido de desarrollo de conciencia de Dios. La forma humana de vida es distinta de la del perro, por la percepción del estado de conciencia de Dios.
+VERSO 27
+utsisrksor dhatu-malam
+nirabhidyata vai gudam
+tatah payus tato mitra
+utsarga ubhayasrayah
+</p>
+<p class='vspace'>utsisrksoh—deseando evacuar; dhatu-malam—desperdicio de comestibles; nirabhidyata—se abrió; vai—ciertamente; gudam—el agujero de evacuación; tatah—luego; payuh—el órgano de los sentidos para la evacuación; tatah—luego; mitrah—el semidiós controlador; utsargah—la sustancia evacuada; ubhaya—ambos; asrayah—refugio.
+TRADUCCIÓN
+Después de eso, cuando Él deseó evacuar el desperdicio de los comestibles, el agujero de la evacuación —el ano— y el órgano de los sentidos respectivo, se desarrollaron juntamente con la deidad controladora, Mitra. El órgano de los sentidos y la sustancia que se evacua se encuentran ambos bajo el refugio de la deidad controladora.
+SIGNIFICADO
+Incluso en lo referente a la evacuación del excremento, el desperdicio está controlado, así que, ¿cómo puede la entidad viviente proclamar que es independiente?
+VERSO 28
+asisrpsoh purah purya
+nabhi-dvaram apanatah
+tatrapanas tato mrtyuh
+prthaktvam ubhayasrayam
+</p>
+<p class='vspace'>asisrpsoh—deseando ir a todas partes; purah—en diferentes cuerpos; puryah—de un cuerpo; nabhi-dvaram—el ombligo o agujero abdominal; apanatah—se manifestó; tatra—después de eso; apanah—detención de la fuerza vital; tatah—después de eso; mrtyuh—muerte; prthaktvam—separadamente; ubhaya—ambas; asrayam—refugio.
+TRADUCCIÓN
+Luego, cuando Él deseó moverse de un cuerpo a otro, se crearon conjuntamente el ombligo y el aire de la partida y la muerte. El ombligo es el refugio de ambos, es decir, de la muerte y de la fuerza separadora.
+SIGNIFICADO
+El prana-vayu mantiene la vida, y el apana-vayu detiene la fuerza viviente. Ambas vibraciones se generan en el agujero abdominal, el ombligo. Este ombligo es la juntura de un cuerpo con otro. El Señor Brahma nació del agujero abdominal de Garbhodakasayi Visnu, como un cuerpo separado, y el mismo principio se sigue incluso en el nacimiento de cualquier cuerpo ordinario. El cuerpo del niño procede del cuerpo de la madre, y para separar al niño del cuerpo de la madre, se corta la junta umbilical. Y ésa es la forma en que el Señor Supremo se manifestó como muchos entes separados. Las entidades vivientes son, por lo tanto, partes separadas, en virtud de lo cual no tiene independencia alguna.
+VERSO 29
+aditsor anna-pananam
+asan kuksy-antra-nadayah
+nadyah samudras ca tayo
+stustih pustis tad-asraye
+</p>
+<p class='vspace'>aditsoh—deseando tener; anna-pananam—de comida y bebida; asan—fueron creados; kuksi—el abdomen; antra—los intestinos; nadayah—y las arterias; nadyah—los ríos; samudrah—mares; ca—también; tayoh—de ellos; tustih—sustento; pustih—metabolismo; tat—de ellos; asraye—la fuente.
+TRADUCCIÓN
+Cuando hubo un deseo de tener comida y bebida, se manifestaron el abdomen y los intestinos, y también las arterias. Los ríos y los mares son la fuente de su sustento y metabolismo.
+SIGNIFICADO
+Las deidades controladoras de los intestinos son los ríos, y de las arterias, los mares. La satisfacción del estómago con comida y bebida es la causa de la subsistencia, y el metabolismo de la comida y de la bebida restituye el gasto de las energías corporales. Por consiguiente, la salud del cuerpo depende de las acciones sanas de los intestinos y las arterias. Los ríos y los mares, siendo las deidades controladoras de ambos, mantienen sanos a los intestinos y las arterias.
+VERSO 30
+nididhyasor atma-mayam
+hrdayam nirabhidyata
+tato manas candra iti
+sankalpah kama eva ca
+</p>
+<p class='vspace'>nididhyasoh—estando deseoso de conocer; atma-mayam—energía propia; hrdayam—la localidad de la mente; nirabhidyata—se manifestó; tatah—después de eso; manah—la mente; candrah—la Luna, la deidad controladora de la mente; iti—así pues; sankalpah—determinación; kamah—deseo; eva—tanto como; ca—también.
+TRADUCCIÓN
+Cuando hubo un deseo de pensar acerca de las actividades de Su propia energía, se manifestaron entonces el corazón (el lugar de asiento de la mente), la mente, la Luna, la determinación y todos los deseos.
+SIGNIFICADO
+El corazón de toda entidad viviente es el lugar de asiento de la Superalma, Paramatma, una expansión plenaria de la Suprema Personalidad de Dios. Sin Su presencia, la entidad viviente no puede participar de la energía actuante según sus acciones pasadas. Las entidades vivientes que están condicionadas en el mundo material, se manifiestan en la creación en función de inclinaciones respectivas inherente a ellas, y la energía material les ofrece a todas y cada una de ellas el cuerpo material requerido, bajo la dirección de la Superalma. Eso se explica en la Bhagavad-gita (9.10). De modo que, cuando la Superalma se sitúa en el corazón del alma condicionada, se manifiesta en ésta la mente requerida, y el alma se vuelve consciente de su ocupación, de la misma manera en que uno se vuelve consciente de su deber al despertarse del sueño. Por lo tanto, la mente material de la entidad viviente se desarrolla cuando la Superalma se sienta en el corazón de ella, después de lo cual, la mente, la deidad controladora (la Luna), y luego las actividades de la mente (es decir, pensar, sentir y desear) aparecen todas. Las actividades de la mente no pueden comenzar sin la manifestación del corazón, y el corazón se manifiesta cuando el Señor quiere ver las actividades de la creación material.
+VERSO 31
+tvak-carma-mamsa-rudhira-
+medo-majjasthi-dhatavah
+bhumy-ap-tejomayah sapta
+prano vyomambu-vayubhih
+</p>
+<p class='vspace'>tvak—la fina capa que se encuentra sobre la piel; carma—la piel; mamsa—carne; rudhira—sangre; medah—grasa; majja—médula; asthi—hueso; dhatavah—elementos; bhumi—tierra; ap—agua; tejah—fuego; mayah—predominantes; sapta—siete; pranah—aire respiratorio; vyoma—cielo; ambu—agua; vayubhih—por el aire.
+TRADUCCIÓN
+Los siete elementos del cuerpo, a saber, la fina capa que se encuentra sobre la piel, la propia piel, la carne, la sangre, la grasa, la médula y el hueso, están todos hechos de tierra, agua y fuego, mientras que el aliento vital es producido por el cielo el agua y el aire.
+SIGNIFICADO
+La estructura de todo este mundo material se encuentra predominantemente hecha de tres elementos, a saber, tierra, agua y fuego. Pero la fuerza viviente es producida por el cielo, el aire y el agua. Así que el agua es el elemento común de todas las formas toscas y sutiles de toda la creación material, y debe notarse aquí que debido a la necesidad, el agua, siendo de lo más resaltante en la creación material, es el principal elemento de todos los cinco. Este cuerpo material es por ello un conglomerado de los cinco elementos, y la manifestación tosca se percibe debido a tres de ellos, a saber, tierra, agua y fuego. Las sensaciones del tacto se perciben debido a la fina capa que se encuentra sobre la piel, y el hueso es semejante a la dura piedra. El aire que se respira en la vida produce el cielo, aire y agua, y, por consiguiente, el aire libre, el baño regular y un espacio amplio donde vivir, son favorables para la sana vitalidad. Los productos agrícolas frescos, como los granos y las verduras, así como el agua fresca y el calor, son buenos para el mantenimiento del cuerpo tosco.
+VERSO 32
+gunatmakanindriyani
+bhutadi-prabhava gunah
+manah sarva-vikaratma
+buddhir vijñana-rupini
+</p>
+<p class='vspace'>guna-atmakani—apegados a las cualidades; indriyani—los sentidos; bhuta-adi—ego material; prabhavah—influidas por; gunah—las modalidades de la naturaleza material; manah—la mente; sarva—todo; vikara—el afecto (felicidad y aflicción); atma—forma; buddhih—inteligencia; vijñana—deliberación; rupini—caracterizado.
+TRADUCCIÓN
+Los órganos de los sentidos están apegados a las modalidades de la naturaleza material, y las modalidades de la naturaleza material son productos del ego falso. La mente está sujeta a toda clase de experiencias materiales (felicidad y aflicción), y la inteligencia es la característica de la deliberación de la mente.
+SIGNIFICADO
+La entidad viviente, ilusionada por la naturaleza material, se identifica con el ego falso. Más claramente, cuando la entidad viviente se encuentra atrapada por el cuerpo material, de inmediato se identifica con las relaciones corporales, olvidando su propia identidad como alma espiritual. Ese ego falso se asocia con diferentes modalidades de la naturaleza material, y, así pues, los sentidos se apegan a esas modalidades. La mente es el instrumento para sentir diferentes experiencias materiales, pero la inteligencia tiene el poder de deliberación, y puede cambiar todo para bien. Por lo tanto, la persona inteligente puede lograr salvarse de la ilusión de la existencia material, mediante el uso apropiado de la inteligencia. Una persona inteligente puede detectar la difícil posición que constituye la existencia material, y, así pues, puede comenzar a inquirir acerca de quién es, por qué está sujeta a diferentes clases de sufrimientos, y cómo puede librarse de todo sufrimiento; en esa forma, a través de buena asociación, una persona evolucionada e inteligente puede volverse hacia la vida superior que consiste en la autorrealización. Se aconseja, pues, que una persona inteligente se asocie con los grandes sabios y santos que se encuentran en el sendero de la salvación. Mediante dicha asociación, uno puede recibir instrucciones que pueden aflojar el apego que por la materia tiene el alma condicionada, y, así pues, el hombre inteligente gradualmente se libra de la ilusión de la materia y el ego falso, y es promovido a la verdadera vida de eternidad, conocimiento y bienaventuranza.
+VERSO 33
+etad bhagavato rupam
+sthulam te vyahrtam maya
+mahy-adibhis cavaranair
+astabhir bahir avrtam
+</p>
+<p class='vspace'>etat—todos éstos; bhagavatah—de la Personalidad de Dios; rupam—forma; sthulam—tosco; te—a ti; vyahrtam—explicada; maya—por mí; mahi—los planetas; adibhih—y así sucesivamente; ca—ilimitadamente; avaranaih—mediante coberturas; astabhih—mediante ocho; bahih—externas; avrtam—cubierta.
+TRADUCCIÓN
+Así pues, con todo eso, el aspecto externo de la Personalidad de Dios es cubierto por formas toscas tales como las de los planetas, los cuales te fueron explicados a ti por mí.
+SIGNIFICADO
+Como se explica en la Bhagavad-gita (7.4), la energía material separada de la Personalidad de Dios está cubierta por ocho clases de coberturas materiales: tierra, agua, fuego, aire, cielo, mente, inteligencia y ego falso. Todas ellas son emanaciones de la Personalidad de Dios en la forma de Su energía externa. Esas coberturas son como la cobertura de nubes para el Sol. La nube es una creación del Sol, más, sin embargo, cubre de hecho los ojos de un modo tal, que uno no puede ver el Sol. El Sol no puede ser cubierto por las nubes. La nube puede a lo sumo extenderse en el cielo por unos cuando cientos de kilómetros, pero el Sol es mucho más grande que millones de kilómetros. Así que, una cobertura de cien kilómetros no es capaz de cubrir millones de kilómetros. Por consiguiente, una de las diversas energías de la Suprema Personalidad de Dios no puede, desde luego, cubrir al Señor. Mas, esas coberturas son creadas por Él, para cubrir los ojos de las almas condicionadas que quieren enseñorearse de la naturaleza material. En efecto, las almas condicionadas están cubiertas por la creativa e ilusoria nube de materia, y el Señor se reserva el derecho de ser expuesto ante los ojos de ellas. Por lo tanto, debido a que ellas carecen de ojos con visión trascendental, y debido a que no pueden ver a la Personalidad de Dios, ellas niegan la existencia del Señor y la forma trascendental del Señor. Esos hombres que poseen un escaso acopio de conocimiento, aceptan la cobertura del gigantesco aspecto material, y en el siguiente verso se explica cómo ocurre eso.
+VERSO 34
+atah param suksmatamam
+avyaktam nirvisesanam
+anadi-madhya-nidhanam
+nityam van-manasah param
+</p>
+<p class='vspace'>atah—por lo tanto; param—trascendental; suksmatamam—más fino que lo más fino; avyaktam—no manifestado; nirvisesanam—sin rasgos materiales; anadi—sin comienzo; madhya—sin un estado intermedio; nidhanam—sin final; nityam—eterno; vak—palabras; manasah—de la mente; param—trascendental.
+TRADUCCIÓN
+En consecuencia, más allá de ésta [la manifestación tosca] se encuentra una manifestación trascendental, más fina que la forma más fina. Esa manifestación no tiene ningún comienzo, ni estado intermedio, ni final; por consiguiente, se encuentran más allá de los límites de la expresión o de la especulación mental, y es distinta de la concepción material.
+SIGNIFICADO
+El tosco cuerpo externo del Supremo se manifiesta en ciertos intervalos de tiempo, y, así pues, el aspecto externo o la forma externa de la Suprema Personalidad de Dios no es la forma eterna del Señor, el cual no tiene ningún comienzo, ni estado intermedio, ni ningún final. Todo lo que tenga un comienzo, un ínterin y un final, se denomina material. El mundo material comienza a partir del Señor, y, así pues, la forma del Señor, antes del comienzo del mundo material, es ciertamente trascendental a la concepción material más fina. El éter del mundo material se considera lo más fin. Más fino que el éter es la mente, la inteligencia y el ego falso. Pero, todas las ocho coberturas exteriores se dice que son coberturas externas de la Verdad Absoluta. En consecuencia, la Verdad Absoluta se encuentra más allá de la expresión y especulación de la concepción material. Sin duda que ella es trascendental a todas las concepciones materiales. Esto se denomina nirvisesnam. Sin embargo, uno no debe entender erróneamente que nirvisesanam significa “sin ninguna cualidad trascendental”. Visesanam significa cualidades. Por lo tanto, al añadirle nir significa que no tiene cualidades o variedades materiales. Esta expresión anuladora se describe con cuatro cualidades trascendentales, a saber: no manifestado, trascendental, eterno y más allá de la concepción de la mente o palabra. “Más allá de los límites de las palabras” significa la negación de la concepción material. A menos que uno se encuentre en un estado trascendental, no es posible conocer la trascendental forma del Señor.
+VERSO 35
+amuni bhagavad-rupe
+maya te hy anuvarnite
+ubhe api na grhnanti
+maya-srste vipascitah
+</p>
+<p class='vspace'>amuni—todas éstas; bhagavat—a la Suprema Personalidad de Dios; rupe—en las formas; maya—por mí; te—a ti; hi—ciertamente; anuvarnite—descritas respectivamente; ubhe—ambas; api—también; na—nunca; grhnanti—acepta; maya—externas; srste—estando manifestadas así; vipah-citah—el entendido que sabe.
+TRADUCCIÓN
+Ninguna de las dos formas anteriores del Señor, que se acaban de describir ante ti desde el punto de vista material, es aceptada por los devotos puros del Señor que lo conocen bien.
+SIGNIFICADO
+Como se mencionó anteriormente, los impersonalistas piensan en la Absoluta Personalidad de Dios de dos formas diferentes. Por una parte ellos adoran al Señor en Su visva-rupa, o la omnipresente forma universal, y, por otra parte, ellos piensan en la forma del Señor no manifestada, indescriptible y sutil. Las teorías del panteísmo y monismo son aplicables, respectivamente, a estas dos concepciones del Supremo como tosco y sutil, pero ambas son rechazadas por los entendidos devotos puros del Señor, debido a que ellos están conscientes de la verdadera situación. Esto se menciona muy claramente en el Undécimo Capítulo de la Bhagavad-gita, el cual registra la experiencia que tuvo Arjuna con el visva-rupa del Supremo Señor Sri Krishna.
+adrsta-purvam hrsito ’smi drstva
+bhayena ca pravyathitam mano me
+tad eva me darsaya deva rupam
+prasida devesa jagan-nivasa
+(Bg. 11.45)
+Arjuna, como devoto puro del Señor, nunca había visto anteriormente la contemplada forma universal del Señor (visva-rupa), mas cuando la vio de hecho, sus curiosidades quedaron satisfechas. Pero él no se sintió feliz de ver semejante forma del Señor, debido al apego que tenía como devoto puro. Él sintió miedo al ver la gigantesca forma del Señor. Por lo tanto, Arjuna le oró al Señor para que adoptara Su forma de Narayana de cuatro manos o de Krishna, que era lo único que podía complacerlo a él. Indudablemente, el Señor tiene la suprema potencia de exhibirse en múltiples formas, pero los devotos puros del Señor están interesados en Sus formas tal como se exhiben eternamente en la morada del Señor, conocida como tripada-vibhuti o el Reino de Dios. El Señor se exhibe en la morada tripada-vibhuti de dos formas: bien sea con cuatro manos, o con dos manos. El visva-rupa que se exhibe en la manifestación material, tiene manos ilimitadas y dimensiones ilimitadas, con todo ilimitado. Los devotos puros del Señor lo adoran en Sus formas de Vaikuntha, tales como Narayana o Krishna. En ocasiones, las mismas formas de Vaikuntha del Señor están en el mundo material también por Su gracia, como Sri Rama, Sri Krishna, Sri Narasimhadeva, etc., y, así pues, los devotos puros también las adoran. Por lo general, los aspectos mostrados en el mundo material no tienen existencia en los planetas Vaikuntha, y, por ende, los devotos puros no las aceptan. Lo que los devotos puros adoran desde el mismo comienzo, son formas eternas del Señor que existen en los planetas Vaikuntha. Los impersonalistas no devotos imaginan las formas materiales del Señor, y, finalmente, se funden en el brahmajyoti impersonal del Señor, mientras que los devotos puros del Señor son adoradores del Señor, tanto en el comienzo, como también en la etapa perfecta de la salvación, eternamente. La adoración del devoto puro nunca se detiene, mientras que la adoración del impersonalista se detiene después de que alcanza la salvación, cuando se funde en la forma impersonal del Señor, conocida como el brahmajyoti. Por consiguiente, se dice aquí que los devotos puros del Señor son vipascita, o los entendidos que poseen conocimiento acerca del Señor en forma perfecta.
+VERSO 36
+sa vacya-vacakataya
+bhagavan brahma-rupa-dhrk
+nama-rupa-kriya dhatte
+sakarmakarmakah parah
+</p>
+<p class='vspace'>sah—Él; vacya—por Sus formas y actividades; vacakataya—por Sus cualidades y séquito trascendentales; bhagavan—la Personalidad de Dios; brahma—absoluto; rupa-dhrk—por aceptar formas visibles; nama—nombre; rupa—forma; kriya—pasatiempos; dhatte—acepta; sa-karma—dedicado a trabajar; akarmakah—sin ser afectado; parah—trascendencia.
+TRADUCCIÓN
+Él, la Personalidad de Dios, se manifiesta con una forma trascendental, siendo el sujeto de Su nombre trascendental, cualidad, pasatiempos, séquito y variedad trascendental. Si bien Él no es afectado por ninguna de esas actividades, parece estar ocupado de esa manera.
+SIGNIFICADO
+Siempre que hay necesidad de la creación material, la trascendental Personalidad de Dios acepta formas en el mundo material, para la creación, manutención y destrucción. Uno debe ser lo suficientemente inteligente como para conocer Sus actividades de verdad, y no dejarse influenciar para concluir que Él desciende al mundo material aceptando una forma creada por la naturaleza material. Toda forma que se acepta proveniente de la naturaleza material, tiene su afecto por todo lo que se hace en el mundo material. Un alma condicionada que acepta una forma material para someterse a un cierto período de actividades materiales, está supeditada a las leyes de la materia. Pero aquí, en este verso, se afirma claramente, que si bien las formas y actividades del Señor parecen ser iguales a las del alma condicionada, a ésta le resultan sobrenaturales e imposibles. Él, la Suprema Personalidad de Dios, nunca es afectado por esas actividades. En la Bhagavad-gita (4.14), el Señor dice:
+na mam karmani limpanti
+na me karma-phale sprha
+iti mam yo ’bhijanati
+karmabhir na sa badhyate
+El Señor nunca es afectado por las actividades que aparentemente realiza a través de Sus diferentes encarnaciones y personalidades, ni tampoco tiene deseo alguno de lograr el éxito a través de las actividades fruitivas. El Señor está lleno con Sus diferentes potencias de riqueza, fuerza, fama, belleza, conocimiento y renunciación, y así pues, no tiene por qué hacer esfuerzo físico como el alma condicionada. De modo que, una persona inteligente que puede distinguir entre las actividades trascendentales del Señor y las actividades de las almas condicionadas, tampoco está atada por las reacciones de las actividades. El Señor, en la forma de Visnu, Brahma y Siva, conde las tres modalidades de la naturaleza material. De Visnu nace Brahma, y de Brahma nace Siva. A veces, Brahma es una parte separada de Visnu, y a veces, Brahma es el propio Visnu. Así pues, Brahma crea las diferentes especies de vida por todo el universo, lo cual significa que el Señor crea la manifestación entera, bien sea haciéndolo Él Mismo, o a través de Sus delegados autorizados.
+VERSOS 37-40
+praja-patin manun devan
+rsin pitr-ganan prthak
+siddha-carana-gandharvan
+vidyadhrasura-guhyakan
+</p>
+<p class='vspace'>kinnarapsaraso nagan
+sarpan kimpurusan naran
+matr raksah-pisacams ca
+preta-bhuta-vinayakan
+</p>
+<p class='vspace'>kusmandonmada-vetalan
+yatudhanan grahan api
+khagan mrgan pasun vrksan
+girin nrpa sarisrpan
+</p>
+<p class='vspace'>dvi-vidhas catur-vidha ye ’nye
+jala-sthala-nabhaukasah
+kusalakusala misrah
+karmanam gatayas tv imah
+</p>
+<p class='vspace'>praja-patin—Brahma y sus hijos, como Daksa y otros; manun—los cabezas periódicos, como Vaivasvata Manu; devan—como Indra, Candra y Varuna; rsin—como Bhrgu y Vasistha; pitr-ganan—los habitantes de los planetas Pita; prthak—separadamente; siddha—los habitantes del planeta Siddha; carana—los habitantes del planeta Carana; gandharvan—los habitantes de los planetas Gandharva; vidyadhra—los habitantes del planeta Vidyadhara; asura—los ateos; guhyakan—los habitantes del planeta Yaksa; kinnara—los habitantes del planeta Kinnara; apsarasah—los hermosos ángeles del planeta Apsara; nagan—los serpentinos habitantes de Nagaloka; sarpan—los habitantes de Sarpaloka (serpientes); kimpurusan—los habitantes con forma de mono del planeta Kimpurusa; naran—los habitantes de la Tierra; matr—los habitantes de Matrloka; raksah—los habitantes del planeta demoníaco; pisacan—los habitantes de Pisacaloka; ca—también; preta—los habitantes de Petraloka; bhuta—los espíritus malignos; vinayakan—los duendes; kusmanda—quimeras; unmada—lunáticos; vetalan—los genios; yatudhanan—un tipo particular de espíritu maligno; grahan—las estrellas buenas y malas; api—también; khagan—las aves; mrgan—los animales del bosque; pasun—los animales domésticos; vrksan—los fantasmas; girin—las montañas; nrpa—¡oh, Rey!; sarisrpan—reptiles; dvi-vidhah—las entidades vivientes móviles y fijas; catuh-vidhah—las entidades vivientes nacidas de embriones, huevos, transpiración o semillas; ye—otras; anye—todas; jala—agua; sthala—tierra; nabha-okasah—aves; kusala—con felicidad; akusalah—con aflicción; misrah—con mezcla de felicidad y aflicción; karmanam—de acuerdo con las acciones pasadas de uno; gatayah—como resultado de; tu—pero; imah—todas ellas.
+TRADUCCIÓN
+¡Oh, Rey!, he de decirte que todas las entidades vivientes son creadas por el Señor Supremo de acuerdo con sus pasadas acciones. Eso incluye a Brahma y sus hijos, tales como Daksa; a los cabezas periódicos, tales como Vaivasvata Manu; a los semidioses, tales como Indra, Candra y Varuna; a los grandes sabios, tales como Bhrgu, Vyasa y Vasistha; a los habitantes de Pitrloka y Siddhaloka; a los Caranas, Gandharvas, Vidyadharas, Asuras, Yaksas, Kinnaras y ángeles; a los seres serpentinos; a los Kimpurusas con forma de mono; a los seres humanos; a los habitantes de Matrloka; a los demonios, Pisacas, fantasmas y a los espíritus, a los lunáticos y a los espíritus malignos; a las estrellas buenas y malas; a los duendes; a los animales del bosque; a las aves; a los animales domésticos; a los reptiles; a las montañas; a las entidades vivientes móviles y fijas; a las entidades vivientes nacidas de embriones, de huevos, de transpiración o de semillas, y a todas las demás, bien sea que se encuentren en el agua, en la tierra o en el cielo, felices, afligidas, o con mezcla de felicidad y aflicción. Todas ellas, de acuerdo con sus pasadas acciones, son creadas por el Señor Supremo.
+SIGNIFICADO
+Las diversas variedades de entidades vivientes que existen, se mencionan en esta lista, y, sin excepción alguna, desde el planeta más elevado hasta el planeta más bajo del universo, todas ellas, que forman parte de diferentes especies de vida, son creadas por el Padre Todopoderoso, Visnu. Por lo tanto, nadie es independiente de la Suprema Personalidad de Dios. En la Bhagavad-gita (14.4), en el siguiente verso, el Señor afirma, pues, que todas las entidades vivientes son Su prole:
+sarva-yonisu kaunteya
+murtayah sambhavanti yah
+tasam brahma mahad yonir
+aham bija-pradah pita
+La naturaleza material es como la madre. Si bien todo ser viviente se ve que sale del cuerpo de la madre, aun así, es un hecho que la madre no es la causa última de dicho nacimiento. El padre es la causa última del nacimiento. Sin la semilla del padre, ninguna madre podría dar a luz a un niño. Luego los seres vivientes que se encuentran en las diversas variedades de formas y posiciones dentro de los innumerables universos, nacen todos de las semillas del Padre Todopoderoso, la Personalidad de Dios, y, sólo al hombre que posee un escaso acopio de conocimiento le parece que nacen de la naturaleza material. Todas las entidades vivientes, encontrándose bajo el control de la energía material del Señor Supremo, comenzando por Brahma, y descendiendo hasta la insignificante hormiga, se manifiestan en diferentes cuerpos de acuerdo con sus pasadas acciones.
+La naturaleza material es una de las energías del Señor (Bg. 7.4). La naturaleza material es inferior en comparación con las entidades vivientes, la naturaleza superior. La naturaleza superior y la naturaleza inferior del Señor se combinan para manifestar todos los asuntos del universo.
+Algunas de las entidades vivientes son relativamente felices bajo mejores condiciones de vida, mientras que otras se encuentran en condiciones de vida llenas de aflicción. Pero de hecho, ninguna de ellas es verdaderamente feliz en la vida material condicionada. Nadie puede ser feliz en la vida de prisión, aun a pesar de que uno sea un prisionero de primera clase, y otro, un prisionero de tercera clase. La persona inteligente no debe tratar de ser promovida de una vida de prisión de tercera clase a una vida de prisión de primera clase, sino que debe tratar de que se la libere de la cárcel por completo. Uno puede que sea promovido a prisionero de primera clase, pero el mismo prisionero de primera clase es de nuevo degradado a prisionero de tercera clase en el período siguiente. Uno debe tratar de liberarse de la vida de prisión e ir de vuelta al hogar, de vuelta a Dios. Ésa es la verdadera meta para todos los tipos de entidades vivientes.
+VERSO 41
+sattvam rajas tama iti
+tisrah sura-nr-narakah
+tatrapy ekaikaso rajan
+bhidyante gatayas tridha
+yadaikaikataro ’nyabhyam
+sva-bhava upahanyate
+</p>
+<p class='vspace'>sattvam—la modalidad de la bondad; rajah—la modalidad de la pasión; tamah—la modalidad de la oscuridad; iti—así pues; tisrah—las tres; sura—semidiós; nr—ser humano; narakah—aquel que se encuentra sufriendo las condiciones infernales; tatra api—incluso allí; ekaikasah—otro; rajan—¡oh, Rey!; bhidyante—se dividen entre; gatayah—movimientos; tridha—tres; yada—en ese momento; ekaikatarah—uno en relación con otro; anyabhyam—del otro; sva-bhavah—hábito; upahanyate—desarrolla.
+TRADUCCIÓN
+De acuerdo con las diferentes modalidades de la naturaleza material —la modalidad de la bondad, la modalidad de la pasión y la modalidad de la oscuridad—, existen diferentes criaturas vivientes, que son conocidas como semidioses, seres humanos y entidades vivientes infernales. ¡Oh, Rey!, hasta una modalidad específica de la naturaleza, estando mezclada con las otras dos, se divide en tres, y, así pues, cada clase de criatura viviente es influida por las otras modalidades, y así adquiere sus propios hábitos.
+SIGNIFICADO
+Las entidades vivientes están siendo conducidas individualmente por una modalidad específica de la naturaleza, pero al mismo tiempo existe toda posibilidad de que sean influidas por las otras dos. Por lo general, todas las almas condicionadas que se encuentran dentro del enjaulamiento material, están influidas por la modalidad de la pasión, debido a que cada una de ellas está tratando de enseñorearse de la naturaleza material para complacer su deseo individual. Pero a pesar de la modalidad individual del pasión, siempre existe la posibilidad de ser influido por las otras modalidades de la naturaleza, mediante la asociación. Si uno se encuentra con buenas compañías, puede desarrollar la modalidad de la bondad, y si se encuentra con mala asociación, puede que desarrolle la modalidad de la oscuridad o la ignorancia. Nada está estereotipado. Uno puede cambiar su hábito mediante buenas o malas compañías, y uno tiene que volverse lo suficientemente inteligente como para discriminar entre lo bueno y lo malo. La mejor compañía la constituye el servicio que se le presta a los devotos del Señor, y mediante ella uno puede volverse el hombre más apto de todos, por la gracia de los devotos puros del Señor. Como ya hemos visto en la vida de Srila Narada Muni, él se volvió el devoto más elevado del Señor, simplemente por la asociación que le brindaron los devotos puros del Señor. Por su nacimiento, él era el hijo de una sirvienta, y no tenía ningún conocimiento de quién era su padre, ni ninguna educación académica, ni siquiera del nivel más bajo. Pero, simplemente por relacionarse con los devotos y comer los remanentes de su comida, manifestó gradualmente las cualidades trascendentales de los devotos. Mediante esa relación, su gusto por cantar y oír hablar de las glorias trascendentales del Señor se volvió resaltante, y debido a que las glorias del Señor no son diferentes del Señor, él recibió la directa compañía del Señor por medio de la representación sonora. En forma similar, se tiene la vida de Ajamila (Sexto Canto), quien era el hijo de un brahmana, y quien fue educado y adiestrado adecuadamente en lo que se refiere al desempeño de los deberes de un brahmana, pero quien a pesar de todo esto, por tener la mala compañía de una prostituta, fue puesto en el sendero de más baja calidad que existe, el de ser candala, o la más baja posición de un ser humano. Por lo tanto el Bhagavatam siempre recomienda la compañía del mahat, o la gran alma, para abrir la puerta de la salvación. Relacionarse con personas dedicadas a enseñorearse del mundo material, significa entrar a la región más oscura del infierno. Uno debe tratar de elevarse mediante la compañía de la gran alma. Ése es el camino de la perfección de la vida.
+VERSO 42
+sa evedam jagad-dhata
+bhagavan dharma-rupa-dhrk
+pusnati sthapayan visvam
+tiryan-nara-suradibhih
+</p>
+<p class='vspace'>sah—Él; eva—ciertamente; idam—éste; jagat-dhata—el sustentador del universo entero; bhagavan—la Personalidad de Dios; dharma-rupa-dhrk—adoptando la forma de los principios religiosos; pusnati—mantiene; sthapayan—después de establecer; visvam—los universos; tiryak—entidades vivientes más bajas que los seres humanos; nara—los seres humanos; sura-adibhih—mediante las encarnaciones de semidioses.
+TRADUCCIÓN
+Él, la Personalidad de Dios, como el sustentador de todo lo que hay en el universo, aparece en diferentes encarnaciones después de establecer la creación, y, así pues, rescata a todas las clases de almas condicionadas, de entre los humanos, los no humanos y los semidioses.
+SIGNIFICADO
+La Suprema Personalidad de Dios, Visnu, se encarna en diferentes sociedades de entidades vivientes para rescatarlas de las garras de la ilusión, y dichas actividades del Señor no se limitan sólo a la sociedad humana. Él se encarna incluso como un pez, como un jabalí, como un árbol, y de muchas otras formas, pero personas poco inteligentes, que no tiene conocimiento alguno acerca de Él, lo menosprecian, un si se encuentra en la sociedad humana como un ser humano. El Señor dice, por ello, en la Bhagavad-gita (9.11):
+avajananti mam mudha
+manusim tanum asritam
+param bhavam ajananto
+mama bhuta-mahesvaram
+Tal como ya hemos discutido en los versos previos, se concluye que el Señor nunca es producto de la creación material. Su posición trascendental es siempre inmutable. Él es la eterna forma de conocimiento y bienaventuranza, y Él lleva a cabo Su todopoderosa voluntad mediante Sus diferentes energías. En consecuencia, Él nunca está sujeto a las reacciones de ninguno de Sus actos. Él es trascendental a todas esas concepciones de acciones y reacciones. E incluso si Él es visible en el mundo material, la exhibición que se hace es sólo de Su energía interna, pues Él se encuentra por encima de las concepciones buenas y malas de este mundo material. Puede que en el mundo material el pez o el cerdo sean considerados más bajos que el hombre, pero cuando el Señor aparece como un pez o un jabalí, Él no lo es según la concepción material. Constituye Su misericordia sin causa el hecho de que Él aparezca en cada sociedad o especie de vida, mas Él nunca ha de ser considerado como parte de una de ellas. Las concepciones del mundo material tales como bueno y malo, bajo y alto, importante e insignificante, son estimaciones de la energía material, y el Señor Supremo es trascendental a todas esas concepciones. El param bhavam, o la naturaleza trascendental, nunca puede decirse que es como la concepción material. No debemos olvidar que las potencias del Todopoderoso Señor son siempre las mismas, y no decrecen debido a que el Señor asuma la forma de un animal inferior. No hay diferencia entre el Señor Sri Rama, el Señor Sri Krishna y Sus encarnaciones como un pez y un jabalí. Él es omnipresente, y se encuentra simultáneamente localizado en todo lugar. Pero la persona necia que posee escaso acopio de conocimiento, debido a  su ignorancia de ese param bhavam del Señor, no puede entender como el Señor Supremo puede adoptar la forma de un hombre o de un pez. Uno juzga todo según su propio nivel de conocimiento, tal como la rana del pozo considera que el mar es como su pozo. La rana del pozo no puede ni siquiera pensar en el mar, y cuando a una rana así se le informa de la grandeza del mar, ella se hace la idea de que el mar es un poquito más grande que el pozo. Por ello, aquel que es un tonto en lo referente a la ciencia trascendental del Señor, encontrará muy difícil entender cómo el Señor Visnu puede manifestarse igualmente en cada una de las sociedades de las entidades vivientes.
+VERSO 43
+tatah kalagni-rudratma
+yat srstam idam atmanah
+sanniyacchati tat kale
+ghananikam ivanilah
+</p>
+<p class='vspace'>tatah—después de eso, el final; kala—destrucción; agni—fuego; rudra-atma—en la forma de Rudra; yat—todo lo que; srstam—creado; idam—todos éstos; atmanah—de Sus propios; sam—completamente; niyacchati—aniquila; tat kale—al final del milenio; ghana-anikam—grupos de nubes; iva—como aquel de; anilah—aire.
+TRADUCCIÓN
+Después de eso, al final del milenio, el propio Señor, en la forma de Rudra, el destructor, aniquilará la creación completa, tal como el viento dispersa las nubes.
+SIGNIFICADO
+De esta creación se dice muy apropiadamente que es como las nubes. Las nubes son creadas o situadas en el cielo, y cuando se dispersan, permanecen en el mismo cielo sin manifestarse. En forma similar, toda la creación está hecha por la Suprema Personalidad de Dios en Su forma de Brahma, es mantenida por Él en la forma de Visnu, y es destruida por Él en la forma de Rudra, o Siva, todo a su debido tiempo. Esta creación, manutención y destrucción, se explica bien en la Bhagavad-gita (8.19-20) de la siguiente manera:
+bhuta-gramah sa evayam
+bhutva bhutva praliyate
+ratry-agame ’vasah partha
+prabhavaty ahar-agame
+paras tasmat tu bhavo ’nyo
+’vyakto ’vyaktat sanatanah
+yah sa sarvesu bhutesu
+nasyatsu na vinasyati
+Es característico del mundo material que primero es muy bien creado, luego se desarrolla muy esplendorosamente y permanece durante muchísimos años (sobrepasando incluso los cálculos del matemático más grande de todos), pero después de eso es destruido de nuevo durante la noche de Brahma, sin ninguna resistencia, y, al final de la noche de Brahma, se manifiesta de nuevo como una creación que habrá de seguir los mismos principios de manutención y destrucción. La necia alma condicionada que ha tomado este mundo temporal por una situación permanente, tiene que aprender de un modo inteligente por qué ocurren esta creación y destrucción. Los trabajadores fruitivos del mundo material sienten mucho entusiasmo en crear grandes empresas, grandes casas, grandes imperios, grandes industrias y tantas cosas muy, muy grandes, con la energía e ingredientes suministrados por el agente material del Señor Supremo. Con esos recursos, y al precio de la valiosa energía, el alma condicionada crea, satisface sus caprichos, pero tiene que partir en contra de su voluntad, abandonando todas sus creaciones, y entrar en otra fase de vida, para tener que crear una y otra vez. A fin de darles esperanzas a esas necias almas condicionadas que desperdician su energía en este temporal mundo material, el Señor proporciona información que indica que hay otra naturaleza que existe eternamente sin ser creada o destruida de tiempo en tiempo, y que el alma condicionada puede comprender qué debe hacer y cómo puede ser utilizada su valiosa energía. El alma condicionada, en vez de desperdiciar su energía en la materia, que con toda seguridad será destruida a su debido tiempo por la voluntad suprema, debe utilizar su energía en el servicio devocional del Señor, de manera de poder ser trasladada a la otra naturaleza, que es eterna, en la que no hay nacimiento, ni muerte, ni creación, destrucción alguna, sino más bien una vida permanente, llena de conocimiento y de ilimitada bienaventuranza. La creación temporal es, así pues, exhibida y destruida, tan sólo para darle información al alma condicionada que está apegada a las cosas temporales. También es para darle una oportunidad de autorrealizarse, y no para que complazca sus sentidos, lo cual es el objetivo principal de todos los trabajadores fruitivos.
+VERSO 44
+ittham-bhavena kathito
+bhagavan bhagavattamah
+nettham-bhavena hi param
+drastum arhanti surayah
+</p>
+<p class='vspace'>ittham—en estos aspectos; bhavena—el asunto de la creación y la destrucción; kathitah—descrita; bhagavan—la Personalidad de Dios; bhagavat-tamah—por los grandes trascendentalistas; na—no; ittham—en esto; bhavena—aspectos; hi—solamente; param—más glorioso; drastum—ver; arhanti—merecen; surayah—grandes devotos.
+TRADUCCIÓN
+Los grandes trascendentalistas describen así las actividades de la Suprema Personalidad de Dios, pero los devotos puros merecen ver cosas más gloriosas en la trascendencia, más allá de estos aspectos.
+SIGNIFICADO
+El Señor no es sólo el creador y destructor de las manifestaciones materiales de Sus diferentes energías. Él es más que un simple creador y destructor, pues existe Su aspecto de ananda, o Su aspecto dador de placer. Ese aspecto dador de placer del Señor es entendido sólo por los devotos puros, y por nadie más. El impersonalista se satisface simplemente con comprender la omnipresente influencia del Señor. Estos e denomina la comprensión Brahman. Superior al impersonalista es el místico, que ve situado en su corazón al Señor como Paramatma, la representación parcial del Señor. Pero existen devotos puros que participan de la directa potencia dadora de placer (ananda) del Señor, mediante el verdadero intercambio recíproco de servicio amoroso. El Señor, en Su morada denominada los planetas Vaikuntha, que son manifestaciones eternas, permanece siempre con Sus asociados, y disfruta de los trascendentales servicios amorosos que le prestan Sus devotos puros con diferentes humores trascendentales. Los devotos puros del Señor se someten, pues, a una práctica de ese servicio devocional del Señor durante la manifestación de la creación, y aprovechan por completo la manifestación, capacitándose a través de ella para entrar en el Reino de Dios. La Bhagavad-gita (18.55) lo confirma:
+bhaktya mam abhijanati
+yavan yas casmi tattvatah
+tato mam tattvato jñatva
+visate tad anantaram
+Con el desarrollo de servicio devocional puro, uno puede de hecho conocer al Señor tal como Él es, adiestrarse así en el servicio genuino del Señor, y ser admitido a participar de la directa compañía del Señor de muchísimas maneras. La relación más gloriosa y elevada que se tiene con el Señor se logra en el planeta de Goloka Vrndavana, donde el Señor Krishna disfruta con las gopis y Sus animales favoritos, las vacas surabhi. En la Brahma-samhita, que el Señor Sri Caitanya consideraba la Escritura más auténtica en relación con esto, se da una descripción de esa tierra trascendental de Krishna.
+VERSO 45
+nasya karmani janmadau
+parasyanuvidhiyate
+kartrtva-pratisedhartham
+mayayaropitam hi tat
+</p>
+<p class='vspace'>na—nunca; asya—de la creación; karmani—en lo referente a; janma-adau—creación y destrucción; parasya—del Supremo; anuvidhiyate—está así descrito; kartrtva—ingeniería; pratisedha-artham—contrarrestar; mayaya—por la energía externa; aropitam—se manifiesta; hi—para; tat—el creador.
+TRADUCCIÓN
+El Señor no actúa directamente como ingeniero en la creación y la destrucción del mundo material. Lo que se describe en los Vedas acerca de Su participación directa, es simplemente para contrarrestar la idea de que la naturaleza material es el creador.
+SIGNIFICADO
+La indicación védica en lo referente a la creación, manutención y destrucción del mundo material, es la siguiente: yato va imani bhutani jayante/ yana jatani jivanti/ yat prayanti abhisamvisanti, es decir, todo es creado por Brahman, después de la creación todo es mantenido por Brahman, y después de la aniquilación todo se conserva en Brahman. Las personas muy materialistas que carecen por completo de conocimiento acerca de Brahman, Paramatma o Bhagavan, concluyen que la naturaleza material es la causa última de la manifestación material, y el científico moderno también comparte ese punto de vista de que la naturaleza material es la causa última de todas las manifestaciones del mundo material. Ese punto de vista es rechazado por toda la literatura védica. La filosofía Vedanta menciona el hecho de que Brahman es el manantial de toda la creación, manutención y destrucción, y el Srimad-Bhagavatam, el comentario natural acerca de la filosofía Vedanta, dice: janmady asya yato ‘nvayad itaratas carthesv abhijñah svarat, etc.
+La materia inerte es indudablemente energía con el potencial para actuar, pero no tiene ninguna iniciativa propia. El Srimad-Bhagavatam, por lo tanto, comenta el aforismo janmady asy, diciendo abhijñah y svarat, es decir, que el Brahman Supremo no es materia inerte, sino que Él es la suprema conciencia, y que es independiente. Luego la materia inerte no puede ser la causa última de la creación, manutención y destrucción del mundo material. De un modo superficial, la naturaleza material parece ser la causa de la creación, manutención y destrucción, pero la naturaleza material es puesta en marcha para la creación por el supremo ser consciente, la Personalidad de Dios. Él es el trasfondo de toda la creación, manutención y destrucción, y ello se confirma en la Bhagavad-gita (9.10):
+mayadhyaksena prakrtih
+suyate sa-caracaram
+hetunanena kaunteya
+jagad viparivartate
+La naturaleza material es una de las energías del Señor, y puede actuar debido a la dirección del Señor (adhyaksena). Sólo cuando el Señor lanza Su mirada trascendental sobre la naturaleza material, puede ésta actuar, tal como el padre se pone en contacto con la madre, la cual entonces se vuelve capaz de concebir un hijo. Si bien al hombre común le parece que es la madre quien da a luz al niño, el hombre experimentado sabe que es el padre quien lo engendra. Por consiguiente, la naturaleza material produce las manifestaciones móviles y fijas del mundo material después de haber tenido contacto con el padre supremo, y no de una manera independiente. Considerar que la naturaleza material es la causa de la creación, manutención, etc., se denomina “la lógica de que hay una ubre en la papada de una cabra”. El Caitanya-caritamrta de Srila Krsnadasa Kaviraja Gosvami describe esa lógica de aja-gala-stana-nyaya, de la siguiente manera (como lo explica Su Divina Gracia, Sri Srimad Bhaktisiddhanta Sarasvati Gosvami Maharaja): “La naturaleza material como causa material se conoce como pradhana, y como causa eficiente se conoce como maya. Pero como es materia inerte, no es la causa remota de la creación”. Kaviraja Gosvami declara lo siguiente:
+ataeva krsna mula-jagat-karana
+prakrti—karana yaiche aja-gala-stana
+(Cc. adi 5.61)
+Debido a que Karanarnavasayi Visnu es una expansión plenaria de Krishna, es Él quien electriza la materia para ponerla en marcha. El ejemplo de la electrización es muy apropiado. Un pedazo de hierro sin duda que no es fuego, pero cuando el hierro se pone al rojo vivo, ciertamente que tiene la cualidad del fuego, por su capacidad quemadora. La materia es como el pedazo de hierro, y es electrizada o puesta al rojo vivo por el vistazo o la manipulación de la suprema conciencia de Visnu. Sólo en virtud de dicha electrización es que la energía de la materia se despliega en diversas acciones y reacciones. Por lo tanto, la materia inerte no es ni eficiente ni la causa material de la manifestación cósmica. Sri Kapiladeva ha dicho:
+yatholmukad visphulingad
+dhumad vapi sva-sambhavat
+apy atmatvenabhimatad
+yathagnih prthag ulmukat
+(Bhag. 3.28.40)
+El fuego original, sus llamas, sus chispas y su humo, son todos uno, pues el fuego es siempre fuego, mas es diferente de la llama, la llama es diferente de las chispas, y las chispas son diferentes del humo. En cada uno de ellos, es decir, en las llamas, en las chispas y en el humo, la integridad del fuego está presente, mas todos ellos se encuentran situados de forma diferente, con diferentes posiciones. La manifestación cósmica se dice que es como el humo, debido a que cuando el humo pasa por el cielo aparecen muchísimas formas, que se asemejan a muchas manifestaciones conocidas y desconocidas. Las chispas son como las entidades vivientes, y la llamas son como la naturaleza material (pradhana). Uno debe saber que todos y cada uno de ellos son efectivos, simplemente por estar apoderados por la cualidad del fuego original. De modo que, todas ellas, es decir, la naturaleza material, la manifestación cósmica y las entidades vivientes, no son más que diferentes energías del Señor (fuego). Aquellos que, por consiguiente, aceptan que la naturaleza material es la causa original de la manifestación cósmica (prakrti, la causa de la creación, de acuerdo con la filosofía sankhya), no tienen una conclusión correcta. La naturaleza material no tiene una existencia separada independiente del Señor. Por lo tanto, desconocer al Señor Supremo como causa de todas las causas, constituye la lógica de aja-gala-stana-nyaya, o tratar de ordeñar la ubre que hay en la papada de la cabra. Pude que la ubre que se ve en la papada de una cabra parezca una fuente de leche, pero tratar de obtener leche de esa ubre sería un disparate.
+VERSO 46
+ayam tu brahmanah kalpah
+savikalpa udahrtah
+vidhih sadharano yatra
+sargah prakrta-vaikrtah
+</p>
+<p class='vspace'>ayam—este proceso de creación y aniquilación; tu—pero; brahmanah—de Brahma; kalpah—un día de él; sa-vikalpah—juntamente con la duración de los universos; udahrtah—ejemplificado; vidhih—principios regulativos; sadharanah—en resumen; yatra—en el cual; sargah—creación; prakrta—en lo referente a la naturaleza material; vaikrtah—dispersión.
+TRADUCCIÓN
+Este proceso de creación y aniquilación, descrito aquí en resumen, es el principio regulativo que existe durante el período de un día de Brahma. Ése es también el principio regulativo en la creación del mahat, en el que se disemina la naturaleza material. 
+SIGNIFICADO
+Existen tres diferentes tipos de creación, denominadas maha-kalpa, vikalpa y kalpa. En el maha-kalpa, el Señor adopta la primera encarnación purusa en la forma de Karanodakasayi Visnu, con todas las potencias del mahat-tattva y los dieciséis principios de los instrumentos creativos y de la energía creativa. Los instrumentos creativos son once, los ingredientes son cinco, y todos ellos son producto del mahat, o el ego materialista. Esas creaciones, realizadas por el Señor en Su aspecto de Karanodakasayi Visnu, se denominan maha-kalpa. La creación de Brahma y la dispersión de los ingredientes materiales se denominan vikalpa, y la creación realizada por Brahma en cada día de su vida se denomina kalpa. Por consiguiente, cada día de Brahma se denomina un kalpa, y existen treinta kalpas en función de los días de Brahma. Esto también se confirma en la Bhagavad-gita (8.17) de la siguiente manera:
+sahasra-yuga-paryantam
+ahar yad brahmano viduh
+ratim yuga-sahasrantam
+te ’ho-ratra-vido janah
+En el sistema planetario superior, la duración de todo un día y una noche es igual a todo un año en esta tierra. Esto lo acepta incluso el científico moderno, y lo certifican los astronautas. En forma similar, en la región de sistemas planetarios aún superiores, la duración del día y la noche es aún mayor que en los planetas celestiales. Los cuatro yugas se calculan en función de los calendarios celestiales, y, de acuerdo con ello, abarcan doce mil años de los planetas celestiales. Esto se denomina divya-yuga, y mil divya-yugas constituyen un día de Brahma. La creación que ocurre durante el día de Brahma se denomina kalpa, y la creación de Brahma se denomina vikalpa. Cuando ocurren los vikalpas debido a la respiración de Maha-Visnu, ello se denomina un maha-kalpa. Existen ciclos regulares y sistemáticos de estos maha-kalpas, vikalpas y kalpas. En respuesta a la pregunta que Maharaja Pariksit hizo acerca de ellos Sukadeva Gosvami respondió en el Prabhasa-skanda del Skanda Purana. Son los siguientes:
+prathamah sveta-kalpas ca
+dvitiyo nila-lohitah
+vamadevas trtiyas tu
+tato gathantaro ’parah
+rauravah pañcamah proktah
+sasthah prana iti smrtah
+saptamo ’tha brhat-kalpah
+kandarpo ’stama ucyate
+sadyotha navamah kalpa
+isano dasamah smrtah
+dhyana ekadasah proktas
+tatha sarasvato ’parah
+trayodasa udanas tu
+garudo ’tha caturdasah
+kaurmah pañcadaso jñeyah
+paurnamasi prajapateh
+sodaso narasimhas tu
+samadhis tu tato ’parah
+agneyo visnujah saurah
+soma-kalpas tato ’parah
+dvavimso bhavanah proktah
+supuman iti caparah
+vaikunthas carstisas tadvad
+vali-kalpas tato ’parah
+saptavimso ’tha vairajo
+gauri-kalpas tathaparah
+mahesvaras tatha proktas
+tripuro yatra ghatitah
+pitr-kalpas tatha cante
+yah kuhur brahmanah smrta
+Por lo tanto, los treinta kalpas de Brahma son: (1) Sveta-kalpa, (2) Nilolohita, (3) Vamadeva, (4) Gathantara, (5) Raurava, (6) Prana, (7) Bhrhat-kalpa, (8) Kandarpa, (9) Sadyotha, (10) Isana, (11) Dhyana, (12) Sarasvata, (13) Udana, (14) Garuda, (15) Kaurma, (16) Narasimha, (17) Samadhi, (18) agneya, (19) Visnuja, (20) Saura, (21) Soma-kalpa, (22) Bhavana, (23) Supuman, (24) Vaikuntha, (25) Arcisa, (26) Vali-kalpa, (27) Vairaja, (28) Gauri-kalpa, (29) Mahesvara, (30) Paitr-kalpa.
+Esto son sólo días de Brahma, y él tiene que vivir durante meses y años, hasta llegar a cien años, así que podemos imaginarnos cuántas creaciones existen sólo en los kalpas. Además, existen también los vikalpas, generados por la respiración de Maha-Visnu, tal como se declara en la Brahma-samhita (yasyaika-nisvasita-kalam-athavalambya jivanti loma-vilaja jagad-anda-nathah). Los Brahmas viven sólo durante el período respiratorio de Maha-Visnu. De modo que, la exhalación y la inhalación de Visnu constituyen los maha-kalpas, y todo eso se debe a la Suprema Personalidad de Dios, pues nadie más es el amo de todas las creaciones.
+VERSO 47
+parimanam ca kalasya
+kalpa-laksana-vigraham
+yatha purastad vyakhyasye
+padmam kalpam atho srnu
+</p>
+<p class='vspace'>parimanam—medida; ca—también; kalasya—del tiempo; kalpa—un día de Brahma; laksana—síntomas; vigraham—forma; yatha—en tanto; purastat—de ahora en adelante; vyakhyasye—ha de explicarse; padmam—con el nombre Padma; kalpam—la duración de un día; atho—así pues; srnu—tan sólo oye.
+TRADUCCIÓN
+¡Oh, Rey!, he de explicarte en su debido momento la medida del tiempo en sus aspectos toscos y sutiles, con las características específicas de cada uno de ellos, pero por los momentos permíteme explicarte el Padma-kalpa.
+SIGNIFICADO
+El período actual que constituye un kalpa de Brahma se denomina el Varaha-kalpa o Svetavaraha-kalpa, debido a que la encarnación del Señor en la forma de Varaha ocurrió durante la creación de Brahma, quien nació sobre el loto que salía del abdomen de Visnu. Por lo tanto, este Varaha-kalpa se denomina también Padma-kalpa, y ello lo certifican acaryas tales como jiva Gosvami, así como también Srila Visvanatha Cakravarti Thakura, en prosecución del primer comentarista, Svami Sridhara. Así que no hay ninguna contradicción entre el Varaha-kalpa y el Padma-kalpa de Brahma.
+VERSO 48
+saunaka uvaca
+yad aha no bhavan suta
+ksatta bhagavatottamah
+cacara tirthani bhuvas
+tyaktva bandhun sudustyajan
+</p>
+<p class='vspace'>saunakah uvaca—Sri Saunaka Muni dijo; yat—como; aha—tú dijiste; nah—a nosotros; bhavan—tu buena persona; suta—¡oh, Suta!; ksatta—Vidura; bhagavata-uttamah—uno de los devotos más elevados del Señor; cacara—práctico; tirthani—lugares de peregrinaje; bhuvah—en la Tierra; tyaktva—dejando de lado; bandhun—todos los familiares; su-dustyajan—muy difíciles de abandonar.
+TRADUCCIÓN
+Saunaka Rsi, después de oír todo lo referente a la creación, le preguntó a Suta Gosvami acerca de Vidura, pues Suta Gosvami le había informado anteriormente cómo Vidura había abandonado el hogar, dejando a un lado a todos sus familiares, a quienes era muy difícil abandonar.
+SIGNIFICADO
+Los rsis encabezados por Saunaka estaban más ansiosos de saber de Vidura, quien, mientras viajaba a los sitios de peregrinaje del mundo, conoció a Maitreya Rsi.
+VERSOS 49-50
+ksattuh kausaraves tasya
+samvado ’dhyatma-samsritah
+yad va sa bhagavams tasmai
+prstas tattvam uvaca ha
+</p>
+<p class='vspace'>bruhi nas tad idam saumya
+vidurasya vicestitam
+bandhu-tyaga-nimittam ca
+yathaivagatavan punah
+</p>
+<p class='vspace'>ksattuh—de Vidura; kausaraveh—como las de Maitreya; tasya—sus; samvadah—noticias; adhyatma—en lo referente al conocimiento trascendental; samsritah—llenas de; yat—que; va—cualquier otra cosa; sah—él; bhagavan—Su Gracia; tasmai—a él; prstah—inquirió; tattvam—la verdad; uvaca—respondió; ha—en el pasado; bruhi—por favor di; nah—a nosotros; tat—esos asuntos; idam—aquí; saumya—¡oh, bondadosa persona!; vidurasya—de Vidura; vicestitam—actividades; bandhu-tyaga—renunciando a los amigos; nimittam—la causa de; ca—también; yatha—como; eva—también; agatavan—regresó; punah—de nuevo (en casa).
+TRADUCCIÓN
+Saunaka Rsi dijo: Haznos saber, por favor, qué asuntos se discutieron entre Vidura y Maitreya —quienes conversaron acerca de temas trascendentales—, y qué preguntó Vidura y respondió Maitreya. También, por favor, haznos saber cuál fue la razón por la que Vidura abandonó la relación con los miembros de su familia, y por qué regresó de nuevo al hogar. Por favor, también danos a conocer cuáles fueron las actividades de Vidura mientras se encontraba en los lugares de peregrinaje.
+SIGNIFICADO
+Sri Suta Gosvami estaba hablando acerca de los temas referentes a la creación y destrucción del mundo material, pero parece que los rsis encabezados por Saunaka sentían más inclinación por oír hablar de temas trascendentales, los cuales se encuentran en un nivel superior al físico. Existen dos clases de hombres, a saber, aquellos muy adictos al cuerpo tosco y al mundo material, y otros, de un nivel superior, que están más interesados en el conocimiento trascendental. El Srimad-Bhagavatam le da facilidades a todo el mundo, tanto al materialista como al trascendentalista. Por oír la exposición del Srimad-Bhagavatam en lo referente a las gloriosas actividades que ejecuta el Señor tanto en el mundo material como en el mundo trascendental, los hombres pueden obtener el mismo beneficio. Los materialistas están más interesados en las leyes físicas y en cómo éstas actúan, y ellos ven maravillas en esos encantos físicos. Algunas veces, debido a los encantos físicos, ellos olvidan las glorias del Señor. Ellos deben saber, definitivamente, que las actividades físicas y sus maravillas son todas iniciadas por el Señor. La rosa del jardín gradualmente cobra su forma y color para volverse bella y dulce, pero no mediante una ciega ley física, aunque parezca ser así. Tras esa ley física se encuentran la dirección de la conciencia completa del Señor Supremo, pues, de lo contrario, las cosas no adquirirían forma de una manera tan sistemática. El artista dibuja un cuadro de una rosa muy cuidadosamente, con plena atención y sentido artístico, y sin embargo, no queda tan perfecto como la verdadera rosa. Si ése es el hecho cierto, ¿cómo podemos decir que la verdadera rosa ha adquirido su forma sin que haya inteligencia alguna tras la belleza? Esta clase de conclusión se debe a un escaso acopio de conocimiento. Uno debe concluir de la descripción anterior de la creación y aniquilación, que la conciencia suprema, siendo omnipresente, puede cuidar de todo con perfecta atención. Ésa es la realidad de la omnipresencia del Señor Supremo. Algunas personas aún más necias que la gente muy materialista, proclaman, sin embargo, ser trascendentalistas y poseer una suprema conciencia omnipresente, pero no dan ninguna prueba de ello. Esas personas necias no pueden saber lo que está ocurriendo tras la pared más próxima, y, aun así, están falsamente orgullosos de poseer la conciencia cósmica y omnipresente de la Persona Suprema. También para ellos, el oír el Srimad-Bhagavatam es una gran ayuda. Ellos les abrirá los ojos para que vean que uno no se vuelve supremamente consciente con sólo proclamar que se posee esa suprema conciencia. Uno tiene que demostrar en el mundo físico que de hecho la posee. Sin embargo, los rsis de Naimisaranya se encontraban por encima de la gente muy materialista y de los falsos trascendentalistas, y, así pues, siempre estaban ansiosos de conocer la verdad real de los asuntos trascendentales, tal como lo discuten las autoridades.
+VERSO 51
+suta uvaca
+rajña pariksita prsto
+yad avocan maha-munih
+tad vo ’bhidhasye srnuta
+rajñah prasnanusaratah
+</p>
+<p class='vspace'>sutah uvaca—Sri Suta Gosvami respondió; rajña—por el Rey; pariksita—por Pariksit; prstah—como fue preguntado; yat—que; avocat—habló; maha-munih—el gran sabio; tat—esa misma cosa; vah—a ustedes; abhidhasye—he de explicar; srnuta—por favor oigan; rajñah—por el Rey; prasna—pregunta; anusaratah—de acuerdo con.
+TRADUCCIÓN
+Sri Suta Gosvami respondió: Ahora he de explicarles a ustedes los mismos asuntos que explicó el gran sabio en respuesta a las preguntas del rey Pariksit. Por favor, oigan atentamente.
+SIGNIFICADO
+Cualquier pregunta que se presente puede responderse citando a la autoridad, y ello satisfará al sector más cuerdo. Ése es el sistema que se usa incluso en las cortes. El mejor abogado presenta testimonios provenientes del pasado juicio de la corte, sin tomarse muchas molestias en establecer su caso. Esto se denomina el sistema parampara, y las autoridades entendidas lo siguen sin manufacturar interpretaciones necias.
+isvarah paramah krsnah
+sac-cid-ananda-vigrahah
+anadir adir govindah
+sarva-karana-karanam
+(Brahma-samhita 5.1)
+Obedezcamos todos al Señor Supremo, cuya mano se encuentra en todo, sin excepción alguna.
+Así terminan los significados de Bhaktivedanta, del Décimo Capítulo, Segundo Canto, del Srimad-Bhagavatam, titulado: “El Bhagavatam es la respuesta a todas las preguntas”.
+</p>
+<div class='vspace'></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on August 27, 2012, at 02:34 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

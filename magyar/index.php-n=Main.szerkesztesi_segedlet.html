@@ -1,0 +1,280 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Szerkesztési segédlet</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : Main - RSS Feed'
+      href='index.php-n=Main.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=Main.szerkesztesi_segedlet' method='get'><input type='hidden' name='n' value='Main.szerkesztesi_segedlet' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Szerkesztési segédlet"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=Main.szerkesztesi_segedlet-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<div class='vspace'></div><h1>Szerkesztési segédlet</h1>
+<p><br /><br />
+</p><ul><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#a'>Könyv nyitólap címrésze</a>
+</li><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#a'>Egy lapos anyag címrésze</a>
+</li><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#b'>Tartalomjegyzék formázása</a>
+</li><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#c'>Könyvfejezet címrésze</a>
+</li><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#d'>Könyvfejezet alsó része</a>
+</li></ul><div class='vspace'></div><h4>Mire való, hogyan használd?</h4>
+<hr />
+<p>Hogy jól használható és egységes kinézetű legyen a Bhaktipédia, az egyes lapokon standard beállításokat kell használnunk. Ezek egyszerűek, akár egyenként is könnyen beírhatók, de itt csoportosítva megtalálod a kódjukat, amiket sima másolással átvihetsz a szerkesztés alatti lapodra.
+</p>
+<p class='vspace'>Ha ezt a lapot új ablakban nyitod meg, akkor könnyen ide-oda ugorhatsz. Az átmásolt kód szöveges részét természetesen a megfelelő szövegre kell változtatni, s több lap esetén már ne innen, hanem az előző lapodról másold tovább.
+</p>
+<div class='vspace'></div><h6>A fájlnevek megadásásának helyes módja</h6>
+<p>Amikor új lapot hozol létre a Bhaktipédiában az <code class='escaped'>[[új lap]]</code> kóddal (<a class='createlinktext' href='index.php-n=Main.%C3%BAj_lap-action=edit.html'>új lap</a>), akkor az új lap a kettős zárójelek közé írt szöveg szerinti címmel fog létrejönni, méghozzá abban a mappában, ahol éppen vagy. <em>(Valójában a szóközök helyett aláhúzás kerül a fájlnévbe. Nézd csak meg ezt a lapot szerkesztői módban. A lapot a program Main.Szekesztési_segédlet néven menti el a Main mappába. A pont előtt rész mindig a mappa neve.)</em>
+</p>
+<p class='vspace'>Az anyagok elhelyezése ugyanúgy mappákban történik, mint a saját gépeden, de csak egy szinten, vagyis mappát mappába tenni nem lehet. A Main mappát használjuk az általános szövegek részére, mint pl. a katalógus, a menüpontok  vagy éppen ez, amit olvasol. A Lexikon mappába kerül minden olyan hivatkozás, ami a lexikonba való.
+</p>
+<p class='vspace'>A saját lapjaidat tedd a szerző nevét viselő mappába. Ha még nincs ilyen, akkor egyszerűen létrehozhatod a <code class='escaped'>[[szerző/új lap]]</code> kóddal (<a class='createlinktext' href='index.php-n=szerz%C5%91.%C3%BAj_lap-action=edit.html'>új lap</a>). A dőlt jel előtti rész lesz a mappa neve. A katalógusban megnézheted, hogy az adott szerzőnek mi a pontos mappa-neve, amit (szerkesztés módban) kimásolhatsz az új anyaghoz. A Main mappába ne rakjál könyvet vagy cikket, csak szerzőhöz.
+</p>
+<p class='vspace'>A fájlnév megadásakor figyelni kell arra, hogy a név ne tartalmazzon pontot és dőlt elválasztó jelet, mert ezeket a program úgy értelmezi, hogy a pont ill. elválasztó előtti rész a mappa neve, utáni a fájlnév. Ha pedig két pont is van, akkor csak az utolsót értelmezi, az az előttivel nem tud mit kezdeni. Ezért nem adhatsz meg olyan fájlnevet, mint A.Cs. Bhaktivédanta vagy 5. fejezet, ill. Második rész/Abhidéja, mert akkor egy Cs egy 5, ill. Második_rész nevű mappa fog létrejönni, bennük egy Bhaktivédanta, fejezet ill. Abhidéja nevű fájllal. A helyes metódus: ACs Bhaktivédanta, 5 fejezet, Második rész Abhidéja. Mivel ez nem túl szép, és később nehezebb hivatkozni rá, azt javaslom, hogy a fájneveket a következőképpen add meg:
+</p>
+<p class='vspace'>Ha könyvról van szó, akkor a nyitólap legyen simán a könyv címe (ha túl hosszó, akkor rövidített formában), természetesen már a szerző mappájában. A további részek, fejezetek célszerűen kapják a 01, 02, 03 stb. kiegészítést a könyvcímhez. Így egyszerű, jól használható és könnyen azonosítható elnevezési rendszert hozol létre. Ha nem így teszel, hanem pl. a fejezetek címét adod meg, akkor a könyv struktúrája fájlszinten szétesik, mert ábécében a fejezetek címe nem a könyv szerint sorrendben állnak, ill. egy adott szerző különböző könyveihez tartoző címek teljesen összekeverednek. A címhez írt sorszámozás a jó megoldás. Példákat találsz a katalógusban, de itt a mintája: 
+</p>
+<p class='vspace'><code class='escaped'>[[szerző/könyvcím]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm-action=edit.html'>könyvcím</a><br /><code class='escaped'>[[szerző/könyvcím 01]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_01-action=edit.html'>könyvcím 01</a><br /><code class='escaped'>[[szerző/könyvcím 02]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_02-action=edit.html'>könyvcím 02</a><br /><code class='escaped'>[[szerző/könyvcím 03]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_03-action=edit.html'>könyvcím 03</a>
+</p>
+<p class='vspace'>A belső navigálás valóban eszszerű az ilyen nevekkel, s hogy a tényleges fejezetcím is megjelenjen, arra a megoldás, hogy a fájlnévet követő | jel után beírod az aktuális címet. A szövegben ez a cím fog megjelenni (nem a fáljnév), de a hivatkozásból (szerkezstői módban) pontosan látni fogod, hogy mihez tartozik ez a szövegrész. A | után bármilyen jelet írhatsz már, ott nem befolyásolja a fájlok elnevezését.
+</p>
+<p class='vspace'><code class='escaped'>[[szerző/könyvcím]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm-action=edit.html'>Bukásom története</a><br /><code class='escaped'>[[szerző/könyvcím 01]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_01-action=edit.html'>Miért kellett megszületnem?</a><br /><code class='escaped'>[[szerző/könyvcím 02]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_02-action=edit.html'>A 7. év</a><br /><code class='escaped'>[[szerző/könyvcím 03]]</code> <a class='createlinktext' href='index.php-n=szerz%C5%91.k%C3%B6nyvc%C3%ADm_03-action=edit.html'>Epilógus</a>
+</p>
+<p class='vspace'>Ugyanilyen módon tudjuk az ACs Bhaktivénadta fájlnevet felodani A.Cs. Bhaktivédantára.
+</p>
+<p class='vspace'>Egy könyv első lapján van a főcím, a tartalomjegyzék és a könyvre vonatkozó egyéb adatok (kolofón). Ez a lap kapja a könyvcím számozás nélküli elnevezését. A fejezeteket számozzuk sorban. Ha vannak alfejezetek, akkor a számozást így érdemes csinélni: könyvcím (nyitólap, tartalom, kolofón), könyvcím 01, könyvcím 02 (első, msáodik stb. rész bevezetője, ha a fejezetek előtt van ilyen, könyvcím 01-01, könyvcím 01-02, könyvcím 01-03 (első rész első, második stb. fejezet), könyvcím 02-01, könyvcím 02-02, könyvcím 02-03 (második rész első, második stb. fejezet), könyvcím 03 (pl. epilógus). A számozásban kell a nulla, ha százas nagyságrendű fejezetcím van akkor 001, 002 stb. módon kell alkalmazni (pl. Mahábhárata).
+</p>
+<p class='vspace'>Nem rendezett cikkgyűjtemény esetén (mint pl. a Történetek a Mahábharatából, vagy a Lexikon) nincs értelme a sorszámozásnak, akkor a címet adjuk meg egyedül, hiszen mindegyik anyag más címet visel. Ilyenkor az egyedüli sorrendet az határozza meg, hogy mi milyen katalógust készítünk hozzá.
+</p>
+<p class='vspace'><a name='a' id='a'></a>
+</p><h4>Könyv első lapjának ill. egy lapos anyagnak fejléce és címe</h4>
+<hr />
+<h6>Kód</h6>
+<p class='vspace'><code class='escaped'> (:title Főcím:)</code><br /><code class='escaped'> (:notitle:)</code><br /><br /><code class='escaped'> %center%[[Lexikon/Szerző | Szerző Neve]] </code><br /><br /><code class='escaped'>  ! Főcím </code><br /><code class='escaped'>  %center%''Alcím (opcionális)'' </code>
+</p>
+<div class='vspace'></div><h6>Magyarázat</h6>
+<p>A (: title... kód teszi lehetővé, hogy tetszőleges szöveg jelenjen meg a böngésződ legtetején és ez lesz a lap címe az inerneten. Enélkül a fájlnév jelenne meg, ami zavaró lenne. A (:notitle... kód megakadályozza, hogy a fájlnév jelenjen meg címként a szöveg felett. A Főcím, Alcím, Szerző stb. szövegrészeket értelemszerűen meg kell változtatni. A | jel után szerző neve csak akkor kell, ha a szerző neve pontot tartalmaz vagy valamiért eltér a lexikonban szócikként felvett fáljnévtől (pl. A.Cs. Bhaktivédanta esetében), különben törölhető. Alcím nem mindig van, töröld, ha éppen nincs.
+</p>
+<div class='vspace'></div><h6>Minta</h6>
+<p  style='text-align: center;'><a class='createlinktext' href='index.php-n=Lexikon.ACs_Bhaktiv%C3%A9danta-action=edit.html'>A.Cs. Bhaktivédánta Szvámí</a>
+</p>
+<div class='vspace'></div><h1>Az élet végső célja</h1>
+<p  style='text-align: center;'><em>Rámánanda szamváda</em>
+</p>
+<p class='vspace'><a name='b' id='b'></a>
+</p><h4>Tartalomjegyzék formázása</h4>
+<ul><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#ba'>Egyszerű struktúrált tartalomjegyékek</a>
+</li><li><a href='index.php-n=Main.szerkesztesi_segedlet.html#bb'>Sok kis fejezetet tartalmazó tartalomjegyzék</a>
+</li></ul><p class='vspace'><a name='ba' id='ba'></a>
+</p><h4>Egyszerű struktúrált tartalomjegyékek</h4>
+<hr />
+<h6>Egyszerű felépítésű könyv kódja</h6>
+<p class='vspace'><code class='escaped'> * [[Könyvcím 01 | Fejezetcím]] </code><br /><code class='escaped'> * [[Könyvcím 03 | Fejezetcím]] </code><br /><code class='escaped'> * [[Könyvcím 04 | Fejezetcím]] </code>
+</p>
+<div class='vspace'></div><h6>Strukturáltabb felépítésű könyv, a részekben bevezető szöveg kódja</h6>
+<p class='vspace'><code class='escaped'> * [[Könyvcím 01 | Rész címe]] </code><br /><code class='escaped'> * [[Könyvcím 03 | Rész címe]] </code><br /><code class='escaped'> ** [[Könyvcím  03-01 | Fejezetcím]] </code><br /><code class='escaped'> ** [[Könyvcím  03-02 | Fejezetcím]] </code><br /><code class='escaped'> * [[Könyvcím  04 | Rész címe]] </code><br /><code class='escaped'> ** [[Könyvcím  04-01 | Fejezetcím]] </code><br /><code class='escaped'> ** [[Könyvcím  04-02 | Fejezetcím]] </code>
+</p>
+<div class='vspace'></div><h6>Strukturáltabb felépítésű könyv, ahol a részcímet fejezetcím követi kódja</h6>
+<p class='vspace'><code class='escaped'> * [[Könyvcím 01 | Rész címe]] </code><br /><code class='escaped'> * Rész címe </code><br /><code class='escaped'> ** [[Könyvcím  03-01 | Fejezetcím]] </code><br /><code class='escaped'> ** [[Könyvcím  03-02 | Fejezetcím]] </code><br /><code class='escaped'> * Rész címe </code><br /><code class='escaped'> ** [[Könyvcím  04-01 | Fejezetcím]] </code><br /><code class='escaped'> ** [[Könyvcím  04-02 | Fejezetcím]] </code>
+</p>
+<div class='vspace'></div><h6>Magyarázat</h6>
+<p>A Rész címe, Fejezetcím szavak helyébe az aktuális rész vagy fejezet címét kell írni. 
+</p>
+<div class='vspace'></div><h6>Minta</h6>
+<p class='vspace'><em>Egyszerű felépítésű könyv</em>
+</p>
+<div class='vspace'></div><ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_01-action=edit.html'>Előszó</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-action=edit.html'>Az élet végső céljának kutatása</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-action=edit.html'>Lelki élet – színleg vagy szívből?</a>
+</li></ul><p class='vspace'><em>Strukturáltabb felépítésű könyv, a részekben bevezető szöveggel</em>
+</p>
+<div class='vspace'></div><ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_01-action=edit.html'>Előszó</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-action=edit.html'>Az élet végső céljának kutatása</a>
+<ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-01-action=edit.html'>A varnásram útja</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-02-action=edit.html'>A lemondás útja</a>
+</li></ul></li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-action=edit.html'>Lelki élet – színleg vagy szívből?</a>
+<ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-01-action=edit.html'>A lelki tudományok sarlatánjai</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-02-action=edit.html'>A szent név</a>
+</li></ul></li></ul><p class='vspace'><em>Strukturáltabb felépítésű könyv, ahol a részcím után azonal fejezetcím van</em>
+</p>
+<div class='vspace'></div><ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_01-action=edit.html'>Előszó</a>
+</li><li>Az élet végső céljának kutatása
+<ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-01-action=edit.html'>A varnásram útja</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-02-action=edit.html'>A lemondás útja</a>
+</li></ul></li><li>Lelki élet – színleg vagy szívből?
+<ul><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-01-action=edit.html'>A lelki tudományok sarlatánjai</a>
+</li><li><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_04-02-action=edit.html'>A szent név</a>
+</li></ul></li></ul><p class='vspace'><a name='bb' id='bb'></a>
+</p><h6>Sok kis fejezetet tartalmazó tartalomjegyzék</h6>
+<hr />
+<h6>Kód</h6>
+<p class='vspace'><code class='escaped'>* [[Könyvcím 01 | Fejezetcím]] </code><br /><br />
+<code class='escaped'>* Rész címe\\ </code><br /><code class='escaped'>''[[Könyvcím 02-01 | Fejezetcím]] • \</code><br /><code class='escaped'>[[Könyvcím 02-02 | Fejezetcím]] • \</code><br /><code class='escaped'>[[Könyvcím 02-03 | Fejezetcím]] • \</code><br /><code class='escaped'>[[Könyvcím 02-04 | Fejezetcím]]</code>
+</p>
+<p class='vspace'><code class='escaped'> * II. Minden városban és faluban\\</code><br /><code class='escaped'> ''[[Könyvcím 03-01 | Fejezetcím]] • \</code><br /><code class='escaped'> [[Könyvcím 03-02 | Fejezetcím]] • \</code><br /><code class='escaped'> [[Könyvcím 03-02 | Fejezetcím]] </code>
+</p>
+<div class='vspace'></div><h6>Minta</h6>
+<div class='vspace'></div><ul><li><a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_01-action=edit.html'>Bevezetés</a>
+<div class='vspace'></div></li><li>I. A békét hozó<br />''<a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_02-action=edit.html'>Srí Csaitanja Maháprabhu mozgalma</a> • <a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_02-action=edit.html'>A mi szampradájánk</a> • <a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_02-action=edit.html'>A Visva Vaisnava Rádzs Szabhá – World Vaisnava Association</a> • <a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_02-action=edit.html'>A Gaudija Math kezdetei</a> • 
+</li><li>II. Minden városban és faluban<br />''<a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_03-action=edit.html'>A Gaudija Math ágai</a> • <a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_03-action=edit.html'>Srí Navadvip Dhám Pracsárini Szabhá</a> • <a class='createlinktext' href='index.php-n=Main.Csal%C3%A1dunk_a_Gaud%C3%ADja_Math_03-action=edit.html'>A Csaitanja Math</a> • 
+</li><li> <a href='index.php-n=Main.szerkesztesi_segedlet.html#d'>Irodalomjegyzék</a>	 
+</li></ul><p class='vspace'><a name='c' id='c'></a>
+</p><h4>Könyvfejezet címrésze</h4>
+<hr />
+<h6>Kód</h6>
+<p class='vspace'><code class='escaped'> (:title Főcím:)  </code><br /><code class='escaped'> (:notitle:) </code><br /><br /><code class='escaped'> %center%'-[[Lexikon/Szerző | Szerző Neve]] / [[Könyv címe]]-' </code><br /><br /><code class='escaped'> !! Fejezet címe </code>
+</p>
+<div class='vspace'></div><h6>Minta</h6>
+<p class='vspace'  style='text-align: center;'><small><a class='createlinktext' href='index.php-n=Lexikon.ACs_Bhaktiv%C3%A9danta-action=edit.html'>A. Cs. Bhaktivédánta Szvámí</a> / <a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja-action=edit.html'>Az élet végső célja</a></small>
+</p>
+<div class='vspace'></div><h2>Előszó</h2>
+<p class='vspace'><a name='d' id='d'></a>
+</p><h4>Könyvfejezet alsó része</h4>
+<hr />
+<h6>Kódok (első, köztes és utolsó fejezet)</h6>
+<p class='vspace'><code class='escaped'>%center%'-|[[Könyv címe]]|[[Könyv címe 02 | &gt;&gt;]]-'</code>
+</p>
+<p class='vspace'><code class='escaped'>%center%'-[[Könyv címe 01 | &lt;&lt;]]|[[Könyv címe]]|[[Könyv címe 03 | &gt;&gt;]]-'</code>
+</p>
+<p class='vspace'><code class='escaped'> %center%'-[[Könyv címe 05-04 | &lt;&lt;]]|[[Könyv címe 05]]|-'</code>
+</p>
+<div class='vspace'></div><h6>Minta</h6>
+<p class='vspace'  style='text-align: center;'><small>|<a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja-action=edit.html'>Az élet végső célja</a>|<a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_02-action=edit.html'>&gt;&gt;</a></small>
+</p>
+<p class='vspace'  style='text-align: center;'><small><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_01-action=edit.html'>&lt;&lt;</a>|<a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja-action=edit.html'>Az élet végső célja</a>|<a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_03-action=edit.html'>&gt;&gt;</a></small>
+</p>
+<p class='vspace'  style='text-align: center;'><small><a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja_05-04-action=edit.html'>&lt;&lt;</a>|<a class='createlinktext' href='index.php-n=Main.Az_%C3%A9let_v%C3%A9gs%C5%91_c%C3%A9lja-action=edit.html'>Az élet végső célja</a>|</small>
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on July 16, 2008, at 05:42 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

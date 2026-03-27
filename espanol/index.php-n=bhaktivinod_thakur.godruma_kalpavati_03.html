@@ -1,0 +1,204 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Tercera Parte</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivinod_thakur - RSS Feed'
+      href='index.php-n=bhaktivinod_thakur.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivinod_thakur.godruma_kalpavati_03' method='get'><input type='hidden' name='n' value='bhaktivinod_thakur.godruma_kalpavati_03' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Tercera Parte"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivinod_thakur.godruma_kalpavati_03-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivinod_thakur.bhaktivinod_thakur.html'>Bhaktivinoda Thakura</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivinod_thakur.godruma_kalpavati.html'>Sri Sri Godruma Kalpavati</a>
+</p>
+<div class='vspace'></div><h2>Tercera Parte</h2>
+<p>A todos los empleados del SRI NAMA HATTA se les solicita, humildemente, hacer llegar al editor del Godruma Kalpavati, todos los detalles acerca del desarrollo o las noticias importantes que tengan que ver con el dharma vaisnava puro. Sírvanse enviar los detalles de cualquier festival que se realice, bien sea vaisnava, de Harinam, de los días de desaparición de vaisnavas puros, o actividades vaisnavas excepcionales (antiguas o nuevas), así como de todos los otros logros similares.
+¿Por qué el barrendero del NAMA HATTA es quien firma el boletín de noticias del Godruma Kalpavati?
+</p>
+<p class='vspace'>Como el barrendero es quien limpia diariamente la feria, él encuentra cartas esparcidas por doquier. Cualquier cosa que encuentre escrita en esas cartas, la entrega al “saharat dara” para su difusión. Como la información se recibe del barrendero, el “saharat dara” firma con el nombre de aquél al momento de la publicación. El origen de todos esos trozos de información es conocido por el comerciante jefe de allí, Sri Nityananda Prabhu.
+Aviso Especial: El ‘dalala’ (Agente vendedor que trae clientes al comerciante) fue nombrado en el número anterior. Todos aquellos agentes son vaisnavas puros de nuestro NAMA HATTA. Además de éstos, existen también muchas personas que están en favor del NAMA HATTA, quienes son corredores, pero que no son todavía vaisnavas puros. Sin embargo, ellos están ayudando a los vaisnavas puros a fortalecer la feria. Sus nombres se incluirán en el futuro. Cuando ellos lleguen a ser vaisnavas puros debido a la potencia del Santo Nombre, ellos serán nombrados empleados del NAMA HATTA.
+</p>
+<p class='vspace'>PRECAUCIÓN: Los trabajadores del NAMA HATA que se acaban de mencionar, deben comportarse unos con otros con verdadero sentido de hermandad. Ninguno debe considerar a alguien como menos que él mismo. Así como una planta de Tulasi no considera que las hojas sean más o menos puras dependiendo de que sean más grandes o más pequeñas, de la misma forma, un vaisnava puro no se considerará mejor o más bajo, dependiendo de su riqueza, fuerza física, conocimiento material, casta, apariencia física o edad. Tener en cuenta la elevada casta, riqueza, familia, nacimiento vaisnava, y el comportamiento subsiguiente, es simplemente un asunto social y no tiene nada que ver con la vida trascendental. La consideración a hermanos espirituales mayores o menores, se basa únicamente en el avance que cada cual tenga en cuanto a su servicio devocional puro al Señor. Naturalmente, los vaisnavas puros ofrecerán toda clase de respetos a los vaisnavas mayores, a los herederos de la familia del Señor, o a Sus devotos expertos, y también seguirán todas las normas de etiqueta vaisnava, respetando a los devotos puros, honrando a los invitados y respetando a los otros devotos, de acuerdo con el grado de renunciación material que cada cual tenga. Aparte de las consideraciones anteriores, los devotos puros no harán otra clase de distinción entre mejores o más bajos, y deberán evitar cuidadosamente hacerlo.
+</p>
+<p class='vspace'>ANUNCIO
+</p>
+<p class='vspace'>Todas las reglas, regulaciones y acontecimientos del Sri Sri NAMA HATTA y todas las noticias acerca de la feria que el público deba saber, serán publicadas en este boletín del Godruma Kalpavati. Este boletín no tiene tiempo de publicación específico. Algunas veces se hará todos los meses, otras cada dos meses, y otras será quincenal. El boletín no tiene costo alguno. Todos los vendedores viajeros, tenderos y otros empleados de la feria recibirán una copia gratis. Aquéllos que guarden todos los números y luego los empasten, recibirán un gran beneficio al final.
+Además de este boletín, aparecerá una publicación con el nombre de “Sri Vaisnava Siddhantamala”, también el NAMA HATTA. Un número de esta publicación se llamará ‘guti’ (una cuenta). 108 ‘gutis’ harán una ‘mala’ completa. Cada vez que se imprima un ‘guti’, los vendedores viajeros, los tenderos y los demás empleados de la feria, recibirán una copia gratis, En cada número se incluirá la filosofía vaisnava verdadera, así como canciones vaisnavas puras. Los vendedores viajeros, los tenderos, y todos los demás empleados del NAMA HATTA deben cantar y deben traer a otras personas a que canten este NAMA HATTA sankirtan. Las verdades del Santo Nombre, las verdades de la devoción, las escrituras reveladas y las enseñanzas que se refieren a éstas, deben ser predicadas en cada aldea, tal como aparecen en este boletín. Los empleados del MANA HATTA deben conservar muy cuidadosamente las copias del guti desde su primer número. El primer boletín fue impreso hace bastante tiempo, así que se publicará de nuevo para que cada empleado pueda tener el suyo. Cada guti tendrá el mismo tamaño.  Si alguien desea una copia del guti debe pagar un paisa. Los trabajadores pueden escribir al Saharat dara e informarle cuántas copias del guti necesitan, y las recibirán de acuerdo con esa información.
+</p>
+<p class='vspace'>SOLICITUD
+</p>
+<p class='vspace'>¡Oh qué grandes almas son ustedes los vendedores viajeros y los tenderos de nuestra feria del Santo Nombre! Humildemente les solicitamos que nos envíen el nombre, la dirección, la ciudad y el estado de cualquier vaisnava puro que lleguen a conocer. De esta forma, nosotros podremos solicitarles que nos permitan inscribir sus nombres como vendedores viajeros en nuestro boletín del Sri NAMA HATTA.
+Prapanasram y Sraddha Kutir: Los tenderos del Santo Nombre deberán establecer una tienda para el Santo Nombre, en la ciudad donde viven bien sea un kuti, un cobertizo, un albergue o un cuarto. Ese kuti será conocido como un “prapannasram”. Los devotos fieles del Nombre vendrán desde lejos y de cerca a reunirse allí, y así saborear el néctar del Nombre y predicar sus glorias. Los vaisnavas reconocerán y respetarán a los tenderos como hermanos espirituales, pero los santos relacionados con el asram no deben pensar que ellos están obligados a sostenerlos. Un sadhu no está ansioso por recibir ayuda de otro para mitigar sus necesidades. Sin embargo, de acuerdo con la capacidad de cada cual, él deberá ofrecer a su hermano lo que pueda. El tendero no se sentirá ofendido si un devoto trae su propio alimento y se queda durante la noche en el asram. Si en el servicio a algún hermano, alguien le entrega sus  posesiones como una ofrenda, no debe pensar con orgullo que él es un donante.
+Cada uno debe esforzarse para que la bandera de la victoria (jayapataka) del Santo Nombre sea izada. Nadie debe pensar ‘yo’ o ‘mío’, u ‘otro’, o sentir falso respeto o irrespeto. Para mitigar las propias necesidades, cada cual debe hacer el trabajo que se requiera, esa es la regla general.
+Cada prapanasram tendrá el nombre de la ciudad o área donde funciona, seguido de la palabra prapanasram, por ejemplo, Amala Jora Prapanasram, Bag Bazar Prapanasram.
+Dondequiera que un vendedor viajero se quede, ese sitio se llamará Sraddha kutir, ejemplo: Phula kusum Sraddha kutir, Nakhuria Sraddha kutir. No hay necesidad de construir una casa o edificio por separado. Cada vez que un trabajador relacionado con el NAMA HATTA visite una ciudad donde viva algún vendedor viajero, primero que todo deberá visitar el Sraddha kutir y reunirse con el vendedor. Los trabajadores del NAMA HATTA tendrán sus propios fondos para cubrir sus gastos. Aunque el vendedor viajero siente afecto por todos, si él desea que un hermano trabajador permanezca en su casa como invitado, deberá hacer un arreglo que sea el mejor para los dos, ya que esta ocasión es un intercambio mutuo de felicidad.
+</p>
+<p class='vspace'>VARTTA (ANUNCIO)
+</p>
+<p class='vspace'>Se da una lista de 27 vendedores y 3 tenderos
+</p>
+<p class='vspace'>Cada vez que un empleado del NAMA HATTA visite una ciudad, en desarrollo de sus actividades, deberá establecer un lugar público para que pueda predicar, dar lecturas y cantar canciones devocionales para beneficio de la gente. Si esta clase de actividades se realiza, en poco tiempo habrá disponibles oradores, cantantes y vendedores viajeros, al igual que tenderos. A este respecto todo el mundo debe ser muy cuidadoso. Los jóvenes humildes, entusiastas, conocedores e inteligentes, deberán ser llevados a un lugar solitario para enseñarles a leer y cantar. Poco a poco hay que entrenar a estos jóvenes para que den lecturas en sitios públicos, en las ferias y en otros lugares. Cada vez que estas actividades tengan éxito, debe informarse a este boletín para hacer la publicación correspondiente.
+Los misioneros cristianos que vienen del extranjero para realizar sus prédicas religiosas, reciben un salario por su trabajo. Por lo tanto sus actividades no carecen de egoísmo y las personas no se benefician realmente por tales actividades. Nuestro NAMA HATTA del Señor Nityananda Prabhu no es de esta naturaleza. Nuestros predicadores del Santo Nombre van de la misma forma que el Señor, de aldea en aldea, sin egoísmo, de una manera dedicada, predicando y cumpliendo la orden del Señor Sri Caitanya Mahaprabhu. Este tipo de prédica de los principios eternos religiosos se esparcirá en poco tiempo, no solo a lo largo y ancho de la India, sino alrededor del mundo entero. El Santo sonido de la mridanga del Señor Caitanya se escuchará y todo el mundo, bien sea brahmana o melecca, alcanzará la devoción pura por los pies de loto de Sri Hari. 
+</p>
+<p class='vspace'>DESCRIPCIONES DE LAS ACTIVIDADES DE PRÉDICA 
+</p>
+<p class='vspace'>Nota: Aquí Bhaktivinoda Thakur menciona la prédica de diferentes trabajadores del NAMA HATTA en toda la India oriental. A manera de ejemplo, sólo se hará una descripción.  
+</p>
+<p class='vspace'>13º Paus, 405 Caitanyabda [año Bengali]- Comienza el trabajo de Sri NAMA HATTA. Se reúnen algunos trabajadores del NAMA HATTA en el “Kumartuli Sri Gaura-Gopinath kunja” de Calcuta, situada en la calle Bidan y en Rambagan Bhaktivabhan, para realizar un gran festival. En la aldea de Amalajoda en el distrito de Burdwan, Sri Bipinabihari ha fundado un prapanasrama y en la aldea cercana se llevan a cabo prédicas de las glorias del Santo Nombre.
+</p>
+<p class='vspace'>DESPEJANDO DUDAS
+</p>
+<p class='vspace'>Muchas personas han escrito al Godruma Kalpavati para averiguar la descripción de funciones de ciertos trabajadores que se mencionaron en el segunda parte, tales como el "pramanik" (barbero), "doba" (lavandero) Y "darji" (sastre).
+</p>
+<p class='vspace'>¿Cuál es la naturaleza exacta de sus funciones?
+</p>
+<p class='vspace'>Las posiciones de barbero, lavandero y sastre son las más elevadas. Con excepción de personas altamente calificadas, nadie puede aceptar cualquiera de estas tres posiciones.
+</p>
+<p class='vspace'>Aquél que puede traer a una persona lujuriosa, con comportamiento nocivo, sucia, con cabellos desordenados y despeinados, a la posición de un vaisnava limpio y puro, es conocido como el barbero del NAMA HATTA. Aquél que puede traer a alguien que por haber sido descarriado está contaminado y cuyo carácter de caído puede ser comparado con los vestidos manchados con suciedad y excrementos, aquél que puede limpiar y rehabilitar a tal persona, es llamado el lavandero del NAMA HATTA. El karma, el jñana, y el yoga y otras actividades ritualísticas védicas, se comparan con piezas separadas de vestidos, que solamente un sastre experto puede unir con el hilo de la verdadera devoción pura, estableciendo actividades basadas en los principios perfectos y puros de la devoción. Ésta es la actividad del sastre del NAMA HATTA.
+</p>
+<p class='vspace'>Panya Vithika Pati: Todos aquellos que han nacido en la familia del Señor y que están dedicados a la prédica del Santo Nombre sin egoísmo, serán conocidos como los "Panyas Vithika Pati" (directores del bazar) del NAMA HATTA.
+Pancayat: Diez (10) o más empleados del NAMA HATTA que vengan junto al Godruma Ksetra con el propósito de dedicarse completamente a la divulgación del NAMA HATTA, se convertirán en "Sri Sri Hatta Pancayats", o los representantes principales de los mercaderes.
+</p>
+<p class='vspace'>(Aquí Bhaktivinoda Thakur menciona otros nombres: 6 tenderos, 4 corredores y 56 vendedores viajeros).
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivinod_thakur.godruma_kalpavati_02.html'>Segunda Parte</a> | <a class='wikilink' href='index.php-n=bhaktivinod_thakur.godruma_kalpavati.html'>Sri Sri Godruma Kalpavati</a> | <a class='wikilink' href='index.php-n=bhaktivinod_thakur.godruma_kalpavati_04.html'>Cuarta Parte</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 13, 2008, at 10:03 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

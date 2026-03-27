@@ -1,0 +1,544 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Estudio de la estructura del universo </title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhagavatam_5 - RSS Feed'
+      href='index.php-n=bhagavatam_5.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhagavatam_5.0-20' method='get'><input type='hidden' name='n' value='bhagavatam_5.0-20' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Estudio de la estructura del universo "></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhagavatam_5.0-20-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_swami.bhaktivedanta_swami.html'>A.C. Bhaktivedanta Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhagavatam_5.srimad_bhagavatam.html'>Srimad Bhagavatam</a>
+</p>
+<div class='vspace'></div><h1><small>Capítulo XX</small><br /><br />Estudio de la estructura del universo</h1>
+<p>Este capítulo describe una isla y los océanos que las rodean, comenzando por Plaksadvipa. También se de describe la posición y dimensiones de la montaña Lokaloka. La isla Plaksadvipa, el doble de grande que Jambuvipa, está rodeada por un océano de agua salada. El soberano de la isla es  Idhmajihva, uno de los hijos de Maharaja Priyavrata. Se divide en siete regiones, en cada una de las cuales hay una montaña y un gran río.
+La segunda ísla se llama Salmalidvipa. Está rodeada por un océano de licor, y su anchura es de 5.150.000 kilómetros, dos veces el ancho de Plaksadvipa. El soberano de la isla es Yajñabahu, hijo de Maharaja Priyavrata. Al igual que Plaksadvipa, esta isla también está dividida en siete regiones, en cada una de las cuales hay una montaña y un gran río. Los habitantes de la isla adoran a la Suprema Personalidad de Dios en la forma de Candratma.
+La tercera isla, que está rodeada por un océano de mantequilla clarificada, y que también se divide en siete regiones, se llama Kusadvipa. Su soberano es Hiranyareta, otro hijo de Maharaja Priyavrata, y sus habitantes adoran a la Suprema Personalidad de Dios en la forma de Agni, el dios del fuego. La isla mide 10.300.000 kilómetros de ancho, o en otras palabras, es el doble de ancha que Salmalidvipa.
+La cuarta isla, Krauñcadvipa, que está rodeada por un océano de leche, tiene una anchura de 20.600.000 kilómetros, y, como las otras, también está dividida en siete regiones, en cada una de las cuales hay una montaña y un gran río. El soberano de esa isla es Ghrtaprstha, otro hijo de Maharaja Priyavrata. Sus habitantes adoran a la Suprema Personalidad de Dios en la forma del agua.
+La quinta isla, Sakadvipa, de 41.200.000 kilómetros de ancho, está rodeada por un océano de yogur. Su soberano es Medhatithi, otro hijo de Maharaja Priyavrata. Se divide también en siete regiones, en cada una de las cuales hay una gran montaña y un gran río. Sus habitantes adoran a la Suprema Personalidad de Dios en la forma de Vayu, el aire.
+La sexta isla, Puskaradvipa, que es el doble de ancha que la anterior, está rodeada de un gran océano de agua pura. Su soberano es Vitihotra, otro hijo de otro hijo de Maharaja Priyavrata. La gran montaña Manasottara divide la isla en dos partes. Sus habitantes adoran a Svayambhu, otro aspecto de la Suprema Personalidad de Dios. Más allá de Puskaradvipa hay otras dos islas, una siempre iluminada por el Sol, y otra siempre en tinieblas. Entre ellas se alza la montaña Lokaloka, a mil seiscientos millones de kilómetros del borde del universo. El Señor Narayana, expandiendo Su opulencia, tiene Su morada en esa montaña. La zona que está más alla de la montaña Lokaloka recibe el nombre de Aloka-varsa; más allá de Aloka-varsa está el destino puro de las personas que desean la liberación.
+En sentido vertical, el globo solar está situado en el mismo centro del universo, en Antariksa, el espacio que separa Bhurloka de Bhuvarloka. La distancia entre venticinco koti-yojanas (unos tres mil doscientos millones de kilómetros). El Sol, debido a que entra en el universo y divide el cielo, recibe el nombre de Martanda, también recibe el nombre de Hiranyagarbha.
+VERSO 1
+sri-suka uvaca
+atah param plaksadinam pramana-laksana-samsthanato varsa- vibhaga upavarnyate
+</p>
+<p class='vspace'>sri-suka uvaca—Sukadeva Gosvami dijo; atah param—después de esto; plaksa adinam—de la isla llamada Plaksa y de las otras; pramana-laksana-samsthanatah—desde el punto de vista de sus dimensiones y sus características y forma particulares; varsa-vibhagah—la división de la isla; upavarnyate—se describe.
+TRADUCCIÓN
+El gran sabio Sukadeva Gosvami dijo: A continuación voy a hablarte de las dimensiones, características y forma de las seis islas, comenzando por la isla de Plaksa.
+VERSO 2
+jambudvipo 'jam yavat-pramana-vistaras tavata ksarodadhina parivestito yatha merur jambu-akhyena lavanodadhir api tato dvi-guna-visalena plaksakhyena pariksipto yatha parikha bahyopavanena. plakso jambu-pramano dvipakhyakaro hiranmaya utthito yatragnir upaste sapta-jihvas tasyadhipatih priyavratatmaja idhmajihvah svam dvipam sapta-varsani vibhajya sapta-varsa-namabhya atmajebhya akalayya svayam atma-yogenopararama.
+</p>
+<p class='vspace'>jambu-dvipah—Jambudvipa, la isla llamada Jambu; ayam—ésta; yavat-pramana-vistarah—de su misma anchura, es decir, 100.000 yojanas (un yojana son unos 12.900 metros); tavata—tanto; ksara-udadhina—por el océano de agua salada; parivestitah—rodeada; yatha—como; meruh—la montaña Sumeru; jambu-akhyena—por la isla llamada Jambu; lavana-udadhih—el océano de agua salada; api—ciertamente; tatah—a continuación; dvi-guna-visalena—el doble de ancha; plaksa-akhyena—por la isla llamada Plaksa; pariksiptah—rodeado; yatha—como; parikha—un foso; bahya—por fuera; upavanena—por un bosque ajardinado; plaksah—un árbol plaksa; jambu-pramanah—con la altura de un árbol jambu; dvipa-akhya-karah—que da nombre a la isla; hiranmayah—de resplandor magnífico; utthitah—que se eleva; yatra—donde; agnih—un fuego; upaste—está situado; sapta-jihvah—con siete llamas; tasya—de esa isla; adhipatih—el rey o señor; priyavra-atmajah—el hijo del rey Priyavrata; idhma-jihvah—llamado Idhmajihva; svam—propia; dvipam—isla; sapta—siete; varsani—regiones; vibhajya—dividir en; sapta-varsa-namabhyah—quien dio nombrea las siete regiones; atmajebhyah—a sus propios hijos; akalayya—ofreciendo; svayam—personalmente; atma-yogena—mediante el servivio devocional del Señor; upararama—se retiró de todas las actividades materiales.
+TRADUCCIÓN
+Del mismo modo que el monte Sumeru está rodeado por Jambudvipa, Jambudvipatambién está rodeada por un océano de agua salada. Jambudvipa tiene una anchura de 100.000 yojanas [1.290.000 kilómetros]; ésa misma es también la anchura del océano de agua salada. Así como el foso que rodea un fortín está a veces rodeado por un bosque ajardinado, el océano de agua salada que rodea a Jambudvipa está rodeado a su vez por Plasadvipa. Plasadvipa es el doble de ancha que el océano de agua salada, o en otras palabras, su anchura es de 200.000 yojanas [2.580.000 kilómetros]. En Plasadvipa crece un árbol plaksa que da nombre a la isla y es tan brillante como el oro y tan alto como el jambu de Jambudvipa. En su raíz arde un fuego con siete llamas. El gobernador de Plasadvipa era Idhmajihva, uno de los hijos de Maharaja Priyavrata. Él dio a las siete regiones de Plasadvipa los nombres de sus siete hijos, y tras repartirlas entre ellos, se retiró de la vida activa para ocuparse en el servicio devocional del Señor.
+VERSOS 3-4
+sivam yavasam subhadram santam ksemam amrtam abhayam iti varsani tesu girayo nadyas ca saptaivabhijñatah. manikuto vajrakuta indraseno jyotisman suparno hiranyasthivo meghamala iti setu-sailah aruna nrmnangirasi savitri suptabhata rtambhara satyambhara iti maha-nadyah. yasam jalopasparsana-vidhuta-rajas-tamaso hamsa-patangordhvayana-satyanga-samjñas catvaro varnah sahasrayuso vibudhopama-sandarsana-prajananah svarga-dvaram trayya vidyaya bhagavantam trayimayam suryam atmanam yajante.
+</p>
+<p class='vspace'>sivam—Siva; yavasam—Yavasa; subhadram—Subhadra; santam—Santa; ksemam—Ksema; amrtam—Amrta; abhayam—Abhaya; iti—así; varsani—las regiones que llevan los nombres de los siete hijos; tesu—en ellas; girayah—montañas; nadyah ca—y ríos; sapta—siete; eva—en verdad; abhijñatah—son conocidos; mani-kutah—Manikuta; vajra-kutah—Vjrakuta; indra-senah—Indrasena; jyotisman—Jyotisman; suparnah—Suparna; hiranya-sthivah—Hiranyastiva; megha-malah—Meghamala; iti—así; setu-sailah—las cordilleras que delimitan los varsas; aruna—Aruna; nrmna—Nrmna; angirasi—angirasi; savitri—Savitri; supta-bhata—Suptabhata; rtambhara—Rtambhara; satyambhara—Satyambhara; iti—así; maha-nadyah—ríos muy grandes; yasam—de los cuales; jala-upasparsana—con tan sólo tocar el agua; vidhuta—limpia; rajas-tamasah—cuyas modalidades de la pasión y la ignorancia; hamsa—hamsa; patanga—patanga; urdhvayana—urdhvayana; satyanga—satyanga; samjñah—llamadas; catvarh—cuatro; varnah—castas o divisiones entre los hombres; sahasr-ayusah—con una vida de mil años; vibudha-upama—parecidos a los semidioses; sandarsana—en sus muy hermosas formas; prajananah—y en engendrar hijos; svarga-dvaram—la puerta a los planetas celestiales; trayya vidyaya—mediante la celebración de ceremonias rituales conforme a los principios védicos; bhagavantam—a la Suprema Personalidad de Dios; trayi-mayam—establecido en los Vedas; suryam atmanam—a la Superalma, representada por el dios del Sol; yajante—adoran.
+TRADUCCIÓN
+Las siete islas [varsas] recibieron los nombres de esos siete hijos: Siva, Yavasa, Subhadra, Santa, Ksema, Amrta y Abhaya. En esas siete regiones hay siete montañas y siete ríos. Los nombres de las montañas son los siguientes: Manikuta, Vjrakuta, Indrasena, Jyotisman, Suparna, Hiranyastiva y Meghamala; los nombres de los ríos son: Aruna, Nrmna, angirasi, Savitri, Suptabhata, Rtambhara y Satyambhara. Quien toque las aguas de esos ríos o se bañe en ellos puede liberarse de inmediato de la contaminación material; los miembros de las cuatro castas que habitan Plaksadvipa, es decir, los hamsas, los patangas, los urdhvayanas y los satyangas, se purifican de ese modo. Los habitantes de Plaksadvipa viven mil años; tienen la hermosura de los semidioses y engendran hijos del mismo modo que ellos. Mediante la celebración perfecta de las ceremonias rituales que se mencionan en los Vedas, y mediante la adoración de la Suprema Personalidad de Dios representado en el dos del Sol, se elevan hasta el Sol, que es un planeta celestial.
+SIGNIFICADO
+Por lo general, se considera que hay tres deidades originales: El Señor Brahma, el Señor Visnu y el Señor Siva; la gente poco informada no considera al Señor Visnu superior al Señor Brahma o al Señor Siva. Esa conclusión, sin embargo, es falsa. Como se afirma en los Vedas: istapurtam bahudha jayamanam visvam bibharti bhuvanasya nabhih tad evagnis tad vayus tat suryas tad u candramah agnih sarva-daivatah. Esto significa que el Señor Supremo, que acepta los resultados de las ceremonias rituales védicas (cuyo nombre técnico es istapurta), que disfruta de ellos, que mantiene toda la creación, que abastece a las entidades vivientes de todo lo que necesitan (eko bahunam yo vidadhati kaman), y que es el punto central de toda la creación, es el Señor Visnu. Él Se expande en semidioses como Agni, Vayu, Surya y Candra, que son simples partes integrales de Su cuerpo. El Señor Krishna dice en la Srimas Bhagavad-gitta (9.23):
+ye 'py anya-devata-bhakta
+yajante sraddhayanvitah
+te 'pi mam eva kaunteya
+yajanty avidhi-purvakam
+«Los devotos que adoran a los semidioses con fe firme, Me adoran a Mí también, pero lo hacen sin seguir los principios regulativos». En otras palabras, si adoramos a los semidioses sin comprender la relación que hay entre ellos y la Suprema Personalidad de Dios, la adoración es irregular. Krishna dice también en la Bhagavad-gita (9.24): aham hi sarva-yajñanam bhokta ca prabhur eva ca: «Yo soy el único disfrutador de las ceremonias rituales».
+Podría arg$uirse que los semidioses son tan importantes como el Señor Visnu, pues sus nombres no son sino diferentes nombres de Visnu. No es, sin embargo, una conclusión bien fundada, pues las Escrituras védicas la contradicen. Los Vedas declaran:
+candrama manaso jatas caksoh suryo ajayata. sotradayas ca pranas ca mukhad agnir ajayata. narayanad brahma, narayanad rudro jayate, narayanat prajapatih jayate, narayanad indro jayate, narayanad astau vasavo jayante, narayanad ekadasa rudra jayante.
+«El semidiós de la Luna, Candra, nació de la mente de Narayana, y el dios del Sol nació de Sus ojos. Las deidades regentes del oído y del aire vital nacieron de Narayana, y la deidad del fuego se generó a partir de Su boca. Prajapati, el Señor Brahma, nació de Narayana, Indra nació de Narayana, y los ocho Vasus, las once expansiones del Señor Siva y los doce adityas también nacieron de Narayana». En las Escrituras védicas smrti se dice también:
+Brahma sambhus tathaivarkas
+candramas ca satakratuh
+evam adyas tathaivanye
+yukta vaisnava-tejasa
+jagat-karyavasane tu
+viyujyante ca tejasa
+vitejas ca te sarve
+pañcatvam upayanti te
+«Brahma, Sambhu, Surya e Indra son simples productos del poder de la Suprema Personalidad de Dios. Esto es así también en el caso de los muchos otros semidioses cuyos nombres no se mencionan aquí. En el momento de la aniquilación de la manifestación cósmica, esas diversas expansiones de las potencias de Narayana se fundirán en Narayana. En otras palabras, todos esos semidioses morirán. Se les retirará la fuerza viviente y se fundirán en Narayana».
+Por lo tanto, la conclusión es que la Suprema Personalidad de Dios es el Señor Visnu, y no el Señor Brahma ni el Señor Siva. Del mismo modo que a veces se acepta a un ministro del gobierno como representante del gobierno en pleno, aunque en realidad sólo tiene a su cargo una sección, los semidioses, que han recibido de Visnu el poder de representarle, actúan en Su nombre, a pesar de no ser tan poderosos como Él. Todos los semidioses deben actuar siguiendo las órdenes de Visnu. Por lo tanto se dice: ekale isvara krsna, ara saba bhrtya: El único amo es el Señor Krishna, el Señor Visnu; todos los demás son Sus obedientes servidores, que actúan tal como Él les ordena. La diferencia entre el Señor Visnu y los semidioses se expresa también en la Bhagavad-gita (9.25): yanti deva-vrata devan... yanti mad-yajino 'pi mam: Los que adoran a los semidioses van a los planetas de los semidioses, mientras que los adoradores del Señor Krishna y del Señor Visnu van a los planetas de Vaikuntha. Eso es lo que afirma el smrti. Por lo tanto, la idea de que el Señor Visnu está al mismo nivel que los semidioses está en contradicción con los sastras. Los semidioses no son supremos. Su supremacía depende de la misericordia del Señor Narayana (Visnu, o Krishna).
+VERSO 5
+pratnasya visno rupam yat
+satyasyartasya brahmanah
+amrtasya ca mrtyos ca
+suryam atmanam imahiti
+</p>
+<p class='vspace'>pratnasya—de la persona más antigua; visnoh—el Señor Visnu; rupam—la forma; yat—que; satyasya—de la Verdad Absoluta; rtasya—del dharma; brahmanah—del Brahman Supremo; amrtasya—del resultado auspicioso; ca—y; mrtyoh—de la muerte (el resultado no auspicioso); ca—y; suryam—el semidiós Surya; atmanam—a la Superalma, el origen de todas las almas; imahi—acudimos en busca de refugio; iti—así.
+TRADUCCIÓN
+[Éste es el mantra con el que adoran al Señor Supremo los habitantes de Plaksadvipa:] Refugiémonos en el dios del Sol, que es un reflejo del Señor Visnu, la Suprema Personalidad de Dios plenamente expansiva, la más antigua de las personas. Visnu es el único Señor digno de adoración. Él es los Vedas, Él es la religión, y el origen de todos los resultados auspiciosos y no auspiciosos.
+SIGNIFICADO
+El Señor Visnu es el Señor Supremo incluso de la muerte, como se confirma en la Bhagavad-gita (mrtyuh sarva-haras caham). Hay dos tipos de actividades, las auspiciosas y las no auspiciosas, y ambas están bajo el control del Señor Visnu. Se dice que las actividades no auspiciosas están a Su espalda, mientras que las auspiciosas están frente a Él. Tanto unas como otras se dan por todo el mundo, y el Señor Visni es quien las controla.
+Con respecto a este verso, Srila Madhvacarya dice:
+surya-somagni-varisa-
+vidhatrsu yatha-kramam
+plaksadi-dvipa-samsthasu
+sthitam harim upasate
+Son muchas las tierras, campos, montañas y mares que hay repartidos por toda la creación, pero en todas partes se adora a la Suprema Personalidad de Dios mediante Sus distintos nombres.
+Srila Virarachava acarya explica este verso del Srimad-Bhagavatam de la siguiente manera. La causa original de la manifestación cósmica debe ser necesariamente la persona más antigua, que, por lo tanto, debe estar libre de la influencia de las transformaciones materiales. Él es el disfrutador de todas las actividades auspiciosas, y la causa de la vida condicionada y de la liberación. El semidiós Surya, que entra en la categoría de las entidades vivientes (jivas) muy poderosas, es una representación de una de las partes de Su cuerpo. Nosotros, por naturaleza, estamos subordinados a las entidades vivientes poderosas; por lo tanto, podemos adorar a los distintos semidioses, considerando que esos seres son representantes poderosos de la Suprema Personalidad de Dios. En este mantra se recomienda la adoración del dios del Sol; pero no debe adorársele como Suprema Personalidad de Dios, sino como un poderoso representante Suyo.
+En el Katha Upanisad (1.3.1), se dice:
+rtam pibantau sukrtasya loke
+guham pravistau parame parardhe
+chayatapau brahmavido vadanti
+pañcagnayo ye ca tri-nacikettah
+«¡Oh, Naciketa!, dos expansiones del Señor Visnu, la entidad viviente diminuta y la Superalma, están situadas en este cuerpo en la cavidad del corazón. Dentro de esa cavidad, la entidad viviente reposa sobre los aires vitales más importantes, y disfruta de los resultados de diversas actividades; la Superalma, que actúa como testigo, la capacita para disfrutar de esos resultados. Los que están bien versados en el conocimiento del Brahman, y los jefes de familia que siguen cuidadosamente las regulaciones védicas, dicen que la diferencia entre las dos es como la que hay entre una sombra y el Sol».
+En el Svetasvatara Upanisad (1.3.1), se dice:
+sa visvakrd visvavidatmayonih
+jñah kala]akaro guni sarvavid yah
+pradhana-ksetrajña-patir gunesah
+samsara-moksa-sthiti-bandha-hetuh
+«El Señor Supremo, el creador de la manifestación cósmica, conoce hasta el último rincón de Su creación. Aunque Él es la causa de la creación, Su aparición no obedece a ninguna causa. Él es consciente en plenitud de todo lo que existe. Él es la Superalma, el amo de todas las cualidades trascendentales, y el amo de la manifestación cósmica en lo que respecta al cautiverio en el estado condicionado de la existencia material y a la liberación de ese cautiverio».
+De manera similar, en el Taittiriya Upanisad (1.3.1), se dice:
+bhisasmad vatah pavate
+bhisodeti suryah
+bhisasmad agnis cendras ca
+mrtyur dhavati pañcamah
+«El viento sopla por temor al Brahman Supremo, el Sol sale y se oculta diariamente por temor a Él, y el fuego actúa por temor a Él. Sólo por temor a Él cumplen con sus deberes respectivos la muerte e Indra, el rey del cielo».
+Como se explica en este capítulo, los habitantes de las cinco islas, comenzando con Plaksadvipa, adoran respectivamente al dios del Sol, al dios de la Luna, al dios del fuego, al dios del aire y al Señor Brahma. Aunque se ocupan en adorar a esos cinco semidioses, en realidad, como indican las palabras pratnasya visno rupam de este verso, están adorando al Señor Visnu, la Superalma de todas las entidades vivientes. Visnu es brahma, amrta, mrtyu: el Brahman Supremo y el origen de todo lo auspicioso y lo no auspicioso. Él está situado en el corazón de todos, incluyendo a todos los semidioses. Como se afirma en la Bhagavad-gita (7.20): kamais tais tair hrta-jñanah prapadyante 'nya devatah: «Aquellos cuya inteligencia les ha sido robada por los deseos materiales se entregan a los semidioses». A las personas prácticamente cegadas por los deseos de disfrute, se les recomienda que adoren a los semidioses para ver satisfechos sus deseos. Todo lo que ellos hacen, lo hacen con la aprobación del Señor Visnu. Las personas demasiado deseosas de disfrutar adoran a diversos semidioses en lugar de adorar al Señor Visnu, la Superalma de todas las entidades vivientes; pero en última instancia a quien están adorando es al Señor Visnu, pues Él es la superalma de todos los semidioses.
+VERSO 6
+plaksasisu pañcasu purusanam ayur indriyam ojah saho balam buddhir vikrama iti ca sarvesam autpattki siddhir avisesena vartate
+</p>
+<p class='vspace'>plaksa-asisu—en las islas, comenzando por Plaksa; pañcasu—cinco; purusanam—de los habitantes; ayur—larga duración de la vida; indriyam—sentidos saludables; ojah—fuerza corporal; sahah—fuerza mental; balam—fuerza física; buddhih—inteligencia; vikrama—valentía; iti—así; ca—también; sarvesam—de todos ellos; autpattki—innatos; siddhir—perfección; avisesena—sin distinción; vartate—existe.
+TRADUCCIÓN
+¡Oh, rey!, en todos los habitantes de las cinco islas, comenzando por Plaksadvipa, se manifiestan por igual y de modo natural la longevidad, el poder de los sentidos, la fuerza física y mental, la inteligencia y la valentía.
+VERSO 7
+plasah sva-samaneneksu-rasodenavrto yatha tatha tatha dvipo 'pi salmalo dvi-guna-visalah samanena surodenavrtah parivrnkte.
+</p>
+<p class='vspace'>plasah—la región que recibe el nombre de Plaksadvipa; sva-samanena—igual en anchura; iksu-rasa—de jugo de caña de azúcar; udena—por un océano; avrtah—rodeada; yatha—tal como; tatha—de manera similar; dvipah—otra isla; api—también; salmalah—que lleva el nombre de Salmala; dvi-guna-visalah—el doble de grande; samanena—de la misma anchura; sura-udena—por un océano de licor; avrtah—rodeada; parivrnkte—existe.
+TRADUCCIÓN
+Plaksadvipa está rodeada por un océano de jugo de caña de azúcar, tan ancho como la propia isla. De manera similar, la siguiente isla, Samalidvipa, es el doble de ancha que Plaksadvipa [400.000 yojanas, es decir, 5.150.000 kilómetros], y está rodeada por una masa de agua que tiene su misma anchura y que recibe el nombre de Surasagara, el océano que sabe a licor.
+VERSO 8
+yatra ha vai salmali plaksayama yasyam vava kila nilayam ahur bhagavatas chandah-stutah patattri-rajasya sa dvipa-hutaye upalaksyate.
+</p>
+<p class='vspace'>yatra—donde; ha vai—ciertamente; salmali—un árbol salmali; plaksa-ayama—tan grande como el árbol plaksa (cien yojanas de ancho y mil cien yojanas de alto); yasyam—en el cual; vava kila—en verdad; nilayam—nilayam; ahuh—ellos dicen; bhagavatah—del muy poderoso; chandah-stutah—que adora al Señor con oraciones védicas; patattri-rajasya—de Garuda, el portador del Señor Visnu; sa—ese árbol; dvipa-hutaye—para el nombre de la isla; upalaksyate—se distingue.
+TRADUCCIÓN
+En Salmalidvipa crece un árbol salmali, que da nombre a la isla. Ese árbol es tan ancho y tan alto como el árbol de ploaksa, es decir, mide 100 yojanas [1.290 kilómetros] de ancho, y 1.100 yojanas [14.200 kilómetros] de alto. Los sabios eruditos dicen que ese árbol gigantesco es la morada de Garuda, el rey de todas las aves, la montura del Señor Visnu. En ese árbol, Garuda ofrece sus oraciones védicas al Señor Visnu.
+VERSO 9
+tad-dvipadhipatih priyavratatmajo yajñabahuh sva-sutebhyah saptabhyas tan-namani sapta-varsani vyabhajat surocanam saumanasyam ramanakam deva-varsam paribhadram apyayanam avijñatam iti.
+</p>
+<p class='vspace'>tad-dvipadhipatih—el soberano de esa isla; priyavrata-atmajah—el hijo de Maharaja Priyavrata; yajña-bahuh—llamado Yajñabahu; sva-sutebhyah—a sus hijos; saptabhyah—en número de siete; tan-namani—con nombres correspondientes a los suyos; sapta-varsani—siete regiones; vyabhajat—dividió; surocanam—Surocana; saumanasyam—Saumanasya; ramanakam—Ramanaka; deva-varsam—Deva-varsa; paribhadram—Paribhadra; apyayanam—apyayana; avijñatam—avij;ata; iti—así.
+TRADUCCIÓN
+El soberano de Salmalidvipa, Yajñabahu, el hijo de Maharaja Priyavrata, dividió la isla en siete regiones, que entregó a sus siete hijos. Cada una de ellas lleva el nombre de uno de los hijos: Surocana, Saumanasya, Ramanaka, Deva-varsa, Paribhadra, apyayana y Avijñata.
+VERSO 10
+tesu varsadrayo nadyas ca saptaivabhijñatah svarasah satasrngo vamadevah kundo mukundah puspa-varsah sahasra-srutir iti. Anumatih sinivali sarasvati kuhu rajani nanda raketi.
+</p>
+<p class='vspace'>tesu—en esas regiones; varsa-adrayah—montañas; nadyah ca—así como ríos; sapta eva—en número de siete; abhijñatah—entendidos; svarasah—Svarasa; sata-srngah—Satasrnga; vama-devah—Vamadeva; kundah—Kunda; mukundah—Mukunda; puspa-varsah—Puspa-varsa; sahasra-srutih—Sahasrasruti; iti—así; anumatih—Anumati; sinivali—Sinivali; sarasvati—Sarasvati; kuhu—Kuhu; rajani—Rajani; nanda—Nanda; raka—Raka; iti—así.
+TRADUCCIÓN
+En esas siete regiones se alzan siete montañas: Svarasa, Satasrnga, Vamadeva, Kunda, Mukunda, Puspa-varsa y Sahasrasruti. Hay también siete ríos, que todavía existen: Anumati, Sinivali, Sarasvati, Kuhu, Rajani, Nanda y Raka.
+VERSO 11
+tad-varsa-purusah srutadhara-viryadhara-vasundharesandhara-samjña bhagavantam vedamayam somam atmanam vedena yajante.
+</p>
+<p class='vspace'>tad-varsa-purusah—los habitantes de esas regiones; srutadhara—srutadhara; viryadhara—viryadhara; vasundhara—vasundhara; isandhara—isandhara; samjñah—conocidos; bhagavantam—a la Suprema Personalidad de Dios; veda-mayam—plenamente versados en el conocimiento védico; somam atmanam—representado por la entidad viviente llamada Soma; vedena—por seguir las reglas y regulaciones de los Vedas; yajante—adoran.
+TRADUCCIÓN
+Mediante un cultivo estricto del varnasrama-dharma, los habitantes de esas islas —los srutadharas, los viryadharas, los vasundharas y los isandharas— adoran a la Suprema Personalidad de Dios en Su expansión como Soma, el dios de la Luna.
+VERSO 12
+sva-gobhih pitr-devebhyo
+vibhajan krsna-suklayoh
+prajanam sarvasam raja-
+ndhah somo na astv iti
+</p>
+<p class='vspace'>sva-gobhih—con la expansión de sus rayos luminosos; pitr-devebhyah—a los pitas y los semidioses; vibhajan—dividir; krsna-suklayoh—en las dos quincenas, la oscura y la luminosa; prajanam—de los habitantes; sarvasam—de todos; raja—el rey; andhah—cereales; somah—el dios de la Luna; nah—hacia nosotros; astu—que siga siendo favorable; iti—así.
+TRADUCCIÓN
+[Los habitantes de Salmalidvipa adoran al semidiós de la Luna con las siguientes palabras:] Con sus rayos, el dios de la Luna ha dividido el mes en dos quincenas, sukla y krsna, para que se ofrezcan cereales a los pitas y a los semidioses. El semidiós de la Luna es quien divide el tiempo, y es el rey de todos los habitantes del universo. Por eso oramos para que siga siendo nuestro rey y guía, y le ofrecemos respetuosas reverencias.
+VERSO 13
+evam surodad bahis tad-dvi-gunah samanenavrto ghrtodena yatha-purvah kusa-dvipo yasmin kusa-stambo deva-krtas tad-dvipakhyakaro jvalana ivaparah sva-saspa-rocisa diso virajayati
+</p>
+<p class='vspace'>evam—así; surodat—del océano de licor; bahih—por fuera de; tad-dvi-gunah—el doble de aquel; samanena—de la misma anchura; avrtah—rodeada; ghrta-udena—un océano de mantequilla clarificada; yatha-purvah—como anteriormente Salmalidvipa; kusa-dvipa—la isla llamada Kusadvipa; yasmin—en la cual; kusa-stambah—hierba kusa; deva-krtah—creada por la voluntad suprema de la Suprema Personalidad de Dios; tat-dvipa-akhya-karah—que da su nombre a la isla; jvalanah—fuego; iva—como; aparah—otro; sva-saspa-rocisa—por la refulgencia de los brotes de hierba tierna; disah—todas las direcciones; virajayati—ilumina.
+TRADUCCIÓN
+Más allá del océano de licor hay otra isla, Kusadvipa, de 800.000 yojanas [10.300.000 kilómetros] de ancho, es decir, el doble de ancha que el océano de licor. Del mismo modo Salmalidvipa está rodeada por un océano de licor, Kusadvipa está rodeada por un océano de ghi líquido, tan ancho como la propia isla. En Kusadvipa hay macizos de hierba kusa, de los cuales recibe su nombre la isla. Esa hierba kusa, que fue creada por los semidioses por voluntad del Señor Supremo, es como una segunda forma del fuego, pero sus llamas son muy suaves y agradables. Sus tiernos brotes iluminan todas las direcciones.
+SIGNIFICADO
+Partiendo de las descripciones de este verso, podemos establecer una hipótesis bien fundada acerca de la naturaleza de las llamas que arden sobre la Luna. Como el Sol, la Luna también tiene que estar en llamas, pues no puede haber luz si no hay llamas, Sin embargo, las llamas de la Luna, a diferencia de las del Sol, tienen que ser suaves y agradables. Estamos convencidos de ello. En los versos del Srimad-Bhagavatam no se acepta la teoría actual de que la Luna está cubierta de polvo. En relación con este verso, Srila Visvanatha Cakravarti Thakura dice: susaspani sukomala-sikhas tesam rocisa: La hierba kusa ilumina todas las direcciones, pero sus llamas son muy suaves y agradables. Esto da una idea de la naturaleza de las llamas que arden sobre la Luna.
+VERSO 14
+tad-dvipa-patih praiyavrato rajan hiranyareta nama svam dvipam saptabhyah sva-putrebhyo yatha-bhagam vibhajya svayam tapa atisthata vasu-vasudana-drdharuci-nabhigupta-stutyavrata-viviikta-vamadeva-namabhyah.
+</p>
+<p class='vspace'>tad-dvipa-patih—el soberano de la isla; praiyavratah—el hijo de Maharaja Priyavrata; rajan—¡oh, rey!; hiranyareta—Hiranyareta; nama—llamado; svam—su propia; dvipam—isla; saptabhyah—a siete; sva-putrebhyah—a sus propios hijos; yatha-bhagam—conforme a la división; vibhajya—dividir; svayam—él mismo; tapah atisthata—ocupado en austeridades; vasu—a Vasu; vasudana—Vasudana; drdharuci—Drdharuci; nabhi-gupta—Nabhigupta; stutya-vrata—Stutyavrata; vivikta—Vivikta; vama-deva—Vamadeva; namabhyah—llamados.
+TRADUCCIÓN
+¡Oh, rey!, en esa isla reinaba otro hijo de Maharaja Priyavrata, Hiranyareta, quien la dividió en siete partes y entregó una a cada uno de sus siete hijos conforme a los derechos hereditarios. Después de esto, el rey se retiró de la vida familiar para ocuparse en austeridades. Los nombres de sus hijos fueron Vasu, Vasudana, Drdharuci, Nabhigupta, Stutyavrata, Vivikta y Vamadeva.
+VERSO 15
+tesam varsesu sima-girayo nadyas cabhijñatah sapta saptaiva cakras catuhsrngah kapilas citrakuto devanika urdhvaroma dravina iti rasakulya madhukulya mitravinda srutavinda devagarbha ghrtacyuta mantramaleti.
+</p>
+<p class='vspace'>tesam—todos esos hijos; varsesu—en las regiones; sima-girayah—montañas fronterizas; nadyah ca—así como ríos; abhijñatah—conocidos; sapta—siete; sapta—siete; eva—ciertamente; cakrah—Cakra; catuh-srngah—Catuhsrngah; kapilah—Kapila; citrakutah—Citrakuta; devanikah—Devanika; urdhva-roma—¶rdhvaroma; dravinah—Dravina; iti—así; rama-kulya—Rasakulya; madhu-kulya—Madhukulya; mitra-vinda—Mitravinda; sruta-vinda—Srutavinda; deva-garbha—Devagarbha; ghrta-cyuta—Ghrtacyuta; Mantra-mala—mantra-mala; iti—.
+TRADUCCIÓN
+Esas siete islas están separadas por siete montañas, que reciben los nombres de Cakra, Catuhsrngah, Kapila, Citrakuta, Devanika, ¶rdhvaroma y Dravina. También hay siete ríos: Rasakulya, Madhukulya, Mitravinda, Srutavinda, Devagarbha, Ghrtacyuta y Mantramala.
+VERSO 16
+yasam payobhih kusadvipaukasah kusala-kovidabhiyukta-kulaka-samjña bhagavantam jataveda-sarupinam karma-kausalena yajante.
+</p>
+<p class='vspace'>yasam—de los cuales; payobhih—con el agua; kusa-dvipa-okasah—los habitantes de la isla de Kusadvipa; kusala—kusala; kovida—kovida; abhiyukta—abhiyukta; kulaka—kulaka; samjñah—llamados; bhagavantam—a la Suprema Personalidad de Dios; jataveda—el semidiós del fuego; sa-rupinam—manifestando la forma; karma-kausalena—con experiencia en las ceremonias rituales; yajante—adoran.
+TRADUCCIÓN
+Los habitantes de la isla de Kusadvipa son conocidos con los nombres de kusalas, kovidas, abhiyuktas, y kulakas. Son como los brahmanas, ksatriyas, vaisyas y sudras, respectivamente. Todos ellos se purifican por bañarse en las aguas de esos ríos. Son expertos en celebrar ceremonias rituales siguiendo las órdenes de las Escrituras védicas. De ese modo adoran al Señor en Su aspecto de semidiós del fuego.
+VERSO 17
+parasya brahmanah saksaj
+jata-vedo 'si havyavat
+devanam purusanganam
+yajñena purusam yajeti
+</p>
+<p class='vspace'>parasya—del Supremo; brahmanah—Brahman; saksat—directamente; jata-vedah—¡oh, dios del fuego!; asi—tú eres; havyavat—el portador de las ofrendas védicas de cereales y ghi; devanam—de todos los semidioses; purusa-anganam—que son miembros de la Persona Suprema; yajñena—mediante la celebración de sacrificios rituales; purusam—a la Persona Suprema; yaja—por favor; iti—así.
+TRADUCCIÓN
+[Éste es el mantra con que adoran al dios del fuego los habitantes de Kusadvipa:] ¡Oh dios del fuego!, tú eres una parte de la Suprema Personalidad de Dios, Hari, a quien llevas todas las ofrendas de los sacrificios. Por eso te pedimos que ofrezcas a la Suprema Personalidad de Dios los elementos que estamos ofreciendo en yajña a los semidioses, pues el Señor es el verdadero disfrutador.
+SIGNIFICADO
+Los semidioses son sirvientes que asisten a la Suprema Personalidad de Dios. Cuando adoramos a los semidioses, éstos, como sirvientes de la Suprema Personalidad de Dios, llevan las ofrendas del sacrificio del Señor, del mismo modo que los recaudadores de impuestos ingresan en la tesorería del Estado las rentas que han cobrado de los ciudadanos. Los semidioses no pueden aceptar las ofrendas de sacrificio; su labor es entregarlas a la Suprema Personalidad de Dios. Como Srila Visvanatha Cakravarti Thakura dice: Yasya prasadad bhagavat-prasadahah: El guru, como representante de la Suprema Personalidad de Dios, entrega al Señor todo lo que se le ofrece. De la misma manera, los semidioses, como sirvientes fieles, entregan al Señor Supremo todo lo que se les ofrece en las ceremonias de sacrificio. No hay nada de malo en adorar a los semidioses con esa mentalidad; pero pensar que los semidioses son independientes de la Suprema Personalidad de DIos o iguales a Él se considera hrta-jñana, falta de inteligencia (kamais tais tair hrta-jñanah). Quien piense que los benefactores verdaderos son los propios semidioses está equivocado.
+VERSO 18
+tatha ghrtodad bahih krauñcadvipo dvi-gunah sva-manena ksirodena parita upaknpto vrto yatha kusadvipo ghrtodena yasmin krauñco nama parvata-rajo dvipa-nama-nirvartaka aste.
+</p>
+<p class='vspace'>tatha—así también; ghrta-udat—del océano de mantequilla clarificada; bahih—por fuera; krauñca-dvipah—otra isla, que recibe el nombre de Krauñcadvipa; dvi-gunah—el doble de ancha; sva-manena—de la misma medida; ksira-udena—por un océano de leche; paritah—por todas partes; upaknptah—rodeada; vrtah—rodeada; yatha—como; kusa-dvipah—la isla de Kusadvipa; ghrta-udena—por un océano de mantequilla clarificada; yasmin—en el cual; krauñcah nama—llamada Krauñca; parvata-rajah—el rey de las montañas; dvipa-nama—el nombre de la isla; nirvartakah—que da; aste—existe.
+TRADUCCIÓN
+Más allá del océano de mantequilla clarificada hay otra isla, Krauñcadvipa, de 1.600.000 yojanas [20.600.000 kilómetros] de ancho, es decir, el doble de ancha que el océano de mantequilla clarificada. Del mismo modo que Kusadvipa está rodeada por un océano de mantequilla clarificada, Krauñcadvipa está rodeada por un océano de leche, tan ancho como la propia isla. En Krauñcadvipa se levanta la gran montaña Krauñca, que da nombre a la isla.
+VERSO 19
+yo 'sau guha-praharanonmathita-nitamba-kuñjo 'pi ksirodena-sicyamano bhagavata varunenabhigupto vibhayo babhuva.
+</p>
+<p class='vspace'>yah—que; asau—esa (montaña); guha-praharana—por las armas de Karttikeya, el hijo del Señor Siva; unmathita—sacudidos; nitamba-kuñjah—cuyos árboles y plantas de las laderas; api—aunque; ksira-udena—por el océano de leche; asicyamanah—siempre bañada; bhagavata—por el muy poderoso; varunena—el semidiós Varuna; abhiguptah—protegida; vibhayah babhuva—se ha liberado del temor.
+TRADUCCIÓN
+Las plantas de las laderas del monte Krauñca sufrieron el ataque de las armas de Karttikeya y fueron destruidas; a pesar de ello, la montaña está libre de temor, porque está protegida por Varunadeva y bañada por el océano de leche en todos sus flancos.
+VERSO 20
+tasminn api praiyavrato ghrtaprstho namadhipatih sve dvipe varsani sapta vibhajya tesu putra-namasu sapta rikthadan varsapan nivesya svayam bhagavan bhagavatah parama-kalyana-yasasa atma-bhutasya hares caranaravindam upajagama.
+</p>
+<p class='vspace'>tasmin—en esa isla; api—también; praiyavratah—el hijo de Maharaja; ghrta-prsthah—Ghrtaprstha; nama—llamado; adhipatih—el rey de esa isla; sve—su propia; dvipe—en la isla; varsani—regiones; sapta—siete; vibhajya—dividir; tesu—en cada una de ellas; putra-namasu—con los nombres de sus hijos; sapta—siete; riktha-dan—hijos; varsa-pan—los soberanos de los varsas; nivesya—nombrar; svayam—él mismo; bhagavan—muy poderoso; bhagavatah—a la Suprema Personalidad de Dios; parama-kalyana-yasasah—cuyas glorias son tan auspiciosas; atma-bhutasya—el alma de todas las almas; hareh carana-aravindam—los pies de loto del Señor; upajagama—se refugió en.
+TRADUCCIÓN
+El gobernador de esa isla era otro hijo de Maharaja Priyavrata. Se llamaba Ghrtaprstha, y era un gran sabio erudito. También él dividió su isla entre sus siete hijos. Tras dividirla en siete partes, a las que puso los nombres de sus hijos, Ghrtaprstha Maharaja se retiró por completo de la vida familiar y se refugió en los pies de loto del Señor, el alma de todas las almas, que tiene todas las cualidades auspiciosas. De ese modo alcanzó la perfección.
+VERSO 21
+amo madhuruho meghaprstah sudhama bhrajisthah sudhama bhrajistho lohitarno vanaspatir iti ghrtaprstha-sutas tesam varsa-girayah sapta saptaiva nadyas cabhikhyatah suklo vardhamano bhojana upabarhino nando nandanah sarvatobhadra iti abhaya amrtaugha aryaka tirthavati rupavati pavitravati sukleti.
+</p>
+<p class='vspace'>amah—ama; madhu-ruhah—Madhuruha; megha-prstah—Meghaprsta; sudhama—Sudhama; bhrajisthah—Bhrajistha; lohitarnah—Lohitarna; vanaspatih—Vanaspati; iti—así; ghrtaprstha-sutah—los hijos de Ghrtaprstha; tesam—de esos hijos; varsa-girayah—montañas que marcan los límites de las regiones; sapta—siete; sapta—siete; eva—también; nadyah—ríos; ca—y; abhikhyatah—famosas; suklah vardhamanah—Sukla y Vardhamana; bhojanah—Bhojana; upabarhinah—Upabarhina; nandah—Nanda; nandanah—Nandana; sarvatah-bhadrah—Sarvatobhadra; iti—así; abhaya—Abhaya; amrtaugha—Amrtaugha; aryaka—Aryaka; tirthavati—Tirthavati; rupavati—Rupavati; pavitravati—Pavitravati; sukla—Sukla; iti—así.
+TRADUCCIÓN
+Los nombres de los hijos de Maharaja Ghrtaprstha son amah, Madhuruha, Meghaprstha, Sudhama, Bhrajistha, Lohitarna y Vanaspati. En su isla hay siete montañas que marcan los límites de las siete regiones; también hay siete ríos. Los nombres de las montañas son: Sukla, Vardhamana, Bhojana, Upabarhina, Nanda, Nandana y Sarvatobhadra. Los ríos son los siguientes:  Abhaya, Amrtaugha, Aryaka, Tirthavati, Rupavati, Pavitravati y Sukla.
+VERSO 22
+yasam ambhah pavitram amalam upayuñjanah purusa-rsabha-dravina-devaka-samjña varsa-purusa apomayam devam apam purnenañjalina yajante.
+</p>
+<p class='vspace'>yasam—de todos los ríos; ambhah—el agua; pavitram—muy santificada; amalam—muy limpia; upayuñjanah—empleando; purusa—purusa; rsabha—rsabha; dravina—dravina; devaka—devaka; samjñah—que reciben estos nombres; varsa-purusah—los habitantes de esos varsas; apah-mayam—Varuna, el señor del agua; devam—como deidad adorable; apam—de agua; purnena—llenas con; añjalina—palmas unidas; yajante—adoran.
+TRADUCCIÓN
+Los habitantes de Krauñcadvipa se dividen en cuatro castas: los purusas, los rsabhas, los dravinas y los devaka. Todos ellos adoran a la Suprema Personalidad de Dios con el agua de esos ríos santificados, ofreciéndola en el cuenco de las manos a los pies de loto de Varuna, el semidiós cuya forma es de agua.
+SIGNIFICADO
+Visvanatha Cakravarti Thakura dice: apomayah asmayam: Con las manos juntas, los habitantes de las diversas secciones de Krauñcadvipa ofrecen las sagradas aguas de los ríos a una deidad hecha de piedra o de hierro.
+VERSO 23
+apah purusa-viryah stha
+punantir bhur-bhuvah-suvah
+ta nah punitamiva-ghnih
+sprsatam atmana bhuva iti
+</p>
+<p class='vspace'>apah—¡oh, agua!; purusa-viryah—dotada con la energía de la Suprema Personalidad de Dios; stha—tú estás; punantih—santificando; bhuh—del sistema planetario querecibe el nombre de Bhuh; bhuvah—del sistema planetario Bhuvah; suvah—del sistema planetario Svah; tah—ese agua; nah—de nosotros; punita—purifica; amiva-ghnih—que destruye el pecado; sprsatam—de aquellos que tocan; atmana—por tu posición constitucional; bhuvah—los cuerpos; iti—así
+TRADUCCIÓN
+[Los habitantes de Krauñcadvipa adoran con este mantra:] ¡Oh, agua de los ríos!, tú has recibido energía de la Suprema Personalidad de Dios, y por ello purificas los tres sistemas planetarios, conocidos con los nombres de Bhuloka, Bhuvarloka y Svarloka. Tú, por tu propia naturaleza constitucional, eliminas los pecados; ésa es la razón por la que te estamos tocando. Por favor, continúa purificándonos.
+SIGNIFICADO
+En la Bhagavad-gita (7.4), Krishna dice:
+bhumir apo 'nalo vayuh
+kham mano buddhir eva ca
+ahankara itiyam me
+bhinna prakrtir astadha
+«La tierra, el agua, el fuego, el aire, el éter, la mente, la inteligencia y el ego falso; estos ocho elementos en conjunto constituyen Mis energías materiales separadas».
+La energía del Señor actúa por toda la creación, del mismo modo que las energías del Sol, la luz y el calor, actúan dentro del universo y hacen que todo funcione. Los ríos que se mencionan concretamente en los sastras también son energías de la SUprema Personalidad de Dios, y la gente que se baña en ellos con regularidad se purifica. En la práctica puede verse que mucha gente se cura de sus enfermedades por bañarse en el Ganges. De la misma manera, los habitantes de Krauñcadvipa se purifican bañándose en los ríos que discurren por la región.
+VERSO 24
+evam purastat ksirodat parita upavesitah sakadvipo dvatrimsal-laksa-yojanayamah samanena ca dadhi-mandodena parito yasmin sako nama mahiruhah sva-ksetra-vyapadesako yasya ha maha-surabhi-gandhas tam dvipam anuvasayati.
+</p>
+<p class='vspace'>evam—así; purastat—más allá de; ksira-udat—del océano de leche; paritah—todo alrededor; upavesitah—situada; saka-dvipah—otra isla, conocida con el nombre de Sakadvipa; dva-trimsat—treinta y dos; laksa—100.000; yojana—yojanas; ayamah—cuya medida; samanena—de igual tamaño; ca—y; dadhi-manda-udena—por un océano lleno de agua que es como yogur batido; paritah—rodeada; yasmin—región en la que; sakah—sakah; nama—llamada; mahiruhah—una higuera; sva-ksetra-vyapadesakah—que da su nombre a la isla; yasya—de la cual; ha—en verdad; maha-surabhi—un muy fragante; gandhah—aroma; tam dvipam—a esa isla; anuvasayati—llena de fragancia.
+TRADUCCIÓN
+Más allá del océano de leche hay otra isla, Sakadvipa, cuya anchura es de 3.200.000 yojanas [41.260.000 kilómetros]. Del mismo modo que Krauñcadvipa está rodeada por su océano de leche, Sakadvipa está rodeada por un océano de yogur batido, tan ancho como la propia isla. En Sakadvipa crece un gran árbol saka, del cual recibe la isla su nombre. Es un árbol muy fragante. EN verdad, la isla entera está perfumada con su aroma.
+VERSO 25
+tasyapi praiyavrata evadhipatir namna medhatithih so 'pi vibhajya sapta varsani putra-namani tesu svatmajan purojava-manojava-pavamana-dhumranika-citrarepha-bahurupa-visvadhara-samjñan nidhapyadhipatin svayam bhagavaty ananta avesita-matis tapovanam pravivesa.
+</p>
+<p class='vspace'>tasya api—también en esa isla; praiyavratah—un hijo de Maharaja Priyavrata; eva—ciertamente; adhipatih—el gobernador; namna—de nombre; medha-tithih—Medhatithi; sah api—también él; vibhajya—dividir; sapta varsani—siete divisiones de la isla; putra-namani—con los nombres de sus hijos; tesu—en ellas; sva-atmajan—sus propios hijos; purojava—Purojava; manojava—Manojava; pavamana—Pavamana; dhumranika—Dhumranika; citra-repha—Citrarepha; bahu-rupa—Bahurupa; visvadhara—Visvadhara; samjñan—tener por nombre; nidhapya—establecer como; adhipatin—los gobernadores; svayam—él mismo; bhagavati—en la Suprema Personalidad de Dios; anante—en el ilimitado; avesita-matih—cuyamente estaba plenamente absorta; tapah-vanam—en el bosque al que se va a meditar; pravivesa—entró.
+TRADUCCIÓN
+El soberano de esa isla, que también era hijo de Priyavrata, se llamaba Medhatithi. También él dividió su isla en siete secciones, a las que dio el nombre de sus propios hijos. Éstos, a quienes hizo reyes de la isla, se llaman Purojava; manojava—Manojava; pavamana—Pavamanad, Dhumranika, Citrarepha, Bahurupa y Visvadhara. Tras dividir la isla y establecer a sus hijos como gobernadores, Medhatithi se retiró, y para fijar su mente por completo en los pies de loto de la Suprema Personalidad de Dios, entró en un bosque adecuado para la meditación.
+VERSO 26
+etesam varsa-maryada-girayo nadyas ca sapta saptaiva isana urusngo balabhadrah satakesarah sahasrasroto devapalo mahanasa iti anaghayurda ubhayasprstir aparajita pañcapadi sahasrasrutir nijadhrtir iti.
+</p>
+<p class='vspace'>etesam—de todas esas divisiones; varsa-maryada—actuando como límites fronterizos; girayah—las grandes montañas; nadyah ca—y los ríos también; sapta—siete; sapta—siete; eva—en verdad; isanah—Isanah; urusngah—Urusnga; bala-bhadrah—Balabhadra; sata-kesarah—Satakesara; sahasra-srotah—Sahasrasrota; deva-palah—Devapala; mahanasah—Mahanasa; iti—así; anagha—Anagha; ayurda—Ayurda; ubhayasprstih—Ubhayasprsti; aparajita—Aparajita; pañcapadi—Pañcapadi; sahasra-srutih—Sahasrasruti; nija-dhrtih—Nijadhrti; iti—así.
+TRADUCCIÓN
+También en esas regiones hay siete ríos y siete montañas que delimitan las fronteras. Las montañas son: Isana, Urusnga, Balabhadra, Satakesara, Sahasrasrota, Devapala y Mahanasa. Los ríos son: Anagha, Ayurda, Ubhayasprsti, Aparajita, Pañcapadi, Sahasrasruti y Nijadhrti.
+VERSO 27
+tad-varsa-purusa rtavrata-satyavrata-danavratanuvrata-namano bhagavantam vayv-atmakam pranayama-vidhuuta-rajas-tamasah parama-samadhina yajante.
+</p>
+<p class='vspace'>tat-varsa-purusah—los habitantes de esas regiones; rta-vrata—rtavrata; satyavrata—satyavrata; dana-vrata—danavrata; anuvrata—anuvrata; namanah—con los cuatro nombres; bhagavantam—a la Suprema Personalidad de Dios; vayu-atmakam—representada por el semidiós Vayu; pranayama—con la práctica reguladora de los aires del cuerpo; vidhuuta—purificado; rajah-tamasah—cuya pasión e ignorancia; parama—sublime; samadhina—mediante el trance; yajante—adoran.
+TRADUCCIÓN
+Los habitantes de esas islas también se dividen en cuatro castas: los rtavrata, los satyavratas, los danavratas, y los anuvratas, equivalentes a los brahmanas, los ksatriyas, los vaisyas, y los sudras. Practican pranayama y yoga místico, y, estado de trance, adoran al Señor Supremo en la forma de Vayu.
+VERSO 28
+antah-pravisya bhutani
+yo bibharty atma-ketubhih
+antaryamisvarah saksat
+patu no yad-vase sphutam
+</p>
+<p class='vspace'>antah-pravisya—entrando en; bhutani—todas las entidades vivientes; yah—quien; bibharti—mantiene; atma-ketubhih—con las funciones de los aires internos (prana, apana, etc.); antaryami—la Superalma que está en el interior; isvarah—la Persona Suprema; saksat—directamente; patu—por favor, mantén; nah—a nosotros; yat-vase—bajo cuyo control; sphutam—la manifestación cósmica.
+TRADUCCIÓN
+[Los habitantes de Sakadvipa adoran a la Suprema Personalidad de DIos en la forma de Vayu con las siguientes palabras:] ¡Oh, Persona Suprema, que estás situado en el cuerpo en la forma de la Superalma!, Tú diriges las diversas acciones de los distintos aires, como el prana, y de ese modo mantien es a todas las entidades vivientes. ¡Oh, Señor!, ¡oh, Superalma de todos!, ¡oh, controlador de la manifestación cósmica y todo lo que existe!, Te pedimos que nos protejas de todo peligro.
+SIGNIFICADO
+Mediante la práctica del yoga místico denominada pranayama, el yogi controla los aires que circulan en el cuerpo a fin de mantenerlo en una condición saludable. De ese modo, el yogi llega al estado de trance y trata de ver a la Superalma en lo profundo del corazón. Pranayama es el medio para alcanzar el samadhi, o trance, que nos permite absorbernos por completo en la contemplación del Señor Supremo en la forma de antaryami, la Superalma que está dentro del corazón.
+VERSO 29
+evam eva dadhi-mandodat paratah puskaradvipas tato dvi-gunayamah samantata upakalpitah samanena svadudakena samudrena bahir avrto yasmin brhat-puskaram jvalana-sikhamala-kanaka-patrayutayutam bhagavatah kamalasanasyadhyasanam parikalpitam.
+</p>
+<p class='vspace'>evam eva—de ese modo; dadhi-manda-udat—el océano de yogur; paratah—más allá de; puskara-dvipah—otra isla, llamada Puskaradvipa; tatah—que esa (Sakadvipa); dvi-guna-ayamah—cuyo tamaño es el doble de; samantatah—por todos los lados; upakalpitah—rodeada; samanena—de igual anchura; svadu-udakena—con agua dulce; samudrena—por un océano; bahih—por fuera; avrtah—rodeada; yasmin—en la cual; brhat—muy grande; puskaram—flor de loto; jvalana-sikha—como las llamas de un fuego ardiente; amala—puro; kanaka—oro; patra—hojas; ayuta-ayutam—con 100.000.000; bhagavatah—muy poderoso; kamala-asanasya—del Señor Brahma, que tiene su asiento en la flor de loto; adhyasanam—asiento; parikalpitam—considerado.
+TRADUCCIÓN
+Más allá del océano de yogur hay otra isla, Puskaradvipa, de 6.400.000 yojanas [82.400.000 kilómetros] de anchura, es decir, el doble de ancha que el océano de yogur. Está rodeada por un océano de agua deliciosa, tan ancho como la propia isla. En Puskaradvipa crece una gran flor de loto con 100.000.000 de pétalos de oro puro, tan brillante como las llamas del fuego. Se considera que esa flor de loto es el asiento del Señor Brahma, que es el ser viviente más poderoso y a quien, por ello, se le da a veces el nombre de bhagavan.
+VERSO 30
+tad-dvipa-madhye manasottara-namaika evarvacina-paracina-varsayor maryadacalo 'yuta-yojanocchrayayamo yatra tu catasrsu diksu catvari purani loka-palanam indradinam yad-uparistat surya-rathasya merum paribhramatah samvatsaratmakam cakram devanam aho-ratrabhyam paribhramati.
+</p>
+<p class='vspace'>tad-dvipa-madhye—dentro de la isla; manasottara—Manasottara; nama— llamada; ekah—una; eva—en verdad; arvacina—en ese lado; paracina—y más allá, o por fuera; varsayoh—de regiones; maryada—señalando el límite; acalah— una gran montaña; ayuta—diez mil; yojana—unos trece kilómetros; ucchraya- ayamah—cuyas anchura y altura; yatra—donde; tu—pero; catasrsu—en las cuatro; diksu—direcciones; catvari—cuatro; purani—ciudades; loka-palanam—de los directores de los sistemas planetarios; indra-adinam—encabezados por Indra; yat—del cual; uparistat—en la cima; surya-rathasya—del carro del dios del Sol; merum—la montaña Meru; paribhramatah—mientras da la vuelta alrededor; samvatsara-atmakam—que comprende una samvatsara; cakram—rueda u órbita; devanam—de los semidioses; ahah-ratrabhyam—de día y de noche; paribhramati—gira en torno.
+TRADUCCIÓN
+En el centro de la isla se alza la gran montaña Manasottara, que sirve de separación entre las partes interior y exterior de la isla. Tiene 10.000 yojanas [129.000 kilómetros] de ancho y de alto. Sobre esa montaña, y en las cuatro direcciones, se encuentran las residencias de Indra y otros semidioses. El Sol recorre la cima de la montaña en la cuadriga del dios del Sol, y gira en torno al monte Meru siguiendo una órbita denominada samvatsara. La ruta del Sol por el lado norte se denomina uttarayana, y por el lado sur, daksinayana. Un lado representa un día para los semidioses, y el otro representa su noche.
+SIGNIFICADO
+Que el Sol se mueve lo confirma la Brahma-samhita (5.52): yasyajñaya bhramati sambhrta-kala-cakrah. El Sol describe una órbita alrededor del monte Sumeru, seis meses en el lado norte, y otros seis en el sur. Ésa es la duración de un día y una noche de los semidioses en los sistemas planetarios superiores.
+VERSO 31
+tad-dvipasyapy adhipatih praiyavrato vitihotro namaitasyatmajau ramanaka-dhataki-namanau varsa-pati niyujya sa svayam purvajavad-bhagavat-karma-sila evaste.
+</p>
+<p class='vspace'>tat-dvipasya—de esa isla; api—también; adhipatih—el gobernador; praiyavratah—un hijo de Maharaja Priyavrata; vitihotrah nama—llamado Vitihotra; etasya—de él; atma-jau—a los dos hijos; ramanaka—Ramanaka; dhataki—y Dhataki; namanau—con los nombres; varsa-pati—los gobernadores de las dos regiones; niyujya—nombrando; sah svayam—él mismo; purvaja-vat— como sus otros hermanos; bhagavat-karma-silah—absorto en actividades para satisfacer a la Suprema Personalidad de Dios; eva—en verdad; aste—permanece.
+TRADUCCIÓN
+El gobernador de la isla, el hijo de Maharaja Priyavrata llamado Vitihotra, tuvo dos hijos, Ramanaka y Dhataki, a quienes entregó las dos partes de la isla; después de eso, también él, como su hermano Medhatithi, consagró su vida a la satisfacción de la Suprema Personalidad de Dios.
+VERSO 32
+tad-varsa-purusa bhagavantam brahma-rupinam sakarmakena karmanaradhayantidam codaharanti.
+</p>
+<p class='vspace'>tat-varsa-purusah—los habitantes de esa isla; bhagavantam—a la Suprema Personalidad de Dios; brahma-rupinam—manifestado como el Señor Brahma, que está sentado en el loto; sa-karmakena—para satisfacer los deseos materiales; karmana—con la práctica de actividades rituales conforme a los Vedas; aradhayanti—adoran; idam—esto; ca—y; udaharanti—cantan.
+TRADUCCIÓN
+Para satisfacer sus deseos materiales, los habitantes de esa región adoran a la Suprema Personalidad de Dios representado en el Señor Brahma, y ofrecen oraciones al Señor de la siguiente manera.
+VERSO 33
+yat tat karmamayam lingam
+brahma-lingam jano 'rcayet
+ekantam advayam santam
+tasmai bhagavate nama iti
+</p>
+<p class='vspace'>yat—que; tat—eso; karma-mayam—que puede obtenerse mediante el sistema ritual védico; lingam—la forma; brahma-lingam—que da a conocer al Brahman Supremo; janah—una persona; arcayet—debe adorar; ekantam—que tiene plena fe en el Supremo; advayam—no diferente; santam—pacífico; tasmai—a él; bhagavate—el muy poderoso; namah—nuestros respetos; iti—así.
+TRADUCCIÓN
+Al Señor Brahma se le conoce con el nombre de karma-maya, la forma de las ceremonias rituales, debido a que su posición puede alcanzarse mediante la celebración de ceremonias rituales, y debido a que de él se manifiestaron los himnos rituales de los Vedas. Él está consagrado a la Suprema Personalidad de Dios sin desviación alguna; por lo tanto, en cierto sentido no es diferente del Señor. Sin embargo, su adoración no debe ser de carácter monista, sino que debe seguir las pautas del dualismo. Siempre debemos mantenernos como servidores del Señor Supremo, la Deidad adorable suprema. Por consiguiente, ofrecemos respetuosas reverencias al Señor Brahma, la forma manifestada del conocimiento védico.
+SIGNIFICADO
+En este verso es significativa la palabra karma-mayam («que se puede obtener mediante el sistema ritual védico»). Los Vedas dicen: svadharma- nisthah sata-janmabhih puman viriñcatam eti: «Quien siga estrictamente los principios del varnasrama-dharma durante un mínimo de cien vidas será recompensado con el puesto de brahma». También es significativo que el Señor Brahma nunca se considera uno con la Suprema Personalidad de Dios, a pesar de ser extremadamente poderoso; siempre sabe que es un servidor eterno del Señor. En el plano espiritual, el Señor y el sirviente son idénticos; por esa razón, en este verso Brahma recibe el calificativo de bhagavan. Bhagavan es la Suprema Personalidad de Dios, Krishna; sin embargo, el significado de las Escrituras védicas se revela ante el devoto que Le sirve con fe plena. Por eso Brahma recibe el nombre de brahma-linga, que indica que su forma está compuesta por entero de conocimiento védico.
+VERSO 34
+tatah parastal lokaloka-namacalo lokalokayor antarale parita upaksiptah.
+</p>
+<p class='vspace'>tatah—de ese océano de agua potable; parastat—más allá; lokaloka-nama— llamada Lokaloka; acalah—una montaña; loka-alokayoh antarale—entre los países llenos de luz solar y los que no la reciben; paritah—alrededor; upaksiptah—existe.
+TRADUCCIÓN
+A continuación, más allá del océano de agua dulce, y rodeándolo por completo, se alza la montaña Lokaloka, que separa los países plenamente iluminados por el Sol de aquellos que no reciben su luz.
+VERSO 35
+yavan manasottara-mervor antaram tavati bhumih kañcany anyadarsa-talopama yasyam prahitah padartho na kathañcit punah pratyupalabhyate tasmat sarva-sattva-parihrtasit.
+</p>
+<p class='vspace'>yavat—tanto como; manasottara-mervoh antaram—las tierras comprendidas entre Manasottara y Meru (contando desde el punto central del monte Sumeru); tavati—toda esa; bhumih—tierra; kañcani—hecha de oro; anya—otra; adarsa- tala-upama—cuya superficie es como la superficie de un espejo; yasyam—sobre la cual; prahitah—caída; padarthah—una cosa; na—no; kathañcit—de ninguna manera; punah—de nuevo; pratyupalabhyate—se encuentra; tasmat—por lo tanto; sarva-sattva—por todas las entidades vivientes; parihrta—abandonada; asit—fue.
+TRADUCCIÓN
+Más allá del océano de agua dulce hay una región que es tan ancha como la zona comprendida entre el centro del monte Sumeru y los límites de la montaña Manasottara; habitan en ella muchos seres vivos. A partir de ahí, y hasta la montaña Lokaloka, se extiende una región hecha de oro. Debido a su dorada superficie, refleja la luz como un espejo, y cuando un objeto físico cae en ella, no se lo puede volver a percibir jamás. Por esta razón, esa dorada región ha sido abandonada por todas las entidades vivientes.
+VERSO 36
+lokaloka iti samakhya yad anenacalena lokalokasyantarvar-tinavasth)apyate.
+</p>
+<p class='vspace'>loka—con luz (o con habitantes); alokah—sin luz (o sin habitantes); iti—de ese modo; samakhya—designación; yat—que; anena—por esa; acalena—montaña; loka—de la región habitada por entidades vivientes; alokasya—y de la región no habitada por entidades vivientes; antarvartina—que está en medio; avasthapyate— se establece.
+TRADUCCIÓN
+Entre las regiones habitadas por entidades vivientes y las que están deshabitadas se alza la gran montaña que las separa, que por ello es famosa con el nombre de Lokaloka.
+VERSO 37
+sa loka-trayante parita isvarena vihito yasmat suryadinam dhruvapavarganam jyotir-gananam gabhastayo 'rvacinams tril lokan avitanvana na kadacit paracina bhavitum utsahante tavad unnahanayamah.
+</p>
+<p class='vspace'>sah—esa montaña; loka-traya-ante—al final de los tres lokas (Bhurloka, Bhuvarloka y Svarloka); paritah—alrededor; isvarena—por la Suprema Personalidad de Dios, Krishna; vihitah—creada; yasmat—de la cual; surya-adinam— desde el planeta solar; dhruva-apavarganam—hasta Dhruvaloka y otros astros inferiores; jyotih-gananam—de todos los astros luminosos; gabhastayah—los rayos; arvacinan—difundiendo por; trin—los tres; lokan—sistemas planetarios; avitanvanah—difundiendo por; na—no; kadacit—en ningún momento; paracinah —más allá de la jurisdicción de esa montaña; bhavitum—ser; utsahante—puedan; tavat—tanto; unnahana-ayamah—la medida de la altura de la montaña.
+TRADUCCIÓN
+La voluntad suprema de Krishna ha establecido que la montaña Lokaloka sea el límite exterior de los tres mundos (Bhurloka, Bhuvarloka y Svarloka) a fin de controlar los rayos del Sol en todo el universo. Todos los astros luminosos, desde el Sol hasta Dhruvaloka, extienden sus rayos por los tres mundos, pero sólo dentro de los límites marcados por esta montaña. Su inmensa altura, que supera incluso la de Dhruvaloka, impide que los rayos de los astros luminosos puedan difundirse fuera de sus límites.
+SIGNIFICADO
+Cuando hablamos de loka-traya, nos referimos a los tres sistemas planetarios, Bhuh, Bhuvah y Svah, en que se divide básicamente el universo. En torno a esos planetas se extienden las ocho direcciones: este, oeste, norte, sur, nordeste, sureste, noroeste y suroeste. La montaña Lokaloka es el límite exterior de todos los lokas, establecida en esa posición a fin de que los rayos del Sol y de los demás cuerpos luminosos se difundan de manera uniforme por todo el universo.
+Esta clara descripción de cómo se difunden los rayos del Sol por los distintos sistemas planetarios del universo es muy científica. Hace cinco mil años, Sukadeva Gosvami explicó a Maharaja Pariksit estos temas acerca del universo tal y como él los había escuchado de labios de su predecesor. El conocimiento, sin embargo, existía desde hacía muchísimo más tiempo, pues Sukadeva Gosvami lo recibió a través de la sucesión discipular. El conocimiento que se recibe de ese modo es perfecto. Frente a esto, la historia del conocimiento científico moderno sólo puede remontarse unos cientos de años en el pasado. Por consiguiente, los científicos modernos, aunque no acepten el resto de las verdades expuestas en el Srimad- Bhagavatam, no pueden negar estos cálculos astronómicos perfectos, que ya existían antes de que ellos pudieran siquiera imaginar semejantes cosas. El Srimad-Bhagavatam tiene mucha información que aportar. Los científicos, sin embargo, no tienen información acerca de otros sistemas planetarios; de hecho, apenas saben nada del planeta en que vivimos.
+VERSO 38
+etaval loka-vinyaso mana-laksana-samsthabhir vicintitah kavibhih sa tu pañcasat-koti-ganitasya bhu-golasya turiya-bhago 'yam lokalokacalah.
+</p>
+<p class='vspace'>etavan—todo esto; loka-vinyasah—la posición de los distintos planetas; mana— con medidas; laksana—características; samsthabhih—y con sus respectivas posiciones; vicintitah—establecidas mediante cálculos científicos; kavibhih—por sabios eruditos; sah—esa; tu—pero; pañcasat-koti—500.000.000 yojanas; ganitasya—que se mide en; bhu-golasya—del sistema planetario Bhugolaka; turiya-bhagah—un cuarto; ayam—este; lokaloka-acalah—la montaña Lokaloka.
+TRADUCCIÓN
+Sabios eruditos libres del error, la ilusión y la tendencia a engañar, han descrito de este modo los sistemas planetarios, indicando sus respectivas características, medidas y posición. Después de mucha reflexión, su conclusión ha sido que la distancia entre Sumeru y la montaña Lokaloka es un cuarto del diámetro del universo, o, en otras palabras, 125.000.000 yojanas [mil seiscientos millones de kilómetros].
+SIGNIFICADO
+Srila Visvanatha Cakravarti Thakura ha facilitado informaciones astronómicas precisas acerca de la posición de la montaña Lokaloka, los movimientos del globo solar, y la distancia entre el Sol y la circunferencia del universo. Sin embargo, es díficil traducir al inglés los términos técnicos que se emplean en los cálculos astronómicos del Jyotir Veda. Así pues, para satisfacer al lector, incluiremos la cita sánscrita exacta de Srila Visvanatha Cakravarti Thakura, en la que se registran cálculos exactos al respecto de las características del universo.
+sa tu lokalokas tu bhu-golakasya bhu-sambandhanda-golakasyety arthah. suryasy eva bhuvo 'py anda-golakayor madhya-vartitvat kha-golam iva bhu-golam api pañcasat-koti-yojana-pramanam tasya turiya-bhagah sardha-dvadasa-koti- yojana-vistarocchraya ity arthah bhus tu catus-trimsal-laksonapañcasat-koti- pramana jñeya. yatha meru-madhyan manasottara-madhya-paryantam sardha- sapta-pañcasal-laksottara-koti-yojana-pramanam. manasottara-madhyat svadudaka-samudra-paryantam san-navati-laksa-yojana-pramanam tatah kañcani- bhumih sardha-sapta-pañcasal-laksottara-koti-yojana-pramana evam ekato meru- lokalokayor antaralam ekadasa-sal-laksadhika-catus-koti-parimitam anyato 'pi tathatyeto lokalokal loka-paryantam sthanam dvavimsati-laksottarasta-koti- parimitam lokalokad bahir apy ekatah etavad eva anyato 'py etavad eva yad vaksyate, yo 'ntar-vistara etena hy aloka-parimanam ca vyakhyatam yad-bahir lokalokacalad ity ekato lokalokah sardha-dvadasa-koti-yojana-parimanah anyato 'pi sa tathety evam catus-trimsal-laksonapañcasat-koti-pramana bhuh sabdhi- dvipa-parvata jñeya. ata evanda-golakat sarvato diksu sapta-dasa-laksa- yojanavakase vartamane sati prthivyah sesa-nagena dharanam dig-gajais ca niscali- karanam sarthakam bhaved anyatha tu vyakhyantare pañcasat-koti-pramanatvad anda-golaka-lagnatve tat tat sarvam akiñcit-karam syat caksuse manvantare cakasmat majjanam sri-varaha-devenotthapanam ca durghatam syad ity adikam vivecaniyam.
+VERSO 39
+tad-uparistac catasrsv asasvatma-yoninakhila-jagad-gurunadhinivesita ye dvirada-pataya rsabhah puskaracudo vamano 'parajita iti sakala-loka-sthiti-hetavah.
+</p>
+<p class='vspace'>tat-uparistat—en la cima de la montaña Lokaloka; catasrsu asasu—en las cuatro direcciones; atma-yonina—por el Señor Brahma; akhila-jagat-guruna—el maestro espiritual del universo entero; adhinivesitah—establecidos; ye—todos esos; dvirada- patayah—los mejores de entre los elefantes; rsabhah—Rsabha; puskara-cudah— Puskaracuda; vamanah—Vamana; aparajitah—Aparajita; iti—así; sakala-loka- sthiti-hetavah—las causas del sostenimiento de los planetas del universo.
+TRADUCCIÓN
+En la cima de la montaña Lokaloka están los cuatro gaja-patis, los mejores entre los elefantes, a quienes el Señor Brahma, el maestro espiritual supremo del universo entero, estableció en las cuatro direcciones. Esos elefantes, Rsabha, Puskaracuda, Vamana y Aparajita tienen la responsabilidad de sostener los sistemas planetarios del universo.
+VERSO 40
+tesam sva-vibhutinam loka-palanam ca vividha-viryopabrmhanaya bhagavan parama-maha-puruso maha-vibhuti-patir antaryamy atmano visuddha-sattvam dharma-jñana-vairagyaisvaryady-asta-maha-siddhy-upalaksanam visvaksenadibhih sva-parsada-pravaraih parivarito nija-varayudhopasobhitair nija-bhuja-dandaih sandharayamanas tasmin giri-vare samantat sakala-loka-svastaya aste.
+</p>
+<p class='vspace'>tesam—de todos ellos; sva-vibhutinam—que son Sus expansiones personales y asistentes; loka-palanam—que están encargados de velar por los asuntos del universo; ca—y; vividha—diversidades; virya-upabrmhanaya—para expandir los poderes; bhagavan—la Suprema Personalidad de Dios; parama-maha-purusah—el principal amo de toda clase de opulencias, la Suprema Personalidad de Dios; maha-vibhuti-patih—el amo de todas las potencias inconcebibles; antaryami— la Superalma; atmanah—de Sí mismo; visuddha-sattvam—cuya existencia está libre de la contaminación de las modalidades materiales de la naturaleza; dharma- jñana-vairagya—de religión, conocimiento puro y renunciación; aisvarya-adi— de todo tipo de opulencias; asta—ocho; maha-siddhi—y de grandes perfecciones místicas; upalaksanam—con las características; visvaksena-adibhih—por Su expansión conocida con el nombre de Visvaksena y otros; sva-parsada-pravaraih— los mejores de los asistentes personales; parivaritah—rodeado; nija—Sus propias; vara-ayudha—con armas de distintos tipos; upasobhitaih—adornado; nija— propios; bhuja-dandaih—con brazos robustos; sandharayamanah—manifestando esta forma; tasmin—sobre esa; giri-vare—gran montaña; samantat—alrededor; sakala-loka-svastaye—para beneficio de todos los sistemas planetarios; aste—existe.
+TRADUCCIÓN
+La Suprema Personalidad de Dios es el amo de todas las opulencias trascendentales y del cielo espiritual. Él es la Persona Suprema, Bhagavan, la Superalma de todos. Los semidioses, guiados por Indra, el rey del cielo, tienen a su cargo la supervisión del mundo material. Para beneficio de todas las entidades vivientes en los diversos planetas, y para aumentar el poder de esos elefantes y de los semidioses, el Señor Se manifiesta personalmente en la cima de la montaña en un cuerpo espiritual, libre de la contaminación de las modalidades de la naturaleza material. Rodeado por Sus expansiones y asistentes personales como Visvaksena, manifiesta toda la perfección de Sus opulencias, como la religión y el conocimiento, y Sus poderes místicos, como los poderes de anima, laghima y mahima. Es muy hermoso, y está adornado con las armas que sostienen Sus cuatro brazos.
+VERSO 41
+akalpam evam vesam gata esa bhagavan atma-yogamayaya viracita-vividha-loka-yatra-gopiyayety arthah.
+</p>
+<p class='vspace'>a-kalpam—para el tiempo que dura la creación; evam—así; vesam—aparición; gatah—ha aceptado; esah—esta; bhagavan—la Suprema Personalidad de Dios; atma-yoga-mayaya—por Su propia potencia espiritual; viracita—perfeccionado; vividha-loka-yatra—el sustento de los distintos sistemas planetarios; gopiyaya— simplemente para mantener; iti—así; arthah—el objetivo.
+TRADUCCIÓN
+Las diversas formas de la Suprema Personalidad de Dios, como Narayana y Visnu, están hermosamente adornadas con distintas armas. El Señor manifesta esas formas para mantener la diversidad de planetas creados por Su potencia personal, yogamaya.
+SIGNIFICADO
+En la Bhagavad-gita (4.6), el Señor Krishna dice: sambhavamy atma-mayaya: «Yo aparezco por Mi potencia interna». La palabra atma-maya se refiere a la potencia personal del Señor, yogamaya. Después de crear los mundos material y espiritual por medio de yogamaya, la Suprema Personalidad de Dios los mantiene personalmente expandiéndose en diversas categorías, como las Visnu murtis y los semidioses. Él mantiene la creación material desde el principio hasta el fin, y mantiene personalmente el mundo espiritual.
+VERSO 42
+yo 'ntar-vistara etena hy aloka-parimanam ca vyakhyatam yad bahir lokalokacalat. tatah parastad yogesvara-gatim visuddham udaharanti.
+</p>
+<p class='vspace'>yah—la que; antah-vistarah—la distancia interior de la montaña Lokaloka; etena—por esa; hi—en verdad; aloka-parimanam—la anchura de la región de Aloka-varsa; ca—y; vyakhyatam—descrita; yat—que; bahih—por fuera; lokaloka- acalat—más allá de la montaña Lokaloka; tatah—esa; parastat—más allá; yogesvara-gatim—el sendero que siguió Yogesvara (Krishna) al penetrar las cubiertas del universo; visuddham—sin contaminación material; udaharanti—dicen.
+TRADUCCIÓN
+Mi querido rey, más allá de la montaña Lokaloka se encuentra la región de Aloka-varsa, que abarca un área tan amplia como la comprendida dentro de la montaña, o en otras palabras, 125.000.000 de yojanas [mil seiscientos millones de kilómetros]. Más allá de Aloka-varsa está el destino de quienes aspiran a liberarse del mundo material. Está fuera de la jurisdicción de las modalidades materiales de la naturaleza y, por lo tanto, es completamente puro. El Señor Krishna llevó a Arjuna por ese lugar para traer de regreso a los hijos del brahmana.
+VERSO 43
+anda-madhya-gatah suryo
+dyav-abhumyor yad antaram
+suryanda-golayor madhye
+kotyah syuh pañca-vimsatih
+</p>
+<p class='vspace'>anda-madhya-gatah—situado en el centro del universo; suryah—el globo solar; dyav-abhumyoh—los dos sistemas planetarios Bhurloka y Bhuvarloka; yat— que; antaram—entre; surya—del Sol; anda-golayoh—y el globo del universo; madhye—en medio; kotyah—grupos de diez millones; syuh—son; pañca- vimsatih—veinticinco.
+TRADUCCIÓN
+El Sol está situado [en sentido vertical] en medio del universo, en la zona comprendida entre Bhurloka y Bhuvarloka, que recibe el nombre de antariksa, espacio exterior. La distancia entre el Sol y la circunferencia del universo es de veinticinco koti yojanas [unos tres mil doscientos millones de kilómetros].
+SIGNIFICADO
+La palabra koti significa «diez millones», y una yojana son unos trece kilómetros. El universo tiene un diámetro de cincuenta koti yojanas (unos seis mil cuatrocientos cincuenta millones de kilómetros). Así pues, si tenemos en cuenta que el Sol está en el centro del universo, la distancia entre el Sol y el borde del universo es de veinticinco koti yojanas (unos tres mil doscientos millones de kilómetros).
+VERSO 44
+mrte 'nda esa etasmin yad abhut tato martanda iti vyapadesah. hiranyagarbha iti yad dhiranyanda-samudbhavah.
+</p>
+<p class='vspace'>mrte—muerto; ande—en el globo; esah—este; etasmin—en éste; yat—que; abhut—entró personalmente en el momento de la creación; tatah—de eso; martanda—Martanda; iti—así; vyapadesah—el nombre; hiranya-garbhah— conocido como Hiranyagarbha; iti—así; yat—debido a que; hiranya-anda- samudbhavah—su cuerpo material fue creado a partir de Hiranyagarbha.
+TRADUCCIÓN
+El dios del Sol recibe también el nombre de Vairaja, el cuerpo material total de todas las entidades vivientes. Por haber entrado en el huevo inerte del universo en el momento de la creación, también recibe el nombre de Martanda. Otro de sus nombres es Hiranyagarbha, debido a que recibió su cuerpo material de Hiranyagarbha [el Señor Brahma].
+SIGNIFICADO
+El cargo de brahma está reservado para entidades vivientes muy elevadas y avanzadas espiritualmente. Cuando no es posible encontrar entidades vivientes con esas características, el Señor Visnu, la Suprema Personalidad de Dios, Se expande personalmente en la forma del Señor Brahma. Eso sucede muy rara vez. Por consiguiente, hay dos clases de brahmas: a veces brahma es una entidad viviente común, y otras veces es la Suprema Personalidad de Dios. El brahma de que se habla en este verso es un ser viviente común. Ya bien se trate de la Suprema Personalidad de Dios o de un ser viviente común, brahma recibe los nombres de Vairaja brahma e Hiranyagarbha brahma. Por consiguiente, al dios del Sol se le considera también Vairaja Brahma.
+VERSO 45
+suryena hi vibhajyante
+disah kham dyaur mahi bhida
+svargapavargau naraka
+rasaukamsi ca sarvasah
+</p>
+<p class='vspace'>suryena—por el dios del Sol, que se encuentra en el planeta solar; hi—en verdad; vibhajyante—están divididas; disah—las direcciones; kham—el cielo; dyauh— los planetas celestiales; mahi—los planetas terrenales; bhida—las demás divisiones; svarga—los planetas celestiales; apavargau—y los lugares para la liberación; narakah—los planetas infernales; rasaukamsi—como Atala; ca—también; sarvasah—todos.
+TRADUCCIÓN
+¡Oh, rey!, el dios del Sol y el planeta Sol dividen todas las direcciones del universo. Sólo gracias a la presencia del Sol podemos entender qué son el cielo, los planetas superiores, este mundo y los planetas inferiores. Y si podemos entender qué lugares están destinados al disfrute material, cuáles a la liberación y cuáles son infernales y subterráneos, se lo debemos únicamente a él.
+VERSO 46
+deva-tiryan-manusyanam
+sarisrpa-savirudham
+sarva-jiva-nikayanam
+surya atma drg-isvarah
+</p>
+<p class='vspace'>deva—de los semidioses; tiryak—los animales inferiores; manusyanam—y los seres humanos; sarisrpa—los insectos y serpientes; sa-virudham—y las plantas y árboles; sarva-jiva-nikayanam—de todos los grupos de entidades vivientes; suryah—el dios del Sol; atma—la vida y el alma; drk—de los ojos; isvarah—la Personalidad de Dios.
+TRADUCCIÓN
+Todas las entidades vivientes, y entre ellas los semidioses, los seres humanos, los mamíferos, las aves, los insectos, los reptiles, las enredaderas y los árboles, dependen de la luz y el calor que el dios del Sol emite desde el planeta solar. Además, gracias a la presencia del Sol, todas las entidades vivientes pueden ver; por esa razón, el dios del Sol recibe el nombre de drg-isvara, la Personalidad de Dios que rige la vista.
+SIGNIFICADO
+Srila Visvanatha Cakravarti Thakura dice en relación con esto: surya atma atmatvenopasyah: El Sol es la verdadera vida, el alma de todas las entidades vivientes del universo. Por esa razón es upasya, digno de adoración. Nosotros adoramos al dios del Sol cantando el mantra gayatri (om bhur bhuvah svah tat savitur varenyam bhargo devasya dhimahi). Surya es la vida y el alma del universo, y son infinitos los universos en que un dios del Sol es la esencia de la vida, del mismo modo que la Suprema Personalidad de Dios es la esencia de la vida de toda la creación. Tenemos noticia de que Vairaja, Hiranyagarbha, entró en el gran globo de material inerte que recibe el nombre de «Sol». Esto indica que la teoría de los supuestos científicos según la cual el Sol no está habitado es errónea. La Bhagavad-gita dice también que fue el dios del Sol quien escuchó por primera vez de labios de Krishna la Bhagavad-gita (imam vivasvate yogam proktavan aham avyayam). Por lo tanto, el Sol no está vacío. Está habitado por entidades vivientes, y su deidad regente es Vairaja, Vivasvan. La diferencia entre el Sol y la Tierra es que el Sol es un planeta ardiente; todos sus habitantes, sin embargo, tienen un cuerpo apropiado y no tienen dificultad en vivir allí.
+TRADUCCIÓN
+Así terminan los significados de Bhaktivedanta del Capítulo Vigésimo del Canto Quinto del Srimad-Bhagavatam, titulado «Estudio de la estructura del universo».
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on October 05, 2013, at 07:22 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

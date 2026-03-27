@@ -1,0 +1,279 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Második megvalósítás</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivinoda - RSS Feed'
+      href='index.php-n=bhaktivinoda.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=bhaktivinoda.tattva-viveka_02' method='get'><input type='hidden' name='n' value='bhaktivinoda.tattva-viveka_02' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/magyar/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Második megvalósítás"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivinoda.tattva-viveka_02-discussion-action=edit.html'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivinoda.bhaktivinoda.html'>Bhaktivinóda Thákura</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivinoda.tattva-viveka.html'>Tattva-viveka</a>
+</p>
+<div class='vspace'></div><h2>Második megvalósítás<br /><small>Dvitijánubhava</small></h2>
+<p><strong>1. Tiszteletteljes hódolatomat ajánlom az Úr Csaitanjának, akinek transzcendentális formája öröklét, tudás és boldogság, aki a transzcendentális nektár és boldogság menedéke, aki valamennyi lelki és anyagi energia ura, és aki megtisztítja a Kali-jugát.</strong>
+</p>
+<p class='vspace'><strong>2. Amikor a lélek az eredeti természetében van, a saját erejéből megadja a helyes válaszokat ezekre a lelki kérdésekre, válaszokat, amelyeket meg sem érint az anyag.</strong>
+</p>
+<p class='vspace'>Az anyag által különféle módokon befolyásolt, az anyagi világban bebörtönzött lelkek nagyon sokféle választ adnak az e könyv 1. fejezetének 2. versében feltett kérdésekre. Azok a lelkek adnak helyes válaszokat, akik önmegvalósítottak, és megértették, hogy mit tanítanak a lélekről a hiteles lelki tanítómesterek. Ezekre a kérdésekre csak egy-egy helyes válasz van. Ez a három kérdés: 1. Én észlelem ezt a világot. Ki vagyok én? 2. Mi ez a hatalmas anyagi világ? 3. Mi a kapcsolatom ezzel a világgal? – Az anyagi természettől befolyásolt lelkek nagyon sokféle választ adnak, amelyeket az 1. fejezet sorol fel. De először is ezt a kérdést kell megvizsgálnunk: Kik az önmegvalósított lelkek? Önmegvalósított lelkek azok, akik nincsenek kapcsolatban az anyagi hellyel, idővel, érzékekkel és testtel, hanem az eredeti lelki természetükben vannak. A Srimad Bhágavatam, amely a Védánta lényegi tanításait tartalmazza, leírja a tiszta, önmegvalósított lelket (2.10.6):
+</p>
+<p class='vspace'>„A felszabadulás az élőlény formájának állandó helyzete, miután feladta a változó durva és finom testeket.”
+</p>
+<p class='vspace'>Amikor a lélek megszabadult az anyagi létezéstől, az eredeti természetében van. Ekkor önmegvalósított. Csak egy önmegvalósított lélek ad helyes válaszokat a három kérdésre. Itt valaki tiltakozhat, – Ebben az anyagi világban az élőlénynek van teste, gondolkodó képessége, vannak érzékei. Hogyan adhatja meg a helyes válaszokat a kérdéseidre? – Erre az a válasz, hogy ezek a lelkek olyanok, mint a megszemélyesített lelki tudás. A lélek egyik természetes jellemzője a lelki tudás. A lélek nemcsak magát ismeri. Tele van fénnyel, és tudása fényével más dolgok tulajdonságait is meg tudja világítani. Ilyen módon a lélek ismeri magát, és más tárgyakat is. Ez azt jelenti, hogy megvan minden képessége ahhoz, hogy lásson, halljon, szagoljon és ízleljen. A tudás a lélek természetének a része. Amikor leesik az anyagi világba, be van börtönözve egy sor anyagi burkolatba. Hogy kapcsolatban lehessen az anyagi világgal, megkapja az érzékek második sorozatát, az anyagi érzékeket. Ekkor az anyagi szemekkel lát, stb. Eredeti lelki érzékei elvesztették az erejüket, a lélek most az érzékek második sorozatát használja. A következtetéseket is csak az anyagi gondolkodó képességével tudja levonni. Mindez nagy csapás a szellemi lélek számára, akinek az a természetes helyzete, hogy tele van tudással. Amikor a lélek önmegvalósított lesz, és feléled az eredeti természete, akkor ismét minden cselekvést elvégezhet az eredeti, lelki érzékeivel. A gondolkodó képessége is az eredeti, lelki gondolkodó képesség. Felszabadult állapotában, eredeti, lelki gondolkodó képességével a lélek meg tudja adni a helyes válaszokat a kérdéseinkre. Saját lelki erejéből adja meg a válaszokat, amelyek mentesek minden anyagi behatárolástól és hibától. Egy Indiában élő önmegvalósított lélek ugyanazt a választ adja, amit az északi országokban élő önmegvalósított lélek. Ugyanazt a választ adja a Vaikuntha lelki világában élő lélek is. És miért ne? A tiszta, felszabadult lelkek nem az anyagi kötőerők különféle keveredéseiből származó, nagyon sokféle választ adják. Ezért nem különböznek a válaszaik.
+</p>
+<p class='vspace'><strong>3. Isten egy. Istennek sok transzcendentális energiája van. Az egyéni szellemi lelkek és az anyagi világok mind Isten energiáiból nyilvánulnak meg.</strong>
+</p>
+<p class='vspace'>A védikus irodalom ezt mondja, -
+</p>
+<p class='vspace'>Csak egy Isten van. Nincs riválisa.
+</p>
+<p class='vspace'>Semmi sincs külön Istentől.
+</p>
+<p class='vspace'>Isten teremtette a világot. Ő mindent tud, ami a világban történik.
+</p>
+<p class='vspace'>Isten a világ ura. Az anyagi természet kötőerőinek az ura.
+</p>
+<p class='vspace'>Csak egy Isten van. Ő a legjobb személy. Övé minden fenség.
+</p>
+<p class='vspace'>Ezek a szavak megerősítik Isten örök létezését. A Srimad Bhágavatam 1.2.11 ezt mondja:
+</p>
+<p class='vspace'>„A művelt transzcendentalisták, akik ismerik az Abszolút Igazságot, kettősség nélküli Brahmannak, Paramátmának vagy Bhagavánnak nevezik.”
+</p>
+<p class='vspace'>Bhagaván (Legfelsőbb Személy) jobb, mint Brahman (személytelen isteni ragyogás) és Paramátmá (mindent átható Felsőlélek). Mégsem szabad azt gondolni, hogy Brahman és Paramátmá két külön Isten, és Bhagaván a Legfelsőbb Isten, aki rajtuk uralkodik. Itt az egyéni szellemi lélek a látó, és Bhagaván a látott tárgy. Amikor a lélek megkezdi a lelki életét, és a filozófiai spekuláció (gjána-márga) útján halad, Bhagavánnak a Brahman-arculatát látja. Amikor valamennyire előrehaladt ezen az úton, akkor a jóga útján megy tovább, és meglátja Bhagavánnak a Paramátmá-arculatát. Amikor olyan szerencsés, hogy a tiszta odaadó szolgálat (suddha-bhakti-márga) útján jár, közvetlenül Bhagavánt látja. Bhagaván nagy édességet hoz a szemeknek. Tele van transzcendentális boldogsággal. Öröklét-tudás-boldogság. Formája gyönyörű. Ő nagyon szép és elbűvölő. Övé minden fenség, hatalom, hírnév, erő, szépség, tudás, lemondás. Ezekkel a legjobb, legfelségesebb módon rendelkezik. Brahman és Paramátmá el vannak rejtve Bhagavánban. Bhagaváné minden energia. Ha akarja, ezek az energiák megnyilvánítják a rendszeres és alkalmi kedvteléseit. Ő teljesen független, ő hozza a szabályokat és előírásokat. Őt azonban a szabályok és előírások soha nem kötik meg. Bhagavánnak nincs riválisa. Senki sem egyenlő Vele. Senki sem jobb Nála. Neki sok lelki energiája, sok különféle ereje van. Ezek a lelki energiák nyilvánítják meg a hajlékát, a kedvteléseit, mindent. Ezek mind Bhagaván lelki energiájának átalakulásai. Ebből a tökéletes lelki energiából nyilvánul meg a lelki világ. Bhagaván energiája sokféle módon cselekszik. Az egyik fajta cselekvés a számtalan atom megnyilvánítása. Ezt látjuk. A lelki ragyogás, tulajdonságok és cselekedetek mind Bhagaván lelki energiájából nyilvánulnak meg. A dzsíva-saktiból jelenik meg a sok egyéni szellemi lélek (dzsíva). A lelki energiának van egy árnyéka. Ebből az árnyékból nyilvánul meg az 5 durva elem, az 5 érzéktárgy, a 10 érzék, elme, értelem és hamis ego. Ez a 24 anyagi elem nyilvánul meg. Az anyagi világban megnyilvánuló energia a cshájá-sakti (árnyék-energia).
+</p>
+<p class='vspace'><strong>4. Bhagaván (az Istenség Legfelsőbb Személyisége) olyan, mint a nap. A sok egyéni lélek olyan, mint a Bhagaván-nap fényének részecskéi. Mindegyik léleknek van egy örök lelki formája, ahogyan Bhagavánnak. Mindegyik lélek természettől fogva lelki és boldog. Természete az, hogy szereti Bhagavánt. Olyan, mint egy fiú, akinek joga van egy részhez apja (Bhagaván) tulajdonából.</strong>
+</p>
+<p class='vspace'>Mindegyik léleknek van egy ragyogó lelki formája, amely megfelel a természetének. Mindegyik forma ragyogó és lelki. Ezért mindegyik lélek lelki természetű, lelki tulajdonságai vannak. Mindegyik lélek lelki természetének része egy kis szeretet. Ezért mondják, hogy a szeretet a lélek természete. Mivel a lélek lelki formája és a természetes szeretete is kicsi, azt mondják, hogy a lélek formája és szeretete nem teljes. A lélekben van egy kis részecske a lelki boldogságból is. A személytelen Brahman megvalósításának boldogságáról írja Rúpa Goszvámi (BRS), -
+</p>
+<p class='vspace'>„Ha a brahmánandát, a Legfelsőbbel való eggyéválás boldogságát megszorozzuk egy trillióval, azt még mindig nem lehet összehasonlítani az odaadó szolgálat óceánjából származó boldogságnak egyetlen atomnyi töredékével.”
+</p>
+<p class='vspace'>Minden lélek a természeténél fogva olyan, mint egy fiú, akinek joga van ahhoz, hogy örökölje az Úrnak végzett odaadó szolgálat rendkívül boldog és nagyon emelkedett helyzetét. A lélek tudatában van annak, hogy ezzel összehasonlítva a személytelen Brahman megvalósításának a boldogsága nagyon kicsi, ezért Bhagaván szolgája és követője lesz. Ha Bhagaván elégedett egy lélek szolgálatával, megadja neki lelki energiái erejét. Ekkor a lélek képessé válik arra, hogy tapasztalja az odaadó szolgálat legnagyobb boldogságát.
+</p>
+<p class='vspace'><strong>5. Bhagaván lelki energiájának az árnyéka teremtette az egész anyagi világot. Ebben az anyagi világban vándorolnak azok a lelkek, akik elfordították az arcukat Bhagavántól.</strong>
+</p>
+<p class='vspace'>Amikor a lélek az Úr Krsna szolgája, olyan, mint a fiú, aki örökli az apja tulajdonát. Ez az örökség a transzcendentális boldogság. Ha elfordítja az arcát az Úr Krsnától, és megpróbál független lenni, a lélek beleesik a születés és halál világába. A lelki energia abban segít a léleknek, hogy egyre magasabbra emelkedjen, és az anyagi, az anyagi világot teremtő energia (májá-sakti) egyre jobban megbilincseli az ismétlődő születések és halálok börtönében. Az anyagi energia a lelki energia árnyéka. A lélek, aki ezt érdemli, megszületik a születés és halál világában. Kap egy durva és egy finom anyagi testet, hogy tapasztalja az anyagi világot. Beleesik, és sokat szenved, ami mind a cselekedeteinek eredménye (karma). Egy oka és csak egy oka van annak, hogy az anyagi világban vannak: elfordították az arcukat Bhagavántól (bhavagad-bahirmukha). Meg kell érteni, hogy a lelkek nem az anyagi világból nyilvánultak meg. Nem is a lelki világból, hanem a határból, amely ezt a két világot elválasztja. Számukra az anyagi örömök vonzóbbak lehetnek, mint a lelki emelkedés. Ezért lehet, hogy a saját akaratukból úgy döntenek, a születés és halál világában maradnak. Ezért nem Bhagavánt kell okolni. Ő kegyes ezekhez a lelkekhez, és úgy teremtette meg az anyagi világot, hogy megpróbáljanak ott élvezni, de néhány nap után elég értelmesek legyenek ahhoz, hogy elforduljanak ezektől az élvezetektől. Bhagaván megteremtette az odaadó szolgálat útját is, a szent bhakták társaságában. Ezen az úton járva a lelkek kiszabadulnak az anyagi világból.
+</p>
+<p class='vspace'><strong>6. Bhagaván örökké különbözik a lelkektől és az anyagtól. A lelkek és az anyag azonban nem különböznek Bhagavántól. Ez nagy titok.</strong>
+</p>
+<p class='vspace'>Bhagaván örökké különbözik a lelkektől és az anyagtól. Energiája formájában belép a lelkekbe és az anyagi világba. Vjásza, aki valamennyi szentírást feltárt és gondosan tanulmányozott, sírt, mert nem tudta megérteni ezt a titkot. Ekkor Nárada, aki Bhagaván nagy bhaktája, odament Vjászához, és megtanította neki a négy verset, amelyek a Srimad Bhágavatam szíve. A Srimad Bhágavatam tanításai négy részre oszlanak: gjána, vigjána, rahaszja és tad-anga. A gjána-részben Bhagaván ezt tanítja: Én vagyok az egyetlen Legfelsőbb Igazság. Én léteztem, mielőtt bármi más létezett volna. Kezdetben még nem nyilvánult meg sem az okok és hatások lánca, sem a személytelen Brahman, amely ezen túl van. Az anyagi világ teremtésekor energiám által mindent megnyilvánítok, ami van, és a megsemmisülés után egyedül Én maradok meg. Így magyarázzák el a Bhagaván-gjánán (Bhagaván tudása).
+</p>
+<p class='vspace'>A vigjána-részben ezt tanítja Bhagaván: Én vagyok a Legfelsőbb Igazság. Amikor a lelkek csak azt észlelik, ami Kívülem van, amikor nem képesek észlelni az Én igazi természetemet, ez az Én energiám hatására történik. Ennek az energiának a neve Májá. Amikor ez az energia a lelki világban nyilvánul meg, akkor Jógamájá a neve. Az energiám örökké különbözik Tőlem, és nem különbözik. Nem könnyen látni, hogyan nem különbözik. Kétféle módon különbözik: mint tükörkép (ábhásza) és mint sötétség (tamah). – Itt ábhásza a lelkekre vonatkozik, és tamah az anyagi világ. – Tehát a lelkek és az anyagi világ is az Én energiáim. Ezt tudni kell. A tudás e szakasza, Bhagaván és energiái tudása, ez a vigjána.
+</p>
+<p class='vspace'>A harmadik, rahaszja-részben ezt tanítja Bhagaván: A pradhána, mahat-tattva és az anyagi elemek belépnek az anyagi világba, és ugyanakkor nem lépnek be. Ugyanígy Bhagaván, a lelki nap, belép a lelkekbe, de tőlük mégis örökké különbözik. Amikor egy lélek a bhaktája lesz, akkor Ő a barátja. Ez nagy titok.
+</p>
+<p class='vspace'>A tad-anga részben ezt mondja Bhagaván: Amikor a születés és halála világának szenvedéseitől kínzott lélek menedéket vesz egy szent bhakta lábainál, és tudakozódik a lelki igazságról, akkor, lelki tanítómestere kegyéből, az a lélek közvetlenül és közvetve Engem keres. Végül elér Engem. Ilyen módon magyarázza el a Srimad Bhágavatam az acsintja-bhedábheda-tattva igazságát (Bhagaván és a lelkek felfoghatatlan, egyidejű egysége és különbözősége).
+</p>
+<p class='vspace'><strong>7. Amikor az anyagi élet csapdájába esett lelkek teljesen lemondanak az anyaghoz való ragaszkodástól, és lelki cselekedeteket végeznek, akkor végül elérik a Legfelsőbbet.</strong>
+</p>
+<p class='vspace'>A lelkeket két csoportra lehet osztani: örökké az anyagi világban bebörtönzött lelkek (nitja-baddha) és örökké szabad lelkek (nitja-mukta). Az örökké szabad lelkek mindig az Úr Krsnát szolgálják. Amikor az anyagi élet csapdájába esett lelkek lemondanak az anyaghoz való ragaszkodásról, és lelki cselekedeteket végeznek, végül elérik a Legfelsőbbet. Itt a lelki cselekedetek jelentése, Bhagaván odaadó szolgálata. Ha valaki kedvező odaadó szolgálatot végez, fokozatosan csökken az anyagi dolgokhoz való ragaszkodása. Amikor a lelki cselekedetek elérik a teljességüket és tökéletességüket, teljesen megszűnik az anyagi dolgokhoz való ragaszkodás. Ekkor a lélek eléri Bhagaván lábait, a Legfelsőbb Igazságot, a lelki világ Legfelsőbb Urát. Újra meg újra végzi ezeket a cselekedeteket, és egyre édesebbnek találja. Amennyire a lelkek az anyaghoz ragaszkodnak, abban a mértékben a szellem ellenségei.
+</p>
+<p class='vspace'><strong>8. Ezt a Legfelsőbb igazságot, amely mindentől különbözik, és nem különbözik, nem ismerheti meg az anyagi elme. Csak a tiszta, az Úr Csaitanja lábainál vett menedék édes nektárját ízlelő lelkek ismerhetik meg a Legfelsőbb Igazságot.</strong>
+</p>
+<p class='vspace'>Az anyagi elme nem képes megérteni, hogyan lehet a Legfelsőbb mindentől különböző és nem különböző. Miért? Mert az anyagi világban nem látjuk, hogy egymásnak kölcsönösen ellentmondó tulajdonságok lennének egy helyen. Ezért az anyagi világban bebörtönzött lelkek, akik csak anyagi dolgokat ismernek, nem hajlanak arra, hogy elhigyjék, egymásnak kölcsönösen ellentmondó tulajdonságok léteznek Bhagavánban. Felfoghatatlan energiái által megnyilvánítva, ez a számtalan ellentmondó tulajdonság nemcsak létezik, de boldogan és kegyesen létezik együtt Bhagavánban. Ő a forma nélküli Brahman, de egy személy is, akinek végtelenül elbűvölő a formája. Kisebb a legkisebbnél, nagyobb a legnagyobbnál. Nem részrehajló, de mégis szereti a bhaktáit. Nincsenek tulajdonságai, de aztán biztos, hogy vannak tulajdonságai. A személytelen Brahman, de Krsna is, akit sok tehénpásztor barátja vesz körül. Ő a legnagyobb filozófus, mindent tud, de szerelmes is, az egész lénye a szeretet. Bhagaván a menedék, ahol ezek és minden egyéb kölcsönösen ellentmondó tulajdonság megférnek. Az Urat nem lehet anyagi dolgokhoz hasonlítani. Az anyagi világban bebörtönzött lélek értelme anyagból van. Az anyagi értelem nem képes megérteni azt, ami túl van az anyag világán. Ezért a bebörtönzött lelkek nem érthetik meg Bhagaván tulajdonságait. Nem hiszik el, hogy ilyen Bhagaván természete. Amíg az anyagi világ börtönében vannak, nem érthetik meg, hogyan van az, hogy Bhagaván egyidejűleg egy és mindentől különböző. Sose fogják ezt megérteni? A válasz az, hogy a lelkek, akik megízleli az Úr Csaitanja lábai odaadó szolgálatának nektárját, fokozatosan megtisztulnak. Végül meg fogják érteni. A megtisztult lélek megérti az eredeti természetét. Megérti, hogyan van az, hogy Bhagaván egyidejűleg egy és különböző. Itt a csaitanja-csaranásvádát kifejezésnek két jelentése van, bár tulajdonképpen ez a két jelentés egy. Az egyik jelentés, hogy aki az Úr Csaitanja lábait szolgálja, eléri a transzcendentális boldogságot. A második jelentés, aki az Istenség Legfelsőbb, mindentudó Személyisége lábait szolgálja, eléri a transzcendentális boldogságot. Az Úr Csaitanja nem különbözik az Istenség Legfelsőbb, mindentudó Személyiségétől. Ezért ez a kettő ugyanazt jelenti. E könyv első része különböző filozófusok véleményeit sorolta fel, akik mind az anyagi világban bebörtönzött lelkek. Most, hogy valamennyi filozófiájukat megcáfoltam, leírom a legfelsőbb lelki igazságot, amelyet a teljesen tiszta Úr Csaitanja tanít.
+</p>
+<p class='vspace'><strong>9. A Legfelsőbb Igazság lelki. Az Istenség Legfelsőbb Személyisége lelki. A lélek a szellem egy apró részecskéje. Nagy változatosság van a szellem birodalmában.</strong>
+</p>
+<p class='vspace'>Szellem, anyag és lelkek, ezek a létezés három osztálya. Bhagaván olyan, mint a lelki világban ragyogó nap. A napból kiáradó fényrészecskék a lelkek. A lelkek tehát a szellem apró részecskéi. Semmi sem áll a szellem felett. Az anyagi világban levő változatosság csak a lelki világ változatosságának a tükörképe.
+</p>
+<p class='vspace'><strong>10. A szellem természettől fogva tele van boldogsággal. A lelki cselekedetek végzése boldoggá tesz.</strong>
+</p>
+<p class='vspace'>A szellem egyik tulajdonsága a szabad akarat, és a másik a boldogság. A boldogság a szellem természetének a része. Ezért a lélek akkor lesz boldog, ha újra meg újra lelki cselekedeteket végez. A Védák ezt mondják, -
+</p>
+<p class='vspace'>„Amikor valaki megérti az Istenség Személyiségét, az öröm tárházát, Krsnát, akkor valóban boldog lesz.”
+</p>
+<p class='vspace'>Így erősítik meg a Védák, hogy a boldogság a szellem természetének a része. Ahogyan az égetés képessége a tűz természetének a része, ahogyan a folyékonyság a víz természetéé, úgy része a boldogság a szellem természetének. Még az anyagban bebörtönzött lelkek is élvezik ennek a boldogságnak egy bizonyos, anyagi változatát. Mindennek két arculata van, 1. a természete, 2. a cselekedetei. A szellem cselekedetei lelki boldogságot hoznak. Az újra meg újra boldog lelki cselekedeteket végző lélek végül eléri a lelki boldogságot. Fokozatosan méltóvá válik arra, hogy élvezze a Bhagavánnal való személyes társulás boldogságát.
+</p>
+<p class='vspace'><strong>11. A szellem különbözik az anyagtól. A szellemnek mindig van szabad akarata. A szellem még akkor sem veszti el a természetét, amikor belép az illúzió világába.</strong>
+</p>
+<p class='vspace'>Mi a szellem természete? Sokszor felteszik ezt a kérdést. Az anyag világban nem találni meg a teljes és tökéletes választ. Bár a lélek szellem, elfelejtette a saját természetét. Bilincsekben, Májá börtönében nehezen tud világos választ adni a saját természetéről. A lélek természete az, hogy a szellem apró részecskéje legyen. Bár ez a természet nem tükröződik tökéletesen az anyagi világban, a lélek soha nem adja fel igazán a természetét. Először ezt a kérdést lehet feltenni, – Ha a lélek különbözik az anyagtól, akkor minden anyagi dologtól is különböznie kell. Mi ez a különbség? – Először erre a kérdésre keressük meg a választ. Sok tulajdonságot látni az anyagi dolgokban, de szabad akaratot soha nem látni bennük. Sem tudatot. Hacsak a lelket nem korlátozzák teljesen a cselekedeteiben, ez a két tulajdonság nem fedett. Megnyilvánultak maradnak. Olyan tulajdonságokat, mint hő és folyékonyság, láthatunk az anyagi elemekben, a tűzben és a vízben, de a víz folyékonysága nem annak a jele, hogy a víznek lenne szabad akarata. A víz nem a maga akaratából folyékony. Sok különféle anyagi elemet megvizsgálhatunk, de egyikük sem cselekszik szabad akaratból. Pl. nem látjuk, hogy a tűz szabad akaratából cselekedne. A lelki lényekben, a lelkekben azonban látjuk, hogy jelen van a szabad akarat, még akkor is, ha olyan alantas lények anyagi testei fedik el őket, mint a férgek és a hangyák. A hangya ide-oda megy, megvizsgálja, merre kell mennie, és aztán arra megy. A hangya gondolkodási és választási képessége a szabad akarat jele. Nem látjuk ezeket a jeleket a tétlen anyagban. Ezeket csak a szellemben, az élőlényekben látjuk. Ezért a tudat és a szabad akarat a szellem természetének a részei. Efelől nincs kétség. Összefoglalva, a szellem természetének részei a tudat, szabad akarat, boldogság, és ez a gondolat, „ez én vagyok.” A lélek sose adja fel ezt a természetet, még akkor sem, amikor belép az öt elem anyagi világába.
+</p>
+<p class='vspace'><strong>12. Az anyagi világ értelmetlen és illuzórikus. Régi börtön a lelkek számára, akik elfordították az arcukat a Legfelsőbb Úrtól.</strong>
+</p>
+<p class='vspace'>Az anyagi világ értelmetlen és illuzórikus. Régi börtön a lelkek számára, akik elfordították az arcukat a Legfelsőbb Úrtól. Nárada Muni utasítására Vjásza meditációs transzba került. Szíve megtisztult az odaadó szolgálattól, és transzában látta az igazságot. Ezt a Srimad Bhágavatam 1.7.4-6 írja le:
+</p>
+<p class='vspace'>„Elméjét rögzítette és összekapcsolta az odaadó szolgálattal (bhakti-jóga), a materializmus minden árnyalata nélkül, és látta Istent a külső energiájával együtt, amelyet teljesen az irányítása alatt tartott.
+</p>
+<p class='vspace'>Az élőlény bár az anyagi természet három kötőereje fölött áll, a külső energia miatt anyagi terméknek gondolja magát, és elszenvedi az anyagi szenvedéseket.
+</p>
+<p class='vspace'>Az élőlény anyagi szenvedéseit, amelyek számára feleslegesek, közvetlenül enyhíteni lehet az odaadó szolgálattal.”
+</p>
+<p class='vspace'>A Májá által teremtett anyagi világ haszontalan és illuzórikus hely a lelkek számára, akik a szellem kis részecskéi. Miért laknak ezen az értéktelen helyen? Erre a kérdésre az a válasz, hogy az anyagi világ régi börtön azoknak, akik elfordították az arcukat a Legfelsőbb Úrtól. Csak ezek a lelkek léptek be az anyagi világba. A többi lélek sose kerül az anyag börtönébe. Nem lépnek be az anyagi világba. Mindig a lelki világban maradnak. Ahogyan a sötétségnek mindig távol kell maradnia a fénylő naptól, az illuzórikus energiának, Májának is mindig távol kell maradnia az Úr Krsnától, a lelki világtól. A lelkeket, akik elfordították az arcukat az Úr Krsnától, vonzza Májá világának megzavaró változatossága. Így aztán Májá bűvöletébe esnek. Igazából a lelkek mindig az anyagi természet kötőerői fölött állnak. De Májá igézetében azt gondolják, hogy ők az anyagi kötőerők termékei. Megpróbálják élvezni a szánalmas örömöket, amelyeket a három kötőerő kínál. Ebben a helyzetben vannak a lelkek, akik elfordították az arcukat a Legfelsőbb Úrtól.
+</p>
+<p class='vspace'><strong>13. Az anyagi világban az idő, hely és minden más groteszk perverzió, amit Májá teremt. A Májától távoli világban minden szellem.</strong>
+</p>
+<p class='vspace'>A lelki világ távol van Májától. Az anyagi világot Májá teremtette. Mi ennek a két világnak a kapcsolata? Erre a kérdésre ezt válaszoljuk: az anyagi világban az idő, hely és minden más groteszk perverzió, amit Májá teremt. A lelki világban az idő, hely és minden más távol van Májától, lelki, teljesen tiszta. A groteszk anyagi világban sok akadálya van a boldogságnak. Látjuk, hogy az anyagi világ nagyon borzalmas és groteszk. Az anyagi világban az idő múltra, jelenre és jövőre oszlik. Ez a felosztás sok dolgot megsemmisít, és sokféle szenvedést teremt. Így aztán az anyagi világ tele van szörnyű és groteszk dolgokkal. Ezért az egész anyagi világ szörnyű és groteszk. A lelki világban az idő, hely és minden egyéb lelki, tele van boldogsággal és szeretettel. A legcsekélyebb nyoma sincs az anyagnak. Nagyon szépen írja le a lelki világot a Cshándógja Upanisád 8. fejezete:
+</p>
+<p class='vspace'>Hari Om. Van egy lótuszvirág hajlék ennek a lelki városnak a szívében. E hajlék belső részét kell keresni. Arra kell vágyakozni, hogy ezt a részt ismerjük meg.
+</p>
+<p class='vspace'>Ha ők (a tanítványok) megkérdezik, mit jelent ez, akkor a guru ezt mondhatja: Ahogyan a külső világban van ég, ebben a szívben is van. Mind a külső világban, mind a szívben van menny és föld. Mindkettőben van tűz és levegő, nap, hold, villám és csillagok. Ami van a külső világban, és ami nincs, az mind benne van a szívben.
+</p>
+<p class='vspace'>Ha ezt mondják: Ha ebben a lelki városban, ahol minden anyagi elem és vágy összegyűlik, amikor a test eléri az öregkort vagy elpusztul a halálban, mi marad azután?
+</p>
+<p class='vspace'>Akkor ezt mondhatja: Nem hervasztja el az öregség. Nem öli meg a halál. Ez a lelki város örök. Ebben van minden vágy. Itt a lélek mentes az öregségtől, haláltól, siránkozástól, éhségtől és szomjúságtól, a vágyai és a gondolatai automatikusan teljesülnek. Ahogyan a jó tanácsot megfogadva, az emberek vágyai teljesülnek, úgy teljesülnek a lelki világ lakóinak a vágyai is.
+</p>
+<p class='vspace'>Ebben az életben a munka gyümölcsei végül megsemmisülnek, és ugyanígy megsemmisülnek a következő életben végzett munka gyümölcsei is. Aki nem érti a lélek természetét, beteljesületlen és kielégületlen marad még akkor is, ha egyébként minden vágya teljesül. Nem jut el a lelki világba a test halálakor. Aki megérti a lélek természetét, elégedett és beteljesült lesz. Minden vágya teljesül ebben a világban. Eljut a lelki világba a test halálakor.
+</p>
+<p class='vspace'>Ha Pitrlokára akar menni, csupán erre a vágyra megjelennek előtte a Pitrk, elviszik őt Pitrlokára, és boldog lesz.
+</p>
+<p class='vspace'>Ha Mátrlokára, Bhártlokára, Szakhilokára, Gandhamáljalokára, Annapánalokára, Gitáváditralokára, Sztrilokára akar menni, megjelennek a Mátrk, Bhártrk, Szakhik, Gandhamálják, Annapánák, Gitáváditrák és Sztrik, odaviszik, és boldog lesz.
+</p>
+<p class='vspace'>Bármit kíván, megjelenik, csak azért, mert kívánta. Így boldog lesz.
+</p>
+<p class='vspace'>Amikor a lélek igazi lelki vágyait befedik a hamis anyagi vágyak, a lélek nem találkozhat Istennel a halála után.
+</p>
+<p class='vspace'>Sem ebben, sem a következő életben nem teljesülnek azok vágyai, akik mást akarnak, mint a lelki boldogságot. Lelki vágyaikat befedi az anyagi illúzió. Olyanok, mint aki elásott kincset keres. Mivel nem tudja, hol van a kincs, újra meg újra elmegy felette, de sose kapja meg. Mindig közel van a lelki birodalomhoz, de az anyagi illúzió megakadályozza abban, hogy belépjen.
+</p>
+<p class='vspace'>Isten ott lakik az élőlények szívében, és ezért nevezik Hrdajamnak, ami azt jelenti, a személy (ajam) a szívben (hrd). Aki állandóan tudatában van annak, hogy az Úr jelen van a szívében, eléri a lelki világot.
+</p>
+<p class='vspace'>Amikor egy ilyen lélek elhagyja a jelenlegi anyagi testet, belép a ragyogó lelki világba. Megnyilvánul az eredeti lelki formája. Halhatatlan és félelem nélküli. Szatja (igazság).
+</p>
+<p class='vspace'>A szatjam szó három szótagból áll: szat, i és jam. Szat a halhatatlan Istent jelenti, aki soha nincs benne az ismételt születés és halál körforgásában, és i a lelket jelenti, aki abba bekerülhet. Jam az a folyamat, amely a lelket kapcsolatba hozza Istennel. Aki ezt tudja, eléri a lelki világot.
+</p>
+<p class='vspace'>Isten valamennyi világ irányítója. Ő az örök határ, amelyet soha nem lépnek át a nappal, éjszaka, öregség, halál, siránkozás, jámborság és vallástalanság. A bűnök elfordulnak Tőle. Mentes a bűntől. Ha egy vak átlép a lelki világ határán, megszabadul a vakságtól. Az anyagi szenvedésektől megsebzett ember megszabadul a szenvedésektől, az ismételt születés és halál fájdalmában égő is megszabadul, ha átlépi azt a határt. Isten lelki birodalma túllép az anyagi idő nappalain és éjszakáin, és örökké megnyilvánul.
+</p>
+<p class='vspace'><strong>14. A Legfelsőbb Igazság lelki energiájának három természete van: a saját természete, a lelkek természete és Májá természete.</strong>
+</p>
+<p class='vspace'>A lelki természetben határtalan változatosság van. A májávádik azt gondolják, a szellemben nincs változatosság. Azt mondják, – Változatosság csak Májában van. Ha valaki lemond Májáról, és a szellem felé fordul, elhajítja a változatosságot. Amikor a lélek eléri az eredeti természetét, minden változatosság eltűnik, és minden egy lesz. – Milyen alapokra épültek a májávádik e gondolatai? Milyen gyökérből nőnek? A válasz ez: Ezek a gondolatok csak a szeszélyeiken alapulnak. Melyik szentírásban vannak ezek a gondolatok? A logikai érvelés melyik láncán jutottak el ide? Ezt senki sem tudja megmondani. A Cshándógja Upanisád idézett szövegében a lelki változatosság leírását láttuk. A lelki világban jelen van Isten formája, a lelkek formái, nagyon sokféle hely, hold, nap és más égitestek, folyók, sok más szép és dicsőséges dolog. Szintén ott van a lelki világban a boldogság ízeinek (rasza) nagy változatossága. A lelkek természete az, hogy ők az Úr határ-energiája (tatasztha). A lelki és az anyagi energiák között állnak. Vagy Májá-sakti befolyásolja őket, vagy a lelki energia. Májának az a természete, hogy ő a szellem eltorzult tükörképe. A lelkeket, akik elfordították az arcukat a Legfelsőbb Úrtól, be kellett fedni egy durva és egy finom anyagi testtel.
+</p>
+<p class='vspace'><strong>15. Bár lehet, hogy még az anyagi világban tartózkodik, nagyon szerencsés az a lélek, aki fel akarja éleszteni az eredeti lelki természetét. Végül ezt visszanyeri.</strong>
+</p>
+<p class='vspace'>Így végződik a Tattva-viveka.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivinoda.tattva-viveka_01.html'>Első megvalósítás</a> | <a class='wikilink' href='index.php-n=bhaktivinoda.tattva-viveka.html'>Tattva-viveka</a></span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on March 05, 2008, at 07:21 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

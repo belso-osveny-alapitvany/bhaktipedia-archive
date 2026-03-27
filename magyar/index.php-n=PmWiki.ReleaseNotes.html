@@ -1,0 +1,1466 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Release Notes</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : PmWiki - RSS Feed'
+      href='index.php-n=PmWiki.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='noindex,nofollow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'> MAGYAR<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Másik nyelv</a></small><br />
+</p><ul><li><a class='wikilink' href='index.php-n=Main.mi_a_bhaktipedia.html'>Mi a Bhaktipédia?</a>
+</li><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Mit hol találsz?</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/magyar/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Send your message</a>
+</li></ul><p class='vspace'>Katalógusok
+</p><ul><li><a class='wikilink' href='index.php-n=Main.Catalog_beginner.html'>Az első lépések... ajánlott irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_general.html'>Filozófia és gyakorlat</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_advanced.html'>Bizalmas írások</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_special.html'>Kiegészítő irodalom</a>
+</li><li><a class='wikilink' href='index.php-n=Main.Catalog_all.html'>Szerzők szerint</a>
+</li></ul><p class='vspace'>Lexikon
+</p><ul><li><a class='wikilink' href='index.php-n=lexikon.nevek.html'>Személyek</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.helyek.html'>Helyek és események</a>
+</li><li><a class='wikilink' href='index.php-n=lexikon.fogalmak.html'>Fogalmak</a>
+</li></ul><p class='vspace'>Segédletek
+</p><ul><li><a class='wikilink' href='index.php-n=Main.atirasi_utmutato.html'>Átírási útmutató</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=for_editors.for_editors.html'>for_editors.for_editors</a>
+</p>
+<p class='vspace'>Keresés a Bhaktipédiában
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/magyar/index.php?n=PmWiki.ReleaseNotes' method='get'><input type='hidden' name='n' value='PmWiki.ReleaseNotes' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<p class='vspace'  style='text-align: center;'><a href='../message_hun/message.html' onclick="return popWin('http://bhaktipedia.org/message_hun/message.html','popup0','520','360','center','center','1','1','0','0','0','0','0')">Üzenet a szerkesztőnek</a>
+</p>
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.vaisnava.hu/wva/' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Belépés</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='index.php-n=Site.Search.html'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='index.php-n=Site.Search.html'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Release Notes"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.ReleaseNotes-discussion?action=edit'>Eszmecsere</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p>
+</p>
+<p class='vspace rfloat  rfloat' style='background-color: #eee;'><span class='wikitrail'>&lt;&lt;  | <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Documentation_Index?action=edit'>Documentation Index</a> |  &gt;&gt;</span>
+</p>
+<div class='vspace'></div><h2>Version 2.2.0-beta1 through 2.2.0-beta65 (2006-09-25 to 2007-11-17)</h2>
+<p>As discussed on the pmwiki-users mailing list, we have a number of
+new features and refactorings taking place in the core code.  Thus,
+the next set of releases will be designated as "2.2.0-beta", so
+that administrators will know to review the release notes here
+for important changes that may impact their site when upgrading
+from 2.1.x or earlier to a 2.2 release.
+</p>
+<p class='vspace'>Here's a list of important changes:
+</p>
+<div class='vspace'></div><ul><li>As of 2.2.0-beta58, several pages that were formally in the <a class='wikilink' href='index.php-n=Site.Site.html'>Site</a>.* group are now in a separate <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.SiteAdmin?action=edit'>SiteAdmin</a>.* group, which is read-restricted by default.  The affected pages include Site.AuthUser, Site.AuthList, Site.NotifyList, Site.Blocklist, and Site.ApprovedUrls .  If upgrading from an earlier version of PmWiki, PmWiki will prompt to automatically copy these pages to their new location if needed.  If a site wishes to continue using the old Site.* group for these pages, simply set
+</li></ul><div class='vspace'></div><div class='indent'>&#36;SiteAdminGroup = &#36;SiteGroup;
+<div class='vspace'></div></div><div class='indent'>As of 2.2.0-beta59 this feature works for WikiFarms, in beta-58 affected pages in each field have to be manually reconfigured, or the above setting to change &#36;SiteAdminGroup made.
+</div><div class='indent'>when carrying out this upgrade inspect your config files for lines such as
+<div class='indent'><a class='varlink' href='index.php-n=PmWiki.Blocklist.html#BlocklistDownload'><code class='varlink'>&#36;BlocklistDownload</code></a>['Site.Blocklist-PmWiki'] = array('format' =&gt; 'pmwiki');
+</div></div><div class='indent'>as you may wish to fix then, eg
+<div class='indent'><a class='varlink' href='index.php-n=PmWiki.Blocklist.html#BlocklistDownload'><code class='varlink'>&#36;BlocklistDownload</code></a>[&#36;SiteAdminGroup . '.Blocklist-PmWiki'] = array('format' =&gt; 'pmwiki');
+</div></div><div class='vspace'></div><ul><li>Important Change in Passwords in PmWiki 2.2 indicating that the group can be edited even if a site password is set will be done by <code>"@nopass"</code> prior it was done by <code>"nopass"</code>
+</li></ul><div class='indent'>When migrating a wiki you will have to manually modify the permission or by a script replace in all the page concerned <code>passwdread=nopass:</code> by <code>passwdread=@nopass</code> (see <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PITS.00961?action=edit'>00961</a>) <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=Profiles.isidor?action=edit'>isidor</a>
+</div><div class='vspace'></div><ul><li>PmWiki now ships with WikiWords entirely disabled by default.  To re-enable them, set either &#36;LinkWikiWords or &#36;EnableWikiWords to 1.  To get the 2.1 behavior where WikiWords are spaced and parsed but don't form links, use the following:
+</li></ul><div class='indent'>&#36;EnableWikiWords = 1;
+</div><div class='indent'>&#36;LinkWikiWords = 0;
+</div><div class='vspace'></div><ul><li>It's now easy to disable the rule that causes lines with leading spaces to be treated as preformatted text -- simply set &#36;EnableWSPre=0; to disable this rule.
+<div class='vspace'></div><div class='indent'><strong>Important:</strong> There is ongoing discussion that the leading whitespace rule may be disabled <em>by default</em> in a future versions of 2.2.0-beta.  If you want to make sure that the rule will continue to work in future upgrades, set &#36;EnableWSPre=1; in <em>local/config.php</em>.
+</div><div class='vspace'></div></li><li>The &#36;ROSPatterns variable has changed somewhat -- replacement strings are no longer automatically passed through FmtPageName() prior to substitution (i.e., it must now be done explicitly).
+<div class='vspace'></div></li><li>Page variables and page links inside of <code class='escaped'>(:include:)</code> pages are now treated as relative to the included page, instead of the currently browsed page.  In short, the idea is that links and page variables should be evaluated with respect to the page in which they are written, as opposed to the page in which they appear.  This seems to be more in line with what authors expect.  There are a number of important ramifications of this change:
+</li></ul><p class='vspace'><a name='relativeurls' id='relativeurls'></a>
+</p><dl><dd><ul><li>We now have a new <code class='escaped'>{*$var}</code> form of page variable, which always refers to "the currently displayed page".  Pages such as Site.PageActions and Site.EditForm that are designed to work on "the currently browsed page" should generally switch to using <code class='escaped'>{*$FullName}</code> instead of <code class='escaped'>{$FullName}</code>.
+<div class='vspace'></div></li><li>The &#36;EnableRelativePageLinks and &#36;EnableRelativePageVars settings control the treatment of links and page variables in included pages.  However, to minimize disruption to existing sites, &#36;EnableRelativePageVars defaults to <strong>disabled</strong>.  This will give existing sites an opportunity to convert any absolute <code class='escaped'>{$var}</code> references to be <code class='escaped'>{*$var}</code> instead.
+<div class='vspace'></div></li><li>Eventually &#36;EnableRelativePageVars will be enabled by default, so we highly recommend setting <code class='escaped'>$EnableRelativePageVars = 1;</code> in <em>local/config.php</em> to see how a site will react to the new interpretation.  Administrators should especially check any customized versions of the following:
+<div class='indent'><a class='wikilink' href='index.php-n=Site.PageActions.html'>Site.PageActions</a>
+</div><div class='indent'><a class='wikilink' href='index.php-n=Site.EditForm.html'>Site.EditForm</a>
+</div><div class='indent'><a class='wikilink' href='index.php-n=Site.PageNotFound.html'>Site.PageNotFound</a>
+</div><div class='indent'>SideBar pages with ?action= links for the current page
+</div><div class='indent'>&#36;GroupHeaderFmt, &#36;GroupFooterFmt
+</div><div class='indent'><a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Page_lists?action=edit'>Page lists</a> that refer to the current group or page, etc in sidebars, headers, and footers
+</div><div class='vspace'></div></li><li>The <code class='escaped'>(:include:)</code> directive now has a <code class='escaped'>basepage=</code> option whereby an author can explicitly specify the page upon which relative links and page variables should be based.  If no basepage= option is specified, the included page is assumed to be the base.
+</li></ul></dd></dl><div class='vspace'></div><ul><li>Sites that want to retain the pre-2.2 behavior of <code class='escaped'>(:include:)</code> and other items can set <code class='escaped'>$Transition['version'] = 2001900;</code> to automatically retain the 2.1.x defaults.
+<div class='vspace'></div></li><li>Text inserted via <code class='escaped'>(:include:)</code> can contain "immediate substitutions" of the form <code class='escaped'>{$$option}</code> -- these are substituted with the value of any options provided to the include directive.
+<div class='vspace'></div></li><li>PmWiki now recognizes when it is being accessed via "https:" and switches its internal links appropriately.  This can be overridden by explicitly setting &#36;ScriptUrl and &#36;PubDirUrl.
+<div class='vspace'></div></li><li>A new &#36;EnableLinkPageRelative option allows PmWiki to generate relative urls for page links instead of absolute urls.
+<div class='vspace'></div></li><li>Draft handling capabilities have been greatly improved.  When &#36;EnableDrafts is set, then the "Save" button is relabeled to "Publish" and a "Save draft" button appears.  In addition, an &#36;EnablePublishAttr configuration variable adds a new "publish" authorization level to distinguish editing from publishing.  See <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Drafts' rel='nofollow'>PmWiki:Drafts</a> for more details.
+</li></ul><p class='vspace'><a name='ptvstart' id='ptvstart'></a>
+</p><ul><li>There is a new <code class='escaped'>{$:var}</code> "page text variable" available that is able to grab text excerpts out of markup content.  For example, <code class='escaped'>{SomePage$:Xyz}</code> will be replaced by a definition of "Xyz" in SomePage.  Page text variables can be defined using definition markup, a line beginning with the variable name and a colon, or a special directive form (that doesn't display anything on output):
+<div class='vspace'></div><div class='indent'><pre class='escaped'>
+:Xyz: some value            # definition list form
+Xyz: some value             # colon form
+(:Xyz: some value:)         # directive form
+</pre>
+</div></li></ul><p><a name='ptvend' id='ptvend'></a>
+</p>
+<div class='vspace'></div><ul><li>The <code class='escaped'>(:pagelist:)</code> command can now filter pages based on the contents of page variables and/or page text variables.  For example, the following directive displays only those pages that have an "Xyz" page text variable with "some value":
+<div class='vspace'></div><div class='indent'><code class='escaped'>(:pagelist $:Xyz="some value":)</code>
+</div><div class='vspace'></div>Wildcards also work here, thus the following pagelist command lists pages where the page's title starts with the letter "a":
+<div class='vspace'></div><div class='indent'><code class='escaped'>(:pagelist $Title=A* :)</code>
+</div><div class='vspace'></div></li><li>The if= option to <code class='escaped'>(:pagelist)</code> can be used to filter pages based on conditional markup:
+<div class='vspace'></div><div class='indent'><code class='escaped'>(:pagelist if="auth upload {=$FullName}":)</code>  pages with upload permission
+</div><div class='indent'><code class='escaped'>(:pagelist if="date today.. {=$Name}":)</code> pages with names that are dates later than today
+</div><div class='vspace'></div></li><li>Spaces no longer separate wildcard patterns -- use commas.  (Most people have been doing this already.)
+<div class='vspace'></div></li><li>Because page variables are now "relative", the <code class='escaped'>{$PageCount}, {$GroupCount}, {$GroupPageCount}</code> variables used in pagelist templates are now <code class='escaped'>{$$PageCount}, {$$GroupCount}, {$$GroupPageCount}</code>.
+<div class='vspace'></div></li><li>One can now use <code class='escaped'>{$$option}</code> in a pagelist template to obtain the value of any 'option=' provided to the <code class='escaped'>(:pagelist:)</code> command.
+<div class='vspace'></div></li><li>The <code class='escaped'>(:pagelist:)</code> directive no longer accepts parameters from urls or forms by default.  In order to have it accept such parameters (which was the default in 2.1 and earlier), add a <code class='escaped'>request=1</code> option to the <code class='escaped'>(:pagelist:)</code> directive.
+<div class='vspace'></div></li><li>The <code class='escaped'>count=</code> option to pagelists now accepts negative values to count from the end of the list.  Thus <code class='escaped'>count=5</code> returns the the first five pages in the list, and <code class='escaped'>count=-5</code> returns the last five pages in the list.  In addition, ranges of pages may be specified, as in <code class='escaped'>count=10..19</code> or <code class='escaped'>count=-10..-5</code>.
+<div class='vspace'></div></li><li>Pagelist templates may have special <code class='escaped'>(:template first ...:)</code> and <code class='escaped'>(:template last ...:)</code> sections to specify output for the first or last page in the list or a group.  There's also a <code class='escaped'>(:template defaults ...:)</code> to allow a template to specify default options.
+<div class='vspace'></div></li><li>PmWiki comes with an ability to cache the results of certain <code class='escaped'>(:pagelist:)</code> directives, to speed up processing on subsequent visits to the page.  To enable this feature, set &#36;PageListCacheDir to the name of a writable directory (e.g., <em>work.d/</em>).
+<div class='vspace'></div></li><li>The <code class='escaped'>(:if ...:)</code> conditional markup now also understands <code class='escaped'>(:elseif ...:)</code> and <code class='escaped'>(:else:)</code>.  Conditions still do not nest, however.
+<div class='vspace'></div></li><li>The <code class='escaped'>(:if date ...:)</code> conditional markup can now perform date comparisons for dates other than the current date and time.
+<div class='vspace'></div></li><li><a class='wikilink' href='index.php-n=PmWiki.WikiTrails.html'>WikiTrails</a> can now specify #anchor identifiers to use only sections of pages as a trail.
+<div class='vspace'></div></li><li>A new <code class='escaped'>(:if ontrail ...:)</code> condition allows testing if a page is listed on a trail.
+<div class='vspace'></div></li><li>The extensions .odt, .ods, and .odp (from OpenOffice.org) are now recognized as valid attachment types by default.
+<div class='vspace'></div></li><li>A new <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.blocklist?action=edit'>blocklist</a> capability has been added to the core distribution.  It allows blocking of posts based on IP address, phrase, or regular expression, and can also make use of publicly available standard blocklists.  See <a class='wikilink' href='index.php-n=PmWiki.Blocklist.html'>PmWiki.Blocklist</a> for details.
+<div class='vspace'></div></li><li>There is a new <a class='wikilink' href='http://bhaktipedia.org/magyar/index.php?n=SiteAdmin.AuthList'>SiteAdmin.AuthList</a> page that can display a summary of all password and permissions settings for pages on a site.  This page is restricted to administrators by default.
+<div class='vspace'></div></li><li>There are new <code class='escaped'>{$PasswdRead}</code>, <code class='escaped'>{$PasswdEdit}</code>, etc. variables that display the current password settings for a page (assuming the browser has attr permissions or whatever permissions are set in &#36;PasswdVarAuth).
+<div class='vspace'></div></li><li>Forms creation via the <code class='escaped'>(:input:)</code> markup has been internally refactored somewhat (and may still undergo some changes prior to 2.2.0 release).  The new <code class='escaped'>(:input select ...:)</code> markup can be used to create select boxes, and <code class='escaped'>(:input default ...:)</code> can be used to set default control values, including for radio buttons and checkboxes.
+<div class='vspace'></div></li><li>The <code class='escaped'>(:input textarea:)</code> markup now can take values from other sources, including page text variables from other pages.
+<div class='vspace'></div></li><li>Specifying <code class='escaped'>focus=1</code> on an <code class='escaped'>(:input:)</code> control causes that control to receive the input focus when a page is loaded.  If a page has multiple controls requesting the focus, then the first control with the lowest value of <code class='escaped'>focus=</code> "wins".
+<div class='vspace'></div></li><li>PmWiki now provides a <em>scripts/creole.php</em> module to enable Creole standard markup.  To enable this, add <code class='escaped'>include_once('scripts/creole.php')</code> to a local customization file.
+<div class='vspace'></div></li><li>PmWiki adds a new <code class='escaped'>{(...)}</code> <em>markup expression</em> capability, which allows various simple string and data processing (e.g., formatting of dates and times).  This is extensible so that recipe authors and system administrators can easily add custom expression operators.
+<div class='vspace'></div></li><li>It's now possible to configure PmWiki to automatically create Category pages whenever a page is saved with category links and the corresponding category doesn't already exist.  Pages are created only if the author has appropriate write permissions into the group.  To enable this behavior, add the following to <em>local/config.php</em>:
+<div class='vspace'></div><div class='indent'><code class='escaped'>$AutoCreate['/^Category\\./'] = array('ctime' =&gt; $Now);</code>
+</div><div class='vspace'></div></li><li>Sites with wikiwords enabled can now set &#36;WikiWordCount['WikiWord'] to -1 to indicate that 'WikiWord' should not be spaced according to &#36;SpaceWikiWords.
+<div class='vspace'></div></li><li>WikiWords that follow # or &amp; are no longer treated as WikiWords.
+<div class='vspace'></div></li><li>Links to non-existent group home pages (e.g., <code class='escaped'>[[Group.]]</code> and <code class='escaped'>[[Group/]]</code>) will now go to the first valid entry of &#36;PagePathFmt, instead of being hardcoded to "Group.Group".  For example, to set PmWiki to default group home pages to <code class='escaped'>$DefaultName</code>, use
+<div class='vspace'></div><div class='indent'><code class='escaped'>$PagePathFmt = array('{$Group}.$1', '$1.{$DefaultName}', '$1.$1');</code>
+</div><div class='vspace'></div></li><li>PmWiki now provides a &#36;CurrentTimeISO and &#36;TimeISOFmt variables, for specifying dates in ISO format.
+<div class='vspace'></div></li><li><a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Cookbook' rel='nofollow'>Cookbook</a> authors can use the internal PmWiki function UpdatePage (temporarily documented at <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/DebuggingForCookbookAuthors' rel='nofollow'>DebuggingForCookbookAuthors</a>) to change page text while preserving history/diff information, updating page revision numbers, updating RecentChanges pages, sending email notifications, etc.
+<div class='vspace'></div></li><li><a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Skin_templates?action=edit'>Skin templates</a> are now required to have &lt;!--HTMLHeader--&gt; and &lt;!--HTMLFooter--&gt; directives.  Setting &#36;EnableSkinDiag causes PmWiki to return an error if this isn't the case for a loaded skin.  Skins that explicitly do not want HTMLHeader or HTMLFooter sections can use &lt;!--NoHTMLHeader--&gt; and &lt;!--NoHTMLFooter--&gt; to suppress the warning.
+<div class='vspace'></div></li><li>Added a new "pre" wikistyle for preformatted text blocks.
+<div class='vspace'></div></li><li>The xlpage-utf-8.php script now understands how to space UTF-8 wikiwords.  
+<div class='vspace'></div></li><li>Searches on utf-8 site are now case-insensitive for utf-8 characters.
+<div class='vspace'></div></li><li>Many Abort() calls now provide a link to pages on pmwiki.org that can explain the problem in more detail and provide troubleshooting assistance.
+<div class='vspace'></div></li><li>PmWiki no longer reports "?cannot acquire lockfile" if the visitor is simply browsing pages or performing other read-only actions.
+<div class='vspace'></div></li><li>The &#36;EnableReadOnly configuration variable can be set to signal PmWiki that it is to run in "read-only" mode (e.g., for distribution on read-only media).  Attempts to perform actions that write to the disk are either ignored or raise an error via Abort().
+<div class='vspace'></div></li><li>Including authuser.php no longer automatically calls ResolvePageName().
+<div class='vspace'></div></li><li>Authentication using Active Directory is now simplified.  In Site.AuthUser or the &#36;AuthUser variable, set "ldap://name.of.ad.server/" with no additional path information (see PmWiki.AuthUser for more details).
+<div class='vspace'></div></li><li>Pages are now saved with a "charset=" attribute to identify the character set in effect when the page was saved.
+<div class='vspace'></div></li><li>The phpdiff.php algorithm has been optimized to be smarter about finding smaller diffs.
+<div class='vspace'></div></li><li>Removed the (deprecated) "#wikileft h1" and "#wikileft h5" styles from the pmwiki default skin.
+<div class='vspace'></div></li><li>The mailposts.php and compat1x.php scripts have been removed from the distribution.
+</li></ul><div class='vspace'></div><h2>Version 2.1.27 (2006-12-11)</h2>
+<p>This version backports from 2.2.0-beta a bugfix for &#36;TableRowIndexMax and also support for the <code class='escaped'>{*$Variable}</code> markup.
+</p>
+<div class='vspace'></div><h2>Version 2.1.26 (2006-09-11)</h2>
+<p>This version fixes a bug in feeds.php that would cause feed entries to be mixed up.
+</p>
+<div class='vspace'></div><h2>Version 2.1.25 (2006-09-08)</h2>
+<p>This release fixes a bug in authuser.php introduced by the 2.1.24 release.
+</p>
+<p class='vspace'>The skin template code has also been extended to allow <code class='escaped'>&lt;!--XMLHeader--&gt;</code> and <code class='escaped'>&lt;!--XMLFooter--&gt;</code> as aliases for <code class='escaped'>&lt;!--HTMLHeader--&gt;</code> and <code class='escaped'>&lt;!--HTMLFooter--&gt;</code>.
+</p>
+<div class='vspace'></div><h2>Version 2.1.24 (2006-09-06)</h2>
+<p>This release makes some improvements and fixes to the <a class='wikilink' href='index.php-n=PmWiki.AuthUser.html'>AuthUser</a>
+capability.
+</p>
+<p class='vspace'>A bug in authuser.php that had trouble dealing with non-array values in &#36;AuthUser has been fixed.
+</p>
+<p class='vspace'>It is now possible to specify group memberships from <em>local/config.php</em> (remember that such entries must come <em>before</em> including the <em>authuser.php</em> script):
+</p>
+<div class='vspace'></div><pre>    # alice and bob's passwords
+    &#36;AuthUser['alice'] = crypt('alicepassword');
+    &#36;AuthUser['bob'] = crypt('bobpassword');
+
+    # members of the @writers and @admins groups
+    &#36;AuthUser['@writers'] = array('alice',  'bob');
+    &#36;AuthUser['@admins'] = array('alice', 'dave');
+
+    # carol is a member of @editors and @writers
+    &#36;AuthUser['carol'] = array('@editors', '@writers');
+</pre><p class='vspace'>AuthUser can now read from Apache-formatted .htgroup files.  The location of the .htgroup file can be done either in <em>local/config.php</em> or <a class='wikilink' href='index.php-n=SiteAdmin.AuthUser-from=Site.AuthUser.html'>Site.AuthUser</a>
+</p>
+<div class='vspace'></div><pre>    # local/config.php:
+    &#36;AuthUser['htgroup'] = '/path/to/.htgroup';
+
+    # Site.AuthUser
+    htgroup: /path/to/.htgroup
+</pre><div class='vspace'></div><h2>Versions 2.1.21, 2.1.22, 2.1.23 (2006-09-05, 2006-09-06)</h2>
+<p>This release closes a potential security vulnerability for sites 
+that are running with 'register_globals' set to on.  Details of
+the vulnerability will be forthcoming on the mailing list
+and site.
+</p>
+<p class='vspace'>Sites that are running with PHP 'register_globals' and 'allow_url_fopen'
+set to 'On' should upgrade to this release at the earliest
+opportunity.  If upgrading isn't an option, contact Pm for
+a patch to older versions.
+</p>
+<p class='vspace'>There is now a tool available to analyze PmWiki sites for security
+and other configuration settings, see <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/SiteAnalyzer' rel='nofollow'>PmWiki:SiteAnalyzer</a>.
+</p>
+<p class='vspace'>Version 2.1.23 also corrects a bug that prevented PmWiki from being
+able to read pagefiles created by versions of PmWiki before 0.5.6.
+</p>
+<div class='vspace'></div><h2>Version 2.1.20 (2006-09-04)</h2>
+<p>More minor bugfixes:
+</p><ul><li>Corrected a bug with WikiWord references appearing in the <code class='escaped'>(:attachlist:)</code> markup.
+</li><li>Restore ability to remove/override PmWiki's default CSS settings.
+</li></ul><div class='vspace'></div><h2>Version 2.1.19 (2006-08-30)</h2>
+<p>This release provides a number of very minor bugfixes and
+enhancements:
+</p>
+<div class='vspace'></div><ul><li>Fixed a bug in the pageindex code that was causing it to not regenerate as quickly as it should.
+</li><li>Fixed image/object/embed handling in wikistyles to better support the <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/Flash' rel='nofollow'>Cookbook:Flash</a> recipe.
+</li><li>Fixed a bug with wikistyles and input form tags.
+</li></ul><p class='vspace'>The next release(s) may have a number of substantial code
+enhancements and changes, so this release simply closes out
+a few items before introducing those changes.
+</p>
+<div class='vspace'></div><h2>Version 2.1.18 (2006-08-28)</h2>
+<p>This release closes a potential cross-site scripting vulnerability
+that could allow authors to inject Javascript code through the
+various table markups.
+</p>
+<p class='vspace'>The release also adds a new <code class='escaped'>(:input image:)</code> markup to generate
+image input tags in forms.
+</p>
+<p class='vspace'>Finally, this release corrects a problem with <code class='escaped'>?action=print</code>
+failing to properly set the <code class='escaped'>{$Action}</code> page variable.
+</p>
+<div class='vspace'></div><h2>Version 2.1.17 (2006-08-26)</h2>
+<p>This release fixes a long-standing bug with &#36;EnableIMSCaching
+(<a class='urllink' href='http://www.pmwiki.org/PITS/00573' rel='nofollow'>PITS:00573</a>), whereby login/logout operations wouldn't invalidate 
+browser caches, causing some people to see versions of a page prior
+to the login/logout taking place.  
+</p>
+<p class='vspace'>The new IMS caching code maintains a "imstime" cookie in the 
+visitor's browser that keeps track of the time of last login, 
+logout, author name change, or site modification.  This cookie
+is then used to determine the proper response to browser requests
+containing If-Modified-Since headers.  (Previously only the
+time of the last site modification was available.)  
+</p>
+<p class='vspace'>Browsers which do not accept cookies will effectively act as
+though IMS caching is disabled.
+</p>
+<div class='vspace'></div><h2>Version 2.1.16 (2006-08-26)</h2>
+<p>This release makes some improvements to skin handling -- primarily
+this improves the capability of relocating skin files to other
+locations, and to provide the ability for recipes to insert items
+at the <em>end</em> of HTML output.
+</p>
+<p class='vspace'>This release introduces a <code class='escaped'>&lt;!--HTMLFooter--&gt;</code> directive into
+<a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.skin_templates?action=edit'>skin templates</a>, which allows recipes and local
+customizations to insert output near the end of a document 
+using a &#36;HTMLFooterFmt array from PHP.
+</p>
+<p class='vspace'>Also, the <code class='escaped'>&lt;!--HeaderText--&gt;</code> directive, which inserts the
+contents of &#36;HTMLHeaderFmt into the output, has now been
+renamed to <code class='escaped'>&lt;!--HTMLHeader--&gt;</code>.  PmWiki will continue to
+recognize <code class='escaped'>&lt;!--HeaderText--&gt;</code> to preserve compatibility with
+existing skins, but <code class='escaped'>&lt;!--HTMLHeader--&gt;</code> is preferred.
+</p>
+<p class='vspace'>A new &#36;SkinLibDirs array has been introduced which allows
+the source locations and urls for skins to be specified from
+a customization file.  By default &#36;SkinLibDirs is set as
+</p>
+<div class='vspace'></div><pre>  &#36;SkinLibDirs = array("./pub/skins/\$Skin"      =&gt; "&#36;PubDirUrl/skins/\$Skin",
+                  "&#36;FarmD/pub/skins/\$Skin" =&gt; "&#36;FarmPubDirUrl/skins/\$Skin");
+</pre><p class='vspace'>The keys (on the left) indicate the places to look for a "skin .tmpl 
+file" in the filesystem, while the values (on the right) indicate the
+url location of the "skin css file".  Modifying the value of 
+&#36;SkinLibDirs allows a skin .tmpl file to be located anywhere on the 
+filesystem.
+</p>
+<p class='vspace'>As far as I can see, none of the changes introduced by this
+release should have any sort of negative impact on existing
+sites, so it should be safe to upgrade.  (If I'm wrong, please
+let me know.)
+</p>
+<div class='vspace'></div><h2>Version 2.1.15 (2006-08-25)</h2>
+<p>This release includes a number of feature enhancements and code cleanups
+as reported or requested by administrators.
+</p>
+<p class='vspace'>First, AuthUser's LDAP authentication system now allows the use of
+a <code class='escaped'>?filter</code> parameter, consistent with urls used for mod_auth_ldap
+authorization in Apache.  See the newly updated LDAP section of the
+<a class='wikilink' href='index.php-n=PmWiki.AuthUser.html'>AuthUser</a> documentation for more details.
+</p>
+<p class='vspace'>A chicken-and-egg problem with the <code class='escaped'>@_site_*</code> authorization groups
+has been resolved.  It's now possible to have a page's read authorization
+refer to things such as <code class='escaped'>_site_edit</code>.
+</p>
+<p class='vspace'>Also, the RetrieveAuthPage() function -- used for retrieving pages only
+if the visitor is authorized to do so -- now recognizes a special
+level parameter of 'ALWAYS', which means to always authorize access
+regardless of the browser or visitors current permissions.  This
+may be useful for allowing certain operations to take place from
+within trusted scripts without having to grant full authorization
+to the browser.
+</p>
+<p class='vspace'>Hardcoded instances of the <em>local/</em> directory now use a
+customizable &#36;LocalDir variable.  This variable controls where
+PmWiki looks for <em>local/config.php</em> and per-group customization 
+files.  It may be useful for some <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.Wiki_Farms?action=edit'>Wiki Farm</a> contexts.  Note that
+this does not change or affect the location of 
+<em>&#36;FarmD/local/farmconfig.php</em>.
+</p>
+<p class='vspace'>Some minor internal changes have been made to 
+<em>scripts/wikistyles.php</em> to better accommodate the 
+wikipublisher recipe.  It's probably better if we don't try
+to explain them.  :-)
+</p>
+<div class='vspace'></div><h2>Version 2.1.13, 2.1.14 (2006-08-15, 2006-08-16)</h2>
+<p>This release fixes a bug in handling numeric passwords, and also
+allows ldaps:// authentication sources.
+</p>
+<div class='vspace'></div><h2>Version 2.1.12 (2006-08-07)</h2>
+<p>This version introduces the ability to nest divs and tables.
+The standard <code class='escaped'>(:table:)</code> and <code class='escaped'>(:div:)</code> markups are still
+available, except that a <code class='escaped'>(:div:)</code> may contain a <code class='escaped'>(:table:)</code>
+and vice-versa.  
+</p>
+<p class='vspace'>As in previous versions of PmWiki, the <code class='escaped'>(:div:)</code> markup
+automatically closes any previous <code class='escaped'>(:div:)</code>.  However, there
+are now <code class='escaped'>(:div1:)</code>, <code class='escaped'>(:div2:)</code>, etc. markups (and the
+corresponding <code class='escaped'>(:div1end:)</code>, <code class='escaped'>(:div2end:)</code>, ...) which can be
+used to uniquely distinguish divs for nesting purposes.
+</p>
+<p class='vspace'>To restore PmWiki's previous "non-nested" div behavior, set
+$Transition['nodivnest'] = 1; in a local customization file.
+</p>
+<p class='vspace'>Other changes in this release:
+</p><ul><li>Add a <code class='escaped'>(:noaction:)</code> directive to suppress display of page actions.
+</li><li>Allow anchor tags to contain colons, hyphens, and dots.
+</li><li>Add "white-space" as an allowed wikistyle.
+</li><li>Other minor bug fixes and typographical corrections.
+</li></ul><div class='vspace'></div><h2>Version 2.1.11 (2006-06-09)</h2>
+<p>This is a minor update that prevents <code class='escaped'>%define=%</code> wikistyles
+from generating empty paragraphs in the HTML output.  Prior to
+this release, markup lines containing only wikistyle definitions
+would often generate empty paragraphs (&lt;p&gt;&lt;/p&gt;), this release
+changes things so that a markup line beginning with <code class='escaped'>%define=</code>
+and containing only wikistyle definitions will not initiate
+a new paragraph.
+</p>
+<div class='vspace'></div><h2>Version 2.1.10 (2006-06-03)</h2>
+<p>Version 2.1.4 introduced an <code class='escaped'>{$Action}</code> page variable that would
+contain the current <code class='escaped'>?action=</code> value.  Unfortunately, this page
+variable conflicted with a pre-existing <code class='escaped'>$Action</code> global variable
+that was being used by skins to display a human-friendly form of
+the current action.  Since there's not really a clean way to resolve
+this, I've decided to keep <code class='escaped'>{$Action}</code> as a page variable
+with the current action value (as introduced in 2.1.4), and change 
+the global for skins to be &#36;ActionTitle.  This will require updating
+skins to use &#36;ActionTitle instead of $Action.  I apologize for the
+conflict.
+</p>
+<p class='vspace'>This release adds a Site.LocalTemplates page for the <code class='escaped'>fmt=#xyz</code>
+option in pagelist and search results.  The list of pages to be
+searched can be customized via the &#36;FPLTemplatePageFmt variable.
+The <code class='escaped'>fmt=#xyz</code> option will now also search the current page for
+a matching template before searching Site.LocalTemplates
+and Site.PageListTemplates.
+</p>
+<p class='vspace'>The 'pmwiki' skin now places a &lt;span&gt; around the "Recent Changes"
+link in the header to make it somewhat easier to style.
+</p>
+<div class='vspace'></div><h2>Version 2.1.9 (2006-06-02)</h2>
+<p>This release fixes a long-standing and difficult-to-find bug with
+the handling of <code class='escaped'>[[~Author]]</code> links.
+</p>
+<div class='vspace'></div><h2>Version 2.1.8 (2006-06-01)</h2>
+<p>This release simply changes the &#36;NotifyListFmt variable to be
+<a class='varlink' href='index.php-n=PmWiki.Notify.html#NotifyListPageFmt'><code class='varlink'>&#36;NotifyListPageFmt</code></a> (more descriptive), and adds a <a class='varlink' href='index.php-n=PmWiki.Notify.html#NotifyList'><code class='varlink'>&#36;NotifyList</code></a>
+array that can be used to specify notification entries from
+a configuration file.
+</p>
+<div class='vspace'></div><h2>Version 2.1.7 (2006-05-31)</h2>
+<p>This release introduces a variety of improvements and bugfixes.
+</p>
+<p class='vspace'><strong>Vspace paragraphs are now divs:</strong>
+Version 2.1.7 changes the way that PmWiki handles vertical
+space in output (the infamous <code class='escaped'>&lt;p class='vspace&gt;&lt;/p&gt;</code> sequence).
+Instead of using paragraphs, PmWiki now generates 
+<code class='escaped'>&lt;div class='vspace'&gt;&lt;/div&gt;</code> for vertical space sequences.
+In addition, PmWiki is able to collapse the vspace &lt;div&gt; with
+any subsequent paragraph tags, such that a sequence like
+</p>
+<div class='vspace'></div><pre>    &lt;div class='vspace&gt;&lt;/div&gt;&lt;p&gt;...paragraph text...&lt;/p&gt;
+</pre><p class='vspace'>is automatically converted to
+</p>
+<div class='vspace'></div><pre>    &lt;p class='vspace'&gt;...paragraph text...&lt;/p&gt;
+</pre><p class='vspace'>This allows for better control over paragraph spacing.  It is
+expected that this change in vspace handling will not have
+any detrimental effects on existing sites.  Sites that have
+set custom values for &#36;HTMLVSpace will continue to use the
+custom value.  A site that wants to restore PmWiki's earlier
+handling of vspace can do so by adding the following to
+<em>local/config.php</em>:
+</p>
+<div class='vspace'></div><pre>    &#36;HTMLVSpace = "&lt;p class='vspace'&gt;&lt;/p&gt;";
+</pre><p class='vspace'><strong>Improved email notifications of changes:</strong>  Version 2.1.7
+incorporates a <em>notify.php</em> script that provides improved
+capabilities for sending email notifications in response to
+page changes.  This script is intended to replace the previous
+<a class='wikilink' href='index.php-n=PmWiki.MailPosts.html'>MailPosts</a> capability, which is now deprecated (but will
+continue to be supported in PmWiki 2.1.x).  Details and 
+instructions for using notify.php are in the <a class='wikilink' href='index.php-n=PmWiki.Notify.html'>PmWiki.Notify</a> page.
+</p>
+<p class='vspace'><strong>Added 'group home page' syntax:</strong> A group name followed
+by only a dot or slash is automatically treated as a reference
+to the group's home page, whatever it happens to be.  This simplifies
+some pagelist templates as well as a number of other items. 
+In particular, group links in pagelist output now points to the
+correct locations (instead of being a page in the current group).
+</p>
+<p class='vspace'>Several bugs and vulnerabilities have been fixed:
+</p><ul><li>The default width of edit forms is now more appropriate for Internet Explorer.
+</li><li>Authentication failure messages from LDAP are now suppressed.
+</li><li>Some cross-site scripting vulnerabilities in uploads and page links have been corrected (courtesy Moritz Naumann, <a class='urllink' href='http://moritz-naumann.com' rel='nofollow'>http://moritz-naumann.com</a>).
+</li><li>A problem with invalid pagenames resulting in redirect loops has been corrected.
+</li></ul><div class='vspace'></div><h2>Version 2.1.6 (2006-05-22)</h2>
+<p>The primary improvement in this release is the addition of 
+a pagename argument to the <code class='escaped'>(:if auth:)</code> conditional markup.
+Thus one can display markup based on a visitor's authorization
+to a page other than the current one.  For example, to test
+for edit privileges to Main.WikiSandbox, one would use
+<code class='escaped'>(:if auth edit Main.WikiSandbox:)</code>.  As before, if the
+pagename is omitted the directive tests authorization to
+the current page.
+</p>
+<p class='vspace'>This release also restores the ability to have hyphens in
+InterMap link names.
+</p>
+<p class='vspace'>Lastly, the release closes a potential cross-site scripting
+vulnerability in the WikiTrail markup, and provides some small
+performance improvements.
+</p>
+<div class='vspace'></div><h2>Version 2.1.4, 2.1.5 (2006-03-29)</h2>
+<p>This release fixes a few more bugs:
+</p><ul><li>Pagelist-based feeds using ?action=rss work again.
+</li><li>Multi-term searches with special characters is fixed.
+</li></ul><p class='vspace'>The release also adds a couple of items:
+</p><ul><li>There is now an <code class='escaped'>{$Action}</code> page variable.
+</li><li>Usernames and passwords submitted to authuser.php can contain quotes.
+</li><li>The <code class='escaped'>(:attachlist:)</code> command now uses a natural case sort.
+</li></ul><div class='vspace'></div><h2>Version 2.1.3 (2006-03-17)</h2>
+<p>This release fixes a bug that prevents the <code class='escaped'>lines=</code> option from
+working on sites running PHP 5.1.1 or later.  It also re-fixes
+a bug involving empty passwords and LDAP authentication.
+</p>
+<div class='vspace'></div><h2>Version 2.1.2 (2006-03-16)</h2>
+<p>This release fixes a bug with handling "nopass" passwords.  It also
+makes some speed improvements to large web feeds, and fixes a couple
+of minor HTML tag mismatches.
+</p>
+<div class='vspace'></div><h2>Version 2.1.1 (2006-03-13)</h2>
+<p>This release primarily fixes a bug with passwords containing
+multiple authorization groups, and in the process slightly liberalized
+the formatting of "@group" and "id:name" handling.  This release also 
+adds a new mechanism for managing and displaying FAQ pages.
+</p>
+<div class='vspace'></div><h2>Version 2.1.0 (2006-03-12)</h2>
+<p>This set of release notes is fairly lengthy, as it chronicles all of the changes since 2.0.13 (four months of development).  A lot remains the same, but some changes warrant extra care when upgrading from a 2.0.x version to 2.1.0 (thus the major revision number change).  As always, questions and issues can be mailed to the pmwiki-users mailing list.
+</p>
+<p class='vspace'>Here's the list:
+</p>
+<div class='vspace'></div><ul><li>WikiWords are now disabled by default.  To enable them, set "&#36;LinkWikiWords = 1;" in a <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.local_customizations?action=edit'>local customization</a> file.  As of 2.1.beta2, you can now leave WikiWords enabled but have links to non-existent pages display without decoration -- to do this, place the following lines in <em>pub/css/local.css</em>:
+</li></ul><div class='vspace'></div><pre>    span.wikiword a.createlink { display:none; }
+    span.wikiword a.createlinktext 
+      { border-bottom:none; text-decoration:none; color:inherit; }
+</pre><div class='vspace'></div><ul><li>The <code class='escaped'>(:pagelist:)</code> code has been substantially revised.  Pagelist formatting can now be specified using markup, and several defaults are available from <a class='wikilink' href='index.php-n=Site.PageListTemplates.html'>Site.PageListTemplates</a>.  Also, several built-in pagelist formatting functions (FPLSimple, FPLByGroup, FPLGroup) are now removed in favor of the template code.  The FPLByGroup function can be restored by setting $Transition['fplbygroup']=1; . <strong>Remark:</strong> Check to see if your page <a class='wikilink' href='index.php-n=Site.PageListTemplates.html'>Site.PageListTemplates</a> is not passwordprotected for viewing, otherwise the resulting pagelist will not be shown. 
+<div class='vspace'></div></li><li><code class='escaped'>(:pagelist:)</code> now also understands wildcards in <code>group=</code> and <code>name=</code> arguments, as well as excluding specific names and groups.
+<div class='vspace'></div></li><li><code class='escaped'>(:pagelist:)</code> now has an "order=random" option.
+<div class='vspace'></div></li><li><code class='escaped'>(:searchbox:)</code> now accepts "group=", "link=", "list=", etc. options to be passed along to the search results.  It also accepts a "target=" option that identifies the page on which to send the search query.
+<div class='vspace'></div></li><li><code class='escaped'>?action=search</code> will display the contents of the current page if it contains a <code class='escaped'>(:</code><code class='escaped'>searchresults:)</code> directive, otherwise it uses the content of the page identified by &#36;PageSearchForm (default is the search page for the current language translation).  
+<div class='vspace'></div></li><li>PmWiki no longer maintains a ".linkindex" file -- it now has a ".pageindex" file that contains not only a table of links, but also words used in each page (to speed up term searches).  The maintenance of the .pageindex file can be disabled by setting &#36;PageIndexFile=''; 
+<div class='vspace'></div></li><li>The &#36;EnablePageListProtect variable now defaults to true, so that read-only pages appear in pagelists only if the visitor has read authorization.  Note that this can also slow down some <code class='escaped'>(:pagelist:)</code> and search commands, so if the site doesn't have any read-only pages or if you aren't worried with cloaking read-only pages from searchlists, it might be worth setting &#36;EnablePageListProtect=0; .
+<div class='vspace'></div></li><li>Whitespace indentation rules now exist and are enabled by default.  Any line that begins with whitespace and aligns with a previous list item is considered to be "within" that list item.  Text folds and wraps as normal, and the <code class='escaped'>(:linebreaks:)</code> directive is honored.  To turn off whitespace indentation, use <code class='escaped'>DisableMarkup('^ws');</code>.
+<div class='vspace'></div></li><li>A single blank line after a <code class='escaped'>!!Heading</code> is silently ignored.
+<div class='vspace'></div></li><li>The <code class='escaped'>(:redirect:)</code> directive is now a true markup, and can be embedded inside conditional markups or includes.  It also allows redirecting to an anchor in a page, such as <code class='escaped'>(:redirect PageName#anchor:)</code>.  A new <code class='escaped'>from=</code> option allows the redirect to take place only from pages that match the given wildcard specification.  The <code class='escaped'>status=</code> option allows a 301, 302, 303, or 307 HTTP status code to be returned.
+<div class='vspace'></div></li><li>The built-in authorization function has gone through some substantial internal changes, however these changes should be fully backward compatible so that it doesn't impact any existing sites.  (If it <em>does</em> cause a problem, please let me know so I can investigate why!)  The password prompts are now specified by an admin-customizable Site.AuthForm page.  In addition, the authorization function no longer creates PHP sessions for visitors that aren't being authenticated.
+<div class='vspace'></div></li><li>The authuser.php has likewise been substantially updated.  The new version should have complete backwards compatibility with previous authuser.php settings, but this version also offers the ability to configure authentication resources and authorization groups through the <a class='wikilink' href='index.php-n=SiteAdmin.AuthUser-from=Site.AuthUser.html'>Site.AuthUser</a> page.  Note that by default the Site.AuthUser page can only be edited using the admin password.
+<div class='vspace'></div></li><li>The $Author variable now defaults to &#36;AuthId if not otherwise set by a script or cookie.
+<div class='vspace'></div></li><li>The <a class='wikilink' href='index.php-n=Site.SideBar.html'>Site.SideBar</a> page now defaults its edit password to the sitewide edit password (in &#36;DefaultPasswords['edit']).
+<div class='vspace'></div></li><li>PmWiki now supports a "draft edit" mode, enabled by &#36;EnableDrafts = 1.  This creates a "Save as draft" button that will save a page under a "-Draft" suffix, for intermediate edits.
+<div class='vspace'></div></li><li>There is now an ?action=login action available.
+<div class='vspace'></div></li><li>A potential security vulnerability for sites running PHP 5 with register_globals enabled has been fixed.
+<div class='vspace'></div></li><li>The <code class='escaped'>[[PageName |+]]</code> markup is now available by default; this creates a link to PageName and uses that page's title as the link text.
+<div class='vspace'></div></li><li>What used to be "markup variables" are now "<a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.page_variables?action=edit'>page variables</a>".  These are always specified using the <code>{$<em>variable</em>}</code> syntax, and can be used in markup and in $...Fmt strings.  In addition, one can request a value for a specific page by placing the pagename in front of the variable, as in <code>{<em>pagename</em>$<em>variable</em>}</code>.
+<div class='vspace'></div></li><li>The <em>scripts/rss.php</em> script is now <em>scripts/feeds.php</em>, and is a complete redesign for <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.web_feeds?action=edit'>web feed</a> generation.  The new version supports UTF-8 and other encodings, can generate Atom 1.0 (<code class='escaped'>?action=atom</code>), Dublin Core Metadata (<code class='escaped'>?action=dc</code>) output, and enclosures for podcasting.  It also allows feeds to be generated from trails, groups, categories, and backlinks, and provides options (same as pagelists) for sorting and filtering the contents of the feed.  Most sites can simply switch to using <code class='escaped'>include_once("scripts/feeds.php");</code> instead of the previous <em>rss.php</em> include.  The <em>rss.php</em> file has been removed from the distribution (but still works with PmWiki 2.1 for those sites that wish to continue using it).
+<div class='vspace'></div></li><li><a class='wikilink' href='index.php-n=PmWiki.InterMap.html'>InterMap</a> entries can now come from a Site.InterMap page as well as the <em>local/localmap.txt</em> and <em>local/farmmap.txt</em> files.  The format of these files has changed slightly, in that the InterMap name should now have a colon after it (previously the colon was omitted).
+<div class='vspace'></div></li><li>We can now provide better control of robot (webcrawler) interactions with a site to reduce server load and bandwidth.  The &#36;RobotPattern variable is used to detect robots based on the user-agent string, and any actions not listed in the &#36;RobotActions array will return a 403 Forbidden response to robots.  In addition, setting &#36;EnableRobotCloakActions will eliminate any forbidden ?action= values from page links returned to robots, which will reduce bandwidth loads from robots even further (<a class='urllink' href='http://www.pmwiki.org/PITS/00563' rel='nofollow'>PITS:00563</a>).
+<div class='vspace'></div></li><li>Non-existent page handling has been improved; whenever a browser hits a non-existent page, PmWiki returns the contents of Site.PageNotFound and a 404 ("Not Found") status code.
+<div class='vspace'></div></li><li>Page links that have "?action=" in their query arguments are now treated as "existing page" links even if the page does not exist.
+<div class='vspace'></div></li><li>The PmWiki default skin now adds rel='nofollow' to various action links.
+<div class='vspace'></div></li><li>Some of the CSS styles in the PmWiki default skin have been changed for better presentation.
+<div class='vspace'></div></li><li>The gui edit buttons have transparent (instead of white) borders so they integrate better into skins.
+<div class='vspace'></div></li><li>The &#36;EnableIMSCaching variable is now much smarter, it can detect changes in local customization files as well as pages.
+<div class='vspace'></div></li><li><a class='wikilink' href='index.php-n=PmWiki.WikiStyles.html'>WikiStyles</a> can now make percentage specifications by using "pct" to mean "%".
+<div class='vspace'></div></li><li>Class attributes in <a class='wikilink' href='index.php-n=PmWiki.WikiStyles.html'>WikiStyle</a> shortcuts are now cumulative, so that <code class='escaped'>%class1 class2%</code> results in <code class='escaped'>class='class1 class2'</code> instead of just <code class='escaped'>class='class2'</code> in the output.
+<div class='vspace'></div></li><li>A problem with the <code class='escaped'>(:include PageName#from#:)</code> markup not working has been fixed (<a class='urllink' href='http://www.pmwiki.org/PITS/00560' rel='nofollow'>PITS:00560</a>).
+<div class='vspace'></div></li><li>Viewing a GroupHeader or GroupFooter page no longer displays the contents twice.
+<div class='vspace'></div></li><li>It's now easier to share pages among multiple sites (e.g., <a class='wikilink' href='index.php-n=PmWiki.WikiFarms.html'>WikiFarms</a>), see <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/SharedPages' rel='nofollow'>Cookbook:SharedPages</a> (<a class='urllink' href='http://www.pmwiki.org/PITS/00459' rel='nofollow'>PITS:00459</a>).
+<div class='vspace'></div></li><li>A problem with nested apostrophe markups has been fixed (<a class='urllink' href='http://www.pmwiki.org/PITS/00590' rel='nofollow'>PITS:00590</a>).
+<div class='vspace'></div></li><li>PmWiki is now smarter about not surrounding block HTML tags with &lt;p&gt;...&lt;/p&gt; tags.
+<div class='vspace'></div></li><li>If an <code class='escaped'>[[#anchor]]</code> is used more than once in a page, only the first generates an actual anchor (to preserve XHTML validity).
+<div class='vspace'></div></li><li>There are now <code class='escaped'>(:if equal ...:)</code> and <code class='escaped'>(:if exists pagename:)</code> <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.conditional_markup?action=edit'>conditional markups</a>.
+<div class='vspace'></div></li><li>Compound conditional markup expressions are now possible -- e.g. <code class='escaped'>(:if [ group PmWiki &amp;&amp; ! name PmWiki ] :)</code> .
+<div class='vspace'></div></li><li>Added an &#36;InputValues array that can supply default values for certain form controls (<a class='urllink' href='http://www.pmwiki.org/PITS/00566' rel='nofollow'>PITS:00566</a>).
+<div class='vspace'></div></li><li>The default setting of &#36;UploadUrlFmt is now based on &#36;PubDirUrl instead of &#36;ScriptUrl.
+<div class='vspace'></div></li><li>The $text global variable has been removed (use $_GET['text'], $_POST['text'], or $_REQUEST['text']).
+<div class='vspace'></div></li><li>A possible problem with url-encoding of attachments with non-ASCII characters has been addressed (<a class='urllink' href='http://www.pmwiki.org/PITS/00588' rel='nofollow'>PITS:00588</a>).
+<div class='vspace'></div></li><li>Page actions in non-existent pages no longer display with non-existent link decorations.
+<div class='vspace'></div></li><li>A README.txt file has been added, and several documentation files are now available through the docs/ directory.
+<div class='vspace'></div></li><li>PmWiki is no longer available through CVS on sourceforge.net.  It is now available via SVN on pmwiki.org, at svn://pmwiki.org/pmwiki/tags/latest .  For more details, see <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Subversion' rel='nofollow'>PmWiki:Subversion</a>.
+<div class='vspace'></div></li><li>The &#36;NewlineXXX variable (deprecated in 2.0.0) has been removed.
+<div class='vspace'></div></li><li>There is experimental support for server-side caching of pages that take a long time to render; this is currently an unsupported feature and may be removed in future releases.
+</li></ul><div class='vspace'></div><h2>Version 2.0.13 (2005-11-10)</h2>
+<p>This is a release containing minor bugfixes and improvements
+in preparation for the 2.1.beta series.
+</p>
+<p class='vspace'><span  style='color: red;'>Wiki administrators should note that after this release PmWiki will default to having WikiWords disabled.<br /></span>
+To make sure WikiWords are enabled, use <code class='escaped'>$LinkWikiWords = 1;</code> in
+the <em>local/config.php</em> file.
+</p>
+<div class='vspace'></div><h2>Version 2.0.12 (19-Oct-2005)</h2>
+<p>This release cleans up problems with page validation for page links
+containing query fragments and ampersands, changes PmWiki to use a
+PHP "return" statement instead of "exit", and fixes a warning in
+scripts/transition.php.
+</p>
+<div class='vspace'></div><h2>Version 2.0.11 (17-Oct-2005)</h2>
+<p>This release fixes a couple of important bugs and adds some new
+features to PmWiki.
+</p>
+<p class='vspace'>Most importantly, this release fixes bug with ?action=attr
+affecting the page history.
+</p>
+<p class='vspace'>For sites using LDAP authentication with authuser.php, PmWiki
+now provides &#36;AuthLDAPBindDN and &#36;AuthLDAPBindPassword variables
+to specify the binding to be used for searching.  It also works
+around a PHP oddity that causes users to appear authenticated
+when an empty password is provided.  Authuser.php also now
+handles straight md5 password encryptions (commonly used by
+MySQL databases).
+</p>
+<p class='vspace'>The core now includes the <code class='escaped'>(:linebreaks:)</code> markup
+(from <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/LineBreaks' rel='nofollow'>Cookbook:LineBreaks</a>), which causes text on separate
+lines in the markup to appear as separate lines in the output
+(i.e., no auto-joining of one line to the previous one).
+</p>
+<p class='vspace'>There have been some internal changes designed to provide
+better support for leading-whitespace rules (more details on
+this in a future release).
+</p>
+<p class='vspace'>The core now provides an <code class='escaped'>(:if date:)</code> markup to display
+text only if the current day is within a range of supplied
+dates.
+</p>
+<div class='vspace'></div><h2>Version 2.0.10 (29-Sep-2005)<br />Version 2.0.9 (28-Sep-2005)</h2>
+<p>This release fixes an oversight in xlpage-utf-8.php that failed to uppercase ASCII letters when mb_strtoupper isn't present.
+</p>
+<div class='vspace'></div><h2>Version 2.0.8 (27-Sep-2005)</h2>
+<p>This release simply adds the capability to use quotes to enter
+pass phrases (passwords containing spaces) using ?action=attr,
+and fixes a bug with displaying the name instead of the title in
+the default print skin.
+</p>
+<div class='vspace'></div><h2>Version 2.0.7 (26-Sep-2005)</h2>
+<p>This version changes the xlpage-utf-8.php case conversion slightly
+to use a more direct conversion table, and completed the table
+for more characters in the utf-8 set.
+</p>
+<p class='vspace'>This release also fixes the &#36;VersionNum variable that was supposed to
+appear in 2.0.6.
+</p>
+<p class='vspace'>An accesskey shortcut (ak_textedit) is being added to the edit form
+text area.
+</p>
+<p class='vspace'>Lastly, this release adds a timelimit to the generation of .linkindex,
+to avoid long page times when generating the .linkindex.
+</p>
+<div class='vspace'></div><h2>Version 2.0.6 (16-Sep-2005)</h2>
+<p>In this release, we provide quite a few more updates for sites that
+want or need to use utf-8 encoding, fix a large number of utf-8 
+related bugs, introduce better handling of author cookies, and
+better support for keeping track of version releases.
+</p>
+<p class='vspace'>The biggest change is to the xlpage-utf-8.php recipe, which has
+been substantially rewritten from the previous version.  This new
+version of xlpage-utf-8.php no longer depends on the 
+<a class='urllink' href='http://www.php.net/mb_strtoupper' rel='nofollow'>mb_strtoupper()</a>
+function, which seems to be not available in many PHP installations.
+The new version of xlpage-utf-8.php uses mb_strtoupper() if it's
+available, but if not available then it manually performs case 
+conversions from a Unicode table that is directly encoded in the
+script.  At present this table only understands case conversions
+for Western European (Latin-1 or ISO-8859-1) and Cyrillic characters,
+we'll want to expand the table to support other language character
+sets as needed.  Just contact me on the listserv if a particular
+character isn't yet supported.
+</p>
+<p class='vspace'>In addition to the above, author names and cookies in utf-8 environments
+now work again, and link suffixes containing non-ASCII characters work
+again also.
+</p>
+<p class='vspace'>The GUI button handling in IE has been greatly improved; text selection
+in IE now works as you would expect it to work when a gui button is
+pressed.  Possibly still no hope for Mac Safari browsers, unfortunately...
+</p>
+<p class='vspace'>A &#36;CookiePrefix variable has been introduced; a wiki administrator
+can set &#36;CookiePrefix to prevent PmWiki's cookies from interfering with
+cookies set from other applications under the same domain name.
+</p>
+<p class='vspace'>Some XHTML validation issues surrounding the use of &lt;script&gt; tags 
+have been fixed.
+</p>
+<p class='vspace'>And lastly, for script and recipe authors, there is now a &#36;VersionNum
+numeric value that makes it easier to determine if the currently running
+version of PmWiki is older or newer than a known release.  &#36;VersionNum
+is composed from the release number by padding the major and minor
+release numbers with zeroes to three digits, thus &#36;VersionNum for this
+release (2.0.6) is 2000006, while a release like "2.1.24" will have
+&#36;VersionNum set to 2001024.
+</p>
+<p class='vspace'>As mentioned on the pmwiki-users mailing list, we are also now maintaining
+PITS entries for enhancements and changes to consider making in the 
+core distribution.  The list can be found at 
+<a class='urllink' href='http://www.pmwiki.org/PITS/CoreCandidate' rel='nofollow'>http://www.pmwiki.org/PITS/CoreCandidate</a>, all are welcome to add 
+comments and vote on the items under consideration.
+</p>
+<div class='vspace'></div><h2>Version 2.0.5 (9-Sep-2005)</h2>
+<p>This version adds an <code class='escaped'>?action=logout</code> and cleans up a few things 
+for internationalization (i18n) support.  
+</p>
+<p class='vspace'>We've also formally deprecated and eliminated the $Newline variable 
+from the core code -- sites that absolutely need pages stored in
+the 1.x format can set &#36;NewlineXXX.  (Note that this version 
+continues to be able to read pages from all previous PmWiki
+formats.)
+</p>
+<div class='vspace'></div><h2>Version 2.0.4 (8-Sep-2005)</h2>
+<p>One week after the release of 2.0.0 we're now up to 2.0.4, most
+changes have been minor bug fixes and improvements.  This release
+provides a few improvements here and there.
+</p>
+<p class='vspace'>The biggest change is the addition of a link indexing system for
+improving the speed of <a class='wikilink' href='index.php-n=PmWiki.Categories.html'>Categories</a> and backlinks (using the 
+<code class='escaped'>(:pagelist link=...:)</code> markup.  The system uses a <em>.linkindex</em> 
+file to keep track of all page links within the site, generating and
+updating the file as needed and using the file to avoid scanning pages
+that are known to not link to the target.  The <em>.linkindex</em>
+file can be removed at anytime to cause it to be regenerated from
+scratch.  Link indexing can be disabled by setting &#36;EnableLinkIndex=0;
+in <em>local/config.php</em>.
+</p>
+<p class='vspace'>The "change summary" associated with each edit is now limited to
+a maximum of 100 characters.  A local customization can increase
+the size of the summary.
+</p>
+<p class='vspace'>The tilde sequences used to generate signatures are now precise;
+only a sequence of exactly three or four tildes result in a signature.
+Longer sequences of tildes such as ~~~~~~~~ are left alone and not
+converted to signatures.  (Generating a sequence of three or four
+tildes still requires creative use of escapes, as in <code class='escaped'>[=~~=]~</code> and
+<code class='escaped'>[=~~=]~~</code>.)
+</p>
+<p class='vspace'>A number of previously hard-coded prompts are now internationalized.
+</p>
+<p class='vspace'>Many PHP E_NOTICE messages (displayed when error_reporting() is
+set to its maximum value) are now eliminated.
+</p>
+<div class='vspace'></div><h2>Version 2.0.3 (6-Sep-2005)</h2>
+<p>This is a minor update; it enhances the core to display change
+summaries in the page history, and makes additional attributes
+available to input forms in forms.php.
+</p>
+<p class='vspace'>This release also fixes a bug in the setting of the $sub parameter
+for LDAP authentication, improves the setting of default values
+in scripts/urlapprove.php, and fixes the search pages and skin
+to use &#36;SiteGroup instead of the hard-coded "Site" variable.
+</p>
+<p class='vspace'>Lastly, this update changes the <code class='escaped'>(:searchbox:)</code> markup to
+be a bit smarter about form generation when &#36;EnablePathInfo
+is set.
+</p>
+<div class='vspace'></div><h2>Version 2.0.2 (3-Sep-2005)<br />Version 2.0.1 (2-Sep-2005)</h2>
+<p>These versions correct some minor bugs in the loading and saving
+of pages, the MailPosts feature, and documentation.
+</p>
+<div class='vspace'></div><h2><span style='font-size:120%'> Version 2.0.0 (1-Sep-2005) </span></h2>
+<p>At long last, I'm very pleased to announce the official release of
+PmWiki 2.0.0, now available at <a class='urllink' href='http://www.pmwiki.org/pub/pmwiki' rel='nofollow'>http://www.pmwiki.org/pub/pmwiki</a> .
+</p>
+<p class='vspace'>PmWiki 2.0 has been in development for well over a year, with more
+than eighty development and beta releases.  In addition, the
+cookbook for 2.0 continues to expand, and currently has over 200
+recipes and more on the way.
+</p>
+<p class='vspace'><strong>Not available at press time:</strong> For those who may be concerned
+that their "must-have feature" didn't make it into the 2.0.0 release,
+don't be.  The 2.0.0 release isn't the end of development, but
+just the stable basis for the next set of features and improvements.
+Even if some features (e.g., discuss/comments pages, table of
+contents, authorization groups, faster backlinks/categories)
+aren't in the 2.0.0 release, I'm comfortable that we're at a point
+where these features can be added as 2.0.x releases with minimal
+impact to existing 2.0 sites.  And if not, then we'll start on 2.1.  :-)
+</p>
+<p class='vspace'><strong>Upgrading to 2.0.0:</strong> Many sites have been keeping relatively
+up-to-date with the latest 2.0 beta releases; for most of these
+sites upgrading to 2.0.0 is a minor upgrade (but see the notes below).
+For sites running beta versions of PmWiki older than 2.0.beta44,
+the upgrade may require a bit of extra work -- check the ReleaseNotes
+for more details.  For sites running 1.x or 0.6 versions of PmWiki,
+see <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/UpgradingFromPmWiki1' rel='nofollow'>http://www.pmwiki.org/wiki/PmWiki/UpgradingFromPmWiki1</a> for
+tips on successfully migrating the site to PmWiki 2.0.0.
+</p>
+<p class='vspace'>PmWiki 2.0.0 does have some changes over the previous (beta55)
+release:
+</p>
+<div class='vspace'></div><ul><li>Lots of changes and improvements to the documentation.  Some documentation pages still need work, but the documentation is now sufficiently far along that I'm comfortable with making the release.
+<div class='vspace'></div></li><li>The release comes with a new default skin, matching the one currently available at <a class='urllink' href='http://www.pmwiki.org' rel='nofollow'>http://www.pmwiki.org</a>.  For those sites that wish to retain the old skin, it is available from <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/PmWikiV1Skin' rel='nofollow'>http://www.pmwiki.org/wiki/Cookbook/PmWikiV1Skin</a> .
+<div class='vspace'></div></li><li>The storage format for pages in wiki.d/ has changed somewhat.  PmWiki 2.0.0 can seamlessly read and interact with pages stored in previous formats, but any external scripts that may attempt to read wiki.d/ files directly will need to be adjusted to understand the new format.  In particular, the $Newline variable has been deprecated in this release and is no longer used.  (Sites that need file-level compatibility with previous versions can set a value for $Newline and PmWiki 2.0 will use that, however.)
+<div class='vspace'></div></li><li>Deleted pages now have a ",del-1234567890" suffix instead of just the timestamp.
+<div class='vspace'></div></li><li>The Site.SideBar is now unprotected by default.  Other pages in the Site group continue to be protected against edits and require the admin password to unlock.
+<div class='vspace'></div></li><li>Several relatively small improvements and bug fixes -- see the ChangeLog for details.
+</li></ul><p class='vspace'><strong>What's next:</strong>  Next I plan to work on getting internationalizations updated to 2.0.0 -- many i18n items "broke" in beta44 and need to be cleaned up.  In conjunction with this will be page improvements and cleanups on pmwiki.org, as well as addressing outstanding PITS entries.  After that will come more feature enhancements, including comments pages, section edits, and improved indexing/search capabilities.
+</p>
+<div class='vspace'></div><hr />
+<p class='vspace'><strong>Thank you:</strong> My sincere and humble thanks to everyone who has contributed so much of their time, ideas, opinions, writing, and code to PmWiki.  I notice that the <a class='urllink' href='http://www.pmwiki.org/wiki/PmWiki/Contributors' rel='nofollow'>PmWiki:Contributors</a> page is way out of date, so if you've helped at all with PmWiki core development, don't be shy or modest -- feel free to add yourself to the list and be associated with an outstanding group.
+</p>
+<p class='vspace'>And, as always, comments, suggestions, questions, and bug reports can be reported to the mailing list or the PmWiki Issue Tracking System.
+</p>
+<p class='vspace'>Thanks again,
+</p>
+<p class='vspace'>Pm
+</p>
+<div class='vspace'></div><hr />
+<div class='vspace'></div><h3>Version 2.0.beta55 (25-Aug-2005)</h3>
+<p>I was really hoping that the next release would be 2.0.0, but it 
+didn't work out that way.  Really all that needs to be done now is 
+to finish cleaning up the documentation.
+</p>
+<p class='vspace'>This release has a number of important changes and bugfixes.  First,
+the 'value=' wikistyle is working again, having been broken in an
+earlier release.  WikiStyles now also accept dots and parens in values,
+so that things like "1.5em" and "rgb(255,255,255)" work.  There's a
+new "<code class='escaped'>%cframe%</code>" wikistyle, which centers content in a 200-pixel frame
+(this can be adjusted with a "width=" parameter in the wikistyle).
+</p>
+<p class='vspace'>The <code class='escaped'>(:include:)</code> directive now allows a list of pages to be searched
+for inclusion; the first existing page is selected.  Thus the markup
+</p>
+<div class='vspace'></div><pre>    <code class='escaped'>(:include Page1 Page2 Page3:)</code>
+</pre><p class='vspace'>includes the contents of the first available of Page1, Page2, or Page3.
+</p>
+<p class='vspace'>The [@...@] markup is now the "preformatted text" markup.  It can be
+used instead of the space <code class='escaped'>[=...=]</code> markup to generate blocks of
+preformatted and escaped text.  It's also fairly smart about handling
+extra newlines inside the [@...@], so that there isn't a lot of
+unwanted vertical space displayed in the output.
+</p>
+<p class='vspace'>And speaking of unwanted vertical space, PmWiki's handling of "blank lines"
+in the markup text has been changed somewhat.  In previous versions
+of PmWiki, some directives 
+(e.g., <code class='escaped'>(:comment:), (:keyword:), (:noleft:), (:if:)</code>) often 
+resulted in blank lines in the markup text, which then
+generated vertical space on the output.  In this release, only those
+lines that are blank in the original source markup (before processing)
+end up generating vertical space in the output.  This ends up being
+much more natural for authors and allows cleaner markup sequences.
+</p>
+<p class='vspace'>This change may have some ramifications for selected recipe authors.
+If a custom markup rule produces other wiki markup to be processed by
+PmWiki, and the output wiki markup contains blank lines that is intended
+to generate vertical space in the page output, then the custom markup rule
+needs to either generate '&lt;:vspace&gt;' tags for the blank lines or call
+the PVS() function to convert blank lines into vertical space tags.
+(For more details or assistance, query the mailing list.)
+</p>
+<p class='vspace'>Some may have noticed that pmwiki.org now has a new skin; some version of
+this skin is expected to become the standard skin in the next release.  
+The current 2.0.beta skin will be made available for download in the 
+Cookbook for sites that want to continue using it.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta54 (1-Aug-2005)<br />Version 2.0.beta53 (30-Jul-2005)</h3>
+<p>This release restores ?action=search, to be able to perform searches
+in the context of a group or current page.  It also modifies the
+<code class='escaped'>(:searchbox:)</code> directive to allow a "group=" option to limit
+searches to certain groups.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta52 (29-Jul-2005)</h3>
+<p>This release provides a number of minor bugfixes and introduces improvements
+to image handling.  Most of the improvements for images are described
+on the <a class='wikilink' href='index.php-n=PmWiki.Images.html'>PmWiki.Images</a> page.  Other changes are in the <a class='wikilink' href='index.php-n=PmWiki.ChangeLog.html'>ChangeLog</a>.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta51 (22-Jul-2005)</h3>
+<p>This release corrects a problem introduced by the "Save and Edit"
+capabilities introduced in 2.0.beta44 -- posts made with "Save and Edit"
+could bypass blocklists, urlapprovals, and simultaneous edits.
+</p>
+<p class='vspace'>For administrators and recipe writers who have been working with
+posting capabilities, posting is now controlled by an &#36;EnablePost
+variable.  Setting &#36;EnablePost to zero suppresses the actual post --
+previously this was generally performed with <code class='escaped'>unset($_POST['post'])</code>.
+If appropriate, a message for why the post was suppressed can
+usually be placed in the &#36;MessagesFmt array.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta50 (20-Jul-2005)</h3>
+<p>This release makes two major improvements to the authorization
+semantics in PmWiki:
+</p>
+<p class='vspace'>1.  The &#36;HandleAuth array can be used to set the authorization
+level required for executing a corresponding action.  For example,
+setting &#36;HandleAuth['diff'] to 'edit' means that edit authorizations
+are required to view the page history (<code class='escaped'>?action=diff</code>).  Similarly,
+setting &#36;HandleAuth['source'] to 'admin' means that only the
+admin would be able to use <code class='escaped'>?action=source</code>.
+</p>
+<p class='vspace'>2.  Passwords can now "cascade" -- that is, if a page sets a 'read'
+password but not an 'edit' password, then the read password
+is also used as the edit password.  Similarly, if a page sets
+an 'edit' password but not an 'attr' password, then the edit
+password is also used as the attr password.
+</p>
+<p class='vspace'>This prevents situations where authors set an edit password
+on a page but don't set a corresponding attr password.
+</p>
+<p class='vspace'>This does not change PmWiki's other passwording characteristics --
+i.e., page passwords still override group passwords, and group
+passwords still override site passwords.  Password cascading
+is only used where there's no page, group, or site password set 
+for a given authorization level.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta49 (19-Jul-2005)</h3>
+<p>This release adds a Content-Disposition: header for sites that have
+direct downloads disabled (automatically fills in a browser's filename
+for such downloads).  It also fixes some issues with \\ markup at the
+ends of lines.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta48 (13-Jul-2005)<br />Version 2.0.beta47 (12-Jul-2005)<br />Version 2.0.beta46 (11-Jul-2005)<br />Version 2.0.beta45 (10-Jul-2005)<br />Version 2.0.beta44 (10-Jul-2005)</h3>
+<p>This release has a number of major changes, and is hopefully the
+last such "major" release before 2.0.0.  
+</p>
+<p class='vspace'>Included with this release is a special <em>transition.php</em> script
+that reconfigures PmWiki as needed to cause it to work as it did
+in previous releases.  In the release notes below any changes
+that are handled by the transition script are marked by [ ].
+This transition script is automatically loaded by default so the
+site admin doesn't need to do anything to use it.
+</p>
+<p class='vspace'>Eventually the transition script will also provide diagnostic
+options to inform site admins of places where they may be relying
+on outdated or deprecated features, and how they can change their
+settings to be up-to-date.
+</p>
+<p class='vspace'>PmWiki now sets CSS stylings so that all images within a page are
+displayed without a border (HTML's default is a 1-pixel border).
+To restore the behavior of previous versions, add the following to
+<em>local/config.php</em>:
+</p>
+<div class='vspace'></div><pre>    &#36;HTMLStylesFmt['img'] = ' img { border:1px solid; } ';
+    &#36;ImgTagFmt="&lt;img src='\&#36;LinkUrl' style='border:0px;' alt='\&#36;LinkAlt' /&gt;";
+</pre><p class='vspace'>With this release we are officially initiating use of the "Site"
+group discussed on the pmwiki-users mailing list.  The Site group 
+is intended to hold a variety of utility and configuration pages 
+used by PmWiki, and many of PmWiki's pages have moved from the 
+"Main" group into this new location.  More on this in a bit.
+</p>
+<p class='vspace'>The major internal change is that this release provides support
+for input forms.  Notably, the "Edit Page" form layout can now
+be specified using wiki markup in the Site.EditForm page.  ( [ ] However,
+PmWiki still honors the &#36;PageEditFmt variable for those sites or
+skins that may have customized edit forms.)
+</p>
+<p class='vspace'>The edit form now includes a "change summary" line where authors
+can summarize the edits.  The edit form can also contain 
+a "Save and edit" button to save changes but continue editing, and
+a "Cancel" button for abandoning changes.
+</p>
+<p class='vspace'>The &#36;EditMessageFmt variable for displaying messages to authors
+is now the &#36;MessagesFmt array, which can be displayed using the
+(:messages:) markup.  [ ] The transition script takes care
+of moving messages between &#36;EditMessageFmt and &#36;MessagesFmt as
+need to preserve correct operation.
+</p>
+<p class='vspace'>A number of traditional locations for pages have now been moved
+into the Site group, many of which are handled by the transition
+script:
+</p>
+<div class='vspace'></div><ul><li>The new location for the AllRecentChanges page is Site.AllRecentChanges.  [ ] However, if Main.AllRecentChanges exists then it will continue to be updated also.  Administrators may wish to move Main.AllRecentChanges to Site.AllRecentChanges and/or remove Main.AllRecentChanges entirely.
+<div class='vspace'></div></li><li>The search results page is now <a class='wikilink' href='index.php-n=Site.Search.html'>Site.Search</a> instead of Main.SearchWiki.  Main.SearchWiki will be removed entirely in a future release.  [ ] The transition script takes care of mapping some instances of Main.SearchWiki in links to Site.Search.
+<div class='vspace'></div></li><li>Approved urls are now stored in Site.ApprovedUrls .  [ ] However, if Main.ApprovedUrls exists it is used and updated as appropriate.
+<div class='vspace'></div></li><li>Main.SideBar is now Site.SideBar.  Unfortunately, it's very difficult to manage this particular change among all possible skin combinations, so it's up to the admin to correctly move existing sidebar pages into the appropriate group, or to update the skin template accordingly.
+<div class='vspace'></div></li><li>PmWiki.EditQuickReference and PmWiki.UploadQuickReference are now stored in the Site group.
+<div class='vspace'></div></li><li>PmWiki.WikiHelp is being deprecated and will be removed from a future release.
+</li></ul><p class='vspace'>The &#36;PagePreviewFmt variable no longer exists in standard PmWiki (it's now handled by Site.EditForm).  [ ] However, to preserve backwards compatibility it is loaded by the transition script in certain situations.
+</p>
+<p class='vspace'>The &#36;PageName substitution (deprecated in 2.0.devel14) is now gone.
+Use &#36;FullName instead.
+</p>
+<p class='vspace'>The GUI buttons can now have accesskeys associated with them.
+</p>
+<p class='vspace'>GUI buttons are now displayed via a <code class='escaped'>(:e_guibuttons:)</code> directive in Site.EditForm, instead of being attached to &#36;EditMessagesFmt.
+</p>
+<p class='vspace'>This release now provides the ability for user and browser-specific
+preferences and customizations, including accesskeys and form element
+sizes.  More details about this will be forthcoming in documentation.
+</p>
+<p class='vspace'>The release adds standard <code class='escaped'>(:noleft:)</code> and <code class='escaped'>(:noright:)</code> directives for suppressing the display of the left and right sidebars (depending on skin template).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta43 (8-Jul-2005)</h3>
+<p>This release adds the long awaited <code class='escaped'>(:div:)</code> markup.  The format of
+the markup is
+</p><pre>    
+    (:div:)
+    ...
+    (:divend:)
+    
+</pre><p>Attributes (e.g., <code class='escaped'>id='name'</code> and <code class='escaped'>class='class'</code> can be supplied 
+to the <code class='escaped'>(:div:)</code> directive.  <code class='escaped'>(:div:)</code> lives in the same markup
+layer as advanced tables <code class='escaped'>(:table:)</code>, so divs and tables do not
+nest, and any div or advanced table directive ends any previous
+<code class='escaped'>(:div:)</code>.  (We may change this in a future release; for now we'll go
+with the non-nesting version.)
+</p>
+<p class='vspace'>The release also adds a div shortcut, any line beginning with &gt;&gt;&lt;&lt;
+marks a new div section.  In addition, wikistyle specifications
+can go between the &gt;&gt; and &lt;&lt;, thus <code class='escaped'>&gt;&gt;bgcolor=#ffffdd&lt;&lt;</code> will create
+a division with a light yellow background.  Similarly, one can
+do things like <code class='escaped'>&gt;&gt;id=foo&lt;&lt;</code>, <code class='escaped'>&gt;&gt;class=bar&lt;&lt;</code>, and even make
+use of author-defined wikistyles such as &gt;&gt;center&lt;&lt; or &gt;&gt;Don&lt;&lt;.
+</p>
+<p class='vspace'>Lastly, the wikistyle code now supports <code class='escaped'>%id=name%</code>, which
+allows an HTML <code class='escaped'>id='name'</code> attribute to be added to the
+affected text.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta42 (7-Jul-2005)</h3>
+<p>This minor release adds the <code class='escaped'>(:if attachments:)</code> conditional markup, to include/exclude markup based on the (non)existence of attachments to the current page.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta41 (7-Jul-2005)</h3>
+<p>This is a minor release with some small bugfixes to uploads, adding the ability to set the item number for ordered lists with <code class='escaped'>%item value=nn%</code>, and enabling nested Keep()s for module writers.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta40 (22-Jun-2005)</h3>
+<p>This very minor release simply updates the authuser.php script to 
+support Apache MD5 encryption in .htpasswd files.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta39 (20-Jun-2005)</h3>
+<p>This release primarily fixes some bugs with wikistyles and their interactions with block structures such as tables and headings.  In addition, the release fixes some nagging errors with opening directories in PITS and other recipes.
+</p>
+<p class='vspace'>This release also adds definition lists to the available syntaxes for building WikiTrails.
+</p>
+<p class='vspace'>Finally, this release adds <em>scripts/authuser.php</em>, which is a preliminary script for user-authentication based on .htpasswd (and similarly formatted) files.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta38 (14-Jun-2005)</h3>
+<p>This version performs a minor bug fix to the ListPages() function for those sites that are storing pages in per-group subdirectories.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta37 (26-May-2005)</h3>
+<p>This version performs some minor bug fixes and improvements:
+</p><ul><li>Changed the location in which &#36;SearchIncl, &#36;SearchExcl, and &#36;SearchGroup are set 
+</li><li>Fixed bug in setting of &#36;SearchExcl 
+</li><li>Added filesize check after new page is written to disk but before replacing existing page
+</li><li>Added &#36;LinkUrl and &#36;LinkAlt to urlapprove.php 
+</li></ul><div class='vspace'></div><h3>Version 2.0.beta36 (30-Apr-2005)</h3>
+<p>This release fixes a rather large bug with excluded terms in the 
+pagelist code, and a very minor bug with generating cells if there
+are spaces after the final '||' in a simple table.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta35 (24-Apr-2005)</h3>
+<p>This release fixes some bugs in the new pagelist code.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta34 (23-Apr-2005)</h3>
+<h3>Version 2.0.beta33 (22-Apr-2005)</h3>
+<p>This version introduce a major redesign of working and speed of  scripts/pagelist.php, which defines <code class='escaped'>(:pagelist:)</code> and <code class='escaped'>(:</code><code class='escaped'>searchresults:)</code> markups. This version now have a parameter <code class='escaped'>link=</code> to display pages with links to target page (i.e. "backlinks"). There is also "order=" and  "count=" parameters which can be used for sorting listed pages and limit display length.
+</p>
+<p class='vspace'>However, the changes also mean that it's possible that any
+local customizations or cookbook recipes that depended on the
+previous pagelist code will no longer work, so be careful
+when upgrading.
+</p>
+<p class='vspace'>This release also optimizes the rendering of page links and
+fixes a performance bug in the FmtPageName() function.  These
+changes have been observed to improve page rendering times by
+up to 40%.
+</p>
+<p class='vspace'>What remains before the 2.0 official release:  redesign of the
+edit page form, addition of a "comments" feature, and fixing
+PmWiki documentation.  
+</p>
+<p class='vspace'>Lastly, the trailing ?&gt; sequences have been removed from all
+scripts to simplify installations on VMS and other environments
+that have trouble with newlines after the closing ?&gt;.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta32 (17-Apr-2005)</h3>
+<p>Version beta32 adds the &#36;RCLinesMax variable, which limits the maximum
+number of lines that are saved in RecentChanges files.  The default
+is set to zero, meaning "no limit".
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta31 (15-Apr-2005)</h3>
+<p>This release adds the ability to store and serve attachments (uploads)
+from directories that is not directly accessible to the webserver.  
+The "download" action (<code class='escaped'>?action=download</code>) tells PmWiki to retrieve
+an attachment associated with the current page.  This can be used for
+protecting attachments via a page's passwords, or for working around
+webservers that cannot access files in the PmWiki-created <em>uploads/</em>
+directories.
+</p>
+<p class='vspace'>Setting &#36;EnableDirectDownload=0; tells PmWiki to generate links to 
+<code class='escaped'>?action=download</code> to retrieve attachments instead of accessing
+the attachments directly through the webserver.  Note that this
+setting by itself may not be enough to protect uploads; one may need
+also need to to configure the webserver or <em>uploads/</em> directory
+to block direct requests to the webserver for attachment files.
+</p>
+<p class='vspace'>This release also adds &#36;EnableFixedUrlRedirect.  When PmWiki receives
+a url with a "partial pagename" (such as the name of a WikiGroup),
+it first determines the correct "full name" for the page.  Normally
+PmWiki then issues a "redirect" to the browser requesting the browser
+to reload the page with its full, "official" url, but setting
+&#36;EnableFixedUrlRedirect to zero will suppress the reload so that the
+determined page is sent immediately (and keeps the same url used to
+access the page).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta30 (14-Apr-2005)</h3>
+<p>This release works around some problems with PHP sessions resulting in
+deadlocked web processes.  The changes to the authorization code in
+2.0.beta29 greatly increased the likelihood of such deadlocks, so
+all sites running 2.0.beta29 are encouraged to upgrade to this one.
+</p>
+<p class='vspace'>This release also changes the wikiword-handling functions so that
+wikiwords are no longer spaced if &#36;LinkWikiWords is disabled.
+</p>
+<p class='vspace'>Finally, this release adds &#36;PageTextStartFmt and
+&#36;PageTextEndFmt to allow local customization of the container
+surrounding &lt;!--PageText--&gt; in skin templates.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta29 (11-Apr-2005)</h3>
+<p>This release incorporates some significant changes in the authorization
+and page storage code, so production-level sites might want to wait for
+any new bugs to found and fixed before upgrading.  Or, go ahead and
+upgrade but be prepared to revert back to beta28 or earlier if you
+start to notice problems.
+</p>
+<p class='vspace'>However, I do need lots of testers for the new code in this release,
+of which there's a fair bit.  Thus, I'd greatly appreciate any
+help people can provide with testing the new system and suggesting
+improvements.  I'm particularly looking for suggestions about how
+the interfaces can be made easier to understand.
+</p>
+<p class='vspace'>The Page Attributes form (reached via ?action=attr and used to set
+passwords) has been improved so that it's now possible to see which
+passwords have been set, and if those passwords are coming from the
+group or site defaults.  For an example, see
+<a class='urllink' href='http://www.pmwiki.org/wiki/Test/AttrExample?action=attr' rel='nofollow'>http://www.pmwiki.org/wiki/Test/AttrExample?action=attr</a> .  These
+prompts are not yet internationalized -- I want to get the english
+interface finalized first and then we'll make the i18n strings for it.
+</p>
+<p class='vspace'>Multiple passwords (separated by spaces) can now be set on pages and groups,
+thus entering "one two" for an edit password will means that either "one" or
+"two" will be accepted.  Because of this, passwords cannot contain
+spaces (I hope this won't be a major loss -- let me know if it will).
+</p>
+<p class='vspace'>The password request field now appears within a normal skin layout
+(i.e., with header, sidebar, footer); previously requests for
+passwords were undecorated forms that appeared alone in the browser
+window.
+</p>
+<p class='vspace'>There is an (:if auth ...:) conditional markup available for
+processing depending on the current authorizations in effect.  For
+example, one can create a bullet list with
+</p><pre>    
+    (:if auth read:)* [[View page -&gt; {$Name}?action=browse]]
+    (:if auth edit:)* [[Edit page -&gt; {$Name}?action=edit]]
+    (:if auth upload:)* [[Attachments -&gt; {$Name}?action=upload]]
+    (:if auth attr:)* [[Page Attributes -&gt; {$Name}?action=attr]]
+    (:if auth admin:)* You're logged in as admin
+    (:ifend:)
+    
+</pre><p>and only those items corresponding to the user's current authorizations
+will appear.  This should be very useful in creating action buttons.
+</p>
+<p class='vspace'>Assuming there's already some mechanism in place for identifying
+and authenticating someone, pages can specify a password field of
+"id:xyz", which means to allow only user "xyz" the specified
+access.  For example, specifying an edit password of "id:alice"
+means that only user "alice" (and the admin) is allowed to edit the
+page.  Multiple ids can be specified as either "id:alice,bob,carol"
+or "id:alice id:bob id:carol".  The special value "id:*" is used
+to mean any authenticated user, and users can be excluded via the
+minus sign, as in "id:-eve,*".
+</p>
+<p class='vspace'>User-based authentication can completely coexist and mix freely with
+password-based authentication, thus an edit password of
+"id:alice glorp" will allow Alice and anyone who knows the
+password "glorp" to edit the page.
+</p>
+<p class='vspace'>2.0.beta29 supports only REMOTE_USER authentication; future releases
+will add other authentication mechanism.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta28 (27-Mar-2005)</h3>
+<p>This release makes some substantial improvements to the attachments/uploads feature in PmWiki.  The specific enhancements include:
+</p>
+<div class='vspace'></div><ul><li>The Attach: markup can now be used to reference attachments on other pages; the syntax is <code class='escaped'>Attach:pagename/file.ext</code>.  The "pagename" can refer to pages in other groups.  
+<div class='vspace'></div></li><li>Attachments automatically have the file extension (if any) converted to lowercase.
+<div class='vspace'></div></li><li>The <code class='escaped'>(:attachlist:)</code> markup now accepts parameters; <em>ext=</em> can be used to limit the list of attachments to specific extensions, and one can supply a page's name to obtain a list of attachments for that page (e.g., <code class='escaped'>(:attachlist Group.PageName:)</code>.
+</li></ul><div class='vspace'></div><h3>Version 2.0.beta27 (26-Mar-2005)</h3>
+<p>This release makes a number of minor changes and bugfixes.  The more significant changes are listed below.
+</p>
+<div class='vspace'></div><ul><li>The localmap.txt and farmmap.txt files can now contain $-variable substitutions (same as any variables available through FmtPageName).
+<div class='vspace'></div></li><li>Most built-in directives are now case insensitive.
+<div class='vspace'></div></li><li>The (:markup:) directive now has a (:markup:) ... (:markupend:) version.  The previous (:markup:) <code class='escaped'>[=...=]</code> syntax is still supported, but may change in future releases.
+<div class='vspace'></div></li><li>A bug was fixed with preformatted text eating the leading whitespace character.
+<div class='vspace'></div></li><li>Added the missing <code class='escaped'>{$FullName}</code> markup.
+<div class='vspace'></div></li><li>Fixed a bug in the handling of &#36;MetaRobots.
+</li></ul><div class='vspace'></div><h3>Version 2.0.beta26 (5-Mar-2005)</h3>
+<p>This release adds support for edit page templates; i.e., site administrators can specify the default text for new pages.  More details are available at <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/EditTemplates' rel='nofollow'>Cookbook:EditTemplates</a>.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta25 (2-Mar-2005)</h3>
+<h3>Version 2.0.beta24 (1-Mar-2005)</h3>
+<p>This release contains an important correction to the processing of QUERY_STRING parameters, and changes to the way that PageNotFound messages are generated.  These are needed to prevent webcrawlers (notably the one used by inktomi) from generating long sequences of links to non-existent pages.
+</p>
+<p class='vspace'>This release also adds a ParseArgs() function to make it easier for cookbook recipes and other components to parse directive arguments.  Documentation for the function will be forthcoming at <a class='urllink' href='http://www.pmwiki.org/wiki/Cookbook/ParseArgs' rel='nofollow'>Cookbook:ParseArgs</a>.
+</p>
+<p class='vspace'>List and heading markups have been changed to consume any single space character that follows the list or heading marker.
+</p>
+<p class='vspace'>A &#36;EnablePostAttrClearSession switch has been added to control whether or not changing a page's attributes causes any existing passwords to be forgotten.  The default is that changing attributes forgets any passwords entered; this can be changed by setting &#36;EnablePostAttrClearSession to zero.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta23 (24-Feb-2005)</h3>
+<p>This release adds a couple of improvements.
+</p>
+<p class='vspace'>First, the passwording system has been improved slightly to hopefully make passwords a little less confusing (although more improvements are coming).  Previously PmWiki would remember all passwords previously entered during the current browser session.  In this release, changing a page's password causes PmWiki to "forget" all of the previously entered passwords, thus eliminating the confusion that arose when a page would appear unprotected when in fact a previously entered password was authorizing access.
+</p>
+<p class='vspace'>This release also adds as &#36;EnablePageListProtect option.  When set, the <code class='escaped'>(:pagelist:)</code> and <code class='escaped'>(:</code><code class='escaped'>searchresults:)</code> directives will exclude pages for which the browser does not have read authorization.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta22 (23-Feb-2005)</h3>
+<p>This release makes some feature enhancements and some bugfixes.
+</p>
+<p class='vspace'>The skins loading code has undergone some enhancements and substantial rewriting, but it should have no negative impacts on existing skins.  The &#36;BasicLayoutVars variable has been deprecated and is no longer needed.  This version introduces a SetTmplDisplay() function that makes it easier for local customizations to disable sections of a skin template.
+</p>
+<p class='vspace'>The password prompt form has been customized so that the cursor is
+automatically placed in the form when the page is loaded.
+</p>
+<p class='vspace'>The ?action=source action has been fixed for pages with characters
+outside of ASCII.
+</p>
+<p class='vspace'>The graphical button bar can now be used for buttons with arbitrary
+HTML elements (e.g., "save" and "preview" buttons).
+</p>
+<p class='vspace'>Other changes are noted in the ChangeLog.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta21 (13-Feb-2005)</h3>
+<p>This version has a number of changes.  The major change that could (but shouldn't) affect some sites is that PmWiki has changed its default umask from 000 to 002, which will improve the default permissions for files and directories created by PmWiki for some sites, while (hopefully) not affecting others.
+</p>
+<p class='vspace'>Many of you probably don't know (or care) what a umask is.  If everything still works after upgrading to this version, you can continue to not know or care.  However, if after upgrading to this version you start seeing file permission errors where you weren't seeing them before, try adding the line
+</p>
+<div class='vspace'></div><pre>    umask(0);
+</pre><p class='vspace'>to your <em>local/config.php</em> and things should work again.  (And be sure to report that you ran into trouble so we can investigate and improve things for the next version!)
+</p>
+<p class='vspace'>This release also changes the &lt;title&gt; tag generated by ?action=rss
+to properly honor the <code class='escaped'>(:title:)</code> setting on various pages.
+</p>
+<p class='vspace'>Finally, the release fixes some minor bugs in the HTML generation for <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.tables?action=edit'>tables</a>, corrects some bugs with settings for &#36;AuthorPage and &#36;AuthorLink, and makes some cookbook-related additions to the v1 conversion script.
+</p>
+<p class='vspace'>For more details, see the <a class='wikilink' href='index.php-n=PmWiki.ChangeLog.html'>ChangeLog</a>.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta20 (30-Jan-2005)</h3>
+<p>This version has a number of relatively minor changes.
+</p>
+<p class='vspace'>First, the &#36;UrlLinkFmt variable has been modified so that links to external urls automatically have a rel='nofollow' attribute added to them, to help combat wiki spam as described in <a class='urllink' href='http://www.google.com/googleblog/2005/01/preventing-comment-spam.html' rel='nofollow'>http://www.google.com/googleblog/2005/01/preventing-comment-spam.html</a>.  Site administrators can customize &#36;UrlLinkFmt and &#36;UnapprovedLinkFmt to supply or omit rel='nofollow' as appropriate.
+</p>
+<p class='vspace'>The algorithm for creating page names from <code class='escaped'>[[free links]]</code> has been modified slightly.  First, letters following a hyphen are no longer automatically capitalized, thus <code class='escaped'>[[page-link]]</code> refers to a page named "Page-link" and not "Page-Link".  This is more compatible with version 1's naming syntax.  Also, single quotes don't promote the following letter to uppercase, thus <code class='escaped'>[[John's page]]</code> now links to <code class='escaped'>JohnsPage</code> and not <code class='escaped'>JohnSPage</code>.
+</p>
+<p class='vspace'>Sites that want to keep PmWiki 2's prior behavior can do so with the following:
+</p><pre>    
+    $PageNameChars = '-[:alnum:]';
+    $MakePageNamePatterns = array(
+      "/[^$PageNameChars] /" =&gt; ' ',
+      "/(\\b\\w)/e" =&gt; "strtoupper('$1')",
+      "/ /" =&gt; '');
+    
+</pre><p class='vspace'>The localmap.txt InterMap file can now contain comments (denoted by leading '#' in the file).
+</p>
+<p class='vspace'>Headings (!! markup) can now have block wikistyles.
+</p>
+<p class='vspace'>More information is available in the PmWiki.ChangeLog.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta19 (17-Jan-2005)</h3>
+<p>PmWiki uses PHP's sessions for tracking passwords and page authorizations;  however, if a session times out (or is otherwise lost) while an author is in the middle of editing a password-protected page, the author's edits may be lost when re-prompted for the password.  This release fixes this problem by preserving the edit text and other posted form variables when prompting for a password.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta18 (17-Jan-2005)</h3>
+<p>This release makes improvements to the gui buttons, fixes some bugs, and minor other improvements and changes.
+</p>
+<p class='vspace'>Alternate text is now valid inside of WikiTrails; i.e., one can use <code class='escaped'>&lt;&lt;|[[TrailPage | alternate text]]|&gt;&gt;</code>  to change the text of the link to the trailpage.
+</p>
+<p class='vspace'>The GUI button module has a number of changes.  
+</p><ul><li>New images are provided for lists, indentation, headings, and tables, and the sample-config.php file has examples for configuring these additional buttons into the bar.  
+</li><li>The "Heading 3" button has now been changed into separate "Heading" and optional "Subheading" buttons.
+</li><li>The "Attach:" (paperclip) button appears in the bar only if uploads are enabled for that page.
+</li><li>For browsers that support it, clicking one of the buttons that adds text will leave the text highlighted (to make it easier to replace the text).
+</li></ul><p class='vspace'>This release also eliminates the &lt;p&gt;...&lt;/p&gt; tags that were being generated around markup lines that contained other HTML block markups (e.g., search results, page listings, forms).  As a result, these pages are now valid HTML and pass the W3C validator.
+</p>
+<p class='vspace'>&#36;HTMLHeaderFmt has been changed so that skin designers can completely turn off the inline-styles mechanism used by PmWiki and other cookbook modules.  To disable the inline styles, use <code class='escaped'> $HTMLHeaderFmt['styles'] = ''; </code>.
+</p>
+<p class='vspace'>Finally, this release fixes a call to setlocale() which was supposed to only return the current locale but instead was causing the locale to change.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta17 (12-Jan-2005)</h3>
+<p>This release simply makes some minor bug fixes to wikistyles (colors set in wikistyles extend to anchor tags), arrays of default passwords, and advanced table handling.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta16 (11-Jan-2005)</h3>
+<h3>Version 2.0.beta15 (10-Jan-2005)</h3>
+<p>The major feature of this release is the addition of the graphical buttons in the edit page.  By default this feature is disabled -- to enable it, use the following in config.php.
+</p>
+<div class='vspace'></div><pre>    &#36;EnableGUIButtons = 1;
+</pre><p class='vspace'>If your site customizes the &#36;PageEditFmt variable, then note that the buttons are placed at the end of the &#36;EditMessageFmt and that the &lt;textarea&gt; needs to have <code class='escaped'>id='edit'</code> in order for the buttons to work.
+</p>
+<p class='vspace'>The rss.php script has also been improved -- it now automatically translates named character entities (from HTML 4) into their numeric equivalents.  This eliminates a lot of feed validation errors and problems in specific RSS feed consumers.
+</p>
+<p class='vspace'>This release adds a $Titlespaced variable and <code class='escaped'>{$Titlespaced}</code> markup; $Titlespaced is replaced by either a page's title (if defined by the <code class='escaped'>(:title:)</code> directive) or by the spaced version of the page's name.
+</p>
+<p class='vspace'>Finally, a number of WikiStyles bugs have been fixed.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta14 (28-Dec-2004)</h3>
+<p>This release introduces a number of relatively minor optimizations and improvements, summarized below.  If you don't understand what any of these mean, they probably don't affect you.  :-) 
+</p>
+<div class='vspace'></div><ul><li>PmWiki's &lt;img ...&gt; tags now use style='border:0px;' instead of border='0'.
+<div class='vspace'></div></li><li>PrintFmt() now calls Lock(0) to release any locks prior to sending output to the browser.  This is important because some webservers (notably Apache) sometimes get stuck when they're unable to send output to the browser, and thus inadvertently lock others from being able to edit/post pages.
+<div class='vspace'></div></li><li>&#36;PageEditFmt now includes id='text' to make for easier styling/referencing.
+<div class='vspace'></div></li><li>MarkupToHTML()'s "posteval" code has been changed considerably.
+<div class='vspace'></div></li><li>PageExists() now caches results of checking for page existence.
+<div class='vspace'></div></li><li>Page urls are now automatically url-encoded as needed.
+<div class='vspace'></div></li><li>Many of PmWiki's internal regex patterns have been optimized to (hopefully) improve matching speed.
+<div class='vspace'></div></li><li>Comparisons to substr() have been replaced with more efficient comparison functions.
+</li></ul><div class='vspace'></div><h3>Version 2.0.beta13 (22-Dec-2004)</h3>
+<p>This release fixes a bug introduced in 2.0.beta7 that prevented the refcount.php (for ?action=refcount) from generating links correctly.  It also cleans up the handling of wikistyles and %-in-urls (which is what 2.0.beta7 was supposed to fix).
+</p>
+<p class='vspace'>In general, all sites using the 2.0.betaXX series are recommended to upgrade to this latest release.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta12 (21-Dec-2004)</h3>
+<p>This release adds a number of &lt;div&gt; tags and identifiers around the
+various forms that PmWiki produces (e.g., uploads, search results,
+attribute pages, etc.).  This makes such forms easier to style in CSS.
+</p>
+<p class='vspace'>In addition, this release adds some functionality to the urlapprove.php
+script to limit the number of unapproved urls that can be saved in
+a page (helps to combat wikispam).
+</p>
+<p class='vspace'>Finally the release adds the <code class='escaped'>(:description:)</code> markup for generating &lt;meta name='description' ... /&gt; tags in the output.  <code class='escaped'>(:description:)</code> may also get used for other features later on (e.g., excerpts in search results, etc.).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta11 (19-Dec-2004)</h3>
+<p>This release primarily cleans up a number of items in the handling of uploads:
+</p><ol><li>A new &#36;LinkUpload variable has been defined for $...Fmt strings -- it contains the URL of the upload page for the current attachment
+</li><li><code class='escaped'>(:attachlist:)</code> automatically adds "replace-attachment" links (denoted by triangles) to the items in the list
+</li><li>After performing an upload, the "upload name" field is automatically cleared
+</li><li>Fixed error message when upload exceeds maximum allowed by PHP
+</li></ol><p class='vspace'>This release also changes the StopWatch() function (used internally for benchmarking/timing PmWiki performance) to only have an effect when &#36;EnableStopWatch is set to 1 (wall clock timings only) or 2 (wall clock and user-process timings).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta10 (14-Dec-2004)</h3>
+<p>This release makes some substantial improvements in the installation
+procedure.  First, the installation steps have been simplified, and PmWiki
+provides accurate instructions when it encounters a PHP "safe_mode"
+environment.  
+</p>
+<p class='vspace'>The release also provides better handling of the '.flock' file -- if
+PmWiki discovers it cannot open an existing .flock file for writing,
+it removes the file and tries again rather than complaining about it.
+This makes the system more robust when page directories are going
+through backup restore.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta9 (14-Dec-2004)</h3>
+<p>This release provides some very minor bugfixes to the <code class='escaped'>[[target |#]]</code> markup, to the appearance of $...variables in documentation, and extends uploads.php to be able to work better with url rewriting.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta8  (13-Dec-2004)</h3>
+<p>This release makes a number of reasonably significant changes.  First and
+foremost, it changes the <code class='escaped'>?pagename=</code> uri syntax to be <code class='escaped'>?n=</code>, and
+installation now defaults to &#36;EnablePathInfo = 0; to make better
+compatibility.
+</p>
+<p class='vspace'>Sites which wish to continue using the <code class='escaped'>.../Main/HomePage</code> form of uri
+instead of <code class='escaped'>?n=Main.HomePage</code> should set &#36;EnablePathInfo = 1 in
+config.php.  
+</p>
+<p class='vspace'>This release also fixes a probable bug in the handling of author
+names which was causing spaces to be incorrectly removed.
+</p>
+<p class='vspace'>2.0.beta8 includes features for advanced CSS styling of <a class='createlinktext' href='http://bhaktipedia.org/magyar/index.php?n=PmWiki.tables?action=edit'>tables</a>
+via the &#36;TableRowAttrFmt and &#36;TableCellAttrFmt variables, more description 
+will be forthcoming in a Cookbook recipe.  
+</p>
+<p class='vspace'>Also, this release includes vastly improved support for UTF-8 sites,
+including the ability to have UTF-8 characters in pagenames and
+<code class='escaped'>[[utf-8 links]]</code>.  We're still working out the details to be
+able to support UTF-8 wikiwords -- PHP's functions don't provide
+good support for this.  See scripts/xlpage-utf-8.php for more
+information on UTF-8.
+</p>
+<p class='vspace'>Finally, the Q: and A: markups are back, and a few other minor
+bug fixes and documentation improvements have been included.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta7  (8-Dec-2004)</h3>
+<p>This release has a number of improvements and changes to it.  First,
+this release provides a <em>scripts/xlpage-utf-8.php</em> file, which adapts
+PmWiki to be able to work somewhat with utf-8 characters in pagenames.
+Since PHP's preg_* functions seem to be unable to detect UTF-8 alphanumeric
+characters, the trade-off at the moment is that WikiWord links are limited
+to the ASCII character set.  We're working on ways to get around this
+restriction, however.
+</p>
+<p class='vspace'>The xlpage-utf-8.php script can be automatically loaded by any XLPage 
+translation that specifies 'xlpage-i18n' =&gt; 'utf-8'.
+</p>
+<p class='vspace'>This release also:
+</p>
+<div class='vspace'></div><ul><li>fixes up the .htaccess files that are placed in local/ and wiki.d/
+</li><li>changes the default textarea size for the pmwiki skin, 
+</li><li>restores the link/citation markup (<code class='escaped'>[[target |#]]</code>)
+</li><li>fixes the default value of &#36;DefaultPageTextFmt (note this may change again)
+</li><li>automatically converts instances of $Newline in posted text
+</li></ul><div class='vspace'></div><h3>Version 2.0.beta6  (5-Dec-2004)</h3>
+<p>This release contains a number of relatively minor bugfixes (see the ChangeLog), and it also restores the &#36;WikiWordCount functionality from PmWiki 1 in which the wiki administrator can limit the number of conversions for each WikiWord.
+</p>
+<p class='vspace'>The <em>sample-config.php</em> file has been updated with more comments and suggestions for customizations.
+</p>
+<p class='vspace'>Finally, this release increases the default value of &#36;MaxIncludes to 50 (and provides better documentation of the &#36;MaxIncludes variable).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta5  (1-Dec-2004)</h3>
+<h3>Version 2.0.beta4  (1-Dec-2004)</h3>
+<p>These releases fix a number of bugs introduced by the changes in 2.0.beta3.
+Users of 2.0.beta3 are encouraged to upgrade directly to this release.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta3  (30-Nov-2004)</h3>
+<p>This release provides a simple version of the <code class='escaped'>(:attachlist:)</code> markup (different sorting orders are not available yet as the syntax is likely to change), as well as fixes the PmWiki.EditQuickReference and PmWiki.UploadQuickReference pages.  It also provides default pages to lock passwords in the Main and PmWiki groups and adds uppercase versions for ".GIF", ".JPG", and ".PNG" files.
+</p>
+<p class='vspace'>Internally, this release also changes the edit page sequence to use the $_POST autoglobal instead of $_REQUEST (i.e., posting edits is only allowed via method='post' and not via query string parameters).
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta2</h3>
+<p>This release fixes the bug that caused &#36;PageTemplateFmt to no longer
+work in pmwiki-2.0.beta1.
+</p>
+<div class='vspace'></div><h3>Version 2.0.beta1</h3>
+<p>This release marks PmWiki 2.0 as entering "beta" status, as it finally
+begins moving towards official release.  The major change for this release
+is in the skins code -- previous versions of PmWiki used &#36;PageTemplateFmt
+to specify the location of the template file to be used; newer versions
+now use the $Skin variable to specify the location of the skins directory
+(in pub/skins/) that contains the skin template file, php configuration
+script, and other files.
+</p>
+<p class='vspace'>In general, if you previously had &#36;PageTemplateFmt set to "pub/skins/myskin/myskin.tmpl", then you now simply set $Skin='myskin'; to get things to work.  See PmWiki.LayoutBasics for more details.
+</p>
+<div class='vspace'></div><h3>Version 2.0.devel releases</h3>
+<p>These are the release notes for the development releases of PmWiki 2.0.
+</p>
+<p class='vspace'>First, this is definitely still in the development stages, so many
+things are likely to change between now and the official releases.
+</p>
+<p class='vspace'>Second, at present there's not a good way to upgrade from PmWiki 1.0
+to PmWiki 2.0, although upgrade support is expected to arrive in future
+(development) releases.  So, you can use this version just to see the
+new developments and gain some experience, but migrating from 1.0
+to this version is still likely to be a bit of a chore.
+</p>
+<p class='vspace'>Bugs and other requests can be reported to the PmWiki Issue Tracking 
+System at <a class='urllink' href='http://www.pmwiki.org/wiki/PITS/PITS' rel='nofollow'>http://www.pmwiki.org/wiki/PITS/PITS</a>.  Any help
+in testing, development, and/or documentation is greatly appreciated.
+</p>
+<div class='vspace'></div>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on November 17, 2007, at 05:32 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

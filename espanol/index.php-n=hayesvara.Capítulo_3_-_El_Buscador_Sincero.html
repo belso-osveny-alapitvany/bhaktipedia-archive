@@ -1,0 +1,218 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Capítulo 3 - El Buscador Sincero</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : hayesvara - RSS Feed'
+      href='index.php-n=hayesvara.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=hayesvara.Cap%c3%adtulo_3_-_El_Buscador_Sincero' method='get'><input type='hidden' name='n' value='hayesvara.Capítulo_3_-_El_Buscador_Sincero' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Capítulo 3 - El Buscador Sincero"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=hayesvara.Cap%C3%ADtulo_3_-_El_Buscador_Sincero-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><strong>CAPÍTULO 3</strong>
+</p>
+<p class='vspace'  style='text-align: center;'><strong><em>EL BUSCADOR SINCERO</em></strong>
+</p>
+<p class='vspace'>El buscador sincero tarde o temprano encontrará a alguien
+que lo dirija sinceramente y sin engaños. Pero, de acuerdo
+con los Vedas, primero que todo deberá pedir que lleguen a
+su corazón las enseñanzas adecuadas; de la misma manera,
+deberá conectarse con personas que hagan parte de una cadena
+de buscadores genuinos, así como él. Esto en Oriente
+se llama parampara (‘sucesión discipular’), y su propósito es proteger de la explotación, el engaño y los ambiciosos.
+Cuando nos acercamos a una persona genuina que ha
+entendido a través de la práctica lo que enseñan las Escrituras védicas, encontramos el método para transmitir a otros esas enseñanzas de una manera pura y transparente.
+</p>
+<p class='vspace'>Hoy en día existe una ley de oferta y demanda; muchas
+personas han caído en las redes de falsos hombres que
+dicen tener la verdad y la venden como un objeto más de
+este mundo. Harijan Maharaj siempre transmitió la verdad
+que un gran místico de Oriente llamado Srila Prabhupada
+le enseñó. En 1966 este místico viajó desde la India para
+enseñar métodos muy antiguos que estaban descritos en los
+textos de los Vedas. Srila Prabhupada a su vez había sido
+enviado por su maestro, quien en 1920 le pidió a su discípulo viajar a Occidente para exponer todos esos métodos
+descritos en los Vedas. En el año 1966, Srila Prabhupada tuvo la oportunidad de hacer el viaje propuesto por su maestro para transmitir los mensajes de los Vedas a los occidentales, en el momento en que sucedieron algunos hechos que cambiarían a Occidente y llevarían al hombre a apoyarse más en la ciencia que en el alma, más en lo externo que en lo interno. Se trata de la época de los viajes espaciales y las telecomunicaciones.
+</p>
+<p class='vspace'>Harijan Maharaj tuvo la oportunidad de seguir y albergar
+en su corazón las instrucciones de ese místico de Oriente;
+su convicción lo llevó a transmitirlas, para convertirse en un gran sanador de mentes, cuerpos y corazones. Él dejó muy
+en claro que si uno busca las enseñanzas de una persona legítima, amorosa, disciplinada, devota y sincera, y se refugia en ellas, puede destruir los efectos negativos que existan a su alrededor. A este tipo de persona avanzada suele llamársele guru o ‘maestro espiritual’; los sabios de Oriente sostienen que un hombre con esas cualidades es un representante de los sabios antiguos que dejaron todos los escritos secretos de los Vedas.
+</p>
+<p class='vspace'>Surge entonces la pregunta por ¿cómo se llega a esos
+maestros espirituales? La respuesta es: siendo sinceros en
+nuestros actos, respetando a todas las entidades vivientes;
+absteniéndose de maltratar a los demás, de mentir, de consumir sustancias alucinógenas y de hablar grotescamente.
+De esta forma seremos los buscadores sinceros que se levantan en las mañanas y, primero que todo, dan gracias a la madre tierra, para tomar luego un baño y vestirse con ropas limpias. En Oriente se recomienda hacer este ejercicio antes de que haya salido el sol. Asimismo, el buscador sincero tiene un pequeño altar, allí debe estar presente la fotografía de su maestro espiritual; aquel se sienta de cara al oriente y después de realizar algunos ejercicios de respiración comienza su proceso de meditación ante el altar. Es importante que en este lugar de meditación estén presentes los cinco elementos: la tierra, el agua, el fuego, el aire y el éter. Estos elementos —según la tradición de los sabios de Oriente— se pueden representar con el incienso, un poco de agua, una vela encendida, una flor y un sonido. El sonido está representado por oraciones denominadas mantras. El buscador sincero repetirá estas oraciones según la cantidad de veces que su instructor le haya recomendado en el momento de su iniciación.
+</p>
+<p class='vspace'>Existe en Oriente una cantidad de semillas sagradas con las que se elaboran unas camándulas o rosarios llamados japas (la ‘j’ se pronuncia como una ‘y’ griega). Cuando el
+maestro acepta a su discípulo, le entrega un rosario de
+la semilla tulasi, considerada la planta más poderosa en el
+campo espiritual. Esta ceremonia establece la conexión entre el maestro y el buscador sincero, permitiéndole como discípulo navegar hacia el mundo espiritual. El buscador
+sincero debe tomar una japa (o cuenta) en su mano derecha
+y repetir un mantra u oración. Luego, deberá ir de cuenta en
+cuenta pronunciando el mantra de acuerdo con el número de veces que su preceptor le haya indicado.
+</p>
+<p class='vspace'>Dicen los grandes sabios de Oriente que este proceso es
+igual al del hombre que ha naufragado en medio del mar, y
+entonces llega una embarcación cuyo capitán le lanza una
+cuerda al náufrago para poder arrastrarlo hasta el barco y así salvarle la vida. De la misma manera, los sabios de Oriente dicen que el mundo material es comparado a un gran
+océano de problemas y de miserias, de incertidumbre, dolor
+y lamentación; pero cuando el buscador sincero le pide a
+Dios con sinceridad y fe, Él hace lo necesario para que el
+capitán del barco, en este caso el maestro, le ayude a su discípulo a salir de los conflictos. Este fue uno de los grandes secretos que Harijan Maharaj les reveló a muchos de sus discípulos. Según Maharaj, si el buscador sincero práctica diariamente este proceso de meditación y consagración a Dios a través de un maestro, entonces tal conexión elevada traerá muchos cambios favorables a su vida y la irá transformando paulatinamente en una vida armónica y llena de felicidad. Este es uno de los grandes secretos que Harijan Maharaj compartió con muchas personas, convirtiéndose así en un capitán de barco que ayudó a inumerables náufragos de este mundo material. Harijan Maharaj dijo: «Si el buscador sincero sigue estrictamente este proceso y adora diariamente a su deidad, el océano de problemas que pueda tener se reduce al tamaño de la huella que deja un ternero en el lodo».
+</p>
+<p class='vspace'>El proceso descrito fue muy recomendado por Maharaj,
+pues les permite a las familias hacer de sus hogares un
+refugio espiritual y un lugar de paz, libres de las malas influencias de esta época, en la cual las familias están muy
+expuestas a todo tipo de problemas y dificultades.
+Los discípulos de Harijan Maharaj tuvieron en cuenta las
+recomendaciones de su maestro acerca del buscador sincero,
+y gracias a esto muchas familias se han beneficiado de tal instrucción. Aquellos han construido sus altares y diariamente realizan la práctica de meditación en sus casas. Esto los ha mantenido a salvo del estrés del mundo, por ejemplo, y los ha llevado a abandonar muchos hábitos problemáticos dentro de los hogares. El buscador sincero, en compañía de su familia, logra formar un hogar armónico. Harijan Maharaj, en algunas ocasiones, dijo que así como el hombre gasta su tiempo viendo televisión y en todo tipo de actividades agobiantes, de esta misma manera puede dedicar ese valioso tiempo a meditar.
+</p>
+<p class='vspace'>La meditación traerá consecuencias favorables para el
+hogar, pues también ayuda a que prevalezca el respeto a
+las mujeres y a los niños. De esta forma, la tan anhelada
+prosperidad material será un hecho, porque lentamente esa
+atmósfera espiritual envolverá al buscador sincero y a su
+familia, alejando los problemas y atrayendo todo lo bueno.
+Esta es una de las instrucciones que más aprecian los discípulos del santo maestro Harijan Maharaj.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on June 06, 2011, at 06:56 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

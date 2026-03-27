@@ -1,0 +1,896 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - II Parte</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : paramadvaiti_ba - RSS Feed'
+      href='index.php-n=paramadvaiti_ba.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05' method='get'><input type='hidden' name='n' value='paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - II Parte"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.paramadvaiti_ba.html'>B.A. Paramadvaiti Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a>
+</p>
+<div class='vspace'></div><h2>II Parte</h2>
+<div class='content-box' > 
+<p><a name='content' id='content'></a>
+</p><ul><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#a'>Ramas de la Gaudiya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#b'>Sri Navadvip Dham Pracharini Sabha</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#c'>Caitanya Math</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#d'>Misión Gaudiya</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#e'>Acaryas Vaisnavas,  Nuevas Misiones y Proyectos de la Doceava Generación</a>
+</li><li><a href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_05.html#f'>Acaryas Vaisnavas, Nuevas Misiones y Proyectos de la 		   Decimotercera Generación</a>
+</li></ul><p><a name='content-end' id='content-end'></a>
+</p></div>
+<p class='vspace'><a name='a' id='a'></a>
+</p><h3>Ramas de la Gaudiya Math</h3>
+<p>La siguiente sección es una lista de diferentes misiones de la Gaudiya Math.
+Algunas son misiones más extensas y otras no, comenzadas por Vaisnavas de manera individual. Lo que ellos mantienen en común es que son ramas autónomas del árbol de Sri Caitanya. Al menos todas ellas tienen publicaciones de libros y/o periódicos, y han abierto uno o más templos.  La lista no está completa, esto nos da una idea de cómo se ha ido propagando la influencia de la Gaudiya Math. Esto también muestra hasta que punto se ha ido aumentando la presencia Vaisnava, y como esto le sirve al mundo entero.
+</p>
+<p class='vspace'>Si alguien deseara tener mas información de las respectivas misiones Vaisnavas, de sus fundadores o miembros, nos gustaría referirlos a la página de Internet de la Visva Vaisnava Raj Sabha (WVA-VVRS) en la cual se trata de mantener información actualizada sobre las actividades Vaisnavas en el mundo. 
+</p>
+<p class='vspace'>Ya que, no hemos recibido mayor información de todas las misiones, algunas de ellas aparecen nombradas y sin mayor información de sus actividades. 
+Si no estoy suficientemente purificado para glorificar a todos los maravillosos Vaisnavas, sus misiones y sus servicios, les ruego que disculpen. También les ruego que se informen de mi ignorancia y de mis descuidos, por lo que en la siguiente edición la información estará actualizada. Gracias por su amable entendimiento. 
+</p>
+<p class='vspace'>Las abreviaciones utilizadas en las siguientes páginas son :
+</p>
+<p class='vspace'>WVA-VVRS = Asociación Mundial Vaisnava – Visva Vaisnava Raj Sabha<br />G = Generación<br />M = Maharaj<br />B = Bhakti
+</p>
+<p class='vspace'><a name='b' id='b'></a>
+</p><h3>Sri Navadvip Dham Pracharini Sabha</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhaktivinode Thakur ( 9na Generación).<br />Recibió diksa Vaisnava de Vipin Bihari Goswami y siksa de Srila Jagannath das Babaji (8va G). Más tarde, en 1908, Srila Bhaktivinode Thakur recibió babaji-vesa de Srila Gaur Kishor das Babaji M. Samadhi Mandir en Godrum Navadvip.
+</p>
+<p class='vspace'><strong>Acarya siguiente:</strong> Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur (11va G) Discípulo de Srila Gaur Kishor das Babaji  M (10ma G)
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> El acarya respectivo de Caitanya Math.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> Primero en Yogapith. Luego en Srivas Angan, Advaita Angan, Gadadhara Bhavan.
+</p>
+<p class='vspace'><strong>Otras características especiales:</strong>
+</p><ul><li>Estableció el Gaur Kishor das Babaji M. Samadhi Mandir en Mayapur  (Sri Caitanya Math)
+</li><li>Estableció el Sri Nrisingha Mandir.
+</li><li>Estableció el programa Nama Hatta.
+</li><li>En 1894 el Maharaj del estado de Tripura, Bir Chandra Dev Burman Manikya Bhadur, fue nominado Primer Presidente de este Pracharini Sabha.
+</li></ul><p class='vspace'>Los objetivos de este Sabha son: 
+</p><ul><li>Aumentar Sri Navadvip Dham  y dar publicidad a su santidad, gloria, así como su importancia religiosa e histórica.
+</li><li>Mantener el templo llamado Yogapith, Sri Mandir como el sitio de nacimiento de Sri Caitanya Mahaprabhu en Sri Mayapur,; cargar con el diario seva-puja de las deidades llamadas Sri Gaur- Vishnupriya y otras deidades instaladas allí con festividades periódicas en honor aquellas deidades. 
+</li><li>Mantener de la librería de arya sastras llamados los Vedas, Upanishads y literatura del Bhakti, y cuartos de lectura para el uso público.
+</li><li>Colección histórica de materiales y encuentros arqueológicos relacionados, y en conexión con Sri Navadvip Dham.
+</li><li>Promoción y publicación de literatura del Bhakti.
+</li><li>Establecer y mantener el Chatuspathi para el estudio Sánscrito y literatura Bhakti.
+</li><li>Emisión del conocimiento de Arya Sastras conocidos como Vedas, Upanishads y literatura del Bhakti.
+</li><li>Mantener, poseer, manejar, conducir o controlar las propiedades, terrenos, de templos conocidos como Yogapith Sri Mandir y Srivas Angan, ambos situados en Sri Mayapur.
+</li><li>Construir y levantar nuevas construcciones; para expandir, reparar, aumentar, asegurar y adquirir propiedades movibles e inmovibles para llegar mas allá con los objetivos ya mencionados.
+</li><li>Premiar con medallas y conceder honores a escolares que participen en la literatura del Bhakti y aquellos quienes rinden servicios meritorios al Sabha y a las Deidades. 
+</li><li>Hacer toda clase de cosas, ya sean sin intención o conductivas para los objetivos del Sabha o cualquiera de sus susodichos.
+</li></ul><p class='vspace'><a name='c' id='c'></a>
+</p><h3>Caitanya Math</h3>
+<p><strong>Acarya fundador:</strong> Paramapujapada Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur (11ra G.)<br />Discípulo de Srila Gaur Kishor das Babaji M. (10ma G) Samadhi Mandir en Caitanya Math, Mayapur. Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur (Srila Sarasvati Thakur ) fue el presidente de la Visva Vaisnava Raj Sabha.
+</p>
+<p class='vspace'><strong>Siguientes Acaryas:</strong> 
+</p><ul><li>Srila Bhakti Vilas Tirtha M. (12va G.) Fue sisya de Srila Sarasvati Thakur y tomó sanyass de Srila Bhakti Vijñan Ashram M. Los Samadhi Mandir de Srila Bhakti Vilas Tirtha M. y de Srila Bhakti Vijñan Ashram M. están en Sri Caitanya Math,  Mayapur.
+</li><li>Srila Bhakti Kusum Sraman M (12va G.) Sisya de Srila Sarasvati Thakur y sanyass de Srila B. V. Tirtha M Samadhi Mandir en Sri Caitanya Math, Mayapur.
+</li><li>Srila Bhakti K. Tapasvi M (12va G.) Sisya de Srila Sarasvati Thakur Samadhi Mandir en Srivas Angan, Mayapur.
+</li></ul><p class='vspace'><strong>Acarya actual:</strong> Varios.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> Sesenta y seis. Más tarde, se dividieron y corrientemente son cuarenta y dos.
+</p>
+<p class='vspace'><strong>Sanyass iniciados de Srila Sarasvati Thakur:</strong> Veinte.
+</p>
+<p class='vspace'><strong>Sanyass iniciados de otros Acaryas del Caitanya Math:</strong> Cercanos a cuarenta.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> Cercanos a trescientos en Bengalí, Sanscrito, Ingles e Hindi.
+</p>
+<p class='vspace'><strong>Nuevas misiones fuera de esta misión:</strong> Aprox., veinticinco.
+</p>
+<p class='vspace'>Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur utilizó los siguientes métodos para la práctica y la prédica de las enseñanzas de Sri Caitanya Mahaprabhu.
+</p>
+<div class='vspace'></div><ol><li>En orden, para circular y popularizar la literatura del Bhakti, él estableció varias imprentas, llamadas : Bhagavat Imprenta de Krishnanagar, Nadia Prakash Imprenta de Sri Mayapur, Trabajos Imprenta Gaudiya en Calcuta, y Paramartha Imprenta en Cuttack. También editó, imprimió, y publicó varios volúmenes de literatura del Bhakti, Sastras escritos por los seis Goswamis y otros maestros Vaisnavas de la escuela Gaudiya Vaisnava. Estos libros fueron hechos para el alcance de la gente, ya sean gratis o a bajos precios.
+</li><li>Comenzó con exclusiva prensa escrita diaria del Bhakti. Estos incluyen: 
+<ul><li>El Sajan Toshani, Bnegali mensual.
+</li><li>El Armonista, Ingles mensual.
+</li><li>La Gaudiya, Bengalí semanal.
+</li><li>El Nadia Prakash, Benaglí diario.
+</li><li>El Bhagavat, Hindi quincenal.
+</li><li>El Kirtan, Assami mensual.
+</li><li>El Paramerthi, Oriya quincenal.
+</li></ul></li><li>Mantuvo exhibiciones ilustradas de las vidas y enseñanzas de Sri Caitanya Mahaprabhu y de santas Vaisnavas a lo largo de la historia, y sermones tomados de los Upanishads, Puranas, Mahabharata y Ramayana. Este método de prédica, fue muy  impresionante y efectivo, aun entre hombres, mujeres y niños analfabetos.
+</li><li>El predicó de puerta en puerta y de aldea en aldea, manteniendo reuniones y encuentros con grupos de hombres. Con este propósito Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur no sólo envió a predicadores a las remotas aldeas de la India de norte a sur y de este a oeste, sino también a Burma y Europa.
+</li><li>Mantuvo festivales religiosos en todos los centros y Maths, atrayendo gente y dándoles oportunidades para escuchar discursos religiosos.
+</li><li>También introdujo y popularizó los Vaisnavas smritis tales como el Samskara Dipika de Srila Gopal Bata Goswami  y Sat Kriya Sar Dipika y prácticas Vaisnavas (achar) basadas en los smriti a  través de sus discípulos en las materias de sraddha y otros ritos religiosos.
+</li><li>Introdujo y administró Pancharatrika Diksha  a sus discípulos sin importar la casta, de esta confiriéndoles el derecho de trabajar para Bhagavan Vishnu.
+</li><li>Otro de sus propósitos fue introducir la pureza de la educación Vaisnava y por esta razón publicó el Hari Namamrita Vyakarana, un libro de gramática Sánscrito escrito por Sri Jiva Goswami, y estableció una Academia de Sánscrito para estudiar aquella gramática. Es ahora uno de los temas para conferir algún rango de Upadhi Vyakaran Tirtha. 
+</li><li>Estableció una Academia de Sánscrito (Bhagavata Pathasala o Paravidya- pitha) para el estudio de la literatura del Bhakti bajo su propia guía, y trajo pandits expertos desde Udupi (Sur de India) y de otros lugares para enseñar la filosofía de diferentes escuelas.
+</li><li>También estableció una residencial Escolar Inglesa llamada Instituto Thakur Bhaktivinode en Sri Mayapur para impartir la educación basada en la fe Vaisnava a gente joven. El no creía en la educación atea. Más tarde, una escuela básica con el nombre de Thakur Bhaktivinode fue establecida por B. V. Tirtha M.
+</li><li>Reclamó y mejoró los antiguos y descuidados templos y lugares religiosos importantes, descubrió antiguos lugares asociados con la vida de Sri Caitanya Mahaprabhu y otros santos Vaisnavas. También levantó templos y monumentos a los lugares visitados por Sri Caitanya Mahaprabhu alrededor de India.
+</li><li>Introdujo diez exámenes de literatura Vaisnava y filosofía, e historia de sectas religiosas.
+</li><li>Revivió el Sri Visva Vaisnava Raj Sabha fundado por Sri Rupa y Sri Sanatana Goswami.
+</li><li>Introdujo la practica de la Brahmacarya, Vanaprastha y Sanyass a sus discípulos, todo dirigido hacia el servicio de Dios. La practica mencionada es un método saludable para regular la vida así como el primer paso de la vida espiritual.
+</li></ol><p class='vspace'>Srila Prabhupad Bhaktisiddhanta Sarasvati Goswami Thakur popularizó la Gaudiya Vaisnava con todas su altas excelencias a través del mundo. Estableció el Sri Caitanya Math en Sri Mayapur – una ciudad llena de templo y monasterios actualmente con cientos de ramas de la Gaudiya Math. También estableció lugares de trabajos en diferentes partes de la India y extranjero.
+</p>
+<p class='vspace'><strong>Otros propósitos y logros:</strong> 
+</p>
+<p class='vspace'><strong>Maths establecidos por Srila B. Vilas Tirtha M.:</strong>
+</p><ul><li>Banga, W. Bengal, Haridas Thakur bhajana- kutir.
+</li><li>Gutur Gaudiya Math, Adhra Pradesh.
+</li><li>Burdwan, Kuliya Gram – bhajan-  sthan de Thalur Haridas.
+</li><li>Diamond Harbor Gaudiya Math, 1963.
+</li></ul><p class='vspace'><strong>Periódicos Vaisnavas:</strong> 
+</p><ul><li>“Dainik Nadia Prakash”. El editor de la publicación de este diario fue Srila Bhakti Promode Puri M.
+</li><li>“Gaudiya” – Bhakti Vilas Tirtha M. Publicó en varios lenguajes incluyendo Hindi, Bengalí, Oriya, Assami, Ingles.
+</li></ul><p class='vspace'><strong>Parikramas:</strong> 
+</p><ul><li>Vraja Mandal parikram.
+</li><li>Navadvip Dham parikram.
+</li></ul><p class='vspace'>Homeopáticos dispensarios.
+</p>
+<p class='vspace'><a name='d' id='d'></a>
+</p><h3>Misión Gaudiya</h3>
+<p><strong>Acarya fundador:</strong> Srila Prabhupad Bhaktisiddhanta Sarasvati Thakur (11ra G.)<br />El Bagh Bazaar Gaudiya Math en Calcuta se convirtió en la casa central de la misión Gaudiya, bajo la dirección de Bhakti Prashad Puri M. (12da G.) La misión continuó por Srila Bhakti Keval Audulaumi M. ( 12DA g.)
+</p>
+<p class='vspace'><strong>Siguientes Acaryas:</strong> 
+</p><ul><li>Srila Bhakti Keval Audulaumi M (12da G.) Sisya de Srila Sarasvati Thakur. Samadhi Mandir en Godrum, Navadvip.
+</li><li>Srila Bhakti Srirup Bhagavat M. (12da G.), Sisya de Srila Sarasvati Thakur y sanyass de Srila B. K Audulaumi M. Samadhi Mandir en Godrum, Navadvip.
+</li></ul><p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti S. Parivrajak M. (13RA g.) discípulo y sanyass de Srila B. K. Audulaumi M.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> Treinta y cuatro.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> Sesenta aprox.
+</p>
+<p class='vspace'><strong>Nuevas misiones provenientes de esta misión:</strong> Cuatro.
+</p>
+<p class='vspace'><strong>Otros datos especiales:</strong>
+</p><ul><li>Srila B. K Audulaumi M. Escribió dos Kirtans: Sri Kshetra Dham 
+</li></ul><p>Parikram y Navadvip Dham Parikram.
+</p><ul><li>“Bhakti PATRA”, revista mensual en Bengalí (Calcuta).
+</li><li>Creó servicios médicos y dispensarios.
+</li><li>Templos establecidos por el :
+</li><li>Bhaktisiddhanta Sarasvati Gaudiya Math, Godrum Dham. El Pushpa Samadhi de Srila Sarasvati Thakur es encontrado aquí.
+</li><li>Radha Govinda Gaudiya Math, Dist. Haila Gandhi, Po. Lala Bazaar, Asma
+</li><li>Bhakti Keval Audulaumi Gaudiya Math, Dist. Mughalserai, Bihar.
+</li><li>Bhagavat GM, Po. Karim Ganj, Assam.
+</li></ul><p class='vspace'><strong>Actividades sobresalientes:</strong>
+</p><ul><li>Tiene un muy especial estilo de Kirtan. Anteriormente se arrendaron edificios de la Gaudiya Math, que fueron también vendidos por la misión.
+</li></ul><p class='vspace'><a name='e' id='e'></a>
+</p><h2>Acaryas Vaisnavas Nuevas Misiones y<br />Proyectos de la Doceava Generación</h2>
+<h3>Srila Bhakti Prakash Aranya Maharaj (12va G.)</h3>
+<p>Recibió sanyass de Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Misión de Srila Bhakti Vaibhav Aranya Maharaj.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Vaibhav Aranya M. (12va G) Miembro fundador de la WVA-VVRS. Sisya de Srila Sarasvati Thakur y sanyass de Srila B. Bhudev Srouti M.
+</p>
+<p class='vspace'><strong>Establecido:</strong> Krishna Balaram Mandir, Mathura, Samadhi Mandir en el mismo lugar.
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> tres.
+</p>
+<p class='vspace'>Srila Bhakti Vaibhav Aranya M., predicó fuertemente a través de las cartas que le escribía a sus discípulos de todo el mundo. También cerró los mataderos en Mathura.-'
+</p>
+<div class='vspace'></div><h3>Misión de Srila Bhakti Soudha Ashram Maharaj.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Soudha Ashram M. ( 12va H). Sisya de Srila Sarasvati Thakur y sanyass de Srila B. Vaikanash M. Samadhi Mandir en  Mayapur.
+</p>
+<p class='vspace'><strong>Ramas:</strong> cuatro.
+</p>
+<p class='vspace'>Comenzó una escuela en Calcuta.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Sambhal Bhavat Maharaj (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Sri Gauranga Gaudiya Math</h3>
+<p><strong>Acarya Fundador:</strong> Srila Bhakti Saurabhi Bhakti Sar M. (12va G.)<br />Miembo fundador de la WVA-VVRS. Sisya de Srila Sarasvati Thakur, sanyass de Srila Bhakti Saranga Goswami M. Samadhi Mandir en Mayapur
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Sundar Sudir Acarya MM. (13ra G.)
+</p>
+<p class='vspace'><strong>Ramas:</strong> Cuatro
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> seis.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Rañjan Bhaktisar (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Bhusan Bharati Mnaharaj (12va G.)</h3>
+<p>Sisya de Srila Sarasvati Thakur. Miembro fundador de la WVA-VVRS.
+</p>
+<div class='vspace'></div><h3>Sri Rupanuga Bhajanashram</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Vilas Bharati M. (12va G.). Sanyass de Srila Bhakti Shouti Goswami M.
+</p>
+<p class='vspace'><strong>Deidades:</strong> Sri Radha Shyama Sundes. Samadhi Mandir en Sri Rupanuga Bhajanashram, Mayapur.
+</p>
+<p class='vspace'><strong>Discípulos sanyass:</strong> uno.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Sadhan Tatpar M. (13ra G.) Sanyass de Srila Bhakti Vilas Bharati M.
+</p>
+<p class='vspace'><strong>Libros:</strong> Muchos.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Un hermoso templo lleno de Bhagavan – lila dioramas.-'
+</li></ul><p>Srila Bhakti Prosun Bodhayan Maharaj ( 12va G.)
+Sanyass de Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Instituto de Filosofía Oriental.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Hriday Bon M ( 12va G.)<br />Sisya de Srila Saravasati Thakur. Samadhi Mandir en Bhakan Kutir en el templo de Madan Mohan, Vrindavan.
+</p>
+<p class='vspace'><strong>Próximos Acaryas:</strong><br />Srila Bhakti Rasika Bon M. (13ra G.) Miembro fundador de la WVA-VVRS.<br />Srila Krishnananda Bon M. (13ra G.)<br />Ambos recibieron sanyass de B.H. Bon M.
+</p>
+<p class='vspace'><strong>Acarya Actual:</strong> Srila Gopananda Bon M. ( 13ra G.). Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> cuatro.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> veinte.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> Cuarenta.
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> dos.
+</p>
+<p class='vspace'><strong>Libros:</strong> muchos.
+</p>
+<p class='vspace'><strong>Datos especiales :</strong>
+</p><ul><li>Srila Bhakti Hriday Bon M, fue el primer Gaudiya Vaisnava, en comenzar la predica en occidente. El manejo todo para establecer templos en Londres y Berlín.
+</li><li>Trajo al primer europeo, Bhakti Sadananda Swami, a India. Bon M. Predicó a todas las importantes universidades de Europa.
+</li><li>Conoció al Rey y Reina de Inglaterra y a muchos otros aristocráticos europeos. Aprendió Alemán para facilitar sus lecturas las universidades Alemanas.
+</li><li>Fue elegido líder del Mahants del Kumbha Mela, y recibió apoyo de muchos lideres Indios por sus proyectos educacionales.-'
+</li></ul><div class='vspace'></div><h3>Gaur Gadadhar Gaudiya Math.</h3>
+<p><strong>Acarya fundador:</strong> Bhakti Prapanna Damodar M. ( 12va G.)<br />Sisya de Srila Sarasvati Thakur. Miembro fundador y honorario de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Establecidos:</strong> Math de Sri Sri Gaur Gadadhar en Puri.-'
+</p>
+<div class='vspace'></div><h3>Sri Gaur Gadadhar Math.</h3>
+<p><strong>Fundador de la misión:</strong> Sri Dwija Bani Nath ( 12va G.), bajo el Caitanya Math, diksa de Srila Sarasvati Thakur y babaji de Srila Bhakti Promode Puri Maharaj en 1994.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Jyoti M. (13ra G.)
+</p>
+<p class='vspace'>Miembro fundador de la WVA-VVRS.
+</p>
+<div class='vspace'></div><h3>Srila B. Vilas Gavasthi Nemi Maharaj (12va G.)</h3>
+<p>Sanyass iniciado de Srila Sarasvati Thakur. Fue un gran Pandit, tuvo muchos discípulos, escribió un libro, y luego se rindió entero a Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Gambhir Giri Maharaj (12va G.)</h3>
+<p>Sisya de Srila Saravasti Thakur. Miembro fundador de la WVA-VVRS
+</p>
+<div class='vspace'></div><h3>Misión de Srila Bhakti Sarvasa Giri Maharaj.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Sarvasa Giri M. (12va G.)<br />Sanyass de Srila Sarasvati Thakur. Abrió su propio Math en Vrindavan.
+</p>
+<div class='vspace'></div><h3>Gaudiya Sanga.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Saranga Goswami M. (12va G.)<br />Sisya de Srila Sarasvati Thakur y sanyass de Srila B.R. Sridhar M. Samadhi Mandir en Nandan Acarya Bhavan, Mayapur.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Suhrit Akiñchana M. (13ra G.)<br />Sanyass de Srila Bhalkti Saranga Goswami M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> treinta.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> cuarenta.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> veinte aproximadamente.
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> cuatro.
+</p>
+<p class='vspace'><strong>Otros datos especiales:</strong> 
+</p><ul><li>Redescubrió el lugar sagrado de Imli Tala en Vrindavan.
+</li><li>Srila Bhakti Saranga Goswami M. Fue con Srila Bhakti Pradip Tirtha M. A   Inglaterra y predicó.
+</li><li>Establecieron un centro permanente en Londres.
+</li><li>Navadvip Dham parikram.
+</li><li>Estableció el lugar de reunión de Sri Nitay Gaur en Mayapur (Nandan Acahrya Bhavan )
+</li></ul><div class='vspace'></div><h3>Gaudiya Vedanta Samiti.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Prajñan Kesava M. (12va G.)<br />Sisya de Srila Sarasvati Thakur y sanyass de Bhakti R. Sridhar dev Goswami M.
+Samadhi Mandir en Devananda Gaudiya Math, Navadvip.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhaktivedanta Vamana M. (12va G.) Sanyass de Srila B. P. Kesava M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Otros Acaryas:</strong> Srila Bhaktivedanta Narayan M ( 13ra G.). Miembro fundador de la WVA-VRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> cincuenta.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> cincuenta.
+</p>
+<p class='vspace'><strong>Libros:</strong> Cien aprox., en varios lenguajes.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>Anualmente un muy largo Navadvip Dham parikram.
+</li><li>Anualmente Vrindavan Dham parikram.
+</li><li>Varios periódicos en Hindi, Bengalí e Ingles.
+</li><li>Srila Bhakti Prajñan Kesava M., fue un renunciante aprendiz de una     familia adinerada.
+</li><li>Escribió también un libro llamado Vaisnava Vijay para debatir la filosofía Mayavadi.
+</li><li>Comenzó un centro de la Gaudiya Math en Mathura.
+</li><li>Dió sanyass al fundador de ISKCON, Srila A. C. Bhaktivedanta Swami M-'.
+</li></ul><div class='vspace'></div><h3>Srila Niskiñchana Krishna Das Babaji Maharaj. (12 va G.)</h3>
+<p>Sisya de Srila Sarasvati Thakur. Fue amado por todos. Su Samadhi Mandir es en Nandagram al lado de Sanatan Goswami bhajan kutir. Todas las misiones estuvieron felices cuando Srila N. Krishna das Babaji M, vino a cantar el Kirtan.
+</p>
+<div class='vspace'></div><h3>Sri Caitanya Gaudiya Math</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Dayita Madhava M. (12va G.)<br />Sisya de Srila Saravasti Thakur y sanyass de Srila B. G. Vaikanash M. Samadhi Mandir en Sri Caitanya Gaudiya Math, Mayapur.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Ballabh Tirtha M (13ra G.)<br />Sanyass de S. B. D. Madhava M. Srila Tirtha M. Es miembro fundador y vicepresidente de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> Aproximadamente sesenta.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> cuarenta.
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> cuatro.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Construyeron un templo en el lugar de nacimiento del fundador de la 
+</li></ul><p>Gaudiya Math en Puri.
+</p><ul><li>Grandes casas de invitados en el Dham sagrado.
+</li><li>Anualmente Navadvip Dham parikram. Cada tres años Vraj Mandal parikram.
+</li><li>Mensualmente la revista ; “ Caitanya Vani”.-'
+</li></ul><div class='vspace'></div><h3>Sri Krishna Caitanya Math</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Kamal Madhusudana M (12va G.)<br />Sisya de Srila Sarasvati Thakur y sanyass de Srila B. R. Sridhar M. Samadhi Mandir en Mayapur.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Prinan Vishnu Devatam M. (13ra G.) Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> seis.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> cinco.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> cinco.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Su templo esta muy elaborado.
+</li><li>Fue un gran estudiante.-'
+</li></ul><div class='vspace'></div><h3>Srila Nayanandana Das Babaji Maharaj. (12va G.)</h3>
+<p>Sisya de Srila Sarasvati Thakur. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Srila Nayanandana Maharaj, superviso todas las construcciones de las ramas de la Gaudiya Math. Este servicio le fue dado por Srila Sarasvati Thakur.
+</li><li>Ahora se encuentra a cargo del Champahatta Gaudiya Math de Gaur Gadadhar. Este templo ha existido desde los tiempos de Sri Caitanya Mahaprabhu.  El ha participado en este servicio del Champahatta Gaudiya Math  por los últimos setenta y un años.
+</li><li>Srila Nayanandana das Babaji M. Siempre vistió ropas blancas siguiendo la instrucción de Srila Sarasvati Thakur en despecho de su espíritu de renunciación. Más tarde, tomó babaji de Srila Promode Puri M.-'
+</li></ul><div class='vspace'></div><h3>Paramahamsa Gaudiya Math.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Alok Paramahamsa M. (12va G.)<br />Sisya de Srila Sarasvati Thakur. Sanyass de Srila B. R. Sridhar M. B. A. Paramahamsa M. Fue  sirviente personal y previamente predicó junto a Srila Sarasvati Thakur. Su Samadhi Mandir es en Sri Mayapur Dham, Ishodyan.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Sadhak Niskiñchana M. (12va G.) Diksa de Paramahamsa M. Sanyass de B. Promode Puri M. Miembro fundador de la WVA- VVRS.
+</p>
+<p class='vspace'><strong>Discípulos sanyass:</strong> tres.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srimad Bhakti Sadhak Niskiñchan M. (13ra G.) Administrador previo de Zamindar en Mayapur. Sostuvo la responsabilidad del departamento publicador de Grantha.-'
+</p>
+<div class='vspace'></div><h3>Gopinath Gaudiya Math</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Promode Puri Maharaj (12va G.)<br />Presidente de la WVA-VVRS. Sisya de Srila Sarasvati Thakur, y sanyass de S. B. G. Vaikanash M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> quince.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> ciento veinte.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> ochenta aproximadamente.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>Excelente editor y escritor de varias revistas.
+</li><li>Sus publicaciones incluyen: “Nadiya Prakash”, “Caitanya Vani”, “Gaudiya, Bhagavat Darshan”.
+</li><li>Srila B. P. Puri M. Es experto en la puja y en la instalación de Deidades, inauguraciones de templos, etc.
+</li><li>Instalo alrededor de ochenta Deidades en su vida. Su prima instalación 
+</li></ul><p>de Deidades fue en Yogapith.
+</p><ul><li>Es uno de los primeros miembros de la Gaudiya Math.
+</li><li>Varios Vaisnavas mayores, ya sean sus hermanos esprituales o Acaryas de otras misiones vienen a consultarlo.
+</li><li>El revivió la Visva Vaisnava Raj Sabha en 1994.
+</li><li>Casi a los 100 años, aun abre templos, dando alivio a los demas.
+</li><li>Restauró el Keshi Ghat y el famoso Dauji Mandir en Vrndavan.
+</li><li>Es famoso por su cooperación con sus hermanos espirituales.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Srirup Puri Maharaja. (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur. Protector de Svarup Granj.Intimo asociado de Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Misión Sri Krishna Caitanya</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Vaibhav Puri M. (12va G.)<br />Sisya de Srila Sarasvati Thakur, y sanyass de Srila B. Giri M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> dieciséis.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> veinte.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> Aproximadamente veinte en Oriya.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>Predicó en Orissa.
+</li><li>Hermosas construcciones de templos.
+</li><li>Predicó en el Sur de India.
+</li><li>Restauró el antiguo templo  Seva Kuñja de Radha Vrindavan Chandra en Vrindavan.
+</li><li>Recientemente viajó por Europa por tercera vez a la edad de 86 años.-'
+</li></ul><div class='vspace'></div><h3>Srila Sadananda Swami (12va G.)</h3>
+<p>Sisya de Srila Sarasvati Thakur.
+</p>
+<p class='vspace'><strong>Libros:</strong> Seis en Alemán, otros en Sueco, Ingles y Español.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>  
+</p><ul><li>Fue el primer Vaisnava Alemán.
+</li><li>Srila B. M. Bon M. Lo llevo a India.
+</li><li>Vivió en India con su Guru Srila Sarasvati Thakur y luego retorno a Alemania y Suecia.
+</li><li>El hizo esto con ayuda de un discípulo de Srila B. M. Bon M. – Vamana das (Walter Eidlitz) (13ra G. ) Esta vez fue la primera ocasión en que la literatura de la Gaudiya Vaisnava  fue publicada fuera de India.
+</li><li>También ellos predicaron en universidades y comenzaron el primer círculo Europeo Vaisnava.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Vaibhav Sagar Maharaj (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur. El hizo seva a las deidades en Mamghati.
+</p>
+<div class='vspace'></div><h3>Sakhi Charan Babu (12va G.)</h3>
+<p>Notable contribuidor a la Gudiya Math. Ayudó a muchos hermanos espirituales y misiones. Entró su Samashi en Imli Tala.
+</p>
+<div class='vspace'></div><h3>Misión de Srila Bhakti Kumud Santa Maharaj.</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Kumud Santa M. (12va G.)<br />Miembro fundador de la WVA-VVRS Sisya de Srila Sarasvati Thakur y sanyass de S. B G. Vaikanash M. 
+</p>
+<p class='vspace'><strong>Ramas:</strong> seis.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> treinta.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> doce.
+</p>
+<p class='vspace'><strong>Otros datos:</strong>
+</p><ul><li>Srila Bhakti Kumud Santa M. Esta siempre ayudando a celebrar las funciones Vaisnavas.
+</li><li>También predicó en el occidente.
+</li><li>Su centro principal esta en Beherla, Calcuta.-'
+</li></ul><div class='vspace'></div><h3>Profesor Srila Nisikantha Sanyal  (12va G.)</h3>
+<p>Sisya de Srila Sarasvati Thakur. No abrió su propia misión, pero escribió el importante libro Sri Krishna Caitanya en Ingles. Su propio Guru escribió la introducción a este libro. Fue profesor en el Colegio Ravenshaw  y jefe editor de muchas publicaciones de la Gaudiya Math.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Svarup Sar Maharaj. (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur.
+</p>
+<div class='vspace'></div><h3>Sarasvat Gaudiya Ashram</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Srirup Siddhanti M. (12va G.)<br />Sisya de Srila Sarasvati Thakur.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Sri Bhakti Rañjan Sagat M. (13ra G.)<br />Miembro fundador de la WVA-VVRS. Sanyass de Srila Bhakti Srirup Siddhanti M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> tres.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> siete.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> cuarenta. Publicó y escribió varios libros importantes, Guru Prestha siendo uno de ellos, y otros que estuvieron por largo tiempo sin imprimir.
+</p>
+<p class='vspace'><strong>Otros datos:</strong> Construyó tres elaborador y decorados templos con una permanente exhibición teista incorporando esculturas dentro de toda el área del templo.
+</p>
+<div class='vspace'></div><h3>Sri Caitanya Sarasvat Math</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Rakshak Sridhar Dev Goswami M. (12va G.)<br />Sisya y sanyass de Srila Sarasvati Thakur. Miembro fundador de la WVA-VVRS. Samadhi Mandir en Sri Caitanya Sarasvat Math, Navadvip.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Srila Bhakti Sundar Govinda M. (13ra G.) Sanyass de Srila B.  R. Sridhar M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> Cincuenta.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> treinta aprox.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> doscientos aprox. ( Traducciones en otros lenguajes)
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> cercanas a diez.
+</p>
+<p class='vspace'><strong>Otros datos:</strong>
+</p><ul><li>Mensualmente la revista inglesa Vaisnava Tosan.
+</li><li>Publicaciones en muchos lenguajes.
+</li><li>Periódicos en varios lenguajes.
+</li><li>Anualmente Navadvip Dham parikram y Vraj Mandal parikram.
+</li><li>Centros mundiales.
+</li><li>Srila B. R. Sridhar Maharaj, fue altamente aceptado por la mayoría de los Vaisnavas. Abrió la original Gaudiya Math. Compuso muchas canciones las cuales son cantadas en varios lugares de la Gaudiya Math. Sus canciones a su maestro espiritual, el Sri Sri Premadham Dev Stotram. Él claramente avanzó en el entendimiento siddhantic del Srimad Bhagavad Gita: El Tesoro Escondido del Dulce Absoluto y es distinguido por todos los Vaisnavas por su composición y estilo en Sri Sri Prapanna Jivanamritam. En los últimos años de su vida, su prédica se extendió por todo el mundo, y sus libros fueron publicados en varios lenguajes. Numerosos maestros espirituales fueron donde él para ser aconsejados. Fue un gran estudiante de Sánscrito y también un gran poeta.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Bhudev Srouti Maharaj. (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur. Abrió su propio Math en Vhalgram Midnapur, preparo artículos de su Guru para la Gaudiya Patrika.
+</p>
+<div class='vspace'></div><h3>ISKCON- Sociedad Internacional para la Conciencia de Krishna.<br />BBT - Bhaktivedanta Book Trust.</h3>
+<p><strong>Acarya fundador:</strong> Srila A. C. Bhaktivedanta Swami M. (12va G.)<br />Sisya de Srila Sarasvati Thakur, y sanyass de S. B. P. Kesava M. Samadhi Mandir en Krishna Balaram Mandir, Vrindavan.
+</p>
+<p class='vspace'>Srila Bhaktivedanta Swami M. Sorprendió al mundo entero  así como a sus hermanos espirituales con sus destacados logros. El  solo llevo a cabo la predicción de Sri Caitanya Mahaprabhu: Los Nombres Sagrados de Krishna serán cantados en cada pueblo y ciudad en el mundo
+</p>
+<p class='vspace'>Srila B. R. Sridhar M. Dijo: “Fue  anunciado por Sri Caitanya Mahaprabhu, concebido por Srila Bhaktivinode Thakur, comenzado por Srila Prabhupad Bhakti Siddhanta Sarasvati  Goswami M., fue realizado por Swami M. ( Srila A. C. Bhaktivedanta Swami).”
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Muchos.
+</p>
+<p class='vspace'><strong>Ramas:</strong> quinientos aprox.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> 150 aprox.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> sobre trescientos títulos ( en sesenta y cuatro lenguajes)
+</p>
+<p class='vspace'><strong>Impresos y distribuidos:</strong> 400 millones.
+</p>
+<p class='vspace'><strong>Nuevas misiones emanadas de esta misión:</strong> quince.
+</p>
+<p class='vspace'><strong>Otras características:</strong>
+</p><ul><li>El fundador comenzó 108 centros alrededor del mundo, los cuales fueron 
+</li></ul><p>aumentados por sus discípulos.
+</p><ul><li>Muchos restaurantes vegetarianos y comunidades de campo.
+</li></ul><p>Bhaktivedanta Book Trust.
+</p><ul><li>Publicaciones en sesenta y cuatro lenguajes. La primera edición completa del Srimad Bhagavatam y el Caitanya Caritamrita con la interpretación de Srila A. C. Bhaktivedanta Swami M.
+</li><li>Varias paginas de Internet para la predica en formato digital.
+</li></ul><p>Archivos Bhaktivedanta:
+</p><ul><li>Vedabase – un computador con una base de datos que contiene ochenta traducciones de clásicos libros Vaisnavas en formato digital con las interpretaciones de Bhaktivedanta.
+</li><li>Una biblioteca con lecturas y canciones en cassete y cd.
+</li><li>14.000 cartas dirigidas a sus discípulos.
+</li></ul><p>Instituto Bhaktivedanta:
+</p><ul><li>Búsquedas científicas, publicaciones y conferencias.
+</li><li>Promoción del arte Vaisnava en la web.
+</li><li>Seminarios de entrenamiento sobre arte y ciencia.
+</li></ul><p class='vspace'><strong>Otras publicaciones:</strong>
+</p><ul><li>Biografía del fundador por Srila Satsvarup das Goswami.
+</li><li>“Back to Godhead”, revista en Ingles y en otros lenguajes. (Comenzada por el fundador en 1994)
+</li><li>Mundo Hare Krsna – periódico internacional en Ingles.
+</li><li>ISKCON televisión – pioneros en la televisión Vaisnava
+</li><li>Cine ISKCON- Sri Yadubara y Srimati Vishaka prepararon varias películas para la prédica.
+</li></ul><p class='vspace'><strong>Otras actividades para la prédica:</strong>
+</p><ul><li>Red mundial Pada – yatras, caminatas y prédicas alrededor del mundo.
+</li><li>Ratha Yatras en las principales ciudades del mundo ( mas de cincuenta).
+</li><li>Biografía televisada del fundador de ISKCON para su trasmisión en la India por dos años.
+</li><li>Gurukulas – pioneros en el trabajo de establecer los principios Védicos en la educación básica.
+</li><li>Distribución de Prasadam, comida de beneficencia, y restaurantes vegetarianos alrededor del mundo.
+</li><li>FATE – First American Trascendental Exhibition. - Primera Exhibición Trascendental Americana.
+</li><li>Intentos de crear comunidades agrícolas que sean auto suficientes, alrededor del mundo.
+</li><li>Incorporar en áreas políticas muy difíciles, tales como países Comunistas y Musulmanes, conciencia de Krsna de manera exitosa.
+</li><li>El mahamantra y otras canciones devocionales fueron incluidas en su música y debido a esto el nombre de Krsna es muy famosos.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Pradip Tirtha Maharaj (10ma G.)</h3>
+<p>Discípulo de Srila B. Vinode Thakur, y sanyass de Srila Sarasvati Thakur. Fue un gran escritor y publicó un comentario sobre el Bhagavad Gita. Fue enviado a Inglaterra para predicar.
+</p>
+<div class='vspace'></div><h3>Sri Caitanya Gaudiya Math</h3>
+<p><strong>Fundador:</strong> Srila Bhakti Gaurab Vaikanash M ( 12va G.)<br />Esta es una rama de Sri Caitanya Gaudiya Math de Srila Bhakti Dayita Madhava M ( 12va G.)
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> trece.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> diez.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Gaurab Vaikanash Maharaj (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur. Estableció Math en Bhuvanesvara, Orissa. Conocido como Raj Pandit.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Sudhir Yachak Maharaj (12va G.)</h3>
+<p>Sanyass de Srila Sarasvati Thakur. Bien conocido como un gran cocinero y servicial en Vrindavan.
+</p>
+<div class='vspace'></div><h3>Sri Caitanya Bhagavat Math</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Vicar Yajavar M. (12va G.) Sanyass de Srila Sarasvati Thakur.
+</p>
+<p class='vspace'><strong>Acarya actual:</strong> Bhakti Vistar Vishnu M ( 13ra G.). Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> seis.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> diez
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> seis.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Srila Bhakti Vichar Yajavar M. Tiene su Samadhi en Mayapur. Fue el ultimo sanyassi de Srila Sarasvati Thakur.
+</li><li>Sus templos son muy elaborados.
+</li><li>Fue el primero en declarar, en una reunión Vaisnava, que Srila A. C  debe ser un Shakti avesa avatar, en orden de realizar lo que estaba decidido a realizar. Srila B. R. Sridhar Maharaj, estuvo de acuerdo con esta intuición.-'
+</li></ul><p class='vspace'><a name='f' id='f'></a>
+</p><h2>Acaryas Vaisnavas Nuevas Misiones y<br />Proyectos de la Decimotercera Generación</h2>
+<h3>Asociación internacional – Sri Caitanya Bhakti Rakshak Mandapa</h3>
+<p><strong>Acarya fundador:</strong> Srila Badri Narayan Bhagavat Bushan (13ta G.). Sisya de Srila A. C. Bhaktivedanta Swami M. Y Srila B. R. Sridhar M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> diez.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> catorce.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Publicaciones en Ingles y en Español.
+</li><li>Jayasri Calssics casa de publicación.
+</li><li>Abrió centros en Radha Kunda y Sevaite de Gadadhar Danta Samadhi en Vrindavan.
+</li><li>Ratha Yatra en Caracas, Venezuela.-'
+</li></ul><div class='vspace'></div><h3>Bhakti Keval Audulaumi Gaudiya Math</h3>
+<p><strong>Fundador:</strong> Srila Bhakti Vilas Bharati M. (13ra G.)<br />Miembro fundador de la WVA-VVRS. Sisya de Bhakti Keval Audulaumi M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> Seis. Abrio una de las ramas provenientes de la Misión Bagh Bazaar Gaudiya.
+</p>
+<p class='vspace'><strong>Libros:</strong> dos en Bengali.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Rasananda Bon M. ( 13ra G.)</h3>
+<p>Miembro fundador de la WVA-VVRES. Sisya de S. B. M Bon M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> una; Bon M. Gaudiya Math Mayapur.
+</p>
+<div class='vspace'></div><h3>Instituto Bhaktivedanta ISKCON</h3>
+<p><strong>Presidente:</strong> Srila Bhakti Svarup Damodar M. (13ra G.) Sanyass de Srila . A. C. Bhaktivedanta Swami M. Miembro fundador de la WVA- VVRS.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> Organiza conferencias científicas sobre la síntesis de la ciencia y religión.
+</p>
+<div class='vspace'></div><h3>Sripad Dasarath Suta Das B. (13ra G.)</h3>
+<p>Sisya de Srila A. C. Bhaktivedanta Swami M. Miembro de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Libros:</strong> Traducidos y publicados cercanos a cien.
+</p>
+<div class='vspace'></div><h3>ISKCON Bhuvanesvar</h3>
+<p><strong>Fundador:</strong> Srila Gour Govinda Swami (13ra G.)<br />Sanyass de Bhakti Vedanta Swami M. Samadhi Mandir en Sri Sri Krishna Balaram Mandir ISKCON, Bhuvanesvar.
+</p>
+<p class='vspace'><strong>Libros:</strong> Personalmente tradujo los libros de su Guru en Oriya.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Escribio distintos libros y revistas.
+</li><li>Abrio un templo en Bhuvanesvar.
+</li><li>Fue un gran devoto y un gran aprendiz.-'
+</li></ul><div class='vspace'></div><h3>Sri Caitanya Mudrani Gauidya Math</h3>
+<p><strong>Fundador:</strong> Srila Bhakti Prakash Hrisikesh M. ( 13ra G.)<br />Harinam de Srila A. C. Bhaktivedanta Swami M., diska de Srila B. R. Sridhar M. Y sanyass de Srila B. P. Puri M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>Abrió misiones en Bulgaria y Malasia.
+</li><li>Ha publicado varios libros por Srila B. R. Sridhar M. en Ingles.
+</li><li>Editor de  WVA-VVRS revista.
+</li><li>Revista Sadhu Sanga.-'
+</li></ul><div class='vspace'></div><h3>Bhaktivedanta Swami Ashram Trust</h3>
+<p><strong>Fundador:</strong> Srila Bhaktivedanta Ksirodaksayi Vishnu M. (13ra G.)<br />Sisya de Srila Bhaktivedanta Swami M. y sanyass de Srila B. A. Paramadvaiti Swami M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> dos (Vrindavan y Londres)
+</p>
+<p class='vspace'><strong>Numero de libros publicados:</strong> veinte.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> “Bhagavat Darshan” revista en Hindi.
+</p>
+<div class='vspace'></div><h3>Instituto Krishna</h3>
+<p><strong>Fundador:</strong> Sripad Kusakratha das Brahmacari (13ra G.)<br />Sisya de Srila A. C. Bhaktivedanta Swami M. también estudiante de Sánscrito.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> Traductor  y editor de mas de trescientos volúmenes de literatura Goswami.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Madhava Maharaj (13ra G.)</h3>
+<p>Sisya de Srila B. D. Madhava M. Miembro fundador de la WVA-VVRS.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Prabhav Mahavir Mahara. (13ra G.)</h3>
+<p>Sisya de Srila B. D. Madhava M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> tres.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> tres
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> Predica en Vrindavan y en países occidentales.
+</p>
+<div class='vspace'></div><h3>Asociación Vaisnava Húngara</h3>
+<p><strong>Fundador:</strong> Srila Bhakti Abhay Narayan M (13G.)<br />Miembro fundador de la WVA-VVRS. Un valiente predicador; fue discípulo de Srila A. C Bhaktivedanta Swami M. y tomo sanyass de B. R. Sridhar Maharaj. Su Samadhi Mandir es en Balástya, Hungría.'''
+</p>
+<p class='vspace'>Acaryas actuales:'''
+Srila Bhakti Kamal Tirtha Maharaj ( 14ta G.) Sanyass de Srila Bhakti 
+Abhay Narayan M. Miembro fundador de la WVA- VVRS<br />Srila Krishnananda Prabhu ( 14ta G.) Miembro fundador de la WVA-
+VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> cinco.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> uno.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> cuarenta.
+</p>
+<p class='vspace'><strong>Características adicionales:</strong>
+</p><ul><li>Kagylokurt Revista, cuatro veces al año en Hungría.
+</li><li>Periódico Ganges Vaisnava, cuatro veces al año en Hungría.
+</li><li>Srila Bhakti Abhay Narayan M. es el primer predicador detrás de la Cortina de Metal.
+</li><li>Tradujo el Bhagavad Gita a Ruso y Húngaro.
+</li><li>Abrió templos en Hungría, Rumania, Bulgaria y Yugoslavia-'.
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Kinkara Narayan Maharaj (13ra G.)</h3>
+<p>Discípulo de Srila B. K Sraman M. y sanyass de Srila B. P. Puri M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Templos:</strong> Sri Sri Radha Govinda, Milan Kuñja, Aeda- Govinda Mahaprabhu, Parganas, Oeste Bengal.
+</p>
+<div class='vspace'></div><h3>Sripad Nrisinghananda Das Adhikari (13ra G.)</h3>
+<p>Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>Director de Iskcon Televisión – el primer servicio Vaisnava de video.
+</li><li>Productor y editor cercano a 200 videos sobre temas Vaisnavas.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Vikash Padmanabha Maharaj (13ra G.)</h3>
+<p>Sisya de S. B. R. Sridhar M. y sanyass de S. B. P. Puri M. Miembro fundador de la WVA-VVRS.
+</p>
+<div class='vspace'></div><h3>VRINDA – Instituto Vrindavan por la cultura y estudios Vaisnavas.<br />ISEV – Instituto Superior de Estudios Védicos<br />SEVA – Servicio editorial de Acaryas Vaisnavas</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Alok Paramadvaiti M (13ra G.)<br />Miembro fundador de la WVA-VVRS. Sisya de Srila A. C. Bhaktivedanta Swami M. y sanyass de Srila B. R. Sridhar Maharaj.
+</p>
+<p class='vspace'><strong>Otros Acaryas:</strong> <br />Srila Bhakti Vimal Harijan Maharaj ( 13ra G.) Sisya de Srila A.C Bhaktivedanta Swami y sanyass de Srila B. R. Sridhar M. Miembro fundador de la WVA-VVRS. Samadhi mandir en Sri Sri Guru Gauranga Radha- Vrajesvara, Bogota, Colombia.<br />Srila Atulananda Acarya Prabhu ( 13G.) Sisya de Srila A. C. Bhaktivedanta Swami M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> ochenta y dos.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> quince.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> ciento veinte.
+</p>
+<p class='vspace'><strong>Nuevas misiones que emanan de esta misión:</strong> dos.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>VRINDA ha restaurado antiguos templos en Vrindavan incluyendo: VRINDA Kuñja Mandir, Gopal Mandir y el Yamuna Kuñja en Imli Tala.
+</li><li>Muchos restaurantes vegetarianos, ashrams, y comunidades agrícolas en Europa, America ( Sur, Central Norte) e India.
+</li><li>Publicaciones en Aleman, Español e Ingles.
+</li><li>ISEV es un programa el cual ofrece cursos de Bhakti Yoga por correspondencia.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Paramarthi Maharaj (13ra G.)</h3>
+<p>Sisya de Srila B. R. Sridhar M. y sanyass de Srila B. P. Puri M. Tiene un centro en Assama.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Parivrajak Maharaj (13ra G.)</h3>
+<p>Comenzó una misión en Mayapur y Howrah, Calcuta. Miembro fundador de la WVA- VVRS. Organización del Navadvip Dham parikram.
+</p>
+<div class='vspace'></div><h3>Misión de Srila Bhakti Prasun Puri Maharaj</h3>
+<p><strong>Miembro fundador:</strong> Srila Bhakti Prasun Puri Maharaj ( 13ra G.) Discípulo de Srila B. Vilas Tirtha M. Miembro funador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> dos.
+</p>
+<div class='vspace'></div><h3>Radha Krishna Math</h3>
+<p><strong>Miembro fundador:</strong> Srila Bhakti Vijay Puri M. ( 13ra G.) Miembro fundador de la WVA-VVRS. Sisya de S. B. Saran Santa M. y sanyass de S. B. P. Puri M.
+</p>
+<p class='vspace'><strong>Otros Acaryas:</strong> Srila Bhakti Mangal M. ( 13ra G.) Sisya de S. B. Saran Santa M.
+</p>
+<p class='vspace'><strong>Ramas:</strong> una en Calcuta.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Vaibhava Sagar Maharaj. (13ra G.)</h3>
+<p>Sisya de Srila B. Vilas Tirtha M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> una en Mayapur.
+</p>
+<p class='vspace'><strong>Otros datos especiales:</strong> Cuidador de Rudradvip Gaudiya Math. Mantiene una excelente biblioteca de la literatura de la Gaudiya Math.
+</p>
+<div class='vspace'></div><h3>Sripad Satyaraj Das Adhikari (13ra G.)</h3>
+<p>Discípulo de Srila A. C. Bhaktivedanta Swami M. Fundador de Folks Books. Editor del “ Periódico de Estudios Vaisnavas”.
+</p>
+<p class='vspace'><strong>Libros:</strong> Autor de varias investigaciones Vaisnavas.
+</p>
+<div class='vspace'></div><h3>Misión Caitanya</h3>
+<p><strong>Fundador:</strong> Srila Jagat Guru Siddha Svarupananda Paramahamsa (13ra G)<br />Discípulo de Srila A. C. Bhaktivedanta Swami M. Miembro fundador de la WVA- VVRS.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> ochenta
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> treinta en Ingles.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong>
+</p><ul><li>En 1960 fue un yogi en Hawai y tuvo variados discípulos.
+</li><li>Se rindió con todos sus discípulos a Srila A. C. Bhaktivedanta Swami M.
+</li><li>Es un pionero en la prédica por Cable TV.
+</li><li>Es acompañado por otro discípulo de Srila A. C. Bhaktivedanta Swami M., Sripad Tusta Krishna ( 13ra G.)
+</li><li>Publico varios folletos dando una guía Vaisnava sobre temas sociales.
+</li><li>Su misión también predica en varios países comunistas.-'
+</li></ul><div class='vspace'></div><h3>Srila Bhakti Siddhanti Maharaj (13ra G.)</h3>
+<p>Sisya de Srila B. R. Sridhar M. y sanyass de Srila B. P. Puri M. Tiene un centro en Navapvip.
+</p>
+<div class='vspace'></div><h3>Caitanya Isha Mandalam</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Nandan Swami M. ( 13ra G.). Sisya  de Srila B. R. Sridhar M y sanyass de Srila B. P. Puri M. Miembro fundador de a WVA-VVRS.
+</p>
+<p class='vspace'><strong>Sucursales:</strong> Inglaterra, Estados Unidos y Malasia.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong>  Seis.
+</p>
+<div class='vspace'></div><h3>Srila Bhakti Svarup Tirtha Maharaj (13ra G.)</h3>
+<p>Miembro fundador de la WVA-VVRS. Sanyass y discípulo de Srila B. S. Bhagavat M. de Bagh Bazaar Gaudiya Math. Misión cerca de Calcuta. También es conocido como un predicador internacional.
+</p>
+<div class='vspace'></div><h3>Sociedad Gaudiya Vaisnava</h3>
+<p><strong>Acarya fundador:</strong> Srila Bhakti Vedanta Tripurari M ( 13ra G.). Sisya y sanyass de Srila A. C. Bhaktivedanta Swami M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Ramas:</strong> seis.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> tres.
+</p>
+<p class='vspace'><strong>Libros:</strong> veinte aprox. 
+</p>
+<p class='vspace'><strong>Otros datos especiales:</strong> 
+</p><ul><li>El fundador ha escrito muchos libros.
+</li><li>Publicación de la revista quincenal “ Gaudiya Vedanta”, en Ingles.
+</li><li>Uno de los mejores periódicos filosóficos Vaisnava.
+</li><li>Es famoso por organizar la mas larga distribución de l literatura vedica.
+</li></ul><p class='vspace'><strong>Otros Acaryas:</strong> Srila Bhakti Garuaba Narasinha M. ( 13ra G.) Miembro fundador de la WVA-VVRS. Sisya y sanyass de Srila A. C. Bhaktivedanta Swami M.
+</p>
+<p class='vspace'><strong>Sanyass iniciados:</strong> tres.
+</p>
+<p class='vspace'><strong>Libros publicados:</strong> dos 
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> Srila B. G. Narasingha es el primer Vaisnava Occidental en abrir un Mandir en Vrindavan y en el Sur de India.
+</p>
+<div class='vspace'></div><h3>Mantra Meditación, Hawai</h3>
+<p><strong>Fundador:</strong> Srila Turiya Mahasarya M. ( 13ra G.)<br />Sisya de Srila A. C. Bhaktivedanta Swami M. Miembro fundador de la WVA-VVRS.
+</p>
+<p class='vspace'><strong>Datos especiales:</strong> 
+</p><ul><li>Renovación del proyecto en Govardhan Vrindavan.
+</li><li>Newsletter en Inglés, y experto en la Adoración de la Deidad.-'
+</li></ul><div class='vspace'></div><h3>Sri Caitanya Gaudiya Sevashram</h3>
+<p><strong>Acarya fundador:</strong> Srila B. Sambandha Yachak M. ( 13ra G.)<br />Sisya de B. Vilas Tirtha M. y sanyass de B. P. Puri M. Acarya del Caitanya Math, Midnapur, W. Bengal-'.
+</p>
+<div class='vspace'></div><h3>Sri Bhakti Yati Maharaj (13ra G.)</h3>
+<p>Sisya de Srila B. Vilas Tirtha M. y sanyass de Srila B. Promode Puri M. Miembro fundador de la WVA-VVRS. Guardián de Radha Kunda Kuñja Bihari, Gaudiya Math.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_04.html'>I Parte</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math.html'>Nuestra familia la Gaudiya Math</a> | <a class='wikilink' href='index.php-n=paramadvaiti_ba.nuestra_familia_la_gaudiya_math_06.html'>III Parte</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 18, 2008, at 11:46 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

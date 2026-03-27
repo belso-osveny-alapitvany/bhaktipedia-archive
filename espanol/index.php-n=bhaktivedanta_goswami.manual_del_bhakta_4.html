@@ -1,0 +1,328 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Taller N°3</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_goswami - RSS Feed'
+      href='index.php-n=bhaktivedanta_goswami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_goswami.manual_del_bhakta_4' method='get'><input type='hidden' name='n' value='bhaktivedanta_goswami.manual_del_bhakta_4' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Taller N°3"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.bhaktivedanta_goswami.html'>BV Goswami Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a>
+</p>
+<div class='vspace'></div><h2>Taller N°3</h2>
+<p><em><a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub1'>Sri Gauranga pranama</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub2'>Sri Krishna pranama</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub3'>Vibhavari Sesa</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub4'>Gaura aratik</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub5'>Mantra upadesamrita</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub6'>Oración para agradecer el prassadam</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub7'>Jaya Radha Madhava</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub8'>Levantarse y recordar al Señor</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub9'>Sistema Varna - Ashram</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub10'>Distribución del prassadam</a></em>
+</p>
+<p class='vspace'><a name='sub1' id='sub1'></a>
+</p><h3>Sri Gauranga Pranama</h3>
+<pre> Namo maha-vadanyaya 
+ krishna prema-pradaya te 
+ krishnaya krishna-caitanya
+ namne gaura-tvise namah
+</pre><p class='vspace'>Ofrezco mis respetuosas reverencias al Señor Sri Krishna Caitanya, quien es más magnánimo que cualquier otro avatar, inclusive que el propio Krishna, porque él está concediendo libremente lo que jamás ninguno concedió. Amor puro por Sri Krishna.
+</p>
+<p class='vspace'><a name='sub2' id='sub2'></a>
+</p><h3>Sri Krishna Pranama</h3>
+<div class='vspace'></div><pre> Namo brahmanya devaya 
+ go brahmana hitaya cha
+ jagad hitaya krsnaya govindaya namo namah
+</pre><p class='vspace'>Oh, Krishna océano de misericordia, amigo de los afligidos, Señor del universo, oh Maestro y Señor de los vaqueritos y amante de las gopis, y especialmente de Radharani, te ofrezco mis respetuosas reverencias.
+</p>
+<p class='vspace'><a name='sub3' id='sub3'></a>
+</p><h3>Vibhavari Sesa</h3>
+<div class='vspace'></div><pre> hari haraye namah krsna yadavaya namah
+ yadavaya madhavaya kesavaya namah
+ bolo hari hari, mukunda murari,
+ rama krsna hayagriva 
+
+ nrsimha vamana, sri-madhusudana,
+ brajendra-nandana syama
+ putana-ghatana, kaitabha-satana,
+ jaya dasrathi-rama 
+
+ yasoda dulala, govinda-gopala,
+ vrndavana purandara 
+ gopi-priyajana, radhika-ramana,
+ bhuvana-sundara-bara 
+
+ ravanantakara, makhana-taskara, 
+ gopi-jana-vastra-hari 
+ brajera rakhala, gopa-vrnda-pala,
+ citta-hari bamsi-dhari 
+
+ yogindra-bandana, sri-nanda-nandana,
+ braja-jana-bhaya-hari
+ navina nirada, rupa manohara,
+ mohana-bamsi-bihari 
+
+ yasoda-nandana, kamsa-nisudana,
+ nikunja-rasa-vilasi 
+ kadamba-kanana, rasa-parayana,
+ brnda-vipina-nivasi 
+
+ ananda-vardhana, prema-niketana,
+ phula-sara-jojaka kama 
+ gopangana-gana, citta-vinodana,
+ samasta-guna-gana-dhama 
+
+ jamuna-jivana, keli-parayana,  
+ manasa-candra-cakora 
+ nama-sudha-rasa, gao krsna-jasa 
+ rakho vacana mana mora 
+</pre><p class='vspace'><a name='sub4' id='sub4'></a>
+</p><h3>Gaura Aratik</h3>
+<div class='vspace'></div><pre> jaya jaya goracander aratiko sobha
+ jahnavi-tata-vane jaga-mana-lobha 
+
+ dakhine nitaicand, bame gadadhara
+ nikate adwaita, srinivasa chatra-dhara
+
+ bosiyache goracand ratna-simhasane
+ arati koren brahma-adi deva-gane
+
+ narahari-adi kori’ camara dhulaya
+ sañjaya-mukunda-basu-ghos-adi gaya
+
+ sankha baje ghanta baje baje karatala 
+ madhura mrdanga baje parama rasala
+
+ bahu-koti candra jini’ vadana ujjvala
+ gala-dese bana-mala kore jhalamala
+
+ siva-suka-narada prema gada-gada
+ bhakativinoda dekhe gorara sampada
+</pre><p class='vspace'>Gloria, todas las glorias al bello artik de Goura,
+que a orillas del Ganges el corazón a todos roba
+El bello artik a Goura, el corazón a todos roba
+</p>
+<p class='vspace'>A su derecha Nitay, a su izquierda Gadadhara,
+cerca de Él esta Advaita, y el quitasol tiene Srivas
+</p>
+<p class='vspace'>Sentado esta Gourachandra, en su trono enjoyado,
+el artik lo hace Brahma, por los devas acompañado
+Narahari y otros lo abanican con chamaras,
+Sanyaya, Mukunda y Vasu dirigen el cantar
+</p>
+<p class='vspace'>Suenan las caracolas, los ghantas y kartalos,
+junto a la dulce mridanga, llenan de felicidad
+Suenan caracolas y ghantas, dulce, dulce, dulce suenan
+</p>
+<p class='vspace'>Como millones de lunas, su rostro se ve brillar,
+su guirnalda de flores silvestres, resplandece por igual
+</p>
+<p class='vspace'>Shiva, Suka y Narada por prema no pueden cantar,
+Bhaktivinoda admira la grandeza de Goura.
+</p>
+<p class='vspace'><a name='sub5' id='sub5'></a>
+</p><h3>Mantra Upadesamrita</h3>
+<p class='vspace'>Hay seis principios que favorecen la ejecución del servicio devocional puro: 
+1) ser entusiasta, 2) esforzarse con confianza, 3) ser paciente, 4) actuar según los principios regulativos, 5) abandonar la compañía de los no devotos, y 6) seguir los pasos de los Acaryas anteriores, estos seis principios aseguran, sin duda alguna, el éxito completo del servicio devocional puro.
+</p>
+<p class='vspace'><a name='sub6' id='sub6'></a>
+</p><h3>Oración para agradecer el prassadam</h3>
+<p class='vspace'>Oh, Señor! este cuerpo material es una masa de ignorancia, y los sentidos son una red de caminos que conducen a la muerte. De una o de otra manera hemos caído en el océano del goce material de los sentidos, y la lengua es la más voraz e incontrolable de todos los sentidos. En este mundo es muy difícil conquistar la lengua. pero tú querido Krishna, eres muy bondadoso con nosotros. Tú has enviado este excelente prasada para ayudarnos a conquistar la lengua. Tomemos pues este prasada a nuestra entera satisfacción y glorifiquemos a vuestras señorías Sri Sri Radha y Krishna, y amorosamente invoquemos la ayuda del Señor Caitanya y de Prabhu Nityananda.
+</p>
+<p class='vspace'><a name='sub7' id='sub7'></a>
+</p><h3>Jaya Radha Madhava</h3>
+<div class='vspace'></div><pre> (jaya) radha-madhava (jaya) kuñja-bihari
+ (jaya) gopi-jana-vallabha (jaya) giri-vara-dhari
+ (jaya) jasoda-nandana, (jaya) braja-jana-rañjana,
+ (jaya) jamuna-tira-vana-cari
+</pre><p class='vspace'>Gloria a Tí, oh Radha-Madhava,
+que gozas en los bosques de Vrindavana,
+Tú eres el amado de las gopis
+y el alzador de Govardhana,
+Oh! hijo querido de madre Yasoda,
+Tú eres el amor de toda Vraja,
+y por los bosques de las orillas del río Yamuna
+Tú siempre caminas.
+</p>
+<p class='vspace'><a name='sub8' id='sub8'></a>
+</p><h3>Levantarse y recordar al Señor</h3>
+<p class='vspace'>El propio Señor Krishna dió el ejemplo de como levantarse y llevar a cabo las actividades reguladas por la mañana temprano llamadas nitya kriya.
+</p>
+<p class='vspace'>Es importante levantarse temprano e inmediatamente limpiar tanto el cuerpo como la mente. Después de descansar por 6 horas, el cuerpo humano naturalmente se activa antes de la salida del sol. Entonces, debemos bañarnos para librarnos de las impurezas acumuladas en el interior y las expelidas por el cuerpo grueso durante el sueño. También debemos limpiarnos de las impurezas sutiles manifestadas en forma de pensamientos -deseos lujuriosos, temores y atracciones, ensueños, etc. De esto nos limpiamos por recordar al Señor y cantar sus glorias.
+</p>
+<p class='vspace'>Srila Prabhupada escribe:
+Una hora y media antes de la salida del sol se llama Brahama Muhurta. Es la hora recomendada para las actividades trascendentales. Las actividades espirituales, temprano por la mañana, tienen un gran efecto, mayor que en cualquier otra hora del día.
+En la mañana temprano, uno apenas se levanta debe cantar el mantra Hare Krishna, Krishna, Krishna, Krishna, así uno recuerda a Krishna. Algunos slokas u oraciones se pueden decir también, así todo se vuelve auspicioso y trascendental a la infección material.
+</p>
+<p class='vspace'><a name='sub9' id='sub9'></a>
+</p><h3>Sistema Varna-ashram</h3>
+<p class='vspace'>EL SISTEMA VARNA-ASHRAMA (Sistema Social-Espiritual)
+</p>
+<p class='vspace'>1.LOS VARNAS: Divisiones de reponsabilidad social para un funcionamiento regulado de la vida. Estas divisiones son creadas con base en las cualificaciones de uno.
+</p>
+<p class='vspace'>A. SUDRAS: Son los obreros que ayudan con su trabajo a los diferentes lideres en sus responsabilidades.
+</p>
+<p class='vspace'>B. VAISYAS: Son los comerciantes y agricultores. Ellos son responsables por el manejo del dinero y de las necesidades de la vida de todos los demás.
+</p>
+<p class='vspace'>C. KSATRYAS: Ellos protejen las reglas para el funcionamiento perfecto en la sociedad contra ladrones, asesinos y enemigos. Además ellos administran los gobiernos.
+</p>
+<p class='vspace'>D. BRAHMANAS: Son la clase más elevada, sacerdotal. Se encargan por velar los principios religiosos de la sociedad. Protegen a la vaca y la mujer. Dan consejo y ofrecen sacrificios y métodos para expiar faltas cometidas.
+</p>
+<p class='vspace'>2. LOS ASHRAMAS: Son las divisiones de la vida para la dedicación espiritual.
+</p>
+<p class='vspace'>A. BRAMACARYS: Estudiantes célibes, dedicados a aprender el control de los sentidos.
+</p>
+<p class='vspace'>B. GRHASTA: Orden casada. Cuídan de los demás miembros de la sociedad, viviendo una vida estricta y dedicada a la espiritualidad.
+</p>
+<p class='vspace'>C. VANAPRASTA: La orden retirada. El hombre entrega el trabajo a los hijos y sale con la mujer a visitar sitios sagrados, meditar y estudiar escrituras.
+</p>
+<p class='vspace'>D. SANNYASI: La orden de renunciante. El hombre deja el hogar y la familia para dedicar el resto de su vida a ayudar el mundo viajando y predicando de casa en casa.
+</p>
+<p class='vspace'><a name='sub10' id='sub10'></a>
+</p><h3>Distribución del Prassadam</h3>
+<p class='vspace'>El orden Vaisnava para servir el prasadam es el siguiente: Primero visitantes de honor (y/o Sannyasis), junto con las autoridades, simultáneamente. Luego los brahmanas, los visitantes, los devotos iniciados, y los Bhaktas. Las madres se sirven en un lugar aparte de los devotos.
+</p>
+<p class='vspace'>No existe comparación con la misericordia del Señor. El prasadam no se contamina y por consiguiente se puede aceptar en cualquier sitio y a cualquier hora (menos dentro de la cocina y frente a la Deidad)
+Al tomar prasadam ten en cuenta lo siguiente:
+</p>
+<div class='vspace'></div><ol><li>Lava tus manos antes y después de comer.
+</li><li>Acepta el prasadam con humildad.
+</li><li>No permitas que la cuchara de distribuir prasadam, toque tu plato.
+</li><li>Nunca dejes restos de prasadam en los platos, ni botes a la basura.
+</li><li>No dejes los platos sucios en cualquier parte, y limpia el sitio donde comiste.
+</li><li>Nunca comas más de lo que tu cuerpo necesita, el exceso de prasadam causa cansancio, pereza, y es irresponsabilidad y abuso.
+</li></ol><div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html#sub9'>Sistema Varna - Ashram</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html'>Taller N°4</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on June 11, 2008, at 06:11 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

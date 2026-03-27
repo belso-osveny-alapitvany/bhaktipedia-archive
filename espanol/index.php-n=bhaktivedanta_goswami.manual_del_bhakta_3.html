@@ -1,0 +1,270 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Taller N°2</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_goswami - RSS Feed'
+      href='index.php-n=bhaktivedanta_goswami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_goswami.manual_del_bhakta_3' method='get'><input type='hidden' name='n' value='bhaktivedanta_goswami.manual_del_bhakta_3' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Taller N°2"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.bhaktivedanta_goswami.html'>BV Goswami Swami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a>
+</p>
+<div class='vspace'></div><h2>Taller N°2</h2>
+<p><em><a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub1'>Srila Prabhupada-Pranati</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub2'>Diez ofensas que se deben evitar al cantar el Santo Nombre</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub3'>Mantra Gurudeva-Paramadvaiti</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub4'>Sri Nrsimha Pranama</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub5'>Sri Tulasi-Kirtana</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub6'>Reglas de etiqueta con el Maestro Espiritual</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub7'>Los tres aspectos del Absoluto</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub8'>Govinda (Brahma samhita)</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub9'>Limpieza Interna</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub10'>¿Quién es Gurudeva?</a></em>
+</p>
+<p class='vspace'><a name='sub1' id='sub1'></a>
+</p><h3>Srila Prabhupada Pranati</h3>
+<pre> nama om visnu-padaya krishna- presthaya bhu-tale
+ srimate bhaktivedanta-svamin iti namine
+ namas te sarasvate deve gaura-vani-pracarine
+ nirvisesa-sunyavadi- pascatya-desa- tarine
+</pre><p class='vspace'>Ofrezco mis respetuosas reverencias a Su Divina Gracia A.C. Bhaktivedanta Swami Prabhupada, quien es muy querido por el Señor Krishna, debido a que a tomado refugio a Sus pies de loto. Nuestras respetuosas reverencias a ti, oh, Maestro Espiritual sirviente de Sarasvati Gosvami. Tú muy bondadosamente estas predicando el mensaje del Señor Caitanyadeva y liberando a los países occidentales los cuales están llenos de impersonalismo y nihilismo. 
+</p>
+<p class='vspace'><a name='sub2' id='sub2'></a>
+</p><h3>Diez ofensas que se deben evitar al cantar el Santo Nombre.</h3>
+<ol><li>Blasfemar o criticar a los devotos que han dedicado su vida a la propagación del Santo Nombre. 
+</li><li>Considerar los nombres de los Semidioses tales como el señor Brahma y el señor Shiva, iguales o independientes del señor Vishnu. 
+</li><li>Desobedecer las órdenes del Maestro Espiritual, o llevarlas a cabo en una forma negligente. 
+</li><li>Blasfemar contra la literatura Védica o aquella que concuerde con la versión Védica. 
+</li><li>Considerar imaginarias las glorias del Santo Nombre. 
+</li><li>Darle alguna interpretación al canto del Santo Nombre de Krsna. 
+</li><li>Cometer actividades pecaminosas con el ánimo de contrarrestarlas con el Maha-mantra Hare Krishna. 
+</li><li>Considerar que el Maha-Mantra Hare Krishna es una actividad ritualista auspiciosa que se ofrece en los Vedas en la sección Karma Kanda. 
+</li><li>Predicarle a personas carentes de fe acerca de las glorias del Santo Nombre. 
+</li><li>No tener plena fe en el canto del Santo Nombre y mantener apegos materiales aún después de haber recibido tantas y tan buenas instrucciones al respecto. 
+</li></ol><p class='vspace'>También se considera ofensivo cantar el Santo Nombre en forma desatenta o no cantarlo, por eso todo devoto que aspire a ser un vaisnava debe abstenerse de cometer tales ofensas para así obtener el éxito deseando prema bhakti, amor puro por Sri Radha y Krishna.
+</p>
+<p class='vspace'><a name='sub3' id='sub3'></a>
+</p><h3>Mantra Gurudeva Paramadvaiti</h3>
+<pre> nama om visnu-padaya divya jñana pradayine
+ srimate paramadvaiti swami nyasi rupine
+ saranagata bhaktebyo sudha bhakti vidayine
+ visuda bhaktisidhanta dhara dhara nisevine
+</pre><p class='vspace'>Ofrezco mis respetuosas reverencias a Su Santidad Srila Bhakti aloka Paramadvaiti Swami Maharaj quien en la forma de un sannyasi se encuentra viajando por todo el mundo entregando el amor divino (Sudha Bhakti) a los devotos rendidos de la línea que desciende de Srila Bhaktisiddhanta Sarasvati a través de Srila Prabhupada y Srila Sridhar Maharaj. 
+</p>
+<p class='vspace'><a name='sub4' id='sub4'></a>
+</p><h3>Sri Nrishma Pranama</h3>
+<pre> namas te narasimhaya
+ prahladahlada-dayine
+ hiranyakasipor vaksah-
+ sila-tanka-nakhalaye
+
+ ito nrisimhah parato nrisimho
+ yato yato yami tato nrisimhah
+ bahir nrisimho hridaye nrisimho
+ nrisimham adim saranam prapadye
+
+ tava kara-kamala-vare nakham adbhuta-sringam
+ dalita-hiranyakasipu-tanu-bhringam
+ kesava dhrita-narahari-rupa jaya jagadisa hare
+</pre><p class='vspace'>Reverencias a Tí, oh Señor Nrisimha!
+que das placer al corazón de Prahlada,
+pero en el pecho de Hiranyakasipu
+clavas Tus uñas duras como el cincel
+</p>
+<p class='vspace'>Nrisimha está aquí, Nrisimha está allá
+Nrisimha está donde quiera que Tú vas
+Nrisimha está fuera y en Tú corazón
+me rindo ante Nrisimha, Señor de protección
+</p>
+<p class='vspace'>Con las uñas de Tus bellas manos de loto, Señor
+abriste el pecho de esa avispa, Hiranyakashipu
+Oh Keshava!, que vienes como hombre león
+gloria a Tí, Señor de la creación
+</p>
+<p class='vspace'><a name='sub5' id='sub5'></a>
+</p><h3>Sri Tulasi Kirtana</h3>
+<p>Oh! Tulasi, la amada de Krishna, yo me postro ante ti una y otra vez. El único deseo que me queda es poder servir a Radha y Krishna. Oh! habitante de Vrindavan tú que satisfaces los anhelos de aquellos que buscan tu favor, otórgame tu gracia. Anhelo que vivas siempre en mi pequeño jardín y te conserves siempre verde. Oh! cúmulo de belleza, soy tu servidor y sakhi. Oro, para que haciéndome tu criado como un sirviente de Krishna, este cuerpo sea tuyo y no mío. Bendíceme para que en este cuerpo únicamente pueda haber amor por Sri Radha y Krishna.
+</p>
+<p class='vspace'><a name='sub6' id='sub6'></a>
+</p><h3>Reglas de etiqueta con el Maestro Espiritual.</h3>
+<p>Al ver al Maestro Espiritual debe caer en dandavats.<br />Debe acercarse al Maestro y luego seguirlo.<br />No se debe dejar al Maestro sin pedir permiso.<br />Debe pronunciar el nombre de su Maestro siempre con respeto.<br />No debe imitar la voz o actividades del Maestro.<br />Aunque sea castigado por su Maestro no debe dejar de verle como su bienqueriente.<br />Si critican a su Maestro o a las escrituras, debe dejar el lugar de inmediato.<br />No se deben hacer ruídos desagradables o reirse del Maestro Espiritual.\'
+No se debe pisar la guirnalda, cama, zapatos, asana o sombra del Maestro Espiritual\\.
+No se debe mostrar superioridad delante del Maestro Espiritual.<br />No se debe dar órdenes al Maestro Espiritual sino obedecerlas.<br />
+<a name='sub7' id='sub7'></a>
+</p><h3>Los tres aspectos del Absoluto.</h3>
+<ol><li>Brahma: Aspecto impersonal de Dios. Efulgencia que emana del cuerpo de Dios y de los planetas espirituales. De estos rayos espirituales salen las almas individuales.
+<div class='vspace'></div></li><li>Paramatma: El aspecto localizado y conciente del Señor Supremo, manifestado en cada átomo y en el corazón de todos los seres vivientes. Es llamado Caitya guru, o Maestro Espiritual dentro de nuestro corazón.
+<div class='vspace'></div></li><li>Bhagavan: Krishna en su forma original. Reside en Gokola Vrindavan o Krishna-loka y a veces desciende a los mundos materiales para redimir a los piadosos a su dulce hogar. Él es el Señor, quien vive como un pastorcillo de vacas con sus devotos.
+</li></ol><p class='vspace'><a name='sub8' id='sub8'></a>
+</p><h3>Govinda (Brahma samhita).</h3>
+<pre> venum kvanantam aravinda-dalayataksam
+ barhavatamsam asitambuda-sundarangam
+ kandarpa-koti-kamaniya-visesa-sobham
+ govindam adi-purusam tam aham bhajami
+
+ angani yasya sakalendriya-vritti-manti
+ pasyanti panti kalayanti ciram jaganti
+ ananda-cinmaya-sad-ujjvala-vigrahasya
+ govindam adi-purusam tam aham bhajami
+</pre><p class='vspace'>Adoro a Govinda, el Señor Primordial, quien es experto
+en tocar Su flauta, con ojos tan dulces como pétalos de loto,
+con la cabeza decorada con plumas de pavo real, con la figura
+de la hermosura matizada con el tinte de las nubes azules, cuya
+belleza sin par cautiva a millones cupidos.
+</p>
+<p class='vspace'>Adoro a Govinda, el Señor Primordial, cuya forma trascendental
+está llena de bienaventurado esplendor. Cada uno de los miembros
+de Su figura trascendental , posee en sí mismo las funciones completas 
+de todos los demás órganos, y eternamente te ve, mantiene y manifiesta 
+los infinitos universos, tanto espirituales como mundanos.
+</p>
+<p class='vspace'><a name='sub9' id='sub9'></a>
+</p><h3>Limpieza Interna.</h3>
+<p>El primer principio de limpieza, es el de cantar 16 rondas del Maha-Mantra HARE KRISHNA diariamente. Nosotros hacemos esto, o de lo contrario heriremos a nuestros Maestros Espirituales. Este punto lo hacemos y lo realizamos muy seriamente. Sin este principio básico nada puede llegar a ser limpio, porque nuestra mente y corazón no estan limpios; Srila Prabhupada dijo muchísimas veces, que si no cantamos las 16 rondas diariamente, entonces no seremos humanos.
+</p>
+<p class='vspace'><a name='sub10' id='sub10'></a>
+</p><h3>¿Quién es Gurudeva?</h3>
+<p>Es el Maestro Espiritual. Él forma nuestra vida. Él nos enseña la etiqueta vaisnava y la actitud que debemos tomar para tener éxito en la vida espiritual. Ante todo recomendamos que todos lean el libro "La verdad acerca del Guru" por Srila Sridhar Maharaj.
+</p>
+<p class='vspace'>Nuestros Maestros Espirituales estan divididos principalmente en Diksa Guru (él que nos inicia), y Siksa Guru (él que nos instruye). No debemos ver diferencia entre los dos.
+</p>
+<p class='vspace'>Podemos tener un Diksa, pero muchos Siksa-Guru. En general nuestra autoridad inmediata es nuestro Siksa Guru, mientras representa nuestra fe positiva y aumenta nuestro deseo de redimirnos.
+</p>
+<p class='vspace'>Todos los Maestros Espirituales son representantes del Maestro Espiritual original, Sri Krishna y no pueden contradecirle.El Siksa Guru o devoto avanzado es para nosotros únicamente alguien que es más avanzado que nosotros en la misma línea positiva de nuestra fe.
+</p>
+<p class='vspace'>El discípulo tiene que ver a sus Gurus como representantes de Dios; sino fuera así, cómo podría rendir este su vida al Señor. El servicio al Guru y a los Vaisnavas es lo más importante en nuestras vidas.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_3.html#sub9'>Limpieza Interna</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a> | <a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_4.html'>Taller N°3</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on June 11, 2008, at 06:07 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

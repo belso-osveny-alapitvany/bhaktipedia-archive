@@ -1,0 +1,632 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Controlando la Mente</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : puri_bp - RSS Feed'
+      href='index.php-n=puri_bp.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=puri_bp.arte_del_sadhana_13' method='get'><input type='hidden' name='n' value='puri_bp.arte_del_sadhana_13' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Controlando la Mente"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=puri_bp.arte_del_sadhana_13-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=puri_bp.puri_bp.html'>B.P. Puri Goswami</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a>
+</p>
+<div class='vspace'></div><h2>Controlando la Mente</h2>
+<p>En el Vedanta-sãra se ha escrito que el ser interior (anthakarana) está compuesto de mente, inteligencia, ego y citta (mano budhir ahamkãras cittam kãranam antaram). El intelecto (buddhi) es el aspecto del ser interno (anthakarana) que establece la certidumbre, mientras que la mente (manas) es el aspecto del ser interno cuya función es aceptar y rechazar.
+</p>
+<p class='vspace'>La palabra citta está en el participio pasado de la raíz verbal cit, que significa “conocer” o “estar consciente”. En tal sentido, citta es ese aspecto del órgano interno por el cual uno es consciente de sí mismo o en mérito al cual se desarrolla el convencimiento. Es de tal modo un sinónimo de la mente, como lo expresa Sãyana en su comentario al Rgveda (1.165.11): “Vuestro citta es como el viento deslizante”. (tava cittam vãta iva dhrajimãnah).
+</p>
+<p class='vspace'>En sánscrito, hay numerosas palabras utilizadas como sinónimos para “mente” (manas), incluyendo citta, cetas, hrt, hrdaya (“corazón”), svãnta (“ser interno”), anangaka (“desmembrado”) y en otros casos, anga (“miembro”).
+</p>
+<p class='vspace'>La palabra manas se define como sigue: “La mente es eso por lo cual se perciben o reconocen las cosas (manute budhyate’neneti manah)”. Es uno de los elementos del cuerpo sutil o linga-sarira. Este cuerpo sutil posee 17 elementos diferentes: los cinco sentidos cognoscitivos, los cinco sentidos de la acción, los cinco aires, la mente y la inteligencia.
+</p>
+<p class='vspace'>El vedanta-sãra brinda por su parte la siguiente definición de la mente (manas).
+</p>
+<div class='vspace'></div><pre> mano nãma sankalpa-vikalpãtmikã’’ntakharana-vrttih
+ manas tu jñãnedriyaih sahitam sat mano-maya-koso bhavati
+</pre><p class='vspace'>“La mente es la función del ser interno relativa a la decisión (sankalpa) y la indecisión (vikalpa). Junto con los sentidos cognoscitivos (jñãnendriya), conforma la envoltura mental (mano-maya-kosa)”. 
+(Vedanta-sãra 62.68)
+</p>
+<p class='vspace'>A la mente se la considera uno de los sentidos de la acción y uno de los sentidos para adquirir conocimiento. Puesto que depende de los ojos y demás sentidos cognoscitivos (la vista, el oído, el tacto, el gusto y el olfato), se la considera uno de ellos. Por otro lado, puesto que es la directora de los demás sentidos de la acción (el habla, las manos, los pies, los órganos reproductores y los órganos excretores) también puede ser incluida entre ellos.
+</p>
+<p class='vspace'>Los sentidos del conocimiento (como ser la vista) recogen las impresiones generales de los objetos externos y la mente seguidamente aporta las peculiaridades. De tal modo, la mente es denominada sankalpãtmaka, que significa el arte de escoger o decidir (vivecanã). En otras palabras, la mente está constantemente atravesando y escudriñando los datos que recibe por medio de los sentidos, aceptando o rechazando lo que reúne.
+</p>
+<p class='vspace'>Una de las muchas transformaciones de la modalidad de la bondad (sattva-guna) es la mente. La primera transformación de la naturaleza o manifestación, es el Mahat-tattva. En el Sãnkhya-kãrikã se declara que la mente emerge del Mahat-tattva (mahad-ãkhyam ãdyam kãryam tanmanah) (1.71)
+</p>
+<p class='vspace'><strong>LA MENTE DE ACUERDO AL SEÑOR KAPILADEVA</strong>
+</p>
+<p class='vspace'>En el Tercer Canto del Srimad-Bhãgavatam, el Señor Kapiladeva instruye a su madre Devahuti en la filosofía teísta Sankhya. Ciertas enseñanzas suyas sobre la mente son en muchos sentidos similares a la descripción dada en el Sãnkhya-kãrikã. Kapila enseña que la mente es una de las cuatro funciones del ser interno o antahkarana. Estas cuatro funciones se conocen como citta (“conciencia contaminada”), ahankãra (ego), buddhi (inteligencia) y manas (mente). Conforme al Señor Kapila, el Mahat-tattva se manifiesta luego dentro del cuerpo como el ego, seguidamente la inteligencia y finalmente como la mente.
+(Srimad-Bhãgavatam 3.26.14)
+</p>
+<p class='vspace'>A los fines de purificar estos elementos, las cuatro Deidades del Caturvyuha aceptan la posición de gobernarlos. Vãsudeva es en tal sentido el adhisthãtr-devatã o deidad regente de citta, Sankarsana del ahankãra, Prãdyumna del buddhi y Aniruddha de manas. A nivel material, las siguientes Deidades presiden sobre los mismos elementos sutiles: Visnu, Rudra, Brahmã y Candra. (Ver también Srimad-Bhãgavatam 3.26.21, comentario de Visvanãtha Cakravarti Thãkura).
+</p>
+<p class='vspace'>De acuerdo al sistema Sãnkhya, existen cinco grandes elementos (mahã-bhuta): aire, tierra, agua, fuego y éter, que evolucionan en los cinco objetos de los sentidos: aroma, sabor, vista, tacto y sonido. Estos son seguidos por los cinco sentidos correspondientes del conocimiento, a saber, el olfato, el gusto, la visión, sentir y oír y los cinco sentidos de la acción: el habla, las manos, los pies, los órganos excretores y los órganos reproductores.
+</p>
+<p class='vspace'>La suma de los cuatro sentidos sutiles del ser interno (ego, mente, inteligencia y conciencia) son los 24 elementos o tattvas, a los cuales se añade a veces el tiempo (kãla), totalizando 25. Una clasificación más amplia suma a la entidad viviente individual, la jiva, la propia naturaleza (prakrti) y la Superalma (el purusa) como elementos añadidos, totalizando 28.
+</p>
+<p class='vspace'>El elemento vigésimo quinto, el tiempo, indica la acción de la Persona Suprema que activa la naturaleza material (aún no diferenciada por las acciones de las tres modalidades). La propia palabra kãla deriva de la raíz verbal kal, que significa “impeler” o “incitar”. Se explica que el tiempo es el poder de Dios. El mismo aspecto del Señor Supremo que, en mérito a Su potencia obra como la Superalma, morando en el corazón de toda criatura sensible, está plenamente presente externamente, imperando sobre los 24 elementos de la creación material, en la forma del tiempo.
+</p>
+<p class='vspace'>Fuera de la percepción de las almas individuales con su diminuto conocimiento, las facultades del Señor Supremo en la forma del tiempo, ponen en movimiento a las tres modalidades de la naturaleza material. En ese momento, El coloca a las almas individuales en la naturaleza material. Este proceso lo explica el Señor Mismo en la Bhagavad-gitã, donde declara:
+</p>
+<div class='vspace'></div><pre> mama yonir mahad brahma
+ tasmin garbham dadãmy aham
+ sambhavah sarvã-bhutãnãm
+ tato bhavati bhãrata
+</pre><p class='vspace'>“Toda la naturaleza material, también conocida como Brahman, es impregnada por Mí con los seres vivientes; así pues, Yo hago posible su existencia encarnada”.
+(Gitã 14.3)
+</p>
+<p class='vspace'>Tras haber sido fecundada por el Señor, la energía material presenta el Mahat-tattva en una forma dorada refulgente. Este Mahat-tattva luego sobrelleva varias transformaciones causadas por los efectos de las tres modalidades de la naturaleza, a saber, la pureza (sattva), la pasión (rajas) y la oscuridad (tamas), y como resultado de estas transformaciones, sus correspondientes tipos de egos dotados de capacidad de acción, llegan a ser. La mente es un sub-producto del ego en la modalidad de la bondad, los diez sentidos son sub-productos del ego en la modalidad de la pasión, los cinco objetos de los sentidos y los cinco elementos burdos son los productos del ego en la modalidad de la oscuridad.  El segundo de los Purusas, Sankarsana, también llamado Anantadeva, es según los eruditos la causa de la mente, los sentidos y los cinco elementos primarios. (Consultar también Srimad-Bhãgavatam 3.26.23-25)
+</p>
+<p class='vspace'>La mente es el sub-producto de la acción del ego en la modalidad de la bondad, en el Mahat-tattva. La función de la mente es aceptar y rechazar. La operación de esta función resulta en el deseo. La inteligencia (buddhi) es un sub-producto del ego rãjasika; en su forma elemental, la inteligencia es el reconocimiento de las cosas (dravya-sphurana-vijñãnam) y en tal sentido obra como un auxiliar de los sentidos (indriyãnãm anugrahah).
+</p>
+<p class='vspace'>Cuando el aspecto del ego material en la modalidad de la oscuridad es puesto en movimiento por la proeza del Señor en la forma del tiempo, los cinco objetos de los sentidos (aroma, sabor, vista, tacto y sonido) llegan a ser. A partir de éstos evolucionan los cinco grandes elementos. El universo todo en sus manifestaciones microcósmicas y macrocósmicas es el resultado de interacciones de todos estos elementos. Sin embargo, si el Alma Suprema no se hallara presente dentro de todo lo creado, nada sería creado ni mantenido. 
+</p>
+<p class='vspace'>El cuerpo material se conoce como el campo y la entidad viviente que habita dentro del cuerpo es llamada el conocedor del campo. El Señor Supremo, sin embargo, es omnisciente y omnipotente, el conocedor de todos los campos en cada uno de los infinitos universos. Así pues, si no establecemos una relación con El, luego no hay posibilidad de que ocurra ninguna auto-purificación real.
+</p>
+<p class='vspace'><strong>LA MENTE, EL SER Y EL SER SUPREMO</strong>
+</p>
+<p class='vspace'>No debe confundirse a la mente con el ser. El ser espiritual o alma, no debe confundirse con la mente. Si bien el alma es una chispa de energía espiritual consciente, la mente meramente refleja su conciencia. La mente depende de la presencia del alma jiva para poder funcionar; no posee una existencia independiente. Podemos hablar sobre “mi mente”, pero nunca escuchamos decir a nadie “Yo soy la mente”.  El ser es el observador y la mente es lo observado. Por consiguiente, el ser debe comprenderse como categóricamente diferente de la mente. 
+</p>
+<p class='vspace'>El alma está compuesta de conciencia; la mente, de materia inconsciente. La conciencia es auto-iluminadora, mientras que la materia no tiene poder para iluminar. Los lógicos dicen: “El alma se conecta con la mente, la mente con los sentidos, los sentidos con sus objetos (de los sentidos). En consecuencia, es a través de este proceso que se adquiere conocimiento”. (ãtma manasã yuñjãte mana indriyena, indriyam visayena, tasmãd adhyaksa ity-ukta-disã jñãnam jãyate - Nyãya-darsana).
+</p>
+<p class='vspace'>Sin la conciencia como sostén, los sentidos no pueden adquirir conocimiento de ningún objeto sensorial. Por consiguiente, solo el alma actúa como director, entrando primero en contacto con la mente, que seguidamente actúa a través de los sentidos para contactar los objetos de los sentidos. Así pues, mediante la mente, el ser no solo acredita conocimiento sino que experimenta asimismo la felicidad y aflicción materiales. Sin la mente, el ser no sería consciente de la felicidad o aflicción sensuales. En tal sentido, el Nyãya-vrtti expresa: “La mente es el sentido capaz de aprehender la felicidad y la aflicción (sukhãdy-upalabdhi-sãdhanam indriyam manah)”.
+</p>
+<p class='vspace'>En contraste, en el Bhagavad-gitã (2.24) Krishna dice que el alma jiva es sempiterna, capaz de transmigrar por todas las especies, fija, inamovible y sin comienzo (nityah sarva-gatah sthãnur acalo’yam sanãtanah). El alma es innaciente, eternamente inmutable, libre de deterioro y libre de las seis clases de transformaciones de la materia; no es matada cuando el cuerpo es matado (Gitã 2.20: ajo nityah sãsvato’yam purãno na hanyate hanyamãne sarire).
+</p>
+<p class='vspace'>El ser individual o alma está asimismo eternamente relacionado con el Alma Suprema, el Paramãtma. Hay gran cantidad de versos en el Bhagavad-gitã que distinguen al alma individual de su amo eterno, el Señor Supremo. El Señor Mismo expresa: “Yo soy el origen primigenio de todos los seres celestiales y grandes sabios”. (Gitã 10.2 - aham ãdir hi devãnãm maharsinam ca sarvasah: “Aquel que Me conoce como innaciente, el origen de todo y el Señor Supremo de todos los seres...” (yo mãm ajam anãdim ca vetti loka-mahesvaram -Gitã 10.3): “Yo soy la causa original de todas las cosas y todo surge de Mí” (aham sarvasya prabhavo mattah sarvam pravartate - Gitã 10.8); “Solo Yo soy la causa de la generación del mundo entero así como la causa de su disolución” (aham krtsnasya jagatah prabhavam pralayas tathã - Gitã 7.6); “Yo soy el padre de este universo, la madre, quien concede los frutos de todas las acciones, el antepasado y el objeto de todo el conocimiento” (pitãham asya jagato mãtã dhãtã pitãmahah  - Gitã 9.17)
+</p>
+<div class='vspace'></div><pre> mattah parataram nãnyat
+ kiñcid asti dhanañjayã 
+ mãyi sarvam idam protam
+ sutre mani-ganã iva
+</pre><p class='vspace'>“ ¡Oh Arjuna! No hay nada superior a Mí. Como gemas enhebradas en un collar, la creación toda depende de Mí”.
+(Gitã 7.7)
+</p>
+<div class='vspace'></div><pre> gatir bhartã prabhuh sãksi
+ nivãsah saranam suhrt
+ prabhavah pralayah sthãnam
+ nidhãnam bijam avyayam
+</pre><p class='vspace'>“Y ciertamente Yo soy la meta de todos, el sustentador, el controlador, el testigo, el refugio, el guardián y el bienqueriente incondicional. Yo soy la creación, la disolución y el sustento. Yo soy la reserva y la simiente, la Persona Suprema eterna”.
+(Gitã 9.18)
+</p>
+<p class='vspace'>Arjuna responde asimismo confirmando las declaraciones del Señor:
+</p>
+<div class='vspace'></div><pre> param brahma param dhãma
+ pavitram paramam bhavãn
+ purusam sãsvatam divyam
+ ãdidevam ajam vibhum
+
+ ãhus tvãm rsayah sarve
+ devarsir nãrada tathã
+ asito devalo vyãsah
+ svayam caiva bravisi me
+</pre><p class='vspace'>“Oh Señor, Tú eres la Verdad Absoluta Suprema, el refugio supremo y el salvador supremo. Todos los sabios prominentes como ser Devarsi Nãrada, Asita, Devala y Vyãsa, Te han descrito como la Persona Suprema eternamente auto-manifiesta, auto-iluminadora, el fundamento de toda majestad todopoderosa y el origen de cuyo divino juego todo emana y ahora Tú estás presente ante mí declarando todo esto”.
+(Gitã 10.12-13)
+</p>
+<div class='vspace'></div><pre> svayam evãtmanãtmãnam
+ vettha tvam purusottama
+ bhuta-bhãvana bhutesa
+ devadeva jagatpate
+</pre><p class='vspace'>“ ¡Oh Persona Suprema, Oh Padre universal, Oh Señor de todos los seres, Señor de todos los dioses, Señor del universo!  Solo Tú puedes conocerTe verdaderamente a Ti Mismo a través de Tu potencia cognoscitiva pura”.
+(Gitã 10.15)
+</p>
+<p class='vspace'>Atento a las conclusiones de los Upanisads, el Bhagavad-gitã expresa además:
+</p>
+<div class='vspace'></div><pre> nityo nityãnãm cetanas cetanãnãm
+ eko bahunãm vidadhãti kãmãn
+ ye ãtmastham anupasyanti dhirãs
+ tesãm santih sãsvati netaresãm
+</pre><p class='vspace'>“Solo existe un Ser Eterno Supremo entre todos los seres eternos; una sola entidad supremamente consciente entre todas las entidades conscientes. El es Aquel que cumplimenta los deseos de los muchos Sabios que meditan constantemente en El,  sentado en Su trono, los que alcanzarán la perfección sempiterna; los demás, no”.
+(Katha 2.2.13 y Svet.6.13)
+</p>
+<p class='vspace'>La diferencia entre el Supremo y las almas individuales  se establece además en los dos versos siguientes del Mundaka (3.1.12) y Svetãsvatara Upanisads (4.6-7)
+</p>
+<div class='vspace'></div><pre> dvã suparnã sayujyã sakhayã
+ samãnam vrksam parisasvajãte
+ tayor anyah pippalam svãdv atty
+ anasnann anyo ‘bhicãkasiti
+
+ samãne vrkse puruso nimagno
+ ‘nisayã socati muhyamãnah
+ justam yadã pasyaty anyam isam
+ asya manimãnam eti vita-sokah
+</pre><p class='vspace'>“Dos amigos emplumados están sentados en el mismo árbol. Uno come las dulces fresas del árbol mientras que el otro solo observa. De la misma manera, en el árbol del cuerpo, el alma individual se sienta confundida, lamentándose constante y desamparadamente. Cuando se orienta sabiamente hacia su amigo (quien siempre es servido por los devotos), contemplándoLo como su Señor, deja de lado su sufrimiento y realiza su glorioso derecho de nacimiento”.
+</p>
+<p class='vspace'>La relación amorosa entre el Alma Suprema y el alma individual es asimismo eterna. En tal sentido, Krishna, el conocedor supremo del Veda, el objeto último del conocimiento Védico, y el autor original del Vedanta, habló amorosamente Sus enseñanzas más confidenciales y la esencia de toda la religión a Su querido amigo Arjuna, como sigue:
+</p>
+<div class='vspace'></div><pre> man-manã bhava mad-bhakto 
+ mad-yãji mãm namaskuru 
+ mãm evaisyasi satyam te
+ pratijãne priyo’si me
+</pre><p class='vspace'>“Siempre piensa en Mí, Adórame ocupándote en los servicios devocionales de oír y cantar,  Sírveme en Mi forma deidad, Ofréceme tu propio ser y es seguro que llegarás a Mí. Yo te lo prometo sinceramente porque tú eres Mi amigo querido”.
+</p>
+<div class='vspace'></div><pre> sarva-dharmãm parityãjya 
+ mãm ekam saranam vraja
+ aham tvãm sarva-pãpebhyo 
+ moksayisyãmi mã sucah
+</pre><p class='vspace'>“Abandonando todas las observancias religiosas relativas al sistema varnãsrama, abandonando la adoración de todos los semidioses relativos a dichas actividades religiosas, ríndete exclusivamente a Mí. Está de más que temas ninguno de los malos efectos resultantes de no ejecutar los deberes permanentes y periódicos ordenados en la literatura Védica, pese a que fueron en definitiva dictados por Mí. Yo te libraré de cualesquiera  pecados o impedimentos resulten de dicho descarte; no desesperes.   Yo prometo por este medio que todo aquel que se entregue a Mí es liberado del pecado, es liberado del ciclo del nacimiento y la muerte repetidos y recibe todo lo que necesita para llegar a Mí”.
+(Gitã 18.66)
+</p>
+<p class='vspace'>En otra parte del Gitã, Krishna hace una promesa similar:
+</p>
+<div class='vspace'></div><pre> ananyãs cintayanto mãm
+ ye janãh paryupãsate
+ tesãm nityãbhiyuktãnãm
+ yoga-ksemam vahãmy aham
+</pre><p class='vspace'>“Yo asumo personalmente toda la responsabilidad de adquirir y proteger todo lo que necesiten Mis devotos completamente dependientes. Ellos están siempre absortos en pensar solo en Mí, exclusivamente; ellos no desean nada sino estar unidos Conmigo para siempre”.
+(9.22)
+</p>
+<p class='vspace'>El Señor es tan afectuoso con Sus devotos exclusivos que El asume voluntariamente la responsabilidad por el mantenimiento de sus cuerpos, cuidando también de sus familias. El protege asimismo el bhajana del devoto, eliminando todos los obstáculos para su práctica. Seguidamente concede a los devotos la perfección de dicho bhajana (que es el tesoro del amor por Sí Mismo) y protege ese amor. Tal es el verdadero alcance de la declaración del Señor, yoga-ksemam vahãmy ajam.
+</p>
+<p class='vspace'><strong>LA MENTE COMO AMIGO Y COMO ENEMIGO DEL SER</strong>
+</p>
+<p class='vspace'>En la primera parte de la instrucción antes mencionada del Señor, El dice, man-manã bhava: “Absorbe tu mente en Mí”. Sin embargo, en los procesos para obtener el tesoro del amor, la mente obra no solo como un amigo, sino también como enemigo.  El Bhãgavata declara claramente que a menos que uno controle su mente, la perfección es imposible.
+</p>
+<div class='vspace'></div><pre> dãnam svadharmo niyamo yamas ca
+ srutam ca karmãni ca sad-vratãni
+ sarve mano-nigraha-laksanãntãh
+ paro hi yogo manasah samãdhih
+</pre><p class='vspace'>“Todas las actividades religiosas como ser la caridad, la ejecución de nuestros deberes, la observancia de las reglas y regulaciones, el estudio de la Escritura, los sacrificios y las penitencias, todas tienen el control de la mente como objetivo, pues la concentración de la mente es el objetivo supremo del yoga”.
+(Srimad-Bhãgavatam 11.23.45)
+</p>
+<p class='vspace'>Hay que comenzar a conquistar la mente practicando lo que Krishna llama “la austeridad de la mente”. En el Bhagavad-gitã (17.16) esta práctica es explicada por Krishna como sigue:
+</p>
+<div class='vspace'></div><pre> manah-prasãdah saumyatvam 
+ maunam ãtma-vinigrahah
+ bhãva-samsuddhir ity etat
+ tapo mãnasam ucyate
+</pre><p class='vspace'>“La austeridad de la mente comprende la serenidad, la sencillez, la moderación en el habla, el autocontrol retrayéndose de los objetos de los sentidos y la pureza del ser mediante la renuncia al comportamiento engañoso”.
+</p>
+<p class='vspace'>De éstos, el autocontrol a través de la retracción de los objetos de los sentidos es de suma importancia. Ciertamente Krishna declara que nadie se convierte en yogui sin dejar de lado el deseo de gratificar los sentidos. (Gitã 6.2: na hy asannyasta-sankalpo yogi bhavati kascana). A menos que se desarraiguen los deseos tanto burdos como sutiles y las renuncias de todas clases, incluyendo los deseos de disfrute sensual, los placeres celestiales, la liberación y los poderes místicos, nadie puede ser considerado un yogui.
+</p>
+<p class='vspace'>“Solo aquel que ha dejado de lado todo incentivo del deseo puede decirse se ha elevado al yoga”. (Gitã 6.4: sarva-sankalpa-sannyãsi yogãrudhas tadocyate). En otras palabras, cuando una jiva de corazón puro abandona el deseo y el aborrecimiento por los disfrutes de los sentidos, conservando únicamente el deseo de servir a Krishna para la complacencia de Sus sentidos, puede ser elevada al peldaño más alto de la escala del yoga.
+</p>
+<p class='vspace'>Por esta razón el Señor dice:
+</p>
+<div class='vspace'></div><pre> uddhared ãtmanãtmãnam
+ nãtmãnam avasãdayet
+ ãtmaiva hy ãtmano bandhur
+ ãtmaiva ripur ãtmanah
+
+ bandhur ãtmãtmanas tasya
+ yenaivãtmanã jitah
+ anãtmanas tu satrutve
+ vartetãtmaiva satruvat
+</pre><p class='vspace'>“El yogui aspirante debe elevarse desde el pozo ciego de la vida material, liberando la mente del apego a los objetos de los sentidos. No debe desviarla por los apegos al mundo material. Según las diferentes circunstancias, la mente es ya sea la amiga del ser o su enemiga. Esa jiva que ha conquistado la mente, puede considerarla como una amiga, mas la mente es la enemiga de quien no la ha conquistado”. 
+(Gitã 6.5-6)
+</p>
+<p class='vspace'>Con las siguientes palabras, el Señor Kapiladeva instruye a su madre Devahuti:
+</p>
+<div class='vspace'></div><pre> cetah khalv asya bandhãya 
+ muktaye cãtmano matam
+ gunesu saktam bandhãya
+ ratam vã pumsi muktaye
+</pre><p class='vspace'>“Mi querida madre, solo la mente es la causante del cautiverio de la jiva, así como de su liberación. Cuando la mente está apegada a los sentidos (la vista, el oído, el olfato, el gusto y el tacto) y a los objetos de los sentidos (la forma, el sonido, el aroma, el sabor y la sensación) la entidad viviente ingresa al cautiverio. Cuando esa misma mente se apega a la Persona Suprema, es liberada”.
+(Srimad-Bhãgavatam 3.25.15)
+</p>
+<p class='vspace'>Krishna explica lo mismo más directamente a Uddhava:
+</p>
+<div class='vspace'></div><pre> visayãn dhyãyatas cittam
+ visayesv anusajjate 
+ mãm anusmaratas cittãm 
+ mayy eva pravilyate
+</pre><p class='vspace'>“La mente que mora en los objetos de los sentidos, se apega a los mismos. La mente que Me recuerda constantemente, se absorbe por completo en Mí”.
+(Srimad-Bhãgavatam 11.14.27)
+</p>
+<p class='vspace'>Es de tal modo evidente que en cuanto la mente se absorbe en la devoción al Señor, se torna realmente pura y santa y una verdadera amiga.
+</p>
+<p class='vspace'>El gran sabio Patañjali, el autor del Yoga Sutra, ha escrito que yoga significa detener las actividades de la mente (yogas citta-vrtti-nirodhah, 1.2). Es imposible alcanzar el yoga a menos que se controlen primero las actividades de la mente. La psicología del yoga describe cinco estados básicos de la mente:  ksipta (perturbada), mudha (confundida), viksipta (distraída), ekãgra (concentrada) y niruddha (controlada).
+</p>
+<p class='vspace'>(1) Cuando la mente es inestable y fluctuante, se explica que está perturbada (ksipta). Cuando se desean otras cosas ajenas a Krishna, a la mente le resulta imposible permanecer exclusivamente fija en El. Antes bien, fluctúa de un tema a otro, deseando primero algún objeto sensorial y seguidamente otro. De esta forma, permanece inestable.
+</p>
+<p class='vspace'>(2) Puede que la mente esté confusa sobre lo que debe o no hacer y como resultado la persona se ve abrumada por el deseo, la ira u otras manifestaciones de la modalidad de la pasión, o el sueño, la pereza y la modorra y demás manifestaciones de la modalidad de la ignorancia. Esto se denomina estado confundido de la mente.
+</p>
+<p class='vspace'>(3) El estado de estar perturbado (ksiptãvasthã) antes descrito y el estado de distracción (viksipta) son bastante similares en muchos aspectos. Sin embargo, de vez en cuando se halla una diferencia entre ellos. En el estado viksipta hay ocasionales momentos de calma y estabilidad aún dentro del cuadro general de la incapacidad para concentrarse.
+</p>
+<p class='vspace'>(4) Cuando la mente se fija en algún objeto externo o interno y en tal sentido se torna tan estable como una llama en un recinto cerrado; cuando ha superado las modalidades de la ignorancia y la pasión y está situada en la bondad, desarrolla el poder de concentración única denominado chãgratã.
+</p>
+<p class='vspace'>(5) En el estado de concentración, chãgrata, la mente aún sigue dependiendo de algo externo a sí misma, pero en el estado completamente controlado (niruddha) ya no hay más dependencia. La mente recupera su naturaleza causal y permanece inactiva, como si hubiera logrado su propósito y ya no tuviera más necesidad de actuar. Al igual que un cordón quemado, evidencia las líneas de sus características previas mas no es negativamente afectada por las mismas. En este estado controlado, el ser está fijo en su naturaleza real. En otras ocasiones, el ser se identifica con las actividades de la mente y en tal sentido adopta diversas identidades.
+</p>
+<p class='vspace'>Las Escrituras devocionales nos refieren que la naturaleza eterna de la jiva (como energía marginal de Krishna) es ser un sirviente del Señor. Como una de Sus energías, las jivas son simultáneamente una y diferentes de El (jivera svarupa haya nitya krsna-dãsa krsna-tatastha sakti bhedãbheda-prakasã). Cuando se sitúa en su posición constitucional natural, la mente ya no tiene otra función que buscar a Krishna. La entidad viviente se ocupa luego constantemente en el cultivo de la conciencia de Krishna y la mente obra como su amiga.
+</p>
+<p class='vspace'><strong>EL VERDADERO PROPOSITO DE LA FUNCION MENTAL</strong>
+</p>
+<p class='vspace'>En sus enseñanzas a Maitreyi, Yajñavalkya describe cuatro prácticas que conducen al control de la mente: “El atman ha de ser visto, escuchado, meditado y contemplado”. (ãtmã vã are drastavyah srotavyo mantavyo niddhyãsitavyah - Brhad-ãranyaka Upanisad, 4.5.6)
+</p>
+<p class='vspace'>A partir de esta declaración, se comprende que el primer deber de la mente es descubrir al Ser Supremo. Por consiguiente, uno debe emplear la mente para descubrir a Vãsudeva, la propia deidad regente de la mente y nunca los otros objetos de los sentidos. Como se enseñara a Maitreyi, debemos buscar y escuchar esas cosas que están relacionadas con Krishna, luego reflexionar y contemplar estas cosas, así como a Krishna Mismo. No acatar estas instrucciones hace que se pierda de vista el verdadero propósito de las funciones mentales. En tal caso, la mente se vuelve la principal enemiga del alma.
+</p>
+<p class='vspace'>Si uno desea conocer a la Verdad Suprema, es absolutamente esencial que tome refugio en un maestro espiritual y oiga de él. El maestro espiritual no es diferente de la Verdad Suprema; es una expansión manifiesta o prakãsa-vigraga de esa Verdad. En tal sentido, él puede mostrar la verdad,  - los pies de loto de Krishna -, a su discípulo rendido. El muestra al discípulo el medio por el cual puede lograrse la visión del Señor. Por consiguiente, antes que nada hay que postrarse delante del guru y luego preguntarle sumisamente sobre la naturaleza del ser, la naturaleza de Dios, la meta de la vida y el medio de alcanzarla y la naturaleza de Maya o las fuerzas que se oponen al logro de la comprensión espiritual.
+</p>
+<p class='vspace'>El discípulo debe acudir al maestro espiritual con un espíritu de servicio. Es imperativo que el discípulo escuche sumisamente las directivas dadas por el maestro espiritual; seguidamente, merced a la reflexión, acatar dicha escucha. La palabra manana significa reflexión o meditación asidua en el tema esencial que ha sido oído del maestro espiritual. También significa determinación, a saber, la facultad de determinar la naturaleza de las cosas. Vijñãna Bhiksu escribe en sus obras sobre filosofía Sãnkhya que el ser debe ser oído conforme a las palabras de la literatura revelada y que hay que reflexionar atento a sus evidencias y argumentos (srotavyah sruti-vãkyebhyo mantavyãs copapattibhih). Por este proceso, se llega a determinar el verdadero significado de las palabras registradas en las Escrituras.
+</p>
+<p class='vspace'>El Gãyatri-tantra (1.4) expresa:
+</p>
+<div class='vspace'></div><pre> mananãt pãpatas trãti mananãt svargam asnute 
+ mananãt moksam ãpnoti caturvargamayo bhavet
+</pre><p class='vspace'>“Por la reflexión se es librado del pecado. Por la reflexión se disfruta del Cielo. Por la reflexión se alcanza la liberación y todas las metas de la vida humana”.
+</p>
+<p class='vspace'>El devoto puro se ocupará naturalmente en la clase de reflexión que resulta en el servicio devocional puro. La importancia de reflexionar sobre lo que se ha oído, está conectada específicamente con la importancia de escuchar el Bhãgavata. Hemos visto en un capítulo anterior la forma como Dhundhuli fue llevado por un grupo de seres divinos a los planetas Vaikuntha tras oír a Gokarna recitar todo el Bhãgavatam por siete días. Los demás presentes no fueron similarmente recompensados porque no habían reflexionado profundamente en lo que habían oído. El fantasma Dhundhuli ayunó cada día durante toda esa semana y escuchó a Gokarna con gran concentración y fe. Igualmente importante fue que durante toda la noche contemplaba el tema esencial del recitado del día. De tal modo, fue recompensado con el logro de los resultados totales de escuchar el Bhãgavata. Conforme a ello, el Bhãgavatam declara, sadyo hrdy avarudhyate’tra krtibhih susrusubhis tat-ksanãt (Srimad-Bhãgavatam 1.1.2).  “El Señor es ligado en el corazón de los devotos piadosos, en el mismo momento en que desean oír sobre El”.
+</p>
+<p class='vspace'>Por lo tanto, el primer paso para controlar la mente es escuchar el Bhãgavatam con vigorosa fe en el guru, con atención y cuidado, concentración y paciencia. Si hay falta de atención y cuidado, el verdadero fruto de oír no será alcanzado.
+</p>
+<p class='vspace'><strong>ABHYÃSA-YOGA</strong>
+</p>
+<p class='vspace'>La cuarta función de la mente descrita por Yajñavalkya a Maitreyi es nididhyãsana o “la meditación profunda y repetida”.  En sus comentarios al Capítulo Doce del Bhagavad-gitã, Visvanãtha Cakravarti escribe que el bhakti es de dos tipos: se realiza (1) dedicando los sentidos internos al Señor y (2) dedicando a El los sentidos externos, o sea, ocupándose en ilimitadas actividades devocionales como oír y cantar sobre los atributos, pasatiempos, nombre, forma, etc. del Señor, así como orarle a El y ocuparse en prácticas tales como adorar Su forma deidad, limpiar el templo y recoger flores para Su servicio, siendo esta última práctica accesible para todos.
+</p>
+<p class='vspace'>El bhakti realizado con los sentidos internos es de tres clases: recordar al Señor (smarana), reflexionar en El (manana) y - para quienes están apegados al Señor pero son incapaces de recordarLo ininterrumpidamente - practicar el control de la mente (abhyãsa). Estas tres disciplinas mentales del sendero devocional son más difíciles para el que carece de voluntad pura que para aquellos que son inteligentes y están libres de una mentalidad ofensiva. La reflexión es mejor en las prácticas externas, pero el recuerdo constante y directo es superior a la reflexión. Quien se ocupa en las prácticas devocionales externas debe de todos modos hacer esfuerzos añadidos para meditar en el Señor, pues las prácticas externas están creadas para recordarnos al Señor y a partir de ahí conllevan a la reflexión, que una vez lograda, nos permite el fácil empleo en la meditación constante.
+</p>
+<p class='vspace'>En las siguientes instrucciones dadas en el Bhagavad-gitã, Krishna enfatiza la importancia del aspecto mental del servicio devocional:
+</p>
+<p class='vspace'>“Oh Arjuna, dedica tu mente exclusivamente a Mí. Fija tu inteligencia en Mí y como resultado, residirás definitivamente Conmigo después de la muerte. De esto no cabe duda”.
+(Gitã 12.8)
+</p>
+<p class='vspace'>En su comentario Sãrãrtha-darsini a este verso, Visvanãtha escribe: “Cuando Krishna dice mayy eva, el participio enfático eva nos prohibe meditar en el aspecto impersonal del Señor. Cuando dice “en Mí” (mayi) se refiere a Su hermosa forma negruzca, vestida de seda amarilla y enguirnaldada con flores silvestres. Las palabras mana ãdhatsva, “dedica tu mente”, son una instrucción para recordarLo constantemente. Fijar nuestra inteligencia en El significa usar nuestras facultades discriminatorias para Entenderlo; en otras palabras, reflexionar (manana) en El. Dicha reflexión implica estudiar las palabras de la Escritura, sastra-vãkyãnusilanam). Acatando estas instrucciones, uno llega a vivir con el Señor en Su morada; de esto no cabe duda alguna”.
+</p>
+<p class='vspace'>En el siguiente verso, el Señor declara:
+</p>
+<div class='vspace'></div><pre> atha cittam samãdhãtum
+ na saknosi mayi sthiram
+ abhyãsa-yogena tato 
+ mãm icchãptum dhanañjaya
+</pre><p class='vspace'>“Oh Dhanañjaya, si no puedes establecer tu mente en Mí con fe, alternativamente trata de llegar a Mí por la práctica (abhyãsa-yogena) de la repetida meditación en Mí”.
+(Gitã 12.9)
+</p>
+<p class='vspace'>Respecto a las palabras abhyãsa-yogena, Visvanãtha hace el siguiente comentario: “Traer repetidamente la mente de dondequiera esté deambulando y fijarla en la forma del Señor se denomina práctica, y solo eso es la disciplina yóguica. (anyãtrãnyatra-gatam api manah punah punah pratyãhrtya mad-rupa eva sthãpanam abhyãsah sa eva yogah).
+</p>
+<p class='vspace'>En el sexto capítulo del Gitã, Krishna explica la práctica de la meditación del yoga a Arjuna. Todavía confundido, Arjuna planteó el siguiente interrogante: “Señor, Tú me dices que controle la mente con la ayuda de la facultad de discriminación o inteligencia, pero descubro que la mente es tan poderosa que confunde incluso mis facultades inteligentes. Pienso que es más sencillo capturar el viento que controlar a la mente; es demasiado difícil para mí”. En respuesta, Krishna le asegura a Arjuna que, a través de la práctica repetida (abhyãsena) y la renunciación (vairãgyena) es posible conquistar a la mente incansable.
+</p>
+<p class='vspace'>Visvanãtha comenta sobre este verso: “Aunque fluctuante y en extremo difícil de controlar, la mente debe ser ocupada en la constante disciplina del cultivo de la conciencia del Señor Supremo (sad-gurupadista-prakãrena paramesvara-dhyãna-yogasya muhur anusilanena) y la renuncia y el desapego de los objetos de los sentidos (visayesv anãsangena) por los medios y prácticas brindados por el maestro espiritual. Esto ha sido confirmado nada menos que por una autoridad como Patañjali, quien expresa en sus Yoga Sutras (1.12): “La práctica y el desapego son los medios por los cuales aquietar a la mente (abhyãsa-vairãgyã bhyãm tan-nirodhah)”.
+</p>
+<p class='vspace'><strong>CONQUISTANDO LA MENTE CON INTELIGENCIA SUPERIOR</strong>
+</p>
+<p class='vspace'>El proceso de degradación de la mente se describe en el Bhagavad-gitã (2.62-63) como sigue: Primero la mente entra en contacto con los objetos de los sentidos y comienza a desear intensamente disfrutarlos. Este deseo de disfrute se llama lujuria, de la cual surge la ira. La ira conduce a la perplejidad, la pérdida de la habilidad para discriminar entre la acción propia o impropia. Este desconcierto conlleva al olvido de nuestro verdadero bien como se describe en la Escritura. Ese olvido conduce a la destrucción de nuestra inteligencia resuelta (vyavasãyãtmika buddhi). Finalmente, la jiva cae al pozo ciego de la existencia material.
+</p>
+<p class='vspace'>En el Gitã (16.2) Krishna nombra a la lujuria, la ira y la codicia como las tres puertas que conducen al infierno y aconseja a las jivas que estén particularmente prevenidas contra ellas. En el tercer capítulo del Gitã, Krishna instruye a Arjuna sobre la forma de superar la lujuria y la ira. Allí Arjuna pregunta a Krishna, “ ¿En mérito a qué somos impelidos a los actos pecaminosos, incluso involuntariamente, como si fuera por la fuerza?”
+</p>
+<p class='vspace'>El Señor responde: “La lujuria, que es hija de la mente y se desenvuelve en la modalidad de la pasión, hace que el ser viviente se ocupe en la actividad pecaminosa. La lujuria es el impulso dominante que lleva a ocuparse en las actividades de los sentidos; causa la ocupación en actos pecaminosos y luego se convierte en ira, cuando los deseos individuales de gratificación de los sentidos no se satisfacen. La lujuria adopta las características de la modalidad de la ignorancia y se convierte en ira.
+</p>
+<p class='vspace'>“La lujuria y la ira combinadas son los enemigos salvajes y que todo lo devoran, del ser viviente. Si se es incapaz de tratar con estos temibles enemigos, luego no hay cuestión de ocuparse en el servicio devocional del Señor o incluso ser digno, de ser llamado un ‘ser humano’. Esa persona está inevitablemente destinada a ir a los destinos más bajos e infernales.
+</p>
+<p class='vspace'>“La lujuria se asienta en la mente, la inteligencia y los sentidos. Por lo tanto, Oh Arjuna, de modo de superar este pecaminoso enemigo que destruye el conocimiento y el entendimiento, tu primer deber es controlar los sentidos. Los sabios dicen que los sentidos son superiores a los objetos de los sentidos; la mente es más fuerte que los sentidos; la inteligencia es aún más fuerte que la mente y el alma es incluso más poderosa que la inteligencia. Así pues, la jivãtma puede conquistar la lujuria controlando los sentidos. Comprendiéndose personalmente como trascendental incluso a la inteligencia, la jivãtma debe entender su posición más allá de la materia: su naturaleza espiritual. Con este conocimiento, la jivãtma estabiliza la mente y finalmente destruye su enemigo de otro modo inconquistable, la lujuria”.
+(Gitã 3.37-43)
+</p>
+<p class='vspace'>En su traducción ampliada de los últimos versos de esta sección del Gitã, Bhaktivinoda Thãkura escribe: “De esta forma, estando completamente consciente de tu propia naturaleza espiritual trascendental, deja de pensar en ti mismo en términos de la naturaleza material; con o sin atributos. Así pues, en total conocimiento de tu propia superioridad como sirviente puro del Señor, aquieta la inconquistable mente con la fuerza de la energía espiritual y ve dominándola gradualmente”.
+</p>
+<p class='vspace'>Narottama dãsa sostiene que la asociación de los devotos es esencial para aquel que desea conquistar la lujuria, la ira y la codicia. El canta: “ ¿Qué pueden hacer la lujuria y la ira al practicante que se ampara en la asociación santa?” (kibã se karite pãra kãma-krodha sãdhakere, jadi haya sãdhu-janãra sanga). Jagadãnanda Pundit escribe asimismo en su Prema-vivarta: “Todo lo que deseo es cantar el Santo Nombre en compañía de los devotos. No necesito nada más para superar el ciclo de nacimientos y muertes repetidos” (sãdhu-sange krsna-nãma ei mãtra cãi, samsãra jinite ãra kono vastu nãi).
+</p>
+<p class='vspace'>Habiendo obtenido esta invalorable forma humana de vida, no debemos convertirnos en sirvientes de la lujuria y la ira y ser golpeados por las escobas y palos de Mãyã. Debemos hacer todo lo que esté a nuestro alcance por salvarnos de la lujuria y la ira. Debemos tener fe en que al ver nuestros esfuerzos genuinos por ser personas buenas y santas, de tener una determinación firme por ofrecer plegarias sentidas de corazón a los pies del maestro espiritual, los Vaisnavas y el Señor, seguramente el Señor vendrá en ayuda nuestra. Por otro lado, si nos permitimos flotar junto a la corriente del deseo sensual, ignorando las instrucciones de las Escrituras, el maestro espiritual y los santos, ¿cómo podemos esperar luego que nuestras vidas lleguen a algo?
+</p>
+<p class='vspace'>En el Gitã (2.41) Krishna declara que la inteligencia resuelta (vyavasãyãtmikã buddhi) está orientada a un solo objetivo, mientras que aquellos cuya inteligencia es irresoluta son llevados por los deseos y la imaginación, a lo largo de senderos infinitos que conducen a diferentes direcciones. En la senda devocional, la inteligencia es resuelta y solo tiene un propósito.
+</p>
+<p class='vspace'>Visvãnatha ha parafraseado las palabras de un devoto poseído de dicho propósito resuelto, “Mi guru me ha ordenado que adorara al Señor cantando sobre El, Recordándolo y sirviendo a Sus pies de loto. Esta es mi práctica espiritual: la meta a la cual debo llegar y el alimento de mi vida. Ya sea que alcance la perfección o permanezca imperfecto, esta es la única cosa que jamás abandonaré. Es mi deber, el objeto de mi deseo, pues ni siquiera en sueños deseo nada más. Ya sea que me traiga felicidad o aflicción, ya sea que traiga la ruina sobre mí y mi familia, no me importa”.
+</p>
+<p class='vspace'>Visvanãtha cita este ejemplo como la clase de determinación resuelta, solo posible cuando uno está ocupado en la devoción más allá de todo auto- engaño.  Esa determinación concentrada no es posible en ningún otro sendero de vida espiritual excepto el bhakti, ya sea que se trate de karma-yoga, jñãna-yoga o cualquier otro. Instruyendo a Uddhava para que tenga esta clase de fe vigorosa y poder de voluntad en la ejecución del servicio devocional, el Señor dice, “Se fiel y Adórame con firme convicción”.
+</p><pre> (Srimad-Bhãgavatam 10.20.28)
+</pre><p class='vspace'><strong>UNA COMBINACION DE GRACIA DIVINA Y ESFUERZO</strong>
+</p>
+<p class='vspace'>En el Gitã (7.14) el Señor nos informa que excepto rindiéndonos a El, no hay otra alternativa para superar Su energía divina hecha de las tres cualidades de la bondad, la pasión y la ignorancia. La mente se distrae fácilmente y fluctúa, pero el Señor es la Deidad controladora de la mente y El Mismo atrae a todas las mentes.
+</p>
+<div class='vspace'></div><pre> krsir bhu-vãcakah sabdo nas ca nirvrti-vãcakah
+ tayor aikyam param brahma krsna ity abhidiyate
+</pre><p class='vspace'>“La raíz verbal krs se refiere a la acción de atraer, mientras que el sufijo na significa ‘gozo supremo’. El Brahman Supremo ha recibido el nombre de Krishna porque El encarna la combinación de ambos significados”.
+</p>
+<p class='vspace'>¿Cómo luego puede cualquiera de nosotros hallar un sitio a los pies de loto del Señor si El Mismo no nos arrastrara allí?
+</p>
+<p class='vspace'>Madre Yasodã una vez se enojó con el bebe Krishna y decidió castigarlo atándolo a un mortero. Para su disgusto, descubría que la soga siempre era dos pulgadas más corta. Tras hacer reiterados esfuerzos y fracasar cada vez, Krishna finalmente fue misericordioso con ella y permitió ser Atado. Visvanãtha Cakravarti explica el simbolismo de Krishna atado por una soga, como sigue: “Se necesitan dos cosas para que el Señor sea atado por un devoto: 1) el devoto debe esforzarse mucho en su adoración y 2) debe haber misericordia por parte del Señor al observar tales esfuerzos (bhakta-nisthã-bhajanot-thã srãntis tad-darsanotthã sva-nisthã krpã ceti dvãbhyãm eva bhagavãn baddhah). Esta misericordia del Señor es la más poderosa de Sus energías”. (Sãrãrtha-darsini 10.9.18). Sin la combinación del esfuerzo del devoto y la misericordia del Señor, la soga que Lo ata siempre será dos pulgadas más corta.
+</p>
+<p class='vspace'>El Señor alude nuevamente al esfuerzo (yatna) requerido para Obtenerlo, en el verso 9.14 del Gitã (yatantãs ca drdha-vratãh). En su  comentario Sãrãrtha-varsini, Visvanãtha elabora sobre la naturaleza de este esfuerzo, como sigue: “Así como los jefes de familia afligidos por la pobreza acuden a las puertas de los ricos para conseguir dinero para el sustento de sus familias, Mis devotos van a la asamblea de los devotos rendidos, con la única intención de reunir tesoros de servicio devocional (como ser el canto) de ellos. Al adquirir la ciencia del bhakti-yoga, ellos comienzan a practicar repetidamente los dogmas del Bhakti-yoga, tal como un estudiante tratando de aprender de memoria. (yathã kutumba-pãlanãrtham dinã grhasthã dhanika-dvãrãdau dhanãrtham yatante, tathaiva mad-bhaktãh kirtanãdi-bhakti-prãpty-artham bhakta-sabhãdau yatante. Prãpya ca bhaktim adhiyamãnam sãstram pathata iva punah punar abhyasyanti ca).
+</p>
+<p class='vspace'>Visvanãtha explica además la naturaleza de la resolución del devoto (drdha-vratãh) por practicar el servicio devocional: “Yo resuelvo cantar diariamente un número establecido de rondas del Santo Nombre en mis cuentas y ofrecer un número fijo de postradas reverencias al Señor y los Vaisnavas. Resuelvo hacer regularmente tal y tal servicio. Mantendré mi determinación firme de conservar el ayuno Ekãdasi y demás votos. Prestaré especial atención al control de mis sentidos”. (etãvanti nãma-grahanãni, etãvatyah pranatayah, etãvatyah paricaryãs cãvasya-kartavyã ity evam drdhãni vratãni niyãma yesãm te. yad vã, drdhãny apatitãny ekãdasy-ãdi-vratãni niyamã yesãm te.)
+</p>
+<p class='vspace'>El Señor ayuda a los que se ayudan. Cuando un devoto hace un voto, el Señor lo ayuda a mantener su voto. El bhakti-yogui debe hacer a un lado su orgullo  en su propio poder de voluntad y entender que todos sus esfuerzos dependen completamente de la misericordia del guru, los Vaisnavas y el Señor. Esa persona pronto alcanzará el éxito.
+</p>
+<p class='vspace'><strong>EL UPADESÃMRTA DE RUPA GOSVÃMI</strong>
+</p>
+<p class='vspace'>En su Upadesãmrta, Rupa Gosvãmi explica que hay seis impulsos a ser controlados por el practicante. Ellos son, los impulsos del habla, el pensamiento, la ira, el paladar, el estómago y los genitales.  Cuando estos impulsos son fuertes, la jiva desafortunada se descubre a sí misma azotada en el océano del sufrimiento material.
+</p>
+<p class='vspace'>En relación a las demandas del estómago y la lengua, cabe hacer notar que el alimento que ingerimos influye sobre nuestros procesos mentales. El Sãnkhya-kãrikã (3.15) nos recuerda que, “conforme al Sruti, la mente es afectada por el alimento que uno ingiere”. (tad annamayatvam srutes ca) o como se dice vulgarmente, “dime lo que comes y te diré quien eres”. Por esta razón, los yoguis y demás sãdhakas que tratan de controlar la mente, prestan una especial atención a los tipos de comidas que ingieren.
+</p>
+<p class='vspace'>Aunque el devoto sabe que es personalmente un espíritu puro, no come de todo indiscriminadamente. Ni otros practicantes de yoga comen sin discriminación. ¿Porqué no? Porque si comen de todo sin discriminación, su ejecución del yoga se verá adversamente afectada por la comida que toman. Los yoguis de todas clases se ocupan en sus prácticas con un objetivo trascendental y si ellos comen la comida de las personas materialistas y sensuales, las tendencias de dichas personas se alzarán en sus mentes. Por ejemplo, si uno come la comida ofrecida por una persona sexualmente promiscua, luego ese defecto tendrá un efecto sobre su proceso de pensamiento. Para evitar este problema, los devotos solo toman mahãprasãda, comida ofrecida primero a Krishna.
+</p>
+<p class='vspace'>Rupa Gosvãmi enumera seis clases de actividades que afectan adversamente a la mente, robándole la paz e interfiriendo con el logro de la perfección devocional:
+</p>
+<div class='vspace'></div><pre> atyahãrah prayãsas ca
+ prajalpo niyamãgrahah
+ jana-sangas laulyam ca
+ sadbhir bhaktir vinasyati
+</pre><p class='vspace'>“Las siguientes actividades causan la destrucción de nuestra devoción: comer de más, el esfuerzo excesivo, la chismografía, el exceso de entusiasmo o el descuido de las regulaciones, la asociación indiscriminada y la codicia”.
+(Upadesãmrta 2)
+</p>
+<p class='vspace'>La caída de un devoto es causada por el consumo excesivo, por el anhelo de disfrutar otras cosas ajenas a Krishna, por el apego a la discusión de tópicos mundanos, por rechazar completamente los mandatos de las Escrituras o por apegarse en demasía a las reglas Escriturales, sin tener en cuenta su propósito: recordar a Krishna. La caída también se produce por hacer votos que están más allá de la capacidad de mantenerlos. Cuando el devoto trata de hacer un show de esta manera, es como si saltara de la sartén al fuego (ito nastas tato bhrastah). No solo fracasa personalmente en sus intentos de servicio devocional, sino que sus esfuerzos por lograr la felicidad material también son frustrados.
+</p>
+<p class='vspace'>Rupa Gosvãmi, un océano de compasión, está  afligido por el sufrimiento de los demás. En su Upadesãmrta, el muestra misericordiosamente la forma en que un devoto puede incrementar su riqueza devocional.
+</p>
+<div class='vspace'></div><pre> utsãhãn niscayãd dhairyãt
+ tat-tat-karma-pravartanãt
+ sanga-tyãgãt sato vrtteh
+ sadbhir bhaktih prasidhyati
+</pre><p class='vspace'>“El practicante de bhakti requiere de seis actitudes necesarias para alcanzar la perfección. Debe tener entusiasmo por la práctica devocional, fe en que llegará a Krishna, paciencia en el logro del objetivo del prema; debe hacer actividades devocionales como fueran brindadas por las autoridades previas, evitar la mala compañía y aceptar los principios de una vida santa”.
+(Upadesãmrta 3)
+</p>
+<p class='vspace'>Cuando la jiva acepta estas cualidades positivas y rechaza los seis impulsos y seis principios desfavorables al bhakti, luego llevará una vida de conciencia de Krishna. 
+</p>
+<p class='vspace'>La mente, contaminada por la mala asociación y por el constante contacto con los objetos de los sentidos, es el origen de nuestros problemas. Por esa razón, todos debemos tener cuidado en permanecer asociados con los sadhus avanzados, luchando por mantenernos en el cultivo de la conciencia de Krishna. Caso contrario, nos ocuparemos en el pecado, lo cual equivale a suicidarse.
+</p>
+<p class='vspace'><strong>EL GUSTO SUPERIOR</strong>
+</p>
+<p class='vspace'>De acuerdo al Bhagavad-gitã, por experimentar el gusto superior de un placer espiritual, uno naturalmente descarta los placeres temporales e insignificantes de este mundo. Si la mente se ocupa en el cultivo de conciencia de Krishna, se torna automáticamente indiferente a otros empleos. En el Bhãgavatam el Señor dice a Uddhava:
+</p>
+<div class='vspace'></div><pre> visayãn dhyãyatas cittam
+ visayesu visajjate 
+ mãm anusmaratas cittam
+ mayy eva pravilyate
+</pre><p class='vspace'>“La mente, que medita en los objetos de los sentidos, se apega a los mismos. La mente que Me recuerda constantemente, se absorbe en Mí”.
+(Srimad Bhãgavatam 11.14.27)
+</p>
+<p class='vspace'>Ciertamente, no existe un medio más poderoso para la auto-purificación que la devoción por Krishna. Aportando un gusto superior de éxtasis espirituales, la devoción pura elimina todos los deseos materiales del corazón. Tal es el secreto de la auto-purificación y el control de la mente.
+</p>
+<p class='vspace'>El Señor suple a las almas condicionadas los cuerpos humanos para que puedan atravesar por sobre el océano de la existencia material. El seguidamente viene personalmente en la forma del guru, para actuar como el capitán de la nave, para cruzar este océano de sufrimiento material. Los vientos de la gracia de Krishna soplan con abundancia. Si de todos modos las jivas no hacen los suficientes esfuerzos por atravesar las aguas de Mãyã pese a todas las condiciones favorables, deben considerarse a sí mismas como las más desafortunadas y menos inteligentes de todas las personas del mundo. Por consiguiente, en el Srimad Bhãgavatam, Sukadeva dice a Mahãrãja Pariksit:
+</p>
+<div class='vspace'></div><pre> samsãra-sindhum atidustaram uttitirsor
+ nãnyah plavo bhagavatah purusottamasya
+ lilã-kathã-rasa-nisevanam antarena
+ pumso bhaved vividha-duhkha-davãrditasya
+</pre><p class='vspace'>“ ¡Oh rey! La persona que, padeciendo las diversas clases de miserias en este mundo, desee cruzar por encima del ilimitado océano de la existencia material, no tiene más alternativa que tomar el bote, en la forma de degustar los gozos de oír los pasatiempos de Krishna”.
+(Srimad Bhãgavatam 12.4.40)
+</p>
+<p class='vspace'>Vyãsa comienza el Bhãgavatam con el siguiente verso:
+</p>
+<div class='vspace'></div><pre> nigama-kalpa-taror galitam phalam
+ suka-mukhãd amrta-drava-samyutam
+ pibata bhãgavatam rasam ãlayam 
+ muhur aho rasikã bhuvi bhãvuhãh
+</pre><p class='vspace'>“ ¡Oh devotos! ¡Oh vosotros que conocéis los gozos del amor por el Señor! ¡Oh vosotros que habéis obtenido la sabiduría nacida de meditar en vuestra relación particular con el Señor! Pese a que están ya completamente liberados, bebed repetidamente el Bhãgavata, el fruto madurado del árbol del deseo de los Vedas; ninguna parte del mismo debe ser rechazada, como la piel o semilla de un mango. Su jugo es bienaventuranza trascendental pura;  ha descendido desde Sukadeva quien lo hablara por primera vez en su forma actual. Fue seguidamente repetido a sus discípulos y discípulos nietos en la sucesión discipular. Las grandes almas liberadas rechazan los placeres del Cielo mas no rechazan los placeres del fruto del Bhãgavata, degustando constantemente su sabor”.
+(Srimad Bhãgavatam 1.1.3)
+</p>
+<p class='vspace'>En una ocasión, los semidioses vinieron a Dvãrakã donde contemplaron al Señor y Le ofrecieron extensas plegarias y alabanzas. Esas plegarias confirman el poder excepcional de la devoción para purificar el corazón.
+</p>
+<div class='vspace'></div><pre> suddhir nrnãm na tu tathedya durãsayãnãm
+ vidyã-srutãdhyayana-dãna-tapah-kriyãbhih
+ sattvãtmanãm rsabha te yasasi pravrddha-
+ sac-chraddhayã sravana-sambhrtayã yathã syãt
+</pre><p class='vspace'>“ ¡Oh Uno Adorable! ¡Oh Persona Suprema! Los devotos ocupados en oír Tus glorias con una fe madura y pura, se purifican más rápidamente que los que anclan deseos personales, incluso mientras adoran, oyen explicaciones de la sabiduría Védica, estudian las Escrituras, dan caridad, realizan penitencias o se ocupan en otros procesos rituales de purificación”.
+(Srimad Bhãgavatam 11.6.9)
+</p>
+<p class='vspace'>En los siguientes términos, Srila Prabhupãda Bhaktisiddhãnta Sarasvati enfatiza el contraste entre la sabiduría a secas y el estudio fiel de los textos devocionales: “Oír las glorias del Señor llena a los devotos de una fe siempre en aumento. Es mediante esa fe que el corazón se purifica de verdad. El conocimiento y sabiduría materiales simplemente llenan el corazón de orgullo”.
+</p>
+<p class='vspace'>Sin embargo, el devoto logra el constante recuerdo de Krishna, ese recuerdo es el verdadero secreto para lograr la auto-purificación.
+</p>
+<div class='vspace'></div><pre> avismrtih krsna-padãravindayoh
+ ksinoty abhadrãni ca sam tanoti
+ sattvasya suddhim paramãtma-bhaktim
+ jñãnam ca vijñãna-virãga-yuktam
+</pre><p class='vspace'>“Los pies de loto del Señor Supremo son la mayor fuente de prosperidad. Por nunca olvidarlos, toda mala fortuna es destruida y la paz se asienta finalmente en la mente. El ser individual se purifica genuinamente, se despierta la devoción por el Señor y uno logra el conocimiento combinado con la realización y la renunciación”.
+(Srimad Bhãgavatam 12.12.55) 2
+</p>
+<p class='vspace'>En los siguientes versos, Krishna explica a Su querido devoto Uddhava, importantes aspectos del proceso de purificación:
+</p>
+<div class='vspace'></div><pre> dharmah satyãdayopeto
+ vidyã vã tapasãnvitã 
+ mad-bhaktyãpetam ãtmãnam
+ na ca samyak punãti hi
+</pre><p class='vspace'>“La vida religiosa está regida por la veracidad y otros principios, y el aprendizaje aunado a la auto-disciplina no pueden por sí mismos purificar completamente a aquel cuyo corazón carece de devoción por el Señor Hari”.
+(Srimad Bhãgavatam 11.14.22)
+</p>
+<div class='vspace'></div><pre> katham vinã romaharsam
+ dravatã cetasã vinã
+ vinãndãsru-kalayã
+ suddhyed bhaktyã vinãsayah
+</pre><p class='vspace'>“ ¿Cómo puede purificarse el corazón de una persona sin la devoción extática que causa que su vello se erice, que su mente se derrita de amor y que las lágrimas fluyan de sus ojos?”
+(Srimad Bhãgavatam 11.14.23)
+</p>
+<div class='vspace'></div><pre> yathãgninã hema-malam jahãti
+ smãtam punah svam bhajate ca rupam
+ ãtmã ca larmãnusayam vidhuya 
+ mad-bhakti-yogena bhajaty atho mãm
+</pre><p class='vspace'>“Así como el oro calentado es librado de sus impurezas y revive su brillo natural, asimismo el alma se purifica de sus reacciones kármicas acumuladas por el Bhakti-yoga. Cuando alguien es así purificado y recupera su identidad natural, Me adora”.
+(Srimad Bhãgavatam 11.14.25)
+</p>
+<div class='vspace'></div><pre> yathã yathãtmã parimrjyate’sau 
+ mat-punya-gãthã-sravanãbhidhãnaih
+ tathã tathã pãsyati vastu suksmam
+ caksur yathaivãñjana-samprayuktam
+</pre><p class='vspace'>“A medida que el alma espiritual es limpiada de todo pecado oyendo sobre Mis sagrados pasatiempos, puede apreciar con más claridad las verdades más sutiles, tal como un ojo que ha sido tratado con colirio, puede ver los objetos físicos con mayor claridad”.
+(Srimad Bhãgavatam 11.14.26)
+</p>
+<p class='vspace'>Hay centenares de tales declaraciones en las Escrituras devocionales, que muestran que el único proceso de auto-purificación ocurre durante la ejecución del servicio devocional.
+</p>
+<p class='vspace'>La deidad adorable y regente de la mente es el Señor Vãsudeva. Puesto que la principal función de la mente es buscar (anvesanãtmikã) y puesto que el ser es el objeto de toda búsqueda (sa ãtmã anvestavyah), la mente se conserva pura en la medida en que busca al Ser Supremo Vãsudeva. Por otro lado, si la mente, llevada por el deseo de buscar otros frutos, fluctúa de Vãsudeva a cualquier otro objeto de atención, se la considera contaminada. En otras palabras, la mente no puede ser considerada pura si anhela la liberación, la gratificación de los sentidos, la perfección mística o el provecho mateial.
+</p>
+<p class='vspace'>La mente es rápidamente purificada por la influencia del bhakti puro. Si uno se ocupa en el cultivo de la conciencia de Krishna, prohibiéndose personalmente todos los demás objetivos, excepto la propia devoción, no mezclándola con otras disciplinas superfluas como ser el jñãna y el karma, luego la persona experimenta dicha purificación.
+</p>
+<p class='vspace'>Atento a Su misericordia por las en extremo necias almas condicionadas, el Señor instruyó a Arjuna y Uddhava sobre la religión Bhãgavata. Sus palabras y enseñanzas han de ser siempre  recordadas por todos: 
+</p>
+<p class='vspace'>man-manã bhava mad-bhaktah<br />“Siempre piensa en Mí y conviértete en Mi devoto”.<br />(Gitã 18.65)
+</p>
+<p class='vspace'>mãm ekãm saranam vraja<br />“Refúgiate solo en Mí”.<br />(Gitã 18.66)
+</p>
+<p class='vspace'>mayy eva mana ãdhatsva<br />“Fija tu mente exclusivamente en Mí”.<br />(Gitã 12.8)
+</p>
+<p class='vspace'>mayi buddhim nivesaya<br />“Emplea tu inteligencia para Entenderme”.<br />(Gitã 12.8)
+</p>
+<p class='vspace'>bhaktyã mãm abhijãnãti
+“Solo se Me puede conocer mediante la devoción”.
+(Gitã 18.55)
+</p>
+<p class='vspace'>bhaktyãham ekayã grãhyah
+“Yo solo puedo ser obtenido a través de la devoción”.
+</p>
+<p class='vspace'>Se debe reconocer al maestro espiritual como nuestro único amigo verdadero y bienqueriente, la más adorable manifestación del Señor en nuestra vida. De modo de aprender el Bhãgavata-dharma, el proceso por el cual complacer al Señor Hari, uno debe rendirse al maestro espiritual, hacerle preguntas sumisamente sobre el deber individual y servirlo.
+</p>
+<p class='vspace'>Las siguientes, son algunas de las enseñanzas que uno debe oír del maestro espiritual: características de la devoción (Srimad Bhãgavatam 11.11.34-41); principales prácticas de la devoción (Srimad Bhãgavatam 11.19.20-24) y la naturaleza de quien se capacita para la práctica devocional (Srimad Bhãgavatam 11.20.27-34). Todas estas enseñanzas fueron delineadas por el Señor a Uddhava.
+</p>
+<p class='vspace'>Narottama dãsa ora por la misericordia de los devotos para cruzar sobre el océano de la energía ilusoria:
+</p>
+<div class='vspace'></div><pre> ki rupe pãiba sevã mui durãcãra
+ sri-guru-vaisnave rati nã haila ãmãra
+ asesa mãyãte mana magana haila
+ vaisnavete lesa-mãtra rati nã janmila
+ visaye bhuliyã andh hainu divã-nisi
+ gale phãnsa dite phire mãyã se pisãci 
+ mãyãre kariyã jaya chãrãno nã jãya
+ sãdhu krpã vinã ãra nãhika upãya
+ adosa-darasi prabho patita uddhãra
+ ei bãra narottame karaha nistãra
+</pre><p class='vspace'>“ ¿Cómo puede un alma inicua como yo obtener el servicio del Señor?  No tengo afecto por el servicio del maestro espiritual y los Vaisnavas. Mi mente permanece inmersa en un mundo ilimitado de ilusión y no ha desarrollado siquiera una gota de apego por la asociación de los Vaisnavas. Me he perdido en la gratificación de los sentidos y me he enceguecido; mientras tanto, esa bruja Maya me sigue por todos lados, buscando una oportunidad de colocar una soga alrededor de mi cuello. Tal parece que no hay manera de poder librarme de ella. Excepto la misericordia de los santos, no hay nada que me ayude a conquistar a Maya. Oh Señor, Tú no ves faltas en nadie, Tú liberas incluso a los más caídos. Oh Señor, por favor, ahora es tiempo de salvar a Narottama dãsa”.
+</p>
+<p class='vspace'>Mientras vivió en Puri, Mahãprabhu sentó un ejemplo acudiendo a Gadãdhara Pandita a oír las historias de Dhruva y Prahlãda del Bhãgavatam. Siguiendo el ejemplo de Mahãprabhu, nosotros debemos oír los relatos de los devotos ideales de labios de los santos y maestros espirituales.
+</p>
+<div class='vspace'></div><pre> bhakta-pada-dhuli bhakta-pada-jala
+ bhakta-bhukta-sesa tina sãdhanera bala
+ ei tina sãdhana haite krsna premã haya
+ punah punah sarva-sãstre phukãriyã kaya
+</pre><p class='vspace'>“Tres cosas refuerzan nuestras prácticas espirituales: el polvo de los pies de loto de los devotos, el agua que ha lavado sus pies y los remanentes de su comida. Todas las Escrituras proclaman sonoramente que el amor por Krishna aparece de estas tres cosas”.
+(Caitanya Caritãmrta 3.16.50-61)
+</p>
+<p class='vspace'>Para quien acata estas instrucciones de las grandes autoridades y emplea sus sentidos personales en el servicio del maestro espiritual y los Vaisnavas, la visión externa y superficial del mundo desaparece y emerge una visión introspectiva e interna de las cosas.
+</p>
+<p class='vspace'>Sri Raghunãtha dãsa Gosvãmi, Bhaktivinoda Thãkura y otras grandes personalidades sentaron el ejemplo de escribir, “Enseñanzas a la Mente” (Manah-siksã). Estas obras deben ser regularmente estudiadas y acatadas. A través de ellas, será posible el control de la mente y uno avanzará rápidamente en lo espiritual. Las demás prácticas espirituales - karma, jñãna o yoga, son dependientes del bhakti. Independientemente, no pueden conceder ningún resultado al practicante. El bhakti por otro lado, es completamente independiente. A través del sendero devocional, todos los resultados parciales e inadecuados del karma, jñãna y yoga, se logran eventualmente, mas el devoto considera carente de valor  todo lo que no sea  servicio devocional puro. Aunque el Señor conceda al devoto la gratificación de los sentidos, la liberación o los poderes yóguicos, él los rehusa, considerándolos como obstáculos en su servicio devocional. Todos los objetivos de la vida humana, ya sea la religiosidad, el éxito material o el disfrute de los sentidos e incluso la propia liberación, unen sus manos y oran por servir al devoto del Señor.
+</p>
+<p class='vspace'>Mahãprabhu declara inequívocamente que de todas las actividades devocionales, el canto de los Santos Nombres es la suprema. En Su Siksãstaka, el Señor describe siete diferentes resultados auspiciosos por cantar los Nombres.  Una de las consecuencias secundarias de cantar los Santos Nombres es la limpieza de la mente y del corazón, - ceto darpana-mãrjanam. La manifestación refleja de la misericordia del Santo Nombre acarrea el control de la mente. Por oír y discutir los nombres, forma, cualidades y actividades del Señor con una actitud servicial hacia los devotos, la misericordia del Santo Nombre se manifiesta como un Sol naciente, destruyendo la oscuridad de la ignorancia. A medida que la modalidad de la ignorancia retrocede, se obtiene fácilmente el control de la mente. La mente no puede ser completamente controlada mediante ningún otro sendero de avance espiritual excepto el bhakti.
+</p>
+<div class='vspace'></div><h2><span class='wikitrail'>&lt; <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_12.html'>Escuchando el Bhagavata</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana.html'>El Arte del Sadhana</a> | <a class='wikilink' href='index.php-n=puri_bp.arte_del_sadhana_14.html'>Practica y Predica</a> &gt;</span></h2>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on May 20, 2008, at 12:26 AM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>

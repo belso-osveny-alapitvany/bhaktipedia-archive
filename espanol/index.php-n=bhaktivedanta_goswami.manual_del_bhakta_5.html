@@ -1,0 +1,299 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- bhaktipedia/bhaktipedia.tmpl
+See PHP for credits and license
+-->
+<head>
+  <title>Bhaktipedia - Taller N°4</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  <!--HeaderText--><style type='text/css'><!--
+  ul, ol, pre, dl, p { margin-top:0px; margin-bottom:0px; }
+  code.escaped { white-space: nowrap; }
+  .vspace { margin-top:1.33em; }
+  .indent { margin-left:40px; }
+  .outdent { margin-left:40px; text-indent:-40px; }
+  a.createlinktext { text-decoration:none; border-bottom:1px dotted gray; }
+  a.createlink { text-decoration:none; position:relative; top:-0.5em;
+    font-weight:bold; font-size:smaller; border-bottom:none; }
+  img { border:0px; }
+  .editconflict { color:green; 
+  font-style:italic; margin-top:1.33em; margin-bottom:1.33em; }
+
+  table.markup { border:2px dotted #ccf; width:90%; }
+  td.markup1, td.markup2 { padding-left:10px; padding-right:10px; }
+  table.vert td.markup1 { border-bottom:1px solid #ccf; }
+  table.horiz td.markup1 { width:23em; border-right:1px solid #ccf; }
+  table.markup caption { text-align:left; }
+  div.faq p, div.faq pre { margin-left:2em; }
+  div.faq p.question { margin:1em 0 0.75em 0; font-weight:bold; }
+  div.faqtoc div.faq * { display:none; }
+  div.faqtoc div.faq p.question 
+    { display:block; font-weight:normal; margin:0.5em 0 0.5em 20px; line-height:normal; }
+  div.faqtoc div.faq p.question * { display:inline; }
+   
+    .frame 
+      { border:1px solid #cccccc; padding:4px; background-color:#f9f9f9; }
+    .lfloat { float:left; margin-right:0.5em; }
+    .rfloat { float:right; margin-left:0.5em; }
+a.varlink { text-decoration:none; }
+
+--></style><meta http-equiv='Content-Type' content='text/html; charset=utf-8' /><link rel='alternate' title='Bhaktipedia : bhaktivedanta_goswami - RSS Feed'
+      href='index.php-n=bhaktivedanta_goswami.RecentChanges-action=rss.html'
+      type='application/rss+xml' />
+    <meta name='robots' content='index,follow' />
+<link rel='stylesheet' type='text/css' href='../pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' />
+
+  <!-- <link rel='stylesheet' href='http://bhaktipedia.org/pmwiki/pub/skins/bhaktipedia/bhaktipedia.css' type='text/css'/> -->
+
+<style type='text/css'>#header { border-bottom: none; }</style>
+</head>
+<body>
+  <div id='globalwrapper'>
+    <!--PageLeftFmt--><div id='pageleft'>
+      <div id='pageleftcontent'>
+        <div class='pageleftbody' id='sidebar'>
+          <p class='sidehead' style='text-align: center;'>Bhaktipedia en español<br /><small><a class='urllink' href='../pmwiki/pmwiki.php.html' rel='nofollow'>Otros lenguajes</a></small>
+</p>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage.html'>Explorar Bhaktipedia</a>
+</li><li><a class='wikilink' href='index.php-n=Main.About_Bhaktipedia.html'>¿Qué es Bhaktipedia?</a>
+</li><li><a class='urllink' href='http://www.bhakti-pedia.blogspot.com' rel='nofollow'>Nuevo Blog</a>
+</li><li><a href='index.php-n=Main.message-action=popopen.html' onclick="return popWin('http://bhaktipedia.org/espanol/index.php?n=Main.message?action=popopen','popup0','596','505','center','center','1','0','0','0','0','0','0')">Enviar un mensaje</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=catalogs.catalogs.html'>Biblioteca</a>
+</p><ul><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_author.html'>Índice por autores</a>
+</li><li><a class='wikilink' href='index.php-n=catalogs.catalog_by_subject.html'>Índice por categorías</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=guides.guides.html'>Guía de estudio</a>
+</p><ul><li><a class='wikilink' href='index.php-n=guides.inicial.html'>Estudio Inicial</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_preiniciados.html'>Estudio Para Preiniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_iniciados.html'>Estudio Para Iniciados</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_brahmanas.html'>Estudio Para Brahmanas</a>
+</li><li><a class='wikilink' href='index.php-n=guides.para_sannyasis.html'>Estudio Para Sannyasis</a>
+</li><li><a class='wikilink' href='index.php-n=guides.suplementaria.html'>Literatura Suplementaria</a>
+</li></ul><p class='vspace'><a class='wikilink' href='index.php-n=enciclopedia.enciclopedia.html'>Enciclopedia</a>
+</p><ul><li><a class='wikilink' href='index.php-n=enciclopedia.personalidades.html'>Personalidades</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.sitios.html'>Sitios y eventos</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.definiciones.html'>Definiciones</a>
+</li><li><a class='wikilink' href='index.php-n=enciclopedia.autores.html'>Autores</a>
+</li></ul><p class='vspace'>Buscar en Bhaktipedia
+</p>
+<div class='vspace'></div><form  class='wikisearch' action='http://bhaktipedia.org/espanol/index.php?n=bhaktivedanta_goswami.manual_del_bhakta_5' method='get'><input type='hidden' name='n' value='bhaktivedanta_goswami.manual_del_bhakta_5' /><input type='hidden' name='action' value='search' /><input type='text' name='q' value='' 
+    class='inputbox searchbox' size='40' /><input type='submit' 
+    class='inputbutton searchbutton' value='Search' /></form>
+<p class='vspace'>
+
+
+</p>
+<div class='vspace'></div>
+
+
+<div class='vspace'></div><div  style='text-align: center;'> <a target='_blank'  class='urllink' href='http://www.wva-vvrs.org' rel='nofollow'><img src='http://www.wva-vvrs.org/img/logop.gif' alt='World Vaisnava Organization' title='World Vaisnava Organization' /></a><br /></div>
+<div class='vspace'></div><ul><li><a class='wikilink' href='index.php-n=Main.HomePage-action=login.html'>Log in</a>
+</li></ul><div class='vspace'></div>
+
+        </div><!-- id='sidebar' -->
+        <div class='pageleftbody' id='sidesearch'>
+<!--        
+          <form name='searchform' action='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>            
+              <input type='hidden' name='pagename' value='Site/Search'/>
+            <a href='http://bhaktipedia.org/espanol/index.php?n=Site.Search'>Search</a>:<br/>
+            <input class='searchbox' type='text' name='q' value=''/>
+            <input class='searchbutton' type='submit' value='Go'/>
+               </form>
+-->
+        </div><!-- id='sidesearch' -->
+        
+      </div><!-- id='pageleft_content' -->
+      <div id='pagelogo'>
+        <a style='background-image: url("../pmwiki/pub/skins/bhaktipedia/logo.gif");'
+           href='index.php.html' title="Bhaktipedia - Taller N°4"></a>
+      </div><!-- id='pagelogo' -->
+    </div><!--/PageLeftFmt-->
+    <a name='topcontent'></a>
+    <div id='content'>
+      <!--PageHeaderFmt--><div id='header'></div><!--/PageHeaderFmt-->
+      <!--PageTabsFmt--><div id='tabs'>
+      <div class='vspace'></div><div  style='display: none;' > 
+<ul><li class='browse'><a accesskey=''  class='createlinktext' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5-discussion-action=edit.html'>Discussion</a>
+</li></ul></div>
+
+      </div><!--/PageTabsFmt-->
+      <div id='tabpage'>
+        <div id='contentbody'>
+        
+<!-- kivett pagetitle -->
+
+            <div id='rightbody'>
+            <!--PageRightFmt--><!--/PageRightFmt-->
+          </div><!-- id='rightbody' -->
+            <!--PageText-->
+<div id='wikitext'>
+<p><a class='wikilink' href='index.php-n=atulananda.atulananda.html'>Atulananda Acarya</a>
+</p><hr />
+<p><a class='wikilink' href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta.html'>Manual del Bhakta</a>
+</p>
+<div class='vspace'></div><h2>Taller N°4</h2>
+<p><em><a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub1'>Guru Puja - Sri Guru Vandana</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub2'>Oraciones para ofrecer los alimentos</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub3'>Mantra Upadesamrita</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub4'>Anartha Nivritti</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub5'>Krishna Prema</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub6'>El tiempo del Universo</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub7'>Lugares y reglas para evacuar</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub8'>Limpieza al después de evacuar</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub9'>Baño y lavado de dientes</a> – <a href='index.php-n=bhaktivedanta_goswami.manual_del_bhakta_5.html#sub10'>Tilaka y Sikha</a></em>
+</p>
+<p class='vspace'><a name='sub1' id='sub1'></a>
+</p><h3>Guru Puja - Sri Guru Vandana</h3>
+<pre> Sri Guru Carana padma
+ kevala bhakati sama
+ bando mui savadhana mate
+ jahara prasade bhai, e bhava toriya jai
+ krsna prapti hoy jaha ha´te
+
+ guru mukha padma vakya
+ cittete koriya aikya
+ ar na koriho mane asa
+ sri guru carane rati, ei se uttama gati
+ je prasade pure sarva asa
+
+ cakhu dan dilo jei, janme janme prabhu sei
+ divya jñnan hrde prokasito
+ prema bhakti jaha hoite, avidya vinasa jate
+ vede gay jahara carito
+
+ sri guru karuna sindhu
+ adhama janara bandhu
+ lokanath lokera jivana
+ ha ha prabhu koro doya
+ deho more pada chaya
+ ebe jasa ghusuk tribhuvana
+
+ Tus pies de loto Gurudeva,
+ son morada de la devoción,
+ yo me postro ante ellos con veneración,
+ por Su gracia, hermano, 
+ este mundo cruzamos,
+ y a Sri Krishna nos hace llegar
+
+ De Su boca, cada palabra
+ en tu corazón guarda,
+ y no des lugar a nada más, 
+ el apego a sus pies es la mayor perfección, 
+ pues de ellos se alcanza plena bendición
+
+ Quien me dio toda visión,
+ Vida tras vida, es mi Señor, 
+ saber divino da a mi corazón,
+ El nos da el prema bhakti,
+ toda ignorancia deshace,
+ los Vedas cantan de su devoción
+
+ Oh Guru, océano de gracia, 
+ que a los caídos agracias,
+ eres el Señor de cada alma,
+ Oh! prabhu, ´Sé bondadoso,
+ Ampárame a Tus pies de loto,
+ Tus glorias sean por todos cantadas.
+</pre><p class='vspace'><a name='sub2' id='sub2'></a>
+</p><h3>Oraciones para ofrecer los alimentos</h3>
+<p>Deben ser reiteradas junto con las obediencias al Maestro Espiritual, tres veces cada una.
+</p>
+<div class='vspace'></div><pre>  namo maha-vadanyaya krsna-prema-pradaya te  
+ krsnaya krsna-caitanya-namne gaura-tvise namo namah  
+</pre><p class='vspace'>" Ofrezco mis respetuosas reverencias al Señor Supremo Sri Krishna Caitanya, quien es más magnánimo que cualquier otro avatar incluyendo a Krishna mismo, porque El está concediendo libremente lo que ningún otro ha dado jamás, amor puro por Dios."
+</p>
+<div class='vspace'></div><pre> namo brahmanya devaya go-brahmanya hitaya ca  
+ jagad hitaya krsnaya govindaya namo namah 
+</pre><p class='vspace'>" Ofrezco mis respetuosas revrencias a Ti mi Señor. Tu eres el protector de las vacas y bienqueriente de los brahmanas, así como de toda la humanidad."
+</p>
+<div class='vspace'></div><pre> jaya sri krsna caitanya prabhu nityananda  
+ sri adveita gadadhara srivasadi goura bhakta vrinda  
+</pre><p class='vspace'>" Todas las glorias a Sri Krishna Caitanya, a Sri Nityananda Prabhu, a Sri Advaita Acarya, a Sri Gadhadara Pandit, a Srivas Prabhu y a todos los demás devotos y asociados del Señor Caitanya"
+</p>
+<div class='vspace'></div><pre> hare krsna hare krsna krsna krsna hare hare  
+ hare rama hare rama rama rama hare hare  
+ hare krsna hare krsna krsna krsna hare hare  
+ hare rama hare rama rama rama hare hare  
+ hare krsna hare krsna krsna krsna hare hare  
+ hare rama hare rama rama rama hare hare 
+</pre><p class='vspace'><a name='sub3' id='sub3'></a>
+</p><h3>Mantra Upadesamrta</h3>
+<p>Los seis síntomas del amor que comparte un devoto con otro son: 
+</p><ol><li>Ofrecer regalos como caridad. 
+</li><li>Aceptar regalos caritativos.
+</li><li>Revelar la mente en forma confidencial.
+</li><li>Preguntar confidencialmente.
+</li><li>Aceptar prasada.
+</li><li>Ofrecer prasada.
+</li></ol><p class='vspace'><a name='sub4' id='sub4'></a>
+</p><h3>Anartha Nivritti</h3>
+<p>Liberarse de los obstáculos para el desempeño del servicio devocional. El discípulo comienza a analizarse a sí mismo. Como puede eliminar sus apegos a cosas indeseables. Como liberarse de: 
+</p>
+<div class='vspace'></div><ol><li>La especulación mediante el estudio y la sumisión. 
+</li><li>La ira practicando la tolerancia. 
+</li><li>La codicia practicando servicio inmotivado. 
+</li><li>La crueldad practicando misericordia. 
+</li><li>La lujuria practicando servicio amoroso. 
+</li><li>La envidia practicando las glorias del Santo Nombre. 
+</li><li>El apego al dinero trabajando para fines espirituales. 
+</li><li>El falso prestigio realzando su propia ignorancia y pobreza espiritual. 
+</li><li>De la avaricia sirviendo a las almas caídas con instrucciones. 
+</li><li>Del odio aprendiendo de la dedicación espiritual. 
+</li><li>Del egoísmo poniendo a Krishna en el centro de su vida. 
+</li><li>Dejar de ofender el Santo Nombre cantando con desesperación para volverse un devoto puro. 
+</li><li>Del servicio fruitivo realzando que Krishna sólo es conquistado por servicio amoroso incondicionado. 
+</li><li>Del escepticismo escuchando acerca de Krishna. 
+</li><li>De los fantasmas de deseos materiales identificándose con la misión de su Maestro Espiritual. 
+</li><li>Del apego material excesivo realizando la conexión con la familia grande de Krishna. 
+</li><li>De los malos hábitos, malas palabras y de los comportamientos no devocionales, mediante la humildad, rechazando todo orgullo y arrogancia, que una y otra vez quiere surgir en nuestro corazón siendo ilusionado por nuestro nacimiento aristocrático, belleza física, erudición o poder económico. 
+</li></ol><p class='vspace'><a name='sub5' id='sub5'></a>
+</p><h3>Krishna Prema</h3>
+<p>Amor puro por Krishna. Se manifiesta en diferentes melosidades (rasas) espirituales. Las cinco principales son:
+</p>
+<div class='vspace'></div><ol><li>Santa rasa: Neutral
+</li><li>Dasya rasa: Servidumbre
+</li><li>Sakya rasa: Amistad
+</li><li>Vatsalya rasa: De parentezco
+</li><li>Madurya rasa: Relación conyugal
+</li></ol><p class='vspace'><a name='sub6' id='sub6'></a>
+</p><h3>El tiempo del Universo</h3>
+<p>En el día del creador del Universo, el señor Brahma, existen mil ciclos de Divya yugas. Un divya yuga consta de 4 yugas:
+</p>
+<div class='vspace'></div><ol><li>Satya yuga: Era de oro, duración 1.728.000 años. El proceso de autorrealización es la meditación.
+</li><li>Tetra yuga: Era de plata, duración 1.296.000 años. El proceso de autorrealización son los sacrificios.
+</li><li>Dvapara yuga: Era de cobre, duración 864.000 años. El proceso de autorrealización es la adoración del Señor en los templos.
+</li><li>Kali yuga: Era de hierro, era actual 432.000 años. El Señor Caitanya Mahaprabhu aparece en ésta época, 510 años atrás para enseñar el proceso de autorrealización cantando los Santos Nombres de Señor.
+</li></ol><p class='vspace'><a name='sub7' id='sub7'></a>
+</p><h3>Lugares y reglas para evacuar</h3>
+<p>Si lo hace en el exterior, cubra la tierra con pasto, hojas, piedras o pasto (por respeto a la tierra), antes de empezar.
+</p>
+<p class='vspace'>Prohibido en un lugar arado, donde crecen granos, donde pastan las vacas, en sendero o camino, o al borde del agua, dentro del agua, sobre las cenizas de un fuego, donde viva algún animal.
+</p>
+<p class='vspace'><a name='sub8' id='sub8'></a>
+</p><h3>Limpieza para después de evacuar.</h3>
+<p>Otro nombre del devoto es suci o aquél que es limpio. En el baño, lávese con agua y lave sus manos con agua y jabón. Luego lave sus pies, cara y boca. Lave sus partes privadas con agua, jabón y mano izquierda, y luego ambas manos con jabón.
+</p>
+<p class='vspace'><a name='sub9' id='sub9'></a>
+</p><h3>Baño y lavado de dientes.</h3>
+<p>El Kurma Purana dice que si no se toma el baño de la mañana (antes de la salida del sol), uno permanece impuro y no puede realizar las actividades diarias como japa. Si una persona come sin haberse bañado, se dice que come porquería, porque todo lo que toca se vuelve contaminado como él. Antes de tomar el baño en la mañana se debe lavar los dientes y la boca. Los dedos de la mano izquierda nunca deben entrar en la boca. 
+Un baño puede purificar interna y externamente, el agua fría revitaliza el cuerpo sutil, removiendo la influencia de sueños. Nos libera de la lamentación y de los malos pensamientos. Después de bañarse no debe secarse con ropa usada para descansar, secarse con paño limpio. 
+Srila Prabhupada escribe: casados y vanaprasthas deben bañarse 2 veces al día. Un sannyasi 3 veces por día y un bramacari una vez. El baño en la mañana es obligatorio para todos. 
+</p>
+<p class='vspace'><a name='sub10' id='sub10'></a>
+</p><h3>Tilaka y sikha</h3>
+<p>Aplicarse Visnu tilaka en las doce partes del cuerpo para indicar la rendición a Visnu. No se debe aplicar en el baño. El Padma Purana dice que el tilaka simboliza los pies de loto de Visnu. Los doce puntos en que se aplica, no son arbitrarios sino que son puntos sensitivos que fácilmente absorven energía espiritual generada por recitar y ubicar mentalmente al Señor en esas posiciones. Así, el Señor se complace y reside allí y el cuerpo material se vuelve entonces un templo del Señor. El Padma Purana dice que el tilaka es prerequisito para hacer Yajña, caridad, austeridad, estudio Védico o cualquier actividad espiritual. Se considera que ver a un vaisnava usando tilaka es muy auspicioso. En una frente con tilaka, Visnu recide en el centro, Brahma a la izquierda y Siva a la derecha. Si no se consigue tilaka, se puede usar tierra de algún río, o usar agua del baño de la Deidad o simplemente agua.
+</p>
+<p class='vspace'>Respecto al tamaño de la Sikha a usar. Los Gaudiya Vaisnavas tradicionalmente conservan la sikha del tamaño de la huella de un ternero. Srila Prabhupada mencionó: Gaudiya Vaisnavas usan sikha de 1.5 pulg. no más grande; mayor significa otra sampradaya.
+</p>
+</div>
+
+            <span style='clear:both;'></span>
+        </div><!-- id='contentbody' -->
+      </div><!-- id='tabpage' -->
+      <!--PageFooterFmt--><div id='lablec'>
+  
+        <div class='lastmod'>Page last modified on June 11, 2008, at 06:14 PM</div>
+
+       <!-- kivett footerszövegek -->
+       
+      </div><!--/PageFooterFmt-->
+    </div><!-- id='content' -->
+  </div><!-- id='globalwrapper' -->
+ <!-- <div id='stopwatch'>$StopWatch</div> -->
+</body>
+</html>
